@@ -11,9 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("topic")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Topic { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("initialDelaySeconds")]
+        public double? InitialDelaySeconds { get; set; }
 
         /// <summary>
         ///
@@ -24,8 +23,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("initialDelaySeconds")]
-        public double? InitialDelaySeconds { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("topic")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Topic { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,19 +37,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateDeploymentResponseVariant2ServiceVariant1TopicsVariant2Item" /> class.
         /// </summary>
         /// <param name="topic"></param>
-        /// <param name="retryAfterSeconds"></param>
         /// <param name="initialDelaySeconds"></param>
+        /// <param name="retryAfterSeconds"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateDeploymentResponseVariant2ServiceVariant1TopicsVariant2Item(
             string topic,
-            double? retryAfterSeconds,
-            double? initialDelaySeconds)
+            double? initialDelaySeconds,
+            double? retryAfterSeconds)
         {
-            this.Topic = topic ?? throw new global::System.ArgumentNullException(nameof(topic));
-            this.RetryAfterSeconds = retryAfterSeconds;
             this.InitialDelaySeconds = initialDelaySeconds;
+            this.RetryAfterSeconds = retryAfterSeconds;
+            this.Topic = topic ?? throw new global::System.ArgumentNullException(nameof(topic));
         }
 
         /// <summary>

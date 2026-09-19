@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Domain { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("level")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetRuntimeLogsResponseLevelJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -22,35 +29,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Message { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rowId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string RowId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetRuntimeLogsResponseSourceJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetRuntimeLogsResponseSource Source { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("timestampInMs")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double TimestampInMs { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Domain { get; set; }
 
         /// <summary>
         ///
@@ -81,6 +59,28 @@ namespace Vercel
         public required double ResponseStatusCode { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("rowId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string RowId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetRuntimeLogsResponseSourceJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetRuntimeLogsResponseSource Source { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("timestampInMs")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double TimestampInMs { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -89,41 +89,41 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetRuntimeLogsResponse" /> class.
         /// </summary>
+        /// <param name="domain"></param>
         /// <param name="level"></param>
         /// <param name="message"></param>
-        /// <param name="rowId"></param>
-        /// <param name="source"></param>
-        /// <param name="timestampInMs"></param>
-        /// <param name="domain"></param>
         /// <param name="messageTruncated"></param>
         /// <param name="requestMethod"></param>
         /// <param name="requestPath"></param>
         /// <param name="responseStatusCode"></param>
+        /// <param name="rowId"></param>
+        /// <param name="source"></param>
+        /// <param name="timestampInMs"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetRuntimeLogsResponse(
+            string domain,
             global::Vercel.GetRuntimeLogsResponseLevel level,
             string message,
-            string rowId,
-            global::Vercel.GetRuntimeLogsResponseSource source,
-            double timestampInMs,
-            string domain,
             bool messageTruncated,
             string requestMethod,
             string requestPath,
-            double responseStatusCode)
+            double responseStatusCode,
+            string rowId,
+            global::Vercel.GetRuntimeLogsResponseSource source,
+            double timestampInMs)
         {
+            this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
             this.Level = level;
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
-            this.RowId = rowId ?? throw new global::System.ArgumentNullException(nameof(rowId));
-            this.Source = source;
-            this.TimestampInMs = timestampInMs;
-            this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
             this.MessageTruncated = messageTruncated;
             this.RequestMethod = requestMethod ?? throw new global::System.ArgumentNullException(nameof(requestMethod));
             this.RequestPath = requestPath ?? throw new global::System.ArgumentNullException(nameof(requestPath));
             this.ResponseStatusCode = responseStatusCode;
+            this.RowId = rowId ?? throw new global::System.ArgumentNullException(nameof(rowId));
+            this.Source = source;
+            this.TimestampInMs = timestampInMs;
         }
 
         /// <summary>

@@ -9,6 +9,13 @@ namespace Vercel
     public sealed partial class CreateDeploymentRequest
     {
         /// <summary>
+        /// Selects a custom build machine for this deployment without changing project settings.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachine")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentRequestBuildMachineJsonConverter))]
+        public global::Vercel.CreateDeploymentRequestBuildMachine? BuildMachine { get; set; }
+
+        /// <summary>
         /// The slug or ID of a custom environment to deploy to, overriding the default target environment. When omitted, the deployment targets the environment inferred from the branch (production or preview).<br/>
         /// Example: staging
         /// </summary>
@@ -114,6 +121,9 @@ namespace Vercel
         /// A string with the project name used in the deployment URL<br/>
         /// Example: my-instant-deployment
         /// </param>
+        /// <param name="buildMachine">
+        /// Selects a custom build machine for this deployment without changing project settings.
+        /// </param>
         /// <param name="customEnvironmentSlugOrId">
         /// The slug or ID of a custom environment to deploy to, overriding the default target environment. When omitted, the deployment targets the environment inferred from the branch (production or preview).<br/>
         /// Example: staging
@@ -161,6 +171,7 @@ namespace Vercel
 #endif
         public CreateDeploymentRequest(
             string name,
+            global::Vercel.CreateDeploymentRequestBuildMachine? buildMachine,
             string? customEnvironmentSlugOrId,
             string? deploymentId,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentRequestFileInlinedFile, global::Vercel.CreateDeploymentRequestFileUploadedFile>>? files,
@@ -174,6 +185,7 @@ namespace Vercel
             string? target,
             bool? withLatestCommit)
         {
+            this.BuildMachine = buildMachine;
             this.CustomEnvironmentSlugOrId = customEnvironmentSlugOrId;
             this.DeploymentId = deploymentId;
             this.Files = files;

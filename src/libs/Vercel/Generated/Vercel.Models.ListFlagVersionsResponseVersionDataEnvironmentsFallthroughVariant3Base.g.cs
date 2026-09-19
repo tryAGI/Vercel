@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant3BaseTypeJsonConverter))]
-        public global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant3BaseType Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("attribute")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Attribute { get; set; }
 
         /// <summary>
         ///
@@ -25,9 +25,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("attribute")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Attribute { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant3BaseTypeJsonConverter))]
+        public global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant3BaseType Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant3Base" /> class.
         /// </summary>
-        /// <param name="kind"></param>
         /// <param name="attribute"></param>
+        /// <param name="kind"></param>
         /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant3Base(
-            string kind,
             string attribute,
+            string kind,
             global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant3BaseType type)
         {
-            this.Type = type;
-            this.Kind = kind ?? throw new global::System.ArgumentNullException(nameof(kind));
             this.Attribute = attribute ?? throw new global::System.ArgumentNullException(nameof(attribute));
+            this.Kind = kind ?? throw new global::System.ArgumentNullException(nameof(kind));
+            this.Type = type;
         }
 
         /// <summary>

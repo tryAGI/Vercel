@@ -11,15 +11,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("traceId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TraceId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("resources")]
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectTraceResponseTraceResource>? Resources { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("resources")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectTraceResponseTraceResource>? Resources { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("rootSpanId")]
+        public string? RootSpanId { get; set; }
 
         /// <summary>
         ///
@@ -31,8 +30,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rootSpanId")]
-        public string? RootSpanId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("traceId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string TraceId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,23 +43,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectTraceResponseTrace" /> class.
         /// </summary>
-        /// <param name="traceId"></param>
         /// <param name="spans"></param>
+        /// <param name="traceId"></param>
         /// <param name="resources"></param>
         /// <param name="rootSpanId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectTraceResponseTrace(
-            string traceId,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectTraceResponseTraceSpan> spans,
+            string traceId,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectTraceResponseTraceResource>? resources,
             string? rootSpanId)
         {
-            this.TraceId = traceId ?? throw new global::System.ArgumentNullException(nameof(traceId));
             this.Resources = resources;
-            this.Spans = spans ?? throw new global::System.ArgumentNullException(nameof(spans));
             this.RootSpanId = rootSpanId;
+            this.Spans = spans ?? throw new global::System.ArgumentNullException(nameof(spans));
+            this.TraceId = traceId ?? throw new global::System.ArgumentNullException(nameof(traceId));
         }
 
         /// <summary>

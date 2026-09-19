@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("OwnerId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("Id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
+        public required string Id { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("Id")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("OwnerId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public required string OwnerId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetBypassIpResponsePagination" /> class.
         /// </summary>
-        /// <param name="ownerId"></param>
         /// <param name="id"></param>
+        /// <param name="ownerId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetBypassIpResponsePagination(
-            string ownerId,
-            string id)
+            string id,
+            string ownerId)
         {
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
         }
 
         /// <summary>

@@ -9,6 +9,37 @@ namespace Vercel
     public sealed partial class RemoveCustomEnvironmentResponse
     {
         /// <summary>
+        /// Configuration for matching git branches to this environment
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("branchMatcher")]
+        public global::Vercel.RemoveCustomEnvironmentResponseBranchMatcher? BranchMatcher { get; set; }
+
+        /// <summary>
+        /// Timestamp when the environment was created
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
+
+        /// <summary>
+        /// List of aliases for the current deployment
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("currentDeploymentAliases")]
+        public global::System.Collections.Generic.IList<string>? CurrentDeploymentAliases { get; set; }
+
+        /// <summary>
+        /// Optional description of the environment's purpose
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
+        /// List of domains associated with this environment
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("domains")]
+        public global::System.Collections.Generic.IList<global::Vercel.RemoveCustomEnvironmentResponseDomain>? Domains { get; set; }
+
+        /// <summary>
         /// Unique identifier for the custom environment (format: env_*)
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
@@ -31,37 +62,6 @@ namespace Vercel
         public required global::Vercel.RemoveCustomEnvironmentResponseType Type { get; set; }
 
         /// <summary>
-        /// Optional description of the environment's purpose
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
-        public string? Description { get; set; }
-
-        /// <summary>
-        /// Configuration for matching git branches to this environment
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("branchMatcher")]
-        public global::Vercel.RemoveCustomEnvironmentResponseBranchMatcher? BranchMatcher { get; set; }
-
-        /// <summary>
-        /// List of domains associated with this environment
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("domains")]
-        public global::System.Collections.Generic.IList<global::Vercel.RemoveCustomEnvironmentResponseDomain>? Domains { get; set; }
-
-        /// <summary>
-        /// List of aliases for the current deployment
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("currentDeploymentAliases")]
-        public global::System.Collections.Generic.IList<string>? CurrentDeploymentAliases { get; set; }
-
-        /// <summary>
-        /// Timestamp when the environment was created
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
-
-        /// <summary>
         /// Timestamp when the environment was last updated
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
@@ -77,6 +77,9 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="RemoveCustomEnvironmentResponse" /> class.
         /// </summary>
+        /// <param name="createdAt">
+        /// Timestamp when the environment was created
+        /// </param>
         /// <param name="id">
         /// Unique identifier for the custom environment (format: env_*)
         /// </param>
@@ -86,46 +89,43 @@ namespace Vercel
         /// <param name="type">
         /// The type of environment (production, preview, or development)
         /// </param>
-        /// <param name="createdAt">
-        /// Timestamp when the environment was created
-        /// </param>
         /// <param name="updatedAt">
         /// Timestamp when the environment was last updated
-        /// </param>
-        /// <param name="description">
-        /// Optional description of the environment's purpose
         /// </param>
         /// <param name="branchMatcher">
         /// Configuration for matching git branches to this environment
         /// </param>
-        /// <param name="domains">
-        /// List of domains associated with this environment
-        /// </param>
         /// <param name="currentDeploymentAliases">
         /// List of aliases for the current deployment
+        /// </param>
+        /// <param name="description">
+        /// Optional description of the environment's purpose
+        /// </param>
+        /// <param name="domains">
+        /// List of domains associated with this environment
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public RemoveCustomEnvironmentResponse(
+            double createdAt,
             string id,
             string slug,
             global::Vercel.RemoveCustomEnvironmentResponseType type,
-            double createdAt,
             double updatedAt,
-            string? description,
             global::Vercel.RemoveCustomEnvironmentResponseBranchMatcher? branchMatcher,
-            global::System.Collections.Generic.IList<global::Vercel.RemoveCustomEnvironmentResponseDomain>? domains,
-            global::System.Collections.Generic.IList<string>? currentDeploymentAliases)
+            global::System.Collections.Generic.IList<string>? currentDeploymentAliases,
+            string? description,
+            global::System.Collections.Generic.IList<global::Vercel.RemoveCustomEnvironmentResponseDomain>? domains)
         {
+            this.BranchMatcher = branchMatcher;
+            this.CreatedAt = createdAt;
+            this.CurrentDeploymentAliases = currentDeploymentAliases;
+            this.Description = description;
+            this.Domains = domains;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.Type = type;
-            this.Description = description;
-            this.BranchMatcher = branchMatcher;
-            this.Domains = domains;
-            this.CurrentDeploymentAliases = currentDeploymentAliases;
-            this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
         }
 

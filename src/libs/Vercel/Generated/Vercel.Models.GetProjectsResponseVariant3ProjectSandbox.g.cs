@@ -11,15 +11,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("region")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant3ProjectSandboxRegionJsonConverter))]
-        public global::Vercel.GetProjectsResponseVariant3ProjectSandboxRegion? Region { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("failoverRegions")]
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant3ProjectSandboxFailoverRegion>? FailoverRegions { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("failoverRegions")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant3ProjectSandboxFailoverRegion>? FailoverRegions { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("region")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant3ProjectSandboxRegionJsonConverter))]
+        public global::Vercel.GetProjectsResponseVariant3ProjectSandboxRegion? Region { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +30,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant3ProjectSandbox" /> class.
         /// </summary>
-        /// <param name="region"></param>
         /// <param name="failoverRegions"></param>
+        /// <param name="region"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsResponseVariant3ProjectSandbox(
-            global::Vercel.GetProjectsResponseVariant3ProjectSandboxRegion? region,
-            global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant3ProjectSandboxFailoverRegion>? failoverRegions)
+            global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant3ProjectSandboxFailoverRegion>? failoverRegions,
+            global::Vercel.GetProjectsResponseVariant3ProjectSandboxRegion? region)
         {
-            this.Region = region;
             this.FailoverRegions = failoverRegions;
+            this.Region = region;
         }
 
         /// <summary>

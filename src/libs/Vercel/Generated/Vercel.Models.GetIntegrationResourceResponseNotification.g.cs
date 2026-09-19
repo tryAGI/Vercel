@@ -11,9 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("title")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Title { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("href")]
+        public string? Href { get; set; }
 
         /// <summary>
         ///
@@ -32,8 +31,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("href")]
-        public string? Href { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("title")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Title { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -44,23 +44,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetIntegrationResourceResponseNotification" /> class.
         /// </summary>
-        /// <param name="title"></param>
         /// <param name="level"></param>
-        /// <param name="message"></param>
+        /// <param name="title"></param>
         /// <param name="href"></param>
+        /// <param name="message"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetIntegrationResourceResponseNotification(
-            string title,
             global::Vercel.GetIntegrationResourceResponseNotificationLevel level,
-            string? message,
-            string? href)
+            string title,
+            string? href,
+            string? message)
         {
-            this.Title = title ?? throw new global::System.ArgumentNullException(nameof(title));
+            this.Href = href;
             this.Level = level;
             this.Message = message;
-            this.Href = href;
+            this.Title = title ?? throw new global::System.ArgumentNullException(nameof(title));
         }
 
         /// <summary>

@@ -9,13 +9,6 @@ namespace Vercel
     public sealed partial class GetTeamMembersResponsePagination
     {
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("hasNext")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool HasNext { get; set; }
-
-        /// <summary>
         /// Amount of items in the current page.<br/>
         /// Example: 20
         /// </summary>
@@ -23,6 +16,13 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("count")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Count { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("hasNext")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool HasNext { get; set; }
 
         /// <summary>
         /// Timestamp that must be used to request the next page.<br/>
@@ -49,11 +49,11 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetTeamMembersResponsePagination" /> class.
         /// </summary>
-        /// <param name="hasNext"></param>
         /// <param name="count">
         /// Amount of items in the current page.<br/>
         /// Example: 20
         /// </param>
+        /// <param name="hasNext"></param>
         /// <param name="next">
         /// Timestamp that must be used to request the next page.<br/>
         /// Example: 1540095775951L
@@ -66,13 +66,13 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetTeamMembersResponsePagination(
-            bool hasNext,
             double count,
+            bool hasNext,
             double? next,
             double? prev)
         {
-            this.HasNext = hasNext;
             this.Count = count;
+            this.HasNext = hasNext;
             this.Next = next;
             this.Prev = prev;
         }

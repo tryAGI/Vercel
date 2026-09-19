@@ -11,15 +11,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("members")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseMember> Members { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("emailInviteCodes")]
+        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCode>? EmailInviteCodes { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("emailInviteCodes")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCode>? EmailInviteCodes { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("members")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseMember> Members { get; set; }
 
         /// <summary>
         ///
@@ -48,8 +48,8 @@ namespace Vercel
             global::Vercel.GetTeamMembersResponsePagination pagination,
             global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCode>? emailInviteCodes)
         {
-            this.Members = members ?? throw new global::System.ArgumentNullException(nameof(members));
             this.EmailInviteCodes = emailInviteCodes;
+            this.Members = members ?? throw new global::System.ArgumentNullException(nameof(members));
             this.Pagination = pagination ?? throw new global::System.ArgumentNullException(nameof(pagination));
         }
 

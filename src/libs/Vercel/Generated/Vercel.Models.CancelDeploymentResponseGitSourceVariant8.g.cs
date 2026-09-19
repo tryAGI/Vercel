@@ -11,15 +11,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CancelDeploymentResponseGitSourceVariant8TypeJsonConverter))]
-        public global::Vercel.CancelDeploymentResponseGitSourceVariant8Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("prId")]
+        public double? PrId { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("workspaceUuid")]
-        public string? WorkspaceUuid { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("ref")]
+        public string? Ref { get; set; }
 
         /// <summary>
         ///
@@ -31,20 +30,21 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ref")]
-        public string? Ref { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sha")]
         public string? Sha { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prId")]
-        public double? PrId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CancelDeploymentResponseGitSourceVariant8TypeJsonConverter))]
+        public global::Vercel.CancelDeploymentResponseGitSourceVariant8Type Type { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("workspaceUuid")]
+        public string? WorkspaceUuid { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -56,28 +56,28 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CancelDeploymentResponseGitSourceVariant8" /> class.
         /// </summary>
         /// <param name="repoUuid"></param>
-        /// <param name="type"></param>
-        /// <param name="workspaceUuid"></param>
+        /// <param name="prId"></param>
         /// <param name="ref"></param>
         /// <param name="sha"></param>
-        /// <param name="prId"></param>
+        /// <param name="type"></param>
+        /// <param name="workspaceUuid"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CancelDeploymentResponseGitSourceVariant8(
             string repoUuid,
-            global::Vercel.CancelDeploymentResponseGitSourceVariant8Type type,
-            string? workspaceUuid,
+            double? prId,
             string? @ref,
             string? sha,
-            double? prId)
+            global::Vercel.CancelDeploymentResponseGitSourceVariant8Type type,
+            string? workspaceUuid)
         {
+            this.PrId = prId;
+            this.Ref = @ref;
+            this.RepoUuid = repoUuid ?? throw new global::System.ArgumentNullException(nameof(repoUuid));
+            this.Sha = sha;
             this.Type = type;
             this.WorkspaceUuid = workspaceUuid;
-            this.RepoUuid = repoUuid ?? throw new global::System.ArgumentNullException(nameof(repoUuid));
-            this.Ref = @ref;
-            this.Sha = sha;
-            this.PrId = prId;
         }
 
         /// <summary>

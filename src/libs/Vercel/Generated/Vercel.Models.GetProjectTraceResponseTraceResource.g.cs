@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("attributes")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        public required global::System.Collections.Generic.Dictionary<string, string> Attributes { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("attributes")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, string> Attributes { get; set; }
+        public required string Name { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectTraceResponseTraceResource" /> class.
         /// </summary>
-        /// <param name="name"></param>
         /// <param name="attributes"></param>
+        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectTraceResponseTraceResource(
-            string name,
-            global::System.Collections.Generic.Dictionary<string, string> attributes)
+            global::System.Collections.Generic.Dictionary<string, string> attributes,
+            string name)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Attributes = attributes ?? throw new global::System.ArgumentNullException(nameof(attributes));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
         }
 
         /// <summary>

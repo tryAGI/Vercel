@@ -11,13 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3TypeJsonConverter))]
-        public global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3Type Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("endpoint")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Endpoint { get; set; }
@@ -28,6 +21,13 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("table")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Table { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3TypeJsonConverter))]
+        public global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,9 +49,9 @@ namespace Vercel
             string table,
             global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3Type type)
         {
-            this.Type = type;
             this.Endpoint = endpoint ?? throw new global::System.ArgumentNullException(nameof(endpoint));
             this.Table = table ?? throw new global::System.ArgumentNullException(nameof(table));
+            this.Type = type;
         }
 
         /// <summary>

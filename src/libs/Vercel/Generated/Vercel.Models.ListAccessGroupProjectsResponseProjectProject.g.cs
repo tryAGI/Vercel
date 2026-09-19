@@ -11,12 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("framework")]
         public string? Framework { get; set; }
 
@@ -27,6 +21,12 @@ namespace Vercel
         public string? LatestDeploymentId { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -35,20 +35,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListAccessGroupProjectsResponseProjectProject" /> class.
         /// </summary>
-        /// <param name="name"></param>
         /// <param name="framework"></param>
         /// <param name="latestDeploymentId"></param>
+        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListAccessGroupProjectsResponseProjectProject(
-            string? name,
             string? framework,
-            string? latestDeploymentId)
+            string? latestDeploymentId,
+            string? name)
         {
-            this.Name = name;
             this.Framework = framework;
             this.LatestDeploymentId = latestDeploymentId;
+            this.Name = name;
         }
 
         /// <summary>

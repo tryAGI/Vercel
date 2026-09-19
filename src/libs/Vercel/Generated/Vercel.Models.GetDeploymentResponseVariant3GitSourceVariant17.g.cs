@@ -11,9 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant3GitSourceVariant17TypeJsonConverter))]
-        public global::Vercel.GetDeploymentResponseVariant3GitSourceVariant17Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("owner")]
+        public string? Owner { get; set; }
 
         /// <summary>
         ///
@@ -25,15 +24,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sha")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("repoUuid")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Sha { get; set; }
+        public required string RepoUuid { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("owner")]
-        public string? Owner { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("sha")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Sha { get; set; }
 
         /// <summary>
         ///
@@ -44,16 +44,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("workspaceUuid")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string WorkspaceUuid { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant3GitSourceVariant17TypeJsonConverter))]
+        public global::Vercel.GetDeploymentResponseVariant3GitSourceVariant17Type Type { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("repoUuid")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("workspaceUuid")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string RepoUuid { get; set; }
+        public required string WorkspaceUuid { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -65,31 +65,31 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetDeploymentResponseVariant3GitSourceVariant17" /> class.
         /// </summary>
         /// <param name="ref"></param>
+        /// <param name="repoUuid"></param>
         /// <param name="sha"></param>
         /// <param name="workspaceUuid"></param>
-        /// <param name="repoUuid"></param>
-        /// <param name="type"></param>
         /// <param name="owner"></param>
         /// <param name="slug"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant3GitSourceVariant17(
             string @ref,
+            string repoUuid,
             string sha,
             string workspaceUuid,
-            string repoUuid,
-            global::Vercel.GetDeploymentResponseVariant3GitSourceVariant17Type type,
             string? owner,
-            string? slug)
+            string? slug,
+            global::Vercel.GetDeploymentResponseVariant3GitSourceVariant17Type type)
         {
-            this.Type = type;
-            this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
-            this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
             this.Owner = owner;
-            this.Slug = slug;
-            this.WorkspaceUuid = workspaceUuid ?? throw new global::System.ArgumentNullException(nameof(workspaceUuid));
+            this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
             this.RepoUuid = repoUuid ?? throw new global::System.ArgumentNullException(nameof(repoUuid));
+            this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
+            this.Slug = slug;
+            this.Type = type;
+            this.WorkspaceUuid = workspaceUuid ?? throw new global::System.ArgumentNullException(nameof(workspaceUuid));
         }
 
         /// <summary>

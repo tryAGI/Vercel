@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("subKind")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4SubKindJsonConverter))]
-        public global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4SubKind? SubKind { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4OriginJsonConverter))]
+        public global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4Origin? Origin { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4OriginJsonConverter))]
-        public global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4Origin? Origin { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("subKind")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4SubKindJsonConverter))]
+        public global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4SubKind? SubKind { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListDeploymentCheckRunsResponseRunVariant1SourceVariant4" /> class.
         /// </summary>
-        /// <param name="subKind"></param>
         /// <param name="origin"></param>
+        /// <param name="subKind"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListDeploymentCheckRunsResponseRunVariant1SourceVariant4(
-            global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4SubKind? subKind,
-            global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4Origin? origin)
+            global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4Origin? origin,
+            global::Vercel.ListDeploymentCheckRunsResponseRunVariant1SourceVariant4SubKind? subKind)
         {
-            this.SubKind = subKind;
             this.Origin = origin;
+            this.SubKind = subKind;
         }
 
         /// <summary>

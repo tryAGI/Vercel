@@ -11,13 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("domain")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Domain { get; set; }
@@ -25,16 +18,23 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Value { get; set; }
+        public required string Reason { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Reason { get; set; }
+        public required string Type { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateProjectDomainResponseVerificationItem" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="domain"></param>
-        /// <param name="value"></param>
         /// <param name="reason"></param>
+        /// <param name="type"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateProjectDomainResponseVerificationItem(
-            string type,
             string domain,
-            string value,
-            string reason)
+            string reason,
+            string type,
+            string value)
         {
-            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
             this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
-            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
             this.Reason = reason ?? throw new global::System.ArgumentNullException(nameof(reason));
+            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
+            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
         }
 
         /// <summary>

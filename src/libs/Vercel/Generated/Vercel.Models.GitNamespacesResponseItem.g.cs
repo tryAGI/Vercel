@@ -11,24 +11,28 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Provider { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.OneOf<string, double?> Id { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("installationId")]
+        public double? InstallationId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("isAccessRestricted")]
+        public bool? IsAccessRestricted { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
 
         /// <summary>
         ///
@@ -40,26 +44,22 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("isAccessRestricted")]
-        public bool? IsAccessRestricted { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("installationId")]
-        public double? InstallationId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Provider { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requireReauth")]
         public bool? RequireReauth { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Slug { get; set; }
 
         /// <summary>
         ///
@@ -76,37 +76,37 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GitNamespacesResponseItem" /> class.
         /// </summary>
-        /// <param name="provider"></param>
-        /// <param name="slug"></param>
         /// <param name="id"></param>
         /// <param name="ownerType"></param>
-        /// <param name="name"></param>
-        /// <param name="isAccessRestricted"></param>
+        /// <param name="provider"></param>
+        /// <param name="slug"></param>
         /// <param name="installationId"></param>
+        /// <param name="isAccessRestricted"></param>
+        /// <param name="name"></param>
         /// <param name="requireReauth"></param>
         /// <param name="viewer"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GitNamespacesResponseItem(
-            string provider,
-            string slug,
             global::Vercel.OneOf<string, double?> id,
             string ownerType,
-            string? name,
-            bool? isAccessRestricted,
+            string provider,
+            string slug,
             double? installationId,
+            bool? isAccessRestricted,
+            string? name,
             bool? requireReauth,
             global::Vercel.GitNamespacesResponseItemViewer? viewer)
         {
-            this.Provider = provider ?? throw new global::System.ArgumentNullException(nameof(provider));
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.Id = id;
-            this.OwnerType = ownerType ?? throw new global::System.ArgumentNullException(nameof(ownerType));
-            this.Name = name;
-            this.IsAccessRestricted = isAccessRestricted;
             this.InstallationId = installationId;
+            this.IsAccessRestricted = isAccessRestricted;
+            this.Name = name;
+            this.OwnerType = ownerType ?? throw new global::System.ArgumentNullException(nameof(ownerType));
+            this.Provider = provider ?? throw new global::System.ArgumentNullException(nameof(provider));
             this.RequireReauth = requireReauth;
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.Viewer = viewer;
         }
 

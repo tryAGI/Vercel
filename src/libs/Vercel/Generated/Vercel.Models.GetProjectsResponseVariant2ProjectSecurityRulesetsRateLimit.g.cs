@@ -19,9 +19,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("window")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("keys")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Window { get; set; }
+        public required global::System.Collections.Generic.IList<string> Keys { get; set; }
 
         /// <summary>
         ///
@@ -33,9 +33,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("keys")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("window")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> Keys { get; set; }
+        public required double Window { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,22 +47,22 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant2ProjectSecurityRulesetsRateLimit" /> class.
         /// </summary>
         /// <param name="algo"></param>
-        /// <param name="window"></param>
-        /// <param name="limit"></param>
         /// <param name="keys"></param>
+        /// <param name="limit"></param>
+        /// <param name="window"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsResponseVariant2ProjectSecurityRulesetsRateLimit(
             global::Vercel.GetProjectsResponseVariant2ProjectSecurityRulesetsRateLimitAlgo algo,
-            double window,
+            global::System.Collections.Generic.IList<string> keys,
             double limit,
-            global::System.Collections.Generic.IList<string> keys)
+            double window)
         {
             this.Algo = algo;
-            this.Window = window;
-            this.Limit = limit;
             this.Keys = keys ?? throw new global::System.ArgumentNullException(nameof(keys));
+            this.Limit = limit;
+            this.Window = window;
         }
 
         /// <summary>

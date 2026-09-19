@@ -11,10 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        AiGatewayApiKeyOwnedBySelf,
-        /// <summary>
-        ///
-        /// </summary>
         AiGatewayBudgetManager,
         /// <summary>
         ///
@@ -32,6 +28,10 @@ namespace Vercel
         ///
         /// </summary>
         AiGatewayTranscriptsViewer,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayUser,
         /// <summary>
         ///
         /// </summary>
@@ -98,12 +98,12 @@ namespace Vercel
         {
             return value switch
             {
-                TeamMembershipTeamPermission.AiGatewayApiKeyOwnedBySelf => "AiGatewayApiKeyOwnedBySelf",
                 TeamMembershipTeamPermission.AiGatewayBudgetManager => "AiGatewayBudgetManager",
                 TeamMembershipTeamPermission.AiGatewayCredits => "AiGatewayCredits",
                 TeamMembershipTeamPermission.AiGatewaySettings => "AiGatewaySettings",
                 TeamMembershipTeamPermission.AiGatewayTranscriptsManager => "AiGatewayTranscriptsManager",
                 TeamMembershipTeamPermission.AiGatewayTranscriptsViewer => "AiGatewayTranscriptsViewer",
+                TeamMembershipTeamPermission.AiGatewayUser => "AiGatewayUser",
                 TeamMembershipTeamPermission.ConnectorManager => "ConnectorManager",
                 TeamMembershipTeamPermission.CreateProject => "CreateProject",
                 TeamMembershipTeamPermission.EnvVariableManager => "EnvVariableManager",
@@ -127,12 +127,12 @@ namespace Vercel
         {
             return value switch
             {
-                "AiGatewayApiKeyOwnedBySelf" => TeamMembershipTeamPermission.AiGatewayApiKeyOwnedBySelf,
                 "AiGatewayBudgetManager" => TeamMembershipTeamPermission.AiGatewayBudgetManager,
                 "AiGatewayCredits" => TeamMembershipTeamPermission.AiGatewayCredits,
                 "AiGatewaySettings" => TeamMembershipTeamPermission.AiGatewaySettings,
                 "AiGatewayTranscriptsManager" => TeamMembershipTeamPermission.AiGatewayTranscriptsManager,
                 "AiGatewayTranscriptsViewer" => TeamMembershipTeamPermission.AiGatewayTranscriptsViewer,
+                "AiGatewayUser" => TeamMembershipTeamPermission.AiGatewayUser,
                 "ConnectorManager" => TeamMembershipTeamPermission.ConnectorManager,
                 "CreateProject" => TeamMembershipTeamPermission.CreateProject,
                 "EnvVariableManager" => TeamMembershipTeamPermission.EnvVariableManager,

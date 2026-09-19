@@ -31,18 +31,18 @@ namespace Vercel
         public required global::Vercel.ListBillingChargesResponseChargeCategory ChargeCategory { get; set; }
 
         /// <summary>
-        /// Inclusive start of the charge period (ISO 8601 UTC)
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ChargePeriodStart")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ChargePeriodStart { get; set; }
-
-        /// <summary>
         /// Exclusive end of the charge period (ISO 8601 UTC) - Required in v1.3
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ChargePeriodEnd")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ChargePeriodEnd { get; set; }
+
+        /// <summary>
+        /// Inclusive start of the charge period (ISO 8601 UTC)
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ChargePeriodStart")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ChargePeriodStart { get; set; }
 
         /// <summary>
         /// Volume of resource consumed. Null when a charge does not involve measurable consumption quantity.
@@ -62,46 +62,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("EffectiveCost")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double EffectiveCost { get; set; }
-
-        /// <summary>
-        /// Provider-assigned region identifier
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("RegionId")]
-        public string? RegionId { get; set; }
-
-        /// <summary>
-        /// Display name for the region
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("RegionName")]
-        public string? RegionName { get; set; }
-
-        /// <summary>
-        /// Display name for the service/product
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ServiceName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ServiceName { get; set; }
-
-        /// <summary>
-        /// High-level category of the service
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ServiceCategory")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListBillingChargesResponseServiceCategoryJsonConverter))]
-        public global::Vercel.ListBillingChargesResponseServiceCategory? ServiceCategory { get; set; }
-
-        /// <summary>
-        /// Entity making the resource/service available for purchase (v1.3)
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ServiceProviderName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ServiceProviderName { get; set; }
-
-        /// <summary>
-        /// Charge metadata including the Vercel ProjectId and ProjectName information
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("Tags")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, string> Tags { get; set; }
 
         /// <summary>
         /// Pricing model used for the charge.
@@ -133,6 +93,46 @@ namespace Vercel
         public required string PricingUnit { get; set; }
 
         /// <summary>
+        /// Provider-assigned region identifier
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("RegionId")]
+        public string? RegionId { get; set; }
+
+        /// <summary>
+        /// Display name for the region
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("RegionName")]
+        public string? RegionName { get; set; }
+
+        /// <summary>
+        /// High-level category of the service
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ServiceCategory")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListBillingChargesResponseServiceCategoryJsonConverter))]
+        public global::Vercel.ListBillingChargesResponseServiceCategory? ServiceCategory { get; set; }
+
+        /// <summary>
+        /// Display name for the service/product
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ServiceName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ServiceName { get; set; }
+
+        /// <summary>
+        /// Entity making the resource/service available for purchase (v1.3)
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ServiceProviderName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ServiceProviderName { get; set; }
+
+        /// <summary>
+        /// Charge metadata including the Vercel ProjectId and ProjectName information
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("Tags")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.Dictionary<string, string> Tags { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -147,15 +147,20 @@ namespace Vercel
         /// <param name="chargeCategory">
         /// Classification of the charge
         /// </param>
-        /// <param name="chargePeriodStart">
-        /// Inclusive start of the charge period (ISO 8601 UTC)
-        /// </param>
         /// <param name="chargePeriodEnd">
         /// Exclusive end of the charge period (ISO 8601 UTC) - Required in v1.3
+        /// </param>
+        /// <param name="chargePeriodStart">
+        /// Inclusive start of the charge period (ISO 8601 UTC)
         /// </param>
         /// <param name="effectiveCost">
         /// Amortized cost representation including discounts, pre-commitment credit purchase amount, etc.
         /// </param>
+        /// <param name="pricingCategory">
+        /// Pricing model used for the charge.
+        /// </param>
+        /// <param name="pricingQuantity"></param>
+        /// <param name="pricingUnit"></param>
         /// <param name="serviceName">
         /// Display name for the service/product
         /// </param>
@@ -165,11 +170,6 @@ namespace Vercel
         /// <param name="tags">
         /// Charge metadata including the Vercel ProjectId and ProjectName information
         /// </param>
-        /// <param name="pricingCategory">
-        /// Pricing model used for the charge.
-        /// </param>
-        /// <param name="pricingQuantity"></param>
-        /// <param name="pricingUnit"></param>
         /// <param name="billingCurrency">
         /// Currency used for billing (ISO 4217)
         /// </param>
@@ -179,6 +179,7 @@ namespace Vercel
         /// <param name="consumedUnit">
         /// Unit of measurement for consumed quantity. Null when the charge is not measured in units.
         /// </param>
+        /// <param name="pricingCurrency"></param>
         /// <param name="regionId">
         /// Provider-assigned region identifier
         /// </param>
@@ -188,48 +189,47 @@ namespace Vercel
         /// <param name="serviceCategory">
         /// High-level category of the service
         /// </param>
-        /// <param name="pricingCurrency"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListBillingChargesResponse(
             double billedCost,
             global::Vercel.ListBillingChargesResponseChargeCategory chargeCategory,
-            string chargePeriodStart,
             string chargePeriodEnd,
+            string chargePeriodStart,
             double effectiveCost,
-            string serviceName,
-            string serviceProviderName,
-            global::System.Collections.Generic.Dictionary<string, string> tags,
             global::Vercel.ListBillingChargesResponsePricingCategory pricingCategory,
             double pricingQuantity,
             string pricingUnit,
+            string serviceName,
+            string serviceProviderName,
+            global::System.Collections.Generic.Dictionary<string, string> tags,
             global::Vercel.ListBillingChargesResponseBillingCurrency billingCurrency,
             double? consumedQuantity,
             string? consumedUnit,
+            global::Vercel.ListBillingChargesResponsePricingCurrency pricingCurrency,
             string? regionId,
             string? regionName,
-            global::Vercel.ListBillingChargesResponseServiceCategory? serviceCategory,
-            global::Vercel.ListBillingChargesResponsePricingCurrency pricingCurrency)
+            global::Vercel.ListBillingChargesResponseServiceCategory? serviceCategory)
         {
             this.BilledCost = billedCost;
             this.BillingCurrency = billingCurrency;
             this.ChargeCategory = chargeCategory;
-            this.ChargePeriodStart = chargePeriodStart ?? throw new global::System.ArgumentNullException(nameof(chargePeriodStart));
             this.ChargePeriodEnd = chargePeriodEnd ?? throw new global::System.ArgumentNullException(nameof(chargePeriodEnd));
+            this.ChargePeriodStart = chargePeriodStart ?? throw new global::System.ArgumentNullException(nameof(chargePeriodStart));
             this.ConsumedQuantity = consumedQuantity;
             this.ConsumedUnit = consumedUnit;
             this.EffectiveCost = effectiveCost;
-            this.RegionId = regionId;
-            this.RegionName = regionName;
-            this.ServiceName = serviceName ?? throw new global::System.ArgumentNullException(nameof(serviceName));
-            this.ServiceCategory = serviceCategory;
-            this.ServiceProviderName = serviceProviderName ?? throw new global::System.ArgumentNullException(nameof(serviceProviderName));
-            this.Tags = tags ?? throw new global::System.ArgumentNullException(nameof(tags));
             this.PricingCategory = pricingCategory;
             this.PricingCurrency = pricingCurrency;
             this.PricingQuantity = pricingQuantity;
             this.PricingUnit = pricingUnit ?? throw new global::System.ArgumentNullException(nameof(pricingUnit));
+            this.RegionId = regionId;
+            this.RegionName = regionName;
+            this.ServiceCategory = serviceCategory;
+            this.ServiceName = serviceName ?? throw new global::System.ArgumentNullException(nameof(serviceName));
+            this.ServiceProviderName = serviceProviderName ?? throw new global::System.ArgumentNullException(nameof(serviceProviderName));
+            this.Tags = tags ?? throw new global::System.ArgumentNullException(nameof(tags));
         }
 
         /// <summary>

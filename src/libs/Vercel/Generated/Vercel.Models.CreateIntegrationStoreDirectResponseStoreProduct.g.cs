@@ -9,28 +9,10 @@ namespace Vercel
     public sealed partial class CreateIntegrationStoreDirectResponseStoreProduct
     {
         /// <summary>
-        ///
+        /// URLs to skills/guides for how AI agents should use this product. Providers can specify these to help agents understand how to interact with their integration.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        public string? Id { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        public string? Slug { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("iconUrl")]
-        public string? IconUrl { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("agentSkills")]
+        public global::System.Collections.Generic.IList<string>? AgentSkills { get; set; }
 
         /// <summary>
         ///
@@ -41,8 +23,20 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("shortDescription")]
-        public string? ShortDescription { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("disableResourceRenaming")]
+        public bool? DisableResourceRenaming { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("iconUrl")]
+        public string? IconUrl { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        public string? Id { get; set; }
 
         /// <summary>
         ///
@@ -53,14 +47,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("resourceLinks")]
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductResourceLink>? ResourceLinks { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductTag>? Tags { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
 
         /// <summary>
         ///
@@ -71,14 +59,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("showSSOLinkOnProjectConnection")]
-        public bool? ShowSSOLinkOnProjectConnection { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("disableResourceRenaming")]
-        public bool? DisableResourceRenaming { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("resourceLinks")]
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductResourceLink>? ResourceLinks { get; set; }
 
         /// <summary>
         /// Custom resource title to display during installation and configuration. If not provided, defaults to protocol-based defaults.<br/>
@@ -89,10 +71,28 @@ namespace Vercel
         public string? ResourceTitle { get; set; }
 
         /// <summary>
-        /// URLs to skills/guides for how AI agents should use this product. Providers can specify these to help agents understand how to interact with their integration.
+        ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("agentSkills")]
-        public global::System.Collections.Generic.IList<string>? AgentSkills { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("shortDescription")]
+        public string? ShortDescription { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("showSSOLinkOnProjectConnection")]
+        public bool? ShowSSOLinkOnProjectConnection { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        public string? Slug { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductTag>? Tags { get; set; }
 
         /// <summary>
         ///
@@ -123,9 +123,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("supportedProtocols")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductSupportedProtocol> SupportedProtocols { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("logDrainStatus")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateIntegrationStoreDirectResponseStoreProductLogDrainStatusJsonConverter))]
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductLogDrainStatus? LogDrainStatus { get; set; }
 
         /// <summary>
         ///
@@ -137,9 +137,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("logDrainStatus")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateIntegrationStoreDirectResponseStoreProductLogDrainStatusJsonConverter))]
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductLogDrainStatus? LogDrainStatus { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("supportedProtocols")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductSupportedProtocol> SupportedProtocols { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -153,29 +153,29 @@ namespace Vercel
         /// <param name="integration"></param>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="supportedProtocols"></param>
-        /// <param name="id"></param>
-        /// <param name="name"></param>
-        /// <param name="slug"></param>
-        /// <param name="iconUrl"></param>
+        /// <param name="agentSkills">
+        /// URLs to skills/guides for how AI agents should use this product. Providers can specify these to help agents understand how to interact with their integration.
+        /// </param>
         /// <param name="capabilities"></param>
-        /// <param name="shortDescription"></param>
-        /// <param name="metadataSchema"></param>
-        /// <param name="resourceLinks"></param>
-        /// <param name="tags"></param>
-        /// <param name="projectConnectionScopes"></param>
-        /// <param name="showSSOLinkOnProjectConnection"></param>
         /// <param name="disableResourceRenaming"></param>
+        /// <param name="iconUrl"></param>
+        /// <param name="id"></param>
+        /// <param name="metadataSchema"></param>
+        /// <param name="name"></param>
+        /// <param name="projectConnectionScopes"></param>
+        /// <param name="resourceLinks"></param>
         /// <param name="resourceTitle">
         /// Custom resource title to display during installation and configuration. If not provided, defaults to protocol-based defaults.<br/>
         /// Example: Instance
         /// </param>
-        /// <param name="agentSkills">
-        /// URLs to skills/guides for how AI agents should use this product. Providers can specify these to help agents understand how to interact with their integration.
-        /// </param>
+        /// <param name="shortDescription"></param>
+        /// <param name="showSSOLinkOnProjectConnection"></param>
+        /// <param name="slug"></param>
+        /// <param name="tags"></param>
         /// <param name="repl"></param>
         /// <param name="guides"></param>
-        /// <param name="primaryProtocol"></param>
         /// <param name="logDrainStatus"></param>
+        /// <param name="primaryProtocol"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -183,46 +183,46 @@ namespace Vercel
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegration integration,
             string integrationConfigurationId,
             global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductSupportedProtocol> supportedProtocols,
-            string? id,
-            string? name,
-            string? slug,
-            string? iconUrl,
-            global::Vercel.CreateIntegrationStoreDirectResponseStoreProductCapabilities? capabilities,
-            string? shortDescription,
-            global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchema? metadataSchema,
-            global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductResourceLink>? resourceLinks,
-            global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductTag>? tags,
-            global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductProjectConnectionScope>? projectConnectionScopes,
-            bool? showSSOLinkOnProjectConnection,
-            bool? disableResourceRenaming,
-            string? resourceTitle,
             global::System.Collections.Generic.IList<string>? agentSkills,
+            global::Vercel.CreateIntegrationStoreDirectResponseStoreProductCapabilities? capabilities,
+            bool? disableResourceRenaming,
+            string? iconUrl,
+            string? id,
+            global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchema? metadataSchema,
+            string? name,
+            global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductProjectConnectionScope>? projectConnectionScopes,
+            global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductResourceLink>? resourceLinks,
+            string? resourceTitle,
+            string? shortDescription,
+            bool? showSSOLinkOnProjectConnection,
+            string? slug,
+            global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductTag>? tags,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreProductRepl? repl,
             global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuide>? guides,
-            global::Vercel.CreateIntegrationStoreDirectResponseStoreProductPrimaryProtocol? primaryProtocol,
-            global::Vercel.CreateIntegrationStoreDirectResponseStoreProductLogDrainStatus? logDrainStatus)
+            global::Vercel.CreateIntegrationStoreDirectResponseStoreProductLogDrainStatus? logDrainStatus,
+            global::Vercel.CreateIntegrationStoreDirectResponseStoreProductPrimaryProtocol? primaryProtocol)
         {
-            this.Id = id;
-            this.Name = name;
-            this.Slug = slug;
-            this.IconUrl = iconUrl;
-            this.Capabilities = capabilities;
-            this.ShortDescription = shortDescription;
-            this.MetadataSchema = metadataSchema;
-            this.ResourceLinks = resourceLinks;
-            this.Tags = tags;
-            this.ProjectConnectionScopes = projectConnectionScopes;
-            this.ShowSSOLinkOnProjectConnection = showSSOLinkOnProjectConnection;
-            this.DisableResourceRenaming = disableResourceRenaming;
-            this.ResourceTitle = resourceTitle;
             this.AgentSkills = agentSkills;
+            this.Capabilities = capabilities;
+            this.DisableResourceRenaming = disableResourceRenaming;
+            this.IconUrl = iconUrl;
+            this.Id = id;
+            this.MetadataSchema = metadataSchema;
+            this.Name = name;
+            this.ProjectConnectionScopes = projectConnectionScopes;
+            this.ResourceLinks = resourceLinks;
+            this.ResourceTitle = resourceTitle;
+            this.ShortDescription = shortDescription;
+            this.ShowSSOLinkOnProjectConnection = showSSOLinkOnProjectConnection;
+            this.Slug = slug;
+            this.Tags = tags;
             this.Repl = repl;
             this.Guides = guides;
             this.Integration = integration ?? throw new global::System.ArgumentNullException(nameof(integration));
             this.IntegrationConfigurationId = integrationConfigurationId ?? throw new global::System.ArgumentNullException(nameof(integrationConfigurationId));
-            this.SupportedProtocols = supportedProtocols ?? throw new global::System.ArgumentNullException(nameof(supportedProtocols));
-            this.PrimaryProtocol = primaryProtocol;
             this.LogDrainStatus = logDrainStatus;
+            this.PrimaryProtocol = primaryProtocol;
+            this.SupportedProtocols = supportedProtocols ?? throw new global::System.ArgumentNullException(nameof(supportedProtocols));
         }
 
         /// <summary>

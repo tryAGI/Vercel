@@ -11,6 +11,24 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("agentTools")]
+        public bool? AgentTools { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("autoSensitive")]
+        public bool? AutoSensitive { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("billable")]
+        public bool? Billable { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mcp")]
         public bool? Mcp { get; set; }
 
@@ -23,26 +41,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sso")]
-        public bool? Sso { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("billable")]
-        public bool? Billable { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("transferable")]
-        public bool? Transferable { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("secretsSync")]
-        public bool? SecretsSync { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
+        public bool? Projects { get; set; }
 
         /// <summary>
         ///
@@ -54,26 +54,26 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
-        public bool? Projects { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("secretsSync")]
+        public bool? SecretsSync { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sso")]
+        public bool? Sso { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("transferable")]
+        public bool? Transferable { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("v0")]
         public bool? V0 { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("autoSensitive")]
-        public bool? AutoSensitive { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("agentTools")]
-        public bool? AgentTools { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -84,44 +84,44 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateIntegrationStoreDirectResponseStoreCapabilities" /> class.
         /// </summary>
+        /// <param name="agentTools"></param>
+        /// <param name="autoSensitive"></param>
+        /// <param name="billable"></param>
         /// <param name="mcp"></param>
         /// <param name="mcpReadonly"></param>
-        /// <param name="sso"></param>
-        /// <param name="billable"></param>
-        /// <param name="transferable"></param>
-        /// <param name="secretsSync"></param>
-        /// <param name="secretRotation"></param>
         /// <param name="projects"></param>
+        /// <param name="secretRotation"></param>
+        /// <param name="secretsSync"></param>
+        /// <param name="sso"></param>
+        /// <param name="transferable"></param>
         /// <param name="v0"></param>
-        /// <param name="autoSensitive"></param>
-        /// <param name="agentTools"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateIntegrationStoreDirectResponseStoreCapabilities(
+            bool? agentTools,
+            bool? autoSensitive,
+            bool? billable,
             bool? mcp,
             bool? mcpReadonly,
-            bool? sso,
-            bool? billable,
-            bool? transferable,
-            bool? secretsSync,
-            global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation, bool?>? secretRotation,
             bool? projects,
-            bool? v0,
-            bool? autoSensitive,
-            bool? agentTools)
+            global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation, bool?>? secretRotation,
+            bool? secretsSync,
+            bool? sso,
+            bool? transferable,
+            bool? v0)
         {
+            this.AgentTools = agentTools;
+            this.AutoSensitive = autoSensitive;
+            this.Billable = billable;
             this.Mcp = mcp;
             this.McpReadonly = mcpReadonly;
-            this.Sso = sso;
-            this.Billable = billable;
-            this.Transferable = transferable;
-            this.SecretsSync = secretsSync;
-            this.SecretRotation = secretRotation;
             this.Projects = projects;
+            this.SecretRotation = secretRotation;
+            this.SecretsSync = secretsSync;
+            this.Sso = sso;
+            this.Transferable = transferable;
             this.V0 = v0;
-            this.AutoSensitive = autoSensitive;
-            this.AgentTools = agentTools;
         }
 
         /// <summary>

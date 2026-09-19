@@ -122,6 +122,18 @@ namespace Vercel
         public bool? Triggers { get; set; }
 
         /// <summary>
+        /// Trigger driver type. Resolved automatically from the service or known service registry when not provided. Only set when using the newly decoupled triggers resolution flow.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("triggerType")]
+        public string? TriggerType { get; set; }
+
+        /// <summary>
+        /// Trigger-specific credentials (e.g. webhook signing secret). Validated and encrypted against the trigger type definition.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("triggerData")]
+        public object? TriggerData { get; set; }
+
+        /// <summary>
         /// Initial trigger destination. Requires triggers to be enabled and a projectId here or at the top level. Connector responses expose the resulting set as triggerDestinations. Replace the complete set with PATCH /v1/connect/connectors/{connector}/trigger-destinations.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("triggerDestination")]
@@ -212,6 +224,12 @@ namespace Vercel
         /// <param name="triggers">
         /// Whether the triggers are enabled for this connector.
         /// </param>
+        /// <param name="triggerType">
+        /// Trigger driver type. Resolved automatically from the service or known service registry when not provided. Only set when using the newly decoupled triggers resolution flow.
+        /// </param>
+        /// <param name="triggerData">
+        /// Trigger-specific credentials (e.g. webhook signing secret). Validated and encrypted against the trigger type definition.
+        /// </param>
         /// <param name="triggerDestination">
         /// Initial trigger destination. Requires triggers to be enabled and a projectId here or at the top level. Connector responses expose the resulting set as triggerDestinations. Replace the complete set with PATCH /v1/connect/connectors/{connector}/trigger-destinations.
         /// </param>
@@ -236,6 +254,8 @@ namespace Vercel
             string? projectId,
             global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.ConnectCreateConnectorRequestEnvironment?, string>>? environments,
             bool? triggers,
+            string? triggerType,
+            object? triggerData,
             global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>? triggerDestination,
             global::System.Collections.Generic.IList<string>? events)
         {
@@ -253,6 +273,8 @@ namespace Vercel
             this.ProjectId = projectId;
             this.Environments = environments;
             this.Triggers = triggers;
+            this.TriggerType = triggerType;
+            this.TriggerData = triggerData;
             this.TriggerDestination = triggerDestination;
             this.Events = events;
         }

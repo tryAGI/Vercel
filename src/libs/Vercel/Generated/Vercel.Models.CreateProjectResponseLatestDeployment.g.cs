@@ -11,13 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
         public global::System.Collections.Generic.IList<string>? Alias { get; set; }
 
@@ -132,9 +125,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        public required string Id { get; set; }
 
         /// <summary>
         ///
@@ -147,6 +140,13 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("monorepoManager")]
         public string? MonorepoManager { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
 
         /// <summary>
         ///
@@ -251,10 +251,10 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateProjectResponseLatestDeployment" /> class.
         /// </summary>
-        /// <param name="id"></param>
         /// <param name="createdAt"></param>
         /// <param name="createdIn"></param>
         /// <param name="deploymentHostname"></param>
+        /// <param name="id"></param>
         /// <param name="name"></param>
         /// <param name="plan"></param>
         /// <param name="private"></param>
@@ -296,10 +296,10 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateProjectResponseLatestDeployment(
-            string id,
             double createdAt,
             string createdIn,
             string deploymentHostname,
+            string id,
             string name,
             global::Vercel.CreateProjectResponseLatestDeploymentPlan plan,
             bool @private,
@@ -333,7 +333,6 @@ namespace Vercel
             string? userId,
             bool? withCache)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Alias = alias;
             this.AliasAssigned = aliasAssigned;
             this.AliasError = aliasError;
@@ -352,9 +351,10 @@ namespace Vercel
             this.DeletedAt = deletedAt;
             this.DeploymentHostname = deploymentHostname ?? throw new global::System.ArgumentNullException(nameof(deploymentHostname));
             this.Forced = forced;
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Meta = meta;
             this.MonorepoManager = monorepoManager;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.OidcTokenClaims = oidcTokenClaims;
             this.Plan = plan;
             this.PreviewCommentsEnabled = previewCommentsEnabled;

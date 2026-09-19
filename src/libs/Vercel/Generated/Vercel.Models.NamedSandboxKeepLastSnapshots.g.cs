@@ -18,14 +18,6 @@ namespace Vercel
         public required double Count { get; set; }
 
         /// <summary>
-        /// Expiration time in milliseconds for kept snapshots.<br/>
-        /// Example: 604800000
-        /// </summary>
-        /// <example>604800000</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("expiration")]
-        public double? Expiration { get; set; }
-
-        /// <summary>
         /// Whether to immediately delete evicted snapshots.<br/>
         /// Example: true
         /// </summary>
@@ -33,6 +25,14 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("deleteEvicted")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool DeleteEvicted { get; set; }
+
+        /// <summary>
+        /// Expiration time in milliseconds for kept snapshots.<br/>
+        /// Example: 604800000
+        /// </summary>
+        /// <example>604800000</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiration")]
+        public double? Expiration { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -64,8 +64,8 @@ namespace Vercel
             double? expiration)
         {
             this.Count = count;
-            this.Expiration = expiration;
             this.DeleteEvicted = deleteEvicted;
+            this.Expiration = expiration;
         }
 
         /// <summary>

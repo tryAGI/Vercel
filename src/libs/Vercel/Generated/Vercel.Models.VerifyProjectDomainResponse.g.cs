@@ -11,16 +11,34 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("apexName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        public required string ApexName { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("apexName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        public double? CreatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironmentId")]
+        public string? CustomEnvironmentId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitBranch")]
+        public string? GitBranch { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ApexName { get; set; }
+        public required string Name { get; set; }
 
         /// <summary>
         ///
@@ -44,26 +62,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitBranch")]
-        public string? GitBranch { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironmentId")]
-        public string? CustomEnvironmentId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         public double? UpdatedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        public double? CreatedAt { get; set; }
 
         /// <summary>
         /// `true` if the domain is verified for use with the project. If `false` it will not be used as an alias on this project until the challenge in `verification` is completed.
@@ -81,42 +81,42 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="VerifyProjectDomainResponse" /> class.
         /// </summary>
-        /// <param name="name"></param>
         /// <param name="apexName"></param>
+        /// <param name="name"></param>
         /// <param name="projectId"></param>
         /// <param name="verified">
         /// `true` if the domain is verified for use with the project. If `false` it will not be used as an alias on this project until the challenge in `verification` is completed.
         /// </param>
+        /// <param name="createdAt"></param>
+        /// <param name="customEnvironmentId"></param>
+        /// <param name="gitBranch"></param>
         /// <param name="redirect"></param>
         /// <param name="redirectStatusCode"></param>
-        /// <param name="gitBranch"></param>
-        /// <param name="customEnvironmentId"></param>
         /// <param name="updatedAt"></param>
-        /// <param name="createdAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VerifyProjectDomainResponse(
-            string name,
             string apexName,
+            string name,
             string projectId,
             bool verified,
+            double? createdAt,
+            string? customEnvironmentId,
+            string? gitBranch,
             string? redirect,
             double? redirectStatusCode,
-            string? gitBranch,
-            string? customEnvironmentId,
-            double? updatedAt,
-            double? createdAt)
+            double? updatedAt)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.ApexName = apexName ?? throw new global::System.ArgumentNullException(nameof(apexName));
+            this.CreatedAt = createdAt;
+            this.CustomEnvironmentId = customEnvironmentId;
+            this.GitBranch = gitBranch;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.Redirect = redirect;
             this.RedirectStatusCode = redirectStatusCode;
-            this.GitBranch = gitBranch;
-            this.CustomEnvironmentId = customEnvironmentId;
             this.UpdatedAt = updatedAt;
-            this.CreatedAt = createdAt;
             this.Verified = verified;
         }
 

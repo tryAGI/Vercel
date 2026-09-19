@@ -11,16 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scanner")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("at")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Scanner { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Reason { get; set; }
+        public required double At { get; set; }
 
         /// <summary>
         ///
@@ -39,9 +32,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("at")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double At { get; set; }
+        public required string Reason { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("scanner")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Scanner { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -52,26 +52,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateProjectResponseAbuseHistoryItem" /> class.
         /// </summary>
-        /// <param name="scanner"></param>
-        /// <param name="reason"></param>
+        /// <param name="at"></param>
         /// <param name="by"></param>
         /// <param name="byId"></param>
-        /// <param name="at"></param>
+        /// <param name="reason"></param>
+        /// <param name="scanner"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateProjectResponseAbuseHistoryItem(
-            string scanner,
-            string reason,
+            double at,
             string by,
             string byId,
-            double at)
+            string reason,
+            string scanner)
         {
-            this.Scanner = scanner ?? throw new global::System.ArgumentNullException(nameof(scanner));
-            this.Reason = reason ?? throw new global::System.ArgumentNullException(nameof(reason));
+            this.At = at;
             this.By = by ?? throw new global::System.ArgumentNullException(nameof(by));
             this.ById = byId ?? throw new global::System.ArgumentNullException(nameof(byId));
-            this.At = at;
+            this.Reason = reason ?? throw new global::System.ArgumentNullException(nameof(reason));
+            this.Scanner = scanner ?? throw new global::System.ArgumentNullException(nameof(scanner));
         }
 
         /// <summary>

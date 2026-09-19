@@ -11,22 +11,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        public string? Action { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("code")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Code { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("message")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Message { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
-        public string? Key { get; set; }
 
         /// <summary>
         ///
@@ -43,8 +36,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        public string? Action { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitBranch")]
+        public string? GitBranch { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
+        public string? Key { get; set; }
 
         /// <summary>
         ///
@@ -55,15 +54,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>))]
-        public global::Vercel.OneOf<string, global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>? Value { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("message")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Message { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitBranch")]
-        public string? GitBranch { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
+        public string? Project { get; set; }
 
         /// <summary>
         ///
@@ -75,8 +74,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
-        public string? Project { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>))]
+        public global::Vercel.OneOf<string, global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -89,42 +89,42 @@ namespace Vercel
         /// </summary>
         /// <param name="code"></param>
         /// <param name="message"></param>
-        /// <param name="key"></param>
+        /// <param name="action"></param>
         /// <param name="envVarId"></param>
         /// <param name="envVarKey"></param>
-        /// <param name="action"></param>
-        /// <param name="link"></param>
-        /// <param name="value"></param>
         /// <param name="gitBranch"></param>
-        /// <param name="target"></param>
+        /// <param name="key"></param>
+        /// <param name="link"></param>
         /// <param name="project"></param>
+        /// <param name="target"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public DeleteSharedEnvVariableResponseFailedItemError(
             string code,
             string message,
-            string? key,
+            string? action,
             string? envVarId,
             string? envVarKey,
-            string? action,
-            string? link,
-            global::Vercel.OneOf<string, global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>? value,
             string? gitBranch,
+            string? key,
+            string? link,
+            string? project,
             global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTargetItem>, global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTarget?>? target,
-            string? project)
+            global::Vercel.OneOf<string, global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>? value)
         {
+            this.Action = action;
             this.Code = code ?? throw new global::System.ArgumentNullException(nameof(code));
-            this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
-            this.Key = key;
             this.EnvVarId = envVarId;
             this.EnvVarKey = envVarKey;
-            this.Action = action;
-            this.Link = link;
-            this.Value = value;
             this.GitBranch = gitBranch;
-            this.Target = target;
+            this.Key = key;
+            this.Link = link;
+            this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
             this.Project = project;
+            this.Target = target;
+            this.Value = value;
         }
 
         /// <summary>

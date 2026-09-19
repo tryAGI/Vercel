@@ -11,6 +11,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("options")]
         public global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant2FlagsDefinitionsOption>? Options { get; set; }
 
@@ -21,12 +27,6 @@ namespace Vercel
         public string? Url { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
-        public string? Description { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -35,20 +35,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDeploymentResponseVariant2FlagsDefinitions2" /> class.
         /// </summary>
+        /// <param name="description"></param>
         /// <param name="options"></param>
         /// <param name="url"></param>
-        /// <param name="description"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant2FlagsDefinitions2(
+            string? description,
             global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant2FlagsDefinitionsOption>? options,
-            string? url,
-            string? description)
+            string? url)
         {
+            this.Description = description;
             this.Options = options;
             this.Url = url;
-            this.Description = description;
         }
 
         /// <summary>

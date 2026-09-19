@@ -9,7 +9,7 @@ namespace Vercel
         /// Schedule a repository for deletion. The repository is marked so it disappears from list/get immediately; subscriber-vcr reclaims every image (manifests, blobs, tags and rows) and finally deletes the repository row asynchronously via the VcrRepositoryRemoved event.
         /// </summary>
         /// <param name="projectId">
-        /// Project ID. Missing or empty values return HTTP 400.
+        /// Project ID or name (slug) within the authenticated team. IDs take precedence over names. Missing or empty values return HTTP 400.
         /// </param>
         /// <param name="idOrName"></param>
         /// <param name="teamId">
@@ -33,7 +33,7 @@ namespace Vercel
         /// Schedule a repository for deletion. The repository is marked so it disappears from list/get immediately; subscriber-vcr reclaims every image (manifests, blobs, tags and rows) and finally deletes the repository row asynchronously via the VcrRepositoryRemoved event.
         /// </summary>
         /// <param name="projectId">
-        /// Project ID. Missing or empty values return HTTP 400.
+        /// Project ID or name (slug) within the authenticated team. IDs take precedence over names. Missing or empty values return HTTP 400.
         /// </param>
         /// <param name="idOrName"></param>
         /// <param name="teamId">

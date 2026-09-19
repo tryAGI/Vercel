@@ -11,6 +11,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("access")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetAliasResponseProtectionBypassVariant2AccessJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetAliasResponseProtectionBypassVariant2Access Access { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double CreatedAt { get; set; }
@@ -32,14 +40,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("access")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetAliasResponseProtectionBypassVariant2AccessJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetAliasResponseProtectionBypassVariant2Access Access { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetAliasResponseProtectionBypassVariant2ScopeJsonConverter))]
         public global::Vercel.GetAliasResponseProtectionBypassVariant2Scope Scope { get; set; }
@@ -53,25 +53,25 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetAliasResponseProtectionBypassVariant2" /> class.
         /// </summary>
+        /// <param name="access"></param>
         /// <param name="createdAt"></param>
         /// <param name="lastUpdatedAt"></param>
         /// <param name="lastUpdatedBy"></param>
-        /// <param name="access"></param>
         /// <param name="scope"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetAliasResponseProtectionBypassVariant2(
+            global::Vercel.GetAliasResponseProtectionBypassVariant2Access access,
             double createdAt,
             double lastUpdatedAt,
             string lastUpdatedBy,
-            global::Vercel.GetAliasResponseProtectionBypassVariant2Access access,
             global::Vercel.GetAliasResponseProtectionBypassVariant2Scope scope)
         {
+            this.Access = access;
             this.CreatedAt = createdAt;
             this.LastUpdatedAt = lastUpdatedAt;
             this.LastUpdatedBy = lastUpdatedBy ?? throw new global::System.ArgumentNullException(nameof(lastUpdatedBy));
-            this.Access = access;
             this.Scope = scope;
         }
 

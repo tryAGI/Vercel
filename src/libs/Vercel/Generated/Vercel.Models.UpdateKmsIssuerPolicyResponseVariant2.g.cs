@@ -11,13 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateKmsIssuerPolicyResponseVariant2KindJsonConverter))]
-        public global::Vercel.UpdateKmsIssuerPolicyResponseVariant2Kind Kind { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clientId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ClientId { get; set; }
@@ -25,15 +18,22 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tokenClaims")]
-        public object? TokenClaims { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string CreatedAt { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string CreatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateKmsIssuerPolicyResponseVariant2KindJsonConverter))]
+        public global::Vercel.UpdateKmsIssuerPolicyResponseVariant2Kind Kind { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tokenClaims")]
+        public object? TokenClaims { get; set; }
 
         /// <summary>
         ///
@@ -66,10 +66,10 @@ namespace Vercel
             global::Vercel.UpdateKmsIssuerPolicyResponseVariant2Kind kind,
             object? tokenClaims)
         {
-            this.Kind = kind;
             this.ClientId = clientId ?? throw new global::System.ArgumentNullException(nameof(clientId));
-            this.TokenClaims = tokenClaims;
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
+            this.Kind = kind;
+            this.TokenClaims = tokenClaims;
             this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
         }
 

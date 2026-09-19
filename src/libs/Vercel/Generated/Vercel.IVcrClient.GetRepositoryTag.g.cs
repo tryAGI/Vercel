@@ -9,7 +9,7 @@ namespace Vercel
         /// Fetch a single tag from a repository, including the backing image's metadata and VHS-readiness status.
         /// </summary>
         /// <param name="projectId">
-        /// Project ID. Missing or empty values return HTTP 400.
+        /// Project ID or name (slug) within the authenticated team. IDs take precedence over names. Missing or empty values return HTTP 400.
         /// </param>
         /// <param name="idOrName"></param>
         /// <param name="tag"></param>
@@ -35,7 +35,7 @@ namespace Vercel
         /// Fetch a single tag from a repository, including the backing image's metadata and VHS-readiness status.
         /// </summary>
         /// <param name="projectId">
-        /// Project ID. Missing or empty values return HTTP 400.
+        /// Project ID or name (slug) within the authenticated team. IDs take precedence over names. Missing or empty values return HTTP 400.
         /// </param>
         /// <param name="idOrName"></param>
         /// <param name="tag"></param>

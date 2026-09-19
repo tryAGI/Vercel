@@ -9,7 +9,7 @@ namespace Vercel
         /// Grant a team access to a VCR repository. Sharing applies to the whole repository.
         /// </summary>
         /// <param name="projectId">
-        /// Project ID. Missing or empty values return HTTP 400.
+        /// Project ID or name (slug) within the authenticated team. IDs take precedence over names. Missing or empty values return HTTP 400.
         /// </param>
         /// <param name="idOrName"></param>
         /// <param name="teamId">
@@ -36,7 +36,7 @@ namespace Vercel
         /// Grant a team access to a VCR repository. Sharing applies to the whole repository.
         /// </summary>
         /// <param name="projectId">
-        /// Project ID. Missing or empty values return HTTP 400.
+        /// Project ID or name (slug) within the authenticated team. IDs take precedence over names. Missing or empty values return HTTP 400.
         /// </param>
         /// <param name="idOrName"></param>
         /// <param name="teamId">
@@ -63,7 +63,7 @@ namespace Vercel
         /// Grant a team access to a VCR repository. Sharing applies to the whole repository.
         /// </summary>
         /// <param name="projectId">
-        /// Project ID. Missing or empty values return HTTP 400.
+        /// Project ID or name (slug) within the authenticated team. IDs take precedence over names. Missing or empty values return HTTP 400.
         /// </param>
         /// <param name="idOrName"></param>
         /// <param name="teamId">

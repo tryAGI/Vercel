@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("active")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Active { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetActionJsonConverter))]
+        public global::Vercel.UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetAction? Action { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetActionJsonConverter))]
-        public global::Vercel.UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetAction? Action { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("active")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Active { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,8 +40,8 @@ namespace Vercel
             bool active,
             global::Vercel.UpdateMicrofrontendsResponseSecurityManagedRulesVercelRulesetAction? action)
         {
-            this.Active = active;
             this.Action = action;
+            this.Active = active;
         }
 
         /// <summary>

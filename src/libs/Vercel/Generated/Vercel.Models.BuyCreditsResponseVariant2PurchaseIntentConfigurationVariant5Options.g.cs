@@ -9,13 +9,6 @@ namespace Vercel
     public sealed partial class BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant5Options
     {
         /// <summary>
-        /// The external plan ID of the Orb plan to subscribe to
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("externalPlanId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ExternalPlanId { get; set; }
-
-        /// <summary>
         /// The prices to add to the subscription
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("addPrices")]
@@ -32,6 +25,13 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("couponRedemptionCode")]
         public string? CouponRedemptionCode { get; set; }
+
+        /// <summary>
+        /// The external plan ID of the Orb plan to subscribe to
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("externalPlanId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ExternalPlanId { get; set; }
 
         /// <summary>
         /// The initial phase order to use for the subscription
@@ -113,10 +113,10 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant5OptionsReplacePrice>? replacePrices,
             string? startDate)
         {
-            this.ExternalPlanId = externalPlanId ?? throw new global::System.ArgumentNullException(nameof(externalPlanId));
             this.AddPrices = addPrices;
             this.AlignBillingWithSubscriptionStartDate = alignBillingWithSubscriptionStartDate;
             this.CouponRedemptionCode = couponRedemptionCode;
+            this.ExternalPlanId = externalPlanId ?? throw new global::System.ArgumentNullException(nameof(externalPlanId));
             this.InitialPhaseOrder = initialPhaseOrder;
             this.Metadata = metadata;
             this.RemovePrices = removePrices;

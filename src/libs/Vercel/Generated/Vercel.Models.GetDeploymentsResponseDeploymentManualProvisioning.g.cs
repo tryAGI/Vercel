@@ -9,18 +9,18 @@ namespace Vercel
     public sealed partial class GetDeploymentsResponseDeploymentManualProvisioning
     {
         /// <summary>
+        /// Timestamp when manual provisioning completed
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("completedAt")]
+        public double? CompletedAt { get; set; }
+
+        /// <summary>
         /// Current provisioning state
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("state")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentManualProvisioningStateJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetDeploymentsResponseDeploymentManualProvisioningState State { get; set; }
-
-        /// <summary>
-        /// Timestamp when manual provisioning completed
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("completedAt")]
-        public double? CompletedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -44,8 +44,8 @@ namespace Vercel
             global::Vercel.GetDeploymentsResponseDeploymentManualProvisioningState state,
             double? completedAt)
         {
-            this.State = state;
             this.CompletedAt = completedAt;
+            this.State = state;
         }
 
         /// <summary>

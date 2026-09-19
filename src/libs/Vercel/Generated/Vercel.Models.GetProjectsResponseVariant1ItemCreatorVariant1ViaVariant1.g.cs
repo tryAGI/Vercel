@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant1ItemCreatorVariant1ViaVariant1TypeJsonConverter))]
-        public global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant1ViaVariant1Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("app")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant1ViaVariant1App App { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("app")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant1ViaVariant1App App { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant1ItemCreatorVariant1ViaVariant1TypeJsonConverter))]
+        public global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant1ViaVariant1Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,8 +40,8 @@ namespace Vercel
             global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant1ViaVariant1App app,
             global::Vercel.GetProjectsResponseVariant1ItemCreatorVariant1ViaVariant1Type type)
         {
-            this.Type = type;
             this.App = app ?? throw new global::System.ArgumentNullException(nameof(app));
+            this.Type = type;
         }
 
         /// <summary>

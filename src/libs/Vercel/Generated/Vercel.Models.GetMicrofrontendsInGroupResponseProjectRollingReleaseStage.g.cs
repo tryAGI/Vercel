@@ -9,23 +9,6 @@ namespace Vercel
     public sealed partial class GetMicrofrontendsInGroupResponseProjectRollingReleaseStage
     {
         /// <summary>
-        /// The percentage of traffic to serve to the canary deployment (0-100)<br/>
-        /// Example: 25
-        /// </summary>
-        /// <example>25</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("targetPercentage")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double TargetPercentage { get; set; }
-
-        /// <summary>
-        /// Whether or not this stage requires manual approval to proceed<br/>
-        /// Example: false
-        /// </summary>
-        /// <example>false</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("requireApproval")]
-        public bool? RequireApproval { get; set; }
-
-        /// <summary>
         /// Duration in minutes for automatic advancement to the next stage<br/>
         /// Example: 600
         /// </summary>
@@ -42,6 +25,23 @@ namespace Vercel
         public bool? LinearShift { get; set; }
 
         /// <summary>
+        /// Whether or not this stage requires manual approval to proceed<br/>
+        /// Example: false
+        /// </summary>
+        /// <example>false</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("requireApproval")]
+        public bool? RequireApproval { get; set; }
+
+        /// <summary>
+        /// The percentage of traffic to serve to the canary deployment (0-100)<br/>
+        /// Example: 25
+        /// </summary>
+        /// <example>25</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("targetPercentage")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double TargetPercentage { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -54,10 +54,6 @@ namespace Vercel
         /// The percentage of traffic to serve to the canary deployment (0-100)<br/>
         /// Example: 25
         /// </param>
-        /// <param name="requireApproval">
-        /// Whether or not this stage requires manual approval to proceed<br/>
-        /// Example: false
-        /// </param>
         /// <param name="duration">
         /// Duration in minutes for automatic advancement to the next stage<br/>
         /// Example: 600
@@ -66,19 +62,23 @@ namespace Vercel
         /// Whether to linearly shift traffic over the duration of this stage<br/>
         /// Example: false
         /// </param>
+        /// <param name="requireApproval">
+        /// Whether or not this stage requires manual approval to proceed<br/>
+        /// Example: false
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetMicrofrontendsInGroupResponseProjectRollingReleaseStage(
             double targetPercentage,
-            bool? requireApproval,
             double? duration,
-            bool? linearShift)
+            bool? linearShift,
+            bool? requireApproval)
         {
-            this.TargetPercentage = targetPercentage;
-            this.RequireApproval = requireApproval;
             this.Duration = duration;
             this.LinearShift = linearShift;
+            this.RequireApproval = requireApproval;
+            this.TargetPercentage = targetPercentage;
         }
 
         /// <summary>

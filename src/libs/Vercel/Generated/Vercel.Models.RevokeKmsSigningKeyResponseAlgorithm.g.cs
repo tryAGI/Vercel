@@ -23,10 +23,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        EdDSA,
-        /// <summary>
-        ///
-        /// </summary>
         Ps256,
         /// <summary>
         ///
@@ -65,7 +61,6 @@ namespace Vercel
                 RevokeKmsSigningKeyResponseAlgorithm.Es256 => "ES256",
                 RevokeKmsSigningKeyResponseAlgorithm.Es384 => "ES384",
                 RevokeKmsSigningKeyResponseAlgorithm.Es512 => "ES512",
-                RevokeKmsSigningKeyResponseAlgorithm.EdDSA => "EdDSA",
                 RevokeKmsSigningKeyResponseAlgorithm.Ps256 => "PS256",
                 RevokeKmsSigningKeyResponseAlgorithm.Ps384 => "PS384",
                 RevokeKmsSigningKeyResponseAlgorithm.Ps512 => "PS512",
@@ -85,7 +80,6 @@ namespace Vercel
                 "ES256" => RevokeKmsSigningKeyResponseAlgorithm.Es256,
                 "ES384" => RevokeKmsSigningKeyResponseAlgorithm.Es384,
                 "ES512" => RevokeKmsSigningKeyResponseAlgorithm.Es512,
-                "EdDSA" => RevokeKmsSigningKeyResponseAlgorithm.EdDSA,
                 "PS256" => RevokeKmsSigningKeyResponseAlgorithm.Ps256,
                 "PS384" => RevokeKmsSigningKeyResponseAlgorithm.Ps384,
                 "PS512" => RevokeKmsSigningKeyResponseAlgorithm.Ps512,

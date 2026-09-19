@@ -11,13 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Source { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("destination")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Destination { get; set; }
@@ -25,14 +18,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("permanent")]
-        public bool? Permanent { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("statusCode")]
-        public double? StatusCode { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("env")]
+        public global::System.Collections.Generic.IList<string>? Env { get; set; }
 
         /// <summary>
         ///
@@ -49,8 +36,21 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("env")]
-        public global::System.Collections.Generic.IList<string>? Env { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("permanent")]
+        public bool? Permanent { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Source { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("statusCode")]
+        public double? StatusCode { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -61,32 +61,32 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDeploymentResponseVariant2ServiceVariant2Redirect" /> class.
         /// </summary>
-        /// <param name="source"></param>
         /// <param name="destination"></param>
-        /// <param name="permanent"></param>
-        /// <param name="statusCode"></param>
+        /// <param name="source"></param>
+        /// <param name="env"></param>
         /// <param name="has"></param>
         /// <param name="missing"></param>
-        /// <param name="env"></param>
+        /// <param name="permanent"></param>
+        /// <param name="statusCode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant2ServiceVariant2Redirect(
-            string source,
             string destination,
-            bool? permanent,
-            double? statusCode,
+            string source,
+            global::System.Collections.Generic.IList<string>? env,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RedirectHaVariant1, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RedirectHaVariant2>>? has,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RedirectMissingItemVariant1, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2RedirectMissingItemVariant2>>? missing,
-            global::System.Collections.Generic.IList<string>? env)
+            bool? permanent,
+            double? statusCode)
         {
-            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
             this.Destination = destination ?? throw new global::System.ArgumentNullException(nameof(destination));
-            this.Permanent = permanent;
-            this.StatusCode = statusCode;
+            this.Env = env;
             this.Has = has;
             this.Missing = missing;
-            this.Env = env;
+            this.Permanent = permanent;
+            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
+            this.StatusCode = statusCode;
         }
 
         /// <summary>

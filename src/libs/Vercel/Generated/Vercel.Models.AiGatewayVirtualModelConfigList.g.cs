@@ -9,17 +9,17 @@ namespace Vercel
     public sealed partial class AiGatewayVirtualModelConfigList
     {
         /// <summary>
+        /// Cursor for the next page, or null when no more pages remain.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cursor")]
+        public string? Cursor { get; set; }
+
+        /// <summary>
         /// The page of VMCs.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("virtualModelConfigs")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Vercel.AiGatewayVirtualModelConfig> VirtualModelConfigs { get; set; }
-
-        /// <summary>
-        /// Cursor for the next page, or null when no more pages remain.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cursor")]
-        public string? Cursor { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,8 +43,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.AiGatewayVirtualModelConfig> virtualModelConfigs,
             string? cursor)
         {
-            this.VirtualModelConfigs = virtualModelConfigs ?? throw new global::System.ArgumentNullException(nameof(virtualModelConfigs));
             this.Cursor = cursor;
+            this.VirtualModelConfigs = virtualModelConfigs ?? throw new global::System.ArgumentNullException(nameof(virtualModelConfigs));
         }
 
         /// <summary>

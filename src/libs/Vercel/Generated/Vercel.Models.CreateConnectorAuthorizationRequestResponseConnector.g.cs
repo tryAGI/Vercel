@@ -9,6 +9,13 @@ namespace Vercel
     public sealed partial class CreateConnectorAuthorizationRequestResponseConnector
     {
         /// <summary>
+        /// Provider-facing display name when the connector type exposes one, falling back to the stored connector name.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("displayName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DisplayName { get; set; }
+
+        /// <summary>
         /// Client id (e.g. `scl_…`).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
@@ -16,18 +23,11 @@ namespace Vercel
         public required string Id { get; set; }
 
         /// <summary>
-        /// Client uid (e.g. `salesforce/my-org`).
+        /// The connector's own name: the operator-given client name, falling back to the client type's name for legacy rows without one.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Uid { get; set; }
-
-        /// <summary>
-        /// Client type (e.g. `oauth`, `salesforce`).
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Type { get; set; }
+        public required string Name { get; set; }
 
         /// <summary>
         /// Resolved service id when known (e.g. `salesforce`), following the `stored.service ?? typeDef.service ?? stored.type` convention.
@@ -42,18 +42,18 @@ namespace Vercel
         public string? ServiceName { get; set; }
 
         /// <summary>
-        /// Provider-facing display name when the connector type exposes one, falling back to the stored connector name.
+        /// Client type (e.g. `oauth`, `salesforce`).
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("displayName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DisplayName { get; set; }
+        public required string Type { get; set; }
 
         /// <summary>
-        /// The connector's own name: the operator-given client name, falling back to the client type's name for legacy rows without one.
+        /// Client uid (e.g. `salesforce/my-org`).
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        public required string Uid { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -64,20 +64,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateConnectorAuthorizationRequestResponseConnector" /> class.
         /// </summary>
+        /// <param name="displayName">
+        /// Provider-facing display name when the connector type exposes one, falling back to the stored connector name.
+        /// </param>
         /// <param name="id">
         /// Client id (e.g. `scl_…`).
         /// </param>
-        /// <param name="uid">
-        /// Client uid (e.g. `salesforce/my-org`).
+        /// <param name="name">
+        /// The connector's own name: the operator-given client name, falling back to the client type's name for legacy rows without one.
         /// </param>
         /// <param name="type">
         /// Client type (e.g. `oauth`, `salesforce`).
         /// </param>
-        /// <param name="displayName">
-        /// Provider-facing display name when the connector type exposes one, falling back to the stored connector name.
-        /// </param>
-        /// <param name="name">
-        /// The connector's own name: the operator-given client name, falling back to the client type's name for legacy rows without one.
+        /// <param name="uid">
+        /// Client uid (e.g. `salesforce/my-org`).
         /// </param>
         /// <param name="service">
         /// Resolved service id when known (e.g. `salesforce`), following the `stored.service ?? typeDef.service ?? stored.type` convention.
@@ -89,21 +89,21 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateConnectorAuthorizationRequestResponseConnector(
-            string id,
-            string uid,
-            string type,
             string displayName,
+            string id,
             string name,
+            string type,
+            string uid,
             string? service,
             string? serviceName)
         {
+            this.DisplayName = displayName ?? throw new global::System.ArgumentNullException(nameof(displayName));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
-            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Service = service;
             this.ServiceName = serviceName;
-            this.DisplayName = displayName ?? throw new global::System.ArgumentNullException(nameof(displayName));
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
+            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
         }
 
         /// <summary>

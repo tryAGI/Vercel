@@ -9,6 +9,12 @@ namespace Vercel
     public sealed partial class ConnectProjectConnectionProject
     {
         /// <summary>
+        /// Custom environments available on the project. This list can include environments where the connector is not enabled.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironments")]
+        public global::System.Collections.Generic.IList<global::Vercel.ConnectProjectConnectionProjectCustomEnvironment>? CustomEnvironments { get; set; }
+
+        /// <summary>
         /// Same Vercel project ID as the connection's top-level `projectId`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
@@ -21,12 +27,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
-
-        /// <summary>
-        /// Custom environments available on the project. This list can include environments where the connector is not enabled.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironments")]
-        public global::System.Collections.Generic.IList<global::Vercel.ConnectProjectConnectionProjectCustomEnvironment>? CustomEnvironments { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -54,9 +54,9 @@ namespace Vercel
             string name,
             global::System.Collections.Generic.IList<global::Vercel.ConnectProjectConnectionProjectCustomEnvironment>? customEnvironments)
         {
+            this.CustomEnvironments = customEnvironments;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.CustomEnvironments = customEnvironments;
         }
 
         /// <summary>

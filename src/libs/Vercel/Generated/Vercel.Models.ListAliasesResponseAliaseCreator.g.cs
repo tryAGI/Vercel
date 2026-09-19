@@ -9,6 +9,14 @@ namespace Vercel
     public sealed partial class ListAliasesResponseAliaseCreator
     {
         /// <summary>
+        /// Email of the user who created the alias<br/>
+        /// Example: john-doe@gmail.com
+        /// </summary>
+        /// <example>john-doe@gmail.com</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
+        public string? Email { get; set; }
+
+        /// <summary>
         /// ID of the user who created the alias<br/>
         /// Example: 96SnxkFiMyVKsK3pnoHfx3Hz
         /// </summary>
@@ -16,14 +24,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Uid { get; set; }
-
-        /// <summary>
-        /// Email of the user who created the alias<br/>
-        /// Example: john-doe@gmail.com
-        /// </summary>
-        /// <example>john-doe@gmail.com</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
-        public string? Email { get; set; }
 
         /// <summary>
         /// Username of the user who created the alias<br/>
@@ -62,8 +62,8 @@ namespace Vercel
             string? email,
             string? username)
         {
-            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
             this.Email = email;
+            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
             this.Username = username;
         }
 

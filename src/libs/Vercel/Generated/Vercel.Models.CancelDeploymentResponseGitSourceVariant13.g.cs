@@ -11,9 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CancelDeploymentResponseGitSourceVariant13TypeJsonConverter))]
-        public global::Vercel.CancelDeploymentResponseGitSourceVariant13Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("org")]
+        public string? Org { get; set; }
 
         /// <summary>
         ///
@@ -25,9 +24,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sha")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Sha { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("repo")]
+        public string? Repo { get; set; }
 
         /// <summary>
         ///
@@ -39,14 +37,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("org")]
-        public string? Org { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("sha")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Sha { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("repo")]
-        public string? Repo { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CancelDeploymentResponseGitSourceVariant13TypeJsonConverter))]
+        public global::Vercel.CancelDeploymentResponseGitSourceVariant13Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -58,28 +58,28 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CancelDeploymentResponseGitSourceVariant13" /> class.
         /// </summary>
         /// <param name="ref"></param>
-        /// <param name="sha"></param>
         /// <param name="repoId"></param>
-        /// <param name="type"></param>
+        /// <param name="sha"></param>
         /// <param name="org"></param>
         /// <param name="repo"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CancelDeploymentResponseGitSourceVariant13(
             string @ref,
-            string sha,
             double repoId,
-            global::Vercel.CancelDeploymentResponseGitSourceVariant13Type type,
+            string sha,
             string? org,
-            string? repo)
+            string? repo,
+            global::Vercel.CancelDeploymentResponseGitSourceVariant13Type type)
         {
-            this.Type = type;
-            this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
-            this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
-            this.RepoId = repoId;
             this.Org = org;
+            this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
             this.Repo = repo;
+            this.RepoId = repoId;
+            this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
+            this.Type = type;
         }
 
         /// <summary>

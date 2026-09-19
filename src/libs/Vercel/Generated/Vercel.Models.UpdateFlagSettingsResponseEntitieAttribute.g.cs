@@ -18,15 +18,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("labels")]
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSettingsResponseEntitieAttributeLabel>? Labels { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("labels")]
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSettingsResponseEntitieAttributeLabel>? Labels { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,8 +49,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSettingsResponseEntitieAttributeLabel>? labels)
         {
             this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
-            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
             this.Labels = labels;
+            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
         }
 
         /// <summary>

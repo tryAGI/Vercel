@@ -11,17 +11,17 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectResponseTrustedIpsVariant1DeploymentTypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("addresses")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.CreateProjectResponseTrustedIpsVariant1DeploymentType DeploymentType { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.CreateProjectResponseTrustedIpsVariant1Addresse> Addresses { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("addresses")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectResponseTrustedIpsVariant1DeploymentTypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.CreateProjectResponseTrustedIpsVariant1Addresse> Addresses { get; set; }
+        public required global::Vercel.CreateProjectResponseTrustedIpsVariant1DeploymentType DeploymentType { get; set; }
 
         /// <summary>
         ///
@@ -40,19 +40,19 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateProjectResponseTrustedIpsVariant1" /> class.
         /// </summary>
-        /// <param name="deploymentType"></param>
         /// <param name="addresses"></param>
+        /// <param name="deploymentType"></param>
         /// <param name="protectionMode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateProjectResponseTrustedIpsVariant1(
-            global::Vercel.CreateProjectResponseTrustedIpsVariant1DeploymentType deploymentType,
             global::System.Collections.Generic.IList<global::Vercel.CreateProjectResponseTrustedIpsVariant1Addresse> addresses,
+            global::Vercel.CreateProjectResponseTrustedIpsVariant1DeploymentType deploymentType,
             global::Vercel.CreateProjectResponseTrustedIpsVariant1ProtectionMode protectionMode)
         {
-            this.DeploymentType = deploymentType;
             this.Addresses = addresses ?? throw new global::System.ArgumentNullException(nameof(addresses));
+            this.DeploymentType = deploymentType;
             this.ProtectionMode = protectionMode;
         }
 

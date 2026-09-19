@@ -15,13 +15,6 @@ namespace Vercel
         public string? x_schema { get; set; }
 
         /// <summary>
-        /// The version of the microfrontends config schema.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("version")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetMicrofrontendsConfigForProjectResponseConfigVersionJsonConverter))]
-        public global::Vercel.GetMicrofrontendsConfigForProjectResponseConfigVersion? Version { get; set; }
-
-        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("applications")]
@@ -33,6 +26,13 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("options")]
         public global::Vercel.GetMicrofrontendsConfigForProjectResponseConfigOptions? Options { get; set; }
+
+        /// <summary>
+        /// The version of the microfrontends config schema.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("version")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetMicrofrontendsConfigForProjectResponseConfigVersionJsonConverter))]
+        public global::Vercel.GetMicrofrontendsConfigForProjectResponseConfigVersion? Version { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,11 +47,11 @@ namespace Vercel
         /// <param name="x_schema">
         /// See https://openapi.vercel.sh/microfrontends.json.
         /// </param>
-        /// <param name="version">
-        /// The version of the microfrontends config schema.
-        /// </param>
         /// <param name="options">
         /// Optional configuration options for the microfrontend.
+        /// </param>
+        /// <param name="version">
+        /// The version of the microfrontends config schema.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -59,13 +59,13 @@ namespace Vercel
         public GetMicrofrontendsConfigForProjectResponseConfig(
             object applications,
             string? x_schema,
-            global::Vercel.GetMicrofrontendsConfigForProjectResponseConfigVersion? version,
-            global::Vercel.GetMicrofrontendsConfigForProjectResponseConfigOptions? options)
+            global::Vercel.GetMicrofrontendsConfigForProjectResponseConfigOptions? options,
+            global::Vercel.GetMicrofrontendsConfigForProjectResponseConfigVersion? version)
         {
             this.x_schema = x_schema;
-            this.Version = version;
             this.Applications = applications ?? throw new global::System.ArgumentNullException(nameof(applications));
             this.Options = options;
+            this.Version = version;
         }
 
         /// <summary>

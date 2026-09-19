@@ -11,6 +11,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiry")]
+        public double? Expiry { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("src")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Src { get; set; }
@@ -21,12 +27,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Status { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("expiry")]
-        public double? Expiry { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -48,9 +48,9 @@ namespace Vercel
             double status,
             double? expiry)
         {
+            this.Expiry = expiry;
             this.Src = src ?? throw new global::System.ArgumentNullException(nameof(src));
             this.Status = status;
-            this.Expiry = expiry;
         }
 
         /// <summary>

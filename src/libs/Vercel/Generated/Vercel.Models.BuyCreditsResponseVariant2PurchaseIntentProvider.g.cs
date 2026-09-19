@@ -9,11 +9,23 @@ namespace Vercel
     public sealed partial class BuyCreditsResponseVariant2PurchaseIntentProvider
     {
         /// <summary>
+        /// The currency conversion rate used by the provider
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("currencyConversionRate")]
+        public string? CurrencyConversionRate { get; set; }
+
+        /// <summary>
         /// Provider resource id
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resourceId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ResourceId { get; set; }
+
+        /// <summary>
+        /// Whether a Stripe Shared Payment Token was used for this purchase. Only applicable when type is stripe_invoice_immediate.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("stripeSharedPaymentTokenUsed")]
+        public bool? StripeSharedPaymentTokenUsed { get; set; }
 
         /// <summary>
         /// The type of the purchase provider
@@ -22,18 +34,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.BuyCreditsResponseVariant2PurchaseIntentProviderTypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.BuyCreditsResponseVariant2PurchaseIntentProviderType Type { get; set; }
-
-        /// <summary>
-        /// The currency conversion rate used by the provider
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("currencyConversionRate")]
-        public string? CurrencyConversionRate { get; set; }
-
-        /// <summary>
-        /// Whether a Stripe Shared Payment Token was used for this purchase. Only applicable when type is stripe_invoice_immediate.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("stripeSharedPaymentTokenUsed")]
-        public bool? StripeSharedPaymentTokenUsed { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -65,10 +65,10 @@ namespace Vercel
             string? currencyConversionRate,
             bool? stripeSharedPaymentTokenUsed)
         {
-            this.ResourceId = resourceId ?? throw new global::System.ArgumentNullException(nameof(resourceId));
-            this.Type = type;
             this.CurrencyConversionRate = currencyConversionRate;
+            this.ResourceId = resourceId ?? throw new global::System.ArgumentNullException(nameof(resourceId));
             this.StripeSharedPaymentTokenUsed = stripeSharedPaymentTokenUsed;
+            this.Type = type;
         }
 
         /// <summary>

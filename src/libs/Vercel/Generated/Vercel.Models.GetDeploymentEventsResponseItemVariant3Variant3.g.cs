@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentEventsResponseItemVariant3Variant3TypeJsonConverter))]
-        public global::Vercel.GetDeploymentEventsResponseItemVariant3Variant3Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("date")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double Date { get; set; }
 
         /// <summary>
         ///
@@ -25,9 +25,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("date")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Date { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentEventsResponseItemVariant3Variant3TypeJsonConverter))]
+        public global::Vercel.GetDeploymentEventsResponseItemVariant3Variant3Type Type { get; set; }
 
         /// <summary>
         ///
@@ -57,8 +57,8 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDeploymentEventsResponseItemVariant3Variant3" /> class.
         /// </summary>
-        /// <param name="deploymentId"></param>
         /// <param name="date"></param>
+        /// <param name="deploymentId"></param>
         /// <param name="alias"></param>
         /// <param name="type"></param>
         /// <param name="aliasError"></param>
@@ -67,16 +67,16 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentEventsResponseItemVariant3Variant3(
-            string deploymentId,
             double date,
+            string deploymentId,
             global::System.Collections.Generic.IList<string> alias,
             global::Vercel.GetDeploymentEventsResponseItemVariant3Variant3Type type,
             global::Vercel.GetDeploymentEventsResponseItemVariant3Variant3AliasError? aliasError,
             global::Vercel.GetDeploymentEventsResponseItemVariant3Variant3AliasWarning? aliasWarning)
         {
-            this.Type = type;
-            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
             this.Date = date;
+            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
+            this.Type = type;
             this.Alias = alias ?? throw new global::System.ArgumentNullException(nameof(alias));
             this.AliasError = aliasError;
             this.AliasWarning = aliasWarning;

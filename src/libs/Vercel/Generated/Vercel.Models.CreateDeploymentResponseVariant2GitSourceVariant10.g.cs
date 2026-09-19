@@ -11,21 +11,32 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2GitSourceVariant10TypeJsonConverter))]
-        public global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant10Type Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("org")]
         public string? Org { get; set; }
 
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("prId")]
+        public double? PrId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ref")]
+        public string? Ref { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("repo")]
         public string? Repo { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("repoPushedAt")]
+        public double? RepoPushedAt { get; set; }
 
         /// <summary>
         ///
@@ -37,20 +48,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("repoPushedAt")]
-        public double? RepoPushedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ref")]
-        public string? Ref { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prId")]
-        public double? PrId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2GitSourceVariant10TypeJsonConverter))]
+        public global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant10Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -62,31 +62,31 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateDeploymentResponseVariant2GitSourceVariant10" /> class.
         /// </summary>
         /// <param name="sha"></param>
-        /// <param name="type"></param>
         /// <param name="org"></param>
+        /// <param name="prId"></param>
+        /// <param name="ref"></param>
         /// <param name="repo"></param>
         /// <param name="repoPushedAt"></param>
-        /// <param name="ref"></param>
-        /// <param name="prId"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateDeploymentResponseVariant2GitSourceVariant10(
             string sha,
-            global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant10Type type,
             string? org,
+            double? prId,
+            string? @ref,
             string? repo,
             double? repoPushedAt,
-            string? @ref,
-            double? prId)
+            global::Vercel.CreateDeploymentResponseVariant2GitSourceVariant10Type type)
         {
-            this.Type = type;
             this.Org = org;
-            this.Repo = repo;
-            this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
-            this.RepoPushedAt = repoPushedAt;
-            this.Ref = @ref;
             this.PrId = prId;
+            this.Ref = @ref;
+            this.Repo = repo;
+            this.RepoPushedAt = repoPushedAt;
+            this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
+            this.Type = type;
         }
 
         /// <summary>

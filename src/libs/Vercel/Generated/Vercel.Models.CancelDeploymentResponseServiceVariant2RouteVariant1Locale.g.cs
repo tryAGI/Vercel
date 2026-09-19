@@ -11,14 +11,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("redirect")]
-        public global::System.Collections.Generic.Dictionary<string, string>? Redirect { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cookie")]
+        public string? Cookie { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cookie")]
-        public string? Cookie { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("redirect")]
+        public global::System.Collections.Generic.Dictionary<string, string>? Redirect { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +29,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CancelDeploymentResponseServiceVariant2RouteVariant1Locale" /> class.
         /// </summary>
-        /// <param name="redirect"></param>
         /// <param name="cookie"></param>
+        /// <param name="redirect"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CancelDeploymentResponseServiceVariant2RouteVariant1Locale(
-            global::System.Collections.Generic.Dictionary<string, string>? redirect,
-            string? cookie)
+            string? cookie,
+            global::System.Collections.Generic.Dictionary<string, string>? redirect)
         {
-            this.Redirect = redirect;
             this.Cookie = cookie;
+            this.Redirect = redirect;
         }
 
         /// <summary>

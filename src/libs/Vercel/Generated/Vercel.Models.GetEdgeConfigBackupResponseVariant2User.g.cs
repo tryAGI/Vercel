@@ -11,16 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Username { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("avatar")]
+        public string? Avatar { get; set; }
 
         /// <summary>
         ///
@@ -32,14 +24,22 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         public string? Name { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("avatar")]
-        public string? Avatar { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Username { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -50,26 +50,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetEdgeConfigBackupResponseVariant2User" /> class.
         /// </summary>
+        /// <param name="email"></param>
         /// <param name="id"></param>
         /// <param name="username"></param>
-        /// <param name="email"></param>
-        /// <param name="name"></param>
         /// <param name="avatar"></param>
+        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetEdgeConfigBackupResponseVariant2User(
+            string email,
             string id,
             string username,
-            string email,
-            string? name,
-            string? avatar)
+            string? avatar,
+            string? name)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Username = username ?? throw new global::System.ArgumentNullException(nameof(username));
-            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
-            this.Name = name;
             this.Avatar = avatar;
+            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Name = name;
+            this.Username = username ?? throw new global::System.ArgumentNullException(nameof(username));
         }
 
         /// <summary>

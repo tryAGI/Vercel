@@ -11,6 +11,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("filter")]
+        public string? Filter { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("since")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Since { get; set; }
@@ -21,12 +27,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("until")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Until { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("filter")]
-        public string? Filter { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -48,9 +48,9 @@ namespace Vercel
             string until,
             string? filter)
         {
+            this.Filter = filter;
             this.Since = since ?? throw new global::System.ArgumentNullException(nameof(since));
             this.Until = until ?? throw new global::System.ArgumentNullException(nameof(until));
-            this.Filter = filter;
         }
 
         /// <summary>

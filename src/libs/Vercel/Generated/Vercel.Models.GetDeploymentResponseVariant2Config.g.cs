@@ -11,20 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("version")]
-        public double? Version { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("functionType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ConfigFunctionTypeJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetDeploymentResponseVariant2ConfigFunctionType FunctionType { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("functionMemoryType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ConfigFunctionMemoryTypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -39,14 +25,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("secureComputePrimaryRegion")]
-        public string? SecureComputePrimaryRegion { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("secureComputeFallbackRegion")]
-        public string? SecureComputeFallbackRegion { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("functionType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ConfigFunctionTypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetDeploymentResponseVariant2ConfigFunctionType FunctionType { get; set; }
 
         /// <summary>
         ///
@@ -61,6 +43,24 @@ namespace Vercel
         public global::Vercel.GetDeploymentResponseVariant2ConfigResourceConfig? ResourceConfig { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("secureComputeFallbackRegion")]
+        public string? SecureComputeFallbackRegion { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("secureComputePrimaryRegion")]
+        public string? SecureComputePrimaryRegion { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("version")]
+        public double? Version { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -69,37 +69,37 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDeploymentResponseVariant2Config" /> class.
         /// </summary>
-        /// <param name="functionType"></param>
         /// <param name="functionMemoryType"></param>
-        /// <param name="version"></param>
+        /// <param name="functionType"></param>
         /// <param name="functionTimeout"></param>
-        /// <param name="secureComputePrimaryRegion"></param>
-        /// <param name="secureComputeFallbackRegion"></param>
         /// <param name="isUsingActiveCPU"></param>
         /// <param name="resourceConfig">
         /// Build resource configuration snapshot for this deployment.
         /// </param>
+        /// <param name="secureComputeFallbackRegion"></param>
+        /// <param name="secureComputePrimaryRegion"></param>
+        /// <param name="version"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant2Config(
-            global::Vercel.GetDeploymentResponseVariant2ConfigFunctionType functionType,
             global::Vercel.GetDeploymentResponseVariant2ConfigFunctionMemoryType functionMemoryType,
-            double? version,
+            global::Vercel.GetDeploymentResponseVariant2ConfigFunctionType functionType,
             double? functionTimeout,
-            string? secureComputePrimaryRegion,
-            string? secureComputeFallbackRegion,
             bool? isUsingActiveCPU,
-            global::Vercel.GetDeploymentResponseVariant2ConfigResourceConfig? resourceConfig)
+            global::Vercel.GetDeploymentResponseVariant2ConfigResourceConfig? resourceConfig,
+            string? secureComputeFallbackRegion,
+            string? secureComputePrimaryRegion,
+            double? version)
         {
-            this.Version = version;
-            this.FunctionType = functionType;
             this.FunctionMemoryType = functionMemoryType;
             this.FunctionTimeout = functionTimeout;
-            this.SecureComputePrimaryRegion = secureComputePrimaryRegion;
-            this.SecureComputeFallbackRegion = secureComputeFallbackRegion;
+            this.FunctionType = functionType;
             this.IsUsingActiveCPU = isUsingActiveCPU;
             this.ResourceConfig = resourceConfig;
+            this.SecureComputeFallbackRegion = secureComputeFallbackRegion;
+            this.SecureComputePrimaryRegion = secureComputePrimaryRegion;
+            this.Version = version;
         }
 
         /// <summary>

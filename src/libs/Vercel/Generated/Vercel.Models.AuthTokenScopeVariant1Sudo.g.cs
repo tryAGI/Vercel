@@ -9,6 +9,13 @@ namespace Vercel
     public sealed partial class AuthTokenScopeVariant1Sudo
     {
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double ExpiresAt { get; set; }
+
+        /// <summary>
         /// Possible step-up auth origins
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
@@ -23,13 +30,6 @@ namespace Vercel
         public double? VerifiedAt { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double ExpiresAt { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -38,22 +38,22 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="AuthTokenScopeVariant1Sudo" /> class.
         /// </summary>
+        /// <param name="expiresAt"></param>
         /// <param name="origin">
         /// Possible step-up auth origins
         /// </param>
-        /// <param name="expiresAt"></param>
         /// <param name="verifiedAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AuthTokenScopeVariant1Sudo(
-            global::Vercel.AuthTokenScopeVariant1SudoOrigin origin,
             double expiresAt,
+            global::Vercel.AuthTokenScopeVariant1SudoOrigin origin,
             double? verifiedAt)
         {
+            this.ExpiresAt = expiresAt;
             this.Origin = origin;
             this.VerifiedAt = verifiedAt;
-            this.ExpiresAt = expiresAt;
         }
 
         /// <summary>

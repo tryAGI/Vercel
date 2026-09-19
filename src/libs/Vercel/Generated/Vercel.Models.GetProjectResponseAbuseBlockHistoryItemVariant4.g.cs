@@ -18,23 +18,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("route")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetProjectResponseAbuseBlockHistoryItemVariant4RouteVariant1, global::Vercel.GetProjectResponseAbuseBlockHistoryItemVariant4RouteVariant2>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<global::Vercel.GetProjectResponseAbuseBlockHistoryItemVariant4RouteVariant1, global::Vercel.GetProjectResponseAbuseBlockHistoryItemVariant4RouteVariant2> Route { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("statusCode")]
-        public double? StatusCode { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("actor")]
+        public string? Actor { get; set; }
 
         /// <summary>
         ///
@@ -45,14 +30,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("actor")]
-        public string? Actor { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("comment")]
+        public string? Comment { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("comment")]
-        public string? Comment { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
 
         /// <summary>
         ///
@@ -67,6 +53,20 @@ namespace Vercel
         public bool? IsCascading { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("route")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetProjectResponseAbuseBlockHistoryItemVariant4RouteVariant1, global::Vercel.GetProjectResponseAbuseBlockHistoryItemVariant4RouteVariant2>))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.OneOf<global::Vercel.GetProjectResponseAbuseBlockHistoryItemVariant4RouteVariant1, global::Vercel.GetProjectResponseAbuseBlockHistoryItemVariant4RouteVariant2> Route { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("statusCode")]
+        public double? StatusCode { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -75,38 +75,38 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectResponseAbuseBlockHistoryItemVariant4" /> class.
         /// </summary>
-        /// <param name="route"></param>
         /// <param name="createdAt"></param>
+        /// <param name="route"></param>
         /// <param name="action"></param>
-        /// <param name="statusCode"></param>
-        /// <param name="caseId"></param>
         /// <param name="actor"></param>
+        /// <param name="caseId"></param>
         /// <param name="comment"></param>
         /// <param name="ineligibleForAppeal"></param>
         /// <param name="isCascading"></param>
+        /// <param name="statusCode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectResponseAbuseBlockHistoryItemVariant4(
-            global::Vercel.OneOf<global::Vercel.GetProjectResponseAbuseBlockHistoryItemVariant4RouteVariant1, global::Vercel.GetProjectResponseAbuseBlockHistoryItemVariant4RouteVariant2> route,
             double createdAt,
+            global::Vercel.OneOf<global::Vercel.GetProjectResponseAbuseBlockHistoryItemVariant4RouteVariant1, global::Vercel.GetProjectResponseAbuseBlockHistoryItemVariant4RouteVariant2> route,
             global::Vercel.GetProjectResponseAbuseBlockHistoryItemVariant4Action action,
-            double? statusCode,
-            string? caseId,
             string? actor,
+            string? caseId,
             string? comment,
             bool? ineligibleForAppeal,
-            bool? isCascading)
+            bool? isCascading,
+            double? statusCode)
         {
             this.Action = action;
-            this.Route = route;
-            this.StatusCode = statusCode;
-            this.CreatedAt = createdAt;
-            this.CaseId = caseId;
             this.Actor = actor;
+            this.CaseId = caseId;
             this.Comment = comment;
+            this.CreatedAt = createdAt;
             this.IneligibleForAppeal = ineligibleForAppeal;
             this.IsCascading = isCascading;
+            this.Route = route;
+            this.StatusCode = statusCode;
         }
 
         /// <summary>

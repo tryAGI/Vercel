@@ -18,9 +18,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("actor")]
+        public string? Actor { get; set; }
 
         /// <summary>
         ///
@@ -31,14 +30,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("actor")]
-        public string? Actor { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("comment")]
+        public string? Comment { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("comment")]
-        public string? Comment { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
 
         /// <summary>
         ///
@@ -63,8 +63,8 @@ namespace Vercel
         /// </summary>
         /// <param name="createdAt"></param>
         /// <param name="action"></param>
-        /// <param name="caseId"></param>
         /// <param name="actor"></param>
+        /// <param name="caseId"></param>
         /// <param name="comment"></param>
         /// <param name="ineligibleForAppeal"></param>
         /// <param name="isCascading"></param>
@@ -74,17 +74,17 @@ namespace Vercel
         public UploadProjectAvatarResponseAbuseBlockHistoryItemVariant2(
             double createdAt,
             global::Vercel.UploadProjectAvatarResponseAbuseBlockHistoryItemVariant2Action action,
-            string? caseId,
             string? actor,
+            string? caseId,
             string? comment,
             bool? ineligibleForAppeal,
             bool? isCascading)
         {
             this.Action = action;
-            this.CreatedAt = createdAt;
-            this.CaseId = caseId;
             this.Actor = actor;
+            this.CaseId = caseId;
             this.Comment = comment;
+            this.CreatedAt = createdAt;
             this.IneligibleForAppeal = ineligibleForAppeal;
             this.IsCascading = isCascading;
         }

@@ -23,10 +23,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        EdDSA,
-        /// <summary>
-        ///
-        /// </summary>
         Ps256,
         /// <summary>
         ///
@@ -65,7 +61,6 @@ namespace Vercel
                 CreateKmsIssuerResponseAlgorithm.Es256 => "ES256",
                 CreateKmsIssuerResponseAlgorithm.Es384 => "ES384",
                 CreateKmsIssuerResponseAlgorithm.Es512 => "ES512",
-                CreateKmsIssuerResponseAlgorithm.EdDSA => "EdDSA",
                 CreateKmsIssuerResponseAlgorithm.Ps256 => "PS256",
                 CreateKmsIssuerResponseAlgorithm.Ps384 => "PS384",
                 CreateKmsIssuerResponseAlgorithm.Ps512 => "PS512",
@@ -85,7 +80,6 @@ namespace Vercel
                 "ES256" => CreateKmsIssuerResponseAlgorithm.Es256,
                 "ES384" => CreateKmsIssuerResponseAlgorithm.Es384,
                 "ES512" => CreateKmsIssuerResponseAlgorithm.Es512,
-                "EdDSA" => CreateKmsIssuerResponseAlgorithm.EdDSA,
                 "PS256" => CreateKmsIssuerResponseAlgorithm.Ps256,
                 "PS384" => CreateKmsIssuerResponseAlgorithm.Ps384,
                 "PS512" => CreateKmsIssuerResponseAlgorithm.Ps512,

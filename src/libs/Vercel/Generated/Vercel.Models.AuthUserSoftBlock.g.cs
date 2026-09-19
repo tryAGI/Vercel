@@ -18,17 +18,17 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AuthUserSoftBlockReasonJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AuthUserSoftBlockReason Reason { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("blockedDueToOverageType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AuthUserSoftBlockBlockedDueToOverageTypeJsonConverter))]
+        public global::Vercel.AuthUserSoftBlockBlockedDueToOverageType? BlockedDueToOverageType { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("blockedDueToOverageType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AuthUserSoftBlockBlockedDueToOverageTypeJsonConverter))]
-        public global::Vercel.AuthUserSoftBlockBlockedDueToOverageType? BlockedDueToOverageType { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AuthUserSoftBlockReasonJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.AuthUserSoftBlockReason Reason { get; set; }
 
         /// <summary>
         /// Since September 2026. Set only by `billing-usage-alerts` for usage plans with a `blockDurationMs`; its presence marks a pause that expires on its own.
@@ -61,8 +61,8 @@ namespace Vercel
             double? unpauseAt)
         {
             this.BlockedAt = blockedAt;
-            this.Reason = reason;
             this.BlockedDueToOverageType = blockedDueToOverageType;
+            this.Reason = reason;
             this.UnpauseAt = unpauseAt;
         }
 

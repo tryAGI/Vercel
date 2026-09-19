@@ -11,9 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("entrypoint")]
+        public string? Entrypoint { get; set; }
 
         /// <summary>
         ///
@@ -25,20 +24,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("entrypoint")]
-        public string? Entrypoint { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("path")]
         public string? Path { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("step")]
-        public string? Step { get; set; }
 
         /// <summary>
         ///
@@ -53,6 +40,19 @@ namespace Vercel
         public string? ServiceName { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("step")]
+        public string? Step { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Type { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -61,32 +61,32 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDeploymentEventsResponseItemVariant1PayloadInfo" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="name"></param>
+        /// <param name="type"></param>
         /// <param name="entrypoint"></param>
         /// <param name="path"></param>
-        /// <param name="step"></param>
         /// <param name="readyState"></param>
         /// <param name="serviceName"></param>
+        /// <param name="step"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentEventsResponseItemVariant1PayloadInfo(
-            string type,
             string name,
+            string type,
             string? entrypoint,
             string? path,
-            string? step,
             string? readyState,
-            string? serviceName)
+            string? serviceName,
+            string? step)
         {
-            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Entrypoint = entrypoint;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Path = path;
-            this.Step = step;
             this.ReadyState = readyState;
             this.ServiceName = serviceName;
+            this.Step = step;
+            this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
         }
 
         /// <summary>

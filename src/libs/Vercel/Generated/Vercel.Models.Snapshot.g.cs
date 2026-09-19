@@ -9,6 +9,39 @@ namespace Vercel
     public sealed partial class Snapshot
     {
         /// <summary>
+        /// CPU architecture required to restore the snapshot.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("architecture")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SnapshotArchitectureJsonConverter))]
+        public global::Vercel.SnapshotArchitecture? Architecture { get; set; }
+
+        /// <summary>
+        /// The time when the snapshot was created, in milliseconds since the epoch.<br/>
+        /// Example: 1750344501629L
+        /// </summary>
+        /// <example>1750344501629L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
+
+        /// <summary>
+        /// The method used to create the snapshot.<br/>
+        /// Example: manual
+        /// </summary>
+        /// <example>manual</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("creationMethod")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SnapshotCreationMethodJsonConverter))]
+        public global::Vercel.SnapshotCreationMethod? CreationMethod { get; set; }
+
+        /// <summary>
+        /// The time when the snapshot will expire, in milliseconds since the epoch. If not set, the snapshot does not have any expiration.<br/>
+        /// Example: 1750344501629L
+        /// </summary>
+        /// <example>1750344501629L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
+        public double? ExpiresAt { get; set; }
+
+        /// <summary>
         /// The unique identifier of the snapshot.<br/>
         /// Example: snap_123a6c5209bc3778245d011443644c8d27dc2c50
         /// </summary>
@@ -18,13 +51,21 @@ namespace Vercel
         public required string Id { get; set; }
 
         /// <summary>
-        /// The unique identifier of the session from which the snapshot was created.<br/>
-        /// Example: sbx_123a6c5209bc3778245d011443644c8d27dc2c50
+        /// The last time the snapshot was used (e.g. to resume or create a sandbox), in milliseconds since the epoch. Falls back to `createdAt` for older snapshots that predate this field.<br/>
+        /// Example: 1750344501629L
         /// </summary>
-        /// <example>sbx_123a6c5209bc3778245d011443644c8d27dc2c50</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sourceSessionId")]
+        /// <example>1750344501629L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("lastUsedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string SourceSessionId { get; set; }
+        public required double LastUsedAt { get; set; }
+
+        /// <summary>
+        /// The unique identifier of the parent snapshot, if this snapshot was created from another snapshot.<br/>
+        /// Example: snap_parent123
+        /// </summary>
+        /// <example>snap_parent123</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("parentId")]
+        public string? ParentId { get; set; }
 
         /// <summary>
         /// The region where the snapshot is stored.<br/>
@@ -43,16 +84,6 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? Regions { get; set; }
 
         /// <summary>
-        /// The status of the snapshot.<br/>
-        /// Example: created
-        /// </summary>
-        /// <example>created</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SnapshotStatusJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.SnapshotStatus Status { get; set; }
-
-        /// <summary>
         /// The size of the snapshot in bytes.<br/>
         /// Example: 104857600
         /// </summary>
@@ -62,21 +93,23 @@ namespace Vercel
         public required double SizeBytes { get; set; }
 
         /// <summary>
-        /// The time when the snapshot will expire, in milliseconds since the epoch. If not set, the snapshot does not have any expiration.<br/>
-        /// Example: 1750344501629L
+        /// The unique identifier of the session from which the snapshot was created.<br/>
+        /// Example: sbx_123a6c5209bc3778245d011443644c8d27dc2c50
         /// </summary>
-        /// <example>1750344501629L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
-        public double? ExpiresAt { get; set; }
+        /// <example>sbx_123a6c5209bc3778245d011443644c8d27dc2c50</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sourceSessionId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string SourceSessionId { get; set; }
 
         /// <summary>
-        /// The time when the snapshot was created, in milliseconds since the epoch.<br/>
-        /// Example: 1750344501629L
+        /// The status of the snapshot.<br/>
+        /// Example: created
         /// </summary>
-        /// <example>1750344501629L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        /// <example>created</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SnapshotStatusJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
+        public required global::Vercel.SnapshotStatus Status { get; set; }
 
         /// <summary>
         /// The last time the snapshot was updated, in milliseconds since the epoch.<br/>
@@ -88,32 +121,6 @@ namespace Vercel
         public required double UpdatedAt { get; set; }
 
         /// <summary>
-        /// The last time the snapshot was used (e.g. to resume or create a sandbox), in milliseconds since the epoch. Falls back to `createdAt` for older snapshots that predate this field.<br/>
-        /// Example: 1750344501629L
-        /// </summary>
-        /// <example>1750344501629L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("lastUsedAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double LastUsedAt { get; set; }
-
-        /// <summary>
-        /// The method used to create the snapshot.<br/>
-        /// Example: manual
-        /// </summary>
-        /// <example>manual</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("creationMethod")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SnapshotCreationMethodJsonConverter))]
-        public global::Vercel.SnapshotCreationMethod? CreationMethod { get; set; }
-
-        /// <summary>
-        /// The unique identifier of the parent snapshot, if this snapshot was created from another snapshot.<br/>
-        /// Example: snap_parent123
-        /// </summary>
-        /// <example>snap_parent123</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("parentId")]
-        public string? ParentId { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -122,9 +129,21 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="Snapshot" /> class.
         /// </summary>
+        /// <param name="createdAt">
+        /// The time when the snapshot was created, in milliseconds since the epoch.<br/>
+        /// Example: 1750344501629L
+        /// </param>
         /// <param name="id">
         /// The unique identifier of the snapshot.<br/>
         /// Example: snap_123a6c5209bc3778245d011443644c8d27dc2c50
+        /// </param>
+        /// <param name="lastUsedAt">
+        /// The last time the snapshot was used (e.g. to resume or create a sandbox), in milliseconds since the epoch. Falls back to `createdAt` for older snapshots that predate this field.<br/>
+        /// Example: 1750344501629L
+        /// </param>
+        /// <param name="sizeBytes">
+        /// The size of the snapshot in bytes.<br/>
+        /// Example: 104857600
         /// </param>
         /// <param name="sourceSessionId">
         /// The unique identifier of the session from which the snapshot was created.<br/>
@@ -134,21 +153,24 @@ namespace Vercel
         /// The status of the snapshot.<br/>
         /// Example: created
         /// </param>
-        /// <param name="sizeBytes">
-        /// The size of the snapshot in bytes.<br/>
-        /// Example: 104857600
-        /// </param>
-        /// <param name="createdAt">
-        /// The time when the snapshot was created, in milliseconds since the epoch.<br/>
-        /// Example: 1750344501629L
-        /// </param>
         /// <param name="updatedAt">
         /// The last time the snapshot was updated, in milliseconds since the epoch.<br/>
         /// Example: 1750344501629L
         /// </param>
-        /// <param name="lastUsedAt">
-        /// The last time the snapshot was used (e.g. to resume or create a sandbox), in milliseconds since the epoch. Falls back to `createdAt` for older snapshots that predate this field.<br/>
+        /// <param name="architecture">
+        /// CPU architecture required to restore the snapshot.
+        /// </param>
+        /// <param name="creationMethod">
+        /// The method used to create the snapshot.<br/>
+        /// Example: manual
+        /// </param>
+        /// <param name="expiresAt">
+        /// The time when the snapshot will expire, in milliseconds since the epoch. If not set, the snapshot does not have any expiration.<br/>
         /// Example: 1750344501629L
+        /// </param>
+        /// <param name="parentId">
+        /// The unique identifier of the parent snapshot, if this snapshot was created from another snapshot.<br/>
+        /// Example: snap_parent123
         /// </param>
         /// <param name="region">
         /// The region where the snapshot is stored.<br/>
@@ -158,47 +180,37 @@ namespace Vercel
         /// The regions where the snapshot is available.<br/>
         /// Example: [iad1, sfo1]
         /// </param>
-        /// <param name="expiresAt">
-        /// The time when the snapshot will expire, in milliseconds since the epoch. If not set, the snapshot does not have any expiration.<br/>
-        /// Example: 1750344501629L
-        /// </param>
-        /// <param name="creationMethod">
-        /// The method used to create the snapshot.<br/>
-        /// Example: manual
-        /// </param>
-        /// <param name="parentId">
-        /// The unique identifier of the parent snapshot, if this snapshot was created from another snapshot.<br/>
-        /// Example: snap_parent123
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public Snapshot(
+            double createdAt,
             string id,
+            double lastUsedAt,
+            double sizeBytes,
             string sourceSessionId,
             global::Vercel.SnapshotStatus status,
-            double sizeBytes,
-            double createdAt,
             double updatedAt,
-            double lastUsedAt,
-            string? region,
-            global::System.Collections.Generic.IList<string>? regions,
-            double? expiresAt,
+            global::Vercel.SnapshotArchitecture? architecture,
             global::Vercel.SnapshotCreationMethod? creationMethod,
-            string? parentId)
+            double? expiresAt,
+            string? parentId,
+            string? region,
+            global::System.Collections.Generic.IList<string>? regions)
         {
+            this.Architecture = architecture;
+            this.CreatedAt = createdAt;
+            this.CreationMethod = creationMethod;
+            this.ExpiresAt = expiresAt;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.SourceSessionId = sourceSessionId ?? throw new global::System.ArgumentNullException(nameof(sourceSessionId));
+            this.LastUsedAt = lastUsedAt;
+            this.ParentId = parentId;
             this.Region = region;
             this.Regions = regions;
-            this.Status = status;
             this.SizeBytes = sizeBytes;
-            this.ExpiresAt = expiresAt;
-            this.CreatedAt = createdAt;
+            this.SourceSessionId = sourceSessionId ?? throw new global::System.ArgumentNullException(nameof(sourceSessionId));
+            this.Status = status;
             this.UpdatedAt = updatedAt;
-            this.LastUsedAt = lastUsedAt;
-            this.CreationMethod = creationMethod;
-            this.ParentId = parentId;
         }
 
         /// <summary>

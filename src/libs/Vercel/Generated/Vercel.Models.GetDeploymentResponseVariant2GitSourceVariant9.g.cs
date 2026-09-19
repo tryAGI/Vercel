@@ -11,13 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2GitSourceVariant9TypeJsonConverter))]
-        public global::Vercel.GetDeploymentResponseVariant2GitSourceVariant9Type Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("owner")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Owner { get; set; }
@@ -25,9 +18,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("prId")]
+        public double? PrId { get; set; }
 
         /// <summary>
         ///
@@ -44,8 +36,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prId")]
-        public double? PrId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Slug { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2GitSourceVariant9TypeJsonConverter))]
+        public global::Vercel.GetDeploymentResponseVariant2GitSourceVariant9Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -58,27 +58,27 @@ namespace Vercel
         /// </summary>
         /// <param name="owner"></param>
         /// <param name="slug"></param>
-        /// <param name="type"></param>
+        /// <param name="prId"></param>
         /// <param name="ref"></param>
         /// <param name="sha"></param>
-        /// <param name="prId"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant2GitSourceVariant9(
             string owner,
             string slug,
-            global::Vercel.GetDeploymentResponseVariant2GitSourceVariant9Type type,
+            double? prId,
             string? @ref,
             string? sha,
-            double? prId)
+            global::Vercel.GetDeploymentResponseVariant2GitSourceVariant9Type type)
         {
-            this.Type = type;
             this.Owner = owner ?? throw new global::System.ArgumentNullException(nameof(owner));
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
+            this.PrId = prId;
             this.Ref = @ref;
             this.Sha = sha;
-            this.PrId = prId;
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
+            this.Type = type;
         }
 
         /// <summary>

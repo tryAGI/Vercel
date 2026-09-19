@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UploadProjectAvatarResponseInternalRouteVariant2HaVariant1TypeJsonConverter))]
-        public global::Vercel.UploadProjectAvatarResponseInternalRouteVariant2HaVariant1Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UploadProjectAvatarResponseInternalRouteVariant2HaVariant1KeyJsonConverter))]
+        public global::Vercel.UploadProjectAvatarResponseInternalRouteVariant2HaVariant1Key Key { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UploadProjectAvatarResponseInternalRouteVariant2HaVariant1KeyJsonConverter))]
-        public global::Vercel.UploadProjectAvatarResponseInternalRouteVariant2HaVariant1Key Key { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UploadProjectAvatarResponseInternalRouteVariant2HaVariant1TypeJsonConverter))]
+        public global::Vercel.UploadProjectAvatarResponseInternalRouteVariant2HaVariant1Type Type { get; set; }
 
         /// <summary>
         ///
@@ -39,18 +39,18 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UploadProjectAvatarResponseInternalRouteVariant2HaVariant1" /> class.
         /// </summary>
         /// <param name="value"></param>
-        /// <param name="type"></param>
         /// <param name="key"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UploadProjectAvatarResponseInternalRouteVariant2HaVariant1(
             global::Vercel.UploadProjectAvatarResponseInternalRouteVariant2HaVariant1Value value,
-            global::Vercel.UploadProjectAvatarResponseInternalRouteVariant2HaVariant1Type type,
-            global::Vercel.UploadProjectAvatarResponseInternalRouteVariant2HaVariant1Key key)
+            global::Vercel.UploadProjectAvatarResponseInternalRouteVariant2HaVariant1Key key,
+            global::Vercel.UploadProjectAvatarResponseInternalRouteVariant2HaVariant1Type type)
         {
-            this.Type = type;
             this.Key = key;
+            this.Type = type;
             this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
         }
 

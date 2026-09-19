@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetEdgeConfigResponsePurposeVariant2TypeJsonConverter))]
-        public global::Vercel.GetEdgeConfigResponsePurposeVariant2Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("resourceId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ResourceId { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("resourceId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ResourceId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetEdgeConfigResponsePurposeVariant2TypeJsonConverter))]
+        public global::Vercel.GetEdgeConfigResponsePurposeVariant2Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,8 +40,8 @@ namespace Vercel
             string resourceId,
             global::Vercel.GetEdgeConfigResponsePurposeVariant2Type type)
         {
-            this.Type = type;
             this.ResourceId = resourceId ?? throw new global::System.ArgumentNullException(nameof(resourceId));
+            this.Type = type;
         }
 
         /// <summary>

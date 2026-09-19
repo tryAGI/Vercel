@@ -18,16 +18,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetRollingReleaseBillingStatusResponseVariant1ReasonJsonConverter))]
-        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant1Reason Reason { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("message")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Message { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("message")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Message { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetRollingReleaseBillingStatusResponseVariant1ReasonJsonConverter))]
+        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant1Reason Reason { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -50,8 +50,8 @@ namespace Vercel
             global::Vercel.GetRollingReleaseBillingStatusResponseVariant1Reason reason)
         {
             this.AvailableSlots = availableSlots;
-            this.Reason = reason;
             this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
+            this.Reason = reason;
         }
 
         /// <summary>

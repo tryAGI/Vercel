@@ -16,6 +16,15 @@ namespace Vercel
         public global::Vercel.OneOf<global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2>? NetworkPolicy { get; set; }
 
         /// <summary>
+        /// CPU architecture. Inherits a snapshot or single image manifest when omitted. Image indexes default to amd64. Must match the source. ARM64 creation requires API v3 or v4 without runtime and team access.<br/>
+        /// Example: arm64
+        /// </summary>
+        /// <example>arm64</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("architecture")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateSandboxesV3RequestArchitectureJsonConverter))]
+        public global::Vercel.CreateSandboxesV3RequestArchitecture? Architecture { get; set; }
+
+        /// <summary>
         /// Resources to define the VM
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resources")]
@@ -145,6 +154,10 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateSandboxesV3Request" /> class.
         /// </summary>
         /// <param name="networkPolicy"></param>
+        /// <param name="architecture">
+        /// CPU architecture. Inherits a snapshot or single image manifest when omitted. Image indexes default to amd64. Must match the source. ARM64 creation requires API v3 or v4 without runtime and team access.<br/>
+        /// Example: arm64
+        /// </param>
         /// <param name="resources">
         /// Resources to define the VM
         /// </param>
@@ -210,6 +223,7 @@ namespace Vercel
 #endif
         public CreateSandboxesV3Request(
             global::Vercel.OneOf<global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2>? networkPolicy,
+            global::Vercel.CreateSandboxesV3RequestArchitecture? architecture,
             global::Vercel.CreateSandboxesV3RequestResources? resources,
             global::Vercel.OneOf<global::Vercel.CreateSandboxesV3RequestSourceVariant1, global::Vercel.CreateSandboxesV3RequestSourceVariant2, global::Vercel.CreateSandboxesV3RequestSourceVariant3>? source,
             string? projectId,
@@ -228,6 +242,7 @@ namespace Vercel
             global::System.Collections.Generic.Dictionary<string, string>? tags)
         {
             this.NetworkPolicy = networkPolicy;
+            this.Architecture = architecture;
             this.Resources = resources;
             this.Source = source;
             this.ProjectId = projectId;

@@ -17,14 +17,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("typecheck")]
-        public global::Vercel.UpdateProjectResponseJobsTypecheck? Typecheck { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("mfe-config-present")]
+        public global::Vercel.UpdateProjectResponseJobsMfeConfigPresent? MfeConfigPresent { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mfe-config-present")]
-        public global::Vercel.UpdateProjectResponseJobsMfeConfigPresent? MfeConfigPresent { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("typecheck")]
+        public global::Vercel.UpdateProjectResponseJobsTypecheck? Typecheck { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -36,19 +36,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UpdateProjectResponseJobs" /> class.
         /// </summary>
         /// <param name="lint"></param>
-        /// <param name="typecheck"></param>
         /// <param name="mfeConfigPresent"></param>
+        /// <param name="typecheck"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateProjectResponseJobs(
             global::Vercel.UpdateProjectResponseJobsLint? lint,
-            global::Vercel.UpdateProjectResponseJobsTypecheck? typecheck,
-            global::Vercel.UpdateProjectResponseJobsMfeConfigPresent? mfeConfigPresent)
+            global::Vercel.UpdateProjectResponseJobsMfeConfigPresent? mfeConfigPresent,
+            global::Vercel.UpdateProjectResponseJobsTypecheck? typecheck)
         {
             this.Lint = lint;
-            this.Typecheck = typecheck;
             this.MfeConfigPresent = mfeConfigPresent;
+            this.Typecheck = typecheck;
         }
 
         /// <summary>

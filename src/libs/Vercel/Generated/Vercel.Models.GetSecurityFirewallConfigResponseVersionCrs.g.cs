@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sd")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("gen")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsSd Sd { get; set; }
+        public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsGen Gen { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ma")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("java")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsMa Ma { get; set; }
+        public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsJava Java { get; set; }
 
         /// <summary>
         ///
@@ -32,16 +32,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rfi")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("ma")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsRfi Rfi { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rce")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsRce Rce { get; set; }
+        public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsMa Ma { get; set; }
 
         /// <summary>
         ///
@@ -53,23 +46,23 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gen")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("rce")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsGen Gen { get; set; }
+        public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsRce Rce { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("xss")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("rfi")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsXss Xss { get; set; }
+        public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsRfi Rfi { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sqli")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("sd")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsSqli Sqli { get; set; }
+        public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsSd Sd { get; set; }
 
         /// <summary>
         ///
@@ -81,9 +74,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("java")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("sqli")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsJava Java { get; set; }
+        public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsSqli Sqli { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("xss")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsXss Xss { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -94,44 +94,44 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetSecurityFirewallConfigResponseVersionCrs" /> class.
         /// </summary>
-        /// <param name="sd"></param>
-        /// <param name="ma"></param>
-        /// <param name="lfi"></param>
-        /// <param name="rfi"></param>
-        /// <param name="rce"></param>
-        /// <param name="php"></param>
         /// <param name="gen"></param>
-        /// <param name="xss"></param>
-        /// <param name="sqli"></param>
-        /// <param name="sf"></param>
         /// <param name="java"></param>
+        /// <param name="lfi"></param>
+        /// <param name="ma"></param>
+        /// <param name="php"></param>
+        /// <param name="rce"></param>
+        /// <param name="rfi"></param>
+        /// <param name="sd"></param>
+        /// <param name="sf"></param>
+        /// <param name="sqli"></param>
+        /// <param name="xss"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetSecurityFirewallConfigResponseVersionCrs(
-            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsSd sd,
-            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsMa ma,
-            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsLfi lfi,
-            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsRfi rfi,
-            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsRce rce,
-            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsPhp php,
             global::Vercel.GetSecurityFirewallConfigResponseVersionCrsGen gen,
-            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsXss xss,
-            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsSqli sqli,
+            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsJava java,
+            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsLfi lfi,
+            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsMa ma,
+            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsPhp php,
+            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsRce rce,
+            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsRfi rfi,
+            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsSd sd,
             global::Vercel.GetSecurityFirewallConfigResponseVersionCrsSf sf,
-            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsJava java)
+            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsSqli sqli,
+            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsXss xss)
         {
-            this.Sd = sd ?? throw new global::System.ArgumentNullException(nameof(sd));
-            this.Ma = ma ?? throw new global::System.ArgumentNullException(nameof(ma));
-            this.Lfi = lfi ?? throw new global::System.ArgumentNullException(nameof(lfi));
-            this.Rfi = rfi ?? throw new global::System.ArgumentNullException(nameof(rfi));
-            this.Rce = rce ?? throw new global::System.ArgumentNullException(nameof(rce));
-            this.Php = php ?? throw new global::System.ArgumentNullException(nameof(php));
             this.Gen = gen ?? throw new global::System.ArgumentNullException(nameof(gen));
-            this.Xss = xss ?? throw new global::System.ArgumentNullException(nameof(xss));
-            this.Sqli = sqli ?? throw new global::System.ArgumentNullException(nameof(sqli));
-            this.Sf = sf ?? throw new global::System.ArgumentNullException(nameof(sf));
             this.Java = java ?? throw new global::System.ArgumentNullException(nameof(java));
+            this.Lfi = lfi ?? throw new global::System.ArgumentNullException(nameof(lfi));
+            this.Ma = ma ?? throw new global::System.ArgumentNullException(nameof(ma));
+            this.Php = php ?? throw new global::System.ArgumentNullException(nameof(php));
+            this.Rce = rce ?? throw new global::System.ArgumentNullException(nameof(rce));
+            this.Rfi = rfi ?? throw new global::System.ArgumentNullException(nameof(rfi));
+            this.Sd = sd ?? throw new global::System.ArgumentNullException(nameof(sd));
+            this.Sf = sf ?? throw new global::System.ArgumentNullException(nameof(sf));
+            this.Sqli = sqli ?? throw new global::System.ArgumentNullException(nameof(sqli));
+            this.Xss = xss ?? throw new global::System.ArgumentNullException(nameof(xss));
         }
 
         /// <summary>

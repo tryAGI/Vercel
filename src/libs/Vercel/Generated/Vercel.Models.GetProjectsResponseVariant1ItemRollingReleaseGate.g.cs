@@ -9,11 +9,12 @@ namespace Vercel
     public sealed partial class GetProjectsResponseVariant1ItemRollingReleaseGate
     {
         /// <summary>
-        /// Whether automated gating is enabled for this project's rollouts.
+        /// What to do when the gate trips: pause the rollout, or roll it back.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant1ItemRollingReleaseGateActionJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Enabled { get; set; }
+        public required global::Vercel.GetProjectsResponseVariant1ItemRollingReleaseGateAction Action { get; set; }
 
         /// <summary>
         /// The checks to evaluate. An empty array means nothing is evaluated.
@@ -21,6 +22,20 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("checks")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant1ItemRollingReleaseGateCheck> Checks { get; set; }
+
+        /// <summary>
+        /// When true, a tripped gate is only reported — {@link action} is not taken.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("dryRun")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool DryRun { get; set; }
+
+        /// <summary>
+        /// Whether automated gating is enabled for this project's rollouts.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Enabled { get; set; }
 
         /// <summary>
         /// How many failing evaluations within {@link windowSize} trip the gate. Defaults to `3` when omitted.<br/>
@@ -39,21 +54,6 @@ namespace Vercel
         public double? WindowSize { get; set; }
 
         /// <summary>
-        /// What to do when the gate trips: pause the rollout, or roll it back.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant1ItemRollingReleaseGateActionJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetProjectsResponseVariant1ItemRollingReleaseGateAction Action { get; set; }
-
-        /// <summary>
-        /// When true, a tripped gate is only reported — {@link action} is not taken.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("dryRun")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool DryRun { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -62,17 +62,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant1ItemRollingReleaseGate" /> class.
         /// </summary>
-        /// <param name="enabled">
-        /// Whether automated gating is enabled for this project's rollouts.
+        /// <param name="action">
+        /// What to do when the gate trips: pause the rollout, or roll it back.
         /// </param>
         /// <param name="checks">
         /// The checks to evaluate. An empty array means nothing is evaluated.
         /// </param>
-        /// <param name="action">
-        /// What to do when the gate trips: pause the rollout, or roll it back.
-        /// </param>
         /// <param name="dryRun">
         /// When true, a tripped gate is only reported — {@link action} is not taken.
+        /// </param>
+        /// <param name="enabled">
+        /// Whether automated gating is enabled for this project's rollouts.
         /// </param>
         /// <param name="failureThreshold">
         /// How many failing evaluations within {@link windowSize} trip the gate. Defaults to `3` when omitted.<br/>
@@ -86,19 +86,19 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsResponseVariant1ItemRollingReleaseGate(
-            bool enabled,
-            global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant1ItemRollingReleaseGateCheck> checks,
             global::Vercel.GetProjectsResponseVariant1ItemRollingReleaseGateAction action,
+            global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant1ItemRollingReleaseGateCheck> checks,
             bool dryRun,
+            bool enabled,
             double? failureThreshold,
             double? windowSize)
         {
-            this.Enabled = enabled;
+            this.Action = action;
             this.Checks = checks ?? throw new global::System.ArgumentNullException(nameof(checks));
+            this.DryRun = dryRun;
+            this.Enabled = enabled;
             this.FailureThreshold = failureThreshold;
             this.WindowSize = windowSize;
-            this.Action = action;
-            this.DryRun = dryRun;
         }
 
         /// <summary>

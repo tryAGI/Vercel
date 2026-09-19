@@ -9,16 +9,16 @@ namespace Vercel
     public sealed partial class GetProjectsResponseVariant2ProjectDeploymentExpiration
     {
         /// <summary>
+        /// Minimum number of production deployments to keep for this project, even if they are over the production expiration limit.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentsToKeep")]
+        public double? DeploymentsToKeep { get; set; }
+
+        /// <summary>
         /// Number of days to keep non-production deployments (mostly preview deployments) before soft deletion.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expirationDays")]
         public double? ExpirationDays { get; set; }
-
-        /// <summary>
-        /// Number of days to keep production deployments before soft deletion.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("expirationDaysProduction")]
-        public double? ExpirationDaysProduction { get; set; }
 
         /// <summary>
         /// Number of days to keep canceled deployments before soft deletion.
@@ -33,10 +33,10 @@ namespace Vercel
         public double? ExpirationDaysErrored { get; set; }
 
         /// <summary>
-        /// Minimum number of production deployments to keep for this project, even if they are over the production expiration limit.
+        /// Number of days to keep production deployments before soft deletion.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentsToKeep")]
-        public double? DeploymentsToKeep { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("expirationDaysProduction")]
+        public double? ExpirationDaysProduction { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,11 +47,11 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant2ProjectDeploymentExpiration" /> class.
         /// </summary>
+        /// <param name="deploymentsToKeep">
+        /// Minimum number of production deployments to keep for this project, even if they are over the production expiration limit.
+        /// </param>
         /// <param name="expirationDays">
         /// Number of days to keep non-production deployments (mostly preview deployments) before soft deletion.
-        /// </param>
-        /// <param name="expirationDaysProduction">
-        /// Number of days to keep production deployments before soft deletion.
         /// </param>
         /// <param name="expirationDaysCanceled">
         /// Number of days to keep canceled deployments before soft deletion.
@@ -59,24 +59,24 @@ namespace Vercel
         /// <param name="expirationDaysErrored">
         /// Number of days to keep errored deployments before soft deletion.
         /// </param>
-        /// <param name="deploymentsToKeep">
-        /// Minimum number of production deployments to keep for this project, even if they are over the production expiration limit.
+        /// <param name="expirationDaysProduction">
+        /// Number of days to keep production deployments before soft deletion.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsResponseVariant2ProjectDeploymentExpiration(
+            double? deploymentsToKeep,
             double? expirationDays,
-            double? expirationDaysProduction,
             double? expirationDaysCanceled,
             double? expirationDaysErrored,
-            double? deploymentsToKeep)
+            double? expirationDaysProduction)
         {
+            this.DeploymentsToKeep = deploymentsToKeep;
             this.ExpirationDays = expirationDays;
-            this.ExpirationDaysProduction = expirationDaysProduction;
             this.ExpirationDaysCanceled = expirationDaysCanceled;
             this.ExpirationDaysErrored = expirationDaysErrored;
-            this.DeploymentsToKeep = deploymentsToKeep;
+            this.ExpirationDaysProduction = expirationDaysProduction;
         }
 
         /// <summary>

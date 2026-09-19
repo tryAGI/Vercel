@@ -17,9 +17,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        public double? CreatedAt { get; set; }
 
         /// <summary>
         ///
@@ -30,21 +29,21 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("role")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetTeamMembersResponseEmailInviteCodeRoleJsonConverter))]
-        public global::Vercel.GetTeamMembersResponseEmailInviteCodeRole? Role { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("entitlements")]
+        public global::System.Collections.Generic.IList<string>? Entitlements { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamRole>? TeamRoles { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("expired")]
+        public bool? Expired { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamPermission>? TeamPermissions { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
 
         /// <summary>
         ///
@@ -56,26 +55,27 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        public double? CreatedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("expired")]
-        public bool? Expired { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
         public global::System.Collections.Generic.Dictionary<string, global::Vercel.GetTeamMembersResponseEmailInviteCodeProjects2>? Projects { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("entitlements")]
-        public global::System.Collections.Generic.IList<string>? Entitlements { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("role")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetTeamMembersResponseEmailInviteCodeRoleJsonConverter))]
+        public global::Vercel.GetTeamMembersResponseEmailInviteCodeRole? Role { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
+        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamPermission>? TeamPermissions { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
+        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamRole>? TeamRoles { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -89,14 +89,14 @@ namespace Vercel
         /// <param name="id"></param>
         /// <param name="isDSyncUser"></param>
         /// <param name="accessGroups"></param>
-        /// <param name="email"></param>
-        /// <param name="role"></param>
-        /// <param name="teamRoles"></param>
-        /// <param name="teamPermissions"></param>
         /// <param name="createdAt"></param>
+        /// <param name="email"></param>
+        /// <param name="entitlements"></param>
         /// <param name="expired"></param>
         /// <param name="projects"></param>
-        /// <param name="entitlements"></param>
+        /// <param name="role"></param>
+        /// <param name="teamPermissions"></param>
+        /// <param name="teamRoles"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -104,26 +104,26 @@ namespace Vercel
             string id,
             bool isDSyncUser,
             global::System.Collections.Generic.IList<string>? accessGroups,
-            string? email,
-            global::Vercel.GetTeamMembersResponseEmailInviteCodeRole? role,
-            global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamRole>? teamRoles,
-            global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamPermission>? teamPermissions,
             double? createdAt,
+            string? email,
+            global::System.Collections.Generic.IList<string>? entitlements,
             bool? expired,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.GetTeamMembersResponseEmailInviteCodeProjects2>? projects,
-            global::System.Collections.Generic.IList<string>? entitlements)
+            global::Vercel.GetTeamMembersResponseEmailInviteCodeRole? role,
+            global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamPermission>? teamPermissions,
+            global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamRole>? teamRoles)
         {
             this.AccessGroups = accessGroups;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Email = email;
-            this.Role = role;
-            this.TeamRoles = teamRoles;
-            this.TeamPermissions = teamPermissions;
-            this.IsDSyncUser = isDSyncUser;
             this.CreatedAt = createdAt;
-            this.Expired = expired;
-            this.Projects = projects;
+            this.Email = email;
             this.Entitlements = entitlements;
+            this.Expired = expired;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.IsDSyncUser = isDSyncUser;
+            this.Projects = projects;
+            this.Role = role;
+            this.TeamPermissions = teamPermissions;
+            this.TeamRoles = teamRoles;
         }
 
         /// <summary>
