@@ -9,40 +9,6 @@ namespace Vercel
     public sealed partial class UserEvent
     {
         /// <summary>
-        /// The unique identifier of the Event.<br/>
-        /// Example: uev_bfmMjiMnXfnPbT97dGdpJbCN
-        /// </summary>
-        /// <example>uev_bfmMjiMnXfnPbT97dGdpJbCN</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
-        /// The human-readable text of the Event.<br/>
-        /// Example: You logged in via GitHub
-        /// </summary>
-        /// <example>You logged in via GitHub</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("text")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Text { get; set; }
-
-        /// <summary>
-        /// A list of "entities" within the event `text`. Useful for enhancing the displayed text with additional styling and links.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("entities")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.UserEventEntitie> Entities { get; set; }
-
-        /// <summary>
-        /// The type of the event.<br/>
-        /// Example: login
-        /// </summary>
-        /// <example>login</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventTypeJsonConverter))]
-        public global::Vercel.UserEventType? Type { get; set; }
-
-        /// <summary>
         /// The categories that group this event with related event types. An event can belong to multiple categories (e.g. a firewall event is both Firewall and Security). The first entry is the "primary" category. Use the `/events/types` endpoint to discover the full list of categories.<br/>
         /// Example: [deployment]
         /// </summary>
@@ -60,10 +26,26 @@ namespace Vercel
         public required double CreatedAt { get; set; }
 
         /// <summary>
-        /// Metadata for {@link userId}.
+        /// A list of "entities" within the event `text`. Useful for enhancing the displayed text with additional styling and links.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("user")]
-        public global::Vercel.UserEventUser? User { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("entities")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.UserEventEntitie> Entities { get; set; }
+
+        /// <summary>
+        /// The unique identifier of the Event.<br/>
+        /// Example: uev_bfmMjiMnXfnPbT97dGdpJbCN
+        /// </summary>
+        /// <example>uev_bfmMjiMnXfnPbT97dGdpJbCN</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
+        /// The payload of the event, if requested.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("payload")]
+        public object? Payload { get; set; }
 
         /// <summary>
         ///
@@ -73,10 +55,53 @@ namespace Vercel
         public global::Vercel.OneOf<global::Vercel.UserEventPrincipalVariant1, global::Vercel.UserEventPrincipalVariant2, global::Vercel.UserEventPrincipalVariant3, global::Vercel.UserEventPrincipalVariant4>? Principal { get; set; }
 
         /// <summary>
-        /// Metadata for {@link viaIds}.
+        /// The ID of the principal who generated the event. The principal is typically a user, but it could also be an app, an integration, etc. The principal may have delegated its authority to an acting party, and so {@link viaIds} should be checked as well.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("via")]
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UserEventViaItemVariant1, global::Vercel.UserEventViaItemVariant2, global::Vercel.UserEventViaItemVariant3, global::Vercel.UserEventViaItemVariant4>>? Via { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("principalId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string PrincipalId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("requestId")]
+        public string? RequestId { get; set; }
+
+        /// <summary>
+        /// The ID of the session that the principal's token belongs to, when it belongs to one.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sessionId")]
+        public string? SessionId { get; set; }
+
+        /// <summary>
+        /// The human-readable text of the Event.<br/>
+        /// Example: You logged in via GitHub
+        /// </summary>
+        /// <example>You logged in via GitHub</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("text")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Text { get; set; }
+
+        /// <summary>
+        /// The public ID of the token that the principal authenticated with, when the request behind this event carried one.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tokenId")]
+        public string? TokenId { get; set; }
+
+        /// <summary>
+        /// The type of the event.<br/>
+        /// Example: login
+        /// </summary>
+        /// <example>login</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventTypeJsonConverter))]
+        public global::Vercel.UserEventType? Type { get; set; }
+
+        /// <summary>
+        /// Metadata for {@link userId}.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("user")]
+        public global::Vercel.UserEventUser? User { get; set; }
 
         /// <summary>
         /// When the principal who generated the event is a user, this is their ID; otherwise, it is empty.<br/>
@@ -87,41 +112,16 @@ namespace Vercel
         public string? UserId { get; set; }
 
         /// <summary>
-        /// The ID of the principal who generated the event. The principal is typically a user, but it could also be an app, an integration, etc. The principal may have delegated its authority to an acting party, and so {@link viaIds} should be checked as well.
+        /// Metadata for {@link viaIds}.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("principalId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string PrincipalId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("via")]
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UserEventViaItemVariant1, global::Vercel.UserEventViaItemVariant2, global::Vercel.UserEventViaItemVariant3, global::Vercel.UserEventViaItemVariant4>>? Via { get; set; }
 
         /// <summary>
         /// If the principal delegated its authority (for example, a user delegating to an app), then this array contains the ID of the current actor. For example, if `principalId` is "user123" and `viaIds` is `["app456"]`, we can say the event was triggered by - "app456 on behalf of user123", or - "user123 via app4556". Both are equivalent. Arbitrarily long chains of delegation can be represented. For example, if `principalId` is "user123" and `viaIds` is `["service1", "service2"]`, we can say the event was triggered by "user123 via service1 via service2".
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("viaIds")]
         public global::System.Collections.Generic.IList<string>? ViaIds { get; set; }
-
-        /// <summary>
-        /// The public ID of the token that the principal authenticated with, when the request behind this event carried one.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tokenId")]
-        public string? TokenId { get; set; }
-
-        /// <summary>
-        /// The ID of the session that the principal's token belongs to, when it belongs to one.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sessionId")]
-        public string? SessionId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("requestId")]
-        public string? RequestId { get; set; }
-
-        /// <summary>
-        /// The payload of the event, if requested.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("payload")]
-        public object? Payload { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -132,93 +132,93 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEvent" /> class.
         /// </summary>
+        /// <param name="createdAt">
+        /// Timestamp (in milliseconds) of when the event was generated.<br/>
+        /// Example: 1632859321020L
+        /// </param>
+        /// <param name="entities">
+        /// A list of "entities" within the event `text`. Useful for enhancing the displayed text with additional styling and links.
+        /// </param>
         /// <param name="id">
         /// The unique identifier of the Event.<br/>
         /// Example: uev_bfmMjiMnXfnPbT97dGdpJbCN
+        /// </param>
+        /// <param name="principalId">
+        /// The ID of the principal who generated the event. The principal is typically a user, but it could also be an app, an integration, etc. The principal may have delegated its authority to an acting party, and so {@link viaIds} should be checked as well.
         /// </param>
         /// <param name="text">
         /// The human-readable text of the Event.<br/>
         /// Example: You logged in via GitHub
         /// </param>
-        /// <param name="entities">
-        /// A list of "entities" within the event `text`. Useful for enhancing the displayed text with additional styling and links.
+        /// <param name="categories">
+        /// The categories that group this event with related event types. An event can belong to multiple categories (e.g. a firewall event is both Firewall and Security). The first entry is the "primary" category. Use the `/events/types` endpoint to discover the full list of categories.<br/>
+        /// Example: [deployment]
         /// </param>
-        /// <param name="createdAt">
-        /// Timestamp (in milliseconds) of when the event was generated.<br/>
-        /// Example: 1632859321020L
+        /// <param name="payload">
+        /// The payload of the event, if requested.
         /// </param>
-        /// <param name="principalId">
-        /// The ID of the principal who generated the event. The principal is typically a user, but it could also be an app, an integration, etc. The principal may have delegated its authority to an acting party, and so {@link viaIds} should be checked as well.
+        /// <param name="principal"></param>
+        /// <param name="requestId"></param>
+        /// <param name="sessionId">
+        /// The ID of the session that the principal's token belongs to, when it belongs to one.
+        /// </param>
+        /// <param name="tokenId">
+        /// The public ID of the token that the principal authenticated with, when the request behind this event carried one.
         /// </param>
         /// <param name="type">
         /// The type of the event.<br/>
         /// Example: login
         /// </param>
-        /// <param name="categories">
-        /// The categories that group this event with related event types. An event can belong to multiple categories (e.g. a firewall event is both Firewall and Security). The first entry is the "primary" category. Use the `/events/types` endpoint to discover the full list of categories.<br/>
-        /// Example: [deployment]
-        /// </param>
         /// <param name="user">
         /// Metadata for {@link userId}.
-        /// </param>
-        /// <param name="principal"></param>
-        /// <param name="via">
-        /// Metadata for {@link viaIds}.
         /// </param>
         /// <param name="userId">
         /// When the principal who generated the event is a user, this is their ID; otherwise, it is empty.<br/>
         /// Example: zTuNVUXEAvvnNN3IaqinkyMw
         /// </param>
+        /// <param name="via">
+        /// Metadata for {@link viaIds}.
+        /// </param>
         /// <param name="viaIds">
         /// If the principal delegated its authority (for example, a user delegating to an app), then this array contains the ID of the current actor. For example, if `principalId` is "user123" and `viaIds` is `["app456"]`, we can say the event was triggered by - "app456 on behalf of user123", or - "user123 via app4556". Both are equivalent. Arbitrarily long chains of delegation can be represented. For example, if `principalId` is "user123" and `viaIds` is `["service1", "service2"]`, we can say the event was triggered by "user123 via service1 via service2".
-        /// </param>
-        /// <param name="tokenId">
-        /// The public ID of the token that the principal authenticated with, when the request behind this event carried one.
-        /// </param>
-        /// <param name="sessionId">
-        /// The ID of the session that the principal's token belongs to, when it belongs to one.
-        /// </param>
-        /// <param name="requestId"></param>
-        /// <param name="payload">
-        /// The payload of the event, if requested.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEvent(
-            string id,
-            string text,
-            global::System.Collections.Generic.IList<global::Vercel.UserEventEntitie> entities,
             double createdAt,
+            global::System.Collections.Generic.IList<global::Vercel.UserEventEntitie> entities,
+            string id,
             string principalId,
-            global::Vercel.UserEventType? type,
+            string text,
             global::System.Collections.Generic.IList<global::Vercel.UserEventCategorie>? categories,
-            global::Vercel.UserEventUser? user,
+            object? payload,
             global::Vercel.OneOf<global::Vercel.UserEventPrincipalVariant1, global::Vercel.UserEventPrincipalVariant2, global::Vercel.UserEventPrincipalVariant3, global::Vercel.UserEventPrincipalVariant4>? principal,
-            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UserEventViaItemVariant1, global::Vercel.UserEventViaItemVariant2, global::Vercel.UserEventViaItemVariant3, global::Vercel.UserEventViaItemVariant4>>? via,
-            string? userId,
-            global::System.Collections.Generic.IList<string>? viaIds,
-            string? tokenId,
-            string? sessionId,
             string? requestId,
-            object? payload)
+            string? sessionId,
+            string? tokenId,
+            global::Vercel.UserEventType? type,
+            global::Vercel.UserEventUser? user,
+            string? userId,
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UserEventViaItemVariant1, global::Vercel.UserEventViaItemVariant2, global::Vercel.UserEventViaItemVariant3, global::Vercel.UserEventViaItemVariant4>>? via,
+            global::System.Collections.Generic.IList<string>? viaIds)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
-            this.Entities = entities ?? throw new global::System.ArgumentNullException(nameof(entities));
-            this.Type = type;
             this.Categories = categories;
             this.CreatedAt = createdAt;
-            this.User = user;
-            this.Principal = principal;
-            this.Via = via;
-            this.UserId = userId;
-            this.PrincipalId = principalId ?? throw new global::System.ArgumentNullException(nameof(principalId));
-            this.ViaIds = viaIds;
-            this.TokenId = tokenId;
-            this.SessionId = sessionId;
-            this.RequestId = requestId;
+            this.Entities = entities ?? throw new global::System.ArgumentNullException(nameof(entities));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Payload = payload;
+            this.Principal = principal;
+            this.PrincipalId = principalId ?? throw new global::System.ArgumentNullException(nameof(principalId));
+            this.RequestId = requestId;
+            this.SessionId = sessionId;
+            this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
+            this.TokenId = tokenId;
+            this.Type = type;
+            this.User = user;
+            this.UserId = userId;
+            this.Via = via;
+            this.ViaIds = viaIds;
         }
 
         /// <summary>

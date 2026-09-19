@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// For kind=router: how to order candidates.
+    /// For kind=router: how to order candidates. Absent means declared order.
     /// </summary>
     public enum AiGatewayVirtualModelConfigSelector
     {
@@ -12,10 +12,6 @@ namespace Vercel
         ///
         /// </summary>
         Cost,
-        /// <summary>
-        ///
-        /// </summary>
-        Priority,
         /// <summary>
         ///
         /// </summary>
@@ -39,7 +35,6 @@ namespace Vercel
             return value switch
             {
                 AiGatewayVirtualModelConfigSelector.Cost => "cost",
-                AiGatewayVirtualModelConfigSelector.Priority => "priority",
                 AiGatewayVirtualModelConfigSelector.Tps => "tps",
                 AiGatewayVirtualModelConfigSelector.Ttft => "ttft",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -53,7 +48,6 @@ namespace Vercel
             return value switch
             {
                 "cost" => AiGatewayVirtualModelConfigSelector.Cost,
-                "priority" => AiGatewayVirtualModelConfigSelector.Priority,
                 "tps" => AiGatewayVirtualModelConfigSelector.Tps,
                 "ttft" => AiGatewayVirtualModelConfigSelector.Ttft,
                 _ => null,

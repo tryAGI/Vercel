@@ -11,15 +11,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("maxDelayHours")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double MaxDelayHours { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("customRotationWarning")]
+        public string? CustomRotationWarning { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("customRotationWarning")]
-        public string? CustomRotationWarning { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("maxDelayHours")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double MaxDelayHours { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,8 +39,8 @@ namespace Vercel
             double maxDelayHours,
             string? customRotationWarning)
         {
-            this.MaxDelayHours = maxDelayHours;
             this.CustomRotationWarning = customRotationWarning;
+            this.MaxDelayHours = maxDelayHours;
         }
 
         /// <summary>

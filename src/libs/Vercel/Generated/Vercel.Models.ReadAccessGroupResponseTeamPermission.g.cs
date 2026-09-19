@@ -11,10 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        AiGatewayApiKeyOwnedBySelf,
-        /// <summary>
-        ///
-        /// </summary>
         AiGatewayBudgetManager,
         /// <summary>
         ///
@@ -32,6 +28,10 @@ namespace Vercel
         ///
         /// </summary>
         AiGatewayTranscriptsViewer,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayUser,
         /// <summary>
         ///
         /// </summary>
@@ -98,12 +98,12 @@ namespace Vercel
         {
             return value switch
             {
-                ReadAccessGroupResponseTeamPermission.AiGatewayApiKeyOwnedBySelf => "AiGatewayApiKeyOwnedBySelf",
                 ReadAccessGroupResponseTeamPermission.AiGatewayBudgetManager => "AiGatewayBudgetManager",
                 ReadAccessGroupResponseTeamPermission.AiGatewayCredits => "AiGatewayCredits",
                 ReadAccessGroupResponseTeamPermission.AiGatewaySettings => "AiGatewaySettings",
                 ReadAccessGroupResponseTeamPermission.AiGatewayTranscriptsManager => "AiGatewayTranscriptsManager",
                 ReadAccessGroupResponseTeamPermission.AiGatewayTranscriptsViewer => "AiGatewayTranscriptsViewer",
+                ReadAccessGroupResponseTeamPermission.AiGatewayUser => "AiGatewayUser",
                 ReadAccessGroupResponseTeamPermission.ConnectorManager => "ConnectorManager",
                 ReadAccessGroupResponseTeamPermission.CreateProject => "CreateProject",
                 ReadAccessGroupResponseTeamPermission.EnvVariableManager => "EnvVariableManager",
@@ -127,12 +127,12 @@ namespace Vercel
         {
             return value switch
             {
-                "AiGatewayApiKeyOwnedBySelf" => ReadAccessGroupResponseTeamPermission.AiGatewayApiKeyOwnedBySelf,
                 "AiGatewayBudgetManager" => ReadAccessGroupResponseTeamPermission.AiGatewayBudgetManager,
                 "AiGatewayCredits" => ReadAccessGroupResponseTeamPermission.AiGatewayCredits,
                 "AiGatewaySettings" => ReadAccessGroupResponseTeamPermission.AiGatewaySettings,
                 "AiGatewayTranscriptsManager" => ReadAccessGroupResponseTeamPermission.AiGatewayTranscriptsManager,
                 "AiGatewayTranscriptsViewer" => ReadAccessGroupResponseTeamPermission.AiGatewayTranscriptsViewer,
+                "AiGatewayUser" => ReadAccessGroupResponseTeamPermission.AiGatewayUser,
                 "ConnectorManager" => ReadAccessGroupResponseTeamPermission.ConnectorManager,
                 "CreateProject" => ReadAccessGroupResponseTeamPermission.CreateProject,
                 "EnvVariableManager" => ReadAccessGroupResponseTeamPermission.EnvVariableManager,

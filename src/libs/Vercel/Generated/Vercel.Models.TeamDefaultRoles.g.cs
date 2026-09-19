@@ -11,14 +11,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
-        public global::System.Collections.Generic.IList<global::Vercel.TeamDefaultRolesTeamRole>? TeamRoles { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
+        public global::System.Collections.Generic.IList<global::Vercel.TeamDefaultRolesTeamPermission>? TeamPermissions { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
-        public global::System.Collections.Generic.IList<global::Vercel.TeamDefaultRolesTeamPermission>? TeamPermissions { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
+        public global::System.Collections.Generic.IList<global::Vercel.TeamDefaultRolesTeamRole>? TeamRoles { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +29,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="TeamDefaultRoles" /> class.
         /// </summary>
-        /// <param name="teamRoles"></param>
         /// <param name="teamPermissions"></param>
+        /// <param name="teamRoles"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TeamDefaultRoles(
-            global::System.Collections.Generic.IList<global::Vercel.TeamDefaultRolesTeamRole>? teamRoles,
-            global::System.Collections.Generic.IList<global::Vercel.TeamDefaultRolesTeamPermission>? teamPermissions)
+            global::System.Collections.Generic.IList<global::Vercel.TeamDefaultRolesTeamPermission>? teamPermissions,
+            global::System.Collections.Generic.IList<global::Vercel.TeamDefaultRolesTeamRole>? teamRoles)
         {
-            this.TeamRoles = teamRoles;
             this.TeamPermissions = teamPermissions;
+            this.TeamRoles = teamRoles;
         }
 
         /// <summary>

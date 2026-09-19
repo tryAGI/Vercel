@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("CLS")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetAllChecksResponseCheckOutputMetricsCls Cls { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("FCP")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetAllChecksResponseCheckOutputMetricsFcp Fcp { get; set; }
@@ -21,13 +28,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("LCP")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetAllChecksResponseCheckOutputMetricsLcp Lcp { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("CLS")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetAllChecksResponseCheckOutputMetricsCls Cls { get; set; }
 
         /// <summary>
         ///
@@ -51,24 +51,24 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetAllChecksResponseCheckOutputMetrics" /> class.
         /// </summary>
+        /// <param name="cls"></param>
         /// <param name="fcp"></param>
         /// <param name="lcp"></param>
-        /// <param name="cls"></param>
         /// <param name="tbt"></param>
         /// <param name="virtualExperienceScore"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetAllChecksResponseCheckOutputMetrics(
+            global::Vercel.GetAllChecksResponseCheckOutputMetricsCls cls,
             global::Vercel.GetAllChecksResponseCheckOutputMetricsFcp fcp,
             global::Vercel.GetAllChecksResponseCheckOutputMetricsLcp lcp,
-            global::Vercel.GetAllChecksResponseCheckOutputMetricsCls cls,
             global::Vercel.GetAllChecksResponseCheckOutputMetricsTbt tbt,
             global::Vercel.GetAllChecksResponseCheckOutputMetricsVirtualExperienceScore? virtualExperienceScore)
         {
+            this.Cls = cls ?? throw new global::System.ArgumentNullException(nameof(cls));
             this.Fcp = fcp ?? throw new global::System.ArgumentNullException(nameof(fcp));
             this.Lcp = lcp ?? throw new global::System.ArgumentNullException(nameof(lcp));
-            this.Cls = cls ?? throw new global::System.ArgumentNullException(nameof(cls));
             this.Tbt = tbt ?? throw new global::System.ArgumentNullException(nameof(tbt));
             this.VirtualExperienceScore = virtualExperienceScore;
         }

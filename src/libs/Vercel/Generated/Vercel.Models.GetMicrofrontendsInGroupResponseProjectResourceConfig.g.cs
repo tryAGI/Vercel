@@ -11,8 +11,60 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineElasticLastUpdated")]
+        public double? BuildMachineElasticLastUpdated { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineElasticReason")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineElasticReasonJsonConverter))]
+        public global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineElasticReason? BuildMachineElasticReason { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineSelection")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineSelectionJsonConverter))]
+        public global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineSelection? BuildMachineSelection { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineTypeJsonConverter))]
+        public global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineType? BuildMachineType { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildQueue")]
+        public global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildQueue? BuildQueue { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("elasticConcurrencyEnabled")]
+        public bool? ElasticConcurrencyEnabled { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("enableFunctionsBeta")]
+        public bool? EnableFunctionsBeta { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fluid")]
         public bool? Fluid { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("functionDefaultMemoryType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetMicrofrontendsInGroupResponseProjectResourceConfigFunctionDefaultMemoryTypeJsonConverter))]
+        public global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigFunctionDefaultMemoryType? FunctionDefaultMemoryType { get; set; }
 
         /// <summary>
         ///
@@ -30,66 +82,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("functionDefaultMemoryType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetMicrofrontendsInGroupResponseProjectResourceConfigFunctionDefaultMemoryTypeJsonConverter))]
-        public global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigFunctionDefaultMemoryType? FunctionDefaultMemoryType { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("functionZeroConfigFailover")]
         public bool? FunctionZeroConfigFailover { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("elasticConcurrencyEnabled")]
-        public bool? ElasticConcurrencyEnabled { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineTypeJsonConverter))]
-        public global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineType? BuildMachineType { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineSelection")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineSelectionJsonConverter))]
-        public global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineSelection? BuildMachineSelection { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineElasticLastUpdated")]
-        public double? BuildMachineElasticLastUpdated { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineElasticReason")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineElasticReasonJsonConverter))]
-        public global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineElasticReason? BuildMachineElasticReason { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isNSNBDisabled")]
         public bool? IsNSNBDisabled { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildQueue")]
-        public global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildQueue? BuildQueue { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enableFunctionsBeta")]
-        public bool? EnableFunctionsBeta { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -101,49 +101,49 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetMicrofrontendsInGroupResponseProjectResourceConfig" /> class.
         /// </summary>
         /// <param name="functionDefaultRegions"></param>
-        /// <param name="fluid"></param>
-        /// <param name="functionDefaultTimeout"></param>
-        /// <param name="functionDefaultMemoryType"></param>
-        /// <param name="functionZeroConfigFailover"></param>
-        /// <param name="elasticConcurrencyEnabled"></param>
-        /// <param name="buildMachineType"></param>
-        /// <param name="buildMachineSelection"></param>
         /// <param name="buildMachineElasticLastUpdated"></param>
         /// <param name="buildMachineElasticReason"></param>
-        /// <param name="isNSNBDisabled"></param>
+        /// <param name="buildMachineSelection"></param>
+        /// <param name="buildMachineType"></param>
         /// <param name="buildQueue"></param>
+        /// <param name="elasticConcurrencyEnabled"></param>
         /// <param name="enableFunctionsBeta"></param>
+        /// <param name="fluid"></param>
+        /// <param name="functionDefaultMemoryType"></param>
+        /// <param name="functionDefaultTimeout"></param>
+        /// <param name="functionZeroConfigFailover"></param>
+        /// <param name="isNSNBDisabled"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetMicrofrontendsInGroupResponseProjectResourceConfig(
             global::System.Collections.Generic.IList<string> functionDefaultRegions,
-            bool? fluid,
-            double? functionDefaultTimeout,
-            global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigFunctionDefaultMemoryType? functionDefaultMemoryType,
-            bool? functionZeroConfigFailover,
-            bool? elasticConcurrencyEnabled,
-            global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineType? buildMachineType,
-            global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineSelection? buildMachineSelection,
             double? buildMachineElasticLastUpdated,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineElasticReason? buildMachineElasticReason,
-            bool? isNSNBDisabled,
+            global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineSelection? buildMachineSelection,
+            global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildMachineType? buildMachineType,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigBuildQueue? buildQueue,
-            bool? enableFunctionsBeta)
+            bool? elasticConcurrencyEnabled,
+            bool? enableFunctionsBeta,
+            bool? fluid,
+            global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfigFunctionDefaultMemoryType? functionDefaultMemoryType,
+            double? functionDefaultTimeout,
+            bool? functionZeroConfigFailover,
+            bool? isNSNBDisabled)
         {
-            this.Fluid = fluid;
-            this.FunctionDefaultRegions = functionDefaultRegions ?? throw new global::System.ArgumentNullException(nameof(functionDefaultRegions));
-            this.FunctionDefaultTimeout = functionDefaultTimeout;
-            this.FunctionDefaultMemoryType = functionDefaultMemoryType;
-            this.FunctionZeroConfigFailover = functionZeroConfigFailover;
-            this.ElasticConcurrencyEnabled = elasticConcurrencyEnabled;
-            this.BuildMachineType = buildMachineType;
-            this.BuildMachineSelection = buildMachineSelection;
             this.BuildMachineElasticLastUpdated = buildMachineElasticLastUpdated;
             this.BuildMachineElasticReason = buildMachineElasticReason;
-            this.IsNSNBDisabled = isNSNBDisabled;
+            this.BuildMachineSelection = buildMachineSelection;
+            this.BuildMachineType = buildMachineType;
             this.BuildQueue = buildQueue;
+            this.ElasticConcurrencyEnabled = elasticConcurrencyEnabled;
             this.EnableFunctionsBeta = enableFunctionsBeta;
+            this.Fluid = fluid;
+            this.FunctionDefaultMemoryType = functionDefaultMemoryType;
+            this.FunctionDefaultRegions = functionDefaultRegions ?? throw new global::System.ArgumentNullException(nameof(functionDefaultRegions));
+            this.FunctionDefaultTimeout = functionDefaultTimeout;
+            this.FunctionZeroConfigFailover = functionZeroConfigFailover;
+            this.IsNSNBDisabled = isNSNBDisabled;
         }
 
         /// <summary>

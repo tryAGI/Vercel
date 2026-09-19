@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTransformTypeJsonConverter))]
-        public global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTransformType Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("args")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Args { get; set; }
 
         /// <summary>
         ///
@@ -32,9 +32,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("args")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Args { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTransformTypeJsonConverter))]
+        public global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTransformType Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant2ProjectSecurityFirewallRouteTransform" /> class.
         /// </summary>
-        /// <param name="target"></param>
         /// <param name="args"></param>
-        /// <param name="type"></param>
+        /// <param name="target"></param>
         /// <param name="op"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsResponseVariant2ProjectSecurityFirewallRouteTransform(
-            global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTransformTarget target,
             string args,
-            global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTransformType type,
-            global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTransformOp op)
+            global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTransformTarget target,
+            global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTransformOp op,
+            global::Vercel.GetProjectsResponseVariant2ProjectSecurityFirewallRouteTransformType type)
         {
-            this.Type = type;
+            this.Args = args ?? throw new global::System.ArgumentNullException(nameof(args));
             this.Op = op;
             this.Target = target ?? throw new global::System.ArgumentNullException(nameof(target));
-            this.Args = args ?? throw new global::System.ArgumentNullException(nameof(args));
+            this.Type = type;
         }
 
         /// <summary>

@@ -11,9 +11,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rhs")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::Vercel.UpdateFlagSegmentResponseDataRuleConditionRhsVariant3, global::Vercel.UpdateFlagSegmentResponseDataRuleConditionRhsVariant4, bool?>))]
-        public global::Vercel.OneOf<string, double?, global::Vercel.UpdateFlagSegmentResponseDataRuleConditionRhsVariant3, global::Vercel.UpdateFlagSegmentResponseDataRuleConditionRhsVariant4, bool?>? Rhs { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cmp")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFlagSegmentResponseDataRuleConditionCmpJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UpdateFlagSegmentResponseDataRuleConditionCmp Cmp { get; set; }
 
         /// <summary>
         ///
@@ -32,10 +33,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cmp")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFlagSegmentResponseDataRuleConditionCmpJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UpdateFlagSegmentResponseDataRuleConditionCmp Cmp { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("rhs")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::Vercel.UpdateFlagSegmentResponseDataRuleConditionRhsVariant3, global::Vercel.UpdateFlagSegmentResponseDataRuleConditionRhsVariant4, bool?>))]
+        public global::Vercel.OneOf<string, double?, global::Vercel.UpdateFlagSegmentResponseDataRuleConditionRhsVariant3, global::Vercel.UpdateFlagSegmentResponseDataRuleConditionRhsVariant4, bool?>? Rhs { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -46,23 +46,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateFlagSegmentResponseDataRuleCondition" /> class.
         /// </summary>
-        /// <param name="lhs"></param>
         /// <param name="cmp"></param>
-        /// <param name="rhs"></param>
+        /// <param name="lhs"></param>
         /// <param name="cmpOptions"></param>
+        /// <param name="rhs"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateFlagSegmentResponseDataRuleCondition(
-            global::Vercel.OneOf<global::Vercel.UpdateFlagSegmentResponseDataRuleConditionLhsVariant1, global::Vercel.UpdateFlagSegmentResponseDataRuleConditionLhsVariant2> lhs,
             global::Vercel.UpdateFlagSegmentResponseDataRuleConditionCmp cmp,
-            global::Vercel.OneOf<string, double?, global::Vercel.UpdateFlagSegmentResponseDataRuleConditionRhsVariant3, global::Vercel.UpdateFlagSegmentResponseDataRuleConditionRhsVariant4, bool?>? rhs,
-            global::Vercel.UpdateFlagSegmentResponseDataRuleConditionCmpOptions? cmpOptions)
+            global::Vercel.OneOf<global::Vercel.UpdateFlagSegmentResponseDataRuleConditionLhsVariant1, global::Vercel.UpdateFlagSegmentResponseDataRuleConditionLhsVariant2> lhs,
+            global::Vercel.UpdateFlagSegmentResponseDataRuleConditionCmpOptions? cmpOptions,
+            global::Vercel.OneOf<string, double?, global::Vercel.UpdateFlagSegmentResponseDataRuleConditionRhsVariant3, global::Vercel.UpdateFlagSegmentResponseDataRuleConditionRhsVariant4, bool?>? rhs)
         {
-            this.Rhs = rhs;
+            this.Cmp = cmp;
             this.CmpOptions = cmpOptions;
             this.Lhs = lhs;
-            this.Cmp = cmp;
+            this.Rhs = rhs;
         }
 
         /// <summary>

@@ -9,10 +9,22 @@ namespace Vercel
     public sealed partial class ReadAccessGroupResponse
     {
         /// <summary>
-        ///
+        /// ID of the access group.<br/>
+        /// Example: ag_123a6c5209bc3778245d011443644c8d27dc2c50
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
-        public global::System.Collections.Generic.IList<global::Vercel.ReadAccessGroupResponseTeamPermission>? TeamPermissions { get; set; }
+        /// <example>ag_123a6c5209bc3778245d011443644c8d27dc2c50</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("accessGroupId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string AccessGroupId { get; set; }
+
+        /// <summary>
+        /// Timestamp in milliseconds when the access group was created.<br/>
+        /// Example: 1588720733602L
+        /// </summary>
+        /// <example>1588720733602L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string CreatedAt { get; set; }
 
         /// <summary>
         ///
@@ -28,51 +40,6 @@ namespace Vercel
         public required bool IsDsyncManaged { get; set; }
 
         /// <summary>
-        /// The name of this access group.<br/>
-        /// Example: my-access-group
-        /// </summary>
-        /// <example>my-access-group</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
-
-        /// <summary>
-        /// Timestamp in milliseconds when the access group was created.<br/>
-        /// Example: 1588720733602L
-        /// </summary>
-        /// <example>1588720733602L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string CreatedAt { get; set; }
-
-        /// <summary>
-        /// ID of the team that this access group belongs to.<br/>
-        /// Example: team_123a6c5209bc3778245d011443644c8d27dc2c50
-        /// </summary>
-        /// <example>team_123a6c5209bc3778245d011443644c8d27dc2c50</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TeamId { get; set; }
-
-        /// <summary>
-        /// Timestamp in milliseconds when the access group was last updated.<br/>
-        /// Example: 1588720733602L
-        /// </summary>
-        /// <example>1588720733602L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string UpdatedAt { get; set; }
-
-        /// <summary>
-        /// ID of the access group.<br/>
-        /// Example: ag_123a6c5209bc3778245d011443644c8d27dc2c50
-        /// </summary>
-        /// <example>ag_123a6c5209bc3778245d011443644c8d27dc2c50</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("accessGroupId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string AccessGroupId { get; set; }
-
-        /// <summary>
         /// Number of members in the access group.<br/>
         /// Example: 5
         /// </summary>
@@ -80,6 +47,15 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("membersCount")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double MembersCount { get; set; }
+
+        /// <summary>
+        /// The name of this access group.<br/>
+        /// Example: my-access-group
+        /// </summary>
+        /// <example>my-access-group</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
 
         /// <summary>
         /// Number of projects in the access group.<br/>
@@ -91,12 +67,36 @@ namespace Vercel
         public required double ProjectsCount { get; set; }
 
         /// <summary>
+        /// ID of the team that this access group belongs to.<br/>
+        /// Example: team_123a6c5209bc3778245d011443644c8d27dc2c50
+        /// </summary>
+        /// <example>team_123a6c5209bc3778245d011443644c8d27dc2c50</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string TeamId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
+        public global::System.Collections.Generic.IList<global::Vercel.ReadAccessGroupResponseTeamPermission>? TeamPermissions { get; set; }
+
+        /// <summary>
         /// Roles that the team has in the access group.<br/>
         /// Example: [DEVELOPER, BILLING]
         /// </summary>
         /// <example>[DEVELOPER, BILLING]</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
         public global::System.Collections.Generic.IList<string>? TeamRoles { get; set; }
+
+        /// <summary>
+        /// Timestamp in milliseconds when the access group was last updated.<br/>
+        /// Example: 1588720733602L
+        /// </summary>
+        /// <example>1588720733602L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string UpdatedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -107,14 +107,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ReadAccessGroupResponse" /> class.
         /// </summary>
-        /// <param name="isDsyncManaged"></param>
-        /// <param name="name">
-        /// The name of this access group.<br/>
-        /// Example: my-access-group
+        /// <param name="accessGroupId">
+        /// ID of the access group.<br/>
+        /// Example: ag_123a6c5209bc3778245d011443644c8d27dc2c50
         /// </param>
         /// <param name="createdAt">
         /// Timestamp in milliseconds when the access group was created.<br/>
         /// Example: 1588720733602L
+        /// </param>
+        /// <param name="isDsyncManaged"></param>
+        /// <param name="membersCount">
+        /// Number of members in the access group.<br/>
+        /// Example: 5
+        /// </param>
+        /// <param name="name">
+        /// The name of this access group.<br/>
+        /// Example: my-access-group
+        /// </param>
+        /// <param name="projectsCount">
+        /// Number of projects in the access group.<br/>
+        /// Example: 2
         /// </param>
         /// <param name="teamId">
         /// ID of the team that this access group belongs to.<br/>
@@ -124,20 +136,8 @@ namespace Vercel
         /// Timestamp in milliseconds when the access group was last updated.<br/>
         /// Example: 1588720733602L
         /// </param>
-        /// <param name="accessGroupId">
-        /// ID of the access group.<br/>
-        /// Example: ag_123a6c5209bc3778245d011443644c8d27dc2c50
-        /// </param>
-        /// <param name="membersCount">
-        /// Number of members in the access group.<br/>
-        /// Example: 5
-        /// </param>
-        /// <param name="projectsCount">
-        /// Number of projects in the access group.<br/>
-        /// Example: 2
-        /// </param>
-        /// <param name="teamPermissions"></param>
         /// <param name="entitlements"></param>
+        /// <param name="teamPermissions"></param>
         /// <param name="teamRoles">
         /// Roles that the team has in the access group.<br/>
         /// Example: [DEVELOPER, BILLING]
@@ -146,29 +146,29 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ReadAccessGroupResponse(
-            bool isDsyncManaged,
-            string name,
+            string accessGroupId,
             string createdAt,
+            bool isDsyncManaged,
+            double membersCount,
+            string name,
+            double projectsCount,
             string teamId,
             string updatedAt,
-            string accessGroupId,
-            double membersCount,
-            double projectsCount,
-            global::System.Collections.Generic.IList<global::Vercel.ReadAccessGroupResponseTeamPermission>? teamPermissions,
             global::System.Collections.Generic.IList<global::Vercel.ReadAccessGroupResponseEntitlement>? entitlements,
+            global::System.Collections.Generic.IList<global::Vercel.ReadAccessGroupResponseTeamPermission>? teamPermissions,
             global::System.Collections.Generic.IList<string>? teamRoles)
         {
-            this.TeamPermissions = teamPermissions;
+            this.AccessGroupId = accessGroupId ?? throw new global::System.ArgumentNullException(nameof(accessGroupId));
+            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.Entitlements = entitlements;
             this.IsDsyncManaged = isDsyncManaged;
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
-            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
-            this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
-            this.AccessGroupId = accessGroupId ?? throw new global::System.ArgumentNullException(nameof(accessGroupId));
             this.MembersCount = membersCount;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.ProjectsCount = projectsCount;
+            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
+            this.TeamPermissions = teamPermissions;
             this.TeamRoles = teamRoles;
+            this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
         }
 
         /// <summary>

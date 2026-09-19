@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("dismissals")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AuthUserDismissedToastDismissal> Dismissals { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("dismissals")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.AuthUserDismissedToastDismissal> Dismissals { get; set; }
+        public required string Name { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="AuthUserDismissedToast" /> class.
         /// </summary>
-        /// <param name="name"></param>
         /// <param name="dismissals"></param>
+        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AuthUserDismissedToast(
-            string name,
-            global::System.Collections.Generic.IList<global::Vercel.AuthUserDismissedToastDismissal> dismissals)
+            global::System.Collections.Generic.IList<global::Vercel.AuthUserDismissedToastDismissal> dismissals,
+            string name)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Dismissals = dismissals ?? throw new global::System.ArgumentNullException(nameof(dismissals));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
         }
 
         /// <summary>

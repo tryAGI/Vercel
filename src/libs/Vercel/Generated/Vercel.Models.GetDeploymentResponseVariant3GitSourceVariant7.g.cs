@@ -11,9 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant3GitSourceVariant7TypeJsonConverter))]
-        public global::Vercel.GetDeploymentResponseVariant3GitSourceVariant7Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("prId")]
+        public double? PrId { get; set; }
 
         /// <summary>
         ///
@@ -38,8 +37,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prId")]
-        public double? PrId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant3GitSourceVariant7TypeJsonConverter))]
+        public global::Vercel.GetDeploymentResponseVariant3GitSourceVariant7Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -51,25 +51,25 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetDeploymentResponseVariant3GitSourceVariant7" /> class.
         /// </summary>
         /// <param name="projectId"></param>
-        /// <param name="type"></param>
+        /// <param name="prId"></param>
         /// <param name="ref"></param>
         /// <param name="sha"></param>
-        /// <param name="prId"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant3GitSourceVariant7(
             global::Vercel.OneOf<string, double?> projectId,
-            global::Vercel.GetDeploymentResponseVariant3GitSourceVariant7Type type,
+            double? prId,
             string? @ref,
             string? sha,
-            double? prId)
+            global::Vercel.GetDeploymentResponseVariant3GitSourceVariant7Type type)
         {
-            this.Type = type;
+            this.PrId = prId;
             this.ProjectId = projectId;
             this.Ref = @ref;
             this.Sha = sha;
-            this.PrId = prId;
+            this.Type = type;
         }
 
         /// <summary>

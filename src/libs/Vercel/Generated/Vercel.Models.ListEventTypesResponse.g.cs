@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("types")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("categories")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.ListEventType> Types { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.ListEventTypesResponseCategorie> Categories { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("categories")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("types")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.ListEventTypesResponseCategorie> Categories { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.ListEventType> Types { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListEventTypesResponse" /> class.
         /// </summary>
-        /// <param name="types"></param>
         /// <param name="categories"></param>
+        /// <param name="types"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListEventTypesResponse(
-            global::System.Collections.Generic.IList<global::Vercel.ListEventType> types,
-            global::System.Collections.Generic.IList<global::Vercel.ListEventTypesResponseCategorie> categories)
+            global::System.Collections.Generic.IList<global::Vercel.ListEventTypesResponseCategorie> categories,
+            global::System.Collections.Generic.IList<global::Vercel.ListEventType> types)
         {
-            this.Types = types ?? throw new global::System.ArgumentNullException(nameof(types));
             this.Categories = categories ?? throw new global::System.ArgumentNullException(nameof(categories));
+            this.Types = types ?? throw new global::System.ArgumentNullException(nameof(types));
         }
 
         /// <summary>

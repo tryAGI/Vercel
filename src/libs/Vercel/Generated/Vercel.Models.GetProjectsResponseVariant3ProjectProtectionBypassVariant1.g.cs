@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("configurationId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ConfigurationId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double CreatedAt { get; set; }
@@ -25,13 +32,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant3ProjectProtectionBypassVariant1ScopeJsonConverter))]
-        public global::Vercel.GetProjectsResponseVariant3ProjectProtectionBypassVariant1Scope Scope { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string IntegrationId { get; set; }
@@ -39,9 +39,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configurationId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ConfigurationId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant3ProjectProtectionBypassVariant1ScopeJsonConverter))]
+        public global::Vercel.GetProjectsResponseVariant3ProjectProtectionBypassVariant1Scope Scope { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -52,26 +52,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant3ProjectProtectionBypassVariant1" /> class.
         /// </summary>
+        /// <param name="configurationId"></param>
         /// <param name="createdAt"></param>
         /// <param name="createdBy"></param>
         /// <param name="integrationId"></param>
-        /// <param name="configurationId"></param>
         /// <param name="scope"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsResponseVariant3ProjectProtectionBypassVariant1(
+            string configurationId,
             double createdAt,
             string createdBy,
             string integrationId,
-            string configurationId,
             global::Vercel.GetProjectsResponseVariant3ProjectProtectionBypassVariant1Scope scope)
         {
+            this.ConfigurationId = configurationId ?? throw new global::System.ArgumentNullException(nameof(configurationId));
             this.CreatedAt = createdAt;
             this.CreatedBy = createdBy ?? throw new global::System.ArgumentNullException(nameof(createdBy));
-            this.Scope = scope;
             this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
-            this.ConfigurationId = configurationId ?? throw new global::System.ArgumentNullException(nameof(configurationId));
+            this.Scope = scope;
         }
 
         /// <summary>

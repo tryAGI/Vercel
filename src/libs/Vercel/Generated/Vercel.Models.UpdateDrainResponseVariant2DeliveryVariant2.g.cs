@@ -11,9 +11,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDrainResponseVariant2DeliveryVariant2TypeJsonConverter))]
-        public global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("encoding")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDrainResponseVariant2DeliveryVariant2EncodingJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2Encoding Encoding { get; set; }
 
         /// <summary>
         ///
@@ -21,14 +22,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("endpoint")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2Endpoint Endpoint { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("encoding")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDrainResponseVariant2DeliveryVariant2EncodingJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2Encoding Encoding { get; set; }
 
         /// <summary>
         ///
@@ -45,6 +38,13 @@ namespace Vercel
         public global::Vercel.OneOf<string, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2Secret>? Secret { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDrainResponseVariant2DeliveryVariant2TypeJsonConverter))]
+        public global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2Type Type { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -53,26 +53,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateDrainResponseVariant2DeliveryVariant2" /> class.
         /// </summary>
-        /// <param name="endpoint"></param>
         /// <param name="encoding"></param>
+        /// <param name="endpoint"></param>
         /// <param name="headers"></param>
-        /// <param name="type"></param>
         /// <param name="secret"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateDrainResponseVariant2DeliveryVariant2(
-            global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2Endpoint endpoint,
             global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2Encoding encoding,
+            global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2Endpoint endpoint,
             global::System.Collections.Generic.Dictionary<string, string> headers,
-            global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2Type type,
-            global::Vercel.OneOf<string, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2Secret>? secret)
+            global::Vercel.OneOf<string, global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2Secret>? secret,
+            global::Vercel.UpdateDrainResponseVariant2DeliveryVariant2Type type)
         {
-            this.Type = type;
-            this.Endpoint = endpoint ?? throw new global::System.ArgumentNullException(nameof(endpoint));
             this.Encoding = encoding;
+            this.Endpoint = endpoint ?? throw new global::System.ArgumentNullException(nameof(endpoint));
             this.Headers = headers ?? throw new global::System.ArgumentNullException(nameof(headers));
             this.Secret = secret;
+            this.Type = type;
         }
 
         /// <summary>

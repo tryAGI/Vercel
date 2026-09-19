@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scopeId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ScopeId { get; set; }
+        public required double CreatedAt { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("scopeId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
+        public required string ScopeId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="AuthUserDismissedToastDismissal" /> class.
         /// </summary>
-        /// <param name="scopeId"></param>
         /// <param name="createdAt"></param>
+        /// <param name="scopeId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AuthUserDismissedToastDismissal(
-            string scopeId,
-            double createdAt)
+            double createdAt,
+            string scopeId)
         {
-            this.ScopeId = scopeId ?? throw new global::System.ArgumentNullException(nameof(scopeId));
             this.CreatedAt = createdAt;
+            this.ScopeId = scopeId ?? throw new global::System.ArgumentNullException(nameof(scopeId));
         }
 
         /// <summary>

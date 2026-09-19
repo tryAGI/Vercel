@@ -9,6 +9,13 @@ namespace Vercel
     public sealed partial class DeleteDeploymentResponse
     {
         /// <summary>
+        /// A constant with the final state of the deployment.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("state")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.DeleteDeploymentResponseStateJsonConverter))]
+        public global::Vercel.DeleteDeploymentResponseState State { get; set; }
+
+        /// <summary>
         /// The removed deployment ID.<br/>
         /// Example: dpl_5WJWYSyB7BpgTj3EuwF37WMRBXBtPQ2iTMJHJBJyRfd
         /// </summary>
@@ -16,13 +23,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Uid { get; set; }
-
-        /// <summary>
-        /// A constant with the final state of the deployment.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("state")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.DeleteDeploymentResponseStateJsonConverter))]
-        public global::Vercel.DeleteDeploymentResponseState State { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,8 +47,8 @@ namespace Vercel
             string uid,
             global::Vercel.DeleteDeploymentResponseState state)
         {
-            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
             this.State = state;
+            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
         }
 
         /// <summary>

@@ -11,47 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DeploymentId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public string? ProjectId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("requires")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2RequiresJsonConverter))]
-        public global::Vercel.UpdateDeploymentCheckRunResponseVariant2Requires? Requires { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("blocks")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2BlocksJsonConverter))]
         public global::Vercel.UpdateDeploymentCheckRunResponseVariant2Blocks? Blocks { get; set; }
@@ -59,16 +18,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("targets")]
-        public global::System.Collections.Generic.IList<string>? Targets { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2StatusJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UpdateDeploymentCheckRunResponseVariant2Status Status { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("completedAt")]
+        public double? CompletedAt { get; set; }
 
         /// <summary>
         ///
@@ -86,6 +37,20 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DeploymentId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("externalId")]
         public string? ExternalId { get; set; }
 
@@ -98,8 +63,56 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("output")]
         public object? Output { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string OwnerId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        public string? ProjectId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("requires")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2RequiresJsonConverter))]
+        public global::Vercel.UpdateDeploymentCheckRunResponseVariant2Requires? Requires { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDeploymentCheckRunResponseVariant2StatusJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UpdateDeploymentCheckRunResponseVariant2Status Status { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("targets")]
+        public global::System.Collections.Generic.IList<string>? Targets { get; set; }
 
         /// <summary>
         ///
@@ -111,22 +124,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double UpdatedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("completedAt")]
-        public double? CompletedAt { get; set; }
 
         /// <summary>
         ///
@@ -145,67 +145,67 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateDeploymentCheckRunResponseVariant2" /> class.
         /// </summary>
+        /// <param name="createdAt"></param>
+        /// <param name="deploymentId"></param>
         /// <param name="id"></param>
         /// <param name="name"></param>
         /// <param name="ownerId"></param>
-        /// <param name="deploymentId"></param>
         /// <param name="status"></param>
         /// <param name="timeout"></param>
-        /// <param name="createdAt"></param>
         /// <param name="updatedAt"></param>
         /// <param name="source"></param>
-        /// <param name="projectId"></param>
-        /// <param name="requires"></param>
         /// <param name="blocks"></param>
-        /// <param name="targets"></param>
+        /// <param name="completedAt"></param>
         /// <param name="conclusion"></param>
         /// <param name="conclusionText"></param>
         /// <param name="externalId"></param>
         /// <param name="externalUrl"></param>
         /// <param name="output"></param>
-        /// <param name="completedAt"></param>
+        /// <param name="projectId"></param>
+        /// <param name="requires"></param>
+        /// <param name="targets"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateDeploymentCheckRunResponseVariant2(
+            double createdAt,
+            string deploymentId,
             string id,
             string name,
             string ownerId,
-            string deploymentId,
             global::Vercel.UpdateDeploymentCheckRunResponseVariant2Status status,
             double timeout,
-            double createdAt,
             double updatedAt,
             global::Vercel.OneOf<global::Vercel.UpdateDeploymentCheckRunResponseVariant2SourceVariant1, global::Vercel.UpdateDeploymentCheckRunResponseVariant2SourceVariant2> source,
-            string? projectId,
-            global::Vercel.UpdateDeploymentCheckRunResponseVariant2Requires? requires,
             global::Vercel.UpdateDeploymentCheckRunResponseVariant2Blocks? blocks,
-            global::System.Collections.Generic.IList<string>? targets,
+            double? completedAt,
             global::Vercel.UpdateDeploymentCheckRunResponseVariant2Conclusion? conclusion,
             string? conclusionText,
             string? externalId,
             string? externalUrl,
             object? output,
-            double? completedAt)
+            string? projectId,
+            global::Vercel.UpdateDeploymentCheckRunResponseVariant2Requires? requires,
+            global::System.Collections.Generic.IList<string>? targets)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
-            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
-            this.ProjectId = projectId;
-            this.Requires = requires;
             this.Blocks = blocks;
-            this.Targets = targets;
-            this.Status = status;
+            this.CompletedAt = completedAt;
             this.Conclusion = conclusion;
             this.ConclusionText = conclusionText;
+            this.CreatedAt = createdAt;
+            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
             this.ExternalId = externalId;
             this.ExternalUrl = externalUrl;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Output = output;
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.ProjectId = projectId;
+            this.Requires = requires;
+            this.Status = status;
+            this.Targets = targets;
             this.Timeout = timeout;
-            this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
-            this.CompletedAt = completedAt;
             this.Source = source;
         }
 

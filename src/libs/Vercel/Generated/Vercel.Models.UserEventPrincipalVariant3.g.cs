@@ -11,9 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPrincipalVariant3TypeJsonConverter))]
-        public global::Vercel.UserEventPrincipalVariant3Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
+        public string? Email { get; set; }
 
         /// <summary>
         ///
@@ -32,8 +31,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
-        public string? Email { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPrincipalVariant3TypeJsonConverter))]
+        public global::Vercel.UserEventPrincipalVariant3Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -46,21 +46,21 @@ namespace Vercel
         /// </summary>
         /// <param name="id"></param>
         /// <param name="name"></param>
-        /// <param name="type"></param>
         /// <param name="email"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPrincipalVariant3(
             string id,
             string name,
-            global::Vercel.UserEventPrincipalVariant3Type type,
-            string? email)
+            string? email,
+            global::Vercel.UserEventPrincipalVariant3Type type)
         {
-            this.Type = type;
+            this.Email = email;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Email = email;
+            this.Type = type;
         }
 
         /// <summary>

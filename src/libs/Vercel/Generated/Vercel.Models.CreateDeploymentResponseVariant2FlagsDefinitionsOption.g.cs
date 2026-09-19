@@ -11,15 +11,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.FlagJSONValueJsonConverter))]
-        public global::Vercel.FlagJSONValue? Value { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("label")]
+        public string? Label { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("label")]
-        public string? Label { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.FlagJSONValueJsonConverter))]
+        public global::Vercel.FlagJSONValue? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,17 +30,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateDeploymentResponseVariant2FlagsDefinitionsOption" /> class.
         /// </summary>
-        /// <param name="value"></param>
         /// <param name="label"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateDeploymentResponseVariant2FlagsDefinitionsOption(
-            global::Vercel.FlagJSONValue? value,
-            string? label)
+            string? label,
+            global::Vercel.FlagJSONValue? value)
         {
-            this.Value = value;
             this.Label = label;
+            this.Value = value;
         }
 
         /// <summary>

@@ -9,13 +9,6 @@ namespace Vercel
     public sealed partial class BuyCreditsResponseVariant3OrbSubscriptionIntent
     {
         /// <summary>
-        /// The ID of the Orb subscription intent with the format `orbsubint_`.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
@@ -29,6 +22,13 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CreatedAt { get; set; }
+
+        /// <summary>
+        /// The ID of the Orb subscription intent with the format `orbsubint_`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
 
         /// <summary>
         /// The Orb subscription ID this intent is associated with.
@@ -53,6 +53,12 @@ namespace Vercel
         public required string OwnerId { get; set; }
 
         /// <summary>
+        /// Optional purchase intent ID if this is associated with a purchase.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("purchaseIntentId")]
+        public string? PurchaseIntentId { get; set; }
+
+        /// <summary>
         /// The status of the Orb subscription intent.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
@@ -68,12 +74,6 @@ namespace Vercel
         public required string UpdatedAt { get; set; }
 
         /// <summary>
-        /// Optional purchase intent ID if this is associated with a purchase.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("purchaseIntentId")]
-        public string? PurchaseIntentId { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -82,12 +82,12 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="BuyCreditsResponseVariant3OrbSubscriptionIntent" /> class.
         /// </summary>
-        /// <param name="id">
-        /// The ID of the Orb subscription intent with the format `orbsubint_`.
-        /// </param>
         /// <param name="configuration"></param>
         /// <param name="createdAt">
         /// The ISO 8601 date-time that the intent was created.
+        /// </param>
+        /// <param name="id">
+        /// The ID of the Orb subscription intent with the format `orbsubint_`.
         /// </param>
         /// <param name="orbSubscriptionId">
         /// The Orb subscription ID this intent is associated with.
@@ -109,9 +109,9 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public BuyCreditsResponseVariant3OrbSubscriptionIntent(
-            string id,
             global::Vercel.OneOf<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant1, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4> configuration,
             string createdAt,
+            string id,
             string orbSubscriptionId,
             global::Vercel.OneOf<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentOrbUpdateVariant1, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentOrbUpdateVariant2, global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentOrbUpdateVariant3> orbUpdate,
             string ownerId,
@@ -119,15 +119,15 @@ namespace Vercel
             string updatedAt,
             string? purchaseIntentId)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Configuration = configuration;
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.OrbSubscriptionId = orbSubscriptionId ?? throw new global::System.ArgumentNullException(nameof(orbSubscriptionId));
             this.OrbUpdate = orbUpdate;
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.PurchaseIntentId = purchaseIntentId;
             this.Status = status;
             this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
-            this.PurchaseIntentId = purchaseIntentId;
         }
 
         /// <summary>

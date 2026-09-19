@@ -18,16 +18,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
+        public required string Name { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        public required string Slug { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,19 +39,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetConfigurationProductsResponseIntegration" /> class.
         /// </summary>
         /// <param name="id"></param>
-        /// <param name="slug"></param>
         /// <param name="name"></param>
+        /// <param name="slug"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetConfigurationProductsResponseIntegration(
             string id,
-            string slug,
-            string name)
+            string name,
+            string slug)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
         }
 
         /// <summary>

@@ -11,16 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("vercel_ruleset")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("ai_bots")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UploadProjectAvatarResponseSecurityManagedRulesVercelRuleset VercelRuleset { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("traffic_sources")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UploadProjectAvatarResponseSecurityManagedRulesTrafficSources TrafficSources { get; set; }
+        public required global::Vercel.UploadProjectAvatarResponseSecurityManagedRulesAiBots AiBots { get; set; }
 
         /// <summary>
         ///
@@ -32,16 +25,23 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ai_bots")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("owasp")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UploadProjectAvatarResponseSecurityManagedRulesAiBots AiBots { get; set; }
+        public required global::Vercel.UploadProjectAvatarResponseSecurityManagedRulesOwasp Owasp { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("owasp")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("traffic_sources")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UploadProjectAvatarResponseSecurityManagedRulesOwasp Owasp { get; set; }
+        public required global::Vercel.UploadProjectAvatarResponseSecurityManagedRulesTrafficSources TrafficSources { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vercel_ruleset")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UploadProjectAvatarResponseSecurityManagedRulesVercelRuleset VercelRuleset { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -52,26 +52,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UploadProjectAvatarResponseSecurityManagedRules" /> class.
         /// </summary>
-        /// <param name="vercelRuleset"></param>
-        /// <param name="trafficSources"></param>
-        /// <param name="botFilter"></param>
         /// <param name="aiBots"></param>
+        /// <param name="botFilter"></param>
         /// <param name="owasp"></param>
+        /// <param name="trafficSources"></param>
+        /// <param name="vercelRuleset"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UploadProjectAvatarResponseSecurityManagedRules(
-            global::Vercel.UploadProjectAvatarResponseSecurityManagedRulesVercelRuleset vercelRuleset,
-            global::Vercel.UploadProjectAvatarResponseSecurityManagedRulesTrafficSources trafficSources,
-            global::Vercel.UploadProjectAvatarResponseSecurityManagedRulesBotFilter botFilter,
             global::Vercel.UploadProjectAvatarResponseSecurityManagedRulesAiBots aiBots,
-            global::Vercel.UploadProjectAvatarResponseSecurityManagedRulesOwasp owasp)
+            global::Vercel.UploadProjectAvatarResponseSecurityManagedRulesBotFilter botFilter,
+            global::Vercel.UploadProjectAvatarResponseSecurityManagedRulesOwasp owasp,
+            global::Vercel.UploadProjectAvatarResponseSecurityManagedRulesTrafficSources trafficSources,
+            global::Vercel.UploadProjectAvatarResponseSecurityManagedRulesVercelRuleset vercelRuleset)
         {
-            this.VercelRuleset = vercelRuleset ?? throw new global::System.ArgumentNullException(nameof(vercelRuleset));
-            this.TrafficSources = trafficSources ?? throw new global::System.ArgumentNullException(nameof(trafficSources));
-            this.BotFilter = botFilter ?? throw new global::System.ArgumentNullException(nameof(botFilter));
             this.AiBots = aiBots ?? throw new global::System.ArgumentNullException(nameof(aiBots));
+            this.BotFilter = botFilter ?? throw new global::System.ArgumentNullException(nameof(botFilter));
             this.Owasp = owasp ?? throw new global::System.ArgumentNullException(nameof(owasp));
+            this.TrafficSources = trafficSources ?? throw new global::System.ArgumentNullException(nameof(trafficSources));
+            this.VercelRuleset = vercelRuleset ?? throw new global::System.ArgumentNullException(nameof(vercelRuleset));
         }
 
         /// <summary>

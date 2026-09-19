@@ -11,22 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
-        public string? Description { get; set; }
+        public required global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2Action Action { get; set; }
 
         /// <summary>
         ///
@@ -45,9 +32,22 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2Action Action { get; set; }
+        public required string Id { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
 
         /// <summary>
         ///
@@ -72,11 +72,11 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2" /> class.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="name"></param>
+        /// <param name="action"></param>
         /// <param name="active"></param>
         /// <param name="conditionGroup"></param>
-        /// <param name="action"></param>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
         /// <param name="valid"></param>
         /// <param name="validationErrors"></param>
         /// <param name="description"></param>
@@ -84,21 +84,21 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2(
-            string id,
-            string name,
+            global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2Action action,
             bool active,
             global::System.Collections.Generic.IList<global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2ConditionGroupItem> conditionGroup,
-            global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRuleVariant2Action action,
+            string id,
+            string name,
             bool valid,
             global::System.Collections.Generic.IList<string> validationErrors,
             string? description)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Description = description;
+            this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
             this.Active = active;
             this.ConditionGroup = conditionGroup ?? throw new global::System.ArgumentNullException(nameof(conditionGroup));
-            this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
+            this.Description = description;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Valid = valid;
             this.ValidationErrors = validationErrors ?? throw new global::System.ArgumentNullException(nameof(validationErrors));
         }

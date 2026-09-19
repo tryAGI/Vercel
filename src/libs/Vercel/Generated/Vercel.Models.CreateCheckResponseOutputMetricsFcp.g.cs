@@ -11,12 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        public double? Value { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("previousValue")]
         public double? PreviousValue { get; set; }
 
@@ -28,6 +22,12 @@ namespace Vercel
         public global::Vercel.CreateCheckResponseOutputMetricsFcpSource Source { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
+        public double? Value { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -36,20 +36,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateCheckResponseOutputMetricsFcp" /> class.
         /// </summary>
-        /// <param name="value"></param>
         /// <param name="previousValue"></param>
         /// <param name="source"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateCheckResponseOutputMetricsFcp(
-            double? value,
             double? previousValue,
-            global::Vercel.CreateCheckResponseOutputMetricsFcpSource source)
+            global::Vercel.CreateCheckResponseOutputMetricsFcpSource source,
+            double? value)
         {
-            this.Value = value;
             this.PreviousValue = previousValue;
             this.Source = source;
+            this.Value = value;
         }
 
         /// <summary>

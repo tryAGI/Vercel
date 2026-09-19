@@ -11,16 +11,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("code")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Code { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        public string? Action { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("message")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("code")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Message { get; set; }
+        public required string Code { get; set; }
 
         /// <summary>
         ///
@@ -31,8 +30,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        public string? Action { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("message")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Message { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,21 +45,21 @@ namespace Vercel
         /// </summary>
         /// <param name="code"></param>
         /// <param name="message"></param>
-        /// <param name="link"></param>
         /// <param name="action"></param>
+        /// <param name="link"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant3AliasWarning(
             string code,
             string message,
-            string? link,
-            string? action)
+            string? action,
+            string? link)
         {
-            this.Code = code ?? throw new global::System.ArgumentNullException(nameof(code));
-            this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
-            this.Link = link;
             this.Action = action;
+            this.Code = code ?? throw new global::System.ArgumentNullException(nameof(code));
+            this.Link = link;
+            this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
         }
 
         /// <summary>

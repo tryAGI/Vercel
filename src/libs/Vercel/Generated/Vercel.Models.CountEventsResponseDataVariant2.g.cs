@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("visitors")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("count")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Visitors { get; set; }
+        public required double Count { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("count")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("visitors")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Count { get; set; }
+        public required double Visitors { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CountEventsResponseDataVariant2" /> class.
         /// </summary>
-        /// <param name="visitors"></param>
         /// <param name="count"></param>
+        /// <param name="visitors"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CountEventsResponseDataVariant2(
-            double visitors,
-            double count)
+            double count,
+            double visitors)
         {
-            this.Visitors = visitors;
             this.Count = count;
+            this.Visitors = visitors;
         }
 
         /// <summary>

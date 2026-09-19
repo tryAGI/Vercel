@@ -11,20 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
-        public string? Uid { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("entitlements")]
-        public global::System.Collections.Generic.IList<global::Vercel.TeamMembershipEntitlement>? Entitlements { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
-        public string? TeamId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("accessRequestedAt")]
+        public double? AccessRequestedAt { get; set; }
 
         /// <summary>
         ///
@@ -36,8 +24,28 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("accessRequestedAt")]
-        public double? AccessRequestedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("created")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double Created { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("entitlements")]
+        public global::System.Collections.Generic.IList<global::Vercel.TeamMembershipEntitlement>? Entitlements { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("joinedFrom")]
+        public global::Vercel.TeamMembershipJoinedFrom? JoinedFrom { get; set; }
 
         /// <summary>
         ///
@@ -50,8 +58,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
-        public global::System.Collections.Generic.IList<global::Vercel.TeamMembershipTeamRole>? TeamRoles { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
+        public string? TeamId { get; set; }
 
         /// <summary>
         ///
@@ -62,22 +70,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
+        public global::System.Collections.Generic.IList<global::Vercel.TeamMembershipTeamRole>? TeamRoles { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("created")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Created { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("joinedFrom")]
-        public global::Vercel.TeamMembershipJoinedFrom? JoinedFrom { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
+        public string? Uid { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -89,43 +89,43 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="TeamMembership" /> class.
         /// </summary>
         /// <param name="confirmed"></param>
-        /// <param name="role"></param>
-        /// <param name="createdAt"></param>
         /// <param name="created"></param>
-        /// <param name="uid"></param>
-        /// <param name="entitlements"></param>
-        /// <param name="teamId"></param>
+        /// <param name="createdAt"></param>
+        /// <param name="role"></param>
         /// <param name="accessRequestedAt"></param>
-        /// <param name="teamRoles"></param>
-        /// <param name="teamPermissions"></param>
+        /// <param name="entitlements"></param>
         /// <param name="joinedFrom"></param>
+        /// <param name="teamId"></param>
+        /// <param name="teamPermissions"></param>
+        /// <param name="teamRoles"></param>
+        /// <param name="uid"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TeamMembership(
             bool confirmed,
-            global::Vercel.TeamMembershipRole role,
-            double createdAt,
             double created,
-            string? uid,
-            global::System.Collections.Generic.IList<global::Vercel.TeamMembershipEntitlement>? entitlements,
-            string? teamId,
+            double createdAt,
+            global::Vercel.TeamMembershipRole role,
             double? accessRequestedAt,
-            global::System.Collections.Generic.IList<global::Vercel.TeamMembershipTeamRole>? teamRoles,
+            global::System.Collections.Generic.IList<global::Vercel.TeamMembershipEntitlement>? entitlements,
+            global::Vercel.TeamMembershipJoinedFrom? joinedFrom,
+            string? teamId,
             global::System.Collections.Generic.IList<global::Vercel.TeamMembershipTeamPermission>? teamPermissions,
-            global::Vercel.TeamMembershipJoinedFrom? joinedFrom)
+            global::System.Collections.Generic.IList<global::Vercel.TeamMembershipTeamRole>? teamRoles,
+            string? uid)
         {
-            this.Uid = uid;
-            this.Entitlements = entitlements;
-            this.TeamId = teamId;
-            this.Confirmed = confirmed;
             this.AccessRequestedAt = accessRequestedAt;
-            this.Role = role;
-            this.TeamRoles = teamRoles;
-            this.TeamPermissions = teamPermissions;
-            this.CreatedAt = createdAt;
+            this.Confirmed = confirmed;
             this.Created = created;
+            this.CreatedAt = createdAt;
+            this.Entitlements = entitlements;
             this.JoinedFrom = joinedFrom;
+            this.Role = role;
+            this.TeamId = teamId;
+            this.TeamPermissions = teamPermissions;
+            this.TeamRoles = teamRoles;
+            this.Uid = uid;
         }
 
         /// <summary>

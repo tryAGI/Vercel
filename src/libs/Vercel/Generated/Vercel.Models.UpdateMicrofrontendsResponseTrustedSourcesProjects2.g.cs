@@ -9,16 +9,16 @@ namespace Vercel
     public sealed partial class UpdateMicrofrontendsResponseTrustedSourcesProjects2
     {
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("label")]
-        public string? Label { get; set; }
-
-        /// <summary>
         /// Optional overrides for the default same-env-by-slug matching. Provide explicit rules to allow cross-env access or presets.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customAllow")]
         public global::System.Collections.Generic.IList<global::Vercel.UpdateMicrofrontendsResponseTrustedSourcesProjectsCustomAllowItem>? CustomAllow { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("label")]
+        public string? Label { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,19 +29,19 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateMicrofrontendsResponseTrustedSourcesProjects2" /> class.
         /// </summary>
-        /// <param name="label"></param>
         /// <param name="customAllow">
         /// Optional overrides for the default same-env-by-slug matching. Provide explicit rules to allow cross-env access or presets.
         /// </param>
+        /// <param name="label"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateMicrofrontendsResponseTrustedSourcesProjects2(
-            string? label,
-            global::System.Collections.Generic.IList<global::Vercel.UpdateMicrofrontendsResponseTrustedSourcesProjectsCustomAllowItem>? customAllow)
+            global::System.Collections.Generic.IList<global::Vercel.UpdateMicrofrontendsResponseTrustedSourcesProjectsCustomAllowItem>? customAllow,
+            string? label)
         {
-            this.Label = label;
             this.CustomAllow = customAllow;
+            this.Label = label;
         }
 
         /// <summary>

@@ -11,13 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaTypeJsonConverter))]
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaType Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("properties")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required object Properties { get; set; }
@@ -27,6 +20,13 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("required")]
         public global::System.Collections.Generic.IList<string>? Required { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaTypeJsonConverter))]
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaType Type { get; set; }
 
         /// <summary>
         ///
@@ -44,21 +44,21 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateIntegrationStoreDirectResponseStoreProductMetadataSchema" /> class.
         /// </summary>
         /// <param name="properties"></param>
-        /// <param name="type"></param>
         /// <param name="required"></param>
+        /// <param name="type"></param>
         /// <param name="ui_order"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateIntegrationStoreDirectResponseStoreProductMetadataSchema(
             object properties,
-            global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaType type,
             global::System.Collections.Generic.IList<string>? required,
+            global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchemaType type,
             global::System.Collections.Generic.IList<string>? ui_order)
         {
-            this.Type = type;
             this.Properties = properties ?? throw new global::System.ArgumentNullException(nameof(properties));
             this.Required = required;
+            this.Type = type;
             this.Ui_order = ui_order;
         }
 

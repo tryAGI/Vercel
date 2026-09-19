@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("active")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Active { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateSecurityFirewallConfigByConfigVersionActivateResponseManagedRulesTrafficSourcesActionJsonConverter))]
+        public global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseManagedRulesTrafficSourcesAction? Action { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateSecurityFirewallConfigByConfigVersionActivateResponseManagedRulesTrafficSourcesActionJsonConverter))]
-        public global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseManagedRulesTrafficSourcesAction? Action { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("active")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Active { get; set; }
 
         /// <summary>
         ///
@@ -64,8 +64,8 @@ namespace Vercel
             string? userId,
             string? username)
         {
-            this.Active = active;
             this.Action = action;
+            this.Active = active;
             this.UpdatedAt = updatedAt;
             this.UserId = userId;
             this.Username = username;

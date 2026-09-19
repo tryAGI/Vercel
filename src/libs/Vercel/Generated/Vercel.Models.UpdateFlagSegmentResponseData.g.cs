@@ -11,8 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rules")]
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSegmentResponseDataRule>? Rules { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("exclude")]
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSegmentResponseDataExcludeItem>>>? Exclude { get; set; }
 
         /// <summary>
         ///
@@ -23,8 +23,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("exclude")]
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSegmentResponseDataExcludeItem>>>? Exclude { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("rules")]
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSegmentResponseDataRule>? Rules { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -35,20 +35,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateFlagSegmentResponseData" /> class.
         /// </summary>
-        /// <param name="rules"></param>
-        /// <param name="include"></param>
         /// <param name="exclude"></param>
+        /// <param name="include"></param>
+        /// <param name="rules"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateFlagSegmentResponseData(
-            global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSegmentResponseDataRule>? rules,
+            global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSegmentResponseDataExcludeItem>>>? exclude,
             global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSegmentResponseDataIncludeItem>>>? include,
-            global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSegmentResponseDataExcludeItem>>>? exclude)
+            global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSegmentResponseDataRule>? rules)
         {
-            this.Rules = rules;
-            this.Include = include;
             this.Exclude = exclude;
+            this.Include = include;
+            this.Rules = rules;
         }
 
         /// <summary>

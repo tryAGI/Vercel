@@ -18,6 +18,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("actionDuration")]
+        public string? ActionDuration { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rateLimit")]
         public global::Vercel.GenerateFirewallRuleResponseRuleActionMitigateRateLimit? RateLimit { get; set; }
 
@@ -26,12 +32,6 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("redirect")]
         public global::Vercel.GenerateFirewallRuleResponseRuleActionMitigateRedirect? Redirect { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("actionDuration")]
-        public string? ActionDuration { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,22 +43,22 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GenerateFirewallRuleResponseRuleActionMitigate" /> class.
         /// </summary>
         /// <param name="action"></param>
+        /// <param name="actionDuration"></param>
         /// <param name="rateLimit"></param>
         /// <param name="redirect"></param>
-        /// <param name="actionDuration"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GenerateFirewallRuleResponseRuleActionMitigate(
             string action,
+            string? actionDuration,
             global::Vercel.GenerateFirewallRuleResponseRuleActionMitigateRateLimit? rateLimit,
-            global::Vercel.GenerateFirewallRuleResponseRuleActionMitigateRedirect? redirect,
-            string? actionDuration)
+            global::Vercel.GenerateFirewallRuleResponseRuleActionMitigateRedirect? redirect)
         {
             this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
+            this.ActionDuration = actionDuration;
             this.RateLimit = rateLimit;
             this.Redirect = redirect;
-            this.ActionDuration = actionDuration;
         }
 
         /// <summary>

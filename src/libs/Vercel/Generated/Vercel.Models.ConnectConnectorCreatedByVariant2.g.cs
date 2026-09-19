@@ -9,11 +9,12 @@ namespace Vercel
     public sealed partial class ConnectConnectorCreatedByVariant2
     {
         /// <summary>
-        /// Principal kind.
+        /// Deployment environment of the project principal.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ConnectConnectorCreatedByVariant2TypeJsonConverter))]
-        public global::Vercel.ConnectConnectorCreatedByVariant2Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.ConnectConnectorCreatedByVariant2Environment?>))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.OneOf<string, global::Vercel.ConnectConnectorCreatedByVariant2Environment?> Environment { get; set; }
 
         /// <summary>
         /// Vercel project ID.
@@ -23,12 +24,11 @@ namespace Vercel
         public required string Id { get; set; }
 
         /// <summary>
-        /// Deployment environment of the project principal.
+        /// Principal kind.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.ConnectConnectorCreatedByVariant2Environment?>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<string, global::Vercel.ConnectConnectorCreatedByVariant2Environment?> Environment { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ConnectConnectorCreatedByVariant2TypeJsonConverter))]
+        public global::Vercel.ConnectConnectorCreatedByVariant2Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,11 +39,11 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ConnectConnectorCreatedByVariant2" /> class.
         /// </summary>
-        /// <param name="id">
-        /// Vercel project ID.
-        /// </param>
         /// <param name="environment">
         /// Deployment environment of the project principal.
+        /// </param>
+        /// <param name="id">
+        /// Vercel project ID.
         /// </param>
         /// <param name="type">
         /// Principal kind.
@@ -52,13 +52,13 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ConnectConnectorCreatedByVariant2(
-            string id,
             global::Vercel.OneOf<string, global::Vercel.ConnectConnectorCreatedByVariant2Environment?> environment,
+            string id,
             global::Vercel.ConnectConnectorCreatedByVariant2Type type)
         {
-            this.Type = type;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Environment = environment;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Type = type;
         }
 
         /// <summary>

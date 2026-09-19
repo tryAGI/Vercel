@@ -9,18 +9,18 @@ namespace Vercel
     public sealed partial class ConnectConnectorCreateResultUpdatedByVariant1
     {
         /// <summary>
-        /// Principal kind.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ConnectConnectorCreateResultUpdatedByVariant1TypeJsonConverter))]
-        public global::Vercel.ConnectConnectorCreateResultUpdatedByVariant1Type Type { get; set; }
-
-        /// <summary>
         /// Vercel user ID.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
+
+        /// <summary>
+        /// Principal kind.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ConnectConnectorCreateResultUpdatedByVariant1TypeJsonConverter))]
+        public global::Vercel.ConnectConnectorCreateResultUpdatedByVariant1Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -44,8 +44,8 @@ namespace Vercel
             string id,
             global::Vercel.ConnectConnectorCreateResultUpdatedByVariant1Type type)
         {
-            this.Type = type;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Type = type;
         }
 
         /// <summary>

@@ -15,6 +15,13 @@ namespace Vercel
         public global::Vercel.TeamSamlConnection? Connection { get; set; }
 
         /// <summary>
+        /// The default redirect URI to use after successful SAML authentication.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("defaultRedirectUri")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.TeamSamlDefaultRedirectUriJsonConverter))]
+        public global::Vercel.TeamSamlDefaultRedirectUri? DefaultRedirectUri { get; set; }
+
+        /// <summary>
         /// Information for the Directory Sync configuration.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("directory")]
@@ -26,13 +33,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("enforced")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Enforced { get; set; }
-
-        /// <summary>
-        /// The default redirect URI to use after successful SAML authentication.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("defaultRedirectUri")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.TeamSamlDefaultRedirectUriJsonConverter))]
-        public global::Vercel.TeamSamlDefaultRedirectUri? DefaultRedirectUri { get; set; }
 
         /// <summary>
         /// When "Directory Sync" is configured, this object contains a mapping of which Directory Group (by ID) should be assigned to which Vercel Team "role".
@@ -55,11 +55,11 @@ namespace Vercel
         /// <param name="connection">
         /// Information for the SAML Single Sign-On configuration.
         /// </param>
-        /// <param name="directory">
-        /// Information for the Directory Sync configuration.
-        /// </param>
         /// <param name="defaultRedirectUri">
         /// The default redirect URI to use after successful SAML authentication.
+        /// </param>
+        /// <param name="directory">
+        /// Information for the Directory Sync configuration.
         /// </param>
         /// <param name="roles">
         /// When "Directory Sync" is configured, this object contains a mapping of which Directory Group (by ID) should be assigned to which Vercel Team "role".
@@ -70,14 +70,14 @@ namespace Vercel
         public TeamSaml(
             bool enforced,
             global::Vercel.TeamSamlConnection? connection,
-            global::Vercel.TeamSamlDirectory? directory,
             global::Vercel.TeamSamlDefaultRedirectUri? defaultRedirectUri,
+            global::Vercel.TeamSamlDirectory? directory,
             object? roles)
         {
             this.Connection = connection;
+            this.DefaultRedirectUri = defaultRedirectUri;
             this.Directory = directory;
             this.Enforced = enforced;
-            this.DefaultRedirectUri = defaultRedirectUri;
             this.Roles = roles;
         }
 

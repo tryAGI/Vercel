@@ -11,13 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("canceledAt")]
         public double? CanceledAt { get; set; }
 
@@ -34,6 +27,13 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("enabledAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double EnabledAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
 
         /// <summary>
         ///
@@ -62,9 +62,9 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant1ItemAnalytics" /> class.
         /// </summary>
-        /// <param name="id"></param>
         /// <param name="disabledAt"></param>
         /// <param name="enabledAt"></param>
+        /// <param name="id"></param>
         /// <param name="canceledAt"></param>
         /// <param name="paidAt"></param>
         /// <param name="sampleRatePercent"></param>
@@ -73,18 +73,18 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsResponseVariant1ItemAnalytics(
-            string id,
             double disabledAt,
             double enabledAt,
+            string id,
             double? canceledAt,
             double? paidAt,
             double? sampleRatePercent,
             double? spendLimitInDollars)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.CanceledAt = canceledAt;
             this.DisabledAt = disabledAt;
             this.EnabledAt = enabledAt;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.PaidAt = paidAt;
             this.SampleRatePercent = sampleRatePercent;
             this.SpendLimitInDollars = spendLimitInDollars;

@@ -11,54 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectName { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectNameWithNamespace")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectNameWithNamespace { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectNamespace")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectNamespace { get; set; }
-
-        /// <summary>
-        /// A new field, should be included in all new project links, is being added just in time when a deployment is created. This is needed for Protected Git scopes. This is the id of the top level group that a namespace belongs to. Gitlab supports group nesting (up to 20 levels).
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectOwnerId")]
-        public double? ProjectOwnerId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectUrl")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectUrl { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectResponseLinkVariant4TypeJsonConverter))]
-        public global::Vercel.GetProjectResponseLinkVariant4Type Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         public double? CreatedAt { get; set; }
 
@@ -79,8 +31,50 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
-        public double? UpdatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("productionBranch")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProductionBranch { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectNamespace")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectNamespace { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectNameWithNamespace")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectNameWithNamespace { get; set; }
+
+        /// <summary>
+        /// A new field, should be included in all new project links, is being added just in time when a deployment is created. This is needed for Protected Git scopes. This is the id of the top level group that a namespace belongs to. Gitlab supports group nesting (up to 20 levels).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectOwnerId")]
+        public double? ProjectOwnerId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectUrl")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectUrl { get; set; }
 
         /// <summary>
         ///
@@ -91,9 +85,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("productionBranch")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProductionBranch { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectResponseLinkVariant4TypeJsonConverter))]
+        public global::Vercel.GetProjectResponseLinkVariant4Type Type { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        public double? UpdatedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -104,52 +104,52 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectResponseLinkVariant4" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="projectName"></param>
-        /// <param name="projectNameWithNamespace"></param>
-        /// <param name="projectNamespace"></param>
-        /// <param name="projectUrl"></param>
         /// <param name="deployHooks"></param>
         /// <param name="gitCredentialId"></param>
         /// <param name="productionBranch"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectName"></param>
+        /// <param name="projectNamespace"></param>
+        /// <param name="projectNameWithNamespace"></param>
+        /// <param name="projectUrl"></param>
+        /// <param name="createdAt"></param>
         /// <param name="projectOwnerId">
         /// A new field, should be included in all new project links, is being added just in time when a deployment is created. This is needed for Protected Git scopes. This is the id of the top level group that a namespace belongs to. Gitlab supports group nesting (up to 20 levels).
         /// </param>
-        /// <param name="type"></param>
-        /// <param name="createdAt"></param>
-        /// <param name="updatedAt"></param>
         /// <param name="sourceless"></param>
+        /// <param name="type"></param>
+        /// <param name="updatedAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectResponseLinkVariant4(
-            string projectId,
-            string projectName,
-            string projectNameWithNamespace,
-            string projectNamespace,
-            string projectUrl,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseLinkVariant4DeployHook> deployHooks,
             string gitCredentialId,
             string productionBranch,
-            double? projectOwnerId,
-            global::Vercel.GetProjectResponseLinkVariant4Type type,
+            string projectId,
+            string projectName,
+            string projectNamespace,
+            string projectNameWithNamespace,
+            string projectUrl,
             double? createdAt,
-            double? updatedAt,
-            bool? sourceless)
+            double? projectOwnerId,
+            bool? sourceless,
+            global::Vercel.GetProjectResponseLinkVariant4Type type,
+            double? updatedAt)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
-            this.ProjectNameWithNamespace = projectNameWithNamespace ?? throw new global::System.ArgumentNullException(nameof(projectNameWithNamespace));
-            this.ProjectNamespace = projectNamespace ?? throw new global::System.ArgumentNullException(nameof(projectNamespace));
-            this.ProjectOwnerId = projectOwnerId;
-            this.ProjectUrl = projectUrl ?? throw new global::System.ArgumentNullException(nameof(projectUrl));
-            this.Type = type;
             this.CreatedAt = createdAt;
             this.DeployHooks = deployHooks ?? throw new global::System.ArgumentNullException(nameof(deployHooks));
             this.GitCredentialId = gitCredentialId ?? throw new global::System.ArgumentNullException(nameof(gitCredentialId));
-            this.UpdatedAt = updatedAt;
-            this.Sourceless = sourceless;
             this.ProductionBranch = productionBranch ?? throw new global::System.ArgumentNullException(nameof(productionBranch));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
+            this.ProjectNamespace = projectNamespace ?? throw new global::System.ArgumentNullException(nameof(projectNamespace));
+            this.ProjectNameWithNamespace = projectNameWithNamespace ?? throw new global::System.ArgumentNullException(nameof(projectNameWithNamespace));
+            this.ProjectOwnerId = projectOwnerId;
+            this.ProjectUrl = projectUrl ?? throw new global::System.ArgumentNullException(nameof(projectUrl));
+            this.Sourceless = sourceless;
+            this.Type = type;
+            this.UpdatedAt = updatedAt;
         }
 
         /// <summary>

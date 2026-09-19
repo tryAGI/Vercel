@@ -11,16 +11,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tag")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Tag { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("arch")]
+        public string? Arch { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("manifestDigest")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ManifestDigest { get; set; }
+        public required string CreatedAt { get; set; }
 
         /// <summary>
         ///
@@ -40,27 +39,21 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("manifestDigest")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ManifestDigest { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("platform")]
         public string? Platform { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("arch")]
-        public string? Arch { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pushedBy")]
         public string? PushedBy { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListRepositoryTagsResponseTagStatusJsonConverter))]
-        public global::Vercel.ListRepositoryTagsResponseTagStatus? Status { get; set; }
 
         /// <summary>
         ///
@@ -72,9 +65,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListRepositoryTagsResponseTagStatusJsonConverter))]
+        public global::Vercel.ListRepositoryTagsResponseTagStatus? Status { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tag")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string CreatedAt { get; set; }
+        public required string Tag { get; set; }
 
         /// <summary>
         ///
@@ -92,43 +92,43 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListRepositoryTagsResponseTag" /> class.
         /// </summary>
-        /// <param name="tag"></param>
-        /// <param name="manifestDigest"></param>
+        /// <param name="createdAt"></param>
         /// <param name="imageId"></param>
         /// <param name="kind"></param>
+        /// <param name="manifestDigest"></param>
         /// <param name="sizeInBytes"></param>
-        /// <param name="createdAt"></param>
+        /// <param name="tag"></param>
         /// <param name="updatedAt"></param>
-        /// <param name="platform"></param>
         /// <param name="arch"></param>
+        /// <param name="platform"></param>
         /// <param name="pushedBy"></param>
         /// <param name="status"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListRepositoryTagsResponseTag(
-            string tag,
-            string manifestDigest,
+            string createdAt,
             string imageId,
             global::Vercel.ListRepositoryTagsResponseTagKind kind,
+            string manifestDigest,
             double sizeInBytes,
-            string createdAt,
+            string tag,
             string updatedAt,
-            string? platform,
             string? arch,
+            string? platform,
             string? pushedBy,
             global::Vercel.ListRepositoryTagsResponseTagStatus? status)
         {
-            this.Tag = tag ?? throw new global::System.ArgumentNullException(nameof(tag));
-            this.ManifestDigest = manifestDigest ?? throw new global::System.ArgumentNullException(nameof(manifestDigest));
+            this.Arch = arch;
+            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.ImageId = imageId ?? throw new global::System.ArgumentNullException(nameof(imageId));
             this.Kind = kind;
+            this.ManifestDigest = manifestDigest ?? throw new global::System.ArgumentNullException(nameof(manifestDigest));
             this.Platform = platform;
-            this.Arch = arch;
             this.PushedBy = pushedBy;
-            this.Status = status;
             this.SizeInBytes = sizeInBytes;
-            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
+            this.Status = status;
+            this.Tag = tag ?? throw new global::System.ArgumentNullException(nameof(tag));
             this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
         }
 

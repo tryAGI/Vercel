@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("promille")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("durationMs")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Promille { get; set; }
+        public required double DurationMs { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("durationMs")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("promille")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double DurationMs { get; set; }
+        public required double Promille { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant3Slot" /> class.
         /// </summary>
-        /// <param name="promille"></param>
         /// <param name="durationMs"></param>
+        /// <param name="promille"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListFlagVersionsResponseVersionDataEnvironmentsFallthroughVariant3Slot(
-            double promille,
-            double durationMs)
+            double durationMs,
+            double promille)
         {
-            this.Promille = promille;
             this.DurationMs = durationMs;
+            this.Promille = promille;
         }
 
         /// <summary>

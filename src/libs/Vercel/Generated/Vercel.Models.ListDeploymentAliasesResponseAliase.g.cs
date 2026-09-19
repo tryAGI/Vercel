@@ -9,15 +9,6 @@ namespace Vercel
     public sealed partial class ListDeploymentAliasesResponseAliase
     {
         /// <summary>
-        /// The unique identifier of the alias<br/>
-        /// Example: 2WjyKQmM8ZnGcJsPWMrHRHrE
-        /// </summary>
-        /// <example>2WjyKQmM8ZnGcJsPWMrHRHrE</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Uid { get; set; }
-
-        /// <summary>
         /// The alias name, it could be a `.vercel.app` subdomain or a custom domain<br/>
         /// Example: my-alias.vercel.app
         /// </summary>
@@ -36,16 +27,25 @@ namespace Vercel
         public required global::System.DateTime Created { get; set; }
 
         /// <summary>
+        /// The protection bypass for the alias
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("protectionBypass")]
+        public object? ProtectionBypass { get; set; }
+
+        /// <summary>
         /// Target destination domain for redirect when the alias is a redirect
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("redirect")]
         public string? Redirect { get; set; }
 
         /// <summary>
-        /// The protection bypass for the alias
+        /// The unique identifier of the alias<br/>
+        /// Example: 2WjyKQmM8ZnGcJsPWMrHRHrE
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("protectionBypass")]
-        public object? ProtectionBypass { get; set; }
+        /// <example>2WjyKQmM8ZnGcJsPWMrHRHrE</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Uid { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -56,10 +56,6 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListDeploymentAliasesResponseAliase" /> class.
         /// </summary>
-        /// <param name="uid">
-        /// The unique identifier of the alias<br/>
-        /// Example: 2WjyKQmM8ZnGcJsPWMrHRHrE
-        /// </param>
         /// <param name="alias">
         /// The alias name, it could be a `.vercel.app` subdomain or a custom domain<br/>
         /// Example: my-alias.vercel.app
@@ -68,27 +64,31 @@ namespace Vercel
         /// The date when the alias was created<br/>
         /// Example: 2017-04-26T23:00:34.232Z
         /// </param>
-        /// <param name="redirect">
-        /// Target destination domain for redirect when the alias is a redirect
+        /// <param name="uid">
+        /// The unique identifier of the alias<br/>
+        /// Example: 2WjyKQmM8ZnGcJsPWMrHRHrE
         /// </param>
         /// <param name="protectionBypass">
         /// The protection bypass for the alias
+        /// </param>
+        /// <param name="redirect">
+        /// Target destination domain for redirect when the alias is a redirect
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListDeploymentAliasesResponseAliase(
-            string uid,
             string alias,
             global::System.DateTime created,
-            string? redirect,
-            object? protectionBypass)
+            string uid,
+            object? protectionBypass,
+            string? redirect)
         {
-            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
             this.Alias = alias ?? throw new global::System.ArgumentNullException(nameof(alias));
             this.Created = created;
-            this.Redirect = redirect;
             this.ProtectionBypass = protectionBypass;
+            this.Redirect = redirect;
+            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
         }
 
         /// <summary>

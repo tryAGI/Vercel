@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("access_token")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Scope { get; set; }
+        public required string AccessToken { get; set; }
 
         /// <summary>
         ///
@@ -25,9 +25,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("access_token")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string AccessToken { get; set; }
+        public required string Scope { get; set; }
 
         /// <summary>
         ///
@@ -45,22 +45,22 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="RotateInstallationCredentialResponse" /> class.
         /// </summary>
-        /// <param name="scope"></param>
-        /// <param name="expiresIn"></param>
         /// <param name="accessToken"></param>
+        /// <param name="expiresIn"></param>
+        /// <param name="scope"></param>
         /// <param name="tokenType"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public RotateInstallationCredentialResponse(
-            string scope,
-            double expiresIn,
             string accessToken,
+            double expiresIn,
+            string scope,
             global::Vercel.RotateInstallationCredentialResponseTokenType tokenType)
         {
-            this.Scope = scope ?? throw new global::System.ArgumentNullException(nameof(scope));
-            this.ExpiresIn = expiresIn;
             this.AccessToken = accessToken ?? throw new global::System.ArgumentNullException(nameof(accessToken));
+            this.ExpiresIn = expiresIn;
+            this.Scope = scope ?? throw new global::System.ArgumentNullException(nameof(scope));
             this.TokenType = tokenType;
         }
 

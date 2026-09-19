@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("options")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Options { get; set; }
+        public required global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant4Options Options { get; set; }
 
         /// <summary>
         ///
@@ -45,7 +45,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant4(
-            object options,
+            global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant4Options options,
             global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant4Output output,
             global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant4Type type)
         {

@@ -9,37 +9,23 @@ namespace Vercel
     public sealed partial class GetInvoiceResponse
     {
         /// <summary>
-        /// Whether the invoice is in the testmode (no real transaction created).
+        /// System creation date. ISO 8601 timestamp.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("test")]
-        public bool? Test { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("created")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Created { get; set; }
 
         /// <summary>
-        /// Vercel Marketplace Invoice ID.
+        /// Invoice discounts.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("invoiceId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string InvoiceId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("discounts")]
+        public global::System.Collections.Generic.IList<global::Vercel.GetInvoiceResponseDiscount>? Discounts { get; set; }
 
         /// <summary>
         /// Partner-supplied Invoice ID, if applicable.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("externalId")]
         public string? ExternalId { get; set; }
-
-        /// <summary>
-        /// Invoice state.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("state")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetInvoiceResponseStateJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetInvoiceResponseState State { get; set; }
-
-        /// <summary>
-        /// User-readable invoice number.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("invoiceNumber")]
-        public string? InvoiceNumber { get; set; }
 
         /// <summary>
         /// Invoice date. ISO 8601 timestamp.
@@ -49,29 +35,17 @@ namespace Vercel
         public required string InvoiceDate { get; set; }
 
         /// <summary>
-        /// Subscription period for this billing cycle. ISO 8601 timestamps.
+        /// Vercel Marketplace Invoice ID.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("period")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("invoiceId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetInvoiceResponsePeriod Period { get; set; }
+        public required string InvoiceId { get; set; }
 
         /// <summary>
-        /// Moment the invoice was paid. ISO 8601 timestamp.
+        /// User-readable invoice number.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("paidAt")]
-        public string? PaidAt { get; set; }
-
-        /// <summary>
-        /// Most recent moment the invoice was refunded. ISO 8601 timestamp.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("refundedAt")]
-        public string? RefundedAt { get; set; }
-
-        /// <summary>
-        /// Additional memo for the invoice.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("memo")]
-        public string? Memo { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("invoiceNumber")]
+        public string? InvoiceNumber { get; set; }
 
         /// <summary>
         /// Invoice items.
@@ -81,17 +55,29 @@ namespace Vercel
         public required global::System.Collections.Generic.IList<global::Vercel.GetInvoiceResponseItem> Items { get; set; }
 
         /// <summary>
-        /// Invoice discounts.
+        /// Additional memo for the invoice.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("discounts")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetInvoiceResponseDiscount>? Discounts { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("memo")]
+        public string? Memo { get; set; }
 
         /// <summary>
-        /// Invoice total amount. A dollar-based decimal string.
+        /// Moment the invoice was paid. ISO 8601 timestamp.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("total")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("paidAt")]
+        public string? PaidAt { get; set; }
+
+        /// <summary>
+        /// Subscription period for this billing cycle. ISO 8601 timestamps.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("period")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Total { get; set; }
+        public required global::Vercel.GetInvoiceResponsePeriod Period { get; set; }
+
+        /// <summary>
+        /// Most recent moment the invoice was refunded. ISO 8601 timestamp.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("refundedAt")]
+        public string? RefundedAt { get; set; }
 
         /// <summary>
         /// The reason for refund. Only applicable for states "refunded" or "refund_request".
@@ -106,11 +92,25 @@ namespace Vercel
         public string? RefundTotal { get; set; }
 
         /// <summary>
-        /// System creation date. ISO 8601 timestamp.
+        /// Invoice state.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("created")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("state")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetInvoiceResponseStateJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Created { get; set; }
+        public required global::Vercel.GetInvoiceResponseState State { get; set; }
+
+        /// <summary>
+        /// Whether the invoice is in the testmode (no real transaction created).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("test")]
+        public bool? Test { get; set; }
+
+        /// <summary>
+        /// Invoice total amount. A dollar-based decimal string.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("total")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Total { get; set; }
 
         /// <summary>
         /// System update date. ISO 8601 timestamp.
@@ -128,32 +128,32 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetInvoiceResponse" /> class.
         /// </summary>
-        /// <param name="invoiceId">
-        /// Vercel Marketplace Invoice ID.
-        /// </param>
-        /// <param name="state">
-        /// Invoice state.
+        /// <param name="created">
+        /// System creation date. ISO 8601 timestamp.
         /// </param>
         /// <param name="invoiceDate">
         /// Invoice date. ISO 8601 timestamp.
         /// </param>
-        /// <param name="period">
-        /// Subscription period for this billing cycle. ISO 8601 timestamps.
+        /// <param name="invoiceId">
+        /// Vercel Marketplace Invoice ID.
         /// </param>
         /// <param name="items">
         /// Invoice items.
         /// </param>
+        /// <param name="period">
+        /// Subscription period for this billing cycle. ISO 8601 timestamps.
+        /// </param>
+        /// <param name="state">
+        /// Invoice state.
+        /// </param>
         /// <param name="total">
         /// Invoice total amount. A dollar-based decimal string.
-        /// </param>
-        /// <param name="created">
-        /// System creation date. ISO 8601 timestamp.
         /// </param>
         /// <param name="updated">
         /// System update date. ISO 8601 timestamp.
         /// </param>
-        /// <param name="test">
-        /// Whether the invoice is in the testmode (no real transaction created).
+        /// <param name="discounts">
+        /// Invoice discounts.
         /// </param>
         /// <param name="externalId">
         /// Partner-supplied Invoice ID, if applicable.
@@ -161,17 +161,14 @@ namespace Vercel
         /// <param name="invoiceNumber">
         /// User-readable invoice number.
         /// </param>
+        /// <param name="memo">
+        /// Additional memo for the invoice.
+        /// </param>
         /// <param name="paidAt">
         /// Moment the invoice was paid. ISO 8601 timestamp.
         /// </param>
         /// <param name="refundedAt">
         /// Most recent moment the invoice was refunded. ISO 8601 timestamp.
-        /// </param>
-        /// <param name="memo">
-        /// Additional memo for the invoice.
-        /// </param>
-        /// <param name="discounts">
-        /// Invoice discounts.
         /// </param>
         /// <param name="refundReason">
         /// The reason for refund. Only applicable for states "refunded" or "refund_request".
@@ -179,44 +176,47 @@ namespace Vercel
         /// <param name="refundTotal">
         /// Refund amount. Only applicable for states "refunded" or "refund_request". A dollar-based decimal string.
         /// </param>
+        /// <param name="test">
+        /// Whether the invoice is in the testmode (no real transaction created).
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetInvoiceResponse(
-            string invoiceId,
-            global::Vercel.GetInvoiceResponseState state,
-            string invoiceDate,
-            global::Vercel.GetInvoiceResponsePeriod period,
-            global::System.Collections.Generic.IList<global::Vercel.GetInvoiceResponseItem> items,
-            string total,
             string created,
+            string invoiceDate,
+            string invoiceId,
+            global::System.Collections.Generic.IList<global::Vercel.GetInvoiceResponseItem> items,
+            global::Vercel.GetInvoiceResponsePeriod period,
+            global::Vercel.GetInvoiceResponseState state,
+            string total,
             string updated,
-            bool? test,
+            global::System.Collections.Generic.IList<global::Vercel.GetInvoiceResponseDiscount>? discounts,
             string? externalId,
             string? invoiceNumber,
+            string? memo,
             string? paidAt,
             string? refundedAt,
-            string? memo,
-            global::System.Collections.Generic.IList<global::Vercel.GetInvoiceResponseDiscount>? discounts,
             string? refundReason,
-            string? refundTotal)
+            string? refundTotal,
+            bool? test)
         {
-            this.Test = test;
-            this.InvoiceId = invoiceId ?? throw new global::System.ArgumentNullException(nameof(invoiceId));
-            this.ExternalId = externalId;
-            this.State = state;
-            this.InvoiceNumber = invoiceNumber;
-            this.InvoiceDate = invoiceDate ?? throw new global::System.ArgumentNullException(nameof(invoiceDate));
-            this.Period = period ?? throw new global::System.ArgumentNullException(nameof(period));
-            this.PaidAt = paidAt;
-            this.RefundedAt = refundedAt;
-            this.Memo = memo;
-            this.Items = items ?? throw new global::System.ArgumentNullException(nameof(items));
+            this.Created = created ?? throw new global::System.ArgumentNullException(nameof(created));
             this.Discounts = discounts;
-            this.Total = total ?? throw new global::System.ArgumentNullException(nameof(total));
+            this.ExternalId = externalId;
+            this.InvoiceDate = invoiceDate ?? throw new global::System.ArgumentNullException(nameof(invoiceDate));
+            this.InvoiceId = invoiceId ?? throw new global::System.ArgumentNullException(nameof(invoiceId));
+            this.InvoiceNumber = invoiceNumber;
+            this.Items = items ?? throw new global::System.ArgumentNullException(nameof(items));
+            this.Memo = memo;
+            this.PaidAt = paidAt;
+            this.Period = period ?? throw new global::System.ArgumentNullException(nameof(period));
+            this.RefundedAt = refundedAt;
             this.RefundReason = refundReason;
             this.RefundTotal = refundTotal;
-            this.Created = created ?? throw new global::System.ArgumentNullException(nameof(created));
+            this.State = state;
+            this.Test = test;
+            this.Total = total ?? throw new global::System.ArgumentNullException(nameof(total));
             this.Updated = updated ?? throw new global::System.ArgumentNullException(nameof(updated));
         }
 

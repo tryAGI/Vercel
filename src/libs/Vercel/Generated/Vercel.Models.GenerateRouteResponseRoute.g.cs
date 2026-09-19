@@ -11,9 +11,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("actions")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteAction> Actions { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("conditions")]
+        public global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteCondition>? Conditions { get; set; }
 
         /// <summary>
         ///
@@ -25,22 +31,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pathCondition")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GenerateRouteResponseRoutePathCondition PathCondition { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("conditions")]
-        public global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteCondition>? Conditions { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("actions")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteAction> Actions { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -51,26 +51,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GenerateRouteResponseRoute" /> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="description"></param>
-        /// <param name="pathCondition"></param>
         /// <param name="actions"></param>
+        /// <param name="description"></param>
+        /// <param name="name"></param>
+        /// <param name="pathCondition"></param>
         /// <param name="conditions"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GenerateRouteResponseRoute(
-            string name,
-            string description,
-            global::Vercel.GenerateRouteResponseRoutePathCondition pathCondition,
             global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteAction> actions,
+            string description,
+            string name,
+            global::Vercel.GenerateRouteResponseRoutePathCondition pathCondition,
             global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteCondition>? conditions)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
-            this.PathCondition = pathCondition ?? throw new global::System.ArgumentNullException(nameof(pathCondition));
-            this.Conditions = conditions;
             this.Actions = actions ?? throw new global::System.ArgumentNullException(nameof(actions));
+            this.Conditions = conditions;
+            this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.PathCondition = pathCondition ?? throw new global::System.ArgumentNullException(nameof(pathCondition));
         }
 
         /// <summary>

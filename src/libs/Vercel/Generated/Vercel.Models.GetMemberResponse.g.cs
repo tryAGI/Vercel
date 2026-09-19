@@ -11,6 +11,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("globalUserId")]
+        public string? GlobalUserId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
@@ -22,12 +28,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetMemberResponseRoleJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetMemberResponseRole Role { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("globalUserId")]
-        public string? GlobalUserId { get; set; }
 
         /// <summary>
         ///
@@ -59,9 +59,9 @@ namespace Vercel
             string? globalUserId,
             string? userEmail)
         {
+            this.GlobalUserId = globalUserId;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Role = role;
-            this.GlobalUserId = globalUserId;
             this.UserEmail = userEmail;
         }
 

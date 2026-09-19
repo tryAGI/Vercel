@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        DeploymentOverride,
+        /// <summary>
+        ///
+        /// </summary>
         ElasticAlgorithm,
         /// <summary>
         ///
@@ -42,6 +46,7 @@ namespace Vercel
         {
             return value switch
             {
+                CreateDeploymentResponseVariant2ResourceConfigBuildMachineSelectionSource.DeploymentOverride => "deployment-override",
                 CreateDeploymentResponseVariant2ResourceConfigBuildMachineSelectionSource.ElasticAlgorithm => "elastic-algorithm",
                 CreateDeploymentResponseVariant2ResourceConfigBuildMachineSelectionSource.PlanDefault => "plan-default",
                 CreateDeploymentResponseVariant2ResourceConfigBuildMachineSelectionSource.ProjectSetting => "project-setting",
@@ -57,6 +62,7 @@ namespace Vercel
         {
             return value switch
             {
+                "deployment-override" => CreateDeploymentResponseVariant2ResourceConfigBuildMachineSelectionSource.DeploymentOverride,
                 "elastic-algorithm" => CreateDeploymentResponseVariant2ResourceConfigBuildMachineSelectionSource.ElasticAlgorithm,
                 "plan-default" => CreateDeploymentResponseVariant2ResourceConfigBuildMachineSelectionSource.PlanDefault,
                 "project-setting" => CreateDeploymentResponseVariant2ResourceConfigBuildMachineSelectionSource.ProjectSetting,

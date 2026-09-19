@@ -11,17 +11,17 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListEventTypesResponseCategorieNameJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("label")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.ListEventTypesResponseCategorieName Name { get; set; }
+        public required string Label { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("label")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListEventTypesResponseCategorieNameJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Label { get; set; }
+        public required global::Vercel.ListEventTypesResponseCategorieName Name { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,17 +32,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListEventTypesResponseCategorie" /> class.
         /// </summary>
-        /// <param name="name"></param>
         /// <param name="label"></param>
+        /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListEventTypesResponseCategorie(
-            global::Vercel.ListEventTypesResponseCategorieName name,
-            string label)
+            string label,
+            global::Vercel.ListEventTypesResponseCategorieName name)
         {
-            this.Name = name;
             this.Label = label ?? throw new global::System.ArgumentNullException(nameof(label));
+            this.Name = name;
         }
 
         /// <summary>

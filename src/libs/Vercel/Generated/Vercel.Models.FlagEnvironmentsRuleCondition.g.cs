@@ -11,9 +11,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rhs")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant3, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant4, bool?>))]
-        public global::Vercel.OneOf<string, double?, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant3, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant4, bool?>? Rhs { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cmp")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.FlagEnvironmentsRuleConditionCmpJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.FlagEnvironmentsRuleConditionCmp Cmp { get; set; }
 
         /// <summary>
         ///
@@ -32,10 +33,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cmp")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.FlagEnvironmentsRuleConditionCmpJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.FlagEnvironmentsRuleConditionCmp Cmp { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("rhs")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant3, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant4, bool?>))]
+        public global::Vercel.OneOf<string, double?, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant3, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant4, bool?>? Rhs { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -46,23 +46,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="FlagEnvironmentsRuleCondition" /> class.
         /// </summary>
-        /// <param name="lhs"></param>
         /// <param name="cmp"></param>
-        /// <param name="rhs"></param>
+        /// <param name="lhs"></param>
         /// <param name="cmpOptions"></param>
+        /// <param name="rhs"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FlagEnvironmentsRuleCondition(
-            global::Vercel.OneOf<global::Vercel.FlagEnvironmentsRuleConditionLhsVariant1, global::Vercel.FlagEnvironmentsRuleConditionLhsVariant2> lhs,
             global::Vercel.FlagEnvironmentsRuleConditionCmp cmp,
-            global::Vercel.OneOf<string, double?, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant3, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant4, bool?>? rhs,
-            global::Vercel.FlagEnvironmentsRuleConditionCmpOptions? cmpOptions)
+            global::Vercel.OneOf<global::Vercel.FlagEnvironmentsRuleConditionLhsVariant1, global::Vercel.FlagEnvironmentsRuleConditionLhsVariant2> lhs,
+            global::Vercel.FlagEnvironmentsRuleConditionCmpOptions? cmpOptions,
+            global::Vercel.OneOf<string, double?, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant3, global::Vercel.FlagEnvironmentsRuleConditionRhsVariant4, bool?>? rhs)
         {
-            this.Rhs = rhs;
+            this.Cmp = cmp;
             this.CmpOptions = cmpOptions;
             this.Lhs = lhs;
-            this.Cmp = cmp;
+            this.Rhs = rhs;
         }
 
         /// <summary>

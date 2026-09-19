@@ -19,18 +19,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rateLimit")]
-        public global::Vercel.GetFirewallConfigResponseRulesetsRateLimit? RateLimit { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("redirect")]
-        public global::Vercel.GetFirewallConfigResponseRulesetsRedirect? Redirect { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("actionDuration")]
         public string? ActionDuration { get; set; }
 
@@ -48,6 +36,18 @@ namespace Vercel
         public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetFirewallConfigResponseRulesetsLogHeaders?>? LogHeaders { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("rateLimit")]
+        public global::Vercel.GetFirewallConfigResponseRulesetsRateLimit? RateLimit { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("redirect")]
+        public global::Vercel.GetFirewallConfigResponseRulesetsRedirect? Redirect { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -57,28 +57,28 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetFirewallConfigResponseRulesets2" /> class.
         /// </summary>
         /// <param name="action"></param>
-        /// <param name="rateLimit"></param>
-        /// <param name="redirect"></param>
         /// <param name="actionDuration"></param>
         /// <param name="bypassSystem"></param>
         /// <param name="logHeaders"></param>
+        /// <param name="rateLimit"></param>
+        /// <param name="redirect"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetFirewallConfigResponseRulesets2(
             global::Vercel.GetFirewallConfigResponseRulesetsAction action,
-            global::Vercel.GetFirewallConfigResponseRulesetsRateLimit? rateLimit,
-            global::Vercel.GetFirewallConfigResponseRulesetsRedirect? redirect,
             string? actionDuration,
             bool? bypassSystem,
-            global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetFirewallConfigResponseRulesetsLogHeaders?>? logHeaders)
+            global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetFirewallConfigResponseRulesetsLogHeaders?>? logHeaders,
+            global::Vercel.GetFirewallConfigResponseRulesetsRateLimit? rateLimit,
+            global::Vercel.GetFirewallConfigResponseRulesetsRedirect? redirect)
         {
             this.Action = action;
-            this.RateLimit = rateLimit;
-            this.Redirect = redirect;
             this.ActionDuration = actionDuration;
             this.BypassSystem = bypassSystem;
             this.LogHeaders = logHeaders;
+            this.RateLimit = rateLimit;
+            this.Redirect = redirect;
         }
 
         /// <summary>

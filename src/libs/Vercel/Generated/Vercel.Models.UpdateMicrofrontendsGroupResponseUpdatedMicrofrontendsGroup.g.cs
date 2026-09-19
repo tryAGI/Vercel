@@ -11,14 +11,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("enablePolyrepoBranchRouting")]
+        public bool? EnablePolyrepoBranchRouting { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        public string? Slug { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("fallbackEnvironment")]
+        public string? FallbackEnvironment { get; set; }
 
         /// <summary>
         ///
@@ -30,14 +30,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("fallbackEnvironment")]
-        public string? FallbackEnvironment { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enablePolyrepoBranchRouting")]
-        public bool? EnablePolyrepoBranchRouting { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        public string? Slug { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,25 +49,25 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup" /> class.
         /// </summary>
         /// <param name="id"></param>
+        /// <param name="enablePolyrepoBranchRouting"></param>
+        /// <param name="fallbackEnvironment"></param>
         /// <param name="name"></param>
         /// <param name="slug"></param>
-        /// <param name="fallbackEnvironment"></param>
-        /// <param name="enablePolyrepoBranchRouting"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup(
             string id,
-            string? name,
-            string? slug,
+            bool? enablePolyrepoBranchRouting,
             string? fallbackEnvironment,
-            bool? enablePolyrepoBranchRouting)
+            string? name,
+            string? slug)
         {
+            this.EnablePolyrepoBranchRouting = enablePolyrepoBranchRouting;
+            this.FallbackEnvironment = fallbackEnvironment;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name;
             this.Slug = slug;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.FallbackEnvironment = fallbackEnvironment;
-            this.EnablePolyrepoBranchRouting = enablePolyrepoBranchRouting;
         }
 
         /// <summary>

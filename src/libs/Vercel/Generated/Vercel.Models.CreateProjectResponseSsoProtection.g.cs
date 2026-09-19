@@ -11,10 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectResponseSsoProtectionDeploymentTypeJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.CreateProjectResponseSsoProtectionDeploymentType DeploymentType { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("april2026SecurityIncidentMigrationAppliedFrom")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFromJsonConverter))]
+        public global::Vercel.CreateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom? April2026SecurityIncidentMigrationAppliedFrom { get; set; }
 
         /// <summary>
         ///
@@ -26,9 +25,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("april2026SecurityIncidentMigrationAppliedFrom")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFromJsonConverter))]
-        public global::Vercel.CreateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom? April2026SecurityIncidentMigrationAppliedFrom { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectResponseSsoProtectionDeploymentTypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.CreateProjectResponseSsoProtectionDeploymentType DeploymentType { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,19 +40,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateProjectResponseSsoProtection" /> class.
         /// </summary>
         /// <param name="deploymentType"></param>
-        /// <param name="cve55182MigrationAppliedFrom"></param>
         /// <param name="april2026SecurityIncidentMigrationAppliedFrom"></param>
+        /// <param name="cve55182MigrationAppliedFrom"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateProjectResponseSsoProtection(
             global::Vercel.CreateProjectResponseSsoProtectionDeploymentType deploymentType,
-            global::Vercel.CreateProjectResponseSsoProtectionCve55182MigrationAppliedFrom? cve55182MigrationAppliedFrom,
-            global::Vercel.CreateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom? april2026SecurityIncidentMigrationAppliedFrom)
+            global::Vercel.CreateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom? april2026SecurityIncidentMigrationAppliedFrom,
+            global::Vercel.CreateProjectResponseSsoProtectionCve55182MigrationAppliedFrom? cve55182MigrationAppliedFrom)
         {
-            this.DeploymentType = deploymentType;
-            this.Cve55182MigrationAppliedFrom = cve55182MigrationAppliedFrom;
             this.April2026SecurityIncidentMigrationAppliedFrom = april2026SecurityIncidentMigrationAppliedFrom;
+            this.Cve55182MigrationAppliedFrom = cve55182MigrationAppliedFrom;
+            this.DeploymentType = deploymentType;
         }
 
         /// <summary>

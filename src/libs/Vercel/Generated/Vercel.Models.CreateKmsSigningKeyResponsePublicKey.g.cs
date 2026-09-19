@@ -11,8 +11,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("kty")]
-        public string? Kty { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("alg")]
+        public string? Alg { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("key_ops")]
+        public global::System.Collections.Generic.IList<string>? KeyOps { get; set; }
 
         /// <summary>
         ///
@@ -23,20 +29,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("alg")]
-        public string? Alg { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("kty")]
+        public string? Kty { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("use")]
         public string? Use { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("key_ops")]
-        public global::System.Collections.Generic.IList<string>? KeyOps { get; set; }
 
         /// <summary>
         /// The X.509 certificate chain (RFC 7517 §4.7). Each entry is the base64 DER (not base64url) of a certificate. For keys minted with a stored certificate this holds the single self-signed cert as `[x5c]`.
@@ -59,11 +59,11 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateKmsSigningKeyResponsePublicKey" /> class.
         /// </summary>
-        /// <param name="kty"></param>
-        /// <param name="kid"></param>
         /// <param name="alg"></param>
-        /// <param name="use"></param>
         /// <param name="keyOps"></param>
+        /// <param name="kid"></param>
+        /// <param name="kty"></param>
+        /// <param name="use"></param>
         /// <param name="x5c">
         /// The X.509 certificate chain (RFC 7517 §4.7). Each entry is the base64 DER (not base64url) of a certificate. For keys minted with a stored certificate this holds the single self-signed cert as `[x5c]`.
         /// </param>
@@ -74,19 +74,19 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateKmsSigningKeyResponsePublicKey(
-            string? kty,
-            string? kid,
             string? alg,
-            string? use,
             global::System.Collections.Generic.IList<string>? keyOps,
+            string? kid,
+            string? kty,
+            string? use,
             global::System.Collections.Generic.IList<string>? x5c,
             string? x5t_S256)
         {
-            this.Kty = kty;
-            this.Kid = kid;
             this.Alg = alg;
-            this.Use = use;
             this.KeyOps = keyOps;
+            this.Kid = kid;
+            this.Kty = kty;
+            this.Use = use;
             this.X5c = x5c;
             this.X5t_S256 = x5t_S256;
         }

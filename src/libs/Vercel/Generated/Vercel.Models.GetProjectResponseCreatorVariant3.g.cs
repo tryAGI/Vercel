@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectResponseCreatorVariant3TypeJsonConverter))]
-        public global::Vercel.GetProjectResponseCreatorVariant3Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("integration")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetProjectResponseCreatorVariant3Integration Integration { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integration")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetProjectResponseCreatorVariant3Integration Integration { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectResponseCreatorVariant3TypeJsonConverter))]
+        public global::Vercel.GetProjectResponseCreatorVariant3Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,8 +40,8 @@ namespace Vercel
             global::Vercel.GetProjectResponseCreatorVariant3Integration integration,
             global::Vercel.GetProjectResponseCreatorVariant3Type type)
         {
-            this.Type = type;
             this.Integration = integration ?? throw new global::System.ArgumentNullException(nameof(integration));
+            this.Type = type;
         }
 
         /// <summary>

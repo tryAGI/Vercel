@@ -9,36 +9,12 @@ namespace Vercel
     public sealed partial class GetDeploymentsResponseDeploymentCreator
     {
         /// <summary>
-        /// Stable creator id across principal types. This may be a user ID, an app ID, an integration configuration ID, or `system`.<br/>
-        /// Example: eLrCnEgbKhsHyfbiNR7E8496
-        /// </summary>
-        /// <example>eLrCnEgbKhsHyfbiNR7E8496</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Uid { get; set; }
-
-        /// <summary>
-        /// Principal type of the deployment creator. Defaults to `"user"` if absent (legacy deployments created before principal attribution was recorded).
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentCreatorTypeJsonConverter))]
-        public global::Vercel.GetDeploymentsResponseDeploymentCreatorType? Type { get; set; }
-
-        /// <summary>
         /// The email address of the user.<br/>
         /// Example: example@example.com
         /// </summary>
         /// <example>example@example.com</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("email")]
         public string? Email { get; set; }
-
-        /// <summary>
-        /// The username of the user.<br/>
-        /// Example: johndoe
-        /// </summary>
-        /// <example>johndoe</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
-        public string? Username { get; set; }
 
         /// <summary>
         /// The GitHub login of the user.<br/>
@@ -57,6 +33,30 @@ namespace Vercel
         public string? GitlabLogin { get; set; }
 
         /// <summary>
+        /// Principal type of the deployment creator. Defaults to `"user"` if absent (legacy deployments created before principal attribution was recorded).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentCreatorTypeJsonConverter))]
+        public global::Vercel.GetDeploymentsResponseDeploymentCreatorType? Type { get; set; }
+
+        /// <summary>
+        /// Stable creator id across principal types. This may be a user ID, an app ID, an integration configuration ID, or `system`.<br/>
+        /// Example: eLrCnEgbKhsHyfbiNR7E8496
+        /// </summary>
+        /// <example>eLrCnEgbKhsHyfbiNR7E8496</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Uid { get; set; }
+
+        /// <summary>
+        /// The username of the user.<br/>
+        /// Example: johndoe
+        /// </summary>
+        /// <example>johndoe</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
+        public string? Username { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -69,16 +69,9 @@ namespace Vercel
         /// Stable creator id across principal types. This may be a user ID, an app ID, an integration configuration ID, or `system`.<br/>
         /// Example: eLrCnEgbKhsHyfbiNR7E8496
         /// </param>
-        /// <param name="type">
-        /// Principal type of the deployment creator. Defaults to `"user"` if absent (legacy deployments created before principal attribution was recorded).
-        /// </param>
         /// <param name="email">
         /// The email address of the user.<br/>
         /// Example: example@example.com
-        /// </param>
-        /// <param name="username">
-        /// The username of the user.<br/>
-        /// Example: johndoe
         /// </param>
         /// <param name="githubLogin">
         /// The GitHub login of the user.<br/>
@@ -88,23 +81,30 @@ namespace Vercel
         /// The GitLab login of the user.<br/>
         /// Example: johndoe
         /// </param>
+        /// <param name="type">
+        /// Principal type of the deployment creator. Defaults to `"user"` if absent (legacy deployments created before principal attribution was recorded).
+        /// </param>
+        /// <param name="username">
+        /// The username of the user.<br/>
+        /// Example: johndoe
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentsResponseDeploymentCreator(
             string uid,
-            global::Vercel.GetDeploymentsResponseDeploymentCreatorType? type,
             string? email,
-            string? username,
             string? githubLogin,
-            string? gitlabLogin)
+            string? gitlabLogin,
+            global::Vercel.GetDeploymentsResponseDeploymentCreatorType? type,
+            string? username)
         {
-            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
-            this.Type = type;
             this.Email = email;
-            this.Username = username;
             this.GithubLogin = githubLogin;
             this.GitlabLogin = gitlabLogin;
+            this.Type = type;
+            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
+            this.Username = username;
         }
 
         /// <summary>

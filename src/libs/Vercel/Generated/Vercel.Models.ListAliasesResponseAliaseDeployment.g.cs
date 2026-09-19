@@ -18,20 +18,20 @@ namespace Vercel
         public required string Id { get; set; }
 
         /// <summary>
-        /// The deployment unique URL<br/>
-        /// Example: my-instant-deployment-3ij3cxz9qr.now.sh
-        /// </summary>
-        /// <example>my-instant-deployment-3ij3cxz9qr.now.sh</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
-        public string? Url { get; set; }
-
-        /// <summary>
         /// The deployment metadata<br/>
         /// Example: {}
         /// </summary>
         /// <example>{}</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("meta")]
         public string? Meta { get; set; }
+
+        /// <summary>
+        /// The deployment unique URL<br/>
+        /// Example: my-instant-deployment-3ij3cxz9qr.now.sh
+        /// </summary>
+        /// <example>my-instant-deployment-3ij3cxz9qr.now.sh</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        public string? Url { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -46,25 +46,25 @@ namespace Vercel
         /// The deployment unique identifier<br/>
         /// Example: dpl_5m8CQaRBm3FnWRW1od3wKTpaECPx
         /// </param>
-        /// <param name="url">
-        /// The deployment unique URL<br/>
-        /// Example: my-instant-deployment-3ij3cxz9qr.now.sh
-        /// </param>
         /// <param name="meta">
         /// The deployment metadata<br/>
         /// Example: {}
+        /// </param>
+        /// <param name="url">
+        /// The deployment unique URL<br/>
+        /// Example: my-instant-deployment-3ij3cxz9qr.now.sh
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListAliasesResponseAliaseDeployment(
             string id,
-            string? url,
-            string? meta)
+            string? meta,
+            string? url)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Url = url;
             this.Meta = meta;
+            this.Url = url;
         }
 
         /// <summary>

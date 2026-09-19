@@ -11,34 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("org")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Org { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("repo")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Repo { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("repoId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string RepoId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateMicrofrontendsResponseLinkVariant7TypeJsonConverter))]
-        public global::Vercel.UpdateMicrofrontendsResponseLinkVariant7Type Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         public double? CreatedAt { get; set; }
 
@@ -59,8 +31,30 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
-        public double? UpdatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("org")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Org { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("productionBranch")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProductionBranch { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("repo")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Repo { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("repoId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string RepoId { get; set; }
 
         /// <summary>
         ///
@@ -71,9 +65,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("productionBranch")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProductionBranch { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateMicrofrontendsResponseLinkVariant7TypeJsonConverter))]
+        public global::Vercel.UpdateMicrofrontendsResponseLinkVariant7Type Type { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        public double? UpdatedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -84,41 +84,41 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateMicrofrontendsResponseLinkVariant7" /> class.
         /// </summary>
-        /// <param name="org"></param>
-        /// <param name="repo"></param>
-        /// <param name="repoId"></param>
         /// <param name="deployHooks"></param>
         /// <param name="gitCredentialId"></param>
+        /// <param name="org"></param>
         /// <param name="productionBranch"></param>
-        /// <param name="type"></param>
+        /// <param name="repo"></param>
+        /// <param name="repoId"></param>
         /// <param name="createdAt"></param>
-        /// <param name="updatedAt"></param>
         /// <param name="sourceless"></param>
+        /// <param name="type"></param>
+        /// <param name="updatedAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateMicrofrontendsResponseLinkVariant7(
-            string org,
-            string repo,
-            string repoId,
             global::System.Collections.Generic.IList<global::Vercel.UpdateMicrofrontendsResponseLinkVariant7DeployHook> deployHooks,
             string gitCredentialId,
+            string org,
             string productionBranch,
-            global::Vercel.UpdateMicrofrontendsResponseLinkVariant7Type type,
+            string repo,
+            string repoId,
             double? createdAt,
-            double? updatedAt,
-            bool? sourceless)
+            bool? sourceless,
+            global::Vercel.UpdateMicrofrontendsResponseLinkVariant7Type type,
+            double? updatedAt)
         {
-            this.Org = org ?? throw new global::System.ArgumentNullException(nameof(org));
-            this.Repo = repo ?? throw new global::System.ArgumentNullException(nameof(repo));
-            this.RepoId = repoId ?? throw new global::System.ArgumentNullException(nameof(repoId));
-            this.Type = type;
             this.CreatedAt = createdAt;
             this.DeployHooks = deployHooks ?? throw new global::System.ArgumentNullException(nameof(deployHooks));
             this.GitCredentialId = gitCredentialId ?? throw new global::System.ArgumentNullException(nameof(gitCredentialId));
-            this.UpdatedAt = updatedAt;
-            this.Sourceless = sourceless;
+            this.Org = org ?? throw new global::System.ArgumentNullException(nameof(org));
             this.ProductionBranch = productionBranch ?? throw new global::System.ArgumentNullException(nameof(productionBranch));
+            this.Repo = repo ?? throw new global::System.ArgumentNullException(nameof(repo));
+            this.RepoId = repoId ?? throw new global::System.ArgumentNullException(nameof(repoId));
+            this.Sourceless = sourceless;
+            this.Type = type;
+            this.UpdatedAt = updatedAt;
         }
 
         /// <summary>

@@ -19,6 +19,19 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
+        public string? Key { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("missing")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Missing { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("operator")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GenerateRouteResponseRouteConditionOperatorJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -27,21 +40,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
-        public string? Key { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         public string? Value { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("missing")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Missing { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -53,8 +53,8 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GenerateRouteResponseRouteCondition" /> class.
         /// </summary>
         /// <param name="field"></param>
-        /// <param name="operator"></param>
         /// <param name="missing"></param>
+        /// <param name="operator"></param>
         /// <param name="key"></param>
         /// <param name="value"></param>
 #if NET7_0_OR_GREATER
@@ -62,16 +62,16 @@ namespace Vercel
 #endif
         public GenerateRouteResponseRouteCondition(
             global::Vercel.GenerateRouteResponseRouteConditionField field,
-            global::Vercel.GenerateRouteResponseRouteConditionOperator @operator,
             bool missing,
+            global::Vercel.GenerateRouteResponseRouteConditionOperator @operator,
             string? key,
             string? value)
         {
             this.Field = field;
-            this.Operator = @operator;
             this.Key = key;
-            this.Value = value;
             this.Missing = missing;
+            this.Operator = @operator;
+            this.Value = value;
         }
 
         /// <summary>

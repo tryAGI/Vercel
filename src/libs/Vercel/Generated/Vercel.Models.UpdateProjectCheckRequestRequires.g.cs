@@ -16,6 +16,10 @@ namespace Vercel
         ///
         /// </summary>
         DeploymentUrl,
+        /// <summary>
+        ///
+        /// </summary>
+        None,
     }
 
     /// <summary>
@@ -32,6 +36,7 @@ namespace Vercel
             {
                 UpdateProjectCheckRequestRequires.BuildReady => "build-ready",
                 UpdateProjectCheckRequestRequires.DeploymentUrl => "deployment-url",
+                UpdateProjectCheckRequestRequires.None => "none",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -44,6 +49,7 @@ namespace Vercel
             {
                 "build-ready" => UpdateProjectCheckRequestRequires.BuildReady,
                 "deployment-url" => UpdateProjectCheckRequestRequires.DeploymentUrl,
+                "none" => UpdateProjectCheckRequestRequires.None,
                 _ => null,
             };
         }

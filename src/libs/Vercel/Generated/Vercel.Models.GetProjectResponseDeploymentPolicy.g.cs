@@ -11,14 +11,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitSources")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseDeploymentPolicyGitSource>? GitSources { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentSources")]
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseDeploymentPolicyDeploymentSource>? DeploymentSources { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentSources")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseDeploymentPolicyDeploymentSource>? DeploymentSources { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitSources")]
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseDeploymentPolicyGitSource>? GitSources { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +29,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectResponseDeploymentPolicy" /> class.
         /// </summary>
-        /// <param name="gitSources"></param>
         /// <param name="deploymentSources"></param>
+        /// <param name="gitSources"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectResponseDeploymentPolicy(
-            global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseDeploymentPolicyGitSource>? gitSources,
-            global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseDeploymentPolicyDeploymentSource>? deploymentSources)
+            global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseDeploymentPolicyDeploymentSource>? deploymentSources,
+            global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseDeploymentPolicyGitSource>? gitSources)
         {
-            this.GitSources = gitSources;
             this.DeploymentSources = deploymentSources;
+            this.GitSources = gitSources;
         }
 
         /// <summary>

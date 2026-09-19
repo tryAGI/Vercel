@@ -25,15 +25,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListDeploymentAliasesResponseAliaseProtectionBypassVariant1ScopeJsonConverter))]
-        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant1Scope Scope { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("expires")]
+        public double? Expires { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("expires")]
-        public double? Expires { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListDeploymentAliasesResponseAliaseProtectionBypassVariant1ScopeJsonConverter))]
+        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant1Scope Scope { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -46,21 +46,21 @@ namespace Vercel
         /// </summary>
         /// <param name="createdAt"></param>
         /// <param name="createdBy"></param>
-        /// <param name="scope"></param>
         /// <param name="expires"></param>
+        /// <param name="scope"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListDeploymentAliasesResponseAliaseProtectionBypassVariant1(
             double createdAt,
             string createdBy,
-            global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant1Scope scope,
-            double? expires)
+            double? expires,
+            global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant1Scope scope)
         {
             this.CreatedAt = createdAt;
             this.CreatedBy = createdBy ?? throw new global::System.ArgumentNullException(nameof(createdBy));
-            this.Scope = scope;
             this.Expires = expires;
+            this.Scope = scope;
         }
 
         /// <summary>

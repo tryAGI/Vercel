@@ -19,15 +19,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("label")]
-        public string? Label { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("claims")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<string>> Claims { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("claims")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<string>> Claims { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("label")]
+        public string? Label { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -50,8 +50,8 @@ namespace Vercel
             string? label)
         {
             this.To = to;
-            this.Label = label;
             this.Claims = claims ?? throw new global::System.ArgumentNullException(nameof(claims));
+            this.Label = label;
         }
 
         /// <summary>

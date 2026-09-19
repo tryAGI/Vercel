@@ -9,17 +9,17 @@ namespace Vercel
     public sealed partial class VcrRepositoryList
     {
         /// <summary>
+        /// Cursor to fetch the next page of results, when more are available.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("nextCursor")]
+        public string? NextCursor { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("repositories")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Vercel.VcrRepository> Repositories { get; set; }
-
-        /// <summary>
-        /// Cursor to fetch the next page of results, when more are available.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("nextCursor")]
-        public string? NextCursor { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -41,8 +41,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.VcrRepository> repositories,
             string? nextCursor)
         {
-            this.Repositories = repositories ?? throw new global::System.ArgumentNullException(nameof(repositories));
             this.NextCursor = nextCursor;
+            this.Repositories = repositories ?? throw new global::System.ArgumentNullException(nameof(repositories));
         }
 
         /// <summary>

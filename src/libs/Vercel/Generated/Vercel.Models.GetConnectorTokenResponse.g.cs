@@ -9,25 +9,16 @@ namespace Vercel
     public sealed partial class GetConnectorTokenResponse
     {
         /// <summary>
-        ///
+        /// Stable id correlating all tokens (including refreshes) back to the original authorization.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("token")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Token { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("authorizationId")]
+        public string? AuthorizationId { get; set; }
 
         /// <summary>
-        ///
+        /// Claims extracted from the provider's tokens per the connector's `ForwardedClaims` allow-list. Currently sourced from the OIDC id_token only.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tokenId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TokenId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double ExpiresAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("claims")]
+        public object? Claims { get; set; }
 
         /// <summary>
         ///
@@ -39,14 +30,33 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double ExpiresAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("externalSubject")]
+        public string? ExternalSubject { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("installationId")]
         public string? InstallationId { get; set; }
+
+        /// <summary>
+        /// Driver-specific metadata (e.g., botUserId for Slack).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
+        public object? Metadata { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
 
         /// <summary>
         ///
@@ -57,14 +67,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("externalSubject")]
-        public string? ExternalSubject { get; set; }
-
-        /// <summary>
-        /// Stable id correlating all tokens (including refreshes) back to the original authorization.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("authorizationId")]
-        public string? AuthorizationId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("token")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Token { get; set; }
 
         /// <summary>
         /// Stable id that groups all tokens with the same parameters across refreshes.
@@ -73,16 +78,11 @@ namespace Vercel
         public string? TokenGroupId { get; set; }
 
         /// <summary>
-        /// Claims extracted from the provider's tokens per the connector's `ForwardedClaims` allow-list. Currently sourced from the OIDC id_token only.
+        ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("claims")]
-        public object? Claims { get; set; }
-
-        /// <summary>
-        /// Driver-specific metadata (e.g., botUserId for Slack).
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public object? Metadata { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("tokenId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string TokenId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -93,55 +93,55 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetConnectorTokenResponse" /> class.
         /// </summary>
+        /// <param name="connector"></param>
+        /// <param name="expiresAt"></param>
         /// <param name="token"></param>
         /// <param name="tokenId"></param>
-        /// <param name="expiresAt"></param>
-        /// <param name="connector"></param>
-        /// <param name="name"></param>
-        /// <param name="installationId"></param>
-        /// <param name="tenantId"></param>
-        /// <param name="externalSubject"></param>
         /// <param name="authorizationId">
         /// Stable id correlating all tokens (including refreshes) back to the original authorization.
-        /// </param>
-        /// <param name="tokenGroupId">
-        /// Stable id that groups all tokens with the same parameters across refreshes.
         /// </param>
         /// <param name="claims">
         /// Claims extracted from the provider's tokens per the connector's `ForwardedClaims` allow-list. Currently sourced from the OIDC id_token only.
         /// </param>
+        /// <param name="externalSubject"></param>
+        /// <param name="installationId"></param>
         /// <param name="metadata">
         /// Driver-specific metadata (e.g., botUserId for Slack).
+        /// </param>
+        /// <param name="name"></param>
+        /// <param name="tenantId"></param>
+        /// <param name="tokenGroupId">
+        /// Stable id that groups all tokens with the same parameters across refreshes.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetConnectorTokenResponse(
+            global::Vercel.GetConnectorTokenResponseConnector connector,
+            double expiresAt,
             string token,
             string tokenId,
-            double expiresAt,
-            global::Vercel.GetConnectorTokenResponseConnector connector,
-            string? name,
-            string? installationId,
-            string? tenantId,
-            string? externalSubject,
             string? authorizationId,
-            string? tokenGroupId,
             object? claims,
-            object? metadata)
+            string? externalSubject,
+            string? installationId,
+            object? metadata,
+            string? name,
+            string? tenantId,
+            string? tokenGroupId)
         {
-            this.Token = token ?? throw new global::System.ArgumentNullException(nameof(token));
-            this.TokenId = tokenId ?? throw new global::System.ArgumentNullException(nameof(tokenId));
-            this.ExpiresAt = expiresAt;
-            this.Connector = connector ?? throw new global::System.ArgumentNullException(nameof(connector));
-            this.Name = name;
-            this.InstallationId = installationId;
-            this.TenantId = tenantId;
-            this.ExternalSubject = externalSubject;
             this.AuthorizationId = authorizationId;
-            this.TokenGroupId = tokenGroupId;
             this.Claims = claims;
+            this.Connector = connector ?? throw new global::System.ArgumentNullException(nameof(connector));
+            this.ExpiresAt = expiresAt;
+            this.ExternalSubject = externalSubject;
+            this.InstallationId = installationId;
             this.Metadata = metadata;
+            this.Name = name;
+            this.TenantId = tenantId;
+            this.Token = token ?? throw new global::System.ArgumentNullException(nameof(token));
+            this.TokenGroupId = tokenGroupId;
+            this.TokenId = tokenId ?? throw new global::System.ArgumentNullException(nameof(tokenId));
         }
 
         /// <summary>

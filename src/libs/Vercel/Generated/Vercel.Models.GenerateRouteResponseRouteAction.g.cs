@@ -11,10 +11,20 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GenerateRouteResponseRouteActionTypeJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GenerateRouteResponseRouteActionType Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("dest")]
+        public string? Dest { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("headers")]
+        public global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteActionHeader>? Headers { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        public double? Status { get; set; }
 
         /// <summary>
         ///
@@ -26,20 +36,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("dest")]
-        public string? Dest { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        public double? Status { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("headers")]
-        public global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteActionHeader>? Headers { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GenerateRouteResponseRouteActionTypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GenerateRouteResponseRouteActionType Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -51,25 +51,25 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GenerateRouteResponseRouteAction" /> class.
         /// </summary>
         /// <param name="type"></param>
-        /// <param name="subType"></param>
         /// <param name="dest"></param>
-        /// <param name="status"></param>
         /// <param name="headers"></param>
+        /// <param name="status"></param>
+        /// <param name="subType"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GenerateRouteResponseRouteAction(
             global::Vercel.GenerateRouteResponseRouteActionType type,
-            global::Vercel.GenerateRouteResponseRouteActionSubType? subType,
             string? dest,
+            global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteActionHeader>? headers,
             double? status,
-            global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteActionHeader>? headers)
+            global::Vercel.GenerateRouteResponseRouteActionSubType? subType)
         {
-            this.Type = type;
-            this.SubType = subType;
             this.Dest = dest;
-            this.Status = status;
             this.Headers = headers;
+            this.Status = status;
+            this.SubType = subType;
+            this.Type = type;
         }
 
         /// <summary>

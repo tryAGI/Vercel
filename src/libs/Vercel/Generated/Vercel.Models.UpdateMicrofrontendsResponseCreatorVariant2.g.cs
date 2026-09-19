@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateMicrofrontendsResponseCreatorVariant2TypeJsonConverter))]
-        public global::Vercel.UpdateMicrofrontendsResponseCreatorVariant2Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("app")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UpdateMicrofrontendsResponseCreatorVariant2App App { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("app")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UpdateMicrofrontendsResponseCreatorVariant2App App { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateMicrofrontendsResponseCreatorVariant2TypeJsonConverter))]
+        public global::Vercel.UpdateMicrofrontendsResponseCreatorVariant2Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,8 +40,8 @@ namespace Vercel
             global::Vercel.UpdateMicrofrontendsResponseCreatorVariant2App app,
             global::Vercel.UpdateMicrofrontendsResponseCreatorVariant2Type type)
         {
-            this.Type = type;
             this.App = app ?? throw new global::System.ArgumentNullException(nameof(app));
+            this.Type = type;
         }
 
         /// <summary>

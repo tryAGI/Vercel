@@ -54,7 +54,7 @@ namespace Vercel
         /// Schedule an image for deletion. The image is marked so it disappears from list/get immediately; subscriber-vcr reclaims the manifest, blobs, tags and row asynchronously via the VcrManifestRemoved event.
         /// </summary>
         /// <param name="projectId">
-        /// Project ID. Missing or empty values return HTTP 400.
+        /// Project ID or name (slug) within the authenticated team. IDs take precedence over names. Missing or empty values return HTTP 400.
         /// </param>
         /// <param name="idOrName"></param>
         /// <param name="imageId"></param>
@@ -93,7 +93,7 @@ namespace Vercel
         /// Schedule an image for deletion. The image is marked so it disappears from list/get immediately; subscriber-vcr reclaims the manifest, blobs, tags and row asynchronously via the VcrManifestRemoved event.
         /// </summary>
         /// <param name="projectId">
-        /// Project ID. Missing or empty values return HTTP 400.
+        /// Project ID or name (slug) within the authenticated team. IDs take precedence over names. Missing or empty values return HTTP 400.
         /// </param>
         /// <param name="idOrName"></param>
         /// <param name="imageId"></param>

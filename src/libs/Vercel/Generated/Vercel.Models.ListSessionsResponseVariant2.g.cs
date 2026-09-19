@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sessions")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("pagination")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.Session> Sessions { get; set; }
+        public required global::Vercel.ListSessionsResponseVariant2Pagination Pagination { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("pagination")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("sessions")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.ListSessionsResponseVariant2Pagination Pagination { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.Session> Sessions { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListSessionsResponseVariant2" /> class.
         /// </summary>
-        /// <param name="sessions"></param>
         /// <param name="pagination"></param>
+        /// <param name="sessions"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListSessionsResponseVariant2(
-            global::System.Collections.Generic.IList<global::Vercel.Session> sessions,
-            global::Vercel.ListSessionsResponseVariant2Pagination pagination)
+            global::Vercel.ListSessionsResponseVariant2Pagination pagination,
+            global::System.Collections.Generic.IList<global::Vercel.Session> sessions)
         {
-            this.Sessions = sessions ?? throw new global::System.ArgumentNullException(nameof(sessions));
             this.Pagination = pagination ?? throw new global::System.ArgumentNullException(nameof(pagination));
+            this.Sessions = sessions ?? throw new global::System.ArgumentNullException(nameof(sessions));
         }
 
         /// <summary>

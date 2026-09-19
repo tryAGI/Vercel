@@ -11,22 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("typeName")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetFlagSettingsResponseTypeNameJsonConverter))]
-        public global::Vercel.GetFlagSettingsResponseTypeName TypeName { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        public string? OwnerId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        public double? CreatedAt { get; set; }
 
         /// <summary>
         ///
@@ -38,13 +24,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> Environments { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("entities")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Vercel.GetFlagSettingsResponseEntitie> Entities { get; set; }
@@ -52,14 +31,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        public double? CreatedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
-        public double? UpdatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<string> Environments { get; set; }
 
         /// <summary>
         ///
@@ -67,6 +41,32 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetFlagSettingsResponseMetadata Metadata { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        public string? OwnerId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("typeName")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetFlagSettingsResponseTypeNameJsonConverter))]
+        public global::Vercel.GetFlagSettingsResponseTypeName TypeName { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        public double? UpdatedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -77,38 +77,38 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetFlagSettingsResponse" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
         /// <param name="enabled"></param>
-        /// <param name="environments"></param>
         /// <param name="entities"></param>
+        /// <param name="environments"></param>
         /// <param name="metadata"></param>
-        /// <param name="typeName"></param>
-        /// <param name="ownerId"></param>
+        /// <param name="projectId"></param>
         /// <param name="createdAt"></param>
+        /// <param name="ownerId"></param>
+        /// <param name="typeName"></param>
         /// <param name="updatedAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetFlagSettingsResponse(
-            string projectId,
             bool enabled,
-            global::System.Collections.Generic.IList<string> environments,
             global::System.Collections.Generic.IList<global::Vercel.GetFlagSettingsResponseEntitie> entities,
+            global::System.Collections.Generic.IList<string> environments,
             global::Vercel.GetFlagSettingsResponseMetadata metadata,
-            global::Vercel.GetFlagSettingsResponseTypeName typeName,
-            string? ownerId,
+            string projectId,
             double? createdAt,
+            string? ownerId,
+            global::Vercel.GetFlagSettingsResponseTypeName typeName,
             double? updatedAt)
         {
-            this.TypeName = typeName;
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.OwnerId = ownerId;
-            this.Enabled = enabled;
-            this.Environments = environments ?? throw new global::System.ArgumentNullException(nameof(environments));
-            this.Entities = entities ?? throw new global::System.ArgumentNullException(nameof(entities));
             this.CreatedAt = createdAt;
-            this.UpdatedAt = updatedAt;
+            this.Enabled = enabled;
+            this.Entities = entities ?? throw new global::System.ArgumentNullException(nameof(entities));
+            this.Environments = environments ?? throw new global::System.ArgumentNullException(nameof(environments));
             this.Metadata = metadata ?? throw new global::System.ArgumentNullException(nameof(metadata));
+            this.OwnerId = ownerId;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.TypeName = typeName;
+            this.UpdatedAt = updatedAt;
         }
 
         /// <summary>

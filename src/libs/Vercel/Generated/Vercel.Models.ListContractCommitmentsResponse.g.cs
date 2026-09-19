@@ -9,6 +9,13 @@ namespace Vercel
     public sealed partial class ListContractCommitmentsResponse
     {
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("BillingCurrency")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string BillingCurrency { get; set; }
+
+        /// <summary>
         /// Highest-level classification of the contract commitment. 'Spend' for Pro ($20/month), 'Usage' for Enterprise (MIU allocation).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ContractCommitmentCategory")]
@@ -36,18 +43,18 @@ namespace Vercel
         public required string ContractCommitmentId { get; set; }
 
         /// <summary>
-        /// Inclusive start of the commitment term period (ISO 8601 UTC)
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ContractCommitmentPeriodStart")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ContractCommitmentPeriodStart { get; set; }
-
-        /// <summary>
         /// Exclusive end of the commitment term period (ISO 8601 UTC)
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ContractCommitmentPeriodEnd")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ContractCommitmentPeriodEnd { get; set; }
+
+        /// <summary>
+        /// Inclusive start of the commitment term period (ISO 8601 UTC)
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ContractCommitmentPeriodStart")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ContractCommitmentPeriodStart { get; set; }
 
         /// <summary>
         /// Amount associated with the commitment (in ContractCommitmentUnit). Required when ContractCommitmentCategory is 'Usage'. For Enterprise: MIU allocation amount.
@@ -77,13 +84,6 @@ namespace Vercel
         public required string ContractId { get; set; }
 
         /// <summary>
-        /// Inclusive start of the overall contract period (ISO 8601 UTC)
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ContractPeriodStart")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ContractPeriodStart { get; set; }
-
-        /// <summary>
         /// Exclusive end of the overall contract period (ISO 8601 UTC)
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ContractPeriodEnd")]
@@ -91,11 +91,11 @@ namespace Vercel
         public required string ContractPeriodEnd { get; set; }
 
         /// <summary>
-        ///
+        /// Inclusive start of the overall contract period (ISO 8601 UTC)
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("BillingCurrency")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("ContractPeriodStart")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string BillingCurrency { get; set; }
+        public required string ContractPeriodStart { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -106,17 +106,18 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListContractCommitmentsResponse" /> class.
         /// </summary>
+        /// <param name="billingCurrency"></param>
         /// <param name="contractCommitmentCategory">
         /// Highest-level classification of the contract commitment. 'Spend' for Pro ($20/month), 'Usage' for Enterprise (MIU allocation).
         /// </param>
         /// <param name="contractCommitmentId">
         /// Unique identifier for a single contract term within a contract. Maps to specific commitment period or allocation ID.
         /// </param>
-        /// <param name="contractCommitmentPeriodStart">
-        /// Inclusive start of the commitment term period (ISO 8601 UTC)
-        /// </param>
         /// <param name="contractCommitmentPeriodEnd">
         /// Exclusive end of the commitment term period (ISO 8601 UTC)
+        /// </param>
+        /// <param name="contractCommitmentPeriodStart">
+        /// Inclusive start of the commitment term period (ISO 8601 UTC)
         /// </param>
         /// <param name="contractCommitmentType">
         /// Service-provider-assigned name identifying the commitment type. 'Pro' or 'Enterprise' for Vercel.
@@ -127,13 +128,12 @@ namespace Vercel
         /// <param name="contractId">
         /// Service-provider-assigned identifier for a contract. Maps to Orb Subscription ID for Vercel.
         /// </param>
-        /// <param name="contractPeriodStart">
-        /// Inclusive start of the overall contract period (ISO 8601 UTC)
-        /// </param>
         /// <param name="contractPeriodEnd">
         /// Exclusive end of the overall contract period (ISO 8601 UTC)
         /// </param>
-        /// <param name="billingCurrency"></param>
+        /// <param name="contractPeriodStart">
+        /// Inclusive start of the overall contract period (ISO 8601 UTC)
+        /// </param>
         /// <param name="contractCommitmentCost">
         /// Monetary value of the contract commitment (in BillingCurrency). Required when ContractCommitmentCategory is 'Spend'. For Pro: 20 (USD)
         /// </param>
@@ -147,33 +147,33 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListContractCommitmentsResponse(
+            string billingCurrency,
             global::Vercel.ListContractCommitmentsResponseContractCommitmentCategory contractCommitmentCategory,
             string contractCommitmentId,
-            string contractCommitmentPeriodStart,
             string contractCommitmentPeriodEnd,
+            string contractCommitmentPeriodStart,
             string contractCommitmentType,
             string contractCommitmentUnit,
             string contractId,
-            string contractPeriodStart,
             string contractPeriodEnd,
-            string billingCurrency,
+            string contractPeriodStart,
             double? contractCommitmentCost,
             string? contractCommitmentDescription,
             double? contractCommitmentQuantity)
         {
+            this.BillingCurrency = billingCurrency ?? throw new global::System.ArgumentNullException(nameof(billingCurrency));
             this.ContractCommitmentCategory = contractCommitmentCategory;
             this.ContractCommitmentCost = contractCommitmentCost;
             this.ContractCommitmentDescription = contractCommitmentDescription;
             this.ContractCommitmentId = contractCommitmentId ?? throw new global::System.ArgumentNullException(nameof(contractCommitmentId));
-            this.ContractCommitmentPeriodStart = contractCommitmentPeriodStart ?? throw new global::System.ArgumentNullException(nameof(contractCommitmentPeriodStart));
             this.ContractCommitmentPeriodEnd = contractCommitmentPeriodEnd ?? throw new global::System.ArgumentNullException(nameof(contractCommitmentPeriodEnd));
+            this.ContractCommitmentPeriodStart = contractCommitmentPeriodStart ?? throw new global::System.ArgumentNullException(nameof(contractCommitmentPeriodStart));
             this.ContractCommitmentQuantity = contractCommitmentQuantity;
             this.ContractCommitmentType = contractCommitmentType ?? throw new global::System.ArgumentNullException(nameof(contractCommitmentType));
             this.ContractCommitmentUnit = contractCommitmentUnit ?? throw new global::System.ArgumentNullException(nameof(contractCommitmentUnit));
             this.ContractId = contractId ?? throw new global::System.ArgumentNullException(nameof(contractId));
-            this.ContractPeriodStart = contractPeriodStart ?? throw new global::System.ArgumentNullException(nameof(contractPeriodStart));
             this.ContractPeriodEnd = contractPeriodEnd ?? throw new global::System.ArgumentNullException(nameof(contractPeriodEnd));
-            this.BillingCurrency = billingCurrency ?? throw new global::System.ArgumentNullException(nameof(billingCurrency));
+            this.ContractPeriodStart = contractPeriodStart ?? throw new global::System.ArgumentNullException(nameof(contractPeriodStart));
         }
 
         /// <summary>

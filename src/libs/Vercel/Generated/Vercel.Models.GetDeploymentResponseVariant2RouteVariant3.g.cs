@@ -11,13 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("src")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Src { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("continue")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Continue { get; set; }
@@ -30,6 +23,13 @@ namespace Vercel
         public required double Middleware { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("src")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Src { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -38,20 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDeploymentResponseVariant2RouteVariant3" /> class.
         /// </summary>
-        /// <param name="src"></param>
         /// <param name="continue"></param>
         /// <param name="middleware"></param>
+        /// <param name="src"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant2RouteVariant3(
-            string src,
             bool @continue,
-            double middleware)
+            double middleware,
+            string src)
         {
-            this.Src = src ?? throw new global::System.ArgumentNullException(nameof(src));
             this.Continue = @continue;
             this.Middleware = middleware;
+            this.Src = src ?? throw new global::System.ArgumentNullException(nameof(src));
         }
 
         /// <summary>

@@ -11,21 +11,38 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildCommand")]
+        public string? BuildCommand { get; set; }
+
+        /// <summary>
+        /// Buildpack runtime slug (e.g. "ruby").
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildpack")]
+        public string? Buildpack { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bundle")]
+        public bool? Bundle { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bunVersion")]
         public string? BunVersion { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("maxLambdaSize")]
-        public string? MaxLambdaSize { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("debug")]
+        public bool? Debug { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("includeFiles")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>))]
-        public global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? IncludeFiles { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("devCommand")]
+        public string? DevCommand { get; set; }
 
         /// <summary>
         ///
@@ -37,44 +54,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bundle")]
-        public bool? Bundle { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ldsflags")]
-        public string? Ldsflags { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("helpers")]
-        public bool? Helpers { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rust")]
-        public string? Rust { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("debug")]
-        public bool? Debug { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("zeroConfig")]
-        public bool? ZeroConfig { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("import")]
-        public global::System.Collections.Generic.Dictionary<string, string>? Import { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("framework")]
+        public string? Framework { get; set; }
 
         /// <summary>
         ///
@@ -85,14 +66,21 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectSettings")]
-        public global::Vercel.CancelDeploymentResponseServiceVariant2BuilderConfigProjectSettings? ProjectSettings { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("helpers")]
+        public bool? Helpers { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("outputDirectory")]
-        public string? OutputDirectory { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("import")]
+        public global::System.Collections.Generic.Dictionary<string, string>? Import { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("includeFiles")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>))]
+        public global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? IncludeFiles { get; set; }
 
         /// <summary>
         ///
@@ -103,32 +91,27 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildCommand")]
-        public string? BuildCommand { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("ldsflags")]
+        public string? Ldsflags { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("devCommand")]
-        public string? DevCommand { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("framework")]
-        public string? Framework { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("nodeVersion")]
-        public string? NodeVersion { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("maxLambdaSize")]
+        public string? MaxLambdaSize { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("middleware")]
         public bool? Middleware { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("middlewareMatcher")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>))]
+        public global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? MiddlewareMatcher { get; set; }
 
         /// <summary>
         /// Enforced runtime for explicitly configured Routing Middleware.
@@ -140,15 +123,38 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("middlewareMatcher")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>))]
-        public global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? MiddlewareMatcher { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("nodeVersion")]
+        public string? NodeVersion { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("outputDirectory")]
+        public string? OutputDirectory { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectSettings")]
+        public global::Vercel.CancelDeploymentResponseServiceVariant2BuilderConfigProjectSettings? ProjectSettings { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("rust")]
+        public string? Rust { get; set; }
 
         /// <summary>
         /// Owning service name; scopes per-function config such as the v2beta consumer.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("serviceName")]
         public string? ServiceName { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("zeroConfig")]
+        public bool? ZeroConfig { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -159,84 +165,89 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CancelDeploymentResponseServiceVariant2BuilderConfig" /> class.
         /// </summary>
-        /// <param name="bunVersion"></param>
-        /// <param name="maxLambdaSize"></param>
-        /// <param name="includeFiles"></param>
-        /// <param name="excludeFiles"></param>
-        /// <param name="bundle"></param>
-        /// <param name="ldsflags"></param>
-        /// <param name="helpers"></param>
-        /// <param name="rust"></param>
-        /// <param name="debug"></param>
-        /// <param name="zeroConfig"></param>
-        /// <param name="import"></param>
-        /// <param name="functions"></param>
-        /// <param name="projectSettings"></param>
-        /// <param name="outputDirectory"></param>
-        /// <param name="installCommand"></param>
         /// <param name="buildCommand"></param>
+        /// <param name="buildpack">
+        /// Buildpack runtime slug (e.g. "ruby").
+        /// </param>
+        /// <param name="bundle"></param>
+        /// <param name="bunVersion"></param>
+        /// <param name="debug"></param>
         /// <param name="devCommand"></param>
+        /// <param name="excludeFiles"></param>
         /// <param name="framework"></param>
-        /// <param name="nodeVersion"></param>
+        /// <param name="functions"></param>
+        /// <param name="helpers"></param>
+        /// <param name="import"></param>
+        /// <param name="includeFiles"></param>
+        /// <param name="installCommand"></param>
+        /// <param name="ldsflags"></param>
+        /// <param name="maxLambdaSize"></param>
         /// <param name="middleware"></param>
+        /// <param name="middlewareMatcher"></param>
         /// <param name="middlewareRuntime">
         /// Enforced runtime for explicitly configured Routing Middleware.
         /// </param>
-        /// <param name="middlewareMatcher"></param>
+        /// <param name="nodeVersion"></param>
+        /// <param name="outputDirectory"></param>
+        /// <param name="projectSettings"></param>
+        /// <param name="rust"></param>
         /// <param name="serviceName">
         /// Owning service name; scopes per-function config such as the v2beta consumer.
         /// </param>
+        /// <param name="zeroConfig"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CancelDeploymentResponseServiceVariant2BuilderConfig(
-            string? bunVersion,
-            string? maxLambdaSize,
-            global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? includeFiles,
-            global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? excludeFiles,
-            bool? bundle,
-            string? ldsflags,
-            bool? helpers,
-            string? rust,
-            bool? debug,
-            bool? zeroConfig,
-            global::System.Collections.Generic.Dictionary<string, string>? import,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.CancelDeploymentResponseServiceVariant2BuilderConfigFunctions2>? functions,
-            global::Vercel.CancelDeploymentResponseServiceVariant2BuilderConfigProjectSettings? projectSettings,
-            string? outputDirectory,
-            string? installCommand,
             string? buildCommand,
+            string? buildpack,
+            bool? bundle,
+            string? bunVersion,
+            bool? debug,
             string? devCommand,
+            global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? excludeFiles,
             string? framework,
-            string? nodeVersion,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.CancelDeploymentResponseServiceVariant2BuilderConfigFunctions2>? functions,
+            bool? helpers,
+            global::System.Collections.Generic.Dictionary<string, string>? import,
+            global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? includeFiles,
+            string? installCommand,
+            string? ldsflags,
+            string? maxLambdaSize,
             bool? middleware,
-            global::Vercel.CancelDeploymentResponseServiceVariant2BuilderConfigMiddlewareRuntime? middlewareRuntime,
             global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? middlewareMatcher,
-            string? serviceName)
+            global::Vercel.CancelDeploymentResponseServiceVariant2BuilderConfigMiddlewareRuntime? middlewareRuntime,
+            string? nodeVersion,
+            string? outputDirectory,
+            global::Vercel.CancelDeploymentResponseServiceVariant2BuilderConfigProjectSettings? projectSettings,
+            string? rust,
+            string? serviceName,
+            bool? zeroConfig)
         {
-            this.BunVersion = bunVersion;
-            this.MaxLambdaSize = maxLambdaSize;
-            this.IncludeFiles = includeFiles;
-            this.ExcludeFiles = excludeFiles;
-            this.Bundle = bundle;
-            this.Ldsflags = ldsflags;
-            this.Helpers = helpers;
-            this.Rust = rust;
-            this.Debug = debug;
-            this.ZeroConfig = zeroConfig;
-            this.Import = import;
-            this.Functions = functions;
-            this.ProjectSettings = projectSettings;
-            this.OutputDirectory = outputDirectory;
-            this.InstallCommand = installCommand;
             this.BuildCommand = buildCommand;
+            this.Buildpack = buildpack;
+            this.Bundle = bundle;
+            this.BunVersion = bunVersion;
+            this.Debug = debug;
             this.DevCommand = devCommand;
+            this.ExcludeFiles = excludeFiles;
             this.Framework = framework;
-            this.NodeVersion = nodeVersion;
+            this.Functions = functions;
+            this.Helpers = helpers;
+            this.Import = import;
+            this.IncludeFiles = includeFiles;
+            this.InstallCommand = installCommand;
+            this.Ldsflags = ldsflags;
+            this.MaxLambdaSize = maxLambdaSize;
             this.Middleware = middleware;
-            this.MiddlewareRuntime = middlewareRuntime;
             this.MiddlewareMatcher = middlewareMatcher;
+            this.MiddlewareRuntime = middlewareRuntime;
+            this.NodeVersion = nodeVersion;
+            this.OutputDirectory = outputDirectory;
+            this.ProjectSettings = projectSettings;
+            this.Rust = rust;
             this.ServiceName = serviceName;
+            this.ZeroConfig = zeroConfig;
         }
 
         /// <summary>

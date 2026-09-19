@@ -62,6 +62,10 @@ namespace Vercel
         /// Default Value: node24<br/>
         /// Example: node24
         /// </param>
+        /// <param name="architecture">
+        /// CPU architecture. Inherits a snapshot or single image manifest when omitted. Image indexes default to amd64. Must match the source. ARM64 creation requires API v3 or v4 without runtime and team access.<br/>
+        /// Example: arm64
+        /// </param>
         /// <param name="resources">
         /// Resources to define the VM
         /// </param>
@@ -130,6 +134,7 @@ namespace Vercel
             string? slug = default,
             global::Vercel.OneOf<global::Vercel.CreateSandboxesV2RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesV2RequestNetworkPolicyVariant2>? networkPolicy = default,
             global::Vercel.CreateSandboxesV2RequestRuntime? runtime = default,
+            global::Vercel.CreateSandboxesV2RequestArchitecture? architecture = default,
             global::Vercel.CreateSandboxesV2RequestResources? resources = default,
             global::Vercel.OneOf<global::Vercel.CreateSandboxesV2RequestSourceVariant1, global::Vercel.CreateSandboxesV2RequestSourceVariant2, global::Vercel.CreateSandboxesV2RequestSourceVariant3>? source = default,
             string? projectId = default,

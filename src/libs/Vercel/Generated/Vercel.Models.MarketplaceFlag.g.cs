@@ -11,16 +11,21 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("typeName")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.MarketplaceFlagTypeNameJsonConverter))]
-        public global::Vercel.MarketplaceFlagTypeName TypeName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("category")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.MarketplaceFlagCategoryJsonConverter))]
+        public global::Vercel.MarketplaceFlagCategory? Category { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        public double? CreatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
 
         /// <summary>
         ///
@@ -32,9 +37,22 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
+        public required string Id { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationConfigurationId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string IntegrationConfigurationId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
 
         /// <summary>
         ///
@@ -67,9 +85,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationConfigurationId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationConfigurationId { get; set; }
+        public required string Slug { get; set; }
 
         /// <summary>
         ///
@@ -82,27 +100,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
-        public string? Description { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("category")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.MarketplaceFlagCategoryJsonConverter))]
-        public global::Vercel.MarketplaceFlagCategory? Category { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        public double? CreatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("typeName")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.MarketplaceFlagTypeNameJsonConverter))]
+        public global::Vercel.MarketplaceFlagTypeName TypeName { get; set; }
 
         /// <summary>
         ///
@@ -119,55 +119,55 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="MarketplaceFlag" /> class.
         /// </summary>
-        /// <param name="id"></param>
         /// <param name="externalId"></param>
-        /// <param name="slug"></param>
+        /// <param name="id"></param>
+        /// <param name="integrationConfigurationId"></param>
         /// <param name="origin"></param>
         /// <param name="ownerId"></param>
         /// <param name="projectId"></param>
         /// <param name="resourceId"></param>
-        /// <param name="integrationConfigurationId"></param>
+        /// <param name="slug"></param>
         /// <param name="state"></param>
-        /// <param name="typeName"></param>
-        /// <param name="name"></param>
-        /// <param name="description"></param>
         /// <param name="category"></param>
         /// <param name="createdAt"></param>
+        /// <param name="description"></param>
+        /// <param name="name"></param>
+        /// <param name="typeName"></param>
         /// <param name="updatedAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public MarketplaceFlag(
-            string id,
             string externalId,
-            string slug,
+            string id,
+            string integrationConfigurationId,
             string origin,
             string ownerId,
             string projectId,
             string resourceId,
-            string integrationConfigurationId,
+            string slug,
             global::Vercel.MarketplaceFlagState state,
-            global::Vercel.MarketplaceFlagTypeName typeName,
-            string? name,
-            string? description,
             global::Vercel.MarketplaceFlagCategory? category,
             double? createdAt,
+            string? description,
+            string? name,
+            global::Vercel.MarketplaceFlagTypeName typeName,
             double? updatedAt)
         {
-            this.TypeName = typeName;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Category = category;
+            this.CreatedAt = createdAt;
+            this.Description = description;
             this.ExternalId = externalId ?? throw new global::System.ArgumentNullException(nameof(externalId));
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.IntegrationConfigurationId = integrationConfigurationId ?? throw new global::System.ArgumentNullException(nameof(integrationConfigurationId));
+            this.Name = name;
             this.Origin = origin ?? throw new global::System.ArgumentNullException(nameof(origin));
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ResourceId = resourceId ?? throw new global::System.ArgumentNullException(nameof(resourceId));
-            this.IntegrationConfigurationId = integrationConfigurationId ?? throw new global::System.ArgumentNullException(nameof(integrationConfigurationId));
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.State = state;
-            this.Name = name;
-            this.Description = description;
-            this.Category = category;
-            this.CreatedAt = createdAt;
+            this.TypeName = typeName;
             this.UpdatedAt = updatedAt;
         }
 

@@ -11,23 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("connector")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("request")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Request { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("verifier")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Verifier { get; set; }
+        public required global::Vercel.CreateConnectorAuthorizationRequestResponseConnector Connector { get; set; }
 
         /// <summary>
         ///
@@ -45,9 +31,23 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("connector")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("request")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.CreateConnectorAuthorizationRequestResponseConnector Connector { get; set; }
+        public required string Request { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Url { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("verifier")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Verifier { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -58,29 +58,29 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateConnectorAuthorizationRequestResponse" /> class.
         /// </summary>
-        /// <param name="url"></param>
-        /// <param name="request"></param>
-        /// <param name="verifier"></param>
-        /// <param name="expiresAt"></param>
         /// <param name="connector"></param>
+        /// <param name="expiresAt"></param>
+        /// <param name="request"></param>
+        /// <param name="url"></param>
+        /// <param name="verifier"></param>
         /// <param name="deviceCode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateConnectorAuthorizationRequestResponse(
-            string url,
-            string request,
-            string verifier,
-            double expiresAt,
             global::Vercel.CreateConnectorAuthorizationRequestResponseConnector connector,
+            double expiresAt,
+            string request,
+            string url,
+            string verifier,
             string? deviceCode)
         {
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
-            this.Request = request ?? throw new global::System.ArgumentNullException(nameof(request));
-            this.Verifier = verifier ?? throw new global::System.ArgumentNullException(nameof(verifier));
+            this.Connector = connector ?? throw new global::System.ArgumentNullException(nameof(connector));
             this.DeviceCode = deviceCode;
             this.ExpiresAt = expiresAt;
-            this.Connector = connector ?? throw new global::System.ArgumentNullException(nameof(connector));
+            this.Request = request ?? throw new global::System.ArgumentNullException(nameof(request));
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.Verifier = verifier ?? throw new global::System.ArgumentNullException(nameof(verifier));
         }
 
         /// <summary>

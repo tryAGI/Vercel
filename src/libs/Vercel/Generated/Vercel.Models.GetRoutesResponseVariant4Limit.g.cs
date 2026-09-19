@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("maxRoutes")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("currentRoutes")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double MaxRoutes { get; set; }
+        public required double CurrentRoutes { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("currentRoutes")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("maxRoutes")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CurrentRoutes { get; set; }
+        public required double MaxRoutes { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetRoutesResponseVariant4Limit" /> class.
         /// </summary>
-        /// <param name="maxRoutes"></param>
         /// <param name="currentRoutes"></param>
+        /// <param name="maxRoutes"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetRoutesResponseVariant4Limit(
-            double maxRoutes,
-            double currentRoutes)
+            double currentRoutes,
+            double maxRoutes)
         {
-            this.MaxRoutes = maxRoutes;
             this.CurrentRoutes = currentRoutes;
+            this.MaxRoutes = maxRoutes;
         }
 
         /// <summary>

@@ -17,14 +17,14 @@ namespace Vercel
         /// <summary>
         /// Default job configuration applied to new projects created in this team.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("typecheck")]
-        public global::Vercel.TeamDefaultProjectJobsTypecheck? Typecheck { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("mfe-config-present")]
+        public global::Vercel.TeamDefaultProjectJobsMfeConfigPresent? MfeConfigPresent { get; set; }
 
         /// <summary>
         /// Default job configuration applied to new projects created in this team.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mfe-config-present")]
-        public global::Vercel.TeamDefaultProjectJobsMfeConfigPresent? MfeConfigPresent { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("typecheck")]
+        public global::Vercel.TeamDefaultProjectJobsTypecheck? Typecheck { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,10 +38,10 @@ namespace Vercel
         /// <param name="lint">
         /// Default job configuration applied to new projects created in this team.
         /// </param>
-        /// <param name="typecheck">
+        /// <param name="mfeConfigPresent">
         /// Default job configuration applied to new projects created in this team.
         /// </param>
-        /// <param name="mfeConfigPresent">
+        /// <param name="typecheck">
         /// Default job configuration applied to new projects created in this team.
         /// </param>
 #if NET7_0_OR_GREATER
@@ -49,12 +49,12 @@ namespace Vercel
 #endif
         public TeamDefaultProjectJobs(
             global::Vercel.TeamDefaultProjectJobsLint? lint,
-            global::Vercel.TeamDefaultProjectJobsTypecheck? typecheck,
-            global::Vercel.TeamDefaultProjectJobsMfeConfigPresent? mfeConfigPresent)
+            global::Vercel.TeamDefaultProjectJobsMfeConfigPresent? mfeConfigPresent,
+            global::Vercel.TeamDefaultProjectJobsTypecheck? typecheck)
         {
             this.Lint = lint;
-            this.Typecheck = typecheck;
             this.MfeConfigPresent = mfeConfigPresent;
+            this.Typecheck = typecheck;
         }
 
         /// <summary>

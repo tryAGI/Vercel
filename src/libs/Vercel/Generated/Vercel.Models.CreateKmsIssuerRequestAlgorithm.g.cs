@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// The signing algorithm to use for the issuer. EdDSA is not accepted for new issuers.<br/>
+    /// The signing algorithm to use for the issuer.<br/>
     /// Default Value: RS512
     /// </summary>
     public enum CreateKmsIssuerRequestAlgorithm

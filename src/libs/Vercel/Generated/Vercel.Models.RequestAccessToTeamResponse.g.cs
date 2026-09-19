@@ -11,34 +11,21 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamSlug")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TeamSlug { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("accessRequestedAt")]
+        public double? AccessRequestedAt { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamName")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TeamName { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucket")]
+        public global::Vercel.RequestAccessToTeamResponseBitbucket? Bitbucket { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("confirmed")]
-        public bool? Confirmed { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("joinedFrom")]
-        public global::Vercel.RequestAccessToTeamResponseJoinedFrom? JoinedFrom { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("accessRequestedAt")]
-        public double? AccessRequestedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Confirmed { get; set; }
 
         /// <summary>
         ///
@@ -55,8 +42,22 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucket")]
-        public global::Vercel.RequestAccessToTeamResponseBitbucket? Bitbucket { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("joinedFrom")]
+        public global::Vercel.RequestAccessToTeamResponseJoinedFrom? JoinedFrom { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string TeamName { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamSlug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string TeamSlug { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -67,35 +68,35 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="RequestAccessToTeamResponse" /> class.
         /// </summary>
-        /// <param name="teamSlug"></param>
-        /// <param name="teamName"></param>
         /// <param name="confirmed"></param>
-        /// <param name="joinedFrom"></param>
+        /// <param name="teamName"></param>
+        /// <param name="teamSlug"></param>
         /// <param name="accessRequestedAt"></param>
+        /// <param name="bitbucket"></param>
         /// <param name="github"></param>
         /// <param name="gitlab"></param>
-        /// <param name="bitbucket"></param>
+        /// <param name="joinedFrom"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public RequestAccessToTeamResponse(
-            string teamSlug,
+            bool confirmed,
             string teamName,
-            bool? confirmed,
-            global::Vercel.RequestAccessToTeamResponseJoinedFrom? joinedFrom,
+            string teamSlug,
             double? accessRequestedAt,
+            global::Vercel.RequestAccessToTeamResponseBitbucket? bitbucket,
             global::Vercel.RequestAccessToTeamResponseGithub? github,
             global::Vercel.RequestAccessToTeamResponseGitlab? gitlab,
-            global::Vercel.RequestAccessToTeamResponseBitbucket? bitbucket)
+            global::Vercel.RequestAccessToTeamResponseJoinedFrom? joinedFrom)
         {
-            this.TeamSlug = teamSlug ?? throw new global::System.ArgumentNullException(nameof(teamSlug));
-            this.TeamName = teamName ?? throw new global::System.ArgumentNullException(nameof(teamName));
-            this.Confirmed = confirmed;
-            this.JoinedFrom = joinedFrom;
             this.AccessRequestedAt = accessRequestedAt;
+            this.Bitbucket = bitbucket;
+            this.Confirmed = confirmed;
             this.Github = github;
             this.Gitlab = gitlab;
-            this.Bitbucket = bitbucket;
+            this.JoinedFrom = joinedFrom;
+            this.TeamName = teamName ?? throw new global::System.ArgumentNullException(nameof(teamName));
+            this.TeamSlug = teamSlug ?? throw new global::System.ArgumentNullException(nameof(teamSlug));
         }
 
         /// <summary>

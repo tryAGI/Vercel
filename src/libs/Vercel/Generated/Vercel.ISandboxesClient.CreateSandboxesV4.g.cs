@@ -57,6 +57,10 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="networkPolicy"></param>
+        /// <param name="architecture">
+        /// CPU architecture. Inherits a snapshot or single image manifest when omitted. Image indexes default to amd64. Must match the source. ARM64 creation requires API v3 or v4 without runtime and team access.<br/>
+        /// Example: arm64
+        /// </param>
         /// <param name="resources">
         /// Resources to define the VM
         /// </param>
@@ -124,6 +128,7 @@ namespace Vercel
             string? teamId = default,
             string? slug = default,
             global::Vercel.OneOf<global::Vercel.CreateSandboxesV4RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesV4RequestNetworkPolicyVariant2>? networkPolicy = default,
+            global::Vercel.CreateSandboxesV4RequestArchitecture? architecture = default,
             global::Vercel.CreateSandboxesV4RequestResources? resources = default,
             global::Vercel.OneOf<global::Vercel.CreateSandboxesV4RequestSourceVariant1, global::Vercel.CreateSandboxesV4RequestSourceVariant2, global::Vercel.CreateSandboxesV4RequestSourceVariant3>? source = default,
             string? projectId = default,
