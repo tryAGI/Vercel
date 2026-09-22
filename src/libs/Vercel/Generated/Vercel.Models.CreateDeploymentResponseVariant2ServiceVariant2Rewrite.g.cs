@@ -11,13 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Source { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("destination")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2RewriteDestination>))]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -26,8 +19,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("transforms")]
-        public global::System.Collections.Generic.IList<global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2RewriteTransform>? Transforms { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("env")]
+        public global::System.Collections.Generic.IList<string>? Env { get; set; }
 
         /// <summary>
         ///
@@ -44,20 +37,27 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("respectOriginCacheControl")]
+        public bool? RespectOriginCacheControl { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Source { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("statusCode")]
         public double? StatusCode { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("env")]
-        public global::System.Collections.Generic.IList<string>? Env { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("respectOriginCacheControl")]
-        public bool? RespectOriginCacheControl { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("transforms")]
+        public global::System.Collections.Generic.IList<global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2RewriteTransform>? Transforms { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -68,35 +68,35 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateDeploymentResponseVariant2ServiceVariant2Rewrite" /> class.
         /// </summary>
-        /// <param name="source"></param>
         /// <param name="destination"></param>
-        /// <param name="transforms"></param>
+        /// <param name="source"></param>
+        /// <param name="env"></param>
         /// <param name="has"></param>
         /// <param name="missing"></param>
-        /// <param name="statusCode"></param>
-        /// <param name="env"></param>
         /// <param name="respectOriginCacheControl"></param>
+        /// <param name="statusCode"></param>
+        /// <param name="transforms"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateDeploymentResponseVariant2ServiceVariant2Rewrite(
-            string source,
             global::Vercel.OneOf<string, global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2RewriteDestination> destination,
-            global::System.Collections.Generic.IList<global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2RewriteTransform>? transforms,
+            string source,
+            global::System.Collections.Generic.IList<string>? env,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2RewriteHaVariant1, global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2RewriteHaVariant2>>? has,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2RewriteMissingItemVariant1, global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2RewriteMissingItemVariant2>>? missing,
+            bool? respectOriginCacheControl,
             double? statusCode,
-            global::System.Collections.Generic.IList<string>? env,
-            bool? respectOriginCacheControl)
+            global::System.Collections.Generic.IList<global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2RewriteTransform>? transforms)
         {
-            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
             this.Destination = destination;
-            this.Transforms = transforms;
+            this.Env = env;
             this.Has = has;
             this.Missing = missing;
-            this.StatusCode = statusCode;
-            this.Env = env;
             this.RespectOriginCacheControl = respectOriginCacheControl;
+            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
+            this.StatusCode = statusCode;
+            this.Transforms = transforms;
         }
 
         /// <summary>

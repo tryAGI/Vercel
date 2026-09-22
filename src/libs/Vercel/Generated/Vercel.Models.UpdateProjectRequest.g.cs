@@ -276,7 +276,7 @@ namespace Vercel
         public global::Vercel.UpdateProjectRequestOptionsAllowlist? OptionsAllowlist { get; set; }
 
         /// <summary>
-        /// The list of connections from project environment to Secure Compute network
+        /// The list of connections from project environments to dedicated Secure Compute networks. Shared networks must be managed through the shared-connect-links endpoint.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("connectConfigurations")]
         public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestConnectConfiguration>? ConnectConfigurations { get; set; }
@@ -407,7 +407,7 @@ namespace Vercel
         /// Specify a list of paths that should not be protected by Deployment Protection to enable Cors preflight requests
         /// </param>
         /// <param name="connectConfigurations">
-        /// The list of connections from project environment to Secure Compute network
+        /// The list of connections from project environments to dedicated Secure Compute networks. Shared networks must be managed through the shared-connect-links endpoint.
         /// </param>
         /// <param name="dismissedToasts">
         /// An array of objects representing a Dismissed Toast in regards to a Project. Objects are either merged with existing toasts (on key match), or added to the `dimissedToasts` array.`

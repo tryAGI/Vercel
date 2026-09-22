@@ -9,41 +9,6 @@ namespace Vercel
     public sealed partial class UpdateMicrofrontendsResponseLinkVariant8
     {
         /// <summary>
-        /// Owner (namespace) slug, e.g. `acme`.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("owner")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Owner { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("repo")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Repo { get; set; }
-
-        /// <summary>
-        /// Origin repository id.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("repoId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string RepoId { get; set; }
-
-        /// <summary>
-        /// Origin namespace id (`ns_…`) of the owner.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateMicrofrontendsResponseLinkVariant8TypeJsonConverter))]
-        public global::Vercel.UpdateMicrofrontendsResponseLinkVariant8Type Type { get; set; }
-
-        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
@@ -64,10 +29,39 @@ namespace Vercel
         public required string GitCredentialId { get; set; }
 
         /// <summary>
+        /// Owner (namespace) slug, e.g. `acme`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("owner")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Owner { get; set; }
+
+        /// <summary>
+        /// Origin namespace id (`ns_…`) of the owner.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string OwnerId { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
-        public double? UpdatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("productionBranch")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProductionBranch { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("repo")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Repo { get; set; }
+
+        /// <summary>
+        /// Origin repository id.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("repoId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string RepoId { get; set; }
 
         /// <summary>
         ///
@@ -78,9 +72,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("productionBranch")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProductionBranch { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateMicrofrontendsResponseLinkVariant8TypeJsonConverter))]
+        public global::Vercel.UpdateMicrofrontendsResponseLinkVariant8Type Type { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        public double? UpdatedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -91,50 +91,50 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateMicrofrontendsResponseLinkVariant8" /> class.
         /// </summary>
+        /// <param name="deployHooks"></param>
+        /// <param name="gitCredentialId"></param>
         /// <param name="owner">
         /// Owner (namespace) slug, e.g. `acme`.
-        /// </param>
-        /// <param name="repo"></param>
-        /// <param name="repoId">
-        /// Origin repository id.
         /// </param>
         /// <param name="ownerId">
         /// Origin namespace id (`ns_…`) of the owner.
         /// </param>
-        /// <param name="deployHooks"></param>
-        /// <param name="gitCredentialId"></param>
         /// <param name="productionBranch"></param>
-        /// <param name="type"></param>
+        /// <param name="repo"></param>
+        /// <param name="repoId">
+        /// Origin repository id.
+        /// </param>
         /// <param name="createdAt"></param>
-        /// <param name="updatedAt"></param>
         /// <param name="sourceless"></param>
+        /// <param name="type"></param>
+        /// <param name="updatedAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateMicrofrontendsResponseLinkVariant8(
-            string owner,
-            string repo,
-            string repoId,
-            string ownerId,
             global::System.Collections.Generic.IList<global::Vercel.UpdateMicrofrontendsResponseLinkVariant8DeployHook> deployHooks,
             string gitCredentialId,
+            string owner,
+            string ownerId,
             string productionBranch,
-            global::Vercel.UpdateMicrofrontendsResponseLinkVariant8Type type,
+            string repo,
+            string repoId,
             double? createdAt,
-            double? updatedAt,
-            bool? sourceless)
+            bool? sourceless,
+            global::Vercel.UpdateMicrofrontendsResponseLinkVariant8Type type,
+            double? updatedAt)
         {
-            this.Owner = owner ?? throw new global::System.ArgumentNullException(nameof(owner));
-            this.Repo = repo ?? throw new global::System.ArgumentNullException(nameof(repo));
-            this.RepoId = repoId ?? throw new global::System.ArgumentNullException(nameof(repoId));
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
-            this.Type = type;
             this.CreatedAt = createdAt;
             this.DeployHooks = deployHooks ?? throw new global::System.ArgumentNullException(nameof(deployHooks));
             this.GitCredentialId = gitCredentialId ?? throw new global::System.ArgumentNullException(nameof(gitCredentialId));
-            this.UpdatedAt = updatedAt;
-            this.Sourceless = sourceless;
+            this.Owner = owner ?? throw new global::System.ArgumentNullException(nameof(owner));
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.ProductionBranch = productionBranch ?? throw new global::System.ArgumentNullException(nameof(productionBranch));
+            this.Repo = repo ?? throw new global::System.ArgumentNullException(nameof(repo));
+            this.RepoId = repoId ?? throw new global::System.ArgumentNullException(nameof(repoId));
+            this.Sourceless = sourceless;
+            this.Type = type;
+            this.UpdatedAt = updatedAt;
         }
 
         /// <summary>

@@ -11,14 +11,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("experimentation")]
-        public global::Vercel.GetIntegrationResourceResponseProtocolSettingsExperimentation? Experimentation { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("authentication")]
+        public global::Vercel.GetIntegrationResourceResponseProtocolSettingsAuthentication? Authentication { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("authentication")]
-        public global::Vercel.GetIntegrationResourceResponseProtocolSettingsAuthentication? Authentication { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("experimentation")]
+        public global::Vercel.GetIntegrationResourceResponseProtocolSettingsExperimentation? Experimentation { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +29,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetIntegrationResourceResponseProtocolSettings" /> class.
         /// </summary>
-        /// <param name="experimentation"></param>
         /// <param name="authentication"></param>
+        /// <param name="experimentation"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetIntegrationResourceResponseProtocolSettings(
-            global::Vercel.GetIntegrationResourceResponseProtocolSettingsExperimentation? experimentation,
-            global::Vercel.GetIntegrationResourceResponseProtocolSettingsAuthentication? authentication)
+            global::Vercel.GetIntegrationResourceResponseProtocolSettingsAuthentication? authentication,
+            global::Vercel.GetIntegrationResourceResponseProtocolSettingsExperimentation? experimentation)
         {
-            this.Experimentation = experimentation;
             this.Authentication = authentication;
+            this.Experimentation = experimentation;
         }
 
         /// <summary>

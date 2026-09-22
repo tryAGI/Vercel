@@ -9,17 +9,17 @@ namespace Vercel
     public sealed partial class CancelDeploymentResponsePlatformCreator
     {
         /// <summary>
+        /// URL of the platform user's avatar image.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("avatar")]
+        public string? Avatar { get; set; }
+
+        /// <summary>
         /// Display name of the platform user.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
-
-        /// <summary>
-        /// URL of the platform user's avatar image.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("avatar")]
-        public string? Avatar { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,8 +43,8 @@ namespace Vercel
             string name,
             string? avatar)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Avatar = avatar;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
         }
 
         /// <summary>

@@ -11,8 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
-        public string? Description { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
 
         /// <summary>
         ///
@@ -23,21 +24,22 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("usedByFlags")]
-        public global::System.Collections.Generic.IList<string>? UsedByFlags { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("usedBySegments")]
-        public global::System.Collections.Generic.IList<string>? UsedBySegments { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UpdateFlagSegmentResponseData Data { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("hint")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Hint { get; set; }
 
         /// <summary>
         ///
@@ -56,30 +58,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double UpdatedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProjectId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Slug { get; set; }
 
         /// <summary>
         ///
@@ -91,9 +79,21 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("hint")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Hint { get; set; }
+        public required double UpdatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("usedByFlags")]
+        public global::System.Collections.Generic.IList<string>? UsedByFlags { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("usedBySegments")]
+        public global::System.Collections.Generic.IList<string>? UsedBySegments { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -104,50 +104,50 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateFlagSegmentResponse2" /> class.
         /// </summary>
+        /// <param name="createdAt"></param>
         /// <param name="data"></param>
+        /// <param name="hint"></param>
         /// <param name="id"></param>
         /// <param name="label"></param>
-        /// <param name="slug"></param>
-        /// <param name="createdAt"></param>
-        /// <param name="updatedAt"></param>
         /// <param name="projectId"></param>
-        /// <param name="hint"></param>
-        /// <param name="description"></param>
+        /// <param name="slug"></param>
+        /// <param name="updatedAt"></param>
         /// <param name="createdBy"></param>
+        /// <param name="description"></param>
+        /// <param name="typeName"></param>
         /// <param name="usedByFlags"></param>
         /// <param name="usedBySegments"></param>
-        /// <param name="typeName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateFlagSegmentResponse2(
+            double createdAt,
             global::Vercel.UpdateFlagSegmentResponseData data,
+            string hint,
             string id,
             string label,
-            string slug,
-            double createdAt,
-            double updatedAt,
             string projectId,
-            string hint,
-            string? description,
+            string slug,
+            double updatedAt,
             string? createdBy,
+            string? description,
+            global::Vercel.UpdateFlagSegmentResponseTypeName typeName,
             global::System.Collections.Generic.IList<string>? usedByFlags,
-            global::System.Collections.Generic.IList<string>? usedBySegments,
-            global::Vercel.UpdateFlagSegmentResponseTypeName typeName)
+            global::System.Collections.Generic.IList<string>? usedBySegments)
         {
-            this.Description = description;
+            this.CreatedAt = createdAt;
             this.CreatedBy = createdBy;
-            this.UsedByFlags = usedByFlags;
-            this.UsedBySegments = usedBySegments;
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
+            this.Description = description;
+            this.Hint = hint ?? throw new global::System.ArgumentNullException(nameof(hint));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Label = label ?? throw new global::System.ArgumentNullException(nameof(label));
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
-            this.CreatedAt = createdAt;
-            this.UpdatedAt = updatedAt;
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.TypeName = typeName;
-            this.Hint = hint ?? throw new global::System.ArgumentNullException(nameof(hint));
+            this.UpdatedAt = updatedAt;
+            this.UsedByFlags = usedByFlags;
+            this.UsedBySegments = usedBySegments;
         }
 
         /// <summary>

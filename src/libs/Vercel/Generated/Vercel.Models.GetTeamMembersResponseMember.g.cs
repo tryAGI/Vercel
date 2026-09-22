@@ -9,12 +9,26 @@ namespace Vercel
     public sealed partial class GetTeamMembersResponseMember
     {
         /// <summary>
+        /// Timestamp in milliseconds for when this team member was accepted by an owner.<br/>
+        /// Example: 1588820733602L
+        /// </summary>
+        /// <example>1588820733602L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("accessRequestedAt")]
+        public double? AccessRequestedAt { get; set; }
+
+        /// <summary>
         /// ID of the file for the Avatar of this member.<br/>
         /// Example: 123a6c5209bc3778245d011443644c8d27dc2c50
         /// </summary>
         /// <example>123a6c5209bc3778245d011443644c8d27dc2c50</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("avatar")]
         public string? Avatar { get; set; }
+
+        /// <summary>
+        /// Information about the Bitbucket account of this user.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucket")]
+        public global::Vercel.GetTeamMembersResponseMemberBitbucket? Bitbucket { get; set; }
 
         /// <summary>
         /// Boolean that indicates if this member was confirmed by an owner.<br/>
@@ -24,6 +38,15 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("confirmed")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Confirmed { get; set; }
+
+        /// <summary>
+        /// Timestamp in milliseconds when this member was added.<br/>
+        /// Example: 1588720733602L
+        /// </summary>
+        /// <example>1588720733602L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
 
         /// <summary>
         /// The email of this member.<br/>
@@ -47,10 +70,30 @@ namespace Vercel
         public global::Vercel.GetTeamMembersResponseMemberGitlab? Gitlab { get; set; }
 
         /// <summary>
-        /// Information about the Bitbucket account of this user.
+        /// Indicates whether the user is managed by an enterprise.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bitbucket")]
-        public global::Vercel.GetTeamMembersResponseMemberBitbucket? Bitbucket { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("isEnterpriseManaged")]
+        public bool? IsEnterpriseManaged { get; set; }
+
+        /// <summary>
+        /// Map with information about the members origin if they joined by requesting access.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("joinedFrom")]
+        public global::Vercel.GetTeamMembersResponseMemberJoinedFrom? JoinedFrom { get; set; }
+
+        /// <summary>
+        /// The name of this user.<br/>
+        /// Example: Jane Doe
+        /// </summary>
+        /// <example>Jane Doe</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
+
+        /// <summary>
+        /// Array of project memberships
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
+        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseMemberProject>? Projects { get; set; }
 
         /// <summary>
         /// Role of this user in the team.<br/>
@@ -81,49 +124,6 @@ namespace Vercel
         public required string Username { get; set; }
 
         /// <summary>
-        /// The name of this user.<br/>
-        /// Example: Jane Doe
-        /// </summary>
-        /// <example>Jane Doe</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
-
-        /// <summary>
-        /// Timestamp in milliseconds when this member was added.<br/>
-        /// Example: 1588720733602L
-        /// </summary>
-        /// <example>1588720733602L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
-
-        /// <summary>
-        /// Timestamp in milliseconds for when this team member was accepted by an owner.<br/>
-        /// Example: 1588820733602L
-        /// </summary>
-        /// <example>1588820733602L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("accessRequestedAt")]
-        public double? AccessRequestedAt { get; set; }
-
-        /// <summary>
-        /// Map with information about the members origin if they joined by requesting access.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("joinedFrom")]
-        public global::Vercel.GetTeamMembersResponseMemberJoinedFrom? JoinedFrom { get; set; }
-
-        /// <summary>
-        /// Array of project memberships
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseMemberProject>? Projects { get; set; }
-
-        /// <summary>
-        /// Indicates whether the user is managed by an enterprise.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("isEnterpriseManaged")]
-        public bool? IsEnterpriseManaged { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -135,6 +135,10 @@ namespace Vercel
         /// <param name="confirmed">
         /// Boolean that indicates if this member was confirmed by an owner.<br/>
         /// Example: true
+        /// </param>
+        /// <param name="createdAt">
+        /// Timestamp in milliseconds when this member was added.<br/>
+        /// Example: 1588720733602L
         /// </param>
         /// <param name="email">
         /// The email of this member.<br/>
@@ -152,13 +156,16 @@ namespace Vercel
         /// The unique username of this user.<br/>
         /// Example: jane-doe
         /// </param>
-        /// <param name="createdAt">
-        /// Timestamp in milliseconds when this member was added.<br/>
-        /// Example: 1588720733602L
+        /// <param name="accessRequestedAt">
+        /// Timestamp in milliseconds for when this team member was accepted by an owner.<br/>
+        /// Example: 1588820733602L
         /// </param>
         /// <param name="avatar">
         /// ID of the file for the Avatar of this member.<br/>
         /// Example: 123a6c5209bc3778245d011443644c8d27dc2c50
+        /// </param>
+        /// <param name="bitbucket">
+        /// Information about the Bitbucket account of this user.
         /// </param>
         /// <param name="github">
         /// Information about the GitHub account for this user.
@@ -166,61 +173,54 @@ namespace Vercel
         /// <param name="gitlab">
         /// Information about the GitLab account of this user.
         /// </param>
-        /// <param name="bitbucket">
-        /// Information about the Bitbucket account of this user.
+        /// <param name="isEnterpriseManaged">
+        /// Indicates whether the user is managed by an enterprise.
+        /// </param>
+        /// <param name="joinedFrom">
+        /// Map with information about the members origin if they joined by requesting access.
         /// </param>
         /// <param name="name">
         /// The name of this user.<br/>
         /// Example: Jane Doe
         /// </param>
-        /// <param name="accessRequestedAt">
-        /// Timestamp in milliseconds for when this team member was accepted by an owner.<br/>
-        /// Example: 1588820733602L
-        /// </param>
-        /// <param name="joinedFrom">
-        /// Map with information about the members origin if they joined by requesting access.
-        /// </param>
         /// <param name="projects">
         /// Array of project memberships
-        /// </param>
-        /// <param name="isEnterpriseManaged">
-        /// Indicates whether the user is managed by an enterprise.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetTeamMembersResponseMember(
             bool confirmed,
+            double createdAt,
             string email,
             global::Vercel.GetTeamMembersResponseMemberRole role,
             string uid,
             string username,
-            double createdAt,
+            double? accessRequestedAt,
             string? avatar,
+            global::Vercel.GetTeamMembersResponseMemberBitbucket? bitbucket,
             global::Vercel.GetTeamMembersResponseMemberGithub? github,
             global::Vercel.GetTeamMembersResponseMemberGitlab? gitlab,
-            global::Vercel.GetTeamMembersResponseMemberBitbucket? bitbucket,
-            string? name,
-            double? accessRequestedAt,
+            bool? isEnterpriseManaged,
             global::Vercel.GetTeamMembersResponseMemberJoinedFrom? joinedFrom,
-            global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseMemberProject>? projects,
-            bool? isEnterpriseManaged)
+            string? name,
+            global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseMemberProject>? projects)
         {
+            this.AccessRequestedAt = accessRequestedAt;
             this.Avatar = avatar;
+            this.Bitbucket = bitbucket;
             this.Confirmed = confirmed;
+            this.CreatedAt = createdAt;
             this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
             this.Github = github;
             this.Gitlab = gitlab;
-            this.Bitbucket = bitbucket;
+            this.IsEnterpriseManaged = isEnterpriseManaged;
+            this.JoinedFrom = joinedFrom;
+            this.Name = name;
+            this.Projects = projects;
             this.Role = role;
             this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
             this.Username = username ?? throw new global::System.ArgumentNullException(nameof(username));
-            this.Name = name;
-            this.CreatedAt = createdAt;
-            this.AccessRequestedAt = accessRequestedAt;
-            this.JoinedFrom = joinedFrom;
-            this.Projects = projects;
-            this.IsEnterpriseManaged = isEnterpriseManaged;
         }
 
         /// <summary>

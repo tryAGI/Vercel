@@ -18,14 +18,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("supportUntil")]
-        public double? SupportUntil { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
+        public bool? Default { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
-        public bool? Default { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("supportUntil")]
+        public double? SupportUntil { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,19 +37,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="TeamIpBucket" /> class.
         /// </summary>
         /// <param name="bucket"></param>
-        /// <param name="supportUntil"></param>
         /// <param name="default"></param>
+        /// <param name="supportUntil"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TeamIpBucket(
             string bucket,
-            double? supportUntil,
-            bool? @default)
+            bool? @default,
+            double? supportUntil)
         {
             this.Bucket = bucket ?? throw new global::System.ArgumentNullException(nameof(bucket));
-            this.SupportUntil = supportUntil;
             this.Default = @default;
+            this.SupportUntil = supportUntil;
         }
 
         /// <summary>

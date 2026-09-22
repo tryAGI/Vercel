@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("conditions")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleCondition> Conditions { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
@@ -24,13 +31,6 @@ namespace Vercel
         public required global::Vercel.OneOf<global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant1, global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant2, global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant3, global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant4> Outcome { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("conditions")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleCondition> Conditions { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -39,20 +39,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListFlagVersionsResponseVersionDataEnvironmentsRule" /> class.
         /// </summary>
+        /// <param name="conditions"></param>
         /// <param name="id"></param>
         /// <param name="outcome"></param>
-        /// <param name="conditions"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListFlagVersionsResponseVersionDataEnvironmentsRule(
+            global::System.Collections.Generic.IList<global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleCondition> conditions,
             string id,
-            global::Vercel.OneOf<global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant1, global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant2, global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant3, global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant4> outcome,
-            global::System.Collections.Generic.IList<global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleCondition> conditions)
+            global::Vercel.OneOf<global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant1, global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant2, global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant3, global::Vercel.ListFlagVersionsResponseVersionDataEnvironmentsRuleOutcomeVariant4> outcome)
         {
+            this.Conditions = conditions ?? throw new global::System.ArgumentNullException(nameof(conditions));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Outcome = outcome;
-            this.Conditions = conditions ?? throw new global::System.ArgumentNullException(nameof(conditions));
         }
 
         /// <summary>

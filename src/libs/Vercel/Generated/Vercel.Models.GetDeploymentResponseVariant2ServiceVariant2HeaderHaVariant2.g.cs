@@ -11,17 +11,17 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ServiceVariant2HeaderHaVariant2TypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetDeploymentResponseVariant2ServiceVariant2HeaderHaVariant2Type Type { get; set; }
+        public required string Key { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ServiceVariant2HeaderHaVariant2TypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Key { get; set; }
+        public required global::Vercel.GetDeploymentResponseVariant2ServiceVariant2HeaderHaVariant2Type Type { get; set; }
 
         /// <summary>
         ///
@@ -39,19 +39,19 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDeploymentResponseVariant2ServiceVariant2HeaderHaVariant2" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="key"></param>
+        /// <param name="type"></param>
         /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant2ServiceVariant2HeaderHaVariant2(
-            global::Vercel.GetDeploymentResponseVariant2ServiceVariant2HeaderHaVariant2Type type,
             string key,
+            global::Vercel.GetDeploymentResponseVariant2ServiceVariant2HeaderHaVariant2Type type,
             global::Vercel.OneOf<string, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2HeaderHaVariant2Value>? value)
         {
-            this.Type = type;
             this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
+            this.Type = type;
             this.Value = value;
         }
 

@@ -9,18 +9,21 @@ namespace Vercel
     public sealed partial class VcrImageDetail
     {
         /// <summary>
-        ///
+        /// CPU architecture the manifest targets. Only present for single-platform manifests.<br/>
+        /// Example: amd64
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("layers")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.VcrImageLayer> Layers { get; set; }
+        /// <example>amd64</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("arch")]
+        public string? Arch { get; set; }
 
         /// <summary>
-        /// Tags pointing at this image's manifest.
+        /// ISO 8601 timestamp of when the image was created.<br/>
+        /// Example: 2026-06-30T10:00:00.000Z
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
+        /// <example>2026-06-30T10:00:00.000Z</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> Tags { get; set; }
+        public required string CreatedAt { get; set; }
 
         /// <summary>
         /// Internal identifier of the image.<br/>
@@ -32,13 +35,19 @@ namespace Vercel
         public required string Id { get; set; }
 
         /// <summary>
-        /// Identifier of the repository the image belongs to.<br/>
-        /// Example: repo_a1b2c3d4e5f6
+        /// Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation.
         /// </summary>
-        /// <example>repo_a1b2c3d4e5f6</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("repositoryId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.VcrImageDetailKindJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string RepositoryId { get; set; }
+        public required global::Vercel.VcrImageDetailKind Kind { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("layers")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.VcrImageLayer> Layers { get; set; }
 
         /// <summary>
         /// SHA-256 digest of the image manifest.<br/>
@@ -50,14 +59,6 @@ namespace Vercel
         public required string ManifestDigest { get; set; }
 
         /// <summary>
-        /// Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.VcrImageDetailKindJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.VcrImageDetailKind Kind { get; set; }
-
-        /// <summary>
         /// Operating system the manifest targets. Only present for single-platform manifests.<br/>
         /// Example: linux
         /// </summary>
@@ -66,18 +67,19 @@ namespace Vercel
         public string? Platform { get; set; }
 
         /// <summary>
-        /// CPU architecture the manifest targets. Only present for single-platform manifests.<br/>
-        /// Example: amd64
-        /// </summary>
-        /// <example>amd64</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("arch")]
-        public string? Arch { get; set; }
-
-        /// <summary>
         /// Identifier of the actor that pushed the image.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pushedBy")]
         public string? PushedBy { get; set; }
+
+        /// <summary>
+        /// Identifier of the repository the image belongs to.<br/>
+        /// Example: repo_a1b2c3d4e5f6
+        /// </summary>
+        /// <example>repo_a1b2c3d4e5f6</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("repositoryId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string RepositoryId { get; set; }
 
         /// <summary>
         /// Total size in bytes of the image's resources (manifest, config and layer blobs) stored by the registry.
@@ -94,13 +96,11 @@ namespace Vercel
         public global::Vercel.VcrImageDetailStatus? Status { get; set; }
 
         /// <summary>
-        /// ISO 8601 timestamp of when the image was created.<br/>
-        /// Example: 2026-06-30T10:00:00.000Z
+        /// Tags pointing at this image's manifest.
         /// </summary>
-        /// <example>2026-06-30T10:00:00.000Z</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string CreatedAt { get; set; }
+        public required global::System.Collections.Generic.IList<string> Tags { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -111,39 +111,39 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="VcrImageDetail" /> class.
         /// </summary>
-        /// <param name="layers"></param>
-        /// <param name="tags">
-        /// Tags pointing at this image's manifest.
+        /// <param name="createdAt">
+        /// ISO 8601 timestamp of when the image was created.<br/>
+        /// Example: 2026-06-30T10:00:00.000Z
         /// </param>
         /// <param name="id">
         /// Internal identifier of the image.<br/>
         /// Example: img_a1b2c3d4e5f6
         /// </param>
-        /// <param name="repositoryId">
-        /// Identifier of the repository the image belongs to.<br/>
-        /// Example: repo_a1b2c3d4e5f6
+        /// <param name="kind">
+        /// Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation.
         /// </param>
+        /// <param name="layers"></param>
         /// <param name="manifestDigest">
         /// SHA-256 digest of the image manifest.<br/>
         /// Example: sha256:2c4e8f3a1b9d0e5c7a6f4b2d8e1c9a0b3d5f7e9c1a2b4d6f8e0c2a4b6d8f0e2c
         /// </param>
-        /// <param name="kind">
-        /// Whether the manifest is a multi-platform image index, a single-platform image manifest or an attestation.
+        /// <param name="repositoryId">
+        /// Identifier of the repository the image belongs to.<br/>
+        /// Example: repo_a1b2c3d4e5f6
         /// </param>
         /// <param name="sizeInBytes">
         /// Total size in bytes of the image's resources (manifest, config and layer blobs) stored by the registry.
         /// </param>
-        /// <param name="createdAt">
-        /// ISO 8601 timestamp of when the image was created.<br/>
-        /// Example: 2026-06-30T10:00:00.000Z
-        /// </param>
-        /// <param name="platform">
-        /// Operating system the manifest targets. Only present for single-platform manifests.<br/>
-        /// Example: linux
+        /// <param name="tags">
+        /// Tags pointing at this image's manifest.
         /// </param>
         /// <param name="arch">
         /// CPU architecture the manifest targets. Only present for single-platform manifests.<br/>
         /// Example: amd64
+        /// </param>
+        /// <param name="platform">
+        /// Operating system the manifest targets. Only present for single-platform manifests.<br/>
+        /// Example: linux
         /// </param>
         /// <param name="pushedBy">
         /// Identifier of the actor that pushed the image.
@@ -155,31 +155,31 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public VcrImageDetail(
-            global::System.Collections.Generic.IList<global::Vercel.VcrImageLayer> layers,
-            global::System.Collections.Generic.IList<string> tags,
-            string id,
-            string repositoryId,
-            string manifestDigest,
-            global::Vercel.VcrImageDetailKind kind,
-            double sizeInBytes,
             string createdAt,
-            string? platform,
+            string id,
+            global::Vercel.VcrImageDetailKind kind,
+            global::System.Collections.Generic.IList<global::Vercel.VcrImageLayer> layers,
+            string manifestDigest,
+            string repositoryId,
+            double sizeInBytes,
+            global::System.Collections.Generic.IList<string> tags,
             string? arch,
+            string? platform,
             string? pushedBy,
             global::Vercel.VcrImageDetailStatus? status)
         {
-            this.Layers = layers ?? throw new global::System.ArgumentNullException(nameof(layers));
-            this.Tags = tags ?? throw new global::System.ArgumentNullException(nameof(tags));
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.RepositoryId = repositoryId ?? throw new global::System.ArgumentNullException(nameof(repositoryId));
-            this.ManifestDigest = manifestDigest ?? throw new global::System.ArgumentNullException(nameof(manifestDigest));
-            this.Kind = kind;
-            this.Platform = platform;
             this.Arch = arch;
+            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Kind = kind;
+            this.Layers = layers ?? throw new global::System.ArgumentNullException(nameof(layers));
+            this.ManifestDigest = manifestDigest ?? throw new global::System.ArgumentNullException(nameof(manifestDigest));
+            this.Platform = platform;
             this.PushedBy = pushedBy;
+            this.RepositoryId = repositoryId ?? throw new global::System.ArgumentNullException(nameof(repositoryId));
             this.SizeInBytes = sizeInBytes;
             this.Status = status;
-            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
+            this.Tags = tags ?? throw new global::System.ArgumentNullException(nameof(tags));
         }
 
         /// <summary>

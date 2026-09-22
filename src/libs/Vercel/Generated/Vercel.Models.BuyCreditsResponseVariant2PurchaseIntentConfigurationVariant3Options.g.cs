@@ -9,21 +9,6 @@ namespace Vercel
     public sealed partial class BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant3Options
     {
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("effectiveDate")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<object, global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant3OptionsEffectiveDateEnum2?>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<object, global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant3OptionsEffectiveDateEnum2?> EffectiveDate { get; set; }
-
-        /// <summary>
-        /// The ID of the Orb subscription to change
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("orbSubscriptionId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OrbSubscriptionId { get; set; }
-
-        /// <summary>
         /// Whether or not to reset the billing cycle
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alignBillingWithPlanChangeDate")]
@@ -36,10 +21,25 @@ namespace Vercel
         public string? CouponRedemptionCode { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("effectiveDate")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<object, global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant3OptionsEffectiveDateEnum2?>))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.OneOf<object, global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant3OptionsEffectiveDateEnum2?> EffectiveDate { get; set; }
+
+        /// <summary>
         /// The ID of the external plan to change to
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("externalPlanId")]
         public string? ExternalPlanId { get; set; }
+
+        /// <summary>
+        /// The ID of the Orb subscription to change
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("orbSubscriptionId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string OrbSubscriptionId { get; set; }
 
         /// <summary>
         /// The prices to replace in the subscription
@@ -83,11 +83,11 @@ namespace Vercel
             string? externalPlanId,
             global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant3OptionsReplacePrice>? replacePrices)
         {
-            this.EffectiveDate = effectiveDate;
-            this.OrbSubscriptionId = orbSubscriptionId ?? throw new global::System.ArgumentNullException(nameof(orbSubscriptionId));
             this.AlignBillingWithPlanChangeDate = alignBillingWithPlanChangeDate;
             this.CouponRedemptionCode = couponRedemptionCode;
+            this.EffectiveDate = effectiveDate;
             this.ExternalPlanId = externalPlanId;
+            this.OrbSubscriptionId = orbSubscriptionId ?? throw new global::System.ArgumentNullException(nameof(orbSubscriptionId));
             this.ReplacePrices = replacePrices;
         }
 

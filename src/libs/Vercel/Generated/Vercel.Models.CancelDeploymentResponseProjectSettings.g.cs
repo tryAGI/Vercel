@@ -11,15 +11,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("nodeVersion")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CancelDeploymentResponseProjectSettingsNodeVersionJsonConverter))]
-        public global::Vercel.CancelDeploymentResponseProjectSettingsNodeVersion? NodeVersion { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildCommand")]
+        public string? BuildCommand { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildCommand")]
-        public string? BuildCommand { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("commandForIgnoringBuildStep")]
+        public string? CommandForIgnoringBuildStep { get; set; }
 
         /// <summary>
         ///
@@ -37,14 +36,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("commandForIgnoringBuildStep")]
-        public string? CommandForIgnoringBuildStep { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("installCommand")]
+        public string? InstallCommand { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("installCommand")]
-        public string? InstallCommand { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("nodeVersion")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CancelDeploymentResponseProjectSettingsNodeVersionJsonConverter))]
+        public global::Vercel.CancelDeploymentResponseProjectSettingsNodeVersion? NodeVersion { get; set; }
 
         /// <summary>
         ///
@@ -73,12 +73,12 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CancelDeploymentResponseProjectSettings" /> class.
         /// </summary>
-        /// <param name="nodeVersion"></param>
         /// <param name="buildCommand"></param>
+        /// <param name="commandForIgnoringBuildStep"></param>
         /// <param name="devCommand"></param>
         /// <param name="framework"></param>
-        /// <param name="commandForIgnoringBuildStep"></param>
         /// <param name="installCommand"></param>
+        /// <param name="nodeVersion"></param>
         /// <param name="outputDirectory"></param>
         /// <param name="speedInsights"></param>
         /// <param name="webAnalytics"></param>
@@ -86,22 +86,22 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CancelDeploymentResponseProjectSettings(
-            global::Vercel.CancelDeploymentResponseProjectSettingsNodeVersion? nodeVersion,
             string? buildCommand,
+            string? commandForIgnoringBuildStep,
             string? devCommand,
             global::Vercel.CancelDeploymentResponseProjectSettingsFramework? framework,
-            string? commandForIgnoringBuildStep,
             string? installCommand,
+            global::Vercel.CancelDeploymentResponseProjectSettingsNodeVersion? nodeVersion,
             string? outputDirectory,
             global::Vercel.CancelDeploymentResponseProjectSettingsSpeedInsights? speedInsights,
             global::Vercel.CancelDeploymentResponseProjectSettingsWebAnalytics? webAnalytics)
         {
-            this.NodeVersion = nodeVersion;
             this.BuildCommand = buildCommand;
+            this.CommandForIgnoringBuildStep = commandForIgnoringBuildStep;
             this.DevCommand = devCommand;
             this.Framework = framework;
-            this.CommandForIgnoringBuildStep = commandForIgnoringBuildStep;
             this.InstallCommand = installCommand;
+            this.NodeVersion = nodeVersion;
             this.OutputDirectory = outputDirectory;
             this.SpeedInsights = speedInsights;
             this.WebAnalytics = webAnalytics;

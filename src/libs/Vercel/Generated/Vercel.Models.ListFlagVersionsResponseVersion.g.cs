@@ -11,16 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("changedEnvironments")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("revision")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Revision { get; set; }
+        public required global::System.Collections.Generic.IList<string> ChangedEnvironments { get; set; }
 
         /// <summary>
         ///
@@ -38,12 +31,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("message")]
-        public string? Message { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("flagId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string FlagId { get; set; }
@@ -51,9 +38,22 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("changedEnvironments")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> ChangedEnvironments { get; set; }
+        public required string Id { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("message")]
+        public string? Message { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("revision")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double Revision { get; set; }
 
         /// <summary>
         ///
@@ -77,11 +77,11 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListFlagVersionsResponseVersion" /> class.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="revision"></param>
+        /// <param name="changedEnvironments"></param>
         /// <param name="createdAt"></param>
         /// <param name="flagId"></param>
-        /// <param name="changedEnvironments"></param>
+        /// <param name="id"></param>
+        /// <param name="revision"></param>
         /// <param name="data"></param>
         /// <param name="createdBy"></param>
         /// <param name="message"></param>
@@ -90,23 +90,23 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListFlagVersionsResponseVersion(
-            string id,
-            double revision,
+            global::System.Collections.Generic.IList<string> changedEnvironments,
             double createdAt,
             string flagId,
-            global::System.Collections.Generic.IList<string> changedEnvironments,
+            string id,
+            double revision,
             global::Vercel.ListFlagVersionsResponseVersionData data,
             string? createdBy,
             string? message,
             global::Vercel.ListFlagVersionsResponseVersionMetadata? metadata)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Revision = revision;
+            this.ChangedEnvironments = changedEnvironments ?? throw new global::System.ArgumentNullException(nameof(changedEnvironments));
             this.CreatedAt = createdAt;
             this.CreatedBy = createdBy;
-            this.Message = message;
             this.FlagId = flagId ?? throw new global::System.ArgumentNullException(nameof(flagId));
-            this.ChangedEnvironments = changedEnvironments ?? throw new global::System.ArgumentNullException(nameof(changedEnvironments));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Message = message;
+            this.Revision = revision;
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
             this.Metadata = metadata;
         }

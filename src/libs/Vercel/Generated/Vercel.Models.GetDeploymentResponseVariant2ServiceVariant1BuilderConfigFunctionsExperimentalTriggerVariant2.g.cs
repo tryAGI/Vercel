@@ -9,18 +9,16 @@ namespace Vercel
     public sealed partial class GetDeploymentResponseVariant2ServiceVariant1BuilderConfigFunctionsExperimentalTriggerVariant2
     {
         /// <summary>
-        /// Event type - must be "queue/v2beta" (REQUIRED)
+        /// Initial delay in seconds before first execution attempt (OPTIONAL) Must be 0 or greater. Use 0 for no initial delay. Behavior when not specified depends on the server's default configuration.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ServiceVariant1BuilderConfigFunctionsExperimentalTriggerVariant2TypeJsonConverter))]
-        public global::Vercel.GetDeploymentResponseVariant2ServiceVariant1BuilderConfigFunctionsExperimentalTriggerVariant2Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("initialDelaySeconds")]
+        public double? InitialDelaySeconds { get; set; }
 
         /// <summary>
-        /// Name of the queue topic to consume from (REQUIRED)
+        /// Maximum number of concurrent executions for this consumer (OPTIONAL) Must be at least 1 if specified. Behavior when not specified depends on the server's default configuration.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("topic")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Topic { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("maxConcurrency")]
+        public double? MaxConcurrency { get; set; }
 
         /// <summary>
         /// Maximum number of delivery attempts for message processing (OPTIONAL) This represents the total number of times a message can be delivered, not the number of retries. Must be at least 1 if specified. Behavior when not specified depends on the server's default configuration.
@@ -35,16 +33,18 @@ namespace Vercel
         public double? RetryAfterSeconds { get; set; }
 
         /// <summary>
-        /// Initial delay in seconds before first execution attempt (OPTIONAL) Must be 0 or greater. Use 0 for no initial delay. Behavior when not specified depends on the server's default configuration.
+        /// Name of the queue topic to consume from (REQUIRED)
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("initialDelaySeconds")]
-        public double? InitialDelaySeconds { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("topic")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Topic { get; set; }
 
         /// <summary>
-        /// Maximum number of concurrent executions for this consumer (OPTIONAL) Must be at least 1 if specified. Behavior when not specified depends on the server's default configuration.
+        /// Event type - must be "queue/v2beta" (REQUIRED)
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("maxConcurrency")]
-        public double? MaxConcurrency { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ServiceVariant1BuilderConfigFunctionsExperimentalTriggerVariant2TypeJsonConverter))]
+        public global::Vercel.GetDeploymentResponseVariant2ServiceVariant1BuilderConfigFunctionsExperimentalTriggerVariant2Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -58,8 +58,11 @@ namespace Vercel
         /// <param name="topic">
         /// Name of the queue topic to consume from (REQUIRED)
         /// </param>
-        /// <param name="type">
-        /// Event type - must be "queue/v2beta" (REQUIRED)
+        /// <param name="initialDelaySeconds">
+        /// Initial delay in seconds before first execution attempt (OPTIONAL) Must be 0 or greater. Use 0 for no initial delay. Behavior when not specified depends on the server's default configuration.
+        /// </param>
+        /// <param name="maxConcurrency">
+        /// Maximum number of concurrent executions for this consumer (OPTIONAL) Must be at least 1 if specified. Behavior when not specified depends on the server's default configuration.
         /// </param>
         /// <param name="maxDeliveries">
         /// Maximum number of delivery attempts for message processing (OPTIONAL) This represents the total number of times a message can be delivered, not the number of retries. Must be at least 1 if specified. Behavior when not specified depends on the server's default configuration.
@@ -67,29 +70,26 @@ namespace Vercel
         /// <param name="retryAfterSeconds">
         /// Delay in seconds before retrying failed executions (OPTIONAL) Behavior when not specified depends on the server's default configuration.
         /// </param>
-        /// <param name="initialDelaySeconds">
-        /// Initial delay in seconds before first execution attempt (OPTIONAL) Must be 0 or greater. Use 0 for no initial delay. Behavior when not specified depends on the server's default configuration.
-        /// </param>
-        /// <param name="maxConcurrency">
-        /// Maximum number of concurrent executions for this consumer (OPTIONAL) Must be at least 1 if specified. Behavior when not specified depends on the server's default configuration.
+        /// <param name="type">
+        /// Event type - must be "queue/v2beta" (REQUIRED)
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant2ServiceVariant1BuilderConfigFunctionsExperimentalTriggerVariant2(
             string topic,
-            global::Vercel.GetDeploymentResponseVariant2ServiceVariant1BuilderConfigFunctionsExperimentalTriggerVariant2Type type,
+            double? initialDelaySeconds,
+            double? maxConcurrency,
             double? maxDeliveries,
             double? retryAfterSeconds,
-            double? initialDelaySeconds,
-            double? maxConcurrency)
+            global::Vercel.GetDeploymentResponseVariant2ServiceVariant1BuilderConfigFunctionsExperimentalTriggerVariant2Type type)
         {
-            this.Type = type;
-            this.Topic = topic ?? throw new global::System.ArgumentNullException(nameof(topic));
-            this.MaxDeliveries = maxDeliveries;
-            this.RetryAfterSeconds = retryAfterSeconds;
             this.InitialDelaySeconds = initialDelaySeconds;
             this.MaxConcurrency = maxConcurrency;
+            this.MaxDeliveries = maxDeliveries;
+            this.RetryAfterSeconds = retryAfterSeconds;
+            this.Topic = topic ?? throw new global::System.ArgumentNullException(nameof(topic));
+            this.Type = type;
         }
 
         /// <summary>

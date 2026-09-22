@@ -46,6 +46,13 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("level")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentEventsResponseItemVariant2LevelJsonConverter))]
+        public global::Vercel.GetDeploymentEventsResponseItemVariant2Level? Level { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("serial")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Serial { get; set; }
@@ -65,13 +72,6 @@ namespace Vercel
         public required global::Vercel.GetDeploymentEventsResponseItemVariant2Type Type { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("level")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentEventsResponseItemVariant2LevelJsonConverter))]
-        public global::Vercel.GetDeploymentEventsResponseItemVariant2Level? Level { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -87,8 +87,8 @@ namespace Vercel
         /// <param name="info"></param>
         /// <param name="serial"></param>
         /// <param name="type"></param>
-        /// <param name="text"></param>
         /// <param name="level"></param>
+        /// <param name="text"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -100,18 +100,18 @@ namespace Vercel
             global::Vercel.GetDeploymentEventsResponseItemVariant2Info info,
             string serial,
             global::Vercel.GetDeploymentEventsResponseItemVariant2Type type,
-            string? text,
-            global::Vercel.GetDeploymentEventsResponseItemVariant2Level? level)
+            global::Vercel.GetDeploymentEventsResponseItemVariant2Level? level,
+            string? text)
         {
             this.Created = created;
             this.Date = date;
             this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Info = info ?? throw new global::System.ArgumentNullException(nameof(info));
+            this.Level = level;
             this.Serial = serial ?? throw new global::System.ArgumentNullException(nameof(serial));
             this.Text = text;
             this.Type = type;
-            this.Level = level;
         }
 
         /// <summary>

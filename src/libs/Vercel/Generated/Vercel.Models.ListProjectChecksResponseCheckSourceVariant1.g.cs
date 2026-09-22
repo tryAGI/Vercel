@@ -11,16 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListProjectChecksResponseCheckSourceVariant1KindJsonConverter))]
-        public global::Vercel.ListProjectChecksResponseCheckSourceVariant1Kind Kind { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("externalResourceId")]
+        public string? ExternalResourceId { get; set; }
 
         /// <summary>
         ///
@@ -32,14 +24,22 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("resourceId")]
-        public string? ResourceId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string IntegrationId { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("externalResourceId")]
-        public string? ExternalResourceId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListProjectChecksResponseCheckSourceVariant1KindJsonConverter))]
+        public global::Vercel.ListProjectChecksResponseCheckSourceVariant1Kind Kind { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("resourceId")]
+        public string? ResourceId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -50,26 +50,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListProjectChecksResponseCheckSourceVariant1" /> class.
         /// </summary>
-        /// <param name="integrationId"></param>
         /// <param name="integrationConfigurationId"></param>
+        /// <param name="integrationId"></param>
+        /// <param name="externalResourceId"></param>
         /// <param name="kind"></param>
         /// <param name="resourceId"></param>
-        /// <param name="externalResourceId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListProjectChecksResponseCheckSourceVariant1(
-            string integrationId,
             string integrationConfigurationId,
+            string integrationId,
+            string? externalResourceId,
             global::Vercel.ListProjectChecksResponseCheckSourceVariant1Kind kind,
-            string? resourceId,
-            string? externalResourceId)
+            string? resourceId)
         {
-            this.Kind = kind;
-            this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
-            this.IntegrationConfigurationId = integrationConfigurationId ?? throw new global::System.ArgumentNullException(nameof(integrationConfigurationId));
-            this.ResourceId = resourceId;
             this.ExternalResourceId = externalResourceId;
+            this.IntegrationConfigurationId = integrationConfigurationId ?? throw new global::System.ArgumentNullException(nameof(integrationConfigurationId));
+            this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
+            this.Kind = kind;
+            this.ResourceId = resourceId;
         }
 
         /// <summary>

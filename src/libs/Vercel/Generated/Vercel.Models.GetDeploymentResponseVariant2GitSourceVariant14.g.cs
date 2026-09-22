@@ -11,16 +11,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2GitSourceVariant14TypeJsonConverter))]
-        public global::Vercel.GetDeploymentResponseVariant2GitSourceVariant14Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("host")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Host { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("host")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Host { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("org")]
+        public string? Org { get; set; }
 
         /// <summary>
         ///
@@ -32,9 +31,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sha")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Sha { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("repo")]
+        public string? Repo { get; set; }
 
         /// <summary>
         ///
@@ -46,14 +44,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("org")]
-        public string? Org { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("sha")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Sha { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("repo")]
-        public string? Repo { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2GitSourceVariant14TypeJsonConverter))]
+        public global::Vercel.GetDeploymentResponseVariant2GitSourceVariant14Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -66,30 +66,30 @@ namespace Vercel
         /// </summary>
         /// <param name="host"></param>
         /// <param name="ref"></param>
-        /// <param name="sha"></param>
         /// <param name="repoId"></param>
-        /// <param name="type"></param>
+        /// <param name="sha"></param>
         /// <param name="org"></param>
         /// <param name="repo"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant2GitSourceVariant14(
             string host,
             string @ref,
-            string sha,
             double repoId,
-            global::Vercel.GetDeploymentResponseVariant2GitSourceVariant14Type type,
+            string sha,
             string? org,
-            string? repo)
+            string? repo,
+            global::Vercel.GetDeploymentResponseVariant2GitSourceVariant14Type type)
         {
-            this.Type = type;
             this.Host = host ?? throw new global::System.ArgumentNullException(nameof(host));
-            this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
-            this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
-            this.RepoId = repoId;
             this.Org = org;
+            this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
             this.Repo = repo;
+            this.RepoId = repoId;
+            this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
+            this.Type = type;
         }
 
         /// <summary>

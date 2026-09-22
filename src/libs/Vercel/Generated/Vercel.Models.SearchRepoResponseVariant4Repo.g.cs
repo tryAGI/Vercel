@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("defaultBranch")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DefaultBranch { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>))]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -19,31 +26,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SearchRepoResponseVariant4RepoProviderJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.SearchRepoResponseVariant4RepoProvider Provider { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
 
         /// <summary>
         ///
@@ -77,9 +62,17 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("defaultBranch")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SearchRepoResponseVariant4RepoProviderJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DefaultBranch { get; set; }
+        public required global::Vercel.SearchRepoResponseVariant4RepoProvider Provider { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Slug { get; set; }
 
         /// <summary>
         ///
@@ -87,6 +80,13 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double UpdatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Url { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -97,44 +97,44 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="SearchRepoResponseVariant4Repo" /> class.
         /// </summary>
+        /// <param name="defaultBranch"></param>
         /// <param name="id"></param>
-        /// <param name="provider"></param>
-        /// <param name="url"></param>
         /// <param name="name"></param>
-        /// <param name="slug"></param>
         /// <param name="namespace"></param>
         /// <param name="owner"></param>
         /// <param name="ownerType"></param>
         /// <param name="private"></param>
-        /// <param name="defaultBranch"></param>
+        /// <param name="provider"></param>
+        /// <param name="slug"></param>
         /// <param name="updatedAt"></param>
+        /// <param name="url"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SearchRepoResponseVariant4Repo(
+            string defaultBranch,
             global::Vercel.OneOf<string, double?> id,
-            global::Vercel.SearchRepoResponseVariant4RepoProvider provider,
-            string url,
             string name,
-            string slug,
             string @namespace,
             global::Vercel.SearchRepoResponseVariant4RepoOwner owner,
             global::Vercel.SearchRepoResponseVariant4RepoOwnerType ownerType,
             bool @private,
-            string defaultBranch,
-            double updatedAt)
+            global::Vercel.SearchRepoResponseVariant4RepoProvider provider,
+            string slug,
+            double updatedAt,
+            string url)
         {
+            this.DefaultBranch = defaultBranch ?? throw new global::System.ArgumentNullException(nameof(defaultBranch));
             this.Id = id;
-            this.Provider = provider;
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.Namespace = @namespace ?? throw new global::System.ArgumentNullException(nameof(@namespace));
             this.Owner = owner ?? throw new global::System.ArgumentNullException(nameof(owner));
             this.OwnerType = ownerType;
             this.Private = @private;
-            this.DefaultBranch = defaultBranch ?? throw new global::System.ArgumentNullException(nameof(defaultBranch));
+            this.Provider = provider;
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.UpdatedAt = updatedAt;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
         }
 
         /// <summary>

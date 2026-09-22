@@ -11,10 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mode")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.NamedSandboxNetworkPolicyModeJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.NamedSandboxNetworkPolicyMode Mode { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("allowedCIDRs")]
+        public global::System.Collections.Generic.IList<string>? AllowedCIDRs { get; set; }
 
         /// <summary>
         ///
@@ -25,14 +23,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("allowedCIDRs")]
-        public global::System.Collections.Generic.IList<string>? AllowedCIDRs { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("deniedCIDRs")]
+        public global::System.Collections.Generic.IList<string>? DeniedCIDRs { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deniedCIDRs")]
-        public global::System.Collections.Generic.IList<string>? DeniedCIDRs { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("mode")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.NamedSandboxNetworkPolicyModeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.NamedSandboxNetworkPolicyMode Mode { get; set; }
 
         /// <summary>
         ///
@@ -50,8 +50,8 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="NamedSandboxNetworkPolicy" /> class.
         /// </summary>
         /// <param name="mode"></param>
-        /// <param name="allowedDomains"></param>
         /// <param name="allowedCIDRs"></param>
+        /// <param name="allowedDomains"></param>
         /// <param name="deniedCIDRs"></param>
         /// <param name="s3Key"></param>
 #if NET7_0_OR_GREATER
@@ -59,15 +59,15 @@ namespace Vercel
 #endif
         public NamedSandboxNetworkPolicy(
             global::Vercel.NamedSandboxNetworkPolicyMode mode,
-            global::System.Collections.Generic.IList<string>? allowedDomains,
             global::System.Collections.Generic.IList<string>? allowedCIDRs,
+            global::System.Collections.Generic.IList<string>? allowedDomains,
             global::System.Collections.Generic.IList<string>? deniedCIDRs,
             string? s3Key)
         {
-            this.Mode = mode;
-            this.AllowedDomains = allowedDomains;
             this.AllowedCIDRs = allowedCIDRs;
+            this.AllowedDomains = allowedDomains;
             this.DeniedCIDRs = deniedCIDRs;
+            this.Mode = mode;
             this.S3Key = s3Key;
         }
 

@@ -11,15 +11,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Value { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("note")]
+        public string? Note { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("note")]
-        public string? Note { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,8 +39,8 @@ namespace Vercel
             string value,
             string? note)
         {
-            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
             this.Note = note;
+            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
         }
 
         /// <summary>

@@ -11,14 +11,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rewriteModel")]
-        public string? RewriteModel { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
+        public string? Reason { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
-        public string? Reason { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("rewriteModel")]
+        public string? RewriteModel { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,17 +29,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="AiGatewayRuleAction" /> class.
         /// </summary>
-        /// <param name="rewriteModel"></param>
         /// <param name="reason"></param>
+        /// <param name="rewriteModel"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AiGatewayRuleAction(
-            string? rewriteModel,
-            string? reason)
+            string? reason,
+            string? rewriteModel)
         {
-            this.RewriteModel = rewriteModel;
             this.Reason = reason;
+            this.RewriteModel = rewriteModel;
         }
 
         /// <summary>

@@ -11,30 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("fallbackEnvironment")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string FallbackEnvironment { get; set; }
+        public required double CreatedAt { get; set; }
 
         /// <summary>
         ///
@@ -46,9 +25,30 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("fallbackEnvironment")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
+        public required string FallbackEnvironment { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Slug { get; set; }
 
         /// <summary>
         ///
@@ -66,31 +66,31 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup" /> class.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="slug"></param>
-        /// <param name="name"></param>
-        /// <param name="fallbackEnvironment"></param>
-        /// <param name="enablePolyrepoBranchRouting"></param>
         /// <param name="createdAt"></param>
+        /// <param name="enablePolyrepoBranchRouting"></param>
+        /// <param name="fallbackEnvironment"></param>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
+        /// <param name="slug"></param>
         /// <param name="updatedAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup(
-            string id,
-            string slug,
-            string name,
-            string fallbackEnvironment,
-            bool enablePolyrepoBranchRouting,
             double createdAt,
+            bool enablePolyrepoBranchRouting,
+            string fallbackEnvironment,
+            string id,
+            string name,
+            string slug,
             double updatedAt)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.FallbackEnvironment = fallbackEnvironment ?? throw new global::System.ArgumentNullException(nameof(fallbackEnvironment));
-            this.EnablePolyrepoBranchRouting = enablePolyrepoBranchRouting;
             this.CreatedAt = createdAt;
+            this.EnablePolyrepoBranchRouting = enablePolyrepoBranchRouting;
+            this.FallbackEnvironment = fallbackEnvironment ?? throw new global::System.ArgumentNullException(nameof(fallbackEnvironment));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.UpdatedAt = updatedAt;
         }
 

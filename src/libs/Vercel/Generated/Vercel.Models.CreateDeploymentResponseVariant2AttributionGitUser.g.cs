@@ -24,16 +24,16 @@ namespace Vercel
         public required string Login { get; set; }
 
         /// <summary>
-        /// User type
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        public string? Type { get; set; }
-
-        /// <summary>
         /// The git provider (github, gitlab, bitbucket)
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
         public string? Provider { get; set; }
+
+        /// <summary>
+        /// User type
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        public string? Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -48,11 +48,11 @@ namespace Vercel
         /// <param name="login">
         /// Git provider username/login
         /// </param>
-        /// <param name="type">
-        /// User type
-        /// </param>
         /// <param name="provider">
         /// The git provider (github, gitlab, bitbucket)
+        /// </param>
+        /// <param name="type">
+        /// User type
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -60,13 +60,13 @@ namespace Vercel
         public CreateDeploymentResponseVariant2AttributionGitUser(
             global::Vercel.OneOf<string, double?> id,
             string login,
-            string? type,
-            string? provider)
+            string? provider,
+            string? type)
         {
             this.Id = id;
             this.Login = login ?? throw new global::System.ArgumentNullException(nameof(login));
-            this.Type = type;
             this.Provider = provider;
+            this.Type = type;
         }
 
         /// <summary>

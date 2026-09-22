@@ -11,17 +11,17 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectResponseDeploymentPolicyGitSourceEnvironmentVariant1TypeJsonConverter))]
-        public global::Vercel.GetProjectResponseDeploymentPolicyGitSourceEnvironmentVariant1Type Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("target")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectResponseDeploymentPolicyGitSourceEnvironmentVariant1TargetJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetProjectResponseDeploymentPolicyGitSourceEnvironmentVariant1Target Target { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectResponseDeploymentPolicyGitSourceEnvironmentVariant1TypeJsonConverter))]
+        public global::Vercel.GetProjectResponseDeploymentPolicyGitSourceEnvironmentVariant1Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -41,8 +41,8 @@ namespace Vercel
             global::Vercel.GetProjectResponseDeploymentPolicyGitSourceEnvironmentVariant1Target target,
             global::Vercel.GetProjectResponseDeploymentPolicyGitSourceEnvironmentVariant1Type type)
         {
-            this.Type = type;
             this.Target = target;
+            this.Type = type;
         }
 
         /// <summary>

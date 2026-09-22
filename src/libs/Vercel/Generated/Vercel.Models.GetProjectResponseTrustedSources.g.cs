@@ -17,14 +17,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GetProjectResponseTrustedSourcesProjects2>? Projects { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("oidcProviders")]
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseTrustedSourcesOidcProvider>>? OidcProviders { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oidcProviders")]
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseTrustedSourcesOidcProvider>>? OidcProviders { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GetProjectResponseTrustedSourcesProjects2>? Projects { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,19 +38,19 @@ namespace Vercel
         /// <param name="enableVercelCiSameRepository">
         /// Allow same-team Vercel CI access to preview deployments built from the CI run's repository, using the deployment source rather than the current project repository link. Defaults to enabled when not stored; omitted or null Trusted Sources updates preserve the stored value.
         /// </param>
-        /// <param name="projects"></param>
         /// <param name="oidcProviders"></param>
+        /// <param name="projects"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectResponseTrustedSources(
             bool? enableVercelCiSameRepository,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.GetProjectResponseTrustedSourcesProjects2>? projects,
-            global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseTrustedSourcesOidcProvider>>? oidcProviders)
+            global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseTrustedSourcesOidcProvider>>? oidcProviders,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.GetProjectResponseTrustedSourcesProjects2>? projects)
         {
             this.EnableVercelCiSameRepository = enableVercelCiSameRepository;
-            this.Projects = projects;
             this.OidcProviders = oidcProviders;
+            this.Projects = projects;
         }
 
         /// <summary>

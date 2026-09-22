@@ -11,21 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4ItemsTypeJsonConverter))]
-        public global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4ItemsType Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("minimum")]
-        public double? Minimum { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("maximum")]
-        public double? Maximum { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
+        public double? Default { get; set; }
 
         /// <summary>
         ///
@@ -48,8 +35,21 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("default")]
-        public double? Default { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("maximum")]
+        public double? Maximum { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("minimum")]
+        public double? Minimum { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4ItemsTypeJsonConverter))]
+        public global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4ItemsType Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -60,32 +60,32 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4Items" /> class.
         /// </summary>
-        /// <param name="type"></param>
-        /// <param name="minimum"></param>
-        /// <param name="maximum"></param>
+        /// <param name="default"></param>
         /// <param name="description"></param>
         /// <param name="exclusiveMaximum"></param>
         /// <param name="exclusiveMinimum"></param>
-        /// <param name="default"></param>
+        /// <param name="maximum"></param>
+        /// <param name="minimum"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4Items(
-            global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4ItemsType type,
-            double? minimum,
-            double? maximum,
+            double? @default,
             string? description,
             double? exclusiveMaximum,
             double? exclusiveMinimum,
-            double? @default)
+            double? maximum,
+            double? minimum,
+            global::Vercel.GetConfigurationProductsResponseProductMetadataSchemaPropertiesVariant4ItemsType type)
         {
-            this.Type = type;
-            this.Minimum = minimum;
-            this.Maximum = maximum;
+            this.Default = @default;
             this.Description = description;
             this.ExclusiveMaximum = exclusiveMaximum;
             this.ExclusiveMinimum = exclusiveMinimum;
-            this.Default = @default;
+            this.Maximum = maximum;
+            this.Minimum = minimum;
+            this.Type = type;
         }
 
         /// <summary>

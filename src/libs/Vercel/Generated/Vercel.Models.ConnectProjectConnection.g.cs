@@ -16,11 +16,11 @@ namespace Vercel
         public required string ConnectorId { get; set; }
 
         /// <summary>
-        /// Vercel project connected to the connector.
+        /// Time when the project connection was created, in epoch milliseconds.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.ConnectProjectConnectionProject Project { get; set; }
+        public required double CreatedAt { get; set; }
 
         /// <summary>
         /// Environments where the connector is enabled for the project.
@@ -30,11 +30,11 @@ namespace Vercel
         public required global::System.Collections.Generic.IList<global::Vercel.OneOf<string, global::Vercel.ConnectProjectConnectionEnabledEnvironment?>> EnabledEnvironments { get; set; }
 
         /// <summary>
-        /// Time when the project connection was created, in epoch milliseconds.
+        /// Vercel project connected to the connector.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("project")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
+        public required global::Vercel.ConnectProjectConnectionProject Project { get; set; }
 
         /// <summary>
         /// Time when the project connection was last updated, in epoch milliseconds.
@@ -55,14 +55,14 @@ namespace Vercel
         /// <param name="connectorId">
         /// Stable `scl_` connector ID, even when the request used a UID.
         /// </param>
-        /// <param name="project">
-        /// Vercel project connected to the connector.
+        /// <param name="createdAt">
+        /// Time when the project connection was created, in epoch milliseconds.
         /// </param>
         /// <param name="enabledEnvironments">
         /// Environments where the connector is enabled for the project.
         /// </param>
-        /// <param name="createdAt">
-        /// Time when the project connection was created, in epoch milliseconds.
+        /// <param name="project">
+        /// Vercel project connected to the connector.
         /// </param>
         /// <param name="updatedAt">
         /// Time when the project connection was last updated, in epoch milliseconds.
@@ -72,15 +72,15 @@ namespace Vercel
 #endif
         public ConnectProjectConnection(
             string connectorId,
-            global::Vercel.ConnectProjectConnectionProject project,
-            global::System.Collections.Generic.IList<global::Vercel.OneOf<string, global::Vercel.ConnectProjectConnectionEnabledEnvironment?>> enabledEnvironments,
             double createdAt,
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<string, global::Vercel.ConnectProjectConnectionEnabledEnvironment?>> enabledEnvironments,
+            global::Vercel.ConnectProjectConnectionProject project,
             double updatedAt)
         {
             this.ConnectorId = connectorId ?? throw new global::System.ArgumentNullException(nameof(connectorId));
-            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
-            this.EnabledEnvironments = enabledEnvironments ?? throw new global::System.ArgumentNullException(nameof(enabledEnvironments));
             this.CreatedAt = createdAt;
+            this.EnabledEnvironments = enabledEnvironments ?? throw new global::System.ArgumentNullException(nameof(enabledEnvironments));
+            this.Project = project ?? throw new global::System.ArgumentNullException(nameof(project));
             this.UpdatedAt = updatedAt;
         }
 

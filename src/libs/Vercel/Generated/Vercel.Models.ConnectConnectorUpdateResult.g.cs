@@ -16,16 +16,16 @@ namespace Vercel
         public required global::Vercel.ConnectConnector Connector { get; set; }
 
         /// <summary>
-        /// When true, prompt a team owner or administrator to reinstall the connector before relying on the change.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reinstallNeeded")]
-        public bool? ReinstallNeeded { get; set; }
-
-        /// <summary>
         /// Existing authorizations no longer cover the connector's configured scopes, so they must be re-authorized.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("reconsentNeeded")]
         public global::Vercel.ConnectReconsent? ReconsentNeeded { get; set; }
+
+        /// <summary>
+        /// When true, prompt a team owner or administrator to reinstall the connector before relying on the change.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reinstallNeeded")]
+        public bool? ReinstallNeeded { get; set; }
 
         /// <summary>
         /// Provider-side configuration synchronization result.
@@ -45,11 +45,11 @@ namespace Vercel
         /// <param name="connector">
         /// A connector that defines how Vercel accesses an external service.
         /// </param>
-        /// <param name="reinstallNeeded">
-        /// When true, prompt a team owner or administrator to reinstall the connector before relying on the change.
-        /// </param>
         /// <param name="reconsentNeeded">
         /// Existing authorizations no longer cover the connector's configured scopes, so they must be re-authorized.
+        /// </param>
+        /// <param name="reinstallNeeded">
+        /// When true, prompt a team owner or administrator to reinstall the connector before relying on the change.
         /// </param>
         /// <param name="serviceSync">
         /// Provider-side configuration synchronization result.
@@ -59,13 +59,13 @@ namespace Vercel
 #endif
         public ConnectConnectorUpdateResult(
             global::Vercel.ConnectConnector connector,
-            bool? reinstallNeeded,
             global::Vercel.ConnectReconsent? reconsentNeeded,
+            bool? reinstallNeeded,
             global::Vercel.ConnectServiceSync? serviceSync)
         {
             this.Connector = connector ?? throw new global::System.ArgumentNullException(nameof(connector));
-            this.ReinstallNeeded = reinstallNeeded;
             this.ReconsentNeeded = reconsentNeeded;
+            this.ReinstallNeeded = reinstallNeeded;
             this.ServiceSync = serviceSync;
         }
 

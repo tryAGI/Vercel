@@ -11,58 +11,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("architecture")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ServiceVariant2FunctionsArchitectureJsonConverter))]
-        public global::Vercel.GetDeploymentResponseVariant2ServiceVariant2FunctionsArchitecture? Architecture { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("memory")]
-        public double? Memory { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("maxDuration")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<double?, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2FunctionsMaxDuration?>))]
-        public global::Vercel.OneOf<double?, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2FunctionsMaxDuration?>? MaxDuration { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("affinity")]
         public global::Vercel.GetDeploymentResponseVariant2ServiceVariant2FunctionsAffinity? Affinity { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("maxConcurrency")]
-        public double? MaxConcurrency { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("regions")]
-        public global::System.Collections.Generic.IList<string>? Regions { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("functionFailoverRegions")]
-        public global::System.Collections.Generic.IList<string>? FunctionFailoverRegions { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("runtime")]
-        public string? Runtime { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("includeFiles")]
-        public string? IncludeFiles { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("architecture")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ServiceVariant2FunctionsArchitectureJsonConverter))]
+        public global::Vercel.GetDeploymentResponseVariant2ServiceVariant2FunctionsArchitecture? Architecture { get; set; }
 
         /// <summary>
         ///
@@ -79,6 +36,49 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("functionFailoverRegions")]
+        public global::System.Collections.Generic.IList<string>? FunctionFailoverRegions { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("includeFiles")]
+        public string? IncludeFiles { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("maxConcurrency")]
+        public double? MaxConcurrency { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("maxDuration")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<double?, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2FunctionsMaxDuration?>))]
+        public global::Vercel.OneOf<double?, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2FunctionsMaxDuration?>? MaxDuration { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("memory")]
+        public double? Memory { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("regions")]
+        public global::System.Collections.Generic.IList<string>? Regions { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("runtime")]
+        public string? Runtime { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("supportsCancellation")]
         public bool? SupportsCancellation { get; set; }
 
@@ -91,46 +91,46 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDeploymentResponseVariant2ServiceVariant2Functions2" /> class.
         /// </summary>
-        /// <param name="architecture"></param>
-        /// <param name="memory"></param>
-        /// <param name="maxDuration"></param>
         /// <param name="affinity"></param>
-        /// <param name="maxConcurrency"></param>
-        /// <param name="regions"></param>
-        /// <param name="functionFailoverRegions"></param>
-        /// <param name="runtime"></param>
-        /// <param name="includeFiles"></param>
+        /// <param name="architecture"></param>
         /// <param name="excludeFiles"></param>
         /// <param name="experimentalTriggers"></param>
+        /// <param name="functionFailoverRegions"></param>
+        /// <param name="includeFiles"></param>
+        /// <param name="maxConcurrency"></param>
+        /// <param name="maxDuration"></param>
+        /// <param name="memory"></param>
+        /// <param name="regions"></param>
+        /// <param name="runtime"></param>
         /// <param name="supportsCancellation"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant2ServiceVariant2Functions2(
-            global::Vercel.GetDeploymentResponseVariant2ServiceVariant2FunctionsArchitecture? architecture,
-            double? memory,
-            global::Vercel.OneOf<double?, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2FunctionsMaxDuration?>? maxDuration,
             global::Vercel.GetDeploymentResponseVariant2ServiceVariant2FunctionsAffinity? affinity,
-            double? maxConcurrency,
-            global::System.Collections.Generic.IList<string>? regions,
-            global::System.Collections.Generic.IList<string>? functionFailoverRegions,
-            string? runtime,
-            string? includeFiles,
+            global::Vercel.GetDeploymentResponseVariant2ServiceVariant2FunctionsArchitecture? architecture,
             string? excludeFiles,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2ServiceVariant2FunctionsExperimentalTriggerVariant1, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2FunctionsExperimentalTriggerVariant2, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2FunctionsExperimentalTriggerVariant3>>? experimentalTriggers,
+            global::System.Collections.Generic.IList<string>? functionFailoverRegions,
+            string? includeFiles,
+            double? maxConcurrency,
+            global::Vercel.OneOf<double?, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2FunctionsMaxDuration?>? maxDuration,
+            double? memory,
+            global::System.Collections.Generic.IList<string>? regions,
+            string? runtime,
             bool? supportsCancellation)
         {
-            this.Architecture = architecture;
-            this.Memory = memory;
-            this.MaxDuration = maxDuration;
             this.Affinity = affinity;
-            this.MaxConcurrency = maxConcurrency;
-            this.Regions = regions;
-            this.FunctionFailoverRegions = functionFailoverRegions;
-            this.Runtime = runtime;
-            this.IncludeFiles = includeFiles;
+            this.Architecture = architecture;
             this.ExcludeFiles = excludeFiles;
             this.ExperimentalTriggers = experimentalTriggers;
+            this.FunctionFailoverRegions = functionFailoverRegions;
+            this.IncludeFiles = includeFiles;
+            this.MaxConcurrency = maxConcurrency;
+            this.MaxDuration = maxDuration;
+            this.Memory = memory;
+            this.Regions = regions;
+            this.Runtime = runtime;
             this.SupportsCancellation = supportsCancellation;
         }
 

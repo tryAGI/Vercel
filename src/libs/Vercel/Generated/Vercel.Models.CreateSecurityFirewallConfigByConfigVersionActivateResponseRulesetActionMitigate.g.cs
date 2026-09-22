@@ -19,18 +19,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rateLimit")]
-        public global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetActionMitigateRateLimit? RateLimit { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("redirect")]
-        public global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetActionMitigateRedirect? Redirect { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("actionDuration")]
         public string? ActionDuration { get; set; }
 
@@ -48,6 +36,18 @@ namespace Vercel
         public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetActionMitigateLogHeaders?>? LogHeaders { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("rateLimit")]
+        public global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetActionMitigateRateLimit? RateLimit { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("redirect")]
+        public global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetActionMitigateRedirect? Redirect { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -57,28 +57,28 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetActionMitigate" /> class.
         /// </summary>
         /// <param name="action"></param>
-        /// <param name="rateLimit"></param>
-        /// <param name="redirect"></param>
         /// <param name="actionDuration"></param>
         /// <param name="bypassSystem"></param>
         /// <param name="logHeaders"></param>
+        /// <param name="rateLimit"></param>
+        /// <param name="redirect"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetActionMitigate(
             global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetActionMitigateAction action,
-            global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetActionMitigateRateLimit? rateLimit,
-            global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetActionMitigateRedirect? redirect,
             string? actionDuration,
             bool? bypassSystem,
-            global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetActionMitigateLogHeaders?>? logHeaders)
+            global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetActionMitigateLogHeaders?>? logHeaders,
+            global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetActionMitigateRateLimit? rateLimit,
+            global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponseRulesetActionMitigateRedirect? redirect)
         {
             this.Action = action;
-            this.RateLimit = rateLimit;
-            this.Redirect = redirect;
             this.ActionDuration = actionDuration;
             this.BypassSystem = bypassSystem;
             this.LogHeaders = logHeaders;
+            this.RateLimit = rateLimit;
+            this.Redirect = redirect;
         }
 
         /// <summary>

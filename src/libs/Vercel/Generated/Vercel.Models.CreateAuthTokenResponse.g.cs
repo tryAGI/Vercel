@@ -9,13 +9,6 @@ namespace Vercel
     public sealed partial class CreateAuthTokenResponse
     {
         /// <summary>
-        /// Authentication token metadata.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("token")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AuthToken Token { get; set; }
-
-        /// <summary>
         /// The authentication token's actual value. This token is only provided in this response, and can never be retrieved again in the future. Be sure to save it somewhere safe!<br/>
         /// Example: uRKJSTt0L4RaSkiMj41QTkxM
         /// </summary>
@@ -23,6 +16,13 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("bearerToken")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BearerToken { get; set; }
+
+        /// <summary>
+        /// Authentication token metadata.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("token")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.AuthToken Token { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -33,22 +33,22 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateAuthTokenResponse" /> class.
         /// </summary>
-        /// <param name="token">
-        /// Authentication token metadata.
-        /// </param>
         /// <param name="bearerToken">
         /// The authentication token's actual value. This token is only provided in this response, and can never be retrieved again in the future. Be sure to save it somewhere safe!<br/>
         /// Example: uRKJSTt0L4RaSkiMj41QTkxM
+        /// </param>
+        /// <param name="token">
+        /// Authentication token metadata.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateAuthTokenResponse(
-            global::Vercel.AuthToken token,
-            string bearerToken)
+            string bearerToken,
+            global::Vercel.AuthToken token)
         {
-            this.Token = token ?? throw new global::System.ArgumentNullException(nameof(token));
             this.BearerToken = bearerToken ?? throw new global::System.ArgumentNullException(nameof(bearerToken));
+            this.Token = token ?? throw new global::System.ArgumentNullException(nameof(token));
         }
 
         /// <summary>

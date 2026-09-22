@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("start")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("end")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Start { get; set; }
+        public required string End { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("end")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("start")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string End { get; set; }
+        public required string Start { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetInvoiceResponsePeriod" /> class.
         /// </summary>
-        /// <param name="start"></param>
         /// <param name="end"></param>
+        /// <param name="start"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetInvoiceResponsePeriod(
-            string start,
-            string end)
+            string end,
+            string start)
         {
-            this.Start = start ?? throw new global::System.ArgumentNullException(nameof(start));
             this.End = end ?? throw new global::System.ArgumentNullException(nameof(end));
+            this.Start = start ?? throw new global::System.ArgumentNullException(nameof(start));
         }
 
         /// <summary>

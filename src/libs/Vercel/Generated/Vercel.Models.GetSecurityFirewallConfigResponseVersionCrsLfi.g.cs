@@ -11,17 +11,17 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("active")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Active { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("action")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetSecurityFirewallConfigResponseVersionCrsLfiActionJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetSecurityFirewallConfigResponseVersionCrsLfiAction Action { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("active")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Active { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,17 +32,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetSecurityFirewallConfigResponseVersionCrsLfi" /> class.
         /// </summary>
-        /// <param name="active"></param>
         /// <param name="action"></param>
+        /// <param name="active"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetSecurityFirewallConfigResponseVersionCrsLfi(
-            bool active,
-            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsLfiAction action)
+            global::Vercel.GetSecurityFirewallConfigResponseVersionCrsLfiAction action,
+            bool active)
         {
-            this.Active = active;
             this.Action = action;
+            this.Active = active;
         }
 
         /// <summary>

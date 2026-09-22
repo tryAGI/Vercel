@@ -9,17 +9,17 @@ namespace Vercel
     public sealed partial class GetProjectsResponseVariant1ItemCreatorVariant2App
     {
         /// <summary>
+        /// The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("clientId")]
+        public string? ClientId { get; set; }
+
+        /// <summary>
         /// The internal ID of the Vercel App backing this principal.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
-
-        /// <summary>
-        /// The protocol-facing OAuth client ID. This may differ from {@link id} when Client ID Metadata Documents (CIMD) are used.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("clientId")]
-        public string? ClientId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,8 +43,8 @@ namespace Vercel
             string id,
             string? clientId)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.ClientId = clientId;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
         }
 
         /// <summary>

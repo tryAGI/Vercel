@@ -9,13 +9,6 @@ namespace Vercel
     public sealed partial class BuyCreditsResponseVariant2PurchaseIntentDispute
     {
         /// <summary>
-        /// The unique ID of the dispute entity.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
         /// The disputed amount.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("amount")]
@@ -35,6 +28,13 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("currency")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Currency { get; set; }
+
+        /// <summary>
+        /// The unique ID of the dispute entity.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
 
         /// <summary>
         /// The external provider dispute ID (e.g. Stripe dispute ID).
@@ -72,9 +72,6 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="BuyCreditsResponseVariant2PurchaseIntentDispute" /> class.
         /// </summary>
-        /// <param name="id">
-        /// The unique ID of the dispute entity.
-        /// </param>
         /// <param name="amount">
         /// The disputed amount.
         /// </param>
@@ -83,6 +80,9 @@ namespace Vercel
         /// </param>
         /// <param name="currency">
         /// The dispute currency.
+        /// </param>
+        /// <param name="id">
+        /// The unique ID of the dispute entity.
         /// </param>
         /// <param name="providerId">
         /// The external provider dispute ID (e.g. Stripe dispute ID).
@@ -100,19 +100,19 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public BuyCreditsResponseVariant2PurchaseIntentDispute(
-            string id,
             string amount,
             string createdAt,
             string currency,
+            string id,
             string providerId,
             string status,
             string updatedAt,
             string? reason)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Amount = amount ?? throw new global::System.ArgumentNullException(nameof(amount));
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.Currency = currency ?? throw new global::System.ArgumentNullException(nameof(currency));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.ProviderId = providerId ?? throw new global::System.ArgumentNullException(nameof(providerId));
             this.Reason = reason;
             this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));

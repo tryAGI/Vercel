@@ -9,11 +9,10 @@ namespace Vercel
     public sealed partial class CancelDeploymentResponseResourceConfigBuildMachine
     {
         /// <summary>
-        /// Machine type which was purchased/selected for this build. `basic` is the 2vCPU tier, recorded on the deployment so the build pipeline can detect a basic build without consulting the project.
+        /// Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("purchaseType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CancelDeploymentResponseResourceConfigBuildMachinePurchaseTypeJsonConverter))]
-        public global::Vercel.CancelDeploymentResponseResourceConfigBuildMachinePurchaseType? PurchaseType { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cores")]
+        public double? Cores { get; set; }
 
         /// <summary>
         /// The default plan type for the build machine — what the customer is *paying* for on their plan. For most customers, this is standard, but some customers have an entitlement for enhanced builds.
@@ -30,23 +29,24 @@ namespace Vercel
         public global::Vercel.CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType? MachineSelectionType { get; set; }
 
         /// <summary>
+        /// Memory, in MiB, the build machine ran with. Set at dispatch time once the build lands on a hive.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("memory")]
+        public double? Memory { get; set; }
+
+        /// <summary>
+        /// Machine type which was purchased/selected for this build. `basic` is the 2vCPU tier, recorded on the deployment so the build pipeline can detect a basic build without consulting the project.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("purchaseType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CancelDeploymentResponseResourceConfigBuildMachinePurchaseTypeJsonConverter))]
+        public global::Vercel.CancelDeploymentResponseResourceConfigBuildMachinePurchaseType? PurchaseType { get; set; }
+
+        /// <summary>
         /// The setting which selected the build machine when the deployment was created. Frozen here so later project or team changes do not rewrite its history.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("selectionSource")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CancelDeploymentResponseResourceConfigBuildMachineSelectionSourceJsonConverter))]
         public global::Vercel.CancelDeploymentResponseResourceConfigBuildMachineSelectionSource? SelectionSource { get; set; }
-
-        /// <summary>
-        /// Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cores")]
-        public double? Cores { get; set; }
-
-        /// <summary>
-        /// Memory, in MiB, the build machine ran with. Set at dispatch time once the build lands on a hive.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("memory")]
-        public double? Memory { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -57,8 +57,8 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CancelDeploymentResponseResourceConfigBuildMachine" /> class.
         /// </summary>
-        /// <param name="purchaseType">
-        /// Machine type which was purchased/selected for this build. `basic` is the 2vCPU tier, recorded on the deployment so the build pipeline can detect a basic build without consulting the project.
+        /// <param name="cores">
+        /// Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive.
         /// </param>
         /// <param name="defaultPurchaseType">
         /// The default plan type for the build machine — what the customer is *paying* for on their plan. For most customers, this is standard, but some customers have an entitlement for enhanced builds.
@@ -66,32 +66,32 @@ namespace Vercel
         /// <param name="machineSelectionType">
         /// Whether the build ran on a fixed or elastic machine. Used to drive billing for the build.
         /// </param>
-        /// <param name="selectionSource">
-        /// The setting which selected the build machine when the deployment was created. Frozen here so later project or team changes do not rewrite its history.
-        /// </param>
-        /// <param name="cores">
-        /// Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive.
-        /// </param>
         /// <param name="memory">
         /// Memory, in MiB, the build machine ran with. Set at dispatch time once the build lands on a hive.
+        /// </param>
+        /// <param name="purchaseType">
+        /// Machine type which was purchased/selected for this build. `basic` is the 2vCPU tier, recorded on the deployment so the build pipeline can detect a basic build without consulting the project.
+        /// </param>
+        /// <param name="selectionSource">
+        /// The setting which selected the build machine when the deployment was created. Frozen here so later project or team changes do not rewrite its history.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CancelDeploymentResponseResourceConfigBuildMachine(
-            global::Vercel.CancelDeploymentResponseResourceConfigBuildMachinePurchaseType? purchaseType,
+            double? cores,
             global::Vercel.CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType? defaultPurchaseType,
             global::Vercel.CancelDeploymentResponseResourceConfigBuildMachineMachineSelectionType? machineSelectionType,
-            global::Vercel.CancelDeploymentResponseResourceConfigBuildMachineSelectionSource? selectionSource,
-            double? cores,
-            double? memory)
+            double? memory,
+            global::Vercel.CancelDeploymentResponseResourceConfigBuildMachinePurchaseType? purchaseType,
+            global::Vercel.CancelDeploymentResponseResourceConfigBuildMachineSelectionSource? selectionSource)
         {
-            this.PurchaseType = purchaseType;
+            this.Cores = cores;
             this.DefaultPurchaseType = defaultPurchaseType;
             this.MachineSelectionType = machineSelectionType;
-            this.SelectionSource = selectionSource;
-            this.Cores = cores;
             this.Memory = memory;
+            this.PurchaseType = purchaseType;
+            this.SelectionSource = selectionSource;
         }
 
         /// <summary>

@@ -11,27 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reuse")]
-        public global::Vercel.CreateFlagResponseEnvironmentsReuse? Reuse { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("targets")]
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.CreateFlagResponseEnvironmentsTarget>>>>? Targets { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("revision")]
-        public double? Revision { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("pausedOutcome")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("active")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.CreateFlagResponseEnvironmentsPausedOutcome PausedOutcome { get; set; }
+        public required bool Active { get; set; }
 
         /// <summary>
         ///
@@ -44,9 +26,21 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("active")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("pausedOutcome")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Active { get; set; }
+        public required global::Vercel.CreateFlagResponseEnvironmentsPausedOutcome PausedOutcome { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reuse")]
+        public global::Vercel.CreateFlagResponseEnvironmentsReuse? Reuse { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("revision")]
+        public double? Revision { get; set; }
 
         /// <summary>
         ///
@@ -54,6 +48,12 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("rules")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Vercel.CreateFlagResponseEnvironmentsRule> Rules { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("targets")]
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.CreateFlagResponseEnvironmentsTarget>>>>? Targets { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -64,32 +64,32 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateFlagResponseEnvironments2" /> class.
         /// </summary>
-        /// <param name="pausedOutcome"></param>
-        /// <param name="fallthrough"></param>
         /// <param name="active"></param>
+        /// <param name="fallthrough"></param>
+        /// <param name="pausedOutcome"></param>
         /// <param name="rules"></param>
         /// <param name="reuse"></param>
-        /// <param name="targets"></param>
         /// <param name="revision"></param>
+        /// <param name="targets"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateFlagResponseEnvironments2(
-            global::Vercel.CreateFlagResponseEnvironmentsPausedOutcome pausedOutcome,
-            global::Vercel.OneOf<global::Vercel.CreateFlagResponseEnvironmentsFallthroughVariant1, global::Vercel.CreateFlagResponseEnvironmentsFallthroughVariant2, global::Vercel.CreateFlagResponseEnvironmentsFallthroughVariant3, global::Vercel.CreateFlagResponseEnvironmentsFallthroughVariant4> fallthrough,
             bool active,
+            global::Vercel.OneOf<global::Vercel.CreateFlagResponseEnvironmentsFallthroughVariant1, global::Vercel.CreateFlagResponseEnvironmentsFallthroughVariant2, global::Vercel.CreateFlagResponseEnvironmentsFallthroughVariant3, global::Vercel.CreateFlagResponseEnvironmentsFallthroughVariant4> fallthrough,
+            global::Vercel.CreateFlagResponseEnvironmentsPausedOutcome pausedOutcome,
             global::System.Collections.Generic.IList<global::Vercel.CreateFlagResponseEnvironmentsRule> rules,
             global::Vercel.CreateFlagResponseEnvironmentsReuse? reuse,
-            global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.CreateFlagResponseEnvironmentsTarget>>>>? targets,
-            double? revision)
+            double? revision,
+            global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.CreateFlagResponseEnvironmentsTarget>>>>? targets)
         {
-            this.Reuse = reuse;
-            this.Targets = targets;
-            this.Revision = revision;
-            this.PausedOutcome = pausedOutcome ?? throw new global::System.ArgumentNullException(nameof(pausedOutcome));
-            this.Fallthrough = fallthrough;
             this.Active = active;
+            this.Fallthrough = fallthrough;
+            this.PausedOutcome = pausedOutcome ?? throw new global::System.ArgumentNullException(nameof(pausedOutcome));
+            this.Reuse = reuse;
+            this.Revision = revision;
             this.Rules = rules ?? throw new global::System.ArgumentNullException(nameof(rules));
+            this.Targets = targets;
         }
 
         /// <summary>

@@ -11,9 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("use")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Use { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("dest")]
+        public string? Dest { get; set; }
 
         /// <summary>
         ///
@@ -24,8 +23,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("dest")]
-        public string? Dest { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("use")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Use { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,19 +37,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant1ItemLatestDeploymentBuild" /> class.
         /// </summary>
         /// <param name="use"></param>
-        /// <param name="src"></param>
         /// <param name="dest"></param>
+        /// <param name="src"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsResponseVariant1ItemLatestDeploymentBuild(
             string use,
-            string? src,
-            string? dest)
+            string? dest,
+            string? src)
         {
-            this.Use = use ?? throw new global::System.ArgumentNullException(nameof(use));
-            this.Src = src;
             this.Dest = dest;
+            this.Src = src;
+            this.Use = use ?? throw new global::System.ArgumentNullException(nameof(use));
         }
 
         /// <summary>

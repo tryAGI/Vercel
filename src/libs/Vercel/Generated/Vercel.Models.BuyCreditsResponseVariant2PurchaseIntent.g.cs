@@ -9,13 +9,6 @@ namespace Vercel
     public sealed partial class BuyCreditsResponseVariant2PurchaseIntent
     {
         /// <summary>
-        /// The unique ID of a Purchase Intent. Uses the format `pur_*`
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
@@ -39,6 +32,31 @@ namespace Vercel
         public required global::Vercel.BuyCreditsResponseVariant2PurchaseIntentCurrency Currency { get; set; }
 
         /// <summary>
+        /// The dispute details, if any.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("dispute")]
+        public global::Vercel.BuyCreditsResponseVariant2PurchaseIntentDispute? Dispute { get; set; }
+
+        /// <summary>
+        /// The unique ID of a Purchase Intent. Uses the format `pur_*`
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
+        /// The line items that make up the Purchase Intent.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("lineItems")]
+        public global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentLineItem>? LineItems { get; set; }
+
+        /// <summary>
+        /// Optional metadata associated with the purchase intent
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
+        public global::System.Collections.Generic.Dictionary<string, string>? Metadata { get; set; }
+
+        /// <summary>
         /// The ID of the owner of the Purchase Intent.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
@@ -51,6 +69,18 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.BuyCreditsResponseVariant2PurchaseIntentProvider Provider { get; set; }
+
+        /// <summary>
+        /// The amount of the purchase intent that has been refunded
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("refund")]
+        public string? Refund { get; set; }
+
+        /// <summary>
+        /// The URL to redirect to after the purchase is complete
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("returnUrl")]
+        public string? ReturnUrl { get; set; }
 
         /// <summary>
         /// The status of the Purchase Intent.
@@ -89,36 +119,6 @@ namespace Vercel
         public required string UpdatedAt { get; set; }
 
         /// <summary>
-        /// The dispute details, if any.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("dispute")]
-        public global::Vercel.BuyCreditsResponseVariant2PurchaseIntentDispute? Dispute { get; set; }
-
-        /// <summary>
-        /// The line items that make up the Purchase Intent.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("lineItems")]
-        public global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentLineItem>? LineItems { get; set; }
-
-        /// <summary>
-        /// Optional metadata associated with the purchase intent
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public global::System.Collections.Generic.Dictionary<string, string>? Metadata { get; set; }
-
-        /// <summary>
-        /// The amount of the purchase intent that has been refunded
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("refund")]
-        public string? Refund { get; set; }
-
-        /// <summary>
-        /// The URL to redirect to after the purchase is complete
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("returnUrl")]
-        public string? ReturnUrl { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -127,15 +127,15 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="BuyCreditsResponseVariant2PurchaseIntent" /> class.
         /// </summary>
-        /// <param name="id">
-        /// The unique ID of a Purchase Intent. Uses the format `pur_*`
-        /// </param>
         /// <param name="configuration"></param>
         /// <param name="createdAt">
         /// The datetime when the Purchase Intent was created.
         /// </param>
         /// <param name="currency">
         /// The currency for the purchase intent
+        /// </param>
+        /// <param name="id">
+        /// The unique ID of a Purchase Intent. Uses the format `pur_*`
         /// </param>
         /// <param name="ownerId">
         /// The ID of the owner of the Purchase Intent.
@@ -175,10 +175,10 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public BuyCreditsResponseVariant2PurchaseIntent(
-            string id,
             global::Vercel.OneOf<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant1, global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant2, global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant3, global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant4, global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant5, global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant6, global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7> configuration,
             string createdAt,
             global::Vercel.BuyCreditsResponseVariant2PurchaseIntentCurrency currency,
+            string id,
             string ownerId,
             global::Vercel.BuyCreditsResponseVariant2PurchaseIntentProvider provider,
             global::Vercel.BuyCreditsResponseVariant2PurchaseIntentStatus status,
@@ -192,22 +192,22 @@ namespace Vercel
             string? refund,
             string? returnUrl)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Configuration = configuration;
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.Currency = currency;
+            this.Dispute = dispute;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.LineItems = lineItems;
+            this.Metadata = metadata;
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.Provider = provider ?? throw new global::System.ArgumentNullException(nameof(provider));
+            this.Refund = refund;
+            this.ReturnUrl = returnUrl;
             this.Status = status;
             this.Subtotal = subtotal ?? throw new global::System.ArgumentNullException(nameof(subtotal));
             this.Tax = tax ?? throw new global::System.ArgumentNullException(nameof(tax));
             this.Total = total ?? throw new global::System.ArgumentNullException(nameof(total));
             this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
-            this.Dispute = dispute;
-            this.LineItems = lineItems;
-            this.Metadata = metadata;
-            this.Refund = refund;
-            this.ReturnUrl = returnUrl;
         }
 
         /// <summary>

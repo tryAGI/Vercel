@@ -11,6 +11,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("attackModeActiveUntil")]
+        public double? AttackModeActiveUntil { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("attackModeEnabled")]
         public bool? AttackModeEnabled { get; set; }
 
@@ -23,20 +29,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("firewallEnabled")]
-        public bool? FirewallEnabled { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("botIdEnabled")]
+        public bool? BotIdEnabled { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("firewallUpdatedAt")]
-        public double? FirewallUpdatedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("attackModeActiveUntil")]
-        public double? AttackModeActiveUntil { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("firewallBypassIps")]
+        public global::System.Collections.Generic.IList<string>? FirewallBypassIps { get; set; }
 
         /// <summary>
         ///
@@ -47,20 +47,26 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("firewallEnabled")]
+        public bool? FirewallEnabled { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("firewallRoutes")]
         public global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRoute>? FirewallRoutes { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rulesets")]
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GetProjectsResponseVariant1ItemSecurityRulesets2>? Rulesets { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("firewallSeawallEnabled")]
+        public bool? FirewallSeawallEnabled { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("firewallSeawallEnabled")]
-        public bool? FirewallSeawallEnabled { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("firewallUpdatedAt")]
+        public double? FirewallUpdatedAt { get; set; }
 
         /// <summary>
         ///
@@ -77,8 +83,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("firewallBypassIps")]
-        public global::System.Collections.Generic.IList<string>? FirewallBypassIps { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("log_headers")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<string>, global::Vercel.GetProjectsResponseVariant1ItemSecurityLogHeaders?>))]
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetProjectsResponseVariant1ItemSecurityLogHeaders?>? LogHeaders { get; set; }
 
         /// <summary>
         ///
@@ -87,10 +94,10 @@ namespace Vercel
         public global::Vercel.GetProjectsResponseVariant1ItemSecurityManagedRules? ManagedRules { get; set; }
 
         /// <summary>
-        ///
+        /// Whether Page Integrity is enabled for this project. Used by the metadata service to gate DynamoDB lookups against the page-integrity-inventory table.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("botIdEnabled")]
-        public bool? BotIdEnabled { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("pageIntegrityEnabled")]
+        public bool? PageIntegrityEnabled { get; set; }
 
         /// <summary>
         ///
@@ -101,27 +108,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("log_headers")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<string>, global::Vercel.GetProjectsResponseVariant1ItemSecurityLogHeaders?>))]
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetProjectsResponseVariant1ItemSecurityLogHeaders?>? LogHeaders { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("securityPlus")]
-        public bool? SecurityPlus { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("securityPlusMetadata")]
-        public global::Vercel.GetProjectsResponseVariant1ItemSecuritySecurityPlusMetadata? SecurityPlusMetadata { get; set; }
-
-        /// <summary>
-        /// Whether Page Integrity is enabled for this project. Used by the metadata service to gate DynamoDB lookups against the page-integrity-inventory table.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("pageIntegrityEnabled")]
-        public bool? PageIntegrityEnabled { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("rulesets")]
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GetProjectsResponseVariant1ItemSecurityRulesets2>? Rulesets { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -132,70 +120,64 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant1ItemSecurity" /> class.
         /// </summary>
+        /// <param name="attackModeActiveUntil"></param>
         /// <param name="attackModeEnabled"></param>
         /// <param name="attackModeUpdatedAt"></param>
-        /// <param name="firewallEnabled"></param>
-        /// <param name="firewallUpdatedAt"></param>
-        /// <param name="attackModeActiveUntil"></param>
+        /// <param name="botIdEnabled"></param>
+        /// <param name="firewallBypassIps"></param>
         /// <param name="firewallConfigVersion"></param>
+        /// <param name="firewallEnabled"></param>
         /// <param name="firewallRoutes"></param>
-        /// <param name="rulesets"></param>
         /// <param name="firewallSeawallEnabled"></param>
+        /// <param name="firewallUpdatedAt"></param>
         /// <param name="ja3Enabled"></param>
         /// <param name="ja4Enabled"></param>
-        /// <param name="firewallBypassIps"></param>
-        /// <param name="managedRules"></param>
-        /// <param name="botIdEnabled"></param>
-        /// <param name="requestLogsKey"></param>
         /// <param name="logHeaders"></param>
-        /// <param name="securityPlus"></param>
-        /// <param name="securityPlusMetadata"></param>
+        /// <param name="managedRules"></param>
         /// <param name="pageIntegrityEnabled">
         /// Whether Page Integrity is enabled for this project. Used by the metadata service to gate DynamoDB lookups against the page-integrity-inventory table.
         /// </param>
+        /// <param name="requestLogsKey"></param>
+        /// <param name="rulesets"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsResponseVariant1ItemSecurity(
+            double? attackModeActiveUntil,
             bool? attackModeEnabled,
             double? attackModeUpdatedAt,
-            bool? firewallEnabled,
-            double? firewallUpdatedAt,
-            double? attackModeActiveUntil,
+            bool? botIdEnabled,
+            global::System.Collections.Generic.IList<string>? firewallBypassIps,
             double? firewallConfigVersion,
+            bool? firewallEnabled,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRoute>? firewallRoutes,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.GetProjectsResponseVariant1ItemSecurityRulesets2>? rulesets,
             bool? firewallSeawallEnabled,
+            double? firewallUpdatedAt,
             bool? ja3Enabled,
             bool? ja4Enabled,
-            global::System.Collections.Generic.IList<string>? firewallBypassIps,
-            global::Vercel.GetProjectsResponseVariant1ItemSecurityManagedRules? managedRules,
-            bool? botIdEnabled,
-            global::System.Collections.Generic.IList<string>? requestLogsKey,
             global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetProjectsResponseVariant1ItemSecurityLogHeaders?>? logHeaders,
-            bool? securityPlus,
-            global::Vercel.GetProjectsResponseVariant1ItemSecuritySecurityPlusMetadata? securityPlusMetadata,
-            bool? pageIntegrityEnabled)
+            global::Vercel.GetProjectsResponseVariant1ItemSecurityManagedRules? managedRules,
+            bool? pageIntegrityEnabled,
+            global::System.Collections.Generic.IList<string>? requestLogsKey,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.GetProjectsResponseVariant1ItemSecurityRulesets2>? rulesets)
         {
+            this.AttackModeActiveUntil = attackModeActiveUntil;
             this.AttackModeEnabled = attackModeEnabled;
             this.AttackModeUpdatedAt = attackModeUpdatedAt;
-            this.FirewallEnabled = firewallEnabled;
-            this.FirewallUpdatedAt = firewallUpdatedAt;
-            this.AttackModeActiveUntil = attackModeActiveUntil;
+            this.BotIdEnabled = botIdEnabled;
+            this.FirewallBypassIps = firewallBypassIps;
             this.FirewallConfigVersion = firewallConfigVersion;
+            this.FirewallEnabled = firewallEnabled;
             this.FirewallRoutes = firewallRoutes;
-            this.Rulesets = rulesets;
             this.FirewallSeawallEnabled = firewallSeawallEnabled;
+            this.FirewallUpdatedAt = firewallUpdatedAt;
             this.Ja3Enabled = ja3Enabled;
             this.Ja4Enabled = ja4Enabled;
-            this.FirewallBypassIps = firewallBypassIps;
-            this.ManagedRules = managedRules;
-            this.BotIdEnabled = botIdEnabled;
-            this.RequestLogsKey = requestLogsKey;
             this.LogHeaders = logHeaders;
-            this.SecurityPlus = securityPlus;
-            this.SecurityPlusMetadata = securityPlusMetadata;
+            this.ManagedRules = managedRules;
             this.PageIntegrityEnabled = pageIntegrityEnabled;
+            this.RequestLogsKey = requestLogsKey;
+            this.Rulesets = rulesets;
         }
 
         /// <summary>

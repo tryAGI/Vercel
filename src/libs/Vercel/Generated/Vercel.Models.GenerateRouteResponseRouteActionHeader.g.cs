@@ -18,16 +18,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        public string? Value { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("op")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GenerateRouteResponseRouteActionHeaderOpJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GenerateRouteResponseRouteActionHeaderOp Op { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
+        public string? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -50,8 +50,8 @@ namespace Vercel
             string? value)
         {
             this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
-            this.Value = value;
             this.Op = op;
+            this.Value = value;
         }
 
         /// <summary>

@@ -11,9 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("use")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Use { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("config")]
+        public global::Vercel.GetDeploymentResponseVariant2ServiceVariant1BuilderConfig? Config { get; set; }
 
         /// <summary>
         ///
@@ -24,8 +23,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("config")]
-        public global::Vercel.GetDeploymentResponseVariant2ServiceVariant1BuilderConfig? Config { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("use")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Use { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,19 +37,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetDeploymentResponseVariant2ServiceVariant1Builder" /> class.
         /// </summary>
         /// <param name="use"></param>
-        /// <param name="src"></param>
         /// <param name="config"></param>
+        /// <param name="src"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant2ServiceVariant1Builder(
             string use,
-            string? src,
-            global::Vercel.GetDeploymentResponseVariant2ServiceVariant1BuilderConfig? config)
+            global::Vercel.GetDeploymentResponseVariant2ServiceVariant1BuilderConfig? config,
+            string? src)
         {
-            this.Use = use ?? throw new global::System.ArgumentNullException(nameof(use));
-            this.Src = src;
             this.Config = config;
+            this.Src = src;
+            this.Use = use ?? throw new global::System.ArgumentNullException(nameof(use));
         }
 
         /// <summary>

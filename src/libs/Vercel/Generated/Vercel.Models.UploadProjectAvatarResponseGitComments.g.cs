@@ -9,18 +9,18 @@ namespace Vercel
     public sealed partial class UploadProjectAvatarResponseGitComments
     {
         /// <summary>
-        /// Whether the Vercel bot should comment on PRs
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("onPullRequest")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool OnPullRequest { get; set; }
-
-        /// <summary>
         /// Whether the Vercel bot should comment on commits
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("onCommit")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool OnCommit { get; set; }
+
+        /// <summary>
+        /// Whether the Vercel bot should comment on PRs
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("onPullRequest")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool OnPullRequest { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,21 +31,21 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UploadProjectAvatarResponseGitComments" /> class.
         /// </summary>
-        /// <param name="onPullRequest">
-        /// Whether the Vercel bot should comment on PRs
-        /// </param>
         /// <param name="onCommit">
         /// Whether the Vercel bot should comment on commits
+        /// </param>
+        /// <param name="onPullRequest">
+        /// Whether the Vercel bot should comment on PRs
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UploadProjectAvatarResponseGitComments(
-            bool onPullRequest,
-            bool onCommit)
+            bool onCommit,
+            bool onPullRequest)
         {
-            this.OnPullRequest = onPullRequest;
             this.OnCommit = onCommit;
+            this.OnPullRequest = onPullRequest;
         }
 
         /// <summary>

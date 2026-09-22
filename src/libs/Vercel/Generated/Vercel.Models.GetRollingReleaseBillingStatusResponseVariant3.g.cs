@@ -18,9 +18,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetRollingReleaseBillingStatusResponseVariant3ReasonJsonConverter))]
-        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant3Reason Reason { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("enabledProjects")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<string> EnabledProjects { get; set; }
 
         /// <summary>
         ///
@@ -32,9 +32,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabledProjects")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> EnabledProjects { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetRollingReleaseBillingStatusResponseVariant3ReasonJsonConverter))]
+        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant3Reason Reason { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -46,22 +46,22 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetRollingReleaseBillingStatusResponseVariant3" /> class.
         /// </summary>
         /// <param name="availableSlots"></param>
-        /// <param name="message"></param>
         /// <param name="enabledProjects"></param>
+        /// <param name="message"></param>
         /// <param name="reason"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetRollingReleaseBillingStatusResponseVariant3(
             double availableSlots,
-            string message,
             global::System.Collections.Generic.IList<string> enabledProjects,
+            string message,
             global::Vercel.GetRollingReleaseBillingStatusResponseVariant3Reason reason)
         {
             this.AvailableSlots = availableSlots;
-            this.Reason = reason;
-            this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
             this.EnabledProjects = enabledProjects ?? throw new global::System.ArgumentNullException(nameof(enabledProjects));
+            this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
+            this.Reason = reason;
         }
 
         /// <summary>

@@ -11,15 +11,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("disabledAt")]
+        public double? DisabledAt { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("disabledAt")]
-        public double? DisabledAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,8 +39,8 @@ namespace Vercel
             string id,
             double? disabledAt)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.DisabledAt = disabledAt;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
         }
 
         /// <summary>

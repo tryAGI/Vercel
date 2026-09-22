@@ -11,23 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("defaultBranch")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DefaultBranch { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SearchRepoResponseVariant3RepoProviderJsonConverter))]
-        public global::Vercel.SearchRepoResponseVariant3RepoProvider Provider { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
 
         /// <summary>
         ///
@@ -39,16 +32,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("namespace")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
+        public required string Namespace { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("namespace")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("owner")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Namespace { get; set; }
+        public required global::Vercel.SearchRepoResponseVariant3RepoOwner Owner { get; set; }
 
         /// <summary>
         ///
@@ -61,13 +54,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("owner")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.SearchRepoResponseVariant3RepoOwner Owner { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("private")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Private { get; set; }
@@ -75,9 +61,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("defaultBranch")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SearchRepoResponseVariant3RepoProviderJsonConverter))]
+        public global::Vercel.SearchRepoResponseVariant3RepoProvider Provider { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DefaultBranch { get; set; }
+        public required string Slug { get; set; }
 
         /// <summary>
         ///
@@ -85,6 +78,13 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double UpdatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Url { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -95,44 +95,44 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="SearchRepoResponseVariant3Repo" /> class.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="url"></param>
-        /// <param name="name"></param>
-        /// <param name="slug"></param>
-        /// <param name="namespace"></param>
-        /// <param name="ownerType"></param>
-        /// <param name="owner"></param>
-        /// <param name="private"></param>
         /// <param name="defaultBranch"></param>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
+        /// <param name="namespace"></param>
+        /// <param name="owner"></param>
+        /// <param name="ownerType"></param>
+        /// <param name="private"></param>
+        /// <param name="slug"></param>
         /// <param name="updatedAt"></param>
+        /// <param name="url"></param>
         /// <param name="provider"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SearchRepoResponseVariant3Repo(
-            string id,
-            string url,
-            string name,
-            string slug,
-            string @namespace,
-            global::Vercel.SearchRepoResponseVariant3RepoOwnerType ownerType,
-            global::Vercel.SearchRepoResponseVariant3RepoOwner owner,
-            bool @private,
             string defaultBranch,
+            string id,
+            string name,
+            string @namespace,
+            global::Vercel.SearchRepoResponseVariant3RepoOwner owner,
+            global::Vercel.SearchRepoResponseVariant3RepoOwnerType ownerType,
+            bool @private,
+            string slug,
             double updatedAt,
+            string url,
             global::Vercel.SearchRepoResponseVariant3RepoProvider provider)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Provider = provider;
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
-            this.Namespace = @namespace ?? throw new global::System.ArgumentNullException(nameof(@namespace));
-            this.OwnerType = ownerType;
-            this.Owner = owner ?? throw new global::System.ArgumentNullException(nameof(owner));
-            this.Private = @private;
             this.DefaultBranch = defaultBranch ?? throw new global::System.ArgumentNullException(nameof(defaultBranch));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Namespace = @namespace ?? throw new global::System.ArgumentNullException(nameof(@namespace));
+            this.Owner = owner ?? throw new global::System.ArgumentNullException(nameof(owner));
+            this.OwnerType = ownerType;
+            this.Private = @private;
+            this.Provider = provider;
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.UpdatedAt = updatedAt;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
         }
 
         /// <summary>

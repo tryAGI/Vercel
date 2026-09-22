@@ -18,16 +18,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Uid { get; set; }
+        public required string Type { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Type { get; set; }
+        public required string Uid { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,19 +39,19 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetConnectorTokenResponseConnector" /> class.
         /// </summary>
         /// <param name="id"></param>
-        /// <param name="uid"></param>
         /// <param name="type"></param>
+        /// <param name="uid"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetConnectorTokenResponseConnector(
             string id,
-            string uid,
-            string type)
+            string type,
+            string uid)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
             this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
+            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
         }
 
         /// <summary>

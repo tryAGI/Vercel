@@ -16,17 +16,10 @@ namespace Vercel
         public required bool CrossInstallation { get; set; }
 
         /// <summary>
-        /// Whether callers can narrow user-token grants per request.
+        /// User authorization is completed by the Connect consent screen submitting a credential instead of an OAuth redirect.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("supportsRefinement")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool SupportsRefinement { get; set; }
-
-        /// <summary>
-        /// Whether callers can request resource-specific user tokens.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("supportsResources")]
-        public bool? SupportsResources { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("manualCredentialInput")]
+        public bool? ManualCredentialInput { get; set; }
 
         /// <summary>
         /// Known allowed user-level scopes. For Slack this is the user scope set configured on the app; for OAuth it is the connector's enabled `userAuthorization.scopes` configuration.
@@ -41,10 +34,17 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? SupportedAuthorizationDetails { get; set; }
 
         /// <summary>
-        /// User authorization is completed by the Connect consent screen submitting a credential instead of an OAuth redirect.
+        /// Whether callers can narrow user-token grants per request.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("manualCredentialInput")]
-        public bool? ManualCredentialInput { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("supportsRefinement")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool SupportsRefinement { get; set; }
+
+        /// <summary>
+        /// Whether callers can request resource-specific user tokens.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("supportsResources")]
+        public bool? SupportsResources { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -61,8 +61,8 @@ namespace Vercel
         /// <param name="supportsRefinement">
         /// Whether callers can narrow user-token grants per request.
         /// </param>
-        /// <param name="supportsResources">
-        /// Whether callers can request resource-specific user tokens.
+        /// <param name="manualCredentialInput">
+        /// User authorization is completed by the Connect consent screen submitting a credential instead of an OAuth redirect.
         /// </param>
         /// <param name="scopes">
         /// Known allowed user-level scopes. For Slack this is the user scope set configured on the app; for OAuth it is the connector's enabled `userAuthorization.scopes` configuration.
@@ -70,8 +70,8 @@ namespace Vercel
         /// <param name="supportedAuthorizationDetails">
         /// Supported OAuth authorization-detail type names.
         /// </param>
-        /// <param name="manualCredentialInput">
-        /// User authorization is completed by the Connect consent screen submitting a credential instead of an OAuth redirect.
+        /// <param name="supportsResources">
+        /// Whether callers can request resource-specific user tokens.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -79,17 +79,17 @@ namespace Vercel
         public ConnectConnectorUserTokens(
             bool crossInstallation,
             bool supportsRefinement,
-            bool? supportsResources,
+            bool? manualCredentialInput,
             global::System.Collections.Generic.IList<string>? scopes,
             global::System.Collections.Generic.IList<string>? supportedAuthorizationDetails,
-            bool? manualCredentialInput)
+            bool? supportsResources)
         {
             this.CrossInstallation = crossInstallation;
-            this.SupportsRefinement = supportsRefinement;
-            this.SupportsResources = supportsResources;
+            this.ManualCredentialInput = manualCredentialInput;
             this.Scopes = scopes;
             this.SupportedAuthorizationDetails = supportedAuthorizationDetails;
-            this.ManualCredentialInput = manualCredentialInput;
+            this.SupportsRefinement = supportsRefinement;
+            this.SupportsResources = supportsResources;
         }
 
         /// <summary>

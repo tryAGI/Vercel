@@ -11,9 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("aggregations")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public required global::System.Collections.Generic.IList<string> Aggregations { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("defaultAggregation")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DefaultAggregation { get; set; }
 
         /// <summary>
         ///
@@ -32,23 +39,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("unit")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Unit { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("aggregations")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> Aggregations { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("defaultAggregation")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DefaultAggregation { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -59,29 +59,29 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetObservabilitySchemaByMetricIdResponseItem" /> class.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="description"></param>
-        /// <param name="dimensions"></param>
-        /// <param name="unit"></param>
         /// <param name="aggregations"></param>
         /// <param name="defaultAggregation"></param>
+        /// <param name="description"></param>
+        /// <param name="dimensions"></param>
+        /// <param name="id"></param>
+        /// <param name="unit"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetObservabilitySchemaByMetricIdResponseItem(
-            string id,
+            global::System.Collections.Generic.IList<string> aggregations,
+            string defaultAggregation,
             string description,
             global::System.Collections.Generic.IList<global::Vercel.GetObservabilitySchemaByMetricIdResponseItemDimension> dimensions,
-            string unit,
-            global::System.Collections.Generic.IList<string> aggregations,
-            string defaultAggregation)
+            string id,
+            string unit)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
-            this.Dimensions = dimensions ?? throw new global::System.ArgumentNullException(nameof(dimensions));
-            this.Unit = unit ?? throw new global::System.ArgumentNullException(nameof(unit));
             this.Aggregations = aggregations ?? throw new global::System.ArgumentNullException(nameof(aggregations));
             this.DefaultAggregation = defaultAggregation ?? throw new global::System.ArgumentNullException(nameof(defaultAggregation));
+            this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
+            this.Dimensions = dimensions ?? throw new global::System.ArgumentNullException(nameof(dimensions));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Unit = unit ?? throw new global::System.ArgumentNullException(nameof(unit));
         }
 
         /// <summary>

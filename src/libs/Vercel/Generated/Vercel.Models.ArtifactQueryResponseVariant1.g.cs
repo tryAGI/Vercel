@@ -11,22 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("size")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Size { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("taskDurationMs")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double TaskDurationMs { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tag")]
-        public string? Tag { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("dirtyHash")]
+        public string? DirtyHash { get; set; }
 
         /// <summary>
         ///
@@ -37,8 +23,22 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("dirtyHash")]
-        public string? DirtyHash { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("size")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double Size { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tag")]
+        public string? Tag { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("taskDurationMs")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double TaskDurationMs { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -51,24 +51,24 @@ namespace Vercel
         /// </summary>
         /// <param name="size"></param>
         /// <param name="taskDurationMs"></param>
-        /// <param name="tag"></param>
-        /// <param name="sha"></param>
         /// <param name="dirtyHash"></param>
+        /// <param name="sha"></param>
+        /// <param name="tag"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ArtifactQueryResponseVariant1(
             double size,
             double taskDurationMs,
-            string? tag,
+            string? dirtyHash,
             string? sha,
-            string? dirtyHash)
+            string? tag)
         {
-            this.Size = size;
-            this.TaskDurationMs = taskDurationMs;
-            this.Tag = tag;
-            this.Sha = sha;
             this.DirtyHash = dirtyHash;
+            this.Sha = sha;
+            this.Size = size;
+            this.Tag = tag;
+            this.TaskDurationMs = taskDurationMs;
         }
 
         /// <summary>

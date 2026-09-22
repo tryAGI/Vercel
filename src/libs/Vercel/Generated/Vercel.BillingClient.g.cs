@@ -34,7 +34,7 @@ namespace Vercel
         /// <inheritdoc/>
         public global::Vercel.AutoSDKClientOptions Options { get; }
 
-        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Vercel.SourceGenerationContext.Default);
+        internal global::System.Lazy<global::System.Text.Json.Serialization.JsonSerializerContext> JsonSerializerContextProvider { get; set; } = new(() => global::Vercel.BillingSourceGenerationContext.Default);
 
         /// <summary>
         ///

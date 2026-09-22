@@ -9,90 +9,6 @@ namespace Vercel
     public sealed partial class GetDeploymentResponseVariant2
     {
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("aliasAssignedAt")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>))]
-        public global::Vercel.OneOf<double?, bool?>? AliasAssignedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("alwaysRefuseToBuild")]
-        public bool? AlwaysRefuseToBuild { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("build")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetDeploymentResponseVariant2Build Build { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildArtifactUrls")]
-        public global::System.Collections.Generic.IList<string>? BuildArtifactUrls { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("builds")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant2Build2>? Builds { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("env")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> Env { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("resourceConfig")]
-        public global::Vercel.GetDeploymentResponseVariant2ResourceConfig? ResourceConfig { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("inspectorUrl")]
-        public string? InspectorUrl { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("isInConcurrentBuildsQueue")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool IsInConcurrentBuildsQueue { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("isInSystemBuildsQueue")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool IsInSystemBuildsQueue { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectSettings")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetDeploymentResponseVariant2ProjectSettings ProjectSettings { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrations")]
-        public global::Vercel.GetDeploymentResponseVariant2Integrations? Integrations { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("images")]
-        public global::Vercel.GetDeploymentResponseVariant2Images? Images { get; set; }
-
-        /// <summary>
         /// A list of all the aliases (default aliases, staging aliases and production aliases) that were assigned upon deployment creation<br/>
         /// Example: []
         /// </summary>
@@ -112,153 +28,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bootedAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double BootedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildingAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double BuildingAt { get; set; }
-
-        /// <summary>
-        /// Since April 2025 it necessary for On-Demand Concurrency Minutes calculation
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildContainerFinishedAt")]
-        public double? BuildContainerFinishedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildSkipped")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool BuildSkipped { get; set; }
-
-        /// <summary>
-        /// Information about the deployment creator
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("creator")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetDeploymentResponseVariant2Creator Creator { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("initReadyAt")]
-        public double? InitReadyAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("isFirstBranchDeployment")]
-        public bool? IsFirstBranchDeployment { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("lambdas")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant2Lambda>? Lambdas { get; set; }
-
-        /// <summary>
-        /// A boolean representing if the deployment is public or not. By default this is `false`<br/>
-        /// Example: false
-        /// </summary>
-        /// <example>false</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("public")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Public { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ready")]
-        public double? Ready { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2StatusJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetDeploymentResponseVariant2Status Status { get; set; }
-
-        /// <summary>
-        /// The team that owns the deployment if any
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
-        public global::Vercel.GetDeploymentResponseVariant2Team? Team { get; set; }
-
-        /// <summary>
-        /// An array of domains that were provided by the user when creating the Deployment.<br/>
-        /// Example: [sub1.example.com, sub2.example.com]
-        /// </summary>
-        /// <example>[sub1.example.com, sub2.example.com]</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("userAliases")]
-        public global::System.Collections.Generic.IList<string>? UserAliases { get; set; }
-
-        /// <summary>
-        /// Whether or not preview comments are enabled for the deployment<br/>
-        /// Example: false
-        /// </summary>
-        /// <example>false</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previewCommentsEnabled")]
-        public bool? PreviewCommentsEnabled { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ttyBuildLogs")]
-        public bool? TtyBuildLogs { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironment")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentResponseVariant2CustomEnvironmentVariant1, global::Vercel.GetDeploymentResponseVariant2CustomEnvironmentVariant2>))]
-        public global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2CustomEnvironmentVariant1, global::Vercel.GetDeploymentResponseVariant2CustomEnvironmentVariant2>? CustomEnvironment { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oomReport")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2OomReportJsonConverter))]
-        public global::Vercel.GetDeploymentResponseVariant2OomReport? OomReport { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("readyStateReason")]
-        public string? ReadyStateReason { get; set; }
-
-        /// <summary>
-        /// A string holding the unique ID of the deployment<br/>
-        /// Example: dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ
-        /// </summary>
-        /// <example>dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
-        /// If defined, either `staging` if a staging alias in the format `&lt;project&gt;.&lt;team&gt;.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the "preview" deployment.<br/>
-        /// Example: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </summary>
-        /// <example>openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2TargetJsonConverter))]
-        public global::Vercel.GetDeploymentResponseVariant2Target? Target { get; set; }
-
-        /// <summary>
-        /// The state of the deployment depending on the process of deploying, or if it is ready or in an error state<br/>
-        /// Example: READY
-        /// </summary>
-        /// <example>READY</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("readyState")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ReadyStateJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetDeploymentResponseVariant2ReadyState ReadyState { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("aliasAssignedAt")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>))]
+        public global::Vercel.OneOf<double?, bool?>? AliasAssignedAt { get; set; }
 
         /// <summary>
         /// An object that will contain a `code` and a `message` when the aliasing fails, otherwise the value will be `null`<br/>
@@ -271,51 +43,33 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("aliasFinal")]
+        public string? AliasFinal { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("aliasWarning")]
         public global::Vercel.GetDeploymentResponseVariant2AliasWarning? AliasWarning { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("errorCode")]
-        public string? ErrorCode { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("alwaysRefuseToBuild")]
+        public bool? AlwaysRefuseToBuild { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("errorMessage")]
-        public string? ErrorMessage { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("atproto")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentResponseVariant2AtprotoVariant1, global::Vercel.GetDeploymentResponseVariant2AtprotoVariant2>))]
+        public global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2AtprotoVariant1, global::Vercel.GetDeploymentResponseVariant2AtprotoVariant2>? Atproto { get; set; }
 
         /// <summary>
-        /// A number containing the date when the deployment was created in milliseconds<br/>
-        /// Example: 1540257589405L
+        /// Attribution metadata for the deployment, linking commit author to git and Vercel users. Only populated when the `enable-deployment-attribution` flag is enabled.
         /// </summary>
-        /// <example>1540257589405L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
-
-        /// <summary>
-        /// The name of the project associated with the deployment at the time that the deployment was created<br/>
-        /// Example: my-project
-        /// </summary>
-        /// <example>my-project</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2TypeJsonConverter))]
-        public global::Vercel.GetDeploymentResponseVariant2Type Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("aliasFinal")]
-        public string? AliasFinal { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("attribution")]
+        public global::Vercel.GetDeploymentResponseVariant2Attribution? Attribution { get; set; }
 
         /// <summary>
         /// applies to custom domains only, defaults to `true`
@@ -332,36 +86,54 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("bootedAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double BootedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("build")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetDeploymentResponseVariant2Build Build { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildArtifactUrls")]
+        public global::System.Collections.Generic.IList<string>? BuildArtifactUrls { get; set; }
+
+        /// <summary>
+        /// Since April 2025 it necessary for On-Demand Concurrency Minutes calculation
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildContainerFinishedAt")]
+        public double? BuildContainerFinishedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildErrorAt")]
         public double? BuildErrorAt { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("checksState")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ChecksStateJsonConverter))]
-        public global::Vercel.GetDeploymentResponseVariant2ChecksState? ChecksState { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildingAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double BuildingAt { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("checksConclusion")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ChecksConclusionJsonConverter))]
-        public global::Vercel.GetDeploymentResponseVariant2ChecksConclusion? ChecksConclusion { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("builds")]
+        public global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant2Build2>? Builds { get; set; }
 
         /// <summary>
-        /// A number containing the date when the deployment was deleted at milliseconds<br/>
-        /// Example: 1540257589405L
+        ///
         /// </summary>
-        /// <example>1540257589405L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deletedAt")]
-        public double? DeletedAt { get; set; }
-
-        /// <summary>
-        /// Computed field that is only available for deployments with a microfrontend configuration.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("defaultRoute")]
-        public string? DefaultRoute { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildSkipped")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool BuildSkipped { get; set; }
 
         /// <summary>
         ///
@@ -372,8 +144,122 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("checks")]
+        public global::Vercel.GetDeploymentResponseVariant2Checks? Checks { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("checksConclusion")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ChecksConclusionJsonConverter))]
+        public global::Vercel.GetDeploymentResponseVariant2ChecksConclusion? ChecksConclusion { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("checksState")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ChecksStateJsonConverter))]
+        public global::Vercel.GetDeploymentResponseVariant2ChecksState? ChecksState { get; set; }
+
+        /// <summary>
+        /// Since February 2025 the configuration must include snapshot data at the time of deployment creation to capture properties for the /deployments/:id/config endpoint utilized for displaying Deployment Configuration on the frontend This is optional because older deployments may not have this data captured
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("config")]
+        public global::Vercel.GetDeploymentResponseVariant2Config? Config { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("connectBuildsEnabled")]
+        public bool? ConnectBuildsEnabled { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("connectConfigurationId")]
+        public string? ConnectConfigurationId { get; set; }
+
+        /// <summary>
+        /// A number containing the date when the deployment was created in milliseconds<br/>
+        /// Example: 1540257589405L
+        /// </summary>
+        /// <example>1540257589405L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdIn")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string CreatedIn { get; set; }
+
+        /// <summary>
+        /// Information about the deployment creator
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("creator")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetDeploymentResponseVariant2Creator Creator { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("crons")]
+        public global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant2Cron>? Crons { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironment")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentResponseVariant2CustomEnvironmentVariant1, global::Vercel.GetDeploymentResponseVariant2CustomEnvironmentVariant2>))]
+        public global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2CustomEnvironmentVariant1, global::Vercel.GetDeploymentResponseVariant2CustomEnvironmentVariant2>? CustomEnvironment { get; set; }
+
+        /// <summary>
+        /// Computed field that is only available for deployments with a microfrontend configuration.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("defaultRoute")]
+        public string? DefaultRoute { get; set; }
+
+        /// <summary>
+        /// A number containing the date when the deployment was deleted at milliseconds<br/>
+        /// Example: 1540257589405L
+        /// </summary>
+        /// <example>1540257589405L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deletedAt")]
+        public double? DeletedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("duration")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetDeploymentResponseVariant2Duration Duration { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("env")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<string> Env { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("errorCode")]
+        public string? ErrorCode { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("errorLink")]
         public string? ErrorLink { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("errorMessage")]
+        public string? ErrorMessage { get; set; }
 
         /// <summary>
         ///
@@ -382,10 +268,24 @@ namespace Vercel
         public string? ErrorStep { get; set; }
 
         /// <summary>
-        /// Since November 2023 this field defines a set of regions that we will deploy the lambda to passively Lambdas will be deployed to these regions but only invoked if all of the primary `regions` are marked as out of service
+        ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("passiveRegions")]
-        public global::System.Collections.Generic.IList<string>? PassiveRegions { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("flags")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentResponseVariant2Flags, global::System.Collections.Generic.IList<object>>))]
+        public global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2Flags, global::System.Collections.Generic.IList<object>>? Flags { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("functions")]
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GetDeploymentResponseVariant2Functions2>? Functions { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitRepo")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentResponseVariant2GitRepoVariant1, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant2, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant3, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant4, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant5>))]
+        public global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2GitRepoVariant1, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant2, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant3, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant4, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant5>? GitRepo { get; set; }
 
         /// <summary>
         ///
@@ -393,6 +293,71 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("gitSource")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentResponseVariant2GitSourceVariant1, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant2, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant3, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant4, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant5, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant6, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant7, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant8, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant9, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant10, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant11, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant12, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant13, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant14, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant15, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant16, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant17, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant18, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant19>))]
         public global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2GitSourceVariant1, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant2, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant3, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant4, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant5, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant6, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant7, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant8, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant9, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant10, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant11, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant12, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant13, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant14, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant15, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant16, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant17, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant18, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant19>? GitSource { get; set; }
+
+        /// <summary>
+        /// A string holding the unique ID of the deployment<br/>
+        /// Example: dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ
+        /// </summary>
+        /// <example>dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("images")]
+        public global::Vercel.GetDeploymentResponseVariant2Images? Images { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("initReadyAt")]
+        public double? InitReadyAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("inspectorUrl")]
+        public string? InspectorUrl { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrations")]
+        public global::Vercel.GetDeploymentResponseVariant2Integrations? Integrations { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("isFirstBranchDeployment")]
+        public bool? IsFirstBranchDeployment { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("isInConcurrentBuildsQueue")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool IsInConcurrentBuildsQueue { get; set; }
+
+        /// <summary>
+        /// Whether this deployment completed through the instant static fast path.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("isInstantStatic")]
+        public bool? IsInstantStatic { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("isInSystemBuildsQueue")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool IsInSystemBuildsQueue { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("lambdas")]
+        public global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant2Lambda>? Lambdas { get; set; }
 
         /// <summary>
         /// Present when deployment was created with manual provisioning enabled, either explicitly or via the experimental BYOC git flow. The deployment stays in INITIALIZING until /continue is called.
@@ -410,8 +375,24 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("originCacheRegion")]
-        public string? OriginCacheRegion { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("microfrontends")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentResponseVariant2MicrofrontendsVariant1, global::Vercel.GetDeploymentResponseVariant2MicrofrontendsVariant2>))]
+        public global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2MicrofrontendsVariant1, global::Vercel.GetDeploymentResponseVariant2MicrofrontendsVariant2>? Microfrontends { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("monorepoManager")]
+        public string? MonorepoManager { get; set; }
+
+        /// <summary>
+        /// The name of the project associated with the deployment at the time that the deployment was created<br/>
+        /// Example: my-project
+        /// </summary>
+        /// <example>my-project</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
 
         /// <summary>
         /// If set it overrides the `projectSettings.nodeVersion` for this deployment.
@@ -419,6 +400,72 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("nodeVersion")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2NodeVersionJsonConverter))]
         public global::Vercel.GetDeploymentResponseVariant2NodeVersion? NodeVersion { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oidcTokenClaims")]
+        public global::Vercel.GetDeploymentResponseVariant2OidcTokenClaims? OidcTokenClaims { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("oomReport")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2OomReportJsonConverter))]
+        public global::Vercel.GetDeploymentResponseVariant2OomReport? OomReport { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("originCacheRegion")]
+        public string? OriginCacheRegion { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string OwnerId { get; set; }
+
+        /// <summary>
+        /// Since November 2023 this field defines a Secure Compute network that will only be used to deploy passive lambdas to (as in passiveRegions)
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("passiveConnectConfigurationId")]
+        public string? PassiveConnectConfigurationId { get; set; }
+
+        /// <summary>
+        /// Since November 2023 this field defines a set of regions that we will deploy the lambda to passively Lambdas will be deployed to these regions but only invoked if all of the primary `regions` are marked as out of service
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("passiveRegions")]
+        public global::System.Collections.Generic.IList<string>? PassiveRegions { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("plan")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2PlanJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetDeploymentResponseVariant2Plan Plan { get; set; }
+
+        /// <summary>
+        /// Metadata about the source platform that triggered the deployment. Allows us to map a deployment back to a platform (e.g. the chat that created it)
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("platform")]
+        public global::Vercel.GetDeploymentResponseVariant2Platform? Platform { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("prebuilt")]
+        public bool? Prebuilt { get; set; }
+
+        /// <summary>
+        /// Whether or not preview comments are enabled for the deployment<br/>
+        /// Example: false
+        /// </summary>
+        /// <example>false</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("previewCommentsEnabled")]
+        public bool? PreviewCommentsEnabled { get; set; }
 
         /// <summary>
         /// The public project information associated with the deployment.
@@ -429,8 +476,47 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prebuilt")]
-        public bool? Prebuilt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectSettings")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetDeploymentResponseVariant2ProjectSettings ProjectSettings { get; set; }
+
+        /// <summary>
+        /// A boolean representing if the deployment is public or not. By default this is `false`<br/>
+        /// Example: false
+        /// </summary>
+        /// <example>false</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("public")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Public { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ready")]
+        public double? Ready { get; set; }
+
+        /// <summary>
+        /// The state of the deployment depending on the process of deploying, or if it is ready or in an error state<br/>
+        /// Example: READY
+        /// </summary>
+        /// <example>READY</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("readyState")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ReadyStateJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetDeploymentResponseVariant2ReadyState ReadyState { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("readyStateReason")]
+        public string? ReadyStateReason { get; set; }
 
         /// <summary>
         /// Substate of deployment when readyState is 'READY' Tracks whether or not deployment has seen production traffic: - STAGED: never seen production traffic - ROLLING: in the process of having production traffic gradually transitioned. - PROMOTED: has seen production traffic
@@ -447,6 +533,30 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("regions")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<string> Regions { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("resourceConfig")]
+        public global::Vercel.GetDeploymentResponseVariant2ResourceConfig? ResourceConfig { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("routes")]
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2RouteVariant1, global::Vercel.GetDeploymentResponseVariant2RouteVariant2, global::Vercel.GetDeploymentResponseVariant2RouteVariant3>>? Routes { get; set; }
+
+        /// <summary>
+        /// NSNB Blocked metadata
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("seatBlock")]
+        public global::Vercel.GetDeploymentResponseVariant2SeatBlock? SeatBlock { get; set; }
+
+        /// <summary>
+        /// Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("services")]
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2ServiceVariant1, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2>>? Services { get; set; }
 
         /// <summary>
         /// flag to indicate if the deployment was deleted by retention policy<br/>
@@ -466,6 +576,42 @@ namespace Vercel
         public global::Vercel.GetDeploymentResponseVariant2Source? Source { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2StatusJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetDeploymentResponseVariant2Status Status { get; set; }
+
+        /// <summary>
+        /// If defined, either `staging` if a staging alias in the format `&lt;project&gt;.&lt;team&gt;.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the "preview" deployment.<br/>
+        /// Example: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        /// <example>openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2TargetJsonConverter))]
+        public global::Vercel.GetDeploymentResponseVariant2Target? Target { get; set; }
+
+        /// <summary>
+        /// The team that owns the deployment if any
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("team")]
+        public global::Vercel.GetDeploymentResponseVariant2Team? Team { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ttyBuildLogs")]
+        public bool? TtyBuildLogs { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2TypeJsonConverter))]
+        public global::Vercel.GetDeploymentResponseVariant2Type Type { get; set; }
+
+        /// <summary>
         /// A number containing the date when the deployment was undeleted at milliseconds<br/>
         /// Example: 1540257589405L
         /// </summary>
@@ -481,6 +627,14 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("url")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Url { get; set; }
+
+        /// <summary>
+        /// An array of domains that were provided by the user when creating the Deployment.<br/>
+        /// Example: [sub1.example.com, sub2.example.com]
+        /// </summary>
+        /// <example>[sub1.example.com, sub2.example.com]</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("userAliases")]
+        public global::System.Collections.Generic.IList<string>? UserAliases { get; set; }
 
         /// <summary>
         /// Since January 2025 User-configured deployment ID for skew protection with pre-built deployments. This is set when users configure a custom deploymentId in their next.config.js file. This allows Next.js to use skew protection even when deployments are pre-built outside of Vercel's build system.<br/>
@@ -500,153 +654,6 @@ namespace Vercel
         public required double Version { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("oidcTokenClaims")]
-        public global::Vercel.GetDeploymentResponseVariant2OidcTokenClaims? OidcTokenClaims { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("plan")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2PlanJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetDeploymentResponseVariant2Plan Plan { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("connectBuildsEnabled")]
-        public bool? ConnectBuildsEnabled { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("connectConfigurationId")]
-        public string? ConnectConfigurationId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdIn")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string CreatedIn { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("crons")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant2Cron>? Crons { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("atproto")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentResponseVariant2AtprotoVariant1, global::Vercel.GetDeploymentResponseVariant2AtprotoVariant2>))]
-        public global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2AtprotoVariant1, global::Vercel.GetDeploymentResponseVariant2AtprotoVariant2>? Atproto { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("functions")]
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GetDeploymentResponseVariant2Functions2>? Functions { get; set; }
-
-        /// <summary>
-        /// Whether this deployment completed through the instant static fast path.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("isInstantStatic")]
-        public bool? IsInstantStatic { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("monorepoManager")]
-        public string? MonorepoManager { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
-
-        /// <summary>
-        /// Since November 2023 this field defines a Secure Compute network that will only be used to deploy passive lambdas to (as in passiveRegions)
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("passiveConnectConfigurationId")]
-        public string? PassiveConnectConfigurationId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("routes")]
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2RouteVariant1, global::Vercel.GetDeploymentResponseVariant2RouteVariant2, global::Vercel.GetDeploymentResponseVariant2RouteVariant3>>? Routes { get; set; }
-
-        /// <summary>
-        /// Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("services")]
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2ServiceVariant1, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2>>? Services { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitRepo")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentResponseVariant2GitRepoVariant1, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant2, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant3, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant4, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant5>))]
-        public global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2GitRepoVariant1, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant2, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant3, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant4, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant5>? GitRepo { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("flags")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentResponseVariant2Flags, global::System.Collections.Generic.IList<object>>))]
-        public global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2Flags, global::System.Collections.Generic.IList<object>>? Flags { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microfrontends")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentResponseVariant2MicrofrontendsVariant1, global::Vercel.GetDeploymentResponseVariant2MicrofrontendsVariant2>))]
-        public global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2MicrofrontendsVariant1, global::Vercel.GetDeploymentResponseVariant2MicrofrontendsVariant2>? Microfrontends { get; set; }
-
-        /// <summary>
-        /// Metadata about the source platform that triggered the deployment. Allows us to map a deployment back to a platform (e.g. the chat that created it)
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("platform")]
-        public global::Vercel.GetDeploymentResponseVariant2Platform? Platform { get; set; }
-
-        /// <summary>
-        /// Since February 2025 the configuration must include snapshot data at the time of deployment creation to capture properties for the /deployments/:id/config endpoint utilized for displaying Deployment Configuration on the frontend This is optional because older deployments may not have this data captured
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("config")]
-        public global::Vercel.GetDeploymentResponseVariant2Config? Config { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("checks")]
-        public global::Vercel.GetDeploymentResponseVariant2Checks? Checks { get; set; }
-
-        /// <summary>
-        /// NSNB Blocked metadata
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("seatBlock")]
-        public global::Vercel.GetDeploymentResponseVariant2SeatBlock? SeatBlock { get; set; }
-
-        /// <summary>
-        /// Attribution metadata for the deployment, linking commit author to git and Vercel users. Only populated when the `enable-deployment-attribution` flag is enabled.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("attribution")]
-        public global::Vercel.GetDeploymentResponseVariant2Attribution? Attribution { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -655,47 +662,52 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDeploymentResponseVariant2" /> class.
         /// </summary>
-        /// <param name="build"></param>
-        /// <param name="env"></param>
-        /// <param name="isInConcurrentBuildsQueue"></param>
-        /// <param name="isInSystemBuildsQueue"></param>
-        /// <param name="projectSettings"></param>
         /// <param name="aliasAssigned">
         /// A boolean that will be true when the aliases from the alias property were assigned successfully<br/>
         /// Example: true
         /// </param>
         /// <param name="bootedAt"></param>
+        /// <param name="build"></param>
         /// <param name="buildingAt"></param>
         /// <param name="buildSkipped"></param>
+        /// <param name="createdAt">
+        /// A number containing the date when the deployment was created in milliseconds<br/>
+        /// Example: 1540257589405L
+        /// </param>
+        /// <param name="createdIn"></param>
         /// <param name="creator">
         /// Information about the deployment creator
         /// </param>
-        /// <param name="public">
-        /// A boolean representing if the deployment is public or not. By default this is `false`<br/>
-        /// Example: false
-        /// </param>
-        /// <param name="status"></param>
+        /// <param name="duration"></param>
+        /// <param name="env"></param>
         /// <param name="id">
         /// A string holding the unique ID of the deployment<br/>
         /// Example: dpl_89qyp1cskzkLrVicDaZoDbjyHuDJ
+        /// </param>
+        /// <param name="isInConcurrentBuildsQueue"></param>
+        /// <param name="isInSystemBuildsQueue"></param>
+        /// <param name="meta"></param>
+        /// <param name="name">
+        /// The name of the project associated with the deployment at the time that the deployment was created<br/>
+        /// Example: my-project
+        /// </param>
+        /// <param name="ownerId"></param>
+        /// <param name="plan"></param>
+        /// <param name="projectId"></param>
+        /// <param name="projectSettings"></param>
+        /// <param name="public">
+        /// A boolean representing if the deployment is public or not. By default this is `false`<br/>
+        /// Example: false
         /// </param>
         /// <param name="readyState">
         /// The state of the deployment depending on the process of deploying, or if it is ready or in an error state<br/>
         /// Example: READY
         /// </param>
-        /// <param name="createdAt">
-        /// A number containing the date when the deployment was created in milliseconds<br/>
-        /// Example: 1540257589405L
-        /// </param>
-        /// <param name="name">
-        /// The name of the project associated with the deployment at the time that the deployment was created<br/>
-        /// Example: my-project
-        /// </param>
-        /// <param name="meta"></param>
         /// <param name="regions">
         /// The regions the deployment exists in<br/>
         /// Example: [sfo1]
         /// </param>
+        /// <param name="status"></param>
         /// <param name="url">
         /// A string with the unique URL of the deployment<br/>
         /// Example: my-instant-deployment-3ij3cxz9qr.now.sh
@@ -704,91 +716,107 @@ namespace Vercel
         /// The platform version that was used to create the deployment.<br/>
         /// Example: 2
         /// </param>
-        /// <param name="projectId"></param>
-        /// <param name="plan"></param>
-        /// <param name="createdIn"></param>
-        /// <param name="ownerId"></param>
-        /// <param name="aliasAssignedAt"></param>
-        /// <param name="alwaysRefuseToBuild"></param>
-        /// <param name="buildArtifactUrls"></param>
-        /// <param name="builds"></param>
-        /// <param name="resourceConfig"></param>
-        /// <param name="inspectorUrl"></param>
-        /// <param name="integrations"></param>
-        /// <param name="images"></param>
         /// <param name="alias">
         /// A list of all the aliases (default aliases, staging aliases and production aliases) that were assigned upon deployment creation<br/>
         /// Example: []
         /// </param>
-        /// <param name="buildContainerFinishedAt">
-        /// Since April 2025 it necessary for On-Demand Concurrency Minutes calculation
-        /// </param>
-        /// <param name="initReadyAt"></param>
-        /// <param name="isFirstBranchDeployment"></param>
-        /// <param name="lambdas"></param>
-        /// <param name="ready"></param>
-        /// <param name="team">
-        /// The team that owns the deployment if any
-        /// </param>
-        /// <param name="userAliases">
-        /// An array of domains that were provided by the user when creating the Deployment.<br/>
-        /// Example: [sub1.example.com, sub2.example.com]
-        /// </param>
-        /// <param name="previewCommentsEnabled">
-        /// Whether or not preview comments are enabled for the deployment<br/>
-        /// Example: false
-        /// </param>
-        /// <param name="ttyBuildLogs"></param>
-        /// <param name="customEnvironment"></param>
-        /// <param name="oomReport"></param>
-        /// <param name="readyStateReason"></param>
-        /// <param name="target">
-        /// If defined, either `staging` if a staging alias in the format `&lt;project&gt;.&lt;team&gt;.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the "preview" deployment.<br/>
-        /// Example: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
-        /// </param>
+        /// <param name="aliasAssignedAt"></param>
         /// <param name="aliasError">
         /// An object that will contain a `code` and a `message` when the aliasing fails, otherwise the value will be `null`<br/>
         /// Example: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
         /// </param>
-        /// <param name="aliasWarning"></param>
-        /// <param name="errorCode"></param>
-        /// <param name="errorMessage"></param>
-        /// <param name="type"></param>
         /// <param name="aliasFinal"></param>
+        /// <param name="aliasWarning"></param>
+        /// <param name="alwaysRefuseToBuild"></param>
+        /// <param name="atproto"></param>
+        /// <param name="attribution">
+        /// Attribution metadata for the deployment, linking commit author to git and Vercel users. Only populated when the `enable-deployment-attribution` flag is enabled.
+        /// </param>
         /// <param name="autoAssignCustomDomains">
         /// applies to custom domains only, defaults to `true`
         /// </param>
         /// <param name="automaticAliases"></param>
+        /// <param name="buildArtifactUrls"></param>
+        /// <param name="buildContainerFinishedAt">
+        /// Since April 2025 it necessary for On-Demand Concurrency Minutes calculation
+        /// </param>
         /// <param name="buildErrorAt"></param>
-        /// <param name="checksState"></param>
+        /// <param name="builds"></param>
+        /// <param name="canceledAt"></param>
+        /// <param name="checks"></param>
         /// <param name="checksConclusion"></param>
+        /// <param name="checksState"></param>
+        /// <param name="config">
+        /// Since February 2025 the configuration must include snapshot data at the time of deployment creation to capture properties for the /deployments/:id/config endpoint utilized for displaying Deployment Configuration on the frontend This is optional because older deployments may not have this data captured
+        /// </param>
+        /// <param name="connectBuildsEnabled"></param>
+        /// <param name="connectConfigurationId"></param>
+        /// <param name="crons"></param>
+        /// <param name="customEnvironment"></param>
+        /// <param name="defaultRoute">
+        /// Computed field that is only available for deployments with a microfrontend configuration.
+        /// </param>
         /// <param name="deletedAt">
         /// A number containing the date when the deployment was deleted at milliseconds<br/>
         /// Example: 1540257589405L
         /// </param>
-        /// <param name="defaultRoute">
-        /// Computed field that is only available for deployments with a microfrontend configuration.
-        /// </param>
-        /// <param name="canceledAt"></param>
+        /// <param name="errorCode"></param>
         /// <param name="errorLink"></param>
+        /// <param name="errorMessage"></param>
         /// <param name="errorStep"></param>
-        /// <param name="passiveRegions">
-        /// Since November 2023 this field defines a set of regions that we will deploy the lambda to passively Lambdas will be deployed to these regions but only invoked if all of the primary `regions` are marked as out of service
-        /// </param>
+        /// <param name="flags"></param>
+        /// <param name="functions"></param>
+        /// <param name="gitRepo"></param>
         /// <param name="gitSource"></param>
+        /// <param name="images"></param>
+        /// <param name="initReadyAt"></param>
+        /// <param name="inspectorUrl"></param>
+        /// <param name="integrations"></param>
+        /// <param name="isFirstBranchDeployment"></param>
+        /// <param name="isInstantStatic">
+        /// Whether this deployment completed through the instant static fast path.
+        /// </param>
+        /// <param name="lambdas"></param>
         /// <param name="manualProvisioning">
         /// Present when deployment was created with manual provisioning enabled, either explicitly or via the experimental BYOC git flow. The deployment stays in INITIALIZING until /continue is called.
         /// </param>
-        /// <param name="originCacheRegion"></param>
+        /// <param name="microfrontends"></param>
+        /// <param name="monorepoManager"></param>
         /// <param name="nodeVersion">
         /// If set it overrides the `projectSettings.nodeVersion` for this deployment.
+        /// </param>
+        /// <param name="oidcTokenClaims"></param>
+        /// <param name="oomReport"></param>
+        /// <param name="originCacheRegion"></param>
+        /// <param name="passiveConnectConfigurationId">
+        /// Since November 2023 this field defines a Secure Compute network that will only be used to deploy passive lambdas to (as in passiveRegions)
+        /// </param>
+        /// <param name="passiveRegions">
+        /// Since November 2023 this field defines a set of regions that we will deploy the lambda to passively Lambdas will be deployed to these regions but only invoked if all of the primary `regions` are marked as out of service
+        /// </param>
+        /// <param name="platform">
+        /// Metadata about the source platform that triggered the deployment. Allows us to map a deployment back to a platform (e.g. the chat that created it)
+        /// </param>
+        /// <param name="prebuilt"></param>
+        /// <param name="previewCommentsEnabled">
+        /// Whether or not preview comments are enabled for the deployment<br/>
+        /// Example: false
         /// </param>
         /// <param name="project">
         /// The public project information associated with the deployment.
         /// </param>
-        /// <param name="prebuilt"></param>
+        /// <param name="ready"></param>
+        /// <param name="readyStateReason"></param>
         /// <param name="readySubstate">
         /// Substate of deployment when readyState is 'READY' Tracks whether or not deployment has seen production traffic: - STAGED: never seen production traffic - ROLLING: in the process of having production traffic gradually transitioned. - PROMOTED: has seen production traffic
+        /// </param>
+        /// <param name="resourceConfig"></param>
+        /// <param name="routes"></param>
+        /// <param name="seatBlock">
+        /// NSNB Blocked metadata
+        /// </param>
+        /// <param name="services">
+        /// Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime.
         /// </param>
         /// <param name="softDeletedByRetention">
         /// flag to indicate if the deployment was deleted by retention policy<br/>
@@ -798,238 +826,220 @@ namespace Vercel
         /// Where was the deployment created from. Best-effort guess for metrics only — not authoritative; do not gate behavior on it.<br/>
         /// Example: cli
         /// </param>
+        /// <param name="target">
+        /// If defined, either `staging` if a staging alias in the format `&lt;project&gt;.&lt;team&gt;.now.sh` was assigned upon creation, or `production` if the aliases from `alias` were assigned. `null` value indicates the "preview" deployment.<br/>
+        /// Example: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </param>
+        /// <param name="team">
+        /// The team that owns the deployment if any
+        /// </param>
+        /// <param name="ttyBuildLogs"></param>
+        /// <param name="type"></param>
         /// <param name="undeletedAt">
         /// A number containing the date when the deployment was undeleted at milliseconds<br/>
         /// Example: 1540257589405L
+        /// </param>
+        /// <param name="userAliases">
+        /// An array of domains that were provided by the user when creating the Deployment.<br/>
+        /// Example: [sub1.example.com, sub2.example.com]
         /// </param>
         /// <param name="userConfiguredDeploymentId">
         /// Since January 2025 User-configured deployment ID for skew protection with pre-built deployments. This is set when users configure a custom deploymentId in their next.config.js file. This allows Next.js to use skew protection even when deployments are pre-built outside of Vercel's build system.<br/>
         /// Example: abc123
         /// </param>
-        /// <param name="oidcTokenClaims"></param>
-        /// <param name="connectBuildsEnabled"></param>
-        /// <param name="connectConfigurationId"></param>
-        /// <param name="crons"></param>
-        /// <param name="atproto"></param>
-        /// <param name="functions"></param>
-        /// <param name="isInstantStatic">
-        /// Whether this deployment completed through the instant static fast path.
-        /// </param>
-        /// <param name="monorepoManager"></param>
-        /// <param name="passiveConnectConfigurationId">
-        /// Since November 2023 this field defines a Secure Compute network that will only be used to deploy passive lambdas to (as in passiveRegions)
-        /// </param>
-        /// <param name="routes"></param>
-        /// <param name="services">
-        /// Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime.
-        /// </param>
-        /// <param name="gitRepo"></param>
-        /// <param name="flags"></param>
-        /// <param name="microfrontends"></param>
-        /// <param name="platform">
-        /// Metadata about the source platform that triggered the deployment. Allows us to map a deployment back to a platform (e.g. the chat that created it)
-        /// </param>
-        /// <param name="config">
-        /// Since February 2025 the configuration must include snapshot data at the time of deployment creation to capture properties for the /deployments/:id/config endpoint utilized for displaying Deployment Configuration on the frontend This is optional because older deployments may not have this data captured
-        /// </param>
-        /// <param name="checks"></param>
-        /// <param name="seatBlock">
-        /// NSNB Blocked metadata
-        /// </param>
-        /// <param name="attribution">
-        /// Attribution metadata for the deployment, linking commit author to git and Vercel users. Only populated when the `enable-deployment-attribution` flag is enabled.
-        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant2(
-            global::Vercel.GetDeploymentResponseVariant2Build build,
-            global::System.Collections.Generic.IList<string> env,
-            bool isInConcurrentBuildsQueue,
-            bool isInSystemBuildsQueue,
-            global::Vercel.GetDeploymentResponseVariant2ProjectSettings projectSettings,
             bool aliasAssigned,
             double bootedAt,
+            global::Vercel.GetDeploymentResponseVariant2Build build,
             double buildingAt,
             bool buildSkipped,
-            global::Vercel.GetDeploymentResponseVariant2Creator creator,
-            bool @public,
-            global::Vercel.GetDeploymentResponseVariant2Status status,
-            string id,
-            global::Vercel.GetDeploymentResponseVariant2ReadyState readyState,
             double createdAt,
-            string name,
+            string createdIn,
+            global::Vercel.GetDeploymentResponseVariant2Creator creator,
+            global::Vercel.GetDeploymentResponseVariant2Duration duration,
+            global::System.Collections.Generic.IList<string> env,
+            string id,
+            bool isInConcurrentBuildsQueue,
+            bool isInSystemBuildsQueue,
             global::System.Collections.Generic.Dictionary<string, string> meta,
+            string name,
+            string ownerId,
+            global::Vercel.GetDeploymentResponseVariant2Plan plan,
+            string projectId,
+            global::Vercel.GetDeploymentResponseVariant2ProjectSettings projectSettings,
+            bool @public,
+            global::Vercel.GetDeploymentResponseVariant2ReadyState readyState,
             global::System.Collections.Generic.IList<string> regions,
+            global::Vercel.GetDeploymentResponseVariant2Status status,
             string url,
             double version,
-            string projectId,
-            global::Vercel.GetDeploymentResponseVariant2Plan plan,
-            string createdIn,
-            string ownerId,
-            global::Vercel.OneOf<double?, bool?>? aliasAssignedAt,
-            bool? alwaysRefuseToBuild,
-            global::System.Collections.Generic.IList<string>? buildArtifactUrls,
-            global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant2Build2>? builds,
-            global::Vercel.GetDeploymentResponseVariant2ResourceConfig? resourceConfig,
-            string? inspectorUrl,
-            global::Vercel.GetDeploymentResponseVariant2Integrations? integrations,
-            global::Vercel.GetDeploymentResponseVariant2Images? images,
             global::System.Collections.Generic.IList<string>? alias,
-            double? buildContainerFinishedAt,
-            double? initReadyAt,
-            bool? isFirstBranchDeployment,
-            global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant2Lambda>? lambdas,
-            double? ready,
-            global::Vercel.GetDeploymentResponseVariant2Team? team,
-            global::System.Collections.Generic.IList<string>? userAliases,
-            bool? previewCommentsEnabled,
-            bool? ttyBuildLogs,
-            global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2CustomEnvironmentVariant1, global::Vercel.GetDeploymentResponseVariant2CustomEnvironmentVariant2>? customEnvironment,
-            global::Vercel.GetDeploymentResponseVariant2OomReport? oomReport,
-            string? readyStateReason,
-            global::Vercel.GetDeploymentResponseVariant2Target? target,
+            global::Vercel.OneOf<double?, bool?>? aliasAssignedAt,
             global::Vercel.GetDeploymentResponseVariant2AliasError? aliasError,
-            global::Vercel.GetDeploymentResponseVariant2AliasWarning? aliasWarning,
-            string? errorCode,
-            string? errorMessage,
-            global::Vercel.GetDeploymentResponseVariant2Type type,
             string? aliasFinal,
+            global::Vercel.GetDeploymentResponseVariant2AliasWarning? aliasWarning,
+            bool? alwaysRefuseToBuild,
+            global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2AtprotoVariant1, global::Vercel.GetDeploymentResponseVariant2AtprotoVariant2>? atproto,
+            global::Vercel.GetDeploymentResponseVariant2Attribution? attribution,
             bool? autoAssignCustomDomains,
             global::System.Collections.Generic.IList<string>? automaticAliases,
+            global::System.Collections.Generic.IList<string>? buildArtifactUrls,
+            double? buildContainerFinishedAt,
             double? buildErrorAt,
-            global::Vercel.GetDeploymentResponseVariant2ChecksState? checksState,
-            global::Vercel.GetDeploymentResponseVariant2ChecksConclusion? checksConclusion,
-            double? deletedAt,
-            string? defaultRoute,
+            global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant2Build2>? builds,
             double? canceledAt,
-            string? errorLink,
-            string? errorStep,
-            global::System.Collections.Generic.IList<string>? passiveRegions,
-            global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2GitSourceVariant1, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant2, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant3, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant4, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant5, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant6, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant7, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant8, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant9, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant10, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant11, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant12, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant13, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant14, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant15, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant16, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant17, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant18, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant19>? gitSource,
-            global::Vercel.GetDeploymentResponseVariant2ManualProvisioning? manualProvisioning,
-            string? originCacheRegion,
-            global::Vercel.GetDeploymentResponseVariant2NodeVersion? nodeVersion,
-            global::Vercel.GetDeploymentResponseVariant2Project? project,
-            bool? prebuilt,
-            global::Vercel.GetDeploymentResponseVariant2ReadySubstate? readySubstate,
-            bool? softDeletedByRetention,
-            global::Vercel.GetDeploymentResponseVariant2Source? source,
-            double? undeletedAt,
-            string? userConfiguredDeploymentId,
-            global::Vercel.GetDeploymentResponseVariant2OidcTokenClaims? oidcTokenClaims,
+            global::Vercel.GetDeploymentResponseVariant2Checks? checks,
+            global::Vercel.GetDeploymentResponseVariant2ChecksConclusion? checksConclusion,
+            global::Vercel.GetDeploymentResponseVariant2ChecksState? checksState,
+            global::Vercel.GetDeploymentResponseVariant2Config? config,
             bool? connectBuildsEnabled,
             string? connectConfigurationId,
             global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant2Cron>? crons,
-            global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2AtprotoVariant1, global::Vercel.GetDeploymentResponseVariant2AtprotoVariant2>? atproto,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.GetDeploymentResponseVariant2Functions2>? functions,
-            bool? isInstantStatic,
-            string? monorepoManager,
-            string? passiveConnectConfigurationId,
-            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2RouteVariant1, global::Vercel.GetDeploymentResponseVariant2RouteVariant2, global::Vercel.GetDeploymentResponseVariant2RouteVariant3>>? routes,
-            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2ServiceVariant1, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2>>? services,
-            global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2GitRepoVariant1, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant2, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant3, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant4, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant5>? gitRepo,
+            global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2CustomEnvironmentVariant1, global::Vercel.GetDeploymentResponseVariant2CustomEnvironmentVariant2>? customEnvironment,
+            string? defaultRoute,
+            double? deletedAt,
+            string? errorCode,
+            string? errorLink,
+            string? errorMessage,
+            string? errorStep,
             global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2Flags, global::System.Collections.Generic.IList<object>>? flags,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.GetDeploymentResponseVariant2Functions2>? functions,
+            global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2GitRepoVariant1, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant2, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant3, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant4, global::Vercel.GetDeploymentResponseVariant2GitRepoVariant5>? gitRepo,
+            global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2GitSourceVariant1, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant2, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant3, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant4, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant5, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant6, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant7, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant8, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant9, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant10, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant11, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant12, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant13, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant14, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant15, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant16, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant17, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant18, global::Vercel.GetDeploymentResponseVariant2GitSourceVariant19>? gitSource,
+            global::Vercel.GetDeploymentResponseVariant2Images? images,
+            double? initReadyAt,
+            string? inspectorUrl,
+            global::Vercel.GetDeploymentResponseVariant2Integrations? integrations,
+            bool? isFirstBranchDeployment,
+            bool? isInstantStatic,
+            global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant2Lambda>? lambdas,
+            global::Vercel.GetDeploymentResponseVariant2ManualProvisioning? manualProvisioning,
             global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2MicrofrontendsVariant1, global::Vercel.GetDeploymentResponseVariant2MicrofrontendsVariant2>? microfrontends,
+            string? monorepoManager,
+            global::Vercel.GetDeploymentResponseVariant2NodeVersion? nodeVersion,
+            global::Vercel.GetDeploymentResponseVariant2OidcTokenClaims? oidcTokenClaims,
+            global::Vercel.GetDeploymentResponseVariant2OomReport? oomReport,
+            string? originCacheRegion,
+            string? passiveConnectConfigurationId,
+            global::System.Collections.Generic.IList<string>? passiveRegions,
             global::Vercel.GetDeploymentResponseVariant2Platform? platform,
-            global::Vercel.GetDeploymentResponseVariant2Config? config,
-            global::Vercel.GetDeploymentResponseVariant2Checks? checks,
+            bool? prebuilt,
+            bool? previewCommentsEnabled,
+            global::Vercel.GetDeploymentResponseVariant2Project? project,
+            double? ready,
+            string? readyStateReason,
+            global::Vercel.GetDeploymentResponseVariant2ReadySubstate? readySubstate,
+            global::Vercel.GetDeploymentResponseVariant2ResourceConfig? resourceConfig,
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2RouteVariant1, global::Vercel.GetDeploymentResponseVariant2RouteVariant2, global::Vercel.GetDeploymentResponseVariant2RouteVariant3>>? routes,
             global::Vercel.GetDeploymentResponseVariant2SeatBlock? seatBlock,
-            global::Vercel.GetDeploymentResponseVariant2Attribution? attribution)
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant2ServiceVariant1, global::Vercel.GetDeploymentResponseVariant2ServiceVariant2>>? services,
+            bool? softDeletedByRetention,
+            global::Vercel.GetDeploymentResponseVariant2Source? source,
+            global::Vercel.GetDeploymentResponseVariant2Target? target,
+            global::Vercel.GetDeploymentResponseVariant2Team? team,
+            bool? ttyBuildLogs,
+            global::Vercel.GetDeploymentResponseVariant2Type type,
+            double? undeletedAt,
+            global::System.Collections.Generic.IList<string>? userAliases,
+            string? userConfiguredDeploymentId)
         {
-            this.AliasAssignedAt = aliasAssignedAt;
-            this.AlwaysRefuseToBuild = alwaysRefuseToBuild;
-            this.Build = build ?? throw new global::System.ArgumentNullException(nameof(build));
-            this.BuildArtifactUrls = buildArtifactUrls;
-            this.Builds = builds;
-            this.Env = env ?? throw new global::System.ArgumentNullException(nameof(env));
-            this.ResourceConfig = resourceConfig;
-            this.InspectorUrl = inspectorUrl;
-            this.IsInConcurrentBuildsQueue = isInConcurrentBuildsQueue;
-            this.IsInSystemBuildsQueue = isInSystemBuildsQueue;
-            this.ProjectSettings = projectSettings ?? throw new global::System.ArgumentNullException(nameof(projectSettings));
-            this.Integrations = integrations;
-            this.Images = images;
             this.Alias = alias;
             this.AliasAssigned = aliasAssigned;
-            this.BootedAt = bootedAt;
-            this.BuildingAt = buildingAt;
-            this.BuildContainerFinishedAt = buildContainerFinishedAt;
-            this.BuildSkipped = buildSkipped;
-            this.Creator = creator ?? throw new global::System.ArgumentNullException(nameof(creator));
-            this.InitReadyAt = initReadyAt;
-            this.IsFirstBranchDeployment = isFirstBranchDeployment;
-            this.Lambdas = lambdas;
-            this.Public = @public;
-            this.Ready = ready;
-            this.Status = status;
-            this.Team = team;
-            this.UserAliases = userAliases;
-            this.PreviewCommentsEnabled = previewCommentsEnabled;
-            this.TtyBuildLogs = ttyBuildLogs;
-            this.CustomEnvironment = customEnvironment;
-            this.OomReport = oomReport;
-            this.ReadyStateReason = readyStateReason;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Target = target;
-            this.ReadyState = readyState;
+            this.AliasAssignedAt = aliasAssignedAt;
             this.AliasError = aliasError;
-            this.AliasWarning = aliasWarning;
-            this.ErrorCode = errorCode;
-            this.ErrorMessage = errorMessage;
-            this.CreatedAt = createdAt;
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Type = type;
             this.AliasFinal = aliasFinal;
+            this.AliasWarning = aliasWarning;
+            this.AlwaysRefuseToBuild = alwaysRefuseToBuild;
+            this.Atproto = atproto;
+            this.Attribution = attribution;
             this.AutoAssignCustomDomains = autoAssignCustomDomains;
             this.AutomaticAliases = automaticAliases;
+            this.BootedAt = bootedAt;
+            this.Build = build ?? throw new global::System.ArgumentNullException(nameof(build));
+            this.BuildArtifactUrls = buildArtifactUrls;
+            this.BuildContainerFinishedAt = buildContainerFinishedAt;
             this.BuildErrorAt = buildErrorAt;
-            this.ChecksState = checksState;
-            this.ChecksConclusion = checksConclusion;
-            this.DeletedAt = deletedAt;
-            this.DefaultRoute = defaultRoute;
+            this.BuildingAt = buildingAt;
+            this.Builds = builds;
+            this.BuildSkipped = buildSkipped;
             this.CanceledAt = canceledAt;
-            this.ErrorLink = errorLink;
-            this.ErrorStep = errorStep;
-            this.PassiveRegions = passiveRegions;
-            this.GitSource = gitSource;
-            this.ManualProvisioning = manualProvisioning;
-            this.Meta = meta ?? throw new global::System.ArgumentNullException(nameof(meta));
-            this.OriginCacheRegion = originCacheRegion;
-            this.NodeVersion = nodeVersion;
-            this.Project = project;
-            this.Prebuilt = prebuilt;
-            this.ReadySubstate = readySubstate;
-            this.Regions = regions ?? throw new global::System.ArgumentNullException(nameof(regions));
-            this.SoftDeletedByRetention = softDeletedByRetention;
-            this.Source = source;
-            this.UndeletedAt = undeletedAt;
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
-            this.UserConfiguredDeploymentId = userConfiguredDeploymentId;
-            this.Version = version;
-            this.OidcTokenClaims = oidcTokenClaims;
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.Plan = plan;
+            this.Checks = checks;
+            this.ChecksConclusion = checksConclusion;
+            this.ChecksState = checksState;
+            this.Config = config;
             this.ConnectBuildsEnabled = connectBuildsEnabled;
             this.ConnectConfigurationId = connectConfigurationId;
+            this.CreatedAt = createdAt;
             this.CreatedIn = createdIn ?? throw new global::System.ArgumentNullException(nameof(createdIn));
+            this.Creator = creator ?? throw new global::System.ArgumentNullException(nameof(creator));
             this.Crons = crons;
-            this.Atproto = atproto;
+            this.CustomEnvironment = customEnvironment;
+            this.DefaultRoute = defaultRoute;
+            this.DeletedAt = deletedAt;
+            this.Duration = duration ?? throw new global::System.ArgumentNullException(nameof(duration));
+            this.Env = env ?? throw new global::System.ArgumentNullException(nameof(env));
+            this.ErrorCode = errorCode;
+            this.ErrorLink = errorLink;
+            this.ErrorMessage = errorMessage;
+            this.ErrorStep = errorStep;
+            this.Flags = flags;
             this.Functions = functions;
+            this.GitRepo = gitRepo;
+            this.GitSource = gitSource;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Images = images;
+            this.InitReadyAt = initReadyAt;
+            this.InspectorUrl = inspectorUrl;
+            this.Integrations = integrations;
+            this.IsFirstBranchDeployment = isFirstBranchDeployment;
+            this.IsInConcurrentBuildsQueue = isInConcurrentBuildsQueue;
             this.IsInstantStatic = isInstantStatic;
+            this.IsInSystemBuildsQueue = isInSystemBuildsQueue;
+            this.Lambdas = lambdas;
+            this.ManualProvisioning = manualProvisioning;
+            this.Meta = meta ?? throw new global::System.ArgumentNullException(nameof(meta));
+            this.Microfrontends = microfrontends;
             this.MonorepoManager = monorepoManager;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.NodeVersion = nodeVersion;
+            this.OidcTokenClaims = oidcTokenClaims;
+            this.OomReport = oomReport;
+            this.OriginCacheRegion = originCacheRegion;
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.PassiveConnectConfigurationId = passiveConnectConfigurationId;
-            this.Routes = routes;
-            this.Services = services;
-            this.GitRepo = gitRepo;
-            this.Flags = flags;
-            this.Microfrontends = microfrontends;
+            this.PassiveRegions = passiveRegions;
+            this.Plan = plan;
             this.Platform = platform;
-            this.Config = config;
-            this.Checks = checks;
+            this.Prebuilt = prebuilt;
+            this.PreviewCommentsEnabled = previewCommentsEnabled;
+            this.Project = project;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.ProjectSettings = projectSettings ?? throw new global::System.ArgumentNullException(nameof(projectSettings));
+            this.Public = @public;
+            this.Ready = ready;
+            this.ReadyState = readyState;
+            this.ReadyStateReason = readyStateReason;
+            this.ReadySubstate = readySubstate;
+            this.Regions = regions ?? throw new global::System.ArgumentNullException(nameof(regions));
+            this.ResourceConfig = resourceConfig;
+            this.Routes = routes;
             this.SeatBlock = seatBlock;
-            this.Attribution = attribution;
+            this.Services = services;
+            this.SoftDeletedByRetention = softDeletedByRetention;
+            this.Source = source;
+            this.Status = status;
+            this.Target = target;
+            this.Team = team;
+            this.TtyBuildLogs = ttyBuildLogs;
+            this.Type = type;
+            this.UndeletedAt = undeletedAt;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
+            this.UserAliases = userAliases;
+            this.UserConfiguredDeploymentId = userConfiguredDeploymentId;
+            this.Version = version;
         }
 
         /// <summary>

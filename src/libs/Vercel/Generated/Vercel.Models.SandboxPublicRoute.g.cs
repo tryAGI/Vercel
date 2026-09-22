@@ -9,13 +9,6 @@ namespace Vercel
     public sealed partial class SandboxPublicRoute
     {
         /// <summary>
-        /// A public URL to access the corresponding port in the Sandbox.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Url { get; set; }
-
-        /// <summary>
         /// The user port number that the route is mapped to.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("port")]
@@ -36,6 +29,13 @@ namespace Vercel
         public bool? System { get; set; }
 
         /// <summary>
+        /// A public URL to access the corresponding port in the Sandbox.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("url")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Url { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -44,14 +44,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="SandboxPublicRoute" /> class.
         /// </summary>
-        /// <param name="url">
-        /// A public URL to access the corresponding port in the Sandbox.
-        /// </param>
         /// <param name="port">
         /// The user port number that the route is mapped to.
         /// </param>
         /// <param name="subdomain">
         /// The subdomain assigned to this route.
+        /// </param>
+        /// <param name="url">
+        /// A public URL to access the corresponding port in the Sandbox.
         /// </param>
         /// <param name="system">
         /// Whether the route is reserved by the system (e.g. for internal use).
@@ -60,15 +60,15 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SandboxPublicRoute(
-            string url,
             double port,
             string subdomain,
+            string url,
             bool? system)
         {
-            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
             this.Port = port;
             this.Subdomain = subdomain ?? throw new global::System.ArgumentNullException(nameof(subdomain));
             this.System = system;
+            this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
         }
 
         /// <summary>

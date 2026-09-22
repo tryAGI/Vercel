@@ -11,14 +11,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("bot_protection")]
-        public global::Vercel.GetFirewallConfigResponseManagedRulesBotProtection? BotProtection { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("ai_bots")]
+        public global::Vercel.GetFirewallConfigResponseManagedRulesAiBots? AiBots { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ai_bots")]
-        public global::Vercel.GetFirewallConfigResponseManagedRulesAiBots? AiBots { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("bot_protection")]
+        public global::Vercel.GetFirewallConfigResponseManagedRulesBotProtection? BotProtection { get; set; }
 
         /// <summary>
         ///
@@ -29,14 +29,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("vercel_ruleset")]
-        public global::Vercel.GetFirewallConfigResponseManagedRulesVercelRuleset? VercelRuleset { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("traffic_sources")]
+        public global::Vercel.GetFirewallConfigResponseManagedRulesTrafficSources? TrafficSources { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("traffic_sources")]
-        public global::Vercel.GetFirewallConfigResponseManagedRulesTrafficSources? TrafficSources { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("vercel_ruleset")]
+        public global::Vercel.GetFirewallConfigResponseManagedRulesVercelRuleset? VercelRuleset { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -47,26 +47,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetFirewallConfigResponseManagedRules" /> class.
         /// </summary>
-        /// <param name="botProtection"></param>
         /// <param name="aiBots"></param>
+        /// <param name="botProtection"></param>
         /// <param name="owasp"></param>
-        /// <param name="vercelRuleset"></param>
         /// <param name="trafficSources"></param>
+        /// <param name="vercelRuleset"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetFirewallConfigResponseManagedRules(
-            global::Vercel.GetFirewallConfigResponseManagedRulesBotProtection? botProtection,
             global::Vercel.GetFirewallConfigResponseManagedRulesAiBots? aiBots,
+            global::Vercel.GetFirewallConfigResponseManagedRulesBotProtection? botProtection,
             global::Vercel.GetFirewallConfigResponseManagedRulesOwasp? owasp,
-            global::Vercel.GetFirewallConfigResponseManagedRulesVercelRuleset? vercelRuleset,
-            global::Vercel.GetFirewallConfigResponseManagedRulesTrafficSources? trafficSources)
+            global::Vercel.GetFirewallConfigResponseManagedRulesTrafficSources? trafficSources,
+            global::Vercel.GetFirewallConfigResponseManagedRulesVercelRuleset? vercelRuleset)
         {
-            this.BotProtection = botProtection;
             this.AiBots = aiBots;
+            this.BotProtection = botProtection;
             this.Owasp = owasp;
-            this.VercelRuleset = vercelRuleset;
             this.TrafficSources = trafficSources;
+            this.VercelRuleset = vercelRuleset;
         }
 
         /// <summary>

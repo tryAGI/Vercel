@@ -11,17 +11,17 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Value { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("syntax")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GenerateRouteResponseRoutePathConditionSyntaxJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GenerateRouteResponseRoutePathConditionSyntax Syntax { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,17 +32,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GenerateRouteResponseRoutePathCondition" /> class.
         /// </summary>
-        /// <param name="value"></param>
         /// <param name="syntax"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GenerateRouteResponseRoutePathCondition(
-            string value,
-            global::Vercel.GenerateRouteResponseRoutePathConditionSyntax syntax)
+            global::Vercel.GenerateRouteResponseRoutePathConditionSyntax syntax,
+            string value)
         {
-            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
             this.Syntax = syntax;
+            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
         }
 
         /// <summary>

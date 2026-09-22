@@ -11,48 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("owner")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Owner { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant3ProjectLinkVariant5TypeJsonConverter))]
-        public global::Vercel.GetProjectsResponseVariant3ProjectLinkVariant5Type Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("uuid")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Uuid { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("workspaceUuid")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string WorkspaceUuid { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         public double? CreatedAt { get; set; }
 
@@ -73,8 +31,30 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
-        public double? UpdatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("owner")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Owner { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("productionBranch")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProductionBranch { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Slug { get; set; }
 
         /// <summary>
         ///
@@ -85,9 +65,29 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("productionBranch")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant3ProjectLinkVariant5TypeJsonConverter))]
+        public global::Vercel.GetProjectsResponseVariant3ProjectLinkVariant5Type Type { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        public double? UpdatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("uuid")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProductionBranch { get; set; }
+        public required string Uuid { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("workspaceUuid")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string WorkspaceUuid { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -98,47 +98,47 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant3ProjectLinkVariant5" /> class.
         /// </summary>
-        /// <param name="name"></param>
-        /// <param name="slug"></param>
-        /// <param name="owner"></param>
-        /// <param name="uuid"></param>
-        /// <param name="workspaceUuid"></param>
         /// <param name="deployHooks"></param>
         /// <param name="gitCredentialId"></param>
+        /// <param name="name"></param>
+        /// <param name="owner"></param>
         /// <param name="productionBranch"></param>
-        /// <param name="type"></param>
+        /// <param name="slug"></param>
+        /// <param name="uuid"></param>
+        /// <param name="workspaceUuid"></param>
         /// <param name="createdAt"></param>
-        /// <param name="updatedAt"></param>
         /// <param name="sourceless"></param>
+        /// <param name="type"></param>
+        /// <param name="updatedAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsResponseVariant3ProjectLinkVariant5(
-            string name,
-            string slug,
-            string owner,
-            string uuid,
-            string workspaceUuid,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant3ProjectLinkVariant5DeployHook> deployHooks,
             string gitCredentialId,
+            string name,
+            string owner,
             string productionBranch,
-            global::Vercel.GetProjectsResponseVariant3ProjectLinkVariant5Type type,
+            string slug,
+            string uuid,
+            string workspaceUuid,
             double? createdAt,
-            double? updatedAt,
-            bool? sourceless)
+            bool? sourceless,
+            global::Vercel.GetProjectsResponseVariant3ProjectLinkVariant5Type type,
+            double? updatedAt)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
-            this.Owner = owner ?? throw new global::System.ArgumentNullException(nameof(owner));
-            this.Type = type;
-            this.Uuid = uuid ?? throw new global::System.ArgumentNullException(nameof(uuid));
-            this.WorkspaceUuid = workspaceUuid ?? throw new global::System.ArgumentNullException(nameof(workspaceUuid));
             this.CreatedAt = createdAt;
             this.DeployHooks = deployHooks ?? throw new global::System.ArgumentNullException(nameof(deployHooks));
             this.GitCredentialId = gitCredentialId ?? throw new global::System.ArgumentNullException(nameof(gitCredentialId));
-            this.UpdatedAt = updatedAt;
-            this.Sourceless = sourceless;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Owner = owner ?? throw new global::System.ArgumentNullException(nameof(owner));
             this.ProductionBranch = productionBranch ?? throw new global::System.ArgumentNullException(nameof(productionBranch));
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
+            this.Sourceless = sourceless;
+            this.Type = type;
+            this.UpdatedAt = updatedAt;
+            this.Uuid = uuid ?? throw new global::System.ArgumentNullException(nameof(uuid));
+            this.WorkspaceUuid = workspaceUuid ?? throw new global::System.ArgumentNullException(nameof(workspaceUuid));
         }
 
         /// <summary>

@@ -9,19 +9,19 @@ namespace Vercel
     public sealed partial class GetProjectResponseLatestDeploymentBranchMatcher
     {
         /// <summary>
+        /// The pattern to match against branch names
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pattern")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Pattern { get; set; }
+
+        /// <summary>
         /// The type of matching to perform
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectResponseLatestDeploymentBranchMatcherTypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.GetProjectResponseLatestDeploymentBranchMatcherType Type { get; set; }
-
-        /// <summary>
-        /// The pattern to match against branch names
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("pattern")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Pattern { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -32,21 +32,21 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectResponseLatestDeploymentBranchMatcher" /> class.
         /// </summary>
-        /// <param name="type">
-        /// The type of matching to perform
-        /// </param>
         /// <param name="pattern">
         /// The pattern to match against branch names
+        /// </param>
+        /// <param name="type">
+        /// The type of matching to perform
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectResponseLatestDeploymentBranchMatcher(
-            global::Vercel.GetProjectResponseLatestDeploymentBranchMatcherType type,
-            string pattern)
+            string pattern,
+            global::Vercel.GetProjectResponseLatestDeploymentBranchMatcherType type)
         {
-            this.Type = type;
             this.Pattern = pattern ?? throw new global::System.ArgumentNullException(nameof(pattern));
+            this.Type = type;
         }
 
         /// <summary>

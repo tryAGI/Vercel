@@ -11,13 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SegmentDataRuleOutcomeVariant2TypeJsonConverter))]
-        public global::Vercel.SegmentDataRuleOutcomeVariant2Type Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("base")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.SegmentDataRuleOutcomeVariant2Base Base { get; set; }
@@ -28,6 +21,13 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("passPromille")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double PassPromille { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SegmentDataRuleOutcomeVariant2TypeJsonConverter))]
+        public global::Vercel.SegmentDataRuleOutcomeVariant2Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -49,9 +49,9 @@ namespace Vercel
             double passPromille,
             global::Vercel.SegmentDataRuleOutcomeVariant2Type type)
         {
-            this.Type = type;
             this.Base = @base ?? throw new global::System.ArgumentNullException(nameof(@base));
             this.PassPromille = passPromille;
+            this.Type = type;
         }
 
         /// <summary>

@@ -11,15 +11,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("canceledAt")]
+        public double? CanceledAt { get; set; }
 
         /// <summary>
-        ///
+        /// When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads "first free data point observed", not necessarily "first ever".
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabledAt")]
-        public double? EnabledAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("dataReceivedAt")]
+        public double? DataReceivedAt { get; set; }
 
         /// <summary>
         ///
@@ -30,8 +29,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("canceledAt")]
-        public double? CanceledAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("enabledAt")]
+        public double? EnabledAt { get; set; }
 
         /// <summary>
         ///
@@ -40,10 +39,11 @@ namespace Vercel
         public bool? HasData { get; set; }
 
         /// <summary>
-        /// When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads "first free data point observed", not necessarily "first ever".
+        ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("dataReceivedAt")]
-        public double? DataReceivedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
 
         /// <summary>
         ///
@@ -61,32 +61,32 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UploadProjectAvatarResponseSpeedInsights" /> class.
         /// </summary>
         /// <param name="id"></param>
-        /// <param name="enabledAt"></param>
-        /// <param name="disabledAt"></param>
         /// <param name="canceledAt"></param>
-        /// <param name="hasData"></param>
         /// <param name="dataReceivedAt">
         /// When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads "first free data point observed", not necessarily "first ever".
         /// </param>
+        /// <param name="disabledAt"></param>
+        /// <param name="enabledAt"></param>
+        /// <param name="hasData"></param>
         /// <param name="paidAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UploadProjectAvatarResponseSpeedInsights(
             string id,
-            double? enabledAt,
-            double? disabledAt,
             double? canceledAt,
-            bool? hasData,
             double? dataReceivedAt,
+            double? disabledAt,
+            double? enabledAt,
+            bool? hasData,
             double? paidAt)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.EnabledAt = enabledAt;
-            this.DisabledAt = disabledAt;
             this.CanceledAt = canceledAt;
-            this.HasData = hasData;
             this.DataReceivedAt = dataReceivedAt;
+            this.DisabledAt = disabledAt;
+            this.EnabledAt = enabledAt;
+            this.HasData = hasData;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.PaidAt = paidAt;
         }
 

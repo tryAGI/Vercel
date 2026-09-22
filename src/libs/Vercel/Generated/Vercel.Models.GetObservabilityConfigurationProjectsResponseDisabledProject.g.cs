@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("disabledAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double DisabledAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
@@ -22,13 +29,6 @@ namespace Vercel
         public string? Name { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("disabledAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double DisabledAt { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -37,20 +37,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetObservabilityConfigurationProjectsResponseDisabledProject" /> class.
         /// </summary>
-        /// <param name="id"></param>
         /// <param name="disabledAt"></param>
+        /// <param name="id"></param>
         /// <param name="name"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetObservabilityConfigurationProjectsResponseDisabledProject(
-            string id,
             double disabledAt,
+            string id,
             string? name)
         {
+            this.DisabledAt = disabledAt;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name;
-            this.DisabledAt = disabledAt;
         }
 
         /// <summary>

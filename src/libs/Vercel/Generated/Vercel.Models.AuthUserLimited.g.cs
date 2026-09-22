@@ -9,48 +9,6 @@ namespace Vercel
     public sealed partial class AuthUserLimited
     {
         /// <summary>
-        /// Property indicating that this User data contains only limited information, due to the authentication token missing privileges to read the full User data. Re-login with email, GitHub, GitLab or Bitbucket in order to upgrade the authentication token with the necessary privileges.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("limited")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Limited { get; set; }
-
-        /// <summary>
-        /// The User's unique identifier.<br/>
-        /// Example: AEIIDYVk59zbFF2Sxfyxxmua
-        /// </summary>
-        /// <example>AEIIDYVk59zbFF2Sxfyxxmua</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
-        /// Email address associated with the User account.<br/>
-        /// Example: me@example.com
-        /// </summary>
-        /// <example>me@example.com</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Email { get; set; }
-
-        /// <summary>
-        /// Name associated with the User account, or `null` if none has been provided.<br/>
-        /// Example: John Doe
-        /// </summary>
-        /// <example>John Doe</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
-
-        /// <summary>
-        /// Unique username associated with the User account.<br/>
-        /// Example: jdoe
-        /// </summary>
-        /// <example>jdoe</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Username { get; set; }
-
-        /// <summary>
         /// SHA1 hash of the avatar for the User account. Can be used in conjuction with the ... endpoint to retrieve the avatar image.<br/>
         /// Example: 22cb30c85ff45ac4c72de8981500006b28114aa1
         /// </summary>
@@ -65,16 +23,58 @@ namespace Vercel
         public string? DefaultTeamId { get; set; }
 
         /// <summary>
+        /// Email address associated with the User account.<br/>
+        /// Example: me@example.com
+        /// </summary>
+        /// <example>me@example.com</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("email")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Email { get; set; }
+
+        /// <summary>
+        /// The User's unique identifier.<br/>
+        /// Example: AEIIDYVk59zbFF2Sxfyxxmua
+        /// </summary>
+        /// <example>AEIIDYVk59zbFF2Sxfyxxmua</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
         /// Indicates whether the user is managed by an enterprise.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isEnterpriseManaged")]
         public bool? IsEnterpriseManaged { get; set; }
 
         /// <summary>
+        /// Property indicating that this User data contains only limited information, due to the authentication token missing privileges to read the full User data. Re-login with email, GitHub, GitLab or Bitbucket in order to upgrade the authentication token with the necessary privileges.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("limited")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Limited { get; set; }
+
+        /// <summary>
+        /// Name associated with the User account, or `null` if none has been provided.<br/>
+        /// Example: John Doe
+        /// </summary>
+        /// <example>John Doe</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
+
+        /// <summary>
         /// Whether the Enterprise Managed User joined the current team through the Update Account flow and should see its welcome experience.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("shouldShowEnterpriseManagedWelcome")]
         public bool? ShouldShowEnterpriseManagedWelcome { get; set; }
+
+        /// <summary>
+        /// Unique username associated with the User account.<br/>
+        /// Example: jdoe
+        /// </summary>
+        /// <example>jdoe</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Username { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -85,24 +85,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="AuthUserLimited" /> class.
         /// </summary>
-        /// <param name="limited">
-        /// Property indicating that this User data contains only limited information, due to the authentication token missing privileges to read the full User data. Re-login with email, GitHub, GitLab or Bitbucket in order to upgrade the authentication token with the necessary privileges.
+        /// <param name="email">
+        /// Email address associated with the User account.<br/>
+        /// Example: me@example.com
         /// </param>
         /// <param name="id">
         /// The User's unique identifier.<br/>
         /// Example: AEIIDYVk59zbFF2Sxfyxxmua
         /// </param>
-        /// <param name="email">
-        /// Email address associated with the User account.<br/>
-        /// Example: me@example.com
+        /// <param name="limited">
+        /// Property indicating that this User data contains only limited information, due to the authentication token missing privileges to read the full User data. Re-login with email, GitHub, GitLab or Bitbucket in order to upgrade the authentication token with the necessary privileges.
         /// </param>
         /// <param name="username">
         /// Unique username associated with the User account.<br/>
         /// Example: jdoe
-        /// </param>
-        /// <param name="name">
-        /// Name associated with the User account, or `null` if none has been provided.<br/>
-        /// Example: John Doe
         /// </param>
         /// <param name="avatar">
         /// SHA1 hash of the avatar for the User account. Can be used in conjuction with the ... endpoint to retrieve the avatar image.<br/>
@@ -114,6 +110,10 @@ namespace Vercel
         /// <param name="isEnterpriseManaged">
         /// Indicates whether the user is managed by an enterprise.
         /// </param>
+        /// <param name="name">
+        /// Name associated with the User account, or `null` if none has been provided.<br/>
+        /// Example: John Doe
+        /// </param>
         /// <param name="shouldShowEnterpriseManagedWelcome">
         /// Whether the Enterprise Managed User joined the current team through the Update Account flow and should see its welcome experience.
         /// </param>
@@ -121,25 +121,25 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AuthUserLimited(
-            bool limited,
-            string id,
             string email,
+            string id,
+            bool limited,
             string username,
-            string? name,
             string? avatar,
             string? defaultTeamId,
             bool? isEnterpriseManaged,
+            string? name,
             bool? shouldShowEnterpriseManagedWelcome)
         {
-            this.Limited = limited;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
-            this.Name = name;
-            this.Username = username ?? throw new global::System.ArgumentNullException(nameof(username));
             this.Avatar = avatar;
             this.DefaultTeamId = defaultTeamId;
+            this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.IsEnterpriseManaged = isEnterpriseManaged;
+            this.Limited = limited;
+            this.Name = name;
             this.ShouldShowEnterpriseManagedWelcome = shouldShowEnterpriseManagedWelcome;
+            this.Username = username ?? throw new global::System.ArgumentNullException(nameof(username));
         }
 
         /// <summary>

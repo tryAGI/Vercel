@@ -11,21 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2IntegrationsStatusJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.CreateDeploymentResponseVariant2IntegrationsStatus Status { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("startedAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double StartedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("claimedAt")]
         public double? ClaimedAt { get; set; }
 
@@ -48,6 +33,21 @@ namespace Vercel
         public string? SkippedBy { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("startedAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double StartedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2IntegrationsStatusJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.CreateDeploymentResponseVariant2IntegrationsStatus Status { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -56,8 +56,8 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateDeploymentResponseVariant2Integrations" /> class.
         /// </summary>
-        /// <param name="status"></param>
         /// <param name="startedAt"></param>
+        /// <param name="status"></param>
         /// <param name="claimedAt"></param>
         /// <param name="completedAt"></param>
         /// <param name="skippedAt"></param>
@@ -66,19 +66,19 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateDeploymentResponseVariant2Integrations(
-            global::Vercel.CreateDeploymentResponseVariant2IntegrationsStatus status,
             double startedAt,
+            global::Vercel.CreateDeploymentResponseVariant2IntegrationsStatus status,
             double? claimedAt,
             double? completedAt,
             double? skippedAt,
             string? skippedBy)
         {
-            this.Status = status;
-            this.StartedAt = startedAt;
             this.ClaimedAt = claimedAt;
             this.CompletedAt = completedAt;
             this.SkippedAt = skippedAt;
             this.SkippedBy = skippedBy;
+            this.StartedAt = startedAt;
+            this.Status = status;
         }
 
         /// <summary>

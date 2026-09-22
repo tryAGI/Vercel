@@ -18,15 +18,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("organization")]
-        public global::Vercel.AuthUserAccountUpdateContextOrganization? Organization { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("managedTeams")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.AuthUserAccountUpdateContextManagedTeam> ManagedTeams { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("managedTeams")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.AuthUserAccountUpdateContextManagedTeam> ManagedTeams { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("organization")]
+        public global::Vercel.AuthUserAccountUpdateContextOrganization? Organization { get; set; }
 
         /// <summary>
         ///
@@ -60,8 +60,8 @@ namespace Vercel
             global::Vercel.AuthUserAccountUpdateContextOrganization? organization)
         {
             this.CanOptOut = canOptOut;
-            this.Organization = organization;
             this.ManagedTeams = managedTeams ?? throw new global::System.ArgumentNullException(nameof(managedTeams));
+            this.Organization = organization;
             this.VerifiedEmuDomains = verifiedEmuDomains ?? throw new global::System.ArgumentNullException(nameof(verifiedEmuDomains));
         }
 

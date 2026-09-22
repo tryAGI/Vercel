@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UploadProjectAvatarResponseCreatorVariant1ViaVariant2TypeJsonConverter))]
-        public global::Vercel.UploadProjectAvatarResponseCreatorVariant1ViaVariant2Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("integration")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UploadProjectAvatarResponseCreatorVariant1ViaVariant2Integration Integration { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integration")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UploadProjectAvatarResponseCreatorVariant1ViaVariant2Integration Integration { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UploadProjectAvatarResponseCreatorVariant1ViaVariant2TypeJsonConverter))]
+        public global::Vercel.UploadProjectAvatarResponseCreatorVariant1ViaVariant2Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,8 +40,8 @@ namespace Vercel
             global::Vercel.UploadProjectAvatarResponseCreatorVariant1ViaVariant2Integration integration,
             global::Vercel.UploadProjectAvatarResponseCreatorVariant1ViaVariant2Type type)
         {
-            this.Type = type;
             this.Integration = integration ?? throw new global::System.ArgumentNullException(nameof(integration));
+            this.Type = type;
         }
 
         /// <summary>

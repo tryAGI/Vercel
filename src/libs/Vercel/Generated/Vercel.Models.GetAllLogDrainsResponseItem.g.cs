@@ -11,13 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdFrom")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string CreatedFrom { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clientId")]
         public string? ClientId { get; set; }
 
@@ -30,14 +23,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectsMetadata")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseItemProjectsMetadataItem>? ProjectsMetadata { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationIcon")]
-        public string? IntegrationIcon { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdFrom")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string CreatedFrom { get; set; }
 
         /// <summary>
         ///
@@ -48,8 +36,20 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationIcon")]
+        public string? IntegrationIcon { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("integrationWebsite")]
         public string? IntegrationWebsite { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectsMetadata")]
+        public global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseItemProjectsMetadataItem>? ProjectsMetadata { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -63,10 +63,10 @@ namespace Vercel
         /// <param name="createdFrom"></param>
         /// <param name="clientId"></param>
         /// <param name="configurationId"></param>
-        /// <param name="projectsMetadata"></param>
-        /// <param name="integrationIcon"></param>
         /// <param name="integrationConfigurationUri"></param>
+        /// <param name="integrationIcon"></param>
         /// <param name="integrationWebsite"></param>
+        /// <param name="projectsMetadata"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -74,18 +74,18 @@ namespace Vercel
             string createdFrom,
             string? clientId,
             string? configurationId,
-            global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseItemProjectsMetadataItem>? projectsMetadata,
-            string? integrationIcon,
             string? integrationConfigurationUri,
-            string? integrationWebsite)
+            string? integrationIcon,
+            string? integrationWebsite,
+            global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseItemProjectsMetadataItem>? projectsMetadata)
         {
-            this.CreatedFrom = createdFrom ?? throw new global::System.ArgumentNullException(nameof(createdFrom));
             this.ClientId = clientId;
             this.ConfigurationId = configurationId;
-            this.ProjectsMetadata = projectsMetadata;
-            this.IntegrationIcon = integrationIcon;
+            this.CreatedFrom = createdFrom ?? throw new global::System.ArgumentNullException(nameof(createdFrom));
             this.IntegrationConfigurationUri = integrationConfigurationUri;
+            this.IntegrationIcon = integrationIcon;
             this.IntegrationWebsite = integrationWebsite;
+            this.ProjectsMetadata = projectsMetadata;
         }
 
         /// <summary>

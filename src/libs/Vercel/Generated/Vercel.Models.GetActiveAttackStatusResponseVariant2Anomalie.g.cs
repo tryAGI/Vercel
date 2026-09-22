@@ -11,29 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("affectedHostMap")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("startTime")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double StartTime { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("endTime")]
-        public double? EndTime { get; set; }
+        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMap2> AffectedHostMap { get; set; }
 
         /// <summary>
         ///
@@ -45,15 +25,35 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("state")]
-        public string? State { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("endTime")]
+        public double? EndTime { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("affectedHostMap")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMap2> AffectedHostMap { get; set; }
+        public required string OwnerId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("startTime")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double StartTime { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("state")]
+        public string? State { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -64,32 +64,32 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetActiveAttackStatusResponseVariant2Anomalie" /> class.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="ownerId"></param>
-        /// <param name="startTime"></param>
-        /// <param name="atMinute"></param>
         /// <param name="affectedHostMap"></param>
+        /// <param name="atMinute"></param>
+        /// <param name="ownerId"></param>
+        /// <param name="projectId"></param>
+        /// <param name="startTime"></param>
         /// <param name="endTime"></param>
         /// <param name="state"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetActiveAttackStatusResponseVariant2Anomalie(
-            string projectId,
-            string ownerId,
-            double startTime,
-            double atMinute,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMap2> affectedHostMap,
+            double atMinute,
+            string ownerId,
+            string projectId,
+            double startTime,
             double? endTime,
             string? state)
         {
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
-            this.StartTime = startTime;
-            this.EndTime = endTime;
-            this.AtMinute = atMinute;
-            this.State = state;
             this.AffectedHostMap = affectedHostMap ?? throw new global::System.ArgumentNullException(nameof(affectedHostMap));
+            this.AtMinute = atMinute;
+            this.EndTime = endTime;
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.StartTime = startTime;
+            this.State = state;
         }
 
         /// <summary>

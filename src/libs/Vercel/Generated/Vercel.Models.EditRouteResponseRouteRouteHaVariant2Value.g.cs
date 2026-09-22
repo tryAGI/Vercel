@@ -18,14 +18,38 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("neq")]
-        public string? Neq { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("gt")]
+        public double? Gt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gte")]
+        public double? Gte { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inc")]
         public global::System.Collections.Generic.IList<string>? Inc { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("lt")]
+        public double? Lt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("lte")]
+        public double? Lte { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("neq")]
+        public string? Neq { get; set; }
 
         /// <summary>
         ///
@@ -42,38 +66,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("suf")]
-        public string? Suf { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("re")]
         public string? Re { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gt")]
-        public double? Gt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gte")]
-        public double? Gte { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("lt")]
-        public double? Lt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("lte")]
-        public double? Lte { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("suf")]
+        public string? Suf { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -85,43 +85,43 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="EditRouteResponseRouteRouteHaVariant2Value" /> class.
         /// </summary>
         /// <param name="eq"></param>
-        /// <param name="neq"></param>
-        /// <param name="inc"></param>
-        /// <param name="ninc"></param>
-        /// <param name="pre"></param>
-        /// <param name="suf"></param>
-        /// <param name="re"></param>
         /// <param name="gt"></param>
         /// <param name="gte"></param>
+        /// <param name="inc"></param>
         /// <param name="lt"></param>
         /// <param name="lte"></param>
+        /// <param name="neq"></param>
+        /// <param name="ninc"></param>
+        /// <param name="pre"></param>
+        /// <param name="re"></param>
+        /// <param name="suf"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public EditRouteResponseRouteRouteHaVariant2Value(
             global::Vercel.OneOf<string, double?>? eq,
-            string? neq,
-            global::System.Collections.Generic.IList<string>? inc,
-            global::System.Collections.Generic.IList<string>? ninc,
-            string? pre,
-            string? suf,
-            string? re,
             double? gt,
             double? gte,
+            global::System.Collections.Generic.IList<string>? inc,
             double? lt,
-            double? lte)
+            double? lte,
+            string? neq,
+            global::System.Collections.Generic.IList<string>? ninc,
+            string? pre,
+            string? re,
+            string? suf)
         {
             this.Eq = eq;
-            this.Neq = neq;
-            this.Inc = inc;
-            this.Ninc = ninc;
-            this.Pre = pre;
-            this.Suf = suf;
-            this.Re = re;
             this.Gt = gt;
             this.Gte = gte;
+            this.Inc = inc;
             this.Lt = lt;
             this.Lte = lte;
+            this.Neq = neq;
+            this.Ninc = ninc;
+            this.Pre = pre;
+            this.Re = re;
+            this.Suf = suf;
         }
 
         /// <summary>

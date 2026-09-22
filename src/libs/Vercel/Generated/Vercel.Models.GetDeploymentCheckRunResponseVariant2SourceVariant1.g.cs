@@ -11,16 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("subKind")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2SourceVariant1SubKindJsonConverter))]
-        public global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1SubKind SubKind { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2SourceVariant1OriginJsonConverter))]
-        public global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1Origin Origin { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("invocationAttempt")]
+        public double? InvocationAttempt { get; set; }
 
         /// <summary>
         ///
@@ -32,15 +24,23 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("invocationAttempt")]
-        public double? InvocationAttempt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("jobDefinitionId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string JobDefinitionId { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("jobDefinitionId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string JobDefinitionId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2SourceVariant1OriginJsonConverter))]
+        public global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1Origin Origin { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("subKind")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentCheckRunResponseVariant2SourceVariant1SubKindJsonConverter))]
+        public global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1SubKind SubKind { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -53,24 +53,24 @@ namespace Vercel
         /// </summary>
         /// <param name="invocationId"></param>
         /// <param name="jobDefinitionId"></param>
-        /// <param name="subKind"></param>
-        /// <param name="origin"></param>
         /// <param name="invocationAttempt"></param>
+        /// <param name="origin"></param>
+        /// <param name="subKind"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentCheckRunResponseVariant2SourceVariant1(
             string invocationId,
             string jobDefinitionId,
-            global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1SubKind subKind,
+            double? invocationAttempt,
             global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1Origin origin,
-            double? invocationAttempt)
+            global::Vercel.GetDeploymentCheckRunResponseVariant2SourceVariant1SubKind subKind)
         {
-            this.SubKind = subKind;
-            this.Origin = origin;
-            this.InvocationId = invocationId ?? throw new global::System.ArgumentNullException(nameof(invocationId));
             this.InvocationAttempt = invocationAttempt;
+            this.InvocationId = invocationId ?? throw new global::System.ArgumentNullException(nameof(invocationId));
             this.JobDefinitionId = jobDefinitionId ?? throw new global::System.ArgumentNullException(nameof(jobDefinitionId));
+            this.Origin = origin;
+            this.SubKind = subKind;
         }
 
         /// <summary>

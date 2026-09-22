@@ -9,11 +9,11 @@ namespace Vercel
     public sealed partial class UserEventPrincipalVariant2
     {
         /// <summary>
-        ///
+        /// The OAuth 2.0 client ID, which may be a CIMD URL.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPrincipalVariant2TypeJsonConverter))]
-        public global::Vercel.UserEventPrincipalVariant2Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("clientId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ClientId { get; set; }
 
         /// <summary>
         /// The backing Vercel App ID. When absent, defaults to `clientId`.
@@ -22,18 +22,18 @@ namespace Vercel
         public string? Id { get; set; }
 
         /// <summary>
-        /// The OAuth 2.0 client ID, which may be a CIMD URL.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("clientId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ClientId { get; set; }
-
-        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPrincipalVariant2TypeJsonConverter))]
+        public global::Vercel.UserEventPrincipalVariant2Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -48,23 +48,23 @@ namespace Vercel
         /// The OAuth 2.0 client ID, which may be a CIMD URL.
         /// </param>
         /// <param name="name"></param>
-        /// <param name="type"></param>
         /// <param name="id">
         /// The backing Vercel App ID. When absent, defaults to `clientId`.
         /// </param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventPrincipalVariant2(
             string clientId,
             string name,
-            global::Vercel.UserEventPrincipalVariant2Type type,
-            string? id)
+            string? id,
+            global::Vercel.UserEventPrincipalVariant2Type type)
         {
-            this.Type = type;
-            this.Id = id;
             this.ClientId = clientId ?? throw new global::System.ArgumentNullException(nameof(clientId));
+            this.Id = id;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Type = type;
         }
 
         /// <summary>

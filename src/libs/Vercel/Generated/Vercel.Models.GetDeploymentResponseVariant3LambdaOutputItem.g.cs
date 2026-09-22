@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("path")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("functionName")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Path { get; set; }
+        public required string FunctionName { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("functionName")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("path")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string FunctionName { get; set; }
+        public required string Path { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDeploymentResponseVariant3LambdaOutputItem" /> class.
         /// </summary>
-        /// <param name="path"></param>
         /// <param name="functionName"></param>
+        /// <param name="path"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant3LambdaOutputItem(
-            string path,
-            string functionName)
+            string functionName,
+            string path)
         {
-            this.Path = path ?? throw new global::System.ArgumentNullException(nameof(path));
             this.FunctionName = functionName ?? throw new global::System.ArgumentNullException(nameof(functionName));
+            this.Path = path ?? throw new global::System.ArgumentNullException(nameof(path));
         }
 
         /// <summary>

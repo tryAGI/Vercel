@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("accessGroupId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TeamId { get; set; }
+        public required string AccessGroupId { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("accessGroupId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string AccessGroupId { get; set; }
+        public required string CreatedAt { get; set; }
 
         /// <summary>
         ///
@@ -40,9 +40,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string CreatedAt { get; set; }
+        public required string TeamId { get; set; }
 
         /// <summary>
         ///
@@ -60,28 +60,28 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateAccessGroupProjectResponse" /> class.
         /// </summary>
-        /// <param name="teamId"></param>
         /// <param name="accessGroupId"></param>
+        /// <param name="createdAt"></param>
         /// <param name="projectId"></param>
         /// <param name="role"></param>
-        /// <param name="createdAt"></param>
+        /// <param name="teamId"></param>
         /// <param name="updatedAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateAccessGroupProjectResponse(
-            string teamId,
             string accessGroupId,
+            string createdAt,
             string projectId,
             global::Vercel.CreateAccessGroupProjectResponseRole role,
-            string createdAt,
+            string teamId,
             string updatedAt)
         {
-            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
             this.AccessGroupId = accessGroupId ?? throw new global::System.ArgumentNullException(nameof(accessGroupId));
+            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.Role = role;
-            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
+            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
             this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
         }
 

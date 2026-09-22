@@ -642,7 +642,7 @@ namespace Vercel
             string projectId,
             string? teamId = default,
             string? slug = default,
-            global::System.Collections.Generic.IList<global::Vercel.ConnectIntegrationResourceToProjectRequestEnvVarEnvironment>? envVarEnvironments = default,
+            global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.EnvVarEnvironments?, string>>? envVarEnvironments = default,
             bool? makeEnvVarsSensitive = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)

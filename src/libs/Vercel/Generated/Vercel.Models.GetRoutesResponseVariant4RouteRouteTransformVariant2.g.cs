@@ -11,20 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetRoutesResponseVariant4RouteRouteTransformVariant2TypeJsonConverter))]
-        public global::Vercel.GetRoutesResponseVariant4RouteRouteTransformVariant2Type Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("op")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetRoutesResponseVariant4RouteRouteTransformVariant2OpJsonConverter))]
-        public global::Vercel.GetRoutesResponseVariant4RouteRouteTransformVariant2Op Op { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("args")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Args { get; set; }
@@ -36,6 +22,20 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? Env { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("op")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetRoutesResponseVariant4RouteRouteTransformVariant2OpJsonConverter))]
+        public global::Vercel.GetRoutesResponseVariant4RouteRouteTransformVariant2Op Op { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetRoutesResponseVariant4RouteRouteTransformVariant2TypeJsonConverter))]
+        public global::Vercel.GetRoutesResponseVariant4RouteRouteTransformVariant2Type Type { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -45,22 +45,22 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetRoutesResponseVariant4RouteRouteTransformVariant2" /> class.
         /// </summary>
         /// <param name="args"></param>
-        /// <param name="type"></param>
-        /// <param name="op"></param>
         /// <param name="env"></param>
+        /// <param name="op"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetRoutesResponseVariant4RouteRouteTransformVariant2(
             string args,
-            global::Vercel.GetRoutesResponseVariant4RouteRouteTransformVariant2Type type,
+            global::System.Collections.Generic.IList<string>? env,
             global::Vercel.GetRoutesResponseVariant4RouteRouteTransformVariant2Op op,
-            global::System.Collections.Generic.IList<string>? env)
+            global::Vercel.GetRoutesResponseVariant4RouteRouteTransformVariant2Type type)
         {
-            this.Type = type;
-            this.Op = op;
             this.Args = args ?? throw new global::System.ArgumentNullException(nameof(args));
             this.Env = env;
+            this.Op = op;
+            this.Type = type;
         }
 
         /// <summary>

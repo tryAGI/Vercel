@@ -9,6 +9,13 @@ namespace Vercel
     public sealed partial class GetIntegrationLogDrainsResponseItemSourceVariant1
     {
         /// <summary>
+        /// Informational marker for a system-owned default drain.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("defaultFor")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetIntegrationLogDrainsResponseItemSourceVariant1DefaultForJsonConverter))]
+        public global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1DefaultFor? DefaultFor { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
@@ -24,13 +31,18 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetIntegrationLogDrainsResponseItemSourceVariant1" /> class.
         /// </summary>
+        /// <param name="defaultFor">
+        /// Informational marker for a system-owned default drain.
+        /// </param>
         /// <param name="kind"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetIntegrationLogDrainsResponseItemSourceVariant1(
+            global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1DefaultFor? defaultFor,
             global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1Kind kind)
         {
+            this.DefaultFor = defaultFor;
             this.Kind = kind;
         }
 

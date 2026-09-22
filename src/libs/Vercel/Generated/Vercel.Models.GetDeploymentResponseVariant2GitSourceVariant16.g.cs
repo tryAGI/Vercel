@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2GitSourceVariant16TypeJsonConverter))]
-        public global::Vercel.GetDeploymentResponseVariant2GitSourceVariant16Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double ProjectId { get; set; }
 
         /// <summary>
         ///
@@ -32,9 +32,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double ProjectId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2GitSourceVariant16TypeJsonConverter))]
+        public global::Vercel.GetDeploymentResponseVariant2GitSourceVariant16Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDeploymentResponseVariant2GitSourceVariant16" /> class.
         /// </summary>
+        /// <param name="projectId"></param>
         /// <param name="ref"></param>
         /// <param name="sha"></param>
-        /// <param name="projectId"></param>
         /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant2GitSourceVariant16(
+            double projectId,
             string @ref,
             string sha,
-            double projectId,
             global::Vercel.GetDeploymentResponseVariant2GitSourceVariant16Type type)
         {
-            this.Type = type;
+            this.ProjectId = projectId;
             this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
             this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
-            this.ProjectId = projectId;
+            this.Type = type;
         }
 
         /// <summary>

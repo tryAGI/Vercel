@@ -81,6 +81,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineElasticTransition")]
+        public global::Vercel.UpdateProjectRequestResourceConfigBuildMachineElasticTransition? BuildMachineElasticTransition { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isNSNBDisabled")]
         public bool? IsNSNBDisabled { get; set; }
 
@@ -114,6 +120,7 @@ namespace Vercel
         /// <param name="elasticConcurrencyEnabled"></param>
         /// <param name="buildMachineElasticLastUpdated"></param>
         /// <param name="buildMachineElasticReason"></param>
+        /// <param name="buildMachineElasticTransition"></param>
         /// <param name="isNSNBDisabled"></param>
         /// <param name="enableFunctionsBeta"></param>
 #if NET7_0_OR_GREATER
@@ -131,6 +138,7 @@ namespace Vercel
             bool? elasticConcurrencyEnabled,
             double? buildMachineElasticLastUpdated,
             global::Vercel.UpdateProjectRequestResourceConfigBuildMachineElasticReason? buildMachineElasticReason,
+            global::Vercel.UpdateProjectRequestResourceConfigBuildMachineElasticTransition? buildMachineElasticTransition,
             bool? isNSNBDisabled,
             bool? enableFunctionsBeta)
         {
@@ -145,6 +153,7 @@ namespace Vercel
             this.ElasticConcurrencyEnabled = elasticConcurrencyEnabled;
             this.BuildMachineElasticLastUpdated = buildMachineElasticLastUpdated;
             this.BuildMachineElasticReason = buildMachineElasticReason;
+            this.BuildMachineElasticTransition = buildMachineElasticTransition;
             this.IsNSNBDisabled = isNSNBDisabled;
             this.EnableFunctionsBeta = enableFunctionsBeta;
         }

@@ -75,6 +75,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildMachineElasticTransition")]
+        public global::Vercel.CreateProjectRequestResourceConfigBuildMachineElasticTransition? BuildMachineElasticTransition { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isNSNBDisabled")]
         public bool? IsNSNBDisabled { get; set; }
 
@@ -113,6 +119,7 @@ namespace Vercel
         /// <param name="buildMachineSelection"></param>
         /// <param name="buildMachineElasticLastUpdated"></param>
         /// <param name="buildMachineElasticReason"></param>
+        /// <param name="buildMachineElasticTransition"></param>
         /// <param name="isNSNBDisabled"></param>
         /// <param name="buildQueue"></param>
         /// <param name="enableFunctionsBeta"></param>
@@ -130,6 +137,7 @@ namespace Vercel
             global::Vercel.CreateProjectRequestResourceConfigBuildMachineSelection? buildMachineSelection,
             double? buildMachineElasticLastUpdated,
             global::Vercel.CreateProjectRequestResourceConfigBuildMachineElasticReason? buildMachineElasticReason,
+            global::Vercel.CreateProjectRequestResourceConfigBuildMachineElasticTransition? buildMachineElasticTransition,
             bool? isNSNBDisabled,
             global::Vercel.CreateProjectRequestResourceConfigBuildQueue? buildQueue,
             bool? enableFunctionsBeta)
@@ -144,6 +152,7 @@ namespace Vercel
             this.BuildMachineSelection = buildMachineSelection;
             this.BuildMachineElasticLastUpdated = buildMachineElasticLastUpdated;
             this.BuildMachineElasticReason = buildMachineElasticReason;
+            this.BuildMachineElasticTransition = buildMachineElasticTransition;
             this.IsNSNBDisabled = isNSNBDisabled;
             this.BuildQueue = buildQueue;
             this.EnableFunctionsBeta = enableFunctionsBeta;

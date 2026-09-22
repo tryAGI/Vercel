@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("token")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Token { get; set; }
+        public required string Id { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("token")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public required string Token { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateEdgeConfigTokenResponse" /> class.
         /// </summary>
-        /// <param name="token"></param>
         /// <param name="id"></param>
+        /// <param name="token"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateEdgeConfigTokenResponse(
-            string token,
-            string id)
+            string id,
+            string token)
         {
-            this.Token = token ?? throw new global::System.ArgumentNullException(nameof(token));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Token = token ?? throw new global::System.ArgumentNullException(nameof(token));
         }
 
         /// <summary>

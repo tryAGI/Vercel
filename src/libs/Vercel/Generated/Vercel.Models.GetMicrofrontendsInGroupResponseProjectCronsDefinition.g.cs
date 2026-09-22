@@ -9,6 +9,12 @@ namespace Vercel
     public sealed partial class GetMicrofrontendsInGroupResponseProjectCronsDefinition
     {
         /// <summary>
+        /// A human-readable description of what this cron job does.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
         /// The hostname that should be used.<br/>
         /// Example: vercel.com
         /// </summary>
@@ -16,6 +22,12 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("host")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Host { get; set; }
+
+        /// <summary>
+        /// Whether the host was inferred from the production deployment URL rather than explicitly provided.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("hostInferred")]
+        public bool? HostInferred { get; set; }
 
         /// <summary>
         /// The path that should be called for the cronjob.<br/>
@@ -43,18 +55,6 @@ namespace Vercel
         public global::Vercel.GetMicrofrontendsInGroupResponseProjectCronsDefinitionSource? Source { get; set; }
 
         /// <summary>
-        /// A human-readable description of what this cron job does.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
-        public string? Description { get; set; }
-
-        /// <summary>
-        /// Whether the host was inferred from the production deployment URL rather than explicitly provided.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("hostInferred")]
-        public bool? HostInferred { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -75,14 +75,14 @@ namespace Vercel
         /// The cron expression.<br/>
         /// Example: 0 0 * * *
         /// </param>
-        /// <param name="source">
-        /// The origin of this definition. 'api' means created via the API. Undefined means it originated from a deployment (vercel.json).
-        /// </param>
         /// <param name="description">
         /// A human-readable description of what this cron job does.
         /// </param>
         /// <param name="hostInferred">
         /// Whether the host was inferred from the production deployment URL rather than explicitly provided.
+        /// </param>
+        /// <param name="source">
+        /// The origin of this definition. 'api' means created via the API. Undefined means it originated from a deployment (vercel.json).
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -91,16 +91,16 @@ namespace Vercel
             string host,
             string path,
             string schedule,
-            global::Vercel.GetMicrofrontendsInGroupResponseProjectCronsDefinitionSource? source,
             string? description,
-            bool? hostInferred)
+            bool? hostInferred,
+            global::Vercel.GetMicrofrontendsInGroupResponseProjectCronsDefinitionSource? source)
         {
+            this.Description = description;
             this.Host = host ?? throw new global::System.ArgumentNullException(nameof(host));
+            this.HostInferred = hostInferred;
             this.Path = path ?? throw new global::System.ArgumentNullException(nameof(path));
             this.Schedule = schedule ?? throw new global::System.ArgumentNullException(nameof(schedule));
             this.Source = source;
-            this.Description = description;
-            this.HostInferred = hostInferred;
         }
 
         /// <summary>
