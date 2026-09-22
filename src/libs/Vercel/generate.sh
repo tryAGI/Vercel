@@ -68,6 +68,10 @@ with open('openapi.yaml', 'w') as f:
     json.dump(spec, f, indent=2)
 "
 
+# Vercel repeats large inline schemas across operations. Reuse identical shapes
+# so their models and STJ metadata are generated once.
+python3 dedupe_inline_schemas.py openapi.yaml
+
 autosdk generate openapi.yaml \
   --namespace Vercel \
   --clientClassName VercelClient \

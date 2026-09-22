@@ -12,7 +12,7 @@ namespace Vercel
         /// Project-level rolling release configuration that defines how deployments should be gradually rolled out
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rollingRelease")]
-        public global::Vercel.GetRollingReleaseConfigResponseRollingRelease? RollingRelease { get; set; }
+        public global::Vercel.AutoSDKShared42a87d29a5696121? RollingRelease { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,7 +30,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetRollingReleaseConfigResponse(
-            global::Vercel.GetRollingReleaseConfigResponseRollingRelease? rollingRelease)
+            global::Vercel.AutoSDKShared42a87d29a5696121? rollingRelease)
         {
             this.RollingRelease = rollingRelease;
         }

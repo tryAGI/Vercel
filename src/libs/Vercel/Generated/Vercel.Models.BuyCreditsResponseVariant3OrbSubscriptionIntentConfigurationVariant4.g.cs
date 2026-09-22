@@ -20,7 +20,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("output")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4Output Output { get; set; }
+        public required global::Vercel.AutoSDKShared7eafcec92f234b4a Output { get; set; }
 
         /// <summary>
         ///
@@ -50,7 +50,7 @@ namespace Vercel
 #endif
         public BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4(
             global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4Options options,
-            global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4Output output,
+            global::Vercel.AutoSDKShared7eafcec92f234b4a output,
             global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4Type type)
         {
             this.Options = options ?? throw new global::System.ArgumentNullException(nameof(options));

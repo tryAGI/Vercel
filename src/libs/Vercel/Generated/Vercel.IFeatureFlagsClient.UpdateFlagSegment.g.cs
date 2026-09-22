@@ -28,7 +28,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.UpdateFlagSegmentResponse2, global::Vercel.Segment>> UpdateFlagSegmentAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.AutoSDKSharedd2d51fdc45c5e627, global::Vercel.Segment>> UpdateFlagSegmentAsync(
             string projectIdOrName,
             string segmentIdOrSlug,
 
@@ -62,7 +62,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.UpdateFlagSegmentResponse2, global::Vercel.Segment>>> UpdateFlagSegmentAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.AutoSDKSharedd2d51fdc45c5e627, global::Vercel.Segment>>> UpdateFlagSegmentAsResponseAsync(
             string projectIdOrName,
             string segmentIdOrSlug,
 
@@ -102,7 +102,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.UpdateFlagSegmentResponse2, global::Vercel.Segment>> UpdateFlagSegmentAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.AutoSDKSharedd2d51fdc45c5e627, global::Vercel.Segment>> UpdateFlagSegmentAsync(
             string projectIdOrName,
             string segmentIdOrSlug,
             bool? withMetadata = default,
@@ -111,7 +111,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSegmentRequestOperation>? operations = default,
             string? label = default,
             string? description = default,
-            global::Vercel.UpdateFlagSegmentRequestData? data = default,
+            global::Vercel.AutoSDKShared2ea6923996597ff4? data = default,
             string? hint = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

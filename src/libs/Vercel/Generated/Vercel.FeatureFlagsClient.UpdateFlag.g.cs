@@ -79,7 +79,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.UpdateFlagResponse2, global::Vercel.Flag>> UpdateFlagAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.AutoSDKShared47a8daa582c3a982, global::Vercel.Flag>> UpdateFlagAsync(
             string projectIdOrName,
             string flagIdOrSlug,
 
@@ -132,7 +132,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.UpdateFlagResponse2, global::Vercel.Flag>>> UpdateFlagAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.AutoSDKShared47a8daa582c3a982, global::Vercel.Flag>>> UpdateFlagAsResponseAsync(
             string projectIdOrName,
             string flagIdOrSlug,
 
@@ -699,9 +699,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.OneOf<global::Vercel.UpdateFlagResponse2, global::Vercel.Flag>.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.OneOf<global::Vercel.AutoSDKShared47a8daa582c3a982, global::Vercel.Flag>.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.UpdateFlagResponse2, global::Vercel.Flag>>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.AutoSDKShared47a8daa582c3a982, global::Vercel.Flag>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -731,9 +731,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.OneOf<global::Vercel.UpdateFlagResponse2, global::Vercel.Flag>.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.OneOf<global::Vercel.AutoSDKShared47a8daa582c3a982, global::Vercel.Flag>.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.UpdateFlagResponse2, global::Vercel.Flag>>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.AutoSDKShared47a8daa582c3a982, global::Vercel.Flag>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -826,7 +826,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.UpdateFlagResponse2, global::Vercel.Flag>> UpdateFlagAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.AutoSDKShared47a8daa582c3a982, global::Vercel.Flag>> UpdateFlagAsync(
             string projectIdOrName,
             string flagIdOrSlug,
             string? ifMatch = default,
@@ -836,7 +836,7 @@ namespace Vercel
             string? createdBy = default,
             string? message = default,
             global::System.Collections.Generic.IList<global::Vercel.UpdateFlagRequestVariant>? variants = default,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateFlagRequestEnvironments2>? environments = default,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKSharedf6358e22f097f5b6>? environments = default,
             double? seed = default,
             string? description = default,
             global::Vercel.UpdateFlagRequestState? state = default,

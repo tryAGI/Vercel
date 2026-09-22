@@ -30,7 +30,7 @@ namespace Vercel
         /// The configuration for the flag in different environments
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateFlagRequestEnvironments2>? Environments { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKSharedf6358e22f097f5b6>? Environments { get; set; }
 
         /// <summary>
         /// A random seed to prevent split points in different flags from having the same targets
@@ -113,7 +113,7 @@ namespace Vercel
             string? createdBy,
             string? message,
             global::System.Collections.Generic.IList<global::Vercel.UpdateFlagRequestVariant>? variants,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateFlagRequestEnvironments2>? environments,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKSharedf6358e22f097f5b6>? environments,
             double? seed,
             string? description,
             global::Vercel.UpdateFlagRequestState? state,

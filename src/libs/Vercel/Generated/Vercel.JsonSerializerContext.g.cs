@@ -50,25 +50,7 @@ public sealed class SourceGenerationContext : JsonSerializerContext
             new global::Vercel.SourceGenerationContextChunk013(CreateChildOptions(Options)),
             new global::Vercel.SourceGenerationContextChunk014(CreateChildOptions(Options)),
             new global::Vercel.SourceGenerationContextChunk015(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk016(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk017(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk018(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk019(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk020(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk021(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk022(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk023(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk024(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk025(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk026(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk027(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk028(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk029(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk030(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk031(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk032(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk033(CreateChildOptions(Options)),
-            new global::Vercel.SourceGenerationContextChunk034(CreateChildOptions(Options))
+            new global::Vercel.SourceGenerationContextChunk016(CreateChildOptions(Options))
         ];
     }
 

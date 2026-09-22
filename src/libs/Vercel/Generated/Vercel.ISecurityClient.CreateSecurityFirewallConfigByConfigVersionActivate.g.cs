@@ -12,7 +12,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponse> CreateSecurityFirewallConfigByConfigVersionActivateAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared7e5cde0fd7c87b94> CreateSecurityFirewallConfigByConfigVersionActivateAsync(
             string configVersion,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
@@ -24,7 +24,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateSecurityFirewallConfigByConfigVersionActivateResponse>> CreateSecurityFirewallConfigByConfigVersionActivateAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared7e5cde0fd7c87b94>> CreateSecurityFirewallConfigByConfigVersionActivateAsResponseAsync(
             string configVersion,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

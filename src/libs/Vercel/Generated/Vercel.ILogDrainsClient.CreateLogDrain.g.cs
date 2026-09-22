@@ -18,7 +18,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.CreateLogDrainResponse> CreateLogDrainAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedc396e89a7a8d84fb> CreateLogDrainAsync(
 
             global::Vercel.CreateLogDrainRequest request,
             string? teamId = default,
@@ -39,7 +39,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateLogDrainResponse>> CreateLogDrainAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedc396e89a7a8d84fb>> CreateLogDrainAsResponseAsync(
 
             global::Vercel.CreateLogDrainRequest request,
             string? teamId = default,
@@ -81,7 +81,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.CreateLogDrainResponse> CreateLogDrainAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedc396e89a7a8d84fb> CreateLogDrainAsync(
             string name,
             string url,
             string? teamId = default,

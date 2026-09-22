@@ -23,7 +23,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.RevokeKmsSigningKeyResponse> RevokeKmsSigningKeyAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared02b3ab4a1bf599af> RevokeKmsSigningKeyAsync(
             string issuerId,
             string keyId,
             string? teamId = default,
@@ -49,7 +49,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.RevokeKmsSigningKeyResponse>> RevokeKmsSigningKeyAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared02b3ab4a1bf599af>> RevokeKmsSigningKeyAsResponseAsync(
             string issuerId,
             string keyId,
             string? teamId = default,

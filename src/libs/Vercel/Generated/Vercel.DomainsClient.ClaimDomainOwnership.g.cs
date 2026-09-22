@@ -62,7 +62,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.ClaimDomainOwnershipResponse> ClaimDomainOwnershipAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared209b2cb84e1d7219> ClaimDomainOwnershipAsync(
             string domain,
             string? teamId = default,
             string? slug = default,
@@ -96,7 +96,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.ClaimDomainOwnershipResponse>> ClaimDomainOwnershipAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared209b2cb84e1d7219>> ClaimDomainOwnershipAsResponseAsync(
             string domain,
             string? teamId = default,
             string? slug = default,
@@ -544,9 +544,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.ClaimDomainOwnershipResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.AutoSDKShared209b2cb84e1d7219.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.ClaimDomainOwnershipResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared209b2cb84e1d7219>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -576,9 +576,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.ClaimDomainOwnershipResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.AutoSDKShared209b2cb84e1d7219.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.ClaimDomainOwnershipResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared209b2cb84e1d7219>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

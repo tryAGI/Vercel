@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace Vercel.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class AutoSDKSharedfabd867705b7541aCurrentDeploymentReadyStateNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.AutoSDKSharedfabd867705b7541aCurrentDeploymentReadyState?>
+    {
+        /// <inheritdoc />
+        public override global::Vercel.AutoSDKSharedfabd867705b7541aCurrentDeploymentReadyState? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::Vercel.AutoSDKSharedfabd867705b7541aCurrentDeploymentReadyStateExtensions.ToEnum(stringValue);
+                    }
+
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::Vercel.AutoSDKSharedfabd867705b7541aCurrentDeploymentReadyState)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::Vercel.AutoSDKSharedfabd867705b7541aCurrentDeploymentReadyState?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::Vercel.AutoSDKSharedfabd867705b7541aCurrentDeploymentReadyState? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::Vercel.AutoSDKSharedfabd867705b7541aCurrentDeploymentReadyStateExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}

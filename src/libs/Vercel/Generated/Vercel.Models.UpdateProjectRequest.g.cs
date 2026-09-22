@@ -266,8 +266,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPolicy")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.UpdateProjectRequestDeploymentPolicy, string>))]
-        public global::Vercel.AnyOf<global::Vercel.UpdateProjectRequestDeploymentPolicy, string>? DeploymentPolicy { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared78fcc629ea8987edJsonConverter))]
+        public global::Vercel.AutoSDKShared78fcc629ea8987ed? DeploymentPolicy { get; set; }
 
         /// <summary>
         /// Specify a list of paths that should not be protected by Deployment Protection to enable Cors preflight requests
@@ -455,7 +455,7 @@ namespace Vercel
             global::Vercel.UpdateProjectRequestSsoProtection? ssoProtection,
             global::Vercel.UpdateProjectRequestTrustedIps? trustedIps,
             global::Vercel.UpdateProjectRequestTrustedSources? trustedSources,
-            global::Vercel.AnyOf<global::Vercel.UpdateProjectRequestDeploymentPolicy, string>? deploymentPolicy,
+            global::Vercel.AutoSDKShared78fcc629ea8987ed? deploymentPolicy,
             global::Vercel.UpdateProjectRequestOptionsAllowlist? optionsAllowlist,
             global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestConnectConfiguration>? connectConfigurations,
             global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestDismissedToast>? dismissedToasts)

@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("route")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AddRouteResponseRoute Route { get; set; }
+        public required global::Vercel.AutoSDKShared258edac9bcd00342 Route { get; set; }
 
         /// <summary>
         /// A version of routing rules stored in S3.
@@ -39,7 +39,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AddRouteResponse(
-            global::Vercel.AddRouteResponseRoute route,
+            global::Vercel.AutoSDKShared258edac9bcd00342 route,
             global::Vercel.AddRouteResponseVersion version)
         {
             this.Route = route ?? throw new global::System.ArgumentNullException(nameof(route));

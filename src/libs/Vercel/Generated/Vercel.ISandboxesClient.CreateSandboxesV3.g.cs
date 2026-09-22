@@ -127,7 +127,7 @@ namespace Vercel
         global::System.Threading.Tasks.Task<global::Vercel.CreateSandboxesV3Response> CreateSandboxesV3Async(
             string? teamId = default,
             string? slug = default,
-            global::Vercel.OneOf<global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesV3RequestNetworkPolicyVariant2>? networkPolicy = default,
+            global::Vercel.AutoSDKShared9296e9c5692fbba2? networkPolicy = default,
             global::Vercel.CreateSandboxesV3RequestArchitecture? architecture = default,
             global::Vercel.CreateSandboxesV3RequestResources? resources = default,
             global::Vercel.OneOf<global::Vercel.CreateSandboxesV3RequestSourceVariant1, global::Vercel.CreateSandboxesV3RequestSourceVariant2, global::Vercel.CreateSandboxesV3RequestSourceVariant3>? source = default,

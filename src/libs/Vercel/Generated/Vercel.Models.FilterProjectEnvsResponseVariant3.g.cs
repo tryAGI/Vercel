@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("envs")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant3Env> Envs { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared268fc08d868dfab3> Envs { get; set; }
 
         /// <summary>
         ///
@@ -37,7 +37,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FilterProjectEnvsResponseVariant3(
-            global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant3Env> envs,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared268fc08d868dfab3> envs,
             double hiddenProductionEnvCount)
         {
             this.Envs = envs ?? throw new global::System.ArgumentNullException(nameof(envs));

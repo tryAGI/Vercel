@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("created")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseCreatedItem> Created { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared3123f815641fd36d> Created { get; set; }
 
         /// <summary>
         ///
@@ -37,7 +37,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateSharedEnvVariableResponse(
-            global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseCreatedItem> created,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared3123f815641fd36d> created,
             global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseFailedItem> failed)
         {
             this.Created = created ?? throw new global::System.ArgumentNullException(nameof(created));

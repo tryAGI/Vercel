@@ -1,0 +1,60 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    /// Configuration for matching git branches to this environment
+    /// </summary>
+    public sealed partial class AutoSDKSharede064e44b973b9ad0BranchMatcher
+    {
+        /// <summary>
+        /// The pattern to match against branch names
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pattern")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Pattern { get; set; }
+
+        /// <summary>
+        /// The type of matching to perform
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKSharede064e44b973b9ad0BranchMatcherTypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.AutoSDKSharede064e44b973b9ad0BranchMatcherType Type { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AutoSDKSharede064e44b973b9ad0BranchMatcher" /> class.
+        /// </summary>
+        /// <param name="pattern">
+        /// The pattern to match against branch names
+        /// </param>
+        /// <param name="type">
+        /// The type of matching to perform
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public AutoSDKSharede064e44b973b9ad0BranchMatcher(
+            string pattern,
+            global::Vercel.AutoSDKSharede064e44b973b9ad0BranchMatcherType type)
+        {
+            this.Pattern = pattern ?? throw new global::System.ArgumentNullException(nameof(pattern));
+            this.Type = type;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AutoSDKSharede064e44b973b9ad0BranchMatcher" /> class.
+        /// </summary>
+        public AutoSDKSharede064e44b973b9ad0BranchMatcher()
+        {
+        }
+
+    }
+}

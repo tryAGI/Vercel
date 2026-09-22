@@ -24,7 +24,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.ActivateKmsSigningKeyResponse> ActivateKmsSigningKeyAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared3ba4fd4930b951c7> ActivateKmsSigningKeyAsync(
             string issuerId,
             string keyId,
 
@@ -53,7 +53,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.ActivateKmsSigningKeyResponse>> ActivateKmsSigningKeyAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared3ba4fd4930b951c7>> ActivateKmsSigningKeyAsResponseAsync(
             string issuerId,
             string keyId,
 
@@ -84,7 +84,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.ActivateKmsSigningKeyResponse> ActivateKmsSigningKeyAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared3ba4fd4930b951c7> ActivateKmsSigningKeyAsync(
             string issuerId,
             string keyId,
             string? teamId = default,

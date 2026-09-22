@@ -1,0 +1,55 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    ///
+    /// </summary>
+    public sealed partial class AutoSDKShared9a99a7cde55f3566ManagedRulesBotFilter
+    {
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared9a99a7cde55f3566ManagedRulesBotFilterActionJsonConverter))]
+        public global::Vercel.AutoSDKShared9a99a7cde55f3566ManagedRulesBotFilterAction? Action { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("active")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Active { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AutoSDKShared9a99a7cde55f3566ManagedRulesBotFilter" /> class.
+        /// </summary>
+        /// <param name="active"></param>
+        /// <param name="action"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public AutoSDKShared9a99a7cde55f3566ManagedRulesBotFilter(
+            bool active,
+            global::Vercel.AutoSDKShared9a99a7cde55f3566ManagedRulesBotFilterAction? action)
+        {
+            this.Action = action;
+            this.Active = active;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AutoSDKShared9a99a7cde55f3566ManagedRulesBotFilter" /> class.
+        /// </summary>
+        public AutoSDKShared9a99a7cde55f3566ManagedRulesBotFilter()
+        {
+        }
+
+    }
+}

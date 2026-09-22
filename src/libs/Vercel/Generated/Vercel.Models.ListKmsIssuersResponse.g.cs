@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("issuers")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.ListKmsIssuersResponseIssuer> Issuers { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared02b3ab4a1bf599af> Issuers { get; set; }
 
         /// <summary>
         ///
@@ -37,7 +37,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListKmsIssuersResponse(
-            global::System.Collections.Generic.IList<global::Vercel.ListKmsIssuersResponseIssuer> issuers,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared02b3ab4a1bf599af> issuers,
             global::Vercel.ListKmsIssuersResponsePagination pagination)
         {
             this.Issuers = issuers ?? throw new global::System.ArgumentNullException(nameof(issuers));

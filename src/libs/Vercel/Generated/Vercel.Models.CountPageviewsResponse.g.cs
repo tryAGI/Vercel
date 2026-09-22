@@ -12,9 +12,9 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CountPageviewsResponseDataVariant1, global::Vercel.CountPageviewsResponseDataVariant2>))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared990c7cda5d679d8c, global::Vercel.CountPageviewsResponseData>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<global::Vercel.CountPageviewsResponseDataVariant1, global::Vercel.CountPageviewsResponseDataVariant2> Data { get; set; }
+        public required global::Vercel.OneOf<global::Vercel.AutoSDKShared990c7cda5d679d8c, global::Vercel.CountPageviewsResponseData> Data { get; set; }
 
         /// <summary>
         ///
@@ -46,7 +46,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CountPageviewsResponse(
-            global::Vercel.OneOf<global::Vercel.CountPageviewsResponseDataVariant1, global::Vercel.CountPageviewsResponseDataVariant2> data,
+            global::Vercel.OneOf<global::Vercel.AutoSDKShared990c7cda5d679d8c, global::Vercel.CountPageviewsResponseData> data,
             global::Vercel.CountPageviewsResponseQuery query,
             double version)
         {

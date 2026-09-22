@@ -64,7 +64,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.CreateCustomEnvironmentResponse> CreateCustomEnvironmentAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared7d4f4f5cff68219a> CreateCustomEnvironmentAsync(
             string idOrName,
 
             global::Vercel.CreateCustomEnvironmentRequest request,
@@ -102,7 +102,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateCustomEnvironmentResponse>> CreateCustomEnvironmentAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared7d4f4f5cff68219a>> CreateCustomEnvironmentAsResponseAsync(
             string idOrName,
 
             global::Vercel.CreateCustomEnvironmentRequest request,
@@ -594,9 +594,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.CreateCustomEnvironmentResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.AutoSDKShared7d4f4f5cff68219a.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateCustomEnvironmentResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared7d4f4f5cff68219a>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -626,9 +626,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.CreateCustomEnvironmentResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.AutoSDKShared7d4f4f5cff68219a.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateCustomEnvironmentResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared7d4f4f5cff68219a>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -696,7 +696,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.CreateCustomEnvironmentResponse> CreateCustomEnvironmentAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared7d4f4f5cff68219a> CreateCustomEnvironmentAsync(
             string idOrName,
             string? teamId = default,
             string? slug = default,

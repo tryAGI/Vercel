@@ -18,7 +18,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.ListDeploymentCheckRunsResponse> ListDeploymentCheckRunsAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared618805c2ca46e0a6> ListDeploymentCheckRunsAsync(
             string deploymentId,
             string? teamId = default,
             string? slug = default,
@@ -38,7 +38,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.ListDeploymentCheckRunsResponse>> ListDeploymentCheckRunsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared618805c2ca46e0a6>> ListDeploymentCheckRunsAsResponseAsync(
             string deploymentId,
             string? teamId = default,
             string? slug = default,

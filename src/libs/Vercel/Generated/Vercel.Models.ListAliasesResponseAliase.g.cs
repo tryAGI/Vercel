@@ -66,7 +66,7 @@ namespace Vercel
         /// The microfrontends for the alias including the routing configuration
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microfrontends")]
-        public global::Vercel.ListAliasesResponseAliaseMicrofrontends? Microfrontends { get; set; }
+        public global::Vercel.AutoSDKShareda43c8be44c1b9566? Microfrontends { get; set; }
 
         /// <summary>
         /// The unique identifier of the project<br/>
@@ -179,7 +179,7 @@ namespace Vercel
             double? deletedAt,
             global::Vercel.ListAliasesResponseAliaseDeployment? deployment,
             string? deploymentId,
-            global::Vercel.ListAliasesResponseAliaseMicrofrontends? microfrontends,
+            global::Vercel.AutoSDKShareda43c8be44c1b9566? microfrontends,
             string? projectId,
             object? protectionBypass,
             string? redirect,

@@ -39,7 +39,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.CreateFlagSegmentRequestData Data { get; set; }
+        public required global::Vercel.AutoSDKShared2ea6923996597ff4 Data { get; set; }
 
         /// <summary>
         ///
@@ -73,7 +73,7 @@ namespace Vercel
         public CreateFlagSegmentRequest(
             string slug,
             string label,
-            global::Vercel.CreateFlagSegmentRequestData data,
+            global::Vercel.AutoSDKShared2ea6923996597ff4 data,
             string hint,
             string? createdBy,
             string? description)

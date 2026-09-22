@@ -20,7 +20,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadataSchema")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetConfigurationProductsResponseProductMetadataSchema MetadataSchema { get; set; }
+        public required global::Vercel.AutoSDKSharedf9b373cd1ded5c73 MetadataSchema { get; set; }
 
         /// <summary>
         ///
@@ -70,7 +70,7 @@ namespace Vercel
 #endif
         public GetConfigurationProductsResponseProduct(
             string id,
-            global::Vercel.GetConfigurationProductsResponseProductMetadataSchema metadataSchema,
+            global::Vercel.AutoSDKSharedf9b373cd1ded5c73 metadataSchema,
             string name,
             global::Vercel.GetConfigurationProductsResponseProductProtocols protocols,
             string slug,

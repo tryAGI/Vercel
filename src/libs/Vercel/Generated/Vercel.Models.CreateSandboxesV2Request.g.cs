@@ -12,8 +12,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("networkPolicy")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateSandboxesV2RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesV2RequestNetworkPolicyVariant2>))]
-        public global::Vercel.OneOf<global::Vercel.CreateSandboxesV2RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesV2RequestNetworkPolicyVariant2>? NetworkPolicy { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared9296e9c5692fbba2JsonConverter))]
+        public global::Vercel.AutoSDKShared9296e9c5692fbba2? NetworkPolicy { get; set; }
 
         /// <summary>
         /// The runtime environment for the sandbox. Determines the pre-installed language runtimes and tools available.<br/>
@@ -237,7 +237,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateSandboxesV2Request(
-            global::Vercel.OneOf<global::Vercel.CreateSandboxesV2RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesV2RequestNetworkPolicyVariant2>? networkPolicy,
+            global::Vercel.AutoSDKShared9296e9c5692fbba2? networkPolicy,
             global::Vercel.CreateSandboxesV2RequestRuntime? runtime,
             global::Vercel.CreateSandboxesV2RequestArchitecture? architecture,
             global::Vercel.CreateSandboxesV2RequestResources? resources,

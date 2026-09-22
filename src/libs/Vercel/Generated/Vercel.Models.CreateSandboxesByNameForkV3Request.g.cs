@@ -12,8 +12,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("networkPolicy")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesByNameForkV3RequestNetworkPolicyVariant2>))]
-        public global::Vercel.OneOf<global::Vercel.CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesByNameForkV3RequestNetworkPolicyVariant2>? NetworkPolicy { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared9296e9c5692fbba2JsonConverter))]
+        public global::Vercel.AutoSDKShared9296e9c5692fbba2? NetworkPolicy { get; set; }
 
         /// <summary>
         /// Resources to define the VM
@@ -186,7 +186,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateSandboxesByNameForkV3Request(
-            global::Vercel.OneOf<global::Vercel.CreateSandboxesByNameForkV3RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesByNameForkV3RequestNetworkPolicyVariant2>? networkPolicy,
+            global::Vercel.AutoSDKShared9296e9c5692fbba2? networkPolicy,
             global::Vercel.CreateSandboxesByNameForkV3RequestResources? resources,
             global::System.Collections.Generic.IList<int>? ports,
             string? image,

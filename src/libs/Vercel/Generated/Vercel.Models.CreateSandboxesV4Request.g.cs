@@ -12,8 +12,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("networkPolicy")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateSandboxesV4RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesV4RequestNetworkPolicyVariant2>))]
-        public global::Vercel.OneOf<global::Vercel.CreateSandboxesV4RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesV4RequestNetworkPolicyVariant2>? NetworkPolicy { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared9296e9c5692fbba2JsonConverter))]
+        public global::Vercel.AutoSDKShared9296e9c5692fbba2? NetworkPolicy { get; set; }
 
         /// <summary>
         /// CPU architecture. Inherits a snapshot or single image manifest when omitted. Image indexes default to amd64. Must match the source. ARM64 creation requires API v3 or v4 without runtime and team access.<br/>
@@ -223,7 +223,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateSandboxesV4Request(
-            global::Vercel.OneOf<global::Vercel.CreateSandboxesV4RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesV4RequestNetworkPolicyVariant2>? networkPolicy,
+            global::Vercel.AutoSDKShared9296e9c5692fbba2? networkPolicy,
             global::Vercel.CreateSandboxesV4RequestArchitecture? architecture,
             global::Vercel.CreateSandboxesV4RequestResources? resources,
             global::Vercel.OneOf<global::Vercel.CreateSandboxesV4RequestSourceVariant1, global::Vercel.CreateSandboxesV4RequestSourceVariant2, global::Vercel.CreateSandboxesV4RequestSourceVariant3>? source,

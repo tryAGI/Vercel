@@ -20,7 +20,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.GetMicrofrontendsConfigForProjectResponse> GetMicrofrontendsConfigForProjectAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared8497046ac346003c> GetMicrofrontendsConfigForProjectAsync(
             string projectIdOrName,
             string? teamId = default,
             string? slug = default,
@@ -42,7 +42,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetMicrofrontendsConfigForProjectResponse>> GetMicrofrontendsConfigForProjectAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared8497046ac346003c>> GetMicrofrontendsConfigForProjectAsResponseAsync(
             string projectIdOrName,
             string? teamId = default,
             string? slug = default,

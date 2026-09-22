@@ -21,7 +21,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.CreateFlagResponse> CreateFlagAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared47a8daa582c3a982> CreateFlagAsync(
             string projectIdOrName,
 
             global::Vercel.CreateFlagRequest request,
@@ -46,7 +46,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateFlagResponse>> CreateFlagAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared47a8daa582c3a982>> CreateFlagAsResponseAsync(
             string projectIdOrName,
 
             global::Vercel.CreateFlagRequest request,
@@ -98,11 +98,11 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.CreateFlagResponse> CreateFlagAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared47a8daa582c3a982> CreateFlagAsync(
             string projectIdOrName,
             string requestSlug,
             global::Vercel.CreateFlagRequestKind kind,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateFlagRequestEnvironments2> environments,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKSharedf6358e22f097f5b6> environments,
             string? teamId = default,
             string? slug = default,
             global::System.Collections.Generic.IList<global::Vercel.CreateFlagRequestVariant>? variants = default,

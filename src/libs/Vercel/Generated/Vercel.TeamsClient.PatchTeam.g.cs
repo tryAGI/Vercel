@@ -814,7 +814,7 @@ namespace Vercel
             global::Vercel.PatchTeamRequestDefaultDeploymentProtection? defaultDeploymentProtection = default,
             global::Vercel.PatchTeamRequestDefaultPassport? defaultPassport = default,
             global::Vercel.PatchTeamRequestDefaultExpirationSettings? defaultExpirationSettings = default,
-            global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicy, string>? deploymentPolicy = default,
+            global::Vercel.AutoSDKShared78fcc629ea8987ed? deploymentPolicy = default,
             global::Vercel.PatchTeamRequestStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings = default,
             global::Vercel.PatchTeamRequestStrictShareableLinks? strictShareableLinks = default,
             global::Vercel.PatchTeamRequestStrictPasswordProtectionSettings? strictPasswordProtectionSettings = default,

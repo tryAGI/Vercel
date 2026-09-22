@@ -26,7 +26,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.SegmentData Data { get; set; }
+        public required global::Vercel.AutoSDKShared0f637bb8b5caf2d6 Data { get; set; }
 
         /// <summary>
         ///
@@ -129,7 +129,7 @@ namespace Vercel
 #endif
         public Segment(
             double createdAt,
-            global::Vercel.SegmentData data,
+            global::Vercel.AutoSDKShared0f637bb8b5caf2d6 data,
             string hint,
             string id,
             string label,

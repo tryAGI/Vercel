@@ -30,7 +30,7 @@ namespace Vercel
         /// The data of the segment
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
-        public global::Vercel.UpdateFlagSegmentRequestData? Data { get; set; }
+        public global::Vercel.AutoSDKShared2ea6923996597ff4? Data { get; set; }
 
         /// <summary>
         ///
@@ -61,7 +61,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSegmentRequestOperation>? operations,
             string? label,
             string? description,
-            global::Vercel.UpdateFlagSegmentRequestData? data,
+            global::Vercel.AutoSDKShared2ea6923996597ff4? data,
             string? hint)
         {
             this.Operations = operations;

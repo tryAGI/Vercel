@@ -57,8 +57,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("networkPolicy")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>))]
-        public global::Vercel.OneOf<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>? NetworkPolicy { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared9296e9c5692fbba2JsonConverter))]
+        public global::Vercel.AutoSDKShared9296e9c5692fbba2? NetworkPolicy { get; set; }
 
         /// <summary>
         /// The Vercel region in which to create the sandbox.<br/>
@@ -189,7 +189,7 @@ namespace Vercel
             bool? persistent,
             global::Vercel.OneOf<object, int?>? snapshotExpiration,
             global::Vercel.OneOf<string, global::Vercel.UpdateSandboxRequestKeepLastSnapshots>? keepLastSnapshots,
-            global::Vercel.OneOf<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>? networkPolicy,
+            global::Vercel.AutoSDKShared9296e9c5692fbba2? networkPolicy,
             global::Vercel.UpdateSandboxRequestRegion? region,
             global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestFailoverRegion>? failoverRegions,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateSandboxRequestMounts2>? mounts,

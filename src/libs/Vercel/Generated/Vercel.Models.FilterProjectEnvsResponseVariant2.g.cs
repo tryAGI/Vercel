@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("envs")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant2Env> Envs { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared268fc08d868dfab3> Envs { get; set; }
 
         /// <summary>
         /// This object contains information related to the pagination of the current request, including the necessary parameters to get the next or previous page of data.
@@ -39,7 +39,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FilterProjectEnvsResponseVariant2(
-            global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant2Env> envs,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared268fc08d868dfab3> envs,
             global::Vercel.Pagination pagination)
         {
             this.Envs = envs ?? throw new global::System.ArgumentNullException(nameof(envs));

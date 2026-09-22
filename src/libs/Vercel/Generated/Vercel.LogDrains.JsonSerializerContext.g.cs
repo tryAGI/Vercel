@@ -14,18 +14,10 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5>), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5_dafa76ff77945a4b")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2>), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2_09e4b6f6f47d00d4")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant3, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5>), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5_018670842c9eae83")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2>), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2_8dd29e21253f858d")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2>), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2_197b7531eb43aa38")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5>?), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5_0ebfdcb389fbe1d7")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant2>?), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant2_1dc5646dfe0a7d25")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2>?), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2_27a6d009def13be0")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant3, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5>?), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5_3076950d1be6a701")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2>?), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2_112bdb30db32220c")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2>?), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2_99596490ccace210")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2>?), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2_831093f663bf3fa6")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant3, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant5>), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant5_663dc62fcc6734cb")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant3, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5>), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5_fbd9c9581e9db12b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant3, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant5>?), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant5_1d0e64ad482858aa")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant3, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5>?), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5_bb4f317559bac8aa")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
@@ -35,6 +27,138 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Compression), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant1Compression2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Encoding), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant1Encoding2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Secret>), TypeInfoPropertyName = "OneOfStringAutoSDKShared383028c008cc4ae0DeliveryVariant1Secret2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Secret))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1SecretKind), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant1SecretKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Type), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2Encoding), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant2Encoding2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2Endpoint))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2Secret>), TypeInfoPropertyName = "OneOfStringAutoSDKShared383028c008cc4ae0DeliveryVariant2Secret2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2Secret))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2SecretKind), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant2SecretKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2Type), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant3Type), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant3Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Compression), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant4Compression2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Encoding), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant4Encoding2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4FileStructure), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant4FileStructure2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4ObjectAcl), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant4ObjectAcl2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4ServerSideEncryption), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant4ServerSideEncryption2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Type), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant4Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant5))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant5Target), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant5Target2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant5Type), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DeliveryVariant5Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DisabledReason), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0DisabledReason2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared383028c008cc4ae0SamplingItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SamplingItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SamplingItemEnv), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0SamplingItemEnv2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SamplingItemType), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0SamplingItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0Schemas))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant1, global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant2>), TypeInfoPropertyName = "OneOfAutoSDKShared383028c008cc4ae0SourceVariant1AutoSDKShared383028c008cc4ae0SourceVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant1DefaultFor), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0SourceVariant1DefaultFor2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant1Kind), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0SourceVariant1Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant2Kind), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0SourceVariant2Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0Status), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0Status2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1, global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant2>), TypeInfoPropertyName = "OneOfAutoSDKShared383028c008cc4ae0FilterV2FilterVariant1AutoSDKShared383028c008cc4ae0FilterV2FilterVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1Deployment))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1DeploymentEnvironment>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1DeploymentEnvironment), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1DeploymentEnvironment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1Log))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1LogSource>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1LogSource), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1LogSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1Project))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1Type), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant2Type), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0FilterV2FilterVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2Version), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0FilterV2Version2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1, global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2>), TypeInfoPropertyName = "OneOfAutoSDKShared383028c008cc4ae0ProjectAccessVariant1AutoSDKShared383028c008cc4ae0ProjectAccessVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1Access), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0ProjectAccessVariant1Access2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1ManagedBy), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0ProjectAccessVariant1ManagedBy2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2Access), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0ProjectAccessVariant2Access2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2ManagedBy), TypeInfoPropertyName = "AutoSDKShared383028c008cc4ae0ProjectAccessVariant2ManagedBy2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9c06dfe8dd59ad6d>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6d))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Compression), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Compression2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Encoding), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Encoding2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Secret>), TypeInfoPropertyName = "OneOfStringAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Secret2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Secret))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1SecretKind), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1SecretKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Type), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Encoding), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Encoding2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Endpoint))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Secret>), TypeInfoPropertyName = "OneOfStringAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Secret2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Secret))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2SecretKind), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2SecretKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Type), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant3Type), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant3Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Compression), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Compression2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Encoding), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Encoding2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4FileStructure), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4FileStructure2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ObjectAcl), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ObjectAcl2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ServerSideEncryption), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ServerSideEncryption2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Type), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5Target), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5Target2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5Type), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDisabledReason), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dDisabledReason2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSamplingItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSamplingItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSamplingItemEnv), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dSamplingItemEnv2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSamplingItemType), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dSamplingItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSchemas))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant2>), TypeInfoPropertyName = "OneOfAutoSDKShared9c06dfe8dd59ad6dSourceVariant1AutoSDKShared9c06dfe8dd59ad6dSourceVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1DefaultFor), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dSourceVariant1DefaultFor2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1Kind), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dSourceVariant1Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant2Kind), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dSourceVariant2Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dStatus), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant2>), TypeInfoPropertyName = "OneOfAutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1Deployment))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1DeploymentEnvironment>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1DeploymentEnvironment), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1DeploymentEnvironment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1Log))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1LogSource>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1LogSource), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1LogSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1Project))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1Type), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant2Type), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2Version), TypeInfoPropertyName = "AutoSDKShared9c06dfe8dd59ad6dFilterV2Version2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9e8f7cd3a066bfd9), TypeInfoPropertyName = "AutoSDKShared9e8f7cd3a066bfd92")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared383028c008cc4ae0>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedb13a6bca2ca06cfe))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fb))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbCreatedFrom), TypeInfoPropertyName = "AutoSDKSharedc396e89a7a8d84fbCreatedFrom2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbDeliveryFormat), TypeInfoPropertyName = "AutoSDKSharedc396e89a7a8d84fbDeliveryFormat2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc396e89a7a8d84fbEnvironment>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbEnvironment), TypeInfoPropertyName = "AutoSDKSharedc396e89a7a8d84fbEnvironment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant1, global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant2>), TypeInfoPropertyName = "OneOfAutoSDKSharedc396e89a7a8d84fbSourceVariant1AutoSDKSharedc396e89a7a8d84fbSourceVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant1DefaultFor), TypeInfoPropertyName = "AutoSDKSharedc396e89a7a8d84fbSourceVariant1DefaultFor2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant1Kind), TypeInfoPropertyName = "AutoSDKSharedc396e89a7a8d84fbSourceVariant1Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant2Kind), TypeInfoPropertyName = "AutoSDKSharedc396e89a7a8d84fbSourceVariant2Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc396e89a7a8d84fbSource>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSource), TypeInfoPropertyName = "AutoSDKSharedc396e89a7a8d84fbSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConfigurableLogDrainRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConfigurableLogDrainRequestDeliveryFormat), TypeInfoPropertyName = "CreateConfigurableLogDrainRequestDeliveryFormat2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateConfigurableLogDrainRequestSource>))]
@@ -51,157 +175,93 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetConfigurableLogDrainResponseProjectsMetadataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurableLogDrainResponseProjectsMetadataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurableLogDrainResponseProjectsMetadataItemFramework), TypeInfoPropertyName = "GetConfigurableLogDrainResponseProjectsMetadataItemFramework2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseItem>, global::Vercel.GetAllLogDrainsResponse2>), TypeInfoPropertyName = "OneOfIListGetAllLogDrainsResponseItemGetAllLogDrainsResponse22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseItemProjectsMetadataItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseItemProjectsMetadataItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseItemProjectsMetadataItemFramework), TypeInfoPropertyName = "GetAllLogDrainsResponseItemProjectsMetadataItemFramework2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseDrainsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseDrainsVariant2Item>>), TypeInfoPropertyName = "OneOfIListGetAllLogDrainsResponseDrainsVariant1ItemIListGetAllLogDrainsResponseDrainsVariant2Item2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseDrainsVariant1Item>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1Item))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Compression), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Compression2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Encoding), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Encoding2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Secret>), TypeInfoPropertyName = "OneOfStringGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Secret2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Secret))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1SecretKind), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1SecretKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Type), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Encoding), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Encoding2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Endpoint))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Secret>), TypeInfoPropertyName = "OneOfStringGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Secret2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Secret))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2SecretKind), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2SecretKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Type), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3Type), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Compression), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Compression2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Encoding), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Encoding2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4FileStructure), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4FileStructure2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ObjectAcl), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ObjectAcl2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ServerSideEncryption), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ServerSideEncryption2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Type), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5Target), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5Target2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5Type), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDisabledReason), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemDisabledReason2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemEnv), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemEnv2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemType), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSchemas))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant2>), TypeInfoPropertyName = "OneOfGetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1DefaultFor), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1DefaultFor2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1Kind), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant2Kind), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant2Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemStatus), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Deployment))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1DeploymentEnvironment>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1DeploymentEnvironment), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1DeploymentEnvironment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Log))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1LogSource>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1LogSource), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1LogSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Project))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Type), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2Type), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2Version), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant1ItemFilterV2Version2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseDrainsVariant2Item>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2Item))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Compression), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Compression2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Encoding), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Encoding2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Secret>), TypeInfoPropertyName = "OneOfStringGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Secret2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Secret))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1SecretKind), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1SecretKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Type), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Encoding), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Encoding2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Endpoint))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Secret>), TypeInfoPropertyName = "OneOfStringGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Secret2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Secret))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2SecretKind), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2SecretKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Type), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant3))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant3Type), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant3Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Compression), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Compression2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Encoding), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Encoding2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4FileStructure), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4FileStructure2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ObjectAcl), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ObjectAcl2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ServerSideEncryption), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ServerSideEncryption2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Type), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Target), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Target2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Type), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDisabledReason), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemDisabledReason2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemEnv), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemEnv2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemType), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSchemas))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2>), TypeInfoPropertyName = "OneOfGetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1DefaultFor), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1DefaultFor2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1Kind), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2Kind), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemStatus), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1Deployment))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1DeploymentEnvironment>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1DeploymentEnvironment), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1DeploymentEnvironment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1Log))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1LogSource>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1LogSource), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1LogSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1Project))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1Type), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2Type), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2Version), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemFilterV2Version2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1Access), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1Access2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1ManagedBy), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1ManagedBy2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2Access), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2Access2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2ManagedBy), TypeInfoPropertyName = "GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2ManagedBy2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetIntegrationLogDrainsResponseItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemCreatedFrom), TypeInfoPropertyName = "GetIntegrationLogDrainsResponseItemCreatedFrom2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemDeliveryFormat), TypeInfoPropertyName = "GetIntegrationLogDrainsResponseItemDeliveryFormat2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetIntegrationLogDrainsResponseItemEnvironment>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemEnvironment), TypeInfoPropertyName = "GetIntegrationLogDrainsResponseItemEnvironment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1, global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant2>), TypeInfoPropertyName = "OneOfGetIntegrationLogDrainsResponseItemSourceVariant1GetIntegrationLogDrainsResponseItemSourceVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1DefaultFor), TypeInfoPropertyName = "GetIntegrationLogDrainsResponseItemSourceVariant1DefaultFor2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1Kind), TypeInfoPropertyName = "GetIntegrationLogDrainsResponseItemSourceVariant1Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant2Kind), TypeInfoPropertyName = "GetIntegrationLogDrainsResponseItemSourceVariant2Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetIntegrationLogDrainsResponseItemSource>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSource), TypeInfoPropertyName = "GetIntegrationLogDrainsResponseItemSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainResponseCreatedFrom), TypeInfoPropertyName = "CreateLogDrainResponseCreatedFrom2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainResponseDeliveryFormat), TypeInfoPropertyName = "CreateLogDrainResponseDeliveryFormat2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateLogDrainResponseEnvironment>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainResponseEnvironment), TypeInfoPropertyName = "CreateLogDrainResponseEnvironment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateLogDrainResponseSourceVariant1, global::Vercel.CreateLogDrainResponseSourceVariant2>), TypeInfoPropertyName = "OneOfCreateLogDrainResponseSourceVariant1CreateLogDrainResponseSourceVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainResponseSourceVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainResponseSourceVariant1DefaultFor), TypeInfoPropertyName = "CreateLogDrainResponseSourceVariant1DefaultFor2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainResponseSourceVariant1Kind), TypeInfoPropertyName = "CreateLogDrainResponseSourceVariant1Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainResponseSourceVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainResponseSourceVariant2Kind), TypeInfoPropertyName = "CreateLogDrainResponseSourceVariant2Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateLogDrainResponseSource>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainResponseSource), TypeInfoPropertyName = "CreateLogDrainResponseSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedb13a6bca2ca06cfe>), TypeInfoPropertyName = "OneOfIListGetAllLogDrainsResponseVariant1ItemAutoSDKSharedb13a6bca2ca06cfe2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseVariant1Item))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1ItemProjectsMetadataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseVariant1ItemProjectsMetadataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseVariant1ItemProjectsMetadataItemFramework), TypeInfoPropertyName = "GetAllLogDrainsResponseVariant1ItemProjectsMetadataItemFramework2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc396e89a7a8d84fb>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Compression?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0DeliveryVariant1Compression2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Encoding?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0DeliveryVariant1Encoding2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Secret>?), TypeInfoPropertyName = "NullableOneOfStringAutoSDKShared383028c008cc4ae0DeliveryVariant1Secret2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1SecretKind?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0DeliveryVariant1SecretKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Type?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0DeliveryVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2Encoding?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0DeliveryVariant2Encoding2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2Secret>?), TypeInfoPropertyName = "NullableOneOfStringAutoSDKShared383028c008cc4ae0DeliveryVariant2Secret2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2SecretKind?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0DeliveryVariant2SecretKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2Type?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0DeliveryVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant3Type?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0DeliveryVariant3Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Compression?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0DeliveryVariant4Compression2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Encoding?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0DeliveryVariant4Encoding2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4FileStructure?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0DeliveryVariant4FileStructure2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4ObjectAcl?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0DeliveryVariant4ObjectAcl2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4ServerSideEncryption?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0DeliveryVariant4ServerSideEncryption2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Type?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0DeliveryVariant4Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant5Target?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0DeliveryVariant5Target2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant5Type?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0DeliveryVariant5Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DisabledReason?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0DisabledReason2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SamplingItemEnv?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0SamplingItemEnv2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SamplingItemType?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0SamplingItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant1, global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant2>?), TypeInfoPropertyName = "NullableOneOfAutoSDKShared383028c008cc4ae0SourceVariant1AutoSDKShared383028c008cc4ae0SourceVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant1DefaultFor?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0SourceVariant1DefaultFor2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant1Kind?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0SourceVariant1Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant2Kind?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0SourceVariant2Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0Status?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0Status2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1, global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant2>?), TypeInfoPropertyName = "NullableOneOfAutoSDKShared383028c008cc4ae0FilterV2FilterVariant1AutoSDKShared383028c008cc4ae0FilterV2FilterVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1DeploymentEnvironment?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0FilterV2FilterVariant1DeploymentEnvironment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1LogSource?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0FilterV2FilterVariant1LogSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1Type?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0FilterV2FilterVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant2Type?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0FilterV2FilterVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2Version?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0FilterV2Version2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1, global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2>?), TypeInfoPropertyName = "NullableOneOfAutoSDKShared383028c008cc4ae0ProjectAccessVariant1AutoSDKShared383028c008cc4ae0ProjectAccessVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1Access?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0ProjectAccessVariant1Access2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1ManagedBy?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0ProjectAccessVariant1ManagedBy2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2Access?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0ProjectAccessVariant2Access2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2ManagedBy?), TypeInfoPropertyName = "NullableAutoSDKShared383028c008cc4ae0ProjectAccessVariant2ManagedBy2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Compression?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Compression2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Encoding?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Encoding2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Secret>?), TypeInfoPropertyName = "NullableOneOfStringAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Secret2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1SecretKind?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1SecretKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Type?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Encoding?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Encoding2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Secret>?), TypeInfoPropertyName = "NullableOneOfStringAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Secret2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2SecretKind?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2SecretKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Type?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant3Type?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant3Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Compression?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Compression2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Encoding?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Encoding2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4FileStructure?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4FileStructure2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ObjectAcl?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ObjectAcl2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ServerSideEncryption?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ServerSideEncryption2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Type?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5Target?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5Target2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5Type?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDisabledReason?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dDisabledReason2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSamplingItemEnv?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dSamplingItemEnv2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSamplingItemType?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dSamplingItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant2>?), TypeInfoPropertyName = "NullableOneOfAutoSDKShared9c06dfe8dd59ad6dSourceVariant1AutoSDKShared9c06dfe8dd59ad6dSourceVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1DefaultFor?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dSourceVariant1DefaultFor2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1Kind?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dSourceVariant1Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant2Kind?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dSourceVariant2Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dStatus?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant2>?), TypeInfoPropertyName = "NullableOneOfAutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1DeploymentEnvironment?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1DeploymentEnvironment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1LogSource?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1LogSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1Type?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant2Type?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2Version?), TypeInfoPropertyName = "NullableAutoSDKShared9c06dfe8dd59ad6dFilterV2Version2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9e8f7cd3a066bfd9?), TypeInfoPropertyName = "NullableAutoSDKShared9e8f7cd3a066bfd92")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbCreatedFrom?), TypeInfoPropertyName = "NullableAutoSDKSharedc396e89a7a8d84fbCreatedFrom2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbDeliveryFormat?), TypeInfoPropertyName = "NullableAutoSDKSharedc396e89a7a8d84fbDeliveryFormat2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbEnvironment?), TypeInfoPropertyName = "NullableAutoSDKSharedc396e89a7a8d84fbEnvironment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant1, global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant2>?), TypeInfoPropertyName = "NullableOneOfAutoSDKSharedc396e89a7a8d84fbSourceVariant1AutoSDKSharedc396e89a7a8d84fbSourceVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant1DefaultFor?), TypeInfoPropertyName = "NullableAutoSDKSharedc396e89a7a8d84fbSourceVariant1DefaultFor2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant1Kind?), TypeInfoPropertyName = "NullableAutoSDKSharedc396e89a7a8d84fbSourceVariant1Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant2Kind?), TypeInfoPropertyName = "NullableAutoSDKSharedc396e89a7a8d84fbSourceVariant2Kind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSource?), TypeInfoPropertyName = "NullableAutoSDKSharedc396e89a7a8d84fbSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConfigurableLogDrainRequestDeliveryFormat?), TypeInfoPropertyName = "NullableCreateConfigurableLogDrainRequestDeliveryFormat2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConfigurableLogDrainRequestSource?), TypeInfoPropertyName = "NullableCreateConfigurableLogDrainRequestSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConfigurableLogDrainRequestEnvironment?), TypeInfoPropertyName = "NullableCreateConfigurableLogDrainRequestEnvironment2")]
@@ -209,112 +269,28 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainRequestSource?), TypeInfoPropertyName = "NullableCreateLogDrainRequestSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainRequestEnvironment?), TypeInfoPropertyName = "NullableCreateLogDrainRequestEnvironment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurableLogDrainResponseProjectsMetadataItemFramework?), TypeInfoPropertyName = "NullableGetConfigurableLogDrainResponseProjectsMetadataItemFramework2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseItem>, global::Vercel.GetAllLogDrainsResponse2>?), TypeInfoPropertyName = "NullableOneOfIListGetAllLogDrainsResponseItemGetAllLogDrainsResponse22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseItemProjectsMetadataItemFramework?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseItemProjectsMetadataItemFramework2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseDrainsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseDrainsVariant2Item>>?), TypeInfoPropertyName = "NullableOneOfIListGetAllLogDrainsResponseDrainsVariant1ItemIListGetAllLogDrainsResponseDrainsVariant2Item2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Compression?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Compression2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Encoding?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Encoding2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Secret>?), TypeInfoPropertyName = "NullableOneOfStringGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Secret2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1SecretKind?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1SecretKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Type?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Encoding?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Encoding2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Secret>?), TypeInfoPropertyName = "NullableOneOfStringGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Secret2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2SecretKind?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2SecretKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Type?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3Type?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Compression?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Compression2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Encoding?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Encoding2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4FileStructure?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4FileStructure2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ObjectAcl?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ObjectAcl2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ServerSideEncryption?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ServerSideEncryption2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Type?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5Target?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5Target2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5Type?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDisabledReason?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemDisabledReason2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemEnv?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemSamplingItemEnv2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemType?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemSamplingItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1DefaultFor?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1DefaultFor2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1Kind?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant2Kind?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemSourceVariant2Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemStatus?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1DeploymentEnvironment?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1DeploymentEnvironment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1LogSource?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1LogSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Type?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2Type?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2Version?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant1ItemFilterV2Version2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Compression?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Compression2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Encoding?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Encoding2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Secret>?), TypeInfoPropertyName = "NullableOneOfStringGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Secret2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1SecretKind?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1SecretKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Type?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Encoding?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Encoding2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Secret>?), TypeInfoPropertyName = "NullableOneOfStringGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Secret2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2SecretKind?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2SecretKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Type?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant3Type?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant3Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Compression?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Compression2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Encoding?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Encoding2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4FileStructure?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4FileStructure2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ObjectAcl?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ObjectAcl2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ServerSideEncryption?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ServerSideEncryption2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Type?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Target?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Target2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Type?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDisabledReason?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemDisabledReason2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemEnv?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemSamplingItemEnv2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemType?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemSamplingItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1DefaultFor?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1DefaultFor2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1Kind?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2Kind?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemStatus?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1DeploymentEnvironment?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1DeploymentEnvironment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1LogSource?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1LogSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1Type?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2Type?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2Version?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemFilterV2Version2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1Access?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1Access2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1ManagedBy?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1ManagedBy2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2Access?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2Access2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2ManagedBy?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2ManagedBy2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemCreatedFrom?), TypeInfoPropertyName = "NullableGetIntegrationLogDrainsResponseItemCreatedFrom2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemDeliveryFormat?), TypeInfoPropertyName = "NullableGetIntegrationLogDrainsResponseItemDeliveryFormat2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemEnvironment?), TypeInfoPropertyName = "NullableGetIntegrationLogDrainsResponseItemEnvironment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1, global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant2>?), TypeInfoPropertyName = "NullableOneOfGetIntegrationLogDrainsResponseItemSourceVariant1GetIntegrationLogDrainsResponseItemSourceVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1DefaultFor?), TypeInfoPropertyName = "NullableGetIntegrationLogDrainsResponseItemSourceVariant1DefaultFor2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1Kind?), TypeInfoPropertyName = "NullableGetIntegrationLogDrainsResponseItemSourceVariant1Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant2Kind?), TypeInfoPropertyName = "NullableGetIntegrationLogDrainsResponseItemSourceVariant2Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSource?), TypeInfoPropertyName = "NullableGetIntegrationLogDrainsResponseItemSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainResponseCreatedFrom?), TypeInfoPropertyName = "NullableCreateLogDrainResponseCreatedFrom2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainResponseDeliveryFormat?), TypeInfoPropertyName = "NullableCreateLogDrainResponseDeliveryFormat2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainResponseEnvironment?), TypeInfoPropertyName = "NullableCreateLogDrainResponseEnvironment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateLogDrainResponseSourceVariant1, global::Vercel.CreateLogDrainResponseSourceVariant2>?), TypeInfoPropertyName = "NullableOneOfCreateLogDrainResponseSourceVariant1CreateLogDrainResponseSourceVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainResponseSourceVariant1DefaultFor?), TypeInfoPropertyName = "NullableCreateLogDrainResponseSourceVariant1DefaultFor2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainResponseSourceVariant1Kind?), TypeInfoPropertyName = "NullableCreateLogDrainResponseSourceVariant1Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainResponseSourceVariant2Kind?), TypeInfoPropertyName = "NullableCreateLogDrainResponseSourceVariant2Kind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateLogDrainResponseSource?), TypeInfoPropertyName = "NullableCreateLogDrainResponseSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedb13a6bca2ca06cfe>?), TypeInfoPropertyName = "NullableOneOfIListGetAllLogDrainsResponseVariant1ItemAutoSDKSharedb13a6bca2ca06cfe2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAllLogDrainsResponseVariant1ItemProjectsMetadataItemFramework?), TypeInfoPropertyName = "NullableGetAllLogDrainsResponseVariant1ItemProjectsMetadataItemFramework2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared383028c008cc4ae0SamplingItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1DeploymentEnvironment>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1LogSource>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared9c06dfe8dd59ad6d>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSamplingItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1DeploymentEnvironment>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1LogSource>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared383028c008cc4ae0>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc396e89a7a8d84fbEnvironment>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc396e89a7a8d84fbSource>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateConfigurableLogDrainRequestSource>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateConfigurableLogDrainRequestEnvironment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateLogDrainRequestSource>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateLogDrainRequestEnvironment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetConfigurableLogDrainResponseProjectsMetadataItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.GetAllLogDrainsResponseItem>, global::Vercel.GetAllLogDrainsResponse2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetAllLogDrainsResponseItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetAllLogDrainsResponseItemProjectsMetadataItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.GetAllLogDrainsResponseDrainsVariant1Item>, global::System.Collections.Generic.List<global::Vercel.GetAllLogDrainsResponseDrainsVariant2Item>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetAllLogDrainsResponseDrainsVariant1Item>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1DeploymentEnvironment>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1LogSource>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetAllLogDrainsResponseDrainsVariant2Item>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1DeploymentEnvironment>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1LogSource>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetIntegrationLogDrainsResponseItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetIntegrationLogDrainsResponseItemEnvironment>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetIntegrationLogDrainsResponseItemSource>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateLogDrainResponseEnvironment>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateLogDrainResponseSource>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedb13a6bca2ca06cfe>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetAllLogDrainsResponseVariant1Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetAllLogDrainsResponseVariant1ItemProjectsMetadataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc396e89a7a8d84fb>))]
     internal sealed partial class LogDrainsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -359,6 +335,7 @@ namespace Vercel
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
+            options.Converters.Add(new global::Vercel.JsonConverters.AutoSDKShared9e8f7cd3a066bfd9JsonConverter());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<int?, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, object, global::System.Collections.Generic.IList<object>, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
@@ -367,6 +344,63 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant3, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant5>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Secret>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2Secret>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant1, global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1, global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1, global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, object, global::System.Collections.Generic.IList<object>, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant3, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Secret>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Secret>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1, global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant1, global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
@@ -430,121 +464,12 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
@@ -554,21 +479,7 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseItem>, global::Vercel.GetAllLogDrainsResponse2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseDrainsVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseDrainsVariant2Item>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Secret>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Secret>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant3, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Secret>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Secret>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1, global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, object, global::System.Collections.Generic.IList<object>, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, object, global::System.Collections.Generic.IList<object>, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedb13a6bca2ca06cfe>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, object, global::System.Collections.Generic.IList<object>, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
@@ -577,107 +488,12 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<double>, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<double>, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1, global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateLogDrainResponseSourceVariant1, global::Vercel.CreateLogDrainResponseSourceVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<double>, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
@@ -708,7 +524,275 @@ namespace Vercel
             public override bool CanConvert(global::System.Type typeToConvert)
             {
                 return
-                    typeToConvert == typeof(global::Vercel.CreateConfigurableLogDrainRequestDeliveryFormat)
+                    typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Compression)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Compression?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Encoding)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Encoding?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1SecretKind)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1SecretKind?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2Encoding)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2Encoding?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2SecretKind)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2SecretKind?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant3Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant3Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Compression)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Compression?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Encoding)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Encoding?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4FileStructure)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4FileStructure?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4ObjectAcl)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4ObjectAcl?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4ServerSideEncryption)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4ServerSideEncryption?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant5Target)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant5Target?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant5Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant5Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DisabledReason)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DisabledReason?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SamplingItemEnv)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SamplingItemEnv?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SamplingItemType)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SamplingItemType?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant1DefaultFor)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant1DefaultFor?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant1Kind)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant1Kind?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant2Kind)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant2Kind?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0Status)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0Status?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1DeploymentEnvironment)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1DeploymentEnvironment?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1LogSource)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1LogSource?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant2Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant2Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2Version)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2Version?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1Access)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1Access?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1ManagedBy)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1ManagedBy?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2Access)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2Access?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2ManagedBy)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2ManagedBy?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Compression)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Compression?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Encoding)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Encoding?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1SecretKind)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1SecretKind?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Encoding)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Encoding?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2SecretKind)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2SecretKind?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant3Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant3Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Compression)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Compression?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Encoding)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Encoding?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4FileStructure)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4FileStructure?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ObjectAcl)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ObjectAcl?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ServerSideEncryption)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ServerSideEncryption?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5Target)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5Target?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDisabledReason)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDisabledReason?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSamplingItemEnv)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSamplingItemEnv?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSamplingItemType)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSamplingItemType?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1DefaultFor)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1DefaultFor?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1Kind)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1Kind?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant2Kind)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant2Kind?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dStatus)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dStatus?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1DeploymentEnvironment)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1DeploymentEnvironment?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1LogSource)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1LogSource?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant2Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant2Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2Version)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2Version?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbCreatedFrom)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbCreatedFrom?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbDeliveryFormat)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbDeliveryFormat?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbEnvironment)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbEnvironment?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant1DefaultFor)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant1DefaultFor?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant1Kind)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant1Kind?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant2Kind)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant2Kind?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSource)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSource?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateConfigurableLogDrainRequestDeliveryFormat)
 
                     || typeToConvert == typeof(global::Vercel.CreateConfigurableLogDrainRequestDeliveryFormat?)
 
@@ -736,311 +820,685 @@ namespace Vercel
 
                     || typeToConvert == typeof(global::Vercel.GetConfigurableLogDrainResponseProjectsMetadataItemFramework?)
 
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseItemProjectsMetadataItemFramework)
+                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseVariant1ItemProjectsMetadataItemFramework)
 
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseItemProjectsMetadataItemFramework?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Compression)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Compression?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Encoding)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Encoding?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1SecretKind)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1SecretKind?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Type)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Type?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Encoding)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Encoding?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2SecretKind)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2SecretKind?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Type)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Type?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3Type)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3Type?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Compression)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Compression?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Encoding)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Encoding?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4FileStructure)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4FileStructure?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ObjectAcl)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ObjectAcl?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ServerSideEncryption)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ServerSideEncryption?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Type)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Type?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5Target)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5Target?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5Type)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5Type?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDisabledReason)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDisabledReason?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemEnv)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemEnv?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemType)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemType?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1DefaultFor)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1DefaultFor?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1Kind)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1Kind?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant2Kind)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant2Kind?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemStatus)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemStatus?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1DeploymentEnvironment)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1DeploymentEnvironment?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1LogSource)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1LogSource?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Type)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Type?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2Type)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2Type?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2Version)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2Version?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Compression)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Compression?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Encoding)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Encoding?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1SecretKind)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1SecretKind?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Type)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Type?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Encoding)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Encoding?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2SecretKind)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2SecretKind?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Type)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Type?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant3Type)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant3Type?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Compression)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Compression?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Encoding)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Encoding?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4FileStructure)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4FileStructure?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ObjectAcl)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ObjectAcl?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ServerSideEncryption)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ServerSideEncryption?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Type)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Type?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Target)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Target?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Type)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Type?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDisabledReason)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDisabledReason?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemEnv)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemEnv?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemType)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemType?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1DefaultFor)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1DefaultFor?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1Kind)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1Kind?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2Kind)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2Kind?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemStatus)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemStatus?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1DeploymentEnvironment)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1DeploymentEnvironment?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1LogSource)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1LogSource?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1Type)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1Type?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2Type)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2Type?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2Version)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2Version?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1Access)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1Access?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1ManagedBy)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1ManagedBy?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2Access)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2Access?)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2ManagedBy)
-
-                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2ManagedBy?)
-
-                    || typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemCreatedFrom)
-
-                    || typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemCreatedFrom?)
-
-                    || typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemDeliveryFormat)
-
-                    || typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemDeliveryFormat?)
-
-                    || typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemEnvironment)
-
-                    || typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemEnvironment?)
-
-                    || typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1DefaultFor)
-
-                    || typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1DefaultFor?)
-
-                    || typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1Kind)
-
-                    || typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1Kind?)
-
-                    || typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant2Kind)
-
-                    || typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant2Kind?)
-
-                    || typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSource)
-
-                    || typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSource?)
-
-                    || typeToConvert == typeof(global::Vercel.CreateLogDrainResponseCreatedFrom)
-
-                    || typeToConvert == typeof(global::Vercel.CreateLogDrainResponseCreatedFrom?)
-
-                    || typeToConvert == typeof(global::Vercel.CreateLogDrainResponseDeliveryFormat)
-
-                    || typeToConvert == typeof(global::Vercel.CreateLogDrainResponseDeliveryFormat?)
-
-                    || typeToConvert == typeof(global::Vercel.CreateLogDrainResponseEnvironment)
-
-                    || typeToConvert == typeof(global::Vercel.CreateLogDrainResponseEnvironment?)
-
-                    || typeToConvert == typeof(global::Vercel.CreateLogDrainResponseSourceVariant1DefaultFor)
-
-                    || typeToConvert == typeof(global::Vercel.CreateLogDrainResponseSourceVariant1DefaultFor?)
-
-                    || typeToConvert == typeof(global::Vercel.CreateLogDrainResponseSourceVariant1Kind)
-
-                    || typeToConvert == typeof(global::Vercel.CreateLogDrainResponseSourceVariant1Kind?)
-
-                    || typeToConvert == typeof(global::Vercel.CreateLogDrainResponseSourceVariant2Kind)
-
-                    || typeToConvert == typeof(global::Vercel.CreateLogDrainResponseSourceVariant2Kind?)
-
-                    || typeToConvert == typeof(global::Vercel.CreateLogDrainResponseSource)
-
-                    || typeToConvert == typeof(global::Vercel.CreateLogDrainResponseSource?);
+                    || typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseVariant1ItemProjectsMetadataItemFramework?);
             }
 
             public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
                 global::System.Type typeToConvert,
                 global::System.Text.Json.JsonSerializerOptions options)
             {
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Compression))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant1CompressionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Compression?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant1CompressionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Encoding))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant1EncodingJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Encoding?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant1EncodingNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1SecretKind))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant1SecretKindJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1SecretKind?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant1SecretKindNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant1Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2Encoding))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant2EncodingJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2Encoding?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant2EncodingNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2SecretKind))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant2SecretKindJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2SecretKind?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant2SecretKindNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant2Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant3Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant3TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant3Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant3TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Compression))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant4CompressionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Compression?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant4CompressionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Encoding))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant4EncodingJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Encoding?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant4EncodingNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4FileStructure))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant4FileStructureJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4FileStructure?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant4FileStructureNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4ObjectAcl))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant4ObjectAclJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4ObjectAcl?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant4ObjectAclNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4ServerSideEncryption))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant4ServerSideEncryptionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4ServerSideEncryption?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant4ServerSideEncryptionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant4TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant4Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant4TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant5Target))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant5TargetJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant5Target?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant5TargetNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant5Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant5TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DeliveryVariant5Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DeliveryVariant5TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DisabledReason))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DisabledReasonJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0DisabledReason?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0DisabledReasonNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SamplingItemEnv))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0SamplingItemEnvJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SamplingItemEnv?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0SamplingItemEnvNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SamplingItemType))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0SamplingItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SamplingItemType?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0SamplingItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant1DefaultFor))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0SourceVariant1DefaultForJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant1DefaultFor?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0SourceVariant1DefaultForNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant1Kind))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0SourceVariant1KindJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant1Kind?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0SourceVariant1KindNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant2Kind))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0SourceVariant2KindJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0SourceVariant2Kind?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0SourceVariant2KindNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0Status))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0StatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0Status?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0StatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1DeploymentEnvironment))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1DeploymentEnvironmentJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1DeploymentEnvironment?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1DeploymentEnvironmentNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1LogSource))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1LogSourceJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1LogSource?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1LogSourceNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant2Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant2Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0FilterV2FilterVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2Version))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0FilterV2VersionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0FilterV2Version?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0FilterV2VersionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1Access))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1AccessJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1Access?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1AccessNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1ManagedBy))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1ManagedByJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1ManagedBy?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0ProjectAccessVariant1ManagedByNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2Access))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2AccessJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2Access?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2AccessNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2ManagedBy))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2ManagedByJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2ManagedBy?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared383028c008cc4ae0ProjectAccessVariant2ManagedByNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Compression))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1CompressionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Compression?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1CompressionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Encoding))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1EncodingJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Encoding?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1EncodingNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1SecretKind))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1SecretKindJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1SecretKind?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1SecretKindNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Encoding))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2EncodingJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Encoding?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2EncodingNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2SecretKind))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2SecretKindJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2SecretKind?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2SecretKindNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant3Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant3TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant3Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant3TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Compression))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4CompressionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Compression?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4CompressionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Encoding))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4EncodingJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Encoding?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4EncodingNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4FileStructure))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4FileStructureJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4FileStructure?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4FileStructureNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ObjectAcl))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ObjectAclJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ObjectAcl?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ObjectAclNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ServerSideEncryption))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ServerSideEncryptionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ServerSideEncryption?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4ServerSideEncryptionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant4TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5Target))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5TargetJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5Target?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5TargetNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDeliveryVariant5TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDisabledReason))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDisabledReasonJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dDisabledReason?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dDisabledReasonNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSamplingItemEnv))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dSamplingItemEnvJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSamplingItemEnv?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dSamplingItemEnvNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSamplingItemType))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dSamplingItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSamplingItemType?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dSamplingItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1DefaultFor))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1DefaultForJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1DefaultFor?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1DefaultForNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1Kind))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1KindJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1Kind?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dSourceVariant1KindNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant2Kind))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dSourceVariant2KindJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dSourceVariant2Kind?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dSourceVariant2KindNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dStatus))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dStatus?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1DeploymentEnvironment))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1DeploymentEnvironmentJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1DeploymentEnvironment?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1DeploymentEnvironmentNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1LogSource))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1LogSourceJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1LogSource?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1LogSourceNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant2Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant2Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dFilterV2FilterVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2Version))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dFilterV2VersionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared9c06dfe8dd59ad6dFilterV2Version?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared9c06dfe8dd59ad6dFilterV2VersionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbCreatedFrom))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc396e89a7a8d84fbCreatedFromJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbCreatedFrom?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc396e89a7a8d84fbCreatedFromNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbDeliveryFormat))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc396e89a7a8d84fbDeliveryFormatJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbDeliveryFormat?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc396e89a7a8d84fbDeliveryFormatNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbEnvironment))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc396e89a7a8d84fbEnvironmentJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbEnvironment?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc396e89a7a8d84fbEnvironmentNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant1DefaultFor))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc396e89a7a8d84fbSourceVariant1DefaultForJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant1DefaultFor?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc396e89a7a8d84fbSourceVariant1DefaultForNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant1Kind))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc396e89a7a8d84fbSourceVariant1KindJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant1Kind?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc396e89a7a8d84fbSourceVariant1KindNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant2Kind))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc396e89a7a8d84fbSourceVariant2KindJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSourceVariant2Kind?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc396e89a7a8d84fbSourceVariant2KindNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSource))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc396e89a7a8d84fbSourceJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc396e89a7a8d84fbSource?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc396e89a7a8d84fbSourceNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Vercel.CreateConfigurableLogDrainRequestDeliveryFormat))
                 {
                     return new global::Vercel.JsonConverters.CreateConfigurableLogDrainRequestDeliveryFormatJsonConverter();
@@ -1111,754 +1569,14 @@ namespace Vercel
                     return new global::Vercel.JsonConverters.GetConfigurableLogDrainResponseProjectsMetadataItemFrameworkNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseItemProjectsMetadataItemFramework))
+                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseVariant1ItemProjectsMetadataItemFramework))
                 {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseItemProjectsMetadataItemFrameworkJsonConverter();
+                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseVariant1ItemProjectsMetadataItemFrameworkJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseItemProjectsMetadataItemFramework?))
+                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseVariant1ItemProjectsMetadataItemFramework?))
                 {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseItemProjectsMetadataItemFrameworkNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Compression))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1CompressionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Compression?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1CompressionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Encoding))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1EncodingJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Encoding?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1EncodingNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1SecretKind))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1SecretKindJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1SecretKind?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1SecretKindNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Type))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1Type?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant1TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Encoding))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2EncodingJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Encoding?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2EncodingNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2SecretKind))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2SecretKindJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2SecretKind?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2SecretKindNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Type))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2Type?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant2TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3Type))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3Type?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant3TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Compression))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4CompressionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Compression?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4CompressionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Encoding))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4EncodingJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Encoding?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4EncodingNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4FileStructure))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4FileStructureJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4FileStructure?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4FileStructureNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ObjectAcl))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ObjectAclJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ObjectAcl?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ObjectAclNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ServerSideEncryption))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ServerSideEncryptionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ServerSideEncryption?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4ServerSideEncryptionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Type))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4Type?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant4TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5Target))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5TargetJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5Target?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5TargetNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5Type))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5Type?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDeliveryVariant5TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDisabledReason))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDisabledReasonJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemDisabledReason?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemDisabledReasonNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemEnv))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemEnvJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemEnv?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemEnvNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemType))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemType?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemSamplingItemTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1DefaultFor))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1DefaultForJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1DefaultFor?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1DefaultForNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1Kind))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1KindJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1Kind?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant1KindNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant2Kind))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant2KindJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant2Kind?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemSourceVariant2KindNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemStatus))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemStatusJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemStatus?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemStatusNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1DeploymentEnvironment))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1DeploymentEnvironmentJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1DeploymentEnvironment?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1DeploymentEnvironmentNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1LogSource))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1LogSourceJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1LogSource?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1LogSourceNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Type))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1Type?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant1TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2Type))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2Type?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2FilterVariant2TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2Version))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2VersionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2Version?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant1ItemFilterV2VersionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Compression))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1CompressionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Compression?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1CompressionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Encoding))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1EncodingJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Encoding?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1EncodingNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1SecretKind))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1SecretKindJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1SecretKind?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1SecretKindNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Type))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1Type?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant1TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Encoding))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2EncodingJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Encoding?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2EncodingNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2SecretKind))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2SecretKindJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2SecretKind?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2SecretKindNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Type))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2Type?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant2TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant3Type))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant3TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant3Type?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant3TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Compression))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4CompressionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Compression?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4CompressionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Encoding))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4EncodingJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Encoding?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4EncodingNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4FileStructure))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4FileStructureJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4FileStructure?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4FileStructureNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ObjectAcl))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ObjectAclJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ObjectAcl?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ObjectAclNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ServerSideEncryption))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ServerSideEncryptionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ServerSideEncryption?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4ServerSideEncryptionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Type))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4Type?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant4TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Target))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5TargetJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Target?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5TargetNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Type))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5Type?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDeliveryVariant5TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDisabledReason))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDisabledReasonJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemDisabledReason?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemDisabledReasonNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemEnv))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemEnvJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemEnv?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemEnvNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemType))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemType?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemSamplingItemTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1DefaultFor))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1DefaultForJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1DefaultFor?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1DefaultForNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1Kind))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1KindJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1Kind?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant1KindNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2Kind))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2KindJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2Kind?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemSourceVariant2KindNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemStatus))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemStatusJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemStatus?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemStatusNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1DeploymentEnvironment))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1DeploymentEnvironmentJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1DeploymentEnvironment?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1DeploymentEnvironmentNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1LogSource))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1LogSourceJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1LogSource?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1LogSourceNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1Type))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1Type?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant1TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2Type))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2Type?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2FilterVariant2TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2Version))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2VersionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2Version?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemFilterV2VersionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1Access))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1AccessJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1Access?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1AccessNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1ManagedBy))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1ManagedByJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1ManagedBy?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant1ManagedByNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2Access))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2AccessJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2Access?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2AccessNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2ManagedBy))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2ManagedByJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2ManagedBy?))
-                {
-                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseDrainsVariant2ItemProjectAccessVariant2ManagedByNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemCreatedFrom))
-                {
-                    return new global::Vercel.JsonConverters.GetIntegrationLogDrainsResponseItemCreatedFromJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemCreatedFrom?))
-                {
-                    return new global::Vercel.JsonConverters.GetIntegrationLogDrainsResponseItemCreatedFromNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemDeliveryFormat))
-                {
-                    return new global::Vercel.JsonConverters.GetIntegrationLogDrainsResponseItemDeliveryFormatJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemDeliveryFormat?))
-                {
-                    return new global::Vercel.JsonConverters.GetIntegrationLogDrainsResponseItemDeliveryFormatNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemEnvironment))
-                {
-                    return new global::Vercel.JsonConverters.GetIntegrationLogDrainsResponseItemEnvironmentJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemEnvironment?))
-                {
-                    return new global::Vercel.JsonConverters.GetIntegrationLogDrainsResponseItemEnvironmentNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1DefaultFor))
-                {
-                    return new global::Vercel.JsonConverters.GetIntegrationLogDrainsResponseItemSourceVariant1DefaultForJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1DefaultFor?))
-                {
-                    return new global::Vercel.JsonConverters.GetIntegrationLogDrainsResponseItemSourceVariant1DefaultForNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1Kind))
-                {
-                    return new global::Vercel.JsonConverters.GetIntegrationLogDrainsResponseItemSourceVariant1KindJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant1Kind?))
-                {
-                    return new global::Vercel.JsonConverters.GetIntegrationLogDrainsResponseItemSourceVariant1KindNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant2Kind))
-                {
-                    return new global::Vercel.JsonConverters.GetIntegrationLogDrainsResponseItemSourceVariant2KindJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSourceVariant2Kind?))
-                {
-                    return new global::Vercel.JsonConverters.GetIntegrationLogDrainsResponseItemSourceVariant2KindNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSource))
-                {
-                    return new global::Vercel.JsonConverters.GetIntegrationLogDrainsResponseItemSourceJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.GetIntegrationLogDrainsResponseItemSource?))
-                {
-                    return new global::Vercel.JsonConverters.GetIntegrationLogDrainsResponseItemSourceNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.CreateLogDrainResponseCreatedFrom))
-                {
-                    return new global::Vercel.JsonConverters.CreateLogDrainResponseCreatedFromJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.CreateLogDrainResponseCreatedFrom?))
-                {
-                    return new global::Vercel.JsonConverters.CreateLogDrainResponseCreatedFromNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.CreateLogDrainResponseDeliveryFormat))
-                {
-                    return new global::Vercel.JsonConverters.CreateLogDrainResponseDeliveryFormatJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.CreateLogDrainResponseDeliveryFormat?))
-                {
-                    return new global::Vercel.JsonConverters.CreateLogDrainResponseDeliveryFormatNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.CreateLogDrainResponseEnvironment))
-                {
-                    return new global::Vercel.JsonConverters.CreateLogDrainResponseEnvironmentJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.CreateLogDrainResponseEnvironment?))
-                {
-                    return new global::Vercel.JsonConverters.CreateLogDrainResponseEnvironmentNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.CreateLogDrainResponseSourceVariant1DefaultFor))
-                {
-                    return new global::Vercel.JsonConverters.CreateLogDrainResponseSourceVariant1DefaultForJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.CreateLogDrainResponseSourceVariant1DefaultFor?))
-                {
-                    return new global::Vercel.JsonConverters.CreateLogDrainResponseSourceVariant1DefaultForNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.CreateLogDrainResponseSourceVariant1Kind))
-                {
-                    return new global::Vercel.JsonConverters.CreateLogDrainResponseSourceVariant1KindJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.CreateLogDrainResponseSourceVariant1Kind?))
-                {
-                    return new global::Vercel.JsonConverters.CreateLogDrainResponseSourceVariant1KindNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.CreateLogDrainResponseSourceVariant2Kind))
-                {
-                    return new global::Vercel.JsonConverters.CreateLogDrainResponseSourceVariant2KindJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.CreateLogDrainResponseSourceVariant2Kind?))
-                {
-                    return new global::Vercel.JsonConverters.CreateLogDrainResponseSourceVariant2KindNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.CreateLogDrainResponseSource))
-                {
-                    return new global::Vercel.JsonConverters.CreateLogDrainResponseSourceJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.CreateLogDrainResponseSource?))
-                {
-                    return new global::Vercel.JsonConverters.CreateLogDrainResponseSourceNullableJsonConverter();
+                    return new global::Vercel.JsonConverters.GetAllLogDrainsResponseVariant1ItemProjectsMetadataItemFrameworkNullableJsonConverter();
                 }
                 throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
             }

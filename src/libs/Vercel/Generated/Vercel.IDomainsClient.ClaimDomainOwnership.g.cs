@@ -21,7 +21,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.ClaimDomainOwnershipResponse> ClaimDomainOwnershipAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared209b2cb84e1d7219> ClaimDomainOwnershipAsync(
             string domain,
             string? teamId = default,
             string? slug = default,
@@ -44,7 +44,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.ClaimDomainOwnershipResponse>> ClaimDomainOwnershipAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared209b2cb84e1d7219>> ClaimDomainOwnershipAsResponseAsync(
             string domain,
             string? teamId = default,
             string? slug = default,

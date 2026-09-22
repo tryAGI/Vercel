@@ -1,0 +1,87 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    /// Information about the deployment creator
+    /// </summary>
+    public sealed partial class CreateDeploymentResponseCreator
+    {
+        /// <summary>
+        /// The avatar of the user that created the deployment
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("avatar")]
+        public string? Avatar { get; set; }
+
+        /// <summary>
+        /// Principal type of the deployment creator.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseCreatorTypeJsonConverter))]
+        public global::Vercel.CreateDeploymentResponseCreatorType? Type { get; set; }
+
+        /// <summary>
+        /// Stable creator id across principal types (user id, app id, integration configuration id, or `system`).<br/>
+        /// Example: 96SnxkFiMyVKsK3pnoHfx3Hz
+        /// </summary>
+        /// <example>96SnxkFiMyVKsK3pnoHfx3Hz</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Uid { get; set; }
+
+        /// <summary>
+        /// The username of the user that created the deployment<br/>
+        /// Example: john-doe
+        /// </summary>
+        /// <example>john-doe</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
+        public string? Username { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CreateDeploymentResponseCreator" /> class.
+        /// </summary>
+        /// <param name="uid">
+        /// Stable creator id across principal types (user id, app id, integration configuration id, or `system`).<br/>
+        /// Example: 96SnxkFiMyVKsK3pnoHfx3Hz
+        /// </param>
+        /// <param name="avatar">
+        /// The avatar of the user that created the deployment
+        /// </param>
+        /// <param name="type">
+        /// Principal type of the deployment creator.
+        /// </param>
+        /// <param name="username">
+        /// The username of the user that created the deployment<br/>
+        /// Example: john-doe
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public CreateDeploymentResponseCreator(
+            string uid,
+            string? avatar,
+            global::Vercel.CreateDeploymentResponseCreatorType? type,
+            string? username)
+        {
+            this.Avatar = avatar;
+            this.Type = type;
+            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
+            this.Username = username;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CreateDeploymentResponseCreator" /> class.
+        /// </summary>
+        public CreateDeploymentResponseCreator()
+        {
+        }
+
+    }
+}

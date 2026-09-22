@@ -12,7 +12,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("abuse")]
-        public global::Vercel.GetMicrofrontendsInGroupResponseProjectAbuse? Abuse { get; set; }
+        public global::Vercel.AutoSDKShared5387a0e7cacff827? Abuse { get; set; }
 
         /// <summary>
         ///
@@ -26,7 +26,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectAlia> Alias { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbc14f6f0dbfaa660> Alias { get; set; }
 
         /// <summary>
         ///
@@ -116,8 +116,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("creator")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetMicrofrontendsInGroupResponseProjectCreatorVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectCreatorVariant2, global::Vercel.GetMicrofrontendsInGroupResponseProjectCreatorVariant3, global::Vercel.GetMicrofrontendsInGroupResponseProjectCreatorVariant4>))]
-        public global::Vercel.OneOf<global::Vercel.GetMicrofrontendsInGroupResponseProjectCreatorVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectCreatorVariant2, global::Vercel.GetMicrofrontendsInGroupResponseProjectCreatorVariant3, global::Vercel.GetMicrofrontendsInGroupResponseProjectCreatorVariant4>? Creator { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKSharedf1f589ae3ca84945JsonConverter))]
+        public global::Vercel.AutoSDKSharedf1f589ae3ca84945? Creator { get; set; }
 
         /// <summary>
         ///
@@ -129,7 +129,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironments")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectCustomEnvironment>? CustomEnvironments { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7d4f4f5cff68219a>? CustomEnvironments { get; set; }
 
         /// <summary>
         ///
@@ -161,7 +161,7 @@ namespace Vercel
         /// Project shape. `null` on a rule list clears the project's override for that rule type (fall back to team for every env); omitting is equivalent. Setting `deploymentPolicy` itself to `null` clears every override at once. Kept structurally distinct from {@link TeamDeploymentPolicy} so the two storage locations don't share a type by accident.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPolicy")]
-        public global::Vercel.GetMicrofrontendsInGroupResponseProjectDeploymentPolicy? DeploymentPolicy { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295? DeploymentPolicy { get; set; }
 
         /// <summary>
         ///
@@ -210,7 +210,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("env")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectEnvItem>? Env { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared470bc56668090392>? Env { get; set; }
 
         /// <summary>
         ///
@@ -254,7 +254,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitProviderOptions")]
-        public global::Vercel.GetMicrofrontendsInGroupResponseProjectGitProviderOptions? GitProviderOptions { get; set; }
+        public global::Vercel.AutoSDKSharedc12640b06f1c9105? GitProviderOptions { get; set; }
 
         /// <summary>
         ///
@@ -315,14 +315,14 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("latestDeployments")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectLatestDeployment>? LatestDeployments { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7524a6c3199bd963>? LatestDeployments { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("link")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant2, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant3, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant4, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant5, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant6, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant7, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant8>))]
-        public global::Vercel.OneOf<global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant2, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant3, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant4, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant5, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant6, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant7, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant8>? Link { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKSharede0f9d68fc63cf31dJsonConverter))]
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31d? Link { get; set; }
 
         /// <summary>
         ///
@@ -334,8 +334,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microfrontends")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetMicrofrontendsInGroupResponseProjectMicrofrontendsVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectMicrofrontendsVariant2, global::Vercel.GetMicrofrontendsInGroupResponseProjectMicrofrontendsVariant3>))]
-        public global::Vercel.OneOf<global::Vercel.GetMicrofrontendsInGroupResponseProjectMicrofrontendsVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectMicrofrontendsVariant2, global::Vercel.GetMicrofrontendsInGroupResponseProjectMicrofrontendsVariant3>? Microfrontends { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared7ff9e6410c724535JsonConverter))]
+        public global::Vercel.AutoSDKShared7ff9e6410c724535? Microfrontends { get; set; }
 
         /// <summary>
         ///
@@ -398,7 +398,7 @@ namespace Vercel
         /// Requested and authorized operations when `checkPermissions` is used. Legacy `includePermissions` responses contain a broader, non-authoritative permission summary.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("permissions")]
-        public global::Vercel.GetMicrofrontendsInGroupResponseProjectPermissions? Permissions { get; set; }
+        public global::Vercel.AutoSDKShared26bf680ec7bdfcc3? Permissions { get; set; }
 
         /// <summary>
         ///
@@ -441,7 +441,7 @@ namespace Vercel
         /// Project-level rolling release configuration that defines how deployments should be gradually rolled out
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rollingRelease")]
-        public global::Vercel.GetMicrofrontendsInGroupResponseProjectRollingRelease? RollingRelease { get; set; }
+        public global::Vercel.AutoSDKShared42a87d29a5696121? RollingRelease { get; set; }
 
         /// <summary>
         ///
@@ -525,7 +525,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("targets")]
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GetMicrofrontendsInGroupResponseProjectTargets2?>? Targets { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared290e0be6a2cc986e?>? Targets { get; set; }
 
         /// <summary>
         ///
@@ -575,7 +575,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("trustedSources")]
-        public global::Vercel.GetMicrofrontendsInGroupResponseProjectTrustedSources? TrustedSources { get; set; }
+        public global::Vercel.AutoSDKShared4a88a64e6651d284? TrustedSources { get; set; }
 
         /// <summary>
         ///
@@ -728,7 +728,7 @@ namespace Vercel
 #endif
         public GetMicrofrontendsInGroupResponseProject(
             string accountId,
-            global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectAlia> alias,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbc14f6f0dbfaa660> alias,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectDefaultResourceConfig defaultResourceConfig,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectDeploymentExpiration deploymentExpiration,
             bool directoryListing,
@@ -736,7 +736,7 @@ namespace Vercel
             string name,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectNodeVersion nodeVersion,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfig resourceConfig,
-            global::Vercel.GetMicrofrontendsInGroupResponseProjectAbuse? abuse,
+            global::Vercel.AutoSDKShared5387a0e7cacff827? abuse,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectAnalytics? analytics,
             bool? appliedCve55182Migration,
             bool? autoAssignCustomDomains,
@@ -751,26 +751,26 @@ namespace Vercel
             string? connectConfigurationId,
             global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectConnectConfiguration>? connectConfigurations,
             double? createdAt,
-            global::Vercel.OneOf<global::Vercel.GetMicrofrontendsInGroupResponseProjectCreatorVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectCreatorVariant2, global::Vercel.GetMicrofrontendsInGroupResponseProjectCreatorVariant3, global::Vercel.GetMicrofrontendsInGroupResponseProjectCreatorVariant4>? creator,
+            global::Vercel.AutoSDKSharedf1f589ae3ca84945? creator,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectCrons? crons,
-            global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectCustomEnvironment>? customEnvironments,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7d4f4f5cff68219a>? customEnvironments,
             bool? customerSupportCodeVisibility,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectDataCache? dataCache,
-            global::Vercel.GetMicrofrontendsInGroupResponseProjectDeploymentPolicy? deploymentPolicy,
+            global::Vercel.AutoSDKShared803d328dcef47295? deploymentPolicy,
             string? devCommand,
             global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectDismissedToast>? dismissedToasts,
             bool? enableAffectedProjectsDeployments,
             bool? enableExternalRewriteCaching,
             bool? enablePreviewFeedback,
             bool? enableProductionFeedback,
-            global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectEnvItem>? env,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared470bc56668090392>? env,
             global::Vercel.OneOf<global::Vercel.GetMicrofrontendsInGroupResponseProjectExpirationVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectExpirationVariant2>? expiration,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectFeatures? features,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectFramework? framework,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectGitComments? gitComments,
             bool? gitForkProtection,
             bool? gitLFS,
-            global::Vercel.GetMicrofrontendsInGroupResponseProjectGitProviderOptions? gitProviderOptions,
+            global::Vercel.AutoSDKSharedc12640b06f1c9105? gitProviderOptions,
             bool? hasActiveBranches,
             bool? hasDeployments,
             string? installCommand,
@@ -779,10 +779,10 @@ namespace Vercel
             global::Vercel.GetMicrofrontendsInGroupResponseProjectJobs? jobs,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectLastAliasRequest? lastAliasRequest,
             object? lastRollbackTarget,
-            global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectLatestDeployment>? latestDeployments,
-            global::Vercel.OneOf<global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant2, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant3, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant4, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant5, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant6, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant7, global::Vercel.GetMicrofrontendsInGroupResponseProjectLinkVariant8>? link,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7524a6c3199bd963>? latestDeployments,
+            global::Vercel.AutoSDKSharede0f9d68fc63cf31d? link,
             bool? live,
-            global::Vercel.OneOf<global::Vercel.GetMicrofrontendsInGroupResponseProjectMicrofrontendsVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectMicrofrontendsVariant2, global::Vercel.GetMicrofrontendsInGroupResponseProjectMicrofrontendsVariant3>? microfrontends,
+            global::Vercel.AutoSDKShared7ff9e6410c724535? microfrontends,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectOidcTokenConfig? oidcTokenConfig,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectOptionsAllowlist? optionsAllowlist,
             string? outputDirectory,
@@ -790,13 +790,13 @@ namespace Vercel
             global::Vercel.GetMicrofrontendsInGroupResponseProjectPassport? passport,
             object? passwordProtection,
             bool? paused,
-            global::Vercel.GetMicrofrontendsInGroupResponseProjectPermissions? permissions,
+            global::Vercel.AutoSDKShared26bf680ec7bdfcc3? permissions,
             bool? productionDeploymentsFastLane,
             bool? protectedSourcemaps,
             object? protectionBypass,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectProtectionConfig? protectionConfig,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectRollbackDescription? rollbackDescription,
-            global::Vercel.GetMicrofrontendsInGroupResponseProjectRollingRelease? rollingRelease,
+            global::Vercel.AutoSDKShared42a87d29a5696121? rollingRelease,
             string? rootDirectory,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectSandbox? sandbox,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurity? security,
@@ -810,7 +810,7 @@ namespace Vercel
             global::Vercel.GetMicrofrontendsInGroupResponseProjectSpeedInsights? speedInsights,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectSsoProtection? ssoProtection,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectStaticIps? staticIps,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.GetMicrofrontendsInGroupResponseProjectTargets2?>? targets,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared290e0be6a2cc986e?>? targets,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectTier? tier,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectTracing? tracing,
             double? transferCompletedAt,
@@ -818,7 +818,7 @@ namespace Vercel
             double? transferStartedAt,
             string? transferToAccountId,
             global::Vercel.OneOf<global::Vercel.GetMicrofrontendsInGroupResponseProjectTrustedIpsVariant1, global::Vercel.GetMicrofrontendsInGroupResponseProjectTrustedIpsVariant2>? trustedIps,
-            global::Vercel.GetMicrofrontendsInGroupResponseProjectTrustedSources? trustedSources,
+            global::Vercel.AutoSDKShared4a88a64e6651d284? trustedSources,
             double? updatedAt,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectUsageStatus? usageStatus,
             bool? v0,

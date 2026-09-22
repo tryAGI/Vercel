@@ -20,7 +20,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("updated")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseUpdatedItem> Updated { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared3123f815641fd36d> Updated { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,7 +38,7 @@ namespace Vercel
 #endif
         public UpdateSharedEnvVariableResponse(
             global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseFailedItem> failed,
-            global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseUpdatedItem> updated)
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared3123f815641fd36d> updated)
         {
             this.Failed = failed ?? throw new global::System.ArgumentNullException(nameof(failed));
             this.Updated = updated ?? throw new global::System.ArgumentNullException(nameof(updated));

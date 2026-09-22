@@ -21,7 +21,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.CreateFlagSegmentResponse> CreateFlagSegmentAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedd2d51fdc45c5e627> CreateFlagSegmentAsync(
             string projectIdOrName,
 
             global::Vercel.CreateFlagSegmentRequest request,
@@ -46,7 +46,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateFlagSegmentResponse>> CreateFlagSegmentAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedd2d51fdc45c5e627>> CreateFlagSegmentAsResponseAsync(
             string projectIdOrName,
 
             global::Vercel.CreateFlagSegmentRequest request,
@@ -80,11 +80,11 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.CreateFlagSegmentResponse> CreateFlagSegmentAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedd2d51fdc45c5e627> CreateFlagSegmentAsync(
             string projectIdOrName,
             string requestSlug,
             string label,
-            global::Vercel.CreateFlagSegmentRequestData data,
+            global::Vercel.AutoSDKShared2ea6923996597ff4 data,
             string hint,
             string? teamId = default,
             string? slug = default,

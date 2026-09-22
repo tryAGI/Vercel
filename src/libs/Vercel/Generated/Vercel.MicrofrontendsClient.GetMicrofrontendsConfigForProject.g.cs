@@ -61,7 +61,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.GetMicrofrontendsConfigForProjectResponse> GetMicrofrontendsConfigForProjectAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared8497046ac346003c> GetMicrofrontendsConfigForProjectAsync(
             string projectIdOrName,
             string? teamId = default,
             string? slug = default,
@@ -94,7 +94,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetMicrofrontendsConfigForProjectResponse>> GetMicrofrontendsConfigForProjectAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared8497046ac346003c>> GetMicrofrontendsConfigForProjectAsResponseAsync(
             string projectIdOrName,
             string? teamId = default,
             string? slug = default,
@@ -574,9 +574,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.GetMicrofrontendsConfigForProjectResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.AutoSDKShared8497046ac346003c.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GetMicrofrontendsConfigForProjectResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared8497046ac346003c>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -606,9 +606,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.GetMicrofrontendsConfigForProjectResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.AutoSDKShared8497046ac346003c.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.GetMicrofrontendsConfigForProjectResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared8497046ac346003c>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

@@ -1,0 +1,62 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    ///
+    /// </summary>
+    public sealed partial class AutoSDKShared061b01d29a72e8d7Jobs
+    {
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("lint")]
+        public global::Vercel.AutoSDKShared061b01d29a72e8d7JobsLint? Lint { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mfe-config-present")]
+        public global::Vercel.AutoSDKShared061b01d29a72e8d7JobsMfeConfigPresent? MfeConfigPresent { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("typecheck")]
+        public global::Vercel.AutoSDKShared061b01d29a72e8d7JobsTypecheck? Typecheck { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AutoSDKShared061b01d29a72e8d7Jobs" /> class.
+        /// </summary>
+        /// <param name="lint"></param>
+        /// <param name="mfeConfigPresent"></param>
+        /// <param name="typecheck"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public AutoSDKShared061b01d29a72e8d7Jobs(
+            global::Vercel.AutoSDKShared061b01d29a72e8d7JobsLint? lint,
+            global::Vercel.AutoSDKShared061b01d29a72e8d7JobsMfeConfigPresent? mfeConfigPresent,
+            global::Vercel.AutoSDKShared061b01d29a72e8d7JobsTypecheck? typecheck)
+        {
+            this.Lint = lint;
+            this.MfeConfigPresent = mfeConfigPresent;
+            this.Typecheck = typecheck;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AutoSDKShared061b01d29a72e8d7Jobs" /> class.
+        /// </summary>
+        public AutoSDKShared061b01d29a72e8d7Jobs()
+        {
+        }
+
+    }
+}

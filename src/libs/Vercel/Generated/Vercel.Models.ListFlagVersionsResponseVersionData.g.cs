@@ -19,7 +19,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.ListFlagVersionsResponseVersionDataEnvironments2> Environments { get; set; }
+        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared2394a93f745adbf6> Environments { get; set; }
 
         /// <summary>
         ///
@@ -82,7 +82,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListFlagVersionsResponseVersionData(
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.ListFlagVersionsResponseVersionDataEnvironments2> environments,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared2394a93f745adbf6> environments,
             double seed,
             global::Vercel.ListFlagVersionsResponseVersionDataState state,
             global::System.Collections.Generic.IList<global::Vercel.ListFlagVersionsResponseVersionDataVariant> variants,

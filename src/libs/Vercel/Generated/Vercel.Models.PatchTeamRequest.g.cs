@@ -168,8 +168,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPolicy")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.PatchTeamRequestDeploymentPolicy, string>))]
-        public global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicy, string>? DeploymentPolicy { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared78fcc629ea8987edJsonConverter))]
+        public global::Vercel.AutoSDKShared78fcc629ea8987ed? DeploymentPolicy { get; set; }
 
         /// <summary>
         /// When enabled, deployment protection settings require stricter permissions (owner-only).
@@ -340,7 +340,7 @@ namespace Vercel
             global::Vercel.PatchTeamRequestDefaultDeploymentProtection? defaultDeploymentProtection,
             global::Vercel.PatchTeamRequestDefaultPassport? defaultPassport,
             global::Vercel.PatchTeamRequestDefaultExpirationSettings? defaultExpirationSettings,
-            global::Vercel.AnyOf<global::Vercel.PatchTeamRequestDeploymentPolicy, string>? deploymentPolicy,
+            global::Vercel.AutoSDKShared78fcc629ea8987ed? deploymentPolicy,
             global::Vercel.PatchTeamRequestStrictDeploymentProtectionSettings? strictDeploymentProtectionSettings,
             global::Vercel.PatchTeamRequestStrictShareableLinks? strictShareableLinks,
             global::Vercel.PatchTeamRequestStrictPasswordProtectionSettings? strictPasswordProtectionSettings,

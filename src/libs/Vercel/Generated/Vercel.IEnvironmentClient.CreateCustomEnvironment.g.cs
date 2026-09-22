@@ -21,7 +21,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.CreateCustomEnvironmentResponse> CreateCustomEnvironmentAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared7d4f4f5cff68219a> CreateCustomEnvironmentAsync(
             string idOrName,
 
             global::Vercel.CreateCustomEnvironmentRequest request,
@@ -46,7 +46,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateCustomEnvironmentResponse>> CreateCustomEnvironmentAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared7d4f4f5cff68219a>> CreateCustomEnvironmentAsResponseAsync(
             string idOrName,
 
             global::Vercel.CreateCustomEnvironmentRequest request,
@@ -82,7 +82,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.CreateCustomEnvironmentResponse> CreateCustomEnvironmentAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared7d4f4f5cff68219a> CreateCustomEnvironmentAsync(
             string idOrName,
             string? teamId = default,
             string? slug = default,

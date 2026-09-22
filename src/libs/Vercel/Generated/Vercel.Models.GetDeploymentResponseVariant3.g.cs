@@ -130,8 +130,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironment")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentResponseVariant3CustomEnvironmentVariant1, global::Vercel.GetDeploymentResponseVariant3CustomEnvironmentVariant2>))]
-        public global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant3CustomEnvironmentVariant1, global::Vercel.GetDeploymentResponseVariant3CustomEnvironmentVariant2>? CustomEnvironment { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared133a7ec19e4ac4f6JsonConverter))]
+        public global::Vercel.AutoSDKShared133a7ec19e4ac4f6? CustomEnvironment { get; set; }
 
         /// <summary>
         /// Computed field that is only available for deployments with a microfrontend configuration.
@@ -182,8 +182,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitSource")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetDeploymentResponseVariant3GitSourceVariant1, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant2, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant3, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant4, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant5, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant6, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant7, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant8, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant9, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant10, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant11, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant12, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant13, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant14, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant15, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant16, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant17, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant18, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant19>))]
-        public global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant3GitSourceVariant1, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant2, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant3, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant4, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant5, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant6, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant7, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant8, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant9, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant10, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant11, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant12, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant13, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant14, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant15, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant16, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant17, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant18, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant19>? GitSource { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared0dd077d6df470379JsonConverter))]
+        public global::Vercel.AutoSDKShared0dd077d6df470379? GitSource { get; set; }
 
         /// <summary>
         /// A string holding the unique ID of the deployment<br/>
@@ -606,14 +606,14 @@ namespace Vercel
             double? canceledAt,
             global::Vercel.GetDeploymentResponseVariant3ChecksConclusion? checksConclusion,
             global::Vercel.GetDeploymentResponseVariant3ChecksState? checksState,
-            global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant3CustomEnvironmentVariant1, global::Vercel.GetDeploymentResponseVariant3CustomEnvironmentVariant2>? customEnvironment,
+            global::Vercel.AutoSDKShared133a7ec19e4ac4f6? customEnvironment,
             string? defaultRoute,
             double? deletedAt,
             string? errorCode,
             string? errorLink,
             string? errorMessage,
             string? errorStep,
-            global::Vercel.OneOf<global::Vercel.GetDeploymentResponseVariant3GitSourceVariant1, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant2, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant3, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant4, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant5, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant6, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant7, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant8, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant9, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant10, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant11, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant12, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant13, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant14, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant15, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant16, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant17, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant18, global::Vercel.GetDeploymentResponseVariant3GitSourceVariant19>? gitSource,
+            global::Vercel.AutoSDKShared0dd077d6df470379? gitSource,
             double? initReadyAt,
             bool? isFirstBranchDeployment,
             global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant3Lambda>? lambdas,

@@ -20,7 +20,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("routes")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.GetRoutesResponseVariant2Route> Routes { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6ce7a2d665426cb4> Routes { get; set; }
 
         /// <summary>
         /// A version of routing rules stored in S3.
@@ -48,7 +48,7 @@ namespace Vercel
 #endif
         public GetRoutesResponseVariant2(
             double diffCount,
-            global::System.Collections.Generic.IList<global::Vercel.GetRoutesResponseVariant2Route> routes,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6ce7a2d665426cb4> routes,
             global::Vercel.GetRoutesResponseVariant2Version version)
         {
             this.DiffCount = diffCount;

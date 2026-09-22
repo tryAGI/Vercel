@@ -21,7 +21,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.CreateKmsSigningKeyResponse> CreateKmsSigningKeyAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared3ba4fd4930b951c7> CreateKmsSigningKeyAsync(
             string issuerId,
 
             global::Vercel.CreateKmsSigningKeyRequest request,
@@ -46,7 +46,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateKmsSigningKeyResponse>> CreateKmsSigningKeyAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared3ba4fd4930b951c7>> CreateKmsSigningKeyAsResponseAsync(
             string issuerId,
 
             global::Vercel.CreateKmsSigningKeyRequest request,
@@ -85,7 +85,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.CreateKmsSigningKeyResponse> CreateKmsSigningKeyAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared3ba4fd4930b951c7> CreateKmsSigningKeyAsync(
             string issuerId,
             string? teamId = default,
             string? slug = default,

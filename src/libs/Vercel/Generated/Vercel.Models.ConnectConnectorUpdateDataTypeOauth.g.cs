@@ -19,7 +19,7 @@ namespace Vercel
         /// Default Value: {}
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("serverConfig")]
-        public global::Vercel.ConnectConnectorUpdateDataTypeOauthServerConfig? ServerConfig { get; set; }
+        public global::Vercel.AutoSDKSharedd059cb0ee80bd86d? ServerConfig { get; set; }
 
         /// <summary>
         /// OAuth client ID.
@@ -188,7 +188,7 @@ namespace Vercel
 #endif
         public ConnectConnectorUpdateDataTypeOauth(
             string? serverUrl,
-            global::Vercel.ConnectConnectorUpdateDataTypeOauthServerConfig? serverConfig,
+            global::Vercel.AutoSDKSharedd059cb0ee80bd86d? serverConfig,
             string? clientId,
             string? clientName,
             string? clientSecret,

@@ -912,7 +912,7 @@ namespace Vercel
             global::Vercel.UpdateProjectRequestSsoProtection? ssoProtection = default,
             global::Vercel.UpdateProjectRequestTrustedIps? trustedIps = default,
             global::Vercel.UpdateProjectRequestTrustedSources? trustedSources = default,
-            global::Vercel.AnyOf<global::Vercel.UpdateProjectRequestDeploymentPolicy, string>? deploymentPolicy = default,
+            global::Vercel.AutoSDKShared78fcc629ea8987ed? deploymentPolicy = default,
             global::Vercel.UpdateProjectRequestOptionsAllowlist? optionsAllowlist = default,
             global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestConnectConfiguration>? connectConfigurations = default,
             global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestDismissedToast>? dismissedToasts = default,

@@ -139,7 +139,7 @@ namespace Vercel
             string? projectId = default,
             string? teamId = default,
             string? slug = default,
-            global::Vercel.OneOf<global::Vercel.CreateSandboxesByNameForkV2RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesByNameForkV2RequestNetworkPolicyVariant2>? networkPolicy = default,
+            global::Vercel.AutoSDKShared9296e9c5692fbba2? networkPolicy = default,
             global::Vercel.CreateSandboxesByNameForkV2RequestResources? resources = default,
             global::System.Collections.Generic.IList<int>? ports = default,
             string? image = default,

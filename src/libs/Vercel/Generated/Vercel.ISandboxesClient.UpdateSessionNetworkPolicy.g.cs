@@ -25,7 +25,7 @@ namespace Vercel
         global::System.Threading.Tasks.Task<global::Vercel.UpdateSessionNetworkPolicyResponse> UpdateSessionNetworkPolicyAsync(
             string sessionId,
 
-            global::Vercel.OneOf<global::Vercel.UpdateSessionNetworkPolicyRequestVariant1, global::Vercel.UpdateSessionNetworkPolicyRequestVariant2> request,
+            global::Vercel.AutoSDKShared9296e9c5692fbba2 request,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -51,7 +51,7 @@ namespace Vercel
         global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateSessionNetworkPolicyResponse>> UpdateSessionNetworkPolicyAsResponseAsync(
             string sessionId,
 
-            global::Vercel.OneOf<global::Vercel.UpdateSessionNetworkPolicyRequestVariant1, global::Vercel.UpdateSessionNetworkPolicyRequestVariant2> request,
+            global::Vercel.AutoSDKShared9296e9c5692fbba2 request,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,

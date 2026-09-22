@@ -30,7 +30,7 @@ namespace Vercel
         /// <example>deployment.created</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("events")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.CreateWebhookResponseEvent> Events { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedece966f61a605cd3> Events { get; set; }
 
         /// <summary>
         /// The webhook id<br/>
@@ -129,7 +129,7 @@ namespace Vercel
 #endif
         public CreateWebhookResponse(
             double createdAt,
-            global::System.Collections.Generic.IList<global::Vercel.CreateWebhookResponseEvent> events,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedece966f61a605cd3> events,
             string id,
             string ownerId,
             string secret,

@@ -212,8 +212,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironment")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CancelDeploymentResponseCustomEnvironmentVariant1, global::Vercel.CancelDeploymentResponseCustomEnvironmentVariant2>))]
-        public global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseCustomEnvironmentVariant1, global::Vercel.CancelDeploymentResponseCustomEnvironmentVariant2>? CustomEnvironment { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared133a7ec19e4ac4f6JsonConverter))]
+        public global::Vercel.AutoSDKShared133a7ec19e4ac4f6? CustomEnvironment { get; set; }
 
         /// <summary>
         /// Computed field that is only available for deployments with a microfrontend configuration.
@@ -278,21 +278,21 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("functions")]
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.CancelDeploymentResponseFunctions2>? Functions { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared5f7d6053e0f466da>? Functions { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitRepo")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CancelDeploymentResponseGitRepoVariant1, global::Vercel.CancelDeploymentResponseGitRepoVariant2, global::Vercel.CancelDeploymentResponseGitRepoVariant3, global::Vercel.CancelDeploymentResponseGitRepoVariant4, global::Vercel.CancelDeploymentResponseGitRepoVariant5>))]
-        public global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseGitRepoVariant1, global::Vercel.CancelDeploymentResponseGitRepoVariant2, global::Vercel.CancelDeploymentResponseGitRepoVariant3, global::Vercel.CancelDeploymentResponseGitRepoVariant4, global::Vercel.CancelDeploymentResponseGitRepoVariant5>? GitRepo { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared6ed7be4e006b051dJsonConverter))]
+        public global::Vercel.AutoSDKShared6ed7be4e006b051d? GitRepo { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitSource")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CancelDeploymentResponseGitSourceVariant1, global::Vercel.CancelDeploymentResponseGitSourceVariant2, global::Vercel.CancelDeploymentResponseGitSourceVariant3, global::Vercel.CancelDeploymentResponseGitSourceVariant4, global::Vercel.CancelDeploymentResponseGitSourceVariant5, global::Vercel.CancelDeploymentResponseGitSourceVariant6, global::Vercel.CancelDeploymentResponseGitSourceVariant7, global::Vercel.CancelDeploymentResponseGitSourceVariant8, global::Vercel.CancelDeploymentResponseGitSourceVariant9, global::Vercel.CancelDeploymentResponseGitSourceVariant10, global::Vercel.CancelDeploymentResponseGitSourceVariant11, global::Vercel.CancelDeploymentResponseGitSourceVariant12, global::Vercel.CancelDeploymentResponseGitSourceVariant13, global::Vercel.CancelDeploymentResponseGitSourceVariant14, global::Vercel.CancelDeploymentResponseGitSourceVariant15, global::Vercel.CancelDeploymentResponseGitSourceVariant16, global::Vercel.CancelDeploymentResponseGitSourceVariant17, global::Vercel.CancelDeploymentResponseGitSourceVariant18, global::Vercel.CancelDeploymentResponseGitSourceVariant19>))]
-        public global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseGitSourceVariant1, global::Vercel.CancelDeploymentResponseGitSourceVariant2, global::Vercel.CancelDeploymentResponseGitSourceVariant3, global::Vercel.CancelDeploymentResponseGitSourceVariant4, global::Vercel.CancelDeploymentResponseGitSourceVariant5, global::Vercel.CancelDeploymentResponseGitSourceVariant6, global::Vercel.CancelDeploymentResponseGitSourceVariant7, global::Vercel.CancelDeploymentResponseGitSourceVariant8, global::Vercel.CancelDeploymentResponseGitSourceVariant9, global::Vercel.CancelDeploymentResponseGitSourceVariant10, global::Vercel.CancelDeploymentResponseGitSourceVariant11, global::Vercel.CancelDeploymentResponseGitSourceVariant12, global::Vercel.CancelDeploymentResponseGitSourceVariant13, global::Vercel.CancelDeploymentResponseGitSourceVariant14, global::Vercel.CancelDeploymentResponseGitSourceVariant15, global::Vercel.CancelDeploymentResponseGitSourceVariant16, global::Vercel.CancelDeploymentResponseGitSourceVariant17, global::Vercel.CancelDeploymentResponseGitSourceVariant18, global::Vercel.CancelDeploymentResponseGitSourceVariant19>? GitSource { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared0dd077d6df470379JsonConverter))]
+        public global::Vercel.AutoSDKShared0dd077d6df470379? GitSource { get; set; }
 
         /// <summary>
         /// A string holding the unique ID of the deployment<br/>
@@ -376,8 +376,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microfrontends")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CancelDeploymentResponseMicrofrontendsVariant1, global::Vercel.CancelDeploymentResponseMicrofrontendsVariant2>))]
-        public global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseMicrofrontendsVariant1, global::Vercel.CancelDeploymentResponseMicrofrontendsVariant2>? Microfrontends { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared78353984d471628dJsonConverter))]
+        public global::Vercel.AutoSDKShared78353984d471628d? Microfrontends { get; set; }
 
         /// <summary>
         ///
@@ -485,7 +485,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectSettings")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.CancelDeploymentResponseProjectSettings ProjectSettings { get; set; }
+        public required global::Vercel.AutoSDKShared682ecbbb5af0af8a ProjectSettings { get; set; }
 
         /// <summary>
         /// A boolean representing if the deployment is public or not. By default this is `false`<br/>
@@ -544,7 +544,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("routes")]
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseRouteVariant1, global::Vercel.CancelDeploymentResponseRouteVariant2, global::Vercel.CancelDeploymentResponseRouteVariant3>>? Routes { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared34abcb2fd4803b5a>? Routes { get; set; }
 
         /// <summary>
         /// NSNB Blocked metadata
@@ -556,7 +556,7 @@ namespace Vercel
         /// Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("services")]
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseServiceVariant1, global::Vercel.CancelDeploymentResponseServiceVariant2>>? Services { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedaac8b47176a82eee>? Services { get; set; }
 
         /// <summary>
         /// flag to indicate if the deployment was deleted by retention policy<br/>
@@ -869,7 +869,7 @@ namespace Vercel
             string ownerId,
             global::Vercel.CancelDeploymentResponsePlan plan,
             string projectId,
-            global::Vercel.CancelDeploymentResponseProjectSettings projectSettings,
+            global::Vercel.AutoSDKShared682ecbbb5af0af8a projectSettings,
             bool @public,
             global::Vercel.CancelDeploymentResponseReadyState readyState,
             global::System.Collections.Generic.IList<string> regions,
@@ -898,7 +898,7 @@ namespace Vercel
             bool? connectBuildsEnabled,
             string? connectConfigurationId,
             global::System.Collections.Generic.IList<global::Vercel.CancelDeploymentResponseCron>? crons,
-            global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseCustomEnvironmentVariant1, global::Vercel.CancelDeploymentResponseCustomEnvironmentVariant2>? customEnvironment,
+            global::Vercel.AutoSDKShared133a7ec19e4ac4f6? customEnvironment,
             string? defaultRoute,
             double? deletedAt,
             string? errorCode,
@@ -906,9 +906,9 @@ namespace Vercel
             string? errorMessage,
             string? errorStep,
             global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseFlags, global::System.Collections.Generic.IList<object>>? flags,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.CancelDeploymentResponseFunctions2>? functions,
-            global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseGitRepoVariant1, global::Vercel.CancelDeploymentResponseGitRepoVariant2, global::Vercel.CancelDeploymentResponseGitRepoVariant3, global::Vercel.CancelDeploymentResponseGitRepoVariant4, global::Vercel.CancelDeploymentResponseGitRepoVariant5>? gitRepo,
-            global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseGitSourceVariant1, global::Vercel.CancelDeploymentResponseGitSourceVariant2, global::Vercel.CancelDeploymentResponseGitSourceVariant3, global::Vercel.CancelDeploymentResponseGitSourceVariant4, global::Vercel.CancelDeploymentResponseGitSourceVariant5, global::Vercel.CancelDeploymentResponseGitSourceVariant6, global::Vercel.CancelDeploymentResponseGitSourceVariant7, global::Vercel.CancelDeploymentResponseGitSourceVariant8, global::Vercel.CancelDeploymentResponseGitSourceVariant9, global::Vercel.CancelDeploymentResponseGitSourceVariant10, global::Vercel.CancelDeploymentResponseGitSourceVariant11, global::Vercel.CancelDeploymentResponseGitSourceVariant12, global::Vercel.CancelDeploymentResponseGitSourceVariant13, global::Vercel.CancelDeploymentResponseGitSourceVariant14, global::Vercel.CancelDeploymentResponseGitSourceVariant15, global::Vercel.CancelDeploymentResponseGitSourceVariant16, global::Vercel.CancelDeploymentResponseGitSourceVariant17, global::Vercel.CancelDeploymentResponseGitSourceVariant18, global::Vercel.CancelDeploymentResponseGitSourceVariant19>? gitSource,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared5f7d6053e0f466da>? functions,
+            global::Vercel.AutoSDKShared6ed7be4e006b051d? gitRepo,
+            global::Vercel.AutoSDKShared0dd077d6df470379? gitSource,
             global::Vercel.CancelDeploymentResponseImages? images,
             double? initReadyAt,
             string? inspectorUrl,
@@ -917,7 +917,7 @@ namespace Vercel
             bool? isInstantStatic,
             global::System.Collections.Generic.IList<global::Vercel.CancelDeploymentResponseLambda>? lambdas,
             global::Vercel.CancelDeploymentResponseManualProvisioning? manualProvisioning,
-            global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseMicrofrontendsVariant1, global::Vercel.CancelDeploymentResponseMicrofrontendsVariant2>? microfrontends,
+            global::Vercel.AutoSDKShared78353984d471628d? microfrontends,
             string? monorepoManager,
             global::Vercel.CancelDeploymentResponseNodeVersion? nodeVersion,
             global::Vercel.CancelDeploymentResponseOidcTokenClaims? oidcTokenClaims,
@@ -933,9 +933,9 @@ namespace Vercel
             string? readyStateReason,
             global::Vercel.CancelDeploymentResponseReadySubstate? readySubstate,
             global::Vercel.CancelDeploymentResponseResourceConfig? resourceConfig,
-            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseRouteVariant1, global::Vercel.CancelDeploymentResponseRouteVariant2, global::Vercel.CancelDeploymentResponseRouteVariant3>>? routes,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared34abcb2fd4803b5a>? routes,
             global::Vercel.CancelDeploymentResponseSeatBlock? seatBlock,
-            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CancelDeploymentResponseServiceVariant1, global::Vercel.CancelDeploymentResponseServiceVariant2>>? services,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedaac8b47176a82eee>? services,
             bool? softDeletedByRetention,
             global::Vercel.CancelDeploymentResponseSource? source,
             global::Vercel.CancelDeploymentResponseTarget? target,

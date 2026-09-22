@@ -42,7 +42,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metadataSchema")]
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchema? MetadataSchema { get; set; }
+        public global::Vercel.AutoSDKSharedf9b373cd1ded5c73? MetadataSchema { get; set; }
 
         /// <summary>
         ///
@@ -188,7 +188,7 @@ namespace Vercel
             bool? disableResourceRenaming,
             string? iconUrl,
             string? id,
-            global::Vercel.CreateIntegrationStoreDirectResponseStoreProductMetadataSchema? metadataSchema,
+            global::Vercel.AutoSDKSharedf9b373cd1ded5c73? metadataSchema,
             string? name,
             global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductProjectConnectionScope>? projectConnectionScopes,
             global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductResourceLink>? resourceLinks,

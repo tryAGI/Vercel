@@ -18,7 +18,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.CreateOrTransferDomainResponse> CreateOrTransferDomainAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared209b2cb84e1d7219> CreateOrTransferDomainAsync(
 
             global::Vercel.CreateOrTransferDomainRequest request,
             string? teamId = default,
@@ -39,7 +39,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateOrTransferDomainResponse>> CreateOrTransferDomainAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared209b2cb84e1d7219>> CreateOrTransferDomainAsResponseAsync(
 
             global::Vercel.CreateOrTransferDomainRequest request,
             string? teamId = default,
@@ -63,7 +63,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.CreateOrTransferDomainResponse> CreateOrTransferDomainAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared209b2cb84e1d7219> CreateOrTransferDomainAsync(
             string? teamId = default,
             string? slug = default,
             string? method = default,

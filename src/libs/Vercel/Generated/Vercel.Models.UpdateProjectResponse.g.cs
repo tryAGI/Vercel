@@ -12,7 +12,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("abuse")]
-        public global::Vercel.UpdateProjectResponseAbuse? Abuse { get; set; }
+        public global::Vercel.AutoSDKShared5387a0e7cacff827? Abuse { get; set; }
 
         /// <summary>
         ///
@@ -26,7 +26,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseAlia> Alias { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbc14f6f0dbfaa660> Alias { get; set; }
 
         /// <summary>
         ///
@@ -116,8 +116,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("creator")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateProjectResponseCreatorVariant1, global::Vercel.UpdateProjectResponseCreatorVariant2, global::Vercel.UpdateProjectResponseCreatorVariant3, global::Vercel.UpdateProjectResponseCreatorVariant4>))]
-        public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseCreatorVariant1, global::Vercel.UpdateProjectResponseCreatorVariant2, global::Vercel.UpdateProjectResponseCreatorVariant3, global::Vercel.UpdateProjectResponseCreatorVariant4>? Creator { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKSharedf1f589ae3ca84945JsonConverter))]
+        public global::Vercel.AutoSDKSharedf1f589ae3ca84945? Creator { get; set; }
 
         /// <summary>
         ///
@@ -129,7 +129,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customEnvironments")]
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseCustomEnvironment>? CustomEnvironments { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7d4f4f5cff68219a>? CustomEnvironments { get; set; }
 
         /// <summary>
         ///
@@ -161,7 +161,7 @@ namespace Vercel
         /// Project shape. `null` on a rule list clears the project's override for that rule type (fall back to team for every env); omitting is equivalent. Setting `deploymentPolicy` itself to `null` clears every override at once. Kept structurally distinct from {@link TeamDeploymentPolicy} so the two storage locations don't share a type by accident.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentPolicy")]
-        public global::Vercel.UpdateProjectResponseDeploymentPolicy? DeploymentPolicy { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295? DeploymentPolicy { get; set; }
 
         /// <summary>
         ///
@@ -254,7 +254,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitProviderOptions")]
-        public global::Vercel.UpdateProjectResponseGitProviderOptions? GitProviderOptions { get; set; }
+        public global::Vercel.AutoSDKSharedc12640b06f1c9105? GitProviderOptions { get; set; }
 
         /// <summary>
         ///
@@ -315,14 +315,14 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("latestDeployments")]
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseLatestDeployment>? LatestDeployments { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7524a6c3199bd963>? LatestDeployments { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("link")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateProjectResponseLinkVariant1, global::Vercel.UpdateProjectResponseLinkVariant2, global::Vercel.UpdateProjectResponseLinkVariant3, global::Vercel.UpdateProjectResponseLinkVariant4, global::Vercel.UpdateProjectResponseLinkVariant5, global::Vercel.UpdateProjectResponseLinkVariant6, global::Vercel.UpdateProjectResponseLinkVariant7, global::Vercel.UpdateProjectResponseLinkVariant8>))]
-        public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseLinkVariant1, global::Vercel.UpdateProjectResponseLinkVariant2, global::Vercel.UpdateProjectResponseLinkVariant3, global::Vercel.UpdateProjectResponseLinkVariant4, global::Vercel.UpdateProjectResponseLinkVariant5, global::Vercel.UpdateProjectResponseLinkVariant6, global::Vercel.UpdateProjectResponseLinkVariant7, global::Vercel.UpdateProjectResponseLinkVariant8>? Link { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKSharede0f9d68fc63cf31dJsonConverter))]
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31d? Link { get; set; }
 
         /// <summary>
         ///
@@ -334,8 +334,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microfrontends")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateProjectResponseMicrofrontendsVariant1, global::Vercel.UpdateProjectResponseMicrofrontendsVariant2, global::Vercel.UpdateProjectResponseMicrofrontendsVariant3>))]
-        public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseMicrofrontendsVariant1, global::Vercel.UpdateProjectResponseMicrofrontendsVariant2, global::Vercel.UpdateProjectResponseMicrofrontendsVariant3>? Microfrontends { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared7ff9e6410c724535JsonConverter))]
+        public global::Vercel.AutoSDKShared7ff9e6410c724535? Microfrontends { get; set; }
 
         /// <summary>
         ///
@@ -398,7 +398,7 @@ namespace Vercel
         /// Requested and authorized operations when `checkPermissions` is used. Legacy `includePermissions` responses contain a broader, non-authoritative permission summary.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("permissions")]
-        public global::Vercel.UpdateProjectResponsePermissions? Permissions { get; set; }
+        public global::Vercel.AutoSDKShared26bf680ec7bdfcc3? Permissions { get; set; }
 
         /// <summary>
         ///
@@ -441,7 +441,7 @@ namespace Vercel
         /// Project-level rolling release configuration that defines how deployments should be gradually rolled out
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rollingRelease")]
-        public global::Vercel.UpdateProjectResponseRollingRelease? RollingRelease { get; set; }
+        public global::Vercel.AutoSDKShared42a87d29a5696121? RollingRelease { get; set; }
 
         /// <summary>
         ///
@@ -459,7 +459,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("security")]
-        public global::Vercel.UpdateProjectResponseSecurity? Security { get; set; }
+        public global::Vercel.AutoSDKShareda3770e4df73b880d? Security { get; set; }
 
         /// <summary>
         ///
@@ -525,7 +525,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("targets")]
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateProjectResponseTargets2?>? Targets { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared290e0be6a2cc986e?>? Targets { get; set; }
 
         /// <summary>
         ///
@@ -575,7 +575,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("trustedSources")]
-        public global::Vercel.UpdateProjectResponseTrustedSources? TrustedSources { get; set; }
+        public global::Vercel.AutoSDKShared4a88a64e6651d284? TrustedSources { get; set; }
 
         /// <summary>
         ///
@@ -728,7 +728,7 @@ namespace Vercel
 #endif
         public UpdateProjectResponse(
             string accountId,
-            global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseAlia> alias,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbc14f6f0dbfaa660> alias,
             global::Vercel.UpdateProjectResponseDefaultResourceConfig defaultResourceConfig,
             global::Vercel.UpdateProjectResponseDeploymentExpiration deploymentExpiration,
             bool directoryListing,
@@ -736,7 +736,7 @@ namespace Vercel
             string name,
             global::Vercel.UpdateProjectResponseNodeVersion nodeVersion,
             global::Vercel.UpdateProjectResponseResourceConfig resourceConfig,
-            global::Vercel.UpdateProjectResponseAbuse? abuse,
+            global::Vercel.AutoSDKShared5387a0e7cacff827? abuse,
             global::Vercel.UpdateProjectResponseAnalytics? analytics,
             bool? appliedCve55182Migration,
             bool? autoAssignCustomDomains,
@@ -751,12 +751,12 @@ namespace Vercel
             string? connectConfigurationId,
             global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseConnectConfiguration>? connectConfigurations,
             double? createdAt,
-            global::Vercel.OneOf<global::Vercel.UpdateProjectResponseCreatorVariant1, global::Vercel.UpdateProjectResponseCreatorVariant2, global::Vercel.UpdateProjectResponseCreatorVariant3, global::Vercel.UpdateProjectResponseCreatorVariant4>? creator,
+            global::Vercel.AutoSDKSharedf1f589ae3ca84945? creator,
             global::Vercel.UpdateProjectResponseCrons? crons,
-            global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseCustomEnvironment>? customEnvironments,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7d4f4f5cff68219a>? customEnvironments,
             bool? customerSupportCodeVisibility,
             global::Vercel.UpdateProjectResponseDataCache? dataCache,
-            global::Vercel.UpdateProjectResponseDeploymentPolicy? deploymentPolicy,
+            global::Vercel.AutoSDKShared803d328dcef47295? deploymentPolicy,
             string? devCommand,
             global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseDismissedToast>? dismissedToasts,
             bool? enableAffectedProjectsDeployments,
@@ -770,7 +770,7 @@ namespace Vercel
             global::Vercel.UpdateProjectResponseGitComments? gitComments,
             bool? gitForkProtection,
             bool? gitLFS,
-            global::Vercel.UpdateProjectResponseGitProviderOptions? gitProviderOptions,
+            global::Vercel.AutoSDKSharedc12640b06f1c9105? gitProviderOptions,
             bool? hasActiveBranches,
             bool? hasDeployments,
             string? installCommand,
@@ -779,10 +779,10 @@ namespace Vercel
             global::Vercel.UpdateProjectResponseJobs? jobs,
             global::Vercel.UpdateProjectResponseLastAliasRequest? lastAliasRequest,
             object? lastRollbackTarget,
-            global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseLatestDeployment>? latestDeployments,
-            global::Vercel.OneOf<global::Vercel.UpdateProjectResponseLinkVariant1, global::Vercel.UpdateProjectResponseLinkVariant2, global::Vercel.UpdateProjectResponseLinkVariant3, global::Vercel.UpdateProjectResponseLinkVariant4, global::Vercel.UpdateProjectResponseLinkVariant5, global::Vercel.UpdateProjectResponseLinkVariant6, global::Vercel.UpdateProjectResponseLinkVariant7, global::Vercel.UpdateProjectResponseLinkVariant8>? link,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7524a6c3199bd963>? latestDeployments,
+            global::Vercel.AutoSDKSharede0f9d68fc63cf31d? link,
             bool? live,
-            global::Vercel.OneOf<global::Vercel.UpdateProjectResponseMicrofrontendsVariant1, global::Vercel.UpdateProjectResponseMicrofrontendsVariant2, global::Vercel.UpdateProjectResponseMicrofrontendsVariant3>? microfrontends,
+            global::Vercel.AutoSDKShared7ff9e6410c724535? microfrontends,
             global::Vercel.UpdateProjectResponseOidcTokenConfig? oidcTokenConfig,
             global::Vercel.UpdateProjectResponseOptionsAllowlist? optionsAllowlist,
             string? outputDirectory,
@@ -790,16 +790,16 @@ namespace Vercel
             global::Vercel.UpdateProjectResponsePassport? passport,
             object? passwordProtection,
             bool? paused,
-            global::Vercel.UpdateProjectResponsePermissions? permissions,
+            global::Vercel.AutoSDKShared26bf680ec7bdfcc3? permissions,
             bool? productionDeploymentsFastLane,
             bool? protectedSourcemaps,
             object? protectionBypass,
             global::Vercel.UpdateProjectResponseProtectionConfig? protectionConfig,
             global::Vercel.UpdateProjectResponseRollbackDescription? rollbackDescription,
-            global::Vercel.UpdateProjectResponseRollingRelease? rollingRelease,
+            global::Vercel.AutoSDKShared42a87d29a5696121? rollingRelease,
             string? rootDirectory,
             global::Vercel.UpdateProjectResponseSandbox? sandbox,
-            global::Vercel.UpdateProjectResponseSecurity? security,
+            global::Vercel.AutoSDKShareda3770e4df73b880d? security,
             bool? serverlessFunctionZeroConfigFailover,
             global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseService>? services,
             global::System.Collections.Generic.IList<string>? skewProtectionAllowedDomains,
@@ -810,7 +810,7 @@ namespace Vercel
             global::Vercel.UpdateProjectResponseSpeedInsights? speedInsights,
             global::Vercel.UpdateProjectResponseSsoProtection? ssoProtection,
             global::Vercel.UpdateProjectResponseStaticIps? staticIps,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateProjectResponseTargets2?>? targets,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared290e0be6a2cc986e?>? targets,
             global::Vercel.UpdateProjectResponseTier? tier,
             global::Vercel.UpdateProjectResponseTracing? tracing,
             double? transferCompletedAt,
@@ -818,7 +818,7 @@ namespace Vercel
             double? transferStartedAt,
             string? transferToAccountId,
             global::Vercel.OneOf<global::Vercel.UpdateProjectResponseTrustedIpsVariant1, global::Vercel.UpdateProjectResponseTrustedIpsVariant2>? trustedIps,
-            global::Vercel.UpdateProjectResponseTrustedSources? trustedSources,
+            global::Vercel.AutoSDKShared4a88a64e6651d284? trustedSources,
             double? updatedAt,
             global::Vercel.UpdateProjectResponseUsageStatus? usageStatus,
             bool? v0,

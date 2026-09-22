@@ -947,7 +947,7 @@ namespace Vercel
             bool? persistent = default,
             global::Vercel.OneOf<object, int?>? snapshotExpiration = default,
             global::Vercel.OneOf<string, global::Vercel.UpdateSandboxRequestKeepLastSnapshots>? keepLastSnapshots = default,
-            global::Vercel.OneOf<global::Vercel.UpdateSandboxRequestNetworkPolicyVariant1, global::Vercel.UpdateSandboxRequestNetworkPolicyVariant2>? networkPolicy = default,
+            global::Vercel.AutoSDKShared9296e9c5692fbba2? networkPolicy = default,
             global::Vercel.UpdateSandboxRequestRegion? region = default,
             global::System.Collections.Generic.IList<global::Vercel.UpdateSandboxRequestFailoverRegion>? failoverRegions = default,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateSandboxRequestMounts2>? mounts = default,

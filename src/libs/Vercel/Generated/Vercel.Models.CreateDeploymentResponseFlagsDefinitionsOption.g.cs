@@ -1,0 +1,54 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    ///
+    /// </summary>
+    public sealed partial class CreateDeploymentResponseFlagsDefinitionsOption
+    {
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("label")]
+        public string? Label { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.FlagJSONValueJsonConverter))]
+        public global::Vercel.FlagJSONValue? Value { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CreateDeploymentResponseFlagsDefinitionsOption" /> class.
+        /// </summary>
+        /// <param name="label"></param>
+        /// <param name="value"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public CreateDeploymentResponseFlagsDefinitionsOption(
+            string? label,
+            global::Vercel.FlagJSONValue? value)
+        {
+            this.Label = label;
+            this.Value = value;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CreateDeploymentResponseFlagsDefinitionsOption" /> class.
+        /// </summary>
+        public CreateDeploymentResponseFlagsDefinitionsOption()
+        {
+        }
+
+    }
+}

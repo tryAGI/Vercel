@@ -21,7 +21,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.ApproveRollingReleaseStageResponse> ApproveRollingReleaseStageAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared24441ee6c19033d7> ApproveRollingReleaseStageAsync(
             string idOrName,
 
             global::Vercel.ApproveRollingReleaseStageRequest request,
@@ -46,7 +46,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.ApproveRollingReleaseStageResponse>> ApproveRollingReleaseStageAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared24441ee6c19033d7>> ApproveRollingReleaseStageAsResponseAsync(
             string idOrName,
 
             global::Vercel.ApproveRollingReleaseStageRequest request,
@@ -76,7 +76,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.ApproveRollingReleaseStageResponse> ApproveRollingReleaseStageAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared24441ee6c19033d7> ApproveRollingReleaseStageAsync(
             string idOrName,
             double nextStageIndex,
             string canaryDeploymentId,

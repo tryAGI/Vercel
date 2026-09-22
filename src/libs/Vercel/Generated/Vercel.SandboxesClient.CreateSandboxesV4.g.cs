@@ -896,7 +896,7 @@ namespace Vercel
         public async global::System.Threading.Tasks.Task<global::Vercel.CreateSandboxesV4Response> CreateSandboxesV4Async(
             string? teamId = default,
             string? slug = default,
-            global::Vercel.OneOf<global::Vercel.CreateSandboxesV4RequestNetworkPolicyVariant1, global::Vercel.CreateSandboxesV4RequestNetworkPolicyVariant2>? networkPolicy = default,
+            global::Vercel.AutoSDKShared9296e9c5692fbba2? networkPolicy = default,
             global::Vercel.CreateSandboxesV4RequestArchitecture? architecture = default,
             global::Vercel.CreateSandboxesV4RequestResources? resources = default,
             global::Vercel.OneOf<global::Vercel.CreateSandboxesV4RequestSourceVariant1, global::Vercel.CreateSandboxesV4RequestSourceVariant2, global::Vercel.CreateSandboxesV4RequestSourceVariant3>? source = default,

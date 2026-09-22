@@ -12,20 +12,20 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("active")]
-        public global::Vercel.GetSecurityFirewallConfigResponseActive? Active { get; set; }
+        public global::Vercel.AutoSDKShared1ed2975831fbb888? Active { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("draft")]
-        public global::Vercel.GetSecurityFirewallConfigResponseDraft? Draft { get; set; }
+        public global::Vercel.AutoSDKShared1ed2975831fbb888? Draft { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("versions")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.GetSecurityFirewallConfigResponseVersion> Versions { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7e5cde0fd7c87b94> Versions { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -43,9 +43,9 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetSecurityFirewallConfigResponse(
-            global::System.Collections.Generic.IList<global::Vercel.GetSecurityFirewallConfigResponseVersion> versions,
-            global::Vercel.GetSecurityFirewallConfigResponseActive? active,
-            global::Vercel.GetSecurityFirewallConfigResponseDraft? draft)
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7e5cde0fd7c87b94> versions,
+            global::Vercel.AutoSDKShared1ed2975831fbb888? active,
+            global::Vercel.AutoSDKShared1ed2975831fbb888? draft)
         {
             this.Active = active;
             this.Draft = draft;

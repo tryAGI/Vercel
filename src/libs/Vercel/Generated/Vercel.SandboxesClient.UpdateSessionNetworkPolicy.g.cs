@@ -30,14 +30,14 @@ namespace Vercel
             ref string sessionId,
             ref string? teamId,
             ref string? slug,
-            global::Vercel.OneOf<global::Vercel.UpdateSessionNetworkPolicyRequestVariant1, global::Vercel.UpdateSessionNetworkPolicyRequestVariant2> request);
+            global::Vercel.AutoSDKShared9296e9c5692fbba2 request);
         partial void PrepareUpdateSessionNetworkPolicyRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string sessionId,
             string? teamId,
             string? slug,
-            global::Vercel.OneOf<global::Vercel.UpdateSessionNetworkPolicyRequestVariant1, global::Vercel.UpdateSessionNetworkPolicyRequestVariant2> request);
+            global::Vercel.AutoSDKShared9296e9c5692fbba2 request);
         partial void ProcessUpdateSessionNetworkPolicyResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -68,7 +68,7 @@ namespace Vercel
         public async global::System.Threading.Tasks.Task<global::Vercel.UpdateSessionNetworkPolicyResponse> UpdateSessionNetworkPolicyAsync(
             string sessionId,
 
-            global::Vercel.OneOf<global::Vercel.UpdateSessionNetworkPolicyRequestVariant1, global::Vercel.UpdateSessionNetworkPolicyRequestVariant2> request,
+            global::Vercel.AutoSDKShared9296e9c5692fbba2 request,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -107,7 +107,7 @@ namespace Vercel
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateSessionNetworkPolicyResponse>> UpdateSessionNetworkPolicyAsResponseAsync(
             string sessionId,
 
-            global::Vercel.OneOf<global::Vercel.UpdateSessionNetworkPolicyRequestVariant1, global::Vercel.UpdateSessionNetworkPolicyRequestVariant2> request,
+            global::Vercel.AutoSDKShared9296e9c5692fbba2 request,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -756,7 +756,7 @@ namespace Vercel
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::Vercel.OneOf<global::Vercel.UpdateSessionNetworkPolicyRequestVariant1, global::Vercel.UpdateSessionNetworkPolicyRequestVariant2>
+            var __request = new global::Vercel.AutoSDKShared9296e9c5692fbba2
             {
             };
 
