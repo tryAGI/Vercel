@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("stream")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Stream { get; set; }
+        public required global::Vercel.RunSessionCommandResponseVariant3Variant1Data Data { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("stream")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.RunSessionCommandResponseVariant3Variant1Data Data { get; set; }
+        public required string Stream { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="RunSessionCommandResponseVariant3Variant1" /> class.
         /// </summary>
-        /// <param name="stream"></param>
         /// <param name="data"></param>
+        /// <param name="stream"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public RunSessionCommandResponseVariant3Variant1(
-            string stream,
-            global::Vercel.RunSessionCommandResponseVariant3Variant1Data data)
+            global::Vercel.RunSessionCommandResponseVariant3Variant1Data data,
+            string stream)
         {
-            this.Stream = stream ?? throw new global::System.ArgumentNullException(nameof(stream));
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
+            this.Stream = stream ?? throw new global::System.ArgumentNullException(nameof(stream));
         }
 
         /// <summary>

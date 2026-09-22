@@ -11,17 +11,17 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SearchRepoResponseVariant4GitAccountProviderJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.SearchRepoResponseVariant4GitAccountProvider Provider { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("namespaceId")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>))]
+        public global::Vercel.OneOf<string, double?>? NamespaceId { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("namespaceId")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>))]
-        public global::Vercel.OneOf<string, double?>? NamespaceId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SearchRepoResponseVariant4GitAccountProviderJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.SearchRepoResponseVariant4GitAccountProvider Provider { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -41,8 +41,8 @@ namespace Vercel
             global::Vercel.SearchRepoResponseVariant4GitAccountProvider provider,
             global::Vercel.OneOf<string, double?>? namespaceId)
         {
-            this.Provider = provider;
             this.NamespaceId = namespaceId;
+            this.Provider = provider;
         }
 
         /// <summary>

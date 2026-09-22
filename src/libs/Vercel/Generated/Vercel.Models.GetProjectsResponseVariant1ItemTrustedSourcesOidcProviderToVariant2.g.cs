@@ -9,17 +9,17 @@ namespace Vercel
     public sealed partial class GetProjectsResponseVariant1ItemTrustedSourcesOidcProviderToVariant2
     {
         /// <summary>
-        /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slugs")]
-        public global::System.Collections.Generic.IList<string>? Slugs { get; set; }
-
-        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("preset")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant1ItemTrustedSourcesOidcProviderToVariant2PresetJsonConverter))]
         public global::Vercel.GetProjectsResponseVariant1ItemTrustedSourcesOidcProviderToVariant2Preset Preset { get; set; }
+
+        /// <summary>
+        /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("slugs")]
+        public global::System.Collections.Generic.IList<string>? Slugs { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -30,19 +30,19 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant1ItemTrustedSourcesOidcProviderToVariant2" /> class.
         /// </summary>
+        /// <param name="preset"></param>
         /// <param name="slugs">
         /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
         /// </param>
-        /// <param name="preset"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsResponseVariant1ItemTrustedSourcesOidcProviderToVariant2(
-            global::System.Collections.Generic.IList<string>? slugs,
-            global::Vercel.GetProjectsResponseVariant1ItemTrustedSourcesOidcProviderToVariant2Preset preset)
+            global::Vercel.GetProjectsResponseVariant1ItemTrustedSourcesOidcProviderToVariant2Preset preset,
+            global::System.Collections.Generic.IList<string>? slugs)
         {
-            this.Slugs = slugs;
             this.Preset = preset;
+            this.Slugs = slugs;
         }
 
         /// <summary>

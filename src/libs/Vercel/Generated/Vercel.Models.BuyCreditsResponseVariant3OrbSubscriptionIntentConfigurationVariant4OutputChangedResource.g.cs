@@ -9,6 +9,18 @@ namespace Vercel
     public sealed partial class BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4OutputChangedResource
     {
         /// <summary>
+        /// Resource IDs that were added.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("addedResourceIds")]
+        public global::System.Collections.Generic.IList<string>? AddedResourceIds { get; set; }
+
+        /// <summary>
+        /// When this resource change should take effect for downstream consumers.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("effectiveAt")]
+        public string? EffectiveAt { get; set; }
+
+        /// <summary>
         /// The alias of the product that was changed.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("productAlias")]
@@ -28,18 +40,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("quantity")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Quantity { get; set; }
-
-        /// <summary>
-        /// Resource IDs that were added.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("addedResourceIds")]
-        public global::System.Collections.Generic.IList<string>? AddedResourceIds { get; set; }
-
-        /// <summary>
-        /// When this resource change should take effect for downstream consumers.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("effectiveAt")]
-        public string? EffectiveAt { get; set; }
 
         /// <summary>
         /// Resource IDs that were removed.
@@ -95,11 +95,11 @@ namespace Vercel
             global::System.Collections.Generic.IList<string>? removedResourceIds,
             global::System.Collections.Generic.IList<string>? resourceIds)
         {
+            this.AddedResourceIds = addedResourceIds;
+            this.EffectiveAt = effectiveAt;
             this.ProductAlias = productAlias ?? throw new global::System.ArgumentNullException(nameof(productAlias));
             this.ProductId = productId ?? throw new global::System.ArgumentNullException(nameof(productId));
             this.Quantity = quantity;
-            this.AddedResourceIds = addedResourceIds;
-            this.EffectiveAt = effectiveAt;
             this.RemovedResourceIds = removedResourceIds;
             this.ResourceIds = resourceIds;
         }

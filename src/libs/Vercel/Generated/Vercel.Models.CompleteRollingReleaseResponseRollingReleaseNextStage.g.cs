@@ -10,6 +10,14 @@ namespace Vercel
     public sealed partial class CompleteRollingReleaseResponseRollingReleaseNextStage
     {
         /// <summary>
+        /// Duration in seconds for automatic advancement, null for manual stages or the final stage<br/>
+        /// Example: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// </summary>
+        /// <example>openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("duration")]
+        public double? Duration { get; set; }
+
+        /// <summary>
         /// The zero-based index of the stage<br/>
         /// Example: 0
         /// </summary>
@@ -28,13 +36,12 @@ namespace Vercel
         public required bool IsFinalStage { get; set; }
 
         /// <summary>
-        /// The percentage of traffic to serve to the canary deployment (0-100)<br/>
-        /// Example: 25
+        /// Whether to linearly shift traffic over the duration of this stage<br/>
+        /// Example: false
         /// </summary>
-        /// <example>25</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("targetPercentage")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double TargetPercentage { get; set; }
+        /// <example>false</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("linearShift")]
+        public bool? LinearShift { get; set; }
 
         /// <summary>
         /// Whether or not this stage requires manual approval to proceed
@@ -44,20 +51,13 @@ namespace Vercel
         public required bool RequireApproval { get; set; }
 
         /// <summary>
-        /// Duration in seconds for automatic advancement, null for manual stages or the final stage<br/>
-        /// Example: openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464
+        /// The percentage of traffic to serve to the canary deployment (0-100)<br/>
+        /// Example: 25
         /// </summary>
-        /// <example>openapi-json-null-sentinel-value-2BF93600-0FE4-4250-987A-E5DDB203E464</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("duration")]
-        public double? Duration { get; set; }
-
-        /// <summary>
-        /// Whether to linearly shift traffic over the duration of this stage<br/>
-        /// Example: false
-        /// </summary>
-        /// <example>false</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("linearShift")]
-        public bool? LinearShift { get; set; }
+        /// <example>25</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("targetPercentage")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double TargetPercentage { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -76,12 +76,12 @@ namespace Vercel
         /// Whether or not this stage is the final stage (targetPercentage === 100)<br/>
         /// Example: false
         /// </param>
+        /// <param name="requireApproval">
+        /// Whether or not this stage requires manual approval to proceed
+        /// </param>
         /// <param name="targetPercentage">
         /// The percentage of traffic to serve to the canary deployment (0-100)<br/>
         /// Example: 25
-        /// </param>
-        /// <param name="requireApproval">
-        /// Whether or not this stage requires manual approval to proceed
         /// </param>
         /// <param name="duration">
         /// Duration in seconds for automatic advancement, null for manual stages or the final stage<br/>
@@ -97,17 +97,17 @@ namespace Vercel
         public CompleteRollingReleaseResponseRollingReleaseNextStage(
             double index,
             bool isFinalStage,
-            double targetPercentage,
             bool requireApproval,
+            double targetPercentage,
             double? duration,
             bool? linearShift)
         {
+            this.Duration = duration;
             this.Index = index;
             this.IsFinalStage = isFinalStage;
-            this.TargetPercentage = targetPercentage;
-            this.RequireApproval = requireApproval;
-            this.Duration = duration;
             this.LinearShift = linearShift;
+            this.RequireApproval = requireApproval;
+            this.TargetPercentage = targetPercentage;
         }
 
         /// <summary>

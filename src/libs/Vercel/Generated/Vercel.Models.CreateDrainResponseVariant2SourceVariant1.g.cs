@@ -9,6 +9,13 @@ namespace Vercel
     public sealed partial class CreateDrainResponseVariant2SourceVariant1
     {
         /// <summary>
+        /// Informational marker for a system-owned default drain.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("defaultFor")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDrainResponseVariant2SourceVariant1DefaultForJsonConverter))]
+        public global::Vercel.CreateDrainResponseVariant2SourceVariant1DefaultFor? DefaultFor { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
@@ -24,13 +31,18 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateDrainResponseVariant2SourceVariant1" /> class.
         /// </summary>
+        /// <param name="defaultFor">
+        /// Informational marker for a system-owned default drain.
+        /// </param>
         /// <param name="kind"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateDrainResponseVariant2SourceVariant1(
+            global::Vercel.CreateDrainResponseVariant2SourceVariant1DefaultFor? defaultFor,
             global::Vercel.CreateDrainResponseVariant2SourceVariant1Kind kind)
         {
+            this.DefaultFor = defaultFor;
             this.Kind = kind;
         }
 

@@ -63,12 +63,24 @@ namespace Vercel
         public string? DeploymentId { get; set; }
 
         /// <summary>
+        /// The microfrontends for the alias including the routing configuration
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("microfrontends")]
+        public global::Vercel.ListAliasesResponseAliaseMicrofrontends? Microfrontends { get; set; }
+
+        /// <summary>
         /// The unique identifier of the project<br/>
         /// Example: prj_12HKQaOmR5t5Uy6vdcQsNIiZgHGB
         /// </summary>
         /// <example>prj_12HKQaOmR5t5Uy6vdcQsNIiZgHGB</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         public string? ProjectId { get; set; }
+
+        /// <summary>
+        /// The protection bypass for the alias
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("protectionBypass")]
+        public object? ProtectionBypass { get; set; }
 
         /// <summary>
         /// Target destination domain for redirect when the alias is a redirect
@@ -96,18 +108,6 @@ namespace Vercel
         /// <example>1540095775941L</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         public double? UpdatedAt { get; set; }
-
-        /// <summary>
-        /// The protection bypass for the alias
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("protectionBypass")]
-        public object? ProtectionBypass { get; set; }
-
-        /// <summary>
-        /// The microfrontends for the alias including the routing configuration
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("microfrontends")]
-        public global::Vercel.ListAliasesResponseAliaseMicrofrontends? Microfrontends { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -147,9 +147,15 @@ namespace Vercel
         /// The deployment ID<br/>
         /// Example: dpl_5m8CQaRBm3FnWRW1od3wKTpaECPx
         /// </param>
+        /// <param name="microfrontends">
+        /// The microfrontends for the alias including the routing configuration
+        /// </param>
         /// <param name="projectId">
         /// The unique identifier of the project<br/>
         /// Example: prj_12HKQaOmR5t5Uy6vdcQsNIiZgHGB
+        /// </param>
+        /// <param name="protectionBypass">
+        /// The protection bypass for the alias
         /// </param>
         /// <param name="redirect">
         /// Target destination domain for redirect when the alias is a redirect
@@ -160,12 +166,6 @@ namespace Vercel
         /// <param name="updatedAt">
         /// The date when the alias was updated in milliseconds since the UNIX epoch<br/>
         /// Example: 1540095775941L
-        /// </param>
-        /// <param name="protectionBypass">
-        /// The protection bypass for the alias
-        /// </param>
-        /// <param name="microfrontends">
-        /// The microfrontends for the alias including the routing configuration
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -179,12 +179,12 @@ namespace Vercel
             double? deletedAt,
             global::Vercel.ListAliasesResponseAliaseDeployment? deployment,
             string? deploymentId,
+            global::Vercel.ListAliasesResponseAliaseMicrofrontends? microfrontends,
             string? projectId,
+            object? protectionBypass,
             string? redirect,
             double? redirectStatusCode,
-            double? updatedAt,
-            object? protectionBypass,
-            global::Vercel.ListAliasesResponseAliaseMicrofrontends? microfrontends)
+            double? updatedAt)
         {
             this.Alias = alias ?? throw new global::System.ArgumentNullException(nameof(alias));
             this.Created = created;
@@ -193,13 +193,13 @@ namespace Vercel
             this.DeletedAt = deletedAt;
             this.Deployment = deployment;
             this.DeploymentId = deploymentId;
+            this.Microfrontends = microfrontends;
             this.ProjectId = projectId;
+            this.ProtectionBypass = protectionBypass;
             this.Redirect = redirect;
             this.RedirectStatusCode = redirectStatusCode;
             this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
             this.UpdatedAt = updatedAt;
-            this.ProtectionBypass = protectionBypass;
-            this.Microfrontends = microfrontends;
         }
 
         /// <summary>

@@ -11,16 +11,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("src")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteSrc>))]
-        public global::Vercel.OneOf<string, global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteSrc>? Src { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("dest")]
+        public string? Dest { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tierRequirement")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant1ItemSecurityFirewallRouteTierRequirementJsonConverter))]
-        public global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteTierRequirement? TierRequirement { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("handle")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant1ItemSecurityFirewallRouteHandleJsonConverter))]
+        public global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteHandle? Handle { get; set; }
 
         /// <summary>
         ///
@@ -37,8 +36,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("dest")]
-        public string? Dest { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("mitigate")]
+        public global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteMitigate? Mitigate { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("src")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteSrc>))]
+        public global::Vercel.OneOf<string, global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteSrc>? Src { get; set; }
 
         /// <summary>
         ///
@@ -49,15 +55,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("handle")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant1ItemSecurityFirewallRouteHandleJsonConverter))]
-        public global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteHandle? Handle { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mitigate")]
-        public global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteMitigate? Mitigate { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("tierRequirement")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant1ItemSecurityFirewallRouteTierRequirementJsonConverter))]
+        public global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteTierRequirement? TierRequirement { get; set; }
 
         /// <summary>
         ///
@@ -74,37 +74,37 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectsResponseVariant1ItemSecurityFirewallRoute" /> class.
         /// </summary>
-        /// <param name="src"></param>
-        /// <param name="tierRequirement"></param>
+        /// <param name="dest"></param>
+        /// <param name="handle"></param>
         /// <param name="has"></param>
         /// <param name="missing"></param>
-        /// <param name="dest"></param>
-        /// <param name="status"></param>
-        /// <param name="handle"></param>
         /// <param name="mitigate"></param>
+        /// <param name="src"></param>
+        /// <param name="status"></param>
+        /// <param name="tierRequirement"></param>
         /// <param name="transforms"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsResponseVariant1ItemSecurityFirewallRoute(
-            global::Vercel.OneOf<string, global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteSrc>? src,
-            global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteTierRequirement? tierRequirement,
+            string? dest,
+            global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteHandle? handle,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteHa>? has,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteMissingItem>? missing,
-            string? dest,
-            double? status,
-            global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteHandle? handle,
             global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteMitigate? mitigate,
+            global::Vercel.OneOf<string, global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteSrc>? src,
+            double? status,
+            global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteTierRequirement? tierRequirement,
             global::System.Collections.Generic.IList<global::Vercel.GetProjectsResponseVariant1ItemSecurityFirewallRouteTransform>? transforms)
         {
-            this.Src = src;
-            this.TierRequirement = tierRequirement;
+            this.Dest = dest;
+            this.Handle = handle;
             this.Has = has;
             this.Missing = missing;
-            this.Dest = dest;
-            this.Status = status;
-            this.Handle = handle;
             this.Mitigate = mitigate;
+            this.Src = src;
+            this.Status = status;
+            this.TierRequirement = tierRequirement;
             this.Transforms = transforms;
         }
 

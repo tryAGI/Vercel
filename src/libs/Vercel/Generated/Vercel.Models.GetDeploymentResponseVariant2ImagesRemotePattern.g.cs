@@ -9,18 +9,17 @@ namespace Vercel
     public sealed partial class GetDeploymentResponseVariant2ImagesRemotePattern
     {
         /// <summary>
-        /// Must be `http` or `https`.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("protocol")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ImagesRemotePatternProtocolJsonConverter))]
-        public global::Vercel.GetDeploymentResponseVariant2ImagesRemotePatternProtocol? Protocol { get; set; }
-
-        /// <summary>
         /// Can be literal or wildcard. Single `*` matches a single subdomain. Double `**` matches any number of subdomains.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("hostname")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Hostname { get; set; }
+
+        /// <summary>
+        /// Can be literal or wildcard. Single `*` matches a single path segment. Double `**` matches any number of path segments.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pathname")]
+        public string? Pathname { get; set; }
 
         /// <summary>
         /// Can be literal port such as `8080` or empty string meaning no port.
@@ -29,10 +28,11 @@ namespace Vercel
         public string? Port { get; set; }
 
         /// <summary>
-        /// Can be literal or wildcard. Single `*` matches a single path segment. Double `**` matches any number of path segments.
+        /// Must be `http` or `https`.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("pathname")]
-        public string? Pathname { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("protocol")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ImagesRemotePatternProtocolJsonConverter))]
+        public global::Vercel.GetDeploymentResponseVariant2ImagesRemotePatternProtocol? Protocol { get; set; }
 
         /// <summary>
         /// Can be literal query string such as `?v=1` or empty string meaning no query string.
@@ -52,14 +52,14 @@ namespace Vercel
         /// <param name="hostname">
         /// Can be literal or wildcard. Single `*` matches a single subdomain. Double `**` matches any number of subdomains.
         /// </param>
-        /// <param name="protocol">
-        /// Must be `http` or `https`.
+        /// <param name="pathname">
+        /// Can be literal or wildcard. Single `*` matches a single path segment. Double `**` matches any number of path segments.
         /// </param>
         /// <param name="port">
         /// Can be literal port such as `8080` or empty string meaning no port.
         /// </param>
-        /// <param name="pathname">
-        /// Can be literal or wildcard. Single `*` matches a single path segment. Double `**` matches any number of path segments.
+        /// <param name="protocol">
+        /// Must be `http` or `https`.
         /// </param>
         /// <param name="search">
         /// Can be literal query string such as `?v=1` or empty string meaning no query string.
@@ -69,15 +69,15 @@ namespace Vercel
 #endif
         public GetDeploymentResponseVariant2ImagesRemotePattern(
             string hostname,
-            global::Vercel.GetDeploymentResponseVariant2ImagesRemotePatternProtocol? protocol,
-            string? port,
             string? pathname,
+            string? port,
+            global::Vercel.GetDeploymentResponseVariant2ImagesRemotePatternProtocol? protocol,
             string? search)
         {
-            this.Protocol = protocol;
             this.Hostname = hostname ?? throw new global::System.ArgumentNullException(nameof(hostname));
-            this.Port = port;
             this.Pathname = pathname;
+            this.Port = port;
+            this.Protocol = protocol;
             this.Search = search;
         }
 

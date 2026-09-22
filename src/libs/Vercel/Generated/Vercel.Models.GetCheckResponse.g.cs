@@ -11,16 +11,22 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("blocking")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        public required bool Blocking { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("completedAt")]
+        public double? CompletedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("conclusion")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetCheckResponseConclusionJsonConverter))]
+        public global::Vercel.GetCheckResponseConclusion? Conclusion { get; set; }
 
         /// <summary>
         ///
@@ -32,16 +38,66 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double UpdatedAt { get; set; }
+        public required string DeploymentId { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("detailsUrl")]
+        public string? DetailsUrl { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("externalId")]
+        public string? ExternalId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DeploymentId { get; set; }
+        public required string Id { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string IntegrationId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("output")]
+        public global::Vercel.GetCheckResponseOutput? Output { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("path")]
+        public string? Path { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("rerequestable")]
+        public bool? Rerequestable { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("startedAt")]
+        public double? StartedAt { get; set; }
 
         /// <summary>
         ///
@@ -54,65 +110,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("conclusion")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetCheckResponseConclusionJsonConverter))]
-        public global::Vercel.GetCheckResponseConclusion? Conclusion { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("externalId")]
-        public string? ExternalId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("output")]
-        public global::Vercel.GetCheckResponseOutput? Output { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("completedAt")]
-        public double? CompletedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("path")]
-        public string? Path { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("blocking")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Blocking { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("detailsUrl")]
-        public string? DetailsUrl { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("startedAt")]
-        public double? StartedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rerequestable")]
-        public bool? Rerequestable { get; set; }
+        public required double UpdatedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -123,59 +123,59 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetCheckResponse" /> class.
         /// </summary>
-        /// <param name="id"></param>
-        /// <param name="name"></param>
-        /// <param name="createdAt"></param>
-        /// <param name="updatedAt"></param>
-        /// <param name="deploymentId"></param>
-        /// <param name="status"></param>
         /// <param name="blocking"></param>
+        /// <param name="createdAt"></param>
+        /// <param name="deploymentId"></param>
+        /// <param name="id"></param>
         /// <param name="integrationId"></param>
+        /// <param name="name"></param>
+        /// <param name="status"></param>
+        /// <param name="updatedAt"></param>
+        /// <param name="completedAt"></param>
         /// <param name="conclusion"></param>
+        /// <param name="detailsUrl"></param>
         /// <param name="externalId"></param>
         /// <param name="output"></param>
-        /// <param name="completedAt"></param>
         /// <param name="path"></param>
-        /// <param name="detailsUrl"></param>
-        /// <param name="startedAt"></param>
         /// <param name="rerequestable"></param>
+        /// <param name="startedAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetCheckResponse(
-            string id,
-            string name,
-            double createdAt,
-            double updatedAt,
-            string deploymentId,
-            global::Vercel.GetCheckResponseStatus status,
             bool blocking,
+            double createdAt,
+            string deploymentId,
+            string id,
             string integrationId,
+            string name,
+            global::Vercel.GetCheckResponseStatus status,
+            double updatedAt,
+            double? completedAt,
             global::Vercel.GetCheckResponseConclusion? conclusion,
+            string? detailsUrl,
             string? externalId,
             global::Vercel.GetCheckResponseOutput? output,
-            double? completedAt,
             string? path,
-            string? detailsUrl,
-            double? startedAt,
-            bool? rerequestable)
+            bool? rerequestable,
+            double? startedAt)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.CreatedAt = createdAt;
-            this.UpdatedAt = updatedAt;
-            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
-            this.Status = status;
-            this.Conclusion = conclusion;
-            this.ExternalId = externalId;
-            this.Output = output;
-            this.CompletedAt = completedAt;
-            this.Path = path;
             this.Blocking = blocking;
+            this.CompletedAt = completedAt;
+            this.Conclusion = conclusion;
+            this.CreatedAt = createdAt;
+            this.DeploymentId = deploymentId ?? throw new global::System.ArgumentNullException(nameof(deploymentId));
             this.DetailsUrl = detailsUrl;
+            this.ExternalId = externalId;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
-            this.StartedAt = startedAt;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Output = output;
+            this.Path = path;
             this.Rerequestable = rerequestable;
+            this.StartedAt = startedAt;
+            this.Status = status;
+            this.UpdatedAt = updatedAt;
         }
 
         /// <summary>

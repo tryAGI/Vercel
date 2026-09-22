@@ -11,10 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        AiGatewayApiKeyOwnedBySelf,
-        /// <summary>
-        ///
-        /// </summary>
         AiGatewayBudgetManager,
         /// <summary>
         ///
@@ -32,6 +28,10 @@ namespace Vercel
         ///
         /// </summary>
         AiGatewayTranscriptsViewer,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayUser,
         /// <summary>
         ///
         /// </summary>
@@ -98,12 +98,12 @@ namespace Vercel
         {
             return value switch
             {
-                GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayApiKeyOwnedBySelf => "AiGatewayApiKeyOwnedBySelf",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayBudgetManager => "AiGatewayBudgetManager",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayCredits => "AiGatewayCredits",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewaySettings => "AiGatewaySettings",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayTranscriptsManager => "AiGatewayTranscriptsManager",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayTranscriptsViewer => "AiGatewayTranscriptsViewer",
+                GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayUser => "AiGatewayUser",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.ConnectorManager => "ConnectorManager",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.CreateProject => "CreateProject",
                 GetTeamMembersResponseEmailInviteCodeTeamPermission.EnvVariableManager => "EnvVariableManager",
@@ -127,12 +127,12 @@ namespace Vercel
         {
             return value switch
             {
-                "AiGatewayApiKeyOwnedBySelf" => GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayApiKeyOwnedBySelf,
                 "AiGatewayBudgetManager" => GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayBudgetManager,
                 "AiGatewayCredits" => GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayCredits,
                 "AiGatewaySettings" => GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewaySettings,
                 "AiGatewayTranscriptsManager" => GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayTranscriptsManager,
                 "AiGatewayTranscriptsViewer" => GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayTranscriptsViewer,
+                "AiGatewayUser" => GetTeamMembersResponseEmailInviteCodeTeamPermission.AiGatewayUser,
                 "ConnectorManager" => GetTeamMembersResponseEmailInviteCodeTeamPermission.ConnectorManager,
                 "CreateProject" => GetTeamMembersResponseEmailInviteCodeTeamPermission.CreateProject,
                 "EnvVariableManager" => GetTeamMembersResponseEmailInviteCodeTeamPermission.EnvVariableManager,

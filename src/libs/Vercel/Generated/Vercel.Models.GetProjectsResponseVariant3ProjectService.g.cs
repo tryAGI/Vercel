@@ -9,6 +9,19 @@ namespace Vercel
     public sealed partial class GetProjectsResponseVariant3ProjectService
     {
         /// <summary>
+        /// Framework slug, when the service has one (omitted otherwise).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("framework")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant3ProjectServiceFrameworkJsonConverter))]
+        public global::Vercel.GetProjectsResponseVariant3ProjectServiceFramework? Framework { get; set; }
+
+        /// <summary>
+        /// Generic runtime, e.g. 'node' | 'python' | 'go' | 'ruby' | 'rust' (Service.runtime). Omitted for static builds.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("runtime")]
+        public string? Runtime { get; set; }
+
+        /// <summary>
         /// Service name from the deployment (Service.name).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("serviceName")]
@@ -23,19 +36,6 @@ namespace Vercel
         public global::Vercel.GetProjectsResponseVariant3ProjectServiceServiceType? ServiceType { get; set; }
 
         /// <summary>
-        /// Framework slug, when the service has one (omitted otherwise).
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("framework")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsResponseVariant3ProjectServiceFrameworkJsonConverter))]
-        public global::Vercel.GetProjectsResponseVariant3ProjectServiceFramework? Framework { get; set; }
-
-        /// <summary>
-        /// Generic runtime, e.g. 'node' | 'python' | 'go' | 'ruby' | 'rust' (Service.runtime). Omitted for static builds.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("runtime")]
-        public string? Runtime { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -47,28 +47,28 @@ namespace Vercel
         /// <param name="serviceName">
         /// Service name from the deployment (Service.name).
         /// </param>
-        /// <param name="serviceType">
-        /// Service kind (Service.type). Omitted for schemas that do not define one.
-        /// </param>
         /// <param name="framework">
         /// Framework slug, when the service has one (omitted otherwise).
         /// </param>
         /// <param name="runtime">
         /// Generic runtime, e.g. 'node' | 'python' | 'go' | 'ruby' | 'rust' (Service.runtime). Omitted for static builds.
         /// </param>
+        /// <param name="serviceType">
+        /// Service kind (Service.type). Omitted for schemas that do not define one.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsResponseVariant3ProjectService(
             string serviceName,
-            global::Vercel.GetProjectsResponseVariant3ProjectServiceServiceType? serviceType,
             global::Vercel.GetProjectsResponseVariant3ProjectServiceFramework? framework,
-            string? runtime)
+            string? runtime,
+            global::Vercel.GetProjectsResponseVariant3ProjectServiceServiceType? serviceType)
         {
-            this.ServiceName = serviceName ?? throw new global::System.ArgumentNullException(nameof(serviceName));
-            this.ServiceType = serviceType;
             this.Framework = framework;
             this.Runtime = runtime;
+            this.ServiceName = serviceName ?? throw new global::System.ArgumentNullException(nameof(serviceName));
+            this.ServiceType = serviceType;
         }
 
         /// <summary>

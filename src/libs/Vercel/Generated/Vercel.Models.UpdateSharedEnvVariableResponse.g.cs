@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updated")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("failed")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseUpdatedItem> Updated { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseFailedItem> Failed { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("failed")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("updated")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseFailedItem> Failed { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseUpdatedItem> Updated { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateSharedEnvVariableResponse" /> class.
         /// </summary>
-        /// <param name="updated"></param>
         /// <param name="failed"></param>
+        /// <param name="updated"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateSharedEnvVariableResponse(
-            global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseUpdatedItem> updated,
-            global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseFailedItem> failed)
+            global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseFailedItem> failed,
+            global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseUpdatedItem> updated)
         {
-            this.Updated = updated ?? throw new global::System.ArgumentNullException(nameof(updated));
             this.Failed = failed ?? throw new global::System.ArgumentNullException(nameof(failed));
+            this.Updated = updated ?? throw new global::System.ArgumentNullException(nameof(updated));
         }
 
         /// <summary>

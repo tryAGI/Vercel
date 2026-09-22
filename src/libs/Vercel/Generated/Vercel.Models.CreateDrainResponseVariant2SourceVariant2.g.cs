@@ -11,21 +11,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDrainResponseVariant2SourceVariant2KindJsonConverter))]
-        public global::Vercel.CreateDrainResponseVariant2SourceVariant2Kind Kind { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("resourceId")]
-        public string? ResourceId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("externalResourceId")]
         public string? ExternalResourceId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("integrationConfigurationId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string IntegrationConfigurationId { get; set; }
 
         /// <summary>
         ///
@@ -37,9 +31,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("integrationConfigurationId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string IntegrationConfigurationId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDrainResponseVariant2SourceVariant2KindJsonConverter))]
+        public global::Vercel.CreateDrainResponseVariant2SourceVariant2Kind Kind { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("resourceId")]
+        public string? ResourceId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -50,26 +50,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateDrainResponseVariant2SourceVariant2" /> class.
         /// </summary>
-        /// <param name="integrationId"></param>
         /// <param name="integrationConfigurationId"></param>
+        /// <param name="integrationId"></param>
+        /// <param name="externalResourceId"></param>
         /// <param name="kind"></param>
         /// <param name="resourceId"></param>
-        /// <param name="externalResourceId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateDrainResponseVariant2SourceVariant2(
-            string integrationId,
             string integrationConfigurationId,
+            string integrationId,
+            string? externalResourceId,
             global::Vercel.CreateDrainResponseVariant2SourceVariant2Kind kind,
-            string? resourceId,
-            string? externalResourceId)
+            string? resourceId)
         {
+            this.ExternalResourceId = externalResourceId;
+            this.IntegrationConfigurationId = integrationConfigurationId ?? throw new global::System.ArgumentNullException(nameof(integrationConfigurationId));
+            this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
             this.Kind = kind;
             this.ResourceId = resourceId;
-            this.ExternalResourceId = externalResourceId;
-            this.IntegrationId = integrationId ?? throw new global::System.ArgumentNullException(nameof(integrationId));
-            this.IntegrationConfigurationId = integrationConfigurationId ?? throw new global::System.ArgumentNullException(nameof(integrationConfigurationId));
         }
 
         /// <summary>

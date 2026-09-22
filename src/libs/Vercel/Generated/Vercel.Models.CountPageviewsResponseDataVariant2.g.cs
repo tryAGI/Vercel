@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("visitors")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("pageviews")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Visitors { get; set; }
+        public required double Pageviews { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("pageviews")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("visitors")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Pageviews { get; set; }
+        public required double Visitors { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CountPageviewsResponseDataVariant2" /> class.
         /// </summary>
-        /// <param name="visitors"></param>
         /// <param name="pageviews"></param>
+        /// <param name="visitors"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CountPageviewsResponseDataVariant2(
-            double visitors,
-            double pageviews)
+            double pageviews,
+            double visitors)
         {
-            this.Visitors = visitors;
             this.Pageviews = pageviews;
+            this.Visitors = visitors;
         }
 
         /// <summary>

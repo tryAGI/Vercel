@@ -9,24 +9,11 @@ namespace Vercel
     public sealed partial class CreateProjectResponseCrons
     {
         /// <summary>
-        /// The time the feature was enabled for this project. Note: It enables automatically with the first Deployment that outputs cronjobs.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabledAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double EnabledAt { get; set; }
-
-        /// <summary>
-        /// The time the feature was disabled for this project.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("disabledAt")]
-        public double? DisabledAt { get; set; }
-
-        /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("definitions")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double UpdatedAt { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.CreateProjectResponseCronsDefinition> Definitions { get; set; }
 
         /// <summary>
         /// The ID of the Deployment from which the definitions originated.
@@ -35,11 +22,24 @@ namespace Vercel
         public string? DeploymentId { get; set; }
 
         /// <summary>
+        /// The time the feature was disabled for this project.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("disabledAt")]
+        public double? DisabledAt { get; set; }
+
+        /// <summary>
+        /// The time the feature was enabled for this project. Note: It enables automatically with the first Deployment that outputs cronjobs.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("enabledAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double EnabledAt { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("definitions")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.CreateProjectResponseCronsDefinition> Definitions { get; set; }
+        public required double UpdatedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -50,32 +50,32 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateProjectResponseCrons" /> class.
         /// </summary>
+        /// <param name="definitions"></param>
         /// <param name="enabledAt">
         /// The time the feature was enabled for this project. Note: It enables automatically with the first Deployment that outputs cronjobs.
         /// </param>
         /// <param name="updatedAt"></param>
-        /// <param name="definitions"></param>
-        /// <param name="disabledAt">
-        /// The time the feature was disabled for this project.
-        /// </param>
         /// <param name="deploymentId">
         /// The ID of the Deployment from which the definitions originated.
+        /// </param>
+        /// <param name="disabledAt">
+        /// The time the feature was disabled for this project.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateProjectResponseCrons(
+            global::System.Collections.Generic.IList<global::Vercel.CreateProjectResponseCronsDefinition> definitions,
             double enabledAt,
             double updatedAt,
-            global::System.Collections.Generic.IList<global::Vercel.CreateProjectResponseCronsDefinition> definitions,
-            double? disabledAt,
-            string? deploymentId)
+            string? deploymentId,
+            double? disabledAt)
         {
-            this.EnabledAt = enabledAt;
-            this.DisabledAt = disabledAt;
-            this.UpdatedAt = updatedAt;
-            this.DeploymentId = deploymentId;
             this.Definitions = definitions ?? throw new global::System.ArgumentNullException(nameof(definitions));
+            this.DeploymentId = deploymentId;
+            this.DisabledAt = disabledAt;
+            this.EnabledAt = enabledAt;
+            this.UpdatedAt = updatedAt;
         }
 
         /// <summary>

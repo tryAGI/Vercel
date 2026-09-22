@@ -11,29 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ruleName")]
-        public string? RuleName { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("startTime")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string StartTime { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("endTime")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string EndTime { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("isActive")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool IsActive { get; set; }
+        public required string Action { get; set; }
 
         /// <summary>
         ///
@@ -45,15 +25,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("count")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Action { get; set; }
+        public required double Count { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ruleId")]
-        public string? RuleId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("endTime")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string EndTime { get; set; }
 
         /// <summary>
         ///
@@ -65,6 +46,13 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("isActive")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool IsActive { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("public_ip")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PublicIp { get; set; }
@@ -72,9 +60,21 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("count")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("ruleId")]
+        public string? RuleId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ruleName")]
+        public string? RuleName { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("startTime")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Count { get; set; }
+        public required string StartTime { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -85,41 +85,41 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetSecurityFirewallEventsResponseAction" /> class.
         /// </summary>
-        /// <param name="startTime"></param>
-        /// <param name="endTime"></param>
-        /// <param name="isActive"></param>
-        /// <param name="actionType"></param>
         /// <param name="action"></param>
-        /// <param name="host"></param>
-        /// <param name="publicIp"></param>
+        /// <param name="actionType"></param>
         /// <param name="count"></param>
-        /// <param name="ruleName"></param>
+        /// <param name="endTime"></param>
+        /// <param name="host"></param>
+        /// <param name="isActive"></param>
+        /// <param name="publicIp"></param>
+        /// <param name="startTime"></param>
         /// <param name="ruleId"></param>
+        /// <param name="ruleName"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetSecurityFirewallEventsResponseAction(
-            string startTime,
-            string endTime,
-            bool isActive,
-            string actionType,
             string action,
-            string host,
-            string publicIp,
+            string actionType,
             double count,
-            string? ruleName,
-            string? ruleId)
+            string endTime,
+            string host,
+            bool isActive,
+            string publicIp,
+            string startTime,
+            string? ruleId,
+            string? ruleName)
         {
+            this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
+            this.ActionType = actionType ?? throw new global::System.ArgumentNullException(nameof(actionType));
+            this.Count = count;
+            this.EndTime = endTime ?? throw new global::System.ArgumentNullException(nameof(endTime));
+            this.Host = host ?? throw new global::System.ArgumentNullException(nameof(host));
+            this.IsActive = isActive;
+            this.PublicIp = publicIp ?? throw new global::System.ArgumentNullException(nameof(publicIp));
+            this.RuleId = ruleId;
             this.RuleName = ruleName;
             this.StartTime = startTime ?? throw new global::System.ArgumentNullException(nameof(startTime));
-            this.EndTime = endTime ?? throw new global::System.ArgumentNullException(nameof(endTime));
-            this.IsActive = isActive;
-            this.ActionType = actionType ?? throw new global::System.ArgumentNullException(nameof(actionType));
-            this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
-            this.RuleId = ruleId;
-            this.Host = host ?? throw new global::System.ArgumentNullException(nameof(host));
-            this.PublicIp = publicIp ?? throw new global::System.ArgumentNullException(nameof(publicIp));
-            this.Count = count;
         }
 
         /// <summary>

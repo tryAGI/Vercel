@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CancelDeploymentResponseGitSourceVariant12TypeJsonConverter))]
-        public global::Vercel.CancelDeploymentResponseGitSourceVariant12Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitUrl")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string GitUrl { get; set; }
 
         /// <summary>
         ///
@@ -32,9 +32,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitUrl")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string GitUrl { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CancelDeploymentResponseGitSourceVariant12TypeJsonConverter))]
+        public global::Vercel.CancelDeploymentResponseGitSourceVariant12Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,23 +45,23 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CancelDeploymentResponseGitSourceVariant12" /> class.
         /// </summary>
+        /// <param name="gitUrl"></param>
         /// <param name="ref"></param>
         /// <param name="sha"></param>
-        /// <param name="gitUrl"></param>
         /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CancelDeploymentResponseGitSourceVariant12(
+            string gitUrl,
             string @ref,
             string sha,
-            string gitUrl,
             global::Vercel.CancelDeploymentResponseGitSourceVariant12Type type)
         {
-            this.Type = type;
+            this.GitUrl = gitUrl ?? throw new global::System.ArgumentNullException(nameof(gitUrl));
             this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
             this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
-            this.GitUrl = gitUrl ?? throw new global::System.ArgumentNullException(nameof(gitUrl));
+            this.Type = type;
         }
 
         /// <summary>

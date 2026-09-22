@@ -11,16 +11,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("timestamp")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Timestamp { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("cacheId")]
+        public string? CacheId { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("method")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Method { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("clientIp")]
+        public string? ClientIp { get; set; }
 
         /// <summary>
         ///
@@ -32,56 +30,21 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("lambdaRegion")]
+        public string? LambdaRegion { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("method")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Method { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("path")]
         public string? Path { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("statusCode")]
-        public double? StatusCode { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("userAgent")]
-        public global::System.Collections.Generic.IList<string>? UserAgent { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("referer")]
-        public string? Referer { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("clientIp")]
-        public string? ClientIp { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("region")]
-        public string? Region { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scheme")]
-        public string? Scheme { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("responseByteSize")]
-        public double? ResponseByteSize { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cacheId")]
-        public string? CacheId { get; set; }
 
         /// <summary>
         ///
@@ -98,8 +61,45 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("vercelId")]
-        public string? VercelId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("referer")]
+        public string? Referer { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("region")]
+        public string? Region { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("responseByteSize")]
+        public double? ResponseByteSize { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("scheme")]
+        public string? Scheme { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("statusCode")]
+        public double? StatusCode { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("timestamp")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double Timestamp { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("userAgent")]
+        public global::System.Collections.Generic.IList<string>? UserAgent { get; set; }
 
         /// <summary>
         ///
@@ -111,8 +111,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("lambdaRegion")]
-        public string? LambdaRegion { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("vercelId")]
+        public string? VercelId { get; set; }
 
         /// <summary>
         ///
@@ -136,66 +136,66 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDeploymentEventsResponseItemVariant3Variant1PayloadProxy" /> class.
         /// </summary>
-        /// <param name="timestamp"></param>
-        /// <param name="method"></param>
         /// <param name="host"></param>
-        /// <param name="path"></param>
-        /// <param name="statusCode"></param>
-        /// <param name="userAgent"></param>
-        /// <param name="referer"></param>
-        /// <param name="clientIp"></param>
-        /// <param name="region"></param>
-        /// <param name="scheme"></param>
-        /// <param name="responseByteSize"></param>
+        /// <param name="method"></param>
+        /// <param name="timestamp"></param>
         /// <param name="cacheId"></param>
+        /// <param name="clientIp"></param>
+        /// <param name="lambdaRegion"></param>
+        /// <param name="path"></param>
         /// <param name="pathType"></param>
         /// <param name="pathTypeVariant"></param>
-        /// <param name="vercelId"></param>
+        /// <param name="referer"></param>
+        /// <param name="region"></param>
+        /// <param name="responseByteSize"></param>
+        /// <param name="scheme"></param>
+        /// <param name="statusCode"></param>
+        /// <param name="userAgent"></param>
         /// <param name="vercelCache"></param>
-        /// <param name="lambdaRegion"></param>
+        /// <param name="vercelId"></param>
         /// <param name="wafAction"></param>
         /// <param name="wafRuleId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentEventsResponseItemVariant3Variant1PayloadProxy(
-            double timestamp,
-            string method,
             string host,
-            string? path,
-            double? statusCode,
-            global::System.Collections.Generic.IList<string>? userAgent,
-            string? referer,
-            string? clientIp,
-            string? region,
-            string? scheme,
-            double? responseByteSize,
+            string method,
+            double timestamp,
             string? cacheId,
+            string? clientIp,
+            string? lambdaRegion,
+            string? path,
             string? pathType,
             string? pathTypeVariant,
-            string? vercelId,
+            string? referer,
+            string? region,
+            double? responseByteSize,
+            string? scheme,
+            double? statusCode,
+            global::System.Collections.Generic.IList<string>? userAgent,
             global::Vercel.GetDeploymentEventsResponseItemVariant3Variant1PayloadProxyVercelCache? vercelCache,
-            string? lambdaRegion,
+            string? vercelId,
             global::Vercel.GetDeploymentEventsResponseItemVariant3Variant1PayloadProxyWafAction? wafAction,
             string? wafRuleId)
         {
-            this.Timestamp = timestamp;
-            this.Method = method ?? throw new global::System.ArgumentNullException(nameof(method));
-            this.Host = host ?? throw new global::System.ArgumentNullException(nameof(host));
-            this.Path = path;
-            this.StatusCode = statusCode;
-            this.UserAgent = userAgent;
-            this.Referer = referer;
-            this.ClientIp = clientIp;
-            this.Region = region;
-            this.Scheme = scheme;
-            this.ResponseByteSize = responseByteSize;
             this.CacheId = cacheId;
+            this.ClientIp = clientIp;
+            this.Host = host ?? throw new global::System.ArgumentNullException(nameof(host));
+            this.LambdaRegion = lambdaRegion;
+            this.Method = method ?? throw new global::System.ArgumentNullException(nameof(method));
+            this.Path = path;
             this.PathType = pathType;
             this.PathTypeVariant = pathTypeVariant;
-            this.VercelId = vercelId;
+            this.Referer = referer;
+            this.Region = region;
+            this.ResponseByteSize = responseByteSize;
+            this.Scheme = scheme;
+            this.StatusCode = statusCode;
+            this.Timestamp = timestamp;
+            this.UserAgent = userAgent;
             this.VercelCache = vercelCache;
-            this.LambdaRegion = lambdaRegion;
+            this.VercelId = vercelId;
             this.WafAction = wafAction;
             this.WafRuleId = wafRuleId;
         }

@@ -9,11 +9,16 @@ namespace Vercel
     public sealed partial class ListSharedEnvVariableResponseDataItem
     {
         /// <summary>
-        ///
+        /// whether or not this env varible applies to custom environments
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("securityIssues")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.ListSharedEnvVariableResponseDataItemSecurityIssue> SecurityIssues { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("applyToAllCustomEnvironments")]
+        public bool? ApplyToAllCustomEnvironments { get; set; }
+
+        /// <summary>
+        /// A user provided comment that describes what this Shared Env Var is for.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("comment")]
+        public string? Comment { get; set; }
 
         /// <summary>
         /// The date when the Shared Env Var was created.<br/>
@@ -25,56 +30,6 @@ namespace Vercel
         public required global::System.DateTime Created { get; set; }
 
         /// <summary>
-        /// The name of the Shared Env Var.<br/>
-        /// Example: my-api-key
-        /// </summary>
-        /// <example>my-api-key</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Key { get; set; }
-
-        /// <summary>
-        /// The unique identifier of the owner (team) the Shared Env Var was created for.<br/>
-        /// Example: team_LLHUOMOoDlqOp8wPE4kFo9pE
-        /// </summary>
-        /// <example>team_LLHUOMOoDlqOp8wPE4kFo9pE</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        public string? OwnerId { get; set; }
-
-        /// <summary>
-        /// The unique identifier of the Shared Env Var.<br/>
-        /// Example: env_XCG7t7AIHuO2SBA8667zNUiM
-        /// </summary>
-        /// <example>env_XCG7t7AIHuO2SBA8667zNUiM</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
-
-        /// <summary>
-        /// The unique identifier of the user who created the Shared Env Var.<br/>
-        /// Example: 2qDDuGFTWXBLDNnqZfWPDp1A
-        /// </summary>
-        /// <example>2qDDuGFTWXBLDNnqZfWPDp1A</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdBy")]
-        public string? CreatedBy { get; set; }
-
-        /// <summary>
-        /// The unique identifier of the user who deleted the Shared Env Var.<br/>
-        /// Example: 2qDDuGFTWXBLDNnqZfWPDp1A
-        /// </summary>
-        /// <example>2qDDuGFTWXBLDNnqZfWPDp1A</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deletedBy")]
-        public string? DeletedBy { get; set; }
-
-        /// <summary>
-        /// The unique identifier of the user who last updated the Shared Env Var.<br/>
-        /// Example: 2qDDuGFTWXBLDNnqZfWPDp1A
-        /// </summary>
-        /// <example>2qDDuGFTWXBLDNnqZfWPDp1A</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedBy")]
-        public string? UpdatedBy { get; set; }
-
-        /// <summary>
         /// Timestamp for when the Shared Env Var was created.<br/>
         /// Example: 1609492210000L
         /// </summary>
@@ -83,57 +38,12 @@ namespace Vercel
         public double? CreatedAt { get; set; }
 
         /// <summary>
-        /// Timestamp for when the Shared Env Var was (soft) deleted.<br/>
-        /// Example: 1609492210000L
+        /// The unique identifier of the user who created the Shared Env Var.<br/>
+        /// Example: 2qDDuGFTWXBLDNnqZfWPDp1A
         /// </summary>
-        /// <example>1609492210000L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deletedAt")]
-        public double? DeletedAt { get; set; }
-
-        /// <summary>
-        /// Timestamp for when the Shared Env Var was last updated.<br/>
-        /// Example: 1609492210000L
-        /// </summary>
-        /// <example>1609492210000L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
-        public double? UpdatedAt { get; set; }
-
-        /// <summary>
-        /// The value of the Shared Env Var.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        public string? Value { get; set; }
-
-        /// <summary>
-        /// The unique identifiers of the projects which the Shared Env Var is linked to.<br/>
-        /// Example: [prj_2WjyKQmM8ZnGcJsPWMrHRHrE, prj_2WjyKQmM8ZnGcJsPWMrasEFg]
-        /// </summary>
-        /// <example>[prj_2WjyKQmM8ZnGcJsPWMrHRHrE, prj_2WjyKQmM8ZnGcJsPWMrasEFg]</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        public global::System.Collections.Generic.IList<string>? ProjectId { get; set; }
-
-        /// <summary>
-        /// The type of this cosmos doc instance, if blank, assume secret.<br/>
-        /// Example: encrypted
-        /// </summary>
-        /// <example>encrypted</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListSharedEnvVariableResponseDataItemTypeJsonConverter))]
-        public global::Vercel.ListSharedEnvVariableResponseDataItemType? Type { get; set; }
-
-        /// <summary>
-        /// environments this env variable targets<br/>
-        /// Example: production
-        /// </summary>
-        /// <example>production</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        public global::System.Collections.Generic.IList<global::Vercel.ListSharedEnvVariableResponseDataItemTargetItem>? Target { get; set; }
-
-        /// <summary>
-        /// whether or not this env varible applies to custom environments
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("applyToAllCustomEnvironments")]
-        public bool? ApplyToAllCustomEnvironments { get; set; }
+        /// <example>2qDDuGFTWXBLDNnqZfWPDp1A</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdBy")]
+        public string? CreatedBy { get; set; }
 
         /// <summary>
         /// The custom environment IDs that this Shared Env Var is scoped to.
@@ -149,16 +59,106 @@ namespace Vercel
         public required bool Decrypted { get; set; }
 
         /// <summary>
-        /// A user provided comment that describes what this Shared Env Var is for.
+        /// Timestamp for when the Shared Env Var was (soft) deleted.<br/>
+        /// Example: 1609492210000L
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("comment")]
-        public string? Comment { get; set; }
+        /// <example>1609492210000L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deletedAt")]
+        public double? DeletedAt { get; set; }
+
+        /// <summary>
+        /// The unique identifier of the user who deleted the Shared Env Var.<br/>
+        /// Example: 2qDDuGFTWXBLDNnqZfWPDp1A
+        /// </summary>
+        /// <example>2qDDuGFTWXBLDNnqZfWPDp1A</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deletedBy")]
+        public string? DeletedBy { get; set; }
+
+        /// <summary>
+        /// The unique identifier of the Shared Env Var.<br/>
+        /// Example: env_XCG7t7AIHuO2SBA8667zNUiM
+        /// </summary>
+        /// <example>env_XCG7t7AIHuO2SBA8667zNUiM</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
+        /// The name of the Shared Env Var.<br/>
+        /// Example: my-api-key
+        /// </summary>
+        /// <example>my-api-key</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Key { get; set; }
 
         /// <summary>
         /// The last editor full name or username.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lastEditedByDisplayName")]
         public string? LastEditedByDisplayName { get; set; }
+
+        /// <summary>
+        /// The unique identifier of the owner (team) the Shared Env Var was created for.<br/>
+        /// Example: team_LLHUOMOoDlqOp8wPE4kFo9pE
+        /// </summary>
+        /// <example>team_LLHUOMOoDlqOp8wPE4kFo9pE</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        public string? OwnerId { get; set; }
+
+        /// <summary>
+        /// The unique identifiers of the projects which the Shared Env Var is linked to.<br/>
+        /// Example: [prj_2WjyKQmM8ZnGcJsPWMrHRHrE, prj_2WjyKQmM8ZnGcJsPWMrasEFg]
+        /// </summary>
+        /// <example>[prj_2WjyKQmM8ZnGcJsPWMrHRHrE, prj_2WjyKQmM8ZnGcJsPWMrasEFg]</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        public global::System.Collections.Generic.IList<string>? ProjectId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("securityIssues")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.ListSharedEnvVariableResponseDataItemSecurityIssue> SecurityIssues { get; set; }
+
+        /// <summary>
+        /// environments this env variable targets<br/>
+        /// Example: production
+        /// </summary>
+        /// <example>production</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        public global::System.Collections.Generic.IList<global::Vercel.ListSharedEnvVariableResponseDataItemTargetItem>? Target { get; set; }
+
+        /// <summary>
+        /// The type of this cosmos doc instance, if blank, assume secret.<br/>
+        /// Example: encrypted
+        /// </summary>
+        /// <example>encrypted</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListSharedEnvVariableResponseDataItemTypeJsonConverter))]
+        public global::Vercel.ListSharedEnvVariableResponseDataItemType? Type { get; set; }
+
+        /// <summary>
+        /// Timestamp for when the Shared Env Var was last updated.<br/>
+        /// Example: 1609492210000L
+        /// </summary>
+        /// <example>1609492210000L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        public double? UpdatedAt { get; set; }
+
+        /// <summary>
+        /// The unique identifier of the user who last updated the Shared Env Var.<br/>
+        /// Example: 2qDDuGFTWXBLDNnqZfWPDp1A
+        /// </summary>
+        /// <example>2qDDuGFTWXBLDNnqZfWPDp1A</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedBy")]
+        public string? UpdatedBy { get; set; }
+
+        /// <summary>
+        /// The value of the Shared Env Var.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
+        public string? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -169,122 +169,122 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListSharedEnvVariableResponseDataItem" /> class.
         /// </summary>
-        /// <param name="securityIssues"></param>
         /// <param name="created">
         /// The date when the Shared Env Var was created.<br/>
         /// Example: 2021-02-10T13:11:49.180Z
         /// </param>
-        /// <param name="key">
-        /// The name of the Shared Env Var.<br/>
-        /// Example: my-api-key
+        /// <param name="decrypted">
+        /// whether or not this env variable is decrypted
         /// </param>
         /// <param name="id">
         /// The unique identifier of the Shared Env Var.<br/>
         /// Example: env_XCG7t7AIHuO2SBA8667zNUiM
         /// </param>
-        /// <param name="decrypted">
-        /// whether or not this env variable is decrypted
+        /// <param name="key">
+        /// The name of the Shared Env Var.<br/>
+        /// Example: my-api-key
         /// </param>
-        /// <param name="ownerId">
-        /// The unique identifier of the owner (team) the Shared Env Var was created for.<br/>
-        /// Example: team_LLHUOMOoDlqOp8wPE4kFo9pE
+        /// <param name="securityIssues"></param>
+        /// <param name="applyToAllCustomEnvironments">
+        /// whether or not this env varible applies to custom environments
         /// </param>
-        /// <param name="createdBy">
-        /// The unique identifier of the user who created the Shared Env Var.<br/>
-        /// Example: 2qDDuGFTWXBLDNnqZfWPDp1A
-        /// </param>
-        /// <param name="deletedBy">
-        /// The unique identifier of the user who deleted the Shared Env Var.<br/>
-        /// Example: 2qDDuGFTWXBLDNnqZfWPDp1A
-        /// </param>
-        /// <param name="updatedBy">
-        /// The unique identifier of the user who last updated the Shared Env Var.<br/>
-        /// Example: 2qDDuGFTWXBLDNnqZfWPDp1A
+        /// <param name="comment">
+        /// A user provided comment that describes what this Shared Env Var is for.
         /// </param>
         /// <param name="createdAt">
         /// Timestamp for when the Shared Env Var was created.<br/>
         /// Example: 1609492210000L
         /// </param>
+        /// <param name="createdBy">
+        /// The unique identifier of the user who created the Shared Env Var.<br/>
+        /// Example: 2qDDuGFTWXBLDNnqZfWPDp1A
+        /// </param>
+        /// <param name="customEnvironmentIds">
+        /// The custom environment IDs that this Shared Env Var is scoped to.
+        /// </param>
         /// <param name="deletedAt">
         /// Timestamp for when the Shared Env Var was (soft) deleted.<br/>
         /// Example: 1609492210000L
         /// </param>
-        /// <param name="updatedAt">
-        /// Timestamp for when the Shared Env Var was last updated.<br/>
-        /// Example: 1609492210000L
+        /// <param name="deletedBy">
+        /// The unique identifier of the user who deleted the Shared Env Var.<br/>
+        /// Example: 2qDDuGFTWXBLDNnqZfWPDp1A
         /// </param>
-        /// <param name="value">
-        /// The value of the Shared Env Var.
+        /// <param name="lastEditedByDisplayName">
+        /// The last editor full name or username.
+        /// </param>
+        /// <param name="ownerId">
+        /// The unique identifier of the owner (team) the Shared Env Var was created for.<br/>
+        /// Example: team_LLHUOMOoDlqOp8wPE4kFo9pE
         /// </param>
         /// <param name="projectId">
         /// The unique identifiers of the projects which the Shared Env Var is linked to.<br/>
         /// Example: [prj_2WjyKQmM8ZnGcJsPWMrHRHrE, prj_2WjyKQmM8ZnGcJsPWMrasEFg]
         /// </param>
-        /// <param name="type">
-        /// The type of this cosmos doc instance, if blank, assume secret.<br/>
-        /// Example: encrypted
-        /// </param>
         /// <param name="target">
         /// environments this env variable targets<br/>
         /// Example: production
         /// </param>
-        /// <param name="applyToAllCustomEnvironments">
-        /// whether or not this env varible applies to custom environments
+        /// <param name="type">
+        /// The type of this cosmos doc instance, if blank, assume secret.<br/>
+        /// Example: encrypted
         /// </param>
-        /// <param name="customEnvironmentIds">
-        /// The custom environment IDs that this Shared Env Var is scoped to.
+        /// <param name="updatedAt">
+        /// Timestamp for when the Shared Env Var was last updated.<br/>
+        /// Example: 1609492210000L
         /// </param>
-        /// <param name="comment">
-        /// A user provided comment that describes what this Shared Env Var is for.
+        /// <param name="updatedBy">
+        /// The unique identifier of the user who last updated the Shared Env Var.<br/>
+        /// Example: 2qDDuGFTWXBLDNnqZfWPDp1A
         /// </param>
-        /// <param name="lastEditedByDisplayName">
-        /// The last editor full name or username.
+        /// <param name="value">
+        /// The value of the Shared Env Var.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListSharedEnvVariableResponseDataItem(
-            global::System.Collections.Generic.IList<global::Vercel.ListSharedEnvVariableResponseDataItemSecurityIssue> securityIssues,
             global::System.DateTime created,
-            string key,
-            string id,
             bool decrypted,
-            string? ownerId,
-            string? createdBy,
-            string? deletedBy,
-            string? updatedBy,
-            double? createdAt,
-            double? deletedAt,
-            double? updatedAt,
-            string? value,
-            global::System.Collections.Generic.IList<string>? projectId,
-            global::Vercel.ListSharedEnvVariableResponseDataItemType? type,
-            global::System.Collections.Generic.IList<global::Vercel.ListSharedEnvVariableResponseDataItemTargetItem>? target,
+            string id,
+            string key,
+            global::System.Collections.Generic.IList<global::Vercel.ListSharedEnvVariableResponseDataItemSecurityIssue> securityIssues,
             bool? applyToAllCustomEnvironments,
-            global::System.Collections.Generic.IList<string>? customEnvironmentIds,
             string? comment,
-            string? lastEditedByDisplayName)
+            double? createdAt,
+            string? createdBy,
+            global::System.Collections.Generic.IList<string>? customEnvironmentIds,
+            double? deletedAt,
+            string? deletedBy,
+            string? lastEditedByDisplayName,
+            string? ownerId,
+            global::System.Collections.Generic.IList<string>? projectId,
+            global::System.Collections.Generic.IList<global::Vercel.ListSharedEnvVariableResponseDataItemTargetItem>? target,
+            global::Vercel.ListSharedEnvVariableResponseDataItemType? type,
+            double? updatedAt,
+            string? updatedBy,
+            string? value)
         {
-            this.SecurityIssues = securityIssues ?? throw new global::System.ArgumentNullException(nameof(securityIssues));
-            this.Created = created;
-            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
-            this.OwnerId = ownerId;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.CreatedBy = createdBy;
-            this.DeletedBy = deletedBy;
-            this.UpdatedBy = updatedBy;
-            this.CreatedAt = createdAt;
-            this.DeletedAt = deletedAt;
-            this.UpdatedAt = updatedAt;
-            this.Value = value;
-            this.ProjectId = projectId;
-            this.Type = type;
-            this.Target = target;
             this.ApplyToAllCustomEnvironments = applyToAllCustomEnvironments;
+            this.Comment = comment;
+            this.Created = created;
+            this.CreatedAt = createdAt;
+            this.CreatedBy = createdBy;
             this.CustomEnvironmentIds = customEnvironmentIds;
             this.Decrypted = decrypted;
-            this.Comment = comment;
+            this.DeletedAt = deletedAt;
+            this.DeletedBy = deletedBy;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
             this.LastEditedByDisplayName = lastEditedByDisplayName;
+            this.OwnerId = ownerId;
+            this.ProjectId = projectId;
+            this.SecurityIssues = securityIssues ?? throw new global::System.ArgumentNullException(nameof(securityIssues));
+            this.Target = target;
+            this.Type = type;
+            this.UpdatedAt = updatedAt;
+            this.UpdatedBy = updatedBy;
+            this.Value = value;
         }
 
         /// <summary>

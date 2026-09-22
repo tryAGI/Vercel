@@ -11,13 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPrincipalVariant1TypeJsonConverter))]
-        public global::Vercel.UserEventPrincipalVariant1Type? Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("avatar")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Avatar { get; set; }
@@ -34,6 +27,13 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
         public string? Slug { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventPrincipalVariant1TypeJsonConverter))]
+        public global::Vercel.UserEventPrincipalVariant1Type? Type { get; set; }
 
         /// <summary>
         ///
@@ -62,8 +62,8 @@ namespace Vercel
         /// <param name="email"></param>
         /// <param name="uid"></param>
         /// <param name="username"></param>
-        /// <param name="type"></param>
         /// <param name="slug"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -72,13 +72,13 @@ namespace Vercel
             string email,
             string uid,
             string username,
-            global::Vercel.UserEventPrincipalVariant1Type? type,
-            string? slug)
+            string? slug,
+            global::Vercel.UserEventPrincipalVariant1Type? type)
         {
-            this.Type = type;
             this.Avatar = avatar ?? throw new global::System.ArgumentNullException(nameof(avatar));
             this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
             this.Slug = slug;
+            this.Type = type;
             this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
             this.Username = username ?? throw new global::System.ArgumentNullException(nameof(username));
         }

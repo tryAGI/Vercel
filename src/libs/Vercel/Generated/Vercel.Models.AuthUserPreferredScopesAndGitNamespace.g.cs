@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scopeId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ScopeId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitNamespaceId")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>))]
+        public global::Vercel.OneOf<string, double?>? GitNamespaceId { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitNamespaceId")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>))]
-        public global::Vercel.OneOf<string, double?>? GitNamespaceId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("scopeId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ScopeId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,8 +40,8 @@ namespace Vercel
             string scopeId,
             global::Vercel.OneOf<string, double?>? gitNamespaceId)
         {
-            this.ScopeId = scopeId ?? throw new global::System.ArgumentNullException(nameof(scopeId));
             this.GitNamespaceId = gitNamespaceId;
+            this.ScopeId = scopeId ?? throw new global::System.ArgumentNullException(nameof(scopeId));
         }
 
         /// <summary>

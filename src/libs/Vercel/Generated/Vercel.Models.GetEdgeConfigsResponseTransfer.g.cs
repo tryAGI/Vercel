@@ -11,6 +11,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("doneAt")]
+        public double? DoneAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fromAccountId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string FromAccountId { get; set; }
@@ -21,12 +27,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("startedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double StartedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("doneAt")]
-        public double? DoneAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -48,9 +48,9 @@ namespace Vercel
             double startedAt,
             double? doneAt)
         {
+            this.DoneAt = doneAt;
             this.FromAccountId = fromAccountId ?? throw new global::System.ArgumentNullException(nameof(fromAccountId));
             this.StartedAt = startedAt;
-            this.DoneAt = doneAt;
         }
 
         /// <summary>

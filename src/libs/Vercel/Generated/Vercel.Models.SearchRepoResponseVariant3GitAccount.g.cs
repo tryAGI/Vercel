@@ -11,15 +11,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Provider { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("namespaceId")]
+        public string? NamespaceId { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("namespaceId")]
-        public string? NamespaceId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("provider")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Provider { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,8 +39,8 @@ namespace Vercel
             string provider,
             string? namespaceId)
         {
-            this.Provider = provider ?? throw new global::System.ArgumentNullException(nameof(provider));
             this.NamespaceId = namespaceId;
+            this.Provider = provider ?? throw new global::System.ArgumentNullException(nameof(provider));
         }
 
         /// <summary>

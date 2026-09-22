@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class CreateRepositoryRequest
     {
         /// <summary>
-        /// Project ID. Missing or empty values return HTTP 400.
+        /// Project ID or name (slug) within the authenticated team. IDs take precedence over names. Missing or empty values return HTTP 400.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -34,7 +34,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateRepositoryRequest" /> class.
         /// </summary>
         /// <param name="projectId">
-        /// Project ID. Missing or empty values return HTTP 400.
+        /// Project ID or name (slug) within the authenticated team. IDs take precedence over names. Missing or empty values return HTTP 400.
         /// </param>
         /// <param name="name">
         /// Single Docker repository name component.<br/>

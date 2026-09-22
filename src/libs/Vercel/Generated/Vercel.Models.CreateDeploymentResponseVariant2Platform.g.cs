@@ -9,20 +9,6 @@ namespace Vercel
     public sealed partial class CreateDeploymentResponseVariant2Platform
     {
         /// <summary>
-        /// The external platform that created the deployment (e.g. its display name).
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.CreateDeploymentResponseVariant2PlatformSource Source { get; set; }
-
-        /// <summary>
-        /// Reference back to the entity on the platform that initiated the deployment.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.CreateDeploymentResponseVariant2PlatformOrigin Origin { get; set; }
-
-        /// <summary>
         /// The user on the external platform who triggered the deployment.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("creator")]
@@ -36,6 +22,20 @@ namespace Vercel
         public global::System.Collections.Generic.Dictionary<string, string>? Meta { get; set; }
 
         /// <summary>
+        /// Reference back to the entity on the platform that initiated the deployment.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.CreateDeploymentResponseVariant2PlatformOrigin Origin { get; set; }
+
+        /// <summary>
+        /// The external platform that created the deployment (e.g. its display name).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("source")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.CreateDeploymentResponseVariant2PlatformSource Source { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -44,14 +44,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateDeploymentResponseVariant2Platform" /> class.
         /// </summary>
-        /// <param name="source">
-        /// The external platform that created the deployment (e.g. its display name).
+        /// <param name="creator">
+        /// The user on the external platform who triggered the deployment.
         /// </param>
         /// <param name="origin">
         /// Reference back to the entity on the platform that initiated the deployment.
         /// </param>
-        /// <param name="creator">
-        /// The user on the external platform who triggered the deployment.
+        /// <param name="source">
+        /// The external platform that created the deployment (e.g. its display name).
         /// </param>
         /// <param name="meta">
         /// Arbitrary key-value metadata provided by the platform.
@@ -60,15 +60,15 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateDeploymentResponseVariant2Platform(
-            global::Vercel.CreateDeploymentResponseVariant2PlatformSource source,
-            global::Vercel.CreateDeploymentResponseVariant2PlatformOrigin origin,
             global::Vercel.CreateDeploymentResponseVariant2PlatformCreator creator,
+            global::Vercel.CreateDeploymentResponseVariant2PlatformOrigin origin,
+            global::Vercel.CreateDeploymentResponseVariant2PlatformSource source,
             global::System.Collections.Generic.Dictionary<string, string>? meta)
         {
-            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
-            this.Origin = origin ?? throw new global::System.ArgumentNullException(nameof(origin));
             this.Creator = creator ?? throw new global::System.ArgumentNullException(nameof(creator));
             this.Meta = meta;
+            this.Origin = origin ?? throw new global::System.ArgumentNullException(nameof(origin));
+            this.Source = source ?? throw new global::System.ArgumentNullException(nameof(source));
         }
 
         /// <summary>

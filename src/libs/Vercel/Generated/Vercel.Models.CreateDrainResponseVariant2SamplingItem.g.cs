@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDrainResponseVariant2SamplingItemTypeJsonConverter))]
-        public global::Vercel.CreateDrainResponseVariant2SamplingItemType Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("env")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDrainResponseVariant2SamplingItemEnvJsonConverter))]
+        public global::Vercel.CreateDrainResponseVariant2SamplingItemEnv? Env { get; set; }
 
         /// <summary>
         ///
@@ -25,15 +25,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("env")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDrainResponseVariant2SamplingItemEnvJsonConverter))]
-        public global::Vercel.CreateDrainResponseVariant2SamplingItemEnv? Env { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("requestPath")]
+        public string? RequestPath { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("requestPath")]
-        public string? RequestPath { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDrainResponseVariant2SamplingItemTypeJsonConverter))]
+        public global::Vercel.CreateDrainResponseVariant2SamplingItemType Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,22 +45,22 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="CreateDrainResponseVariant2SamplingItem" /> class.
         /// </summary>
         /// <param name="rate"></param>
-        /// <param name="type"></param>
         /// <param name="env"></param>
         /// <param name="requestPath"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateDrainResponseVariant2SamplingItem(
             double rate,
-            global::Vercel.CreateDrainResponseVariant2SamplingItemType type,
             global::Vercel.CreateDrainResponseVariant2SamplingItemEnv? env,
-            string? requestPath)
+            string? requestPath,
+            global::Vercel.CreateDrainResponseVariant2SamplingItemType type)
         {
-            this.Type = type;
-            this.Rate = rate;
             this.Env = env;
+            this.Rate = rate;
             this.RequestPath = requestPath;
+            this.Type = type;
         }
 
         /// <summary>

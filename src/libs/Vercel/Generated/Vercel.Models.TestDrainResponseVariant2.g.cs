@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("endpoint")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Status { get; set; }
+        public required string Endpoint { get; set; }
 
         /// <summary>
         ///
@@ -25,9 +25,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("endpoint")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Endpoint { get; set; }
+        public required string Status { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="TestDrainResponseVariant2" /> class.
         /// </summary>
-        /// <param name="status"></param>
-        /// <param name="error"></param>
         /// <param name="endpoint"></param>
+        /// <param name="error"></param>
+        /// <param name="status"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TestDrainResponseVariant2(
-            string status,
+            string endpoint,
             string error,
-            string endpoint)
+            string status)
         {
-            this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
-            this.Error = error ?? throw new global::System.ArgumentNullException(nameof(error));
             this.Endpoint = endpoint ?? throw new global::System.ArgumentNullException(nameof(endpoint));
+            this.Error = error ?? throw new global::System.ArgumentNullException(nameof(error));
+            this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
         }
 
         /// <summary>

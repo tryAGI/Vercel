@@ -9,24 +9,6 @@ namespace Vercel
     public sealed partial class InvitedTeamMember
     {
         /// <summary>
-        /// The ID of the invited user<br/>
-        /// Example: kr1PsOIzqEL5Xg6M4VZcZosf
-        /// </summary>
-        /// <example>kr1PsOIzqEL5Xg6M4VZcZosf</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Uid { get; set; }
-
-        /// <summary>
-        /// The username of the invited user<br/>
-        /// Example: john-doe
-        /// </summary>
-        /// <example>john-doe</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Username { get; set; }
-
-        /// <summary>
         /// The email of the invited user.<br/>
         /// Example: john@user.co
         /// </summary>
@@ -46,6 +28,14 @@ namespace Vercel
         public required global::Vercel.InvitedTeamMemberRole Role { get; set; }
 
         /// <summary>
+        /// The team permissions of the user<br/>
+        /// Example: [CreateProject]
+        /// </summary>
+        /// <example>[CreateProject]</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
+        public global::System.Collections.Generic.IList<global::Vercel.InvitedTeamMemberTeamPermission>? TeamPermissions { get; set; }
+
+        /// <summary>
         /// The team roles of the user<br/>
         /// Example: [MEMBER]
         /// </summary>
@@ -54,12 +44,22 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.InvitedTeamMemberTeamRole>? TeamRoles { get; set; }
 
         /// <summary>
-        /// The team permissions of the user<br/>
-        /// Example: [CreateProject]
+        /// The ID of the invited user<br/>
+        /// Example: kr1PsOIzqEL5Xg6M4VZcZosf
         /// </summary>
-        /// <example>[CreateProject]</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
-        public global::System.Collections.Generic.IList<global::Vercel.InvitedTeamMemberTeamPermission>? TeamPermissions { get; set; }
+        /// <example>kr1PsOIzqEL5Xg6M4VZcZosf</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Uid { get; set; }
+
+        /// <summary>
+        /// The username of the invited user<br/>
+        /// Example: john-doe
+        /// </summary>
+        /// <example>john-doe</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("username")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Username { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -70,14 +70,6 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="InvitedTeamMember" /> class.
         /// </summary>
-        /// <param name="uid">
-        /// The ID of the invited user<br/>
-        /// Example: kr1PsOIzqEL5Xg6M4VZcZosf
-        /// </param>
-        /// <param name="username">
-        /// The username of the invited user<br/>
-        /// Example: john-doe
-        /// </param>
         /// <param name="email">
         /// The email of the invited user.<br/>
         /// Example: john@user.co
@@ -86,31 +78,39 @@ namespace Vercel
         /// The role used for the invitation<br/>
         /// Example: MEMBER
         /// </param>
-        /// <param name="teamRoles">
-        /// The team roles of the user<br/>
-        /// Example: [MEMBER]
+        /// <param name="uid">
+        /// The ID of the invited user<br/>
+        /// Example: kr1PsOIzqEL5Xg6M4VZcZosf
+        /// </param>
+        /// <param name="username">
+        /// The username of the invited user<br/>
+        /// Example: john-doe
         /// </param>
         /// <param name="teamPermissions">
         /// The team permissions of the user<br/>
         /// Example: [CreateProject]
         /// </param>
+        /// <param name="teamRoles">
+        /// The team roles of the user<br/>
+        /// Example: [MEMBER]
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public InvitedTeamMember(
-            string uid,
-            string username,
             string email,
             global::Vercel.InvitedTeamMemberRole role,
-            global::System.Collections.Generic.IList<global::Vercel.InvitedTeamMemberTeamRole>? teamRoles,
-            global::System.Collections.Generic.IList<global::Vercel.InvitedTeamMemberTeamPermission>? teamPermissions)
+            string uid,
+            string username,
+            global::System.Collections.Generic.IList<global::Vercel.InvitedTeamMemberTeamPermission>? teamPermissions,
+            global::System.Collections.Generic.IList<global::Vercel.InvitedTeamMemberTeamRole>? teamRoles)
         {
-            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
-            this.Username = username ?? throw new global::System.ArgumentNullException(nameof(username));
             this.Email = email ?? throw new global::System.ArgumentNullException(nameof(email));
             this.Role = role;
-            this.TeamRoles = teamRoles;
             this.TeamPermissions = teamPermissions;
+            this.TeamRoles = teamRoles;
+            this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
+            this.Username = username ?? throw new global::System.ArgumentNullException(nameof(username));
         }
 
         /// <summary>

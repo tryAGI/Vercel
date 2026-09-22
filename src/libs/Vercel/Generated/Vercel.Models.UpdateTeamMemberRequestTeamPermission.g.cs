@@ -11,10 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        AiGatewayApiKeyOwnedBySelf,
-        /// <summary>
-        ///
-        /// </summary>
         AiGatewayBudgetManager,
         /// <summary>
         ///
@@ -32,6 +28,10 @@ namespace Vercel
         ///
         /// </summary>
         AiGatewayTranscriptsViewer,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayUser,
         /// <summary>
         ///
         /// </summary>
@@ -98,12 +98,12 @@ namespace Vercel
         {
             return value switch
             {
-                UpdateTeamMemberRequestTeamPermission.AiGatewayApiKeyOwnedBySelf => "AiGatewayApiKeyOwnedBySelf",
                 UpdateTeamMemberRequestTeamPermission.AiGatewayBudgetManager => "AiGatewayBudgetManager",
                 UpdateTeamMemberRequestTeamPermission.AiGatewayCredits => "AiGatewayCredits",
                 UpdateTeamMemberRequestTeamPermission.AiGatewaySettings => "AiGatewaySettings",
                 UpdateTeamMemberRequestTeamPermission.AiGatewayTranscriptsManager => "AiGatewayTranscriptsManager",
                 UpdateTeamMemberRequestTeamPermission.AiGatewayTranscriptsViewer => "AiGatewayTranscriptsViewer",
+                UpdateTeamMemberRequestTeamPermission.AiGatewayUser => "AiGatewayUser",
                 UpdateTeamMemberRequestTeamPermission.ConnectorManager => "ConnectorManager",
                 UpdateTeamMemberRequestTeamPermission.CreateProject => "CreateProject",
                 UpdateTeamMemberRequestTeamPermission.EnvVariableManager => "EnvVariableManager",
@@ -127,12 +127,12 @@ namespace Vercel
         {
             return value switch
             {
-                "AiGatewayApiKeyOwnedBySelf" => UpdateTeamMemberRequestTeamPermission.AiGatewayApiKeyOwnedBySelf,
                 "AiGatewayBudgetManager" => UpdateTeamMemberRequestTeamPermission.AiGatewayBudgetManager,
                 "AiGatewayCredits" => UpdateTeamMemberRequestTeamPermission.AiGatewayCredits,
                 "AiGatewaySettings" => UpdateTeamMemberRequestTeamPermission.AiGatewaySettings,
                 "AiGatewayTranscriptsManager" => UpdateTeamMemberRequestTeamPermission.AiGatewayTranscriptsManager,
                 "AiGatewayTranscriptsViewer" => UpdateTeamMemberRequestTeamPermission.AiGatewayTranscriptsViewer,
+                "AiGatewayUser" => UpdateTeamMemberRequestTeamPermission.AiGatewayUser,
                 "ConnectorManager" => UpdateTeamMemberRequestTeamPermission.ConnectorManager,
                 "CreateProject" => UpdateTeamMemberRequestTeamPermission.CreateProject,
                 "EnvVariableManager" => UpdateTeamMemberRequestTeamPermission.EnvVariableManager,

@@ -11,6 +11,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("dest")]
+        public string? Dest { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("handle")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2RouteVariant2HandleJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -21,12 +27,6 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("src")]
         public string? Src { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("dest")]
-        public string? Dest { get; set; }
 
         /// <summary>
         ///
@@ -44,21 +44,21 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetDeploymentResponseVariant2RouteVariant2" /> class.
         /// </summary>
         /// <param name="handle"></param>
-        /// <param name="src"></param>
         /// <param name="dest"></param>
+        /// <param name="src"></param>
         /// <param name="status"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant2RouteVariant2(
             global::Vercel.GetDeploymentResponseVariant2RouteVariant2Handle handle,
-            string? src,
             string? dest,
+            string? src,
             double? status)
         {
+            this.Dest = dest;
             this.Handle = handle;
             this.Src = src;
-            this.Dest = dest;
             this.Status = status;
         }
 

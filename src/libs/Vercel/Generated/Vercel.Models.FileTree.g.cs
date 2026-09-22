@@ -9,6 +9,27 @@ namespace Vercel
     public sealed partial class FileTree
     {
         /// <summary>
+        /// The list of children files of the directory (only valid for the `directory` type)
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("children")]
+        public global::System.Collections.Generic.IList<global::Vercel.FileTree>? Children { get; set; }
+
+        /// <summary>
+        /// The content-type of the file (only valid for the `file` type)<br/>
+        /// Example: application/json
+        /// </summary>
+        /// <example>application/json</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("contentType")]
+        public string? ContentType { get; set; }
+
+        /// <summary>
+        /// The file "mode" indicating file type and permissions.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mode")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double Mode { get; set; }
+
+        /// <summary>
         /// The name of the file tree entry<br/>
         /// Example: my-file.json
         /// </summary>
@@ -36,27 +57,6 @@ namespace Vercel
         public string? Uid { get; set; }
 
         /// <summary>
-        /// The list of children files of the directory (only valid for the `directory` type)
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("children")]
-        public global::System.Collections.Generic.IList<global::Vercel.FileTree>? Children { get; set; }
-
-        /// <summary>
-        /// The content-type of the file (only valid for the `file` type)<br/>
-        /// Example: application/json
-        /// </summary>
-        /// <example>application/json</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("contentType")]
-        public string? ContentType { get; set; }
-
-        /// <summary>
-        /// The file "mode" indicating file type and permissions.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mode")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Mode { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -65,6 +65,9 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="FileTree" /> class.
         /// </summary>
+        /// <param name="mode">
+        /// The file "mode" indicating file type and permissions.
+        /// </param>
         /// <param name="name">
         /// The name of the file tree entry<br/>
         /// Example: my-file.json
@@ -73,13 +76,6 @@ namespace Vercel
         /// String indicating the type of file tree entry.<br/>
         /// Example: file
         /// </param>
-        /// <param name="mode">
-        /// The file "mode" indicating file type and permissions.
-        /// </param>
-        /// <param name="uid">
-        /// The unique identifier of the file (only valid for the `file` type)<br/>
-        /// Example: 2d4aad419917f15b1146e9e03ddc9bb31747e4d0
-        /// </param>
         /// <param name="children">
         /// The list of children files of the directory (only valid for the `directory` type)
         /// </param>
@@ -87,23 +83,27 @@ namespace Vercel
         /// The content-type of the file (only valid for the `file` type)<br/>
         /// Example: application/json
         /// </param>
+        /// <param name="uid">
+        /// The unique identifier of the file (only valid for the `file` type)<br/>
+        /// Example: 2d4aad419917f15b1146e9e03ddc9bb31747e4d0
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public FileTree(
+            double mode,
             string name,
             global::Vercel.FileTreeType type,
-            double mode,
-            string? uid,
             global::System.Collections.Generic.IList<global::Vercel.FileTree>? children,
-            string? contentType)
+            string? contentType,
+            string? uid)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Type = type;
-            this.Uid = uid;
             this.Children = children;
             this.ContentType = contentType;
             this.Mode = mode;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.Type = type;
+            this.Uid = uid;
         }
 
         /// <summary>

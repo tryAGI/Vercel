@@ -11,9 +11,45 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("defaultBranch")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string DefaultBranch { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("org")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Org { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2GitRepoVariant4OwnerTypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant4OwnerType OwnerType { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("path")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Path { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("private")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Private { get; set; }
 
         /// <summary>
         ///
@@ -30,42 +66,6 @@ namespace Vercel
         public global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant4Type Type { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("path")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Path { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("defaultBranch")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string DefaultBranch { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("private")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Private { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2GitRepoVariant4OwnerTypeJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant4OwnerType OwnerType { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -74,35 +74,35 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateDeploymentResponseVariant2GitRepoVariant4" /> class.
         /// </summary>
-        /// <param name="org"></param>
-        /// <param name="repo"></param>
-        /// <param name="path"></param>
         /// <param name="defaultBranch"></param>
         /// <param name="name"></param>
-        /// <param name="private"></param>
+        /// <param name="org"></param>
         /// <param name="ownerType"></param>
+        /// <param name="path"></param>
+        /// <param name="private"></param>
+        /// <param name="repo"></param>
         /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateDeploymentResponseVariant2GitRepoVariant4(
-            string org,
-            string repo,
-            string path,
             string defaultBranch,
             string name,
-            bool @private,
+            string org,
             global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant4OwnerType ownerType,
+            string path,
+            bool @private,
+            string repo,
             global::Vercel.CreateDeploymentResponseVariant2GitRepoVariant4Type type)
         {
-            this.Org = org ?? throw new global::System.ArgumentNullException(nameof(org));
-            this.Repo = repo ?? throw new global::System.ArgumentNullException(nameof(repo));
-            this.Type = type;
-            this.Path = path ?? throw new global::System.ArgumentNullException(nameof(path));
             this.DefaultBranch = defaultBranch ?? throw new global::System.ArgumentNullException(nameof(defaultBranch));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Private = @private;
+            this.Org = org ?? throw new global::System.ArgumentNullException(nameof(org));
             this.OwnerType = ownerType;
+            this.Path = path ?? throw new global::System.ArgumentNullException(nameof(path));
+            this.Private = @private;
+            this.Repo = repo ?? throw new global::System.ArgumentNullException(nameof(repo));
+            this.Type = type;
         }
 
         /// <summary>

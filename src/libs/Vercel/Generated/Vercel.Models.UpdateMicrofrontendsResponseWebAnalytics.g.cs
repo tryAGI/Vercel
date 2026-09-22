@@ -11,21 +11,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("canceledAt")]
+        public double? CanceledAt { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("disabledAt")]
         public double? DisabledAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("canceledAt")]
-        public double? CanceledAt { get; set; }
 
         /// <summary>
         ///
@@ -40,6 +33,13 @@ namespace Vercel
         public bool? HasData { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -49,8 +49,8 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UpdateMicrofrontendsResponseWebAnalytics" /> class.
         /// </summary>
         /// <param name="id"></param>
-        /// <param name="disabledAt"></param>
         /// <param name="canceledAt"></param>
+        /// <param name="disabledAt"></param>
         /// <param name="enabledAt"></param>
         /// <param name="hasData"></param>
 #if NET7_0_OR_GREATER
@@ -58,16 +58,16 @@ namespace Vercel
 #endif
         public UpdateMicrofrontendsResponseWebAnalytics(
             string id,
-            double? disabledAt,
             double? canceledAt,
+            double? disabledAt,
             double? enabledAt,
             bool? hasData)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.DisabledAt = disabledAt;
             this.CanceledAt = canceledAt;
+            this.DisabledAt = disabledAt;
             this.EnabledAt = enabledAt;
             this.HasData = hasData;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
         }
 
         /// <summary>

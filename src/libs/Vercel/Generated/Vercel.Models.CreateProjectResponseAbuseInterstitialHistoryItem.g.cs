@@ -19,9 +19,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("actor")]
+        public string? Actor { get; set; }
 
         /// <summary>
         ///
@@ -32,20 +31,21 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
-        public string? Reason { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("actor")]
-        public string? Actor { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("comment")]
         public string? Comment { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("reason")]
+        public string? Reason { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -58,27 +58,27 @@ namespace Vercel
         /// </summary>
         /// <param name="action"></param>
         /// <param name="createdAt"></param>
-        /// <param name="caseId"></param>
-        /// <param name="reason"></param>
         /// <param name="actor"></param>
+        /// <param name="caseId"></param>
         /// <param name="comment"></param>
+        /// <param name="reason"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateProjectResponseAbuseInterstitialHistoryItem(
             global::Vercel.CreateProjectResponseAbuseInterstitialHistoryItemAction action,
             double createdAt,
-            string? caseId,
-            string? reason,
             string? actor,
-            string? comment)
+            string? caseId,
+            string? comment,
+            string? reason)
         {
             this.Action = action;
-            this.CreatedAt = createdAt;
-            this.CaseId = caseId;
-            this.Reason = reason;
             this.Actor = actor;
+            this.CaseId = caseId;
             this.Comment = comment;
+            this.CreatedAt = createdAt;
+            this.Reason = reason;
         }
 
         /// <summary>

@@ -11,30 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("envId")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.UpdateMicrofrontendsResponseConnectConfigurationEnvId?>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<string, global::Vercel.UpdateMicrofrontendsResponseConnectConfigurationEnvId?> EnvId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("connectConfigurationId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ConnectConfigurationId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("dc")]
-        public string? Dc { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("passive")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Passive { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("aws")]
+        public global::Vercel.UpdateMicrofrontendsResponseConnectConfigurationAws? Aws { get; set; }
 
         /// <summary>
         ///
@@ -46,8 +24,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("aws")]
-        public global::Vercel.UpdateMicrofrontendsResponseConnectConfigurationAws? Aws { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("connectConfigurationId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ConnectConfigurationId { get; set; }
 
         /// <summary>
         ///
@@ -55,6 +34,27 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double CreatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("dc")]
+        public string? Dc { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("envId")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.UpdateMicrofrontendsResponseConnectConfigurationEnvId?>))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.OneOf<string, global::Vercel.UpdateMicrofrontendsResponseConnectConfigurationEnvId?> EnvId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("passive")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Passive { get; set; }
 
         /// <summary>
         ///
@@ -72,34 +72,34 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateMicrofrontendsResponseConnectConfiguration" /> class.
         /// </summary>
-        /// <param name="envId"></param>
-        /// <param name="connectConfigurationId"></param>
-        /// <param name="passive"></param>
         /// <param name="buildsEnabled"></param>
+        /// <param name="connectConfigurationId"></param>
         /// <param name="createdAt"></param>
+        /// <param name="envId"></param>
+        /// <param name="passive"></param>
         /// <param name="updatedAt"></param>
-        /// <param name="dc"></param>
         /// <param name="aws"></param>
+        /// <param name="dc"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateMicrofrontendsResponseConnectConfiguration(
-            global::Vercel.OneOf<string, global::Vercel.UpdateMicrofrontendsResponseConnectConfigurationEnvId?> envId,
-            string connectConfigurationId,
-            bool passive,
             bool buildsEnabled,
+            string connectConfigurationId,
             double createdAt,
+            global::Vercel.OneOf<string, global::Vercel.UpdateMicrofrontendsResponseConnectConfigurationEnvId?> envId,
+            bool passive,
             double updatedAt,
-            string? dc,
-            global::Vercel.UpdateMicrofrontendsResponseConnectConfigurationAws? aws)
+            global::Vercel.UpdateMicrofrontendsResponseConnectConfigurationAws? aws,
+            string? dc)
         {
-            this.EnvId = envId;
-            this.ConnectConfigurationId = connectConfigurationId ?? throw new global::System.ArgumentNullException(nameof(connectConfigurationId));
-            this.Dc = dc;
-            this.Passive = passive;
-            this.BuildsEnabled = buildsEnabled;
             this.Aws = aws;
+            this.BuildsEnabled = buildsEnabled;
+            this.ConnectConfigurationId = connectConfigurationId ?? throw new global::System.ArgumentNullException(nameof(connectConfigurationId));
             this.CreatedAt = createdAt;
+            this.Dc = dc;
+            this.EnvId = envId;
+            this.Passive = passive;
             this.UpdatedAt = updatedAt;
         }
 

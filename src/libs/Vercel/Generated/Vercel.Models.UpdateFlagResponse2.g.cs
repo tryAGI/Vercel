@@ -11,22 +11,22 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdBy")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string CreatedBy { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("description")]
         public string? Description { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("variants")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<object> Variants { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Id { get; set; }
 
         /// <summary>
         ///
@@ -38,10 +38,43 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFlagResponseKindJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UpdateFlagResponseKind Kind { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("maintainerIds")]
+        public global::System.Collections.Generic.IList<string>? MaintainerIds { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string OwnerId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("permanent")]
+        public bool? Permanent { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectId { get; set; }
 
         /// <summary>
         ///
@@ -60,22 +93,17 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Slug { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("state")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFlagResponseStateJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.UpdateFlagResponseState State { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("maintainerIds")]
-        public global::System.Collections.Generic.IList<string>? MaintainerIds { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("permanent")]
-        public bool? Permanent { get; set; }
 
         /// <summary>
         ///
@@ -86,16 +114,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("typeName")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFlagResponseTypeNameJsonConverter))]
+        public global::Vercel.UpdateFlagResponseTypeName TypeName { get; set; }
 
         /// <summary>
         ///
@@ -113,30 +134,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdBy")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("variants")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string CreatedBy { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("typeName")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateFlagResponseTypeNameJsonConverter))]
-        public global::Vercel.UpdateFlagResponseTypeName TypeName { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.UpdateFlagResponseVariant> Variants { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -147,68 +147,68 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateFlagResponse2" /> class.
         /// </summary>
-        /// <param name="variants"></param>
-        /// <param name="id"></param>
-        /// <param name="environments"></param>
-        /// <param name="kind"></param>
-        /// <param name="revision"></param>
-        /// <param name="seed"></param>
-        /// <param name="state"></param>
-        /// <param name="slug"></param>
         /// <param name="createdAt"></param>
-        /// <param name="updatedAt"></param>
         /// <param name="createdBy"></param>
+        /// <param name="environments"></param>
+        /// <param name="id"></param>
+        /// <param name="kind"></param>
         /// <param name="ownerId"></param>
         /// <param name="projectId"></param>
+        /// <param name="revision"></param>
+        /// <param name="seed"></param>
+        /// <param name="slug"></param>
+        /// <param name="state"></param>
+        /// <param name="updatedAt"></param>
+        /// <param name="variants"></param>
         /// <param name="description"></param>
         /// <param name="maintainerIds"></param>
         /// <param name="permanent"></param>
         /// <param name="tags"></param>
-        /// <param name="updatedBy"></param>
         /// <param name="typeName"></param>
+        /// <param name="updatedBy"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateFlagResponse2(
-            global::System.Collections.Generic.IList<object> variants,
-            string id,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateFlagResponseEnvironments2> environments,
-            global::Vercel.UpdateFlagResponseKind kind,
-            double revision,
-            double seed,
-            global::Vercel.UpdateFlagResponseState state,
-            string slug,
             double createdAt,
-            double updatedAt,
             string createdBy,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateFlagResponseEnvironments2> environments,
+            string id,
+            global::Vercel.UpdateFlagResponseKind kind,
             string ownerId,
             string projectId,
+            double revision,
+            double seed,
+            string slug,
+            global::Vercel.UpdateFlagResponseState state,
+            double updatedAt,
+            global::System.Collections.Generic.IList<global::Vercel.UpdateFlagResponseVariant> variants,
             string? description,
             global::System.Collections.Generic.IList<string>? maintainerIds,
             bool? permanent,
             global::System.Collections.Generic.IList<string>? tags,
-            string? updatedBy,
-            global::Vercel.UpdateFlagResponseTypeName typeName)
+            global::Vercel.UpdateFlagResponseTypeName typeName,
+            string? updatedBy)
         {
+            this.CreatedAt = createdAt;
+            this.CreatedBy = createdBy ?? throw new global::System.ArgumentNullException(nameof(createdBy));
             this.Description = description;
-            this.Variants = variants ?? throw new global::System.ArgumentNullException(nameof(variants));
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Environments = environments ?? throw new global::System.ArgumentNullException(nameof(environments));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Kind = kind;
+            this.MaintainerIds = maintainerIds;
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.Permanent = permanent;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.Revision = revision;
             this.Seed = seed;
-            this.State = state;
-            this.MaintainerIds = maintainerIds;
-            this.Permanent = permanent;
-            this.Tags = tags;
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
-            this.CreatedAt = createdAt;
+            this.State = state;
+            this.Tags = tags;
+            this.TypeName = typeName;
             this.UpdatedAt = updatedAt;
             this.UpdatedBy = updatedBy;
-            this.CreatedBy = createdBy ?? throw new global::System.ArgumentNullException(nameof(createdBy));
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.TypeName = typeName;
+            this.Variants = variants ?? throw new global::System.ArgumentNullException(nameof(variants));
         }
 
         /// <summary>

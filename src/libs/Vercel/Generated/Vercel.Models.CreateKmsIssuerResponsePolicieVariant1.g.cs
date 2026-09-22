@@ -11,23 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateKmsIssuerResponsePolicieVariant1KindJsonConverter))]
-        public global::Vercel.CreateKmsIssuerResponsePolicieVariant1Kind Kind { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TeamId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required string CreatedAt { get; set; }
 
         /// <summary>
         /// Environments whose OIDC tokens this grant authorizes. Each entry is either a system environment slug (`production`, `preview`, `development`) or a custom environment ID (prefixed `env_`). Custom environments are matched against the token's `custom_environment_id` claim (the stable ID); system environments against its `environment` claim.
@@ -39,15 +25,29 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tokenClaims")]
-        public object? TokenClaims { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateKmsIssuerResponsePolicieVariant1KindJsonConverter))]
+        public global::Vercel.CreateKmsIssuerResponsePolicieVariant1Kind Kind { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string CreatedAt { get; set; }
+        public required string ProjectId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string TeamId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tokenClaims")]
+        public object? TokenClaims { get; set; }
 
         /// <summary>
         ///
@@ -65,12 +65,12 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateKmsIssuerResponsePolicieVariant1" /> class.
         /// </summary>
-        /// <param name="teamId"></param>
-        /// <param name="projectId"></param>
+        /// <param name="createdAt"></param>
         /// <param name="environments">
         /// Environments whose OIDC tokens this grant authorizes. Each entry is either a system environment slug (`production`, `preview`, `development`) or a custom environment ID (prefixed `env_`). Custom environments are matched against the token's `custom_environment_id` claim (the stable ID); system environments against its `environment` claim.
         /// </param>
-        /// <param name="createdAt"></param>
+        /// <param name="projectId"></param>
+        /// <param name="teamId"></param>
         /// <param name="updatedAt"></param>
         /// <param name="kind"></param>
         /// <param name="tokenClaims"></param>
@@ -78,20 +78,20 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateKmsIssuerResponsePolicieVariant1(
-            string teamId,
-            string projectId,
-            global::System.Collections.Generic.IList<string> environments,
             string createdAt,
+            global::System.Collections.Generic.IList<string> environments,
+            string projectId,
+            string teamId,
             string updatedAt,
             global::Vercel.CreateKmsIssuerResponsePolicieVariant1Kind kind,
             object? tokenClaims)
         {
-            this.Kind = kind;
-            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
-            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.Environments = environments ?? throw new global::System.ArgumentNullException(nameof(environments));
-            this.TokenClaims = tokenClaims;
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
+            this.Environments = environments ?? throw new global::System.ArgumentNullException(nameof(environments));
+            this.Kind = kind;
+            this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
+            this.TokenClaims = tokenClaims;
             this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
         }
 

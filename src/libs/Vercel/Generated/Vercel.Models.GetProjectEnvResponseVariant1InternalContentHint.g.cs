@@ -9,18 +9,18 @@ namespace Vercel
     public sealed partial class GetProjectEnvResponseVariant1InternalContentHint
     {
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectEnvResponseVariant1InternalContentHintTypeJsonConverter))]
-        public global::Vercel.GetProjectEnvResponseVariant1InternalContentHintType Type { get; set; }
-
-        /// <summary>
         /// Contains the `value` of the env variable, encrypted with a special key to make decryption possible in the subscriber Lambda.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("encryptedValue")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string EncryptedValue { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectEnvResponseVariant1InternalContentHintTypeJsonConverter))]
+        public global::Vercel.GetProjectEnvResponseVariant1InternalContentHintType Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -42,8 +42,8 @@ namespace Vercel
             string encryptedValue,
             global::Vercel.GetProjectEnvResponseVariant1InternalContentHintType type)
         {
-            this.Type = type;
             this.EncryptedValue = encryptedValue ?? throw new global::System.ArgumentNullException(nameof(encryptedValue));
+            this.Type = type;
         }
 
         /// <summary>

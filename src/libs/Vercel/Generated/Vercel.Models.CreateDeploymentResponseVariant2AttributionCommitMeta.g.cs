@@ -15,16 +15,16 @@ namespace Vercel
         public string? Email { get; set; }
 
         /// <summary>
-        /// Name from git commit author
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        public string? Name { get; set; }
-
-        /// <summary>
         /// Whether the commit was signed/verified (GitHub only, others return undefined)
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isVerified")]
         public bool? IsVerified { get; set; }
+
+        /// <summary>
+        /// Name from git commit author
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,23 +38,23 @@ namespace Vercel
         /// <param name="email">
         /// Email from git commit author
         /// </param>
-        /// <param name="name">
-        /// Name from git commit author
-        /// </param>
         /// <param name="isVerified">
         /// Whether the commit was signed/verified (GitHub only, others return undefined)
+        /// </param>
+        /// <param name="name">
+        /// Name from git commit author
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateDeploymentResponseVariant2AttributionCommitMeta(
             string? email,
-            string? name,
-            bool? isVerified)
+            bool? isVerified,
+            string? name)
         {
             this.Email = email;
-            this.Name = name;
             this.IsVerified = isVerified;
+            this.Name = name;
         }
 
         /// <summary>

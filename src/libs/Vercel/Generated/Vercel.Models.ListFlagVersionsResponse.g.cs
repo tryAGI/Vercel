@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("versions")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("pagination")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.ListFlagVersionsResponseVersion> Versions { get; set; }
+        public required object Pagination { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("pagination")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("versions")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required object Pagination { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.ListFlagVersionsResponseVersion> Versions { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListFlagVersionsResponse" /> class.
         /// </summary>
-        /// <param name="versions"></param>
         /// <param name="pagination"></param>
+        /// <param name="versions"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListFlagVersionsResponse(
-            global::System.Collections.Generic.IList<global::Vercel.ListFlagVersionsResponseVersion> versions,
-            object pagination)
+            object pagination,
+            global::System.Collections.Generic.IList<global::Vercel.ListFlagVersionsResponseVersion> versions)
         {
-            this.Versions = versions ?? throw new global::System.ArgumentNullException(nameof(versions));
             this.Pagination = pagination ?? throw new global::System.ArgumentNullException(nameof(pagination));
+            this.Versions = versions ?? throw new global::System.ArgumentNullException(nameof(versions));
         }
 
         /// <summary>

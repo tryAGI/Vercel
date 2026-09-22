@@ -9,6 +9,12 @@ namespace Vercel
     public sealed partial class BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3Output
     {
         /// <summary>
+        /// Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("changedResources")]
+        public global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3OutputChangedResource>? ChangedResources { get; set; }
+
+        /// <summary>
         /// When the subscription change should take effect.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("effectiveBehavior")]
@@ -17,11 +23,23 @@ namespace Vercel
         public required global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3OutputEffectiveBehavior EffectiveBehavior { get; set; }
 
         /// <summary>
+        /// Optional metadata associated with the intent to update the Orb subscription with.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
+        public global::System.Collections.Generic.Dictionary<string, string>? Metadata { get; set; }
+
+        /// <summary>
         /// The Orb price ID for the subscription item being modified.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("orbPriceId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string OrbPriceId { get; set; }
+
+        /// <summary>
+        /// The ID of the pending subscription change if there is one.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pendingSubscriptionChangeId")]
+        public string? PendingSubscriptionChangeId { get; set; }
 
         /// <summary>
         /// The source used as the authoritative price for this intent.
@@ -37,24 +55,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("productId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProductId { get; set; }
-
-        /// <summary>
-        /// Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("changedResources")]
-        public global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3OutputChangedResource>? ChangedResources { get; set; }
-
-        /// <summary>
-        /// Optional metadata associated with the intent to update the Orb subscription with.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public global::System.Collections.Generic.Dictionary<string, string>? Metadata { get; set; }
-
-        /// <summary>
-        /// The ID of the pending subscription change if there is one.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("pendingSubscriptionChangeId")]
-        public string? PendingSubscriptionChangeId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -98,13 +98,13 @@ namespace Vercel
             global::System.Collections.Generic.Dictionary<string, string>? metadata,
             string? pendingSubscriptionChangeId)
         {
+            this.ChangedResources = changedResources;
             this.EffectiveBehavior = effectiveBehavior;
+            this.Metadata = metadata;
             this.OrbPriceId = orbPriceId ?? throw new global::System.ArgumentNullException(nameof(orbPriceId));
+            this.PendingSubscriptionChangeId = pendingSubscriptionChangeId;
             this.PricingSource = pricingSource;
             this.ProductId = productId ?? throw new global::System.ArgumentNullException(nameof(productId));
-            this.ChangedResources = changedResources;
-            this.Metadata = metadata;
-            this.PendingSubscriptionChangeId = pendingSubscriptionChangeId;
         }
 
         /// <summary>

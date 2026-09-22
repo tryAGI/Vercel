@@ -11,9 +11,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("version")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CountEventsResponseDataVariant1, global::Vercel.CountEventsResponseDataVariant2>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double Version { get; set; }
+        public required global::Vercel.OneOf<global::Vercel.CountEventsResponseDataVariant1, global::Vercel.CountEventsResponseDataVariant2> Data { get; set; }
 
         /// <summary>
         ///
@@ -25,10 +26,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("data")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CountEventsResponseDataVariant1, global::Vercel.CountEventsResponseDataVariant2>))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("version")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<global::Vercel.CountEventsResponseDataVariant1, global::Vercel.CountEventsResponseDataVariant2> Data { get; set; }
+        public required double Version { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,20 +39,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CountEventsResponse" /> class.
         /// </summary>
-        /// <param name="version"></param>
-        /// <param name="query"></param>
         /// <param name="data"></param>
+        /// <param name="query"></param>
+        /// <param name="version"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CountEventsResponse(
-            double version,
+            global::Vercel.OneOf<global::Vercel.CountEventsResponseDataVariant1, global::Vercel.CountEventsResponseDataVariant2> data,
             global::Vercel.CountEventsResponseQuery query,
-            global::Vercel.OneOf<global::Vercel.CountEventsResponseDataVariant1, global::Vercel.CountEventsResponseDataVariant2> data)
+            double version)
         {
-            this.Version = version;
-            this.Query = query ?? throw new global::System.ArgumentNullException(nameof(query));
             this.Data = data;
+            this.Query = query ?? throw new global::System.ArgumentNullException(nameof(query));
+            this.Version = version;
         }
 
         /// <summary>

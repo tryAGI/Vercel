@@ -9,18 +9,10 @@ namespace Vercel
     public sealed partial class GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironment
     {
         /// <summary>
-        /// The type of environment (production, preview, or development)
+        /// Configuration for matching git branches to this environment
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentTypeJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentType Type { get; set; }
-
-        /// <summary>
-        /// Optional description of the environment's purpose
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
-        public string? Description { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("branchMatcher")]
+        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcher? BranchMatcher { get; set; }
 
         /// <summary>
         /// Timestamp when the environment was created
@@ -30,18 +22,22 @@ namespace Vercel
         public required double CreatedAt { get; set; }
 
         /// <summary>
-        /// Timestamp when the environment was last updated
+        /// List of aliases for the current deployment
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double UpdatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("currentDeploymentAliases")]
+        public global::System.Collections.Generic.IList<string>? CurrentDeploymentAliases { get; set; }
 
         /// <summary>
-        /// URL-friendly name of the environment
+        /// Optional description of the environment's purpose
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Slug { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
+        /// List of domains associated with this environment
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("domains")]
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomain>? Domains { get; set; }
 
         /// <summary>
         /// Unique identifier for the custom environment (format: env_*)
@@ -51,22 +47,26 @@ namespace Vercel
         public required string Id { get; set; }
 
         /// <summary>
-        /// List of domains associated with this environment
+        /// URL-friendly name of the environment
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("domains")]
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomain>? Domains { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Slug { get; set; }
 
         /// <summary>
-        /// Configuration for matching git branches to this environment
+        /// The type of environment (production, preview, or development)
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("branchMatcher")]
-        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcher? BranchMatcher { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentTypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentType Type { get; set; }
 
         /// <summary>
-        /// List of aliases for the current deployment
+        /// Timestamp when the environment was last updated
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("currentDeploymentAliases")]
-        public global::System.Collections.Generic.IList<string>? CurrentDeploymentAliases { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double UpdatedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -77,26 +77,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironment" /> class.
         /// </summary>
-        /// <param name="type">
-        /// The type of environment (production, preview, or development)
-        /// </param>
         /// <param name="createdAt">
         /// Timestamp when the environment was created
-        /// </param>
-        /// <param name="updatedAt">
-        /// Timestamp when the environment was last updated
-        /// </param>
-        /// <param name="slug">
-        /// URL-friendly name of the environment
         /// </param>
         /// <param name="id">
         /// Unique identifier for the custom environment (format: env_*)
         /// </param>
-        /// <param name="description">
-        /// Optional description of the environment's purpose
+        /// <param name="slug">
+        /// URL-friendly name of the environment
         /// </param>
-        /// <param name="domains">
-        /// List of domains associated with this environment
+        /// <param name="type">
+        /// The type of environment (production, preview, or development)
+        /// </param>
+        /// <param name="updatedAt">
+        /// Timestamp when the environment was last updated
         /// </param>
         /// <param name="branchMatcher">
         /// Configuration for matching git branches to this environment
@@ -104,29 +98,35 @@ namespace Vercel
         /// <param name="currentDeploymentAliases">
         /// List of aliases for the current deployment
         /// </param>
+        /// <param name="description">
+        /// Optional description of the environment's purpose
+        /// </param>
+        /// <param name="domains">
+        /// List of domains associated with this environment
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironment(
-            global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentType type,
             double createdAt,
-            double updatedAt,
-            string slug,
             string id,
-            string? description,
-            global::System.Collections.Generic.IList<global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomain>? domains,
+            string slug,
+            global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentType type,
+            double updatedAt,
             global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcher? branchMatcher,
-            global::System.Collections.Generic.IList<string>? currentDeploymentAliases)
+            global::System.Collections.Generic.IList<string>? currentDeploymentAliases,
+            string? description,
+            global::System.Collections.Generic.IList<global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomain>? domains)
         {
-            this.Type = type;
-            this.Description = description;
-            this.CreatedAt = createdAt;
-            this.UpdatedAt = updatedAt;
-            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Domains = domains;
             this.BranchMatcher = branchMatcher;
+            this.CreatedAt = createdAt;
             this.CurrentDeploymentAliases = currentDeploymentAliases;
+            this.Description = description;
+            this.Domains = domains;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
+            this.Type = type;
+            this.UpdatedAt = updatedAt;
         }
 
         /// <summary>

@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("revoked")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("already_revoked")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Revoked { get; set; }
+        public required bool AlreadyRevoked { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("already_revoked")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("revoked")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool AlreadyRevoked { get; set; }
+        public required bool Revoked { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="RevokeInstallationCredentialResponse" /> class.
         /// </summary>
-        /// <param name="revoked"></param>
         /// <param name="alreadyRevoked"></param>
+        /// <param name="revoked"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public RevokeInstallationCredentialResponse(
-            bool revoked,
-            bool alreadyRevoked)
+            bool alreadyRevoked,
+            bool revoked)
         {
-            this.Revoked = revoked;
             this.AlreadyRevoked = alreadyRevoked;
+            this.Revoked = revoked;
         }
 
         /// <summary>

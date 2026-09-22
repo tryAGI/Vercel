@@ -11,18 +11,18 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("previousValue")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<string, double?, bool?> PreviousValue { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("currentValue")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.OneOf<string, double?, bool?> CurrentValue { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("previousValue")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.OneOf<string, double?, bool?> PreviousValue { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -33,17 +33,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UploadProjectAvatarResponseDismissedToastValue" /> class.
         /// </summary>
-        /// <param name="previousValue"></param>
         /// <param name="currentValue"></param>
+        /// <param name="previousValue"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UploadProjectAvatarResponseDismissedToastValue(
-            global::Vercel.OneOf<string, double?, bool?> previousValue,
-            global::Vercel.OneOf<string, double?, bool?> currentValue)
+            global::Vercel.OneOf<string, double?, bool?> currentValue,
+            global::Vercel.OneOf<string, double?, bool?> previousValue)
         {
-            this.PreviousValue = previousValue;
             this.CurrentValue = currentValue;
+            this.PreviousValue = previousValue;
         }
 
         /// <summary>

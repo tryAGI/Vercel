@@ -11,15 +11,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.ListRepositoryTagsResponseTag> Tags { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("nextCursor")]
+        public string? NextCursor { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("nextCursor")]
-        public string? NextCursor { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.ListRepositoryTagsResponseTag> Tags { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,8 +39,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ListRepositoryTagsResponseTag> tags,
             string? nextCursor)
         {
-            this.Tags = tags ?? throw new global::System.ArgumentNullException(nameof(tags));
             this.NextCursor = nextCursor;
+            this.Tags = tags ?? throw new global::System.ArgumentNullException(nameof(tags));
         }
 
         /// <summary>

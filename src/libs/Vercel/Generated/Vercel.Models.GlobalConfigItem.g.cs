@@ -11,16 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Key { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GlobalConfigItemValueJsonConverter))]
-        public global::Vercel.GlobalConfigItemValue? Value { get; set; }
+        public required double CreatedAt { get; set; }
 
         /// <summary>
         ///
@@ -38,9 +31,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
+        public required string Key { get; set; }
 
         /// <summary>
         ///
@@ -48,6 +41,13 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double UpdatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GlobalConfigItemValueJsonConverter))]
+        public global::Vercel.GlobalConfigItemValue? Value { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -58,29 +58,29 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GlobalConfigItem" /> class.
         /// </summary>
-        /// <param name="key"></param>
-        /// <param name="edgeConfigId"></param>
         /// <param name="createdAt"></param>
+        /// <param name="edgeConfigId"></param>
+        /// <param name="key"></param>
         /// <param name="updatedAt"></param>
-        /// <param name="value"></param>
         /// <param name="description"></param>
+        /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GlobalConfigItem(
-            string key,
-            string edgeConfigId,
             double createdAt,
+            string edgeConfigId,
+            string key,
             double updatedAt,
-            global::Vercel.GlobalConfigItemValue? value,
-            string? description)
+            string? description,
+            global::Vercel.GlobalConfigItemValue? value)
         {
-            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
-            this.Value = value;
+            this.CreatedAt = createdAt;
             this.Description = description;
             this.EdgeConfigId = edgeConfigId ?? throw new global::System.ArgumentNullException(nameof(edgeConfigId));
-            this.CreatedAt = createdAt;
+            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
             this.UpdatedAt = updatedAt;
+            this.Value = value;
         }
 
         /// <summary>

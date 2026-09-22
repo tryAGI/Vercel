@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDrainResponseVariant1DeliveryVariant5TypeJsonConverter))]
-        public global::Vercel.UpdateDrainResponseVariant1DeliveryVariant5Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDrainResponseVariant1DeliveryVariant5TargetJsonConverter))]
+        public global::Vercel.UpdateDrainResponseVariant1DeliveryVariant5Target Target { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDrainResponseVariant1DeliveryVariant5TargetJsonConverter))]
-        public global::Vercel.UpdateDrainResponseVariant1DeliveryVariant5Target Target { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDrainResponseVariant1DeliveryVariant5TypeJsonConverter))]
+        public global::Vercel.UpdateDrainResponseVariant1DeliveryVariant5Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateDrainResponseVariant1DeliveryVariant5" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="target"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateDrainResponseVariant1DeliveryVariant5(
-            global::Vercel.UpdateDrainResponseVariant1DeliveryVariant5Type type,
-            global::Vercel.UpdateDrainResponseVariant1DeliveryVariant5Target target)
+            global::Vercel.UpdateDrainResponseVariant1DeliveryVariant5Target target,
+            global::Vercel.UpdateDrainResponseVariant1DeliveryVariant5Type type)
         {
-            this.Type = type;
             this.Target = target;
+            this.Type = type;
         }
 
         /// <summary>

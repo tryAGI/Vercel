@@ -627,6 +627,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        DeploymentProtectionAccessRequests,
+        /// <summary>
+        ///
+        /// </summary>
         DeploymentUndeleted,
         /// <summary>
         ///
@@ -1215,6 +1219,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        MarketplaceAutoCardCollectionUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        MarketplaceBillingCollectionUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         MarketplaceFlexCommitOptIn,
         /// <summary>
         ///
@@ -1327,6 +1339,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        OrganizationAvatarUpdate,
+        /// <summary>
+        ///
+        /// </summary>
         OrganizationCreate,
         /// <summary>
         ///
@@ -1343,7 +1359,23 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        OrganizationEmuDomainsMerged,
+        /// <summary>
+        ///
+        /// </summary>
+        OrganizationEmuTeamUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        OrganizationEmuUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         OrganizationSlugUpdate,
+        /// <summary>
+        ///
+        /// </summary>
+        OrganizationSsoEnforced,
         /// <summary>
         ///
         /// </summary>
@@ -1360,6 +1392,14 @@ namespace Vercel
         ///
         /// </summary>
         OrganizationTeamSsoUpdate,
+        /// <summary>
+        ///
+        /// </summary>
+        OrganizationUpdateAccountFlowDismissed,
+        /// <summary>
+        ///
+        /// </summary>
+        OrganizationUpdateAccountFlowTriggered,
         /// <summary>
         ///
         /// </summary>
@@ -1564,6 +1604,10 @@ namespace Vercel
         ///
         /// </summary>
         ProjectCustomEnvironmentDeleted,
+        /// <summary>
+        ///
+        /// </summary>
+        ProjectCustomEnvironmentSchedulesDefaultUpdated,
         /// <summary>
         ///
         /// </summary>
@@ -1963,6 +2007,18 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        RepositoryCiEnvVariableCreate,
+        /// <summary>
+        ///
+        /// </summary>
+        RepositoryCiEnvVariableDelete,
+        /// <summary>
+        ///
+        /// </summary>
+        RepositoryCiEnvVariableUpdate,
+        /// <summary>
+        ///
+        /// </summary>
         RuntimeCachePurgeAll,
         /// <summary>
         ///
@@ -1988,6 +2044,10 @@ namespace Vercel
         ///
         /// </summary>
         SandboxDriveDeleted,
+        /// <summary>
+        ///
+        /// </summary>
+        SandboxSignedCommitIdentityConfigured,
         /// <summary>
         ///
         /// </summary>
@@ -2876,6 +2936,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.DeploymentCreationBlocked => "deployment-creation-blocked",
                 ListEventTypeReplacedByItem.DeploymentDelete => "deployment-delete",
                 ListEventTypeReplacedByItem.DeploymentPolicyBlocked => "deployment-policy-blocked",
+                ListEventTypeReplacedByItem.DeploymentProtectionAccessRequests => "deployment-protection-access-requests",
                 ListEventTypeReplacedByItem.DeploymentUndeleted => "deployment-undeleted",
                 ListEventTypeReplacedByItem.DisabledIntegrationInstallationRemoved => "disabled-integration-installation-removed",
                 ListEventTypeReplacedByItem.DisconnectBitbucketApp => "disconnect-bitbucket-app",
@@ -3023,6 +3084,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.LoginConnectionLinked => "login-connection-linked",
                 ListEventTypeReplacedByItem.LoginConnectionUnlinked => "login-connection-unlinked",
                 ListEventTypeReplacedByItem.ManualDeploymentPromotionCreated => "manual-deployment-promotion-created",
+                ListEventTypeReplacedByItem.MarketplaceAutoCardCollectionUpdated => "marketplace-auto-card-collection-updated",
+                ListEventTypeReplacedByItem.MarketplaceBillingCollectionUpdated => "marketplace-billing-collection-updated",
                 ListEventTypeReplacedByItem.MarketplaceFlexCommitOptIn => "marketplace-flex-commit-opt-in",
                 ListEventTypeReplacedByItem.MarketplaceIntegrationAllowlistUpdated => "marketplace-integration-allowlist-updated",
                 ListEventTypeReplacedByItem.MicrofrontendGroupAdded => "microfrontend-group-added",
@@ -3051,15 +3114,22 @@ namespace Vercel
                 ListEventTypeReplacedByItem.OidcPolicyDeleted => "oidc-policy-deleted",
                 ListEventTypeReplacedByItem.OidcPolicyUpdated => "oidc-policy-updated",
                 ListEventTypeReplacedByItem.OidcPolicyUsedToObtainAppToken => "oidc-policy-used-to-obtain-app-token",
+                ListEventTypeReplacedByItem.OrganizationAvatarUpdate => "organization-avatar-update",
                 ListEventTypeReplacedByItem.OrganizationCreate => "organization-create",
                 ListEventTypeReplacedByItem.OrganizationDelete => "organization-delete",
                 ListEventTypeReplacedByItem.OrganizationDsyncGroupDelete => "organization-dsync-group-delete",
                 ListEventTypeReplacedByItem.OrganizationDsyncGroupUpsert => "organization-dsync-group-upsert",
+                ListEventTypeReplacedByItem.OrganizationEmuDomainsMerged => "organization-emu-domains-merged",
+                ListEventTypeReplacedByItem.OrganizationEmuTeamUpdated => "organization-emu-team-updated",
+                ListEventTypeReplacedByItem.OrganizationEmuUpdated => "organization-emu-updated",
                 ListEventTypeReplacedByItem.OrganizationSlugUpdate => "organization-slug-update",
+                ListEventTypeReplacedByItem.OrganizationSsoEnforced => "organization-sso-enforced",
                 ListEventTypeReplacedByItem.OrganizationTeamAdd => "organization-team-add",
                 ListEventTypeReplacedByItem.OrganizationTeamCreate => "organization-team-create",
                 ListEventTypeReplacedByItem.OrganizationTeamDelete => "organization-team-delete",
                 ListEventTypeReplacedByItem.OrganizationTeamSsoUpdate => "organization-team-sso-update",
+                ListEventTypeReplacedByItem.OrganizationUpdateAccountFlowDismissed => "organization-update-account-flow-dismissed",
+                ListEventTypeReplacedByItem.OrganizationUpdateAccountFlowTriggered => "organization-update-account-flow-triggered",
                 ListEventTypeReplacedByItem.OwnerBlocked => "owner-blocked",
                 ListEventTypeReplacedByItem.OwnerSoftBlocked => "owner-soft-blocked",
                 ListEventTypeReplacedByItem.OwnerSoftUnblocked => "owner-soft-unblocked",
@@ -3111,6 +3181,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ProjectCronJobsToggled => "project-cron-jobs-toggled",
                 ListEventTypeReplacedByItem.ProjectCustomEnvironmentCreated => "project-custom-environment-created",
                 ListEventTypeReplacedByItem.ProjectCustomEnvironmentDeleted => "project-custom-environment-deleted",
+                ListEventTypeReplacedByItem.ProjectCustomEnvironmentSchedulesDefaultUpdated => "project-custom-environment-schedules-default-updated",
                 ListEventTypeReplacedByItem.ProjectCustomEnvironmentUpdated => "project-custom-environment-updated",
                 ListEventTypeReplacedByItem.ProjectCustomerSuccessCodeVisibilityUpdated => "project-customer-success-code-visibility-updated",
                 ListEventTypeReplacedByItem.ProjectDelete => "project-delete",
@@ -3210,6 +3281,9 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ProjectWebAnalyticsEnabled => "project-web-analytics-enabled",
                 ListEventTypeReplacedByItem.ProtectedGitScopeAdded => "protected-git-scope-added",
                 ListEventTypeReplacedByItem.ProtectedGitScopeRemoved => "protected-git-scope-removed",
+                ListEventTypeReplacedByItem.RepositoryCiEnvVariableCreate => "repository-ci-env-variable-create",
+                ListEventTypeReplacedByItem.RepositoryCiEnvVariableDelete => "repository-ci-env-variable-delete",
+                ListEventTypeReplacedByItem.RepositoryCiEnvVariableUpdate => "repository-ci-env-variable-update",
                 ListEventTypeReplacedByItem.RuntimeCachePurgeAll => "runtime-cache-purge-all",
                 ListEventTypeReplacedByItem.SamlConnectionCreated => "saml-connection-created",
                 ListEventTypeReplacedByItem.SamlConnectionDeleted => "saml-connection-deleted",
@@ -3217,6 +3291,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.SandboxAliasDelete => "sandbox-alias-delete",
                 ListEventTypeReplacedByItem.SandboxDriveCreated => "sandbox-drive-created",
                 ListEventTypeReplacedByItem.SandboxDriveDeleted => "sandbox-drive-deleted",
+                ListEventTypeReplacedByItem.SandboxSignedCommitIdentityConfigured => "sandbox-signed-commit-identity-configured",
                 ListEventTypeReplacedByItem.SandboxSnapshotRegionsUpdated => "sandbox-snapshot-regions-updated",
                 ListEventTypeReplacedByItem.Scale => "scale",
                 ListEventTypeReplacedByItem.ScaleAuto => "scale-auto",
@@ -3561,6 +3636,7 @@ namespace Vercel
                 "deployment-creation-blocked" => ListEventTypeReplacedByItem.DeploymentCreationBlocked,
                 "deployment-delete" => ListEventTypeReplacedByItem.DeploymentDelete,
                 "deployment-policy-blocked" => ListEventTypeReplacedByItem.DeploymentPolicyBlocked,
+                "deployment-protection-access-requests" => ListEventTypeReplacedByItem.DeploymentProtectionAccessRequests,
                 "deployment-undeleted" => ListEventTypeReplacedByItem.DeploymentUndeleted,
                 "disabled-integration-installation-removed" => ListEventTypeReplacedByItem.DisabledIntegrationInstallationRemoved,
                 "disconnect-bitbucket-app" => ListEventTypeReplacedByItem.DisconnectBitbucketApp,
@@ -3708,6 +3784,8 @@ namespace Vercel
                 "login-connection-linked" => ListEventTypeReplacedByItem.LoginConnectionLinked,
                 "login-connection-unlinked" => ListEventTypeReplacedByItem.LoginConnectionUnlinked,
                 "manual-deployment-promotion-created" => ListEventTypeReplacedByItem.ManualDeploymentPromotionCreated,
+                "marketplace-auto-card-collection-updated" => ListEventTypeReplacedByItem.MarketplaceAutoCardCollectionUpdated,
+                "marketplace-billing-collection-updated" => ListEventTypeReplacedByItem.MarketplaceBillingCollectionUpdated,
                 "marketplace-flex-commit-opt-in" => ListEventTypeReplacedByItem.MarketplaceFlexCommitOptIn,
                 "marketplace-integration-allowlist-updated" => ListEventTypeReplacedByItem.MarketplaceIntegrationAllowlistUpdated,
                 "microfrontend-group-added" => ListEventTypeReplacedByItem.MicrofrontendGroupAdded,
@@ -3736,15 +3814,22 @@ namespace Vercel
                 "oidc-policy-deleted" => ListEventTypeReplacedByItem.OidcPolicyDeleted,
                 "oidc-policy-updated" => ListEventTypeReplacedByItem.OidcPolicyUpdated,
                 "oidc-policy-used-to-obtain-app-token" => ListEventTypeReplacedByItem.OidcPolicyUsedToObtainAppToken,
+                "organization-avatar-update" => ListEventTypeReplacedByItem.OrganizationAvatarUpdate,
                 "organization-create" => ListEventTypeReplacedByItem.OrganizationCreate,
                 "organization-delete" => ListEventTypeReplacedByItem.OrganizationDelete,
                 "organization-dsync-group-delete" => ListEventTypeReplacedByItem.OrganizationDsyncGroupDelete,
                 "organization-dsync-group-upsert" => ListEventTypeReplacedByItem.OrganizationDsyncGroupUpsert,
+                "organization-emu-domains-merged" => ListEventTypeReplacedByItem.OrganizationEmuDomainsMerged,
+                "organization-emu-team-updated" => ListEventTypeReplacedByItem.OrganizationEmuTeamUpdated,
+                "organization-emu-updated" => ListEventTypeReplacedByItem.OrganizationEmuUpdated,
                 "organization-slug-update" => ListEventTypeReplacedByItem.OrganizationSlugUpdate,
+                "organization-sso-enforced" => ListEventTypeReplacedByItem.OrganizationSsoEnforced,
                 "organization-team-add" => ListEventTypeReplacedByItem.OrganizationTeamAdd,
                 "organization-team-create" => ListEventTypeReplacedByItem.OrganizationTeamCreate,
                 "organization-team-delete" => ListEventTypeReplacedByItem.OrganizationTeamDelete,
                 "organization-team-sso-update" => ListEventTypeReplacedByItem.OrganizationTeamSsoUpdate,
+                "organization-update-account-flow-dismissed" => ListEventTypeReplacedByItem.OrganizationUpdateAccountFlowDismissed,
+                "organization-update-account-flow-triggered" => ListEventTypeReplacedByItem.OrganizationUpdateAccountFlowTriggered,
                 "owner-blocked" => ListEventTypeReplacedByItem.OwnerBlocked,
                 "owner-soft-blocked" => ListEventTypeReplacedByItem.OwnerSoftBlocked,
                 "owner-soft-unblocked" => ListEventTypeReplacedByItem.OwnerSoftUnblocked,
@@ -3796,6 +3881,7 @@ namespace Vercel
                 "project-cron-jobs-toggled" => ListEventTypeReplacedByItem.ProjectCronJobsToggled,
                 "project-custom-environment-created" => ListEventTypeReplacedByItem.ProjectCustomEnvironmentCreated,
                 "project-custom-environment-deleted" => ListEventTypeReplacedByItem.ProjectCustomEnvironmentDeleted,
+                "project-custom-environment-schedules-default-updated" => ListEventTypeReplacedByItem.ProjectCustomEnvironmentSchedulesDefaultUpdated,
                 "project-custom-environment-updated" => ListEventTypeReplacedByItem.ProjectCustomEnvironmentUpdated,
                 "project-customer-success-code-visibility-updated" => ListEventTypeReplacedByItem.ProjectCustomerSuccessCodeVisibilityUpdated,
                 "project-delete" => ListEventTypeReplacedByItem.ProjectDelete,
@@ -3895,6 +3981,9 @@ namespace Vercel
                 "project-web-analytics-enabled" => ListEventTypeReplacedByItem.ProjectWebAnalyticsEnabled,
                 "protected-git-scope-added" => ListEventTypeReplacedByItem.ProtectedGitScopeAdded,
                 "protected-git-scope-removed" => ListEventTypeReplacedByItem.ProtectedGitScopeRemoved,
+                "repository-ci-env-variable-create" => ListEventTypeReplacedByItem.RepositoryCiEnvVariableCreate,
+                "repository-ci-env-variable-delete" => ListEventTypeReplacedByItem.RepositoryCiEnvVariableDelete,
+                "repository-ci-env-variable-update" => ListEventTypeReplacedByItem.RepositoryCiEnvVariableUpdate,
                 "runtime-cache-purge-all" => ListEventTypeReplacedByItem.RuntimeCachePurgeAll,
                 "saml-connection-created" => ListEventTypeReplacedByItem.SamlConnectionCreated,
                 "saml-connection-deleted" => ListEventTypeReplacedByItem.SamlConnectionDeleted,
@@ -3902,6 +3991,7 @@ namespace Vercel
                 "sandbox-alias-delete" => ListEventTypeReplacedByItem.SandboxAliasDelete,
                 "sandbox-drive-created" => ListEventTypeReplacedByItem.SandboxDriveCreated,
                 "sandbox-drive-deleted" => ListEventTypeReplacedByItem.SandboxDriveDeleted,
+                "sandbox-signed-commit-identity-configured" => ListEventTypeReplacedByItem.SandboxSignedCommitIdentityConfigured,
                 "sandbox-snapshot-regions-updated" => ListEventTypeReplacedByItem.SandboxSnapshotRegionsUpdated,
                 "scale" => ListEventTypeReplacedByItem.Scale,
                 "scale-auto" => ListEventTypeReplacedByItem.ScaleAuto,

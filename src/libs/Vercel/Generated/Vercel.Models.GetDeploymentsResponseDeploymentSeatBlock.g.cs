@@ -17,16 +17,11 @@ namespace Vercel
         public required global::Vercel.GetDeploymentsResponseDeploymentSeatBlockBlockCode BlockCode { get; set; }
 
         /// <summary>
-        /// The blocked vercel user ID.
+        /// The git provider type associated with gitUserId.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("userId")]
-        public string? UserId { get; set; }
-
-        /// <summary>
-        /// Determines if the user was verified during the block. In the git integration case, the commit sender was the author.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("isVerified")]
-        public bool? IsVerified { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitProvider")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentSeatBlockGitProviderJsonConverter))]
+        public global::Vercel.GetDeploymentsResponseDeploymentSeatBlockGitProvider? GitProvider { get; set; }
 
         /// <summary>
         ///
@@ -36,11 +31,16 @@ namespace Vercel
         public global::Vercel.OneOf<string, double?>? GitUserId { get; set; }
 
         /// <summary>
-        /// The git provider type associated with gitUserId.
+        /// Determines if the user was verified during the block. In the git integration case, the commit sender was the author.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitProvider")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentsResponseDeploymentSeatBlockGitProviderJsonConverter))]
-        public global::Vercel.GetDeploymentsResponseDeploymentSeatBlockGitProvider? GitProvider { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("isVerified")]
+        public bool? IsVerified { get; set; }
+
+        /// <summary>
+        /// The blocked vercel user ID.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("userId")]
+        public string? UserId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -54,31 +54,31 @@ namespace Vercel
         /// <param name="blockCode">
         /// The NSNB decision code for the seat block. TODO: We should consolidate block types.
         /// </param>
-        /// <param name="userId">
-        /// The blocked vercel user ID.
+        /// <param name="gitProvider">
+        /// The git provider type associated with gitUserId.
         /// </param>
+        /// <param name="gitUserId"></param>
         /// <param name="isVerified">
         /// Determines if the user was verified during the block. In the git integration case, the commit sender was the author.
         /// </param>
-        /// <param name="gitUserId"></param>
-        /// <param name="gitProvider">
-        /// The git provider type associated with gitUserId.
+        /// <param name="userId">
+        /// The blocked vercel user ID.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentsResponseDeploymentSeatBlock(
             global::Vercel.GetDeploymentsResponseDeploymentSeatBlockBlockCode blockCode,
-            string? userId,
-            bool? isVerified,
+            global::Vercel.GetDeploymentsResponseDeploymentSeatBlockGitProvider? gitProvider,
             global::Vercel.OneOf<string, double?>? gitUserId,
-            global::Vercel.GetDeploymentsResponseDeploymentSeatBlockGitProvider? gitProvider)
+            bool? isVerified,
+            string? userId)
         {
             this.BlockCode = blockCode;
-            this.UserId = userId;
-            this.IsVerified = isVerified;
-            this.GitUserId = gitUserId;
             this.GitProvider = gitProvider;
+            this.GitUserId = gitUserId;
+            this.IsVerified = isVerified;
+            this.UserId = userId;
         }
 
         /// <summary>

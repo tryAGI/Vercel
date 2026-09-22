@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("version")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("failedToRestore")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.RestoreRedirectsResponseVersion Version { get; set; }
+        public required global::System.Collections.Generic.IList<string> FailedToRestore { get; set; }
 
         /// <summary>
         ///
@@ -25,9 +25,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("failedToRestore")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("version")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> FailedToRestore { get; set; }
+        public required global::Vercel.RestoreRedirectsResponseVersion Version { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="RestoreRedirectsResponse" /> class.
         /// </summary>
-        /// <param name="version"></param>
-        /// <param name="restored"></param>
         /// <param name="failedToRestore"></param>
+        /// <param name="restored"></param>
+        /// <param name="version"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public RestoreRedirectsResponse(
-            global::Vercel.RestoreRedirectsResponseVersion version,
+            global::System.Collections.Generic.IList<string> failedToRestore,
             global::System.Collections.Generic.IList<string> restored,
-            global::System.Collections.Generic.IList<string> failedToRestore)
+            global::Vercel.RestoreRedirectsResponseVersion version)
         {
-            this.Version = version ?? throw new global::System.ArgumentNullException(nameof(version));
-            this.Restored = restored ?? throw new global::System.ArgumentNullException(nameof(restored));
             this.FailedToRestore = failedToRestore ?? throw new global::System.ArgumentNullException(nameof(failedToRestore));
+            this.Restored = restored ?? throw new global::System.ArgumentNullException(nameof(restored));
+            this.Version = version ?? throw new global::System.ArgumentNullException(nameof(version));
         }
 
         /// <summary>

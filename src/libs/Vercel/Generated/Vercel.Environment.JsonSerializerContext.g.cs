@@ -1,0 +1,1142 @@
+
+#nullable enable
+
+#pragma warning disable CS0618 // Type or member is obsolete
+#pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
+
+namespace Vercel
+{
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        Converters = new global::System.Type[]
+        {
+        })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTargetItem>, global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTarget?>?), TypeInfoPropertyName = "CreateSharedEnvVariableResponseFailedItemErrorTarget_5c80c24a0b85a0ab")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTargetItem>, global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTarget?>?), TypeInfoPropertyName = "UpdateSharedEnvVariableResponseFailedItemErrorTarget_9f62c68cffafe0dd")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTargetItem>, global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTarget?>?), TypeInfoPropertyName = "DeleteSharedEnvVariableResponseFailedItemErrorTarget_f1a3a936d624ccc1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.Pagination))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableRequestEv>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableRequestEv))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableRequestType), TypeInfoPropertyName = "CreateSharedEnvVariableRequestType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableRequestTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableRequestTargetItem), TypeInfoPropertyName = "CreateSharedEnvVariableRequestTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.UpdateSharedEnvVariableRequestUpdates2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableRequestUpdates2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableRequestUpdatesTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableRequestUpdatesTargetItem), TypeInfoPropertyName = "UpdateSharedEnvVariableRequestUpdatesTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableRequestUpdatesProjectIdUpdates))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableRequestUpdatesType), TypeInfoPropertyName = "UpdateSharedEnvVariableRequestUpdatesType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteSharedEnvVariableRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCustomEnvironmentRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCustomEnvironmentRequestBranchMatcher))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCustomEnvironmentRequestBranchMatcherType), TypeInfoPropertyName = "CreateCustomEnvironmentRequestBranchMatcherType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCustomEnvironmentRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCustomEnvironmentRequestBranchMatcher))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCustomEnvironmentRequestBranchMatcherType), TypeInfoPropertyName = "UpdateCustomEnvironmentRequestBranchMatcherType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RemoveCustomEnvironmentRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseCreatedItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseCreatedItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseCreatedItemTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseCreatedItemTargetItem), TypeInfoPropertyName = "CreateSharedEnvVariableResponseCreatedItemTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseCreatedItemType), TypeInfoPropertyName = "CreateSharedEnvVariableResponseCreatedItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseFailedItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemError))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTargetItem>, global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTarget?>), TypeInfoPropertyName = "OneOfIListCreateSharedEnvVariableResponseFailedItemErrorTargetItemCreateSharedEnvVariableResponseFailedItemErrorTarget2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTargetItem), TypeInfoPropertyName = "CreateSharedEnvVariableResponseFailedItemErrorTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTarget), TypeInfoPropertyName = "CreateSharedEnvVariableResponseFailedItemErrorTarget2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>), TypeInfoPropertyName = "OneOfStringIListCreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item), TypeInfoPropertyName = "CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSharedEnvVariableResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListSharedEnvVariableResponseDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSharedEnvVariableResponseDataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListSharedEnvVariableResponseDataItemSecurityIssue>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSharedEnvVariableResponseDataItemSecurityIssue), TypeInfoPropertyName = "ListSharedEnvVariableResponseDataItemSecurityIssue2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListSharedEnvVariableResponseDataItemTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSharedEnvVariableResponseDataItemTargetItem), TypeInfoPropertyName = "ListSharedEnvVariableResponseDataItemTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSharedEnvVariableResponseDataItemType), TypeInfoPropertyName = "ListSharedEnvVariableResponseDataItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseFailedItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemError))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTargetItem>, global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTarget?>), TypeInfoPropertyName = "OneOfIListUpdateSharedEnvVariableResponseFailedItemErrorTargetItemUpdateSharedEnvVariableResponseFailedItemErrorTarget2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTargetItem), TypeInfoPropertyName = "UpdateSharedEnvVariableResponseFailedItemErrorTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTarget), TypeInfoPropertyName = "UpdateSharedEnvVariableResponseFailedItemErrorTarget2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>), TypeInfoPropertyName = "OneOfStringIListUpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item), TypeInfoPropertyName = "UpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseUpdatedItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseUpdatedItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemTargetItem), TypeInfoPropertyName = "UpdateSharedEnvVariableResponseUpdatedItemTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemType), TypeInfoPropertyName = "UpdateSharedEnvVariableResponseUpdatedItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteSharedEnvVariableResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemError))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTargetItem>, global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTarget?>), TypeInfoPropertyName = "OneOfIListDeleteSharedEnvVariableResponseFailedItemErrorTargetItemDeleteSharedEnvVariableResponseFailedItemErrorTarget2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTargetItem), TypeInfoPropertyName = "DeleteSharedEnvVariableResponseFailedItemErrorTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTarget), TypeInfoPropertyName = "DeleteSharedEnvVariableResponseFailedItemErrorTarget2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>), TypeInfoPropertyName = "OneOfStringIListDeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item), TypeInfoPropertyName = "DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSharedEnvVarResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetSharedEnvVarResponseTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSharedEnvVarResponseTargetItem), TypeInfoPropertyName = "GetSharedEnvVarResponseTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSharedEnvVarResponseType), TypeInfoPropertyName = "GetSharedEnvVarResponseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UnlinkSharedEnvVariableResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCustomEnvironmentResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCustomEnvironmentResponseBranchMatcher))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCustomEnvironmentResponseBranchMatcherType), TypeInfoPropertyName = "CreateCustomEnvironmentResponseBranchMatcherType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateCustomEnvironmentResponseDomain>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCustomEnvironmentResponseDomain))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateCustomEnvironmentResponseDomainVerificationItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCustomEnvironmentResponseDomainVerificationItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCustomEnvironmentResponseType), TypeInfoPropertyName = "CreateCustomEnvironmentResponseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseAccountLimit))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironment>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironment))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcher))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcherType), TypeInfoPropertyName = "GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcherType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomain>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomain))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomainVerificationItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomainVerificationItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentType), TypeInfoPropertyName = "GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCustomEnvironmentResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCustomEnvironmentResponseBranchMatcher))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCustomEnvironmentResponseBranchMatcherType), TypeInfoPropertyName = "GetCustomEnvironmentResponseBranchMatcherType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetCustomEnvironmentResponseDomain>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCustomEnvironmentResponseDomain))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetCustomEnvironmentResponseDomainVerificationItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCustomEnvironmentResponseDomainVerificationItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCustomEnvironmentResponseType), TypeInfoPropertyName = "GetCustomEnvironmentResponseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCustomEnvironmentResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCustomEnvironmentResponseBranchMatcher))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCustomEnvironmentResponseBranchMatcherType), TypeInfoPropertyName = "UpdateCustomEnvironmentResponseBranchMatcherType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateCustomEnvironmentResponseDomain>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCustomEnvironmentResponseDomain))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateCustomEnvironmentResponseDomainVerificationItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCustomEnvironmentResponseDomainVerificationItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCustomEnvironmentResponseType), TypeInfoPropertyName = "UpdateCustomEnvironmentResponseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RemoveCustomEnvironmentResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RemoveCustomEnvironmentResponseBranchMatcher))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RemoveCustomEnvironmentResponseBranchMatcherType), TypeInfoPropertyName = "RemoveCustomEnvironmentResponseBranchMatcherType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.RemoveCustomEnvironmentResponseDomain>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RemoveCustomEnvironmentResponseDomain))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.RemoveCustomEnvironmentResponseDomainVerificationItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RemoveCustomEnvironmentResponseDomainVerificationItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RemoveCustomEnvironmentResponseType), TypeInfoPropertyName = "RemoveCustomEnvironmentResponseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableRequestType?), TypeInfoPropertyName = "NullableCreateSharedEnvVariableRequestType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableRequestTargetItem?), TypeInfoPropertyName = "NullableCreateSharedEnvVariableRequestTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableRequestUpdatesTargetItem?), TypeInfoPropertyName = "NullableUpdateSharedEnvVariableRequestUpdatesTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableRequestUpdatesType?), TypeInfoPropertyName = "NullableUpdateSharedEnvVariableRequestUpdatesType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCustomEnvironmentRequestBranchMatcherType?), TypeInfoPropertyName = "NullableCreateCustomEnvironmentRequestBranchMatcherType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCustomEnvironmentRequestBranchMatcherType?), TypeInfoPropertyName = "NullableUpdateCustomEnvironmentRequestBranchMatcherType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseCreatedItemTargetItem?), TypeInfoPropertyName = "NullableCreateSharedEnvVariableResponseCreatedItemTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseCreatedItemType?), TypeInfoPropertyName = "NullableCreateSharedEnvVariableResponseCreatedItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTargetItem?), TypeInfoPropertyName = "NullableCreateSharedEnvVariableResponseFailedItemErrorTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTarget?), TypeInfoPropertyName = "NullableCreateSharedEnvVariableResponseFailedItemErrorTarget2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>?), TypeInfoPropertyName = "NullableOneOfStringIListCreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item?), TypeInfoPropertyName = "NullableCreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSharedEnvVariableResponseDataItemSecurityIssue?), TypeInfoPropertyName = "NullableListSharedEnvVariableResponseDataItemSecurityIssue2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSharedEnvVariableResponseDataItemTargetItem?), TypeInfoPropertyName = "NullableListSharedEnvVariableResponseDataItemTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListSharedEnvVariableResponseDataItemType?), TypeInfoPropertyName = "NullableListSharedEnvVariableResponseDataItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTargetItem?), TypeInfoPropertyName = "NullableUpdateSharedEnvVariableResponseFailedItemErrorTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTarget?), TypeInfoPropertyName = "NullableUpdateSharedEnvVariableResponseFailedItemErrorTarget2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>?), TypeInfoPropertyName = "NullableOneOfStringIListUpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item?), TypeInfoPropertyName = "NullableUpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemTargetItem?), TypeInfoPropertyName = "NullableUpdateSharedEnvVariableResponseUpdatedItemTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemType?), TypeInfoPropertyName = "NullableUpdateSharedEnvVariableResponseUpdatedItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTargetItem?), TypeInfoPropertyName = "NullableDeleteSharedEnvVariableResponseFailedItemErrorTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTarget?), TypeInfoPropertyName = "NullableDeleteSharedEnvVariableResponseFailedItemErrorTarget2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>?), TypeInfoPropertyName = "NullableOneOfStringIListDeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item?), TypeInfoPropertyName = "NullableDeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSharedEnvVarResponseTargetItem?), TypeInfoPropertyName = "NullableGetSharedEnvVarResponseTargetItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetSharedEnvVarResponseType?), TypeInfoPropertyName = "NullableGetSharedEnvVarResponseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCustomEnvironmentResponseBranchMatcherType?), TypeInfoPropertyName = "NullableCreateCustomEnvironmentResponseBranchMatcherType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateCustomEnvironmentResponseType?), TypeInfoPropertyName = "NullableCreateCustomEnvironmentResponseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcherType?), TypeInfoPropertyName = "NullableGetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcherType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentType?), TypeInfoPropertyName = "NullableGetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCustomEnvironmentResponseBranchMatcherType?), TypeInfoPropertyName = "NullableGetCustomEnvironmentResponseBranchMatcherType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetCustomEnvironmentResponseType?), TypeInfoPropertyName = "NullableGetCustomEnvironmentResponseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCustomEnvironmentResponseBranchMatcherType?), TypeInfoPropertyName = "NullableUpdateCustomEnvironmentResponseBranchMatcherType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateCustomEnvironmentResponseType?), TypeInfoPropertyName = "NullableUpdateCustomEnvironmentResponseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RemoveCustomEnvironmentResponseBranchMatcherType?), TypeInfoPropertyName = "NullableRemoveCustomEnvironmentResponseBranchMatcherType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RemoveCustomEnvironmentResponseType?), TypeInfoPropertyName = "NullableRemoveCustomEnvironmentResponseType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateSharedEnvVariableRequestEv>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateSharedEnvVariableRequestTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateSharedEnvVariableRequestUpdatesTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateSharedEnvVariableResponseCreatedItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateSharedEnvVariableResponseCreatedItemTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateSharedEnvVariableResponseFailedItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTargetItem>, global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTarget?>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::System.Collections.Generic.List<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ListSharedEnvVariableResponseDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ListSharedEnvVariableResponseDataItemSecurityIssue>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ListSharedEnvVariableResponseDataItemTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateSharedEnvVariableResponseFailedItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTargetItem>, global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTarget?>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::System.Collections.Generic.List<global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateSharedEnvVariableResponseUpdatedItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.DeleteSharedEnvVariableResponseFailedItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTargetItem>, global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTarget?>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::System.Collections.Generic.List<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetSharedEnvVarResponseTargetItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateCustomEnvironmentResponseDomain>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateCustomEnvironmentResponseDomainVerificationItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironment>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomain>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomainVerificationItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetCustomEnvironmentResponseDomain>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetCustomEnvironmentResponseDomainVerificationItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateCustomEnvironmentResponseDomain>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateCustomEnvironmentResponseDomainVerificationItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.RemoveCustomEnvironmentResponseDomain>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.RemoveCustomEnvironmentResponseDomainVerificationItem>))]
+    internal sealed partial class EnvironmentSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
+    ///
+    /// </summary>
+    public sealed partial class EnvironmentSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = new LazyChunkResolver();
+
+
+        private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static EnvironmentSourceGenerationContext Default { get; } = new(DefaultOptions);
+
+        private EnvironmentSourceGenerationContext(global::System.Text.Json.JsonSerializerOptions options)
+            : base(options)
+        {
+        }
+
+        /// <inheritdoc />
+        protected override global::System.Text.Json.JsonSerializerOptions? GeneratedSerializerOptions => DefaultOptions;
+
+        /// <inheritdoc />
+        public override global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(global::System.Type type)
+        {
+            return Resolver.GetTypeInfo(type, Options);
+        }
+
+        /// <summary>
+        /// Adds this package's converters to <paramref name="options"/>.
+        /// </summary>
+        /// <remarks>
+        /// A converter has to be on the options a chained resolver builds its JsonTypeInfo against,
+        /// and a context resolves types from every package below it. Each package contributes only
+        /// what it owns and calls down the chain for the rest, so the family's converter table is
+        /// written once rather than copied into all of them.
+        /// </remarks>
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
+        {
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<int?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, object, global::System.Collections.Generic.IList<object>, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<string, double?, bool?, object, global::System.Collections.Generic.IList<object>, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<string, double?, bool?, object, global::System.Collections.Generic.IList<object>, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<object, int?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?, global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<double>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<string>, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTargetItem>, global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTarget?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTargetItem>, global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTarget?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTargetItem>, global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTarget?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, object, global::System.Collections.Generic.IList<object>, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, object, global::System.Collections.Generic.IList<object>, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, object, global::System.Collections.Generic.IList<object>, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<double>, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<double>, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<double>, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.UnixTimestampJsonConverter());
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
+        }
+
+        private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
+        {
+            var options = new global::System.Text.Json.JsonSerializerOptions
+            {
+                DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+                TypeInfoResolver = Resolver,
+            };
+            AddConverters(options);
+
+            return options;
+        }
+
+
+        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
+        {
+            public override bool CanConvert(global::System.Type typeToConvert)
+            {
+                return
+                    typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableRequestType)
+
+                    || typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableRequestType?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableRequestTargetItem)
+
+                    || typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableRequestTargetItem?)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableRequestUpdatesTargetItem)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableRequestUpdatesTargetItem?)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableRequestUpdatesType)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableRequestUpdatesType?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateCustomEnvironmentRequestBranchMatcherType)
+
+                    || typeToConvert == typeof(global::Vercel.CreateCustomEnvironmentRequestBranchMatcherType?)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateCustomEnvironmentRequestBranchMatcherType)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateCustomEnvironmentRequestBranchMatcherType?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseCreatedItemTargetItem)
+
+                    || typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseCreatedItemTargetItem?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseCreatedItemType)
+
+                    || typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseCreatedItemType?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTargetItem)
+
+                    || typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTargetItem?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTarget)
+
+                    || typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTarget?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item)
+
+                    || typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item?)
+
+                    || typeToConvert == typeof(global::Vercel.ListSharedEnvVariableResponseDataItemSecurityIssue)
+
+                    || typeToConvert == typeof(global::Vercel.ListSharedEnvVariableResponseDataItemSecurityIssue?)
+
+                    || typeToConvert == typeof(global::Vercel.ListSharedEnvVariableResponseDataItemTargetItem)
+
+                    || typeToConvert == typeof(global::Vercel.ListSharedEnvVariableResponseDataItemTargetItem?)
+
+                    || typeToConvert == typeof(global::Vercel.ListSharedEnvVariableResponseDataItemType)
+
+                    || typeToConvert == typeof(global::Vercel.ListSharedEnvVariableResponseDataItemType?)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTargetItem)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTargetItem?)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTarget)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTarget?)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item?)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemTargetItem)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemTargetItem?)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemType)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemType?)
+
+                    || typeToConvert == typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTargetItem)
+
+                    || typeToConvert == typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTargetItem?)
+
+                    || typeToConvert == typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTarget)
+
+                    || typeToConvert == typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTarget?)
+
+                    || typeToConvert == typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item)
+
+                    || typeToConvert == typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item?)
+
+                    || typeToConvert == typeof(global::Vercel.GetSharedEnvVarResponseTargetItem)
+
+                    || typeToConvert == typeof(global::Vercel.GetSharedEnvVarResponseTargetItem?)
+
+                    || typeToConvert == typeof(global::Vercel.GetSharedEnvVarResponseType)
+
+                    || typeToConvert == typeof(global::Vercel.GetSharedEnvVarResponseType?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateCustomEnvironmentResponseBranchMatcherType)
+
+                    || typeToConvert == typeof(global::Vercel.CreateCustomEnvironmentResponseBranchMatcherType?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateCustomEnvironmentResponseType)
+
+                    || typeToConvert == typeof(global::Vercel.CreateCustomEnvironmentResponseType?)
+
+                    || typeToConvert == typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcherType)
+
+                    || typeToConvert == typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcherType?)
+
+                    || typeToConvert == typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentType)
+
+                    || typeToConvert == typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentType?)
+
+                    || typeToConvert == typeof(global::Vercel.GetCustomEnvironmentResponseBranchMatcherType)
+
+                    || typeToConvert == typeof(global::Vercel.GetCustomEnvironmentResponseBranchMatcherType?)
+
+                    || typeToConvert == typeof(global::Vercel.GetCustomEnvironmentResponseType)
+
+                    || typeToConvert == typeof(global::Vercel.GetCustomEnvironmentResponseType?)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateCustomEnvironmentResponseBranchMatcherType)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateCustomEnvironmentResponseBranchMatcherType?)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateCustomEnvironmentResponseType)
+
+                    || typeToConvert == typeof(global::Vercel.UpdateCustomEnvironmentResponseType?)
+
+                    || typeToConvert == typeof(global::Vercel.RemoveCustomEnvironmentResponseBranchMatcherType)
+
+                    || typeToConvert == typeof(global::Vercel.RemoveCustomEnvironmentResponseBranchMatcherType?)
+
+                    || typeToConvert == typeof(global::Vercel.RemoveCustomEnvironmentResponseType)
+
+                    || typeToConvert == typeof(global::Vercel.RemoveCustomEnvironmentResponseType?);
+            }
+
+            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
+                global::System.Type typeToConvert,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                if (typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableRequestType))
+                {
+                    return new global::Vercel.JsonConverters.CreateSharedEnvVariableRequestTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableRequestType?))
+                {
+                    return new global::Vercel.JsonConverters.CreateSharedEnvVariableRequestTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableRequestTargetItem))
+                {
+                    return new global::Vercel.JsonConverters.CreateSharedEnvVariableRequestTargetItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableRequestTargetItem?))
+                {
+                    return new global::Vercel.JsonConverters.CreateSharedEnvVariableRequestTargetItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableRequestUpdatesTargetItem))
+                {
+                    return new global::Vercel.JsonConverters.UpdateSharedEnvVariableRequestUpdatesTargetItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableRequestUpdatesTargetItem?))
+                {
+                    return new global::Vercel.JsonConverters.UpdateSharedEnvVariableRequestUpdatesTargetItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableRequestUpdatesType))
+                {
+                    return new global::Vercel.JsonConverters.UpdateSharedEnvVariableRequestUpdatesTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableRequestUpdatesType?))
+                {
+                    return new global::Vercel.JsonConverters.UpdateSharedEnvVariableRequestUpdatesTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateCustomEnvironmentRequestBranchMatcherType))
+                {
+                    return new global::Vercel.JsonConverters.CreateCustomEnvironmentRequestBranchMatcherTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateCustomEnvironmentRequestBranchMatcherType?))
+                {
+                    return new global::Vercel.JsonConverters.CreateCustomEnvironmentRequestBranchMatcherTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateCustomEnvironmentRequestBranchMatcherType))
+                {
+                    return new global::Vercel.JsonConverters.UpdateCustomEnvironmentRequestBranchMatcherTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateCustomEnvironmentRequestBranchMatcherType?))
+                {
+                    return new global::Vercel.JsonConverters.UpdateCustomEnvironmentRequestBranchMatcherTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseCreatedItemTargetItem))
+                {
+                    return new global::Vercel.JsonConverters.CreateSharedEnvVariableResponseCreatedItemTargetItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseCreatedItemTargetItem?))
+                {
+                    return new global::Vercel.JsonConverters.CreateSharedEnvVariableResponseCreatedItemTargetItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseCreatedItemType))
+                {
+                    return new global::Vercel.JsonConverters.CreateSharedEnvVariableResponseCreatedItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseCreatedItemType?))
+                {
+                    return new global::Vercel.JsonConverters.CreateSharedEnvVariableResponseCreatedItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTargetItem))
+                {
+                    return new global::Vercel.JsonConverters.CreateSharedEnvVariableResponseFailedItemErrorTargetItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTargetItem?))
+                {
+                    return new global::Vercel.JsonConverters.CreateSharedEnvVariableResponseFailedItemErrorTargetItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTarget))
+                {
+                    return new global::Vercel.JsonConverters.CreateSharedEnvVariableResponseFailedItemErrorTargetJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorTarget?))
+                {
+                    return new global::Vercel.JsonConverters.CreateSharedEnvVariableResponseFailedItemErrorTargetNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item))
+                {
+                    return new global::Vercel.JsonConverters.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2ItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2Item?))
+                {
+                    return new global::Vercel.JsonConverters.CreateSharedEnvVariableResponseFailedItemErrorValueVariant2ItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ListSharedEnvVariableResponseDataItemSecurityIssue))
+                {
+                    return new global::Vercel.JsonConverters.ListSharedEnvVariableResponseDataItemSecurityIssueJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ListSharedEnvVariableResponseDataItemSecurityIssue?))
+                {
+                    return new global::Vercel.JsonConverters.ListSharedEnvVariableResponseDataItemSecurityIssueNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ListSharedEnvVariableResponseDataItemTargetItem))
+                {
+                    return new global::Vercel.JsonConverters.ListSharedEnvVariableResponseDataItemTargetItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ListSharedEnvVariableResponseDataItemTargetItem?))
+                {
+                    return new global::Vercel.JsonConverters.ListSharedEnvVariableResponseDataItemTargetItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ListSharedEnvVariableResponseDataItemType))
+                {
+                    return new global::Vercel.JsonConverters.ListSharedEnvVariableResponseDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ListSharedEnvVariableResponseDataItemType?))
+                {
+                    return new global::Vercel.JsonConverters.ListSharedEnvVariableResponseDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTargetItem))
+                {
+                    return new global::Vercel.JsonConverters.UpdateSharedEnvVariableResponseFailedItemErrorTargetItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTargetItem?))
+                {
+                    return new global::Vercel.JsonConverters.UpdateSharedEnvVariableResponseFailedItemErrorTargetItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTarget))
+                {
+                    return new global::Vercel.JsonConverters.UpdateSharedEnvVariableResponseFailedItemErrorTargetJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorTarget?))
+                {
+                    return new global::Vercel.JsonConverters.UpdateSharedEnvVariableResponseFailedItemErrorTargetNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item))
+                {
+                    return new global::Vercel.JsonConverters.UpdateSharedEnvVariableResponseFailedItemErrorValueVariant2ItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseFailedItemErrorValueVariant2Item?))
+                {
+                    return new global::Vercel.JsonConverters.UpdateSharedEnvVariableResponseFailedItemErrorValueVariant2ItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemTargetItem))
+                {
+                    return new global::Vercel.JsonConverters.UpdateSharedEnvVariableResponseUpdatedItemTargetItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemTargetItem?))
+                {
+                    return new global::Vercel.JsonConverters.UpdateSharedEnvVariableResponseUpdatedItemTargetItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemType))
+                {
+                    return new global::Vercel.JsonConverters.UpdateSharedEnvVariableResponseUpdatedItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateSharedEnvVariableResponseUpdatedItemType?))
+                {
+                    return new global::Vercel.JsonConverters.UpdateSharedEnvVariableResponseUpdatedItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTargetItem))
+                {
+                    return new global::Vercel.JsonConverters.DeleteSharedEnvVariableResponseFailedItemErrorTargetItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTargetItem?))
+                {
+                    return new global::Vercel.JsonConverters.DeleteSharedEnvVariableResponseFailedItemErrorTargetItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTarget))
+                {
+                    return new global::Vercel.JsonConverters.DeleteSharedEnvVariableResponseFailedItemErrorTargetJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorTarget?))
+                {
+                    return new global::Vercel.JsonConverters.DeleteSharedEnvVariableResponseFailedItemErrorTargetNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item))
+                {
+                    return new global::Vercel.JsonConverters.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2ItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2Item?))
+                {
+                    return new global::Vercel.JsonConverters.DeleteSharedEnvVariableResponseFailedItemErrorValueVariant2ItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetSharedEnvVarResponseTargetItem))
+                {
+                    return new global::Vercel.JsonConverters.GetSharedEnvVarResponseTargetItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetSharedEnvVarResponseTargetItem?))
+                {
+                    return new global::Vercel.JsonConverters.GetSharedEnvVarResponseTargetItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetSharedEnvVarResponseType))
+                {
+                    return new global::Vercel.JsonConverters.GetSharedEnvVarResponseTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetSharedEnvVarResponseType?))
+                {
+                    return new global::Vercel.JsonConverters.GetSharedEnvVarResponseTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateCustomEnvironmentResponseBranchMatcherType))
+                {
+                    return new global::Vercel.JsonConverters.CreateCustomEnvironmentResponseBranchMatcherTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateCustomEnvironmentResponseBranchMatcherType?))
+                {
+                    return new global::Vercel.JsonConverters.CreateCustomEnvironmentResponseBranchMatcherTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateCustomEnvironmentResponseType))
+                {
+                    return new global::Vercel.JsonConverters.CreateCustomEnvironmentResponseTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateCustomEnvironmentResponseType?))
+                {
+                    return new global::Vercel.JsonConverters.CreateCustomEnvironmentResponseTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcherType))
+                {
+                    return new global::Vercel.JsonConverters.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcherTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcherType?))
+                {
+                    return new global::Vercel.JsonConverters.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcherTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentType))
+                {
+                    return new global::Vercel.JsonConverters.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentType?))
+                {
+                    return new global::Vercel.JsonConverters.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetCustomEnvironmentResponseBranchMatcherType))
+                {
+                    return new global::Vercel.JsonConverters.GetCustomEnvironmentResponseBranchMatcherTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetCustomEnvironmentResponseBranchMatcherType?))
+                {
+                    return new global::Vercel.JsonConverters.GetCustomEnvironmentResponseBranchMatcherTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetCustomEnvironmentResponseType))
+                {
+                    return new global::Vercel.JsonConverters.GetCustomEnvironmentResponseTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetCustomEnvironmentResponseType?))
+                {
+                    return new global::Vercel.JsonConverters.GetCustomEnvironmentResponseTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateCustomEnvironmentResponseBranchMatcherType))
+                {
+                    return new global::Vercel.JsonConverters.UpdateCustomEnvironmentResponseBranchMatcherTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateCustomEnvironmentResponseBranchMatcherType?))
+                {
+                    return new global::Vercel.JsonConverters.UpdateCustomEnvironmentResponseBranchMatcherTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateCustomEnvironmentResponseType))
+                {
+                    return new global::Vercel.JsonConverters.UpdateCustomEnvironmentResponseTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UpdateCustomEnvironmentResponseType?))
+                {
+                    return new global::Vercel.JsonConverters.UpdateCustomEnvironmentResponseTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.RemoveCustomEnvironmentResponseBranchMatcherType))
+                {
+                    return new global::Vercel.JsonConverters.RemoveCustomEnvironmentResponseBranchMatcherTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.RemoveCustomEnvironmentResponseBranchMatcherType?))
+                {
+                    return new global::Vercel.JsonConverters.RemoveCustomEnvironmentResponseBranchMatcherTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.RemoveCustomEnvironmentResponseType))
+                {
+                    return new global::Vercel.JsonConverters.RemoveCustomEnvironmentResponseTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.RemoveCustomEnvironmentResponseType?))
+                {
+                    return new global::Vercel.JsonConverters.RemoveCustomEnvironmentResponseTypeNullableJsonConverter();
+                }
+                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
+            }
+        }
+
+        private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
+        {
+            private readonly object _gate = new();
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[1];
+
+            public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
+                global::System.Type type,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                for (var index = 0; index < _resolvers.Length; index++)
+                {
+                    var typeInfo = GetResolver(index).GetTypeInfo(type, options);
+                    if (typeInfo is not null)
+                    {
+                        return typeInfo;
+                    }
+                }
+
+                return null;
+            }
+
+            private global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver GetResolver(int index)
+            {
+                var resolver = global::System.Threading.Volatile.Read(ref _resolvers[index]);
+                if (resolver is not null)
+                {
+                    return resolver;
+                }
+
+                lock (_gate)
+                {
+                    return _resolvers[index] ??= CreateResolver(index);
+                }
+            }
+
+            private static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver CreateResolver(int index)
+            {
+                return index switch
+                {
+                    0 => new EnvironmentSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
+                };
+            }
+        }
+    }
+}

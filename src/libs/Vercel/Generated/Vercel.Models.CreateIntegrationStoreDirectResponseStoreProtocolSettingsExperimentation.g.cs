@@ -11,14 +11,20 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigId")]
+        public string? EdgeConfigId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigSyncingEnabled")]
         public bool? EdgeConfigSyncingEnabled { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigId")]
-        public string? EdgeConfigId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigTokenId")]
+        public string? EdgeConfigTokenId { get; set; }
 
         /// <summary>
         ///
@@ -33,12 +39,6 @@ namespace Vercel
         public bool? GlobalConfigSyncingEnabled { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigTokenId")]
-        public string? EdgeConfigTokenId { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -47,26 +47,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation" /> class.
         /// </summary>
-        /// <param name="edgeConfigSyncingEnabled"></param>
         /// <param name="edgeConfigId"></param>
+        /// <param name="edgeConfigSyncingEnabled"></param>
+        /// <param name="edgeConfigTokenId"></param>
         /// <param name="globalConfigId"></param>
         /// <param name="globalConfigSyncingEnabled"></param>
-        /// <param name="edgeConfigTokenId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation(
-            bool? edgeConfigSyncingEnabled,
             string? edgeConfigId,
+            bool? edgeConfigSyncingEnabled,
+            string? edgeConfigTokenId,
             string? globalConfigId,
-            bool? globalConfigSyncingEnabled,
-            string? edgeConfigTokenId)
+            bool? globalConfigSyncingEnabled)
         {
-            this.EdgeConfigSyncingEnabled = edgeConfigSyncingEnabled;
             this.EdgeConfigId = edgeConfigId;
+            this.EdgeConfigSyncingEnabled = edgeConfigSyncingEnabled;
+            this.EdgeConfigTokenId = edgeConfigTokenId;
             this.GlobalConfigId = globalConfigId;
             this.GlobalConfigSyncingEnabled = globalConfigSyncingEnabled;
-            this.EdgeConfigTokenId = edgeConfigTokenId;
         }
 
         /// <summary>

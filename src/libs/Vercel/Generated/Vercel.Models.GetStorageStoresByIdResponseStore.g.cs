@@ -11,6 +11,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectFilter")]
+        public global::Vercel.GetStorageStoresByIdResponseStoreProjectFilter? ProjectFilter { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectsMetadata")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItem> ProjectsMetadata { get; set; }
@@ -18,8 +24,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectFilter")]
-        public global::Vercel.GetStorageStoresByIdResponseStoreProjectFilter? ProjectFilter { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetStorageStoresByIdResponseStoreStatusJsonConverter))]
+        public global::Vercel.GetStorageStoresByIdResponseStoreStatus? Status { get; set; }
 
         /// <summary>
         ///
@@ -35,13 +42,6 @@ namespace Vercel
         public required bool UsageQuotaExceeded { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetStorageStoresByIdResponseStoreStatusJsonConverter))]
-        public global::Vercel.GetStorageStoresByIdResponseStoreStatus? Status { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -53,8 +53,8 @@ namespace Vercel
         /// <param name="projectsMetadata"></param>
         /// <param name="usageQuotaExceeded"></param>
         /// <param name="projectFilter"></param>
-        /// <param name="totalConnectedProjects"></param>
         /// <param name="status"></param>
+        /// <param name="totalConnectedProjects"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -62,14 +62,14 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItem> projectsMetadata,
             bool usageQuotaExceeded,
             global::Vercel.GetStorageStoresByIdResponseStoreProjectFilter? projectFilter,
-            double? totalConnectedProjects,
-            global::Vercel.GetStorageStoresByIdResponseStoreStatus? status)
+            global::Vercel.GetStorageStoresByIdResponseStoreStatus? status,
+            double? totalConnectedProjects)
         {
-            this.ProjectsMetadata = projectsMetadata ?? throw new global::System.ArgumentNullException(nameof(projectsMetadata));
             this.ProjectFilter = projectFilter;
+            this.ProjectsMetadata = projectsMetadata ?? throw new global::System.ArgumentNullException(nameof(projectsMetadata));
+            this.Status = status;
             this.TotalConnectedProjects = totalConnectedProjects;
             this.UsageQuotaExceeded = usageQuotaExceeded;
-            this.Status = status;
         }
 
         /// <summary>

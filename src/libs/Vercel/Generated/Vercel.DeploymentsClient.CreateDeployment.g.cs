@@ -865,6 +865,9 @@ namespace Vercel
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
+        /// <param name="buildMachine">
+        /// Selects a custom build machine for this deployment without changing project settings.
+        /// </param>
         /// <param name="customEnvironmentSlugOrId">
         /// The slug or ID of a custom environment to deploy to, overriding the default target environment. When omitted, the deployment targets the environment inferred from the branch (production or preview).<br/>
         /// Example: staging
@@ -920,6 +923,7 @@ namespace Vercel
             global::Vercel.CreateDeploymentSkipAutoDetectionConfirmation? skipAutoDetectionConfirmation = default,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.CreateDeploymentRequestBuildMachine? buildMachine = default,
             string? customEnvironmentSlugOrId = default,
             string? deploymentId = default,
             global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.CreateDeploymentRequestFileInlinedFile, global::Vercel.CreateDeploymentRequestFileUploadedFile>>? files = default,
@@ -937,6 +941,7 @@ namespace Vercel
         {
             var __request = new global::Vercel.CreateDeploymentRequest
             {
+                BuildMachine = buildMachine,
                 CustomEnvironmentSlugOrId = customEnvironmentSlugOrId,
                 DeploymentId = deploymentId,
                 Files = files,

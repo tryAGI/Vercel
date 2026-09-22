@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("CLS")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.CreateCheckResponseOutputMetricsCls Cls { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("FCP")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.CreateCheckResponseOutputMetricsFcp Fcp { get; set; }
@@ -21,13 +28,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("LCP")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.CreateCheckResponseOutputMetricsLcp Lcp { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("CLS")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.CreateCheckResponseOutputMetricsCls Cls { get; set; }
 
         /// <summary>
         ///
@@ -51,24 +51,24 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateCheckResponseOutputMetrics" /> class.
         /// </summary>
+        /// <param name="cls"></param>
         /// <param name="fcp"></param>
         /// <param name="lcp"></param>
-        /// <param name="cls"></param>
         /// <param name="tbt"></param>
         /// <param name="virtualExperienceScore"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateCheckResponseOutputMetrics(
+            global::Vercel.CreateCheckResponseOutputMetricsCls cls,
             global::Vercel.CreateCheckResponseOutputMetricsFcp fcp,
             global::Vercel.CreateCheckResponseOutputMetricsLcp lcp,
-            global::Vercel.CreateCheckResponseOutputMetricsCls cls,
             global::Vercel.CreateCheckResponseOutputMetricsTbt tbt,
             global::Vercel.CreateCheckResponseOutputMetricsVirtualExperienceScore? virtualExperienceScore)
         {
+            this.Cls = cls ?? throw new global::System.ArgumentNullException(nameof(cls));
             this.Fcp = fcp ?? throw new global::System.ArgumentNullException(nameof(fcp));
             this.Lcp = lcp ?? throw new global::System.ArgumentNullException(nameof(lcp));
-            this.Cls = cls ?? throw new global::System.ArgumentNullException(nameof(cls));
             this.Tbt = tbt ?? throw new global::System.ArgumentNullException(nameof(tbt));
             this.VirtualExperienceScore = virtualExperienceScore;
         }

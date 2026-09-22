@@ -19,7 +19,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("envVarEnvironments")]
-        public global::System.Collections.Generic.IList<global::Vercel.ConnectIntegrationResourceToProjectRequestEnvVarEnvironment>? EnvVarEnvironments { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.EnvVarEnvironments?, string>>? EnvVarEnvironments { get; set; }
 
         /// <summary>
         ///
@@ -44,7 +44,7 @@ namespace Vercel
 #endif
         public ConnectIntegrationResourceToProjectRequest(
             string projectId,
-            global::System.Collections.Generic.IList<global::Vercel.ConnectIntegrationResourceToProjectRequestEnvVarEnvironment>? envVarEnvironments,
+            global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.EnvVarEnvironments?, string>>? envVarEnvironments,
             bool? makeEnvVarsSensitive)
         {
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));

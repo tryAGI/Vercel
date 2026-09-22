@@ -9,11 +9,16 @@ namespace Vercel
     public sealed partial class AddRouteResponseRoute
     {
         /// <summary>
-        ///
+        /// Optional description of what the routing rule does.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("routeType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AddRouteResponseRouteRouteTypeJsonConverter))]
-        public global::Vercel.AddRouteResponseRouteRouteType? RouteType { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
+        /// Whether the routing rule is enabled. Defaults to true.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
+        public bool? Enabled { get; set; }
 
         /// <summary>
         /// Unique identifier for the routing rule.
@@ -30,22 +35,16 @@ namespace Vercel
         public required string Name { get; set; }
 
         /// <summary>
-        /// Optional description of what the routing rule does.
+        /// Original destination provided by user.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
-        public string? Description { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("rawDest")]
+        public string? RawDest { get; set; }
 
         /// <summary>
-        /// Whether the routing rule is enabled. Defaults to true.
+        /// Original source pattern provided by user (path-to-regexp or regex). Used to display the user's input in API responses.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
-        public bool? Enabled { get; set; }
-
-        /// <summary>
-        /// Whether this route is new and not yet published to production. Set to true only when a route is first created via add-route. Cleared (set to false) when a version is promoted to production.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("staged")]
-        public bool? Staged { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("rawSrc")]
+        public string? RawSrc { get; set; }
 
         /// <summary>
         /// The route definition from @vercel/routing-utils.
@@ -55,16 +54,11 @@ namespace Vercel
         public required global::Vercel.AddRouteResponseRouteRoute Route { get; set; }
 
         /// <summary>
-        /// Original source pattern provided by user (path-to-regexp or regex). Used to display the user's input in API responses.
+        ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rawSrc")]
-        public string? RawSrc { get; set; }
-
-        /// <summary>
-        /// Original destination provided by user.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("rawDest")]
-        public string? RawDest { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("routeType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AddRouteResponseRouteRouteTypeJsonConverter))]
+        public global::Vercel.AddRouteResponseRouteRouteType? RouteType { get; set; }
 
         /// <summary>
         /// The syntax type of the source pattern. Determines how the pattern is compiled to regex.
@@ -72,6 +66,12 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("srcSyntax")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AddRouteResponseRouteSrcSyntaxJsonConverter))]
         public global::Vercel.AddRouteResponseRouteSrcSyntax? SrcSyntax { get; set; }
+
+        /// <summary>
+        /// Whether this route is new and not yet published to production. Set to true only when a route is first created via add-route. Cleared (set to false) when a version is promoted to production.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("staged")]
+        public bool? Staged { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -91,24 +91,24 @@ namespace Vercel
         /// <param name="route">
         /// The route definition from @vercel/routing-utils.
         /// </param>
-        /// <param name="routeType"></param>
         /// <param name="description">
         /// Optional description of what the routing rule does.
         /// </param>
         /// <param name="enabled">
         /// Whether the routing rule is enabled. Defaults to true.
         /// </param>
-        /// <param name="staged">
-        /// Whether this route is new and not yet published to production. Set to true only when a route is first created via add-route. Cleared (set to false) when a version is promoted to production.
+        /// <param name="rawDest">
+        /// Original destination provided by user.
         /// </param>
         /// <param name="rawSrc">
         /// Original source pattern provided by user (path-to-regexp or regex). Used to display the user's input in API responses.
         /// </param>
-        /// <param name="rawDest">
-        /// Original destination provided by user.
-        /// </param>
+        /// <param name="routeType"></param>
         /// <param name="srcSyntax">
         /// The syntax type of the source pattern. Determines how the pattern is compiled to regex.
+        /// </param>
+        /// <param name="staged">
+        /// Whether this route is new and not yet published to production. Set to true only when a route is first created via add-route. Cleared (set to false) when a version is promoted to production.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -117,24 +117,24 @@ namespace Vercel
             string id,
             string name,
             global::Vercel.AddRouteResponseRouteRoute route,
-            global::Vercel.AddRouteResponseRouteRouteType? routeType,
             string? description,
             bool? enabled,
-            bool? staged,
-            string? rawSrc,
             string? rawDest,
-            global::Vercel.AddRouteResponseRouteSrcSyntax? srcSyntax)
+            string? rawSrc,
+            global::Vercel.AddRouteResponseRouteRouteType? routeType,
+            global::Vercel.AddRouteResponseRouteSrcSyntax? srcSyntax,
+            bool? staged)
         {
-            this.RouteType = routeType;
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.Description = description;
             this.Enabled = enabled;
-            this.Staged = staged;
-            this.Route = route ?? throw new global::System.ArgumentNullException(nameof(route));
-            this.RawSrc = rawSrc;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.RawDest = rawDest;
+            this.RawSrc = rawSrc;
+            this.Route = route ?? throw new global::System.ArgumentNullException(nameof(route));
+            this.RouteType = routeType;
             this.SrcSyntax = srcSyntax;
+            this.Staged = staged;
         }
 
         /// <summary>

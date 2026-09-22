@@ -9,17 +9,17 @@ namespace Vercel
     public sealed partial class VcrRepositoryPermissionList
     {
         /// <summary>
+        /// Cursor to fetch the next page of results, when more are available.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("nextCursor")]
+        public string? NextCursor { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("permissions")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Vercel.VcrRepositoryPermission> Permissions { get; set; }
-
-        /// <summary>
-        /// Cursor to fetch the next page of results, when more are available.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("nextCursor")]
-        public string? NextCursor { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -41,8 +41,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.VcrRepositoryPermission> permissions,
             string? nextCursor)
         {
-            this.Permissions = permissions ?? throw new global::System.ArgumentNullException(nameof(permissions));
             this.NextCursor = nextCursor;
+            this.Permissions = permissions ?? throw new global::System.ArgumentNullException(nameof(permissions));
         }
 
         /// <summary>

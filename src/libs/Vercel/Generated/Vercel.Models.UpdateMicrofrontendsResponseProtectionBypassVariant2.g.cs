@@ -23,13 +23,6 @@ namespace Vercel
         public required string CreatedBy { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateMicrofrontendsResponseProtectionBypassVariant2ScopeJsonConverter))]
-        public global::Vercel.UpdateMicrofrontendsResponseProtectionBypassVariant2Scope Scope { get; set; }
-
-        /// <summary>
         /// When there was only one bypass, it was automatically set as an env var on deployments. With multiple bypasses, there is always one bypass that is selected as the default, and gets set as an env var on deployments. As this is a new field, undefined means that the bypass is the env var. If there are any automation bypasses, exactly one must be the env var.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isEnvVar")]
@@ -42,6 +35,13 @@ namespace Vercel
         public string? Note { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("scope")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateMicrofrontendsResponseProtectionBypassVariant2ScopeJsonConverter))]
+        public global::Vercel.UpdateMicrofrontendsResponseProtectionBypassVariant2Scope Scope { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -52,28 +52,28 @@ namespace Vercel
         /// </summary>
         /// <param name="createdAt"></param>
         /// <param name="createdBy"></param>
-        /// <param name="scope"></param>
         /// <param name="isEnvVar">
         /// When there was only one bypass, it was automatically set as an env var on deployments. With multiple bypasses, there is always one bypass that is selected as the default, and gets set as an env var on deployments. As this is a new field, undefined means that the bypass is the env var. If there are any automation bypasses, exactly one must be the env var.
         /// </param>
         /// <param name="note">
         /// Optional note about the bypass to be displayed in the UI
         /// </param>
+        /// <param name="scope"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateMicrofrontendsResponseProtectionBypassVariant2(
             double createdAt,
             string createdBy,
-            global::Vercel.UpdateMicrofrontendsResponseProtectionBypassVariant2Scope scope,
             bool? isEnvVar,
-            string? note)
+            string? note,
+            global::Vercel.UpdateMicrofrontendsResponseProtectionBypassVariant2Scope scope)
         {
             this.CreatedAt = createdAt;
             this.CreatedBy = createdBy ?? throw new global::System.ArgumentNullException(nameof(createdBy));
-            this.Scope = scope;
             this.IsEnvVar = isEnvVar;
             this.Note = note;
+            this.Scope = scope;
         }
 
         /// <summary>

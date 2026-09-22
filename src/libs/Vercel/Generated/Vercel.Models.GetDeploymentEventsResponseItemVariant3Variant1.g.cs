@@ -11,14 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentEventsResponseItemVariant3Variant1TypeJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetDeploymentEventsResponseItemVariant3Variant1Type Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("created")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Created { get; set; }
@@ -31,6 +23,14 @@ namespace Vercel
         public required global::Vercel.GetDeploymentEventsResponseItemVariant3Variant1Payload Payload { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentEventsResponseItemVariant3Variant1TypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetDeploymentEventsResponseItemVariant3Variant1Type Type { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -39,20 +39,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDeploymentEventsResponseItemVariant3Variant1" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="created"></param>
         /// <param name="payload"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentEventsResponseItemVariant3Variant1(
-            global::Vercel.GetDeploymentEventsResponseItemVariant3Variant1Type type,
             double created,
-            global::Vercel.GetDeploymentEventsResponseItemVariant3Variant1Payload payload)
+            global::Vercel.GetDeploymentEventsResponseItemVariant3Variant1Payload payload,
+            global::Vercel.GetDeploymentEventsResponseItemVariant3Variant1Type type)
         {
-            this.Type = type;
             this.Created = created;
             this.Payload = payload ?? throw new global::System.ArgumentNullException(nameof(payload));
+            this.Type = type;
         }
 
         /// <summary>

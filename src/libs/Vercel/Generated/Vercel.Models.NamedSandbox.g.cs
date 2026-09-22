@@ -9,6 +9,87 @@ namespace Vercel
     public sealed partial class NamedSandbox
     {
         /// <summary>
+        /// CPU architecture of the sandbox. This value does not change.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("architecture")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.NamedSandboxArchitectureJsonConverter))]
+        public global::Vercel.NamedSandboxArchitecture? Architecture { get; set; }
+
+        /// <summary>
+        /// The time when the named sandbox was created, in milliseconds since the epoch.<br/>
+        /// Example: 1750344501629L
+        /// </summary>
+        /// <example>1750344501629L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
+
+        /// <summary>
+        /// Current session ID the sandbox is pointing to.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("currentSessionId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string CurrentSessionId { get; set; }
+
+        /// <summary>
+        /// Current snapshot ID that the named sandbox is pointing to.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("currentSnapshotId")]
+        public string? CurrentSnapshotId { get; set; }
+
+        /// <summary>
+        /// The working directory of the sandbox.<br/>
+        /// Example: /vercel/sandbox
+        /// </summary>
+        /// <example>/vercel/sandbox</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("cwd")]
+        public string? Cwd { get; set; }
+
+        /// <summary>
+        /// The time at which the currently running sandbox will time out, in milliseconds since the epoch. Only present while a session is running.<br/>
+        /// Example: 1750344801629L
+        /// </summary>
+        /// <example>1750344801629L</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
+        public double? ExpiresAt { get; set; }
+
+        /// <summary>
+        /// The regions the sandbox fails over to. Empty when it does not fail over.<br/>
+        /// Example: [sfo1, cle1]
+        /// </summary>
+        /// <example>[sfo1, cle1]</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("failoverRegions")]
+        public global::System.Collections.Generic.IList<global::Vercel.NamedSandboxFailoverRegion>? FailoverRegions { get; set; }
+
+        /// <summary>
+        /// Digest-pinned reference of the container image the sandbox was created from, when it was created from an image ("{repository}@{manifestDigest}").<br/>
+        /// Example: my-repo@sha256:2c4e8f9a1b3d5e7f091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708
+        /// </summary>
+        /// <example>my-repo@sha256:2c4e8f9a1b3d5e7f091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("image")]
+        public string? Image { get; set; }
+
+        /// <summary>
+        /// Keep-last snapshot configuration.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("keepLastSnapshots")]
+        public global::Vercel.NamedSandboxKeepLastSnapshots? KeepLastSnapshots { get; set; }
+
+        /// <summary>
+        /// Memory allocated in MB.<br/>
+        /// Example: 1024
+        /// </summary>
+        /// <example>1024</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("memory")]
+        public double? Memory { get; set; }
+
+        /// <summary>
+        /// Key-value pairs of mount path and drive.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mounts")]
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.NamedSandboxMounts2>? Mounts { get; set; }
+
+        /// <summary>
         /// The unique identifier of the sandbox.<br/>
         /// Example: my-sandbox
         /// </summary>
@@ -18,17 +99,49 @@ namespace Vercel
         public required string Name { get; set; }
 
         /// <summary>
-        /// Current snapshot ID that the named sandbox is pointing to.
+        /// The Connect network id for the target Secure Compute private network.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("currentSnapshotId")]
-        public string? CurrentSnapshotId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("networkId")]
+        public string? NetworkId { get; set; }
 
         /// <summary>
-        /// Current session ID the sandbox is pointing to.
+        /// Network policy configuration.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("currentSessionId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("networkPolicy")]
+        public global::Vercel.NamedSandboxNetworkPolicy? NetworkPolicy { get; set; }
+
+        /// <summary>
+        /// Whether the sandbox persists its state across restarts via automatic snapshots.<br/>
+        /// Example: true
+        /// </summary>
+        /// <example>true</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("persistent")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string CurrentSessionId { get; set; }
+        public required bool Persistent { get; set; }
+
+        /// <summary>
+        /// The region the sandbox is pinned to: the region stored on the sandbox, otherwise the platform default. Where a running session actually landed is reported by `session.region`.<br/>
+        /// Example: iad1
+        /// </summary>
+        /// <example>iad1</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("region")]
+        public string? Region { get; set; }
+
+        /// <summary>
+        /// Runtime identifier.<br/>
+        /// Example: node22
+        /// </summary>
+        /// <example>node22</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("runtime")]
+        public string? Runtime { get; set; }
+
+        /// <summary>
+        /// Default snapshot expiration time in milliseconds. 0 means no expiration.<br/>
+        /// Example: 604800000
+        /// </summary>
+        /// <example>604800000</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("snapshotExpiration")]
+        public double? SnapshotExpiration { get; set; }
 
         /// <summary>
         /// The status of the current sandbox.<br/>
@@ -50,61 +163,12 @@ namespace Vercel
         public required double StatusUpdatedAt { get; set; }
 
         /// <summary>
-        /// Whether the sandbox persists its state across restarts via automatic snapshots.<br/>
-        /// Example: true
+        /// Key-value tags attached to the named sandbox.<br/>
+        /// Example: {"team":"hive","user":"bob"}
         /// </summary>
-        /// <example>true</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("persistent")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Persistent { get; set; }
-
-        /// <summary>
-        /// The region the sandbox is pinned to: the region stored on the sandbox, otherwise the platform default. Where a running session actually landed is reported by `session.region`.<br/>
-        /// Example: iad1
-        /// </summary>
-        /// <example>iad1</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("region")]
-        public string? Region { get; set; }
-
-        /// <summary>
-        /// The regions the sandbox fails over to. Empty when it does not fail over.<br/>
-        /// Example: [sfo1, cle1]
-        /// </summary>
-        /// <example>[sfo1, cle1]</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("failoverRegions")]
-        public global::System.Collections.Generic.IList<global::Vercel.NamedSandboxFailoverRegion>? FailoverRegions { get; set; }
-
-        /// <summary>
-        /// Number of virtual CPUs allocated.<br/>
-        /// Example: 2
-        /// </summary>
-        /// <example>2</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("vcpus")]
-        public double? Vcpus { get; set; }
-
-        /// <summary>
-        /// Memory allocated in MB.<br/>
-        /// Example: 1024
-        /// </summary>
-        /// <example>1024</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("memory")]
-        public double? Memory { get; set; }
-
-        /// <summary>
-        /// Runtime identifier.<br/>
-        /// Example: node22
-        /// </summary>
-        /// <example>node22</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("runtime")]
-        public string? Runtime { get; set; }
-
-        /// <summary>
-        /// Digest-pinned reference of the container image the sandbox was created from, when it was created from an image ("{repository}@{manifestDigest}").<br/>
-        /// Example: my-repo@sha256:2c4e8f9a1b3d5e7f091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708
-        /// </summary>
-        /// <example>my-repo@sha256:2c4e8f9a1b3d5e7f091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("image")]
-        public string? Image { get; set; }
+        /// <example>{"team":"hive","user":"bob"}</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
+        public global::System.Collections.Generic.Dictionary<string, string>? Tags { get; set; }
 
         /// <summary>
         /// Timeout in milliseconds.<br/>
@@ -113,48 +177,6 @@ namespace Vercel
         /// <example>300000</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("timeout")]
         public double? Timeout { get; set; }
-
-        /// <summary>
-        /// Default snapshot expiration time in milliseconds. 0 means no expiration.<br/>
-        /// Example: 604800000
-        /// </summary>
-        /// <example>604800000</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("snapshotExpiration")]
-        public double? SnapshotExpiration { get; set; }
-
-        /// <summary>
-        /// Keep-last snapshot configuration.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("keepLastSnapshots")]
-        public global::Vercel.NamedSandboxKeepLastSnapshots? KeepLastSnapshots { get; set; }
-
-        /// <summary>
-        /// Network policy configuration.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("networkPolicy")]
-        public global::Vercel.NamedSandboxNetworkPolicy? NetworkPolicy { get; set; }
-
-        /// <summary>
-        /// The Connect network id for the target Secure Compute private network.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("networkId")]
-        public string? NetworkId { get; set; }
-
-        /// <summary>
-        /// Cumulative egress bytes across all sandbox runs.<br/>
-        /// Example: 4096
-        /// </summary>
-        /// <example>4096</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("totalEgressBytes")]
-        public double? TotalEgressBytes { get; set; }
-
-        /// <summary>
-        /// Cumulative ingress bytes across all sandbox runs.<br/>
-        /// Example: 2048
-        /// </summary>
-        /// <example>2048</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("totalIngressBytes")]
-        public double? TotalIngressBytes { get; set; }
 
         /// <summary>
         /// Cumulative active CPU duration in milliseconds across all sandbox runs.<br/>
@@ -173,35 +195,20 @@ namespace Vercel
         public double? TotalDurationMs { get; set; }
 
         /// <summary>
-        /// The working directory of the sandbox.<br/>
-        /// Example: /vercel/sandbox
+        /// Cumulative egress bytes across all sandbox runs.<br/>
+        /// Example: 4096
         /// </summary>
-        /// <example>/vercel/sandbox</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("cwd")]
-        public string? Cwd { get; set; }
+        /// <example>4096</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("totalEgressBytes")]
+        public double? TotalEgressBytes { get; set; }
 
         /// <summary>
-        /// Key-value tags attached to the named sandbox.<br/>
-        /// Example: {"team":"hive","user":"bob"}
+        /// Cumulative ingress bytes across all sandbox runs.<br/>
+        /// Example: 2048
         /// </summary>
-        /// <example>{"team":"hive","user":"bob"}</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("tags")]
-        public global::System.Collections.Generic.Dictionary<string, string>? Tags { get; set; }
-
-        /// <summary>
-        /// Key-value pairs of mount path and drive.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("mounts")]
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.NamedSandboxMounts2>? Mounts { get; set; }
-
-        /// <summary>
-        /// The time when the named sandbox was created, in milliseconds since the epoch.<br/>
-        /// Example: 1750344501629L
-        /// </summary>
-        /// <example>1750344501629L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
+        /// <example>2048</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("totalIngressBytes")]
+        public double? TotalIngressBytes { get; set; }
 
         /// <summary>
         /// The time when the named sandbox was last updated, in milliseconds since the epoch.<br/>
@@ -213,12 +220,12 @@ namespace Vercel
         public required double UpdatedAt { get; set; }
 
         /// <summary>
-        /// The time at which the currently running sandbox will time out, in milliseconds since the epoch. Only present while a session is running.<br/>
-        /// Example: 1750344801629L
+        /// Number of virtual CPUs allocated.<br/>
+        /// Example: 2
         /// </summary>
-        /// <example>1750344801629L</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
-        public double? ExpiresAt { get; set; }
+        /// <example>2</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vcpus")]
+        public double? Vcpus { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -229,12 +236,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="NamedSandbox" /> class.
         /// </summary>
+        /// <param name="createdAt">
+        /// The time when the named sandbox was created, in milliseconds since the epoch.<br/>
+        /// Example: 1750344501629L
+        /// </param>
+        /// <param name="currentSessionId">
+        /// Current session ID the sandbox is pointing to.
+        /// </param>
         /// <param name="name">
         /// The unique identifier of the sandbox.<br/>
         /// Example: my-sandbox
         /// </param>
-        /// <param name="currentSessionId">
-        /// Current session ID the sandbox is pointing to.
+        /// <param name="persistent">
+        /// Whether the sandbox persists its state across restarts via automatic snapshots.<br/>
+        /// Example: true
         /// </param>
         /// <param name="status">
         /// The status of the current sandbox.<br/>
@@ -244,69 +259,67 @@ namespace Vercel
         /// The time when the sandbox status was last updated, in milliseconds since the epoch.<br/>
         /// Example: 1750344501629L
         /// </param>
-        /// <param name="persistent">
-        /// Whether the sandbox persists its state across restarts via automatic snapshots.<br/>
-        /// Example: true
-        /// </param>
-        /// <param name="createdAt">
-        /// The time when the named sandbox was created, in milliseconds since the epoch.<br/>
-        /// Example: 1750344501629L
-        /// </param>
         /// <param name="updatedAt">
         /// The time when the named sandbox was last updated, in milliseconds since the epoch.<br/>
         /// Example: 1750344501629L
         /// </param>
+        /// <param name="architecture">
+        /// CPU architecture of the sandbox. This value does not change.
+        /// </param>
         /// <param name="currentSnapshotId">
         /// Current snapshot ID that the named sandbox is pointing to.
         /// </param>
-        /// <param name="region">
-        /// The region the sandbox is pinned to: the region stored on the sandbox, otherwise the platform default. Where a running session actually landed is reported by `session.region`.<br/>
-        /// Example: iad1
+        /// <param name="cwd">
+        /// The working directory of the sandbox.<br/>
+        /// Example: /vercel/sandbox
+        /// </param>
+        /// <param name="expiresAt">
+        /// The time at which the currently running sandbox will time out, in milliseconds since the epoch. Only present while a session is running.<br/>
+        /// Example: 1750344801629L
         /// </param>
         /// <param name="failoverRegions">
         /// The regions the sandbox fails over to. Empty when it does not fail over.<br/>
         /// Example: [sfo1, cle1]
         /// </param>
-        /// <param name="vcpus">
-        /// Number of virtual CPUs allocated.<br/>
-        /// Example: 2
+        /// <param name="image">
+        /// Digest-pinned reference of the container image the sandbox was created from, when it was created from an image ("{repository}@{manifestDigest}").<br/>
+        /// Example: my-repo@sha256:2c4e8f9a1b3d5e7f091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708
+        /// </param>
+        /// <param name="keepLastSnapshots">
+        /// Keep-last snapshot configuration.
         /// </param>
         /// <param name="memory">
         /// Memory allocated in MB.<br/>
         /// Example: 1024
         /// </param>
+        /// <param name="mounts">
+        /// Key-value pairs of mount path and drive.
+        /// </param>
+        /// <param name="networkId">
+        /// The Connect network id for the target Secure Compute private network.
+        /// </param>
+        /// <param name="networkPolicy">
+        /// Network policy configuration.
+        /// </param>
+        /// <param name="region">
+        /// The region the sandbox is pinned to: the region stored on the sandbox, otherwise the platform default. Where a running session actually landed is reported by `session.region`.<br/>
+        /// Example: iad1
+        /// </param>
         /// <param name="runtime">
         /// Runtime identifier.<br/>
         /// Example: node22
-        /// </param>
-        /// <param name="image">
-        /// Digest-pinned reference of the container image the sandbox was created from, when it was created from an image ("{repository}@{manifestDigest}").<br/>
-        /// Example: my-repo@sha256:2c4e8f9a1b3d5e7f091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708
-        /// </param>
-        /// <param name="timeout">
-        /// Timeout in milliseconds.<br/>
-        /// Example: 300000
         /// </param>
         /// <param name="snapshotExpiration">
         /// Default snapshot expiration time in milliseconds. 0 means no expiration.<br/>
         /// Example: 604800000
         /// </param>
-        /// <param name="keepLastSnapshots">
-        /// Keep-last snapshot configuration.
+        /// <param name="tags">
+        /// Key-value tags attached to the named sandbox.<br/>
+        /// Example: {"team":"hive","user":"bob"}
         /// </param>
-        /// <param name="networkPolicy">
-        /// Network policy configuration.
-        /// </param>
-        /// <param name="networkId">
-        /// The Connect network id for the target Secure Compute private network.
-        /// </param>
-        /// <param name="totalEgressBytes">
-        /// Cumulative egress bytes across all sandbox runs.<br/>
-        /// Example: 4096
-        /// </param>
-        /// <param name="totalIngressBytes">
-        /// Cumulative ingress bytes across all sandbox runs.<br/>
-        /// Example: 2048
+        /// <param name="timeout">
+        /// Timeout in milliseconds.<br/>
+        /// Example: 300000
         /// </param>
         /// <param name="totalActiveCpuDurationMs">
         /// Cumulative active CPU duration in milliseconds across all sandbox runs.<br/>
@@ -316,80 +329,79 @@ namespace Vercel
         /// Cumulative wall-clock duration in milliseconds across all sandbox runs.<br/>
         /// Example: 60000
         /// </param>
-        /// <param name="cwd">
-        /// The working directory of the sandbox.<br/>
-        /// Example: /vercel/sandbox
+        /// <param name="totalEgressBytes">
+        /// Cumulative egress bytes across all sandbox runs.<br/>
+        /// Example: 4096
         /// </param>
-        /// <param name="tags">
-        /// Key-value tags attached to the named sandbox.<br/>
-        /// Example: {"team":"hive","user":"bob"}
+        /// <param name="totalIngressBytes">
+        /// Cumulative ingress bytes across all sandbox runs.<br/>
+        /// Example: 2048
         /// </param>
-        /// <param name="mounts">
-        /// Key-value pairs of mount path and drive.
-        /// </param>
-        /// <param name="expiresAt">
-        /// The time at which the currently running sandbox will time out, in milliseconds since the epoch. Only present while a session is running.<br/>
-        /// Example: 1750344801629L
+        /// <param name="vcpus">
+        /// Number of virtual CPUs allocated.<br/>
+        /// Example: 2
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public NamedSandbox(
-            string name,
+            double createdAt,
             string currentSessionId,
+            string name,
+            bool persistent,
             global::Vercel.NamedSandboxStatus status,
             double statusUpdatedAt,
-            bool persistent,
-            double createdAt,
             double updatedAt,
+            global::Vercel.NamedSandboxArchitecture? architecture,
             string? currentSnapshotId,
-            string? region,
+            string? cwd,
+            double? expiresAt,
             global::System.Collections.Generic.IList<global::Vercel.NamedSandboxFailoverRegion>? failoverRegions,
-            double? vcpus,
-            double? memory,
-            string? runtime,
             string? image,
-            double? timeout,
-            double? snapshotExpiration,
             global::Vercel.NamedSandboxKeepLastSnapshots? keepLastSnapshots,
-            global::Vercel.NamedSandboxNetworkPolicy? networkPolicy,
+            double? memory,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.NamedSandboxMounts2>? mounts,
             string? networkId,
-            double? totalEgressBytes,
-            double? totalIngressBytes,
+            global::Vercel.NamedSandboxNetworkPolicy? networkPolicy,
+            string? region,
+            string? runtime,
+            double? snapshotExpiration,
+            global::System.Collections.Generic.Dictionary<string, string>? tags,
+            double? timeout,
             double? totalActiveCpuDurationMs,
             double? totalDurationMs,
-            string? cwd,
-            global::System.Collections.Generic.Dictionary<string, string>? tags,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.NamedSandboxMounts2>? mounts,
-            double? expiresAt)
+            double? totalEgressBytes,
+            double? totalIngressBytes,
+            double? vcpus)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.CurrentSnapshotId = currentSnapshotId;
+            this.Architecture = architecture;
+            this.CreatedAt = createdAt;
             this.CurrentSessionId = currentSessionId ?? throw new global::System.ArgumentNullException(nameof(currentSessionId));
-            this.Status = status;
-            this.StatusUpdatedAt = statusUpdatedAt;
+            this.CurrentSnapshotId = currentSnapshotId;
+            this.Cwd = cwd;
+            this.ExpiresAt = expiresAt;
+            this.FailoverRegions = failoverRegions;
+            this.Image = image;
+            this.KeepLastSnapshots = keepLastSnapshots;
+            this.Memory = memory;
+            this.Mounts = mounts;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.NetworkId = networkId;
+            this.NetworkPolicy = networkPolicy;
             this.Persistent = persistent;
             this.Region = region;
-            this.FailoverRegions = failoverRegions;
-            this.Vcpus = vcpus;
-            this.Memory = memory;
             this.Runtime = runtime;
-            this.Image = image;
-            this.Timeout = timeout;
             this.SnapshotExpiration = snapshotExpiration;
-            this.KeepLastSnapshots = keepLastSnapshots;
-            this.NetworkPolicy = networkPolicy;
-            this.NetworkId = networkId;
-            this.TotalEgressBytes = totalEgressBytes;
-            this.TotalIngressBytes = totalIngressBytes;
+            this.Status = status;
+            this.StatusUpdatedAt = statusUpdatedAt;
+            this.Tags = tags;
+            this.Timeout = timeout;
             this.TotalActiveCpuDurationMs = totalActiveCpuDurationMs;
             this.TotalDurationMs = totalDurationMs;
-            this.Cwd = cwd;
-            this.Tags = tags;
-            this.Mounts = mounts;
-            this.CreatedAt = createdAt;
+            this.TotalEgressBytes = totalEgressBytes;
+            this.TotalIngressBytes = totalIngressBytes;
             this.UpdatedAt = updatedAt;
-            this.ExpiresAt = expiresAt;
+            this.Vcpus = vcpus;
         }
 
         /// <summary>

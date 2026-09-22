@@ -11,9 +11,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectResponseDismissedToastActionJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Key { get; set; }
+        public required global::Vercel.CreateProjectResponseDismissedToastAction Action { get; set; }
 
         /// <summary>
         ///
@@ -25,10 +26,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateProjectResponseDismissedToastActionJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.CreateProjectResponseDismissedToastAction Action { get; set; }
+        public required string Key { get; set; }
 
         /// <summary>
         ///
@@ -46,22 +46,22 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateProjectResponseDismissedToast" /> class.
         /// </summary>
-        /// <param name="key"></param>
-        /// <param name="dismissedAt"></param>
         /// <param name="action"></param>
+        /// <param name="dismissedAt"></param>
+        /// <param name="key"></param>
         /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateProjectResponseDismissedToast(
-            string key,
-            double dismissedAt,
             global::Vercel.CreateProjectResponseDismissedToastAction action,
+            double dismissedAt,
+            string key,
             global::Vercel.OneOf<string, double?, global::Vercel.CreateProjectResponseDismissedToastValue, bool?>? value)
         {
-            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
-            this.DismissedAt = dismissedAt;
             this.Action = action;
+            this.DismissedAt = dismissedAt;
+            this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
             this.Value = value;
         }
 

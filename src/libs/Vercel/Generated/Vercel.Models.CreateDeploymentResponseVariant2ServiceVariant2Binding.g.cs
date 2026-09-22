@@ -9,18 +9,11 @@ namespace Vercel
     public sealed partial class CreateDeploymentResponseVariant2ServiceVariant2Binding
     {
         /// <summary>
-        /// If present, must be `"service"` for Service-to-Service HTTP bindings.
+        /// Environment variable name that will store the generated value
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2ServiceVariant2BindingTypeJsonConverter))]
-        public global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2BindingType? Type { get; set; }
-
-        /// <summary>
-        /// Target service name from `services`.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("service")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("env")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Service { get; set; }
+        public required string Env { get; set; }
 
         /// <summary>
         /// Generated value shape, must be `"url"`.
@@ -30,11 +23,18 @@ namespace Vercel
         public global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2BindingFormat Format { get; set; }
 
         /// <summary>
-        /// Environment variable name that will store the generated value
+        /// Target service name from `services`.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("env")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("service")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Env { get; set; }
+        public required string Service { get; set; }
+
+        /// <summary>
+        /// If present, must be `"service"` for Service-to-Service HTTP bindings.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseVariant2ServiceVariant2BindingTypeJsonConverter))]
+        public global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2BindingType? Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,31 +45,31 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateDeploymentResponseVariant2ServiceVariant2Binding" /> class.
         /// </summary>
-        /// <param name="service">
-        /// Target service name from `services`.
-        /// </param>
         /// <param name="env">
         /// Environment variable name that will store the generated value
         /// </param>
-        /// <param name="type">
-        /// If present, must be `"service"` for Service-to-Service HTTP bindings.
+        /// <param name="service">
+        /// Target service name from `services`.
         /// </param>
         /// <param name="format">
         /// Generated value shape, must be `"url"`.
+        /// </param>
+        /// <param name="type">
+        /// If present, must be `"service"` for Service-to-Service HTTP bindings.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateDeploymentResponseVariant2ServiceVariant2Binding(
-            string service,
             string env,
-            global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2BindingType? type,
-            global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2BindingFormat format)
+            string service,
+            global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2BindingFormat format,
+            global::Vercel.CreateDeploymentResponseVariant2ServiceVariant2BindingType? type)
         {
-            this.Type = type;
-            this.Service = service ?? throw new global::System.ArgumentNullException(nameof(service));
-            this.Format = format;
             this.Env = env ?? throw new global::System.ArgumentNullException(nameof(env));
+            this.Format = format;
+            this.Service = service ?? throw new global::System.ArgumentNullException(nameof(service));
+            this.Type = type;
         }
 
         /// <summary>

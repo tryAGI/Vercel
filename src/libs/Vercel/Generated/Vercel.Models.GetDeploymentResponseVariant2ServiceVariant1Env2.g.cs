@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ServiceVariant1EnvTypeJsonConverter))]
-        public global::Vercel.GetDeploymentResponseVariant2ServiceVariant1EnvType Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("service")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Service { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("service")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Service { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2ServiceVariant1EnvTypeJsonConverter))]
+        public global::Vercel.GetDeploymentResponseVariant2ServiceVariant1EnvType Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -40,8 +40,8 @@ namespace Vercel
             string service,
             global::Vercel.GetDeploymentResponseVariant2ServiceVariant1EnvType type)
         {
-            this.Type = type;
             this.Service = service ?? throw new global::System.ArgumentNullException(nameof(service));
+            this.Type = type;
         }
 
         /// <summary>

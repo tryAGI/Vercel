@@ -37,13 +37,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.VcrImageLayerVariant1TypeJsonConverter))]
-        public global::Vercel.VcrImageLayerVariant1Type Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("baseImage")]
         public string? BaseImage { get; set; }
 
@@ -62,6 +55,13 @@ namespace Vercel
         public required double CollapsedLayerCount { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.VcrImageLayerVariant1TypeJsonConverter))]
+        public global::Vercel.VcrImageLayerVariant1Type Type { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -78,8 +78,8 @@ namespace Vercel
         /// <param name="createdBy"></param>
         /// <param name="digest"></param>
         /// <param name="sizeBytes"></param>
-        /// <param name="type"></param>
         /// <param name="baseImage"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -90,17 +90,17 @@ namespace Vercel
             string? createdBy,
             string? digest,
             double? sizeBytes,
-            global::Vercel.VcrImageLayerVariant1Type type,
-            string? baseImage)
+            string? baseImage,
+            global::Vercel.VcrImageLayerVariant1Type type)
         {
             this.CreatedBy = createdBy;
             this.Digest = digest;
             this.Operation = operation;
             this.SizeBytes = sizeBytes;
-            this.Type = type;
             this.BaseImage = baseImage;
             this.CollapsedDigests = collapsedDigests ?? throw new global::System.ArgumentNullException(nameof(collapsedDigests));
             this.CollapsedLayerCount = collapsedLayerCount;
+            this.Type = type;
         }
 
         /// <summary>

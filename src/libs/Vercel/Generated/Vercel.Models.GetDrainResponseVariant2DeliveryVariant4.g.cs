@@ -11,16 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDrainResponseVariant2DeliveryVariant4TypeJsonConverter))]
-        public global::Vercel.GetDrainResponseVariant2DeliveryVariant4Type Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("endpoint")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Endpoint { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("compression")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDrainResponseVariant2DeliveryVariant4CompressionJsonConverter))]
+        public global::Vercel.GetDrainResponseVariant2DeliveryVariant4Compression Compression { get; set; }
 
         /// <summary>
         ///
@@ -33,9 +26,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("compression")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDrainResponseVariant2DeliveryVariant4CompressionJsonConverter))]
-        public global::Vercel.GetDrainResponseVariant2DeliveryVariant4Compression Compression { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("endpoint")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Endpoint { get; set; }
 
         /// <summary>
         ///
@@ -47,9 +40,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("roleArn")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string RoleArn { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("objectAcl")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDrainResponseVariant2DeliveryVariant4ObjectAclJsonConverter))]
+        public global::Vercel.GetDrainResponseVariant2DeliveryVariant4ObjectAcl? ObjectAcl { get; set; }
 
         /// <summary>
         ///
@@ -61,6 +54,13 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("roleArn")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string RoleArn { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("serverSideEncryption")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDrainResponseVariant2DeliveryVariant4ServerSideEncryptionJsonConverter))]
         public global::Vercel.GetDrainResponseVariant2DeliveryVariant4ServerSideEncryption? ServerSideEncryption { get; set; }
@@ -68,9 +68,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("objectAcl")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDrainResponseVariant2DeliveryVariant4ObjectAclJsonConverter))]
-        public global::Vercel.GetDrainResponseVariant2DeliveryVariant4ObjectAcl? ObjectAcl { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDrainResponseVariant2DeliveryVariant4TypeJsonConverter))]
+        public global::Vercel.GetDrainResponseVariant2DeliveryVariant4Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -81,38 +81,38 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDrainResponseVariant2DeliveryVariant4" /> class.
         /// </summary>
-        /// <param name="endpoint"></param>
         /// <param name="encoding"></param>
-        /// <param name="roleArn"></param>
+        /// <param name="endpoint"></param>
         /// <param name="region"></param>
-        /// <param name="type"></param>
+        /// <param name="roleArn"></param>
         /// <param name="compression"></param>
         /// <param name="fileStructure"></param>
-        /// <param name="serverSideEncryption"></param>
         /// <param name="objectAcl"></param>
+        /// <param name="serverSideEncryption"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDrainResponseVariant2DeliveryVariant4(
-            string endpoint,
             global::Vercel.GetDrainResponseVariant2DeliveryVariant4Encoding encoding,
-            string roleArn,
+            string endpoint,
             string region,
-            global::Vercel.GetDrainResponseVariant2DeliveryVariant4Type type,
+            string roleArn,
             global::Vercel.GetDrainResponseVariant2DeliveryVariant4Compression compression,
             global::Vercel.GetDrainResponseVariant2DeliveryVariant4FileStructure fileStructure,
+            global::Vercel.GetDrainResponseVariant2DeliveryVariant4ObjectAcl? objectAcl,
             global::Vercel.GetDrainResponseVariant2DeliveryVariant4ServerSideEncryption? serverSideEncryption,
-            global::Vercel.GetDrainResponseVariant2DeliveryVariant4ObjectAcl? objectAcl)
+            global::Vercel.GetDrainResponseVariant2DeliveryVariant4Type type)
         {
-            this.Type = type;
-            this.Endpoint = endpoint ?? throw new global::System.ArgumentNullException(nameof(endpoint));
-            this.Encoding = encoding;
             this.Compression = compression;
+            this.Encoding = encoding;
+            this.Endpoint = endpoint ?? throw new global::System.ArgumentNullException(nameof(endpoint));
             this.FileStructure = fileStructure;
-            this.RoleArn = roleArn ?? throw new global::System.ArgumentNullException(nameof(roleArn));
-            this.Region = region ?? throw new global::System.ArgumentNullException(nameof(region));
-            this.ServerSideEncryption = serverSideEncryption;
             this.ObjectAcl = objectAcl;
+            this.Region = region ?? throw new global::System.ArgumentNullException(nameof(region));
+            this.RoleArn = roleArn ?? throw new global::System.ArgumentNullException(nameof(roleArn));
+            this.ServerSideEncryption = serverSideEncryption;
+            this.Type = type;
         }
 
         /// <summary>

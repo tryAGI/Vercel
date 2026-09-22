@@ -9,17 +9,17 @@ namespace Vercel
     public sealed partial class ConnectServiceSyncError
     {
         /// <summary>
+        /// Connector fields that caused the synchronization error.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("fields")]
+        public global::System.Collections.Generic.IList<string>? Fields { get; set; }
+
+        /// <summary>
         /// Human-readable provider synchronization error.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("message")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Message { get; set; }
-
-        /// <summary>
-        /// Connector fields that caused the synchronization error.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("fields")]
-        public global::System.Collections.Generic.IList<string>? Fields { get; set; }
 
         /// <summary>
         /// Provider-specific error details that are safe to expose.
@@ -53,8 +53,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<string>? fields,
             object? vendor)
         {
-            this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
             this.Fields = fields;
+            this.Message = message ?? throw new global::System.ArgumentNullException(nameof(message));
             this.Vendor = vendor;
         }
 

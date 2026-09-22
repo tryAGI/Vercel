@@ -16,17 +16,10 @@ namespace Vercel
         public required bool CrossInstallation { get; set; }
 
         /// <summary>
-        /// Whether callers can narrow app-token grants per request.
+        /// Link to the page on the service where this connector's app-level permissions are declared and granted, when the service has one and it differs from `clientUrl`.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("supportsRefinement")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool SupportsRefinement { get; set; }
-
-        /// <summary>
-        /// Whether callers can request resource-specific app tokens.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("supportsResources")]
-        public bool? SupportsResources { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("permissionsUrl")]
+        public string? PermissionsUrl { get; set; }
 
         /// <summary>
         /// True when changing app token grants requires reinstalling the app, so tokens cannot be partitioned independently by requester environment.
@@ -47,10 +40,17 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? SupportedAuthorizationDetails { get; set; }
 
         /// <summary>
-        /// Link to the page on the service where this connector's app-level permissions are declared and granted, when the service has one and it differs from `clientUrl`.
+        /// Whether callers can narrow app-token grants per request.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("permissionsUrl")]
-        public string? PermissionsUrl { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("supportsRefinement")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool SupportsRefinement { get; set; }
+
+        /// <summary>
+        /// Whether callers can request resource-specific app tokens.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("supportsResources")]
+        public bool? SupportsResources { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -67,8 +67,8 @@ namespace Vercel
         /// <param name="supportsRefinement">
         /// Whether callers can narrow app-token grants per request.
         /// </param>
-        /// <param name="supportsResources">
-        /// Whether callers can request resource-specific app tokens.
+        /// <param name="permissionsUrl">
+        /// Link to the page on the service where this connector's app-level permissions are declared and granted, when the service has one and it differs from `clientUrl`.
         /// </param>
         /// <param name="requiresReinstallation">
         /// True when changing app token grants requires reinstalling the app, so tokens cannot be partitioned independently by requester environment.
@@ -79,8 +79,8 @@ namespace Vercel
         /// <param name="supportedAuthorizationDetails">
         /// Supported OAuth authorization-detail type names.
         /// </param>
-        /// <param name="permissionsUrl">
-        /// Link to the page on the service where this connector's app-level permissions are declared and granted, when the service has one and it differs from `clientUrl`.
+        /// <param name="supportsResources">
+        /// Whether callers can request resource-specific app tokens.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -88,19 +88,19 @@ namespace Vercel
         public ConnectConnectorAppTokens(
             bool crossInstallation,
             bool supportsRefinement,
-            bool? supportsResources,
+            string? permissionsUrl,
             bool? requiresReinstallation,
             global::System.Collections.Generic.IList<string>? scopes,
             global::System.Collections.Generic.IList<string>? supportedAuthorizationDetails,
-            string? permissionsUrl)
+            bool? supportsResources)
         {
             this.CrossInstallation = crossInstallation;
-            this.SupportsRefinement = supportsRefinement;
-            this.SupportsResources = supportsResources;
+            this.PermissionsUrl = permissionsUrl;
             this.RequiresReinstallation = requiresReinstallation;
             this.Scopes = scopes;
             this.SupportedAuthorizationDetails = supportedAuthorizationDetails;
-            this.PermissionsUrl = permissionsUrl;
+            this.SupportsRefinement = supportsRefinement;
+            this.SupportsResources = supportsResources;
         }
 
         /// <summary>

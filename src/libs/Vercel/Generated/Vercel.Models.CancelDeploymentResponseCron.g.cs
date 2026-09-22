@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("schedule")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("path")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Schedule { get; set; }
+        public required string Path { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("path")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("schedule")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Path { get; set; }
+        public required string Schedule { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CancelDeploymentResponseCron" /> class.
         /// </summary>
-        /// <param name="schedule"></param>
         /// <param name="path"></param>
+        /// <param name="schedule"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CancelDeploymentResponseCron(
-            string schedule,
-            string path)
+            string path,
+            string schedule)
         {
-            this.Schedule = schedule ?? throw new global::System.ArgumentNullException(nameof(schedule));
             this.Path = path ?? throw new global::System.ArgumentNullException(nameof(path));
+            this.Schedule = schedule ?? throw new global::System.ArgumentNullException(nameof(schedule));
         }
 
         /// <summary>

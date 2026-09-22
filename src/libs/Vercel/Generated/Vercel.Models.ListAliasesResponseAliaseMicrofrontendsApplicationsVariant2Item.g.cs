@@ -9,18 +9,18 @@ namespace Vercel
     public sealed partial class ListAliasesResponseAliaseMicrofrontendsApplicationsVariant2Item
     {
         /// <summary>
-        /// This is always set. For branch aliases, it's used as the fallback if there is no deployment for the branch.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("fallbackHost")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string FallbackHost { get; set; }
-
-        /// <summary>
         /// Could point to a branch without a deployment if the project was never deployed. The proxy will fallback to the fallbackHost if there is no deployment.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("branchAlias")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string BranchAlias { get; set; }
+
+        /// <summary>
+        /// This is always set. For branch aliases, it's used as the fallback if there is no deployment for the branch.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("fallbackHost")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string FallbackHost { get; set; }
 
         /// <summary>
         /// The project ID of the microfrontends application.
@@ -38,11 +38,11 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListAliasesResponseAliaseMicrofrontendsApplicationsVariant2Item" /> class.
         /// </summary>
-        /// <param name="fallbackHost">
-        /// This is always set. For branch aliases, it's used as the fallback if there is no deployment for the branch.
-        /// </param>
         /// <param name="branchAlias">
         /// Could point to a branch without a deployment if the project was never deployed. The proxy will fallback to the fallbackHost if there is no deployment.
+        /// </param>
+        /// <param name="fallbackHost">
+        /// This is always set. For branch aliases, it's used as the fallback if there is no deployment for the branch.
         /// </param>
         /// <param name="projectId">
         /// The project ID of the microfrontends application.
@@ -51,12 +51,12 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListAliasesResponseAliaseMicrofrontendsApplicationsVariant2Item(
-            string fallbackHost,
             string branchAlias,
+            string fallbackHost,
             string projectId)
         {
-            this.FallbackHost = fallbackHost ?? throw new global::System.ArgumentNullException(nameof(fallbackHost));
             this.BranchAlias = branchAlias ?? throw new global::System.ArgumentNullException(nameof(branchAlias));
+            this.FallbackHost = fallbackHost ?? throw new global::System.ArgumentNullException(nameof(fallbackHost));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
         }
 

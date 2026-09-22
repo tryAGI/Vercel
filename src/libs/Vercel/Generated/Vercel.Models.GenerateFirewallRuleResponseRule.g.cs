@@ -11,15 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
-        public string? Description { get; set; }
+        public required global::Vercel.GenerateFirewallRuleResponseRuleAction Action { get; set; }
 
         /// <summary>
         ///
@@ -38,9 +32,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("action")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("description")]
+        public string? Description { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GenerateFirewallRuleResponseRuleAction Action { get; set; }
+        public required string Name { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -51,26 +51,26 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GenerateFirewallRuleResponseRule" /> class.
         /// </summary>
-        /// <param name="name"></param>
+        /// <param name="action"></param>
         /// <param name="active"></param>
         /// <param name="conditionGroup"></param>
-        /// <param name="action"></param>
+        /// <param name="name"></param>
         /// <param name="description"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GenerateFirewallRuleResponseRule(
-            string name,
+            global::Vercel.GenerateFirewallRuleResponseRuleAction action,
             bool active,
             global::System.Collections.Generic.IList<global::Vercel.GenerateFirewallRuleResponseRuleConditionGroupItem> conditionGroup,
-            global::Vercel.GenerateFirewallRuleResponseRuleAction action,
+            string name,
             string? description)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Description = description;
+            this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
             this.Active = active;
             this.ConditionGroup = conditionGroup ?? throw new global::System.ArgumentNullException(nameof(conditionGroup));
-            this.Action = action ?? throw new global::System.ArgumentNullException(nameof(action));
+            this.Description = description;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
         }
 
         /// <summary>

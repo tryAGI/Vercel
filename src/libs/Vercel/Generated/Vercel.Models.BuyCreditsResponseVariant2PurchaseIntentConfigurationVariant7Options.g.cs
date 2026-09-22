@@ -9,17 +9,17 @@ namespace Vercel
     public sealed partial class BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7Options
     {
         /// <summary>
+        /// The current plan being replaced by this purchase
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("fromPlan")]
+        public global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsFromPlan? FromPlan { get; set; }
+
+        /// <summary>
         /// The ID of the plan to subscribe to
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("planId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PlanId { get; set; }
-
-        /// <summary>
-        /// The current plan being replaced by this purchase
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("fromPlan")]
-        public global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsFromPlan? FromPlan { get; set; }
 
         /// <summary>
         /// The plan item quantities to set for the subscription
@@ -63,8 +63,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsPlanItemQuantitie>? planItemQuantities,
             string? rateVariantKey)
         {
-            this.PlanId = planId ?? throw new global::System.ArgumentNullException(nameof(planId));
             this.FromPlan = fromPlan;
+            this.PlanId = planId ?? throw new global::System.ArgumentNullException(nameof(planId));
             this.PlanItemQuantities = planItemQuantities;
             this.RateVariantKey = rateVariantKey;
         }

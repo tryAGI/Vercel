@@ -9,20 +9,6 @@ namespace Vercel
     public sealed partial class CancelDeploymentResponseGitSourceVariant11
     {
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CancelDeploymentResponseGitSourceVariant11TypeJsonConverter))]
-        public global::Vercel.CancelDeploymentResponseGitSourceVariant11Type Type { get; set; }
-
-        /// <summary>
-        /// Origin repository id.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("repoId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string RepoId { get; set; }
-
-        /// <summary>
         /// Owner (namespace) slug.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("owner")]
@@ -31,8 +17,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("repo")]
-        public string? Repo { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("prId")]
+        public double? PrId { get; set; }
 
         /// <summary>
         ///
@@ -43,14 +29,28 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("repo")]
+        public string? Repo { get; set; }
+
+        /// <summary>
+        /// Origin repository id.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("repoId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string RepoId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sha")]
         public string? Sha { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("prId")]
-        public double? PrId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CancelDeploymentResponseGitSourceVariant11TypeJsonConverter))]
+        public global::Vercel.CancelDeploymentResponseGitSourceVariant11Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -64,33 +64,33 @@ namespace Vercel
         /// <param name="repoId">
         /// Origin repository id.
         /// </param>
-        /// <param name="type"></param>
         /// <param name="owner">
         /// Owner (namespace) slug.
         /// </param>
-        /// <param name="repo"></param>
-        /// <param name="ref"></param>
-        /// <param name="sha"></param>
         /// <param name="prId"></param>
+        /// <param name="ref"></param>
+        /// <param name="repo"></param>
+        /// <param name="sha"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CancelDeploymentResponseGitSourceVariant11(
             string repoId,
-            global::Vercel.CancelDeploymentResponseGitSourceVariant11Type type,
             string? owner,
-            string? repo,
+            double? prId,
             string? @ref,
+            string? repo,
             string? sha,
-            double? prId)
+            global::Vercel.CancelDeploymentResponseGitSourceVariant11Type type)
         {
-            this.Type = type;
-            this.RepoId = repoId ?? throw new global::System.ArgumentNullException(nameof(repoId));
             this.Owner = owner;
-            this.Repo = repo;
-            this.Ref = @ref;
-            this.Sha = sha;
             this.PrId = prId;
+            this.Ref = @ref;
+            this.Repo = repo;
+            this.RepoId = repoId ?? throw new global::System.ArgumentNullException(nameof(repoId));
+            this.Sha = sha;
+            this.Type = type;
         }
 
         /// <summary>

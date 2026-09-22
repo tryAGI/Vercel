@@ -11,23 +11,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2GitSourceVariant18TypeJsonConverter))]
-        public global::Vercel.GetDeploymentResponseVariant2GitSourceVariant18Type Type { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ref")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Ref { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sha")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Sha { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("commitMetadata")]
+        public global::Vercel.GetDeploymentResponseVariant2GitSourceVariant18CommitMetadata? CommitMetadata { get; set; }
 
         /// <summary>
         ///
@@ -35,6 +20,13 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("org")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Org { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ref")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Ref { get; set; }
 
         /// <summary>
         ///
@@ -50,6 +42,20 @@ namespace Vercel
         public double? RepoPushedAt { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sha")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Sha { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant2GitSourceVariant18TypeJsonConverter))]
+        public global::Vercel.GetDeploymentResponseVariant2GitSourceVariant18Type Type { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -58,29 +64,32 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDeploymentResponseVariant2GitSourceVariant18" /> class.
         /// </summary>
-        /// <param name="ref"></param>
-        /// <param name="sha"></param>
         /// <param name="org"></param>
+        /// <param name="ref"></param>
         /// <param name="repo"></param>
-        /// <param name="type"></param>
+        /// <param name="sha"></param>
+        /// <param name="commitMetadata"></param>
         /// <param name="repoPushedAt"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDeploymentResponseVariant2GitSourceVariant18(
-            string @ref,
-            string sha,
             string org,
+            string @ref,
             string repo,
-            global::Vercel.GetDeploymentResponseVariant2GitSourceVariant18Type type,
-            double? repoPushedAt)
+            string sha,
+            global::Vercel.GetDeploymentResponseVariant2GitSourceVariant18CommitMetadata? commitMetadata,
+            double? repoPushedAt,
+            global::Vercel.GetDeploymentResponseVariant2GitSourceVariant18Type type)
         {
-            this.Type = type;
-            this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
-            this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
+            this.CommitMetadata = commitMetadata;
             this.Org = org ?? throw new global::System.ArgumentNullException(nameof(org));
+            this.Ref = @ref ?? throw new global::System.ArgumentNullException(nameof(@ref));
             this.Repo = repo ?? throw new global::System.ArgumentNullException(nameof(repo));
             this.RepoPushedAt = repoPushedAt;
+            this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
+            this.Type = type;
         }
 
         /// <summary>

@@ -16,16 +16,10 @@ namespace Vercel
         public required string BillingPlanId { get; set; }
 
         /// <summary>
-        /// Partner's resource ID. If not specified, indicates installation-wide item.
+        /// Additional item details.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("resourceId")]
-        public string? ResourceId { get; set; }
-
-        /// <summary>
-        /// Start and end are only needed if different from the period's start/end. ISO 8601 timestamp.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("start")]
-        public string? Start { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("details")]
+        public string? Details { get; set; }
 
         /// <summary>
         /// Start and end are only needed if different from the period's start/end. ISO 8601 timestamp.
@@ -39,12 +33,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
-
-        /// <summary>
-        /// Additional item details.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("details")]
-        public string? Details { get; set; }
 
         /// <summary>
         /// Item price. A dollar-based decimal string.
@@ -61,11 +49,16 @@ namespace Vercel
         public required double Quantity { get; set; }
 
         /// <summary>
-        /// Units for item's quantity.
+        /// Partner's resource ID. If not specified, indicates installation-wide item.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("units")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Units { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("resourceId")]
+        public string? ResourceId { get; set; }
+
+        /// <summary>
+        /// Start and end are only needed if different from the period's start/end. ISO 8601 timestamp.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("start")]
+        public string? Start { get; set; }
 
         /// <summary>
         /// Item total. A dollar-based decimal string.
@@ -73,6 +66,13 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("total")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Total { get; set; }
+
+        /// <summary>
+        /// Units for item's quantity.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("units")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Units { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -95,23 +95,23 @@ namespace Vercel
         /// <param name="quantity">
         /// Item quantity.
         /// </param>
+        /// <param name="total">
+        /// Item total. A dollar-based decimal string.
+        /// </param>
         /// <param name="units">
         /// Units for item's quantity.
         /// </param>
-        /// <param name="total">
-        /// Item total. A dollar-based decimal string.
+        /// <param name="details">
+        /// Additional item details.
+        /// </param>
+        /// <param name="end">
+        /// Start and end are only needed if different from the period's start/end. ISO 8601 timestamp.
         /// </param>
         /// <param name="resourceId">
         /// Partner's resource ID. If not specified, indicates installation-wide item.
         /// </param>
         /// <param name="start">
         /// Start and end are only needed if different from the period's start/end. ISO 8601 timestamp.
-        /// </param>
-        /// <param name="end">
-        /// Start and end are only needed if different from the period's start/end. ISO 8601 timestamp.
-        /// </param>
-        /// <param name="details">
-        /// Additional item details.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -121,23 +121,23 @@ namespace Vercel
             string name,
             string price,
             double quantity,
-            string units,
             string total,
-            string? resourceId,
-            string? start,
+            string units,
+            string? details,
             string? end,
-            string? details)
+            string? resourceId,
+            string? start)
         {
             this.BillingPlanId = billingPlanId ?? throw new global::System.ArgumentNullException(nameof(billingPlanId));
-            this.ResourceId = resourceId;
-            this.Start = start;
+            this.Details = details;
             this.End = end;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Details = details;
             this.Price = price ?? throw new global::System.ArgumentNullException(nameof(price));
             this.Quantity = quantity;
-            this.Units = units ?? throw new global::System.ArgumentNullException(nameof(units));
+            this.ResourceId = resourceId;
+            this.Start = start;
             this.Total = total ?? throw new global::System.ArgumentNullException(nameof(total));
+            this.Units = units ?? throw new global::System.ArgumentNullException(nameof(units));
         }
 
         /// <summary>

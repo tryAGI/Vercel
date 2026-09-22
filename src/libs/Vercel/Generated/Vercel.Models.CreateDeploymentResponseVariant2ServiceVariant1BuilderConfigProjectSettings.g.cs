@@ -11,8 +11,26 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("framework")]
-        public string? Framework { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("autoExposeSystemEnvs")]
+        public bool? AutoExposeSystemEnvs { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("buildCommand")]
+        public string? BuildCommand { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("commandForIgnoringBuildStep")]
+        public string? CommandForIgnoringBuildStep { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        public double? CreatedAt { get; set; }
 
         /// <summary>
         ///
@@ -23,14 +41,38 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("directoryListing")]
+        public bool? DirectoryListing { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("framework")]
+        public string? Framework { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitForkProtection")]
+        public bool? GitForkProtection { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("installCommand")]
         public string? InstallCommand { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("buildCommand")]
-        public string? BuildCommand { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("monorepoManager")]
+        public string? MonorepoManager { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("nodeVersion")]
+        public string? NodeVersion { get; set; }
 
         /// <summary>
         ///
@@ -47,50 +89,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("nodeVersion")]
-        public string? NodeVersion { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("monorepoManager")]
-        public string? MonorepoManager { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        public double? CreatedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("autoExposeSystemEnvs")]
-        public bool? AutoExposeSystemEnvs { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sourceFilesOutsideRootDirectory")]
         public bool? SourceFilesOutsideRootDirectory { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("directoryListing")]
-        public bool? DirectoryListing { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("gitForkProtection")]
-        public bool? GitForkProtection { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("commandForIgnoringBuildStep")]
-        public string? CommandForIgnoringBuildStep { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -101,53 +101,53 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateDeploymentResponseVariant2ServiceVariant1BuilderConfigProjectSettings" /> class.
         /// </summary>
-        /// <param name="framework"></param>
-        /// <param name="devCommand"></param>
-        /// <param name="installCommand"></param>
+        /// <param name="autoExposeSystemEnvs"></param>
         /// <param name="buildCommand"></param>
+        /// <param name="commandForIgnoringBuildStep"></param>
+        /// <param name="createdAt"></param>
+        /// <param name="devCommand"></param>
+        /// <param name="directoryListing"></param>
+        /// <param name="framework"></param>
+        /// <param name="gitForkProtection"></param>
+        /// <param name="installCommand"></param>
+        /// <param name="monorepoManager"></param>
+        /// <param name="nodeVersion"></param>
         /// <param name="outputDirectory"></param>
         /// <param name="rootDirectory"></param>
-        /// <param name="nodeVersion"></param>
-        /// <param name="monorepoManager"></param>
-        /// <param name="createdAt"></param>
-        /// <param name="autoExposeSystemEnvs"></param>
         /// <param name="sourceFilesOutsideRootDirectory"></param>
-        /// <param name="directoryListing"></param>
-        /// <param name="gitForkProtection"></param>
-        /// <param name="commandForIgnoringBuildStep"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateDeploymentResponseVariant2ServiceVariant1BuilderConfigProjectSettings(
-            string? framework,
-            string? devCommand,
-            string? installCommand,
+            bool? autoExposeSystemEnvs,
             string? buildCommand,
+            string? commandForIgnoringBuildStep,
+            double? createdAt,
+            string? devCommand,
+            bool? directoryListing,
+            string? framework,
+            bool? gitForkProtection,
+            string? installCommand,
+            string? monorepoManager,
+            string? nodeVersion,
             string? outputDirectory,
             string? rootDirectory,
-            string? nodeVersion,
-            string? monorepoManager,
-            double? createdAt,
-            bool? autoExposeSystemEnvs,
-            bool? sourceFilesOutsideRootDirectory,
-            bool? directoryListing,
-            bool? gitForkProtection,
-            string? commandForIgnoringBuildStep)
+            bool? sourceFilesOutsideRootDirectory)
         {
-            this.Framework = framework;
-            this.DevCommand = devCommand;
-            this.InstallCommand = installCommand;
+            this.AutoExposeSystemEnvs = autoExposeSystemEnvs;
             this.BuildCommand = buildCommand;
+            this.CommandForIgnoringBuildStep = commandForIgnoringBuildStep;
+            this.CreatedAt = createdAt;
+            this.DevCommand = devCommand;
+            this.DirectoryListing = directoryListing;
+            this.Framework = framework;
+            this.GitForkProtection = gitForkProtection;
+            this.InstallCommand = installCommand;
+            this.MonorepoManager = monorepoManager;
+            this.NodeVersion = nodeVersion;
             this.OutputDirectory = outputDirectory;
             this.RootDirectory = rootDirectory;
-            this.NodeVersion = nodeVersion;
-            this.MonorepoManager = monorepoManager;
-            this.CreatedAt = createdAt;
-            this.AutoExposeSystemEnvs = autoExposeSystemEnvs;
             this.SourceFilesOutsideRootDirectory = sourceFilesOutsideRootDirectory;
-            this.DirectoryListing = directoryListing;
-            this.GitForkProtection = gitForkProtection;
-            this.CommandForIgnoringBuildStep = commandForIgnoringBuildStep;
         }
 
         /// <summary>

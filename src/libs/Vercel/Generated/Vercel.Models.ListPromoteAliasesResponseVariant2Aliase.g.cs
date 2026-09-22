@@ -11,13 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Status { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Alias { get; set; }
@@ -30,6 +23,13 @@ namespace Vercel
         public required string Id { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Status { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -38,20 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListPromoteAliasesResponseVariant2Aliase" /> class.
         /// </summary>
-        /// <param name="status"></param>
         /// <param name="alias"></param>
         /// <param name="id"></param>
+        /// <param name="status"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListPromoteAliasesResponseVariant2Aliase(
-            string status,
             string alias,
-            string id)
+            string id,
+            string status)
         {
-            this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
             this.Alias = alias ?? throw new global::System.ArgumentNullException(nameof(alias));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Status = status ?? throw new global::System.ArgumentNullException(nameof(status));
         }
 
         /// <summary>

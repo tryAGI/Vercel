@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string TeamId { get; set; }
+        public required string ProjectId { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamId")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string ProjectId { get; set; }
+        public required string TeamId { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="AuthUserFavoriteProjectsAndSpace" /> class.
         /// </summary>
-        /// <param name="teamId"></param>
         /// <param name="projectId"></param>
+        /// <param name="teamId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AuthUserFavoriteProjectsAndSpace(
-            string teamId,
-            string projectId)
+            string projectId,
+            string teamId)
         {
-            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));
         }
 
         /// <summary>

@@ -11,9 +11,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("assignedBetaLabelAt")]
+        public double? AssignedBetaLabelAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("flags")]
+        public global::System.Collections.Generic.IList<string>? Flags { get; set; }
 
         /// <summary>
         ///
@@ -32,14 +37,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("flags")]
-        public global::System.Collections.Generic.IList<string>? Flags { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("assignedBetaLabelAt")]
-        public double? AssignedBetaLabelAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
 
         /// <summary>
         ///
@@ -56,28 +56,28 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetConfigurationsResponseVariant2ItemIntegration" /> class.
         /// </summary>
-        /// <param name="name"></param>
         /// <param name="icon"></param>
         /// <param name="isLegacy"></param>
-        /// <param name="flags"></param>
+        /// <param name="name"></param>
         /// <param name="assignedBetaLabelAt"></param>
+        /// <param name="flags"></param>
         /// <param name="tagIds"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetConfigurationsResponseVariant2ItemIntegration(
-            string name,
             string icon,
             bool isLegacy,
-            global::System.Collections.Generic.IList<string>? flags,
+            string name,
             double? assignedBetaLabelAt,
+            global::System.Collections.Generic.IList<string>? flags,
             global::System.Collections.Generic.IList<global::Vercel.GetConfigurationsResponseVariant2ItemIntegrationTagId>? tagIds)
         {
-            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.AssignedBetaLabelAt = assignedBetaLabelAt;
+            this.Flags = flags;
             this.Icon = icon ?? throw new global::System.ArgumentNullException(nameof(icon));
             this.IsLegacy = isLegacy;
-            this.Flags = flags;
-            this.AssignedBetaLabelAt = assignedBetaLabelAt;
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.TagIds = tagIds;
         }
 

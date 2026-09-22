@@ -9,21 +9,6 @@ namespace Vercel
     public sealed partial class UploadProjectAvatarResponseRollingRelease
     {
         /// <summary>
-        /// The environment that the release targets, currently only supports production. Adding in case we want to configure with alias groups or custom environments.<br/>
-        /// Example: production
-        /// </summary>
-        /// <example>production</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Target { get; set; }
-
-        /// <summary>
-        /// An array of all the stages required during a deployment release. Each stage defines a target percentage and advancement rules. The final stage must always have targetPercentage: 100.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("stages")]
-        public global::System.Collections.Generic.IList<global::Vercel.UploadProjectAvatarResponseRollingReleaseStage>? Stages { get; set; }
-
-        /// <summary>
         /// Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.<br/>
         /// Example: false
         /// </summary>
@@ -38,6 +23,21 @@ namespace Vercel
         public global::Vercel.UploadProjectAvatarResponseRollingReleaseGate? Gate { get; set; }
 
         /// <summary>
+        /// An array of all the stages required during a deployment release. Each stage defines a target percentage and advancement rules. The final stage must always have targetPercentage: 100.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("stages")]
+        public global::System.Collections.Generic.IList<global::Vercel.UploadProjectAvatarResponseRollingReleaseStage>? Stages { get; set; }
+
+        /// <summary>
+        /// The environment that the release targets, currently only supports production. Adding in case we want to configure with alias groups or custom environments.<br/>
+        /// Example: production
+        /// </summary>
+        /// <example>production</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("target")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Target { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -50,9 +50,6 @@ namespace Vercel
         /// The environment that the release targets, currently only supports production. Adding in case we want to configure with alias groups or custom environments.<br/>
         /// Example: production
         /// </param>
-        /// <param name="stages">
-        /// An array of all the stages required during a deployment release. Each stage defines a target percentage and advancement rules. The final stage must always have targetPercentage: 100.
-        /// </param>
         /// <param name="canaryResponseHeader">
         /// Whether the request served by a canary deployment should return a header indicating a canary was served. Defaults to `false` when omitted.<br/>
         /// Example: false
@@ -60,19 +57,22 @@ namespace Vercel
         /// <param name="gate">
         /// Automated gating configuration. Omitted (the default) means no gating is configured, which is equivalent to `enabled: false`.
         /// </param>
+        /// <param name="stages">
+        /// An array of all the stages required during a deployment release. Each stage defines a target percentage and advancement rules. The final stage must always have targetPercentage: 100.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UploadProjectAvatarResponseRollingRelease(
             string target,
-            global::System.Collections.Generic.IList<global::Vercel.UploadProjectAvatarResponseRollingReleaseStage>? stages,
             bool? canaryResponseHeader,
-            global::Vercel.UploadProjectAvatarResponseRollingReleaseGate? gate)
+            global::Vercel.UploadProjectAvatarResponseRollingReleaseGate? gate,
+            global::System.Collections.Generic.IList<global::Vercel.UploadProjectAvatarResponseRollingReleaseStage>? stages)
         {
-            this.Target = target ?? throw new global::System.ArgumentNullException(nameof(target));
-            this.Stages = stages;
             this.CanaryResponseHeader = canaryResponseHeader;
             this.Gate = gate;
+            this.Stages = stages;
+            this.Target = target ?? throw new global::System.ArgumentNullException(nameof(target));
         }
 
         /// <summary>

@@ -11,16 +11,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sandboxes")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("pagination")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.NamedSandbox> Sandboxes { get; set; }
+        public required global::Vercel.ListNamedSandboxesResponsePagination Pagination { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("pagination")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("sandboxes")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.ListNamedSandboxesResponsePagination Pagination { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.NamedSandbox> Sandboxes { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +31,17 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ListNamedSandboxesResponse" /> class.
         /// </summary>
-        /// <param name="sandboxes"></param>
         /// <param name="pagination"></param>
+        /// <param name="sandboxes"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListNamedSandboxesResponse(
-            global::System.Collections.Generic.IList<global::Vercel.NamedSandbox> sandboxes,
-            global::Vercel.ListNamedSandboxesResponsePagination pagination)
+            global::Vercel.ListNamedSandboxesResponsePagination pagination,
+            global::System.Collections.Generic.IList<global::Vercel.NamedSandbox> sandboxes)
         {
-            this.Sandboxes = sandboxes ?? throw new global::System.ArgumentNullException(nameof(sandboxes));
             this.Pagination = pagination ?? throw new global::System.ArgumentNullException(nameof(pagination));
+            this.Sandboxes = sandboxes ?? throw new global::System.ArgumentNullException(nameof(sandboxes));
         }
 
         /// <summary>

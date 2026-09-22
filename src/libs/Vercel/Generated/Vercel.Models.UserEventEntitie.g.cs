@@ -9,14 +9,13 @@ namespace Vercel
     public sealed partial class UserEventEntitie
     {
         /// <summary>
-        /// The type of entity.<br/>
-        /// Example: author
+        /// The index of where the entity ends within the `text` (non-inclusive).<br/>
+        /// Example: 3
         /// </summary>
-        /// <example>author</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventEntitieTypeJsonConverter))]
+        /// <example>3</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("end")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UserEventEntitieType Type { get; set; }
+        public required double End { get; set; }
 
         /// <summary>
         /// The index of where the entity begins within the `text` (inclusive).<br/>
@@ -28,13 +27,14 @@ namespace Vercel
         public required double Start { get; set; }
 
         /// <summary>
-        /// The index of where the entity ends within the `text` (non-inclusive).<br/>
-        /// Example: 3
+        /// The type of entity.<br/>
+        /// Example: author
         /// </summary>
-        /// <example>3</example>
-        [global::System.Text.Json.Serialization.JsonPropertyName("end")]
+        /// <example>author</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UserEventEntitieTypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double End { get; set; }
+        public required global::Vercel.UserEventEntitieType Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -45,29 +45,29 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UserEventEntitie" /> class.
         /// </summary>
-        /// <param name="type">
-        /// The type of entity.<br/>
-        /// Example: author
+        /// <param name="end">
+        /// The index of where the entity ends within the `text` (non-inclusive).<br/>
+        /// Example: 3
         /// </param>
         /// <param name="start">
         /// The index of where the entity begins within the `text` (inclusive).<br/>
         /// Example: 0
         /// </param>
-        /// <param name="end">
-        /// The index of where the entity ends within the `text` (non-inclusive).<br/>
-        /// Example: 3
+        /// <param name="type">
+        /// The type of entity.<br/>
+        /// Example: author
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UserEventEntitie(
-            global::Vercel.UserEventEntitieType type,
+            double end,
             double start,
-            double end)
+            global::Vercel.UserEventEntitieType type)
         {
-            this.Type = type;
-            this.Start = start;
             this.End = end;
+            this.Start = start;
+            this.Type = type;
         }
 
         /// <summary>

@@ -9,6 +9,12 @@ namespace Vercel
     public sealed partial class GetIntegrationResourceResponse
     {
         /// <summary>
+        /// The ID of the billing plan the resource is subscribed to, if applicable
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("billingPlanId")]
+        public string? BillingPlanId { get; set; }
+
+        /// <summary>
         /// The ID provided by the 3rd party provider for the given resource
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
@@ -23,6 +29,12 @@ namespace Vercel
         public required string InternalId { get; set; }
 
         /// <summary>
+        /// The configured metadata for the resource as defined by its product's Metadata Schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
+        public object? Metadata { get; set; }
+
+        /// <summary>
         /// The name of the resource as it is recorded in Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
@@ -30,11 +42,10 @@ namespace Vercel
         public required string Name { get; set; }
 
         /// <summary>
-        /// The current status of the resource
+        /// The notification, if set, displayed to the user when viewing the resource in Vercel
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetIntegrationResourceResponseStatusJsonConverter))]
-        public global::Vercel.GetIntegrationResourceResponseStatus? Status { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("notification")]
+        public global::Vercel.GetIntegrationResourceResponseNotification? Notification { get; set; }
 
         /// <summary>
         /// The ID of the product the resource is derived from
@@ -50,22 +61,11 @@ namespace Vercel
         public global::Vercel.GetIntegrationResourceResponseProtocolSettings? ProtocolSettings { get; set; }
 
         /// <summary>
-        /// The notification, if set, displayed to the user when viewing the resource in Vercel
+        /// The current status of the resource
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("notification")]
-        public global::Vercel.GetIntegrationResourceResponseNotification? Notification { get; set; }
-
-        /// <summary>
-        /// The ID of the billing plan the resource is subscribed to, if applicable
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("billingPlanId")]
-        public string? BillingPlanId { get; set; }
-
-        /// <summary>
-        /// The configured metadata for the resource as defined by its product's Metadata Schema
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("metadata")]
-        public object? Metadata { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("status")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetIntegrationResourceResponseStatusJsonConverter))]
+        public global::Vercel.GetIntegrationResourceResponseStatus? Status { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -88,20 +88,20 @@ namespace Vercel
         /// <param name="productId">
         /// The ID of the product the resource is derived from
         /// </param>
-        /// <param name="status">
-        /// The current status of the resource
-        /// </param>
-        /// <param name="protocolSettings">
-        /// Any settings provided for the resource to support its product's protocols
-        /// </param>
-        /// <param name="notification">
-        /// The notification, if set, displayed to the user when viewing the resource in Vercel
-        /// </param>
         /// <param name="billingPlanId">
         /// The ID of the billing plan the resource is subscribed to, if applicable
         /// </param>
         /// <param name="metadata">
         /// The configured metadata for the resource as defined by its product's Metadata Schema
+        /// </param>
+        /// <param name="notification">
+        /// The notification, if set, displayed to the user when viewing the resource in Vercel
+        /// </param>
+        /// <param name="protocolSettings">
+        /// Any settings provided for the resource to support its product's protocols
+        /// </param>
+        /// <param name="status">
+        /// The current status of the resource
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -111,21 +111,21 @@ namespace Vercel
             string internalId,
             string name,
             string productId,
-            global::Vercel.GetIntegrationResourceResponseStatus? status,
-            global::Vercel.GetIntegrationResourceResponseProtocolSettings? protocolSettings,
-            global::Vercel.GetIntegrationResourceResponseNotification? notification,
             string? billingPlanId,
-            object? metadata)
+            object? metadata,
+            global::Vercel.GetIntegrationResourceResponseNotification? notification,
+            global::Vercel.GetIntegrationResourceResponseProtocolSettings? protocolSettings,
+            global::Vercel.GetIntegrationResourceResponseStatus? status)
         {
+            this.BillingPlanId = billingPlanId;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.InternalId = internalId ?? throw new global::System.ArgumentNullException(nameof(internalId));
+            this.Metadata = metadata;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Status = status;
+            this.Notification = notification;
             this.ProductId = productId ?? throw new global::System.ArgumentNullException(nameof(productId));
             this.ProtocolSettings = protocolSettings;
-            this.Notification = notification;
-            this.BillingPlanId = billingPlanId;
-            this.Metadata = metadata;
+            this.Status = status;
         }
 
         /// <summary>

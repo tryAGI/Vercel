@@ -11,9 +11,37 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("blocks")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectCheckResponseBlocksJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UpdateProjectCheckResponseBlocks Blocks { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deletedAt")]
+        public double? DeletedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("isRerequestable")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool IsRerequestable { get; set; }
 
         /// <summary>
         ///
@@ -39,13 +67,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("isRerequestable")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool IsRerequestable { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("requires")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectCheckResponseRequiresJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -62,17 +83,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("blocks")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectCheckResponseBlocksJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.UpdateProjectCheckResponseBlocks Blocks { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("targets")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> Targets { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("sourceIntegrationConfigurationId")]
+        public string? SourceIntegrationConfigurationId { get; set; }
 
         /// <summary>
         ///
@@ -85,8 +97,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("sourceIntegrationConfigurationId")]
-        public string? SourceIntegrationConfigurationId { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("targets")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<string> Targets { get; set; }
 
         /// <summary>
         ///
@@ -98,22 +111,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double CreatedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double UpdatedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("deletedAt")]
-        public double? DeletedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -124,56 +124,56 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateProjectCheckResponse" /> class.
         /// </summary>
+        /// <param name="blocks"></param>
+        /// <param name="createdAt"></param>
         /// <param name="id"></param>
+        /// <param name="isRerequestable"></param>
         /// <param name="name"></param>
         /// <param name="ownerId"></param>
         /// <param name="projectId"></param>
-        /// <param name="isRerequestable"></param>
         /// <param name="requires"></param>
         /// <param name="source"></param>
-        /// <param name="blocks"></param>
-        /// <param name="targets"></param>
         /// <param name="sourceKind"></param>
+        /// <param name="targets"></param>
         /// <param name="timeout"></param>
-        /// <param name="createdAt"></param>
         /// <param name="updatedAt"></param>
-        /// <param name="sourceIntegrationConfigurationId"></param>
         /// <param name="deletedAt"></param>
+        /// <param name="sourceIntegrationConfigurationId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateProjectCheckResponse(
+            global::Vercel.UpdateProjectCheckResponseBlocks blocks,
+            double createdAt,
             string id,
+            bool isRerequestable,
             string name,
             string ownerId,
             string projectId,
-            bool isRerequestable,
             global::Vercel.UpdateProjectCheckResponseRequires requires,
             global::Vercel.OneOf<global::Vercel.UpdateProjectCheckResponseSourceVariant1, global::Vercel.UpdateProjectCheckResponseSourceVariant2, global::Vercel.UpdateProjectCheckResponseSourceVariant3> source,
-            global::Vercel.UpdateProjectCheckResponseBlocks blocks,
-            global::System.Collections.Generic.IList<string> targets,
             global::Vercel.UpdateProjectCheckResponseSourceKind sourceKind,
+            global::System.Collections.Generic.IList<string> targets,
             double timeout,
-            double createdAt,
             double updatedAt,
-            string? sourceIntegrationConfigurationId,
-            double? deletedAt)
+            double? deletedAt,
+            string? sourceIntegrationConfigurationId)
         {
+            this.Blocks = blocks;
+            this.CreatedAt = createdAt;
+            this.DeletedAt = deletedAt;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.IsRerequestable = isRerequestable;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
-            this.IsRerequestable = isRerequestable;
             this.Requires = requires;
             this.Source = source;
-            this.Blocks = blocks;
-            this.Targets = targets ?? throw new global::System.ArgumentNullException(nameof(targets));
-            this.SourceKind = sourceKind;
             this.SourceIntegrationConfigurationId = sourceIntegrationConfigurationId;
+            this.SourceKind = sourceKind;
+            this.Targets = targets ?? throw new global::System.ArgumentNullException(nameof(targets));
             this.Timeout = timeout;
-            this.CreatedAt = createdAt;
             this.UpdatedAt = updatedAt;
-            this.DeletedAt = deletedAt;
         }
 
         /// <summary>

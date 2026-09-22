@@ -11,6 +11,18 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        public double? CreatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("entrypoint")]
+        public string? Entrypoint { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
@@ -21,18 +33,6 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("readyState")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetDeploymentResponseVariant3LambdaReadyStateJsonConverter))]
         public global::Vercel.GetDeploymentResponseVariant3LambdaReadyState? ReadyState { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        public double? CreatedAt { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("entrypoint")]
-        public string? Entrypoint { get; set; }
 
         /// <summary>
         ///
@@ -58,9 +58,9 @@ namespace Vercel
         /// </summary>
         /// <param name="id"></param>
         /// <param name="output"></param>
-        /// <param name="readyState"></param>
         /// <param name="createdAt"></param>
         /// <param name="entrypoint"></param>
+        /// <param name="readyState"></param>
         /// <param name="readyStateAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -68,15 +68,15 @@ namespace Vercel
         public GetDeploymentResponseVariant3Lambda(
             string id,
             global::System.Collections.Generic.IList<global::Vercel.GetDeploymentResponseVariant3LambdaOutputItem> output,
-            global::Vercel.GetDeploymentResponseVariant3LambdaReadyState? readyState,
             double? createdAt,
             string? entrypoint,
+            global::Vercel.GetDeploymentResponseVariant3LambdaReadyState? readyState,
             double? readyStateAt)
         {
-            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.ReadyState = readyState;
             this.CreatedAt = createdAt;
             this.Entrypoint = entrypoint;
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.ReadyState = readyState;
             this.ReadyStateAt = readyStateAt;
             this.Output = output ?? throw new global::System.ArgumentNullException(nameof(output));
         }

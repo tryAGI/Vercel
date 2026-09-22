@@ -640,38 +640,6 @@ namespace Vercel
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            //
-                            if ((int)__response.StatusCode == 429)
-                            {
-                                string? __content_429 = null;
-                                global::System.Exception? __exception_429 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_429 = __ex;
-                                }
-
-
-                                throw global::Vercel.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_429 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_429,
-                                    responseBody: __content_429,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
 
                             if (__effectiveReadResponseAsString)
                             {
@@ -893,7 +861,7 @@ namespace Vercel
         /// Specify a list of paths that should not be protected by Deployment Protection to enable Cors preflight requests
         /// </param>
         /// <param name="connectConfigurations">
-        /// The list of connections from project environment to Secure Compute network
+        /// The list of connections from project environments to dedicated Secure Compute networks. Shared networks must be managed through the shared-connect-links endpoint.
         /// </param>
         /// <param name="dismissedToasts">
         /// An array of objects representing a Dismissed Toast in regards to a Project. Objects are either merged with existing toasts (on key match), or added to the `dimissedToasts` array.`

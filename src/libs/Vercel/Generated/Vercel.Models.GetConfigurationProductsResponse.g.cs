@@ -11,9 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("products")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.GetConfigurationProductsResponseProduct> Products { get; set; }
+        public required global::Vercel.GetConfigurationProductsResponseConfiguration Configuration { get; set; }
 
         /// <summary>
         ///
@@ -25,9 +25,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configuration")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("products")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetConfigurationProductsResponseConfiguration Configuration { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.GetConfigurationProductsResponseProduct> Products { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,20 +38,20 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetConfigurationProductsResponse" /> class.
         /// </summary>
-        /// <param name="products"></param>
-        /// <param name="integration"></param>
         /// <param name="configuration"></param>
+        /// <param name="integration"></param>
+        /// <param name="products"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetConfigurationProductsResponse(
-            global::System.Collections.Generic.IList<global::Vercel.GetConfigurationProductsResponseProduct> products,
+            global::Vercel.GetConfigurationProductsResponseConfiguration configuration,
             global::Vercel.GetConfigurationProductsResponseIntegration integration,
-            global::Vercel.GetConfigurationProductsResponseConfiguration configuration)
+            global::System.Collections.Generic.IList<global::Vercel.GetConfigurationProductsResponseProduct> products)
         {
-            this.Products = products ?? throw new global::System.ArgumentNullException(nameof(products));
-            this.Integration = integration ?? throw new global::System.ArgumentNullException(nameof(integration));
             this.Configuration = configuration ?? throw new global::System.ArgumentNullException(nameof(configuration));
+            this.Integration = integration ?? throw new global::System.ArgumentNullException(nameof(integration));
+            this.Products = products ?? throw new global::System.ArgumentNullException(nameof(products));
         }
 
         /// <summary>

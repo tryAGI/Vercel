@@ -11,17 +11,17 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetRoutesResponseVariant2RouteRouteHaVariant2TypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetRoutesResponseVariant2RouteRouteHaVariant2Type Type { get; set; }
+        public required string Key { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("key")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetRoutesResponseVariant2RouteRouteHaVariant2TypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Key { get; set; }
+        public required global::Vercel.GetRoutesResponseVariant2RouteRouteHaVariant2Type Type { get; set; }
 
         /// <summary>
         ///
@@ -39,19 +39,19 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetRoutesResponseVariant2RouteRouteHaVariant2" /> class.
         /// </summary>
-        /// <param name="type"></param>
         /// <param name="key"></param>
+        /// <param name="type"></param>
         /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetRoutesResponseVariant2RouteRouteHaVariant2(
-            global::Vercel.GetRoutesResponseVariant2RouteRouteHaVariant2Type type,
             string key,
+            global::Vercel.GetRoutesResponseVariant2RouteRouteHaVariant2Type type,
             global::Vercel.OneOf<string, global::Vercel.GetRoutesResponseVariant2RouteRouteHaVariant2Value>? value)
         {
-            this.Type = type;
             this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
+            this.Type = type;
             this.Value = value;
         }
 

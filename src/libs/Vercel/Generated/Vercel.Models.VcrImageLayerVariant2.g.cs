@@ -37,15 +37,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.VcrImageLayerVariant2TypeJsonConverter))]
-        public global::Vercel.VcrImageLayerVariant2Type Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("command")]
+        public string? Command { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("command")]
-        public string? Command { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.VcrImageLayerVariant2TypeJsonConverter))]
+        public global::Vercel.VcrImageLayerVariant2Type Type { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -62,8 +62,8 @@ namespace Vercel
         /// <param name="createdBy"></param>
         /// <param name="digest"></param>
         /// <param name="sizeBytes"></param>
-        /// <param name="type"></param>
         /// <param name="command"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -72,15 +72,15 @@ namespace Vercel
             string? createdBy,
             string? digest,
             double? sizeBytes,
-            global::Vercel.VcrImageLayerVariant2Type type,
-            string? command)
+            string? command,
+            global::Vercel.VcrImageLayerVariant2Type type)
         {
             this.CreatedBy = createdBy;
             this.Digest = digest;
             this.Operation = operation;
             this.SizeBytes = sizeBytes;
-            this.Type = type;
             this.Command = command;
+            this.Type = type;
         }
 
         /// <summary>

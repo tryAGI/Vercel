@@ -16,17 +16,17 @@ namespace Vercel
         public required string Id { get; set; }
 
         /// <summary>
+        /// Team roles at time of deployment
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
+        public global::System.Collections.Generic.IList<string>? TeamRoles { get; set; }
+
+        /// <summary>
         /// Vercel username
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("username")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Username { get; set; }
-
-        /// <summary>
-        /// Team roles at time of deployment
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
-        public global::System.Collections.Generic.IList<string>? TeamRoles { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -55,8 +55,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<string>? teamRoles)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
-            this.Username = username ?? throw new global::System.ArgumentNullException(nameof(username));
             this.TeamRoles = teamRoles;
+            this.Username = username ?? throw new global::System.ArgumentNullException(nameof(username));
         }
 
         /// <summary>
