@@ -26,7 +26,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alias")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbc14f6f0dbfaa660> Alias { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared29b35dda7b3e47c4> Alias { get; set; }
 
         /// <summary>
         ///
@@ -321,7 +321,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("latestDeployments")]
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7524a6c3199bd963>? LatestDeployments { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbca3e7a986162538>? LatestDeployments { get; set; }
 
         /// <summary>
         ///
@@ -531,7 +531,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("targets")]
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared290e0be6a2cc986e?>? Targets { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared8422af433e1bf486?>? Targets { get; set; }
 
         /// <summary>
         ///
@@ -735,7 +735,7 @@ namespace Vercel
 #endif
         public GetProjectResponse(
             string accountId,
-            global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbc14f6f0dbfaa660> alias,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared29b35dda7b3e47c4> alias,
             global::Vercel.GetProjectResponseDefaultResourceConfig defaultResourceConfig,
             global::Vercel.GetProjectResponseDeploymentExpiration deploymentExpiration,
             bool directoryListing,
@@ -787,7 +787,7 @@ namespace Vercel
             global::Vercel.GetProjectResponseJobs? jobs,
             global::Vercel.GetProjectResponseLastAliasRequest? lastAliasRequest,
             object? lastRollbackTarget,
-            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7524a6c3199bd963>? latestDeployments,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbca3e7a986162538>? latestDeployments,
             global::Vercel.AutoSDKSharede0f9d68fc63cf31d? link,
             bool? live,
             global::Vercel.AutoSDKShared7ff9e6410c724535? microfrontends,
@@ -818,7 +818,7 @@ namespace Vercel
             global::Vercel.GetProjectResponseSpeedInsights? speedInsights,
             global::Vercel.GetProjectResponseSsoProtection? ssoProtection,
             global::Vercel.GetProjectResponseStaticIps? staticIps,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared290e0be6a2cc986e?>? targets,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared8422af433e1bf486?>? targets,
             global::Vercel.GetProjectResponseTier? tier,
             global::Vercel.GetProjectResponseTracing? tracing,
             double? transferCompletedAt,
