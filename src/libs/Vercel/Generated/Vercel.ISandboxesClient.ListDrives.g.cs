@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// List drives<br/>
-        /// Retrieves a paginated list of drives belonging to a specific project. Drives are in private beta. Register your interest to get access: https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta
+        /// Retrieves a paginated list of drives belonging to a specific project.
         /// </summary>
         /// <param name="projectId">
         /// The project ID or name associated with the drives. Required unless using a Vercel OIDC token scoped to a project.<br/>
@@ -53,7 +53,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// List drives<br/>
-        /// Retrieves a paginated list of drives belonging to a specific project. Drives are in private beta. Register your interest to get access: https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta
+        /// Retrieves a paginated list of drives belonging to a specific project.
         /// </summary>
         /// <param name="projectId">
         /// The project ID or name associated with the drives. Required unless using a Vercel OIDC token scoped to a project.<br/>
