@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        Errored,
+        /// <summary>
+        ///
+        /// </summary>
         Preparing,
         /// <summary>
         ///
@@ -34,6 +38,7 @@ namespace Vercel
         {
             return value switch
             {
+                VcrTagStatus.Errored => "errored",
                 VcrTagStatus.Preparing => "preparing",
                 VcrTagStatus.Ready => "ready",
                 VcrTagStatus.Unoptimized => "unoptimized",
@@ -47,6 +52,7 @@ namespace Vercel
         {
             return value switch
             {
+                "errored" => VcrTagStatus.Errored,
                 "preparing" => VcrTagStatus.Preparing,
                 "ready" => VcrTagStatus.Ready,
                 "unoptimized" => VcrTagStatus.Unoptimized,
