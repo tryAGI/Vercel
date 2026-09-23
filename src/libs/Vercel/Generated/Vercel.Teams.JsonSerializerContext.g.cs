@@ -464,13 +464,13 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1Item>, string>());
@@ -478,7 +478,6 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1Item>, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, object, global::System.Collections.Generic.IList<object>, bool?>());
@@ -492,8 +491,8 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
@@ -505,6 +504,7 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());

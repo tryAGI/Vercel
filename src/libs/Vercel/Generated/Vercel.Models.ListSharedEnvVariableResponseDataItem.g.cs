@@ -99,6 +99,13 @@ namespace Vercel
         public string? LastEditedByDisplayName { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("lastEditedByPrincipal")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1, global::Vercel.ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant2>))]
+        public global::Vercel.OneOf<global::Vercel.ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1, global::Vercel.ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant2>? LastEditedByPrincipal { get; set; }
+
+        /// <summary>
         /// The unique identifier of the owner (team) the Shared Env Var was created for.<br/>
         /// Example: team_LLHUOMOoDlqOp8wPE4kFo9pE
         /// </summary>
@@ -213,6 +220,7 @@ namespace Vercel
         /// <param name="lastEditedByDisplayName">
         /// The last editor full name or username.
         /// </param>
+        /// <param name="lastEditedByPrincipal"></param>
         /// <param name="ownerId">
         /// The unique identifier of the owner (team) the Shared Env Var was created for.<br/>
         /// Example: team_LLHUOMOoDlqOp8wPE4kFo9pE
@@ -257,6 +265,7 @@ namespace Vercel
             double? deletedAt,
             string? deletedBy,
             string? lastEditedByDisplayName,
+            global::Vercel.OneOf<global::Vercel.ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant1, global::Vercel.ListSharedEnvVariableResponseDataItemLastEditedByPrincipalVariant2>? lastEditedByPrincipal,
             string? ownerId,
             global::System.Collections.Generic.IList<string>? projectId,
             global::System.Collections.Generic.IList<global::Vercel.ListSharedEnvVariableResponseDataItemTargetItem>? target,
@@ -277,6 +286,7 @@ namespace Vercel
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
             this.LastEditedByDisplayName = lastEditedByDisplayName;
+            this.LastEditedByPrincipal = lastEditedByPrincipal;
             this.OwnerId = ownerId;
             this.ProjectId = projectId;
             this.SecurityIssues = securityIssues ?? throw new global::System.ArgumentNullException(nameof(securityIssues));

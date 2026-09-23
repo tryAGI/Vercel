@@ -24,6 +24,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deployment_id")]
+        public string? DeploymentId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Environment { get; set; }
@@ -108,6 +114,7 @@ namespace Vercel
         /// <param name="scope"></param>
         /// <param name="sub"></param>
         /// <param name="customEnvironmentId"></param>
+        /// <param name="deploymentId"></param>
         /// <param name="mfeGroupIds"></param>
         /// <param name="plan"></param>
 #if NET7_0_OR_GREATER
@@ -124,11 +131,13 @@ namespace Vercel
             string scope,
             string sub,
             string? customEnvironmentId,
+            string? deploymentId,
             global::System.Collections.Generic.IList<string>? mfeGroupIds,
             string? plan)
         {
             this.Aud = aud ?? throw new global::System.ArgumentNullException(nameof(aud));
             this.CustomEnvironmentId = customEnvironmentId;
+            this.DeploymentId = deploymentId;
             this.Environment = environment ?? throw new global::System.ArgumentNullException(nameof(environment));
             this.Iss = iss ?? throw new global::System.ArgumentNullException(nameof(iss));
             this.MfeGroupIds = mfeGroupIds;
