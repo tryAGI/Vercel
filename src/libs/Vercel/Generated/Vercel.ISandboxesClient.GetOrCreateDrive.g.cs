@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Get or create a drive<br/>
-        /// Gets an existing drive by project and name, or creates it when it does not exist. Drives are in private beta. Register your interest to get access: https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta
+        /// Gets an existing drive by project and name, or creates it when it does not exist.
         /// </summary>
         /// <param name="name">
         /// Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
@@ -32,7 +32,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Get or create a drive<br/>
-        /// Gets an existing drive by project and name, or creates it when it does not exist. Drives are in private beta. Register your interest to get access: https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta
+        /// Gets an existing drive by project and name, or creates it when it does not exist.
         /// </summary>
         /// <param name="name">
         /// Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
@@ -58,7 +58,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Get or create a drive<br/>
-        /// Gets an existing drive by project and name, or creates it when it does not exist. Drives are in private beta. Register your interest to get access: https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta
+        /// Gets an existing drive by project and name, or creates it when it does not exist.
         /// </summary>
         /// <param name="name">
         /// Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
