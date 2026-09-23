@@ -77960,9 +77960,6 @@
           "404": {
             "description": ""
           },
-          "409": {
-            "description": ""
-          },
           "410": {
             "description": ""
           }
@@ -80158,6 +80155,7 @@
                             "nullable": true,
                             "type": "string",
                             "enum": [
+                              "errored",
                               "preparing",
                               "ready",
                               "unoptimized",
@@ -92395,6 +92393,8 @@
               "custom-suffix-enable",
               "custom-suffix-pending",
               "custom-suffix-ready",
+              "default-password-protection",
+              "default-sso-protection",
               "deploy-hook-created",
               "deploy-hook-deduped",
               "deploy-hook-deleted",
@@ -93305,6 +93305,8 @@
               "custom-suffix-enable",
               "custom-suffix-pending",
               "custom-suffix-ready",
+              "default-password-protection",
+              "default-sso-protection",
               "deploy-hook-created",
               "deploy-hook-deduped",
               "deploy-hook-deleted",
@@ -94003,6 +94005,8 @@
                 "custom-suffix-enable",
                 "custom-suffix-pending",
                 "custom-suffix-ready",
+                "default-password-protection",
+                "default-sso-protection",
                 "deploy-hook-created",
                 "deploy-hook-deduped",
                 "deploy-hook-deleted",
@@ -98687,6 +98691,7 @@
             "nullable": true,
             "type": "string",
             "enum": [
+              "errored",
               "preparing",
               "ready",
               "unoptimized",
@@ -98814,6 +98819,7 @@
             "nullable": true,
             "type": "string",
             "enum": [
+              "errored",
               "preparing",
               "ready",
               "unoptimized",
@@ -99169,6 +99175,7 @@
             "nullable": true,
             "type": "string",
             "enum": [
+              "errored",
               "preparing",
               "ready",
               "unoptimized",

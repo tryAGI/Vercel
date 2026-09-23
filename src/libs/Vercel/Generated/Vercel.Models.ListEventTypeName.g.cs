@@ -580,6 +580,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        DefaultPasswordProtection,
+        /// <summary>
+        ///
+        /// </summary>
+        DefaultSsoProtection,
+        /// <summary>
+        ///
+        /// </summary>
         DeployHookCreated,
         /// <summary>
         ///
@@ -2925,6 +2933,8 @@ namespace Vercel
                 ListEventTypeName.CustomSuffixEnable => "custom-suffix-enable",
                 ListEventTypeName.CustomSuffixPending => "custom-suffix-pending",
                 ListEventTypeName.CustomSuffixReady => "custom-suffix-ready",
+                ListEventTypeName.DefaultPasswordProtection => "default-password-protection",
+                ListEventTypeName.DefaultSsoProtection => "default-sso-protection",
                 ListEventTypeName.DeployHookCreated => "deploy-hook-created",
                 ListEventTypeName.DeployHookDeduped => "deploy-hook-deduped",
                 ListEventTypeName.DeployHookDeleted => "deploy-hook-deleted",
@@ -3625,6 +3635,8 @@ namespace Vercel
                 "custom-suffix-enable" => ListEventTypeName.CustomSuffixEnable,
                 "custom-suffix-pending" => ListEventTypeName.CustomSuffixPending,
                 "custom-suffix-ready" => ListEventTypeName.CustomSuffixReady,
+                "default-password-protection" => ListEventTypeName.DefaultPasswordProtection,
+                "default-sso-protection" => ListEventTypeName.DefaultSsoProtection,
                 "deploy-hook-created" => ListEventTypeName.DeployHookCreated,
                 "deploy-hook-deduped" => ListEventTypeName.DeployHookDeduped,
                 "deploy-hook-deleted" => ListEventTypeName.DeployHookDeleted,
