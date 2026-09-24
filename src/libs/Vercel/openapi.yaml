@@ -15043,9 +15043,10 @@
                                   "enum": [
                                     "basic",
                                     "enhanced",
+                                    "none",
                                     "standard"
                                   ],
-                                  "description": "The default plan type for the build machine \u2014 what the customer is *paying* for on their plan. For most customers, this is standard, but some customers have an entitlement for enhanced builds."
+                                  "description": "The build machine tier included with the customer's plan. For most customers this is standard; enhanced entitlements include enhanced, while `none` means every build is billed at its purchase type."
                                 },
                                 "machineSelectionType": {
                                   "type": "string",
@@ -17232,9 +17233,10 @@
                                   "enum": [
                                     "basic",
                                     "enhanced",
+                                    "none",
                                     "standard"
                                   ],
-                                  "description": "The default plan type for the build machine \u2014 what the customer is *paying* for on their plan. For most customers, this is standard, but some customers have an entitlement for enhanced builds."
+                                  "description": "The build machine tier included with the customer's plan. For most customers this is standard; enhanced entitlements include enhanced, while `none` means every build is billed at its purchase type."
                                 },
                                 "machineSelectionType": {
                                   "type": "string",
@@ -19460,9 +19462,10 @@
                               "enum": [
                                 "basic",
                                 "enhanced",
+                                "none",
                                 "standard"
                               ],
-                              "description": "The default plan type for the build machine \u2014 what the customer is *paying* for on their plan. For most customers, this is standard, but some customers have an entitlement for enhanced builds."
+                              "description": "The build machine tier included with the customer's plan. For most customers this is standard; enhanced entitlements include enhanced, while `none` means every build is billed at its purchase type."
                             },
                             "machineSelectionType": {
                               "type": "string",
@@ -42457,7 +42460,7 @@
     },
     "/v1/kms/issuers/{issuerId}/sign/message": {
       "post": {
-        "description": "Sign a raw message with a KMS issuer's active signing key. Authenticate the request with a Vercel OIDC token in the `Authorization: Bearer` header; the issuer's policies decide which workloads are allowed to sign. The response `signature` is standard-base64 of the raw signature over the decoded message bytes. `keyId` and `algorithm` identify the signing key in the issuer's JWKS.",
+        "description": "Sign a raw message with a KMS issuer's active signing key. Authenticate the request with a Vercel OIDC token in the `Authorization: Bearer` header; the issuer's policies decide which workloads are allowed to sign. The response `signature` is standard-base64 of the raw signature over the decoded message bytes. `keyId`, `algorithm`, and `fingerprint` identify the signing key in the issuer's JWKS.",
         "operationId": "signKmsMessage",
         "security": [
           {
@@ -42479,6 +42482,10 @@
                       "type": "string",
                       "description": "Algorithm of the signing key."
                     },
+                    "fingerprint": {
+                      "type": "string",
+                      "description": "SHA-256 fingerprint of the signing key's public key (`SHA256:<base64>`)."
+                    },
                     "keyId": {
                       "type": "string",
                       "description": "Key id of the signing key. Matches the JWKS `kid` so verifiers can select the key after rotation without trial-verifying every published key."
@@ -42490,6 +42497,7 @@
                   },
                   "required": [
                     "algorithm",
+                    "fingerprint",
                     "keyId",
                     "signature"
                   ],
@@ -42550,7 +42558,7 @@
     },
     "/v1/kms/issuers/{issuerId}/sign/token": {
       "post": {
-        "description": "Sign a JWT with a KMS issuer's active signing key. Authenticate the request with a Vercel OIDC token in the `Authorization: Bearer` header; the issuer's policies decide which workloads are allowed to sign.",
+        "description": "Sign a JWT with a KMS issuer's active signing key. Authenticate the request with a Vercel OIDC token in the `Authorization: Bearer` header; the issuer's policies decide which workloads are allowed to sign. `keyId`, `algorithm`, and `fingerprint` identify the signing key in the issuer's JWKS.",
         "operationId": "signKmsToken",
         "security": [
           {
@@ -42568,11 +42576,27 @@
               "application/json": {
                 "schema": {
                   "properties": {
+                    "algorithm": {
+                      "type": "string",
+                      "description": "Algorithm of the signing key."
+                    },
+                    "fingerprint": {
+                      "type": "string",
+                      "description": "SHA-256 fingerprint of the signing key's public key (`SHA256:<base64>`)."
+                    },
+                    "keyId": {
+                      "type": "string",
+                      "description": "Key id of the signing key. Matches the JWKS `kid` so verifiers can select the key after rotation without trial-verifying every published key."
+                    },
                     "token": {
-                      "type": "string"
+                      "type": "string",
+                      "description": "Compact JWT signed by the issuer's active signing key."
                     }
                   },
                   "required": [
+                    "algorithm",
+                    "fingerprint",
+                    "keyId",
                     "token"
                   ],
                   "type": "object"
@@ -42659,7 +42683,7 @@
                   "properties": {
                     "issuers": {
                       "items": {
-                        "$ref": "#/components/schemas/AutoSDKShared02b3ab4a1bf599af"
+                        "$ref": "#/components/schemas/AutoSDKShared6a7dd045a7a1bf61"
                       },
                       "type": "array"
                     },
@@ -42763,7 +42787,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared02b3ab4a1bf599af"
+                  "$ref": "#/components/schemas/AutoSDKShared6a7dd045a7a1bf61"
                 }
               }
             }
@@ -42945,7 +42969,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared3ba4fd4930b951c7"
+                  "$ref": "#/components/schemas/AutoSDKShared38e9af03824d67bc"
                 }
               }
             }
@@ -43066,7 +43090,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared3ba4fd4930b951c7"
+                  "$ref": "#/components/schemas/AutoSDKShared38e9af03824d67bc"
                 }
               }
             }
@@ -43168,7 +43192,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared02b3ab4a1bf599af"
+                  "$ref": "#/components/schemas/AutoSDKShared6a7dd045a7a1bf61"
                 }
               }
             }
@@ -43253,7 +43277,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared02b3ab4a1bf599af"
+                  "$ref": "#/components/schemas/AutoSDKShared6a7dd045a7a1bf61"
                 }
               }
             }
@@ -43323,7 +43347,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared02b3ab4a1bf599af"
+                  "$ref": "#/components/schemas/AutoSDKShared6a7dd045a7a1bf61"
                 }
               }
             }
@@ -99803,147 +99827,6 @@
           }
         }
       },
-      "AutoSDKShared02b3ab4a1bf599af": {
-        "properties": {
-          "algorithm": {
-            "type": "string",
-            "enum": [
-              "ES256",
-              "ES384",
-              "ES512",
-              "PS256",
-              "PS384",
-              "PS512",
-              "RS256",
-              "RS384",
-              "RS512"
-            ]
-          },
-          "claimsSchema": {
-            "additionalProperties": true,
-            "type": "object"
-          },
-          "createdAt": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          },
-          "managedBy": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "origin": {
-            "type": "string",
-            "enum": [
-              "external",
-              "vercel"
-            ]
-          },
-          "ownerId": {
-            "type": "string"
-          },
-          "policies": {
-            "items": {
-              "oneOf": [
-                {
-                  "properties": {
-                    "createdAt": {
-                      "type": "string"
-                    },
-                    "environments": {
-                      "items": {
-                        "type": "string"
-                      },
-                      "type": "array",
-                      "description": "Environments whose OIDC tokens this grant authorizes. Each entry is either a system environment slug (`production`, `preview`, `development`) or a custom environment ID (prefixed `env_`). Custom environments are matched against the token's `custom_environment_id` claim (the stable ID); system environments against its `environment` claim."
-                    },
-                    "kind": {
-                      "type": "string",
-                      "enum": [
-                        "project-grant"
-                      ]
-                    },
-                    "projectId": {
-                      "type": "string"
-                    },
-                    "teamId": {
-                      "type": "string"
-                    },
-                    "tokenClaims": {
-                      "additionalProperties": true,
-                      "type": "object"
-                    },
-                    "updatedAt": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "createdAt",
-                    "environments",
-                    "kind",
-                    "projectId",
-                    "teamId",
-                    "updatedAt"
-                  ],
-                  "type": "object"
-                },
-                {
-                  "properties": {
-                    "clientId": {
-                      "type": "string"
-                    },
-                    "createdAt": {
-                      "type": "string"
-                    },
-                    "kind": {
-                      "type": "string",
-                      "enum": [
-                        "connex-grant"
-                      ]
-                    },
-                    "tokenClaims": {
-                      "additionalProperties": true,
-                      "type": "object"
-                    },
-                    "updatedAt": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "clientId",
-                    "createdAt",
-                    "kind",
-                    "updatedAt"
-                  ],
-                  "type": "object"
-                }
-              ]
-            },
-            "type": "array"
-          },
-          "signingKeys": {
-            "$ref": "#/components/schemas/AutoSDKSharedcc2c79cf4e75d840"
-          },
-          "updatedAt": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "algorithm",
-          "createdAt",
-          "id",
-          "name",
-          "origin",
-          "ownerId",
-          "policies",
-          "signingKeys",
-          "updatedAt"
-        ],
-        "type": "object"
-      },
       "AutoSDKShared04b58f4753dd761f": {
         "type": "object",
         "additionalProperties": false,
@@ -109473,6 +109356,103 @@
         ],
         "type": "object"
       },
+      "AutoSDKShared38e9af03824d67bc": {
+        "properties": {
+          "activateAt": {
+            "type": "string"
+          },
+          "activatedAt": {
+            "type": "string",
+            "description": "When the key became the active signer. Present for active and revoking keys (and absent for pending keys and rows predating this field)."
+          },
+          "algorithm": {
+            "type": "string"
+          },
+          "certificatePem": {
+            "type": "string",
+            "description": "The stored X.509 certificate (from `publicKey.x5c[0]`) in PEM form, ready to render. Present only for keys created with a stored certificate; omitted for keys created before certificates were stored."
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "importKeyId": {
+            "type": "string",
+            "description": "The caller-supplied key id (imported keys only), used as the JWT/JWKS `kid`. Not unique across an issuer's keys; omitted for generated keys."
+          },
+          "issuerId": {
+            "type": "string"
+          },
+          "keyId": {
+            "type": "string",
+            "description": "The server-minted, unique record identifier. Use this to address the key on the activate / certificate endpoints."
+          },
+          "publicKey": {
+            "properties": {
+              "alg": {
+                "type": "string"
+              },
+              "key_ops": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "kid": {
+                "type": "string"
+              },
+              "kty": {
+                "type": "string"
+              },
+              "use": {
+                "type": "string"
+              },
+              "x5c": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array",
+                "description": "The X.509 certificate chain (RFC 7517 \u00a74.7). Each entry is the base64 DER (not base64url) of a certificate. For keys minted with a stored certificate this holds the single self-signed cert as `[x5c]`."
+              },
+              "x5t#S256": {
+                "type": "string",
+                "description": "The base64url SHA-256 thumbprint of the DER certificate in `x5c[0]` (RFC 7517 \u00a74.9)."
+              }
+            },
+            "type": "object"
+          },
+          "publicKeyFingerprint": {
+            "type": "string"
+          },
+          "publicKeyPem": {
+            "type": "string",
+            "description": "The public key in SPKI PEM form, ready to render. Present whenever the key has public key material. Derived from `publicKey`; the embedded certificate members (`x5c`/`x5t#S256`) do not affect it."
+          },
+          "revokeAt": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "pending",
+              "revoking"
+            ]
+          },
+          "updatedAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "algorithm",
+          "createdAt",
+          "issuerId",
+          "keyId",
+          "publicKeyFingerprint",
+          "status",
+          "updatedAt"
+        ],
+        "type": "object"
+      },
       "AutoSDKShared3976a2c0c206ff70": {
         "properties": {
           "action": {
@@ -109574,102 +109554,6 @@
           "$ref": "#/components/schemas/AutoSDKShared2e531c6dd7d2b280"
         },
         "type": "array"
-      },
-      "AutoSDKShared3ba4fd4930b951c7": {
-        "properties": {
-          "activateAt": {
-            "type": "string"
-          },
-          "activatedAt": {
-            "type": "string",
-            "description": "When the key became the active signer. Present for active and revoking keys (and absent for pending keys and rows predating this field)."
-          },
-          "algorithm": {
-            "type": "string"
-          },
-          "certificatePem": {
-            "type": "string",
-            "description": "The stored X.509 certificate (from `publicKey.x5c[0]`) in PEM form, ready to render. Present only for keys created with a stored certificate; omitted for keys created before certificates were stored."
-          },
-          "createdAt": {
-            "type": "string"
-          },
-          "importKeyId": {
-            "type": "string",
-            "description": "The caller-supplied key id (imported keys only), used as the JWT/JWKS `kid`. Not unique across an issuer's keys; omitted for generated keys."
-          },
-          "issuerId": {
-            "type": "string"
-          },
-          "keyId": {
-            "type": "string",
-            "description": "The server-minted, unique record identifier. Use this to address the key on the activate / certificate endpoints."
-          },
-          "publicKey": {
-            "properties": {
-              "alg": {
-                "type": "string"
-              },
-              "key_ops": {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
-              },
-              "kid": {
-                "type": "string"
-              },
-              "kty": {
-                "type": "string"
-              },
-              "use": {
-                "type": "string"
-              },
-              "x5c": {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array",
-                "description": "The X.509 certificate chain (RFC 7517 \u00a74.7). Each entry is the base64 DER (not base64url) of a certificate. For keys minted with a stored certificate this holds the single self-signed cert as `[x5c]`."
-              },
-              "x5t#S256": {
-                "type": "string",
-                "description": "The base64url SHA-256 thumbprint of the DER certificate in `x5c[0]` (RFC 7517 \u00a74.9)."
-              }
-            },
-            "type": "object"
-          },
-          "publicKeyFingerprint": {
-            "type": "string"
-          },
-          "publicKeyPem": {
-            "type": "string",
-            "description": "The public key in SPKI PEM form, ready to render. Present whenever the key has public key material. Derived from `publicKey`; the embedded certificate members (`x5c`/`x5t#S256`) do not affect it."
-          },
-          "revokeAt": {
-            "type": "string"
-          },
-          "status": {
-            "type": "string",
-            "enum": [
-              "active",
-              "pending",
-              "revoking"
-            ]
-          },
-          "updatedAt": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "algorithm",
-          "createdAt",
-          "issuerId",
-          "keyId",
-          "status",
-          "updatedAt"
-        ],
-        "type": "object"
       },
       "AutoSDKShared3cefeabeb1d55c64": {
         "oneOf": [
@@ -112504,6 +112388,147 @@
           "$ref": "#/components/schemas/AutoSDKShared08bf5d361fc08707"
         },
         "type": "array"
+      },
+      "AutoSDKShared6a7dd045a7a1bf61": {
+        "properties": {
+          "algorithm": {
+            "type": "string",
+            "enum": [
+              "ES256",
+              "ES384",
+              "ES512",
+              "PS256",
+              "PS384",
+              "PS512",
+              "RS256",
+              "RS384",
+              "RS512"
+            ]
+          },
+          "claimsSchema": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "managedBy": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string",
+            "enum": [
+              "external",
+              "vercel"
+            ]
+          },
+          "ownerId": {
+            "type": "string"
+          },
+          "policies": {
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "environments": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array",
+                      "description": "Environments whose OIDC tokens this grant authorizes. Each entry is either a system environment slug (`production`, `preview`, `development`) or a custom environment ID (prefixed `env_`). Custom environments are matched against the token's `custom_environment_id` claim (the stable ID); system environments against its `environment` claim."
+                    },
+                    "kind": {
+                      "type": "string",
+                      "enum": [
+                        "project-grant"
+                      ]
+                    },
+                    "projectId": {
+                      "type": "string"
+                    },
+                    "teamId": {
+                      "type": "string"
+                    },
+                    "tokenClaims": {
+                      "additionalProperties": true,
+                      "type": "object"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "createdAt",
+                    "environments",
+                    "kind",
+                    "projectId",
+                    "teamId",
+                    "updatedAt"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "properties": {
+                    "clientId": {
+                      "type": "string"
+                    },
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "kind": {
+                      "type": "string",
+                      "enum": [
+                        "connex-grant"
+                      ]
+                    },
+                    "tokenClaims": {
+                      "additionalProperties": true,
+                      "type": "object"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "clientId",
+                    "createdAt",
+                    "kind",
+                    "updatedAt"
+                  ],
+                  "type": "object"
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "signingKeys": {
+            "$ref": "#/components/schemas/AutoSDKSharedd350ab9ee496d656"
+          },
+          "updatedAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "algorithm",
+          "createdAt",
+          "id",
+          "name",
+          "origin",
+          "ownerId",
+          "policies",
+          "signingKeys",
+          "updatedAt"
+        ],
+        "type": "object"
       },
       "AutoSDKShared6b9922eb6c026513": {
         "properties": {
@@ -121781,12 +121806,6 @@
           }
         ]
       },
-      "AutoSDKSharedcc2c79cf4e75d840": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKShared3ba4fd4930b951c7"
-        },
-        "type": "array"
-      },
       "AutoSDKSharedceccd47983fcf9de": {
         "oneOf": [
           {
@@ -123647,6 +123666,12 @@
           "updatedAt"
         ],
         "type": "object"
+      },
+      "AutoSDKSharedd350ab9ee496d656": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKShared38e9af03824d67bc"
+        },
+        "type": "array"
       },
       "AutoSDKSharedd4b653fb5dd38455": {
         "items": {

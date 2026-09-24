@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class AutoSDKShared02b3ab4a1bf599afPolicieVariant1TokenClaims
+    public sealed partial class AutoSDKShared6a7dd045a7a1bf61PolicieVariant2TokenClaims
     {
 
         /// <summary>

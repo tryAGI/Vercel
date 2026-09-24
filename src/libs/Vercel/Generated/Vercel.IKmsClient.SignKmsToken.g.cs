@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Sign a token<br/>
-        /// Sign a JWT with a KMS issuer's active signing key. Authenticate the request with a Vercel OIDC token in the `Authorization: Bearer` header; the issuer's policies decide which workloads are allowed to sign.
+        /// Sign a JWT with a KMS issuer's active signing key. Authenticate the request with a Vercel OIDC token in the `Authorization: Bearer` header; the issuer's policies decide which workloads are allowed to sign. `keyId`, `algorithm`, and `fingerprint` identify the signing key in the issuer's JWKS.
         /// </summary>
         /// <param name="issuerId">
         /// The ID of the issuer.
@@ -23,7 +23,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Sign a token<br/>
-        /// Sign a JWT with a KMS issuer's active signing key. Authenticate the request with a Vercel OIDC token in the `Authorization: Bearer` header; the issuer's policies decide which workloads are allowed to sign.
+        /// Sign a JWT with a KMS issuer's active signing key. Authenticate the request with a Vercel OIDC token in the `Authorization: Bearer` header; the issuer's policies decide which workloads are allowed to sign. `keyId`, `algorithm`, and `fingerprint` identify the signing key in the issuer's JWKS.
         /// </summary>
         /// <param name="issuerId">
         /// The ID of the issuer.
@@ -40,7 +40,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Sign a token<br/>
-        /// Sign a JWT with a KMS issuer's active signing key. Authenticate the request with a Vercel OIDC token in the `Authorization: Bearer` header; the issuer's policies decide which workloads are allowed to sign.
+        /// Sign a JWT with a KMS issuer's active signing key. Authenticate the request with a Vercel OIDC token in the `Authorization: Bearer` header; the issuer's policies decide which workloads are allowed to sign. `keyId`, `algorithm`, and `fingerprint` identify the signing key in the issuer's JWKS.
         /// </summary>
         /// <param name="issuerId">
         /// The ID of the issuer.

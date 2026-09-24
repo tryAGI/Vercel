@@ -15,7 +15,7 @@ namespace Vercel
         public double? Cores { get; set; }
 
         /// <summary>
-        /// The default plan type for the build machine — what the customer is *paying* for on their plan. For most customers, this is standard, but some customers have an entitlement for enhanced builds.
+        /// The build machine tier included with the customer's plan. For most customers this is standard; enhanced entitlements include enhanced, while `none` means every build is billed at its purchase type.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultPurchaseType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateDeploymentResponseResourceConfigBuildMachineDefaultPurchaseTypeJsonConverter))]
@@ -61,7 +61,7 @@ namespace Vercel
         /// Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive.
         /// </param>
         /// <param name="defaultPurchaseType">
-        /// The default plan type for the build machine — what the customer is *paying* for on their plan. For most customers, this is standard, but some customers have an entitlement for enhanced builds.
+        /// The build machine tier included with the customer's plan. For most customers this is standard; enhanced entitlements include enhanced, while `none` means every build is billed at its purchase type.
         /// </param>
         /// <param name="machineSelectionType">
         /// Whether the build ran on a fixed or elastic machine. Used to drive billing for the build.

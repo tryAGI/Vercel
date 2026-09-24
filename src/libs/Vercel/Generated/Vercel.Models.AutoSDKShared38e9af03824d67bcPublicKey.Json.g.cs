@@ -2,7 +2,7 @@
 
 namespace Vercel
 {
-    public sealed partial class AutoSDKShared02b3ab4a1bf599afClaimsSchema
+    public sealed partial class AutoSDKShared38e9af03824d67bcPublicKey
     {
         /// <summary>
         /// Serializes the current instance to a JSON string using the provided JsonSerializerContext.
@@ -47,20 +47,20 @@ namespace Vercel
         /// <summary>
         /// Deserializes a JSON string using the provided JsonSerializerContext.
         /// </summary>
-        public static global::Vercel.AutoSDKShared02b3ab4a1bf599afClaimsSchema? FromJson(
+        public static global::Vercel.AutoSDKShared38e9af03824d67bcPublicKey? FromJson(
             string json,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::Vercel.AutoSDKShared02b3ab4a1bf599afClaimsSchema),
-                jsonSerializerContext) as global::Vercel.AutoSDKShared02b3ab4a1bf599afClaimsSchema;
+                typeof(global::Vercel.AutoSDKShared38e9af03824d67bcPublicKey),
+                jsonSerializerContext) as global::Vercel.AutoSDKShared38e9af03824d67bcPublicKey;
         }
 
         /// <summary>
         /// Deserializes a JSON string using the generated default JsonSerializerContext.
         /// </summary>
-        public static global::Vercel.AutoSDKShared02b3ab4a1bf599afClaimsSchema? FromJson(
+        public static global::Vercel.AutoSDKShared38e9af03824d67bcPublicKey? FromJson(
             string json)
         {
             return FromJson(
@@ -75,7 +75,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::Vercel.AutoSDKShared02b3ab4a1bf599afClaimsSchema? FromJson(
+        public static global::Vercel.AutoSDKShared38e9af03824d67bcPublicKey? FromJson(
             string json,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
@@ -86,7 +86,7 @@ namespace Vercel
                     global::Vercel.SourceGenerationContext.Default);
             }
 
-            return global::System.Text.Json.JsonSerializer.Deserialize<global::Vercel.AutoSDKShared02b3ab4a1bf599afClaimsSchema>(
+            return global::System.Text.Json.JsonSerializer.Deserialize<global::Vercel.AutoSDKShared38e9af03824d67bcPublicKey>(
                 json,
                 jsonSerializerOptions);
         }
@@ -94,20 +94,20 @@ namespace Vercel
         /// <summary>
         /// Deserializes a JSON stream using the provided JsonSerializerContext.
         /// </summary>
-        public static async global::System.Threading.Tasks.ValueTask<global::Vercel.AutoSDKShared02b3ab4a1bf599afClaimsSchema?> FromJsonStreamAsync(
+        public static async global::System.Threading.Tasks.ValueTask<global::Vercel.AutoSDKShared38e9af03824d67bcPublicKey?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::Vercel.AutoSDKShared02b3ab4a1bf599afClaimsSchema),
-                jsonSerializerContext).ConfigureAwait(false)) as global::Vercel.AutoSDKShared02b3ab4a1bf599afClaimsSchema;
+                typeof(global::Vercel.AutoSDKShared38e9af03824d67bcPublicKey),
+                jsonSerializerContext).ConfigureAwait(false)) as global::Vercel.AutoSDKShared38e9af03824d67bcPublicKey;
         }
 
         /// <summary>
         /// Deserializes a JSON stream using the generated default JsonSerializerContext.
         /// </summary>
-        public static global::System.Threading.Tasks.ValueTask<global::Vercel.AutoSDKShared02b3ab4a1bf599afClaimsSchema?> FromJsonStreamAsync(
+        public static global::System.Threading.Tasks.ValueTask<global::Vercel.AutoSDKShared38e9af03824d67bcPublicKey?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream)
         {
             return FromJsonStreamAsync(
@@ -122,7 +122,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::System.Threading.Tasks.ValueTask<global::Vercel.AutoSDKShared02b3ab4a1bf599afClaimsSchema?> FromJsonStreamAsync(
+        public static global::System.Threading.Tasks.ValueTask<global::Vercel.AutoSDKShared38e9af03824d67bcPublicKey?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
@@ -133,7 +133,7 @@ namespace Vercel
                     global::Vercel.SourceGenerationContext.Default);
             }
 
-            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Vercel.AutoSDKShared02b3ab4a1bf599afClaimsSchema?>(
+            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Vercel.AutoSDKShared38e9af03824d67bcPublicKey?>(
                 jsonStream,
                 jsonSerializerOptions);
         }

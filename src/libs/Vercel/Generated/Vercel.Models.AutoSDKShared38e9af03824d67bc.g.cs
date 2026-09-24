@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class AutoSDKShared3ba4fd4930b951c7
+    public sealed partial class AutoSDKShared38e9af03824d67bc
     {
         /// <summary>
         ///
@@ -64,13 +64,14 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("publicKey")]
-        public global::Vercel.AutoSDKShared3ba4fd4930b951c7PublicKey? PublicKey { get; set; }
+        public global::Vercel.AutoSDKShared38e9af03824d67bcPublicKey? PublicKey { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("publicKeyFingerprint")]
-        public string? PublicKeyFingerprint { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string PublicKeyFingerprint { get; set; }
 
         /// <summary>
         /// The public key in SPKI PEM form, ready to render. Present whenever the key has public key material. Derived from `publicKey`; the embedded certificate members (`x5c`/`x5t#S256`) do not affect it.
@@ -88,9 +89,9 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared3ba4fd4930b951c7StatusJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared38e9af03824d67bcStatusJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AutoSDKShared3ba4fd4930b951c7Status Status { get; set; }
+        public required global::Vercel.AutoSDKShared38e9af03824d67bcStatus Status { get; set; }
 
         /// <summary>
         ///
@@ -106,7 +107,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared3ba4fd4930b951c7" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared38e9af03824d67bc" /> class.
         /// </summary>
         /// <param name="algorithm"></param>
         /// <param name="createdAt"></param>
@@ -114,6 +115,7 @@ namespace Vercel
         /// <param name="keyId">
         /// The server-minted, unique record identifier. Use this to address the key on the activate / certificate endpoints.
         /// </param>
+        /// <param name="publicKeyFingerprint"></param>
         /// <param name="status"></param>
         /// <param name="updatedAt"></param>
         /// <param name="activateAt"></param>
@@ -127,7 +129,6 @@ namespace Vercel
         /// The caller-supplied key id (imported keys only), used as the JWT/JWKS `kid`. Not unique across an issuer's keys; omitted for generated keys.
         /// </param>
         /// <param name="publicKey"></param>
-        /// <param name="publicKeyFingerprint"></param>
         /// <param name="publicKeyPem">
         /// The public key in SPKI PEM form, ready to render. Present whenever the key has public key material. Derived from `publicKey`; the embedded certificate members (`x5c`/`x5t#S256`) do not affect it.
         /// </param>
@@ -135,19 +136,19 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public AutoSDKShared3ba4fd4930b951c7(
+        public AutoSDKShared38e9af03824d67bc(
             string algorithm,
             string createdAt,
             string issuerId,
             string keyId,
-            global::Vercel.AutoSDKShared3ba4fd4930b951c7Status status,
+            string publicKeyFingerprint,
+            global::Vercel.AutoSDKShared38e9af03824d67bcStatus status,
             string updatedAt,
             string? activateAt,
             string? activatedAt,
             string? certificatePem,
             string? importKeyId,
-            global::Vercel.AutoSDKShared3ba4fd4930b951c7PublicKey? publicKey,
-            string? publicKeyFingerprint,
+            global::Vercel.AutoSDKShared38e9af03824d67bcPublicKey? publicKey,
             string? publicKeyPem,
             string? revokeAt)
         {
@@ -160,7 +161,7 @@ namespace Vercel
             this.IssuerId = issuerId ?? throw new global::System.ArgumentNullException(nameof(issuerId));
             this.KeyId = keyId ?? throw new global::System.ArgumentNullException(nameof(keyId));
             this.PublicKey = publicKey;
-            this.PublicKeyFingerprint = publicKeyFingerprint;
+            this.PublicKeyFingerprint = publicKeyFingerprint ?? throw new global::System.ArgumentNullException(nameof(publicKeyFingerprint));
             this.PublicKeyPem = publicKeyPem;
             this.RevokeAt = revokeAt;
             this.Status = status;
@@ -168,9 +169,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared3ba4fd4930b951c7" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared38e9af03824d67bc" /> class.
         /// </summary>
-        public AutoSDKShared3ba4fd4930b951c7()
+        public AutoSDKShared38e9af03824d67bc()
         {
         }
 

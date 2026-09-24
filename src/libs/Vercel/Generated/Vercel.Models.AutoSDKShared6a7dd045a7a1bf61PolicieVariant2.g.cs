@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class AutoSDKShared02b3ab4a1bf599afPolicieVariant2
+    public sealed partial class AutoSDKShared6a7dd045a7a1bf61PolicieVariant2
     {
         /// <summary>
         ///
@@ -26,8 +26,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared02b3ab4a1bf599afPolicieVariant2KindJsonConverter))]
-        public global::Vercel.AutoSDKShared02b3ab4a1bf599afPolicieVariant2Kind Kind { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared6a7dd045a7a1bf61PolicieVariant2KindJsonConverter))]
+        public global::Vercel.AutoSDKShared6a7dd045a7a1bf61PolicieVariant2Kind Kind { get; set; }
 
         /// <summary>
         ///
@@ -49,7 +49,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared02b3ab4a1bf599afPolicieVariant2" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared6a7dd045a7a1bf61PolicieVariant2" /> class.
         /// </summary>
         /// <param name="clientId"></param>
         /// <param name="createdAt"></param>
@@ -59,11 +59,11 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public AutoSDKShared02b3ab4a1bf599afPolicieVariant2(
+        public AutoSDKShared6a7dd045a7a1bf61PolicieVariant2(
             string clientId,
             string createdAt,
             string updatedAt,
-            global::Vercel.AutoSDKShared02b3ab4a1bf599afPolicieVariant2Kind kind,
+            global::Vercel.AutoSDKShared6a7dd045a7a1bf61PolicieVariant2Kind kind,
             object? tokenClaims)
         {
             this.ClientId = clientId ?? throw new global::System.ArgumentNullException(nameof(clientId));
@@ -74,9 +74,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared02b3ab4a1bf599afPolicieVariant2" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared6a7dd045a7a1bf61PolicieVariant2" /> class.
         /// </summary>
-        public AutoSDKShared02b3ab4a1bf599afPolicieVariant2()
+        public AutoSDKShared6a7dd045a7a1bf61PolicieVariant2()
         {
         }
 

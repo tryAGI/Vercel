@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class AutoSDKShared3ba4fd4930b951c7PublicKey
+    public sealed partial class AutoSDKShared38e9af03824d67bcPublicKey
     {
         /// <summary>
         ///
@@ -57,7 +57,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared3ba4fd4930b951c7PublicKey" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared38e9af03824d67bcPublicKey" /> class.
         /// </summary>
         /// <param name="alg"></param>
         /// <param name="keyOps"></param>
@@ -73,7 +73,7 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public AutoSDKShared3ba4fd4930b951c7PublicKey(
+        public AutoSDKShared38e9af03824d67bcPublicKey(
             string? alg,
             global::System.Collections.Generic.IList<string>? keyOps,
             string? kid,
@@ -92,9 +92,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared3ba4fd4930b951c7PublicKey" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared38e9af03824d67bcPublicKey" /> class.
         /// </summary>
-        public AutoSDKShared3ba4fd4930b951c7PublicKey()
+        public AutoSDKShared38e9af03824d67bcPublicKey()
         {
         }
 

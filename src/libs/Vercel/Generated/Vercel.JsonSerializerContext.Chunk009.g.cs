@@ -174,7 +174,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SignKmsMessageResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SignKmsTokenResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListKmsIssuersResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared02b3ab4a1bf599af>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6a7dd045a7a1bf61>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListKmsIssuersResponsePagination))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateKmsIssuerPolicyResponseVariant1, global::Vercel.CreateKmsIssuerPolicyResponseVariant2>), TypeInfoPropertyName = "OneOfCreateKmsIssuerPolicyResponseVariant1CreateKmsIssuerPolicyResponseVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateKmsIssuerPolicyResponseVariant1))]
