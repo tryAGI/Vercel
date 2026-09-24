@@ -167,6 +167,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiGatewayModelCatalogAlertSettingsUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         AiGatewayPrivateModelCreated,
         /// <summary>
         ///
@@ -2829,6 +2833,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AiGatewayInferenceRegionsUpdated => "ai-gateway-inference-regions-updated",
                 ListEventTypeReplacedByItem.AiGatewayModelAllowlistModelsUpdated => "ai-gateway-model-allowlist-models-updated",
                 ListEventTypeReplacedByItem.AiGatewayModelAllowlistToggled => "ai-gateway-model-allowlist-toggled",
+                ListEventTypeReplacedByItem.AiGatewayModelCatalogAlertSettingsUpdated => "ai-gateway-model-catalog-alert-settings-updated",
                 ListEventTypeReplacedByItem.AiGatewayPrivateModelCreated => "ai-gateway-private-model-created",
                 ListEventTypeReplacedByItem.AiGatewayPrivateModelDeleted => "ai-gateway-private-model-deleted",
                 ListEventTypeReplacedByItem.AiGatewayPrivateModelUpdated => "ai-gateway-private-model-updated",
@@ -3531,6 +3536,7 @@ namespace Vercel
                 "ai-gateway-inference-regions-updated" => ListEventTypeReplacedByItem.AiGatewayInferenceRegionsUpdated,
                 "ai-gateway-model-allowlist-models-updated" => ListEventTypeReplacedByItem.AiGatewayModelAllowlistModelsUpdated,
                 "ai-gateway-model-allowlist-toggled" => ListEventTypeReplacedByItem.AiGatewayModelAllowlistToggled,
+                "ai-gateway-model-catalog-alert-settings-updated" => ListEventTypeReplacedByItem.AiGatewayModelCatalogAlertSettingsUpdated,
                 "ai-gateway-private-model-created" => ListEventTypeReplacedByItem.AiGatewayPrivateModelCreated,
                 "ai-gateway-private-model-deleted" => ListEventTypeReplacedByItem.AiGatewayPrivateModelDeleted,
                 "ai-gateway-private-model-updated" => ListEventTypeReplacedByItem.AiGatewayPrivateModelUpdated,

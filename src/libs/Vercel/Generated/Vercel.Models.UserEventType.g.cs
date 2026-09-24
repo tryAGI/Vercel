@@ -168,6 +168,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiGatewayModelCatalogAlertSettingsUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         AiGatewayPrivateModelCreated,
         /// <summary>
         ///
@@ -2830,6 +2834,7 @@ namespace Vercel
                 UserEventType.AiGatewayInferenceRegionsUpdated => "ai-gateway-inference-regions-updated",
                 UserEventType.AiGatewayModelAllowlistModelsUpdated => "ai-gateway-model-allowlist-models-updated",
                 UserEventType.AiGatewayModelAllowlistToggled => "ai-gateway-model-allowlist-toggled",
+                UserEventType.AiGatewayModelCatalogAlertSettingsUpdated => "ai-gateway-model-catalog-alert-settings-updated",
                 UserEventType.AiGatewayPrivateModelCreated => "ai-gateway-private-model-created",
                 UserEventType.AiGatewayPrivateModelDeleted => "ai-gateway-private-model-deleted",
                 UserEventType.AiGatewayPrivateModelUpdated => "ai-gateway-private-model-updated",
@@ -3532,6 +3537,7 @@ namespace Vercel
                 "ai-gateway-inference-regions-updated" => UserEventType.AiGatewayInferenceRegionsUpdated,
                 "ai-gateway-model-allowlist-models-updated" => UserEventType.AiGatewayModelAllowlistModelsUpdated,
                 "ai-gateway-model-allowlist-toggled" => UserEventType.AiGatewayModelAllowlistToggled,
+                "ai-gateway-model-catalog-alert-settings-updated" => UserEventType.AiGatewayModelCatalogAlertSettingsUpdated,
                 "ai-gateway-private-model-created" => UserEventType.AiGatewayPrivateModelCreated,
                 "ai-gateway-private-model-deleted" => UserEventType.AiGatewayPrivateModelDeleted,
                 "ai-gateway-private-model-updated" => UserEventType.AiGatewayPrivateModelUpdated,
