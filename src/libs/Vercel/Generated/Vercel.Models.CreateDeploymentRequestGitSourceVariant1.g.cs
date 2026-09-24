@@ -16,6 +16,15 @@ namespace Vercel
         public global::Vercel.CreateDeploymentRequestGitSourceVariant1Type Type { get; set; }
 
         /// <summary>
+        /// The stable Vercel Git repository ID.<br/>
+        /// Example: 123456789
+        /// </summary>
+        /// <example>123456789</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("repoId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string RepoId { get; set; }
+
+        /// <summary>
         /// Example: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0
         /// </summary>
         /// <example>a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0</example>
@@ -32,6 +41,10 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateDeploymentRequestGitSourceVariant1" /> class.
         /// </summary>
+        /// <param name="repoId">
+        /// The stable Vercel Git repository ID.<br/>
+        /// Example: 123456789
+        /// </param>
         /// <param name="sha">
         /// Example: a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0
         /// </param>
@@ -40,10 +53,12 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateDeploymentRequestGitSourceVariant1(
+            string repoId,
             string sha,
             global::Vercel.CreateDeploymentRequestGitSourceVariant1Type type)
         {
             this.Type = type;
+            this.RepoId = repoId ?? throw new global::System.ArgumentNullException(nameof(repoId));
             this.Sha = sha ?? throw new global::System.ArgumentNullException(nameof(sha));
         }
 
