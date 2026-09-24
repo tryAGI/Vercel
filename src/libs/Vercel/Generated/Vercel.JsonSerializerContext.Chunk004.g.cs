@@ -11,6 +11,8 @@ namespace Vercel
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionHiddenEnum, bool?, global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionHiddenEnum2?>), TypeInfoPropertyName = "OneOfAutoSDKSharedaf3e034232cd964aUiOptionHiddenEnumBooleanAutoSDKSharedaf3e034232cd964aUiOptionHiddenEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionHiddenEnum))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionHiddenEnum2), TypeInfoPropertyName = "AutoSDKSharedaf3e034232cd964aUiOptionHiddenEnum22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedaf3e034232cd964aUiReadOnlyEnum, bool?, global::Vercel.AutoSDKSharedaf3e034232cd964aUiReadOnlyEnum2?>), TypeInfoPropertyName = "OneOfAutoSDKSharedaf3e034232cd964aUiReadOnlyEnumBooleanAutoSDKSharedaf3e034232cd964aUiReadOnlyEnum22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedaf3e034232cd964aUiReadOnlyEnum))]
@@ -22,8 +24,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc97b32abf27d8b81))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharede816b13e35b68c5a))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedb13a6bca2ca06cfe))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedb141477327f89107), TypeInfoPropertyName = "AutoSDKSharedb141477327f891072")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShareda4a7c153fe760e25>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedb2aa6c85fab0cd65Options))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedb2aa6c85fab0cd65Version), TypeInfoPropertyName = "AutoSDKSharedb2aa6c85fab0cd65Version2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedba1f75615f04b60cTransformItem>))]

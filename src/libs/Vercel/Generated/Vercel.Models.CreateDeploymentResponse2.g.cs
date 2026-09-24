@@ -291,8 +291,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitSource")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared0dd077d6df470379JsonConverter))]
-        public global::Vercel.AutoSDKShared0dd077d6df470379? GitSource { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared4cd5b795d6ac66fcJsonConverter))]
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fc? GitSource { get; set; }
 
         /// <summary>
         /// A string holding the unique ID of the deployment<br/>
@@ -908,7 +908,7 @@ namespace Vercel
             global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseFlags, global::System.Collections.Generic.IList<object>>? flags,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared5f7d6053e0f466da>? functions,
             global::Vercel.AutoSDKShared6ed7be4e006b051d? gitRepo,
-            global::Vercel.AutoSDKShared0dd077d6df470379? gitSource,
+            global::Vercel.AutoSDKShared4cd5b795d6ac66fc? gitSource,
             global::Vercel.CreateDeploymentResponseImages? images,
             double? initReadyAt,
             string? inspectorUrl,
