@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public enum AutoSDKShared3ba4fd4930b951c7Status
+    public enum AutoSDKShared38e9af03824d67bcStatus
     {
         /// <summary>
         ///
@@ -25,31 +25,31 @@ namespace Vercel
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class AutoSDKShared3ba4fd4930b951c7StatusExtensions
+    public static class AutoSDKShared38e9af03824d67bcStatusExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this AutoSDKShared3ba4fd4930b951c7Status value)
+        public static string ToValueString(this AutoSDKShared38e9af03824d67bcStatus value)
         {
             return value switch
             {
-                AutoSDKShared3ba4fd4930b951c7Status.Active => "active",
-                AutoSDKShared3ba4fd4930b951c7Status.Pending => "pending",
-                AutoSDKShared3ba4fd4930b951c7Status.Revoking => "revoking",
+                AutoSDKShared38e9af03824d67bcStatus.Active => "active",
+                AutoSDKShared38e9af03824d67bcStatus.Pending => "pending",
+                AutoSDKShared38e9af03824d67bcStatus.Revoking => "revoking",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static AutoSDKShared3ba4fd4930b951c7Status? ToEnum(string value)
+        public static AutoSDKShared38e9af03824d67bcStatus? ToEnum(string value)
         {
             return value switch
             {
-                "active" => AutoSDKShared3ba4fd4930b951c7Status.Active,
-                "pending" => AutoSDKShared3ba4fd4930b951c7Status.Pending,
-                "revoking" => AutoSDKShared3ba4fd4930b951c7Status.Revoking,
+                "active" => AutoSDKShared38e9af03824d67bcStatus.Active,
+                "pending" => AutoSDKShared38e9af03824d67bcStatus.Pending,
+                "revoking" => AutoSDKShared38e9af03824d67bcStatus.Revoking,
                 _ => null,
             };
         }

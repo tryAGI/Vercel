@@ -16,6 +16,13 @@ namespace Vercel
         public required string Algorithm { get; set; }
 
         /// <summary>
+        /// SHA-256 fingerprint of the signing key's public key (`SHA256:&lt;base64&gt;`).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("fingerprint")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Fingerprint { get; set; }
+
+        /// <summary>
         /// Key id of the signing key. Matches the JWKS `kid` so verifiers can select the key after rotation without trial-verifying every published key.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keyId")]
@@ -41,6 +48,9 @@ namespace Vercel
         /// <param name="algorithm">
         /// Algorithm of the signing key.
         /// </param>
+        /// <param name="fingerprint">
+        /// SHA-256 fingerprint of the signing key's public key (`SHA256:&lt;base64&gt;`).
+        /// </param>
         /// <param name="keyId">
         /// Key id of the signing key. Matches the JWKS `kid` so verifiers can select the key after rotation without trial-verifying every published key.
         /// </param>
@@ -52,10 +62,12 @@ namespace Vercel
 #endif
         public SignKmsMessageResponse(
             string algorithm,
+            string fingerprint,
             string keyId,
             string signature)
         {
             this.Algorithm = algorithm ?? throw new global::System.ArgumentNullException(nameof(algorithm));
+            this.Fingerprint = fingerprint ?? throw new global::System.ArgumentNullException(nameof(fingerprint));
             this.KeyId = keyId ?? throw new global::System.ArgumentNullException(nameof(keyId));
             this.Signature = signature ?? throw new global::System.ArgumentNullException(nameof(signature));
         }

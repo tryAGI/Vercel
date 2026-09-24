@@ -6,15 +6,15 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class AutoSDKShared02b3ab4a1bf599af
+    public sealed partial class AutoSDKShared6a7dd045a7a1bf61
     {
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("algorithm")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared02b3ab4a1bf599afAlgorithmJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared6a7dd045a7a1bf61AlgorithmJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AutoSDKShared02b3ab4a1bf599afAlgorithm Algorithm { get; set; }
+        public required global::Vercel.AutoSDKShared6a7dd045a7a1bf61Algorithm Algorithm { get; set; }
 
         /// <summary>
         ///
@@ -53,9 +53,9 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared02b3ab4a1bf599afOriginJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared6a7dd045a7a1bf61OriginJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AutoSDKShared02b3ab4a1bf599afOrigin Origin { get; set; }
+        public required global::Vercel.AutoSDKShared6a7dd045a7a1bf61Origin Origin { get; set; }
 
         /// <summary>
         ///
@@ -69,14 +69,14 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("policies")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared02b3ab4a1bf599afPolicieVariant1, global::Vercel.AutoSDKShared02b3ab4a1bf599afPolicieVariant2>> Policies { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared6a7dd045a7a1bf61PolicieVariant1, global::Vercel.AutoSDKShared6a7dd045a7a1bf61PolicieVariant2>> Policies { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("signingKeys")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared3ba4fd4930b951c7> SigningKeys { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared38e9af03824d67bc> SigningKeys { get; set; }
 
         /// <summary>
         ///
@@ -92,7 +92,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared02b3ab4a1bf599af" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared6a7dd045a7a1bf61" /> class.
         /// </summary>
         /// <param name="algorithm"></param>
         /// <param name="createdAt"></param>
@@ -108,15 +108,15 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public AutoSDKShared02b3ab4a1bf599af(
-            global::Vercel.AutoSDKShared02b3ab4a1bf599afAlgorithm algorithm,
+        public AutoSDKShared6a7dd045a7a1bf61(
+            global::Vercel.AutoSDKShared6a7dd045a7a1bf61Algorithm algorithm,
             string createdAt,
             string id,
             string name,
-            global::Vercel.AutoSDKShared02b3ab4a1bf599afOrigin origin,
+            global::Vercel.AutoSDKShared6a7dd045a7a1bf61Origin origin,
             string ownerId,
-            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared02b3ab4a1bf599afPolicieVariant1, global::Vercel.AutoSDKShared02b3ab4a1bf599afPolicieVariant2>> policies,
-            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared3ba4fd4930b951c7> signingKeys,
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared6a7dd045a7a1bf61PolicieVariant1, global::Vercel.AutoSDKShared6a7dd045a7a1bf61PolicieVariant2>> policies,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared38e9af03824d67bc> signingKeys,
             string updatedAt,
             object? claimsSchema,
             string? managedBy)
@@ -135,9 +135,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared02b3ab4a1bf599af" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared6a7dd045a7a1bf61" /> class.
         /// </summary>
-        public AutoSDKShared02b3ab4a1bf599af()
+        public AutoSDKShared6a7dd045a7a1bf61()
         {
         }
 
