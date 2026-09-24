@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class UpdateIntegrationDeploymentActionRequestOutcomeSecret
+    public sealed partial class UpdateIntegrationDeploymentActionRequestOutcomeVariant1Secret
     {
         /// <summary>
         ///
@@ -29,14 +29,14 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateIntegrationDeploymentActionRequestOutcomeSecret" /> class.
+        /// Initializes a new instance of the <see cref="UpdateIntegrationDeploymentActionRequestOutcomeVariant1Secret" /> class.
         /// </summary>
         /// <param name="name"></param>
         /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public UpdateIntegrationDeploymentActionRequestOutcomeSecret(
+        public UpdateIntegrationDeploymentActionRequestOutcomeVariant1Secret(
             string name,
             string value)
         {
@@ -45,9 +45,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="UpdateIntegrationDeploymentActionRequestOutcomeSecret" /> class.
+        /// Initializes a new instance of the <see cref="UpdateIntegrationDeploymentActionRequestOutcomeVariant1Secret" /> class.
         /// </summary>
-        public UpdateIntegrationDeploymentActionRequestOutcomeSecret()
+        public UpdateIntegrationDeploymentActionRequestOutcomeVariant1Secret()
         {
         }
 

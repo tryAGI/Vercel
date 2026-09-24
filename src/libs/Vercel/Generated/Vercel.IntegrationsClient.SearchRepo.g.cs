@@ -28,7 +28,7 @@ namespace Vercel
         partial void PrepareSearchRepoArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string? query,
-            ref global::Vercel.OneOf<string, double?>? namespaceId,
+            ref global::Vercel.OneOf<string, double?, string, double?>? namespaceId,
             ref global::Vercel.SearchRepoProvider? provider,
             ref string? installationId,
             ref string? host,
@@ -38,7 +38,7 @@ namespace Vercel
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string? query,
-            global::Vercel.OneOf<string, double?>? namespaceId,
+            global::Vercel.OneOf<string, double?, string, double?>? namespaceId,
             global::Vercel.SearchRepoProvider? provider,
             string? installationId,
             string? host,
@@ -76,7 +76,7 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.OneOf<object, global::Vercel.SearchRepoResponseVariant2, global::Vercel.SearchRepoResponseVariant3, global::Vercel.SearchRepoResponseVariant4>> SearchRepoAsync(
             string? query = default,
-            global::Vercel.OneOf<string, double?>? namespaceId = default,
+            global::Vercel.OneOf<string, double?, string, double?>? namespaceId = default,
             global::Vercel.SearchRepoProvider? provider = default,
             string? installationId = default,
             string? host = default,
@@ -122,7 +122,7 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<object, global::Vercel.SearchRepoResponseVariant2, global::Vercel.SearchRepoResponseVariant3, global::Vercel.SearchRepoResponseVariant4>>> SearchRepoAsResponseAsync(
             string? query = default,
-            global::Vercel.OneOf<string, double?>? namespaceId = default,
+            global::Vercel.OneOf<string, double?, string, double?>? namespaceId = default,
             global::Vercel.SearchRepoProvider? provider = default,
             string? installationId = default,
             string? host = default,

@@ -61,6 +61,12 @@ namespace Vercel
         public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.UpdateResourceRequestSecret>, global::Vercel.UpdateResourceRequestSecrets>? Secrets { get; set; }
 
         /// <summary>
+        /// Custom claims embedded in the resource tokens Vercel mints for this resource.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("customClaims")]
+        public global::Vercel.UpdateResourceRequestCustomClaims? CustomClaims { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -77,6 +83,9 @@ namespace Vercel
         /// <param name="notification"></param>
         /// <param name="extras"></param>
         /// <param name="secrets"></param>
+        /// <param name="customClaims">
+        /// Custom claims embedded in the resource tokens Vercel mints for this resource.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -88,7 +97,8 @@ namespace Vercel
             global::Vercel.UpdateResourceRequestBillingPlan? billingPlan,
             global::Vercel.OneOf<global::Vercel.UpdateResourceRequestNotification, string>? notification,
             object? extras,
-            global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.UpdateResourceRequestSecret>, global::Vercel.UpdateResourceRequestSecrets>? secrets)
+            global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.UpdateResourceRequestSecret>, global::Vercel.UpdateResourceRequestSecrets>? secrets,
+            global::Vercel.UpdateResourceRequestCustomClaims? customClaims)
         {
             this.Ownership = ownership;
             this.Name = name;
@@ -98,6 +108,7 @@ namespace Vercel
             this.Notification = notification;
             this.Extras = extras;
             this.Secrets = secrets;
+            this.CustomClaims = customClaims;
         }
 
         /// <summary>

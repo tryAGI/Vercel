@@ -69,7 +69,7 @@ namespace Vercel
             global::Vercel.UpdateIntegrationDeploymentActionRequestStatus? status = default,
             string? statusText = default,
             string? statusUrl = default,
-            global::System.Collections.Generic.IList<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome>? outcomes = default,
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant1, global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant2>>? outcomes = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }
