@@ -31,7 +31,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("outcomes")]
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome>? Outcomes { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant1, global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant2>>? Outcomes { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -53,7 +53,7 @@ namespace Vercel
             global::Vercel.UpdateIntegrationDeploymentActionRequestStatus? status,
             string? statusText,
             string? statusUrl,
-            global::System.Collections.Generic.IList<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome>? outcomes)
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant1, global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant2>>? outcomes)
         {
             this.Status = status;
             this.StatusText = statusText;

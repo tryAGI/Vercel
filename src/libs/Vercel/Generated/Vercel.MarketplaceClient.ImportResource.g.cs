@@ -690,6 +690,9 @@ namespace Vercel
         /// <param name="notification"></param>
         /// <param name="extras"></param>
         /// <param name="secrets"></param>
+        /// <param name="customClaims">
+        /// Custom claims embedded in the resource tokens Vercel mints for this resource.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -705,6 +708,7 @@ namespace Vercel
             global::Vercel.ImportResourceRequestNotification? notification = default,
             object? extras = default,
             global::System.Collections.Generic.IList<global::Vercel.ImportResourceRequestSecret>? secrets = default,
+            global::Vercel.ImportResourceRequestCustomClaims? customClaims = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -719,6 +723,7 @@ namespace Vercel
                 Notification = notification,
                 Extras = extras,
                 Secrets = secrets,
+                CustomClaims = customClaims,
             };
 
             return await ImportResourceAsync(

@@ -65,6 +65,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1HiddenEnum, bool?, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1HiddenEnum2?>?), TypeInfoPropertyName = "AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1HiddenEnum2_ec17421d8c230a2a")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3DisabledEnum, bool?, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3DisabledEnum2?>?), TypeInfoPropertyName = "AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3DisabledEnum2_b15a4c0b93f89f0e")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3HiddenEnum, bool?, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3HiddenEnum2?>?), TypeInfoPropertyName = "AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3HiddenEnum2_f9b4828d946d8aa1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant1, global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant2>?), TypeInfoPropertyName = "UpdateIntegrationDeploymentActionRequestOutcomeVariant2_94d158b4e5bd21b4")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetConfigurationResponseVariant1TransferRequestVariant1, global::Vercel.GetConfigurationResponseVariant1TransferRequestVariant2>?), TypeInfoPropertyName = "GetConfigurationResponseVariant1TransferRequestVariant2_7201615247308b3f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvider>, global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProviders?>?), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProjectFilterGitProviders_eaf282a93725adad")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvider>, global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProviders?>), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProjectFilterGitProviders_1da342ad0298fa46")]
@@ -106,6 +107,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0603220ab3785539UiReadOnlyEnum, bool?, global::Vercel.AutoSDKShared0603220ab3785539UiReadOnlyEnum2?>), TypeInfoPropertyName = "OneOfAutoSDKShared0603220ab3785539UiReadOnlyEnumBooleanAutoSDKShared0603220ab3785539UiReadOnlyEnum22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0603220ab3785539UiReadOnlyEnum))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0603220ab3785539UiReadOnlyEnum2), TypeInfoPropertyName = "AutoSDKShared0603220ab3785539UiReadOnlyEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, bool?>), TypeInfoPropertyName = "OneOfStringDoubleBoolean2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared2c06e7f88512c8b8))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared2c06e7f88512c8b8Items))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared2c06e7f88512c8b8ItemsType), TypeInfoPropertyName = "AutoSDKShared2c06e7f88512c8b8ItemsType2")]
@@ -329,10 +331,16 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiReadOnlyEnum2), TypeInfoPropertyName = "AutoSDKSharedfc279ab2bedb9f61UiReadOnlyEnum22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateIntegrationDeploymentActionRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateIntegrationDeploymentActionRequestStatus), TypeInfoPropertyName = "UpdateIntegrationDeploymentActionRequestStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeSecret>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeSecret))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant1, global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant2>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant1, global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant2>), TypeInfoPropertyName = "OneOfUpdateIntegrationDeploymentActionRequestOutcomeVariant1UpdateIntegrationDeploymentActionRequestOutcomeVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant1Secret>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant1Secret))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant2ClaimRule>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant2ClaimRule))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant2ClaimRuleWhen))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.OneOf<string, double?, bool?>?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectIntegrationResourceToProjectRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.EnvVarEnvironments?, string>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.EnvVarEnvironments?, string>), TypeInfoPropertyName = "AnyOfEnvVarEnvironmentsString2")]
@@ -341,6 +349,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, bool?, global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<double>>), TypeInfoPropertyName = "OneOfStringDoubleBooleanIListStringIListDouble2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectRequestSource), TypeInfoPropertyName = "CreateIntegrationStoreDirectRequestSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GitNamespacesProvider), TypeInfoPropertyName = "GitNamespacesProvider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, string, double?>), TypeInfoPropertyName = "OneOfStringDoubleStringDouble2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SearchRepoProvider), TypeInfoPropertyName = "SearchRepoProvider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetBillingPlansSource), TypeInfoPropertyName = "GetBillingPlansSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationsView), TypeInfoPropertyName = "GetConfigurationsView2")]
@@ -505,15 +514,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductTag), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductTag2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductRepl))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuide>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuide))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStep>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStep))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStepAction>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStepAction))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStepActionType), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductGuideStepActionType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegration))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilities))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotation, bool?>), TypeInfoPropertyName = "OneOfCreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationBoolean2")]
     internal sealed partial class IntegrationsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -577,9 +577,19 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1HiddenEnum, bool?, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1HiddenEnum2?>?), TypeInfoPropertyName = "AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1HiddenEnum2_ec17421d8c230a2a")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3DisabledEnum, bool?, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3DisabledEnum2?>?), TypeInfoPropertyName = "AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3DisabledEnum2_b15a4c0b93f89f0e")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3HiddenEnum, bool?, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3HiddenEnum2?>?), TypeInfoPropertyName = "AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3HiddenEnum2_f9b4828d946d8aa1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant1, global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant2>?), TypeInfoPropertyName = "UpdateIntegrationDeploymentActionRequestOutcomeVariant2_94d158b4e5bd21b4")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetConfigurationResponseVariant1TransferRequestVariant1, global::Vercel.GetConfigurationResponseVariant1TransferRequestVariant2>?), TypeInfoPropertyName = "GetConfigurationResponseVariant1TransferRequestVariant2_7201615247308b3f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvider>, global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProviders?>?), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProjectFilterGitProviders_eaf282a93725adad")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvider>, global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProviders?>), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProjectFilterGitProviders_1da342ad0298fa46")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuide))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStep>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStep))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStepAction>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStepAction))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStepActionType), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductGuideStepActionType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegration))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilities))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotation, bool?>), TypeInfoPropertyName = "OneOfCreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotationBoolean2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotation))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductLogDrainStatus), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductLogDrainStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectResponseStoreProductPrimaryProtocol), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProductPrimaryProtocol2")]
@@ -612,6 +622,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0603220ab3785539UiOptionVariant3HiddenEnum2?), TypeInfoPropertyName = "NullableAutoSDKShared0603220ab3785539UiOptionVariant3HiddenEnum22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0603220ab3785539UiReadOnlyEnum, bool?, global::Vercel.AutoSDKShared0603220ab3785539UiReadOnlyEnum2?>?), TypeInfoPropertyName = "NullableOneOfAutoSDKShared0603220ab3785539UiReadOnlyEnumBooleanAutoSDKShared0603220ab3785539UiReadOnlyEnum22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0603220ab3785539UiReadOnlyEnum2?), TypeInfoPropertyName = "NullableAutoSDKShared0603220ab3785539UiReadOnlyEnum22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, bool?>?), TypeInfoPropertyName = "NullableOneOfStringDoubleBoolean2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared2c06e7f88512c8b8ItemsType?), TypeInfoPropertyName = "NullableAutoSDKShared2c06e7f88512c8b8ItemsType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared2c06e7f88512c8b8Type?), TypeInfoPropertyName = "NullableAutoSDKShared2c06e7f88512c8b8Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared2c06e7f88512c8b8UiControl?), TypeInfoPropertyName = "NullableAutoSDKShared2c06e7f88512c8b8UiControl2")]
@@ -723,6 +734,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, bool?, global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<double>>?), TypeInfoPropertyName = "NullableOneOfStringDoubleBooleanIListStringIListDouble2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateIntegrationStoreDirectRequestSource?), TypeInfoPropertyName = "NullableCreateIntegrationStoreDirectRequestSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GitNamespacesProvider?), TypeInfoPropertyName = "NullableGitNamespacesProvider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, string, double?>?), TypeInfoPropertyName = "NullableOneOfStringDoubleStringDouble2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SearchRepoProvider?), TypeInfoPropertyName = "NullableSearchRepoProvider2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetBillingPlansSource?), TypeInfoPropertyName = "NullableGetBillingPlansSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetConfigurationsView?), TypeInfoPropertyName = "NullableGetConfigurationsView2")]
@@ -815,8 +827,9 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiOption>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12GitProvider>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1, string, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeSecret>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant1, global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant2>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant1Secret>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant2ClaimRule>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AnyOf<global::Vercel.EnvVarEnvironments?, string>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, bool?, global::System.Collections.Generic.List<string>, global::System.Collections.Generic.List<double>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GitNamespacesResponseItem>))]
@@ -1016,6 +1029,8 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3HiddenEnum, bool?, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3HiddenEnum2?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiReadOnlyEnum, bool?, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiReadOnlyEnum2?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant1, global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
@@ -1024,6 +1039,8 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<string, double?, bool?, object, global::System.Collections.Generic.IList<object>, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<string, double?, bool?, object, global::System.Collections.Generic.IList<object>, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.EnvVarEnvironments?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?, string>());
@@ -1065,7 +1082,7 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?, global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<double>>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
@@ -1102,6 +1119,7 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<double>, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<double>, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetConfigurationsResponseVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.GetConfigurationsResponseVariant2Item>>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetConfigurationResponseVariant1, global::Vercel.GetConfigurationResponseVariant2, global::Vercel.GetConfigurationResponseVariant3>());

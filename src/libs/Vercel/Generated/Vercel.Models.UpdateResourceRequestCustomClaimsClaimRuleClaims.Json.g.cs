@@ -2,7 +2,7 @@
 
 namespace Vercel
 {
-    public sealed partial class UpdateIntegrationDeploymentActionRequestOutcome
+    public sealed partial class UpdateResourceRequestCustomClaimsClaimRuleClaims
     {
         /// <summary>
         /// Serializes the current instance to a JSON string using the provided JsonSerializerContext.
@@ -47,20 +47,20 @@ namespace Vercel
         /// <summary>
         /// Deserializes a JSON string using the provided JsonSerializerContext.
         /// </summary>
-        public static global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome? FromJson(
+        public static global::Vercel.UpdateResourceRequestCustomClaimsClaimRuleClaims? FromJson(
             string json,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome),
-                jsonSerializerContext) as global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome;
+                typeof(global::Vercel.UpdateResourceRequestCustomClaimsClaimRuleClaims),
+                jsonSerializerContext) as global::Vercel.UpdateResourceRequestCustomClaimsClaimRuleClaims;
         }
 
         /// <summary>
         /// Deserializes a JSON string using the generated default JsonSerializerContext.
         /// </summary>
-        public static global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome? FromJson(
+        public static global::Vercel.UpdateResourceRequestCustomClaimsClaimRuleClaims? FromJson(
             string json)
         {
             return FromJson(
@@ -75,7 +75,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome? FromJson(
+        public static global::Vercel.UpdateResourceRequestCustomClaimsClaimRuleClaims? FromJson(
             string json,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
@@ -86,7 +86,7 @@ namespace Vercel
                     global::Vercel.SourceGenerationContext.Default);
             }
 
-            return global::System.Text.Json.JsonSerializer.Deserialize<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome>(
+            return global::System.Text.Json.JsonSerializer.Deserialize<global::Vercel.UpdateResourceRequestCustomClaimsClaimRuleClaims>(
                 json,
                 jsonSerializerOptions);
         }
@@ -94,20 +94,20 @@ namespace Vercel
         /// <summary>
         /// Deserializes a JSON stream using the provided JsonSerializerContext.
         /// </summary>
-        public static async global::System.Threading.Tasks.ValueTask<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome?> FromJsonStreamAsync(
+        public static async global::System.Threading.Tasks.ValueTask<global::Vercel.UpdateResourceRequestCustomClaimsClaimRuleClaims?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.Serialization.JsonSerializerContext jsonSerializerContext)
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome),
-                jsonSerializerContext).ConfigureAwait(false)) as global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome;
+                typeof(global::Vercel.UpdateResourceRequestCustomClaimsClaimRuleClaims),
+                jsonSerializerContext).ConfigureAwait(false)) as global::Vercel.UpdateResourceRequestCustomClaimsClaimRuleClaims;
         }
 
         /// <summary>
         /// Deserializes a JSON stream using the generated default JsonSerializerContext.
         /// </summary>
-        public static global::System.Threading.Tasks.ValueTask<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome?> FromJsonStreamAsync(
+        public static global::System.Threading.Tasks.ValueTask<global::Vercel.UpdateResourceRequestCustomClaimsClaimRuleClaims?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream)
         {
             return FromJsonStreamAsync(
@@ -122,7 +122,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.RequiresUnreferencedCode("JSON serialization and deserialization might require types that cannot be statically analyzed. Use the overload that takes a JsonTypeInfo or JsonSerializerContext, or make sure all of the required types are preserved.")]
         [global::System.Diagnostics.CodeAnalysis.RequiresDynamicCode("JSON serialization and deserialization might require types that cannot be statically analyzed and might need runtime code generation. Use System.Text.Json source generation for native AOT applications.")]
 #endif
-        public static global::System.Threading.Tasks.ValueTask<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome?> FromJsonStreamAsync(
+        public static global::System.Threading.Tasks.ValueTask<global::Vercel.UpdateResourceRequestCustomClaimsClaimRuleClaims?> FromJsonStreamAsync(
             global::System.IO.Stream jsonStream,
             global::System.Text.Json.JsonSerializerOptions? jsonSerializerOptions = null)
         {
@@ -133,7 +133,7 @@ namespace Vercel
                     global::Vercel.SourceGenerationContext.Default);
             }
 
-            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Vercel.UpdateIntegrationDeploymentActionRequestOutcome?>(
+            return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::Vercel.UpdateResourceRequestCustomClaimsClaimRuleClaims?>(
                 jsonStream,
                 jsonSerializerOptions);
         }

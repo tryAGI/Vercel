@@ -27,7 +27,9 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<double>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, bool?>), TypeInfoPropertyName = "OneOfStringDoubleBoolean2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.OneOf<string, double?, bool?>?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInstallationRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInstallationRequestStatus), TypeInfoPropertyName = "UpdateInstallationRequestStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInstallationRequestBillingPlan))]
@@ -61,6 +63,10 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ImportResourceRequestSecret>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ImportResourceRequestSecret))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ImportResourceRequestSecretEnvironmentOverrides))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ImportResourceRequestCustomClaims))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ImportResourceRequestCustomClaimsClaimRule>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ImportResourceRequestCustomClaimsClaimRule))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ImportResourceRequestCustomClaimsClaimRuleWhen))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateResourceRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateResourceRequestOwnership), TypeInfoPropertyName = "UpdateResourceRequestOwnership2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateResourceRequestStatus), TypeInfoPropertyName = "UpdateResourceRequestStatus2")]
@@ -81,6 +87,10 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateResourceRequestSecretsSecret>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateResourceRequestSecretsSecret))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateResourceRequestSecretsSecretEnvironmentOverrides))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateResourceRequestCustomClaims))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateResourceRequestCustomClaimsClaimRule>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateResourceRequestCustomClaimsClaimRule))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateResourceRequestCustomClaimsClaimRuleWhen))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SubmitBillingDataRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SubmitBillingDataRequestPeriod))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.SubmitBillingDataRequestBillingItem>, global::Vercel.SubmitBillingDataRequestBilling>), TypeInfoPropertyName = "OneOfIListSubmitBillingDataRequestBillingItemSubmitBillingDataRequestBilling2")]
@@ -148,6 +158,10 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationResourcesResponseResourceProtocolSettingsExperimentation))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationResourcesResponseResourceStatus), TypeInfoPropertyName = "GetIntegrationResourcesResponseResourceStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationResourceResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationResourceResponseCustomClaims))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetIntegrationResourceResponseCustomClaimsClaimRule>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationResourceResponseCustomClaimsClaimRule))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationResourceResponseCustomClaimsClaimRuleWhen))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationResourceResponseNotification))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationResourceResponseNotificationLevel), TypeInfoPropertyName = "GetIntegrationResourceResponseNotificationLevel2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetIntegrationResourceResponseProtocolSettings))]
@@ -179,6 +193,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(double?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GlobalConfigItemValue?), TypeInfoPropertyName = "NullableGlobalConfigItemValue2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, bool?>?), TypeInfoPropertyName = "NullableOneOfStringDoubleBoolean2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInstallationRequestStatus?), TypeInfoPropertyName = "NullableUpdateInstallationRequestStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateInstallationRequestBillingPlanType?), TypeInfoPropertyName = "NullableUpdateInstallationRequestBillingPlanType2")]
@@ -228,11 +243,13 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ImportResourceRequestBillingPlanDetail>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ImportResourceRequestBillingPlanHighlightedDetail>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ImportResourceRequestSecret>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ImportResourceRequestCustomClaimsClaimRule>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateResourceRequestBillingPlanDetail>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateResourceRequestBillingPlanHighlightedDetail>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.UpdateResourceRequestSecret>, global::Vercel.UpdateResourceRequestSecrets>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateResourceRequestSecret>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateResourceRequestSecretsSecret>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateResourceRequestCustomClaimsClaimRule>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.SubmitBillingDataRequestBillingItem>, global::Vercel.SubmitBillingDataRequestBilling>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.SubmitBillingDataRequestBillingItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.SubmitBillingDataRequestBillingItem2>))]
@@ -247,6 +264,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetIntegrationResourcesResponseResource>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::System.Collections.Generic.List<string>, global::System.Collections.Generic.List<double>, bool?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetIntegrationResourcesResponseResourceProtocolSettingsAuthenticationAppUrl>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetIntegrationResourceResponseCustomClaimsClaimRule>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetIntegrationResourceResponseProtocolSettingsAuthenticationAppUrl>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetInvoiceResponseDiscount>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetInvoiceResponseItem>))]
@@ -349,6 +367,7 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
@@ -358,8 +377,10 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<string, double?, bool?, object, global::System.Collections.Generic.IList<object>, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateInstallationRequestNotification, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateEventRequestEventVariant1, global::Vercel.CreateEventRequestEventVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.UpdateResourceRequestNotification, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.UpdateResourceRequestSecret>, global::Vercel.UpdateResourceRequestSecrets>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.SubmitBillingDataRequestBillingItem>, global::Vercel.SubmitBillingDataRequestBilling>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ExchangeSsoTokenRequestVariant1, global::Vercel.ExchangeSsoTokenRequestVariant2>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
@@ -403,7 +424,7 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?, global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<double>>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, string>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<double?, string>());
@@ -439,6 +460,7 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<double>, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<double>, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ExchangeSsoTokenResponseVariant1, global::Vercel.ExchangeSsoTokenResponseVariant2>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());

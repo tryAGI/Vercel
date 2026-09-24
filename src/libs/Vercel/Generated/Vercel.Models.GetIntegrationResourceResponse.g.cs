@@ -15,6 +15,12 @@ namespace Vercel
         public string? BillingPlanId { get; set; }
 
         /// <summary>
+        /// The roles and claim rules Vercel resolves into the resource tokens it mints for this resource
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("customClaims")]
+        public global::Vercel.GetIntegrationResourceResponseCustomClaims? CustomClaims { get; set; }
+
+        /// <summary>
         /// The ID provided by the 3rd party provider for the given resource
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
@@ -91,6 +97,9 @@ namespace Vercel
         /// <param name="billingPlanId">
         /// The ID of the billing plan the resource is subscribed to, if applicable
         /// </param>
+        /// <param name="customClaims">
+        /// The roles and claim rules Vercel resolves into the resource tokens it mints for this resource
+        /// </param>
         /// <param name="metadata">
         /// The configured metadata for the resource as defined by its product's Metadata Schema
         /// </param>
@@ -112,12 +121,14 @@ namespace Vercel
             string name,
             string productId,
             string? billingPlanId,
+            global::Vercel.GetIntegrationResourceResponseCustomClaims? customClaims,
             object? metadata,
             global::Vercel.GetIntegrationResourceResponseNotification? notification,
             global::Vercel.GetIntegrationResourceResponseProtocolSettings? protocolSettings,
             global::Vercel.GetIntegrationResourceResponseStatus? status)
         {
             this.BillingPlanId = billingPlanId;
+            this.CustomClaims = customClaims;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.InternalId = internalId ?? throw new global::System.ArgumentNullException(nameof(internalId));
             this.Metadata = metadata;

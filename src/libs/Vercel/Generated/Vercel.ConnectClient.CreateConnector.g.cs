@@ -879,7 +879,7 @@ namespace Vercel
         /// Trigger driver type. Resolved automatically from the service or known service registry when not provided. Only set when using the newly decoupled triggers resolution flow.
         /// </param>
         /// <param name="triggerData">
-        /// Trigger-specific credentials (e.g. webhook signing secret). Validated and encrypted against the trigger type definition.
+        /// Trigger configuration, validated and encrypted by the trigger driver. An empty object applies driver defaults.
         /// </param>
         /// <param name="triggerDestination">
         /// Initial trigger destination. Requires triggers to be enabled and a projectId here or at the top level. Connector responses expose the resulting set as triggerDestinations. Replace the complete set with PATCH /v1/connect/connectors/{connector}/trigger-destinations.
