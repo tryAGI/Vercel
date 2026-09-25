@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        Errored,
+        /// <summary>
+        ///
+        /// </summary>
         Preparing,
         /// <summary>
         ///
@@ -34,6 +38,7 @@ namespace Vercel
         {
             return value switch
             {
+                VcrImageDetailStatus.Errored => "errored",
                 VcrImageDetailStatus.Preparing => "preparing",
                 VcrImageDetailStatus.Ready => "ready",
                 VcrImageDetailStatus.Unoptimized => "unoptimized",
@@ -47,6 +52,7 @@ namespace Vercel
         {
             return value switch
             {
+                "errored" => VcrImageDetailStatus.Errored,
                 "preparing" => VcrImageDetailStatus.Preparing,
                 "ready" => VcrImageDetailStatus.Ready,
                 "unoptimized" => VcrImageDetailStatus.Unoptimized,

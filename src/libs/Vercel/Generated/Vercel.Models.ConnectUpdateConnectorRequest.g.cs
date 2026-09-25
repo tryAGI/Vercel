@@ -15,6 +15,12 @@ namespace Vercel
         public bool? Triggers { get; set; }
 
         /// <summary>
+        /// Trigger configuration, validated and encrypted by the trigger driver. An empty object applies driver defaults.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("triggerData")]
+        public object? TriggerData { get; set; }
+
+        /// <summary>
         /// Default trigger events for this connector.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("events")]
@@ -96,6 +102,9 @@ namespace Vercel
         /// <param name="triggers">
         /// Whether the triggers are enabled for this connector.
         /// </param>
+        /// <param name="triggerData">
+        /// Trigger configuration, validated and encrypted by the trigger driver. An empty object applies driver defaults.
+        /// </param>
         /// <param name="events">
         /// Default trigger events for this connector.
         /// </param>
@@ -145,6 +154,7 @@ namespace Vercel
 #endif
         public ConnectUpdateConnectorRequest(
             bool? triggers,
+            object? triggerData,
             global::System.Collections.Generic.IList<string>? events,
             global::Vercel.ConnectConnectorUpdateData? data,
             string? icon,
@@ -154,6 +164,7 @@ namespace Vercel
             string? name)
         {
             this.Triggers = triggers;
+            this.TriggerData = triggerData;
             this.Events = events;
             this.Data = data;
             this.Icon = icon;

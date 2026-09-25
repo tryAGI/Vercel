@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// The default plan type for the build machine — what the customer is *paying* for on their plan. For most customers, this is standard, but some customers have an entitlement for enhanced builds.
+    /// The build machine tier included with the customer's plan. For most customers this is standard; enhanced entitlements include enhanced, while `none` means every build is billed at its purchase type.
     /// </summary>
     public enum CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType
     {
@@ -16,6 +16,10 @@ namespace Vercel
         ///
         /// </summary>
         Enhanced,
+        /// <summary>
+        ///
+        /// </summary>
+        None,
         /// <summary>
         ///
         /// </summary>
@@ -36,6 +40,7 @@ namespace Vercel
             {
                 CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType.Basic => "basic",
                 CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType.Enhanced => "enhanced",
+                CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType.None => "none",
                 CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType.Standard => "standard",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -49,6 +54,7 @@ namespace Vercel
             {
                 "basic" => CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType.Basic,
                 "enhanced" => CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType.Enhanced,
+                "none" => CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType.None,
                 "standard" => CancelDeploymentResponseResourceConfigBuildMachineDefaultPurchaseType.Standard,
                 _ => null,
             };

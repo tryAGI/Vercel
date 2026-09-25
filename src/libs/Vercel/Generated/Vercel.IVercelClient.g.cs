@@ -238,6 +238,11 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        public VercelCiClient VercelCi { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
         public WebAnalyticsClient WebAnalytics { get; }
 
         /// <summary>

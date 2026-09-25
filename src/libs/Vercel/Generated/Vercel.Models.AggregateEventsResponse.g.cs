@@ -12,9 +12,9 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKSharedb141477327f89107JsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared2c7fdfa9ff104258JsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AutoSDKSharedb141477327f89107 Data { get; set; }
+        public required global::Vercel.AutoSDKShared2c7fdfa9ff104258 Data { get; set; }
 
         /// <summary>
         ///
@@ -46,7 +46,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AggregateEventsResponse(
-            global::Vercel.AutoSDKSharedb141477327f89107 data,
+            global::Vercel.AutoSDKShared2c7fdfa9ff104258 data,
             global::Vercel.AggregateEventsResponseQuery query,
             double version)
         {

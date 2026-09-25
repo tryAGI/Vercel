@@ -639,6 +639,38 @@ namespace Vercel
                                         h => h.Key,
                                         h => h.Value));
                             }
+                            //
+                            if ((int)__response.StatusCode == 501)
+                            {
+                                string? __content_501 = null;
+                                global::System.Exception? __exception_501 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_501 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_501 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_501 = __ex;
+                                }
+
+
+                                throw global::Vercel.ApiException.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_501 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_501,
+                                    responseBody: __content_501,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
                             // A dependency returned an invalid or unsuccessful response.
                             if ((int)__response.StatusCode == 502)
                             {
@@ -788,6 +820,9 @@ namespace Vercel
         /// <param name="triggers">
         /// Whether the triggers are enabled for this connector.
         /// </param>
+        /// <param name="triggerData">
+        /// Trigger configuration, validated and encrypted by the trigger driver. An empty object applies driver defaults.
+        /// </param>
         /// <param name="events">
         /// Default trigger events for this connector.
         /// </param>
@@ -840,6 +875,7 @@ namespace Vercel
             string? teamId = default,
             string? slug = default,
             bool? triggers = default,
+            object? triggerData = default,
             global::System.Collections.Generic.IList<string>? events = default,
             global::Vercel.ConnectConnectorUpdateData? data = default,
             string? icon = default,
@@ -853,6 +889,7 @@ namespace Vercel
             var __request = new global::Vercel.ConnectUpdateConnectorRequest
             {
                 Triggers = triggers,
+                TriggerData = triggerData,
                 Events = events,
                 Data = data,
                 Icon = icon,

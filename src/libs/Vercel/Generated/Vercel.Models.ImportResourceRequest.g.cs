@@ -68,6 +68,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.ImportResourceRequestSecret>? Secrets { get; set; }
 
         /// <summary>
+        /// Custom claims embedded in the resource tokens Vercel mints for this resource.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("customClaims")]
+        public global::Vercel.ImportResourceRequestCustomClaims? CustomClaims { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -85,6 +91,9 @@ namespace Vercel
         /// <param name="notification"></param>
         /// <param name="extras"></param>
         /// <param name="secrets"></param>
+        /// <param name="customClaims">
+        /// Custom claims embedded in the resource tokens Vercel mints for this resource.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -97,7 +106,8 @@ namespace Vercel
             global::Vercel.ImportResourceRequestBillingPlan? billingPlan,
             global::Vercel.ImportResourceRequestNotification? notification,
             object? extras,
-            global::System.Collections.Generic.IList<global::Vercel.ImportResourceRequestSecret>? secrets)
+            global::System.Collections.Generic.IList<global::Vercel.ImportResourceRequestSecret>? secrets,
+            global::Vercel.ImportResourceRequestCustomClaims? customClaims)
         {
             this.Ownership = ownership;
             this.ProductId = productId ?? throw new global::System.ArgumentNullException(nameof(productId));
@@ -108,6 +118,7 @@ namespace Vercel
             this.Notification = notification;
             this.Extras = extras;
             this.Secrets = secrets;
+            this.CustomClaims = customClaims;
         }
 
         /// <summary>

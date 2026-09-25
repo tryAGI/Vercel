@@ -168,6 +168,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiGatewayModelCatalogAlertSettingsUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         AiGatewayPrivateModelCreated,
         /// <summary>
         ///
@@ -577,6 +581,14 @@ namespace Vercel
         ///
         /// </summary>
         CustomSuffixReady,
+        /// <summary>
+        ///
+        /// </summary>
+        DefaultPasswordProtection,
+        /// <summary>
+        ///
+        /// </summary>
+        DefaultSsoProtection,
         /// <summary>
         ///
         /// </summary>
@@ -2822,6 +2834,7 @@ namespace Vercel
                 ListEventTypeName.AiGatewayInferenceRegionsUpdated => "ai-gateway-inference-regions-updated",
                 ListEventTypeName.AiGatewayModelAllowlistModelsUpdated => "ai-gateway-model-allowlist-models-updated",
                 ListEventTypeName.AiGatewayModelAllowlistToggled => "ai-gateway-model-allowlist-toggled",
+                ListEventTypeName.AiGatewayModelCatalogAlertSettingsUpdated => "ai-gateway-model-catalog-alert-settings-updated",
                 ListEventTypeName.AiGatewayPrivateModelCreated => "ai-gateway-private-model-created",
                 ListEventTypeName.AiGatewayPrivateModelDeleted => "ai-gateway-private-model-deleted",
                 ListEventTypeName.AiGatewayPrivateModelUpdated => "ai-gateway-private-model-updated",
@@ -2925,6 +2938,8 @@ namespace Vercel
                 ListEventTypeName.CustomSuffixEnable => "custom-suffix-enable",
                 ListEventTypeName.CustomSuffixPending => "custom-suffix-pending",
                 ListEventTypeName.CustomSuffixReady => "custom-suffix-ready",
+                ListEventTypeName.DefaultPasswordProtection => "default-password-protection",
+                ListEventTypeName.DefaultSsoProtection => "default-sso-protection",
                 ListEventTypeName.DeployHookCreated => "deploy-hook-created",
                 ListEventTypeName.DeployHookDeduped => "deploy-hook-deduped",
                 ListEventTypeName.DeployHookDeleted => "deploy-hook-deleted",
@@ -3522,6 +3537,7 @@ namespace Vercel
                 "ai-gateway-inference-regions-updated" => ListEventTypeName.AiGatewayInferenceRegionsUpdated,
                 "ai-gateway-model-allowlist-models-updated" => ListEventTypeName.AiGatewayModelAllowlistModelsUpdated,
                 "ai-gateway-model-allowlist-toggled" => ListEventTypeName.AiGatewayModelAllowlistToggled,
+                "ai-gateway-model-catalog-alert-settings-updated" => ListEventTypeName.AiGatewayModelCatalogAlertSettingsUpdated,
                 "ai-gateway-private-model-created" => ListEventTypeName.AiGatewayPrivateModelCreated,
                 "ai-gateway-private-model-deleted" => ListEventTypeName.AiGatewayPrivateModelDeleted,
                 "ai-gateway-private-model-updated" => ListEventTypeName.AiGatewayPrivateModelUpdated,
@@ -3625,6 +3641,8 @@ namespace Vercel
                 "custom-suffix-enable" => ListEventTypeName.CustomSuffixEnable,
                 "custom-suffix-pending" => ListEventTypeName.CustomSuffixPending,
                 "custom-suffix-ready" => ListEventTypeName.CustomSuffixReady,
+                "default-password-protection" => ListEventTypeName.DefaultPasswordProtection,
+                "default-sso-protection" => ListEventTypeName.DefaultSsoProtection,
                 "deploy-hook-created" => ListEventTypeName.DeployHookCreated,
                 "deploy-hook-deduped" => ListEventTypeName.DeployHookDeduped,
                 "deploy-hook-deleted" => ListEventTypeName.DeployHookDeleted,

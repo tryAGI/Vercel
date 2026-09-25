@@ -31,6 +31,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        GoogleDpop,
+        /// <summary>
+        ///
+        /// </summary>
         Linear,
         /// <summary>
         ///
@@ -91,6 +95,7 @@ namespace Vercel
                 ConnectConnectorType.Custom => "custom",
                 ConnectConnectorType.Discord => "discord",
                 ConnectConnectorType.Github => "github",
+                ConnectConnectorType.GoogleDpop => "google-dpop",
                 ConnectConnectorType.Linear => "linear",
                 ConnectConnectorType.Linq => "linq",
                 ConnectConnectorType.MicrosoftEntra => "microsoft-entra",
@@ -117,6 +122,7 @@ namespace Vercel
                 "custom" => ConnectConnectorType.Custom,
                 "discord" => ConnectConnectorType.Discord,
                 "github" => ConnectConnectorType.Github,
+                "google-dpop" => ConnectConnectorType.GoogleDpop,
                 "linear" => ConnectConnectorType.Linear,
                 "linq" => ConnectConnectorType.Linq,
                 "microsoft-entra" => ConnectConnectorType.MicrosoftEntra,

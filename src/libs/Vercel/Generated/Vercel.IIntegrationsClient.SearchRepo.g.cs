@@ -27,7 +27,7 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.OneOf<object, global::Vercel.SearchRepoResponseVariant2, global::Vercel.SearchRepoResponseVariant3, global::Vercel.SearchRepoResponseVariant4>> SearchRepoAsync(
             string? query = default,
-            global::Vercel.OneOf<string, double?>? namespaceId = default,
+            global::Vercel.OneOf<string, double?, string, double?>? namespaceId = default,
             global::Vercel.SearchRepoProvider? provider = default,
             string? installationId = default,
             string? host = default,
@@ -58,7 +58,7 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<object, global::Vercel.SearchRepoResponseVariant2, global::Vercel.SearchRepoResponseVariant3, global::Vercel.SearchRepoResponseVariant4>>> SearchRepoAsResponseAsync(
             string? query = default,
-            global::Vercel.OneOf<string, double?>? namespaceId = default,
+            global::Vercel.OneOf<string, double?, string, double?>? namespaceId = default,
             global::Vercel.SearchRepoProvider? provider = default,
             string? installationId = default,
             string? host = default,

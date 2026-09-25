@@ -49,7 +49,7 @@ namespace Vercel
 
         /// <summary>
         /// Delete a drive<br/>
-        /// Deletes a drive by project and name. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion. Drives are in private beta. Register your interest to get access: https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta
+        /// Deletes a drive by project and name. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion.
         /// </summary>
         /// <param name="name">
         /// Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
@@ -89,7 +89,7 @@ namespace Vercel
         }
         /// <summary>
         /// Delete a drive<br/>
-        /// Deletes a drive by project and name. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion. Drives are in private beta. Register your interest to get access: https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta
+        /// Deletes a drive by project and name. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion.
         /// </summary>
         /// <param name="name">
         /// Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>

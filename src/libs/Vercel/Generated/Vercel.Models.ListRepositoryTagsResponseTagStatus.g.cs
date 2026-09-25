@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        Errored,
+        /// <summary>
+        ///
+        /// </summary>
         Preparing,
         /// <summary>
         ///
@@ -34,6 +38,7 @@ namespace Vercel
         {
             return value switch
             {
+                ListRepositoryTagsResponseTagStatus.Errored => "errored",
                 ListRepositoryTagsResponseTagStatus.Preparing => "preparing",
                 ListRepositoryTagsResponseTagStatus.Ready => "ready",
                 ListRepositoryTagsResponseTagStatus.Unoptimized => "unoptimized",
@@ -47,6 +52,7 @@ namespace Vercel
         {
             return value switch
             {
+                "errored" => ListRepositoryTagsResponseTagStatus.Errored,
                 "preparing" => ListRepositoryTagsResponseTagStatus.Preparing,
                 "ready" => ListRepositoryTagsResponseTagStatus.Ready,
                 "unoptimized" => ListRepositoryTagsResponseTagStatus.Unoptimized,

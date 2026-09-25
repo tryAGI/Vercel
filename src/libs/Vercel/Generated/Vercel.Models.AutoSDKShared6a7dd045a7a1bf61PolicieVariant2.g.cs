@@ -1,0 +1,84 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    ///
+    /// </summary>
+    public sealed partial class AutoSDKShared6a7dd045a7a1bf61PolicieVariant2
+    {
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("clientId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ClientId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string CreatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared6a7dd045a7a1bf61PolicieVariant2KindJsonConverter))]
+        public global::Vercel.AutoSDKShared6a7dd045a7a1bf61PolicieVariant2Kind Kind { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tokenClaims")]
+        public object? TokenClaims { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string UpdatedAt { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AutoSDKShared6a7dd045a7a1bf61PolicieVariant2" /> class.
+        /// </summary>
+        /// <param name="clientId"></param>
+        /// <param name="createdAt"></param>
+        /// <param name="updatedAt"></param>
+        /// <param name="kind"></param>
+        /// <param name="tokenClaims"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public AutoSDKShared6a7dd045a7a1bf61PolicieVariant2(
+            string clientId,
+            string createdAt,
+            string updatedAt,
+            global::Vercel.AutoSDKShared6a7dd045a7a1bf61PolicieVariant2Kind kind,
+            object? tokenClaims)
+        {
+            this.ClientId = clientId ?? throw new global::System.ArgumentNullException(nameof(clientId));
+            this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
+            this.Kind = kind;
+            this.TokenClaims = tokenClaims;
+            this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AutoSDKShared6a7dd045a7a1bf61PolicieVariant2" /> class.
+        /// </summary>
+        public AutoSDKShared6a7dd045a7a1bf61PolicieVariant2()
+        {
+        }
+
+    }
+}

@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Trigger-specific credentials (e.g. webhook signing secret). Validated and encrypted against the trigger type definition.
+    /// Trigger configuration, validated and encrypted by the trigger driver. An empty object applies driver defaults.
     /// </summary>
     public sealed partial class ConnectCreateConnectorRequestTriggerData
     {
