@@ -392,6 +392,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        public VercelCiClient VercelCi => new VercelCiClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
+        ///
+        /// </summary>
         public WebAnalyticsClient WebAnalytics => new WebAnalyticsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
