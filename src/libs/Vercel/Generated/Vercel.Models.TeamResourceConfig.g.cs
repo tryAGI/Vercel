@@ -45,7 +45,7 @@ namespace Vercel
         public double? EdgeConfigs { get; set; }
 
         /// <summary>
-        /// The maximum size in kilobytes of an Edge Config. Only specified if a custom limit is set.
+        /// The maximum size in kilobytes of a Global Config. Only specified if a custom limit is set.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("edgeConfigSize")]
         public double? EdgeConfigSize { get; set; }
@@ -100,7 +100,7 @@ namespace Vercel
         /// The maximum number of edge configs an account can create.
         /// </param>
         /// <param name="edgeConfigSize">
-        /// The maximum size in kilobytes of an Edge Config. Only specified if a custom limit is set.
+        /// The maximum size in kilobytes of a Global Config. Only specified if a custom limit is set.
         /// </param>
         /// <param name="elasticConcurrencyEnabled">
         /// Whether every build for this team / user has elastic concurrency enabled automatically.
