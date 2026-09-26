@@ -1248,6 +1248,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        MessageboardCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardSpaceCreated,
+        /// <summary>
+        ///
+        /// </summary>
         MicrofrontendGroupAdded,
         /// <summary>
         ///
@@ -3104,6 +3112,8 @@ namespace Vercel
                 ListEventTypeName.MarketplaceBillingCollectionUpdated => "marketplace-billing-collection-updated",
                 ListEventTypeName.MarketplaceFlexCommitOptIn => "marketplace-flex-commit-opt-in",
                 ListEventTypeName.MarketplaceIntegrationAllowlistUpdated => "marketplace-integration-allowlist-updated",
+                ListEventTypeName.MessageboardCreated => "messageboard-created",
+                ListEventTypeName.MessageboardSpaceCreated => "messageboard-space-created",
                 ListEventTypeName.MicrofrontendGroupAdded => "microfrontend-group-added",
                 ListEventTypeName.MicrofrontendGroupDeleted => "microfrontend-group-deleted",
                 ListEventTypeName.MicrofrontendGroupUpdated => "microfrontend-group-updated",
@@ -3807,6 +3817,8 @@ namespace Vercel
                 "marketplace-billing-collection-updated" => ListEventTypeName.MarketplaceBillingCollectionUpdated,
                 "marketplace-flex-commit-opt-in" => ListEventTypeName.MarketplaceFlexCommitOptIn,
                 "marketplace-integration-allowlist-updated" => ListEventTypeName.MarketplaceIntegrationAllowlistUpdated,
+                "messageboard-created" => ListEventTypeName.MessageboardCreated,
+                "messageboard-space-created" => ListEventTypeName.MessageboardSpaceCreated,
                 "microfrontend-group-added" => ListEventTypeName.MicrofrontendGroupAdded,
                 "microfrontend-group-deleted" => ListEventTypeName.MicrofrontendGroupDeleted,
                 "microfrontend-group-updated" => ListEventTypeName.MicrofrontendGroupUpdated,
