@@ -19,6 +19,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        StructuredOutput,
+        /// <summary>
+        ///
+        /// </summary>
         ToolUse,
         /// <summary>
         ///
@@ -40,6 +44,7 @@ namespace Vercel
             {
                 AiGatewayVirtualModelConfigHa.ImplicitCaching => "implicit-caching",
                 AiGatewayVirtualModelConfigHa.Reasoning => "reasoning",
+                AiGatewayVirtualModelConfigHa.StructuredOutput => "structured-output",
                 AiGatewayVirtualModelConfigHa.ToolUse => "tool-use",
                 AiGatewayVirtualModelConfigHa.Vision => "vision",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -54,6 +59,7 @@ namespace Vercel
             {
                 "implicit-caching" => AiGatewayVirtualModelConfigHa.ImplicitCaching,
                 "reasoning" => AiGatewayVirtualModelConfigHa.Reasoning,
+                "structured-output" => AiGatewayVirtualModelConfigHa.StructuredOutput,
                 "tool-use" => AiGatewayVirtualModelConfigHa.ToolUse,
                 "vision" => AiGatewayVirtualModelConfigHa.Vision,
                 _ => null,

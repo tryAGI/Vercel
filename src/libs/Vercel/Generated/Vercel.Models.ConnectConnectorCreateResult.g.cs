@@ -142,6 +142,12 @@ namespace Vercel
         public required string Service { get; set; }
 
         /// <summary>
+        /// Provider logo from the known-service registry, matched by `service`. Often an SVG data URL. Absent when the service is not in the registry.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("serviceIcon")]
+        public string? ServiceIcon { get; set; }
+
+        /// <summary>
         /// Token subject types supported by the connector.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("supportedSubjectTypes")]
@@ -348,6 +354,9 @@ namespace Vercel
         /// <param name="reinstallAt">
         /// Time when this connector started requiring reinstallation because an installation-affecting app-token grant changed.
         /// </param>
+        /// <param name="serviceIcon">
+        /// Provider logo from the known-service registry, matched by `service`. Often an SVG data URL. Absent when the service is not in the registry.
+        /// </param>
         /// <param name="target">
         /// Which of the service's products/surfaces this connector points at.
         /// </param>
@@ -403,6 +412,7 @@ namespace Vercel
             global::Vercel.ConnectConnectorCreateResultManaged? managed,
             string? redirectUri,
             double? reinstallAt,
+            string? serviceIcon,
             string? target,
             global::System.Collections.Generic.IList<global::Vercel.ConnectTriggerDestination>? triggerDestinations,
             global::Vercel.ConnectTriggerConfiguration? triggers,
@@ -432,6 +442,7 @@ namespace Vercel
             this.RedirectUri = redirectUri;
             this.ReinstallAt = reinstallAt;
             this.Service = service ?? throw new global::System.ArgumentNullException(nameof(service));
+            this.ServiceIcon = serviceIcon;
             this.SupportedSubjectTypes = supportedSubjectTypes ?? throw new global::System.ArgumentNullException(nameof(supportedSubjectTypes));
             this.SupportsIcon = supportsIcon;
             this.SupportsInstallation = supportsInstallation;

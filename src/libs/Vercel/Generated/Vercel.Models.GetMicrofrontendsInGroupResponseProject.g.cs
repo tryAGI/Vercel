@@ -398,7 +398,7 @@ namespace Vercel
         /// Requested and authorized operations when `checkPermissions` is used. Legacy `includePermissions` responses contain a broader, non-authoritative permission summary.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("permissions")]
-        public global::Vercel.AutoSDKShared26bf680ec7bdfcc3? Permissions { get; set; }
+        public global::Vercel.AutoSDKSharedc1bbed57dd671537? Permissions { get; set; }
 
         /// <summary>
         ///
@@ -790,7 +790,7 @@ namespace Vercel
             global::Vercel.GetMicrofrontendsInGroupResponseProjectPassport? passport,
             object? passwordProtection,
             bool? paused,
-            global::Vercel.AutoSDKShared26bf680ec7bdfcc3? permissions,
+            global::Vercel.AutoSDKSharedc1bbed57dd671537? permissions,
             bool? productionDeploymentsFastLane,
             bool? protectedSourcemaps,
             object? protectionBypass,
