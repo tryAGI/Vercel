@@ -1248,6 +1248,22 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        MessageboardCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardPrivateCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardPrivateSpaceCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardSpaceCreated,
+        /// <summary>
+        ///
+        /// </summary>
         MicrofrontendGroupAdded,
         /// <summary>
         ///
@@ -3104,6 +3120,10 @@ namespace Vercel
                 UserEventType.MarketplaceBillingCollectionUpdated => "marketplace-billing-collection-updated",
                 UserEventType.MarketplaceFlexCommitOptIn => "marketplace-flex-commit-opt-in",
                 UserEventType.MarketplaceIntegrationAllowlistUpdated => "marketplace-integration-allowlist-updated",
+                UserEventType.MessageboardCreated => "messageboard-created",
+                UserEventType.MessageboardPrivateCreated => "messageboard-private-created",
+                UserEventType.MessageboardPrivateSpaceCreated => "messageboard-private-space-created",
+                UserEventType.MessageboardSpaceCreated => "messageboard-space-created",
                 UserEventType.MicrofrontendGroupAdded => "microfrontend-group-added",
                 UserEventType.MicrofrontendGroupDeleted => "microfrontend-group-deleted",
                 UserEventType.MicrofrontendGroupUpdated => "microfrontend-group-updated",
@@ -3807,6 +3827,10 @@ namespace Vercel
                 "marketplace-billing-collection-updated" => UserEventType.MarketplaceBillingCollectionUpdated,
                 "marketplace-flex-commit-opt-in" => UserEventType.MarketplaceFlexCommitOptIn,
                 "marketplace-integration-allowlist-updated" => UserEventType.MarketplaceIntegrationAllowlistUpdated,
+                "messageboard-created" => UserEventType.MessageboardCreated,
+                "messageboard-private-created" => UserEventType.MessageboardPrivateCreated,
+                "messageboard-private-space-created" => UserEventType.MessageboardPrivateSpaceCreated,
+                "messageboard-space-created" => UserEventType.MessageboardSpaceCreated,
                 "microfrontend-group-added" => UserEventType.MicrofrontendGroupAdded,
                 "microfrontend-group-deleted" => UserEventType.MicrofrontendGroupDeleted,
                 "microfrontend-group-updated" => UserEventType.MicrofrontendGroupUpdated,

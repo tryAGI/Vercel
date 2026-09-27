@@ -1247,6 +1247,22 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        MessageboardCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardPrivateCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardPrivateSpaceCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardSpaceCreated,
+        /// <summary>
+        ///
+        /// </summary>
         MicrofrontendGroupAdded,
         /// <summary>
         ///
@@ -3103,6 +3119,10 @@ namespace Vercel
                 ListEventTypeReplacedByItem.MarketplaceBillingCollectionUpdated => "marketplace-billing-collection-updated",
                 ListEventTypeReplacedByItem.MarketplaceFlexCommitOptIn => "marketplace-flex-commit-opt-in",
                 ListEventTypeReplacedByItem.MarketplaceIntegrationAllowlistUpdated => "marketplace-integration-allowlist-updated",
+                ListEventTypeReplacedByItem.MessageboardCreated => "messageboard-created",
+                ListEventTypeReplacedByItem.MessageboardPrivateCreated => "messageboard-private-created",
+                ListEventTypeReplacedByItem.MessageboardPrivateSpaceCreated => "messageboard-private-space-created",
+                ListEventTypeReplacedByItem.MessageboardSpaceCreated => "messageboard-space-created",
                 ListEventTypeReplacedByItem.MicrofrontendGroupAdded => "microfrontend-group-added",
                 ListEventTypeReplacedByItem.MicrofrontendGroupDeleted => "microfrontend-group-deleted",
                 ListEventTypeReplacedByItem.MicrofrontendGroupUpdated => "microfrontend-group-updated",
@@ -3806,6 +3826,10 @@ namespace Vercel
                 "marketplace-billing-collection-updated" => ListEventTypeReplacedByItem.MarketplaceBillingCollectionUpdated,
                 "marketplace-flex-commit-opt-in" => ListEventTypeReplacedByItem.MarketplaceFlexCommitOptIn,
                 "marketplace-integration-allowlist-updated" => ListEventTypeReplacedByItem.MarketplaceIntegrationAllowlistUpdated,
+                "messageboard-created" => ListEventTypeReplacedByItem.MessageboardCreated,
+                "messageboard-private-created" => ListEventTypeReplacedByItem.MessageboardPrivateCreated,
+                "messageboard-private-space-created" => ListEventTypeReplacedByItem.MessageboardPrivateSpaceCreated,
+                "messageboard-space-created" => ListEventTypeReplacedByItem.MessageboardSpaceCreated,
                 "microfrontend-group-added" => ListEventTypeReplacedByItem.MicrofrontendGroupAdded,
                 "microfrontend-group-deleted" => ListEventTypeReplacedByItem.MicrofrontendGroupDeleted,
                 "microfrontend-group-updated" => ListEventTypeReplacedByItem.MicrofrontendGroupUpdated,

@@ -103,10 +103,10 @@ namespace Vercel
         public required string Kind { get; set; }
 
         /// <summary>
-        /// For kind=router: ordered candidates, model slugs or router references. Otherwise: fallback models.
+        /// For kind=router: ordered candidates, bare slugs/references or `{ slug, ...attributes }`. For kind=alias: ordered fallback model slugs, optionally led by one conditional `{ model, when }` entry, used when the primary model's answers match `when`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("models")]
-        public global::System.Collections.Generic.IList<string>? Models { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<string, global::Vercel.AiGatewayVirtualModelConfigModelVariant2, global::Vercel.AiGatewayVirtualModelConfigModelVariant3>>? Models { get; set; }
 
         /// <summary>
         /// Canonical model slug this VMC maps to (e.g. "creator/model"). Not used by kind=router.
@@ -157,6 +157,12 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("selector")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigSelectorJsonConverter))]
         public global::Vercel.AiGatewayVirtualModelConfigSelector? Selector { get; set; }
+
+        /// <summary>
+        /// For kind=router: option slices keyed by selector name; each selector owns its slice's shape.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("selectorOptions")]
+        public global::Vercel.AiGatewayVirtualModelConfigSelectorOptions? SelectorOptions { get; set; }
 
         /// <summary>
         /// Service tier for providers that support it.
@@ -285,7 +291,7 @@ namespace Vercel
         /// The concrete model-provider instance this VMC resolves to.
         /// </param>
         /// <param name="models">
-        /// For kind=router: ordered candidates, model slugs or router references. Otherwise: fallback models.
+        /// For kind=router: ordered candidates, bare slugs/references or `{ slug, ...attributes }`. For kind=alias: ordered fallback model slugs, optionally led by one conditional `{ model, when }` entry, used when the primary model's answers match `when`.
         /// </param>
         /// <param name="modelSlug">
         /// Canonical model slug this VMC maps to (e.g. "creator/model"). Not used by kind=router.
@@ -307,6 +313,9 @@ namespace Vercel
         /// </param>
         /// <param name="selector">
         /// For kind=router: how to order candidates. Absent means declared order.
+        /// </param>
+        /// <param name="selectorOptions">
+        /// For kind=router: option slices keyed by selector name; each selector owns its slice's shape.
         /// </param>
         /// <param name="serviceTier">
         /// Service tier for providers that support it.
@@ -349,7 +358,7 @@ namespace Vercel
             bool? hipaaCompliant,
             global::Vercel.AiGatewayVirtualModelConfigInferenceRegion? inferenceRegion,
             string? instanceId,
-            global::System.Collections.Generic.IList<string>? models,
+            global::System.Collections.Generic.IList<global::Vercel.OneOf<string, global::Vercel.AiGatewayVirtualModelConfigModelVariant2, global::Vercel.AiGatewayVirtualModelConfigModelVariant3>>? models,
             string? modelSlug,
             global::System.Collections.Generic.IList<string>? observabilityTags,
             global::System.Collections.Generic.IList<string>? providerOnly,
@@ -357,6 +366,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<string>? providerOrder,
             global::Vercel.AiGatewayVirtualModelConfigProviderTimeouts? providerTimeouts,
             global::Vercel.AiGatewayVirtualModelConfigSelector? selector,
+            global::Vercel.AiGatewayVirtualModelConfigSelectorOptions? selectorOptions,
             global::Vercel.AiGatewayVirtualModelConfigServiceTier? serviceTier,
             global::Vercel.AiGatewayVirtualModelConfigSort? sort,
             global::Vercel.AiGatewayVirtualModelConfigSpeed? speed,
@@ -388,6 +398,7 @@ namespace Vercel
             this.ProviderOrder = providerOrder;
             this.ProviderTimeouts = providerTimeouts;
             this.Selector = selector;
+            this.SelectorOptions = selectorOptions;
             this.ServiceTier = serviceTier;
             this.Sort = sort;
             this.Speed = speed;
