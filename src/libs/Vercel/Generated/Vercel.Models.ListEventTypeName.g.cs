@@ -2360,6 +2360,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        TeamDeploymentStorageHighRetentionOptIn,
+        /// <summary>
+        ///
+        /// </summary>
+        TeamDeploymentStorageRetentionOptOut,
+        /// <summary>
+        ///
+        /// </summary>
         TeamDomainVerificationCreated,
         /// <summary>
         ///
@@ -3402,6 +3410,8 @@ namespace Vercel
                 ListEventTypeName.TeamDefaultPassportUpdated => "team-default-passport-updated",
                 ListEventTypeName.TeamDelete => "team-delete",
                 ListEventTypeName.TeamDeploymentPolicyUpdated => "team-deployment-policy-updated",
+                ListEventTypeName.TeamDeploymentStorageHighRetentionOptIn => "team-deployment-storage-high-retention-opt-in",
+                ListEventTypeName.TeamDeploymentStorageRetentionOptOut => "team-deployment-storage-retention-opt-out",
                 ListEventTypeName.TeamDomainVerificationCreated => "team-domain-verification-created",
                 ListEventTypeName.TeamDomainVerificationDeleted => "team-domain-verification-deleted",
                 ListEventTypeName.TeamDomainVerificationVerified => "team-domain-verification-verified",
@@ -4110,6 +4120,8 @@ namespace Vercel
                 "team-default-passport-updated" => ListEventTypeName.TeamDefaultPassportUpdated,
                 "team-delete" => ListEventTypeName.TeamDelete,
                 "team-deployment-policy-updated" => ListEventTypeName.TeamDeploymentPolicyUpdated,
+                "team-deployment-storage-high-retention-opt-in" => ListEventTypeName.TeamDeploymentStorageHighRetentionOptIn,
+                "team-deployment-storage-retention-opt-out" => ListEventTypeName.TeamDeploymentStorageRetentionOptOut,
                 "team-domain-verification-created" => ListEventTypeName.TeamDomainVerificationCreated,
                 "team-domain-verification-deleted" => ListEventTypeName.TeamDomainVerificationDeleted,
                 "team-domain-verification-verified" => ListEventTypeName.TeamDomainVerificationVerified,
