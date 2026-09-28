@@ -2359,6 +2359,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        TeamDeploymentStorageHighRetentionOptIn,
+        /// <summary>
+        ///
+        /// </summary>
+        TeamDeploymentStorageRetentionOptOut,
+        /// <summary>
+        ///
+        /// </summary>
         TeamDomainVerificationCreated,
         /// <summary>
         ///
@@ -3401,6 +3409,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.TeamDefaultPassportUpdated => "team-default-passport-updated",
                 ListEventTypeReplacedByItem.TeamDelete => "team-delete",
                 ListEventTypeReplacedByItem.TeamDeploymentPolicyUpdated => "team-deployment-policy-updated",
+                ListEventTypeReplacedByItem.TeamDeploymentStorageHighRetentionOptIn => "team-deployment-storage-high-retention-opt-in",
+                ListEventTypeReplacedByItem.TeamDeploymentStorageRetentionOptOut => "team-deployment-storage-retention-opt-out",
                 ListEventTypeReplacedByItem.TeamDomainVerificationCreated => "team-domain-verification-created",
                 ListEventTypeReplacedByItem.TeamDomainVerificationDeleted => "team-domain-verification-deleted",
                 ListEventTypeReplacedByItem.TeamDomainVerificationVerified => "team-domain-verification-verified",
@@ -4109,6 +4119,8 @@ namespace Vercel
                 "team-default-passport-updated" => ListEventTypeReplacedByItem.TeamDefaultPassportUpdated,
                 "team-delete" => ListEventTypeReplacedByItem.TeamDelete,
                 "team-deployment-policy-updated" => ListEventTypeReplacedByItem.TeamDeploymentPolicyUpdated,
+                "team-deployment-storage-high-retention-opt-in" => ListEventTypeReplacedByItem.TeamDeploymentStorageHighRetentionOptIn,
+                "team-deployment-storage-retention-opt-out" => ListEventTypeReplacedByItem.TeamDeploymentStorageRetentionOptOut,
                 "team-domain-verification-created" => ListEventTypeReplacedByItem.TeamDomainVerificationCreated,
                 "team-domain-verification-deleted" => ListEventTypeReplacedByItem.TeamDomainVerificationDeleted,
                 "team-domain-verification-verified" => ListEventTypeReplacedByItem.TeamDomainVerificationVerified,

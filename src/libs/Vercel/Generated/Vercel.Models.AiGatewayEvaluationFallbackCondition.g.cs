@@ -10,7 +10,7 @@ namespace Vercel
     public readonly partial struct AiGatewayEvaluationFallbackCondition : global::System.IEquatable<AiGatewayEvaluationFallbackCondition>
     {
         /// <summary>
-        ///
+        /// Without a question, checks every Choice and Score question.
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.AiGatewayEvaluationFallbackConditionVariant1? AiGatewayEvaluationFallbackConditionVariant1 { get; init; }
@@ -47,7 +47,7 @@ namespace Vercel
             : throw new global::System.InvalidOperationException($"Expected union variant 'AiGatewayEvaluationFallbackConditionVariant1' but the value was {ToString()}.");
 
         /// <summary>
-        ///
+        /// Without a question, checks every Boolean question.
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::Vercel.AiGatewayEvaluationFallbackConditionVariant2? AiGatewayEvaluationFallbackConditionVariant2 { get; init; }

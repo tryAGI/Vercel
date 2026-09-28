@@ -12,7 +12,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("abuse")]
-        public global::Vercel.AutoSDKShared5387a0e7cacff827? Abuse { get; set; }
+        public global::Vercel.AutoSDKSharedb19b25d8dd67bda4? Abuse { get; set; }
 
         /// <summary>
         ///
@@ -736,7 +736,7 @@ namespace Vercel
             string name,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectNodeVersion nodeVersion,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfig resourceConfig,
-            global::Vercel.AutoSDKShared5387a0e7cacff827? abuse,
+            global::Vercel.AutoSDKSharedb19b25d8dd67bda4? abuse,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectAnalytics? analytics,
             bool? appliedCve55182Migration,
             bool? autoAssignCustomDomains,

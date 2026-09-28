@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    ///
+    /// Without a question, checks every Choice and Score question.
     /// </summary>
     public sealed partial class AiGatewayEvaluationFallbackConditionVariant1
     {
@@ -19,8 +19,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("question")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Question { get; set; }
+        public string? Question { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,10 +37,10 @@ namespace Vercel
 #endif
         public AiGatewayEvaluationFallbackConditionVariant1(
             double confidenceBelow,
-            string question)
+            string? question)
         {
             this.ConfidenceBelow = confidenceBelow;
-            this.Question = question ?? throw new global::System.ArgumentNullException(nameof(question));
+            this.Question = question;
         }
 
         /// <summary>

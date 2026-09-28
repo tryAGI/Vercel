@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    ///
+    /// Without a question, checks every Boolean question.
     /// </summary>
     public sealed partial class AiGatewayEvaluationFallbackConditionVariant2
     {
@@ -19,8 +19,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("question")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Question { get; set; }
+        public string? Question { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,10 +37,10 @@ namespace Vercel
 #endif
         public AiGatewayEvaluationFallbackConditionVariant2(
             global::System.Collections.Generic.IList<double> probabilityBetween,
-            string question)
+            string? question)
         {
             this.ProbabilityBetween = probabilityBetween ?? throw new global::System.ArgumentNullException(nameof(probabilityBetween));
-            this.Question = question ?? throw new global::System.ArgumentNullException(nameof(question));
+            this.Question = question;
         }
 
         /// <summary>

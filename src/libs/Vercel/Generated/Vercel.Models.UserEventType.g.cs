@@ -2360,6 +2360,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        TeamDeploymentStorageHighRetentionOptIn,
+        /// <summary>
+        ///
+        /// </summary>
+        TeamDeploymentStorageRetentionOptOut,
+        /// <summary>
+        ///
+        /// </summary>
         TeamDomainVerificationCreated,
         /// <summary>
         ///
@@ -3402,6 +3410,8 @@ namespace Vercel
                 UserEventType.TeamDefaultPassportUpdated => "team-default-passport-updated",
                 UserEventType.TeamDelete => "team-delete",
                 UserEventType.TeamDeploymentPolicyUpdated => "team-deployment-policy-updated",
+                UserEventType.TeamDeploymentStorageHighRetentionOptIn => "team-deployment-storage-high-retention-opt-in",
+                UserEventType.TeamDeploymentStorageRetentionOptOut => "team-deployment-storage-retention-opt-out",
                 UserEventType.TeamDomainVerificationCreated => "team-domain-verification-created",
                 UserEventType.TeamDomainVerificationDeleted => "team-domain-verification-deleted",
                 UserEventType.TeamDomainVerificationVerified => "team-domain-verification-verified",
@@ -4110,6 +4120,8 @@ namespace Vercel
                 "team-default-passport-updated" => UserEventType.TeamDefaultPassportUpdated,
                 "team-delete" => UserEventType.TeamDelete,
                 "team-deployment-policy-updated" => UserEventType.TeamDeploymentPolicyUpdated,
+                "team-deployment-storage-high-retention-opt-in" => UserEventType.TeamDeploymentStorageHighRetentionOptIn,
+                "team-deployment-storage-retention-opt-out" => UserEventType.TeamDeploymentStorageRetentionOptOut,
                 "team-domain-verification-created" => UserEventType.TeamDomainVerificationCreated,
                 "team-domain-verification-deleted" => UserEventType.TeamDomainVerificationDeleted,
                 "team-domain-verification-verified" => UserEventType.TeamDomainVerificationVerified,

@@ -45,6 +45,18 @@ namespace Vercel
         public global::Vercel.PatchTeamRequestDefaultExpirationSettingsExpirationErrored? ExpirationErrored { get; set; }
 
         /// <summary>
+        /// When true, opts the team out of the upcoming deployment-storage retention reduce (Medium/High cohorts). Does not change expiration settings.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("keepCurrentRetention")]
+        public bool? KeepCurrentRetention { get; set; }
+
+        /// <summary>
+        /// Required when increasing any retention setting for a High cohort team after retention reduce and before metering. Confirms team-wide storage billing.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("acknowledgeStorageBilling")]
+        public bool? AcknowledgeStorageBilling { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -69,6 +81,12 @@ namespace Vercel
         /// The time period to keep errored deployments for<br/>
         /// Example: 1y
         /// </param>
+        /// <param name="keepCurrentRetention">
+        /// When true, opts the team out of the upcoming deployment-storage retention reduce (Medium/High cohorts). Does not change expiration settings.
+        /// </param>
+        /// <param name="acknowledgeStorageBilling">
+        /// Required when increasing any retention setting for a High cohort team after retention reduce and before metering. Confirms team-wide storage billing.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -76,12 +94,16 @@ namespace Vercel
             global::Vercel.PatchTeamRequestDefaultExpirationSettingsExpiration? expiration,
             global::Vercel.PatchTeamRequestDefaultExpirationSettingsExpirationProduction? expirationProduction,
             global::Vercel.PatchTeamRequestDefaultExpirationSettingsExpirationCanceled? expirationCanceled,
-            global::Vercel.PatchTeamRequestDefaultExpirationSettingsExpirationErrored? expirationErrored)
+            global::Vercel.PatchTeamRequestDefaultExpirationSettingsExpirationErrored? expirationErrored,
+            bool? keepCurrentRetention,
+            bool? acknowledgeStorageBilling)
         {
             this.Expiration = expiration;
             this.ExpirationProduction = expirationProduction;
             this.ExpirationCanceled = expirationCanceled;
             this.ExpirationErrored = expirationErrored;
+            this.KeepCurrentRetention = keepCurrentRetention;
+            this.AcknowledgeStorageBilling = acknowledgeStorageBilling;
         }
 
         /// <summary>
