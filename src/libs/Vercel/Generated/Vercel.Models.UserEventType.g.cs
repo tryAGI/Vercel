@@ -44,6 +44,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AdminPreviewDeploymentSuffixClear,
+        /// <summary>
+        ///
+        /// </summary>
         AdminSecondaryEmailAdded,
         /// <summary>
         ///
@@ -2819,6 +2823,7 @@ namespace Vercel
                 UserEventType.AccessGroupUserRemoved => "access-group-user-removed",
                 UserEventType.AdminAgenticProvisioningAccountUnlinked => "admin-agentic-provisioning-account-unlinked",
                 UserEventType.AdminPlanUpdated => "admin-plan-updated",
+                UserEventType.AdminPreviewDeploymentSuffixClear => "admin-preview-deployment-suffix-clear",
                 UserEventType.AdminSecondaryEmailAdded => "admin-secondary-email-added",
                 UserEventType.AdminSecondaryEmailRemoved => "admin-secondary-email-removed",
                 UserEventType.AdminTeamNameUpdate => "admin-team-name-update",
@@ -3526,6 +3531,7 @@ namespace Vercel
                 "access-group-user-removed" => UserEventType.AccessGroupUserRemoved,
                 "admin-agentic-provisioning-account-unlinked" => UserEventType.AdminAgenticProvisioningAccountUnlinked,
                 "admin-plan-updated" => UserEventType.AdminPlanUpdated,
+                "admin-preview-deployment-suffix-clear" => UserEventType.AdminPreviewDeploymentSuffixClear,
                 "admin-secondary-email-added" => UserEventType.AdminSecondaryEmailAdded,
                 "admin-secondary-email-removed" => UserEventType.AdminSecondaryEmailRemoved,
                 "admin-team-name-update" => UserEventType.AdminTeamNameUpdate,

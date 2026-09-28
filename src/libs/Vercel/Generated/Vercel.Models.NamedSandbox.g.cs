@@ -62,10 +62,10 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.NamedSandboxFailoverRegion>? FailoverRegions { get; set; }
 
         /// <summary>
-        /// Digest-pinned reference of the container image the sandbox was created from, when it was created from an image ("{repository}@{manifestDigest}").<br/>
-        /// Example: my-repo@sha256:2c4e8f9a1b3d5e7f091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708
+        /// Owner-qualified, digest-pinned reference of the container image the sandbox was created from ("{team}/{project}/{repository}@{manifestDigest}").<br/>
+        /// Example: my-team/my-project/my-repo@sha256:2c4e8f9a1b3d5e7f091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708
         /// </summary>
-        /// <example>my-repo@sha256:2c4e8f9a1b3d5e7f091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708</example>
+        /// <example>my-team/my-project/my-repo@sha256:2c4e8f9a1b3d5e7f091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("image")]
         public string? Image { get; set; }
 
@@ -282,8 +282,8 @@ namespace Vercel
         /// Example: [sfo1, cle1]
         /// </param>
         /// <param name="image">
-        /// Digest-pinned reference of the container image the sandbox was created from, when it was created from an image ("{repository}@{manifestDigest}").<br/>
-        /// Example: my-repo@sha256:2c4e8f9a1b3d5e7f091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708
+        /// Owner-qualified, digest-pinned reference of the container image the sandbox was created from ("{team}/{project}/{repository}@{manifestDigest}").<br/>
+        /// Example: my-team/my-project/my-repo@sha256:2c4e8f9a1b3d5e7f091a2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e6f708
         /// </param>
         /// <param name="keepLastSnapshots">
         /// Keep-last snapshot configuration.

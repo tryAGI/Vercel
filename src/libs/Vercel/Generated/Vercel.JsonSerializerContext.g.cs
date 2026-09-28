@@ -1,19 +1,14 @@
 
 #nullable enable
 
-#pragma warning disable CS0618 // Type or member is obsolete
-#pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
-
 namespace Vercel
 {
     /// <summary>
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -522,10 +517,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -1034,10 +1027,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -1546,10 +1537,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -2058,10 +2047,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -2570,10 +2557,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -3082,10 +3067,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -3594,10 +3577,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -4106,10 +4087,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -4618,10 +4597,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -5130,10 +5107,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -5642,10 +5617,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -6154,10 +6127,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -6545,7 +6516,9 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectDomainsRedirects), TypeInfoPropertyName = "GetProjectDomainsRedirects2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectDomainsVerified), TypeInfoPropertyName = "GetProjectDomainsVerified2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectDomainsOrder), TypeInfoPropertyName = "GetProjectDomainsOrder2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FilterProjectEnvsDecrypt), TypeInfoPropertyName = "FilterProjectEnvsDecrypt2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseState), TypeInfoPropertyName = "GetRollingReleaseState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListNamedSandboxesSortBy), TypeInfoPropertyName = "ListNamedSandboxesSortBy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListNamedSandboxesSortOrder), TypeInfoPropertyName = "ListNamedSandboxesSortOrder2")]
@@ -6666,10 +6639,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -7178,10 +7149,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -7690,10 +7659,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -8202,10 +8169,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -8714,10 +8679,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -9226,10 +9189,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -9738,10 +9699,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -10250,10 +10209,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -10762,10 +10719,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -11274,10 +11229,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -11786,10 +11739,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -12298,10 +12249,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -12810,10 +12759,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -13322,10 +13269,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -13687,7 +13632,9 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectDomainsRedirects?), TypeInfoPropertyName = "NullableGetProjectDomainsRedirects2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectDomainsVerified?), TypeInfoPropertyName = "NullableGetProjectDomainsVerified2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectDomainsOrder?), TypeInfoPropertyName = "NullableGetProjectDomainsOrder2")]
+    #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.FilterProjectEnvsDecrypt?), TypeInfoPropertyName = "NullableFilterProjectEnvsDecrypt2")]
+    #pragma warning restore CS0618
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRollingReleaseState?), TypeInfoPropertyName = "NullableGetRollingReleaseState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListNamedSandboxesSortBy?), TypeInfoPropertyName = "NullableListNamedSandboxesSortBy2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListNamedSandboxesSortOrder?), TypeInfoPropertyName = "NullableListNamedSandboxesSortOrder2")]
@@ -13834,10 +13781,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -14346,10 +14291,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -14858,10 +14801,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -15370,10 +15311,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -15882,10 +15821,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]
@@ -16394,10 +16331,8 @@ namespace Vercel
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>), TypeInfoPropertyName = "ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment_9bd60b1c152f3fcb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant2_string_double_bool_424b3dd3318b9f77")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared04b58f4753dd761fConditionRhsVariant1ItemVariant2_c4d7cd3881bb2454")]

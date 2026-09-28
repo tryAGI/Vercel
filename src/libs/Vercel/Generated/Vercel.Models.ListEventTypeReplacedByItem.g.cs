@@ -43,6 +43,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AdminPreviewDeploymentSuffixClear,
+        /// <summary>
+        ///
+        /// </summary>
         AdminSecondaryEmailAdded,
         /// <summary>
         ///
@@ -2818,6 +2822,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AccessGroupUserRemoved => "access-group-user-removed",
                 ListEventTypeReplacedByItem.AdminAgenticProvisioningAccountUnlinked => "admin-agentic-provisioning-account-unlinked",
                 ListEventTypeReplacedByItem.AdminPlanUpdated => "admin-plan-updated",
+                ListEventTypeReplacedByItem.AdminPreviewDeploymentSuffixClear => "admin-preview-deployment-suffix-clear",
                 ListEventTypeReplacedByItem.AdminSecondaryEmailAdded => "admin-secondary-email-added",
                 ListEventTypeReplacedByItem.AdminSecondaryEmailRemoved => "admin-secondary-email-removed",
                 ListEventTypeReplacedByItem.AdminTeamNameUpdate => "admin-team-name-update",
@@ -3525,6 +3530,7 @@ namespace Vercel
                 "access-group-user-removed" => ListEventTypeReplacedByItem.AccessGroupUserRemoved,
                 "admin-agentic-provisioning-account-unlinked" => ListEventTypeReplacedByItem.AdminAgenticProvisioningAccountUnlinked,
                 "admin-plan-updated" => ListEventTypeReplacedByItem.AdminPlanUpdated,
+                "admin-preview-deployment-suffix-clear" => ListEventTypeReplacedByItem.AdminPreviewDeploymentSuffixClear,
                 "admin-secondary-email-added" => ListEventTypeReplacedByItem.AdminSecondaryEmailAdded,
                 "admin-secondary-email-removed" => ListEventTypeReplacedByItem.AdminSecondaryEmailRemoved,
                 "admin-team-name-update" => ListEventTypeReplacedByItem.AdminTeamNameUpdate,
