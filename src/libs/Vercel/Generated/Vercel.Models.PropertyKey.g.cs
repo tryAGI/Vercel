@@ -42,8 +42,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public string PickPropertyKeyVariant1() => IsPropertyKeyVariant1
-            ? PropertyKeyVariant1!
+        public string PickPropertyKeyVariant1() => PropertyKeyVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PropertyKeyVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public double PickPropertyKeyVariant2() => IsPropertyKeyVariant2
-            ? PropertyKeyVariant2!.Value
+        public double PickPropertyKeyVariant2() => PropertyKeyVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PropertyKeyVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.PropertyKeyVariant3 PickPropertyKeyVariant3() => IsPropertyKeyVariant3
-            ? PropertyKeyVariant3!
+        public global::Vercel.PropertyKeyVariant3 PickPropertyKeyVariant3() => PropertyKeyVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PropertyKeyVariant3' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -242,17 +242,17 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsPropertyKeyVariant1 && propertyKeyVariant1 != null)
+            if (PropertyKeyVariant1 is { } __value0 && propertyKeyVariant1 != null)
             {
-                return propertyKeyVariant1(PropertyKeyVariant1!);
+                return propertyKeyVariant1(__value0);
             }
-            else if (IsPropertyKeyVariant2 && propertyKeyVariant2 != null)
+            else if (PropertyKeyVariant2 is { } __value1 && propertyKeyVariant2 != null)
             {
-                return propertyKeyVariant2(PropertyKeyVariant2!);
+                return propertyKeyVariant2(__value1);
             }
-            else if (IsPropertyKeyVariant3 && propertyKeyVariant3 != null)
+            else if (PropertyKeyVariant3 is { } __value2 && propertyKeyVariant3 != null)
             {
-                return propertyKeyVariant3(PropertyKeyVariant3!);
+                return propertyKeyVariant3(__value2);
             }
 
             return default(TResult);
@@ -274,17 +274,17 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsPropertyKeyVariant1)
+            if (PropertyKeyVariant1 is { } __value0)
             {
-                propertyKeyVariant1?.Invoke(PropertyKeyVariant1!);
+                propertyKeyVariant1?.Invoke(__value0);
             }
-            else if (IsPropertyKeyVariant2)
+            else if (PropertyKeyVariant2 is { } __value1)
             {
-                propertyKeyVariant2?.Invoke(PropertyKeyVariant2!);
+                propertyKeyVariant2?.Invoke(__value1);
             }
-            else if (IsPropertyKeyVariant3)
+            else if (PropertyKeyVariant3 is { } __value2)
             {
-                propertyKeyVariant3?.Invoke(PropertyKeyVariant3!);
+                propertyKeyVariant3?.Invoke(__value2);
             }
         }
 
@@ -302,17 +302,17 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsPropertyKeyVariant1)
+            if (PropertyKeyVariant1 is { } __value0)
             {
-                propertyKeyVariant1?.Invoke(PropertyKeyVariant1!);
+                propertyKeyVariant1?.Invoke(__value0);
             }
-            else if (IsPropertyKeyVariant2)
+            else if (PropertyKeyVariant2 is { } __value1)
             {
-                propertyKeyVariant2?.Invoke(PropertyKeyVariant2!);
+                propertyKeyVariant2?.Invoke(__value1);
             }
-            else if (IsPropertyKeyVariant3)
+            else if (PropertyKeyVariant3 is { } __value2)
             {
-                propertyKeyVariant3?.Invoke(PropertyKeyVariant3!);
+                propertyKeyVariant3?.Invoke(__value2);
             }
         }
 

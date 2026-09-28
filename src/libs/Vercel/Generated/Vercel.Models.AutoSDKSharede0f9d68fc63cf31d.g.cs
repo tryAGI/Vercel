@@ -42,8 +42,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant1 PickAutoSDKSharede0f9d68fc63cf31dVariant1() => IsAutoSDKSharede0f9d68fc63cf31dVariant1
-            ? AutoSDKSharede0f9d68fc63cf31dVariant1!
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant1 PickAutoSDKSharede0f9d68fc63cf31dVariant1() => AutoSDKSharede0f9d68fc63cf31dVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AutoSDKSharede0f9d68fc63cf31dVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant2 PickAutoSDKSharede0f9d68fc63cf31dVariant2() => IsAutoSDKSharede0f9d68fc63cf31dVariant2
-            ? AutoSDKSharede0f9d68fc63cf31dVariant2!
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant2 PickAutoSDKSharede0f9d68fc63cf31dVariant2() => AutoSDKSharede0f9d68fc63cf31dVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AutoSDKSharede0f9d68fc63cf31dVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant3 PickAutoSDKSharede0f9d68fc63cf31dVariant3() => IsAutoSDKSharede0f9d68fc63cf31dVariant3
-            ? AutoSDKSharede0f9d68fc63cf31dVariant3!
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant3 PickAutoSDKSharede0f9d68fc63cf31dVariant3() => AutoSDKSharede0f9d68fc63cf31dVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AutoSDKSharede0f9d68fc63cf31dVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant4 PickAutoSDKSharede0f9d68fc63cf31dVariant4() => IsAutoSDKSharede0f9d68fc63cf31dVariant4
-            ? AutoSDKSharede0f9d68fc63cf31dVariant4!
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant4 PickAutoSDKSharede0f9d68fc63cf31dVariant4() => AutoSDKSharede0f9d68fc63cf31dVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AutoSDKSharede0f9d68fc63cf31dVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant5 PickAutoSDKSharede0f9d68fc63cf31dVariant5() => IsAutoSDKSharede0f9d68fc63cf31dVariant5
-            ? AutoSDKSharede0f9d68fc63cf31dVariant5!
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant5 PickAutoSDKSharede0f9d68fc63cf31dVariant5() => AutoSDKSharede0f9d68fc63cf31dVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AutoSDKSharede0f9d68fc63cf31dVariant5' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant6 PickAutoSDKSharede0f9d68fc63cf31dVariant6() => IsAutoSDKSharede0f9d68fc63cf31dVariant6
-            ? AutoSDKSharede0f9d68fc63cf31dVariant6!
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant6 PickAutoSDKSharede0f9d68fc63cf31dVariant6() => AutoSDKSharede0f9d68fc63cf31dVariant6 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AutoSDKSharede0f9d68fc63cf31dVariant6' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant7 PickAutoSDKSharede0f9d68fc63cf31dVariant7() => IsAutoSDKSharede0f9d68fc63cf31dVariant7
-            ? AutoSDKSharede0f9d68fc63cf31dVariant7!
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant7 PickAutoSDKSharede0f9d68fc63cf31dVariant7() => AutoSDKSharede0f9d68fc63cf31dVariant7 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AutoSDKSharede0f9d68fc63cf31dVariant7' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant8 PickAutoSDKSharede0f9d68fc63cf31dVariant8() => IsAutoSDKSharede0f9d68fc63cf31dVariant8
-            ? AutoSDKSharede0f9d68fc63cf31dVariant8!
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant8 PickAutoSDKSharede0f9d68fc63cf31dVariant8() => AutoSDKSharede0f9d68fc63cf31dVariant8 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AutoSDKSharede0f9d68fc63cf31dVariant8' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -567,37 +567,37 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsAutoSDKSharede0f9d68fc63cf31dVariant1 && autoSDKSharede0f9d68fc63cf31dVariant1 != null)
+            if (AutoSDKSharede0f9d68fc63cf31dVariant1 is { } __value0 && autoSDKSharede0f9d68fc63cf31dVariant1 != null)
             {
-                return autoSDKSharede0f9d68fc63cf31dVariant1(AutoSDKSharede0f9d68fc63cf31dVariant1!);
+                return autoSDKSharede0f9d68fc63cf31dVariant1(__value0);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant2 && autoSDKSharede0f9d68fc63cf31dVariant2 != null)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant2 is { } __value1 && autoSDKSharede0f9d68fc63cf31dVariant2 != null)
             {
-                return autoSDKSharede0f9d68fc63cf31dVariant2(AutoSDKSharede0f9d68fc63cf31dVariant2!);
+                return autoSDKSharede0f9d68fc63cf31dVariant2(__value1);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant3 && autoSDKSharede0f9d68fc63cf31dVariant3 != null)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant3 is { } __value2 && autoSDKSharede0f9d68fc63cf31dVariant3 != null)
             {
-                return autoSDKSharede0f9d68fc63cf31dVariant3(AutoSDKSharede0f9d68fc63cf31dVariant3!);
+                return autoSDKSharede0f9d68fc63cf31dVariant3(__value2);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant4 && autoSDKSharede0f9d68fc63cf31dVariant4 != null)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant4 is { } __value3 && autoSDKSharede0f9d68fc63cf31dVariant4 != null)
             {
-                return autoSDKSharede0f9d68fc63cf31dVariant4(AutoSDKSharede0f9d68fc63cf31dVariant4!);
+                return autoSDKSharede0f9d68fc63cf31dVariant4(__value3);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant5 && autoSDKSharede0f9d68fc63cf31dVariant5 != null)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant5 is { } __value4 && autoSDKSharede0f9d68fc63cf31dVariant5 != null)
             {
-                return autoSDKSharede0f9d68fc63cf31dVariant5(AutoSDKSharede0f9d68fc63cf31dVariant5!);
+                return autoSDKSharede0f9d68fc63cf31dVariant5(__value4);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant6 && autoSDKSharede0f9d68fc63cf31dVariant6 != null)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant6 is { } __value5 && autoSDKSharede0f9d68fc63cf31dVariant6 != null)
             {
-                return autoSDKSharede0f9d68fc63cf31dVariant6(AutoSDKSharede0f9d68fc63cf31dVariant6!);
+                return autoSDKSharede0f9d68fc63cf31dVariant6(__value5);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant7 && autoSDKSharede0f9d68fc63cf31dVariant7 != null)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant7 is { } __value6 && autoSDKSharede0f9d68fc63cf31dVariant7 != null)
             {
-                return autoSDKSharede0f9d68fc63cf31dVariant7(AutoSDKSharede0f9d68fc63cf31dVariant7!);
+                return autoSDKSharede0f9d68fc63cf31dVariant7(__value6);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant8 && autoSDKSharede0f9d68fc63cf31dVariant8 != null)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant8 is { } __value7 && autoSDKSharede0f9d68fc63cf31dVariant8 != null)
             {
-                return autoSDKSharede0f9d68fc63cf31dVariant8(AutoSDKSharede0f9d68fc63cf31dVariant8!);
+                return autoSDKSharede0f9d68fc63cf31dVariant8(__value7);
             }
 
             return default(TResult);
@@ -629,37 +629,37 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsAutoSDKSharede0f9d68fc63cf31dVariant1)
+            if (AutoSDKSharede0f9d68fc63cf31dVariant1 is { } __value0)
             {
-                autoSDKSharede0f9d68fc63cf31dVariant1?.Invoke(AutoSDKSharede0f9d68fc63cf31dVariant1!);
+                autoSDKSharede0f9d68fc63cf31dVariant1?.Invoke(__value0);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant2)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant2 is { } __value1)
             {
-                autoSDKSharede0f9d68fc63cf31dVariant2?.Invoke(AutoSDKSharede0f9d68fc63cf31dVariant2!);
+                autoSDKSharede0f9d68fc63cf31dVariant2?.Invoke(__value1);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant3)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant3 is { } __value2)
             {
-                autoSDKSharede0f9d68fc63cf31dVariant3?.Invoke(AutoSDKSharede0f9d68fc63cf31dVariant3!);
+                autoSDKSharede0f9d68fc63cf31dVariant3?.Invoke(__value2);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant4)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant4 is { } __value3)
             {
-                autoSDKSharede0f9d68fc63cf31dVariant4?.Invoke(AutoSDKSharede0f9d68fc63cf31dVariant4!);
+                autoSDKSharede0f9d68fc63cf31dVariant4?.Invoke(__value3);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant5)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant5 is { } __value4)
             {
-                autoSDKSharede0f9d68fc63cf31dVariant5?.Invoke(AutoSDKSharede0f9d68fc63cf31dVariant5!);
+                autoSDKSharede0f9d68fc63cf31dVariant5?.Invoke(__value4);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant6)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant6 is { } __value5)
             {
-                autoSDKSharede0f9d68fc63cf31dVariant6?.Invoke(AutoSDKSharede0f9d68fc63cf31dVariant6!);
+                autoSDKSharede0f9d68fc63cf31dVariant6?.Invoke(__value5);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant7)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant7 is { } __value6)
             {
-                autoSDKSharede0f9d68fc63cf31dVariant7?.Invoke(AutoSDKSharede0f9d68fc63cf31dVariant7!);
+                autoSDKSharede0f9d68fc63cf31dVariant7?.Invoke(__value6);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant8)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant8 is { } __value7)
             {
-                autoSDKSharede0f9d68fc63cf31dVariant8?.Invoke(AutoSDKSharede0f9d68fc63cf31dVariant8!);
+                autoSDKSharede0f9d68fc63cf31dVariant8?.Invoke(__value7);
             }
         }
 
@@ -682,37 +682,37 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsAutoSDKSharede0f9d68fc63cf31dVariant1)
+            if (AutoSDKSharede0f9d68fc63cf31dVariant1 is { } __value0)
             {
-                autoSDKSharede0f9d68fc63cf31dVariant1?.Invoke(AutoSDKSharede0f9d68fc63cf31dVariant1!);
+                autoSDKSharede0f9d68fc63cf31dVariant1?.Invoke(__value0);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant2)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant2 is { } __value1)
             {
-                autoSDKSharede0f9d68fc63cf31dVariant2?.Invoke(AutoSDKSharede0f9d68fc63cf31dVariant2!);
+                autoSDKSharede0f9d68fc63cf31dVariant2?.Invoke(__value1);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant3)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant3 is { } __value2)
             {
-                autoSDKSharede0f9d68fc63cf31dVariant3?.Invoke(AutoSDKSharede0f9d68fc63cf31dVariant3!);
+                autoSDKSharede0f9d68fc63cf31dVariant3?.Invoke(__value2);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant4)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant4 is { } __value3)
             {
-                autoSDKSharede0f9d68fc63cf31dVariant4?.Invoke(AutoSDKSharede0f9d68fc63cf31dVariant4!);
+                autoSDKSharede0f9d68fc63cf31dVariant4?.Invoke(__value3);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant5)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant5 is { } __value4)
             {
-                autoSDKSharede0f9d68fc63cf31dVariant5?.Invoke(AutoSDKSharede0f9d68fc63cf31dVariant5!);
+                autoSDKSharede0f9d68fc63cf31dVariant5?.Invoke(__value4);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant6)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant6 is { } __value5)
             {
-                autoSDKSharede0f9d68fc63cf31dVariant6?.Invoke(AutoSDKSharede0f9d68fc63cf31dVariant6!);
+                autoSDKSharede0f9d68fc63cf31dVariant6?.Invoke(__value5);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant7)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant7 is { } __value6)
             {
-                autoSDKSharede0f9d68fc63cf31dVariant7?.Invoke(AutoSDKSharede0f9d68fc63cf31dVariant7!);
+                autoSDKSharede0f9d68fc63cf31dVariant7?.Invoke(__value6);
             }
-            else if (IsAutoSDKSharede0f9d68fc63cf31dVariant8)
+            else if (AutoSDKSharede0f9d68fc63cf31dVariant8 is { } __value7)
             {
-                autoSDKSharede0f9d68fc63cf31dVariant8?.Invoke(AutoSDKSharede0f9d68fc63cf31dVariant8!);
+                autoSDKSharede0f9d68fc63cf31dVariant8?.Invoke(__value7);
             }
         }
 

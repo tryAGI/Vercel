@@ -171,19 +171,19 @@ namespace Vercel.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.ConnectTriggerDestinationInputDefaultDeployment), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.ConnectTriggerDestinationInputDefaultDeployment?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.ConnectTriggerDestinationInputDefaultDeployment).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.DefaultDeployment!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickDefaultDeployment(), typeInfo);
             }
             else if (value.IsBranch)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.ConnectTriggerDestinationInputBranch), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.ConnectTriggerDestinationInputBranch?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.ConnectTriggerDestinationInputBranch).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Branch!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBranch(), typeInfo);
             }
             else if (value.IsCustomEnvironment)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.ConnectTriggerDestinationInputCustomEnvironment), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.ConnectTriggerDestinationInputCustomEnvironment?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.ConnectTriggerDestinationInputCustomEnvironment).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CustomEnvironment!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCustomEnvironment(), typeInfo);
             }
         }
     }

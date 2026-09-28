@@ -42,8 +42,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RegistrantFieldVariant1 PickRegistrantFieldVariant1() => IsRegistrantFieldVariant1
-            ? RegistrantFieldVariant1!
+        public global::Vercel.RegistrantFieldVariant1 PickRegistrantFieldVariant1() => RegistrantFieldVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'RegistrantFieldVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RegistrantFieldVariant2 PickRegistrantFieldVariant2() => IsRegistrantFieldVariant2
-            ? RegistrantFieldVariant2!
+        public global::Vercel.RegistrantFieldVariant2 PickRegistrantFieldVariant2() => RegistrantFieldVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'RegistrantFieldVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RegistrantFieldVariant3 PickRegistrantFieldVariant3() => IsRegistrantFieldVariant3
-            ? RegistrantFieldVariant3!
+        public global::Vercel.RegistrantFieldVariant3 PickRegistrantFieldVariant3() => RegistrantFieldVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'RegistrantFieldVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RegistrantFieldVariant4 PickRegistrantFieldVariant4() => IsRegistrantFieldVariant4
-            ? RegistrantFieldVariant4!
+        public global::Vercel.RegistrantFieldVariant4 PickRegistrantFieldVariant4() => RegistrantFieldVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'RegistrantFieldVariant4' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -307,21 +307,21 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsRegistrantFieldVariant1 && registrantFieldVariant1 != null)
+            if (RegistrantFieldVariant1 is { } __value0 && registrantFieldVariant1 != null)
             {
-                return registrantFieldVariant1(RegistrantFieldVariant1!);
+                return registrantFieldVariant1(__value0);
             }
-            else if (IsRegistrantFieldVariant2 && registrantFieldVariant2 != null)
+            else if (RegistrantFieldVariant2 is { } __value1 && registrantFieldVariant2 != null)
             {
-                return registrantFieldVariant2(RegistrantFieldVariant2!);
+                return registrantFieldVariant2(__value1);
             }
-            else if (IsRegistrantFieldVariant3 && registrantFieldVariant3 != null)
+            else if (RegistrantFieldVariant3 is { } __value2 && registrantFieldVariant3 != null)
             {
-                return registrantFieldVariant3(RegistrantFieldVariant3!);
+                return registrantFieldVariant3(__value2);
             }
-            else if (IsRegistrantFieldVariant4 && registrantFieldVariant4 != null)
+            else if (RegistrantFieldVariant4 is { } __value3 && registrantFieldVariant4 != null)
             {
-                return registrantFieldVariant4(RegistrantFieldVariant4!);
+                return registrantFieldVariant4(__value3);
             }
 
             return default(TResult);
@@ -345,21 +345,21 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsRegistrantFieldVariant1)
+            if (RegistrantFieldVariant1 is { } __value0)
             {
-                registrantFieldVariant1?.Invoke(RegistrantFieldVariant1!);
+                registrantFieldVariant1?.Invoke(__value0);
             }
-            else if (IsRegistrantFieldVariant2)
+            else if (RegistrantFieldVariant2 is { } __value1)
             {
-                registrantFieldVariant2?.Invoke(RegistrantFieldVariant2!);
+                registrantFieldVariant2?.Invoke(__value1);
             }
-            else if (IsRegistrantFieldVariant3)
+            else if (RegistrantFieldVariant3 is { } __value2)
             {
-                registrantFieldVariant3?.Invoke(RegistrantFieldVariant3!);
+                registrantFieldVariant3?.Invoke(__value2);
             }
-            else if (IsRegistrantFieldVariant4)
+            else if (RegistrantFieldVariant4 is { } __value3)
             {
-                registrantFieldVariant4?.Invoke(RegistrantFieldVariant4!);
+                registrantFieldVariant4?.Invoke(__value3);
             }
         }
 
@@ -378,21 +378,21 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsRegistrantFieldVariant1)
+            if (RegistrantFieldVariant1 is { } __value0)
             {
-                registrantFieldVariant1?.Invoke(RegistrantFieldVariant1!);
+                registrantFieldVariant1?.Invoke(__value0);
             }
-            else if (IsRegistrantFieldVariant2)
+            else if (RegistrantFieldVariant2 is { } __value1)
             {
-                registrantFieldVariant2?.Invoke(RegistrantFieldVariant2!);
+                registrantFieldVariant2?.Invoke(__value1);
             }
-            else if (IsRegistrantFieldVariant3)
+            else if (RegistrantFieldVariant3 is { } __value2)
             {
-                registrantFieldVariant3?.Invoke(RegistrantFieldVariant3!);
+                registrantFieldVariant3?.Invoke(__value2);
             }
-            else if (IsRegistrantFieldVariant4)
+            else if (RegistrantFieldVariant4 is { } __value3)
             {
-                registrantFieldVariant4?.Invoke(RegistrantFieldVariant4!);
+                registrantFieldVariant4?.Invoke(__value3);
             }
         }
 

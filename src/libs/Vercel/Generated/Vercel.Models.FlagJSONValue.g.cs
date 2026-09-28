@@ -42,8 +42,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public string PickFlagJSONValueVariant1() => IsFlagJSONValueVariant1
-            ? FlagJSONValueVariant1!
+        public string PickFlagJSONValueVariant1() => FlagJSONValueVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FlagJSONValueVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public double PickFlagJSONValueVariant2() => IsFlagJSONValueVariant2
-            ? FlagJSONValueVariant2!.Value
+        public double PickFlagJSONValueVariant2() => FlagJSONValueVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FlagJSONValueVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?> PickFlagJSONValueVariant3() => IsFlagJSONValueVariant3
-            ? FlagJSONValueVariant3!
+        public global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?> PickFlagJSONValueVariant3() => FlagJSONValueVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FlagJSONValueVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?> PickFlagJSONValueVariant4() => IsFlagJSONValueVariant4
-            ? FlagJSONValueVariant4!
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.FlagJSONValue?> PickFlagJSONValueVariant4() => FlagJSONValueVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FlagJSONValueVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public bool PickFlagJSONValueVariant5() => IsFlagJSONValueVariant5
-            ? FlagJSONValueVariant5!.Value
+        public bool PickFlagJSONValueVariant5() => FlagJSONValueVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'FlagJSONValueVariant5' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -349,25 +349,25 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsFlagJSONValueVariant1 && flagJSONValueVariant1 != null)
+            if (FlagJSONValueVariant1 is { } __value0 && flagJSONValueVariant1 != null)
             {
-                return flagJSONValueVariant1(FlagJSONValueVariant1!);
+                return flagJSONValueVariant1(__value0);
             }
-            else if (IsFlagJSONValueVariant2 && flagJSONValueVariant2 != null)
+            else if (FlagJSONValueVariant2 is { } __value1 && flagJSONValueVariant2 != null)
             {
-                return flagJSONValueVariant2(FlagJSONValueVariant2!);
+                return flagJSONValueVariant2(__value1);
             }
-            else if (IsFlagJSONValueVariant3 && flagJSONValueVariant3 != null)
+            else if (FlagJSONValueVariant3 is { } __value2 && flagJSONValueVariant3 != null)
             {
-                return flagJSONValueVariant3(FlagJSONValueVariant3!);
+                return flagJSONValueVariant3(__value2);
             }
-            else if (IsFlagJSONValueVariant4 && flagJSONValueVariant4 != null)
+            else if (FlagJSONValueVariant4 is { } __value3 && flagJSONValueVariant4 != null)
             {
-                return flagJSONValueVariant4(FlagJSONValueVariant4!);
+                return flagJSONValueVariant4(__value3);
             }
-            else if (IsFlagJSONValueVariant5 && flagJSONValueVariant5 != null)
+            else if (FlagJSONValueVariant5 is { } __value4 && flagJSONValueVariant5 != null)
             {
-                return flagJSONValueVariant5(FlagJSONValueVariant5!);
+                return flagJSONValueVariant5(__value4);
             }
 
             return default(TResult);
@@ -393,25 +393,25 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsFlagJSONValueVariant1)
+            if (FlagJSONValueVariant1 is { } __value0)
             {
-                flagJSONValueVariant1?.Invoke(FlagJSONValueVariant1!);
+                flagJSONValueVariant1?.Invoke(__value0);
             }
-            else if (IsFlagJSONValueVariant2)
+            else if (FlagJSONValueVariant2 is { } __value1)
             {
-                flagJSONValueVariant2?.Invoke(FlagJSONValueVariant2!);
+                flagJSONValueVariant2?.Invoke(__value1);
             }
-            else if (IsFlagJSONValueVariant3)
+            else if (FlagJSONValueVariant3 is { } __value2)
             {
-                flagJSONValueVariant3?.Invoke(FlagJSONValueVariant3!);
+                flagJSONValueVariant3?.Invoke(__value2);
             }
-            else if (IsFlagJSONValueVariant4)
+            else if (FlagJSONValueVariant4 is { } __value3)
             {
-                flagJSONValueVariant4?.Invoke(FlagJSONValueVariant4!);
+                flagJSONValueVariant4?.Invoke(__value3);
             }
-            else if (IsFlagJSONValueVariant5)
+            else if (FlagJSONValueVariant5 is { } __value4)
             {
-                flagJSONValueVariant5?.Invoke(FlagJSONValueVariant5!);
+                flagJSONValueVariant5?.Invoke(__value4);
             }
         }
 
@@ -431,25 +431,25 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsFlagJSONValueVariant1)
+            if (FlagJSONValueVariant1 is { } __value0)
             {
-                flagJSONValueVariant1?.Invoke(FlagJSONValueVariant1!);
+                flagJSONValueVariant1?.Invoke(__value0);
             }
-            else if (IsFlagJSONValueVariant2)
+            else if (FlagJSONValueVariant2 is { } __value1)
             {
-                flagJSONValueVariant2?.Invoke(FlagJSONValueVariant2!);
+                flagJSONValueVariant2?.Invoke(__value1);
             }
-            else if (IsFlagJSONValueVariant3)
+            else if (FlagJSONValueVariant3 is { } __value2)
             {
-                flagJSONValueVariant3?.Invoke(FlagJSONValueVariant3!);
+                flagJSONValueVariant3?.Invoke(__value2);
             }
-            else if (IsFlagJSONValueVariant4)
+            else if (FlagJSONValueVariant4 is { } __value3)
             {
-                flagJSONValueVariant4?.Invoke(FlagJSONValueVariant4!);
+                flagJSONValueVariant4?.Invoke(__value3);
             }
-            else if (IsFlagJSONValueVariant5)
+            else if (FlagJSONValueVariant5 is { } __value4)
             {
-                flagJSONValueVariant5?.Invoke(FlagJSONValueVariant5!);
+                flagJSONValueVariant5?.Invoke(__value4);
             }
         }
 

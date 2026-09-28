@@ -149,13 +149,13 @@ namespace Vercel.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9c06dfe8dd59ad6d>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9c06dfe8dd59ad6d>?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9c06dfe8dd59ad6d>).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Shared694e6a1101718234!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickShared694e6a1101718234(), typeInfo);
             }
             else if (value.IsSharedb521a95e9ebe9a14)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared383028c008cc4ae0>), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared383028c008cc4ae0>?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared383028c008cc4ae0>).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Sharedb521a95e9ebe9a14!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSharedb521a95e9ebe9a14(), typeInfo);
             }
         }
     }

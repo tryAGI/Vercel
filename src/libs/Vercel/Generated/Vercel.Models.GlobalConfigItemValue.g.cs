@@ -42,8 +42,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public string PickGlobalConfigItemValueVariant1() => IsGlobalConfigItemValueVariant1
-            ? GlobalConfigItemValueVariant1!
+        public string PickGlobalConfigItemValueVariant1() => GlobalConfigItemValueVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GlobalConfigItemValueVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public double PickGlobalConfigItemValueVariant2() => IsGlobalConfigItemValueVariant2
-            ? GlobalConfigItemValueVariant2!.Value
+        public double PickGlobalConfigItemValueVariant2() => GlobalConfigItemValueVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GlobalConfigItemValueVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?> PickGlobalConfigItemValueVariant3() => IsGlobalConfigItemValueVariant3
-            ? GlobalConfigItemValueVariant3!
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GlobalConfigItemValue?> PickGlobalConfigItemValueVariant3() => GlobalConfigItemValueVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GlobalConfigItemValueVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?> PickGlobalConfigItemValueVariant4() => IsGlobalConfigItemValueVariant4
-            ? GlobalConfigItemValueVariant4!
+        public global::System.Collections.Generic.IList<global::Vercel.GlobalConfigItemValue?> PickGlobalConfigItemValueVariant4() => GlobalConfigItemValueVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GlobalConfigItemValueVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public bool PickGlobalConfigItemValueVariant5() => IsGlobalConfigItemValueVariant5
-            ? GlobalConfigItemValueVariant5!.Value
+        public bool PickGlobalConfigItemValueVariant5() => GlobalConfigItemValueVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GlobalConfigItemValueVariant5' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -349,25 +349,25 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsGlobalConfigItemValueVariant1 && globalConfigItemValueVariant1 != null)
+            if (GlobalConfigItemValueVariant1 is { } __value0 && globalConfigItemValueVariant1 != null)
             {
-                return globalConfigItemValueVariant1(GlobalConfigItemValueVariant1!);
+                return globalConfigItemValueVariant1(__value0);
             }
-            else if (IsGlobalConfigItemValueVariant2 && globalConfigItemValueVariant2 != null)
+            else if (GlobalConfigItemValueVariant2 is { } __value1 && globalConfigItemValueVariant2 != null)
             {
-                return globalConfigItemValueVariant2(GlobalConfigItemValueVariant2!);
+                return globalConfigItemValueVariant2(__value1);
             }
-            else if (IsGlobalConfigItemValueVariant3 && globalConfigItemValueVariant3 != null)
+            else if (GlobalConfigItemValueVariant3 is { } __value2 && globalConfigItemValueVariant3 != null)
             {
-                return globalConfigItemValueVariant3(GlobalConfigItemValueVariant3!);
+                return globalConfigItemValueVariant3(__value2);
             }
-            else if (IsGlobalConfigItemValueVariant4 && globalConfigItemValueVariant4 != null)
+            else if (GlobalConfigItemValueVariant4 is { } __value3 && globalConfigItemValueVariant4 != null)
             {
-                return globalConfigItemValueVariant4(GlobalConfigItemValueVariant4!);
+                return globalConfigItemValueVariant4(__value3);
             }
-            else if (IsGlobalConfigItemValueVariant5 && globalConfigItemValueVariant5 != null)
+            else if (GlobalConfigItemValueVariant5 is { } __value4 && globalConfigItemValueVariant5 != null)
             {
-                return globalConfigItemValueVariant5(GlobalConfigItemValueVariant5!);
+                return globalConfigItemValueVariant5(__value4);
             }
 
             return default(TResult);
@@ -393,25 +393,25 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsGlobalConfigItemValueVariant1)
+            if (GlobalConfigItemValueVariant1 is { } __value0)
             {
-                globalConfigItemValueVariant1?.Invoke(GlobalConfigItemValueVariant1!);
+                globalConfigItemValueVariant1?.Invoke(__value0);
             }
-            else if (IsGlobalConfigItemValueVariant2)
+            else if (GlobalConfigItemValueVariant2 is { } __value1)
             {
-                globalConfigItemValueVariant2?.Invoke(GlobalConfigItemValueVariant2!);
+                globalConfigItemValueVariant2?.Invoke(__value1);
             }
-            else if (IsGlobalConfigItemValueVariant3)
+            else if (GlobalConfigItemValueVariant3 is { } __value2)
             {
-                globalConfigItemValueVariant3?.Invoke(GlobalConfigItemValueVariant3!);
+                globalConfigItemValueVariant3?.Invoke(__value2);
             }
-            else if (IsGlobalConfigItemValueVariant4)
+            else if (GlobalConfigItemValueVariant4 is { } __value3)
             {
-                globalConfigItemValueVariant4?.Invoke(GlobalConfigItemValueVariant4!);
+                globalConfigItemValueVariant4?.Invoke(__value3);
             }
-            else if (IsGlobalConfigItemValueVariant5)
+            else if (GlobalConfigItemValueVariant5 is { } __value4)
             {
-                globalConfigItemValueVariant5?.Invoke(GlobalConfigItemValueVariant5!);
+                globalConfigItemValueVariant5?.Invoke(__value4);
             }
         }
 
@@ -431,25 +431,25 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsGlobalConfigItemValueVariant1)
+            if (GlobalConfigItemValueVariant1 is { } __value0)
             {
-                globalConfigItemValueVariant1?.Invoke(GlobalConfigItemValueVariant1!);
+                globalConfigItemValueVariant1?.Invoke(__value0);
             }
-            else if (IsGlobalConfigItemValueVariant2)
+            else if (GlobalConfigItemValueVariant2 is { } __value1)
             {
-                globalConfigItemValueVariant2?.Invoke(GlobalConfigItemValueVariant2!);
+                globalConfigItemValueVariant2?.Invoke(__value1);
             }
-            else if (IsGlobalConfigItemValueVariant3)
+            else if (GlobalConfigItemValueVariant3 is { } __value2)
             {
-                globalConfigItemValueVariant3?.Invoke(GlobalConfigItemValueVariant3!);
+                globalConfigItemValueVariant3?.Invoke(__value2);
             }
-            else if (IsGlobalConfigItemValueVariant4)
+            else if (GlobalConfigItemValueVariant4 is { } __value3)
             {
-                globalConfigItemValueVariant4?.Invoke(GlobalConfigItemValueVariant4!);
+                globalConfigItemValueVariant4?.Invoke(__value3);
             }
-            else if (IsGlobalConfigItemValueVariant5)
+            else if (GlobalConfigItemValueVariant5 is { } __value4)
             {
-                globalConfigItemValueVariant5?.Invoke(GlobalConfigItemValueVariant5!);
+                globalConfigItemValueVariant5?.Invoke(__value4);
             }
         }
 

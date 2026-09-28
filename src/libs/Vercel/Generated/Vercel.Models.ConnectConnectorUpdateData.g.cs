@@ -42,8 +42,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ConnectConnectorUpdateDataTypeOauth PickTypeOauth() => IsTypeOauth
-            ? TypeOauth!
+        public global::Vercel.ConnectConnectorUpdateDataTypeOauth PickTypeOauth() => TypeOauth is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeOauth' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ConnectConnectorUpdateDataTypeApiKey PickTypeApiKey() => IsTypeApiKey
-            ? TypeApiKey!
+        public global::Vercel.ConnectConnectorUpdateDataTypeApiKey PickTypeApiKey() => TypeApiKey is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeApiKey' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ConnectConnectorUpdateDataTypeGithub PickTypeGithub() => IsTypeGithub
-            ? TypeGithub!
+        public global::Vercel.ConnectConnectorUpdateDataTypeGithub PickTypeGithub() => TypeGithub is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeGithub' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ConnectConnectorUpdateDataTypeLinear PickTypeLinear() => IsTypeLinear
-            ? TypeLinear!
+        public global::Vercel.ConnectConnectorUpdateDataTypeLinear PickTypeLinear() => TypeLinear is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeLinear' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ConnectConnectorUpdateDataTypeSalesforce PickTypeSalesforce() => IsTypeSalesforce
-            ? TypeSalesforce!
+        public global::Vercel.ConnectConnectorUpdateDataTypeSalesforce PickTypeSalesforce() => TypeSalesforce is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeSalesforce' but the value was {ToString()}.");
 
         /// <summary>
@@ -227,8 +227,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ConnectConnectorUpdateDataTypeSlack PickTypeSlack() => IsTypeSlack
-            ? TypeSlack!
+        public global::Vercel.ConnectConnectorUpdateDataTypeSlack PickTypeSlack() => TypeSlack is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeSlack' but the value was {ToString()}.");
 
         /// <summary>
@@ -264,8 +264,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ConnectConnectorUpdateDataTypeSnowflake PickTypeSnowflake() => IsTypeSnowflake
-            ? TypeSnowflake!
+        public global::Vercel.ConnectConnectorUpdateDataTypeSnowflake PickTypeSnowflake() => TypeSnowflake is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeSnowflake' but the value was {ToString()}.");
 
         /// <summary>
@@ -301,8 +301,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ConnectConnectorUpdateDataTypeSnowflakeWif PickTypeSnowflakeWif() => IsTypeSnowflakeWif
-            ? TypeSnowflakeWif!
+        public global::Vercel.ConnectConnectorUpdateDataTypeSnowflakeWif PickTypeSnowflakeWif() => TypeSnowflakeWif is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeSnowflakeWif' but the value was {ToString()}.");
 
         /// <summary>
@@ -338,8 +338,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ConnectConnectorUpdateDataTypeLinq PickTypeLinq() => IsTypeLinq
-            ? TypeLinq!
+        public global::Vercel.ConnectConnectorUpdateDataTypeLinq PickTypeLinq() => TypeLinq is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeLinq' but the value was {ToString()}.");
 
         /// <summary>
@@ -375,8 +375,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ConnectConnectorUpdateDataTypeSendblue PickTypeSendblue() => IsTypeSendblue
-            ? TypeSendblue!
+        public global::Vercel.ConnectConnectorUpdateDataTypeSendblue PickTypeSendblue() => TypeSendblue is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeSendblue' but the value was {ToString()}.");
 
         /// <summary>
@@ -412,8 +412,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ConnectConnectorUpdateDataTypePhoton PickTypePhoton() => IsTypePhoton
-            ? TypePhoton!
+        public global::Vercel.ConnectConnectorUpdateDataTypePhoton PickTypePhoton() => TypePhoton is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypePhoton' but the value was {ToString()}.");
 
         /// <summary>
@@ -449,8 +449,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public object PickTypeOther() => IsTypeOther
-            ? TypeOther!
+        public object PickTypeOther() => TypeOther is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'TypeOther' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -804,53 +804,53 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsTypeOauth && typeOauth != null)
+            if (TypeOauth is { } __value0 && typeOauth != null)
             {
-                return typeOauth(TypeOauth!);
+                return typeOauth(__value0);
             }
-            else if (IsTypeApiKey && typeApiKey != null)
+            else if (TypeApiKey is { } __value1 && typeApiKey != null)
             {
-                return typeApiKey(TypeApiKey!);
+                return typeApiKey(__value1);
             }
-            else if (IsTypeGithub && typeGithub != null)
+            else if (TypeGithub is { } __value2 && typeGithub != null)
             {
-                return typeGithub(TypeGithub!);
+                return typeGithub(__value2);
             }
-            else if (IsTypeLinear && typeLinear != null)
+            else if (TypeLinear is { } __value3 && typeLinear != null)
             {
-                return typeLinear(TypeLinear!);
+                return typeLinear(__value3);
             }
-            else if (IsTypeSalesforce && typeSalesforce != null)
+            else if (TypeSalesforce is { } __value4 && typeSalesforce != null)
             {
-                return typeSalesforce(TypeSalesforce!);
+                return typeSalesforce(__value4);
             }
-            else if (IsTypeSlack && typeSlack != null)
+            else if (TypeSlack is { } __value5 && typeSlack != null)
             {
-                return typeSlack(TypeSlack!);
+                return typeSlack(__value5);
             }
-            else if (IsTypeSnowflake && typeSnowflake != null)
+            else if (TypeSnowflake is { } __value6 && typeSnowflake != null)
             {
-                return typeSnowflake(TypeSnowflake!);
+                return typeSnowflake(__value6);
             }
-            else if (IsTypeSnowflakeWif && typeSnowflakeWif != null)
+            else if (TypeSnowflakeWif is { } __value7 && typeSnowflakeWif != null)
             {
-                return typeSnowflakeWif(TypeSnowflakeWif!);
+                return typeSnowflakeWif(__value7);
             }
-            else if (IsTypeLinq && typeLinq != null)
+            else if (TypeLinq is { } __value8 && typeLinq != null)
             {
-                return typeLinq(TypeLinq!);
+                return typeLinq(__value8);
             }
-            else if (IsTypeSendblue && typeSendblue != null)
+            else if (TypeSendblue is { } __value9 && typeSendblue != null)
             {
-                return typeSendblue(TypeSendblue!);
+                return typeSendblue(__value9);
             }
-            else if (IsTypePhoton && typePhoton != null)
+            else if (TypePhoton is { } __value10 && typePhoton != null)
             {
-                return typePhoton(TypePhoton!);
+                return typePhoton(__value10);
             }
-            else if (IsTypeOther && typeOther != null)
+            else if (TypeOther is { } __value11 && typeOther != null)
             {
-                return typeOther(TypeOther!);
+                return typeOther(__value11);
             }
 
             return default(TResult);
@@ -890,53 +890,53 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsTypeOauth)
+            if (TypeOauth is { } __value0)
             {
-                typeOauth?.Invoke(TypeOauth!);
+                typeOauth?.Invoke(__value0);
             }
-            else if (IsTypeApiKey)
+            else if (TypeApiKey is { } __value1)
             {
-                typeApiKey?.Invoke(TypeApiKey!);
+                typeApiKey?.Invoke(__value1);
             }
-            else if (IsTypeGithub)
+            else if (TypeGithub is { } __value2)
             {
-                typeGithub?.Invoke(TypeGithub!);
+                typeGithub?.Invoke(__value2);
             }
-            else if (IsTypeLinear)
+            else if (TypeLinear is { } __value3)
             {
-                typeLinear?.Invoke(TypeLinear!);
+                typeLinear?.Invoke(__value3);
             }
-            else if (IsTypeSalesforce)
+            else if (TypeSalesforce is { } __value4)
             {
-                typeSalesforce?.Invoke(TypeSalesforce!);
+                typeSalesforce?.Invoke(__value4);
             }
-            else if (IsTypeSlack)
+            else if (TypeSlack is { } __value5)
             {
-                typeSlack?.Invoke(TypeSlack!);
+                typeSlack?.Invoke(__value5);
             }
-            else if (IsTypeSnowflake)
+            else if (TypeSnowflake is { } __value6)
             {
-                typeSnowflake?.Invoke(TypeSnowflake!);
+                typeSnowflake?.Invoke(__value6);
             }
-            else if (IsTypeSnowflakeWif)
+            else if (TypeSnowflakeWif is { } __value7)
             {
-                typeSnowflakeWif?.Invoke(TypeSnowflakeWif!);
+                typeSnowflakeWif?.Invoke(__value7);
             }
-            else if (IsTypeLinq)
+            else if (TypeLinq is { } __value8)
             {
-                typeLinq?.Invoke(TypeLinq!);
+                typeLinq?.Invoke(__value8);
             }
-            else if (IsTypeSendblue)
+            else if (TypeSendblue is { } __value9)
             {
-                typeSendblue?.Invoke(TypeSendblue!);
+                typeSendblue?.Invoke(__value9);
             }
-            else if (IsTypePhoton)
+            else if (TypePhoton is { } __value10)
             {
-                typePhoton?.Invoke(TypePhoton!);
+                typePhoton?.Invoke(__value10);
             }
-            else if (IsTypeOther)
+            else if (TypeOther is { } __value11)
             {
-                typeOther?.Invoke(TypeOther!);
+                typeOther?.Invoke(__value11);
             }
         }
 
@@ -963,53 +963,53 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsTypeOauth)
+            if (TypeOauth is { } __value0)
             {
-                typeOauth?.Invoke(TypeOauth!);
+                typeOauth?.Invoke(__value0);
             }
-            else if (IsTypeApiKey)
+            else if (TypeApiKey is { } __value1)
             {
-                typeApiKey?.Invoke(TypeApiKey!);
+                typeApiKey?.Invoke(__value1);
             }
-            else if (IsTypeGithub)
+            else if (TypeGithub is { } __value2)
             {
-                typeGithub?.Invoke(TypeGithub!);
+                typeGithub?.Invoke(__value2);
             }
-            else if (IsTypeLinear)
+            else if (TypeLinear is { } __value3)
             {
-                typeLinear?.Invoke(TypeLinear!);
+                typeLinear?.Invoke(__value3);
             }
-            else if (IsTypeSalesforce)
+            else if (TypeSalesforce is { } __value4)
             {
-                typeSalesforce?.Invoke(TypeSalesforce!);
+                typeSalesforce?.Invoke(__value4);
             }
-            else if (IsTypeSlack)
+            else if (TypeSlack is { } __value5)
             {
-                typeSlack?.Invoke(TypeSlack!);
+                typeSlack?.Invoke(__value5);
             }
-            else if (IsTypeSnowflake)
+            else if (TypeSnowflake is { } __value6)
             {
-                typeSnowflake?.Invoke(TypeSnowflake!);
+                typeSnowflake?.Invoke(__value6);
             }
-            else if (IsTypeSnowflakeWif)
+            else if (TypeSnowflakeWif is { } __value7)
             {
-                typeSnowflakeWif?.Invoke(TypeSnowflakeWif!);
+                typeSnowflakeWif?.Invoke(__value7);
             }
-            else if (IsTypeLinq)
+            else if (TypeLinq is { } __value8)
             {
-                typeLinq?.Invoke(TypeLinq!);
+                typeLinq?.Invoke(__value8);
             }
-            else if (IsTypeSendblue)
+            else if (TypeSendblue is { } __value9)
             {
-                typeSendblue?.Invoke(TypeSendblue!);
+                typeSendblue?.Invoke(__value9);
             }
-            else if (IsTypePhoton)
+            else if (TypePhoton is { } __value10)
             {
-                typePhoton?.Invoke(TypePhoton!);
+                typePhoton?.Invoke(__value10);
             }
-            else if (IsTypeOther)
+            else if (TypeOther is { } __value11)
             {
-                typeOther?.Invoke(TypeOther!);
+                typeOther?.Invoke(__value11);
             }
         }
 

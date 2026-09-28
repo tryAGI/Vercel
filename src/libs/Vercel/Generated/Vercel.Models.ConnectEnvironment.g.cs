@@ -42,8 +42,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ConnectEnvironmentEnum PickEnum() => IsEnum
-            ? Enum!.Value
+        public global::Vercel.ConnectEnvironmentEnum PickEnum() => Enum is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Enum' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public string PickConnectEnvironmentVariant2() => IsConnectEnvironmentVariant2
-            ? ConnectEnvironmentVariant2!
+        public string PickConnectEnvironmentVariant2() => ConnectEnvironmentVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ConnectEnvironmentVariant2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsEnum && @enum != null)
+            if (Enum is { } __value0 && @enum != null)
             {
-                return @enum(Enum!);
+                return @enum(__value0);
             }
-            else if (IsConnectEnvironmentVariant2 && connectEnvironmentVariant2 != null)
+            else if (ConnectEnvironmentVariant2 is { } __value1 && connectEnvironmentVariant2 != null)
             {
-                return connectEnvironmentVariant2(ConnectEnvironmentVariant2!);
+                return connectEnvironmentVariant2(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsEnum)
+            if (Enum is { } __value0)
             {
-                @enum?.Invoke(Enum!);
+                @enum?.Invoke(__value0);
             }
-            else if (IsConnectEnvironmentVariant2)
+            else if (ConnectEnvironmentVariant2 is { } __value1)
             {
-                connectEnvironmentVariant2?.Invoke(ConnectEnvironmentVariant2!);
+                connectEnvironmentVariant2?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsEnum)
+            if (Enum is { } __value0)
             {
-                @enum?.Invoke(Enum!);
+                @enum?.Invoke(__value0);
             }
-            else if (IsConnectEnvironmentVariant2)
+            else if (ConnectEnvironmentVariant2 is { } __value1)
             {
-                connectEnvironmentVariant2?.Invoke(ConnectEnvironmentVariant2!);
+                connectEnvironmentVariant2?.Invoke(__value1);
             }
         }
 

@@ -226,25 +226,25 @@ namespace Vercel.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.VcrImageLayerVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.VcrImageLayerVariant1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.VcrImageLayerVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VcrImageLayerVariant1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickVcrImageLayerVariant1(), typeInfo);
             }
             else if (value.IsVcrImageLayerVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.VcrImageLayerVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.VcrImageLayerVariant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.VcrImageLayerVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VcrImageLayerVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickVcrImageLayerVariant2(), typeInfo);
             }
             else if (value.IsVcrImageLayerVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.VcrImageLayerVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.VcrImageLayerVariant3?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.VcrImageLayerVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VcrImageLayerVariant3!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickVcrImageLayerVariant3(), typeInfo);
             }
             else if (value.IsVcrImageLayerVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.VcrImageLayerVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.VcrImageLayerVariant4?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.VcrImageLayerVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.VcrImageLayerVariant4!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickVcrImageLayerVariant4(), typeInfo);
             }
         }
     }
