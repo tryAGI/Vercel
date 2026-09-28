@@ -184,10 +184,10 @@ namespace Vercel
                 PrepareGetFirewallConfigRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectId: projectId!,
+                    projectId: projectId,
                     teamId: teamId,
                     slug: slug,
-                    configVersion: configVersion!);
+                    configVersion: configVersion);
 
                 return __httpRequest;
             }
@@ -209,7 +209,7 @@ namespace Vercel
                                 pathTemplate: "$\"/v1/security/firewall/config/{configVersion}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -243,7 +243,7 @@ namespace Vercel
                                 pathTemplate: "$\"/v1/security/firewall/config/{configVersion}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -284,7 +284,7 @@ namespace Vercel
                                 pathTemplate: "$\"/v1/security/firewall/config/{configVersion}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -332,7 +332,7 @@ namespace Vercel
                                 pathTemplate: "$\"/v1/security/firewall/config/{configVersion}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -354,7 +354,7 @@ namespace Vercel
                                 pathTemplate: "$\"/v1/security/firewall/config/{configVersion}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,

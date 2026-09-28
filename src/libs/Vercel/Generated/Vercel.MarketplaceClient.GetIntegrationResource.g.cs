@@ -163,8 +163,8 @@ namespace Vercel
                 PrepareGetIntegrationResourceRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    integrationConfigurationId: integrationConfigurationId!,
-                    resourceId: resourceId!);
+                    integrationConfigurationId: integrationConfigurationId,
+                    resourceId: resourceId);
 
                 return __httpRequest;
             }
@@ -186,7 +186,7 @@ namespace Vercel
                                 pathTemplate: "$\"/v1/installations/{integrationConfigurationId}/resources/{resourceId}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -220,7 +220,7 @@ namespace Vercel
                                 pathTemplate: "$\"/v1/installations/{integrationConfigurationId}/resources/{resourceId}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -261,7 +261,7 @@ namespace Vercel
                                 pathTemplate: "$\"/v1/installations/{integrationConfigurationId}/resources/{resourceId}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -309,7 +309,7 @@ namespace Vercel
                                 pathTemplate: "$\"/v1/installations/{integrationConfigurationId}/resources/{resourceId}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -331,7 +331,7 @@ namespace Vercel
                                 pathTemplate: "$\"/v1/installations/{integrationConfigurationId}/resources/{resourceId}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,

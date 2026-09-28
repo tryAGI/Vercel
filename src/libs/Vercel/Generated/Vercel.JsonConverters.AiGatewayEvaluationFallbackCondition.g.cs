@@ -253,31 +253,31 @@ namespace Vercel.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.AiGatewayEvaluationFallbackConditionVariant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.AiGatewayEvaluationFallbackConditionVariant1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.AiGatewayEvaluationFallbackConditionVariant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AiGatewayEvaluationFallbackConditionVariant1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAiGatewayEvaluationFallbackConditionVariant1(), typeInfo);
             }
             else if (value.IsAiGatewayEvaluationFallbackConditionVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.AiGatewayEvaluationFallbackConditionVariant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.AiGatewayEvaluationFallbackConditionVariant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.AiGatewayEvaluationFallbackConditionVariant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AiGatewayEvaluationFallbackConditionVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAiGatewayEvaluationFallbackConditionVariant2(), typeInfo);
             }
             else if (value.IsAiGatewayEvaluationFallbackConditionVariant3)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.AiGatewayEvaluationFallbackConditionVariant3), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.AiGatewayEvaluationFallbackConditionVariant3?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.AiGatewayEvaluationFallbackConditionVariant3).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AiGatewayEvaluationFallbackConditionVariant3!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAiGatewayEvaluationFallbackConditionVariant3(), typeInfo);
             }
             else if (value.IsAiGatewayEvaluationFallbackConditionVariant4)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.AiGatewayEvaluationFallbackConditionVariant4), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.AiGatewayEvaluationFallbackConditionVariant4?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.AiGatewayEvaluationFallbackConditionVariant4).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AiGatewayEvaluationFallbackConditionVariant4!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAiGatewayEvaluationFallbackConditionVariant4(), typeInfo);
             }
             else if (value.IsAiGatewayEvaluationFallbackConditionVariant5)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.AiGatewayEvaluationFallbackConditionVariant5), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.AiGatewayEvaluationFallbackConditionVariant5?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.AiGatewayEvaluationFallbackConditionVariant5).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AiGatewayEvaluationFallbackConditionVariant5!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAiGatewayEvaluationFallbackConditionVariant5(), typeInfo);
             }
         }
     }

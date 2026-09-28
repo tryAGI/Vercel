@@ -145,13 +145,13 @@ namespace Vercel.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.AutoSDKSharede064e44b973b9ad0), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.AutoSDKSharede064e44b973b9ad0?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.AutoSDKSharede064e44b973b9ad0).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Sharede064e44b973b9ad0!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSharede064e44b973b9ad0(), typeInfo);
             }
             else if (value.IsAutoSDKShared133a7ec19e4ac4f6Variant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.AutoSDKShared133a7ec19e4ac4f6Variant2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.AutoSDKShared133a7ec19e4ac4f6Variant2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.AutoSDKShared133a7ec19e4ac4f6Variant2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AutoSDKShared133a7ec19e4ac4f6Variant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAutoSDKShared133a7ec19e4ac4f6Variant2(), typeInfo);
             }
         }
     }

@@ -42,8 +42,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4f336dbaf7392e8f PickShared4f336dbaf7392e8f() => IsShared4f336dbaf7392e8f
-            ? Shared4f336dbaf7392e8f!
+        public global::Vercel.AutoSDKShared4f336dbaf7392e8f PickShared4f336dbaf7392e8f() => Shared4f336dbaf7392e8f is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Shared4f336dbaf7392e8f' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared650e942fd9ba5744 PickShared650e942fd9ba5744() => IsShared650e942fd9ba5744
-            ? Shared650e942fd9ba5744!
+        public global::Vercel.AutoSDKShared650e942fd9ba5744 PickShared650e942fd9ba5744() => Shared650e942fd9ba5744 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Shared650e942fd9ba5744' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -177,13 +177,13 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsShared4f336dbaf7392e8f && shared4f336dbaf7392e8f != null)
+            if (Shared4f336dbaf7392e8f is { } __value0 && shared4f336dbaf7392e8f != null)
             {
-                return shared4f336dbaf7392e8f(Shared4f336dbaf7392e8f!);
+                return shared4f336dbaf7392e8f(__value0);
             }
-            else if (IsShared650e942fd9ba5744 && shared650e942fd9ba5744 != null)
+            else if (Shared650e942fd9ba5744 is { } __value1 && shared650e942fd9ba5744 != null)
             {
-                return shared650e942fd9ba5744(Shared650e942fd9ba5744!);
+                return shared650e942fd9ba5744(__value1);
             }
 
             return default(TResult);
@@ -203,13 +203,13 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsShared4f336dbaf7392e8f)
+            if (Shared4f336dbaf7392e8f is { } __value0)
             {
-                shared4f336dbaf7392e8f?.Invoke(Shared4f336dbaf7392e8f!);
+                shared4f336dbaf7392e8f?.Invoke(__value0);
             }
-            else if (IsShared650e942fd9ba5744)
+            else if (Shared650e942fd9ba5744 is { } __value1)
             {
-                shared650e942fd9ba5744?.Invoke(Shared650e942fd9ba5744!);
+                shared650e942fd9ba5744?.Invoke(__value1);
             }
         }
 
@@ -226,13 +226,13 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsShared4f336dbaf7392e8f)
+            if (Shared4f336dbaf7392e8f is { } __value0)
             {
-                shared4f336dbaf7392e8f?.Invoke(Shared4f336dbaf7392e8f!);
+                shared4f336dbaf7392e8f?.Invoke(__value0);
             }
-            else if (IsShared650e942fd9ba5744)
+            else if (Shared650e942fd9ba5744 is { } __value1)
             {
-                shared650e942fd9ba5744?.Invoke(Shared650e942fd9ba5744!);
+                shared650e942fd9ba5744?.Invoke(__value1);
             }
         }
 

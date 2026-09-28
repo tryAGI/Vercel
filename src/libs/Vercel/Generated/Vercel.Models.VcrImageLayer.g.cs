@@ -42,8 +42,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.VcrImageLayerVariant1 PickVcrImageLayerVariant1() => IsVcrImageLayerVariant1
-            ? VcrImageLayerVariant1!
+        public global::Vercel.VcrImageLayerVariant1 PickVcrImageLayerVariant1() => VcrImageLayerVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VcrImageLayerVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.VcrImageLayerVariant2 PickVcrImageLayerVariant2() => IsVcrImageLayerVariant2
-            ? VcrImageLayerVariant2!
+        public global::Vercel.VcrImageLayerVariant2 PickVcrImageLayerVariant2() => VcrImageLayerVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VcrImageLayerVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.VcrImageLayerVariant3 PickVcrImageLayerVariant3() => IsVcrImageLayerVariant3
-            ? VcrImageLayerVariant3!
+        public global::Vercel.VcrImageLayerVariant3 PickVcrImageLayerVariant3() => VcrImageLayerVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VcrImageLayerVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.VcrImageLayerVariant4 PickVcrImageLayerVariant4() => IsVcrImageLayerVariant4
-            ? VcrImageLayerVariant4!
+        public global::Vercel.VcrImageLayerVariant4 PickVcrImageLayerVariant4() => VcrImageLayerVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'VcrImageLayerVariant4' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -307,21 +307,21 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsVcrImageLayerVariant1 && vcrImageLayerVariant1 != null)
+            if (VcrImageLayerVariant1 is { } __value0 && vcrImageLayerVariant1 != null)
             {
-                return vcrImageLayerVariant1(VcrImageLayerVariant1!);
+                return vcrImageLayerVariant1(__value0);
             }
-            else if (IsVcrImageLayerVariant2 && vcrImageLayerVariant2 != null)
+            else if (VcrImageLayerVariant2 is { } __value1 && vcrImageLayerVariant2 != null)
             {
-                return vcrImageLayerVariant2(VcrImageLayerVariant2!);
+                return vcrImageLayerVariant2(__value1);
             }
-            else if (IsVcrImageLayerVariant3 && vcrImageLayerVariant3 != null)
+            else if (VcrImageLayerVariant3 is { } __value2 && vcrImageLayerVariant3 != null)
             {
-                return vcrImageLayerVariant3(VcrImageLayerVariant3!);
+                return vcrImageLayerVariant3(__value2);
             }
-            else if (IsVcrImageLayerVariant4 && vcrImageLayerVariant4 != null)
+            else if (VcrImageLayerVariant4 is { } __value3 && vcrImageLayerVariant4 != null)
             {
-                return vcrImageLayerVariant4(VcrImageLayerVariant4!);
+                return vcrImageLayerVariant4(__value3);
             }
 
             return default(TResult);
@@ -345,21 +345,21 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsVcrImageLayerVariant1)
+            if (VcrImageLayerVariant1 is { } __value0)
             {
-                vcrImageLayerVariant1?.Invoke(VcrImageLayerVariant1!);
+                vcrImageLayerVariant1?.Invoke(__value0);
             }
-            else if (IsVcrImageLayerVariant2)
+            else if (VcrImageLayerVariant2 is { } __value1)
             {
-                vcrImageLayerVariant2?.Invoke(VcrImageLayerVariant2!);
+                vcrImageLayerVariant2?.Invoke(__value1);
             }
-            else if (IsVcrImageLayerVariant3)
+            else if (VcrImageLayerVariant3 is { } __value2)
             {
-                vcrImageLayerVariant3?.Invoke(VcrImageLayerVariant3!);
+                vcrImageLayerVariant3?.Invoke(__value2);
             }
-            else if (IsVcrImageLayerVariant4)
+            else if (VcrImageLayerVariant4 is { } __value3)
             {
-                vcrImageLayerVariant4?.Invoke(VcrImageLayerVariant4!);
+                vcrImageLayerVariant4?.Invoke(__value3);
             }
         }
 
@@ -378,21 +378,21 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsVcrImageLayerVariant1)
+            if (VcrImageLayerVariant1 is { } __value0)
             {
-                vcrImageLayerVariant1?.Invoke(VcrImageLayerVariant1!);
+                vcrImageLayerVariant1?.Invoke(__value0);
             }
-            else if (IsVcrImageLayerVariant2)
+            else if (VcrImageLayerVariant2 is { } __value1)
             {
-                vcrImageLayerVariant2?.Invoke(VcrImageLayerVariant2!);
+                vcrImageLayerVariant2?.Invoke(__value1);
             }
-            else if (IsVcrImageLayerVariant3)
+            else if (VcrImageLayerVariant3 is { } __value2)
             {
-                vcrImageLayerVariant3?.Invoke(VcrImageLayerVariant3!);
+                vcrImageLayerVariant3?.Invoke(__value2);
             }
-            else if (IsVcrImageLayerVariant4)
+            else if (VcrImageLayerVariant4 is { } __value3)
             {
-                vcrImageLayerVariant4?.Invoke(VcrImageLayerVariant4!);
+                vcrImageLayerVariant4?.Invoke(__value3);
             }
         }
 

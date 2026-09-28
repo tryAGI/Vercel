@@ -149,13 +149,13 @@ namespace Vercel.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.ConnectEnvironmentEnum), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.ConnectEnvironmentEnum> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.ConnectEnvironmentEnum).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Enum!.Value, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickEnum(), typeInfo);
             }
             else if (value.IsConnectEnvironmentVariant2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(string), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<string?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(string).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ConnectEnvironmentVariant2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickConnectEnvironmentVariant2(), typeInfo);
             }
         }
     }

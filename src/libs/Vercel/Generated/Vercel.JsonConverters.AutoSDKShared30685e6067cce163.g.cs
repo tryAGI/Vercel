@@ -147,13 +147,13 @@ namespace Vercel.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.AutoSDKShared30685e6067cce163Variant1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.AutoSDKShared30685e6067cce163Variant1?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.AutoSDKShared30685e6067cce163Variant1).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AutoSDKShared30685e6067cce163Variant1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAutoSDKShared30685e6067cce163Variant1(), typeInfo);
             }
             else if (value.IsSharedaffe019c1a64bb83)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.AutoSDKSharedaffe019c1a64bb83), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.AutoSDKSharedaffe019c1a64bb83?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.AutoSDKSharedaffe019c1a64bb83).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Sharedaffe019c1a64bb83!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSharedaffe019c1a64bb83(), typeInfo);
             }
         }
     }

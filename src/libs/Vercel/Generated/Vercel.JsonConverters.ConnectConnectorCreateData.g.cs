@@ -651,73 +651,73 @@ namespace Vercel.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.ConnectConnectorCreateDataTypeOauth), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.ConnectConnectorCreateDataTypeOauth?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.ConnectConnectorCreateDataTypeOauth).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TypeOauth!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTypeOauth(), typeInfo);
             }
             else if (value.IsTypeApiKey)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.ConnectConnectorCreateDataTypeApiKey), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.ConnectConnectorCreateDataTypeApiKey?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.ConnectConnectorCreateDataTypeApiKey).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TypeApiKey!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTypeApiKey(), typeInfo);
             }
             else if (value.IsTypeGithub)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.ConnectConnectorCreateDataTypeGithub), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.ConnectConnectorCreateDataTypeGithub?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.ConnectConnectorCreateDataTypeGithub).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TypeGithub!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTypeGithub(), typeInfo);
             }
             else if (value.IsTypeLinear)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.ConnectConnectorCreateDataTypeLinear), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.ConnectConnectorCreateDataTypeLinear?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.ConnectConnectorCreateDataTypeLinear).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TypeLinear!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTypeLinear(), typeInfo);
             }
             else if (value.IsTypeLinq)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.ConnectConnectorCreateDataTypeLinq), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.ConnectConnectorCreateDataTypeLinq?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.ConnectConnectorCreateDataTypeLinq).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TypeLinq!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTypeLinq(), typeInfo);
             }
             else if (value.IsTypeSalesforce)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.ConnectConnectorCreateDataTypeSalesforce), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.ConnectConnectorCreateDataTypeSalesforce?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.ConnectConnectorCreateDataTypeSalesforce).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TypeSalesforce!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTypeSalesforce(), typeInfo);
             }
             else if (value.IsTypeSendblue)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.ConnectConnectorCreateDataTypeSendblue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.ConnectConnectorCreateDataTypeSendblue?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.ConnectConnectorCreateDataTypeSendblue).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TypeSendblue!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTypeSendblue(), typeInfo);
             }
             else if (value.IsTypeSlack)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.ConnectConnectorCreateDataTypeSlack), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.ConnectConnectorCreateDataTypeSlack?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.ConnectConnectorCreateDataTypeSlack).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TypeSlack!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTypeSlack(), typeInfo);
             }
             else if (value.IsTypeSnowflake)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.ConnectConnectorCreateDataTypeSnowflake), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.ConnectConnectorCreateDataTypeSnowflake?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.ConnectConnectorCreateDataTypeSnowflake).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TypeSnowflake!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTypeSnowflake(), typeInfo);
             }
             else if (value.IsTypeSnowflakeWif)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.ConnectConnectorCreateDataTypeSnowflakeWif), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.ConnectConnectorCreateDataTypeSnowflakeWif?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.ConnectConnectorCreateDataTypeSnowflakeWif).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TypeSnowflakeWif!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTypeSnowflakeWif(), typeInfo);
             }
             else if (value.IsTypePhoton)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::Vercel.ConnectConnectorCreateDataTypePhoton), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::Vercel.ConnectConnectorCreateDataTypePhoton?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::Vercel.ConnectConnectorCreateDataTypePhoton).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TypePhoton!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTypePhoton(), typeInfo);
             }
             else if (value.IsTypeOther)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(object), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<object?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(object).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.TypeOther!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTypeOther(), typeInfo);
             }
         }
     }

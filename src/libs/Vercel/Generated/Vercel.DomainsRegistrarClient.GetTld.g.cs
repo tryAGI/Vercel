@@ -166,7 +166,7 @@ namespace Vercel
                 PrepareGetTldRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    tld: tld!,
+                    tld: tld,
                     teamId: teamId);
 
                 return __httpRequest;
@@ -189,7 +189,7 @@ namespace Vercel
                                 pathTemplate: "$\"/v1/registrar/tlds/{tld}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -223,7 +223,7 @@ namespace Vercel
                                 pathTemplate: "$\"/v1/registrar/tlds/{tld}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -264,7 +264,7 @@ namespace Vercel
                                 pathTemplate: "$\"/v1/registrar/tlds/{tld}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -312,7 +312,7 @@ namespace Vercel
                                 pathTemplate: "$\"/v1/registrar/tlds/{tld}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -334,7 +334,7 @@ namespace Vercel
                                 pathTemplate: "$\"/v1/registrar/tlds/{tld}\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,

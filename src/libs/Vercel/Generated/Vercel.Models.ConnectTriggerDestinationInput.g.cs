@@ -42,8 +42,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ConnectTriggerDestinationInputDefaultDeployment PickDefaultDeployment() => IsDefaultDeployment
-            ? DefaultDeployment!
+        public global::Vercel.ConnectTriggerDestinationInputDefaultDeployment PickDefaultDeployment() => DefaultDeployment is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'DefaultDeployment' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ConnectTriggerDestinationInputBranch PickBranch() => IsBranch
-            ? Branch!
+        public global::Vercel.ConnectTriggerDestinationInputBranch PickBranch() => Branch is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Branch' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ConnectTriggerDestinationInputCustomEnvironment PickCustomEnvironment() => IsCustomEnvironment
-            ? CustomEnvironment!
+        public global::Vercel.ConnectTriggerDestinationInputCustomEnvironment PickCustomEnvironment() => CustomEnvironment is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CustomEnvironment' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -242,17 +242,17 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsDefaultDeployment && defaultDeployment != null)
+            if (DefaultDeployment is { } __value0 && defaultDeployment != null)
             {
-                return defaultDeployment(DefaultDeployment!);
+                return defaultDeployment(__value0);
             }
-            else if (IsBranch && branch != null)
+            else if (Branch is { } __value1 && branch != null)
             {
-                return branch(Branch!);
+                return branch(__value1);
             }
-            else if (IsCustomEnvironment && customEnvironment != null)
+            else if (CustomEnvironment is { } __value2 && customEnvironment != null)
             {
-                return customEnvironment(CustomEnvironment!);
+                return customEnvironment(__value2);
             }
 
             return default(TResult);
@@ -274,17 +274,17 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsDefaultDeployment)
+            if (DefaultDeployment is { } __value0)
             {
-                defaultDeployment?.Invoke(DefaultDeployment!);
+                defaultDeployment?.Invoke(__value0);
             }
-            else if (IsBranch)
+            else if (Branch is { } __value1)
             {
-                branch?.Invoke(Branch!);
+                branch?.Invoke(__value1);
             }
-            else if (IsCustomEnvironment)
+            else if (CustomEnvironment is { } __value2)
             {
-                customEnvironment?.Invoke(CustomEnvironment!);
+                customEnvironment?.Invoke(__value2);
             }
         }
 
@@ -302,17 +302,17 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsDefaultDeployment)
+            if (DefaultDeployment is { } __value0)
             {
-                defaultDeployment?.Invoke(DefaultDeployment!);
+                defaultDeployment?.Invoke(__value0);
             }
-            else if (IsBranch)
+            else if (Branch is { } __value1)
             {
-                branch?.Invoke(Branch!);
+                branch?.Invoke(__value1);
             }
-            else if (IsCustomEnvironment)
+            else if (CustomEnvironment is { } __value2)
             {
-                customEnvironment?.Invoke(CustomEnvironment!);
+                customEnvironment?.Invoke(__value2);
             }
         }
 

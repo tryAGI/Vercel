@@ -42,8 +42,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AiGatewayEvaluationFallbackConditionVariant1 PickAiGatewayEvaluationFallbackConditionVariant1() => IsAiGatewayEvaluationFallbackConditionVariant1
-            ? AiGatewayEvaluationFallbackConditionVariant1!
+        public global::Vercel.AiGatewayEvaluationFallbackConditionVariant1 PickAiGatewayEvaluationFallbackConditionVariant1() => AiGatewayEvaluationFallbackConditionVariant1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AiGatewayEvaluationFallbackConditionVariant1' but the value was {ToString()}.");
 
         /// <summary>
@@ -79,8 +79,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AiGatewayEvaluationFallbackConditionVariant2 PickAiGatewayEvaluationFallbackConditionVariant2() => IsAiGatewayEvaluationFallbackConditionVariant2
-            ? AiGatewayEvaluationFallbackConditionVariant2!
+        public global::Vercel.AiGatewayEvaluationFallbackConditionVariant2 PickAiGatewayEvaluationFallbackConditionVariant2() => AiGatewayEvaluationFallbackConditionVariant2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AiGatewayEvaluationFallbackConditionVariant2' but the value was {ToString()}.");
 
         /// <summary>
@@ -116,8 +116,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AiGatewayEvaluationFallbackConditionVariant3 PickAiGatewayEvaluationFallbackConditionVariant3() => IsAiGatewayEvaluationFallbackConditionVariant3
-            ? AiGatewayEvaluationFallbackConditionVariant3!
+        public global::Vercel.AiGatewayEvaluationFallbackConditionVariant3 PickAiGatewayEvaluationFallbackConditionVariant3() => AiGatewayEvaluationFallbackConditionVariant3 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AiGatewayEvaluationFallbackConditionVariant3' but the value was {ToString()}.");
 
         /// <summary>
@@ -153,8 +153,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AiGatewayEvaluationFallbackConditionVariant4 PickAiGatewayEvaluationFallbackConditionVariant4() => IsAiGatewayEvaluationFallbackConditionVariant4
-            ? AiGatewayEvaluationFallbackConditionVariant4!
+        public global::Vercel.AiGatewayEvaluationFallbackConditionVariant4 PickAiGatewayEvaluationFallbackConditionVariant4() => AiGatewayEvaluationFallbackConditionVariant4 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AiGatewayEvaluationFallbackConditionVariant4' but the value was {ToString()}.");
 
         /// <summary>
@@ -190,8 +190,8 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AiGatewayEvaluationFallbackConditionVariant5 PickAiGatewayEvaluationFallbackConditionVariant5() => IsAiGatewayEvaluationFallbackConditionVariant5
-            ? AiGatewayEvaluationFallbackConditionVariant5!
+        public global::Vercel.AiGatewayEvaluationFallbackConditionVariant5 PickAiGatewayEvaluationFallbackConditionVariant5() => AiGatewayEvaluationFallbackConditionVariant5 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AiGatewayEvaluationFallbackConditionVariant5' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -372,25 +372,25 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsAiGatewayEvaluationFallbackConditionVariant1 && aiGatewayEvaluationFallbackConditionVariant1 != null)
+            if (AiGatewayEvaluationFallbackConditionVariant1 is { } __value0 && aiGatewayEvaluationFallbackConditionVariant1 != null)
             {
-                return aiGatewayEvaluationFallbackConditionVariant1(AiGatewayEvaluationFallbackConditionVariant1!);
+                return aiGatewayEvaluationFallbackConditionVariant1(__value0);
             }
-            else if (IsAiGatewayEvaluationFallbackConditionVariant2 && aiGatewayEvaluationFallbackConditionVariant2 != null)
+            else if (AiGatewayEvaluationFallbackConditionVariant2 is { } __value1 && aiGatewayEvaluationFallbackConditionVariant2 != null)
             {
-                return aiGatewayEvaluationFallbackConditionVariant2(AiGatewayEvaluationFallbackConditionVariant2!);
+                return aiGatewayEvaluationFallbackConditionVariant2(__value1);
             }
-            else if (IsAiGatewayEvaluationFallbackConditionVariant3 && aiGatewayEvaluationFallbackConditionVariant3 != null)
+            else if (AiGatewayEvaluationFallbackConditionVariant3 is { } __value2 && aiGatewayEvaluationFallbackConditionVariant3 != null)
             {
-                return aiGatewayEvaluationFallbackConditionVariant3(AiGatewayEvaluationFallbackConditionVariant3!);
+                return aiGatewayEvaluationFallbackConditionVariant3(__value2);
             }
-            else if (IsAiGatewayEvaluationFallbackConditionVariant4 && aiGatewayEvaluationFallbackConditionVariant4 != null)
+            else if (AiGatewayEvaluationFallbackConditionVariant4 is { } __value3 && aiGatewayEvaluationFallbackConditionVariant4 != null)
             {
-                return aiGatewayEvaluationFallbackConditionVariant4(AiGatewayEvaluationFallbackConditionVariant4!);
+                return aiGatewayEvaluationFallbackConditionVariant4(__value3);
             }
-            else if (IsAiGatewayEvaluationFallbackConditionVariant5 && aiGatewayEvaluationFallbackConditionVariant5 != null)
+            else if (AiGatewayEvaluationFallbackConditionVariant5 is { } __value4 && aiGatewayEvaluationFallbackConditionVariant5 != null)
             {
-                return aiGatewayEvaluationFallbackConditionVariant5(AiGatewayEvaluationFallbackConditionVariant5!);
+                return aiGatewayEvaluationFallbackConditionVariant5(__value4);
             }
 
             return default(TResult);
@@ -416,25 +416,25 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsAiGatewayEvaluationFallbackConditionVariant1)
+            if (AiGatewayEvaluationFallbackConditionVariant1 is { } __value0)
             {
-                aiGatewayEvaluationFallbackConditionVariant1?.Invoke(AiGatewayEvaluationFallbackConditionVariant1!);
+                aiGatewayEvaluationFallbackConditionVariant1?.Invoke(__value0);
             }
-            else if (IsAiGatewayEvaluationFallbackConditionVariant2)
+            else if (AiGatewayEvaluationFallbackConditionVariant2 is { } __value1)
             {
-                aiGatewayEvaluationFallbackConditionVariant2?.Invoke(AiGatewayEvaluationFallbackConditionVariant2!);
+                aiGatewayEvaluationFallbackConditionVariant2?.Invoke(__value1);
             }
-            else if (IsAiGatewayEvaluationFallbackConditionVariant3)
+            else if (AiGatewayEvaluationFallbackConditionVariant3 is { } __value2)
             {
-                aiGatewayEvaluationFallbackConditionVariant3?.Invoke(AiGatewayEvaluationFallbackConditionVariant3!);
+                aiGatewayEvaluationFallbackConditionVariant3?.Invoke(__value2);
             }
-            else if (IsAiGatewayEvaluationFallbackConditionVariant4)
+            else if (AiGatewayEvaluationFallbackConditionVariant4 is { } __value3)
             {
-                aiGatewayEvaluationFallbackConditionVariant4?.Invoke(AiGatewayEvaluationFallbackConditionVariant4!);
+                aiGatewayEvaluationFallbackConditionVariant4?.Invoke(__value3);
             }
-            else if (IsAiGatewayEvaluationFallbackConditionVariant5)
+            else if (AiGatewayEvaluationFallbackConditionVariant5 is { } __value4)
             {
-                aiGatewayEvaluationFallbackConditionVariant5?.Invoke(AiGatewayEvaluationFallbackConditionVariant5!);
+                aiGatewayEvaluationFallbackConditionVariant5?.Invoke(__value4);
             }
         }
 
@@ -454,25 +454,25 @@ namespace Vercel
                 Validate();
             }
 
-            if (IsAiGatewayEvaluationFallbackConditionVariant1)
+            if (AiGatewayEvaluationFallbackConditionVariant1 is { } __value0)
             {
-                aiGatewayEvaluationFallbackConditionVariant1?.Invoke(AiGatewayEvaluationFallbackConditionVariant1!);
+                aiGatewayEvaluationFallbackConditionVariant1?.Invoke(__value0);
             }
-            else if (IsAiGatewayEvaluationFallbackConditionVariant2)
+            else if (AiGatewayEvaluationFallbackConditionVariant2 is { } __value1)
             {
-                aiGatewayEvaluationFallbackConditionVariant2?.Invoke(AiGatewayEvaluationFallbackConditionVariant2!);
+                aiGatewayEvaluationFallbackConditionVariant2?.Invoke(__value1);
             }
-            else if (IsAiGatewayEvaluationFallbackConditionVariant3)
+            else if (AiGatewayEvaluationFallbackConditionVariant3 is { } __value2)
             {
-                aiGatewayEvaluationFallbackConditionVariant3?.Invoke(AiGatewayEvaluationFallbackConditionVariant3!);
+                aiGatewayEvaluationFallbackConditionVariant3?.Invoke(__value2);
             }
-            else if (IsAiGatewayEvaluationFallbackConditionVariant4)
+            else if (AiGatewayEvaluationFallbackConditionVariant4 is { } __value3)
             {
-                aiGatewayEvaluationFallbackConditionVariant4?.Invoke(AiGatewayEvaluationFallbackConditionVariant4!);
+                aiGatewayEvaluationFallbackConditionVariant4?.Invoke(__value3);
             }
-            else if (IsAiGatewayEvaluationFallbackConditionVariant5)
+            else if (AiGatewayEvaluationFallbackConditionVariant5 is { } __value4)
             {
-                aiGatewayEvaluationFallbackConditionVariant5?.Invoke(AiGatewayEvaluationFallbackConditionVariant5!);
+                aiGatewayEvaluationFallbackConditionVariant5?.Invoke(__value4);
             }
         }
 
