@@ -45,13 +45,13 @@ namespace Vercel
         public global::Vercel.PatchTeamRequestDefaultExpirationSettingsExpirationErrored? ExpirationErrored { get; set; }
 
         /// <summary>
-        /// When true, opts the team out of the upcoming deployment-storage retention reduce (Medium/High cohorts). Does not change expiration settings.
+        /// When true, opts the team out of the upcoming deployment-storage retention reduce (Medium/High cohorts). Does not change expiration settings. High cohort also requires acknowledgeStorageBilling; metering starts on reduce day.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keepCurrentRetention")]
         public bool? KeepCurrentRetention { get; set; }
 
         /// <summary>
-        /// Required when increasing any retention setting for a High cohort team after retention reduce and before metering. Confirms team-wide storage billing.
+        /// Required for High cohort keepCurrentRetention (deferred billing), and when increasing any retention setting for a High cohort team after retention reduce and before metering.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("acknowledgeStorageBilling")]
         public bool? AcknowledgeStorageBilling { get; set; }
@@ -82,10 +82,10 @@ namespace Vercel
         /// Example: 1y
         /// </param>
         /// <param name="keepCurrentRetention">
-        /// When true, opts the team out of the upcoming deployment-storage retention reduce (Medium/High cohorts). Does not change expiration settings.
+        /// When true, opts the team out of the upcoming deployment-storage retention reduce (Medium/High cohorts). Does not change expiration settings. High cohort also requires acknowledgeStorageBilling; metering starts on reduce day.
         /// </param>
         /// <param name="acknowledgeStorageBilling">
-        /// Required when increasing any retention setting for a High cohort team after retention reduce and before metering. Confirms team-wide storage billing.
+        /// Required for High cohort keepCurrentRetention (deferred billing), and when increasing any retention setting for a High cohort team after retention reduce and before metering.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

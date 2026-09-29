@@ -112,6 +112,26 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiGatewayAccessPolicyCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayAccessPolicyDeleted,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayAccessPolicyMemberAdded,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayAccessPolicyMemberRemoved,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayAccessPolicyUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         AiGatewayApiKeyCreated,
         /// <summary>
         ///
@@ -2848,6 +2868,11 @@ namespace Vercel
                 UserEventType.AgenticProvisioningTeamCreated => "agentic-provisioning-team-created",
                 UserEventType.AiAlertInvestigation => "ai-alert-investigation",
                 UserEventType.AiCodeReview => "ai-code-review",
+                UserEventType.AiGatewayAccessPolicyCreated => "ai-gateway-access-policy-created",
+                UserEventType.AiGatewayAccessPolicyDeleted => "ai-gateway-access-policy-deleted",
+                UserEventType.AiGatewayAccessPolicyMemberAdded => "ai-gateway-access-policy-member-added",
+                UserEventType.AiGatewayAccessPolicyMemberRemoved => "ai-gateway-access-policy-member-removed",
+                UserEventType.AiGatewayAccessPolicyUpdated => "ai-gateway-access-policy-updated",
                 UserEventType.AiGatewayApiKeyCreated => "ai-gateway-api-key-created",
                 UserEventType.AiGatewayApiKeyDeleted => "ai-gateway-api-key-deleted",
                 UserEventType.AiGatewayApiKeyQuotaUpdated => "ai-gateway-api-key-quota-updated",
@@ -3558,6 +3583,11 @@ namespace Vercel
                 "agentic-provisioning-team-created" => UserEventType.AgenticProvisioningTeamCreated,
                 "ai-alert-investigation" => UserEventType.AiAlertInvestigation,
                 "ai-code-review" => UserEventType.AiCodeReview,
+                "ai-gateway-access-policy-created" => UserEventType.AiGatewayAccessPolicyCreated,
+                "ai-gateway-access-policy-deleted" => UserEventType.AiGatewayAccessPolicyDeleted,
+                "ai-gateway-access-policy-member-added" => UserEventType.AiGatewayAccessPolicyMemberAdded,
+                "ai-gateway-access-policy-member-removed" => UserEventType.AiGatewayAccessPolicyMemberRemoved,
+                "ai-gateway-access-policy-updated" => UserEventType.AiGatewayAccessPolicyUpdated,
                 "ai-gateway-api-key-created" => UserEventType.AiGatewayApiKeyCreated,
                 "ai-gateway-api-key-deleted" => UserEventType.AiGatewayApiKeyDeleted,
                 "ai-gateway-api-key-quota-updated" => UserEventType.AiGatewayApiKeyQuotaUpdated,

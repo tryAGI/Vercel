@@ -135,7 +135,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39d2a20705988a8d>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>> GetProjectsAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede7e7c058d3e19656>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>> GetProjectsAsync(
             string? from = default,
             global::Vercel.GetProjectsGitForkProtection? gitForkProtection = default,
             string? limit = default,
@@ -242,7 +242,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39d2a20705988a8d>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>>> GetProjectsAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede7e7c058d3e19656>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>>> GetProjectsAsResponseAsync(
             string? from = default,
             global::Vercel.GetProjectsGitForkProtection? gitForkProtection = default,
             string? limit = default,
@@ -662,6 +662,38 @@ namespace Vercel
                                         h => h.Value));
                             }
                             //
+                            if ((int)__response.StatusCode == 404)
+                            {
+                                string? __content_404 = null;
+                                global::System.Exception? __exception_404 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_404 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_404 = __ex;
+                                }
+
+
+                                throw global::Vercel.ApiException.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_404,
+                                    responseBody: __content_404,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
+                            //
                             if ((int)__response.StatusCode == 410)
                             {
                                 string? __content_410 = null;
@@ -715,9 +747,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39d2a20705988a8d>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede7e7c058d3e19656>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39d2a20705988a8d>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede7e7c058d3e19656>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -747,9 +779,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39d2a20705988a8d>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede7e7c058d3e19656>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39d2a20705988a8d>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede7e7c058d3e19656>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

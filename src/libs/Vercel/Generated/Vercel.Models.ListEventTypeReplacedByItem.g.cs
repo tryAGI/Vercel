@@ -111,6 +111,26 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiGatewayAccessPolicyCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayAccessPolicyDeleted,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayAccessPolicyMemberAdded,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayAccessPolicyMemberRemoved,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayAccessPolicyUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         AiGatewayApiKeyCreated,
         /// <summary>
         ///
@@ -2847,6 +2867,11 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AgenticProvisioningTeamCreated => "agentic-provisioning-team-created",
                 ListEventTypeReplacedByItem.AiAlertInvestigation => "ai-alert-investigation",
                 ListEventTypeReplacedByItem.AiCodeReview => "ai-code-review",
+                ListEventTypeReplacedByItem.AiGatewayAccessPolicyCreated => "ai-gateway-access-policy-created",
+                ListEventTypeReplacedByItem.AiGatewayAccessPolicyDeleted => "ai-gateway-access-policy-deleted",
+                ListEventTypeReplacedByItem.AiGatewayAccessPolicyMemberAdded => "ai-gateway-access-policy-member-added",
+                ListEventTypeReplacedByItem.AiGatewayAccessPolicyMemberRemoved => "ai-gateway-access-policy-member-removed",
+                ListEventTypeReplacedByItem.AiGatewayAccessPolicyUpdated => "ai-gateway-access-policy-updated",
                 ListEventTypeReplacedByItem.AiGatewayApiKeyCreated => "ai-gateway-api-key-created",
                 ListEventTypeReplacedByItem.AiGatewayApiKeyDeleted => "ai-gateway-api-key-deleted",
                 ListEventTypeReplacedByItem.AiGatewayApiKeyQuotaUpdated => "ai-gateway-api-key-quota-updated",
@@ -3557,6 +3582,11 @@ namespace Vercel
                 "agentic-provisioning-team-created" => ListEventTypeReplacedByItem.AgenticProvisioningTeamCreated,
                 "ai-alert-investigation" => ListEventTypeReplacedByItem.AiAlertInvestigation,
                 "ai-code-review" => ListEventTypeReplacedByItem.AiCodeReview,
+                "ai-gateway-access-policy-created" => ListEventTypeReplacedByItem.AiGatewayAccessPolicyCreated,
+                "ai-gateway-access-policy-deleted" => ListEventTypeReplacedByItem.AiGatewayAccessPolicyDeleted,
+                "ai-gateway-access-policy-member-added" => ListEventTypeReplacedByItem.AiGatewayAccessPolicyMemberAdded,
+                "ai-gateway-access-policy-member-removed" => ListEventTypeReplacedByItem.AiGatewayAccessPolicyMemberRemoved,
+                "ai-gateway-access-policy-updated" => ListEventTypeReplacedByItem.AiGatewayAccessPolicyUpdated,
                 "ai-gateway-api-key-created" => ListEventTypeReplacedByItem.AiGatewayApiKeyCreated,
                 "ai-gateway-api-key-deleted" => ListEventTypeReplacedByItem.AiGatewayApiKeyDeleted,
                 "ai-gateway-api-key-quota-updated" => ListEventTypeReplacedByItem.AiGatewayApiKeyQuotaUpdated,
