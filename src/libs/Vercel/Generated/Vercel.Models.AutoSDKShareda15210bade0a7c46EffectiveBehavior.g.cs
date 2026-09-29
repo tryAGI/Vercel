@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     /// When the subscription change should take effect.
     /// </summary>
-    public enum AutoSDKShared7eafcec92f234b4aEffectiveBehavior
+    public enum AutoSDKShareda15210bade0a7c46EffectiveBehavior
     {
         /// <summary>
         ///
@@ -21,29 +21,29 @@ namespace Vercel
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class AutoSDKShared7eafcec92f234b4aEffectiveBehaviorExtensions
+    public static class AutoSDKShareda15210bade0a7c46EffectiveBehaviorExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this AutoSDKShared7eafcec92f234b4aEffectiveBehavior value)
+        public static string ToValueString(this AutoSDKShareda15210bade0a7c46EffectiveBehavior value)
         {
             return value switch
             {
-                AutoSDKShared7eafcec92f234b4aEffectiveBehavior.EndOfTerm => "end_of_term",
-                AutoSDKShared7eafcec92f234b4aEffectiveBehavior.Immediate => "immediate",
+                AutoSDKShareda15210bade0a7c46EffectiveBehavior.EndOfTerm => "end_of_term",
+                AutoSDKShareda15210bade0a7c46EffectiveBehavior.Immediate => "immediate",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static AutoSDKShared7eafcec92f234b4aEffectiveBehavior? ToEnum(string value)
+        public static AutoSDKShareda15210bade0a7c46EffectiveBehavior? ToEnum(string value)
         {
             return value switch
             {
-                "end_of_term" => AutoSDKShared7eafcec92f234b4aEffectiveBehavior.EndOfTerm,
-                "immediate" => AutoSDKShared7eafcec92f234b4aEffectiveBehavior.Immediate,
+                "end_of_term" => AutoSDKShareda15210bade0a7c46EffectiveBehavior.EndOfTerm,
+                "immediate" => AutoSDKShareda15210bade0a7c46EffectiveBehavior.Immediate,
                 _ => null,
             };
         }

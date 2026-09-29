@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     /// Optional metadata associated with the intent to update the Orb subscription with.
     /// </summary>
-    public sealed partial class AutoSDKShared7eafcec92f234b4aMetadata
+    public sealed partial class AutoSDKShareda15210bade0a7c46Metadata
     {
 
         /// <summary>

@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     /// Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects.
     /// </summary>
-    public sealed partial class AutoSDKShared7eafcec92f234b4aChangedResource
+    public sealed partial class AutoSDKShareda15210bade0a7c46ChangedResource
     {
         /// <summary>
         /// Resource IDs that were added.
@@ -60,7 +60,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared7eafcec92f234b4aChangedResource" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShareda15210bade0a7c46ChangedResource" /> class.
         /// </summary>
         /// <param name="productAlias">
         /// The alias of the product that was changed.
@@ -86,7 +86,7 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public AutoSDKShared7eafcec92f234b4aChangedResource(
+        public AutoSDKShareda15210bade0a7c46ChangedResource(
             string productAlias,
             string productId,
             double quantity,
@@ -105,9 +105,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared7eafcec92f234b4aChangedResource" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShareda15210bade0a7c46ChangedResource" /> class.
         /// </summary>
-        public AutoSDKShared7eafcec92f234b4aChangedResource()
+        public AutoSDKShareda15210bade0a7c46ChangedResource()
         {
         }
 
