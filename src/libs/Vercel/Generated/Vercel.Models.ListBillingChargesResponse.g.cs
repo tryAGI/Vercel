@@ -126,6 +126,13 @@ namespace Vercel
         public required string ServiceProviderName { get; set; }
 
         /// <summary>
+        /// Stable identifier for the charged product or item
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("SkuId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string SkuId { get; set; }
+
+        /// <summary>
         /// Charge metadata including the Vercel ProjectId and ProjectName information
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("Tags")]
@@ -167,6 +174,9 @@ namespace Vercel
         /// <param name="serviceProviderName">
         /// Entity making the resource/service available for purchase (v1.3)
         /// </param>
+        /// <param name="skuId">
+        /// Stable identifier for the charged product or item
+        /// </param>
         /// <param name="tags">
         /// Charge metadata including the Vercel ProjectId and ProjectName information
         /// </param>
@@ -203,6 +213,7 @@ namespace Vercel
             string pricingUnit,
             string serviceName,
             string serviceProviderName,
+            string skuId,
             global::System.Collections.Generic.Dictionary<string, string> tags,
             global::Vercel.ListBillingChargesResponseBillingCurrency billingCurrency,
             double? consumedQuantity,
@@ -229,6 +240,7 @@ namespace Vercel
             this.ServiceCategory = serviceCategory;
             this.ServiceName = serviceName ?? throw new global::System.ArgumentNullException(nameof(serviceName));
             this.ServiceProviderName = serviceProviderName ?? throw new global::System.ArgumentNullException(nameof(serviceProviderName));
+            this.SkuId = skuId ?? throw new global::System.ArgumentNullException(nameof(skuId));
             this.Tags = tags ?? throw new global::System.ArgumentNullException(nameof(tags));
         }
 

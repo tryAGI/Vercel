@@ -1,0 +1,56 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    /// The source envs on the trusted project that are allowed to access `to`.
+    /// </summary>
+    public sealed partial class AutoSDKSharedc367dfb98a4b6059ProjectsCustomAllowItemFromVariant2
+    {
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("preset")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKSharedc367dfb98a4b6059ProjectsCustomAllowItemFromVariant2PresetJsonConverter))]
+        public global::Vercel.AutoSDKSharedc367dfb98a4b6059ProjectsCustomAllowItemFromVariant2Preset Preset { get; set; }
+
+        /// <summary>
+        /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("slugs")]
+        public global::System.Collections.Generic.IList<string>? Slugs { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AutoSDKSharedc367dfb98a4b6059ProjectsCustomAllowItemFromVariant2" /> class.
+        /// </summary>
+        /// <param name="preset"></param>
+        /// <param name="slugs">
+        /// System environment slugs (`production`, `preview`) and/or custom environment slugs defined on the referenced project.
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public AutoSDKSharedc367dfb98a4b6059ProjectsCustomAllowItemFromVariant2(
+            global::Vercel.AutoSDKSharedc367dfb98a4b6059ProjectsCustomAllowItemFromVariant2Preset preset,
+            global::System.Collections.Generic.IList<string>? slugs)
+        {
+            this.Preset = preset;
+            this.Slugs = slugs;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AutoSDKSharedc367dfb98a4b6059ProjectsCustomAllowItemFromVariant2" /> class.
+        /// </summary>
+        public AutoSDKSharedc367dfb98a4b6059ProjectsCustomAllowItemFromVariant2()
+        {
+        }
+
+    }
+}

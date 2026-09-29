@@ -51,7 +51,7 @@ namespace Vercel
 
         /// <summary>
         /// List image tags<br/>
-        /// GET /v2/:teamSlug/:projectSlug/:repositoryName/tags/list List the tags in a repository.
+        /// GET /v2/:teamSlug/:projectSlug/:repositoryName/tags/list List the tags in a repository. The `last` parameter accepts the opaque cursor from a previous response's `Link` header. Unparseable cursors return HTTP 400 with code `invalid_cursor`.
         /// </summary>
         /// <param name="teamSlug">
         /// Single Docker repository team slug component.<br/>
@@ -95,7 +95,7 @@ namespace Vercel
         }
         /// <summary>
         /// List image tags<br/>
-        /// GET /v2/:teamSlug/:projectSlug/:repositoryName/tags/list List the tags in a repository.
+        /// GET /v2/:teamSlug/:projectSlug/:repositoryName/tags/list List the tags in a repository. The `last` parameter accepts the opaque cursor from a previous response's `Link` header. Unparseable cursors return HTTP 400 with code `invalid_cursor`.
         /// </summary>
         /// <param name="teamSlug">
         /// Single Docker repository team slug component.<br/>

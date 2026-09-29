@@ -33,7 +33,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("environments")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared2394a93f745adbf6> Environments { get; set; }
+        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared76d2d4f0d6cc3e47> Environments { get; set; }
 
         /// <summary>
         ///
@@ -179,7 +179,7 @@ namespace Vercel
         public Flag(
             double createdAt,
             string createdBy,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared2394a93f745adbf6> environments,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared76d2d4f0d6cc3e47> environments,
             string id,
             global::Vercel.FlagKind kind,
             string ownerId,
