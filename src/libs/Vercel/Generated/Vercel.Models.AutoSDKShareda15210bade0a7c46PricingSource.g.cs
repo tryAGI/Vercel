@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     /// The source used as the authoritative price for this intent.
     /// </summary>
-    public enum AutoSDKShared7eafcec92f234b4aPricingSource
+    public enum AutoSDKShareda15210bade0a7c46PricingSource
     {
         /// <summary>
         ///
@@ -21,29 +21,29 @@ namespace Vercel
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class AutoSDKShared7eafcec92f234b4aPricingSourceExtensions
+    public static class AutoSDKShareda15210bade0a7c46PricingSourceExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this AutoSDKShared7eafcec92f234b4aPricingSource value)
+        public static string ToValueString(this AutoSDKShareda15210bade0a7c46PricingSource value)
         {
             return value switch
             {
-                AutoSDKShared7eafcec92f234b4aPricingSource.Copper => "copper",
-                AutoSDKShared7eafcec92f234b4aPricingSource.Orb => "orb",
+                AutoSDKShareda15210bade0a7c46PricingSource.Copper => "copper",
+                AutoSDKShareda15210bade0a7c46PricingSource.Orb => "orb",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static AutoSDKShared7eafcec92f234b4aPricingSource? ToEnum(string value)
+        public static AutoSDKShareda15210bade0a7c46PricingSource? ToEnum(string value)
         {
             return value switch
             {
-                "copper" => AutoSDKShared7eafcec92f234b4aPricingSource.Copper,
-                "orb" => AutoSDKShared7eafcec92f234b4aPricingSource.Orb,
+                "copper" => AutoSDKShareda15210bade0a7c46PricingSource.Copper,
+                "orb" => AutoSDKShareda15210bade0a7c46PricingSource.Orb,
                 _ => null,
             };
         }

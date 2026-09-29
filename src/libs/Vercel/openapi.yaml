@@ -4782,7 +4782,7 @@
                                       "description": "Configuration input options for setting plan item quantity."
                                     },
                                     "output": {
-                                      "$ref": "#/components/schemas/AutoSDKShared7eafcec92f234b4a"
+                                      "$ref": "#/components/schemas/AutoSDKShareda15210bade0a7c46"
                                     },
                                     "type": {
                                       "type": "string",
@@ -4823,7 +4823,7 @@
                                       "description": "Configuration input options for increasing plan item quantity."
                                     },
                                     "output": {
-                                      "$ref": "#/components/schemas/AutoSDKShared7eafcec92f234b4a"
+                                      "$ref": "#/components/schemas/AutoSDKShareda15210bade0a7c46"
                                     },
                                     "type": {
                                       "type": "string",
@@ -4864,7 +4864,7 @@
                                       "description": "Configuration input options for decreasing plan item quantity."
                                     },
                                     "output": {
-                                      "$ref": "#/components/schemas/AutoSDKShared7eafcec92f234b4a"
+                                      "$ref": "#/components/schemas/AutoSDKShareda15210bade0a7c46"
                                     },
                                     "type": {
                                       "type": "string",
@@ -4913,7 +4913,7 @@
                                       "description": "Configuration input options for adjusting plan item quantity."
                                     },
                                     "output": {
-                                      "$ref": "#/components/schemas/AutoSDKShared7eafcec92f234b4a"
+                                      "$ref": "#/components/schemas/AutoSDKShareda15210bade0a7c46"
                                     },
                                     "type": {
                                       "type": "string",
@@ -12391,9 +12391,6 @@
           "429": {
             "description": ""
           },
-          "501": {
-            "description": ""
-          },
           "504": {
             "description": ""
           }
@@ -12677,7 +12674,7 @@
           "410": {
             "description": ""
           },
-          "501": {
+          "422": {
             "description": ""
           }
         },
@@ -117697,105 +117694,6 @@
         ],
         "type": "object"
       },
-      "AutoSDKShared7eafcec92f234b4a": {
-        "properties": {
-          "changedResources": {
-            "items": {
-              "properties": {
-                "addedResourceIds": {
-                  "items": {
-                    "type": "string"
-                  },
-                  "type": "array",
-                  "description": "Resource IDs that were added."
-                },
-                "effectiveAt": {
-                  "type": "string",
-                  "description": "When this resource change should take effect for downstream consumers."
-                },
-                "productAlias": {
-                  "type": "string",
-                  "description": "The alias of the product that was changed."
-                },
-                "productId": {
-                  "type": "string",
-                  "description": "The ID of the product that was changed."
-                },
-                "quantity": {
-                  "type": "number",
-                  "description": "The resulting quantity after this change."
-                },
-                "removedResourceIds": {
-                  "items": {
-                    "type": "string"
-                  },
-                  "type": "array",
-                  "description": "Resource IDs that were removed."
-                },
-                "resourceIds": {
-                  "items": {
-                    "type": "string"
-                  },
-                  "type": "array",
-                  "description": "The full set of resource IDs after the change."
-                }
-              },
-              "required": [
-                "productAlias",
-                "productId",
-                "quantity"
-              ],
-              "type": "object",
-              "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
-            },
-            "type": "array",
-            "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
-          },
-          "effectiveBehavior": {
-            "type": "string",
-            "enum": [
-              "end_of_term",
-              "immediate"
-            ],
-            "description": "When the subscription change should take effect."
-          },
-          "metadata": {
-            "additionalProperties": {
-              "type": "string"
-            },
-            "type": "object",
-            "description": "Optional metadata associated with the intent to update the Orb subscription with."
-          },
-          "orbPriceId": {
-            "type": "string",
-            "description": "The Orb price ID for the subscription item being modified."
-          },
-          "pendingSubscriptionChangeId": {
-            "type": "string",
-            "description": "The ID of the pending subscription change if there is one."
-          },
-          "pricingSource": {
-            "type": "string",
-            "enum": [
-              "copper",
-              "orb"
-            ],
-            "description": "The source used as the authoritative price for this intent."
-          },
-          "productId": {
-            "type": "string",
-            "description": "The product ID associated with this intent."
-          }
-        },
-        "required": [
-          "effectiveBehavior",
-          "orbPriceId",
-          "pricingSource",
-          "productId"
-        ],
-        "type": "object",
-        "description": "Output returned after configuring an OrbSubscriptionIntent."
-      },
       "AutoSDKShared7ff9e6410c724535": {
         "oneOf": [
           {
@@ -120544,6 +120442,127 @@
             "type": "object"
           }
         ]
+      },
+      "AutoSDKShareda15210bade0a7c46": {
+        "properties": {
+          "changedResources": {
+            "items": {
+              "properties": {
+                "addedResourceIds": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array",
+                  "description": "Resource IDs that were added."
+                },
+                "effectiveAt": {
+                  "type": "string",
+                  "description": "When this resource change should take effect for downstream consumers."
+                },
+                "productAlias": {
+                  "type": "string",
+                  "description": "The alias of the product that was changed."
+                },
+                "productId": {
+                  "type": "string",
+                  "description": "The ID of the product that was changed."
+                },
+                "quantity": {
+                  "type": "number",
+                  "description": "The resulting quantity after this change."
+                },
+                "removedResourceIds": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array",
+                  "description": "Resource IDs that were removed."
+                },
+                "resourceIds": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array",
+                  "description": "The full set of resource IDs after the change."
+                }
+              },
+              "required": [
+                "productAlias",
+                "productId",
+                "quantity"
+              ],
+              "type": "object",
+              "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+            },
+            "type": "array",
+            "description": "Resources that were changed as part of this intent. Tracks all logical changes including the primary change and any side effects."
+          },
+          "customerTimezone": {
+            "type": "string",
+            "description": "The Orb customer's timezone when the intent was created. Omitted for legacy intents."
+          },
+          "effectiveBehavior": {
+            "type": "string",
+            "enum": [
+              "end_of_term",
+              "immediate"
+            ],
+            "description": "When the subscription change should take effect."
+          },
+          "metadata": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "description": "Optional metadata associated with the intent to update the Orb subscription with."
+          },
+          "orbPriceId": {
+            "type": "string",
+            "description": "The Orb price ID for the subscription item being modified."
+          },
+          "pendingSubscriptionChangeId": {
+            "type": "string",
+            "description": "The ID of the pending subscription change if there is one."
+          },
+          "pricingSource": {
+            "type": "string",
+            "enum": [
+              "copper",
+              "orb"
+            ],
+            "description": "The source used as the authoritative price for this intent."
+          },
+          "productId": {
+            "type": "string",
+            "description": "The product ID associated with this intent."
+          },
+          "referenceBillingPeriod": {
+            "properties": {
+              "endDate": {
+                "type": "string",
+                "description": "The exclusive end of the reference billing period."
+              },
+              "startDate": {
+                "type": "string",
+                "description": "The inclusive start of the reference billing period."
+              }
+            },
+            "required": [
+              "endDate",
+              "startDate"
+            ],
+            "type": "object",
+            "description": "The canonical reference-product billing period at intent creation. Omitted for historical intents."
+          }
+        },
+        "required": [
+          "effectiveBehavior",
+          "orbPriceId",
+          "pricingSource",
+          "productId"
+        ],
+        "type": "object",
+        "description": "Output returned after configuring an OrbSubscriptionIntent."
       },
       "AutoSDKShareda223f19b9c37327f": {
         "properties": {
