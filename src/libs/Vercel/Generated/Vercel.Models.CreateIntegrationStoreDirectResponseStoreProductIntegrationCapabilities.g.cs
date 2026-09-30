@@ -59,6 +59,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mcpConfiguration")]
+        public bool? McpConfiguration { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mcpReadonly")]
         public bool? McpReadonly { get; set; }
 
@@ -134,6 +140,7 @@ namespace Vercel
         /// <param name="importResource"></param>
         /// <param name="maxAllowedTeams"></param>
         /// <param name="mcp"></param>
+        /// <param name="mcpConfiguration"></param>
         /// <param name="mcpReadonly"></param>
         /// <param name="nativeImportResource"></param>
         /// <param name="provisioning"></param>
@@ -156,6 +163,7 @@ namespace Vercel
             bool? importResource,
             double? maxAllowedTeams,
             bool? mcp,
+            bool? mcpConfiguration,
             bool? mcpReadonly,
             bool? nativeImportResource,
             bool? provisioning,
@@ -175,6 +183,7 @@ namespace Vercel
             this.ImportResource = importResource;
             this.MaxAllowedTeams = maxAllowedTeams;
             this.Mcp = mcp;
+            this.McpConfiguration = mcpConfiguration;
             this.McpReadonly = mcpReadonly;
             this.NativeImportResource = nativeImportResource;
             this.Provisioning = provisioning;

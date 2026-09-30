@@ -51,7 +51,7 @@ namespace Vercel
 
         /// <summary>
         /// Delete a sandbox<br/>
-        /// Deletes a sandbox by name. If sandboxes are currently running, they will be stopped first. This operation deletes all sandbox entities with the given name and the named sandbox metadata.
+        /// Deletes a sandbox by name. If sandboxes are currently running, they will be stopped first. This operation deletes all sandbox entities with the given name and the named sandbox metadata. Returns 404 if the sandbox does not exist or was deleted by a concurrent request.
         /// </summary>
         /// <param name="name">
         /// The sandbox name to delete.<br/>
@@ -96,7 +96,7 @@ namespace Vercel
         }
         /// <summary>
         /// Delete a sandbox<br/>
-        /// Deletes a sandbox by name. If sandboxes are currently running, they will be stopped first. This operation deletes all sandbox entities with the given name and the named sandbox metadata.
+        /// Deletes a sandbox by name. If sandboxes are currently running, they will be stopped first. This operation deletes all sandbox entities with the given name and the named sandbox metadata. Returns 404 if the sandbox does not exist or was deleted by a concurrent request.
         /// </summary>
         /// <param name="name">
         /// The sandbox name to delete.<br/>
