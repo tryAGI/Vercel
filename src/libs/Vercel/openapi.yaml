@@ -60409,12 +60409,283 @@
                 "schema": {
                   "oneOf": [
                     {
-                      "$ref": "#/components/schemas/AutoSDKShared268fc08d868dfab3"
+                      "properties": {
+                        "comment": {
+                          "type": "string"
+                        },
+                        "configurationId": {
+                          "nullable": true,
+                          "type": "string"
+                        },
+                        "contentHint": {
+                          "type": "object",
+                          "nullable": true,
+                          "additionalProperties": true,
+                          "description": "Provider-specific content hint metadata."
+                        },
+                        "createdAt": {
+                          "type": "number"
+                        },
+                        "createdBy": {
+                          "nullable": true,
+                          "type": "string"
+                        },
+                        "customEnvironmentIds": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "decrypted": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
+                        },
+                        "edgeConfigId": {
+                          "nullable": true,
+                          "type": "string"
+                        },
+                        "edgeConfigTokenId": {
+                          "nullable": true,
+                          "type": "string"
+                        },
+                        "gitBranch": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "string"
+                        },
+                        "key": {
+                          "type": "string"
+                        },
+                        "securityIssues": {
+                          "items": {
+                            "type": "string",
+                            "enum": [
+                              "flags-secret-needs-split",
+                              "readable-secret"
+                            ]
+                          },
+                          "type": "array"
+                        },
+                        "sunsetSecretId": {
+                          "type": "string",
+                          "description": "This is used to identify variables that have been migrated from type secret to sensitive."
+                        },
+                        "system": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
+                        },
+                        "target": {
+                          "oneOf": [
+                            {
+                              "items": {
+                                "type": "string",
+                                "enum": [
+                                  "development",
+                                  "development",
+                                  "preview",
+                                  "preview",
+                                  "production"
+                                ]
+                              },
+                              "type": "array"
+                            },
+                            {
+                              "type": "string",
+                              "enum": [
+                                "development",
+                                "development",
+                                "preview",
+                                "preview",
+                                "production"
+                              ]
+                            }
+                          ]
+                        },
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "encrypted",
+                            "plain",
+                            "secret",
+                            "sensitive",
+                            "system"
+                          ]
+                        },
+                        "updatedAt": {
+                          "type": "number"
+                        },
+                        "updatedBy": {
+                          "nullable": true,
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        },
+                        "visibility": {
+                          "type": "string",
+                          "enum": [
+                            "config",
+                            "secret"
+                          ],
+                          "description": "User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior."
+                        }
+                      },
+                      "required": [
+                        "key",
+                        "securityIssues",
+                        "type",
+                        "value"
+                      ],
+                      "type": "object"
                     },
                     {
                       "properties": {
                         "envs": {
-                          "$ref": "#/components/schemas/AutoSDKSharedbf1863b18d477dc9"
+                          "items": {
+                            "properties": {
+                              "comment": {
+                                "type": "string"
+                              },
+                              "configurationId": {
+                                "nullable": true,
+                                "type": "string"
+                              },
+                              "contentHint": {
+                                "type": "object",
+                                "nullable": true,
+                                "additionalProperties": true,
+                                "description": "Provider-specific content hint metadata."
+                              },
+                              "createdAt": {
+                                "type": "number"
+                              },
+                              "createdBy": {
+                                "nullable": true,
+                                "type": "string"
+                              },
+                              "customEnvironmentIds": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
+                              },
+                              "decrypted": {
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true
+                                ]
+                              },
+                              "edgeConfigId": {
+                                "nullable": true,
+                                "type": "string"
+                              },
+                              "edgeConfigTokenId": {
+                                "nullable": true,
+                                "type": "string"
+                              },
+                              "gitBranch": {
+                                "type": "string"
+                              },
+                              "id": {
+                                "type": "string"
+                              },
+                              "key": {
+                                "type": "string"
+                              },
+                              "securityIssues": {
+                                "items": {
+                                  "type": "string",
+                                  "enum": [
+                                    "flags-secret-needs-split",
+                                    "readable-secret"
+                                  ]
+                                },
+                                "type": "array"
+                              },
+                              "sunsetSecretId": {
+                                "type": "string",
+                                "description": "This is used to identify variables that have been migrated from type secret to sensitive."
+                              },
+                              "system": {
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true
+                                ]
+                              },
+                              "target": {
+                                "oneOf": [
+                                  {
+                                    "items": {
+                                      "type": "string",
+                                      "enum": [
+                                        "development",
+                                        "development",
+                                        "preview",
+                                        "preview",
+                                        "production"
+                                      ]
+                                    },
+                                    "type": "array"
+                                  },
+                                  {
+                                    "type": "string",
+                                    "enum": [
+                                      "development",
+                                      "development",
+                                      "preview",
+                                      "preview",
+                                      "production"
+                                    ]
+                                  }
+                                ]
+                              },
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "encrypted",
+                                  "plain",
+                                  "secret",
+                                  "sensitive",
+                                  "system"
+                                ]
+                              },
+                              "updatedAt": {
+                                "type": "number"
+                              },
+                              "updatedBy": {
+                                "nullable": true,
+                                "type": "string"
+                              },
+                              "value": {
+                                "type": "string"
+                              },
+                              "visibility": {
+                                "type": "string",
+                                "enum": [
+                                  "config",
+                                  "secret"
+                                ],
+                                "description": "User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior."
+                              }
+                            },
+                            "required": [
+                              "key",
+                              "securityIssues",
+                              "type",
+                              "value"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "array"
                         },
                         "pagination": {
                           "$ref": "#/components/schemas/Pagination"
@@ -60429,7 +60700,144 @@
                     {
                       "properties": {
                         "envs": {
-                          "$ref": "#/components/schemas/AutoSDKSharedbf1863b18d477dc9"
+                          "items": {
+                            "properties": {
+                              "comment": {
+                                "type": "string"
+                              },
+                              "configurationId": {
+                                "nullable": true,
+                                "type": "string"
+                              },
+                              "contentHint": {
+                                "type": "object",
+                                "nullable": true,
+                                "additionalProperties": true,
+                                "description": "Provider-specific content hint metadata."
+                              },
+                              "createdAt": {
+                                "type": "number"
+                              },
+                              "createdBy": {
+                                "nullable": true,
+                                "type": "string"
+                              },
+                              "customEnvironmentIds": {
+                                "items": {
+                                  "type": "string"
+                                },
+                                "type": "array"
+                              },
+                              "decrypted": {
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true
+                                ]
+                              },
+                              "edgeConfigId": {
+                                "nullable": true,
+                                "type": "string"
+                              },
+                              "edgeConfigTokenId": {
+                                "nullable": true,
+                                "type": "string"
+                              },
+                              "gitBranch": {
+                                "type": "string"
+                              },
+                              "id": {
+                                "type": "string"
+                              },
+                              "key": {
+                                "type": "string"
+                              },
+                              "securityIssues": {
+                                "items": {
+                                  "type": "string",
+                                  "enum": [
+                                    "flags-secret-needs-split",
+                                    "readable-secret"
+                                  ]
+                                },
+                                "type": "array"
+                              },
+                              "sunsetSecretId": {
+                                "type": "string",
+                                "description": "This is used to identify variables that have been migrated from type secret to sensitive."
+                              },
+                              "system": {
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true
+                                ]
+                              },
+                              "target": {
+                                "oneOf": [
+                                  {
+                                    "items": {
+                                      "type": "string",
+                                      "enum": [
+                                        "development",
+                                        "development",
+                                        "preview",
+                                        "preview",
+                                        "production"
+                                      ]
+                                    },
+                                    "type": "array"
+                                  },
+                                  {
+                                    "type": "string",
+                                    "enum": [
+                                      "development",
+                                      "development",
+                                      "preview",
+                                      "preview",
+                                      "production"
+                                    ]
+                                  }
+                                ]
+                              },
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "encrypted",
+                                  "plain",
+                                  "secret",
+                                  "sensitive",
+                                  "system"
+                                ]
+                              },
+                              "updatedAt": {
+                                "type": "number"
+                              },
+                              "updatedBy": {
+                                "nullable": true,
+                                "type": "string"
+                              },
+                              "value": {
+                                "type": "string"
+                              },
+                              "visibility": {
+                                "type": "string",
+                                "enum": [
+                                  "config",
+                                  "secret"
+                                ],
+                                "description": "User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior."
+                              }
+                            },
+                            "required": [
+                              "key",
+                              "securityIssues",
+                              "type",
+                              "value"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "array"
                         },
                         "hiddenProductionEnvCount": {
                           "type": "number"
@@ -61306,33 +61714,8 @@
                         "id": {
                           "type": "string"
                         },
-                        "internalContentHint": {
-                          "nullable": true,
-                          "properties": {
-                            "encryptedValue": {
-                              "type": "string",
-                              "description": "Contains the `value` of the env variable, encrypted with a special key to make decryption possible in the subscriber Lambda."
-                            },
-                            "type": {
-                              "type": "string",
-                              "enum": [
-                                "flags-secret"
-                              ]
-                            }
-                          },
-                          "required": [
-                            "encryptedValue",
-                            "type"
-                          ],
-                          "type": "object",
-                          "description": "Similar to `contentHints`, but should not be exposed to the user."
-                        },
                         "key": {
                           "type": "string"
-                        },
-                        "legacyValue": {
-                          "type": "string",
-                          "description": "Legacy now-encryption ciphertext, present after migration swaps value/vsmValue"
                         },
                         "sunsetSecretId": {
                           "type": "string",
@@ -61445,6 +61828,122 @@
                         "id": {
                           "type": "string"
                         },
+                        "key": {
+                          "type": "string"
+                        },
+                        "sunsetSecretId": {
+                          "type": "string",
+                          "description": "This is used to identify variables that have been migrated from type secret to sensitive."
+                        },
+                        "target": {
+                          "oneOf": [
+                            {
+                              "items": {
+                                "type": "string",
+                                "enum": [
+                                  "production",
+                                  "preview",
+                                  "development"
+                                ]
+                              },
+                              "type": "array"
+                            },
+                            {
+                              "type": "string",
+                              "enum": [
+                                "production",
+                                "preview",
+                                "development"
+                              ]
+                            }
+                          ]
+                        },
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "encrypted",
+                            "plain",
+                            "secret",
+                            "sensitive",
+                            "system"
+                          ]
+                        },
+                        "updatedAt": {
+                          "type": "number"
+                        },
+                        "updatedBy": {
+                          "nullable": true,
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        },
+                        "visibility": {
+                          "type": "string",
+                          "enum": [
+                            "config",
+                            "secret"
+                          ],
+                          "description": "User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior."
+                        }
+                      },
+                      "required": [
+                        "decrypted",
+                        "key",
+                        "type",
+                        "value"
+                      ],
+                      "type": "object"
+                    },
+                    {
+                      "properties": {
+                        "comment": {
+                          "type": "string"
+                        },
+                        "configurationId": {
+                          "nullable": true,
+                          "type": "string"
+                        },
+                        "contentHint": {
+                          "type": "object",
+                          "nullable": true,
+                          "additionalProperties": true,
+                          "description": "Provider-specific content hint metadata."
+                        },
+                        "createdAt": {
+                          "type": "number"
+                        },
+                        "createdBy": {
+                          "nullable": true,
+                          "type": "string"
+                        },
+                        "customEnvironmentIds": {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        },
+                        "decrypted": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
+                        },
+                        "edgeConfigId": {
+                          "nullable": true,
+                          "type": "string"
+                        },
+                        "edgeConfigTokenId": {
+                          "nullable": true,
+                          "type": "string"
+                        },
+                        "gitBranch": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "string"
+                        },
                         "internalContentHint": {
                           "nullable": true,
                           "properties": {
@@ -61481,12 +61980,7 @@
                           "oneOf": [
                             {
                               "items": {
-                                "type": "string",
-                                "enum": [
-                                  "production",
-                                  "preview",
-                                  "development"
-                                ]
+                                "type": "string"
                               },
                               "type": "array"
                             },
@@ -110767,168 +111261,6 @@
         ],
         "type": "object"
       },
-      "AutoSDKShared268fc08d868dfab3": {
-        "properties": {
-          "comment": {
-            "type": "string"
-          },
-          "configurationId": {
-            "nullable": true,
-            "type": "string"
-          },
-          "contentHint": {
-            "type": "object",
-            "nullable": true,
-            "additionalProperties": true,
-            "description": "Provider-specific content hint metadata."
-          },
-          "createdAt": {
-            "type": "number"
-          },
-          "createdBy": {
-            "nullable": true,
-            "type": "string"
-          },
-          "customEnvironmentIds": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "decrypted": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "edgeConfigId": {
-            "nullable": true,
-            "type": "string"
-          },
-          "edgeConfigTokenId": {
-            "nullable": true,
-            "type": "string"
-          },
-          "gitBranch": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          },
-          "internalContentHint": {
-            "nullable": true,
-            "properties": {
-              "encryptedValue": {
-                "type": "string",
-                "description": "Contains the `value` of the env variable, encrypted with a special key to make decryption possible in the subscriber Lambda."
-              },
-              "type": {
-                "type": "string",
-                "enum": [
-                  "flags-secret"
-                ]
-              }
-            },
-            "required": [
-              "encryptedValue",
-              "type"
-            ],
-            "type": "object",
-            "description": "Similar to `contentHints`, but should not be exposed to the user."
-          },
-          "key": {
-            "type": "string"
-          },
-          "legacyValue": {
-            "type": "string",
-            "description": "Legacy now-encryption ciphertext, present after migration swaps value/vsmValue"
-          },
-          "securityIssues": {
-            "items": {
-              "type": "string",
-              "enum": [
-                "flags-secret-needs-split",
-                "readable-secret"
-              ]
-            },
-            "type": "array"
-          },
-          "sunsetSecretId": {
-            "type": "string",
-            "description": "This is used to identify variables that have been migrated from type secret to sensitive."
-          },
-          "system": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "target": {
-            "oneOf": [
-              {
-                "items": {
-                  "type": "string",
-                  "enum": [
-                    "development",
-                    "development",
-                    "preview",
-                    "preview",
-                    "production"
-                  ]
-                },
-                "type": "array"
-              },
-              {
-                "type": "string",
-                "enum": [
-                  "development",
-                  "development",
-                  "preview",
-                  "preview",
-                  "production"
-                ]
-              }
-            ]
-          },
-          "type": {
-            "type": "string",
-            "enum": [
-              "encrypted",
-              "plain",
-              "secret",
-              "sensitive",
-              "system"
-            ]
-          },
-          "updatedAt": {
-            "type": "number"
-          },
-          "updatedBy": {
-            "nullable": true,
-            "type": "string"
-          },
-          "value": {
-            "type": "string"
-          },
-          "visibility": {
-            "type": "string",
-            "enum": [
-              "config",
-              "secret"
-            ],
-            "description": "User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior."
-          }
-        },
-        "required": [
-          "key",
-          "securityIssues",
-          "type",
-          "value"
-        ],
-        "type": "object"
-      },
       "AutoSDKShared26c4879805a3820d": {
         "type": "array",
         "items": {
@@ -123321,12 +123653,6 @@
             "type": "object"
           }
         ]
-      },
-      "AutoSDKSharedbf1863b18d477dc9": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKShared268fc08d868dfab3"
-        },
-        "type": "array"
       },
       "AutoSDKSharedc0ec89e0d0c59429": {
         "properties": {

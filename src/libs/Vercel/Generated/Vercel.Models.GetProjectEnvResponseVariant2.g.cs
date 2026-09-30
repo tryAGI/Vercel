@@ -48,7 +48,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("decrypted")]
-        public bool? Decrypted { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Decrypted { get; set; }
 
         /// <summary>
         ///
@@ -75,23 +76,11 @@ namespace Vercel
         public string? Id { get; set; }
 
         /// <summary>
-        /// Similar to `contentHints`, but should not be exposed to the user.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("internalContentHint")]
-        public global::Vercel.GetProjectEnvResponseVariant2InternalContentHint? InternalContentHint { get; set; }
-
-        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("key")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Key { get; set; }
-
-        /// <summary>
-        /// Legacy now-encryption ciphertext, present after migration swaps value/vsmValue
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("legacyValue")]
-        public string? LegacyValue { get; set; }
 
         /// <summary>
         /// This is used to identify variables that have been migrated from type secret to sensitive.
@@ -149,6 +138,7 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetProjectEnvResponseVariant2" /> class.
         /// </summary>
+        /// <param name="decrypted"></param>
         /// <param name="key"></param>
         /// <param name="type"></param>
         /// <param name="value"></param>
@@ -160,17 +150,10 @@ namespace Vercel
         /// <param name="createdAt"></param>
         /// <param name="createdBy"></param>
         /// <param name="customEnvironmentIds"></param>
-        /// <param name="decrypted"></param>
         /// <param name="edgeConfigId"></param>
         /// <param name="edgeConfigTokenId"></param>
         /// <param name="gitBranch"></param>
         /// <param name="id"></param>
-        /// <param name="internalContentHint">
-        /// Similar to `contentHints`, but should not be exposed to the user.
-        /// </param>
-        /// <param name="legacyValue">
-        /// Legacy now-encryption ciphertext, present after migration swaps value/vsmValue
-        /// </param>
         /// <param name="sunsetSecretId">
         /// This is used to identify variables that have been migrated from type secret to sensitive.
         /// </param>
@@ -184,6 +167,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectEnvResponseVariant2(
+            bool decrypted,
             string key,
             global::Vercel.GetProjectEnvResponseVariant2Type type,
             string value,
@@ -193,13 +177,10 @@ namespace Vercel
             double? createdAt,
             string? createdBy,
             global::System.Collections.Generic.IList<string>? customEnvironmentIds,
-            bool? decrypted,
             string? edgeConfigId,
             string? edgeConfigTokenId,
             string? gitBranch,
             string? id,
-            global::Vercel.GetProjectEnvResponseVariant2InternalContentHint? internalContentHint,
-            string? legacyValue,
             string? sunsetSecretId,
             global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant2TargetItem>, global::Vercel.GetProjectEnvResponseVariant2Target?>? target,
             double? updatedAt,
@@ -217,9 +198,7 @@ namespace Vercel
             this.EdgeConfigTokenId = edgeConfigTokenId;
             this.GitBranch = gitBranch;
             this.Id = id;
-            this.InternalContentHint = internalContentHint;
             this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
-            this.LegacyValue = legacyValue;
             this.SunsetSecretId = sunsetSecretId;
             this.Target = target;
             this.Type = type;
