@@ -3,10 +3,10 @@
 namespace Vercel.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class TeamSamlRolesEnum2JsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.TeamSamlRolesEnum2>
+    public sealed class TeamSamlRolesEnumTeamPermissionJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.TeamSamlRolesEnumTeamPermission>
     {
         /// <inheritdoc />
-        public override global::Vercel.TeamSamlRolesEnum2 Read(
+        public override global::Vercel.TeamSamlRolesEnumTeamPermission Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Vercel.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Vercel.TeamSamlRolesEnum2Extensions.ToEnum(stringValue) ?? default;
+                        return global::Vercel.TeamSamlRolesEnumTeamPermissionExtensions.ToEnum(stringValue) ?? default;
                     }
 
                     break;
@@ -26,11 +26,11 @@ namespace Vercel.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Vercel.TeamSamlRolesEnum2)numValue;
+                    return (global::Vercel.TeamSamlRolesEnumTeamPermission)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Vercel.TeamSamlRolesEnum2);
+                    return default(global::Vercel.TeamSamlRolesEnumTeamPermission);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,12 +42,12 @@ namespace Vercel.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Vercel.TeamSamlRolesEnum2 value,
+            global::Vercel.TeamSamlRolesEnumTeamPermission value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
 
-            writer.WriteStringValue(global::Vercel.TeamSamlRolesEnum2Extensions.ToValueString(value));
+            writer.WriteStringValue(global::Vercel.TeamSamlRolesEnumTeamPermissionExtensions.ToValueString(value));
         }
     }
 }
