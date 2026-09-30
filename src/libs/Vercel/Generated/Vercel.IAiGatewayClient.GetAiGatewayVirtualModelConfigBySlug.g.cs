@@ -2,7 +2,7 @@
 
 namespace Vercel
 {
-    public partial interface IApiAiGatewayClient
+    public partial interface IAiGatewayClient
     {
         /// <summary>
         /// Get virtual model config<br/>

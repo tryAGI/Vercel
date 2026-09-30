@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class AutoSDKSharedd059cb0ee80bd86dJwksKey
+    public sealed partial class AutoSDKShared448ea965c003fe05JwksKey
     {
         /// <summary>
         /// JSON Web Key type.
@@ -25,8 +25,8 @@ namespace Vercel
         /// Intended key use: signing or encryption.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("use")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKSharedd059cb0ee80bd86dJwksKeyUseJsonConverter))]
-        public global::Vercel.AutoSDKSharedd059cb0ee80bd86dJwksKeyUse? Use { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared448ea965c003fe05JwksKeyUseJsonConverter))]
+        public global::Vercel.AutoSDKShared448ea965c003fe05JwksKeyUse? Use { get; set; }
 
         /// <summary>
         /// Operations permitted for this key.
@@ -47,7 +47,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKSharedd059cb0ee80bd86dJwksKey" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared448ea965c003fe05JwksKey" /> class.
         /// </summary>
         /// <param name="kty">
         /// JSON Web Key type.
@@ -67,10 +67,10 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public AutoSDKSharedd059cb0ee80bd86dJwksKey(
+        public AutoSDKShared448ea965c003fe05JwksKey(
             string kty,
             string? kid,
-            global::Vercel.AutoSDKSharedd059cb0ee80bd86dJwksKeyUse? use,
+            global::Vercel.AutoSDKShared448ea965c003fe05JwksKeyUse? use,
             global::System.Collections.Generic.IList<string>? keyOps,
             string? alg)
         {
@@ -82,9 +82,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKSharedd059cb0ee80bd86dJwksKey" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared448ea965c003fe05JwksKey" /> class.
         /// </summary>
-        public AutoSDKSharedd059cb0ee80bd86dJwksKey()
+        public AutoSDKShared448ea965c003fe05JwksKey()
         {
         }
 

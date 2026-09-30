@@ -129,7 +129,7 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: "/v1/ai-gateway/rules",
+                                path: "/ai-gateway/rules",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("includeDisabled", includeDisabled?.ToValueString())
@@ -197,7 +197,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "ListAiGatewayRules",
                                 methodName: "ListAiGatewayRulesAsync",
-                                pathTemplate: "\"/v1/ai-gateway/rules\"",
+                                pathTemplate: "\"/ai-gateway/rules\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
@@ -231,7 +231,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "ListAiGatewayRules",
                                 methodName: "ListAiGatewayRulesAsync",
-                                pathTemplate: "\"/v1/ai-gateway/rules\"",
+                                pathTemplate: "\"/ai-gateway/rules\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
@@ -272,7 +272,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "ListAiGatewayRules",
                                 methodName: "ListAiGatewayRulesAsync",
-                                pathTemplate: "\"/v1/ai-gateway/rules\"",
+                                pathTemplate: "\"/ai-gateway/rules\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
@@ -320,7 +320,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "ListAiGatewayRules",
                                 methodName: "ListAiGatewayRulesAsync",
-                                pathTemplate: "\"/v1/ai-gateway/rules\"",
+                                pathTemplate: "\"/ai-gateway/rules\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
@@ -342,7 +342,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "ListAiGatewayRules",
                                 methodName: "ListAiGatewayRulesAsync",
-                                pathTemplate: "\"/v1/ai-gateway/rules\"",
+                                pathTemplate: "\"/ai-gateway/rules\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
