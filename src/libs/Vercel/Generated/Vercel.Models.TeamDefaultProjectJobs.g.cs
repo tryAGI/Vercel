@@ -11,6 +11,12 @@ namespace Vercel
         /// <summary>
         /// Default job configuration applied to new projects created in this team.
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("flag-definitions-present")]
+        public global::Vercel.TeamDefaultProjectJobsFlagDefinitionsPresent? FlagDefinitionsPresent { get; set; }
+
+        /// <summary>
+        /// Default job configuration applied to new projects created in this team.
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lint")]
         public global::Vercel.TeamDefaultProjectJobsLint? Lint { get; set; }
 
@@ -35,6 +41,9 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="TeamDefaultProjectJobs" /> class.
         /// </summary>
+        /// <param name="flagDefinitionsPresent">
+        /// Default job configuration applied to new projects created in this team.
+        /// </param>
         /// <param name="lint">
         /// Default job configuration applied to new projects created in this team.
         /// </param>
@@ -48,10 +57,12 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public TeamDefaultProjectJobs(
+            global::Vercel.TeamDefaultProjectJobsFlagDefinitionsPresent? flagDefinitionsPresent,
             global::Vercel.TeamDefaultProjectJobsLint? lint,
             global::Vercel.TeamDefaultProjectJobsMfeConfigPresent? mfeConfigPresent,
             global::Vercel.TeamDefaultProjectJobsTypecheck? typecheck)
         {
+            this.FlagDefinitionsPresent = flagDefinitionsPresent;
             this.Lint = lint;
             this.MfeConfigPresent = mfeConfigPresent;
             this.Typecheck = typecheck;

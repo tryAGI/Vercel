@@ -11,6 +11,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("flag-definitions-present")]
+        public global::Vercel.GetMicrofrontendsInGroupResponseProjectJobsFlagDefinitionsPresent? FlagDefinitionsPresent { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lint")]
         public global::Vercel.GetMicrofrontendsInGroupResponseProjectJobsLint? Lint { get; set; }
 
@@ -35,6 +41,7 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetMicrofrontendsInGroupResponseProjectJobs" /> class.
         /// </summary>
+        /// <param name="flagDefinitionsPresent"></param>
         /// <param name="lint"></param>
         /// <param name="mfeConfigPresent"></param>
         /// <param name="typecheck"></param>
@@ -42,10 +49,12 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetMicrofrontendsInGroupResponseProjectJobs(
+            global::Vercel.GetMicrofrontendsInGroupResponseProjectJobsFlagDefinitionsPresent? flagDefinitionsPresent,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectJobsLint? lint,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectJobsMfeConfigPresent? mfeConfigPresent,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectJobsTypecheck? typecheck)
         {
+            this.FlagDefinitionsPresent = flagDefinitionsPresent;
             this.Lint = lint;
             this.MfeConfigPresent = mfeConfigPresent;
             this.Typecheck = typecheck;
