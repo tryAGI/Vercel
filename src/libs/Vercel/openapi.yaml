@@ -1771,7 +1771,7 @@
         ]
       }
     },
-    "/v1/ai-gateway/virtual-model-configs": {
+    "/ai-gateway/virtual-model-configs": {
       "post": {
         "description": "Create a virtual model config (VMC)",
         "operationId": "createAiGatewayVirtualModelConfig",
@@ -1782,7 +1782,7 @@
         ],
         "summary": "Create virtual model config",
         "tags": [
-          "api-ai-gateway"
+          "ai-gateway"
         ],
         "responses": {
           "201": {
@@ -1851,7 +1851,7 @@
         ],
         "summary": "Get virtual model config",
         "tags": [
-          "api-ai-gateway"
+          "ai-gateway"
         ],
         "responses": {
           "200": {
@@ -1950,7 +1950,7 @@
         ],
         "summary": "Update virtual model config",
         "tags": [
-          "api-ai-gateway"
+          "ai-gateway"
         ],
         "responses": {
           "200": {
@@ -2016,7 +2016,7 @@
         ],
         "summary": "Delete virtual model config",
         "tags": [
-          "api-ai-gateway"
+          "ai-gateway"
         ],
         "responses": {
           "204": {
@@ -2110,7 +2110,7 @@
         ]
       }
     },
-    "/v1/ai-gateway/virtual-model-configs/list": {
+    "/ai-gateway/virtual-model-configs/list": {
       "get": {
         "description": "List virtual model configs. With `ownerId`, returns all of that team's VMCs. Without it, pages through VMCs across all teams (newest-first, `limit`/`cursor`).",
         "operationId": "listAiGatewayVirtualModelConfigs",
@@ -2121,7 +2121,7 @@
         ],
         "summary": "List virtual model configs",
         "tags": [
-          "api-ai-gateway"
+          "ai-gateway"
         ],
         "responses": {
           "200": {
@@ -2197,7 +2197,7 @@
         ]
       }
     },
-    "/v1/ai-gateway/virtual-model-configs/{vmcSlug}": {
+    "/ai-gateway/virtual-model-configs/{vmcSlug}": {
       "get": {
         "description": "Get a virtual model config by path slug",
         "operationId": "getAiGatewayVirtualModelConfigBySlug",
@@ -2208,7 +2208,7 @@
         ],
         "summary": "Get virtual model config",
         "tags": [
-          "api-ai-gateway"
+          "ai-gateway"
         ],
         "responses": {
           "200": {
@@ -2287,7 +2287,7 @@
         ],
         "summary": "Update virtual model config",
         "tags": [
-          "api-ai-gateway"
+          "ai-gateway"
         ],
         "responses": {
           "200": {
@@ -2361,7 +2361,7 @@
         ],
         "summary": "Delete virtual model config",
         "tags": [
-          "api-ai-gateway"
+          "ai-gateway"
         ],
         "responses": {
           "204": {
@@ -2455,7 +2455,7 @@
         ]
       }
     },
-    "/v1/ai-gateway/rules": {
+    "/ai-gateway/rules": {
       "post": {
         "description": "Create a routing rule",
         "operationId": "createAiGatewayRule",
@@ -94924,7 +94924,7 @@
                 "description": "Authorization server base URL used for discovery."
               },
               "serverConfig": {
-                "$ref": "#/components/schemas/AutoSDKSharedd059cb0ee80bd86d"
+                "$ref": "#/components/schemas/AutoSDKShared448ea965c003fe05"
               },
               "clientId": {
                 "type": "string",
@@ -96034,7 +96034,7 @@
                 "description": "Authorization server base URL used for discovery."
               },
               "serverConfig": {
-                "$ref": "#/components/schemas/AutoSDKSharedd059cb0ee80bd86d"
+                "$ref": "#/components/schemas/AutoSDKShared448ea965c003fe05"
               },
               "clientId": {
                 "type": "string",
@@ -114453,6 +114453,259 @@
         },
         "type": "array"
       },
+      "AutoSDKShared448ea965c003fe05": {
+        "description": "Authorization server metadata. Values override discovered metadata. Empty known string fields remove their stored overrides.",
+        "type": "object",
+        "properties": {
+          "issuer": {
+            "type": "string",
+            "description": "Authorization server issuer URL."
+          },
+          "authorization_endpoint": {
+            "type": "string",
+            "description": "OAuth authorization endpoint URL."
+          },
+          "token_endpoint": {
+            "type": "string",
+            "description": "OAuth token endpoint URL."
+          },
+          "userinfo_endpoint": {
+            "type": "string",
+            "description": "OpenID Connect UserInfo endpoint URL."
+          },
+          "jwks_uri": {
+            "type": "string",
+            "description": "URL of the authorization server JSON Web Key Set."
+          },
+          "jwks": {
+            "description": "Inline authorization server JSON Web Key Set.",
+            "type": "object",
+            "properties": {
+              "keys": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "kty": {
+                      "type": "string",
+                      "description": "JSON Web Key type."
+                    },
+                    "kid": {
+                      "type": "string",
+                      "description": "JSON Web Key identifier."
+                    },
+                    "use": {
+                      "type": "string",
+                      "enum": [
+                        "sig",
+                        "enc"
+                      ],
+                      "description": "Intended key use: signing or encryption."
+                    },
+                    "key_ops": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "Operations permitted for this key."
+                    },
+                    "alg": {
+                      "type": "string",
+                      "description": "Algorithm intended for this key."
+                    }
+                  },
+                  "required": [
+                    "kty"
+                  ],
+                  "additionalProperties": true
+                },
+                "description": "JSON Web Keys published by the authorization server."
+              }
+            },
+            "required": [
+              "keys"
+            ],
+            "additionalProperties": true
+          },
+          "revocation_endpoint": {
+            "type": "string",
+            "description": "OAuth token revocation endpoint URL."
+          },
+          "introspection_endpoint": {
+            "type": "string",
+            "description": "OAuth token introspection endpoint URL."
+          },
+          "end_session_endpoint": {
+            "type": "string",
+            "description": "OpenID Connect session termination endpoint URL."
+          },
+          "device_authorization_endpoint": {
+            "type": "string",
+            "description": "OAuth device authorization endpoint URL."
+          },
+          "registration_endpoint": {
+            "type": "string",
+            "description": "OAuth dynamic client registration endpoint URL."
+          },
+          "response_types_supported": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "OAuth response types supported by the server."
+          },
+          "token_endpoint_auth_methods_supported": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Token endpoint client authentication methods supported by the server."
+          },
+          "token_endpoint_auth_signing_alg_values_supported": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Signing algorithms supported for token endpoint authentication."
+          },
+          "scopes_supported": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "OAuth scopes supported by the server."
+          },
+          "grant_types_supported": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "OAuth grant types supported by the server."
+          },
+          "authorization_grant_profiles_supported": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Supported authorization grant profiles. urn:ietf:params:oauth:grant-profile:id-jag advertises XAA resource support."
+          },
+          "identity_chaining_requested_token_types_supported": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Token types supported for identity chaining. urn:ietf:params:oauth:token-type:id-jag advertises XAA IdP support."
+          },
+          "response_modes_supported": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "OAuth response modes supported by the server."
+          },
+          "subject_types_supported": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "OpenID Connect subject identifier types supported by the server."
+          },
+          "id_token_signing_alg_values_supported": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Signing algorithms supported for ID tokens."
+          },
+          "id_token_encryption_alg_values_supported": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Key management algorithms supported for encrypted ID tokens."
+          },
+          "id_token_encryption_enc_values_supported": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Content encryption algorithms supported for encrypted ID tokens."
+          },
+          "claim_types_supported": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "OpenID Connect claim value types supported by the server."
+          },
+          "claims_supported": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Claims that the authorization server can return."
+          },
+          "code_challenge_methods_supported": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "PKCE code challenge methods supported by the server."
+          },
+          "prompt_values_supported": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Authorization prompt values supported by the server."
+          },
+          "claims_parameter_supported": {
+            "type": "boolean",
+            "description": "Whether authorization requests can use the claims parameter."
+          },
+          "request_parameter_supported": {
+            "type": "boolean",
+            "description": "Whether authorization requests can use signed request objects."
+          },
+          "request_uri_parameter_supported": {
+            "type": "boolean",
+            "description": "Whether authorization requests can use request_uri."
+          },
+          "require_request_uri_registration": {
+            "type": "boolean",
+            "description": "Whether request_uri values must be registered in advance."
+          },
+          "service_documentation": {
+            "type": "string",
+            "description": "Authorization server documentation URL."
+          },
+          "op_policy_uri": {
+            "type": "string",
+            "description": "Authorization server privacy policy URL."
+          },
+          "op_tos_uri": {
+            "type": "string",
+            "description": "Authorization server terms of service URL."
+          },
+          "logo_uri": {
+            "type": "string",
+            "description": "Authorization server logo URL."
+          },
+          "client_id_metadata_document_supported": {
+            "type": "boolean",
+            "description": "Whether the server supports OAuth client ID metadata documents."
+          },
+          "authorization_details_types_supported": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "OAuth authorization-detail types supported by the server."
+          }
+        },
+        "additionalProperties": true,
+        "default": {}
+      },
       "AutoSDKShared470bc56668090392": {
         "properties": {
           "comment": {
@@ -128446,245 +128699,6 @@
             "type": "object"
           }
         ]
-      },
-      "AutoSDKSharedd059cb0ee80bd86d": {
-        "description": "Authorization server metadata. Values override discovered metadata. Empty known string fields remove their stored overrides.",
-        "type": "object",
-        "properties": {
-          "issuer": {
-            "type": "string",
-            "description": "Authorization server issuer URL."
-          },
-          "authorization_endpoint": {
-            "type": "string",
-            "description": "OAuth authorization endpoint URL."
-          },
-          "token_endpoint": {
-            "type": "string",
-            "description": "OAuth token endpoint URL."
-          },
-          "userinfo_endpoint": {
-            "type": "string",
-            "description": "OpenID Connect UserInfo endpoint URL."
-          },
-          "jwks_uri": {
-            "type": "string",
-            "description": "URL of the authorization server JSON Web Key Set."
-          },
-          "jwks": {
-            "description": "Inline authorization server JSON Web Key Set.",
-            "type": "object",
-            "properties": {
-              "keys": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "kty": {
-                      "type": "string",
-                      "description": "JSON Web Key type."
-                    },
-                    "kid": {
-                      "type": "string",
-                      "description": "JSON Web Key identifier."
-                    },
-                    "use": {
-                      "type": "string",
-                      "enum": [
-                        "sig",
-                        "enc"
-                      ],
-                      "description": "Intended key use: signing or encryption."
-                    },
-                    "key_ops": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      },
-                      "description": "Operations permitted for this key."
-                    },
-                    "alg": {
-                      "type": "string",
-                      "description": "Algorithm intended for this key."
-                    }
-                  },
-                  "required": [
-                    "kty"
-                  ],
-                  "additionalProperties": true
-                },
-                "description": "JSON Web Keys published by the authorization server."
-              }
-            },
-            "required": [
-              "keys"
-            ],
-            "additionalProperties": true
-          },
-          "revocation_endpoint": {
-            "type": "string",
-            "description": "OAuth token revocation endpoint URL."
-          },
-          "introspection_endpoint": {
-            "type": "string",
-            "description": "OAuth token introspection endpoint URL."
-          },
-          "end_session_endpoint": {
-            "type": "string",
-            "description": "OpenID Connect session termination endpoint URL."
-          },
-          "device_authorization_endpoint": {
-            "type": "string",
-            "description": "OAuth device authorization endpoint URL."
-          },
-          "registration_endpoint": {
-            "type": "string",
-            "description": "OAuth dynamic client registration endpoint URL."
-          },
-          "response_types_supported": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "OAuth response types supported by the server."
-          },
-          "token_endpoint_auth_methods_supported": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "Token endpoint client authentication methods supported by the server."
-          },
-          "token_endpoint_auth_signing_alg_values_supported": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "Signing algorithms supported for token endpoint authentication."
-          },
-          "scopes_supported": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "OAuth scopes supported by the server."
-          },
-          "grant_types_supported": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "OAuth grant types supported by the server."
-          },
-          "response_modes_supported": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "OAuth response modes supported by the server."
-          },
-          "subject_types_supported": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "OpenID Connect subject identifier types supported by the server."
-          },
-          "id_token_signing_alg_values_supported": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "Signing algorithms supported for ID tokens."
-          },
-          "id_token_encryption_alg_values_supported": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "Key management algorithms supported for encrypted ID tokens."
-          },
-          "id_token_encryption_enc_values_supported": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "Content encryption algorithms supported for encrypted ID tokens."
-          },
-          "claim_types_supported": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "OpenID Connect claim value types supported by the server."
-          },
-          "claims_supported": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "Claims that the authorization server can return."
-          },
-          "code_challenge_methods_supported": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "PKCE code challenge methods supported by the server."
-          },
-          "prompt_values_supported": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "Authorization prompt values supported by the server."
-          },
-          "claims_parameter_supported": {
-            "type": "boolean",
-            "description": "Whether authorization requests can use the claims parameter."
-          },
-          "request_parameter_supported": {
-            "type": "boolean",
-            "description": "Whether authorization requests can use signed request objects."
-          },
-          "request_uri_parameter_supported": {
-            "type": "boolean",
-            "description": "Whether authorization requests can use request_uri."
-          },
-          "require_request_uri_registration": {
-            "type": "boolean",
-            "description": "Whether request_uri values must be registered in advance."
-          },
-          "service_documentation": {
-            "type": "string",
-            "description": "Authorization server documentation URL."
-          },
-          "op_policy_uri": {
-            "type": "string",
-            "description": "Authorization server privacy policy URL."
-          },
-          "op_tos_uri": {
-            "type": "string",
-            "description": "Authorization server terms of service URL."
-          },
-          "logo_uri": {
-            "type": "string",
-            "description": "Authorization server logo URL."
-          },
-          "client_id_metadata_document_supported": {
-            "type": "boolean",
-            "description": "Whether the server supports OAuth client ID metadata documents."
-          },
-          "authorization_details_types_supported": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            },
-            "description": "OAuth authorization-detail types supported by the server."
-          }
-        },
-        "additionalProperties": true,
-        "default": {}
       },
       "AutoSDKSharedd05e2600fe193c02": {
         "additionalProperties": {

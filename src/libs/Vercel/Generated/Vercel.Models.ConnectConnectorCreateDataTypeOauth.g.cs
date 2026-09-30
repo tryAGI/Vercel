@@ -19,7 +19,7 @@ namespace Vercel
         /// Default Value: {}
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("serverConfig")]
-        public global::Vercel.AutoSDKSharedd059cb0ee80bd86d? ServerConfig { get; set; }
+        public global::Vercel.AutoSDKShared448ea965c003fe05? ServerConfig { get; set; }
 
         /// <summary>
         /// OAuth client ID assigned by the provider.
@@ -190,7 +190,7 @@ namespace Vercel
         public ConnectConnectorCreateDataTypeOauth(
             string clientId,
             string? serverUrl,
-            global::Vercel.AutoSDKSharedd059cb0ee80bd86d? serverConfig,
+            global::Vercel.AutoSDKShared448ea965c003fe05? serverConfig,
             string? clientName,
             string? clientSecret,
             string? tokenEndpointAuthMethod,

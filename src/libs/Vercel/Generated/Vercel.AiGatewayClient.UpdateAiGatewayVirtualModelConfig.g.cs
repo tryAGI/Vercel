@@ -3,11 +3,11 @@
 
 namespace Vercel
 {
-    public partial class ApiAiGatewayClient
+    public partial class AiGatewayClient
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_GetAiGatewayVirtualModelConfigBySlugSecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_UpdateAiGatewayVirtualModelConfigSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,38 +21,32 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_GetAiGatewayVirtualModelConfigBySlugSecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_UpdateAiGatewayVirtualModelConfigSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_GetAiGatewayVirtualModelConfigBySlugSecurityRequirement0,
+            {                s_UpdateAiGatewayVirtualModelConfigSecurityRequirement0,
             };
-        partial void PrepareGetAiGatewayVirtualModelConfigBySlugArguments(
+        partial void PrepareUpdateAiGatewayVirtualModelConfigArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string? ownerId,
-            ref string vmcSlug,
             ref string? teamId,
             ref string? slug);
-        partial void PrepareGetAiGatewayVirtualModelConfigBySlugRequest(
+        partial void PrepareUpdateAiGatewayVirtualModelConfigRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string? ownerId,
-            string vmcSlug,
             string? teamId,
             string? slug);
-        partial void ProcessGetAiGatewayVirtualModelConfigBySlugResponse(
+        partial void ProcessUpdateAiGatewayVirtualModelConfigResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessGetAiGatewayVirtualModelConfigBySlugResponseContent(
+        partial void ProcessUpdateAiGatewayVirtualModelConfigResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Get virtual model config<br/>
-        /// Get a virtual model config by path slug
+        /// Update virtual model config<br/>
+        /// Update a virtual model config
         /// </summary>
-        /// <param name="ownerId"></param>
-        /// <param name="vmcSlug"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -62,17 +56,13 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AiGatewayVirtualModelConfig> GetAiGatewayVirtualModelConfigBySlugAsync(
-            string vmcSlug,
-            string? ownerId = default,
+        public async global::System.Threading.Tasks.Task<global::Vercel.AiGatewayVirtualModelConfig> UpdateAiGatewayVirtualModelConfigAsync(
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await GetAiGatewayVirtualModelConfigBySlugAsResponseAsync(
-                vmcSlug: vmcSlug,
-                ownerId: ownerId,
+            var __response = await UpdateAiGatewayVirtualModelConfigAsResponseAsync(
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -82,11 +72,9 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// Get virtual model config<br/>
-        /// Get a virtual model config by path slug
+        /// Update virtual model config<br/>
+        /// Update a virtual model config
         /// </summary>
-        /// <param name="ownerId"></param>
-        /// <param name="vmcSlug"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -96,9 +84,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AiGatewayVirtualModelConfig>> GetAiGatewayVirtualModelConfigBySlugAsResponseAsync(
-            string vmcSlug,
-            string? ownerId = default,
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AiGatewayVirtualModelConfig>> UpdateAiGatewayVirtualModelConfigAsResponseAsync(
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -106,18 +92,16 @@ namespace Vercel
         {
             PrepareArguments(
                 client: HttpClient);
-            PrepareGetAiGatewayVirtualModelConfigBySlugArguments(
+            PrepareUpdateAiGatewayVirtualModelConfigArguments(
                 httpClient: HttpClient,
-                ownerId: ref ownerId,
-                vmcSlug: ref vmcSlug,
                 teamId: ref teamId,
                 slug: ref slug);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_GetAiGatewayVirtualModelConfigBySlugSecurityRequirements,
-                operationName: "GetAiGatewayVirtualModelConfigBySlugAsync");
+                securityRequirements: s_UpdateAiGatewayVirtualModelConfigSecurityRequirements,
+                operationName: "UpdateAiGatewayVirtualModelConfigAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -137,10 +121,9 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: $"/v1/ai-gateway/virtual-model-configs/{vmcSlug}",
+                                path: "/ai-gateway/virtual-model-configs",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddOptionalParameter("ownerId", ownerId)
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -150,7 +133,7 @@ namespace Vercel
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Get,
+                    method: new global::System.Net.Http.HttpMethod("PATCH"),
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -181,11 +164,9 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareGetAiGatewayVirtualModelConfigBySlugRequest(
+                PrepareUpdateAiGatewayVirtualModelConfigRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    ownerId: ownerId,
-                    vmcSlug: vmcSlug,
                     teamId: teamId,
                     slug: slug);
 
@@ -204,10 +185,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetAiGatewayVirtualModelConfigBySlug",
-                                methodName: "GetAiGatewayVirtualModelConfigBySlugAsync",
-                                pathTemplate: "$\"/v1/ai-gateway/virtual-model-configs/{vmcSlug}\"",
-                                httpMethod: "GET",
+                                operationId: "UpdateAiGatewayVirtualModelConfig",
+                                methodName: "UpdateAiGatewayVirtualModelConfigAsync",
+                                pathTemplate: "\"/ai-gateway/virtual-model-configs\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
@@ -238,10 +219,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetAiGatewayVirtualModelConfigBySlug",
-                                methodName: "GetAiGatewayVirtualModelConfigBySlugAsync",
-                                pathTemplate: "$\"/v1/ai-gateway/virtual-model-configs/{vmcSlug}\"",
-                                httpMethod: "GET",
+                                operationId: "UpdateAiGatewayVirtualModelConfig",
+                                methodName: "UpdateAiGatewayVirtualModelConfigAsync",
+                                pathTemplate: "\"/ai-gateway/virtual-model-configs\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
@@ -279,10 +260,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetAiGatewayVirtualModelConfigBySlug",
-                                methodName: "GetAiGatewayVirtualModelConfigBySlugAsync",
-                                pathTemplate: "$\"/v1/ai-gateway/virtual-model-configs/{vmcSlug}\"",
-                                httpMethod: "GET",
+                                operationId: "UpdateAiGatewayVirtualModelConfig",
+                                methodName: "UpdateAiGatewayVirtualModelConfigAsync",
+                                pathTemplate: "\"/ai-gateway/virtual-model-configs\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
@@ -319,7 +300,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessGetAiGatewayVirtualModelConfigBySlugResponse(
+                ProcessUpdateAiGatewayVirtualModelConfigResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -327,10 +308,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetAiGatewayVirtualModelConfigBySlug",
-                                methodName: "GetAiGatewayVirtualModelConfigBySlugAsync",
-                                pathTemplate: "$\"/v1/ai-gateway/virtual-model-configs/{vmcSlug}\"",
-                                httpMethod: "GET",
+                                operationId: "UpdateAiGatewayVirtualModelConfig",
+                                methodName: "UpdateAiGatewayVirtualModelConfigAsync",
+                                pathTemplate: "\"/ai-gateway/virtual-model-configs\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
@@ -349,10 +330,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "GetAiGatewayVirtualModelConfigBySlug",
-                                methodName: "GetAiGatewayVirtualModelConfigBySlugAsync",
-                                pathTemplate: "$\"/v1/ai-gateway/virtual-model-configs/{vmcSlug}\"",
-                                httpMethod: "GET",
+                                operationId: "UpdateAiGatewayVirtualModelConfig",
+                                methodName: "UpdateAiGatewayVirtualModelConfigAsync",
+                                pathTemplate: "\"/ai-gateway/virtual-model-configs\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
@@ -527,6 +508,38 @@ namespace Vercel
                                         h => h.Value));
                             }
                             //
+                            if ((int)__response.StatusCode == 429)
+                            {
+                                string? __content_429 = null;
+                                global::System.Exception? __exception_429 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_429 = __ex;
+                                }
+
+
+                                throw global::Vercel.ApiException.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_429 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_429,
+                                    responseBody: __content_429,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
+                            //
                             if ((int)__response.StatusCode == 500)
                             {
                                 string? __content_500 = null;
@@ -571,7 +584,7 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessGetAiGatewayVirtualModelConfigBySlugResponseContent(
+                                ProcessUpdateAiGatewayVirtualModelConfigResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);

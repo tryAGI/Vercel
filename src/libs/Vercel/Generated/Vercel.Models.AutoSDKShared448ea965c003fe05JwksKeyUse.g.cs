@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     /// Intended key use: signing or encryption.
     /// </summary>
-    public enum AutoSDKSharedd059cb0ee80bd86dJwksKeyUse
+    public enum AutoSDKShared448ea965c003fe05JwksKeyUse
     {
         /// <summary>
         /// signing or encryption.
@@ -21,29 +21,29 @@ namespace Vercel
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class AutoSDKSharedd059cb0ee80bd86dJwksKeyUseExtensions
+    public static class AutoSDKShared448ea965c003fe05JwksKeyUseExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this AutoSDKSharedd059cb0ee80bd86dJwksKeyUse value)
+        public static string ToValueString(this AutoSDKShared448ea965c003fe05JwksKeyUse value)
         {
             return value switch
             {
-                AutoSDKSharedd059cb0ee80bd86dJwksKeyUse.Enc => "enc",
-                AutoSDKSharedd059cb0ee80bd86dJwksKeyUse.Sig => "sig",
+                AutoSDKShared448ea965c003fe05JwksKeyUse.Enc => "enc",
+                AutoSDKShared448ea965c003fe05JwksKeyUse.Sig => "sig",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static AutoSDKSharedd059cb0ee80bd86dJwksKeyUse? ToEnum(string value)
+        public static AutoSDKShared448ea965c003fe05JwksKeyUse? ToEnum(string value)
         {
             return value switch
             {
-                "enc" => AutoSDKSharedd059cb0ee80bd86dJwksKeyUse.Enc,
-                "sig" => AutoSDKSharedd059cb0ee80bd86dJwksKeyUse.Sig,
+                "enc" => AutoSDKShared448ea965c003fe05JwksKeyUse.Enc,
+                "sig" => AutoSDKShared448ea965c003fe05JwksKeyUse.Sig,
                 _ => null,
             };
         }

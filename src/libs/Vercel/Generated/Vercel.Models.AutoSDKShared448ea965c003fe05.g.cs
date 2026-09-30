@@ -7,7 +7,7 @@ namespace Vercel
     /// Authorization server metadata. Values override discovered metadata. Empty known string fields remove their stored overrides.<br/>
     /// Default Value: {}
     /// </summary>
-    public sealed partial class AutoSDKSharedd059cb0ee80bd86d
+    public sealed partial class AutoSDKShared448ea965c003fe05
     {
         /// <summary>
         /// Authorization server issuer URL.
@@ -43,7 +43,7 @@ namespace Vercel
         /// Inline authorization server JSON Web Key Set.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("jwks")]
-        public global::Vercel.AutoSDKSharedd059cb0ee80bd86dJwks? Jwks { get; set; }
+        public global::Vercel.AutoSDKShared448ea965c003fe05Jwks? Jwks { get; set; }
 
         /// <summary>
         /// OAuth token revocation endpoint URL.
@@ -104,6 +104,18 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("grant_types_supported")]
         public global::System.Collections.Generic.IList<string>? GrantTypesSupported { get; set; }
+
+        /// <summary>
+        /// Supported authorization grant profiles. urn:ietf:params:oauth:grant-profile:id-jag advertises XAA resource support.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("authorization_grant_profiles_supported")]
+        public global::System.Collections.Generic.IList<string>? AuthorizationGrantProfilesSupported { get; set; }
+
+        /// <summary>
+        /// Token types supported for identity chaining. urn:ietf:params:oauth:token-type:id-jag advertises XAA IdP support.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("identity_chaining_requested_token_types_supported")]
+        public global::System.Collections.Generic.IList<string>? IdentityChainingRequestedTokenTypesSupported { get; set; }
 
         /// <summary>
         /// OAuth response modes supported by the server.
@@ -226,7 +238,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKSharedd059cb0ee80bd86d" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared448ea965c003fe05" /> class.
         /// </summary>
         /// <param name="issuer">
         /// Authorization server issuer URL.
@@ -275,6 +287,12 @@ namespace Vercel
         /// </param>
         /// <param name="grantTypesSupported">
         /// OAuth grant types supported by the server.
+        /// </param>
+        /// <param name="authorizationGrantProfilesSupported">
+        /// Supported authorization grant profiles. urn:ietf:params:oauth:grant-profile:id-jag advertises XAA resource support.
+        /// </param>
+        /// <param name="identityChainingRequestedTokenTypesSupported">
+        /// Token types supported for identity chaining. urn:ietf:params:oauth:token-type:id-jag advertises XAA IdP support.
         /// </param>
         /// <param name="responseModesSupported">
         /// OAuth response modes supported by the server.
@@ -336,13 +354,13 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public AutoSDKSharedd059cb0ee80bd86d(
+        public AutoSDKShared448ea965c003fe05(
             string? issuer,
             string? authorizationEndpoint,
             string? tokenEndpoint,
             string? userinfoEndpoint,
             string? jwksUri,
-            global::Vercel.AutoSDKSharedd059cb0ee80bd86dJwks? jwks,
+            global::Vercel.AutoSDKShared448ea965c003fe05Jwks? jwks,
             string? revocationEndpoint,
             string? introspectionEndpoint,
             string? endSessionEndpoint,
@@ -353,6 +371,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<string>? tokenEndpointAuthSigningAlgValuesSupported,
             global::System.Collections.Generic.IList<string>? scopesSupported,
             global::System.Collections.Generic.IList<string>? grantTypesSupported,
+            global::System.Collections.Generic.IList<string>? authorizationGrantProfilesSupported,
+            global::System.Collections.Generic.IList<string>? identityChainingRequestedTokenTypesSupported,
             global::System.Collections.Generic.IList<string>? responseModesSupported,
             global::System.Collections.Generic.IList<string>? subjectTypesSupported,
             global::System.Collections.Generic.IList<string>? idTokenSigningAlgValuesSupported,
@@ -389,6 +409,8 @@ namespace Vercel
             this.TokenEndpointAuthSigningAlgValuesSupported = tokenEndpointAuthSigningAlgValuesSupported;
             this.ScopesSupported = scopesSupported;
             this.GrantTypesSupported = grantTypesSupported;
+            this.AuthorizationGrantProfilesSupported = authorizationGrantProfilesSupported;
+            this.IdentityChainingRequestedTokenTypesSupported = identityChainingRequestedTokenTypesSupported;
             this.ResponseModesSupported = responseModesSupported;
             this.SubjectTypesSupported = subjectTypesSupported;
             this.IdTokenSigningAlgValuesSupported = idTokenSigningAlgValuesSupported;
@@ -411,9 +433,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKSharedd059cb0ee80bd86d" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared448ea965c003fe05" /> class.
         /// </summary>
-        public AutoSDKSharedd059cb0ee80bd86d()
+        public AutoSDKShared448ea965c003fe05()
         {
         }
 

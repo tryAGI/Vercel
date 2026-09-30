@@ -67,6 +67,7 @@ namespace Vercel.JsonConverters
             if (__jsonProps.Contains("serverConfig")) __score0++;
             if (__jsonProps.Contains("serverConfig.authorization_details_types_supported")) __score0++;
             if (__jsonProps.Contains("serverConfig.authorization_endpoint")) __score0++;
+            if (__jsonProps.Contains("serverConfig.authorization_grant_profiles_supported")) __score0++;
             if (__jsonProps.Contains("serverConfig.claim_types_supported")) __score0++;
             if (__jsonProps.Contains("serverConfig.claims_parameter_supported")) __score0++;
             if (__jsonProps.Contains("serverConfig.claims_supported")) __score0++;
@@ -78,6 +79,7 @@ namespace Vercel.JsonConverters
             if (__jsonProps.Contains("serverConfig.id_token_encryption_alg_values_supported")) __score0++;
             if (__jsonProps.Contains("serverConfig.id_token_encryption_enc_values_supported")) __score0++;
             if (__jsonProps.Contains("serverConfig.id_token_signing_alg_values_supported")) __score0++;
+            if (__jsonProps.Contains("serverConfig.identity_chaining_requested_token_types_supported")) __score0++;
             if (__jsonProps.Contains("serverConfig.introspection_endpoint")) __score0++;
             if (__jsonProps.Contains("serverConfig.issuer")) __score0++;
             if (__jsonProps.Contains("serverConfig.jwks")) __score0++;
