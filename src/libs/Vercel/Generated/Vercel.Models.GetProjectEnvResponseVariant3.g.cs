@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class GetProjectEnvResponseVariant1
+    public sealed partial class GetProjectEnvResponseVariant3
     {
         /// <summary>
         ///
@@ -48,8 +48,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("decrypted")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Decrypted { get; set; }
+        public bool? Decrypted { get; set; }
 
         /// <summary>
         ///
@@ -76,11 +75,23 @@ namespace Vercel
         public string? Id { get; set; }
 
         /// <summary>
+        /// Similar to `contentHints`, but should not be exposed to the user.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("internalContentHint")]
+        public global::Vercel.GetProjectEnvResponseVariant3InternalContentHint? InternalContentHint { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("key")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Key { get; set; }
+
+        /// <summary>
+        /// Legacy now-encryption ciphertext, present after migration swaps value/vsmValue
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("legacyValue")]
+        public string? LegacyValue { get; set; }
 
         /// <summary>
         /// This is used to identify variables that have been migrated from type secret to sensitive.
@@ -92,16 +103,16 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("target")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant1TargetItem>, global::Vercel.GetProjectEnvResponseVariant1Target?>))]
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant1TargetItem>, global::Vercel.GetProjectEnvResponseVariant1Target?>? Target { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<string>, global::Vercel.GetProjectEnvResponseVariant3Target?>))]
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetProjectEnvResponseVariant3Target?>? Target { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectEnvResponseVariant1TypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectEnvResponseVariant3TypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetProjectEnvResponseVariant1Type Type { get; set; }
+        public required global::Vercel.GetProjectEnvResponseVariant3Type Type { get; set; }
 
         /// <summary>
         ///
@@ -116,11 +127,18 @@ namespace Vercel
         public string? UpdatedBy { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("value")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Value { get; set; }
+
+        /// <summary>
         /// User-facing config/secret model. When set, authoritative for new code paths. Legacy rows omit this field and callers fall back to existing `type` behavior.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("visibility")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectEnvResponseVariant1VisibilityJsonConverter))]
-        public global::Vercel.GetProjectEnvResponseVariant1Visibility? Visibility { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetProjectEnvResponseVariant3VisibilityJsonConverter))]
+        public global::Vercel.GetProjectEnvResponseVariant3Visibility? Visibility { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -129,11 +147,11 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetProjectEnvResponseVariant1" /> class.
+        /// Initializes a new instance of the <see cref="GetProjectEnvResponseVariant3" /> class.
         /// </summary>
-        /// <param name="decrypted"></param>
         /// <param name="key"></param>
         /// <param name="type"></param>
+        /// <param name="value"></param>
         /// <param name="comment"></param>
         /// <param name="configurationId"></param>
         /// <param name="contentHint">
@@ -142,10 +160,17 @@ namespace Vercel
         /// <param name="createdAt"></param>
         /// <param name="createdBy"></param>
         /// <param name="customEnvironmentIds"></param>
+        /// <param name="decrypted"></param>
         /// <param name="edgeConfigId"></param>
         /// <param name="edgeConfigTokenId"></param>
         /// <param name="gitBranch"></param>
         /// <param name="id"></param>
+        /// <param name="internalContentHint">
+        /// Similar to `contentHints`, but should not be exposed to the user.
+        /// </param>
+        /// <param name="legacyValue">
+        /// Legacy now-encryption ciphertext, present after migration swaps value/vsmValue
+        /// </param>
         /// <param name="sunsetSecretId">
         /// This is used to identify variables that have been migrated from type secret to sensitive.
         /// </param>
@@ -158,25 +183,28 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public GetProjectEnvResponseVariant1(
-            bool decrypted,
+        public GetProjectEnvResponseVariant3(
             string key,
-            global::Vercel.GetProjectEnvResponseVariant1Type type,
+            global::Vercel.GetProjectEnvResponseVariant3Type type,
+            string value,
             string? comment,
             string? configurationId,
             object? contentHint,
             double? createdAt,
             string? createdBy,
             global::System.Collections.Generic.IList<string>? customEnvironmentIds,
+            bool? decrypted,
             string? edgeConfigId,
             string? edgeConfigTokenId,
             string? gitBranch,
             string? id,
+            global::Vercel.GetProjectEnvResponseVariant3InternalContentHint? internalContentHint,
+            string? legacyValue,
             string? sunsetSecretId,
-            global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant1TargetItem>, global::Vercel.GetProjectEnvResponseVariant1Target?>? target,
+            global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetProjectEnvResponseVariant3Target?>? target,
             double? updatedAt,
             string? updatedBy,
-            global::Vercel.GetProjectEnvResponseVariant1Visibility? visibility)
+            global::Vercel.GetProjectEnvResponseVariant3Visibility? visibility)
         {
             this.Comment = comment;
             this.ConfigurationId = configurationId;
@@ -189,19 +217,22 @@ namespace Vercel
             this.EdgeConfigTokenId = edgeConfigTokenId;
             this.GitBranch = gitBranch;
             this.Id = id;
+            this.InternalContentHint = internalContentHint;
             this.Key = key ?? throw new global::System.ArgumentNullException(nameof(key));
+            this.LegacyValue = legacyValue;
             this.SunsetSecretId = sunsetSecretId;
             this.Target = target;
             this.Type = type;
             this.UpdatedAt = updatedAt;
             this.UpdatedBy = updatedBy;
+            this.Value = value ?? throw new global::System.ArgumentNullException(nameof(value));
             this.Visibility = visibility;
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetProjectEnvResponseVariant1" /> class.
+        /// Initializes a new instance of the <see cref="GetProjectEnvResponseVariant3" /> class.
         /// </summary>
-        public GetProjectEnvResponseVariant1()
+        public GetProjectEnvResponseVariant3()
         {
         }
 
