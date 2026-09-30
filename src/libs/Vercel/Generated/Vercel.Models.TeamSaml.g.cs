@@ -35,7 +35,7 @@ namespace Vercel
         public required bool Enforced { get; set; }
 
         /// <summary>
-        /// When "Directory Sync" is configured, this object contains a mapping of which Directory Group (by ID) should be assigned to which Vercel Team "role".
+        /// When "Directory Sync" is configured, this object contains a mapping of which Directory Group (by ID) should be assigned to which Vercel Team roles and permissions, or an access group. Bare team roles are deprecated in favor of DirectorySyncRolesMapping.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("roles")]
         public object? Roles { get; set; }
@@ -62,7 +62,7 @@ namespace Vercel
         /// Information for the Directory Sync configuration.
         /// </param>
         /// <param name="roles">
-        /// When "Directory Sync" is configured, this object contains a mapping of which Directory Group (by ID) should be assigned to which Vercel Team "role".
+        /// When "Directory Sync" is configured, this object contains a mapping of which Directory Group (by ID) should be assigned to which Vercel Team roles and permissions, or an access group. Bare team roles are deprecated in favor of DirectorySyncRolesMapping.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

@@ -65682,7 +65682,7 @@
     },
     "/v2/sandboxes/{name}": {
       "get": {
-        "description": "Retrieves a named sandbox by name, including its current sandbox and routes. If the sandbox is stopped and resume is true, a new sandbox will be created from the most recent snapshot.",
+        "description": "Retrieves a named sandbox by name, including its current sandbox and routes. If the sandbox is stopped and resume is true, a new sandbox will be created from the most recent snapshot. Returns 404 if the named sandbox or its configuration no longer exists.",
         "operationId": "getNamedSandbox",
         "security": [
           {
@@ -103671,7 +103671,59 @@
                         "accessGroupId"
                       ],
                       "type": "object",
-                      "description": "When \"Directory Sync\" is configured, this object contains a mapping of which Directory Group (by ID) should be assigned to which Vercel Team \"role\"."
+                      "description": "When \"Directory Sync\" is configured, this object contains a mapping of which Directory Group (by ID) should be assigned to which Vercel Team roles and permissions, or an access group. Bare team roles are deprecated in favor of DirectorySyncRolesMapping."
+                    },
+                    {
+                      "properties": {
+                        "teamPermissions": {
+                          "items": {
+                            "type": "string",
+                            "enum": [
+                              "AiGatewayBudgetManager",
+                              "AiGatewayCredits",
+                              "AiGatewaySettings",
+                              "AiGatewayTranscriptsManager",
+                              "AiGatewayTranscriptsViewer",
+                              "AiGatewayUser",
+                              "ConnectorManager",
+                              "CreateProject",
+                              "EnvVariableManager",
+                              "EnvironmentManager",
+                              "FullProductionDeployment",
+                              "IntegrationManager",
+                              "OrgAdmin",
+                              "OrgViewer",
+                              "UsageViewer",
+                              "V0Builder",
+                              "V0Chatter",
+                              "V0Viewer",
+                              "WorkflowDecryptor"
+                            ]
+                          },
+                          "type": "array"
+                        },
+                        "teamRoles": {
+                          "items": {
+                            "type": "string",
+                            "enum": [
+                              "BILLING",
+                              "CONTRIBUTOR",
+                              "DEVELOPER",
+                              "MEMBER",
+                              "OWNER",
+                              "SECURITY",
+                              "VIEWER",
+                              "VIEWER_FOR_PLUS"
+                            ]
+                          },
+                          "type": "array"
+                        }
+                      },
+                      "required": [
+                        "teamRoles"
+                      ],
+                      "type": "object",
+                      "description": "When \"Directory Sync\" is configured, this object contains a mapping of which Directory Group (by ID) should be assigned to which Vercel Team roles and permissions, or an access group. Bare team roles are deprecated in favor of DirectorySyncRolesMapping."
                     },
                     {
                       "type": "string",
@@ -103689,7 +103741,7 @@
                   ]
                 },
                 "type": "object",
-                "description": "When \"Directory Sync\" is configured, this object contains a mapping of which Directory Group (by ID) should be assigned to which Vercel Team \"role\"."
+                "description": "When \"Directory Sync\" is configured, this object contains a mapping of which Directory Group (by ID) should be assigned to which Vercel Team roles and permissions, or an access group. Bare team roles are deprecated in favor of DirectorySyncRolesMapping."
               }
             },
             "required": [

@@ -4,84 +4,51 @@
 namespace Vercel
 {
     /// <summary>
-    ///
+    /// When "Directory Sync" is configured, this object contains a mapping of which Directory Group (by ID) should be assigned to which Vercel Team roles and permissions, or an access group. Bare team roles are deprecated in favor of DirectorySyncRolesMapping.
     /// </summary>
-    public enum TeamSamlRolesEnum2
+    public sealed partial class TeamSamlRolesEnum2
     {
         /// <summary>
         ///
         /// </summary>
-        Billing,
-        /// <summary>
-        ///
-        /// </summary>
-        Contributor,
-        /// <summary>
-        ///
-        /// </summary>
-        Developer,
-        /// <summary>
-        ///
-        /// </summary>
-        Member,
-        /// <summary>
-        ///
-        /// </summary>
-        Owner,
-        /// <summary>
-        ///
-        /// </summary>
-        Security,
-        /// <summary>
-        ///
-        /// </summary>
-        Viewer,
-        /// <summary>
-        ///
-        /// </summary>
-        ViewerForPlus,
-    }
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
+        public global::System.Collections.Generic.IList<global::Vercel.TeamSamlRolesEnumTeamPermission>? TeamPermissions { get; set; }
 
-    /// <summary>
-    /// Enum extensions to do fast conversions without the reflection.
-    /// </summary>
-    public static class TeamSamlRolesEnum2Extensions
-    {
         /// <summary>
-        /// Converts an enum to a string.
+        ///
         /// </summary>
-        public static string ToValueString(this TeamSamlRolesEnum2 value)
-        {
-            return value switch
-            {
-                TeamSamlRolesEnum2.Billing => "BILLING",
-                TeamSamlRolesEnum2.Contributor => "CONTRIBUTOR",
-                TeamSamlRolesEnum2.Developer => "DEVELOPER",
-                TeamSamlRolesEnum2.Member => "MEMBER",
-                TeamSamlRolesEnum2.Owner => "OWNER",
-                TeamSamlRolesEnum2.Security => "SECURITY",
-                TeamSamlRolesEnum2.Viewer => "VIEWER",
-                TeamSamlRolesEnum2.ViewerForPlus => "VIEWER_FOR_PLUS",
-                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
-            };
-        }
+        [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.TeamSamlRolesEnumTeamRole> TeamRoles { get; set; }
+
         /// <summary>
-        /// Converts an string to a enum.
+        /// Additional properties that are not explicitly defined in the schema
         /// </summary>
-        public static TeamSamlRolesEnum2? ToEnum(string value)
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TeamSamlRolesEnum2" /> class.
+        /// </summary>
+        /// <param name="teamRoles"></param>
+        /// <param name="teamPermissions"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public TeamSamlRolesEnum2(
+            global::System.Collections.Generic.IList<global::Vercel.TeamSamlRolesEnumTeamRole> teamRoles,
+            global::System.Collections.Generic.IList<global::Vercel.TeamSamlRolesEnumTeamPermission>? teamPermissions)
         {
-            return value switch
-            {
-                "BILLING" => TeamSamlRolesEnum2.Billing,
-                "CONTRIBUTOR" => TeamSamlRolesEnum2.Contributor,
-                "DEVELOPER" => TeamSamlRolesEnum2.Developer,
-                "MEMBER" => TeamSamlRolesEnum2.Member,
-                "OWNER" => TeamSamlRolesEnum2.Owner,
-                "SECURITY" => TeamSamlRolesEnum2.Security,
-                "VIEWER" => TeamSamlRolesEnum2.Viewer,
-                "VIEWER_FOR_PLUS" => TeamSamlRolesEnum2.ViewerForPlus,
-                _ => null,
-            };
+            this.TeamPermissions = teamPermissions;
+            this.TeamRoles = teamRoles ?? throw new global::System.ArgumentNullException(nameof(teamRoles));
         }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TeamSamlRolesEnum2" /> class.
+        /// </summary>
+        public TeamSamlRolesEnum2()
+        {
+        }
+
     }
 }
