@@ -29173,121 +29173,83 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "createdAt": {
-                      "type": "number"
-                    },
-                    "createdBy": {
-                      "type": "string",
-                      "description": "The ID of the user who created the Global Config, optional because it is not always set."
-                    },
-                    "deletedAt": {
-                      "nullable": true,
-                      "type": "number"
-                    },
-                    "digest": {
-                      "type": "string"
-                    },
-                    "id": {
-                      "type": "string"
-                    },
-                    "ownerId": {
-                      "type": "string"
-                    },
-                    "purpose": {
-                      "oneOf": [
-                        {
-                          "properties": {
-                            "projectId": {
-                              "type": "string"
-                            },
-                            "type": {
-                              "type": "string",
-                              "enum": [
-                                "flags"
-                              ]
-                            }
-                          },
-                          "required": [
-                            "projectId",
-                            "type"
-                          ],
-                          "type": "object"
-                        },
-                        {
-                          "properties": {
-                            "resourceId": {
-                              "type": "string"
-                            },
-                            "type": {
-                              "type": "string",
-                              "enum": [
-                                "experimentation"
-                              ]
-                            }
-                          },
-                          "required": [
-                            "resourceId",
-                            "type"
-                          ],
-                          "type": "object"
-                        }
-                      ]
-                    },
-                    "schema": {
-                      "type": "object"
-                    },
-                    "slug": {
-                      "type": "string",
-                      "description": "Name for the Global Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores)."
-                    },
-                    "syncedToDynamoAt": {
-                      "type": "number",
-                      "description": "Timestamp of when the Global Config was synced to DynamoDB initially. It is only set when syncing the entire Global Config, not when updating."
-                    },
-                    "transfer": {
-                      "properties": {
-                        "doneAt": {
-                          "nullable": true,
-                          "type": "number"
-                        },
-                        "fromAccountId": {
-                          "type": "string"
-                        },
-                        "startedAt": {
-                          "type": "number"
-                        }
+                  "type": "array",
+                  "description": "List of all global configs.",
+                  "items": {
+                    "properties": {
+                      "id": {
+                        "type": "string"
                       },
-                      "required": [
-                        "doneAt",
-                        "fromAccountId",
-                        "startedAt"
-                      ],
-                      "type": "object",
-                      "description": "Keeps track of the current state of the Global Config while it gets transferred."
+                      "createdAt": {
+                        "type": "number"
+                      },
+                      "ownerId": {
+                        "type": "string"
+                      },
+                      "slug": {
+                        "type": "string",
+                        "description": "Name for the Global Config. Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores)."
+                      },
+                      "updatedAt": {
+                        "type": "number"
+                      },
+                      "digest": {
+                        "type": "string"
+                      },
+                      "transfer": {
+                        "properties": {
+                          "fromAccountId": {
+                            "type": "string"
+                          },
+                          "startedAt": {
+                            "type": "number"
+                          },
+                          "doneAt": {
+                            "nullable": true,
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "fromAccountId",
+                          "startedAt",
+                          "doneAt"
+                        ],
+                        "type": "object",
+                        "description": "Keeps track of the current state of the Global Config while it gets transferred."
+                      },
+                      "schema": {
+                        "type": "object"
+                      },
+                      "purpose": {
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "enum": [
+                              "flags"
+                            ]
+                          },
+                          "projectId": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "projectId"
+                        ],
+                        "type": "object"
+                      },
+                      "sizeInBytes": {
+                        "type": "number"
+                      },
+                      "itemCount": {
+                        "type": "number"
+                      }
                     },
-                    "updatedAt": {
-                      "type": "number"
-                    },
-                    "itemCount": {
-                      "type": "number"
-                    },
-                    "sizeInBytes": {
-                      "type": "number"
-                    }
-                  },
-                  "required": [
-                    "createdAt",
-                    "digest",
-                    "id",
-                    "itemCount",
-                    "ownerId",
-                    "sizeInBytes",
-                    "slug",
-                    "updatedAt"
-                  ],
-                  "type": "object",
-                  "description": "List of all global configs."
+                    "required": [
+                      "sizeInBytes",
+                      "itemCount"
+                    ]
+                  }
                 }
               }
             }
@@ -29526,7 +29488,8 @@
                 }
               }
             }
-          }
+          },
+          "required": true
         }
       }
     },
@@ -29917,7 +29880,8 @@
                 }
               }
             }
-          }
+          },
+          "required": true
         }
       },
       "delete": {
@@ -30175,21 +30139,20 @@
                             },
                             "value": {},
                             "description": {
-                              "oneOf": [
-                                {
-                                  "type": "string",
-                                  "maxLength": 512
-                                },
-                                {
-                                  "type": "string"
-                                }
-                              ]
+                              "type": "string",
+                              "maxLength": 512,
+                              "nullable": true
                             }
                           },
                           "anyOf": [
                             {
                               "properties": {
-                                "operation": {}
+                                "operation": {
+                                  "type": "string",
+                                  "enum": [
+                                    "create"
+                                  ]
+                                }
                               },
                               "required": [
                                 "operation",
@@ -30228,19 +30191,19 @@
                               ]
                             },
                             {
+                              "type": "object",
                               "properties": {
-                                "operation": {}
+                                "operation": {
+                                  "type": "string",
+                                  "enum": [
+                                    "delete"
+                                  ]
+                                }
                               },
                               "required": [
                                 "operation",
                                 "key"
-                              ],
-                              "not": {
-                                "required": [
-                                  "value",
-                                  "description"
-                                ]
-                              }
+                              ]
                             }
                           ]
                         }
@@ -30422,7 +30385,8 @@
                 }
               }
             }
-          }
+          },
+          "required": true
         }
       },
       "delete": {
@@ -30516,6 +30480,9 @@
                 }
               }
             }
+          },
+          "204": {
+            "description": "The Global Config item does not exist."
           },
           "400": {
             "description": "One of the provided values in the request query is invalid."
@@ -30744,7 +30711,8 @@
                 ]
               }
             }
-          }
+          },
+          "required": true
         }
       }
     },
@@ -30930,7 +30898,8 @@
                 }
               }
             }
-          }
+          },
+          "required": true
         }
       }
     },
@@ -31222,7 +31191,8 @@
               "example": "my-team-url-slug"
             }
           }
-        ]
+        ],
+        "x-speakeasy-test": false
       }
     },
     "/v1/global-config/{edgeConfigId}/backups/{edgeConfigBackupVersionId}/restore": {
@@ -31333,7 +31303,8 @@
               "example": "my-team-url-slug"
             }
           }
-        ]
+        ],
+        "x-speakeasy-test": false
       }
     },
     "/v1/global-config/{edgeConfigId}/backups": {
@@ -100499,6 +100470,8 @@
               "flag-deleted",
               "flag-unarchived",
               "flag-updated",
+              "flags-connection-created",
+              "flags-connection-deleted",
               "flags-explorer-subscription",
               "flags-sdk-key",
               "flags-sdk-key-added",
@@ -101424,6 +101397,8 @@
               "flag-deleted",
               "flag-unarchived",
               "flag-updated",
+              "flags-connection-created",
+              "flags-connection-deleted",
               "flags-explorer-subscription",
               "flags-sdk-key",
               "flags-sdk-key-added",
@@ -102137,6 +102112,8 @@
                 "flag-deleted",
                 "flag-unarchived",
                 "flag-updated",
+                "flags-connection-created",
+                "flags-connection-deleted",
                 "flags-explorer-subscription",
                 "flags-sdk-key",
                 "flags-sdk-key-added",
@@ -103495,6 +103472,14 @@
             "description": "The time when the named sandbox was last updated, in milliseconds since the epoch.",
             "example": 1750344501629
           },
+          "v0": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ],
+            "description": "Whether this sandbox is managed by v0 on the customer's behalf."
+          },
           "vcpus": {
             "type": "number",
             "description": "Number of virtual CPUs allocated.",
@@ -103767,6 +103752,14 @@
             "description": "The last time the sandbox was updated, in milliseconds since the epoch.",
             "example": 1750344501629
           },
+          "v0": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ],
+            "description": "Whether this sandbox is managed by v0 on the customer's behalf."
+          },
           "vcpus": {
             "type": "number",
             "description": "Number of vCPUs allocated to this sandbox.",
@@ -103837,6 +103830,14 @@
             "type": "number",
             "description": "The last time the drive was updated, in milliseconds since the epoch.",
             "example": 1750344501629
+          },
+          "v0": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ],
+            "description": "Whether this drive is managed by v0 on the customer's behalf."
           }
         },
         "required": [
@@ -103935,6 +103936,14 @@
             "type": "number",
             "description": "The last time the snapshot was updated, in milliseconds since the epoch.",
             "example": 1750344501629
+          },
+          "v0": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ],
+            "description": "Whether this snapshot is managed by v0 on the customer's behalf."
           }
         },
         "required": [

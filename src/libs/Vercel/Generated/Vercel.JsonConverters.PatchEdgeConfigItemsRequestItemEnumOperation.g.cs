@@ -3,10 +3,10 @@
 namespace Vercel.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class GetEdgeConfigsResponsePurposeVariant2TypeNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.GetEdgeConfigsResponsePurposeVariant2Type?>
+    public sealed class PatchEdgeConfigItemsRequestItemEnumOperationJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.PatchEdgeConfigItemsRequestItemEnumOperation>
     {
         /// <inheritdoc />
-        public override global::Vercel.GetEdgeConfigsResponsePurposeVariant2Type? Read(
+        public override global::Vercel.PatchEdgeConfigItemsRequestItemEnumOperation Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Vercel.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Vercel.GetEdgeConfigsResponsePurposeVariant2TypeExtensions.ToEnum(stringValue);
+                        return global::Vercel.PatchEdgeConfigItemsRequestItemEnumOperationExtensions.ToEnum(stringValue) ?? default;
                     }
 
                     break;
@@ -26,11 +26,11 @@ namespace Vercel.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Vercel.GetEdgeConfigsResponsePurposeVariant2Type)numValue;
+                    return (global::Vercel.PatchEdgeConfigItemsRequestItemEnumOperation)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Vercel.GetEdgeConfigsResponsePurposeVariant2Type?);
+                    return default(global::Vercel.PatchEdgeConfigItemsRequestItemEnumOperation);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,19 +42,12 @@ namespace Vercel.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Vercel.GetEdgeConfigsResponsePurposeVariant2Type? value,
+            global::Vercel.PatchEdgeConfigItemsRequestItemEnumOperation value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
 
-            if (value == null)
-            {
-                writer.WriteNullValue();
-            }
-            else
-            {
-                writer.WriteStringValue(global::Vercel.GetEdgeConfigsResponsePurposeVariant2TypeExtensions.ToValueString(value.Value));
-            }
+            writer.WriteStringValue(global::Vercel.PatchEdgeConfigItemsRequestItemEnumOperationExtensions.ToValueString(value));
         }
     }
 }

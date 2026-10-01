@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class GetEdgeConfigsResponseSchema
+    public sealed partial class GetEdgeConfigsResponseItemSchema
     {
 
         /// <summary>

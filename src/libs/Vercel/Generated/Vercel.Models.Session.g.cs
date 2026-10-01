@@ -203,6 +203,12 @@ namespace Vercel
         public required double UpdatedAt { get; set; }
 
         /// <summary>
+        /// Whether this sandbox is managed by v0 on the customer's behalf.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("v0")]
+        public bool? V0 { get; set; }
+
+        /// <summary>
         /// Number of vCPUs allocated to this sandbox.<br/>
         /// Example: 2
         /// </summary>
@@ -314,6 +320,9 @@ namespace Vercel
         /// The time when the sandbox was stopped, in milliseconds since the epoch.<br/>
         /// Example: 1750344501629L
         /// </param>
+        /// <param name="v0">
+        /// Whether this sandbox is managed by v0 on the customer's behalf.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -341,7 +350,8 @@ namespace Vercel
             double? snapshottedAt,
             string? sourceSnapshotId,
             double? startedAt,
-            double? stoppedAt)
+            double? stoppedAt,
+            bool? v0)
         {
             this.AbortedAt = abortedAt;
             this.ActiveCpuDurationMs = activeCpuDurationMs;
@@ -366,6 +376,7 @@ namespace Vercel
             this.StoppedAt = stoppedAt;
             this.Timeout = timeout;
             this.UpdatedAt = updatedAt;
+            this.V0 = v0;
             this.Vcpus = vcpus;
         }
 

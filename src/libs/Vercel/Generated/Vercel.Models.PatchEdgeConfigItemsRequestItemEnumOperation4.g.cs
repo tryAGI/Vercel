@@ -6,14 +6,40 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class PatchEdgeConfigItemsRequestItemEnumOperation4
+    public enum PatchEdgeConfigItemsRequestItemEnumOperation4
     {
-
         /// <summary>
-        /// Additional properties that are not explicitly defined in the schema
+        ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonExtensionData]
-        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+        Delete,
+    }
 
+    /// <summary>
+    /// Enum extensions to do fast conversions without the reflection.
+    /// </summary>
+    public static class PatchEdgeConfigItemsRequestItemEnumOperation4Extensions
+    {
+        /// <summary>
+        /// Converts an enum to a string.
+        /// </summary>
+        public static string ToValueString(this PatchEdgeConfigItemsRequestItemEnumOperation4 value)
+        {
+            return value switch
+            {
+                PatchEdgeConfigItemsRequestItemEnumOperation4.Delete => "delete",
+                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
+            };
+        }
+        /// <summary>
+        /// Converts an string to a enum.
+        /// </summary>
+        public static PatchEdgeConfigItemsRequestItemEnumOperation4? ToEnum(string value)
+        {
+            return value switch
+            {
+                "delete" => PatchEdgeConfigItemsRequestItemEnumOperation4.Delete,
+                _ => null,
+            };
+        }
     }
 }
