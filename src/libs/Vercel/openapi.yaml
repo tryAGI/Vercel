@@ -45471,7 +45471,7 @@
                       "items": {
                         "properties": {
                           "abuse": {
-                            "$ref": "#/components/schemas/AutoSDKSharedb19b25d8dd67bda4"
+                            "$ref": "#/components/schemas/AutoSDKShareddb65d769b106737a"
                           },
                           "accountId": {
                             "type": "string"
@@ -51097,7 +51097,7 @@
                   "nullable": true,
                   "oneOf": [
                     {
-                      "$ref": "#/components/schemas/AutoSDKSharedd82088fd2350423f"
+                      "$ref": "#/components/schemas/AutoSDKShared2696fdd7b8d201dd"
                     },
                     {
                       "properties": {
@@ -51130,7 +51130,7 @@
                           ]
                         },
                         "projects": {
-                          "$ref": "#/components/schemas/AutoSDKSharedd82088fd2350423f"
+                          "$ref": "#/components/schemas/AutoSDKShared2696fdd7b8d201dd"
                         }
                       },
                       "required": [
@@ -51171,7 +51171,7 @@
                         },
                         "projects": {
                           "items": {
-                            "$ref": "#/components/schemas/AutoSDKSharedea12f8422dc06e51"
+                            "$ref": "#/components/schemas/AutoSDKSharede27e7ff1aa86f19e"
                           },
                           "type": "array"
                         }
@@ -51670,7 +51670,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKSharedea12f8422dc06e51"
+                  "$ref": "#/components/schemas/AutoSDKSharede27e7ff1aa86f19e"
                 }
               }
             }
@@ -52446,7 +52446,7 @@
                 "schema": {
                   "properties": {
                     "abuse": {
-                      "$ref": "#/components/schemas/AutoSDKSharedb19b25d8dd67bda4"
+                      "$ref": "#/components/schemas/AutoSDKShareddb65d769b106737a"
                     },
                     "accountId": {
                       "type": "string"
@@ -54662,7 +54662,7 @@
                 "schema": {
                   "properties": {
                     "abuse": {
-                      "$ref": "#/components/schemas/AutoSDKSharedb19b25d8dd67bda4"
+                      "$ref": "#/components/schemas/AutoSDKShareddb65d769b106737a"
                     },
                     "accountId": {
                       "type": "string"
@@ -57935,7 +57935,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKSharedea12f8422dc06e51"
+                  "$ref": "#/components/schemas/AutoSDKSharede27e7ff1aa86f19e"
                 }
               }
             }
@@ -64594,7 +64594,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKSharedea12f8422dc06e51"
+                  "$ref": "#/components/schemas/AutoSDKSharede27e7ff1aa86f19e"
                 }
               }
             }
@@ -74640,7 +74640,7 @@
     },
     "/v1/security/firewall/events": {
       "get": {
-        "description": "Retrieve firewall actions for a project Rule names are resolved against the project's *current* active firewall configuration and the team's active rulesets, so a rule that has since been renamed reports its new name and one that has been deleted reports `null`. System rules such as `sys_dos_mitigation` and `ip_blocking` have no configured name and always report `null`.",
+        "description": "Retrieve firewall actions for a project Rule names are resolved against the project's *current* active firewall configuration and the team's active rulesets, so a rule that has since been renamed reports its new name and one that has been deleted reports `null`. System rules such as `sys_dos_mitigation` and `ip_blocking` have no configured name and always report `null`. Filters (`ip`, `isActive`, `action`, `actionType`, `ruleKind`, `ruleId`, `hosts`) are ANDed across params and ORed within a repeated param. They are applied to the policies before `limit`/`cursor`, so pages only count matching policies. A policy with no matching requests yields no action row, so a page can hold fewer than `limit` actions; only `pagination.next` signals the end. A `cursor` is only valid with the filters it was issued for.",
         "operationId": "getSecurityFirewallEvents",
         "security": [
           {
@@ -74713,10 +74713,278 @@
                         "type": "object"
                       },
                       "type": "array"
+                    },
+                    "pagination": {
+                      "properties": {
+                        "hasMore": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ]
+                        },
+                        "next": {
+                          "nullable": true,
+                          "type": "string",
+                          "description": "Pass as `cursor` to fetch the next page; null when there are no more."
+                        }
+                      },
+                      "required": [
+                        "hasMore",
+                        "next"
+                      ],
+                      "type": "object"
                     }
                   },
                   "required": [
-                    "actions"
+                    "actions",
+                    "pagination"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "408": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "500": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "sort",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "startTime:desc",
+                "startTime:asc"
+              ]
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 5000
+            }
+          },
+          {
+            "name": "cursor",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "projectId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "startTimestamp",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "endTimestamp",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "hosts",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "maxLength": 10000
+            }
+          },
+          {
+            "name": "ip",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "maxLength": 45
+              },
+              "maxItems": 100
+            }
+          },
+          {
+            "name": "isActive",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "action",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "deny",
+                  "challenge",
+                  "log",
+                  "rate_limit",
+                  "bypass"
+                ]
+              },
+              "maxItems": 5
+            }
+          },
+          {
+            "name": "actionType",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "system-action",
+                  "customer-action"
+                ]
+              },
+              "maxItems": 2
+            }
+          },
+          {
+            "name": "ruleKind",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "system",
+                "custom"
+              ]
+            }
+          },
+          {
+            "name": "ruleId",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "maxLength": 128
+              },
+              "maxItems": 100
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
+      }
+    },
+    "/v1/security/firewall/events/summary": {
+      "get": {
+        "description": "Aggregate counts over the firewall actions matched by the same filters as `GET /v1/security/firewall/events`, without fetching any rows. Counts are of policies (mitigations), including ones that matched no requests.",
+        "operationId": "getSecurityFirewallEventsSummary",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Read Firewall Actions Summary by Project",
+        "tags": [
+          "security"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "blockingIps": {
+                      "type": "number"
+                    },
+                    "byAction": {
+                      "additionalProperties": {
+                        "type": "number"
+                      },
+                      "type": "object"
+                    },
+                    "byActionType": {
+                      "additionalProperties": {
+                        "type": "number"
+                      },
+                      "type": "object"
+                    },
+                    "challengingIps": {
+                      "type": "number"
+                    },
+                    "other": {
+                      "type": "number"
+                    },
+                    "total": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "blockingIps",
+                    "byAction",
+                    "byActionType",
+                    "challengingIps",
+                    "other",
+                    "total"
                   ],
                   "type": "object"
                 }
@@ -74775,7 +75043,89 @@
             "in": "query",
             "required": false,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "maxLength": 10000
+            }
+          },
+          {
+            "name": "ip",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "maxLength": 45
+              },
+              "maxItems": 100
+            }
+          },
+          {
+            "name": "isActive",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "action",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "deny",
+                  "challenge",
+                  "log",
+                  "rate_limit",
+                  "bypass"
+                ]
+              },
+              "maxItems": 5
+            }
+          },
+          {
+            "name": "actionType",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "system-action",
+                  "customer-action"
+                ]
+              },
+              "maxItems": 2
+            }
+          },
+          {
+            "name": "ruleKind",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "system",
+                "custom"
+              ]
+            }
+          },
+          {
+            "name": "ruleId",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "maxLength": 128
+              },
+              "maxItems": 100
             }
           },
           {
@@ -95715,7 +96065,6 @@
               "custom",
               "discord",
               "github",
-              "google-dpop",
               "linear",
               "linq",
               "microsoft-entra",
@@ -96217,7 +96566,6 @@
               "custom",
               "discord",
               "github",
-              "google-dpop",
               "linear",
               "linq",
               "microsoft-entra",
@@ -108486,455 +108834,6 @@
         ],
         "type": "object"
       },
-      "AutoSDKShared0f475f9d19be3369": {
-        "oneOf": [
-          {
-            "properties": {
-              "action": {
-                "type": "string",
-                "enum": [
-                  "blocked"
-                ]
-              },
-              "actor": {
-                "type": "string"
-              },
-              "caseId": {
-                "type": "string"
-              },
-              "comment": {
-                "type": "string"
-              },
-              "createdAt": {
-                "type": "number"
-              },
-              "ineligibleForAppeal": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "isCascading": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "reason": {
-                "type": "string"
-              },
-              "registeredShaBlock": {
-                "properties": {
-                  "createdAt": {
-                    "type": "string"
-                  },
-                  "createdBy": {
-                    "type": "string"
-                  },
-                  "sha": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "createdAt",
-                  "createdBy",
-                  "sha"
-                ],
-                "type": "object",
-                "description": "Since September 2026. Set on the live `abuse.block` only, by the consumer that auto-registers this project's production git SHA in the lineage blocklist, so unblocking can disable the row this block created. Absent means this block registered nothing, which includes the case where registration was skipped because the SHA already belonged to an earlier block. Unblock must therefore clear only what is named here, never the project's current SHA, or it would disable another block's row."
-              },
-              "statusCode": {
-                "type": "number"
-              },
-              "threadId": {
-                "type": "string",
-                "description": "Plain thread ID, recorded separately from `caseId`."
-              }
-            },
-            "required": [
-              "action",
-              "createdAt",
-              "reason",
-              "statusCode"
-            ],
-            "type": "object"
-          },
-          {
-            "properties": {
-              "action": {
-                "type": "string",
-                "enum": [
-                  "unblocked"
-                ]
-              },
-              "actor": {
-                "type": "string"
-              },
-              "caseId": {
-                "type": "string"
-              },
-              "comment": {
-                "type": "string"
-              },
-              "createdAt": {
-                "type": "number"
-              },
-              "ineligibleForAppeal": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "isCascading": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "threadId": {
-                "type": "string",
-                "description": "Plain thread ID, recorded separately from `caseId`."
-              }
-            },
-            "required": [
-              "action",
-              "createdAt"
-            ],
-            "type": "object"
-          },
-          {
-            "properties": {
-              "action": {
-                "type": "string",
-                "enum": [
-                  "route-blocked"
-                ]
-              },
-              "actor": {
-                "type": "string"
-              },
-              "caseId": {
-                "type": "string"
-              },
-              "comment": {
-                "type": "string"
-              },
-              "createdAt": {
-                "type": "number"
-              },
-              "ineligibleForAppeal": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "isCascading": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "reason": {
-                "type": "string"
-              },
-              "route": {
-                "oneOf": [
-                  {
-                    "properties": {
-                      "expiry": {
-                        "type": "number"
-                      },
-                      "src": {
-                        "type": "string"
-                      },
-                      "status": {
-                        "type": "number"
-                      }
-                    },
-                    "required": [
-                      "src",
-                      "status"
-                    ],
-                    "type": "object"
-                  },
-                  {
-                    "properties": {
-                      "has": {
-                        "items": {
-                          "oneOf": [
-                            {
-                              "properties": {
-                                "key": {
-                                  "type": "string",
-                                  "enum": [
-                                    "x-vercel-ip-country"
-                                  ]
-                                },
-                                "type": {
-                                  "type": "string",
-                                  "enum": [
-                                    "header"
-                                  ]
-                                },
-                                "value": {
-                                  "properties": {
-                                    "eq": {
-                                      "type": "string"
-                                    }
-                                  },
-                                  "required": [
-                                    "eq"
-                                  ],
-                                  "type": "object"
-                                }
-                              },
-                              "required": [
-                                "key",
-                                "type",
-                                "value"
-                              ],
-                              "type": "object"
-                            },
-                            {
-                              "properties": {
-                                "type": {
-                                  "type": "string",
-                                  "enum": [
-                                    "host"
-                                  ]
-                                },
-                                "value": {
-                                  "properties": {
-                                    "eq": {
-                                      "type": "string"
-                                    }
-                                  },
-                                  "required": [
-                                    "eq"
-                                  ],
-                                  "type": "object"
-                                }
-                              },
-                              "required": [
-                                "type",
-                                "value"
-                              ],
-                              "type": "object"
-                            }
-                          ]
-                        },
-                        "type": "array"
-                      },
-                      "mitigate": {
-                        "properties": {
-                          "action": {
-                            "type": "string",
-                            "enum": [
-                              "block_legal_cwc"
-                            ]
-                          }
-                        },
-                        "required": [
-                          "action"
-                        ],
-                        "type": "object"
-                      },
-                      "src": {
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "has",
-                      "mitigate"
-                    ],
-                    "type": "object"
-                  }
-                ]
-              },
-              "threadId": {
-                "type": "string",
-                "description": "Plain thread ID, recorded separately from `caseId`."
-              }
-            },
-            "required": [
-              "action",
-              "createdAt",
-              "reason",
-              "route"
-            ],
-            "type": "object"
-          },
-          {
-            "properties": {
-              "action": {
-                "type": "string",
-                "enum": [
-                  "route-unblocked"
-                ]
-              },
-              "actor": {
-                "type": "string"
-              },
-              "caseId": {
-                "type": "string"
-              },
-              "comment": {
-                "type": "string"
-              },
-              "createdAt": {
-                "type": "number"
-              },
-              "ineligibleForAppeal": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "isCascading": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "route": {
-                "oneOf": [
-                  {
-                    "properties": {
-                      "expiry": {
-                        "type": "number"
-                      },
-                      "src": {
-                        "type": "string"
-                      },
-                      "status": {
-                        "type": "number"
-                      }
-                    },
-                    "required": [
-                      "src",
-                      "status"
-                    ],
-                    "type": "object"
-                  },
-                  {
-                    "properties": {
-                      "has": {
-                        "items": {
-                          "oneOf": [
-                            {
-                              "properties": {
-                                "key": {
-                                  "type": "string",
-                                  "enum": [
-                                    "x-vercel-ip-country"
-                                  ]
-                                },
-                                "type": {
-                                  "type": "string",
-                                  "enum": [
-                                    "header"
-                                  ]
-                                },
-                                "value": {
-                                  "properties": {
-                                    "eq": {
-                                      "type": "string"
-                                    }
-                                  },
-                                  "required": [
-                                    "eq"
-                                  ],
-                                  "type": "object"
-                                }
-                              },
-                              "required": [
-                                "key",
-                                "type",
-                                "value"
-                              ],
-                              "type": "object"
-                            },
-                            {
-                              "properties": {
-                                "type": {
-                                  "type": "string",
-                                  "enum": [
-                                    "host"
-                                  ]
-                                },
-                                "value": {
-                                  "properties": {
-                                    "eq": {
-                                      "type": "string"
-                                    }
-                                  },
-                                  "required": [
-                                    "eq"
-                                  ],
-                                  "type": "object"
-                                }
-                              },
-                              "required": [
-                                "type",
-                                "value"
-                              ],
-                              "type": "object"
-                            }
-                          ]
-                        },
-                        "type": "array"
-                      },
-                      "mitigate": {
-                        "properties": {
-                          "action": {
-                            "type": "string",
-                            "enum": [
-                              "block_legal_cwc"
-                            ]
-                          }
-                        },
-                        "required": [
-                          "action"
-                        ],
-                        "type": "object"
-                      },
-                      "src": {
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "has",
-                      "mitigate"
-                    ],
-                    "type": "object"
-                  }
-                ]
-              },
-              "statusCode": {
-                "type": "number"
-              },
-              "threadId": {
-                "type": "string",
-                "description": "Plain thread ID, recorded separately from `caseId`."
-              }
-            },
-            "required": [
-              "action",
-              "createdAt",
-              "route"
-            ],
-            "type": "object"
-          }
-        ]
-      },
       "AutoSDKShared0f637bb8b5caf2d6": {
         "properties": {
           "exclude": {
@@ -111266,6 +111165,12 @@
           "route"
         ],
         "type": "object"
+      },
+      "AutoSDKShared2696fdd7b8d201dd": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKShareddf9dcf09167540b7"
+        },
+        "type": "array"
       },
       "AutoSDKShared26c4879805a3820d": {
         "type": "array",
@@ -122590,174 +122495,6 @@
         ],
         "type": "object"
       },
-      "AutoSDKSharedb19b25d8dd67bda4": {
-        "properties": {
-          "block": {
-            "properties": {
-              "action": {
-                "type": "string",
-                "enum": [
-                  "blocked"
-                ]
-              },
-              "actor": {
-                "type": "string"
-              },
-              "caseId": {
-                "type": "string"
-              },
-              "comment": {
-                "type": "string"
-              },
-              "createdAt": {
-                "type": "number"
-              },
-              "ineligibleForAppeal": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "isCascading": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "reason": {
-                "type": "string"
-              },
-              "registeredShaBlock": {
-                "properties": {
-                  "createdAt": {
-                    "type": "string"
-                  },
-                  "createdBy": {
-                    "type": "string"
-                  },
-                  "sha": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "createdAt",
-                  "createdBy",
-                  "sha"
-                ],
-                "type": "object",
-                "description": "Since September 2026. Set on the live `abuse.block` only, by the consumer that auto-registers this project's production git SHA in the lineage blocklist, so unblocking can disable the row this block created. Absent means this block registered nothing, which includes the case where registration was skipped because the SHA already belonged to an earlier block. Unblock must therefore clear only what is named here, never the project's current SHA, or it would disable another block's row."
-              },
-              "statusCode": {
-                "type": "number"
-              },
-              "threadId": {
-                "type": "string",
-                "description": "Plain thread ID, recorded separately from `caseId`."
-              }
-            },
-            "required": [
-              "action",
-              "createdAt",
-              "reason",
-              "statusCode"
-            ],
-            "type": "object"
-          },
-          "blockHistory": {
-            "$ref": "#/components/schemas/AutoSDKSharedee6c29115d657a21"
-          },
-          "history": {
-            "items": {
-              "properties": {
-                "at": {
-                  "type": "number"
-                },
-                "by": {
-                  "type": "string"
-                },
-                "byId": {
-                  "type": "string"
-                },
-                "reason": {
-                  "type": "string"
-                },
-                "scanner": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "at",
-                "by",
-                "byId",
-                "reason",
-                "scanner"
-              ],
-              "type": "object"
-            },
-            "type": "array"
-          },
-          "interstitial": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "interstitialHistory": {
-            "items": {
-              "properties": {
-                "action": {
-                  "type": "string",
-                  "enum": [
-                    "add-deployment-interstitial",
-                    "add-project-interstitial",
-                    "remove-deployment-interstitial",
-                    "remove-project-interstitial"
-                  ]
-                },
-                "actor": {
-                  "type": "string"
-                },
-                "caseId": {
-                  "type": "string"
-                },
-                "comment": {
-                  "type": "string"
-                },
-                "createdAt": {
-                  "type": "number"
-                },
-                "reason": {
-                  "type": "string"
-                },
-                "threadId": {
-                  "type": "string",
-                  "description": "Plain thread ID, recorded separately from `caseId`."
-                }
-              },
-              "required": [
-                "action",
-                "createdAt"
-              ],
-              "type": "object"
-            },
-            "type": "array"
-          },
-          "scanner": {
-            "type": "string"
-          },
-          "updatedAt": {
-            "type": "number"
-          }
-        },
-        "required": [
-          "history",
-          "updatedAt"
-        ],
-        "type": "object"
-      },
       "AutoSDKSharedb2aa6c85fab0cd65": {
         "nullable": true,
         "properties": {
@@ -126571,6 +126308,471 @@
           }
         ]
       },
+      "AutoSDKSharedcd352219f9b13f14": {
+        "oneOf": [
+          {
+            "properties": {
+              "abuseAgentRunId": {
+                "type": "string",
+                "description": "Since October 2026. The abuse agent run whose verdict led to this block. Absent on blocks made before the field existed, even agent-led ones."
+              },
+              "action": {
+                "type": "string",
+                "enum": [
+                  "blocked"
+                ]
+              },
+              "actor": {
+                "type": "string"
+              },
+              "caseId": {
+                "type": "string"
+              },
+              "comment": {
+                "type": "string"
+              },
+              "createdAt": {
+                "type": "number"
+              },
+              "ineligibleForAppeal": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "isCascading": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "reason": {
+                "type": "string"
+              },
+              "registeredShaBlock": {
+                "properties": {
+                  "createdAt": {
+                    "type": "string"
+                  },
+                  "createdBy": {
+                    "type": "string"
+                  },
+                  "sha": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "createdAt",
+                  "createdBy",
+                  "sha"
+                ],
+                "type": "object",
+                "description": "Since September 2026. Set on the live `abuse.block` only, by the consumer that auto-registers this project's production git SHA in the lineage blocklist, so unblocking can disable the row this block created. Absent means this block registered nothing, which includes the case where registration was skipped because the SHA already belonged to an earlier block. Unblock must therefore clear only what is named here, never the project's current SHA, or it would disable another block's row."
+              },
+              "statusCode": {
+                "type": "number"
+              },
+              "threadId": {
+                "type": "string",
+                "description": "Plain thread ID, recorded separately from `caseId`."
+              }
+            },
+            "required": [
+              "action",
+              "createdAt",
+              "reason",
+              "statusCode"
+            ],
+            "type": "object"
+          },
+          {
+            "properties": {
+              "abuseAgentRunId": {
+                "type": "string",
+                "description": "Since October 2026. The abuse agent run whose verdict led to this block. Absent on blocks made before the field existed, even agent-led ones."
+              },
+              "action": {
+                "type": "string",
+                "enum": [
+                  "unblocked"
+                ]
+              },
+              "actor": {
+                "type": "string"
+              },
+              "caseId": {
+                "type": "string"
+              },
+              "comment": {
+                "type": "string"
+              },
+              "createdAt": {
+                "type": "number"
+              },
+              "ineligibleForAppeal": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "isCascading": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "threadId": {
+                "type": "string",
+                "description": "Plain thread ID, recorded separately from `caseId`."
+              }
+            },
+            "required": [
+              "action",
+              "createdAt"
+            ],
+            "type": "object"
+          },
+          {
+            "properties": {
+              "abuseAgentRunId": {
+                "type": "string",
+                "description": "Since October 2026. The abuse agent run whose verdict led to this block. Absent on blocks made before the field existed, even agent-led ones."
+              },
+              "action": {
+                "type": "string",
+                "enum": [
+                  "route-blocked"
+                ]
+              },
+              "actor": {
+                "type": "string"
+              },
+              "caseId": {
+                "type": "string"
+              },
+              "comment": {
+                "type": "string"
+              },
+              "createdAt": {
+                "type": "number"
+              },
+              "ineligibleForAppeal": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "isCascading": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "reason": {
+                "type": "string"
+              },
+              "route": {
+                "oneOf": [
+                  {
+                    "properties": {
+                      "expiry": {
+                        "type": "number"
+                      },
+                      "src": {
+                        "type": "string"
+                      },
+                      "status": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "src",
+                      "status"
+                    ],
+                    "type": "object"
+                  },
+                  {
+                    "properties": {
+                      "has": {
+                        "items": {
+                          "oneOf": [
+                            {
+                              "properties": {
+                                "key": {
+                                  "type": "string",
+                                  "enum": [
+                                    "x-vercel-ip-country"
+                                  ]
+                                },
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
+                                    "header"
+                                  ]
+                                },
+                                "value": {
+                                  "properties": {
+                                    "eq": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "eq"
+                                  ],
+                                  "type": "object"
+                                }
+                              },
+                              "required": [
+                                "key",
+                                "type",
+                                "value"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
+                                    "host"
+                                  ]
+                                },
+                                "value": {
+                                  "properties": {
+                                    "eq": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "eq"
+                                  ],
+                                  "type": "object"
+                                }
+                              },
+                              "required": [
+                                "type",
+                                "value"
+                              ],
+                              "type": "object"
+                            }
+                          ]
+                        },
+                        "type": "array"
+                      },
+                      "mitigate": {
+                        "properties": {
+                          "action": {
+                            "type": "string",
+                            "enum": [
+                              "block_legal_cwc"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "action"
+                        ],
+                        "type": "object"
+                      },
+                      "src": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "has",
+                      "mitigate"
+                    ],
+                    "type": "object"
+                  }
+                ]
+              },
+              "threadId": {
+                "type": "string",
+                "description": "Plain thread ID, recorded separately from `caseId`."
+              }
+            },
+            "required": [
+              "action",
+              "createdAt",
+              "reason",
+              "route"
+            ],
+            "type": "object"
+          },
+          {
+            "properties": {
+              "abuseAgentRunId": {
+                "type": "string",
+                "description": "Since October 2026. The abuse agent run whose verdict led to this block. Absent on blocks made before the field existed, even agent-led ones."
+              },
+              "action": {
+                "type": "string",
+                "enum": [
+                  "route-unblocked"
+                ]
+              },
+              "actor": {
+                "type": "string"
+              },
+              "caseId": {
+                "type": "string"
+              },
+              "comment": {
+                "type": "string"
+              },
+              "createdAt": {
+                "type": "number"
+              },
+              "ineligibleForAppeal": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "isCascading": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "route": {
+                "oneOf": [
+                  {
+                    "properties": {
+                      "expiry": {
+                        "type": "number"
+                      },
+                      "src": {
+                        "type": "string"
+                      },
+                      "status": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "src",
+                      "status"
+                    ],
+                    "type": "object"
+                  },
+                  {
+                    "properties": {
+                      "has": {
+                        "items": {
+                          "oneOf": [
+                            {
+                              "properties": {
+                                "key": {
+                                  "type": "string",
+                                  "enum": [
+                                    "x-vercel-ip-country"
+                                  ]
+                                },
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
+                                    "header"
+                                  ]
+                                },
+                                "value": {
+                                  "properties": {
+                                    "eq": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "eq"
+                                  ],
+                                  "type": "object"
+                                }
+                              },
+                              "required": [
+                                "key",
+                                "type",
+                                "value"
+                              ],
+                              "type": "object"
+                            },
+                            {
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
+                                    "host"
+                                  ]
+                                },
+                                "value": {
+                                  "properties": {
+                                    "eq": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "eq"
+                                  ],
+                                  "type": "object"
+                                }
+                              },
+                              "required": [
+                                "type",
+                                "value"
+                              ],
+                              "type": "object"
+                            }
+                          ]
+                        },
+                        "type": "array"
+                      },
+                      "mitigate": {
+                        "properties": {
+                          "action": {
+                            "type": "string",
+                            "enum": [
+                              "block_legal_cwc"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "action"
+                        ],
+                        "type": "object"
+                      },
+                      "src": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "has",
+                      "mitigate"
+                    ],
+                    "type": "object"
+                  }
+                ]
+              },
+              "statusCode": {
+                "type": "number"
+              },
+              "threadId": {
+                "type": "string",
+                "description": "Plain thread ID, recorded separately from `caseId`."
+              }
+            },
+            "required": [
+              "action",
+              "createdAt",
+              "route"
+            ],
+            "type": "object"
+          }
+        ]
+      },
       "AutoSDKSharedceccd47983fcf9de": {
         "oneOf": [
           {
@@ -128358,17 +128560,983 @@
         },
         "maxItems": 10000
       },
-      "AutoSDKSharedd82088fd2350423f": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKSharede7e7c058d3e19656"
-        },
-        "type": "array"
-      },
       "AutoSDKSharedd8f4627308e44215": {
         "items": {
           "$ref": "#/components/schemas/AutoSDKSharedec1121c0746f62d9"
         },
         "type": "array"
+      },
+      "AutoSDKShareddb65d769b106737a": {
+        "properties": {
+          "block": {
+            "properties": {
+              "abuseAgentRunId": {
+                "type": "string",
+                "description": "Since October 2026. The abuse agent run whose verdict led to this block. Absent on blocks made before the field existed, even agent-led ones."
+              },
+              "action": {
+                "type": "string",
+                "enum": [
+                  "blocked"
+                ]
+              },
+              "actor": {
+                "type": "string"
+              },
+              "caseId": {
+                "type": "string"
+              },
+              "comment": {
+                "type": "string"
+              },
+              "createdAt": {
+                "type": "number"
+              },
+              "ineligibleForAppeal": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "isCascading": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "reason": {
+                "type": "string"
+              },
+              "registeredShaBlock": {
+                "properties": {
+                  "createdAt": {
+                    "type": "string"
+                  },
+                  "createdBy": {
+                    "type": "string"
+                  },
+                  "sha": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "createdAt",
+                  "createdBy",
+                  "sha"
+                ],
+                "type": "object",
+                "description": "Since September 2026. Set on the live `abuse.block` only, by the consumer that auto-registers this project's production git SHA in the lineage blocklist, so unblocking can disable the row this block created. Absent means this block registered nothing, which includes the case where registration was skipped because the SHA already belonged to an earlier block. Unblock must therefore clear only what is named here, never the project's current SHA, or it would disable another block's row."
+              },
+              "statusCode": {
+                "type": "number"
+              },
+              "threadId": {
+                "type": "string",
+                "description": "Plain thread ID, recorded separately from `caseId`."
+              }
+            },
+            "required": [
+              "action",
+              "createdAt",
+              "reason",
+              "statusCode"
+            ],
+            "type": "object"
+          },
+          "blockHistory": {
+            "$ref": "#/components/schemas/AutoSDKShareddc6178cfffe6508e"
+          },
+          "history": {
+            "items": {
+              "properties": {
+                "at": {
+                  "type": "number"
+                },
+                "by": {
+                  "type": "string"
+                },
+                "byId": {
+                  "type": "string"
+                },
+                "reason": {
+                  "type": "string"
+                },
+                "scanner": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "at",
+                "by",
+                "byId",
+                "reason",
+                "scanner"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "interstitial": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "interstitialHistory": {
+            "items": {
+              "properties": {
+                "action": {
+                  "type": "string",
+                  "enum": [
+                    "add-deployment-interstitial",
+                    "add-project-interstitial",
+                    "remove-deployment-interstitial",
+                    "remove-project-interstitial"
+                  ]
+                },
+                "actor": {
+                  "type": "string"
+                },
+                "caseId": {
+                  "type": "string"
+                },
+                "comment": {
+                  "type": "string"
+                },
+                "createdAt": {
+                  "type": "number"
+                },
+                "reason": {
+                  "type": "string"
+                },
+                "threadId": {
+                  "type": "string",
+                  "description": "Plain thread ID, recorded separately from `caseId`."
+                }
+              },
+              "required": [
+                "action",
+                "createdAt"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "scanner": {
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "history",
+          "updatedAt"
+        ],
+        "type": "object"
+      },
+      "AutoSDKShareddc6178cfffe6508e": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKSharedcd352219f9b13f14"
+        },
+        "type": "array"
+      },
+      "AutoSDKShareddf9dcf09167540b7": {
+        "properties": {
+          "abuse": {
+            "$ref": "#/components/schemas/AutoSDKShareddb65d769b106737a"
+          },
+          "accountId": {
+            "type": "string"
+          },
+          "alias": {
+            "$ref": "#/components/schemas/AutoSDKSharedb0d372310a1a616c"
+          },
+          "analytics": {
+            "properties": {
+              "canceledAt": {
+                "nullable": true,
+                "type": "number"
+              },
+              "disabledAt": {
+                "type": "number"
+              },
+              "enabledAt": {
+                "type": "number"
+              },
+              "id": {
+                "type": "string"
+              },
+              "paidAt": {
+                "type": "number"
+              },
+              "sampleRatePercent": {
+                "nullable": true,
+                "type": "number"
+              },
+              "spendLimitInDollars": {
+                "nullable": true,
+                "type": "number"
+              }
+            },
+            "required": [
+              "disabledAt",
+              "enabledAt",
+              "id"
+            ],
+            "type": "object"
+          },
+          "appliedCve55182Migration": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "autoAssignCustomDomains": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "autoAssignCustomDomainsUpdatedBy": {
+            "type": "string"
+          },
+          "autoExposeSystemEnvs": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "buildCommand": {
+            "nullable": true,
+            "type": "string"
+          },
+          "commandForIgnoringBuildStep": {
+            "nullable": true,
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "number"
+          },
+          "creator": {
+            "$ref": "#/components/schemas/AutoSDKSharedf1f589ae3ca84945"
+          },
+          "customerSupportCodeVisibility": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "deploymentExpiration": {
+            "properties": {
+              "deploymentsToKeep": {
+                "type": "number",
+                "description": "Minimum number of production deployments to keep for this project, even if they are over the production expiration limit."
+              },
+              "expirationDays": {
+                "type": "number",
+                "description": "Number of days to keep non-production deployments (mostly preview deployments) before soft deletion."
+              },
+              "expirationDaysCanceled": {
+                "type": "number",
+                "description": "Number of days to keep canceled deployments before soft deletion."
+              },
+              "expirationDaysErrored": {
+                "type": "number",
+                "description": "Number of days to keep errored deployments before soft deletion."
+              },
+              "expirationDaysProduction": {
+                "type": "number",
+                "description": "Number of days to keep production deployments before soft deletion."
+              }
+            },
+            "type": "object",
+            "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
+          },
+          "devCommand": {
+            "nullable": true,
+            "type": "string"
+          },
+          "directoryListing": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "env": {
+            "$ref": "#/components/schemas/AutoSDKSharedb50781eef24da20c"
+          },
+          "framework": {
+            "nullable": true,
+            "type": "string",
+            "enum": [
+              "actix-web",
+              "angular",
+              "ash",
+              "astro",
+              "axum",
+              "blitzjs",
+              "brunch",
+              "bun",
+              "container",
+              "create-react-app",
+              "django",
+              "docusaurus",
+              "docusaurus-2",
+              "dojo",
+              "eleventy",
+              "elysia",
+              "ember",
+              "eve",
+              "express",
+              "factory-eve",
+              "fastapi",
+              "fasthtml",
+              "fastify",
+              "flask",
+              "gatsby",
+              "go",
+              "gridsome",
+              "h3",
+              "hexo",
+              "hono",
+              "hugo",
+              "hydrogen",
+              "ionic-angular",
+              "ionic-react",
+              "jekyll",
+              "koa",
+              "mastra",
+              "middleman",
+              "nestjs",
+              "nextjs",
+              "nitro",
+              "node",
+              "nuxtjs",
+              "parcel",
+              "polymer",
+              "preact",
+              "python",
+              "react-router",
+              "redwoodjs",
+              "remix",
+              "ruby",
+              "rust",
+              "saber",
+              "sanity",
+              "sanity-v2",
+              "sapper",
+              "scully",
+              "services",
+              "solidstart",
+              "solidstart-1",
+              "stencil",
+              "storybook",
+              "svelte",
+              "sveltekit",
+              "sveltekit-1",
+              "tanstack-start",
+              "tanstack-start-lovable",
+              "umijs",
+              "vite",
+              "vitepress",
+              "vue",
+              "vuepress",
+              "xmcp",
+              "zola",
+              null
+            ]
+          },
+          "gitComments": {
+            "properties": {
+              "onCommit": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ],
+                "description": "Whether the Vercel bot should comment on commits"
+              },
+              "onPullRequest": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ],
+                "description": "Whether the Vercel bot should comment on PRs"
+              }
+            },
+            "required": [
+              "onCommit",
+              "onPullRequest"
+            ],
+            "type": "object"
+          },
+          "gitForkProtection": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "gitProviderOptions": {
+            "$ref": "#/components/schemas/AutoSDKSharedc12640b06f1c9105"
+          },
+          "hasActiveBranches": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "installCommand": {
+            "nullable": true,
+            "type": "string"
+          },
+          "internalRoutes": {
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "expiry": {
+                      "type": "number"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "src",
+                    "status"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "properties": {
+                    "has": {
+                      "items": {
+                        "oneOf": [
+                          {
+                            "properties": {
+                              "key": {
+                                "type": "string",
+                                "enum": [
+                                  "x-vercel-ip-country"
+                                ]
+                              },
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "header"
+                                ]
+                              },
+                              "value": {
+                                "properties": {
+                                  "eq": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "eq"
+                                ],
+                                "type": "object"
+                              }
+                            },
+                            "required": [
+                              "key",
+                              "type",
+                              "value"
+                            ],
+                            "type": "object"
+                          },
+                          {
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "host"
+                                ]
+                              },
+                              "value": {
+                                "properties": {
+                                  "eq": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "eq"
+                                ],
+                                "type": "object"
+                              }
+                            },
+                            "required": [
+                              "type",
+                              "value"
+                            ],
+                            "type": "object"
+                          }
+                        ]
+                      },
+                      "type": "array"
+                    },
+                    "mitigate": {
+                      "properties": {
+                        "action": {
+                          "type": "string",
+                          "enum": [
+                            "block_legal_cwc"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "action"
+                      ],
+                      "type": "object"
+                    },
+                    "src": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "has",
+                    "mitigate"
+                  ],
+                  "type": "object"
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "ipBuckets": {
+            "items": {
+              "properties": {
+                "bucket": {
+                  "type": "string"
+                },
+                "default": {
+                  "type": "boolean",
+                  "enum": [
+                    false,
+                    true
+                  ]
+                },
+                "supportUntil": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "bucket"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "latestDeployments": {
+            "$ref": "#/components/schemas/AutoSDKShared2b72c73af96370da"
+          },
+          "link": {
+            "$ref": "#/components/schemas/AutoSDKSharede0f9d68fc63cf31d"
+          },
+          "live": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "nodeVersion": {
+            "type": "string",
+            "enum": [
+              "10.x",
+              "12.x",
+              "14.x",
+              "16.x",
+              "18.x",
+              "20.x",
+              "22.x",
+              "24.x",
+              "8.10.x"
+            ]
+          },
+          "oidcTokenConfig": {
+            "properties": {
+              "enabled": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ],
+                "description": "Whether or not to generate OpenID Connect JSON Web Tokens."
+              },
+              "issuerMode": {
+                "type": "string",
+                "enum": [
+                  "global",
+                  "team"
+                ],
+                "description": "- team: `https://oidc.vercel.com/[team_slug]` - global: `https://oidc.vercel.com`"
+              }
+            },
+            "type": "object"
+          },
+          "outputDirectory": {
+            "nullable": true,
+            "type": "string"
+          },
+          "passport": {
+            "nullable": true,
+            "properties": {
+              "connectorId": {
+                "type": "string"
+              },
+              "deploymentType": {
+                "type": "string",
+                "enum": [
+                  "all",
+                  "all_except_custom_domains",
+                  "preview",
+                  "prod_deployment_urls_and_all_previews"
+                ]
+              }
+            },
+            "required": [
+              "connectorId",
+              "deploymentType"
+            ],
+            "type": "object"
+          },
+          "passwordProtection": {
+            "nullable": true,
+            "type": "object"
+          },
+          "paused": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "resourceConfig": {
+            "properties": {
+              "buildMachineElasticLastUpdated": {
+                "type": "number"
+              },
+              "buildMachineElasticReason": {
+                "type": "string",
+                "enum": [
+                  "basic-floor",
+                  "build-timeout-failure",
+                  "enospc-failure",
+                  "enterprise-floor",
+                  "high-peak-disk",
+                  "high-peak-memory",
+                  "long-build-duration",
+                  "oom-failure",
+                  "short-build-duration",
+                  "sustained-high-cpu"
+                ]
+              },
+              "buildMachineElasticTransition": {
+                "properties": {
+                  "algorithmVersion": {
+                    "type": "string"
+                  },
+                  "at": {
+                    "type": "number"
+                  },
+                  "direction": {
+                    "type": "string",
+                    "enum": [
+                      "downgrade",
+                      "upgrade"
+                    ]
+                  }
+                },
+                "required": [
+                  "algorithmVersion",
+                  "at",
+                  "direction"
+                ],
+                "type": "object"
+              },
+              "buildMachineSelection": {
+                "type": "string",
+                "enum": [
+                  "elastic",
+                  "fixed"
+                ]
+              },
+              "buildMachineType": {
+                "type": "string",
+                "enum": [
+                  "basic",
+                  "enhanced",
+                  "standard",
+                  "turbo"
+                ]
+              },
+              "buildQueue": {
+                "properties": {
+                  "configuration": {
+                    "type": "string",
+                    "enum": [
+                      "SKIP_NAMESPACE_QUEUE",
+                      "WAIT_FOR_NAMESPACE_QUEUE"
+                    ]
+                  }
+                },
+                "type": "object"
+              },
+              "elasticConcurrencyEnabled": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "enableFunctionsBeta": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "fluid": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "functionDefaultMemoryType": {
+                "type": "string",
+                "enum": [
+                  "performance",
+                  "performance_xl",
+                  "standard",
+                  "standard_legacy"
+                ]
+              },
+              "functionDefaultRegions": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "functionDefaultTimeout": {
+                "type": "number"
+              },
+              "functionZeroConfigFailover": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "isNSNBDisabled": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              }
+            },
+            "type": "object",
+            "required": [
+              "functionDefaultRegions"
+            ]
+          },
+          "rollingRelease": {
+            "$ref": "#/components/schemas/AutoSDKShared42a87d29a5696121"
+          },
+          "rootDirectory": {
+            "nullable": true,
+            "type": "string"
+          },
+          "security": {
+            "$ref": "#/components/schemas/AutoSDKShared9a99a7cde55f3566"
+          },
+          "serverlessFunctionRegion": {
+            "type": "string"
+          },
+          "serverlessFunctionZeroConfigFailover": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "skipGitConnectDuringLink": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "sourceFilesOutsideRootDirectory": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "speedInsights": {
+            "properties": {
+              "canceledAt": {
+                "type": "number"
+              },
+              "dataReceivedAt": {
+                "type": "number",
+                "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
+              },
+              "disabledAt": {
+                "type": "number"
+              },
+              "enabledAt": {
+                "type": "number"
+              },
+              "hasData": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "id": {
+                "type": "string"
+              },
+              "paidAt": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          },
+          "ssoProtection": {
+            "nullable": true,
+            "properties": {
+              "april2026SecurityIncidentMigrationAppliedFrom": {
+                "nullable": true,
+                "type": "string",
+                "enum": [
+                  "all",
+                  "all_except_custom_domains",
+                  "preview",
+                  "prod_deployment_urls_and_all_previews",
+                  null
+                ]
+              },
+              "cve55182MigrationAppliedFrom": {
+                "nullable": true,
+                "type": "string",
+                "enum": [
+                  "all",
+                  "all_except_custom_domains",
+                  "preview",
+                  "prod_deployment_urls_and_all_previews",
+                  null
+                ]
+              },
+              "deploymentType": {
+                "type": "string",
+                "enum": [
+                  "all",
+                  "all_except_custom_domains",
+                  "preview",
+                  "prod_deployment_urls_and_all_previews"
+                ]
+              }
+            },
+            "required": [
+              "deploymentType"
+            ],
+            "type": "object"
+          },
+          "targets": {
+            "$ref": "#/components/schemas/AutoSDKSharedd6cd5632365f1112"
+          },
+          "tier": {
+            "type": "string",
+            "enum": [
+              "priority"
+            ]
+          },
+          "transferCompletedAt": {
+            "type": "number"
+          },
+          "transferredFromAccountId": {
+            "type": "string"
+          },
+          "transferStartedAt": {
+            "type": "number"
+          },
+          "transferToAccountId": {
+            "type": "string"
+          },
+          "trustedSources": {
+            "$ref": "#/components/schemas/AutoSDKSharedc367dfb98a4b6059"
+          },
+          "updatedAt": {
+            "type": "number"
+          },
+          "webAnalytics": {
+            "properties": {
+              "canceledAt": {
+                "type": "number"
+              },
+              "disabledAt": {
+                "type": "number"
+              },
+              "enabledAt": {
+                "type": "number"
+              },
+              "hasData": {
+                "type": "boolean",
+                "enum": [
+                  true
+                ]
+              },
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "accountId",
+          "alias",
+          "deploymentExpiration",
+          "directoryListing",
+          "id",
+          "name",
+          "nodeVersion",
+          "resourceConfig",
+          "serverlessFunctionRegion"
+        ],
+        "type": "object"
       },
       "AutoSDKSharede064e44b973b9ad0": {
         "properties": {
@@ -129195,1145 +130363,10 @@
           }
         ]
       },
-      "AutoSDKSharede41d4d0f13cb4d9f": {
-        "type": "object",
-        "description": "The configuration for the flag in different environments",
-        "additionalProperties": {
-          "$ref": "#/components/schemas/AutoSDKSharedba25b79c660ac1ce"
-        },
-        "maxProperties": 10
-      },
-      "AutoSDKSharede68d1538d48d5cc1": {
-        "anyOf": [
-          {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-              "type": {},
-              "variantId": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "type",
-              "variantId"
-            ]
-          },
-          {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-              "type": {},
-              "base": {
-                "type": "object",
-                "additionalProperties": false,
-                "properties": {
-                  "type": {},
-                  "kind": {
-                    "type": "string"
-                  },
-                  "attribute": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "type",
-                  "kind",
-                  "attribute"
-                ]
-              },
-              "weights": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "number"
-                },
-                "description": "The distribution for each variant"
-              },
-              "defaultVariantId": {
-                "type": "string",
-                "description": "This variant will be used when the base attribute does not exist"
-              }
-            },
-            "required": [
-              "type",
-              "base",
-              "weights",
-              "defaultVariantId"
-            ]
-          },
-          {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-              "type": {},
-              "base": {
-                "type": "object",
-                "additionalProperties": false,
-                "properties": {
-                  "type": {},
-                  "kind": {
-                    "type": "string"
-                  },
-                  "attribute": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "type",
-                  "kind",
-                  "attribute"
-                ]
-              },
-              "startTimestamp": {
-                "type": "number",
-                "description": "Epoch ms when the rollout begins"
-              },
-              "rollFromVariantId": {
-                "type": "string",
-                "description": "The variant to roll away from"
-              },
-              "rollToVariantId": {
-                "type": "string",
-                "description": "The variant to roll towards"
-              },
-              "defaultVariantId": {
-                "type": "string",
-                "description": "This variant will be used when the base attribute does not exist"
-              },
-              "slots": {
-                "type": "array",
-                "description": "Each slot defines a promille and how long it is served for. After all slots expire, finalPromille is served indefinitely (100% when omitted). The final percentage does not need its own slot.",
-                "items": {
-                  "type": "object",
-                  "additionalProperties": false,
-                  "properties": {
-                    "promille": {
-                      "type": "number",
-                      "minimum": 0,
-                      "maximum": 100000,
-                      "description": "Promille of traffic for rollToVariant (0-100_000, where 1_000 = 1%)"
-                    },
-                    "durationMs": {
-                      "type": "number",
-                      "minimum": 0,
-                      "description": "How long this promille is served in ms before moving to the next slot."
-                    }
-                  },
-                  "required": [
-                    "promille",
-                    "durationMs"
-                  ]
-                },
-                "minItems": 1
-              },
-              "finalPromille": {
-                "type": "number",
-                "minimum": 0,
-                "maximum": 100000,
-                "description": "Traffic for rollToVariant after all slots expire (0-100_000, where 1_000 = 1%). Defaults to 100_000 (100%). Set 50_000 to end at 50%."
-              }
-            },
-            "required": [
-              "type",
-              "base",
-              "startTimestamp",
-              "rollFromVariantId",
-              "rollToVariantId",
-              "defaultVariantId",
-              "slots"
-            ]
-          }
-        ]
-      },
-      "AutoSDKSharede7e7c058d3e19656": {
+      "AutoSDKSharede27e7ff1aa86f19e": {
         "properties": {
           "abuse": {
-            "$ref": "#/components/schemas/AutoSDKSharedb19b25d8dd67bda4"
-          },
-          "accountId": {
-            "type": "string"
-          },
-          "alias": {
-            "$ref": "#/components/schemas/AutoSDKSharedb0d372310a1a616c"
-          },
-          "analytics": {
-            "properties": {
-              "canceledAt": {
-                "nullable": true,
-                "type": "number"
-              },
-              "disabledAt": {
-                "type": "number"
-              },
-              "enabledAt": {
-                "type": "number"
-              },
-              "id": {
-                "type": "string"
-              },
-              "paidAt": {
-                "type": "number"
-              },
-              "sampleRatePercent": {
-                "nullable": true,
-                "type": "number"
-              },
-              "spendLimitInDollars": {
-                "nullable": true,
-                "type": "number"
-              }
-            },
-            "required": [
-              "disabledAt",
-              "enabledAt",
-              "id"
-            ],
-            "type": "object"
-          },
-          "appliedCve55182Migration": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "autoAssignCustomDomains": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "autoAssignCustomDomainsUpdatedBy": {
-            "type": "string"
-          },
-          "autoExposeSystemEnvs": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "buildCommand": {
-            "nullable": true,
-            "type": "string"
-          },
-          "commandForIgnoringBuildStep": {
-            "nullable": true,
-            "type": "string"
-          },
-          "createdAt": {
-            "type": "number"
-          },
-          "creator": {
-            "$ref": "#/components/schemas/AutoSDKSharedf1f589ae3ca84945"
-          },
-          "customerSupportCodeVisibility": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "deploymentExpiration": {
-            "properties": {
-              "deploymentsToKeep": {
-                "type": "number",
-                "description": "Minimum number of production deployments to keep for this project, even if they are over the production expiration limit."
-              },
-              "expirationDays": {
-                "type": "number",
-                "description": "Number of days to keep non-production deployments (mostly preview deployments) before soft deletion."
-              },
-              "expirationDaysCanceled": {
-                "type": "number",
-                "description": "Number of days to keep canceled deployments before soft deletion."
-              },
-              "expirationDaysErrored": {
-                "type": "number",
-                "description": "Number of days to keep errored deployments before soft deletion."
-              },
-              "expirationDaysProduction": {
-                "type": "number",
-                "description": "Number of days to keep production deployments before soft deletion."
-              }
-            },
-            "type": "object",
-            "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
-          },
-          "devCommand": {
-            "nullable": true,
-            "type": "string"
-          },
-          "directoryListing": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "env": {
-            "$ref": "#/components/schemas/AutoSDKSharedb50781eef24da20c"
-          },
-          "framework": {
-            "nullable": true,
-            "type": "string",
-            "enum": [
-              "actix-web",
-              "angular",
-              "ash",
-              "astro",
-              "axum",
-              "blitzjs",
-              "brunch",
-              "bun",
-              "container",
-              "create-react-app",
-              "django",
-              "docusaurus",
-              "docusaurus-2",
-              "dojo",
-              "eleventy",
-              "elysia",
-              "ember",
-              "eve",
-              "express",
-              "factory-eve",
-              "fastapi",
-              "fasthtml",
-              "fastify",
-              "flask",
-              "gatsby",
-              "go",
-              "gridsome",
-              "h3",
-              "hexo",
-              "hono",
-              "hugo",
-              "hydrogen",
-              "ionic-angular",
-              "ionic-react",
-              "jekyll",
-              "koa",
-              "mastra",
-              "middleman",
-              "nestjs",
-              "nextjs",
-              "nitro",
-              "node",
-              "nuxtjs",
-              "parcel",
-              "polymer",
-              "preact",
-              "python",
-              "react-router",
-              "redwoodjs",
-              "remix",
-              "ruby",
-              "rust",
-              "saber",
-              "sanity",
-              "sanity-v2",
-              "sapper",
-              "scully",
-              "services",
-              "solidstart",
-              "solidstart-1",
-              "stencil",
-              "storybook",
-              "svelte",
-              "sveltekit",
-              "sveltekit-1",
-              "tanstack-start",
-              "tanstack-start-lovable",
-              "umijs",
-              "vite",
-              "vitepress",
-              "vue",
-              "vuepress",
-              "xmcp",
-              "zola",
-              null
-            ]
-          },
-          "gitComments": {
-            "properties": {
-              "onCommit": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ],
-                "description": "Whether the Vercel bot should comment on commits"
-              },
-              "onPullRequest": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ],
-                "description": "Whether the Vercel bot should comment on PRs"
-              }
-            },
-            "required": [
-              "onCommit",
-              "onPullRequest"
-            ],
-            "type": "object"
-          },
-          "gitForkProtection": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "gitProviderOptions": {
-            "$ref": "#/components/schemas/AutoSDKSharedc12640b06f1c9105"
-          },
-          "hasActiveBranches": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "id": {
-            "type": "string"
-          },
-          "installCommand": {
-            "nullable": true,
-            "type": "string"
-          },
-          "internalRoutes": {
-            "items": {
-              "oneOf": [
-                {
-                  "properties": {
-                    "expiry": {
-                      "type": "number"
-                    },
-                    "src": {
-                      "type": "string"
-                    },
-                    "status": {
-                      "type": "number"
-                    }
-                  },
-                  "required": [
-                    "src",
-                    "status"
-                  ],
-                  "type": "object"
-                },
-                {
-                  "properties": {
-                    "has": {
-                      "items": {
-                        "oneOf": [
-                          {
-                            "properties": {
-                              "key": {
-                                "type": "string",
-                                "enum": [
-                                  "x-vercel-ip-country"
-                                ]
-                              },
-                              "type": {
-                                "type": "string",
-                                "enum": [
-                                  "header"
-                                ]
-                              },
-                              "value": {
-                                "properties": {
-                                  "eq": {
-                                    "type": "string"
-                                  }
-                                },
-                                "required": [
-                                  "eq"
-                                ],
-                                "type": "object"
-                              }
-                            },
-                            "required": [
-                              "key",
-                              "type",
-                              "value"
-                            ],
-                            "type": "object"
-                          },
-                          {
-                            "properties": {
-                              "type": {
-                                "type": "string",
-                                "enum": [
-                                  "host"
-                                ]
-                              },
-                              "value": {
-                                "properties": {
-                                  "eq": {
-                                    "type": "string"
-                                  }
-                                },
-                                "required": [
-                                  "eq"
-                                ],
-                                "type": "object"
-                              }
-                            },
-                            "required": [
-                              "type",
-                              "value"
-                            ],
-                            "type": "object"
-                          }
-                        ]
-                      },
-                      "type": "array"
-                    },
-                    "mitigate": {
-                      "properties": {
-                        "action": {
-                          "type": "string",
-                          "enum": [
-                            "block_legal_cwc"
-                          ]
-                        }
-                      },
-                      "required": [
-                        "action"
-                      ],
-                      "type": "object"
-                    },
-                    "src": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "has",
-                    "mitigate"
-                  ],
-                  "type": "object"
-                }
-              ]
-            },
-            "type": "array"
-          },
-          "ipBuckets": {
-            "items": {
-              "properties": {
-                "bucket": {
-                  "type": "string"
-                },
-                "default": {
-                  "type": "boolean",
-                  "enum": [
-                    false,
-                    true
-                  ]
-                },
-                "supportUntil": {
-                  "type": "number"
-                }
-              },
-              "required": [
-                "bucket"
-              ],
-              "type": "object"
-            },
-            "type": "array"
-          },
-          "latestDeployments": {
-            "$ref": "#/components/schemas/AutoSDKShared2b72c73af96370da"
-          },
-          "link": {
-            "$ref": "#/components/schemas/AutoSDKSharede0f9d68fc63cf31d"
-          },
-          "live": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "name": {
-            "type": "string"
-          },
-          "nodeVersion": {
-            "type": "string",
-            "enum": [
-              "10.x",
-              "12.x",
-              "14.x",
-              "16.x",
-              "18.x",
-              "20.x",
-              "22.x",
-              "24.x",
-              "8.10.x"
-            ]
-          },
-          "oidcTokenConfig": {
-            "properties": {
-              "enabled": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ],
-                "description": "Whether or not to generate OpenID Connect JSON Web Tokens."
-              },
-              "issuerMode": {
-                "type": "string",
-                "enum": [
-                  "global",
-                  "team"
-                ],
-                "description": "- team: `https://oidc.vercel.com/[team_slug]` - global: `https://oidc.vercel.com`"
-              }
-            },
-            "type": "object"
-          },
-          "outputDirectory": {
-            "nullable": true,
-            "type": "string"
-          },
-          "passport": {
-            "nullable": true,
-            "properties": {
-              "connectorId": {
-                "type": "string"
-              },
-              "deploymentType": {
-                "type": "string",
-                "enum": [
-                  "all",
-                  "all_except_custom_domains",
-                  "preview",
-                  "prod_deployment_urls_and_all_previews"
-                ]
-              }
-            },
-            "required": [
-              "connectorId",
-              "deploymentType"
-            ],
-            "type": "object"
-          },
-          "passwordProtection": {
-            "nullable": true,
-            "type": "object"
-          },
-          "paused": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "resourceConfig": {
-            "properties": {
-              "buildMachineElasticLastUpdated": {
-                "type": "number"
-              },
-              "buildMachineElasticReason": {
-                "type": "string",
-                "enum": [
-                  "basic-floor",
-                  "build-timeout-failure",
-                  "enospc-failure",
-                  "enterprise-floor",
-                  "high-peak-disk",
-                  "high-peak-memory",
-                  "long-build-duration",
-                  "oom-failure",
-                  "short-build-duration",
-                  "sustained-high-cpu"
-                ]
-              },
-              "buildMachineElasticTransition": {
-                "properties": {
-                  "algorithmVersion": {
-                    "type": "string"
-                  },
-                  "at": {
-                    "type": "number"
-                  },
-                  "direction": {
-                    "type": "string",
-                    "enum": [
-                      "downgrade",
-                      "upgrade"
-                    ]
-                  }
-                },
-                "required": [
-                  "algorithmVersion",
-                  "at",
-                  "direction"
-                ],
-                "type": "object"
-              },
-              "buildMachineSelection": {
-                "type": "string",
-                "enum": [
-                  "elastic",
-                  "fixed"
-                ]
-              },
-              "buildMachineType": {
-                "type": "string",
-                "enum": [
-                  "basic",
-                  "enhanced",
-                  "standard",
-                  "turbo"
-                ]
-              },
-              "buildQueue": {
-                "properties": {
-                  "configuration": {
-                    "type": "string",
-                    "enum": [
-                      "SKIP_NAMESPACE_QUEUE",
-                      "WAIT_FOR_NAMESPACE_QUEUE"
-                    ]
-                  }
-                },
-                "type": "object"
-              },
-              "elasticConcurrencyEnabled": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "enableFunctionsBeta": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "fluid": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "functionDefaultMemoryType": {
-                "type": "string",
-                "enum": [
-                  "performance",
-                  "performance_xl",
-                  "standard",
-                  "standard_legacy"
-                ]
-              },
-              "functionDefaultRegions": {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
-              },
-              "functionDefaultTimeout": {
-                "type": "number"
-              },
-              "functionZeroConfigFailover": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "isNSNBDisabled": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              }
-            },
-            "type": "object",
-            "required": [
-              "functionDefaultRegions"
-            ]
-          },
-          "rollingRelease": {
-            "$ref": "#/components/schemas/AutoSDKShared42a87d29a5696121"
-          },
-          "rootDirectory": {
-            "nullable": true,
-            "type": "string"
-          },
-          "security": {
-            "$ref": "#/components/schemas/AutoSDKShared9a99a7cde55f3566"
-          },
-          "serverlessFunctionRegion": {
-            "type": "string"
-          },
-          "serverlessFunctionZeroConfigFailover": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "skipGitConnectDuringLink": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "sourceFilesOutsideRootDirectory": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "speedInsights": {
-            "properties": {
-              "canceledAt": {
-                "type": "number"
-              },
-              "dataReceivedAt": {
-                "type": "number",
-                "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
-              },
-              "disabledAt": {
-                "type": "number"
-              },
-              "enabledAt": {
-                "type": "number"
-              },
-              "hasData": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "id": {
-                "type": "string"
-              },
-              "paidAt": {
-                "type": "number"
-              }
-            },
-            "required": [
-              "id"
-            ],
-            "type": "object"
-          },
-          "ssoProtection": {
-            "nullable": true,
-            "properties": {
-              "april2026SecurityIncidentMigrationAppliedFrom": {
-                "nullable": true,
-                "type": "string",
-                "enum": [
-                  "all",
-                  "all_except_custom_domains",
-                  "preview",
-                  "prod_deployment_urls_and_all_previews",
-                  null
-                ]
-              },
-              "cve55182MigrationAppliedFrom": {
-                "nullable": true,
-                "type": "string",
-                "enum": [
-                  "all",
-                  "all_except_custom_domains",
-                  "preview",
-                  "prod_deployment_urls_and_all_previews",
-                  null
-                ]
-              },
-              "deploymentType": {
-                "type": "string",
-                "enum": [
-                  "all",
-                  "all_except_custom_domains",
-                  "preview",
-                  "prod_deployment_urls_and_all_previews"
-                ]
-              }
-            },
-            "required": [
-              "deploymentType"
-            ],
-            "type": "object"
-          },
-          "targets": {
-            "$ref": "#/components/schemas/AutoSDKSharedd6cd5632365f1112"
-          },
-          "tier": {
-            "type": "string",
-            "enum": [
-              "priority"
-            ]
-          },
-          "transferCompletedAt": {
-            "type": "number"
-          },
-          "transferredFromAccountId": {
-            "type": "string"
-          },
-          "transferStartedAt": {
-            "type": "number"
-          },
-          "transferToAccountId": {
-            "type": "string"
-          },
-          "trustedSources": {
-            "$ref": "#/components/schemas/AutoSDKSharedc367dfb98a4b6059"
-          },
-          "updatedAt": {
-            "type": "number"
-          },
-          "webAnalytics": {
-            "properties": {
-              "canceledAt": {
-                "type": "number"
-              },
-              "disabledAt": {
-                "type": "number"
-              },
-              "enabledAt": {
-                "type": "number"
-              },
-              "hasData": {
-                "type": "boolean",
-                "enum": [
-                  true
-                ]
-              },
-              "id": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "id"
-            ],
-            "type": "object"
-          }
-        },
-        "required": [
-          "accountId",
-          "alias",
-          "deploymentExpiration",
-          "directoryListing",
-          "id",
-          "name",
-          "nodeVersion",
-          "resourceConfig",
-          "serverlessFunctionRegion"
-        ],
-        "type": "object"
-      },
-      "AutoSDKSharede7fa7575dde4720d": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "conditions": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "lhs": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "additionalProperties": false,
-                      "properties": {
-                        "type": {}
-                      },
-                      "required": [
-                        "type"
-                      ]
-                    },
-                    {
-                      "type": "object",
-                      "additionalProperties": false,
-                      "properties": {
-                        "type": {},
-                        "kind": {
-                          "type": "string"
-                        },
-                        "attribute": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "kind",
-                        "attribute"
-                      ]
-                    }
-                  ]
-                },
-                "cmp": {
-                  "type": "string",
-                  "enum": [
-                    "eq",
-                    "!eq",
-                    "oneOf",
-                    "!oneOf",
-                    "containsAllOf",
-                    "containsAnyOf",
-                    "containsNoneOf",
-                    "startsWith",
-                    "!startsWith",
-                    "endsWith",
-                    "!endsWith",
-                    "contains",
-                    "!contains",
-                    "ex",
-                    "!ex",
-                    "gt",
-                    "gte",
-                    "lt",
-                    "lte",
-                    "regex",
-                    "!regex",
-                    "before",
-                    "after"
-                  ]
-                },
-                "rhs": {
-                  "anyOf": [
-                    {
-                      "type": "object",
-                      "additionalProperties": false,
-                      "properties": {
-                        "type": {
-                          "type": "string",
-                          "enum": [
-                            "list/inline",
-                            "list"
-                          ]
-                        },
-                        "items": {
-                          "type": "array",
-                          "items": {
-                            "anyOf": [
-                              {
-                                "type": "object",
-                                "additionalProperties": false,
-                                "properties": {
-                                  "label": {
-                                    "type": "string"
-                                  },
-                                  "note": {
-                                    "type": "string"
-                                  },
-                                  "value": {
-                                    "type": "number"
-                                  }
-                                },
-                                "required": [
-                                  "value"
-                                ]
-                              },
-                              {
-                                "type": "object",
-                                "additionalProperties": false,
-                                "properties": {
-                                  "label": {
-                                    "type": "string"
-                                  },
-                                  "note": {
-                                    "type": "string"
-                                  },
-                                  "value": {
-                                    "type": "string"
-                                  }
-                                },
-                                "required": [
-                                  "value"
-                                ]
-                              }
-                            ]
-                          },
-                          "maxItems": 10000
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "items"
-                      ]
-                    },
-                    {
-                      "type": "object",
-                      "additionalProperties": false,
-                      "properties": {
-                        "type": {},
-                        "pattern": {
-                          "type": "string"
-                        },
-                        "flags": {
-                          "type": "string"
-                        }
-                      },
-                      "required": [
-                        "type",
-                        "pattern",
-                        "flags"
-                      ]
-                    },
-                    {
-                      "type": "string"
-                    },
-                    {
-                      "type": "number"
-                    },
-                    {
-                      "type": "boolean"
-                    }
-                  ]
-                },
-                "cmpOptions": {
-                  "type": "object",
-                  "additionalProperties": false,
-                  "properties": {
-                    "ignoreCase": {
-                      "type": "boolean"
-                    }
-                  }
-                }
-              },
-              "required": [
-                "lhs",
-                "cmp"
-              ]
-            }
-          },
-          "outcome": {
-            "$ref": "#/components/schemas/AutoSDKSharede68d1538d48d5cc1"
-          }
-        },
-        "required": [
-          "id",
-          "conditions",
-          "outcome"
-        ]
-      },
-      "AutoSDKSharedea12f8422dc06e51": {
-        "properties": {
-          "abuse": {
-            "$ref": "#/components/schemas/AutoSDKSharedb19b25d8dd67bda4"
+            "$ref": "#/components/schemas/AutoSDKShareddb65d769b106737a"
           },
           "accountId": {
             "type": "string"
@@ -132289,6 +132322,347 @@
         ],
         "type": "object"
       },
+      "AutoSDKSharede41d4d0f13cb4d9f": {
+        "type": "object",
+        "description": "The configuration for the flag in different environments",
+        "additionalProperties": {
+          "$ref": "#/components/schemas/AutoSDKSharedba25b79c660ac1ce"
+        },
+        "maxProperties": 10
+      },
+      "AutoSDKSharede68d1538d48d5cc1": {
+        "anyOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "type": {},
+              "variantId": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "type",
+              "variantId"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "type": {},
+              "base": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "type": {},
+                  "kind": {
+                    "type": "string"
+                  },
+                  "attribute": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "type",
+                  "kind",
+                  "attribute"
+                ]
+              },
+              "weights": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "number"
+                },
+                "description": "The distribution for each variant"
+              },
+              "defaultVariantId": {
+                "type": "string",
+                "description": "This variant will be used when the base attribute does not exist"
+              }
+            },
+            "required": [
+              "type",
+              "base",
+              "weights",
+              "defaultVariantId"
+            ]
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "type": {},
+              "base": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "type": {},
+                  "kind": {
+                    "type": "string"
+                  },
+                  "attribute": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "type",
+                  "kind",
+                  "attribute"
+                ]
+              },
+              "startTimestamp": {
+                "type": "number",
+                "description": "Epoch ms when the rollout begins"
+              },
+              "rollFromVariantId": {
+                "type": "string",
+                "description": "The variant to roll away from"
+              },
+              "rollToVariantId": {
+                "type": "string",
+                "description": "The variant to roll towards"
+              },
+              "defaultVariantId": {
+                "type": "string",
+                "description": "This variant will be used when the base attribute does not exist"
+              },
+              "slots": {
+                "type": "array",
+                "description": "Each slot defines a promille and how long it is served for. After all slots expire, finalPromille is served indefinitely (100% when omitted). The final percentage does not need its own slot.",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "promille": {
+                      "type": "number",
+                      "minimum": 0,
+                      "maximum": 100000,
+                      "description": "Promille of traffic for rollToVariant (0-100_000, where 1_000 = 1%)"
+                    },
+                    "durationMs": {
+                      "type": "number",
+                      "minimum": 0,
+                      "description": "How long this promille is served in ms before moving to the next slot."
+                    }
+                  },
+                  "required": [
+                    "promille",
+                    "durationMs"
+                  ]
+                },
+                "minItems": 1
+              },
+              "finalPromille": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100000,
+                "description": "Traffic for rollToVariant after all slots expire (0-100_000, where 1_000 = 1%). Defaults to 100_000 (100%). Set 50_000 to end at 50%."
+              }
+            },
+            "required": [
+              "type",
+              "base",
+              "startTimestamp",
+              "rollFromVariantId",
+              "rollToVariantId",
+              "defaultVariantId",
+              "slots"
+            ]
+          }
+        ]
+      },
+      "AutoSDKSharede7fa7575dde4720d": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "lhs": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "type": {}
+                      },
+                      "required": [
+                        "type"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "type": {},
+                        "kind": {
+                          "type": "string"
+                        },
+                        "attribute": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "kind",
+                        "attribute"
+                      ]
+                    }
+                  ]
+                },
+                "cmp": {
+                  "type": "string",
+                  "enum": [
+                    "eq",
+                    "!eq",
+                    "oneOf",
+                    "!oneOf",
+                    "containsAllOf",
+                    "containsAnyOf",
+                    "containsNoneOf",
+                    "startsWith",
+                    "!startsWith",
+                    "endsWith",
+                    "!endsWith",
+                    "contains",
+                    "!contains",
+                    "ex",
+                    "!ex",
+                    "gt",
+                    "gte",
+                    "lt",
+                    "lte",
+                    "regex",
+                    "!regex",
+                    "before",
+                    "after"
+                  ]
+                },
+                "rhs": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "list/inline",
+                            "list"
+                          ]
+                        },
+                        "items": {
+                          "type": "array",
+                          "items": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                  "label": {
+                                    "type": "string"
+                                  },
+                                  "note": {
+                                    "type": "string"
+                                  },
+                                  "value": {
+                                    "type": "number"
+                                  }
+                                },
+                                "required": [
+                                  "value"
+                                ]
+                              },
+                              {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                  "label": {
+                                    "type": "string"
+                                  },
+                                  "note": {
+                                    "type": "string"
+                                  },
+                                  "value": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "value"
+                                ]
+                              }
+                            ]
+                          },
+                          "maxItems": 10000
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "items"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "type": {},
+                        "pattern": {
+                          "type": "string"
+                        },
+                        "flags": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "pattern",
+                        "flags"
+                      ]
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "boolean"
+                    }
+                  ]
+                },
+                "cmpOptions": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "ignoreCase": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              },
+              "required": [
+                "lhs",
+                "cmp"
+              ]
+            }
+          },
+          "outcome": {
+            "$ref": "#/components/schemas/AutoSDKSharede68d1538d48d5cc1"
+          }
+        },
+        "required": [
+          "id",
+          "conditions",
+          "outcome"
+        ]
+      },
       "AutoSDKSharedec1121c0746f62d9": {
         "properties": {
           "destination": {
@@ -132861,12 +133235,6 @@
           "observability.anomaly-error": "ObservabilityAnomalyError",
           "test-webhook": "TestWebhook"
         }
-      },
-      "AutoSDKSharedee6c29115d657a21": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKShared0f475f9d19be3369"
-        },
-        "type": "array"
       },
       "AutoSDKSharedf021d7a466286ff5": {
         "items": {

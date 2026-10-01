@@ -27,19 +27,37 @@ namespace Vercel
             };
         partial void PrepareGetSecurityFirewallEventsArguments(
             global::System.Net.Http.HttpClient httpClient,
+            ref global::Vercel.GetSecurityFirewallEventsSort? sort,
+            ref double? limit,
+            ref string? cursor,
             ref string projectId,
             ref double? startTimestamp,
             ref double? endTimestamp,
             ref string? hosts,
+            global::System.Collections.Generic.IList<string>? ip,
+            ref bool? isActive,
+            global::System.Collections.Generic.IList<global::Vercel.GetSecurityFirewallEventsActionItem>? action,
+            global::System.Collections.Generic.IList<global::Vercel.GetSecurityFirewallEventsActionTypeItem>? actionType,
+            ref global::Vercel.GetSecurityFirewallEventsRuleKind? ruleKind,
+            global::System.Collections.Generic.IList<string>? ruleId,
             ref string? teamId,
             ref string? slug);
         partial void PrepareGetSecurityFirewallEventsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            global::Vercel.GetSecurityFirewallEventsSort? sort,
+            double? limit,
+            string? cursor,
             string projectId,
             double? startTimestamp,
             double? endTimestamp,
             string? hosts,
+            global::System.Collections.Generic.IList<string>? ip,
+            bool? isActive,
+            global::System.Collections.Generic.IList<global::Vercel.GetSecurityFirewallEventsActionItem>? action,
+            global::System.Collections.Generic.IList<global::Vercel.GetSecurityFirewallEventsActionTypeItem>? actionType,
+            global::Vercel.GetSecurityFirewallEventsRuleKind? ruleKind,
+            global::System.Collections.Generic.IList<string>? ruleId,
             string? teamId,
             string? slug);
         partial void ProcessGetSecurityFirewallEventsResponse(
@@ -53,12 +71,21 @@ namespace Vercel
 
         /// <summary>
         /// Read Firewall Actions by Project<br/>
-        /// Retrieve firewall actions for a project Rule names are resolved against the project's *current* active firewall configuration and the team's active rulesets, so a rule that has since been renamed reports its new name and one that has been deleted reports `null`. System rules such as `sys_dos_mitigation` and `ip_blocking` have no configured name and always report `null`.
+        /// Retrieve firewall actions for a project Rule names are resolved against the project's *current* active firewall configuration and the team's active rulesets, so a rule that has since been renamed reports its new name and one that has been deleted reports `null`. System rules such as `sys_dos_mitigation` and `ip_blocking` have no configured name and always report `null`. Filters (`ip`, `isActive`, `action`, `actionType`, `ruleKind`, `ruleId`, `hosts`) are ANDed across params and ORed within a repeated param. They are applied to the policies before `limit`/`cursor`, so pages only count matching policies. A policy with no matching requests yields no action row, so a page can hold fewer than `limit` actions; only `pagination.next` signals the end. A `cursor` is only valid with the filters it was issued for.
         /// </summary>
+        /// <param name="sort"></param>
+        /// <param name="limit"></param>
+        /// <param name="cursor"></param>
         /// <param name="projectId"></param>
         /// <param name="startTimestamp"></param>
         /// <param name="endTimestamp"></param>
         /// <param name="hosts"></param>
+        /// <param name="ip"></param>
+        /// <param name="isActive"></param>
+        /// <param name="action"></param>
+        /// <param name="actionType"></param>
+        /// <param name="ruleKind"></param>
+        /// <param name="ruleId"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -70,9 +97,18 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.GetSecurityFirewallEventsResponse> GetSecurityFirewallEventsAsync(
             string projectId,
+            global::Vercel.GetSecurityFirewallEventsSort? sort = default,
+            double? limit = default,
+            string? cursor = default,
             double? startTimestamp = default,
             double? endTimestamp = default,
             string? hosts = default,
+            global::System.Collections.Generic.IList<string>? ip = default,
+            bool? isActive = default,
+            global::System.Collections.Generic.IList<global::Vercel.GetSecurityFirewallEventsActionItem>? action = default,
+            global::System.Collections.Generic.IList<global::Vercel.GetSecurityFirewallEventsActionTypeItem>? actionType = default,
+            global::Vercel.GetSecurityFirewallEventsRuleKind? ruleKind = default,
+            global::System.Collections.Generic.IList<string>? ruleId = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -80,9 +116,18 @@ namespace Vercel
         {
             var __response = await GetSecurityFirewallEventsAsResponseAsync(
                 projectId: projectId,
+                sort: sort,
+                limit: limit,
+                cursor: cursor,
                 startTimestamp: startTimestamp,
                 endTimestamp: endTimestamp,
                 hosts: hosts,
+                ip: ip,
+                isActive: isActive,
+                action: action,
+                actionType: actionType,
+                ruleKind: ruleKind,
+                ruleId: ruleId,
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -93,12 +138,21 @@ namespace Vercel
         }
         /// <summary>
         /// Read Firewall Actions by Project<br/>
-        /// Retrieve firewall actions for a project Rule names are resolved against the project's *current* active firewall configuration and the team's active rulesets, so a rule that has since been renamed reports its new name and one that has been deleted reports `null`. System rules such as `sys_dos_mitigation` and `ip_blocking` have no configured name and always report `null`.
+        /// Retrieve firewall actions for a project Rule names are resolved against the project's *current* active firewall configuration and the team's active rulesets, so a rule that has since been renamed reports its new name and one that has been deleted reports `null`. System rules such as `sys_dos_mitigation` and `ip_blocking` have no configured name and always report `null`. Filters (`ip`, `isActive`, `action`, `actionType`, `ruleKind`, `ruleId`, `hosts`) are ANDed across params and ORed within a repeated param. They are applied to the policies before `limit`/`cursor`, so pages only count matching policies. A policy with no matching requests yields no action row, so a page can hold fewer than `limit` actions; only `pagination.next` signals the end. A `cursor` is only valid with the filters it was issued for.
         /// </summary>
+        /// <param name="sort"></param>
+        /// <param name="limit"></param>
+        /// <param name="cursor"></param>
         /// <param name="projectId"></param>
         /// <param name="startTimestamp"></param>
         /// <param name="endTimestamp"></param>
         /// <param name="hosts"></param>
+        /// <param name="ip"></param>
+        /// <param name="isActive"></param>
+        /// <param name="action"></param>
+        /// <param name="actionType"></param>
+        /// <param name="ruleKind"></param>
+        /// <param name="ruleId"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -110,9 +164,18 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetSecurityFirewallEventsResponse>> GetSecurityFirewallEventsAsResponseAsync(
             string projectId,
+            global::Vercel.GetSecurityFirewallEventsSort? sort = default,
+            double? limit = default,
+            string? cursor = default,
             double? startTimestamp = default,
             double? endTimestamp = default,
             string? hosts = default,
+            global::System.Collections.Generic.IList<string>? ip = default,
+            bool? isActive = default,
+            global::System.Collections.Generic.IList<global::Vercel.GetSecurityFirewallEventsActionItem>? action = default,
+            global::System.Collections.Generic.IList<global::Vercel.GetSecurityFirewallEventsActionTypeItem>? actionType = default,
+            global::Vercel.GetSecurityFirewallEventsRuleKind? ruleKind = default,
+            global::System.Collections.Generic.IList<string>? ruleId = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -122,10 +185,19 @@ namespace Vercel
                 client: HttpClient);
             PrepareGetSecurityFirewallEventsArguments(
                 httpClient: HttpClient,
+                sort: ref sort,
+                limit: ref limit,
+                cursor: ref cursor,
                 projectId: ref projectId,
                 startTimestamp: ref startTimestamp,
                 endTimestamp: ref endTimestamp,
                 hosts: ref hosts,
+                ip: ip,
+                isActive: ref isActive,
+                action: action,
+                actionType: actionType,
+                ruleKind: ref ruleKind,
+                ruleId: ruleId,
                 teamId: ref teamId,
                 slug: ref slug);
 
@@ -156,10 +228,19 @@ namespace Vercel
                                 path: "/v1/security/firewall/events",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
+                                .AddOptionalParameter("sort", sort?.ToValueString())
+                                .AddOptionalParameter("limit", limit?.ToString())
+                                .AddOptionalParameter("cursor", cursor)
                                 .AddRequiredParameter("projectId", projectId)
                                 .AddOptionalParameter("startTimestamp", startTimestamp?.ToString())
                                 .AddOptionalParameter("endTimestamp", endTimestamp?.ToString())
                                 .AddOptionalParameter("hosts", hosts)
+                                .AddOptionalParameter("ip", ip, delimiter: ",", explode: true)
+                                .AddOptionalParameter("isActive", isActive?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("action", action, selector: static x => x.ToValueString(), delimiter: ",", explode: true)
+                                .AddOptionalParameter("actionType", actionType, selector: static x => x.ToValueString(), delimiter: ",", explode: true)
+                                .AddOptionalParameter("ruleKind", ruleKind?.ToValueString())
+                                .AddOptionalParameter("ruleId", ruleId, delimiter: ",", explode: true)
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -203,10 +284,19 @@ namespace Vercel
                 PrepareGetSecurityFirewallEventsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    sort: sort,
+                    limit: limit,
+                    cursor: cursor,
                     projectId: projectId,
                     startTimestamp: startTimestamp,
                     endTimestamp: endTimestamp,
                     hosts: hosts,
+                    ip: ip,
+                    isActive: isActive,
+                    action: action,
+                    actionType: actionType,
+                    ruleKind: ruleKind,
+                    ruleId: ruleId,
                     teamId: teamId,
                     slug: slug);
 
