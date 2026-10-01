@@ -122,7 +122,7 @@ namespace Vercel
         public bool? Triggers { get; set; }
 
         /// <summary>
-        /// Trigger driver type. Resolved automatically from the service or known service registry when not provided. Only set when using the newly decoupled triggers resolution flow.
+        /// Trigger driver type. Resolved automatically from the known service connection method when not provided. Only set when using the newly decoupled triggers resolution flow.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("triggerType")]
         public string? TriggerType { get; set; }
@@ -225,7 +225,7 @@ namespace Vercel
         /// Whether the triggers are enabled for this connector.
         /// </param>
         /// <param name="triggerType">
-        /// Trigger driver type. Resolved automatically from the service or known service registry when not provided. Only set when using the newly decoupled triggers resolution flow.
+        /// Trigger driver type. Resolved automatically from the known service connection method when not provided. Only set when using the newly decoupled triggers resolution flow.
         /// </param>
         /// <param name="triggerData">
         /// Trigger configuration, validated and encrypted by the trigger driver. An empty object applies driver defaults.

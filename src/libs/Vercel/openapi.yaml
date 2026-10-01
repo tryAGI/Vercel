@@ -13058,9 +13058,6 @@
           },
           "429": {
             "description": ""
-          },
-          "504": {
-            "description": ""
           }
         },
         "parameters": [
@@ -97333,7 +97330,7 @@
           },
           "triggerType": {
             "type": "string",
-            "description": "Trigger driver type. Resolved automatically from the service or known service registry when not provided. Only set when using the newly decoupled triggers resolution flow."
+            "description": "Trigger driver type. Resolved automatically from the known service connection method when not provided. Only set when using the newly decoupled triggers resolution flow."
           },
           "triggerData": {
             "type": "object",
