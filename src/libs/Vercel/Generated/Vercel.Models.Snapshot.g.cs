@@ -121,6 +121,12 @@ namespace Vercel
         public required double UpdatedAt { get; set; }
 
         /// <summary>
+        /// Whether this snapshot is managed by v0 on the customer's behalf.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("v0")]
+        public bool? V0 { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -180,6 +186,9 @@ namespace Vercel
         /// The regions where the snapshot is available.<br/>
         /// Example: [iad1, sfo1]
         /// </param>
+        /// <param name="v0">
+        /// Whether this snapshot is managed by v0 on the customer's behalf.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -196,7 +205,8 @@ namespace Vercel
             double? expiresAt,
             string? parentId,
             string? region,
-            global::System.Collections.Generic.IList<string>? regions)
+            global::System.Collections.Generic.IList<string>? regions,
+            bool? v0)
         {
             this.Architecture = architecture;
             this.CreatedAt = createdAt;
@@ -211,6 +221,7 @@ namespace Vercel
             this.SourceSessionId = sourceSessionId ?? throw new global::System.ArgumentNullException(nameof(sourceSessionId));
             this.Status = status;
             this.UpdatedAt = updatedAt;
+            this.V0 = v0;
         }
 
         /// <summary>

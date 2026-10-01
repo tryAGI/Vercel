@@ -220,6 +220,12 @@ namespace Vercel
         public required double UpdatedAt { get; set; }
 
         /// <summary>
+        /// Whether this sandbox is managed by v0 on the customer's behalf.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("v0")]
+        public bool? V0 { get; set; }
+
+        /// <summary>
         /// Number of virtual CPUs allocated.<br/>
         /// Example: 2
         /// </summary>
@@ -337,6 +343,9 @@ namespace Vercel
         /// Cumulative ingress bytes across all sandbox runs.<br/>
         /// Example: 2048
         /// </param>
+        /// <param name="v0">
+        /// Whether this sandbox is managed by v0 on the customer's behalf.
+        /// </param>
         /// <param name="vcpus">
         /// Number of virtual CPUs allocated.<br/>
         /// Example: 2
@@ -372,6 +381,7 @@ namespace Vercel
             double? totalDurationMs,
             double? totalEgressBytes,
             double? totalIngressBytes,
+            bool? v0,
             double? vcpus)
         {
             this.Architecture = architecture;
@@ -401,6 +411,7 @@ namespace Vercel
             this.TotalEgressBytes = totalEgressBytes;
             this.TotalIngressBytes = totalIngressBytes;
             this.UpdatedAt = updatedAt;
+            this.V0 = v0;
             this.Vcpus = vcpus;
         }
 

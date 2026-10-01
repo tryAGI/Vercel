@@ -1027,6 +1027,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        FlagsConnectionCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        FlagsConnectionDeleted,
+        /// <summary>
+        ///
+        /// </summary>
         FlagsExplorerSubscription,
         /// <summary>
         ///
@@ -3096,6 +3104,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.FlagDeleted => "flag-deleted",
                 ListEventTypeReplacedByItem.FlagUnarchived => "flag-unarchived",
                 ListEventTypeReplacedByItem.FlagUpdated => "flag-updated",
+                ListEventTypeReplacedByItem.FlagsConnectionCreated => "flags-connection-created",
+                ListEventTypeReplacedByItem.FlagsConnectionDeleted => "flags-connection-deleted",
                 ListEventTypeReplacedByItem.FlagsExplorerSubscription => "flags-explorer-subscription",
                 ListEventTypeReplacedByItem.FlagsSdkKey => "flags-sdk-key",
                 ListEventTypeReplacedByItem.FlagsSdkKeyAdded => "flags-sdk-key-added",
@@ -3811,6 +3821,8 @@ namespace Vercel
                 "flag-deleted" => ListEventTypeReplacedByItem.FlagDeleted,
                 "flag-unarchived" => ListEventTypeReplacedByItem.FlagUnarchived,
                 "flag-updated" => ListEventTypeReplacedByItem.FlagUpdated,
+                "flags-connection-created" => ListEventTypeReplacedByItem.FlagsConnectionCreated,
+                "flags-connection-deleted" => ListEventTypeReplacedByItem.FlagsConnectionDeleted,
                 "flags-explorer-subscription" => ListEventTypeReplacedByItem.FlagsExplorerSubscription,
                 "flags-sdk-key" => ListEventTypeReplacedByItem.FlagsSdkKey,
                 "flags-sdk-key-added" => ListEventTypeReplacedByItem.FlagsSdkKeyAdded,
