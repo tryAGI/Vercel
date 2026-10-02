@@ -15,7 +15,7 @@ namespace Vercel
         public string? Label { get; set; }
 
         /// <summary>
-        /// Optional overrides for the default same-env-by-slug matching.
+        /// Optional overrides for the default same-env-by-slug matching. An empty array denies all access and is only allowed for the current project.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customAllow")]
         public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectRequestTrustedSourcesProjectsCustomAllowItem>? CustomAllow { get; set; }
@@ -33,7 +33,7 @@ namespace Vercel
         /// The label or description of the trusted source
         /// </param>
         /// <param name="customAllow">
-        /// Optional overrides for the default same-env-by-slug matching.
+        /// Optional overrides for the default same-env-by-slug matching. An empty array denies all access and is only allowed for the current project.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
