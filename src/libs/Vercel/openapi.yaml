@@ -8611,7 +8611,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared618805c2ca46e0a6"
+                  "$ref": "#/components/schemas/AutoSDKShared8d9876364a3d897f"
                 }
               }
             }
@@ -8695,7 +8695,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared618805c2ca46e0a6"
+                  "$ref": "#/components/schemas/AutoSDKShared8d9876364a3d897f"
                 }
               }
             }
@@ -8766,7 +8766,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared3e4933d1b69c5ad0"
+                  "$ref": "#/components/schemas/AutoSDKShared2eaeda81b490b803"
                 }
               }
             }
@@ -8856,7 +8856,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared3e4933d1b69c5ad0"
+                  "$ref": "#/components/schemas/AutoSDKShared2eaeda81b490b803"
                 }
               }
             }
@@ -8938,7 +8938,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared3e4933d1b69c5ad0"
+                  "$ref": "#/components/schemas/AutoSDKShared2eaeda81b490b803"
                 }
               }
             }
@@ -29169,87 +29169,56 @@
         ],
         "responses": {
           "200": {
-            "description": "List of all global configs.",
+            "description": "List of all Global Configs.",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "description": "List of all global configs.",
                   "items": {
                     "properties": {
+                      "createdAt": {
+                        "type": "number"
+                      },
+                      "createdBy": {
+                        "type": "string",
+                        "description": "The ID of the user who created the Global Config, optional because it is not always set."
+                      },
+                      "digest": {
+                        "type": "string"
+                      },
                       "id": {
                         "type": "string"
                       },
-                      "createdAt": {
+                      "itemCount": {
                         "type": "number"
                       },
                       "ownerId": {
                         "type": "string"
                       },
-                      "slug": {
-                        "type": "string",
-                        "description": "Name for the Global Config. Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores)."
-                      },
-                      "updatedAt": {
-                        "type": "number"
-                      },
-                      "digest": {
-                        "type": "string"
-                      },
-                      "transfer": {
-                        "properties": {
-                          "fromAccountId": {
-                            "type": "string"
-                          },
-                          "startedAt": {
-                            "type": "number"
-                          },
-                          "doneAt": {
-                            "nullable": true,
-                            "type": "number"
-                          }
-                        },
-                        "required": [
-                          "fromAccountId",
-                          "startedAt",
-                          "doneAt"
-                        ],
-                        "type": "object",
-                        "description": "Keeps track of the current state of the Global Config while it gets transferred."
-                      },
-                      "schema": {
-                        "type": "object"
-                      },
-                      "purpose": {
-                        "properties": {
-                          "type": {
-                            "type": "string",
-                            "enum": [
-                              "flags"
-                            ]
-                          },
-                          "projectId": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "type",
-                          "projectId"
-                        ],
-                        "type": "object"
-                      },
                       "sizeInBytes": {
                         "type": "number"
                       },
-                      "itemCount": {
+                      "slug": {
+                        "type": "string",
+                        "description": "Name for the Global Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores)."
+                      },
+                      "updatedAt": {
                         "type": "number"
                       }
                     },
                     "required": [
+                      "createdAt",
+                      "digest",
+                      "id",
+                      "itemCount",
+                      "ownerId",
                       "sizeInBytes",
-                      "itemCount"
-                    ]
-                  }
+                      "slug",
+                      "updatedAt"
+                    ],
+                    "type": "object",
+                    "description": "A Global Config"
+                  },
+                  "type": "array"
                 }
               }
             }
@@ -29317,98 +29286,26 @@
                       "type": "string",
                       "description": "The ID of the user who created the Global Config, optional because it is not always set."
                     },
-                    "deletedAt": {
-                      "nullable": true,
-                      "type": "number"
-                    },
                     "digest": {
                       "type": "string"
                     },
                     "id": {
                       "type": "string"
                     },
+                    "itemCount": {
+                      "type": "number"
+                    },
                     "ownerId": {
                       "type": "string"
                     },
-                    "purpose": {
-                      "oneOf": [
-                        {
-                          "properties": {
-                            "projectId": {
-                              "type": "string"
-                            },
-                            "type": {
-                              "type": "string",
-                              "enum": [
-                                "flags"
-                              ]
-                            }
-                          },
-                          "required": [
-                            "projectId",
-                            "type"
-                          ],
-                          "type": "object"
-                        },
-                        {
-                          "properties": {
-                            "resourceId": {
-                              "type": "string"
-                            },
-                            "type": {
-                              "type": "string",
-                              "enum": [
-                                "experimentation"
-                              ]
-                            }
-                          },
-                          "required": [
-                            "resourceId",
-                            "type"
-                          ],
-                          "type": "object"
-                        }
-                      ]
-                    },
-                    "schema": {
-                      "type": "object"
+                    "sizeInBytes": {
+                      "type": "number"
                     },
                     "slug": {
                       "type": "string",
                       "description": "Name for the Global Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores)."
                     },
-                    "syncedToDynamoAt": {
-                      "type": "number",
-                      "description": "Timestamp of when the Global Config was synced to DynamoDB initially. It is only set when syncing the entire Global Config, not when updating."
-                    },
-                    "transfer": {
-                      "properties": {
-                        "doneAt": {
-                          "nullable": true,
-                          "type": "number"
-                        },
-                        "fromAccountId": {
-                          "type": "string"
-                        },
-                        "startedAt": {
-                          "type": "number"
-                        }
-                      },
-                      "required": [
-                        "doneAt",
-                        "fromAccountId",
-                        "startedAt"
-                      ],
-                      "type": "object",
-                      "description": "Keeps track of the current state of the Global Config while it gets transferred."
-                    },
                     "updatedAt": {
-                      "type": "number"
-                    },
-                    "itemCount": {
-                      "type": "number"
-                    },
-                    "sizeInBytes": {
                       "type": "number"
                     }
                   },
@@ -29520,98 +29417,26 @@
                       "type": "string",
                       "description": "The ID of the user who created the Global Config, optional because it is not always set."
                     },
-                    "deletedAt": {
-                      "nullable": true,
-                      "type": "number"
-                    },
                     "digest": {
                       "type": "string"
                     },
                     "id": {
                       "type": "string"
                     },
+                    "itemCount": {
+                      "type": "number"
+                    },
                     "ownerId": {
                       "type": "string"
                     },
-                    "purpose": {
-                      "oneOf": [
-                        {
-                          "properties": {
-                            "projectId": {
-                              "type": "string"
-                            },
-                            "type": {
-                              "type": "string",
-                              "enum": [
-                                "flags"
-                              ]
-                            }
-                          },
-                          "required": [
-                            "projectId",
-                            "type"
-                          ],
-                          "type": "object"
-                        },
-                        {
-                          "properties": {
-                            "resourceId": {
-                              "type": "string"
-                            },
-                            "type": {
-                              "type": "string",
-                              "enum": [
-                                "experimentation"
-                              ]
-                            }
-                          },
-                          "required": [
-                            "resourceId",
-                            "type"
-                          ],
-                          "type": "object"
-                        }
-                      ]
-                    },
-                    "schema": {
-                      "type": "object"
+                    "sizeInBytes": {
+                      "type": "number"
                     },
                     "slug": {
                       "type": "string",
                       "description": "Name for the Global Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores)."
                     },
-                    "syncedToDynamoAt": {
-                      "type": "number",
-                      "description": "Timestamp of when the Global Config was synced to DynamoDB initially. It is only set when syncing the entire Global Config, not when updating."
-                    },
-                    "transfer": {
-                      "properties": {
-                        "doneAt": {
-                          "nullable": true,
-                          "type": "number"
-                        },
-                        "fromAccountId": {
-                          "type": "string"
-                        },
-                        "startedAt": {
-                          "type": "number"
-                        }
-                      },
-                      "required": [
-                        "doneAt",
-                        "fromAccountId",
-                        "startedAt"
-                      ],
-                      "type": "object",
-                      "description": "Keeps track of the current state of the Global Config while it gets transferred."
-                    },
                     "updatedAt": {
-                      "type": "number"
-                    },
-                    "itemCount": {
-                      "type": "number"
-                    },
-                    "sizeInBytes": {
                       "type": "number"
                     }
                   },
@@ -29702,98 +29527,26 @@
                       "type": "string",
                       "description": "The ID of the user who created the Global Config, optional because it is not always set."
                     },
-                    "deletedAt": {
-                      "nullable": true,
-                      "type": "number"
-                    },
                     "digest": {
                       "type": "string"
                     },
                     "id": {
                       "type": "string"
                     },
+                    "itemCount": {
+                      "type": "number"
+                    },
                     "ownerId": {
                       "type": "string"
                     },
-                    "purpose": {
-                      "oneOf": [
-                        {
-                          "properties": {
-                            "projectId": {
-                              "type": "string"
-                            },
-                            "type": {
-                              "type": "string",
-                              "enum": [
-                                "flags"
-                              ]
-                            }
-                          },
-                          "required": [
-                            "projectId",
-                            "type"
-                          ],
-                          "type": "object"
-                        },
-                        {
-                          "properties": {
-                            "resourceId": {
-                              "type": "string"
-                            },
-                            "type": {
-                              "type": "string",
-                              "enum": [
-                                "experimentation"
-                              ]
-                            }
-                          },
-                          "required": [
-                            "resourceId",
-                            "type"
-                          ],
-                          "type": "object"
-                        }
-                      ]
-                    },
-                    "schema": {
-                      "type": "object"
+                    "sizeInBytes": {
+                      "type": "number"
                     },
                     "slug": {
                       "type": "string",
                       "description": "Name for the Global Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores)."
                     },
-                    "syncedToDynamoAt": {
-                      "type": "number",
-                      "description": "Timestamp of when the Global Config was synced to DynamoDB initially. It is only set when syncing the entire Global Config, not when updating."
-                    },
-                    "transfer": {
-                      "properties": {
-                        "doneAt": {
-                          "nullable": true,
-                          "type": "number"
-                        },
-                        "fromAccountId": {
-                          "type": "string"
-                        },
-                        "startedAt": {
-                          "type": "number"
-                        }
-                      },
-                      "required": [
-                        "doneAt",
-                        "fromAccountId",
-                        "startedAt"
-                      ],
-                      "type": "object",
-                      "description": "Keeps track of the current state of the Global Config while it gets transferred."
-                    },
                     "updatedAt": {
-                      "type": "number"
-                    },
-                    "itemCount": {
-                      "type": "number"
-                    },
-                    "sizeInBytes": {
                       "type": "number"
                     }
                   },
@@ -30554,11 +30307,14 @@
         ],
         "responses": {
           "200": {
-            "description": "The Global Config.",
+            "description": "List of all Global Config tokens.",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GlobalConfigToken"
+                  "items": {
+                    "$ref": "#/components/schemas/GlobalConfigToken"
+                  },
+                  "type": "array"
                 }
               }
             }
@@ -109148,286 +108904,6 @@
         },
         "type": "object"
       },
-      "AutoSDKShared0feeac66613930d1": {
-        "properties": {
-          "blocks": {
-            "type": "string",
-            "enum": [
-              "build-start",
-              "deployment-alias",
-              "deployment-promotion",
-              "deployment-start",
-              "none"
-            ]
-          },
-          "completedAt": {
-            "type": "number"
-          },
-          "conclusion": {
-            "type": "string",
-            "enum": [
-              "canceled",
-              "failed",
-              "neutral",
-              "skipped",
-              "succeeded",
-              "timeout"
-            ]
-          },
-          "conclusionText": {
-            "type": "string"
-          },
-          "createdAt": {
-            "type": "number"
-          },
-          "deploymentId": {
-            "type": "string"
-          },
-          "externalId": {
-            "type": "string"
-          },
-          "externalUrl": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "output": {
-            "additionalProperties": true,
-            "type": "object"
-          },
-          "ownerId": {
-            "type": "string"
-          },
-          "projectId": {
-            "type": "string"
-          },
-          "requires": {
-            "type": "string",
-            "enum": [
-              "build-ready",
-              "deployment-url",
-              "none"
-            ]
-          },
-          "status": {
-            "type": "string",
-            "enum": [
-              "completed",
-              "queued",
-              "running"
-            ]
-          },
-          "targets": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "timeout": {
-            "type": "number"
-          },
-          "updatedAt": {
-            "type": "number"
-          },
-          "checkId": {
-            "type": "string"
-          },
-          "source": {
-            "oneOf": [
-              {
-                "properties": {
-                  "externalResourceId": {
-                    "type": "string"
-                  },
-                  "integrationConfigurationId": {
-                    "type": "string"
-                  },
-                  "integrationId": {
-                    "type": "string"
-                  },
-                  "kind": {
-                    "type": "string",
-                    "enum": [
-                      "integration"
-                    ]
-                  },
-                  "resourceId": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "integrationConfigurationId",
-                  "integrationId",
-                  "kind"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "kind": {
-                    "type": "string",
-                    "enum": [
-                      "webhook"
-                    ]
-                  },
-                  "webhookId": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "kind"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "externalCheckName": {
-                    "type": "string"
-                  },
-                  "kind": {
-                    "type": "string",
-                    "enum": [
-                      "git-provider"
-                    ]
-                  },
-                  "provider": {
-                    "type": "string",
-                    "enum": [
-                      "bitbucket",
-                      "github",
-                      "gitlab"
-                    ]
-                  }
-                },
-                "required": [
-                  "externalCheckName",
-                  "kind",
-                  "provider"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "origin": {
-                    "type": "string",
-                    "enum": [
-                      "api",
-                      "platform"
-                    ]
-                  },
-                  "subKind": {
-                    "type": "string",
-                    "enum": [
-                      "vercel-native-check"
-                    ]
-                  }
-                },
-                "type": "object",
-                "description": "Native Vercel checks \u2014 check definition and check run `source`."
-              },
-              {
-                "properties": {
-                  "origin": {
-                    "type": "string",
-                    "enum": [
-                      "api"
-                    ]
-                  },
-                  "selection": {
-                    "oneOf": [
-                      {
-                        "properties": {
-                          "kind": {
-                            "type": "string",
-                            "enum": [
-                              "invocation"
-                            ]
-                          }
-                        },
-                        "required": [
-                          "kind"
-                        ],
-                        "type": "object"
-                      },
-                      {
-                        "properties": {
-                          "job": {
-                            "type": "string"
-                          },
-                          "kind": {
-                            "type": "string",
-                            "enum": [
-                              "job"
-                            ]
-                          }
-                        },
-                        "required": [
-                          "job",
-                          "kind"
-                        ],
-                        "type": "object"
-                      },
-                      {
-                        "properties": {
-                          "job": {
-                            "type": "string"
-                          },
-                          "kind": {
-                            "type": "string",
-                            "enum": [
-                              "task"
-                            ]
-                          },
-                          "task": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "job",
-                          "kind",
-                          "task"
-                        ],
-                        "type": "object"
-                      }
-                    ]
-                  },
-                  "subKind": {
-                    "type": "string",
-                    "enum": [
-                      "vercel-ci-check"
-                    ]
-                  }
-                },
-                "required": [
-                  "origin",
-                  "selection",
-                  "subKind"
-                ],
-                "type": "object",
-                "description": "Project-defined CI requirement; its selection is frozen on each check run."
-              }
-            ]
-          }
-        },
-        "required": [
-          "checkId",
-          "createdAt",
-          "deploymentId",
-          "id",
-          "name",
-          "ownerId",
-          "source",
-          "status",
-          "timeout",
-          "updatedAt"
-        ],
-        "type": "object",
-        "description": "Check run backed by a project-level `check` definition."
-      },
       "AutoSDKShared133a7ec19e4ac4f6": {
         "oneOf": [
           {
@@ -111885,6 +111361,16 @@
           }
         }
       },
+      "AutoSDKShared2eaeda81b490b803": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/AutoSDKShared5455d199d07ea329"
+          },
+          {
+            "$ref": "#/components/schemas/AutoSDKSharedca611ecff4bbfd16"
+          }
+        ]
+      },
       "AutoSDKShared30685e6067cce163": {
         "oneOf": [
           {
@@ -113041,172 +112527,6 @@
               "type": "object"
             },
             "type": "object"
-          }
-        ]
-      },
-      "AutoSDKShared3e4933d1b69c5ad0": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/AutoSDKShared0feeac66613930d1"
-          },
-          {
-            "properties": {
-              "blocks": {
-                "type": "string",
-                "enum": [
-                  "build-start",
-                  "deployment-alias",
-                  "deployment-promotion",
-                  "deployment-start",
-                  "none"
-                ]
-              },
-              "completedAt": {
-                "type": "number"
-              },
-              "conclusion": {
-                "type": "string",
-                "enum": [
-                  "canceled",
-                  "failed",
-                  "neutral",
-                  "skipped",
-                  "succeeded",
-                  "timeout"
-                ]
-              },
-              "conclusionText": {
-                "type": "string"
-              },
-              "createdAt": {
-                "type": "number"
-              },
-              "deploymentId": {
-                "type": "string"
-              },
-              "externalId": {
-                "type": "string"
-              },
-              "externalUrl": {
-                "type": "string"
-              },
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "output": {
-                "additionalProperties": true,
-                "type": "object"
-              },
-              "ownerId": {
-                "type": "string"
-              },
-              "projectId": {
-                "type": "string"
-              },
-              "requires": {
-                "type": "string",
-                "enum": [
-                  "build-ready",
-                  "deployment-url",
-                  "none"
-                ]
-              },
-              "status": {
-                "type": "string",
-                "enum": [
-                  "completed",
-                  "queued",
-                  "running"
-                ]
-              },
-              "targets": {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
-              },
-              "timeout": {
-                "type": "number"
-              },
-              "updatedAt": {
-                "type": "number"
-              },
-              "source": {
-                "oneOf": [
-                  {
-                    "properties": {
-                      "invocationAttempt": {
-                        "type": "number"
-                      },
-                      "invocationId": {
-                        "type": "string"
-                      },
-                      "jobDefinitionId": {
-                        "type": "string"
-                      },
-                      "origin": {
-                        "type": "string",
-                        "enum": [
-                          "config"
-                        ]
-                      },
-                      "subKind": {
-                        "type": "string",
-                        "enum": [
-                          "vercel-ci"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "invocationId",
-                      "jobDefinitionId",
-                      "origin",
-                      "subKind"
-                    ],
-                    "type": "object",
-                    "description": "Config-driven CI task \u2014 check run `source` only (no parent check)."
-                  },
-                  {
-                    "properties": {
-                      "origin": {
-                        "type": "string",
-                        "enum": [
-                          "platform"
-                        ]
-                      },
-                      "subKind": {
-                        "type": "string",
-                        "enum": [
-                          "vercel-ci-sentinel"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "origin",
-                      "subKind"
-                    ],
-                    "type": "object",
-                    "description": "CI sentinel \u2014 check run `source` only (no parent check)."
-                  }
-                ]
-              }
-            },
-            "required": [
-              "createdAt",
-              "deploymentId",
-              "id",
-              "name",
-              "ownerId",
-              "source",
-              "status",
-              "timeout",
-              "updatedAt"
-            ],
-            "type": "object",
-            "description": "Vercel CI check run without a parent `check` (no `checkId` field)."
           }
         ]
       },
@@ -115003,6 +114323,330 @@
           }
         }
       },
+      "AutoSDKShared5455d199d07ea329": {
+        "properties": {
+          "blocks": {
+            "type": "string",
+            "enum": [
+              "build-start",
+              "deployment-alias",
+              "deployment-promotion",
+              "deployment-start",
+              "none"
+            ]
+          },
+          "completedAt": {
+            "type": "number"
+          },
+          "conclusion": {
+            "type": "string",
+            "enum": [
+              "canceled",
+              "failed",
+              "neutral",
+              "skipped",
+              "succeeded",
+              "timeout"
+            ]
+          },
+          "conclusionText": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "number"
+          },
+          "deploymentId": {
+            "type": "string"
+          },
+          "expectationRef": {
+            "properties": {
+              "invocationAttempt": {
+                "type": "number"
+              },
+              "invocationId": {
+                "type": "string"
+              },
+              "jobDefinitionId": {
+                "type": "string"
+              },
+              "jobRunAttempt": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "invocationAttempt",
+              "invocationId",
+              "jobDefinitionId",
+              "jobRunAttempt"
+            ],
+            "type": "object"
+          },
+          "expectationRevision": {
+            "type": "number",
+            "description": "Latest aggregate revision applied to this check run."
+          },
+          "externalId": {
+            "type": "string"
+          },
+          "externalUrl": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "output": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "ownerId": {
+            "type": "string"
+          },
+          "projectId": {
+            "type": "string"
+          },
+          "requires": {
+            "type": "string",
+            "enum": [
+              "build-ready",
+              "deployment-url",
+              "none"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "completed",
+              "queued",
+              "running"
+            ]
+          },
+          "targets": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "timeout": {
+            "type": "number"
+          },
+          "updatedAt": {
+            "type": "number"
+          },
+          "checkId": {
+            "type": "string"
+          },
+          "source": {
+            "oneOf": [
+              {
+                "properties": {
+                  "externalResourceId": {
+                    "type": "string"
+                  },
+                  "integrationConfigurationId": {
+                    "type": "string"
+                  },
+                  "integrationId": {
+                    "type": "string"
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "integration"
+                    ]
+                  },
+                  "resourceId": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "integrationConfigurationId",
+                  "integrationId",
+                  "kind"
+                ],
+                "type": "object"
+              },
+              {
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "webhook"
+                    ]
+                  },
+                  "webhookId": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "kind"
+                ],
+                "type": "object"
+              },
+              {
+                "properties": {
+                  "externalCheckName": {
+                    "type": "string"
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "git-provider"
+                    ]
+                  },
+                  "provider": {
+                    "type": "string",
+                    "enum": [
+                      "bitbucket",
+                      "github",
+                      "gitlab"
+                    ]
+                  }
+                },
+                "required": [
+                  "externalCheckName",
+                  "kind",
+                  "provider"
+                ],
+                "type": "object"
+              },
+              {
+                "properties": {
+                  "origin": {
+                    "type": "string",
+                    "enum": [
+                      "api",
+                      "platform"
+                    ]
+                  },
+                  "subKind": {
+                    "type": "string",
+                    "enum": [
+                      "vercel-native-check"
+                    ]
+                  }
+                },
+                "type": "object",
+                "description": "Native Vercel checks \u2014 check definition and check run `source`."
+              },
+              {
+                "properties": {
+                  "origin": {
+                    "type": "string",
+                    "enum": [
+                      "api"
+                    ]
+                  },
+                  "selection": {
+                    "oneOf": [
+                      {
+                        "properties": {
+                          "kind": {
+                            "type": "string",
+                            "enum": [
+                              "invocation"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "kind"
+                        ],
+                        "type": "object"
+                      },
+                      {
+                        "properties": {
+                          "job": {
+                            "type": "string"
+                          },
+                          "kind": {
+                            "type": "string",
+                            "enum": [
+                              "job"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "job",
+                          "kind"
+                        ],
+                        "type": "object"
+                      },
+                      {
+                        "properties": {
+                          "failIfNoMatch": {
+                            "type": "boolean",
+                            "enum": [
+                              false,
+                              true
+                            ]
+                          },
+                          "filters": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          "job": {
+                            "type": "string",
+                            "enum": [
+                              "Turborepo"
+                            ]
+                          },
+                          "kind": {
+                            "type": "string",
+                            "enum": [
+                              "turborepo"
+                            ]
+                          },
+                          "task": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "filters",
+                          "job",
+                          "kind",
+                          "task"
+                        ],
+                        "type": "object"
+                      }
+                    ]
+                  },
+                  "subKind": {
+                    "type": "string",
+                    "enum": [
+                      "vercel-ci-check"
+                    ]
+                  }
+                },
+                "required": [
+                  "origin",
+                  "selection",
+                  "subKind"
+                ],
+                "type": "object",
+                "description": "Project-defined CI requirement; its selection is frozen on each check run."
+              }
+            ]
+          }
+        },
+        "required": [
+          "checkId",
+          "createdAt",
+          "deploymentId",
+          "id",
+          "name",
+          "ownerId",
+          "source",
+          "status",
+          "timeout",
+          "updatedAt"
+        ],
+        "type": "object",
+        "description": "Check run backed by a project-level `check` definition."
+      },
       "AutoSDKShared5d941fd0946ddd47": {
         "properties": {
           "bindings": {
@@ -115822,17 +115466,6 @@
             ]
           }
         },
-        "type": "object"
-      },
-      "AutoSDKShared618805c2ca46e0a6": {
-        "properties": {
-          "runs": {
-            "$ref": "#/components/schemas/AutoSDKShared6bdeb8a313575490"
-          }
-        },
-        "required": [
-          "runs"
-        ],
         "type": "object"
       },
       "AutoSDKShared62800e8e12d3c345": {
@@ -117037,12 +116670,6 @@
           }
         },
         "type": "object"
-      },
-      "AutoSDKShared6bdeb8a313575490": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKShared3e4933d1b69c5ad0"
-        },
-        "type": "array"
       },
       "AutoSDKShared6ce7a2d665426cb4": {
         "properties": {
@@ -119428,6 +119055,17 @@
         "additionalProperties": {
           "$ref": "#/components/schemas/AutoSDKShared30685e6067cce163"
         },
+        "type": "object"
+      },
+      "AutoSDKShared8d9876364a3d897f": {
+        "properties": {
+          "runs": {
+            "$ref": "#/components/schemas/AutoSDKSharedc2d2da711a6c95b4"
+          }
+        },
+        "required": [
+          "runs"
+        ],
         "type": "object"
       },
       "AutoSDKShared8dbad85779e5c1fb": {
@@ -125754,6 +125392,12 @@
         "type": "object",
         "description": "Requested and authorized operations when `checkPermissions` is used. Legacy `includePermissions` responses contain a broader, non-authoritative permission summary."
       },
+      "AutoSDKSharedc2d2da711a6c95b4": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKShared2eaeda81b490b803"
+        },
+        "type": "array"
+      },
       "AutoSDKSharedc330b43ff6fc3599": {
         "oneOf": [
           {
@@ -126294,6 +125938,192 @@
             }
           }
         }
+      },
+      "AutoSDKSharedca611ecff4bbfd16": {
+        "properties": {
+          "blocks": {
+            "type": "string",
+            "enum": [
+              "build-start",
+              "deployment-alias",
+              "deployment-promotion",
+              "deployment-start",
+              "none"
+            ]
+          },
+          "completedAt": {
+            "type": "number"
+          },
+          "conclusion": {
+            "type": "string",
+            "enum": [
+              "canceled",
+              "failed",
+              "neutral",
+              "skipped",
+              "succeeded",
+              "timeout"
+            ]
+          },
+          "conclusionText": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "number"
+          },
+          "deploymentId": {
+            "type": "string"
+          },
+          "expectationRef": {
+            "properties": {
+              "invocationAttempt": {
+                "type": "number"
+              },
+              "invocationId": {
+                "type": "string"
+              },
+              "jobDefinitionId": {
+                "type": "string"
+              },
+              "jobRunAttempt": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "invocationAttempt",
+              "invocationId",
+              "jobDefinitionId",
+              "jobRunAttempt"
+            ],
+            "type": "object"
+          },
+          "expectationRevision": {
+            "type": "number",
+            "description": "Latest aggregate revision applied to this check run."
+          },
+          "externalId": {
+            "type": "string"
+          },
+          "externalUrl": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "output": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "ownerId": {
+            "type": "string"
+          },
+          "projectId": {
+            "type": "string"
+          },
+          "requires": {
+            "type": "string",
+            "enum": [
+              "build-ready",
+              "deployment-url",
+              "none"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "completed",
+              "queued",
+              "running"
+            ]
+          },
+          "targets": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "timeout": {
+            "type": "number"
+          },
+          "updatedAt": {
+            "type": "number"
+          },
+          "source": {
+            "oneOf": [
+              {
+                "properties": {
+                  "invocationAttempt": {
+                    "type": "number"
+                  },
+                  "invocationId": {
+                    "type": "string"
+                  },
+                  "jobDefinitionId": {
+                    "type": "string"
+                  },
+                  "origin": {
+                    "type": "string",
+                    "enum": [
+                      "config"
+                    ]
+                  },
+                  "subKind": {
+                    "type": "string",
+                    "enum": [
+                      "vercel-ci"
+                    ]
+                  }
+                },
+                "required": [
+                  "invocationId",
+                  "jobDefinitionId",
+                  "origin",
+                  "subKind"
+                ],
+                "type": "object",
+                "description": "Config-driven CI task \u2014 check run `source` only (no parent check)."
+              },
+              {
+                "properties": {
+                  "origin": {
+                    "type": "string",
+                    "enum": [
+                      "platform"
+                    ]
+                  },
+                  "subKind": {
+                    "type": "string",
+                    "enum": [
+                      "vercel-ci-sentinel"
+                    ]
+                  }
+                },
+                "required": [
+                  "origin",
+                  "subKind"
+                ],
+                "type": "object",
+                "description": "CI sentinel \u2014 check run `source` only (no parent check)."
+              }
+            ]
+          }
+        },
+        "required": [
+          "createdAt",
+          "deploymentId",
+          "id",
+          "name",
+          "ownerId",
+          "source",
+          "status",
+          "timeout",
+          "updatedAt"
+        ],
+        "type": "object",
+        "description": "Vercel CI check run without a parent `check` (no `checkId` field)."
       },
       "AutoSDKSharedcac2d258b36c4083": {
         "oneOf": [
