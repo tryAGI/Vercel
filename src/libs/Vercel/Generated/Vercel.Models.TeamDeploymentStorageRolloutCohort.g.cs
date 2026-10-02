@@ -11,6 +11,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AlreadyMetered,
+        /// <summary>
+        ///
+        /// </summary>
+        Extreme,
+        /// <summary>
+        ///
+        /// </summary>
         High,
         /// <summary>
         ///
@@ -20,6 +28,14 @@ namespace Vercel
         ///
         /// </summary>
         Medium,
+        /// <summary>
+        ///
+        /// </summary>
+        MediumPlus,
+        /// <summary>
+        ///
+        /// </summary>
+        MeteredOptIn,
     }
 
     /// <summary>
@@ -34,9 +50,13 @@ namespace Vercel
         {
             return value switch
             {
+                TeamDeploymentStorageRolloutCohort.AlreadyMetered => "already_metered",
+                TeamDeploymentStorageRolloutCohort.Extreme => "extreme",
                 TeamDeploymentStorageRolloutCohort.High => "high",
                 TeamDeploymentStorageRolloutCohort.Low => "low",
                 TeamDeploymentStorageRolloutCohort.Medium => "medium",
+                TeamDeploymentStorageRolloutCohort.MediumPlus => "medium_plus",
+                TeamDeploymentStorageRolloutCohort.MeteredOptIn => "metered_opt_in",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -47,9 +67,13 @@ namespace Vercel
         {
             return value switch
             {
+                "already_metered" => TeamDeploymentStorageRolloutCohort.AlreadyMetered,
+                "extreme" => TeamDeploymentStorageRolloutCohort.Extreme,
                 "high" => TeamDeploymentStorageRolloutCohort.High,
                 "low" => TeamDeploymentStorageRolloutCohort.Low,
                 "medium" => TeamDeploymentStorageRolloutCohort.Medium,
+                "medium_plus" => TeamDeploymentStorageRolloutCohort.MediumPlus,
+                "metered_opt_in" => TeamDeploymentStorageRolloutCohort.MeteredOptIn,
                 _ => null,
             };
         }

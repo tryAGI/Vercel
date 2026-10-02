@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Phase 2 Pro deployment-storage pricing rollout cohort and milestones. Absent when the team is not in a Phase 2 Pro cohort.
+    /// Pro deployment-storage pricing rollout cohort and milestones. Absent when the team has not been placed in a rollout cohort yet.
     /// </summary>
     public sealed partial class TeamDeploymentStorageRollout
     {

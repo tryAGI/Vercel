@@ -59,6 +59,13 @@ namespace Vercel
         public required string CreatorId { get; set; }
 
         /// <summary>
+        /// Default continuous-usage billing kind for projects under this team. Absent means projects stay unmetered.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("defaultContinuousUsageKind")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.TeamDefaultContinuousUsageKindJsonConverter))]
+        public global::Vercel.TeamDefaultContinuousUsageKind? DefaultContinuousUsageKind { get; set; }
+
+        /// <summary>
         /// Default deployment protection for this team null indicates protection is disabled
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultDeploymentProtection")]
@@ -95,7 +102,7 @@ namespace Vercel
         public global::Vercel.TeamDeploymentPolicy? DeploymentPolicy { get; set; }
 
         /// <summary>
-        /// Phase 2 Pro deployment-storage pricing rollout cohort and milestones. Absent when the team is not in a Phase 2 Pro cohort.
+        /// Pro deployment-storage pricing rollout cohort and milestones. Absent when the team has not been placed in a rollout cohort yet.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deploymentStorageRollout")]
         public global::Vercel.TeamDeploymentStorageRollout? DeploymentStorageRollout { get; set; }
@@ -382,6 +389,9 @@ namespace Vercel
         /// The team's billing plan.
         /// </param>
         /// <param name="connect"></param>
+        /// <param name="defaultContinuousUsageKind">
+        /// Default continuous-usage billing kind for projects under this team. Absent means projects stay unmetered.
+        /// </param>
         /// <param name="defaultDeploymentProtection">
         /// Default deployment protection for this team null indicates protection is disabled
         /// </param>
@@ -401,7 +411,7 @@ namespace Vercel
         /// Composable deployment-time policy for the team. Used as the default for every project on the team, with optional per-project overrides on `project.deploymentPolicy`.
         /// </param>
         /// <param name="deploymentStorageRollout">
-        /// Phase 2 Pro deployment-storage pricing rollout cohort and milestones. Absent when the team is not in a Phase 2 Pro cohort.
+        /// Pro deployment-storage pricing rollout cohort and milestones. Absent when the team has not been placed in a rollout cohort yet.
         /// </param>
         /// <param name="description">
         /// A short description of the Team.<br/>
@@ -510,6 +520,7 @@ namespace Vercel
             string? avatar,
             global::Vercel.TeamBilling? billing,
             global::Vercel.TeamConnect? connect,
+            global::Vercel.TeamDefaultContinuousUsageKind? defaultContinuousUsageKind,
             global::Vercel.TeamDefaultDeploymentProtection? defaultDeploymentProtection,
             global::Vercel.TeamDefaultExpirationSettings? defaultExpirationSettings,
             global::Vercel.TeamDefaultPassport? defaultPassport,
@@ -555,6 +566,7 @@ namespace Vercel
             this.Connect = connect;
             this.CreatedAt = createdAt;
             this.CreatorId = creatorId ?? throw new global::System.ArgumentNullException(nameof(creatorId));
+            this.DefaultContinuousUsageKind = defaultContinuousUsageKind;
             this.DefaultDeploymentProtection = defaultDeploymentProtection;
             this.DefaultExpirationSettings = defaultExpirationSettings;
             this.DefaultPassport = defaultPassport;
