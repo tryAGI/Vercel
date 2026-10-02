@@ -581,7 +581,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("trustedSources")]
-        public global::Vercel.AutoSDKSharedc367dfb98a4b6059? TrustedSources { get; set; }
+        public global::Vercel.AutoSDKShared94938587734e5f57? TrustedSources { get; set; }
 
         /// <summary>
         ///
@@ -826,7 +826,7 @@ namespace Vercel
             double? transferStartedAt,
             string? transferToAccountId,
             global::Vercel.OneOf<global::Vercel.GetProjectResponseTrustedIpsVariant1, global::Vercel.GetProjectResponseTrustedIpsVariant2>? trustedIps,
-            global::Vercel.AutoSDKSharedc367dfb98a4b6059? trustedSources,
+            global::Vercel.AutoSDKShared94938587734e5f57? trustedSources,
             double? updatedAt,
             global::Vercel.GetProjectResponseUsageStatus? usageStatus,
             bool? v0,
