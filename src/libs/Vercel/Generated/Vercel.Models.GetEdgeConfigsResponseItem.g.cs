@@ -4,63 +4,50 @@
 namespace Vercel
 {
     /// <summary>
-    ///
+    /// A Global Config
     /// </summary>
     public sealed partial class GetEdgeConfigsResponseItem
     {
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
-        public string? Id { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
-        public double? CreatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
 
         /// <summary>
-        ///
+        /// The ID of the user who created the Global Config, optional because it is not always set.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        public string? OwnerId { get; set; }
-
-        /// <summary>
-        /// Name for the Global Config. Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores).
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
-        public string? Slug { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
-        public double? UpdatedAt { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdBy")]
+        public string? CreatedBy { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("digest")]
-        public string? Digest { get; set; }
-
-        /// <summary>
-        /// Keeps track of the current state of the Global Config while it gets transferred.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("transfer")]
-        public global::Vercel.GetEdgeConfigsResponseItemTransfer? Transfer { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Digest { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("schema")]
-        public object? Schema { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("id")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Id { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("purpose")]
-        public global::Vercel.GetEdgeConfigsResponseItemPurpose? Purpose { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("itemCount")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double ItemCount { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string OwnerId { get; set; }
 
         /// <summary>
         ///
@@ -70,11 +57,18 @@ namespace Vercel
         public required double SizeInBytes { get; set; }
 
         /// <summary>
+        /// Name for the Global Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores).
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Slug { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("itemCount")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required double ItemCount { get; set; }
+        public required double UpdatedAt { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -85,48 +79,42 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetEdgeConfigsResponseItem" /> class.
         /// </summary>
-        /// <param name="sizeInBytes"></param>
-        /// <param name="itemCount"></param>
-        /// <param name="id"></param>
         /// <param name="createdAt"></param>
+        /// <param name="digest"></param>
+        /// <param name="id"></param>
+        /// <param name="itemCount"></param>
         /// <param name="ownerId"></param>
+        /// <param name="sizeInBytes"></param>
         /// <param name="slug">
-        /// Name for the Global Config. Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores).
+        /// Name for the Global Config Names are not unique. Must start with an alphabetic character and can contain only alphanumeric characters and underscores).
         /// </param>
         /// <param name="updatedAt"></param>
-        /// <param name="digest"></param>
-        /// <param name="transfer">
-        /// Keeps track of the current state of the Global Config while it gets transferred.
+        /// <param name="createdBy">
+        /// The ID of the user who created the Global Config, optional because it is not always set.
         /// </param>
-        /// <param name="schema"></param>
-        /// <param name="purpose"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetEdgeConfigsResponseItem(
-            double sizeInBytes,
+            double createdAt,
+            string digest,
+            string id,
             double itemCount,
-            string? id,
-            double? createdAt,
-            string? ownerId,
-            string? slug,
-            double? updatedAt,
-            string? digest,
-            global::Vercel.GetEdgeConfigsResponseItemTransfer? transfer,
-            object? schema,
-            global::Vercel.GetEdgeConfigsResponseItemPurpose? purpose)
+            string ownerId,
+            double sizeInBytes,
+            string slug,
+            double updatedAt,
+            string? createdBy)
         {
-            this.Id = id;
             this.CreatedAt = createdAt;
-            this.OwnerId = ownerId;
-            this.Slug = slug;
-            this.UpdatedAt = updatedAt;
-            this.Digest = digest;
-            this.Transfer = transfer;
-            this.Schema = schema;
-            this.Purpose = purpose;
-            this.SizeInBytes = sizeInBytes;
+            this.CreatedBy = createdBy;
+            this.Digest = digest ?? throw new global::System.ArgumentNullException(nameof(digest));
+            this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.ItemCount = itemCount;
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.SizeInBytes = sizeInBytes;
+            this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
+            this.UpdatedAt = updatedAt;
         }
 
         /// <summary>
