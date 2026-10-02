@@ -11,15 +11,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        HighRetentionOptIn,
-        /// <summary>
-        ///
-        /// </summary>
         LowScheduled,
         /// <summary>
         ///
         /// </summary>
         MediumScheduled,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionOptOut,
     }
 
     /// <summary>
@@ -34,9 +34,9 @@ namespace Vercel
         {
             return value switch
             {
-                TeamDeploymentStorageRolloutMeterReason.HighRetentionOptIn => "high_retention_opt_in",
                 TeamDeploymentStorageRolloutMeterReason.LowScheduled => "low_scheduled",
                 TeamDeploymentStorageRolloutMeterReason.MediumScheduled => "medium_scheduled",
+                TeamDeploymentStorageRolloutMeterReason.RetentionOptOut => "retention_opt_out",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -47,9 +47,9 @@ namespace Vercel
         {
             return value switch
             {
-                "high_retention_opt_in" => TeamDeploymentStorageRolloutMeterReason.HighRetentionOptIn,
                 "low_scheduled" => TeamDeploymentStorageRolloutMeterReason.LowScheduled,
                 "medium_scheduled" => TeamDeploymentStorageRolloutMeterReason.MediumScheduled,
+                "retention_opt_out" => TeamDeploymentStorageRolloutMeterReason.RetentionOptOut,
                 _ => null,
             };
         }

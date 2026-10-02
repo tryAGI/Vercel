@@ -12419,6 +12419,16 @@
               }
             }
           },
+          "409": {
+            "description": "The request conflicts with the current resource state.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConnectError"
+                }
+              }
+            }
+          },
           "410": {
             "description": "The requested resource is no longer available.",
             "content": {
@@ -12548,6 +12558,16 @@
               }
             }
           },
+          "409": {
+            "description": "The request conflicts with the current resource state.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConnectError"
+                }
+              }
+            }
+          },
           "410": {
             "description": "The requested resource is no longer available.",
             "content": {
@@ -12655,6 +12675,16 @@
           },
           "404": {
             "description": "The requested resource was not found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConnectError"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "The request conflicts with the current resource state.",
             "content": {
               "application/json": {
                 "schema": {
@@ -12773,6 +12803,16 @@
           },
           "404": {
             "description": "The requested resource was not found.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConnectError"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "The request conflicts with the current resource state.",
             "content": {
               "application/json": {
                 "schema": {
@@ -13065,6 +13105,9 @@
           "404": {
             "description": ""
           },
+          "409": {
+            "description": ""
+          },
           "410": {
             "description": ""
           },
@@ -13349,6 +13392,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "409": {
             "description": ""
           },
           "410": {
@@ -79491,11 +79537,11 @@
                         ]
                       },
                       "keepCurrentRetention": {
-                        "description": "When true, opts the team out of the upcoming deployment-storage retention reduce (Medium/High cohorts). Does not change expiration settings. High cohort also requires acknowledgeStorageBilling; metering starts on reduce day.",
+                        "description": "When true, opts a Pro team out of the upcoming deployment-storage retention reduce. Does not change expiration settings. Unmetered teams also require acknowledgeStorageBilling.",
                         "type": "boolean"
                       },
                       "acknowledgeStorageBilling": {
-                        "description": "Required for High cohort keepCurrentRetention (deferred billing), and when increasing any retention setting for a High cohort team after retention reduce and before metering.",
+                        "description": "Required with keepCurrentRetention for unmetered Pro teams; acknowledges that keeping current retention will incur storage billing on a later date.",
                         "type": "boolean"
                       }
                     },
@@ -104300,6 +104346,14 @@
             "description": "The ID of the user who created the Team.",
             "example": "R6efeCJQ2HKXywuasPDc0fOWB"
           },
+          "defaultContinuousUsageKind": {
+            "type": "string",
+            "enum": [
+              "metered",
+              "unmetered"
+            ],
+            "description": "Default continuous-usage billing kind for projects under this team. Absent means projects stay unmetered."
+          },
           "defaultDeploymentProtection": {
             "properties": {
               "passwordProtection": {
@@ -104714,9 +104768,13 @@
               "cohort": {
                 "type": "string",
                 "enum": [
+                  "already_metered",
+                  "extreme",
                   "high",
                   "low",
-                  "medium"
+                  "medium",
+                  "medium_plus",
+                  "metered_opt_in"
                 ]
               },
               "meteredAt": {
@@ -104726,9 +104784,9 @@
               "meterReason": {
                 "type": "string",
                 "enum": [
-                  "high_retention_opt_in",
                   "low_scheduled",
-                  "medium_scheduled"
+                  "medium_scheduled",
+                  "retention_opt_out"
                 ]
               },
               "retentionAppliedAt": {
@@ -104744,7 +104802,7 @@
               "cohort"
             ],
             "type": "object",
-            "description": "Phase 2 Pro deployment-storage pricing rollout cohort and milestones. Absent when the team is not in a Phase 2 Pro cohort."
+            "description": "Pro deployment-storage pricing rollout cohort and milestones. Absent when the team has not been placed in a rollout cohort yet."
           },
           "description": {
             "nullable": true,

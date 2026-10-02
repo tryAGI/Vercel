@@ -45,13 +45,13 @@ namespace Vercel
         public global::Vercel.PatchTeamRequestDefaultExpirationSettingsExpirationErrored? ExpirationErrored { get; set; }
 
         /// <summary>
-        /// When true, opts the team out of the upcoming deployment-storage retention reduce (Medium/High cohorts). Does not change expiration settings. High cohort also requires acknowledgeStorageBilling; metering starts on reduce day.
+        /// When true, opts a Pro team out of the upcoming deployment-storage retention reduce. Does not change expiration settings. Unmetered teams also require acknowledgeStorageBilling.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keepCurrentRetention")]
         public bool? KeepCurrentRetention { get; set; }
 
         /// <summary>
-        /// Required for High cohort keepCurrentRetention (deferred billing), and when increasing any retention setting for a High cohort team after retention reduce and before metering.
+        /// Required with keepCurrentRetention for unmetered Pro teams; acknowledges that keeping current retention will incur storage billing on a later date.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("acknowledgeStorageBilling")]
         public bool? AcknowledgeStorageBilling { get; set; }
@@ -82,10 +82,10 @@ namespace Vercel
         /// Example: 1y
         /// </param>
         /// <param name="keepCurrentRetention">
-        /// When true, opts the team out of the upcoming deployment-storage retention reduce (Medium/High cohorts). Does not change expiration settings. High cohort also requires acknowledgeStorageBilling; metering starts on reduce day.
+        /// When true, opts a Pro team out of the upcoming deployment-storage retention reduce. Does not change expiration settings. Unmetered teams also require acknowledgeStorageBilling.
         /// </param>
         /// <param name="acknowledgeStorageBilling">
-        /// Required for High cohort keepCurrentRetention (deferred billing), and when increasing any retention setting for a High cohort team after retention reduce and before metering.
+        /// Required with keepCurrentRetention for unmetered Pro teams; acknowledges that keeping current retention will incur storage billing on a later date.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
