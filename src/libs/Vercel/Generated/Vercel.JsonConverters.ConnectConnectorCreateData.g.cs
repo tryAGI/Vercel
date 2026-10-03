@@ -48,6 +48,7 @@ namespace Vercel.JsonConverters
             if (__jsonProps.Contains("clientSecret")) __score0++;
             if (__jsonProps.Contains("codeChallengeMethod")) __score0++;
             if (__jsonProps.Contains("defaultAudience")) __score0++;
+            if (__jsonProps.Contains("defaultResource")) __score0++;
             if (__jsonProps.Contains("defaultTokenExpiresIn")) __score0++;
             if (__jsonProps.Contains("forwardedClaims")) __score0++;
             if (__jsonProps.Contains("forwardedClaims.idToken")) __score0++;

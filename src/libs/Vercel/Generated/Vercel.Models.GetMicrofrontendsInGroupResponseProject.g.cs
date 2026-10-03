@@ -11,12 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("abuse")]
-        public global::Vercel.AutoSDKShareddb65d769b106737a? Abuse { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("accountId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AccountId { get; set; }
@@ -627,7 +621,6 @@ namespace Vercel
         /// <param name="name"></param>
         /// <param name="nodeVersion"></param>
         /// <param name="resourceConfig"></param>
-        /// <param name="abuse"></param>
         /// <param name="analytics"></param>
         /// <param name="appliedCve55182Migration"></param>
         /// <param name="autoAssignCustomDomains"></param>
@@ -736,7 +729,6 @@ namespace Vercel
             string name,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectNodeVersion nodeVersion,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectResourceConfig resourceConfig,
-            global::Vercel.AutoSDKShareddb65d769b106737a? abuse,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectAnalytics? analytics,
             bool? appliedCve55182Migration,
             bool? autoAssignCustomDomains,
@@ -825,7 +817,6 @@ namespace Vercel
             bool? v0Created,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectWebAnalytics? webAnalytics)
         {
-            this.Abuse = abuse;
             this.AccountId = accountId ?? throw new global::System.ArgumentNullException(nameof(accountId));
             this.Alias = alias ?? throw new global::System.ArgumentNullException(nameof(alias));
             this.Analytics = analytics;

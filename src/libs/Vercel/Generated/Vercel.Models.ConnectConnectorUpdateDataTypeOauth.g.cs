@@ -95,6 +95,12 @@ namespace Vercel
         public string? DefaultAudience { get; set; }
 
         /// <summary>
+        /// Default RFC 8707 resource sent on authorization and token requests when a token request omits one. An empty string clears the default.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("defaultResource")]
+        public string? DefaultResource { get; set; }
+
+        /// <summary>
         /// Default token lifetime in seconds to use when the token response omits expires_in.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultTokenExpiresIn")]
@@ -171,6 +177,9 @@ namespace Vercel
         /// <param name="defaultAudience">
         /// Default audience used when a token request omits one. An empty string clears the default.
         /// </param>
+        /// <param name="defaultResource">
+        /// Default RFC 8707 resource sent on authorization and token requests when a token request omits one. An empty string clears the default.
+        /// </param>
         /// <param name="defaultTokenExpiresIn">
         /// Default token lifetime in seconds to use when the token response omits expires_in.
         /// </param>
@@ -201,6 +210,7 @@ namespace Vercel
             global::Vercel.ConnectConnectorUpdateDataTypeOauthClientCredentials? clientCredentials,
             global::Vercel.ConnectConnectorUpdateDataTypeOauthForwardedClaims? forwardedClaims,
             string? defaultAudience,
+            string? defaultResource,
             double? defaultTokenExpiresIn,
             global::System.Collections.Generic.Dictionary<string, string>? authorizationUrlParams,
             global::Vercel.ConnectConnectorUpdateDataTypeOauthJwtBearer? jwtBearer,
@@ -220,6 +230,7 @@ namespace Vercel
             this.ClientCredentials = clientCredentials;
             this.ForwardedClaims = forwardedClaims;
             this.DefaultAudience = defaultAudience;
+            this.DefaultResource = defaultResource;
             this.DefaultTokenExpiresIn = defaultTokenExpiresIn;
             this.AuthorizationUrlParams = authorizationUrlParams;
             this.JwtBearer = jwtBearer;
