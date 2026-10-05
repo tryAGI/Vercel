@@ -639,6 +639,43 @@ namespace Vercel
                                         h => h.Key,
                                         h => h.Value));
                             }
+                            // An internal error occurred.
+                            if ((int)__response.StatusCode == 500)
+                            {
+                                string? __content_500 = null;
+                                global::System.Exception? __exception_500 = null;
+                                global::Vercel.ConnectError? __value_500 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_500 = global::Vercel.ConnectError.FromJson(__content_500, JsonSerializerContext);
+                                    }
+                                    else
+                                    {
+                                        __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_500 = global::Vercel.ConnectError.FromJson(__content_500, JsonSerializerContext);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_500 = __ex;
+                                }
+
+
+                                throw global::Vercel.ApiException<global::Vercel.ConnectError>.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_500,
+                                    responseBody: __content_500,
+                                    responseObject: __value_500,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
                             //
                             if ((int)__response.StatusCode == 501)
                             {
@@ -852,8 +889,11 @@ namespace Vercel
         /// <param name="triggers">
         /// Whether the triggers are enabled for this connector.
         /// </param>
-        /// <param name="triggerData">
-        /// Trigger configuration, validated and encrypted by the trigger driver. An empty object applies driver defaults.
+        /// <param name="triggerVerificationInput">
+        /// Plaintext verification inputs, validated by the trigger driver and encrypted into stored triggerData. An empty object makes no changes.
+        /// </param>
+        /// <param name="triggerRegistrationInput">
+        /// Additional registration inputs, validated by the trigger driver. Requires triggers: true. Shared verification credentials are read from triggerData.
         /// </param>
         /// <param name="events">
         /// Default trigger events for this connector.
@@ -907,7 +947,8 @@ namespace Vercel
             string? teamId = default,
             string? slug = default,
             bool? triggers = default,
-            object? triggerData = default,
+            object? triggerVerificationInput = default,
+            object? triggerRegistrationInput = default,
             global::System.Collections.Generic.IList<string>? events = default,
             global::Vercel.ConnectConnectorUpdateData? data = default,
             string? icon = default,
@@ -921,7 +962,8 @@ namespace Vercel
             var __request = new global::Vercel.ConnectUpdateConnectorRequest
             {
                 Triggers = triggers,
-                TriggerData = triggerData,
+                TriggerVerificationInput = triggerVerificationInput,
+                TriggerRegistrationInput = triggerRegistrationInput,
                 Events = events,
                 Data = data,
                 Icon = icon,

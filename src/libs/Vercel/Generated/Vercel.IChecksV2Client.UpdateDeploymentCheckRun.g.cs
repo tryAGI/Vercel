@@ -20,7 +20,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared2eaeda81b490b803> UpdateDeploymentCheckRunAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared373105c7a8467265> UpdateDeploymentCheckRunAsync(
             string deploymentId,
             string checkRunId,
 
@@ -45,7 +45,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared2eaeda81b490b803>> UpdateDeploymentCheckRunAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared373105c7a8467265>> UpdateDeploymentCheckRunAsResponseAsync(
             string deploymentId,
             string checkRunId,
 
@@ -76,7 +76,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared2eaeda81b490b803> UpdateDeploymentCheckRunAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared373105c7a8467265> UpdateDeploymentCheckRunAsync(
             string deploymentId,
             string checkRunId,
             string? teamId = default,

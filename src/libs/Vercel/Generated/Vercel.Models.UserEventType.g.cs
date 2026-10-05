@@ -2724,6 +2724,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        V0MigrationPaymentConfirmed,
+        /// <summary>
+        ///
+        /// </summary>
         VcrImageDeleted,
         /// <summary>
         ///
@@ -3529,6 +3533,7 @@ namespace Vercel
                 UserEventType.V0ChatAiUsage => "v0-chat-ai-usage",
                 UserEventType.V0ChatCreated => "v0-chat-created",
                 UserEventType.V0ChatMessageSent => "v0-chat-message-sent",
+                UserEventType.V0MigrationPaymentConfirmed => "v0-migration-payment-confirmed",
                 UserEventType.VcrImageDeleted => "vcr-image-deleted",
                 UserEventType.VcrImagePushed => "vcr-image-pushed",
                 UserEventType.VcrRepositoryCreated => "vcr-repository-created",
@@ -4246,6 +4251,7 @@ namespace Vercel
                 "v0-chat-ai-usage" => UserEventType.V0ChatAiUsage,
                 "v0-chat-created" => UserEventType.V0ChatCreated,
                 "v0-chat-message-sent" => UserEventType.V0ChatMessageSent,
+                "v0-migration-payment-confirmed" => UserEventType.V0MigrationPaymentConfirmed,
                 "vcr-image-deleted" => UserEventType.VcrImageDeleted,
                 "vcr-image-pushed" => UserEventType.VcrImagePushed,
                 "vcr-repository-created" => UserEventType.VcrRepositoryCreated,
