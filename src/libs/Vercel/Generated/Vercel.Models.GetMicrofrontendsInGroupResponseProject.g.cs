@@ -61,6 +61,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("avatarDarkMode")]
+        public string? AvatarDarkMode { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("blobs")]
         public global::Vercel.GetMicrofrontendsInGroupResponseProjectBlobs? Blobs { get; set; }
 
@@ -627,6 +633,7 @@ namespace Vercel
         /// <param name="autoAssignCustomDomainsUpdatedBy"></param>
         /// <param name="autoExposeSystemEnvs"></param>
         /// <param name="avatar"></param>
+        /// <param name="avatarDarkMode"></param>
         /// <param name="blobs"></param>
         /// <param name="buildCommand"></param>
         /// <param name="commandForIgnoringBuildStep"></param>
@@ -735,6 +742,7 @@ namespace Vercel
             string? autoAssignCustomDomainsUpdatedBy,
             bool? autoExposeSystemEnvs,
             string? avatar,
+            string? avatarDarkMode,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectBlobs? blobs,
             string? buildCommand,
             string? commandForIgnoringBuildStep,
@@ -825,6 +833,7 @@ namespace Vercel
             this.AutoAssignCustomDomainsUpdatedBy = autoAssignCustomDomainsUpdatedBy;
             this.AutoExposeSystemEnvs = autoExposeSystemEnvs;
             this.Avatar = avatar;
+            this.AvatarDarkMode = avatarDarkMode;
             this.Blobs = blobs;
             this.BuildCommand = buildCommand;
             this.CommandForIgnoringBuildStep = commandForIgnoringBuildStep;

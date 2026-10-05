@@ -70,8 +70,11 @@ namespace Vercel
         /// <param name="triggers">
         /// Whether the triggers are enabled for this connector.
         /// </param>
-        /// <param name="triggerData">
-        /// Trigger configuration, validated and encrypted by the trigger driver. An empty object applies driver defaults.
+        /// <param name="triggerVerificationInput">
+        /// Plaintext verification inputs, validated by the trigger driver and encrypted into stored triggerData. An empty object makes no changes.
+        /// </param>
+        /// <param name="triggerRegistrationInput">
+        /// Additional registration inputs, validated by the trigger driver. Requires triggers: true. Shared verification credentials are read from triggerData.
         /// </param>
         /// <param name="events">
         /// Default trigger events for this connector.
@@ -125,7 +128,8 @@ namespace Vercel
             string? teamId = default,
             string? slug = default,
             bool? triggers = default,
-            object? triggerData = default,
+            object? triggerVerificationInput = default,
+            object? triggerRegistrationInput = default,
             global::System.Collections.Generic.IList<string>? events = default,
             global::Vercel.ConnectConnectorUpdateData? data = default,
             string? icon = default,

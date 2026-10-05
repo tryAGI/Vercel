@@ -64,7 +64,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared9bbe6cc4d61f3bf2> UploadProjectAvatarAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharede052f139ff613de3> UploadProjectAvatarAsync(
             string idOrName,
 
             byte[] request,
@@ -102,7 +102,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared9bbe6cc4d61f3bf2>> UploadProjectAvatarAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharede052f139ff613de3>> UploadProjectAvatarAsResponseAsync(
             string idOrName,
 
             byte[] request,
@@ -624,9 +624,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.AutoSDKShared9bbe6cc4d61f3bf2.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.AutoSDKSharede052f139ff613de3.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared9bbe6cc4d61f3bf2>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharede052f139ff613de3>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -656,9 +656,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.AutoSDKShared9bbe6cc4d61f3bf2.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.AutoSDKSharede052f139ff613de3.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared9bbe6cc4d61f3bf2>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharede052f139ff613de3>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

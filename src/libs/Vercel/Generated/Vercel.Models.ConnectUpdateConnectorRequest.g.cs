@@ -15,10 +15,16 @@ namespace Vercel
         public bool? Triggers { get; set; }
 
         /// <summary>
-        /// Trigger configuration, validated and encrypted by the trigger driver. An empty object applies driver defaults.
+        /// Plaintext verification inputs, validated by the trigger driver and encrypted into stored triggerData. An empty object makes no changes.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("triggerData")]
-        public object? TriggerData { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("triggerVerificationInput")]
+        public object? TriggerVerificationInput { get; set; }
+
+        /// <summary>
+        /// Additional registration inputs, validated by the trigger driver. Requires triggers: true. Shared verification credentials are read from triggerData.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("triggerRegistrationInput")]
+        public object? TriggerRegistrationInput { get; set; }
 
         /// <summary>
         /// Default trigger events for this connector.
@@ -102,8 +108,11 @@ namespace Vercel
         /// <param name="triggers">
         /// Whether the triggers are enabled for this connector.
         /// </param>
-        /// <param name="triggerData">
-        /// Trigger configuration, validated and encrypted by the trigger driver. An empty object applies driver defaults.
+        /// <param name="triggerVerificationInput">
+        /// Plaintext verification inputs, validated by the trigger driver and encrypted into stored triggerData. An empty object makes no changes.
+        /// </param>
+        /// <param name="triggerRegistrationInput">
+        /// Additional registration inputs, validated by the trigger driver. Requires triggers: true. Shared verification credentials are read from triggerData.
         /// </param>
         /// <param name="events">
         /// Default trigger events for this connector.
@@ -154,7 +163,8 @@ namespace Vercel
 #endif
         public ConnectUpdateConnectorRequest(
             bool? triggers,
-            object? triggerData,
+            object? triggerVerificationInput,
+            object? triggerRegistrationInput,
             global::System.Collections.Generic.IList<string>? events,
             global::Vercel.ConnectConnectorUpdateData? data,
             string? icon,
@@ -164,7 +174,8 @@ namespace Vercel
             string? name)
         {
             this.Triggers = triggers;
-            this.TriggerData = triggerData;
+            this.TriggerVerificationInput = triggerVerificationInput;
+            this.TriggerRegistrationInput = triggerRegistrationInput;
             this.Events = events;
             this.Data = data;
             this.Icon = icon;

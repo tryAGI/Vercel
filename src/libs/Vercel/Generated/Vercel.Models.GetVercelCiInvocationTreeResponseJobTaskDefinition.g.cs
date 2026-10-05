@@ -53,6 +53,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("packageDirectory")]
+        public string? PackageDirectory { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("operation")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.GetVercelCiInvocationTreeResponseJobTaskDefinitionOperationVariant1, global::Vercel.GetVercelCiInvocationTreeResponseJobTaskDefinitionOperationVariant2>))]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -90,6 +96,7 @@ namespace Vercel
         /// <param name="operation"></param>
         /// <param name="dependencyTaskDefinitionIds"></param>
         /// <param name="createdAt"></param>
+        /// <param name="packageDirectory"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -102,7 +109,8 @@ namespace Vercel
             string name,
             global::Vercel.AnyOf<global::Vercel.GetVercelCiInvocationTreeResponseJobTaskDefinitionOperationVariant1, global::Vercel.GetVercelCiInvocationTreeResponseJobTaskDefinitionOperationVariant2> operation,
             global::System.Collections.Generic.IList<string> dependencyTaskDefinitionIds,
-            double createdAt)
+            double createdAt,
+            string? packageDirectory)
         {
             this.InvocationId = invocationId ?? throw new global::System.ArgumentNullException(nameof(invocationId));
             this.InvocationAttempt = invocationAttempt;
@@ -110,6 +118,7 @@ namespace Vercel
             this.JobRunAttempt = jobRunAttempt;
             this.TaskDefinitionId = taskDefinitionId ?? throw new global::System.ArgumentNullException(nameof(taskDefinitionId));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.PackageDirectory = packageDirectory;
             this.Operation = operation;
             this.DependencyTaskDefinitionIds = dependencyTaskDefinitionIds ?? throw new global::System.ArgumentNullException(nameof(dependencyTaskDefinitionIds));
             this.CreatedAt = createdAt;

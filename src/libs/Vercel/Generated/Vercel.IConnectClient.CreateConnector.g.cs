@@ -128,8 +128,11 @@ namespace Vercel
         /// <param name="triggerType">
         /// Trigger driver type. Resolved automatically from the known service connection method when not provided. Only set when using the newly decoupled triggers resolution flow.
         /// </param>
-        /// <param name="triggerData">
-        /// Trigger configuration, validated and encrypted by the trigger driver. An empty object applies driver defaults.
+        /// <param name="triggerVerificationInput">
+        /// Plaintext verification inputs, validated by the trigger driver and encrypted into stored triggerData. An empty object makes no changes.
+        /// </param>
+        /// <param name="triggerRegistrationInput">
+        /// Additional registration inputs, validated by the trigger driver. Requires triggers: true. Shared verification credentials are read from triggerData.
         /// </param>
         /// <param name="triggerDestination">
         /// Initial trigger destination. Requires triggers to be enabled and a projectId here or at the top level. Connector responses expose the resulting set as triggerDestinations. Replace the complete set with PATCH /v1/connect/connectors/{connector}/trigger-destinations.
@@ -158,7 +161,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.ConnectCreateConnectorRequestEnvironment?, string>>? environments = default,
             bool? triggers = default,
             string? triggerType = default,
-            object? triggerData = default,
+            object? triggerVerificationInput = default,
+            object? triggerRegistrationInput = default,
             global::Vercel.OneOf<global::Vercel.ConnectCreateConnectorRequestTriggerDestinationDefaultDeployment, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationBranch, global::Vercel.ConnectCreateConnectorRequestTriggerDestinationCustomEnvironment>? triggerDestination = default,
             global::System.Collections.Generic.IList<string>? events = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,

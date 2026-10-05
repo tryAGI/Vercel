@@ -70,6 +70,12 @@ namespace Vercel
         public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunCompleted? Completed { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deploymentBinding")]
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunDeploymentBinding? DeploymentBinding { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -87,6 +93,7 @@ namespace Vercel
         /// <param name="createdAt"></param>
         /// <param name="started"></param>
         /// <param name="completed"></param>
+        /// <param name="deploymentBinding"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -99,7 +106,8 @@ namespace Vercel
             double attempt,
             double createdAt,
             global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunStarted? started,
-            global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunCompleted? completed)
+            global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunCompleted? completed,
+            global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunDeploymentBinding? deploymentBinding)
         {
             this.InvocationId = invocationId ?? throw new global::System.ArgumentNullException(nameof(invocationId));
             this.InvocationAttempt = invocationAttempt;
@@ -110,6 +118,7 @@ namespace Vercel
             this.CreatedAt = createdAt;
             this.Started = started;
             this.Completed = completed;
+            this.DeploymentBinding = deploymentBinding;
         }
 
         /// <summary>
