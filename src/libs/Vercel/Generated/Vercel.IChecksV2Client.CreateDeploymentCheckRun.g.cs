@@ -19,7 +19,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared373105c7a8467265> CreateDeploymentCheckRunAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared1b28a5d7512c83d2> CreateDeploymentCheckRunAsync(
             string deploymentId,
 
             global::Vercel.CreateDeploymentCheckRunRequest request,
@@ -42,7 +42,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared373105c7a8467265>> CreateDeploymentCheckRunAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared1b28a5d7512c83d2>> CreateDeploymentCheckRunAsResponseAsync(
             string deploymentId,
 
             global::Vercel.CreateDeploymentCheckRunRequest request,
@@ -65,7 +65,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared373105c7a8467265> CreateDeploymentCheckRunAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared1b28a5d7512c83d2> CreateDeploymentCheckRunAsync(
             string deploymentId,
             string checkId,
             string? teamId = default,
