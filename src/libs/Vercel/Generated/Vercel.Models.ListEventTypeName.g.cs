@@ -1616,6 +1616,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        ProjectAvatarDarkModeUpdate,
+        /// <summary>
+        ///
+        /// </summary>
         ProjectAvatarUpdate,
         /// <summary>
         ///
@@ -3256,6 +3260,7 @@ namespace Vercel
                 ListEventTypeName.ProjectAnalyticsEnabled => "project-analytics-enabled",
                 ListEventTypeName.ProjectAutoAssignCustomProductionDomainsUpdated => "project-auto-assign-custom-production-domains-updated",
                 ListEventTypeName.ProjectAutomationBypass => "project-automation-bypass",
+                ListEventTypeName.ProjectAvatarDarkModeUpdate => "project-avatar-dark-mode-update",
                 ListEventTypeName.ProjectAvatarUpdate => "project-avatar-update",
                 ListEventTypeName.ProjectBuildCommandUpdated => "project-build-command-updated",
                 ListEventTypeName.ProjectBuildLogsAndSourceProtectionUpdated => "project-build-logs-and-source-protection-updated",
@@ -3974,6 +3979,7 @@ namespace Vercel
                 "project-analytics-enabled" => ListEventTypeName.ProjectAnalyticsEnabled,
                 "project-auto-assign-custom-production-domains-updated" => ListEventTypeName.ProjectAutoAssignCustomProductionDomainsUpdated,
                 "project-automation-bypass" => ListEventTypeName.ProjectAutomationBypass,
+                "project-avatar-dark-mode-update" => ListEventTypeName.ProjectAvatarDarkModeUpdate,
                 "project-avatar-update" => ListEventTypeName.ProjectAvatarUpdate,
                 "project-build-command-updated" => ListEventTypeName.ProjectBuildCommandUpdated,
                 "project-build-logs-and-source-protection-updated" => ListEventTypeName.ProjectBuildLogsAndSourceProtectionUpdated,
