@@ -1615,6 +1615,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        ProjectAvatarDarkModeUpdate,
+        /// <summary>
+        ///
+        /// </summary>
         ProjectAvatarUpdate,
         /// <summary>
         ///
@@ -3255,6 +3259,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ProjectAnalyticsEnabled => "project-analytics-enabled",
                 ListEventTypeReplacedByItem.ProjectAutoAssignCustomProductionDomainsUpdated => "project-auto-assign-custom-production-domains-updated",
                 ListEventTypeReplacedByItem.ProjectAutomationBypass => "project-automation-bypass",
+                ListEventTypeReplacedByItem.ProjectAvatarDarkModeUpdate => "project-avatar-dark-mode-update",
                 ListEventTypeReplacedByItem.ProjectAvatarUpdate => "project-avatar-update",
                 ListEventTypeReplacedByItem.ProjectBuildCommandUpdated => "project-build-command-updated",
                 ListEventTypeReplacedByItem.ProjectBuildLogsAndSourceProtectionUpdated => "project-build-logs-and-source-protection-updated",
@@ -3973,6 +3978,7 @@ namespace Vercel
                 "project-analytics-enabled" => ListEventTypeReplacedByItem.ProjectAnalyticsEnabled,
                 "project-auto-assign-custom-production-domains-updated" => ListEventTypeReplacedByItem.ProjectAutoAssignCustomProductionDomainsUpdated,
                 "project-automation-bypass" => ListEventTypeReplacedByItem.ProjectAutomationBypass,
+                "project-avatar-dark-mode-update" => ListEventTypeReplacedByItem.ProjectAvatarDarkModeUpdate,
                 "project-avatar-update" => ListEventTypeReplacedByItem.ProjectAvatarUpdate,
                 "project-build-command-updated" => ListEventTypeReplacedByItem.ProjectBuildCommandUpdated,
                 "project-build-logs-and-source-protection-updated" => ListEventTypeReplacedByItem.ProjectBuildLogsAndSourceProtectionUpdated,
