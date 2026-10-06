@@ -170,6 +170,12 @@ namespace Vercel
         public required bool SupportsInstallation { get; set; }
 
         /// <summary>
+        /// Whether this managed connector can disconnect from its manager.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("supportsManagedEjection")]
+        public bool? SupportsManagedEjection { get; set; }
+
+        /// <summary>
         /// Whether Connect can revoke tokens for this connector.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("supportsRevocation")]
@@ -357,6 +363,9 @@ namespace Vercel
         /// <param name="serviceIcon">
         /// Provider logo from the known-service registry, matched by `service`. Often an SVG data URL. Absent when the service is not in the registry.
         /// </param>
+        /// <param name="supportsManagedEjection">
+        /// Whether this managed connector can disconnect from its manager.
+        /// </param>
         /// <param name="target">
         /// Which of the service's products/surfaces this connector points at.
         /// </param>
@@ -413,6 +422,7 @@ namespace Vercel
             string? redirectUri,
             double? reinstallAt,
             string? serviceIcon,
+            bool? supportsManagedEjection,
             string? target,
             global::System.Collections.Generic.IList<global::Vercel.ConnectTriggerDestination>? triggerDestinations,
             global::Vercel.ConnectTriggerConfiguration? triggers,
@@ -446,6 +456,7 @@ namespace Vercel
             this.SupportedSubjectTypes = supportedSubjectTypes ?? throw new global::System.ArgumentNullException(nameof(supportedSubjectTypes));
             this.SupportsIcon = supportsIcon;
             this.SupportsInstallation = supportsInstallation;
+            this.SupportsManagedEjection = supportsManagedEjection;
             this.SupportsRevocation = supportsRevocation;
             this.SupportsTriggers = supportsTriggers;
             this.Target = target;
