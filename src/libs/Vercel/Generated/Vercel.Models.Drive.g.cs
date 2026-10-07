@@ -61,6 +61,12 @@ namespace Vercel
         public required string Name { get; set; }
 
         /// <summary>
+        /// The ID of the source drive when this drive is a fork.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("parentDriveId")]
+        public string? ParentDriveId { get; set; }
+
+        /// <summary>
         /// The project that owns the drive.<br/>
         /// Example: prj_abc123
         /// </summary>
@@ -77,6 +83,12 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("region")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Region { get; set; }
+
+        /// <summary>
+        /// The ID of the original drive at the root of this fork.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("rootDriveId")]
+        public string? RootDriveId { get; set; }
 
         /// <summary>
         /// The last time the drive was updated, in milliseconds since the epoch.<br/>
@@ -138,6 +150,12 @@ namespace Vercel
         /// Current session ID the drive is attached to, if any.<br/>
         /// Example: sbx_123
         /// </param>
+        /// <param name="parentDriveId">
+        /// The ID of the source drive when this drive is a fork.
+        /// </param>
+        /// <param name="rootDriveId">
+        /// The ID of the original drive at the root of this fork.
+        /// </param>
         /// <param name="v0">
         /// Whether this drive is managed by v0 on the customer's behalf.
         /// </param>
@@ -154,6 +172,8 @@ namespace Vercel
             double updatedAt,
             string? currentSandboxName,
             string? currentSessionId,
+            string? parentDriveId,
+            string? rootDriveId,
             bool? v0)
         {
             this.CreatedAt = createdAt;
@@ -162,8 +182,10 @@ namespace Vercel
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.MaxSizeBytes = maxSizeBytes;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.ParentDriveId = parentDriveId;
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.Region = region ?? throw new global::System.ArgumentNullException(nameof(region));
+            this.RootDriveId = rootDriveId;
             this.UpdatedAt = updatedAt;
             this.V0 = v0;
         }

@@ -104193,6 +104193,10 @@
             "description": "The unique drive name within the project.",
             "example": "workspace"
           },
+          "parentDriveId": {
+            "type": "string",
+            "description": "The ID of the source drive when this drive is a fork."
+          },
           "projectId": {
             "type": "string",
             "description": "The project that owns the drive.",
@@ -104202,6 +104206,10 @@
             "type": "string",
             "description": "The region where the drive is stored.",
             "example": "iad1"
+          },
+          "rootDriveId": {
+            "type": "string",
+            "description": "The ID of the original drive at the root of this fork."
           },
           "updatedAt": {
             "type": "number",
