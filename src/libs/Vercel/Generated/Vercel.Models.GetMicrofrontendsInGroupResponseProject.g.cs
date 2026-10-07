@@ -441,7 +441,7 @@ namespace Vercel
         /// Project-level rolling release configuration that defines how deployments should be gradually rolled out
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rollingRelease")]
-        public global::Vercel.AutoSDKShared42a87d29a5696121? RollingRelease { get; set; }
+        public global::Vercel.AutoSDKSharedce0c7f50e384322c? RollingRelease { get; set; }
 
         /// <summary>
         ///
@@ -796,7 +796,7 @@ namespace Vercel
             object? protectionBypass,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectProtectionConfig? protectionConfig,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectRollbackDescription? rollbackDescription,
-            global::Vercel.AutoSDKShared42a87d29a5696121? rollingRelease,
+            global::Vercel.AutoSDKSharedce0c7f50e384322c? rollingRelease,
             string? rootDirectory,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectSandbox? sandbox,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectSecurity? security,

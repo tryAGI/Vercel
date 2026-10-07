@@ -206,6 +206,13 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.TeamIpBucket>? IpBuckets { get; set; }
 
         /// <summary>
+        /// Property indicating that this Team data contains full information. Limited Team data has `limited: true`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("limited")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Limited { get; set; }
+
+        /// <summary>
         /// The membership of the authenticated User in relation to the Team.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("membership")]
@@ -364,6 +371,9 @@ namespace Vercel
         /// The Team's unique identifier.<br/>
         /// Example: team_nllPyCtREAqxxdyFKbbMDlxd
         /// </param>
+        /// <param name="limited">
+        /// Property indicating that this Team data contains full information. Limited Team data has `limited: true`.
+        /// </param>
         /// <param name="slug">
         /// The Team's slug, which is unique across the Vercel platform.<br/>
         /// Example: my-team
@@ -512,6 +522,7 @@ namespace Vercel
             double createdAt,
             string creatorId,
             string id,
+            bool limited,
             string slug,
             string stagingPrefix,
             double updatedAt,
@@ -588,6 +599,7 @@ namespace Vercel
             this.IntegrationTokensInvalidatedAt = integrationTokensInvalidatedAt;
             this.InviteCode = inviteCode;
             this.IpBuckets = ipBuckets;
+            this.Limited = limited;
             this.Membership = membership;
             this.Name = name;
             this.NsnbConfig = nsnbConfig;

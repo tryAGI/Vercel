@@ -11,6 +11,14 @@ namespace Vercel
         /// <param name="from">
         /// Query only projects updated after the given timestamp or continuation token.
         /// </param>
+        /// <param name="since">
+        /// Query only projects updated after this JavaScript timestamp.<br/>
+        /// Example: 1540095775941L
+        /// </param>
+        /// <param name="until">
+        /// Query only projects updated before this JavaScript timestamp.<br/>
+        /// Example: 1540095775951L
+        /// </param>
         /// <param name="gitForkProtection">
         /// Specifies whether PRs from Git forks should require a team member's authorization before it can be deployed<br/>
         /// Example: 1
@@ -66,8 +74,10 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared8d2a365a5da335df>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>> GetProjectsAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0b1c50a27c68575d>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>> GetProjectsAsync(
             string? from = default,
+            double? since = default,
+            double? until = default,
             global::Vercel.GetProjectsGitForkProtection? gitForkProtection = default,
             string? limit = default,
             string? search = default,
@@ -93,6 +103,14 @@ namespace Vercel
         /// <param name="from">
         /// Query only projects updated after the given timestamp or continuation token.
         /// </param>
+        /// <param name="since">
+        /// Query only projects updated after this JavaScript timestamp.<br/>
+        /// Example: 1540095775941L
+        /// </param>
+        /// <param name="until">
+        /// Query only projects updated before this JavaScript timestamp.<br/>
+        /// Example: 1540095775951L
+        /// </param>
         /// <param name="gitForkProtection">
         /// Specifies whether PRs from Git forks should require a team member's authorization before it can be deployed<br/>
         /// Example: 1
@@ -148,8 +166,10 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared8d2a365a5da335df>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>>> GetProjectsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0b1c50a27c68575d>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>>> GetProjectsAsResponseAsync(
             string? from = default,
+            double? since = default,
+            double? until = default,
             global::Vercel.GetProjectsGitForkProtection? gitForkProtection = default,
             string? limit = default,
             string? search = default,
