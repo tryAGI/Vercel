@@ -28,6 +28,8 @@ namespace Vercel
         partial void PrepareGetProjectsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string? from,
+            ref double? since,
+            ref double? until,
             ref global::Vercel.GetProjectsGitForkProtection? gitForkProtection,
             ref string? limit,
             ref string? search,
@@ -48,6 +50,8 @@ namespace Vercel
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string? from,
+            double? since,
+            double? until,
             global::Vercel.GetProjectsGitForkProtection? gitForkProtection,
             string? limit,
             string? search,
@@ -80,6 +84,14 @@ namespace Vercel
         /// <param name="from">
         /// Query only projects updated after the given timestamp or continuation token.
         /// </param>
+        /// <param name="since">
+        /// Query only projects updated after this JavaScript timestamp.<br/>
+        /// Example: 1540095775941L
+        /// </param>
+        /// <param name="until">
+        /// Query only projects updated before this JavaScript timestamp.<br/>
+        /// Example: 1540095775951L
+        /// </param>
         /// <param name="gitForkProtection">
         /// Specifies whether PRs from Git forks should require a team member's authorization before it can be deployed<br/>
         /// Example: 1
@@ -135,8 +147,10 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared8d2a365a5da335df>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>> GetProjectsAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0b1c50a27c68575d>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>> GetProjectsAsync(
             string? from = default,
+            double? since = default,
+            double? until = default,
             global::Vercel.GetProjectsGitForkProtection? gitForkProtection = default,
             string? limit = default,
             string? search = default,
@@ -158,6 +172,8 @@ namespace Vercel
         {
             var __response = await GetProjectsAsResponseAsync(
                 from: from,
+                since: since,
+                until: until,
                 gitForkProtection: gitForkProtection,
                 limit: limit,
                 search: search,
@@ -187,6 +203,14 @@ namespace Vercel
         /// <param name="from">
         /// Query only projects updated after the given timestamp or continuation token.
         /// </param>
+        /// <param name="since">
+        /// Query only projects updated after this JavaScript timestamp.<br/>
+        /// Example: 1540095775941L
+        /// </param>
+        /// <param name="until">
+        /// Query only projects updated before this JavaScript timestamp.<br/>
+        /// Example: 1540095775951L
+        /// </param>
         /// <param name="gitForkProtection">
         /// Specifies whether PRs from Git forks should require a team member's authorization before it can be deployed<br/>
         /// Example: 1
@@ -242,8 +266,10 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared8d2a365a5da335df>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>>> GetProjectsAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0b1c50a27c68575d>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>>> GetProjectsAsResponseAsync(
             string? from = default,
+            double? since = default,
+            double? until = default,
             global::Vercel.GetProjectsGitForkProtection? gitForkProtection = default,
             string? limit = default,
             string? search = default,
@@ -268,6 +294,8 @@ namespace Vercel
             PrepareGetProjectsArguments(
                 httpClient: HttpClient,
                 from: ref from,
+                since: ref since,
+                until: ref until,
                 gitForkProtection: ref gitForkProtection,
                 limit: ref limit,
                 search: ref search,
@@ -313,6 +341,8 @@ namespace Vercel
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("from", from)
+                                .AddOptionalParameter("since", since?.ToString())
+                                .AddOptionalParameter("until", until?.ToString())
                                 .AddOptionalParameter("gitForkProtection", gitForkProtection?.ToValueString())
                                 .AddOptionalParameter("limit", limit)
                                 .AddOptionalParameter("search", search)
@@ -371,6 +401,8 @@ namespace Vercel
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     from: from,
+                    since: since,
+                    until: until,
                     gitForkProtection: gitForkProtection,
                     limit: limit,
                     search: search,
@@ -747,9 +779,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared8d2a365a5da335df>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0b1c50a27c68575d>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared8d2a365a5da335df>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0b1c50a27c68575d>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -779,9 +811,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared8d2a365a5da335df>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0b1c50a27c68575d>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared8d2a365a5da335df>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0b1c50a27c68575d>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
