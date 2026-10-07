@@ -1291,7 +1291,23 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        MessageboardPrivateSpaceUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardSchemaRegistered,
+        /// <summary>
+        ///
+        /// </summary>
         MessageboardSpaceCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardSpaceUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardVisibilityUpdated,
         /// <summary>
         ///
         /// </summary>
@@ -2731,6 +2747,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        V0MigrationSubscriptionCompleted,
+        /// <summary>
+        ///
+        /// </summary>
         VcrImageDeleted,
         /// <summary>
         ///
@@ -3178,7 +3198,11 @@ namespace Vercel
                 ListEventTypeReplacedByItem.MessageboardCreated => "messageboard-created",
                 ListEventTypeReplacedByItem.MessageboardPrivateCreated => "messageboard-private-created",
                 ListEventTypeReplacedByItem.MessageboardPrivateSpaceCreated => "messageboard-private-space-created",
+                ListEventTypeReplacedByItem.MessageboardPrivateSpaceUpdated => "messageboard-private-space-updated",
+                ListEventTypeReplacedByItem.MessageboardSchemaRegistered => "messageboard-schema-registered",
                 ListEventTypeReplacedByItem.MessageboardSpaceCreated => "messageboard-space-created",
+                ListEventTypeReplacedByItem.MessageboardSpaceUpdated => "messageboard-space-updated",
+                ListEventTypeReplacedByItem.MessageboardVisibilityUpdated => "messageboard-visibility-updated",
                 ListEventTypeReplacedByItem.MicrofrontendGroupAdded => "microfrontend-group-added",
                 ListEventTypeReplacedByItem.MicrofrontendGroupDeleted => "microfrontend-group-deleted",
                 ListEventTypeReplacedByItem.MicrofrontendGroupUpdated => "microfrontend-group-updated",
@@ -3538,6 +3562,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.V0ChatCreated => "v0-chat-created",
                 ListEventTypeReplacedByItem.V0ChatMessageSent => "v0-chat-message-sent",
                 ListEventTypeReplacedByItem.V0MigrationPaymentConfirmed => "v0-migration-payment-confirmed",
+                ListEventTypeReplacedByItem.V0MigrationSubscriptionCompleted => "v0-migration-subscription-completed",
                 ListEventTypeReplacedByItem.VcrImageDeleted => "vcr-image-deleted",
                 ListEventTypeReplacedByItem.VcrImagePushed => "vcr-image-pushed",
                 ListEventTypeReplacedByItem.VcrRepositoryCreated => "vcr-repository-created",
@@ -3897,7 +3922,11 @@ namespace Vercel
                 "messageboard-created" => ListEventTypeReplacedByItem.MessageboardCreated,
                 "messageboard-private-created" => ListEventTypeReplacedByItem.MessageboardPrivateCreated,
                 "messageboard-private-space-created" => ListEventTypeReplacedByItem.MessageboardPrivateSpaceCreated,
+                "messageboard-private-space-updated" => ListEventTypeReplacedByItem.MessageboardPrivateSpaceUpdated,
+                "messageboard-schema-registered" => ListEventTypeReplacedByItem.MessageboardSchemaRegistered,
                 "messageboard-space-created" => ListEventTypeReplacedByItem.MessageboardSpaceCreated,
+                "messageboard-space-updated" => ListEventTypeReplacedByItem.MessageboardSpaceUpdated,
+                "messageboard-visibility-updated" => ListEventTypeReplacedByItem.MessageboardVisibilityUpdated,
                 "microfrontend-group-added" => ListEventTypeReplacedByItem.MicrofrontendGroupAdded,
                 "microfrontend-group-deleted" => ListEventTypeReplacedByItem.MicrofrontendGroupDeleted,
                 "microfrontend-group-updated" => ListEventTypeReplacedByItem.MicrofrontendGroupUpdated,
@@ -4257,6 +4286,7 @@ namespace Vercel
                 "v0-chat-created" => ListEventTypeReplacedByItem.V0ChatCreated,
                 "v0-chat-message-sent" => ListEventTypeReplacedByItem.V0ChatMessageSent,
                 "v0-migration-payment-confirmed" => ListEventTypeReplacedByItem.V0MigrationPaymentConfirmed,
+                "v0-migration-subscription-completed" => ListEventTypeReplacedByItem.V0MigrationSubscriptionCompleted,
                 "vcr-image-deleted" => ListEventTypeReplacedByItem.VcrImageDeleted,
                 "vcr-image-pushed" => ListEventTypeReplacedByItem.VcrImagePushed,
                 "vcr-repository-created" => ListEventTypeReplacedByItem.VcrRepositoryCreated,

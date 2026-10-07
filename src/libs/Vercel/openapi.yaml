@@ -3711,7 +3711,7 @@
         ],
         "responses": {
           "200": {
-            "description": "The artifact was found and is downloaded as a stream. Content-Length should be verified.",
+            "description": "",
             "content": {
               "application/json": {
                 "schema": {
@@ -8621,7 +8621,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared22e96d5d5f469a42"
+                  "$ref": "#/components/schemas/AutoSDKShared4e55d89ba17a32da"
                 }
               }
             }
@@ -8705,7 +8705,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared22e96d5d5f469a42"
+                  "$ref": "#/components/schemas/AutoSDKShared4e55d89ba17a32da"
                 }
               }
             }
@@ -8776,7 +8776,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared1b28a5d7512c83d2"
+                  "$ref": "#/components/schemas/AutoSDKShared72831758e763e72d"
                 }
               }
             }
@@ -8866,7 +8866,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared1b28a5d7512c83d2"
+                  "$ref": "#/components/schemas/AutoSDKShared72831758e763e72d"
                 }
               }
             }
@@ -8948,7 +8948,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared1b28a5d7512c83d2"
+                  "$ref": "#/components/schemas/AutoSDKShared72831758e763e72d"
                 }
               }
             }
@@ -15976,7 +15976,7 @@
                           "description": "NSNB Blocked metadata"
                         },
                         "services": {
-                          "$ref": "#/components/schemas/AutoSDKShared09da539c1d25bcd8"
+                          "$ref": "#/components/schemas/AutoSDKShareda80875ded924ed02"
                         },
                         "softDeletedByRetention": {
                           "type": "boolean",
@@ -18166,7 +18166,7 @@
                           "description": "NSNB Blocked metadata"
                         },
                         "services": {
-                          "$ref": "#/components/schemas/AutoSDKShared09da539c1d25bcd8"
+                          "$ref": "#/components/schemas/AutoSDKShareda80875ded924ed02"
                         },
                         "softDeletedByRetention": {
                           "type": "boolean",
@@ -20401,7 +20401,7 @@
                       "description": "NSNB Blocked metadata"
                     },
                     "services": {
-                      "$ref": "#/components/schemas/AutoSDKShared09da539c1d25bcd8"
+                      "$ref": "#/components/schemas/AutoSDKShareda80875ded924ed02"
                     },
                     "softDeletedByRetention": {
                       "type": "boolean",
@@ -65834,6 +65834,103 @@
         ]
       }
     },
+    "/v2/sandboxes/drives/{nameOrId}": {
+      "get": {
+        "description": "Gets an existing drive by project and name or drive ID. Returns 404 if doesn't exist.",
+        "operationId": "getDrive",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Get a drive",
+        "tags": [
+          "sandboxes"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "drive": {
+                      "$ref": "#/components/schemas/Drive"
+                    }
+                  },
+                  "required": [
+                    "drive"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "429": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "nameOrId",
+            "description": "The drive name or ID.",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The drive name or ID.",
+              "pattern": "^[a-zA-Z0-9_-]+$",
+              "maxLength": 64,
+              "example": "workspace"
+            }
+          },
+          {
+            "name": "projectId",
+            "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
+              "example": "prj_abc123"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
+      }
+    },
     "/v2/sandboxes/drives/{name}": {
       "post": {
         "description": "Gets an existing drive by project and name, or creates it when it does not exist.",
@@ -66088,6 +66185,134 @@
             }
           }
         ]
+      }
+    },
+    "/v2/sandboxes/drives/{name}/fork": {
+      "post": {
+        "description": "Fork the provided drive into a new one with the provided name, inheriting the region and max size.",
+        "operationId": "forkDrive",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Fork a drive",
+        "tags": [
+          "sandboxes"
+        ],
+        "responses": {
+          "201": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "drive": {
+                      "$ref": "#/components/schemas/Drive"
+                    }
+                  },
+                  "required": [
+                    "drive"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "402": {
+            "description": "The account is missing a payment so payment method must be updated"
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "409": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "429": {
+            "description": ""
+          },
+          "503": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "name",
+            "description": "Name of the source drive to fork.",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9_-]+$",
+              "maxLength": 64,
+              "description": "Name of the source drive to fork.",
+              "example": "workspace"
+            }
+          },
+          {
+            "name": "projectId",
+            "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
+              "example": "prj_abc123"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9_-]+$",
+                    "maxLength": 64,
+                    "description": "Name for the forked drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).",
+                    "example": "workspace-fork"
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/v2/sandboxes/snapshots": {
@@ -78789,9 +79014,6 @@
           "400": {
             "description": "One of the provided values in the request query is invalid.\nUser is already a confirmed member of the team and did not request access. Only visible when the authenticated user does have access to the team."
           },
-          "401": {
-            "description": ""
-          },
           "403": {
             "description": "You do not have permission to access this resource."
           },
@@ -78880,9 +79102,6 @@
           },
           "400": {
             "description": "One of the provided values in the request body is invalid."
-          },
-          "401": {
-            "description": ""
           },
           "402": {
             "description": ""
@@ -79892,9 +80111,6 @@
           "400": {
             "description": "One of the provided values in the request query is invalid."
           },
-          "401": {
-            "description": ""
-          },
           "403": {
             "description": "You do not have permission to access this resource."
           },
@@ -79987,9 +80203,6 @@
           },
           "400": {
             "description": "One of the provided values in the request body is invalid.\nThe slug is already in use"
-          },
-          "401": {
-            "description": ""
           },
           "403": {
             "description": "You do not have permission to access this resource."
@@ -80996,9 +81209,6 @@
           "400": {
             "description": "One of the provided values in the request query is invalid."
           },
-          "401": {
-            "description": ""
-          },
           "403": {
             "description": "You do not have permission to access this resource."
           },
@@ -81061,9 +81271,6 @@
           },
           "400": {
             "description": "One of the provided values in the request query is invalid."
-          },
-          "401": {
-            "description": ""
           },
           "403": {
             "description": "You do not have permission to access this resource."
@@ -81216,9 +81423,6 @@
           },
           "400": {
             "description": "One of the provided values in the request body is invalid."
-          },
-          "401": {
-            "description": ""
           },
           "402": {
             "description": ""
@@ -100907,7 +101111,11 @@
               "messageboard-created",
               "messageboard-private-created",
               "messageboard-private-space-created",
+              "messageboard-private-space-updated",
+              "messageboard-schema-registered",
               "messageboard-space-created",
+              "messageboard-space-updated",
+              "messageboard-visibility-updated",
               "microfrontend-group-added",
               "microfrontend-group-deleted",
               "microfrontend-group-updated",
@@ -101267,6 +101475,7 @@
               "v0-chat-created",
               "v0-chat-message-sent",
               "v0-migration-payment-confirmed",
+              "v0-migration-subscription-completed",
               "vcr-image-deleted",
               "vcr-image-pushed",
               "vcr-repository-created",
@@ -101836,7 +102045,11 @@
               "messageboard-created",
               "messageboard-private-created",
               "messageboard-private-space-created",
+              "messageboard-private-space-updated",
+              "messageboard-schema-registered",
               "messageboard-space-created",
+              "messageboard-space-updated",
+              "messageboard-visibility-updated",
               "microfrontend-group-added",
               "microfrontend-group-deleted",
               "microfrontend-group-updated",
@@ -102196,6 +102409,7 @@
               "v0-chat-created",
               "v0-chat-message-sent",
               "v0-migration-payment-confirmed",
+              "v0-migration-subscription-completed",
               "vcr-image-deleted",
               "vcr-image-pushed",
               "vcr-repository-created",
@@ -102553,7 +102767,11 @@
                 "messageboard-created",
                 "messageboard-private-created",
                 "messageboard-private-space-created",
+                "messageboard-private-space-updated",
+                "messageboard-schema-registered",
                 "messageboard-space-created",
+                "messageboard-space-updated",
+                "messageboard-visibility-updated",
                 "microfrontend-group-added",
                 "microfrontend-group-deleted",
                 "microfrontend-group-updated",
@@ -102913,6 +103131,7 @@
                 "v0-chat-created",
                 "v0-chat-message-sent",
                 "v0-migration-payment-confirmed",
+                "v0-migration-subscription-completed",
                 "vcr-image-deleted",
                 "vcr-image-pushed",
                 "vcr-repository-created",
@@ -108274,6 +108493,12 @@
         ],
         "type": "object"
       },
+      "AutoSDKShared06684469dd43c7a2": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKShared72831758e763e72d"
+        },
+        "type": "array"
+      },
       "AutoSDKShared08bf5d361fc08707": {
         "properties": {
           "active": {
@@ -108523,13 +108748,6 @@
           "name"
         ],
         "type": "object"
-      },
-      "AutoSDKShared09da539c1d25bcd8": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKSharedc330b43ff6fc3599"
-        },
-        "type": "array",
-        "description": "Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime."
       },
       "AutoSDKShared0b1c50a27c68575d": {
         "properties": {
@@ -110002,367 +110220,6 @@
         },
         "type": "object"
       },
-      "AutoSDKShared12773eaec07789a9": {
-        "properties": {
-          "blocks": {
-            "type": "string",
-            "enum": [
-              "build-start",
-              "deployment-alias",
-              "deployment-promotion",
-              "deployment-start",
-              "none"
-            ]
-          },
-          "completedAt": {
-            "type": "number"
-          },
-          "conclusion": {
-            "type": "string",
-            "enum": [
-              "canceled",
-              "failed",
-              "neutral",
-              "skipped",
-              "succeeded",
-              "timeout"
-            ]
-          },
-          "conclusionText": {
-            "type": "string"
-          },
-          "createdAt": {
-            "type": "number"
-          },
-          "deploymentId": {
-            "type": "string"
-          },
-          "expectationRef": {
-            "properties": {
-              "invocationAttempt": {
-                "type": "number"
-              },
-              "invocationId": {
-                "type": "string"
-              },
-              "jobDefinitionId": {
-                "type": "string"
-              },
-              "jobRunAttempt": {
-                "type": "number"
-              }
-            },
-            "required": [
-              "invocationAttempt",
-              "invocationId",
-              "jobDefinitionId",
-              "jobRunAttempt"
-            ],
-            "type": "object"
-          },
-          "expectationRevision": {
-            "type": "number",
-            "description": "Latest aggregate revision applied to this check run."
-          },
-          "externalId": {
-            "type": "string"
-          },
-          "externalUrl": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "output": {
-            "additionalProperties": true,
-            "type": "object"
-          },
-          "ownerId": {
-            "type": "string"
-          },
-          "projectId": {
-            "type": "string"
-          },
-          "requires": {
-            "type": "string",
-            "enum": [
-              "build-ready",
-              "deployment-url",
-              "none"
-            ]
-          },
-          "status": {
-            "type": "string",
-            "enum": [
-              "completed",
-              "queued",
-              "running"
-            ]
-          },
-          "targets": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "taskSummary": {
-            "properties": {
-              "failed": {
-                "type": "number"
-              },
-              "pending": {
-                "type": "number"
-              },
-              "succeeded": {
-                "type": "number"
-              },
-              "total": {
-                "type": "number"
-              }
-            },
-            "required": [
-              "failed",
-              "pending",
-              "succeeded",
-              "total"
-            ],
-            "type": "object"
-          },
-          "timeout": {
-            "type": "number"
-          },
-          "updatedAt": {
-            "type": "number"
-          },
-          "checkId": {
-            "type": "string"
-          },
-          "source": {
-            "oneOf": [
-              {
-                "properties": {
-                  "externalResourceId": {
-                    "type": "string"
-                  },
-                  "integrationConfigurationId": {
-                    "type": "string"
-                  },
-                  "integrationId": {
-                    "type": "string"
-                  },
-                  "kind": {
-                    "type": "string",
-                    "enum": [
-                      "integration"
-                    ]
-                  },
-                  "resourceId": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "integrationConfigurationId",
-                  "integrationId",
-                  "kind"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "kind": {
-                    "type": "string",
-                    "enum": [
-                      "webhook"
-                    ]
-                  },
-                  "webhookId": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "kind"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "externalCheckName": {
-                    "type": "string"
-                  },
-                  "kind": {
-                    "type": "string",
-                    "enum": [
-                      "git-provider"
-                    ]
-                  },
-                  "provider": {
-                    "type": "string",
-                    "enum": [
-                      "bitbucket",
-                      "github",
-                      "gitlab"
-                    ]
-                  }
-                },
-                "required": [
-                  "externalCheckName",
-                  "kind",
-                  "provider"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "origin": {
-                    "type": "string",
-                    "enum": [
-                      "api",
-                      "platform"
-                    ]
-                  },
-                  "subKind": {
-                    "type": "string",
-                    "enum": [
-                      "vercel-native-check"
-                    ]
-                  }
-                },
-                "type": "object",
-                "description": "Native Vercel checks \u2014 check definition and check run `source`."
-              },
-              {
-                "properties": {
-                  "origin": {
-                    "type": "string",
-                    "enum": [
-                      "api"
-                    ]
-                  },
-                  "selection": {
-                    "oneOf": [
-                      {
-                        "properties": {
-                          "kind": {
-                            "type": "string",
-                            "enum": [
-                              "invocation"
-                            ]
-                          }
-                        },
-                        "required": [
-                          "kind"
-                        ],
-                        "type": "object"
-                      },
-                      {
-                        "properties": {
-                          "kind": {
-                            "type": "string",
-                            "enum": [
-                              "deployment"
-                            ]
-                          }
-                        },
-                        "required": [
-                          "kind"
-                        ],
-                        "type": "object"
-                      },
-                      {
-                        "properties": {
-                          "job": {
-                            "type": "string"
-                          },
-                          "kind": {
-                            "type": "string",
-                            "enum": [
-                              "job"
-                            ]
-                          }
-                        },
-                        "required": [
-                          "job",
-                          "kind"
-                        ],
-                        "type": "object"
-                      },
-                      {
-                        "properties": {
-                          "failIfNoMatch": {
-                            "type": "boolean",
-                            "enum": [
-                              false,
-                              true
-                            ]
-                          },
-                          "filters": {
-                            "items": {
-                              "type": "string"
-                            },
-                            "type": "array"
-                          },
-                          "job": {
-                            "type": "string",
-                            "enum": [
-                              "Turborepo"
-                            ]
-                          },
-                          "kind": {
-                            "type": "string",
-                            "enum": [
-                              "turborepo"
-                            ]
-                          },
-                          "task": {
-                            "type": "string"
-                          }
-                        },
-                        "required": [
-                          "filters",
-                          "job",
-                          "kind",
-                          "task"
-                        ],
-                        "type": "object"
-                      }
-                    ]
-                  },
-                  "subKind": {
-                    "type": "string",
-                    "enum": [
-                      "vercel-ci-check"
-                    ]
-                  }
-                },
-                "required": [
-                  "origin",
-                  "selection",
-                  "subKind"
-                ],
-                "type": "object",
-                "description": "Project-defined CI requirement; its selection is frozen on each check run."
-              }
-            ]
-          }
-        },
-        "required": [
-          "checkId",
-          "createdAt",
-          "deploymentId",
-          "id",
-          "name",
-          "ownerId",
-          "source",
-          "status",
-          "timeout",
-          "updatedAt"
-        ],
-        "type": "object",
-        "description": "Check run backed by a project-level `check` definition."
-      },
       "AutoSDKShared133a7ec19e4ac4f6": {
         "oneOf": [
           {
@@ -110807,265 +110664,6 @@
           "version"
         ],
         "type": "object"
-      },
-      "AutoSDKShared1aa9bcb064b99411": {
-        "properties": {
-          "buildCommand": {
-            "type": "string"
-          },
-          "buildpack": {
-            "type": "string",
-            "description": "Buildpack runtime slug (e.g. \"ruby\")."
-          },
-          "bundle": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "bunVersion": {
-            "type": "string"
-          },
-          "debug": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "devCommand": {
-            "type": "string"
-          },
-          "excludeFiles": {
-            "oneOf": [
-              {
-                "type": "string"
-              },
-              {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
-              }
-            ]
-          },
-          "framework": {
-            "nullable": true,
-            "type": "string"
-          },
-          "functions": {
-            "$ref": "#/components/schemas/AutoSDKSharedb3cf0b0da1e9763b"
-          },
-          "helpers": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "import": {
-            "additionalProperties": {
-              "type": "string"
-            },
-            "type": "object"
-          },
-          "includeFiles": {
-            "oneOf": [
-              {
-                "type": "string"
-              },
-              {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
-              }
-            ]
-          },
-          "installCommand": {
-            "type": "string"
-          },
-          "ldsflags": {
-            "type": "string"
-          },
-          "maxLambdaSize": {
-            "type": "string"
-          },
-          "middleware": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "middlewareMatcher": {
-            "oneOf": [
-              {
-                "type": "string"
-              },
-              {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array",
-                "description": "Matcher supplied outside of the middleware source module."
-              }
-            ]
-          },
-          "middlewareRuntime": {
-            "type": "string",
-            "enum": [
-              "nodejs"
-            ],
-            "description": "Enforced runtime for explicitly configured Routing Middleware."
-          },
-          "nodeVersion": {
-            "type": "string"
-          },
-          "outputDirectory": {
-            "type": "string"
-          },
-          "projectSettings": {
-            "properties": {
-              "autoExposeSystemEnvs": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "buildCommand": {
-                "nullable": true,
-                "type": "string"
-              },
-              "commandForIgnoringBuildStep": {
-                "nullable": true,
-                "type": "string"
-              },
-              "createdAt": {
-                "type": "number"
-              },
-              "devCommand": {
-                "nullable": true,
-                "type": "string"
-              },
-              "directoryListing": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "framework": {
-                "nullable": true,
-                "type": "string"
-              },
-              "gitForkProtection": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "installCommand": {
-                "nullable": true,
-                "type": "string"
-              },
-              "monorepoManager": {
-                "nullable": true,
-                "type": "string"
-              },
-              "nodeVersion": {
-                "type": "string"
-              },
-              "outputDirectory": {
-                "nullable": true,
-                "type": "string"
-              },
-              "rootDirectory": {
-                "nullable": true,
-                "type": "string"
-              },
-              "sourceFilesOutsideRootDirectory": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              }
-            },
-            "type": "object"
-          },
-          "rust": {
-            "type": "string"
-          },
-          "scheduleFunction": {
-            "properties": {
-              "entrypoints": {
-                "type": "array",
-                "items": {
-                  "properties": {
-                    "entrypoint": {
-                      "type": "string",
-                      "description": "Runtime-specific entrypoint locator from `vercel.json`."
-                    },
-                    "scheduleNames": {
-                      "items": {
-                        "type": "string"
-                      },
-                      "type": "array",
-                      "description": "Names of the schedules that dispatch to this entrypoint, in config order."
-                    },
-                    "sourceFile": {
-                      "type": "string",
-                      "description": "Project-relative source file that contains the entrypoint."
-                    }
-                  },
-                  "required": [
-                    "entrypoint",
-                    "scheduleNames",
-                    "sourceFile"
-                  ],
-                  "type": "object"
-                },
-                "minItems": 1
-              },
-              "outputPath": {
-                "type": "string",
-                "description": "Function output path every schedule in this build targets."
-              }
-            },
-            "required": [
-              "entrypoints",
-              "outputPath"
-            ],
-            "type": "object",
-            "description": "Set when this build produces a function for schedule entrypoints."
-          },
-          "serviceName": {
-            "type": "string",
-            "description": "Owning service name; scopes per-function config such as the v2beta consumer."
-          },
-          "zeroConfig": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          }
-        },
-        "type": "object"
-      },
-      "AutoSDKShared1b28a5d7512c83d2": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/AutoSDKShared12773eaec07789a9"
-          },
-          {
-            "$ref": "#/components/schemas/AutoSDKShared429cd580a486c43e"
-          }
-        ]
       },
       "AutoSDKShared1bd85de7e2b8d12b": {
         "items": {
@@ -113732,17 +113330,6 @@
         ],
         "type": "object"
       },
-      "AutoSDKShared22e96d5d5f469a42": {
-        "properties": {
-          "runs": {
-            "$ref": "#/components/schemas/AutoSDKSharedecdd9811d7bdf61f"
-          }
-        },
-        "required": [
-          "runs"
-        ],
-        "type": "object"
-      },
       "AutoSDKShared238fc1521601aa81": {
         "properties": {
           "defaultAppProjectName": {
@@ -115847,6 +115434,23 @@
         },
         "type": "array"
       },
+      "AutoSDKShared3c46ee8933f4759a": {
+        "properties": {
+          "config": {
+            "$ref": "#/components/schemas/AutoSDKSharede00733f58a3cbcc8"
+          },
+          "src": {
+            "type": "string"
+          },
+          "use": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "use"
+        ],
+        "type": "object"
+      },
       "AutoSDKShared3cefeabeb1d55c64": {
         "oneOf": [
           {
@@ -116452,215 +116056,6 @@
           "commitSha",
           "status"
         ]
-      },
-      "AutoSDKShared429cd580a486c43e": {
-        "properties": {
-          "blocks": {
-            "type": "string",
-            "enum": [
-              "build-start",
-              "deployment-alias",
-              "deployment-promotion",
-              "deployment-start",
-              "none"
-            ]
-          },
-          "completedAt": {
-            "type": "number"
-          },
-          "conclusion": {
-            "type": "string",
-            "enum": [
-              "canceled",
-              "failed",
-              "neutral",
-              "skipped",
-              "succeeded",
-              "timeout"
-            ]
-          },
-          "conclusionText": {
-            "type": "string"
-          },
-          "createdAt": {
-            "type": "number"
-          },
-          "deploymentId": {
-            "type": "string"
-          },
-          "expectationRef": {
-            "properties": {
-              "invocationAttempt": {
-                "type": "number"
-              },
-              "invocationId": {
-                "type": "string"
-              },
-              "jobDefinitionId": {
-                "type": "string"
-              },
-              "jobRunAttempt": {
-                "type": "number"
-              }
-            },
-            "required": [
-              "invocationAttempt",
-              "invocationId",
-              "jobDefinitionId",
-              "jobRunAttempt"
-            ],
-            "type": "object"
-          },
-          "expectationRevision": {
-            "type": "number",
-            "description": "Latest aggregate revision applied to this check run."
-          },
-          "externalId": {
-            "type": "string"
-          },
-          "externalUrl": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "output": {
-            "additionalProperties": true,
-            "type": "object"
-          },
-          "ownerId": {
-            "type": "string"
-          },
-          "projectId": {
-            "type": "string"
-          },
-          "requires": {
-            "type": "string",
-            "enum": [
-              "build-ready",
-              "deployment-url",
-              "none"
-            ]
-          },
-          "status": {
-            "type": "string",
-            "enum": [
-              "completed",
-              "queued",
-              "running"
-            ]
-          },
-          "targets": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "taskSummary": {
-            "properties": {
-              "failed": {
-                "type": "number"
-              },
-              "pending": {
-                "type": "number"
-              },
-              "succeeded": {
-                "type": "number"
-              },
-              "total": {
-                "type": "number"
-              }
-            },
-            "required": [
-              "failed",
-              "pending",
-              "succeeded",
-              "total"
-            ],
-            "type": "object"
-          },
-          "timeout": {
-            "type": "number"
-          },
-          "updatedAt": {
-            "type": "number"
-          },
-          "source": {
-            "oneOf": [
-              {
-                "properties": {
-                  "invocationAttempt": {
-                    "type": "number"
-                  },
-                  "invocationId": {
-                    "type": "string"
-                  },
-                  "jobDefinitionId": {
-                    "type": "string"
-                  },
-                  "origin": {
-                    "type": "string",
-                    "enum": [
-                      "config"
-                    ]
-                  },
-                  "subKind": {
-                    "type": "string",
-                    "enum": [
-                      "vercel-ci"
-                    ]
-                  }
-                },
-                "required": [
-                  "invocationId",
-                  "jobDefinitionId",
-                  "origin",
-                  "subKind"
-                ],
-                "type": "object",
-                "description": "Config-driven CI task \u2014 check run `source` only (no parent check)."
-              },
-              {
-                "properties": {
-                  "origin": {
-                    "type": "string",
-                    "enum": [
-                      "platform"
-                    ]
-                  },
-                  "subKind": {
-                    "type": "string",
-                    "enum": [
-                      "vercel-ci-sentinel"
-                    ]
-                  }
-                },
-                "required": [
-                  "origin",
-                  "subKind"
-                ],
-                "type": "object",
-                "description": "CI sentinel \u2014 check run `source` only (no parent check)."
-              }
-            ]
-          }
-        },
-        "required": [
-          "createdAt",
-          "deploymentId",
-          "id",
-          "name",
-          "ownerId",
-          "source",
-          "status",
-          "timeout",
-          "updatedAt"
-        ],
-        "type": "object",
-        "description": "Vercel CI check run without a parent `check` (no `checkId` field)."
       },
       "AutoSDKShared43b4aa57cd7998fd": {
         "anyOf": [
@@ -117847,6 +117242,17 @@
           }
         ]
       },
+      "AutoSDKShared4e55d89ba17a32da": {
+        "properties": {
+          "runs": {
+            "$ref": "#/components/schemas/AutoSDKShared06684469dd43c7a2"
+          }
+        },
+        "required": [
+          "runs"
+        ],
+        "type": "object"
+      },
       "AutoSDKShared4f336dbaf7392e8f": {
         "description": "Network access policy for the sandbox.\\n    Controls which external hosts the sandbox can communicate with.\\n    Use \\\"allow-all\\\" mode to allow all traffic, \\\"deny-all\\\" to block all traffic or \\\"custom\\\" to provide specific rules.",
         "type": "object",
@@ -117907,7 +117313,7 @@
           }
         }
       },
-      "AutoSDKShared5d941fd0946ddd47": {
+      "AutoSDKShared50df233f8638e1fa": {
         "properties": {
           "bindings": {
             "items": {
@@ -117950,7 +117356,7 @@
             "type": "string"
           },
           "builder": {
-            "$ref": "#/components/schemas/AutoSDKSharedc87849a2488e569e"
+            "$ref": "#/components/schemas/AutoSDKSharedf0d33c7d2af96965"
           },
           "cleanUrls": {
             "type": "boolean",
@@ -120291,6 +119697,16 @@
           }
         ]
       },
+      "AutoSDKShared72831758e763e72d": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/AutoSDKSharedebbc2ea34af24e22"
+          },
+          {
+            "$ref": "#/components/schemas/AutoSDKShareddb8a6ccf5b64d660"
+          }
+        ]
+      },
       "AutoSDKShared730d9ce06ee310f9": {
         "type": "array",
         "items": {
@@ -121661,6 +121077,16 @@
               "updatedAt"
             ],
             "type": "object"
+          }
+        ]
+      },
+      "AutoSDKShared8038a65b9480a909": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/AutoSDKSharedc2e5e8d31dd98e94"
+          },
+          {
+            "$ref": "#/components/schemas/AutoSDKShared50df233f8638e1fa"
           }
         ]
       },
@@ -125059,6 +124485,13 @@
           "id"
         ]
       },
+      "AutoSDKShareda80875ded924ed02": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKShared8038a65b9480a909"
+        },
+        "type": "array",
+        "description": "Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime."
+      },
       "AutoSDKSharedad42af066f165baa": {
         "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform`, `forwardURL`, or `response` can be specified per rule.",
         "type": "object",
@@ -125685,23 +125118,6 @@
           "rules",
           "fallthrough"
         ]
-      },
-      "AutoSDKSharedba8564203445c393": {
-        "properties": {
-          "config": {
-            "$ref": "#/components/schemas/AutoSDKShared1aa9bcb064b99411"
-          },
-          "src": {
-            "type": "string"
-          },
-          "use": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "use"
-        ],
-        "type": "object"
       },
       "AutoSDKSharedbca3e7a986162538": {
         "properties": {
@@ -128733,15 +128149,151 @@
         "type": "object",
         "description": "Requested and authorized operations when `checkPermissions` is used. Legacy `includePermissions` responses contain a broader, non-authoritative permission summary."
       },
-      "AutoSDKSharedc330b43ff6fc3599": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/AutoSDKSharedd60af9eb328d9316"
+      "AutoSDKSharedc2e5e8d31dd98e94": {
+        "properties": {
+          "buildCommand": {
+            "type": "string"
           },
-          {
-            "$ref": "#/components/schemas/AutoSDKShared5d941fd0946ddd47"
+          "builder": {
+            "$ref": "#/components/schemas/AutoSDKShared3c46ee8933f4759a"
+          },
+          "entrypoint": {
+            "type": "string"
+          },
+          "env": {
+            "additionalProperties": {
+              "properties": {
+                "service": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "service-ref"
+                  ]
+                }
+              },
+              "required": [
+                "service",
+                "type"
+              ],
+              "type": "object"
+            },
+            "type": "object"
+          },
+          "framework": {
+            "type": "string"
+          },
+          "group": {
+            "type": "string"
+          },
+          "handlerFunction": {
+            "type": "string"
+          },
+          "installCommand": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "preDeployCommand": {
+            "type": "string"
+          },
+          "routePrefix": {
+            "type": "string"
+          },
+          "routePrefixSource": {
+            "type": "string",
+            "enum": [
+              "configured",
+              "generated"
+            ]
+          },
+          "runtime": {
+            "type": "string"
+          },
+          "schedule": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            ]
+          },
+          "schema": {
+            "type": "string",
+            "enum": [
+              "experimentalServices"
+            ]
+          },
+          "subdomain": {
+            "type": "string"
+          },
+          "topics": {
+            "oneOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "items": {
+                  "properties": {
+                    "initialDelaySeconds": {
+                      "type": "number"
+                    },
+                    "retryAfterSeconds": {
+                      "type": "number"
+                    },
+                    "topic": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "topic"
+                  ],
+                  "type": "object"
+                },
+                "type": "array"
+              }
+            ]
+          },
+          "trigger": {
+            "type": "string",
+            "enum": [
+              "queue",
+              "schedule",
+              "workflow"
+            ]
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "cron",
+              "job",
+              "web",
+              "worker"
+            ]
+          },
+          "workspace": {
+            "type": "string"
           }
-        ]
+        },
+        "required": [
+          "builder",
+          "name",
+          "schema",
+          "type",
+          "workspace"
+        ],
+        "type": "object",
+        "description": "Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime."
       },
       "AutoSDKSharedc396e89a7a8d84fb": {
         "properties": {
@@ -128936,24 +128488,6 @@
           "url"
         ],
         "type": "object"
-      },
-      "AutoSDKSharedc87849a2488e569e": {
-        "properties": {
-          "config": {
-            "$ref": "#/components/schemas/AutoSDKShared1aa9bcb064b99411"
-          },
-          "src": {
-            "type": "string"
-          },
-          "use": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "use"
-        ],
-        "type": "object",
-        "description": "Builder selected by the resolver."
       },
       "AutoSDKSharedc97b32abf27d8b81": {
         "description": "Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.",
@@ -130774,152 +130308,6 @@
         },
         "type": "array"
       },
-      "AutoSDKSharedd60af9eb328d9316": {
-        "properties": {
-          "buildCommand": {
-            "type": "string"
-          },
-          "builder": {
-            "$ref": "#/components/schemas/AutoSDKSharedba8564203445c393"
-          },
-          "entrypoint": {
-            "type": "string"
-          },
-          "env": {
-            "additionalProperties": {
-              "properties": {
-                "service": {
-                  "type": "string"
-                },
-                "type": {
-                  "type": "string",
-                  "enum": [
-                    "service-ref"
-                  ]
-                }
-              },
-              "required": [
-                "service",
-                "type"
-              ],
-              "type": "object"
-            },
-            "type": "object"
-          },
-          "framework": {
-            "type": "string"
-          },
-          "group": {
-            "type": "string"
-          },
-          "handlerFunction": {
-            "type": "string"
-          },
-          "installCommand": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "preDeployCommand": {
-            "type": "string"
-          },
-          "routePrefix": {
-            "type": "string"
-          },
-          "routePrefixSource": {
-            "type": "string",
-            "enum": [
-              "configured",
-              "generated"
-            ]
-          },
-          "runtime": {
-            "type": "string"
-          },
-          "schedule": {
-            "oneOf": [
-              {
-                "type": "string"
-              },
-              {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
-              }
-            ]
-          },
-          "schema": {
-            "type": "string",
-            "enum": [
-              "experimentalServices"
-            ]
-          },
-          "subdomain": {
-            "type": "string"
-          },
-          "topics": {
-            "oneOf": [
-              {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
-              },
-              {
-                "items": {
-                  "properties": {
-                    "initialDelaySeconds": {
-                      "type": "number"
-                    },
-                    "retryAfterSeconds": {
-                      "type": "number"
-                    },
-                    "topic": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "topic"
-                  ],
-                  "type": "object"
-                },
-                "type": "array"
-              }
-            ]
-          },
-          "trigger": {
-            "type": "string",
-            "enum": [
-              "queue",
-              "schedule",
-              "workflow"
-            ]
-          },
-          "type": {
-            "type": "string",
-            "enum": [
-              "cron",
-              "job",
-              "web",
-              "worker"
-            ]
-          },
-          "workspace": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "builder",
-          "name",
-          "schema",
-          "type",
-          "workspace"
-        ],
-        "type": "object",
-        "description": "Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime."
-      },
       "AutoSDKSharedd6cd5632365f1112": {
         "additionalProperties": {
           "$ref": "#/components/schemas/AutoSDKShared8422af433e1bf486"
@@ -130938,6 +130326,526 @@
           "$ref": "#/components/schemas/AutoSDKSharedec1121c0746f62d9"
         },
         "type": "array"
+      },
+      "AutoSDKShareddb8a6ccf5b64d660": {
+        "properties": {
+          "blocks": {
+            "type": "string",
+            "enum": [
+              "build-start",
+              "deployment-alias",
+              "deployment-promotion",
+              "deployment-start",
+              "none"
+            ]
+          },
+          "completedAt": {
+            "type": "number"
+          },
+          "conclusion": {
+            "type": "string",
+            "enum": [
+              "canceled",
+              "failed",
+              "neutral",
+              "skipped",
+              "succeeded",
+              "timeout"
+            ]
+          },
+          "conclusionText": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "number"
+          },
+          "deploymentId": {
+            "type": "string"
+          },
+          "expectationRef": {
+            "properties": {
+              "invocationAttempt": {
+                "type": "number"
+              },
+              "invocationId": {
+                "type": "string"
+              },
+              "jobDefinitionId": {
+                "type": "string"
+              },
+              "jobRunAttempt": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "invocationAttempt",
+              "invocationId",
+              "jobDefinitionId",
+              "jobRunAttempt"
+            ],
+            "type": "object"
+          },
+          "expectationRevision": {
+            "type": "number",
+            "description": "Latest aggregate revision applied to this check run."
+          },
+          "externalId": {
+            "type": "string"
+          },
+          "externalUrl": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "output": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "ownerId": {
+            "type": "string"
+          },
+          "projectId": {
+            "type": "string"
+          },
+          "requires": {
+            "type": "string",
+            "enum": [
+              "build-ready",
+              "deployment-url",
+              "none"
+            ]
+          },
+          "startedAt": {
+            "type": "number"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "completed",
+              "queued",
+              "running"
+            ]
+          },
+          "targets": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "taskSummary": {
+            "properties": {
+              "failed": {
+                "type": "number"
+              },
+              "pending": {
+                "type": "number"
+              },
+              "succeeded": {
+                "type": "number"
+              },
+              "total": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "failed",
+              "pending",
+              "succeeded",
+              "total"
+            ],
+            "type": "object"
+          },
+          "timeout": {
+            "type": "number"
+          },
+          "updatedAt": {
+            "type": "number"
+          },
+          "source": {
+            "oneOf": [
+              {
+                "properties": {
+                  "invocationAttempt": {
+                    "type": "number"
+                  },
+                  "invocationId": {
+                    "type": "string"
+                  },
+                  "jobDefinitionId": {
+                    "type": "string"
+                  },
+                  "origin": {
+                    "type": "string",
+                    "enum": [
+                      "config"
+                    ]
+                  },
+                  "subKind": {
+                    "type": "string",
+                    "enum": [
+                      "vercel-ci"
+                    ]
+                  }
+                },
+                "required": [
+                  "invocationId",
+                  "jobDefinitionId",
+                  "origin",
+                  "subKind"
+                ],
+                "type": "object",
+                "description": "Config-driven CI task \u2014 check run `source` only (no parent check)."
+              },
+              {
+                "properties": {
+                  "origin": {
+                    "type": "string",
+                    "enum": [
+                      "platform"
+                    ]
+                  },
+                  "subKind": {
+                    "type": "string",
+                    "enum": [
+                      "vercel-ci-sentinel"
+                    ]
+                  }
+                },
+                "required": [
+                  "origin",
+                  "subKind"
+                ],
+                "type": "object",
+                "description": "CI sentinel \u2014 check run `source` only (no parent check)."
+              }
+            ]
+          }
+        },
+        "required": [
+          "createdAt",
+          "deploymentId",
+          "id",
+          "name",
+          "ownerId",
+          "source",
+          "status",
+          "timeout",
+          "updatedAt"
+        ],
+        "type": "object",
+        "description": "Vercel CI check run without a parent `check` (no `checkId` field)."
+      },
+      "AutoSDKSharede00733f58a3cbcc8": {
+        "properties": {
+          "buildCommand": {
+            "type": "string"
+          },
+          "buildpack": {
+            "type": "string",
+            "description": "Buildpack runtime slug (e.g. \"ruby\")."
+          },
+          "bundle": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "bunVersion": {
+            "type": "string"
+          },
+          "daemon": {
+            "properties": {
+              "command": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "entrypoint": {
+                "type": "string"
+              },
+              "replicas": {
+                "additionalProperties": {
+                  "type": "number"
+                },
+                "type": "object",
+                "description": "Replica counts by region."
+              },
+              "resources": {
+                "properties": {
+                  "requests": {
+                    "properties": {
+                      "memory": {
+                        "type": "string",
+                        "enum": [
+                          "1Gi",
+                          "2Gi",
+                          "4Gi",
+                          "8Gi"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "memory"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "requests"
+                ],
+                "type": "object"
+              },
+              "root": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "entrypoint",
+              "name",
+              "replicas",
+              "root"
+            ],
+            "type": "object",
+            "description": "Set when this build produces the named daemon."
+          },
+          "debug": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "devCommand": {
+            "type": "string"
+          },
+          "excludeFiles": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            ]
+          },
+          "framework": {
+            "nullable": true,
+            "type": "string"
+          },
+          "functions": {
+            "$ref": "#/components/schemas/AutoSDKSharedb3cf0b0da1e9763b"
+          },
+          "helpers": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "import": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object"
+          },
+          "includeFiles": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              }
+            ]
+          },
+          "installCommand": {
+            "type": "string"
+          },
+          "ldsflags": {
+            "type": "string"
+          },
+          "maxLambdaSize": {
+            "type": "string"
+          },
+          "middleware": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "middlewareMatcher": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array",
+                "description": "Matcher supplied outside of the middleware source module."
+              }
+            ]
+          },
+          "middlewareRuntime": {
+            "type": "string",
+            "enum": [
+              "nodejs"
+            ],
+            "description": "Enforced runtime for explicitly configured Routing Middleware."
+          },
+          "nodeVersion": {
+            "type": "string"
+          },
+          "outputDirectory": {
+            "type": "string"
+          },
+          "projectSettings": {
+            "properties": {
+              "autoExposeSystemEnvs": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "buildCommand": {
+                "nullable": true,
+                "type": "string"
+              },
+              "commandForIgnoringBuildStep": {
+                "nullable": true,
+                "type": "string"
+              },
+              "createdAt": {
+                "type": "number"
+              },
+              "devCommand": {
+                "nullable": true,
+                "type": "string"
+              },
+              "directoryListing": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "framework": {
+                "nullable": true,
+                "type": "string"
+              },
+              "gitForkProtection": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "installCommand": {
+                "nullable": true,
+                "type": "string"
+              },
+              "monorepoManager": {
+                "nullable": true,
+                "type": "string"
+              },
+              "nodeVersion": {
+                "type": "string"
+              },
+              "outputDirectory": {
+                "nullable": true,
+                "type": "string"
+              },
+              "rootDirectory": {
+                "nullable": true,
+                "type": "string"
+              },
+              "sourceFilesOutsideRootDirectory": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              }
+            },
+            "type": "object"
+          },
+          "rust": {
+            "type": "string"
+          },
+          "scheduleFunction": {
+            "properties": {
+              "entrypoints": {
+                "type": "array",
+                "items": {
+                  "properties": {
+                    "entrypoint": {
+                      "type": "string",
+                      "description": "Runtime-specific entrypoint locator from `vercel.json`."
+                    },
+                    "scheduleNames": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array",
+                      "description": "Names of the schedules that dispatch to this entrypoint, in config order."
+                    },
+                    "sourceFile": {
+                      "type": "string",
+                      "description": "Project-relative source file that contains the entrypoint."
+                    }
+                  },
+                  "required": [
+                    "entrypoint",
+                    "scheduleNames",
+                    "sourceFile"
+                  ],
+                  "type": "object"
+                },
+                "minItems": 1
+              },
+              "outputPath": {
+                "type": "string",
+                "description": "Function output path every schedule in this build targets."
+              }
+            },
+            "required": [
+              "entrypoints",
+              "outputPath"
+            ],
+            "type": "object",
+            "description": "Set when this build produces a function for schedule entrypoints."
+          },
+          "serviceName": {
+            "type": "string",
+            "description": "Owning service name; scopes per-function config such as the v2beta consumer."
+          },
+          "zeroConfig": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          }
+        },
+        "type": "object"
       },
       "AutoSDKSharede064e44b973b9ad0": {
         "properties": {
@@ -132105,6 +132013,370 @@
           "outcome"
         ]
       },
+      "AutoSDKSharedebbc2ea34af24e22": {
+        "properties": {
+          "blocks": {
+            "type": "string",
+            "enum": [
+              "build-start",
+              "deployment-alias",
+              "deployment-promotion",
+              "deployment-start",
+              "none"
+            ]
+          },
+          "completedAt": {
+            "type": "number"
+          },
+          "conclusion": {
+            "type": "string",
+            "enum": [
+              "canceled",
+              "failed",
+              "neutral",
+              "skipped",
+              "succeeded",
+              "timeout"
+            ]
+          },
+          "conclusionText": {
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "number"
+          },
+          "deploymentId": {
+            "type": "string"
+          },
+          "expectationRef": {
+            "properties": {
+              "invocationAttempt": {
+                "type": "number"
+              },
+              "invocationId": {
+                "type": "string"
+              },
+              "jobDefinitionId": {
+                "type": "string"
+              },
+              "jobRunAttempt": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "invocationAttempt",
+              "invocationId",
+              "jobDefinitionId",
+              "jobRunAttempt"
+            ],
+            "type": "object"
+          },
+          "expectationRevision": {
+            "type": "number",
+            "description": "Latest aggregate revision applied to this check run."
+          },
+          "externalId": {
+            "type": "string"
+          },
+          "externalUrl": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "output": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "ownerId": {
+            "type": "string"
+          },
+          "projectId": {
+            "type": "string"
+          },
+          "requires": {
+            "type": "string",
+            "enum": [
+              "build-ready",
+              "deployment-url",
+              "none"
+            ]
+          },
+          "startedAt": {
+            "type": "number"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "completed",
+              "queued",
+              "running"
+            ]
+          },
+          "targets": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "taskSummary": {
+            "properties": {
+              "failed": {
+                "type": "number"
+              },
+              "pending": {
+                "type": "number"
+              },
+              "succeeded": {
+                "type": "number"
+              },
+              "total": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "failed",
+              "pending",
+              "succeeded",
+              "total"
+            ],
+            "type": "object"
+          },
+          "timeout": {
+            "type": "number"
+          },
+          "updatedAt": {
+            "type": "number"
+          },
+          "checkId": {
+            "type": "string"
+          },
+          "source": {
+            "oneOf": [
+              {
+                "properties": {
+                  "externalResourceId": {
+                    "type": "string"
+                  },
+                  "integrationConfigurationId": {
+                    "type": "string"
+                  },
+                  "integrationId": {
+                    "type": "string"
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "integration"
+                    ]
+                  },
+                  "resourceId": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "integrationConfigurationId",
+                  "integrationId",
+                  "kind"
+                ],
+                "type": "object"
+              },
+              {
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "webhook"
+                    ]
+                  },
+                  "webhookId": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "kind"
+                ],
+                "type": "object"
+              },
+              {
+                "properties": {
+                  "externalCheckName": {
+                    "type": "string"
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "git-provider"
+                    ]
+                  },
+                  "provider": {
+                    "type": "string",
+                    "enum": [
+                      "bitbucket",
+                      "github",
+                      "gitlab"
+                    ]
+                  }
+                },
+                "required": [
+                  "externalCheckName",
+                  "kind",
+                  "provider"
+                ],
+                "type": "object"
+              },
+              {
+                "properties": {
+                  "origin": {
+                    "type": "string",
+                    "enum": [
+                      "api",
+                      "platform"
+                    ]
+                  },
+                  "subKind": {
+                    "type": "string",
+                    "enum": [
+                      "vercel-native-check"
+                    ]
+                  }
+                },
+                "type": "object",
+                "description": "Native Vercel checks \u2014 check definition and check run `source`."
+              },
+              {
+                "properties": {
+                  "origin": {
+                    "type": "string",
+                    "enum": [
+                      "api"
+                    ]
+                  },
+                  "selection": {
+                    "oneOf": [
+                      {
+                        "properties": {
+                          "kind": {
+                            "type": "string",
+                            "enum": [
+                              "invocation"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "kind"
+                        ],
+                        "type": "object"
+                      },
+                      {
+                        "properties": {
+                          "kind": {
+                            "type": "string",
+                            "enum": [
+                              "deployment"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "kind"
+                        ],
+                        "type": "object"
+                      },
+                      {
+                        "properties": {
+                          "job": {
+                            "type": "string"
+                          },
+                          "kind": {
+                            "type": "string",
+                            "enum": [
+                              "job"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "job",
+                          "kind"
+                        ],
+                        "type": "object"
+                      },
+                      {
+                        "properties": {
+                          "failIfNoMatch": {
+                            "type": "boolean",
+                            "enum": [
+                              false,
+                              true
+                            ]
+                          },
+                          "filters": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          "job": {
+                            "type": "string",
+                            "enum": [
+                              "Turborepo"
+                            ]
+                          },
+                          "kind": {
+                            "type": "string",
+                            "enum": [
+                              "turborepo"
+                            ]
+                          },
+                          "task": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "filters",
+                          "job",
+                          "kind",
+                          "task"
+                        ],
+                        "type": "object"
+                      }
+                    ]
+                  },
+                  "subKind": {
+                    "type": "string",
+                    "enum": [
+                      "vercel-ci-check"
+                    ]
+                  }
+                },
+                "required": [
+                  "origin",
+                  "selection",
+                  "subKind"
+                ],
+                "type": "object",
+                "description": "Project-defined CI requirement; its selection is frozen on each check run."
+              }
+            ]
+          }
+        },
+        "required": [
+          "checkId",
+          "createdAt",
+          "deploymentId",
+          "id",
+          "name",
+          "ownerId",
+          "source",
+          "status",
+          "timeout",
+          "updatedAt"
+        ],
+        "type": "object",
+        "description": "Check run backed by a project-level `check` definition."
+      },
       "AutoSDKSharedec1121c0746f62d9": {
         "properties": {
           "destination": {
@@ -132486,12 +132758,6 @@
             "type": "object"
           }
         ]
-      },
-      "AutoSDKSharedecdd9811d7bdf61f": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKShared1b28a5d7512c83d2"
-        },
-        "type": "array"
       },
       "AutoSDKSharedece966f61a605cd3": {
         "type": "string",
@@ -132972,6 +133238,24 @@
         ],
         "type": "object",
         "description": "Custom Ruleset"
+      },
+      "AutoSDKSharedf0d33c7d2af96965": {
+        "properties": {
+          "config": {
+            "$ref": "#/components/schemas/AutoSDKSharede00733f58a3cbcc8"
+          },
+          "src": {
+            "type": "string"
+          },
+          "use": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "use"
+        ],
+        "type": "object",
+        "description": "Builder selected by the resolver."
       },
       "AutoSDKSharedf1f589ae3ca84945": {
         "oneOf": [

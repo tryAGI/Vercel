@@ -1292,7 +1292,23 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        MessageboardPrivateSpaceUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardSchemaRegistered,
+        /// <summary>
+        ///
+        /// </summary>
         MessageboardSpaceCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardSpaceUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardVisibilityUpdated,
         /// <summary>
         ///
         /// </summary>
@@ -2732,6 +2748,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        V0MigrationSubscriptionCompleted,
+        /// <summary>
+        ///
+        /// </summary>
         VcrImageDeleted,
         /// <summary>
         ///
@@ -3179,7 +3199,11 @@ namespace Vercel
                 UserEventType.MessageboardCreated => "messageboard-created",
                 UserEventType.MessageboardPrivateCreated => "messageboard-private-created",
                 UserEventType.MessageboardPrivateSpaceCreated => "messageboard-private-space-created",
+                UserEventType.MessageboardPrivateSpaceUpdated => "messageboard-private-space-updated",
+                UserEventType.MessageboardSchemaRegistered => "messageboard-schema-registered",
                 UserEventType.MessageboardSpaceCreated => "messageboard-space-created",
+                UserEventType.MessageboardSpaceUpdated => "messageboard-space-updated",
+                UserEventType.MessageboardVisibilityUpdated => "messageboard-visibility-updated",
                 UserEventType.MicrofrontendGroupAdded => "microfrontend-group-added",
                 UserEventType.MicrofrontendGroupDeleted => "microfrontend-group-deleted",
                 UserEventType.MicrofrontendGroupUpdated => "microfrontend-group-updated",
@@ -3539,6 +3563,7 @@ namespace Vercel
                 UserEventType.V0ChatCreated => "v0-chat-created",
                 UserEventType.V0ChatMessageSent => "v0-chat-message-sent",
                 UserEventType.V0MigrationPaymentConfirmed => "v0-migration-payment-confirmed",
+                UserEventType.V0MigrationSubscriptionCompleted => "v0-migration-subscription-completed",
                 UserEventType.VcrImageDeleted => "vcr-image-deleted",
                 UserEventType.VcrImagePushed => "vcr-image-pushed",
                 UserEventType.VcrRepositoryCreated => "vcr-repository-created",
@@ -3898,7 +3923,11 @@ namespace Vercel
                 "messageboard-created" => UserEventType.MessageboardCreated,
                 "messageboard-private-created" => UserEventType.MessageboardPrivateCreated,
                 "messageboard-private-space-created" => UserEventType.MessageboardPrivateSpaceCreated,
+                "messageboard-private-space-updated" => UserEventType.MessageboardPrivateSpaceUpdated,
+                "messageboard-schema-registered" => UserEventType.MessageboardSchemaRegistered,
                 "messageboard-space-created" => UserEventType.MessageboardSpaceCreated,
+                "messageboard-space-updated" => UserEventType.MessageboardSpaceUpdated,
+                "messageboard-visibility-updated" => UserEventType.MessageboardVisibilityUpdated,
                 "microfrontend-group-added" => UserEventType.MicrofrontendGroupAdded,
                 "microfrontend-group-deleted" => UserEventType.MicrofrontendGroupDeleted,
                 "microfrontend-group-updated" => UserEventType.MicrofrontendGroupUpdated,
@@ -4258,6 +4287,7 @@ namespace Vercel
                 "v0-chat-created" => UserEventType.V0ChatCreated,
                 "v0-chat-message-sent" => UserEventType.V0ChatMessageSent,
                 "v0-migration-payment-confirmed" => UserEventType.V0MigrationPaymentConfirmed,
+                "v0-migration-subscription-completed" => UserEventType.V0MigrationSubscriptionCompleted,
                 "vcr-image-deleted" => UserEventType.VcrImageDeleted,
                 "vcr-image-pushed" => UserEventType.VcrImagePushed,
                 "vcr-repository-created" => UserEventType.VcrRepositoryCreated,

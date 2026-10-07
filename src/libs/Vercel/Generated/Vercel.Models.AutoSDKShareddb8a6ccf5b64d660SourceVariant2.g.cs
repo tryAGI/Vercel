@@ -1,0 +1,55 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    /// CI sentinel — check run `source` only (no parent check).
+    /// </summary>
+    public sealed partial class AutoSDKShareddb8a6ccf5b64d660SourceVariant2
+    {
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShareddb8a6ccf5b64d660SourceVariant2OriginJsonConverter))]
+        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant2Origin Origin { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("subKind")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShareddb8a6ccf5b64d660SourceVariant2SubKindJsonConverter))]
+        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant2SubKind SubKind { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AutoSDKShareddb8a6ccf5b64d660SourceVariant2" /> class.
+        /// </summary>
+        /// <param name="origin"></param>
+        /// <param name="subKind"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public AutoSDKShareddb8a6ccf5b64d660SourceVariant2(
+            global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant2Origin origin,
+            global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant2SubKind subKind)
+        {
+            this.Origin = origin;
+            this.SubKind = subKind;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AutoSDKShareddb8a6ccf5b64d660SourceVariant2" /> class.
+        /// </summary>
+        public AutoSDKShareddb8a6ccf5b64d660SourceVariant2()
+        {
+        }
+
+    }
+}
