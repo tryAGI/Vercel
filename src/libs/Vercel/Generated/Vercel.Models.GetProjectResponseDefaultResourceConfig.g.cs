@@ -98,7 +98,7 @@ namespace Vercel
         public bool? IsNSNBDisabled { get; set; }
 
         /// <summary>
-        /// Internal assignment, intentionally excluded from API input/output schemas.
+        /// Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("elasticBuildMachine")]
         public global::Vercel.GetProjectResponseDefaultResourceConfigElasticBuildMachine? ElasticBuildMachine { get; set; }
@@ -127,7 +127,7 @@ namespace Vercel
         /// <param name="functionZeroConfigFailover"></param>
         /// <param name="isNSNBDisabled"></param>
         /// <param name="elasticBuildMachine">
-        /// Internal assignment, intentionally excluded from API input/output schemas.
+        /// Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

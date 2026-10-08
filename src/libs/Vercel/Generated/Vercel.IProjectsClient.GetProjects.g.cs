@@ -74,7 +74,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0b1c50a27c68575d>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>> GetProjectsAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb2df422af367f681>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>> GetProjectsAsync(
             string? from = default,
             double? since = default,
             double? until = default,
@@ -166,7 +166,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0b1c50a27c68575d>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>>> GetProjectsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb2df422af367f681>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>>> GetProjectsAsResponseAsync(
             string? from = default,
             double? since = default,
             double? until = default,
