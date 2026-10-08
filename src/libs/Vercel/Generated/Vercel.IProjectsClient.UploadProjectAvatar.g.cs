@@ -21,7 +21,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared223443184387411f> UploadProjectAvatarAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared7851faacb4798d73> UploadProjectAvatarAsync(
             string idOrName,
 
             byte[] request,
@@ -46,7 +46,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared223443184387411f>> UploadProjectAvatarAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared7851faacb4798d73>> UploadProjectAvatarAsResponseAsync(
             string idOrName,
 
             byte[] request,
