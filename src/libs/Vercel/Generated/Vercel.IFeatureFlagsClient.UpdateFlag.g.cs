@@ -30,7 +30,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.AutoSDKShared348824e7d17eab26, global::Vercel.Flag>> UpdateFlagAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared348824e7d17eab26> UpdateFlagAsync(
             string projectIdOrName,
             string flagIdOrSlug,
 
@@ -67,7 +67,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.AutoSDKShared348824e7d17eab26, global::Vercel.Flag>>> UpdateFlagAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared348824e7d17eab26>> UpdateFlagAsResponseAsync(
             string projectIdOrName,
             string flagIdOrSlug,
 
@@ -131,7 +131,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.AutoSDKShared348824e7d17eab26, global::Vercel.Flag>> UpdateFlagAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared348824e7d17eab26> UpdateFlagAsync(
             string projectIdOrName,
             string flagIdOrSlug,
             string? ifMatch = default,

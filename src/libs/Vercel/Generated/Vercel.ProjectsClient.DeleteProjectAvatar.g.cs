@@ -3,11 +3,11 @@
 
 namespace Vercel
 {
-    public partial class FeatureFlagsClient
+    public partial class ProjectsClient
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_UpdateFlagSecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_DeleteProjectAvatarSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,53 +21,36 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_UpdateFlagSecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_DeleteProjectAvatarSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_UpdateFlagSecurityRequirement0,
+            {                s_DeleteProjectAvatarSecurityRequirement0,
             };
-        partial void PrepareUpdateFlagArguments(
+        partial void PrepareDeleteProjectAvatarArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string projectIdOrName,
-            ref string flagIdOrSlug,
-            ref string? ifMatch,
-            ref bool? withMetadata,
+            ref string idOrName,
             ref string? teamId,
-            ref string? slug,
-            global::Vercel.UpdateFlagRequest request);
-        partial void PrepareUpdateFlagRequest(
+            ref string? slug);
+        partial void PrepareDeleteProjectAvatarRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string projectIdOrName,
-            string flagIdOrSlug,
-            string? ifMatch,
-            bool? withMetadata,
+            string idOrName,
             string? teamId,
-            string? slug,
-            global::Vercel.UpdateFlagRequest request);
-        partial void ProcessUpdateFlagResponse(
+            string? slug);
+        partial void ProcessDeleteProjectAvatarResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessUpdateFlagResponseContent(
+        partial void ProcessDeleteProjectAvatarResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Update a flag<br/>
-        /// Update an existing feature flag. This endpoint supports partial updates, allowing you to modify specific properties like variants, environments, or state without providing the full flag configuration.
+        /// Delete a project avatar<br/>
+        /// Remove the avatar of the project identified by `idOrName`. Deletes the chosen avatar field so the next production deploy can run auto-detection again. Does not delete the stored image.
         /// </summary>
-        /// <param name="projectIdOrName">
-        /// The project id or name
-        /// </param>
-        /// <param name="flagIdOrSlug">
-        /// The flag id or name
-        /// </param>
-        /// <param name="ifMatch">
-        /// Etag to match, can be used interchangeably with the `if-match` header
-        /// </param>
-        /// <param name="withMetadata">
-        /// Whether to include metadata in the response
+        /// <param name="idOrName">
+        /// The unique project identifier or the project name.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -75,29 +58,18 @@ namespace Vercel
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
-        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared348824e7d17eab26> UpdateFlagAsync(
-            string projectIdOrName,
-            string flagIdOrSlug,
-
-            global::Vercel.UpdateFlagRequest request,
-            string? ifMatch = default,
-            bool? withMetadata = default,
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharede870b907cc1fb37e> DeleteProjectAvatarAsync(
+            string idOrName,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await UpdateFlagAsResponseAsync(
-                projectIdOrName: projectIdOrName,
-                flagIdOrSlug: flagIdOrSlug,
-
-                request: request,
-                ifMatch: ifMatch,
-                withMetadata: withMetadata,
+            var __response = await DeleteProjectAvatarAsResponseAsync(
+                idOrName: idOrName,
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -107,20 +79,11 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// Update a flag<br/>
-        /// Update an existing feature flag. This endpoint supports partial updates, allowing you to modify specific properties like variants, environments, or state without providing the full flag configuration.
+        /// Delete a project avatar<br/>
+        /// Remove the avatar of the project identified by `idOrName`. Deletes the chosen avatar field so the next production deploy can run auto-detection again. Does not delete the stored image.
         /// </summary>
-        /// <param name="projectIdOrName">
-        /// The project id or name
-        /// </param>
-        /// <param name="flagIdOrSlug">
-        /// The flag id or name
-        /// </param>
-        /// <param name="ifMatch">
-        /// Etag to match, can be used interchangeably with the `if-match` header
-        /// </param>
-        /// <param name="withMetadata">
-        /// Whether to include metadata in the response
+        /// <param name="idOrName">
+        /// The unique project identifier or the project name.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -128,41 +91,29 @@ namespace Vercel
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
-        /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared348824e7d17eab26>> UpdateFlagAsResponseAsync(
-            string projectIdOrName,
-            string flagIdOrSlug,
-
-            global::Vercel.UpdateFlagRequest request,
-            string? ifMatch = default,
-            bool? withMetadata = default,
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharede870b907cc1fb37e>> DeleteProjectAvatarAsResponseAsync(
+            string idOrName,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            request = request ?? throw new global::System.ArgumentNullException(nameof(request));
-
             PrepareArguments(
                 client: HttpClient);
-            PrepareUpdateFlagArguments(
+            PrepareDeleteProjectAvatarArguments(
                 httpClient: HttpClient,
-                projectIdOrName: ref projectIdOrName,
-                flagIdOrSlug: ref flagIdOrSlug,
-                ifMatch: ref ifMatch,
-                withMetadata: ref withMetadata,
+                idOrName: ref idOrName,
                 teamId: ref teamId,
-                slug: ref slug,
-                request: request);
+                slug: ref slug);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_UpdateFlagSecurityRequirements,
-                operationName: "UpdateFlagAsync");
+                securityRequirements: s_DeleteProjectAvatarSecurityRequirements,
+                operationName: "DeleteProjectAvatarAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -182,11 +133,9 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: $"/v1/projects/{projectIdOrName}/feature-flags/flags/{flagIdOrSlug}",
+                                path: $"/v1/projects/{idOrName}/avatar",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddOptionalParameter("ifMatch", ifMatch)
-                                .AddOptionalParameter("withMetadata", withMetadata?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -196,7 +145,7 @@ namespace Vercel
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: new global::System.Net.Http.HttpMethod("PATCH"),
+                    method: global::System.Net.Http.HttpMethod.Delete,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -219,12 +168,6 @@ namespace Vercel
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
                 }
             }
-                            var __httpRequestContentBody = request.ToJson(JsonSerializerContext);
-                            var __httpRequestContent = new global::System.Net.Http.StringContent(
-                                content: __httpRequestContentBody,
-                                encoding: global::System.Text.Encoding.UTF8,
-                                mediaType: "application/json");
-                            __httpRequest.Content = __httpRequestContent;
                 global::Vercel.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
                     clientHeaders: Options.Headers,
@@ -233,16 +176,12 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareUpdateFlagRequest(
+                PrepareDeleteProjectAvatarRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    projectIdOrName: projectIdOrName,
-                    flagIdOrSlug: flagIdOrSlug,
-                    ifMatch: ifMatch,
-                    withMetadata: withMetadata,
+                    idOrName: idOrName,
                     teamId: teamId,
-                    slug: slug,
-                    request: request);
+                    slug: slug);
 
                 return __httpRequest;
             }
@@ -259,10 +198,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "UpdateFlag",
-                                methodName: "UpdateFlagAsync",
-                                pathTemplate: "$\"/v1/projects/{projectIdOrName}/feature-flags/flags/{flagIdOrSlug}\"",
-                                httpMethod: "PATCH",
+                                operationId: "DeleteProjectAvatar",
+                                methodName: "DeleteProjectAvatarAsync",
+                                pathTemplate: "$\"/v1/projects/{idOrName}/avatar\"",
+                                httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
@@ -293,10 +232,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "UpdateFlag",
-                                methodName: "UpdateFlagAsync",
-                                pathTemplate: "$\"/v1/projects/{projectIdOrName}/feature-flags/flags/{flagIdOrSlug}\"",
-                                httpMethod: "PATCH",
+                                operationId: "DeleteProjectAvatar",
+                                methodName: "DeleteProjectAvatarAsync",
+                                pathTemplate: "$\"/v1/projects/{idOrName}/avatar\"",
+                                httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
@@ -334,10 +273,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "UpdateFlag",
-                                methodName: "UpdateFlagAsync",
-                                pathTemplate: "$\"/v1/projects/{projectIdOrName}/feature-flags/flags/{flagIdOrSlug}\"",
-                                httpMethod: "PATCH",
+                                operationId: "DeleteProjectAvatar",
+                                methodName: "DeleteProjectAvatarAsync",
+                                pathTemplate: "$\"/v1/projects/{idOrName}/avatar\"",
+                                httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
@@ -374,7 +313,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessUpdateFlagResponse(
+                ProcessDeleteProjectAvatarResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -382,10 +321,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "UpdateFlag",
-                                methodName: "UpdateFlagAsync",
-                                pathTemplate: "$\"/v1/projects/{projectIdOrName}/feature-flags/flags/{flagIdOrSlug}\"",
-                                httpMethod: "PATCH",
+                                operationId: "DeleteProjectAvatar",
+                                methodName: "DeleteProjectAvatarAsync",
+                                pathTemplate: "$\"/v1/projects/{idOrName}/avatar\"",
+                                httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
@@ -404,10 +343,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "UpdateFlag",
-                                methodName: "UpdateFlagAsync",
-                                pathTemplate: "$\"/v1/projects/{projectIdOrName}/feature-flags/flags/{flagIdOrSlug}\"",
-                                httpMethod: "PATCH",
+                                operationId: "DeleteProjectAvatar",
+                                methodName: "DeleteProjectAvatarAsync",
+                                pathTemplate: "$\"/v1/projects/{idOrName}/avatar\"",
+                                httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
@@ -421,38 +360,6 @@ namespace Vercel
                                 retryReason: global::System.String.Empty,
                                 cancellationToken: __effectiveCancellationToken)).ConfigureAwait(false);
                 }
-                            //
-                            if ((int)__response.StatusCode == 304)
-                            {
-                                string? __content_304 = null;
-                                global::System.Exception? __exception_304 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_304 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_304 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_304 = __ex;
-                                }
-
-
-                                throw global::Vercel.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_304 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_304,
-                                    responseBody: __content_304,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
                             //
                             if ((int)__response.StatusCode == 400)
                             {
@@ -512,38 +419,6 @@ namespace Vercel
                                     message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
-                            //
-                            if ((int)__response.StatusCode == 402)
-                            {
-                                string? __content_402 = null;
-                                global::System.Exception? __exception_402 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_402 = __ex;
-                                }
-
-
-                                throw global::Vercel.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_402 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_402,
-                                    responseBody: __content_402,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
@@ -614,38 +489,6 @@ namespace Vercel
                                         h => h.Value));
                             }
                             //
-                            if ((int)__response.StatusCode == 409)
-                            {
-                                string? __content_409 = null;
-                                global::System.Exception? __exception_409 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_409 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_409 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_409 = __ex;
-                                }
-
-
-                                throw global::Vercel.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_409 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_409,
-                                    responseBody: __content_409,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
-                            //
                             if ((int)__response.StatusCode == 410)
                             {
                                 string? __content_410 = null;
@@ -690,7 +533,7 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessUpdateFlagResponseContent(
+                                ProcessDeleteProjectAvatarResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -699,9 +542,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.AutoSDKShared348824e7d17eab26.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.AutoSDKSharede870b907cc1fb37e.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared348824e7d17eab26>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharede870b907cc1fb37e>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -731,9 +574,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.AutoSDKShared348824e7d17eab26.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.AutoSDKSharede870b907cc1fb37e.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared348824e7d17eab26>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharede870b907cc1fb37e>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -772,104 +615,6 @@ namespace Vercel
             {
                 __httpRequest?.Dispose();
             }
-        }
-        /// <summary>
-        /// Update a flag<br/>
-        /// Update an existing feature flag. This endpoint supports partial updates, allowing you to modify specific properties like variants, environments, or state without providing the full flag configuration.
-        /// </summary>
-        /// <param name="projectIdOrName">
-        /// The project id or name
-        /// </param>
-        /// <param name="flagIdOrSlug">
-        /// The flag id or name
-        /// </param>
-        /// <param name="ifMatch">
-        /// Etag to match, can be used interchangeably with the `if-match` header
-        /// </param>
-        /// <param name="withMetadata">
-        /// Whether to include metadata in the response
-        /// </param>
-        /// <param name="teamId">
-        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
-        /// </param>
-        /// <param name="slug">
-        /// Example: my-team-url-slug
-        /// </param>
-        /// <param name="createdBy">
-        /// The user who created this patch
-        /// </param>
-        /// <param name="message">
-        /// Additional message for this version
-        /// </param>
-        /// <param name="variants">
-        /// The variants of the flag
-        /// </param>
-        /// <param name="environments">
-        /// The configuration for the flag in different environments
-        /// </param>
-        /// <param name="seed">
-        /// A random seed to prevent split points in different flags from having the same targets
-        /// </param>
-        /// <param name="description">
-        /// A description of the flag
-        /// </param>
-        /// <param name="state"></param>
-        /// <param name="maintainerIds">
-        /// The user ids of the maintainers of the flag
-        /// </param>
-        /// <param name="permanent">
-        /// Whether this flag is marked as permanent, indicating it should not be removed
-        /// </param>
-        /// <param name="tags">
-        /// Tags for categorizing the flag
-        /// </param>
-        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
-        /// <param name="cancellationToken">The token to cancel the operation with</param>
-        /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared348824e7d17eab26> UpdateFlagAsync(
-            string projectIdOrName,
-            string flagIdOrSlug,
-            string? ifMatch = default,
-            bool? withMetadata = default,
-            string? teamId = default,
-            string? slug = default,
-            string? createdBy = default,
-            string? message = default,
-            global::System.Collections.Generic.IList<global::Vercel.UpdateFlagRequestVariant>? variants = default,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKSharedba25b79c660ac1ce>? environments = default,
-            double? seed = default,
-            string? description = default,
-            global::Vercel.UpdateFlagRequestState? state = default,
-            global::System.Collections.Generic.IList<string>? maintainerIds = default,
-            bool? permanent = default,
-            global::System.Collections.Generic.IList<string>? tags = default,
-            global::Vercel.AutoSDKRequestOptions? requestOptions = default,
-            global::System.Threading.CancellationToken cancellationToken = default)
-        {
-            var __request = new global::Vercel.UpdateFlagRequest
-            {
-                CreatedBy = createdBy,
-                Message = message,
-                Variants = variants,
-                Environments = environments,
-                Seed = seed,
-                Description = description,
-                State = state,
-                MaintainerIds = maintainerIds,
-                Permanent = permanent,
-                Tags = tags,
-            };
-
-            return await UpdateFlagAsync(
-                projectIdOrName: projectIdOrName,
-                flagIdOrSlug: flagIdOrSlug,
-                ifMatch: ifMatch,
-                withMetadata: withMetadata,
-                teamId: teamId,
-                slug: slug,
-                request: __request,
-                requestOptions: requestOptions,
-                cancellationToken: cancellationToken).ConfigureAwait(false);
         }
     }
 }

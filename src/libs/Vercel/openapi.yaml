@@ -33588,14 +33588,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "oneOf": [
-                    {
-                      "$ref": "#/components/schemas/AutoSDKShared348824e7d17eab26"
-                    },
-                    {
-                      "$ref": "#/components/schemas/Flag"
-                    }
-                  ]
+                  "$ref": "#/components/schemas/AutoSDKShared348824e7d17eab26"
                 }
               }
             }
@@ -58099,6 +58092,76 @@
             }
           }
         }
+      },
+      "delete": {
+        "description": "Remove the avatar of the project identified by `idOrName`. Deletes the chosen avatar field so the next production deploy can run auto-detection again. Does not delete the stored image.",
+        "operationId": "deleteProjectAvatar",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Delete a project avatar",
+        "tags": [
+          "projects"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AutoSDKSharede870b907cc1fb37e"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "idOrName",
+            "description": "The unique project identifier or the project name.",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "description": "The unique project identifier or the project name.",
+              "type": "string"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
       }
     },
     "/v1/projects/{idOrName}/shared-connect-links": {
