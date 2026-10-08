@@ -98,6 +98,12 @@ namespace Vercel
         public bool? IsNSNBDisabled { get; set; }
 
         /// <summary>
+        /// Internal assignment, intentionally excluded from API input/output schemas.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("elasticBuildMachine")]
+        public global::Vercel.UpdateProjectResponseDefaultResourceConfigElasticBuildMachine? ElasticBuildMachine { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -120,6 +126,9 @@ namespace Vercel
         /// <param name="functionDefaultTimeout"></param>
         /// <param name="functionZeroConfigFailover"></param>
         /// <param name="isNSNBDisabled"></param>
+        /// <param name="elasticBuildMachine">
+        /// Internal assignment, intentionally excluded from API input/output schemas.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -137,7 +146,8 @@ namespace Vercel
             global::Vercel.UpdateProjectResponseDefaultResourceConfigFunctionDefaultMemoryType? functionDefaultMemoryType,
             double? functionDefaultTimeout,
             bool? functionZeroConfigFailover,
-            bool? isNSNBDisabled)
+            bool? isNSNBDisabled,
+            global::Vercel.UpdateProjectResponseDefaultResourceConfigElasticBuildMachine? elasticBuildMachine)
         {
             this.BuildMachineElasticLastUpdated = buildMachineElasticLastUpdated;
             this.BuildMachineElasticReason = buildMachineElasticReason;
@@ -153,6 +163,7 @@ namespace Vercel
             this.FunctionDefaultTimeout = functionDefaultTimeout;
             this.FunctionZeroConfigFailover = functionZeroConfigFailover;
             this.IsNSNBDisabled = isNSNBDisabled;
+            this.ElasticBuildMachine = elasticBuildMachine;
         }
 
         /// <summary>

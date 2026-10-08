@@ -50,6 +50,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("organizationId")]
+        public string? OrganizationId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("role")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.TeamMembershipRoleJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -95,6 +101,7 @@ namespace Vercel
         /// <param name="accessRequestedAt"></param>
         /// <param name="entitlements"></param>
         /// <param name="joinedFrom"></param>
+        /// <param name="organizationId"></param>
         /// <param name="teamId"></param>
         /// <param name="teamPermissions"></param>
         /// <param name="teamRoles"></param>
@@ -110,6 +117,7 @@ namespace Vercel
             double? accessRequestedAt,
             global::System.Collections.Generic.IList<global::Vercel.TeamMembershipEntitlement>? entitlements,
             global::Vercel.TeamMembershipJoinedFrom? joinedFrom,
+            string? organizationId,
             string? teamId,
             global::System.Collections.Generic.IList<global::Vercel.TeamMembershipTeamPermission>? teamPermissions,
             global::System.Collections.Generic.IList<global::Vercel.TeamMembershipTeamRole>? teamRoles,
@@ -121,6 +129,7 @@ namespace Vercel
             this.CreatedAt = createdAt;
             this.Entitlements = entitlements;
             this.JoinedFrom = joinedFrom;
+            this.OrganizationId = organizationId;
             this.Role = role;
             this.TeamId = teamId;
             this.TeamPermissions = teamPermissions;
