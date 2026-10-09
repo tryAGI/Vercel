@@ -2455,6 +2455,80 @@
         ]
       }
     },
+    "/v1/ai-gateway/routers": {
+      "get": {
+        "description": "List the authenticated team's active and archived custom routers.",
+        "operationId": "listAiGatewayRouters",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "List AI Gateway routers",
+        "tags": [
+          "api-ai-gateway"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AiGatewayRouterList"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "500": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "ownerId",
+            "description": "The owner (team) ID to list routers for. Only trusted-origin callers use this. Public callers select their team with `teamId` or `slug`, and a supplied ownerId never overrides the authenticated team.",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "description": "The owner (team) ID to list routers for. Only trusted-origin callers use this. Public callers select their team with `teamId` or `slug`, and a supplied ownerId never overrides the authenticated team."
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
+      }
+    },
     "/ai-gateway/rules": {
       "post": {
         "description": "Create a routing rule",
@@ -95638,7 +95712,7 @@
           "virtualModelSlug"
         ],
         "type": "object",
-        "description": "Public response shape for virtual model configs. Used so OpenAPI generation can avoid ElectroDB's recursive EntityItem types."
+        "description": "Active and archived router configurations owned by the authenticated team."
       },
       "AiGatewayVirtualModelConfigList": {
         "properties": {
@@ -95658,6 +95732,21 @@
         "required": [
           "cursor",
           "virtualModelConfigs"
+        ],
+        "type": "object"
+      },
+      "AiGatewayRouterList": {
+        "properties": {
+          "routers": {
+            "items": {
+              "$ref": "#/components/schemas/AiGatewayVirtualModelConfig"
+            },
+            "type": "array",
+            "description": "Active and archived router configurations owned by the authenticated team."
+          }
+        },
+        "required": [
+          "routers"
         ],
         "type": "object"
       },
