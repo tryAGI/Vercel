@@ -23,6 +23,12 @@ namespace Vercel
         public global::Vercel.NamedSandboxMountsMode? Mode { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("snapshot")]
+        public string? Snapshot { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -33,15 +39,18 @@ namespace Vercel
         /// </summary>
         /// <param name="drive"></param>
         /// <param name="mode"></param>
+        /// <param name="snapshot"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public NamedSandboxMounts2(
             string drive,
-            global::Vercel.NamedSandboxMountsMode? mode)
+            global::Vercel.NamedSandboxMountsMode? mode,
+            string? snapshot)
         {
             this.Drive = drive ?? throw new global::System.ArgumentNullException(nameof(drive));
             this.Mode = mode;
+            this.Snapshot = snapshot;
         }
 
         /// <summary>

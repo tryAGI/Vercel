@@ -48,6 +48,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AdminSamlIdpMaterialDeleted,
+        /// <summary>
+        ///
+        /// </summary>
+        AdminSamlIdpMaterialSet,
+        /// <summary>
+        ///
+        /// </summary>
         AdminSecondaryEmailAdded,
         /// <summary>
         ///
@@ -2132,6 +2140,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        SandboxDriveSnapshotCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        SandboxDriveSnapshotDeleted,
+        /// <summary>
+        ///
+        /// </summary>
         SandboxSignedCommitIdentityConfigured,
         /// <summary>
         ///
@@ -2892,6 +2908,8 @@ namespace Vercel
                 ListEventTypeName.AdminAgenticProvisioningAccountUnlinked => "admin-agentic-provisioning-account-unlinked",
                 ListEventTypeName.AdminPlanUpdated => "admin-plan-updated",
                 ListEventTypeName.AdminPreviewDeploymentSuffixClear => "admin-preview-deployment-suffix-clear",
+                ListEventTypeName.AdminSamlIdpMaterialDeleted => "admin-saml-idp-material-deleted",
+                ListEventTypeName.AdminSamlIdpMaterialSet => "admin-saml-idp-material-set",
                 ListEventTypeName.AdminSecondaryEmailAdded => "admin-secondary-email-added",
                 ListEventTypeName.AdminSecondaryEmailRemoved => "admin-secondary-email-removed",
                 ListEventTypeName.AdminTeamNameUpdate => "admin-team-name-update",
@@ -3413,6 +3431,8 @@ namespace Vercel
                 ListEventTypeName.SandboxAliasDelete => "sandbox-alias-delete",
                 ListEventTypeName.SandboxDriveCreated => "sandbox-drive-created",
                 ListEventTypeName.SandboxDriveDeleted => "sandbox-drive-deleted",
+                ListEventTypeName.SandboxDriveSnapshotCreated => "sandbox-drive-snapshot-created",
+                ListEventTypeName.SandboxDriveSnapshotDeleted => "sandbox-drive-snapshot-deleted",
                 ListEventTypeName.SandboxSignedCommitIdentityConfigured => "sandbox-signed-commit-identity-configured",
                 ListEventTypeName.SandboxSnapshotRegionsUpdated => "sandbox-snapshot-regions-updated",
                 ListEventTypeName.Scale => "scale",
@@ -3617,6 +3637,8 @@ namespace Vercel
                 "admin-agentic-provisioning-account-unlinked" => ListEventTypeName.AdminAgenticProvisioningAccountUnlinked,
                 "admin-plan-updated" => ListEventTypeName.AdminPlanUpdated,
                 "admin-preview-deployment-suffix-clear" => ListEventTypeName.AdminPreviewDeploymentSuffixClear,
+                "admin-saml-idp-material-deleted" => ListEventTypeName.AdminSamlIdpMaterialDeleted,
+                "admin-saml-idp-material-set" => ListEventTypeName.AdminSamlIdpMaterialSet,
                 "admin-secondary-email-added" => ListEventTypeName.AdminSecondaryEmailAdded,
                 "admin-secondary-email-removed" => ListEventTypeName.AdminSecondaryEmailRemoved,
                 "admin-team-name-update" => ListEventTypeName.AdminTeamNameUpdate,
@@ -4138,6 +4160,8 @@ namespace Vercel
                 "sandbox-alias-delete" => ListEventTypeName.SandboxAliasDelete,
                 "sandbox-drive-created" => ListEventTypeName.SandboxDriveCreated,
                 "sandbox-drive-deleted" => ListEventTypeName.SandboxDriveDeleted,
+                "sandbox-drive-snapshot-created" => ListEventTypeName.SandboxDriveSnapshotCreated,
+                "sandbox-drive-snapshot-deleted" => ListEventTypeName.SandboxDriveSnapshotDeleted,
                 "sandbox-signed-commit-identity-configured" => ListEventTypeName.SandboxSignedCommitIdentityConfigured,
                 "sandbox-snapshot-regions-updated" => ListEventTypeName.SandboxSnapshotRegionsUpdated,
                 "scale" => ListEventTypeName.Scale,

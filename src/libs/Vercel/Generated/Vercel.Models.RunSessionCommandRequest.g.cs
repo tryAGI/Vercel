@@ -72,6 +72,13 @@ namespace Vercel
         public int? Timeout { get; set; }
 
         /// <summary>
+        /// If true, keeps the command stdin open so it can be written to with the stdin endpoint while the command runs. When false, the command reads from an empty stdin.<br/>
+        /// Default Value: false
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("attachStdin")]
+        public bool? AttachStdin { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -113,6 +120,10 @@ namespace Vercel
         /// Maximum duration in milliseconds the command may run before it is killed with SIGKILL, up to 5 hours. Enforced at exec time, independently of `wait`.<br/>
         /// Example: 30000
         /// </param>
+        /// <param name="attachStdin">
+        /// If true, keeps the command stdin open so it can be written to with the stdin endpoint while the command runs. When false, the command reads from an empty stdin.<br/>
+        /// Default Value: false
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -124,7 +135,8 @@ namespace Vercel
             bool? sudo,
             bool? wait,
             bool? logs,
-            int? timeout)
+            int? timeout,
+            bool? attachStdin)
         {
             this.Command = command ?? throw new global::System.ArgumentNullException(nameof(command));
             this.Args = args;
@@ -134,6 +146,7 @@ namespace Vercel
             this.Wait = wait;
             this.Logs = logs;
             this.Timeout = timeout;
+            this.AttachStdin = attachStdin;
         }
 
         /// <summary>
