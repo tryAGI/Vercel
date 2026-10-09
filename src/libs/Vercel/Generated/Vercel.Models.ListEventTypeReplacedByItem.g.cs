@@ -47,6 +47,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AdminSamlIdpMaterialDeleted,
+        /// <summary>
+        ///
+        /// </summary>
+        AdminSamlIdpMaterialSet,
+        /// <summary>
+        ///
+        /// </summary>
         AdminSecondaryEmailAdded,
         /// <summary>
         ///
@@ -2131,6 +2139,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        SandboxDriveSnapshotCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        SandboxDriveSnapshotDeleted,
+        /// <summary>
+        ///
+        /// </summary>
         SandboxSignedCommitIdentityConfigured,
         /// <summary>
         ///
@@ -2891,6 +2907,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AdminAgenticProvisioningAccountUnlinked => "admin-agentic-provisioning-account-unlinked",
                 ListEventTypeReplacedByItem.AdminPlanUpdated => "admin-plan-updated",
                 ListEventTypeReplacedByItem.AdminPreviewDeploymentSuffixClear => "admin-preview-deployment-suffix-clear",
+                ListEventTypeReplacedByItem.AdminSamlIdpMaterialDeleted => "admin-saml-idp-material-deleted",
+                ListEventTypeReplacedByItem.AdminSamlIdpMaterialSet => "admin-saml-idp-material-set",
                 ListEventTypeReplacedByItem.AdminSecondaryEmailAdded => "admin-secondary-email-added",
                 ListEventTypeReplacedByItem.AdminSecondaryEmailRemoved => "admin-secondary-email-removed",
                 ListEventTypeReplacedByItem.AdminTeamNameUpdate => "admin-team-name-update",
@@ -3412,6 +3430,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.SandboxAliasDelete => "sandbox-alias-delete",
                 ListEventTypeReplacedByItem.SandboxDriveCreated => "sandbox-drive-created",
                 ListEventTypeReplacedByItem.SandboxDriveDeleted => "sandbox-drive-deleted",
+                ListEventTypeReplacedByItem.SandboxDriveSnapshotCreated => "sandbox-drive-snapshot-created",
+                ListEventTypeReplacedByItem.SandboxDriveSnapshotDeleted => "sandbox-drive-snapshot-deleted",
                 ListEventTypeReplacedByItem.SandboxSignedCommitIdentityConfigured => "sandbox-signed-commit-identity-configured",
                 ListEventTypeReplacedByItem.SandboxSnapshotRegionsUpdated => "sandbox-snapshot-regions-updated",
                 ListEventTypeReplacedByItem.Scale => "scale",
@@ -3616,6 +3636,8 @@ namespace Vercel
                 "admin-agentic-provisioning-account-unlinked" => ListEventTypeReplacedByItem.AdminAgenticProvisioningAccountUnlinked,
                 "admin-plan-updated" => ListEventTypeReplacedByItem.AdminPlanUpdated,
                 "admin-preview-deployment-suffix-clear" => ListEventTypeReplacedByItem.AdminPreviewDeploymentSuffixClear,
+                "admin-saml-idp-material-deleted" => ListEventTypeReplacedByItem.AdminSamlIdpMaterialDeleted,
+                "admin-saml-idp-material-set" => ListEventTypeReplacedByItem.AdminSamlIdpMaterialSet,
                 "admin-secondary-email-added" => ListEventTypeReplacedByItem.AdminSecondaryEmailAdded,
                 "admin-secondary-email-removed" => ListEventTypeReplacedByItem.AdminSecondaryEmailRemoved,
                 "admin-team-name-update" => ListEventTypeReplacedByItem.AdminTeamNameUpdate,
@@ -4137,6 +4159,8 @@ namespace Vercel
                 "sandbox-alias-delete" => ListEventTypeReplacedByItem.SandboxAliasDelete,
                 "sandbox-drive-created" => ListEventTypeReplacedByItem.SandboxDriveCreated,
                 "sandbox-drive-deleted" => ListEventTypeReplacedByItem.SandboxDriveDeleted,
+                "sandbox-drive-snapshot-created" => ListEventTypeReplacedByItem.SandboxDriveSnapshotCreated,
+                "sandbox-drive-snapshot-deleted" => ListEventTypeReplacedByItem.SandboxDriveSnapshotDeleted,
                 "sandbox-signed-commit-identity-configured" => ListEventTypeReplacedByItem.SandboxSignedCommitIdentityConfigured,
                 "sandbox-snapshot-regions-updated" => ListEventTypeReplacedByItem.SandboxSnapshotRegionsUpdated,
                 "scale" => ListEventTypeReplacedByItem.Scale,

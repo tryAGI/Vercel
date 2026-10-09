@@ -7,7 +7,7 @@ namespace Vercel
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_RunSessionCommandSecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_WriteSessionCommandStdinSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,45 +21,45 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_RunSessionCommandSecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_WriteSessionCommandStdinSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_RunSessionCommandSecurityRequirement0,
+            {                s_WriteSessionCommandStdinSecurityRequirement0,
             };
-        partial void PrepareRunSessionCommandArguments(
+        partial void PrepareWriteSessionCommandStdinArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string sessionId,
             ref string cmdId,
+            ref string sessionId,
             ref string? teamId,
             ref string? slug,
-            global::Vercel.RunSessionCommandRequest request);
-        partial void PrepareRunSessionCommandRequest(
+            global::Vercel.WriteSessionCommandStdinRequest request);
+        partial void PrepareWriteSessionCommandStdinRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string sessionId,
             string cmdId,
+            string sessionId,
             string? teamId,
             string? slug,
-            global::Vercel.RunSessionCommandRequest request);
-        partial void ProcessRunSessionCommandResponse(
+            global::Vercel.WriteSessionCommandStdinRequest request);
+        partial void ProcessWriteSessionCommandStdinResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessRunSessionCommandResponseContent(
+        partial void ProcessWriteSessionCommandStdinResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Execute a command<br/>
-        /// Executes a shell command inside a running session. The command runs asynchronously and returns immediately with a command ID that can be used to track its progress and retrieve its output. Optionally, use the `wait` parameter to stream the command status until completion.
+        /// Write to command stdin<br/>
+        /// Writes data to the stdin of a running command, and optionally closes it. The command must have been started with `attachStdin` set to true. Writes are applied in the order they are received. Send them one at a time to keep the data in order. A write returns once the command has accepted the data, and fails with a 504 after 30 seconds if the command is not reading stdin. Each write counts against the sandbox control plane rate limit, so batch small writes where possible. Set `offset` to the position in stdin where `data` starts to make a request safe to resend, for example after a 502 or 504: bytes the command has already received are skipped, and an offset past them fails with a 409. The response returns `bytesWritten`, the total written so far, and a 504 includes it in the error when the sandbox reports it. A request with no `data` and no `close` writes nothing and returns it. If a request with an `offset` gets a response without `bytesWritten`, the sandbox predates offsets and ignored it, so resending that request is not safe.
         /// </summary>
-        /// <param name="sessionId">
-        /// The unique identifier of the session in which to execute the command.<br/>
-        /// Example: sbx_abc123
-        /// </param>
         /// <param name="cmdId">
-        /// The unique identifier of the command to stream logs for.<br/>
+        /// The unique identifier of the command to write to.<br/>
         /// Example: cmd_abc123
+        /// </param>
+        /// <param name="sessionId">
+        /// The unique identifier of the session containing the command.<br/>
+        /// Example: sbx_abc123
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -71,19 +71,19 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.RunSessionCommandResponse> RunSessionCommandAsync(
-            string sessionId,
+        public async global::System.Threading.Tasks.Task<global::Vercel.WriteSessionCommandStdinResponse> WriteSessionCommandStdinAsync(
             string cmdId,
+            string sessionId,
 
-            global::Vercel.RunSessionCommandRequest request,
+            global::Vercel.WriteSessionCommandStdinRequest request,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await RunSessionCommandAsResponseAsync(
-                sessionId: sessionId,
+            var __response = await WriteSessionCommandStdinAsResponseAsync(
                 cmdId: cmdId,
+                sessionId: sessionId,
 
                 request: request,
                 teamId: teamId,
@@ -95,16 +95,16 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// Execute a command<br/>
-        /// Executes a shell command inside a running session. The command runs asynchronously and returns immediately with a command ID that can be used to track its progress and retrieve its output. Optionally, use the `wait` parameter to stream the command status until completion.
+        /// Write to command stdin<br/>
+        /// Writes data to the stdin of a running command, and optionally closes it. The command must have been started with `attachStdin` set to true. Writes are applied in the order they are received. Send them one at a time to keep the data in order. A write returns once the command has accepted the data, and fails with a 504 after 30 seconds if the command is not reading stdin. Each write counts against the sandbox control plane rate limit, so batch small writes where possible. Set `offset` to the position in stdin where `data` starts to make a request safe to resend, for example after a 502 or 504: bytes the command has already received are skipped, and an offset past them fails with a 409. The response returns `bytesWritten`, the total written so far, and a 504 includes it in the error when the sandbox reports it. A request with no `data` and no `close` writes nothing and returns it. If a request with an `offset` gets a response without `bytesWritten`, the sandbox predates offsets and ignored it, so resending that request is not safe.
         /// </summary>
-        /// <param name="sessionId">
-        /// The unique identifier of the session in which to execute the command.<br/>
-        /// Example: sbx_abc123
-        /// </param>
         /// <param name="cmdId">
-        /// The unique identifier of the command to stream logs for.<br/>
+        /// The unique identifier of the command to write to.<br/>
         /// Example: cmd_abc123
+        /// </param>
+        /// <param name="sessionId">
+        /// The unique identifier of the session containing the command.<br/>
+        /// Example: sbx_abc123
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -116,11 +116,11 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.RunSessionCommandResponse>> RunSessionCommandAsResponseAsync(
-            string sessionId,
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.WriteSessionCommandStdinResponse>> WriteSessionCommandStdinAsResponseAsync(
             string cmdId,
+            string sessionId,
 
-            global::Vercel.RunSessionCommandRequest request,
+            global::Vercel.WriteSessionCommandStdinRequest request,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -130,10 +130,10 @@ namespace Vercel
 
             PrepareArguments(
                 client: HttpClient);
-            PrepareRunSessionCommandArguments(
+            PrepareWriteSessionCommandStdinArguments(
                 httpClient: HttpClient,
-                sessionId: ref sessionId,
                 cmdId: ref cmdId,
+                sessionId: ref sessionId,
                 teamId: ref teamId,
                 slug: ref slug,
                 request: request);
@@ -141,8 +141,8 @@ namespace Vercel
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_RunSessionCommandSecurityRequirements,
-                operationName: "RunSessionCommandAsync");
+                securityRequirements: s_WriteSessionCommandStdinSecurityRequirements,
+                operationName: "WriteSessionCommandStdinAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -162,10 +162,9 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: $"/v2/sandboxes/sessions/{sessionId}/cmd",
+                                path: $"/v2/sandboxes/sessions/{sessionId}/cmd/{cmdId}/stdin",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddRequiredParameter("cmdId", cmdId)
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -181,10 +180,6 @@ namespace Vercel
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
                 __httpRequest.VersionPolicy = global::System.Net.Http.HttpVersionPolicy.RequestVersionOrHigher;
 #endif
-
-                __httpRequest.Headers.TryAddWithoutValidation(
-                    "Accept",
-                    "application/json");
 
             foreach (var __authorization in __authorizations)
             {
@@ -216,11 +211,11 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareRunSessionCommandRequest(
+                PrepareWriteSessionCommandStdinRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    sessionId: sessionId,
                     cmdId: cmdId,
+                    sessionId: sessionId,
                     teamId: teamId,
                     slug: slug,
                     request: request);
@@ -240,9 +235,9 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "RunSessionCommand",
-                                methodName: "RunSessionCommandAsync",
-                                pathTemplate: "$\"/v2/sandboxes/sessions/{sessionId}/cmd\"",
+                                operationId: "WriteSessionCommandStdin",
+                                methodName: "WriteSessionCommandStdinAsync",
+                                pathTemplate: "$\"/v2/sandboxes/sessions/{sessionId}/cmd/{cmdId}/stdin\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
@@ -274,9 +269,9 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "RunSessionCommand",
-                                methodName: "RunSessionCommandAsync",
-                                pathTemplate: "$\"/v2/sandboxes/sessions/{sessionId}/cmd\"",
+                                operationId: "WriteSessionCommandStdin",
+                                methodName: "WriteSessionCommandStdinAsync",
+                                pathTemplate: "$\"/v2/sandboxes/sessions/{sessionId}/cmd/{cmdId}/stdin\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
@@ -315,9 +310,9 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "RunSessionCommand",
-                                methodName: "RunSessionCommandAsync",
-                                pathTemplate: "$\"/v2/sandboxes/sessions/{sessionId}/cmd\"",
+                                operationId: "WriteSessionCommandStdin",
+                                methodName: "WriteSessionCommandStdinAsync",
+                                pathTemplate: "$\"/v2/sandboxes/sessions/{sessionId}/cmd/{cmdId}/stdin\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
@@ -355,7 +350,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessRunSessionCommandResponse(
+                ProcessWriteSessionCommandStdinResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -363,9 +358,9 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "RunSessionCommand",
-                                methodName: "RunSessionCommandAsync",
-                                pathTemplate: "$\"/v2/sandboxes/sessions/{sessionId}/cmd\"",
+                                operationId: "WriteSessionCommandStdin",
+                                methodName: "WriteSessionCommandStdinAsync",
+                                pathTemplate: "$\"/v2/sandboxes/sessions/{sessionId}/cmd/{cmdId}/stdin\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
@@ -385,9 +380,9 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "RunSessionCommand",
-                                methodName: "RunSessionCommandAsync",
-                                pathTemplate: "$\"/v2/sandboxes/sessions/{sessionId}/cmd\"",
+                                operationId: "WriteSessionCommandStdin",
+                                methodName: "WriteSessionCommandStdinAsync",
+                                pathTemplate: "$\"/v2/sandboxes/sessions/{sessionId}/cmd/{cmdId}/stdin\"",
                                 httpMethod: "POST",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
@@ -531,6 +526,38 @@ namespace Vercel
                                         h => h.Value));
                             }
                             //
+                            if ((int)__response.StatusCode == 409)
+                            {
+                                string? __content_409 = null;
+                                global::System.Exception? __exception_409 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_409 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_409 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_409 = __ex;
+                                }
+
+
+                                throw global::Vercel.ApiException.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_409 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_409,
+                                    responseBody: __content_409,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
+                            //
                             if ((int)__response.StatusCode == 410)
                             {
                                 string? __content_410 = null;
@@ -658,6 +685,70 @@ namespace Vercel
                                         h => h.Key,
                                         h => h.Value));
                             }
+                            //
+                            if ((int)__response.StatusCode == 502)
+                            {
+                                string? __content_502 = null;
+                                global::System.Exception? __exception_502 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_502 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_502 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_502 = __ex;
+                                }
+
+
+                                throw global::Vercel.ApiException.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_502 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_502,
+                                    responseBody: __content_502,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
+                            //
+                            if ((int)__response.StatusCode == 504)
+                            {
+                                string? __content_504 = null;
+                                global::System.Exception? __exception_504 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_504 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_504 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_504 = __ex;
+                                }
+
+
+                                throw global::Vercel.ApiException.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_504 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_504,
+                                    responseBody: __content_504,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
 
                             if (__effectiveReadResponseAsString)
                             {
@@ -671,7 +762,7 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessRunSessionCommandResponseContent(
+                                ProcessWriteSessionCommandStdinResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -680,9 +771,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.RunSessionCommandResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.WriteSessionCommandStdinResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.RunSessionCommandResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.WriteSessionCommandStdinResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -712,9 +803,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.RunSessionCommandResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.WriteSessionCommandStdinResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.RunSessionCommandResponse>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.WriteSessionCommandStdinResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -755,16 +846,16 @@ namespace Vercel
             }
         }
         /// <summary>
-        /// Execute a command<br/>
-        /// Executes a shell command inside a running session. The command runs asynchronously and returns immediately with a command ID that can be used to track its progress and retrieve its output. Optionally, use the `wait` parameter to stream the command status until completion.
+        /// Write to command stdin<br/>
+        /// Writes data to the stdin of a running command, and optionally closes it. The command must have been started with `attachStdin` set to true. Writes are applied in the order they are received. Send them one at a time to keep the data in order. A write returns once the command has accepted the data, and fails with a 504 after 30 seconds if the command is not reading stdin. Each write counts against the sandbox control plane rate limit, so batch small writes where possible. Set `offset` to the position in stdin where `data` starts to make a request safe to resend, for example after a 502 or 504: bytes the command has already received are skipped, and an offset past them fails with a 409. The response returns `bytesWritten`, the total written so far, and a 504 includes it in the error when the sandbox reports it. A request with no `data` and no `close` writes nothing and returns it. If a request with an `offset` gets a response without `bytesWritten`, the sandbox predates offsets and ignored it, so resending that request is not safe.
         /// </summary>
-        /// <param name="sessionId">
-        /// The unique identifier of the session in which to execute the command.<br/>
-        /// Example: sbx_abc123
-        /// </param>
         /// <param name="cmdId">
-        /// The unique identifier of the command to stream logs for.<br/>
+        /// The unique identifier of the command to write to.<br/>
         /// Example: cmd_abc123
+        /// </param>
+        /// <param name="sessionId">
+        /// The unique identifier of the session containing the command.<br/>
+        /// Example: sbx_abc123
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -772,79 +863,42 @@ namespace Vercel
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
-        /// <param name="command">
-        /// The executable or shell command to run. This is the program name without arguments.<br/>
-        /// Example: npm
+        /// <param name="data">
+        /// Base64-encoded bytes to write to the command stdin. The request body is limited to 1 MB, so send at most about 700 KB of data per request.<br/>
+        /// Example: aGVsbG8K
         /// </param>
-        /// <param name="args">
-        /// Arguments to pass to the command. Each argument should be a separate array element.<br/>
-        /// Example: [install, --save, lodash]
+        /// <param name="offset">
+        /// The position in the command stdin where `data` starts. Bytes before the total already written are skipped, so a resent request does not write them twice. Fails with 409 if it is past the bytes written so far. Without it, `data` is appended.<br/>
+        /// Example: 0
         /// </param>
-        /// <param name="cwd">
-        /// The working directory in which to execute the command. Defaults to the sandbox home directory if not specified.<br/>
-        /// Example: /home/vercel-sandbox
-        /// </param>
-        /// <param name="env">
-        /// Additional environment variables to set for this command. These are merged with the sandbox environment.<br/>
-        /// Default Value: {}<br/>
-        /// Example: {"NODE_ENV":"production","DEBUG":"true"}
-        /// </param>
-        /// <param name="sudo">
-        /// Execute the command with root (superuser) privileges.<br/>
-        /// Default Value: false
-        /// </param>
-        /// <param name="wait">
-        /// If true, returns an ND-JSON stream that emits the command status when started and again when finished. Useful for synchronously waiting for command completion.<br/>
-        /// Default Value: false
-        /// </param>
-        /// <param name="logs">
-        /// If true, stream the logs of the command execution in real-time via ND-JSON. This is only applicable if `wait` is also true.<br/>
-        /// Default Value: false
-        /// </param>
-        /// <param name="timeout">
-        /// Maximum duration in milliseconds the command may run before it is killed with SIGKILL, up to 5 hours. Enforced at exec time, independently of `wait`.<br/>
-        /// Example: 30000
-        /// </param>
-        /// <param name="attachStdin">
-        /// If true, keeps the command stdin open so it can be written to with the stdin endpoint while the command runs. When false, the command reads from an empty stdin.<br/>
+        /// <param name="close">
+        /// If true, closes the command stdin after writing `data`. Use this for commands that wait for end of input.<br/>
         /// Default Value: false
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.RunSessionCommandResponse> RunSessionCommandAsync(
-            string sessionId,
+        public async global::System.Threading.Tasks.Task<global::Vercel.WriteSessionCommandStdinResponse> WriteSessionCommandStdinAsync(
             string cmdId,
-            string command,
+            string sessionId,
             string? teamId = default,
             string? slug = default,
-            global::System.Collections.Generic.IList<string>? args = default,
-            string? cwd = default,
-            global::System.Collections.Generic.Dictionary<string, string>? env = default,
-            bool? sudo = default,
-            bool? wait = default,
-            bool? logs = default,
-            int? timeout = default,
-            bool? attachStdin = default,
+            string? data = default,
+            int? offset = default,
+            bool? close = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::Vercel.RunSessionCommandRequest
+            var __request = new global::Vercel.WriteSessionCommandStdinRequest
             {
-                Command = command,
-                Args = args,
-                Cwd = cwd,
-                Env = env,
-                Sudo = sudo,
-                Wait = wait,
-                Logs = logs,
-                Timeout = timeout,
-                AttachStdin = attachStdin,
+                Data = data,
+                Offset = offset,
+                Close = close,
             };
 
-            return await RunSessionCommandAsync(
-                sessionId: sessionId,
+            return await WriteSessionCommandStdinAsync(
                 cmdId: cmdId,
+                sessionId: sessionId,
                 teamId: teamId,
                 slug: slug,
                 request: __request,

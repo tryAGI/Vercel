@@ -4,8 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.<br/>
-    /// Default Value: read-write
+    /// Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.
     /// </summary>
     public enum CreateSandboxesV4RequestMountsMode
     {

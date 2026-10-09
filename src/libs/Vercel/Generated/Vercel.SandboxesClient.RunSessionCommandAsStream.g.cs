@@ -471,6 +471,10 @@ namespace Vercel
         /// Maximum duration in milliseconds the command may run before it is killed with SIGKILL, up to 5 hours. Enforced at exec time, independently of `wait`.<br/>
         /// Example: 30000
         /// </param>
+        /// <param name="attachStdin">
+        /// If true, keeps the command stdin open so it can be written to with the stdin endpoint while the command runs. When false, the command reads from an empty stdin.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -487,6 +491,7 @@ namespace Vercel
             bool? wait = default,
             bool? logs = default,
             int? timeout = default,
+            bool? attachStdin = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             [global::System.Runtime.CompilerServices.EnumeratorCancellation] global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -500,6 +505,7 @@ namespace Vercel
                 Wait = wait,
                 Logs = logs,
                 Timeout = timeout,
+                AttachStdin = attachStdin,
             };
 
             var __enumerable = RunSessionCommandAsStreamAsync(

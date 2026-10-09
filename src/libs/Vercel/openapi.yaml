@@ -65795,7 +65795,6 @@
                         "mode": {
                           "type": "string",
                           "description": "Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.",
-                          "default": "read-write",
                           "enum": [
                             "snapshot",
                             "read-write"
@@ -67682,7 +67681,6 @@
                         "mode": {
                           "type": "string",
                           "description": "Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.",
-                          "default": "read-write",
                           "enum": [
                             "snapshot",
                             "read-write"
@@ -68225,6 +68223,11 @@
                     "minimum": 100,
                     "maximum": 18000000,
                     "example": 30000
+                  },
+                  "attachStdin": {
+                    "type": "boolean",
+                    "description": "If true, keeps the command stdin open so it can be written to with the stdin endpoint while the command runs. When false, the command reads from an empty stdin.",
+                    "default": false
                   }
                 }
               }
@@ -68462,6 +68465,148 @@
                     "type": "number",
                     "description": "The POSIX signal number to send to the process. Common values: 15 (SIGTERM) for graceful termination, 9 (SIGKILL) for forced termination.",
                     "example": 15
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v2/sandboxes/sessions/{sessionId}/cmd/{cmdId}/stdin": {
+      "post": {
+        "description": "Writes data to the stdin of a running command, and optionally closes it. The command must have been started with `attachStdin` set to true. Writes are applied in the order they are received. Send them one at a time to keep the data in order. A write returns once the command has accepted the data, and fails with a 504 after 30 seconds if the command is not reading stdin. Each write counts against the sandbox control plane rate limit, so batch small writes where possible. Set `offset` to the position in stdin where `data` starts to make a request safe to resend, for example after a 502 or 504: bytes the command has already received are skipped, and an offset past them fails with a 409. The response returns `bytesWritten`, the total written so far, and a 504 includes it in the error when the sandbox reports it. A request with no `data` and no `close` writes nothing and returns it. If a request with an `offset` gets a response without `bytesWritten`, the sandbox predates offsets and ignored it, so resending that request is not safe.",
+        "operationId": "writeSessionCommandStdin",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Write to command stdin",
+        "tags": [
+          "sandboxes"
+        ],
+        "responses": {
+          "200": {
+            "description": "The data was written to the command's stdin.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "bytesWritten": {
+                      "type": "number"
+                    },
+                    "command": {
+                      "$ref": "#/components/schemas/SessionCommand"
+                    }
+                  },
+                  "required": [
+                    "command"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "409": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "422": {
+            "description": ""
+          },
+          "429": {
+            "description": ""
+          },
+          "500": {
+            "description": ""
+          },
+          "502": {
+            "description": ""
+          },
+          "504": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "cmdId",
+            "description": "The unique identifier of the command to write to.",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The unique identifier of the command to write to.",
+              "example": "cmd_abc123"
+            }
+          },
+          {
+            "name": "sessionId",
+            "description": "The unique identifier of the session containing the command.",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The unique identifier of the session containing the command.",
+              "example": "sbx_abc123"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "data": {
+                    "type": "string",
+                    "description": "Base64-encoded bytes to write to the command stdin. The request body is limited to 1 MB, so send at most about 700 KB of data per request.",
+                    "maxLength": 1000000,
+                    "example": "aGVsbG8K"
+                  },
+                  "offset": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "description": "The position in the command stdin where `data` starts. Bytes before the total already written are skipped, so a resent request does not write them twice. Fails with 409 if it is past the bytes written so far. Without it, `data` is appended.",
+                    "example": 0
+                  },
+                  "close": {
+                    "type": "boolean",
+                    "description": "If true, closes the command stdin after writing `data`. Use this for commands that wait for end of input.",
+                    "default": false
                   }
                 }
               }
@@ -69579,7 +69724,6 @@
                         "mode": {
                           "type": "string",
                           "description": "Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.",
-                          "default": "read-write",
                           "enum": [
                             "snapshot",
                             "read-write"
@@ -70032,7 +70176,6 @@
                         "mode": {
                           "type": "string",
                           "description": "Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.",
-                          "default": "read-write",
                           "enum": [
                             "snapshot",
                             "read-write"
@@ -70530,7 +70673,6 @@
                         "mode": {
                           "type": "string",
                           "description": "Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.",
-                          "default": "read-write",
                           "enum": [
                             "snapshot",
                             "read-write"
@@ -70990,7 +71132,6 @@
                         "mode": {
                           "type": "string",
                           "description": "Mount the drive as read-write, or as a read-only snapshot. One writer is permitted at a time.",
-                          "default": "read-write",
                           "enum": [
                             "snapshot",
                             "read-write"
@@ -101110,6 +101251,8 @@
               "admin-agentic-provisioning-account-unlinked",
               "admin-plan-updated",
               "admin-preview-deployment-suffix-clear",
+              "admin-saml-idp-material-deleted",
+              "admin-saml-idp-material-set",
               "admin-secondary-email-added",
               "admin-secondary-email-removed",
               "admin-team-name-update",
@@ -101631,6 +101774,8 @@
               "sandbox-alias-delete",
               "sandbox-drive-created",
               "sandbox-drive-deleted",
+              "sandbox-drive-snapshot-created",
+              "sandbox-drive-snapshot-deleted",
               "sandbox-signed-commit-identity-configured",
               "sandbox-snapshot-regions-updated",
               "scale",
@@ -102045,6 +102190,8 @@
               "admin-agentic-provisioning-account-unlinked",
               "admin-plan-updated",
               "admin-preview-deployment-suffix-clear",
+              "admin-saml-idp-material-deleted",
+              "admin-saml-idp-material-set",
               "admin-secondary-email-added",
               "admin-secondary-email-removed",
               "admin-team-name-update",
@@ -102566,6 +102713,8 @@
               "sandbox-alias-delete",
               "sandbox-drive-created",
               "sandbox-drive-deleted",
+              "sandbox-drive-snapshot-created",
+              "sandbox-drive-snapshot-deleted",
               "sandbox-signed-commit-identity-configured",
               "sandbox-snapshot-regions-updated",
               "scale",
@@ -102768,6 +102917,8 @@
                 "admin-agentic-provisioning-account-unlinked",
                 "admin-plan-updated",
                 "admin-preview-deployment-suffix-clear",
+                "admin-saml-idp-material-deleted",
+                "admin-saml-idp-material-set",
                 "admin-secondary-email-added",
                 "admin-secondary-email-removed",
                 "admin-team-name-update",
@@ -103289,6 +103440,8 @@
                 "sandbox-alias-delete",
                 "sandbox-drive-created",
                 "sandbox-drive-deleted",
+                "sandbox-drive-snapshot-created",
+                "sandbox-drive-snapshot-deleted",
                 "sandbox-signed-commit-identity-configured",
                 "sandbox-snapshot-regions-updated",
                 "scale",
@@ -104241,6 +104394,9 @@
                     "read-write",
                     "snapshot"
                   ]
+                },
+                "snapshot": {
+                  "type": "string"
                 }
               },
               "required": [
