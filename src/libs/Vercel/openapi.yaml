@@ -64171,76 +64171,73 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "oneOf": [
-                    {
-                      "properties": {
-                        "partnerCalls": {
-                          "items": {
+                  "properties": {
+                    "partnerCalls": {
+                      "items": {
+                        "properties": {
+                          "installationId": {
+                            "type": "string"
+                          },
+                          "resourceIds": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          },
+                          "result": {
                             "properties": {
-                              "installationId": {
+                              "code": {
                                 "type": "string"
                               },
-                              "resourceIds": {
-                                "items": {
-                                  "type": "string"
-                                },
-                                "type": "array"
-                              },
-                              "result": {
-                                "properties": {
-                                  "code": {
-                                    "type": "string"
-                                  },
-                                  "error": {
-                                    "type": "object"
-                                  },
-                                  "status": {
-                                    "type": "string",
-                                    "enum": [
-                                      "errored",
-                                      "fulfilled"
-                                    ]
-                                  }
-                                },
-                                "required": [
-                                  "status"
-                                ],
+                              "error": {
                                 "type": "object"
+                              },
+                              "status": {
+                                "type": "string",
+                                "enum": [
+                                  "errored",
+                                  "fulfilled"
+                                ]
                               }
                             },
                             "required": [
-                              "installationId",
-                              "resourceIds",
-                              "result"
+                              "status"
                             ],
                             "type": "object"
-                          },
-                          "type": "array"
+                          }
                         },
-                        "resourceTransferErrors": {
-                          "items": {
-                            "type": "object"
-                          },
-                          "type": "array"
-                        },
-                        "transferredStoreIds": {
-                          "items": {
-                            "type": "string"
-                          },
-                          "type": "array"
-                        }
+                        "required": [
+                          "installationId",
+                          "resourceIds",
+                          "result"
+                        ],
+                        "type": "object"
                       },
-                      "required": [
-                        "partnerCalls",
-                        "resourceTransferErrors",
-                        "transferredStoreIds"
-                      ],
-                      "type": "object"
+                      "type": "array"
                     },
-                    {
-                      "type": "object"
+                    "projectName": {
+                      "type": "string"
+                    },
+                    "resourceTransferErrors": {
+                      "items": {
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
+                    "transferredStoreIds": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
                     }
-                  ]
+                  },
+                  "required": [
+                    "partnerCalls",
+                    "projectName",
+                    "resourceTransferErrors",
+                    "transferredStoreIds"
+                  ],
+                  "type": "object"
                 }
               }
             }
@@ -101369,6 +101366,7 @@
               "organization-avatar-update",
               "organization-create",
               "organization-delete",
+              "organization-dsync-delete",
               "organization-dsync-group-delete",
               "organization-dsync-group-upsert",
               "organization-emu-domains-merged",
@@ -102303,6 +102301,7 @@
               "organization-avatar-update",
               "organization-create",
               "organization-delete",
+              "organization-dsync-delete",
               "organization-dsync-group-delete",
               "organization-dsync-group-upsert",
               "organization-emu-domains-merged",
@@ -103025,6 +103024,7 @@
                 "organization-avatar-update",
                 "organization-create",
                 "organization-delete",
+                "organization-dsync-delete",
                 "organization-dsync-group-delete",
                 "organization-dsync-group-upsert",
                 "organization-emu-domains-merged",
