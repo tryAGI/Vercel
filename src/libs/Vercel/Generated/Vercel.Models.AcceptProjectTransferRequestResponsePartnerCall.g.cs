@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class AcceptProjectTransferRequestResponseVariant1PartnerCall
+    public sealed partial class AcceptProjectTransferRequestResponsePartnerCall
     {
         /// <summary>
         ///
@@ -27,7 +27,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("result")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AcceptProjectTransferRequestResponseVariant1PartnerCallResult Result { get; set; }
+        public required global::Vercel.AcceptProjectTransferRequestResponsePartnerCallResult Result { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -36,7 +36,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AcceptProjectTransferRequestResponseVariant1PartnerCall" /> class.
+        /// Initializes a new instance of the <see cref="AcceptProjectTransferRequestResponsePartnerCall" /> class.
         /// </summary>
         /// <param name="installationId"></param>
         /// <param name="resourceIds"></param>
@@ -44,10 +44,10 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public AcceptProjectTransferRequestResponseVariant1PartnerCall(
+        public AcceptProjectTransferRequestResponsePartnerCall(
             string installationId,
             global::System.Collections.Generic.IList<string> resourceIds,
-            global::Vercel.AcceptProjectTransferRequestResponseVariant1PartnerCallResult result)
+            global::Vercel.AcceptProjectTransferRequestResponsePartnerCallResult result)
         {
             this.InstallationId = installationId ?? throw new global::System.ArgumentNullException(nameof(installationId));
             this.ResourceIds = resourceIds ?? throw new global::System.ArgumentNullException(nameof(resourceIds));
@@ -55,9 +55,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AcceptProjectTransferRequestResponseVariant1PartnerCall" /> class.
+        /// Initializes a new instance of the <see cref="AcceptProjectTransferRequestResponsePartnerCall" /> class.
         /// </summary>
-        public AcceptProjectTransferRequestResponseVariant1PartnerCall()
+        public AcceptProjectTransferRequestResponsePartnerCall()
         {
         }
 

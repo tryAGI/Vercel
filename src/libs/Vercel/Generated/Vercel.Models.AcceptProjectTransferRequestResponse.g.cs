@@ -6,14 +6,21 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class AcceptProjectTransferRequestResponseVariant1
+    public sealed partial class AcceptProjectTransferRequestResponse
     {
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("partnerCalls")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.AcceptProjectTransferRequestResponseVariant1PartnerCall> PartnerCalls { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AcceptProjectTransferRequestResponsePartnerCall> PartnerCalls { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectName")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProjectName { get; set; }
 
         /// <summary>
         ///
@@ -36,28 +43,31 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AcceptProjectTransferRequestResponseVariant1" /> class.
+        /// Initializes a new instance of the <see cref="AcceptProjectTransferRequestResponse" /> class.
         /// </summary>
         /// <param name="partnerCalls"></param>
+        /// <param name="projectName"></param>
         /// <param name="resourceTransferErrors"></param>
         /// <param name="transferredStoreIds"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public AcceptProjectTransferRequestResponseVariant1(
-            global::System.Collections.Generic.IList<global::Vercel.AcceptProjectTransferRequestResponseVariant1PartnerCall> partnerCalls,
+        public AcceptProjectTransferRequestResponse(
+            global::System.Collections.Generic.IList<global::Vercel.AcceptProjectTransferRequestResponsePartnerCall> partnerCalls,
+            string projectName,
             global::System.Collections.Generic.IList<object> resourceTransferErrors,
             global::System.Collections.Generic.IList<string> transferredStoreIds)
         {
             this.PartnerCalls = partnerCalls ?? throw new global::System.ArgumentNullException(nameof(partnerCalls));
+            this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
             this.ResourceTransferErrors = resourceTransferErrors ?? throw new global::System.ArgumentNullException(nameof(resourceTransferErrors));
             this.TransferredStoreIds = transferredStoreIds ?? throw new global::System.ArgumentNullException(nameof(transferredStoreIds));
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AcceptProjectTransferRequestResponseVariant1" /> class.
+        /// Initializes a new instance of the <see cref="AcceptProjectTransferRequestResponse" /> class.
         /// </summary>
-        public AcceptProjectTransferRequestResponseVariant1()
+        public AcceptProjectTransferRequestResponse()
         {
         }
 

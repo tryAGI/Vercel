@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class AcceptProjectTransferRequestResponseVariant1PartnerCallResult
+    public sealed partial class AcceptProjectTransferRequestResponsePartnerCallResult
     {
         /// <summary>
         ///
@@ -24,9 +24,9 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("status")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AcceptProjectTransferRequestResponseVariant1PartnerCallResultStatusJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AcceptProjectTransferRequestResponsePartnerCallResultStatusJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AcceptProjectTransferRequestResponseVariant1PartnerCallResultStatus Status { get; set; }
+        public required global::Vercel.AcceptProjectTransferRequestResponsePartnerCallResultStatus Status { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -35,7 +35,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AcceptProjectTransferRequestResponseVariant1PartnerCallResult" /> class.
+        /// Initializes a new instance of the <see cref="AcceptProjectTransferRequestResponsePartnerCallResult" /> class.
         /// </summary>
         /// <param name="status"></param>
         /// <param name="code"></param>
@@ -43,8 +43,8 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public AcceptProjectTransferRequestResponseVariant1PartnerCallResult(
-            global::Vercel.AcceptProjectTransferRequestResponseVariant1PartnerCallResultStatus status,
+        public AcceptProjectTransferRequestResponsePartnerCallResult(
+            global::Vercel.AcceptProjectTransferRequestResponsePartnerCallResultStatus status,
             string? code,
             object? error)
         {
@@ -54,9 +54,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AcceptProjectTransferRequestResponseVariant1PartnerCallResult" /> class.
+        /// Initializes a new instance of the <see cref="AcceptProjectTransferRequestResponsePartnerCallResult" /> class.
         /// </summary>
-        public AcceptProjectTransferRequestResponseVariant1PartnerCallResult()
+        public AcceptProjectTransferRequestResponsePartnerCallResult()
         {
         }
 

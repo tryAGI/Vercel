@@ -3,10 +3,10 @@
 namespace Vercel.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class AcceptProjectTransferRequestResponseVariant1PartnerCallResultStatusNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.AcceptProjectTransferRequestResponseVariant1PartnerCallResultStatus?>
+    public sealed class AcceptProjectTransferRequestResponsePartnerCallResultStatusNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.AcceptProjectTransferRequestResponsePartnerCallResultStatus?>
     {
         /// <inheritdoc />
-        public override global::Vercel.AcceptProjectTransferRequestResponseVariant1PartnerCallResultStatus? Read(
+        public override global::Vercel.AcceptProjectTransferRequestResponsePartnerCallResultStatus? Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Vercel.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Vercel.AcceptProjectTransferRequestResponseVariant1PartnerCallResultStatusExtensions.ToEnum(stringValue);
+                        return global::Vercel.AcceptProjectTransferRequestResponsePartnerCallResultStatusExtensions.ToEnum(stringValue);
                     }
 
                     break;
@@ -26,11 +26,11 @@ namespace Vercel.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Vercel.AcceptProjectTransferRequestResponseVariant1PartnerCallResultStatus)numValue;
+                    return (global::Vercel.AcceptProjectTransferRequestResponsePartnerCallResultStatus)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Vercel.AcceptProjectTransferRequestResponseVariant1PartnerCallResultStatus?);
+                    return default(global::Vercel.AcceptProjectTransferRequestResponsePartnerCallResultStatus?);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,7 +42,7 @@ namespace Vercel.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Vercel.AcceptProjectTransferRequestResponseVariant1PartnerCallResultStatus? value,
+            global::Vercel.AcceptProjectTransferRequestResponsePartnerCallResultStatus? value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
@@ -53,7 +53,7 @@ namespace Vercel.JsonConverters
             }
             else
             {
-                writer.WriteStringValue(global::Vercel.AcceptProjectTransferRequestResponseVariant1PartnerCallResultStatusExtensions.ToValueString(value.Value));
+                writer.WriteStringValue(global::Vercel.AcceptProjectTransferRequestResponsePartnerCallResultStatusExtensions.ToValueString(value.Value));
             }
         }
     }

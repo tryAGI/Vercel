@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class AcceptProjectTransferRequestResponseVariant1ResourceTransferError
+    public sealed partial class AcceptProjectTransferRequestResponseResourceTransferError
     {
 
         /// <summary>
