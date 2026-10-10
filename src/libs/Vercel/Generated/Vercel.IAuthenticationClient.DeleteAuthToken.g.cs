@@ -8,6 +8,12 @@ namespace Vercel
         /// Delete an authentication token<br/>
         /// Invalidate an authentication token, such that it will no longer be valid for future HTTP requests.
         /// </summary>
+        /// <param name="reason">
+        /// Identifies an explicit logout for the deletion event. Only applies when tokenId is current.
+        /// </param>
+        /// <param name="logoutSource">
+        /// The product the caller is logging out of. Only applies when reason is logout and tokenId is current.
+        /// </param>
         /// <param name="tokenId">
         /// The identifier of the token to invalidate. The special value "current" may be supplied, which invalidates the token that the HTTP request was authenticated with.<br/>
         /// Example: 5d9f2ebd38ddca62e5d51e9c1704c72530bdc8bfdd41e782a6687c48399e8391
@@ -17,12 +23,20 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.DeleteAuthTokenResponse> DeleteAuthTokenAsync(
             string tokenId,
+            global::Vercel.DeleteAuthTokenReason? reason = default,
+            global::Vercel.DeleteAuthTokenLogoutSource? logoutSource = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Delete an authentication token<br/>
         /// Invalidate an authentication token, such that it will no longer be valid for future HTTP requests.
         /// </summary>
+        /// <param name="reason">
+        /// Identifies an explicit logout for the deletion event. Only applies when tokenId is current.
+        /// </param>
+        /// <param name="logoutSource">
+        /// The product the caller is logging out of. Only applies when reason is logout and tokenId is current.
+        /// </param>
         /// <param name="tokenId">
         /// The identifier of the token to invalidate. The special value "current" may be supplied, which invalidates the token that the HTTP request was authenticated with.<br/>
         /// Example: 5d9f2ebd38ddca62e5d51e9c1704c72530bdc8bfdd41e782a6687c48399e8391
@@ -32,6 +46,8 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.DeleteAuthTokenResponse>> DeleteAuthTokenAsResponseAsync(
             string tokenId,
+            global::Vercel.DeleteAuthTokenReason? reason = default,
+            global::Vercel.DeleteAuthTokenLogoutSource? logoutSource = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

@@ -3,11 +3,11 @@
 
 namespace Vercel
 {
-    public partial class SandboxesClient
+    public partial class VercelCiClient
     {
 
 
-        private static readonly global::Vercel.EndPointSecurityRequirement s_CreateSandboxesV2SecurityRequirement0 =
+        private static readonly global::Vercel.EndPointSecurityRequirement s_UpdateVercelCiRepositorySettingsSecurityRequirement0 =
             new global::Vercel.EndPointSecurityRequirement
             {
                 Authorizations = new global::Vercel.EndPointAuthorizationRequirement[]
@@ -21,34 +21,43 @@ namespace Vercel
                     },
                 },
             };
-        private static readonly global::Vercel.EndPointSecurityRequirement[] s_CreateSandboxesV2SecurityRequirements =
+        private static readonly global::Vercel.EndPointSecurityRequirement[] s_UpdateVercelCiRepositorySettingsSecurityRequirements =
             new global::Vercel.EndPointSecurityRequirement[]
-            {                s_CreateSandboxesV2SecurityRequirement0,
+            {                s_UpdateVercelCiRepositorySettingsSecurityRequirement0,
             };
-        partial void PrepareCreateSandboxesV2Arguments(
+        partial void PrepareUpdateVercelCiRepositorySettingsArguments(
             global::System.Net.Http.HttpClient httpClient,
+            ref global::Vercel.UpdateVercelCiRepositorySettingsProvider provider,
+            ref string organizationId,
+            ref string repository,
             ref string? teamId,
             ref string? slug,
-            global::Vercel.CreateSandboxesV2Request request);
-        partial void PrepareCreateSandboxesV2Request(
+            global::Vercel.UpdateVercelCiRepositorySettingsRequest request);
+        partial void PrepareUpdateVercelCiRepositorySettingsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            global::Vercel.UpdateVercelCiRepositorySettingsProvider provider,
+            string organizationId,
+            string repository,
             string? teamId,
             string? slug,
-            global::Vercel.CreateSandboxesV2Request request);
-        partial void ProcessCreateSandboxesV2Response(
+            global::Vercel.UpdateVercelCiRepositorySettingsRequest request);
+        partial void ProcessUpdateVercelCiRepositorySettingsResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
 
-        partial void ProcessCreateSandboxesV2ResponseContent(
+        partial void ProcessUpdateVercelCiRepositorySettingsResponseContent(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage,
             ref string content);
 
         /// <summary>
-        /// Create a named sandbox<br/>
-        /// Creates a named sandbox environment. Named sandboxes have a unique name within a project and support automatic snapshotting on shutdown.
+        /// Enable or disable Vercel CI for a connected repository<br/>
+        /// Update Repository Settings
         /// </summary>
+        /// <param name="provider"></param>
+        /// <param name="organizationId"></param>
+        /// <param name="repository"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -59,15 +68,21 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.CreateSandboxesV2Response> CreateSandboxesV2Async(
+        public async global::System.Threading.Tasks.Task<global::Vercel.UpdateVercelCiRepositorySettingsResponse> UpdateVercelCiRepositorySettingsAsync(
+            global::Vercel.UpdateVercelCiRepositorySettingsProvider provider,
+            string organizationId,
+            string repository,
 
-            global::Vercel.CreateSandboxesV2Request request,
+            global::Vercel.UpdateVercelCiRepositorySettingsRequest request,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __response = await CreateSandboxesV2AsResponseAsync(
+            var __response = await UpdateVercelCiRepositorySettingsAsResponseAsync(
+                provider: provider,
+                organizationId: organizationId,
+                repository: repository,
 
                 request: request,
                 teamId: teamId,
@@ -79,9 +94,12 @@ namespace Vercel
             return __response.Body;
         }
         /// <summary>
-        /// Create a named sandbox<br/>
-        /// Creates a named sandbox environment. Named sandboxes have a unique name within a project and support automatic snapshotting on shutdown.
+        /// Enable or disable Vercel CI for a connected repository<br/>
+        /// Update Repository Settings
         /// </summary>
+        /// <param name="provider"></param>
+        /// <param name="organizationId"></param>
+        /// <param name="repository"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -92,9 +110,12 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateSandboxesV2Response>> CreateSandboxesV2AsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateVercelCiRepositorySettingsResponse>> UpdateVercelCiRepositorySettingsAsResponseAsync(
+            global::Vercel.UpdateVercelCiRepositorySettingsProvider provider,
+            string organizationId,
+            string repository,
 
-            global::Vercel.CreateSandboxesV2Request request,
+            global::Vercel.UpdateVercelCiRepositorySettingsRequest request,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -104,8 +125,11 @@ namespace Vercel
 
             PrepareArguments(
                 client: HttpClient);
-            PrepareCreateSandboxesV2Arguments(
+            PrepareUpdateVercelCiRepositorySettingsArguments(
                 httpClient: HttpClient,
+                provider: ref provider,
+                organizationId: ref organizationId,
+                repository: ref repository,
                 teamId: ref teamId,
                 slug: ref slug,
                 request: request);
@@ -113,8 +137,8 @@ namespace Vercel
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
                 availableAuthorizations: Authorizations,
-                securityRequirements: s_CreateSandboxesV2SecurityRequirements,
-                operationName: "CreateSandboxesV2Async");
+                securityRequirements: s_UpdateVercelCiRepositorySettingsSecurityRequirements,
+                operationName: "UpdateVercelCiRepositorySettingsAsync");
 
             using var __timeoutCancellationTokenSource = global::Vercel.AutoSDKRequestOptionsSupport.CreateTimeoutCancellationTokenSource(
                 clientOptions: Options,
@@ -134,9 +158,12 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: "/v2/sandboxes",
+                                path: "/v1/vercel-ci/repository-settings",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
+                                .AddRequiredParameter("provider", provider.ToValueString())
+                                .AddRequiredParameter("organizationId", organizationId)
+                                .AddRequiredParameter("repository", repository)
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -146,7 +173,7 @@ namespace Vercel
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
-                    method: global::System.Net.Http.HttpMethod.Post,
+                    method: new global::System.Net.Http.HttpMethod("PATCH"),
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
 #if NET6_0_OR_GREATER
                 __httpRequest.Version = global::System.Net.HttpVersion.Version11;
@@ -183,9 +210,12 @@ namespace Vercel
                 PrepareRequest(
                     client: HttpClient,
                     request: __httpRequest);
-                PrepareCreateSandboxesV2Request(
+                PrepareUpdateVercelCiRepositorySettingsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
+                    provider: provider,
+                    organizationId: organizationId,
+                    repository: repository,
                     teamId: teamId,
                     slug: slug,
                     request: request);
@@ -205,10 +235,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnBeforeRequestAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateSandboxesV2",
-                                methodName: "CreateSandboxesV2Async",
-                                pathTemplate: "\"/v2/sandboxes\"",
-                                httpMethod: "POST",
+                                operationId: "UpdateVercelCiRepositorySettings",
+                                methodName: "UpdateVercelCiRepositorySettingsAsync",
+                                pathTemplate: "\"/v1/vercel-ci/repository-settings\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
@@ -239,10 +269,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateSandboxesV2",
-                                methodName: "CreateSandboxesV2Async",
-                                pathTemplate: "\"/v2/sandboxes\"",
-                                httpMethod: "POST",
+                                operationId: "UpdateVercelCiRepositorySettings",
+                                methodName: "UpdateVercelCiRepositorySettingsAsync",
+                                pathTemplate: "\"/v1/vercel-ci/repository-settings\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
@@ -280,10 +310,10 @@ namespace Vercel
                         await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateSandboxesV2",
-                                methodName: "CreateSandboxesV2Async",
-                                pathTemplate: "\"/v2/sandboxes\"",
-                                httpMethod: "POST",
+                                operationId: "UpdateVercelCiRepositorySettings",
+                                methodName: "UpdateVercelCiRepositorySettingsAsync",
+                                pathTemplate: "\"/v1/vercel-ci/repository-settings\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
@@ -320,7 +350,7 @@ namespace Vercel
                 ProcessResponse(
                     client: HttpClient,
                     response: __response);
-                ProcessCreateSandboxesV2Response(
+                ProcessUpdateVercelCiRepositorySettingsResponse(
                     httpClient: HttpClient,
                     httpResponseMessage: __response);
                 if (__response.IsSuccessStatusCode)
@@ -328,10 +358,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterSuccessAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateSandboxesV2",
-                                methodName: "CreateSandboxesV2Async",
-                                pathTemplate: "\"/v2/sandboxes\"",
-                                httpMethod: "POST",
+                                operationId: "UpdateVercelCiRepositorySettings",
+                                methodName: "UpdateVercelCiRepositorySettingsAsync",
+                                pathTemplate: "\"/v1/vercel-ci/repository-settings\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
@@ -350,10 +380,10 @@ namespace Vercel
                     await global::Vercel.AutoSDKRequestOptionsSupport.OnAfterErrorAsync(
                             clientOptions: Options,
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
-                                operationId: "CreateSandboxesV2",
-                                methodName: "CreateSandboxesV2Async",
-                                pathTemplate: "\"/v2/sandboxes\"",
-                                httpMethod: "POST",
+                                operationId: "UpdateVercelCiRepositorySettings",
+                                methodName: "UpdateVercelCiRepositorySettingsAsync",
+                                pathTemplate: "\"/v1/vercel-ci/repository-settings\"",
+                                httpMethod: "PATCH",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
@@ -399,20 +429,24 @@ namespace Vercel
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            //
+                            // The request is not authorized.
                             if ((int)__response.StatusCode == 401)
                             {
                                 string? __content_401 = null;
                                 global::System.Exception? __exception_401 = null;
+                                global::Vercel.UpdateVercelCiRepositorySettingsResponse2? __value_401 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_401 = global::Vercel.UpdateVercelCiRepositorySettingsResponse2.FromJson(__content_401, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_401 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_401 = global::Vercel.UpdateVercelCiRepositorySettingsResponse2.FromJson(__content_401, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -421,62 +455,35 @@ namespace Vercel
                                 }
 
 
-                                throw global::Vercel.ApiException.Create(
+                                throw global::Vercel.ApiException<global::Vercel.UpdateVercelCiRepositorySettingsResponse2>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
+                                    responseObject: __value_401,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
                                         h => h.Value));
                             }
-                            //
-                            if ((int)__response.StatusCode == 402)
-                            {
-                                string? __content_402 = null;
-                                global::System.Exception? __exception_402 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_402 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_402 = __ex;
-                                }
-
-
-                                throw global::Vercel.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_402 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_402,
-                                    responseBody: __content_402,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
-                            //
+                            // You do not have permission to access this resource.
                             if ((int)__response.StatusCode == 403)
                             {
                                 string? __content_403 = null;
                                 global::System.Exception? __exception_403 = null;
+                                global::Vercel.UpdateVercelCiRepositorySettingsResponse3? __value_403 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_403 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_403 = global::Vercel.UpdateVercelCiRepositorySettingsResponse3.FromJson(__content_403, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_403 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_403 = global::Vercel.UpdateVercelCiRepositorySettingsResponse3.FromJson(__content_403, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -485,11 +492,12 @@ namespace Vercel
                                 }
 
 
-                                throw global::Vercel.ApiException.Create(
+                                throw global::Vercel.ApiException<global::Vercel.UpdateVercelCiRepositorySettingsResponse3>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_403,
                                     responseBody: __content_403,
+                                    responseObject: __value_403,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
@@ -592,51 +600,23 @@ namespace Vercel
                                         h => h.Value));
                             }
                             //
-                            if ((int)__response.StatusCode == 422)
-                            {
-                                string? __content_422 = null;
-                                global::System.Exception? __exception_422 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_422 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_422 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_422 = __ex;
-                                }
-
-
-                                throw global::Vercel.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_422 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_422,
-                                    responseBody: __content_422,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
-                            //
                             if ((int)__response.StatusCode == 429)
                             {
                                 string? __content_429 = null;
                                 global::System.Exception? __exception_429 = null;
+                                global::Vercel.UpdateVercelCiRepositorySettingsResponse4? __value_429 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_429 = global::Vercel.UpdateVercelCiRepositorySettingsResponse4.FromJson(__content_429, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_429 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_429 = global::Vercel.UpdateVercelCiRepositorySettingsResponse4.FromJson(__content_429, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -645,11 +625,12 @@ namespace Vercel
                                 }
 
 
-                                throw global::Vercel.ApiException.Create(
+                                throw global::Vercel.ApiException<global::Vercel.UpdateVercelCiRepositorySettingsResponse4>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_429 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_429,
                                     responseBody: __content_429,
+                                    responseObject: __value_429,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
@@ -660,15 +641,19 @@ namespace Vercel
                             {
                                 string? __content_500 = null;
                                 global::System.Exception? __exception_500 = null;
+                                global::Vercel.UpdateVercelCiRepositorySettingsResponse5? __value_500 = null;
                                 try
                                 {
                                     if (__effectiveReadResponseAsString)
                                     {
                                         __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                        __value_500 = global::Vercel.UpdateVercelCiRepositorySettingsResponse5.FromJson(__content_500, JsonSerializerContext);
                                     }
                                     else
                                     {
                                         __content_500 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+
+                                        __value_500 = global::Vercel.UpdateVercelCiRepositorySettingsResponse5.FromJson(__content_500, JsonSerializerContext);
                                     }
                                 }
                                 catch (global::System.Exception __ex)
@@ -677,75 +662,12 @@ namespace Vercel
                                 }
 
 
-                                throw global::Vercel.ApiException.Create(
+                                throw global::Vercel.ApiException<global::Vercel.UpdateVercelCiRepositorySettingsResponse5>.Create(
                                     statusCode: __response.StatusCode,
                                     message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_500,
                                     responseBody: __content_500,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
-                            //
-                            if ((int)__response.StatusCode == 502)
-                            {
-                                string? __content_502 = null;
-                                global::System.Exception? __exception_502 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_502 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_502 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_502 = __ex;
-                                }
-
-
-                                throw global::Vercel.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_502 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_502,
-                                    responseBody: __content_502,
-                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
-                                        __response.Headers,
-                                        h => h.Key,
-                                        h => h.Value));
-                            }
-                            //
-                            if ((int)__response.StatusCode == 503)
-                            {
-                                string? __content_503 = null;
-                                global::System.Exception? __exception_503 = null;
-                                try
-                                {
-                                    if (__effectiveReadResponseAsString)
-                                    {
-                                        __content_503 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                    else
-                                    {
-                                        __content_503 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
-                                    }
-                                }
-                                catch (global::System.Exception __ex)
-                                {
-                                    __exception_503 = __ex;
-                                }
-
-
-                                throw global::Vercel.ApiException.Create(
-                                    statusCode: __response.StatusCode,
-                                    message: __content_503 ?? __response.ReasonPhrase ?? string.Empty,
-                                    innerException: __exception_503,
-                                    responseBody: __content_503,
+                                    responseObject: __value_500,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
                                         __response.Headers,
                                         h => h.Key,
@@ -764,7 +686,7 @@ namespace Vercel
                                     client: HttpClient,
                                     response: __response,
                                     content: ref __content);
-                                ProcessCreateSandboxesV2ResponseContent(
+                                ProcessUpdateVercelCiRepositorySettingsResponseContent(
                                     httpClient: HttpClient,
                                     httpResponseMessage: __response,
                                     content: ref __content);
@@ -773,9 +695,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.CreateSandboxesV2Response.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.UpdateVercelCiRepositorySettingsResponse.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateSandboxesV2Response>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateVercelCiRepositorySettingsResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -805,9 +727,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.CreateSandboxesV2Response.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.UpdateVercelCiRepositorySettingsResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.CreateSandboxesV2Response>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.UpdateVercelCiRepositorySettingsResponse>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -848,137 +770,41 @@ namespace Vercel
             }
         }
         /// <summary>
-        /// Create a named sandbox<br/>
-        /// Creates a named sandbox environment. Named sandboxes have a unique name within a project and support automatic snapshotting on shutdown.
+        /// Enable or disable Vercel CI for a connected repository<br/>
+        /// Update Repository Settings
         /// </summary>
+        /// <param name="provider"></param>
+        /// <param name="organizationId"></param>
+        /// <param name="repository"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
-        /// <param name="networkPolicy"></param>
-        /// <param name="runtime">
-        /// The runtime environment for the sandbox. Determines the pre-installed language runtimes and tools available.<br/>
-        /// Default Value: node24<br/>
-        /// Example: node24
-        /// </param>
-        /// <param name="architecture">
-        /// CPU architecture. Inherits a snapshot or single image manifest when omitted. Image indexes default to amd64. Must match the source. ARM64 creation requires API v3 or v4 without runtime and team access.<br/>
-        /// Example: arm64
-        /// </param>
-        /// <param name="resources">
-        /// Resources to define the VM
-        /// </param>
-        /// <param name="source">
-        /// The source from which to initialize the sandbox filesystem. Can be a Git repository, a tarball URL, or an existing snapshot.
-        /// </param>
-        /// <param name="projectId">
-        /// The target project slug or ID in which the sandbox will be assigned to.<br/>
-        /// Example: prj_abc123
-        /// </param>
-        /// <param name="ports">
-        /// List of ports to expose from the sandbox. Each port will be accessible via a unique URL. Maximum of 15 ports can be exposed.<br/>
-        /// Example: [3000, 4000]
-        /// </param>
-        /// <param name="image">
-        /// Image to use for the sandbox.
-        /// </param>
-        /// <param name="timeout">
-        /// Maximum duration in milliseconds that the sandbox can run before being automatically stopped.<br/>
-        /// Example: 300000
-        /// </param>
-        /// <param name="env">
-        /// Default environment variables for the sandbox. These are inherited by all commands unless overridden.<br/>
-        /// Default Value: {}<br/>
-        /// Example: {"NODE_ENV":"production","HELLO":"world"}
-        /// </param>
-        /// <param name="mounts">
-        /// List of drives to mount to the sandbox at the provided path.
-        /// </param>
-        /// <param name="region">
-        /// The Vercel region in which to create the sandbox.<br/>
-        /// Default Value: [iad1, sfo1, cle1, cdg1, fra1, arn1, sin1, pdx1, lhr1, icn1, bom1, cpt1, dub1, gru1, hkg1, syd1, yul1, hnd1, kix1]<br/>
-        /// Example: iad1
-        /// </param>
-        /// <param name="failoverRegions">
-        /// The regions the sandbox falls back to when it cannot be created in `region`.<br/>
-        /// Example: [sfo1, cle1]
-        /// </param>
-        /// <param name="networkId">
-        /// The Connect network id for the target Secure Compute private network.
-        /// </param>
-        /// <param name="name">
-        /// Name for the sandbox. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
-        /// Example: my-sandbox
-        /// </param>
-        /// <param name="persistent">
-        /// Whether the sandbox persists its state across restarts via automatic snapshots. Defaults to true.<br/>
-        /// Default Value: true
-        /// </param>
-        /// <param name="snapshotExpiration">
-        /// Default snapshot expiration time in milliseconds. Set to 0 to disable expiration. When set, this value is used as the default expiration for all snapshots created for this sandbox.<br/>
-        /// Example: 604800000
-        /// </param>
-        /// <param name="keepLastSnapshots">
-        /// Protect the N most recent snapshots with different expiration/deletion behavior.
-        /// </param>
-        /// <param name="tags">
-        /// Key-value tags to associate with the sandbox. Maximum 5 tags.<br/>
-        /// Example: {"env":"staging","team":"platform"}
-        /// </param>
+        /// <param name="ciEnabled"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.CreateSandboxesV2Response> CreateSandboxesV2Async(
+        public async global::System.Threading.Tasks.Task<global::Vercel.UpdateVercelCiRepositorySettingsResponse> UpdateVercelCiRepositorySettingsAsync(
+            global::Vercel.UpdateVercelCiRepositorySettingsProvider provider,
+            string organizationId,
+            string repository,
+            bool ciEnabled,
             string? teamId = default,
             string? slug = default,
-            global::Vercel.AutoSDKShared9296e9c5692fbba2? networkPolicy = default,
-            global::Vercel.CreateSandboxesV2RequestRuntime? runtime = default,
-            global::Vercel.CreateSandboxesV2RequestArchitecture? architecture = default,
-            global::Vercel.CreateSandboxesV2RequestResources? resources = default,
-            global::Vercel.OneOf<global::Vercel.CreateSandboxesV2RequestSourceVariant1, global::Vercel.CreateSandboxesV2RequestSourceVariant2, global::Vercel.CreateSandboxesV2RequestSourceVariant3>? source = default,
-            string? projectId = default,
-            global::System.Collections.Generic.IList<int>? ports = default,
-            string? image = default,
-            int? timeout = default,
-            global::System.Collections.Generic.Dictionary<string, string>? env = default,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateSandboxesV2RequestMounts2>? mounts = default,
-            global::Vercel.CreateSandboxesV2RequestRegion? region = default,
-            global::System.Collections.Generic.IList<global::Vercel.CreateSandboxesV2RequestFailoverRegion>? failoverRegions = default,
-            string? networkId = default,
-            string? name = default,
-            bool? persistent = default,
-            global::Vercel.OneOf<object, int?>? snapshotExpiration = default,
-            global::Vercel.CreateSandboxesV2RequestKeepLastSnapshots? keepLastSnapshots = default,
-            global::System.Collections.Generic.Dictionary<string, string>? tags = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::Vercel.CreateSandboxesV2Request
+            var __request = new global::Vercel.UpdateVercelCiRepositorySettingsRequest
             {
-                NetworkPolicy = networkPolicy,
-                Runtime = runtime,
-                Architecture = architecture,
-                Resources = resources,
-                Source = source,
-                ProjectId = projectId,
-                Ports = ports,
-                Image = image,
-                Timeout = timeout,
-                Env = env,
-                Mounts = mounts,
-                Region = region,
-                FailoverRegions = failoverRegions,
-                NetworkId = networkId,
-                Name = name,
-                Persistent = persistent,
-                SnapshotExpiration = snapshotExpiration,
-                KeepLastSnapshots = keepLastSnapshots,
-                Tags = tags,
+                CiEnabled = ciEnabled,
             };
 
-            return await CreateSandboxesV2Async(
+            return await UpdateVercelCiRepositorySettingsAsync(
+                provider: provider,
+                organizationId: organizationId,
+                repository: repository,
                 teamId: teamId,
                 slug: slug,
                 request: __request,
