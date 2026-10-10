@@ -1448,6 +1448,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        OrganizationDsyncSyncStart,
+        /// <summary>
+        ///
+        /// </summary>
         OrganizationEmuDomainsMerged,
         /// <summary>
         ///
@@ -3262,6 +3266,7 @@ namespace Vercel
                 ListEventTypeName.OrganizationDsyncDelete => "organization-dsync-delete",
                 ListEventTypeName.OrganizationDsyncGroupDelete => "organization-dsync-group-delete",
                 ListEventTypeName.OrganizationDsyncGroupUpsert => "organization-dsync-group-upsert",
+                ListEventTypeName.OrganizationDsyncSyncStart => "organization-dsync-sync-start",
                 ListEventTypeName.OrganizationEmuDomainsMerged => "organization-emu-domains-merged",
                 ListEventTypeName.OrganizationEmuTeamUpdated => "organization-emu-team-updated",
                 ListEventTypeName.OrganizationEmuUpdated => "organization-emu-updated",
@@ -3992,6 +3997,7 @@ namespace Vercel
                 "organization-dsync-delete" => ListEventTypeName.OrganizationDsyncDelete,
                 "organization-dsync-group-delete" => ListEventTypeName.OrganizationDsyncGroupDelete,
                 "organization-dsync-group-upsert" => ListEventTypeName.OrganizationDsyncGroupUpsert,
+                "organization-dsync-sync-start" => ListEventTypeName.OrganizationDsyncSyncStart,
                 "organization-emu-domains-merged" => ListEventTypeName.OrganizationEmuDomainsMerged,
                 "organization-emu-team-updated" => ListEventTypeName.OrganizationEmuTeamUpdated,
                 "organization-emu-updated" => ListEventTypeName.OrganizationEmuUpdated,
