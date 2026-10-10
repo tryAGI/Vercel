@@ -72,6 +72,10 @@ namespace Vercel
         ///
         /// </summary>
         SnowflakeWif,
+        /// <summary>
+        ///
+        /// </summary>
+        StripeApiKey,
     }
 
     /// <summary>
@@ -102,6 +106,7 @@ namespace Vercel
                 ConnectConnectorType.Slack => "slack",
                 ConnectConnectorType.Snowflake => "snowflake",
                 ConnectConnectorType.SnowflakeWif => "snowflake-wif",
+                ConnectConnectorType.StripeApiKey => "stripe-api-key",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -128,6 +133,7 @@ namespace Vercel
                 "slack" => ConnectConnectorType.Slack,
                 "snowflake" => ConnectConnectorType.Snowflake,
                 "snowflake-wif" => ConnectConnectorType.SnowflakeWif,
+                "stripe-api-key" => ConnectConnectorType.StripeApiKey,
                 _ => null,
             };
         }

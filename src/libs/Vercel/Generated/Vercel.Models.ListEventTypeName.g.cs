@@ -2844,6 +2844,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        VercelCiRepositorySettingsUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         VercelToolbar,
         /// <summary>
         ///
@@ -3607,6 +3611,7 @@ namespace Vercel
                 ListEventTypeName.VercelAppInstalled => "vercel-app-installed",
                 ListEventTypeName.VercelAppTokensRevoked => "vercel-app-tokens-revoked",
                 ListEventTypeName.VercelAppUninstalled => "vercel-app-uninstalled",
+                ListEventTypeName.VercelCiRepositorySettingsUpdated => "vercel-ci-repository-settings-updated",
                 ListEventTypeName.VercelToolbar => "vercel-toolbar",
                 ListEventTypeName.VpcPeeringConnectionAccepted => "vpc-peering-connection-accepted",
                 ListEventTypeName.VpcPeeringConnectionDeleted => "vpc-peering-connection-deleted",
@@ -4336,6 +4341,7 @@ namespace Vercel
                 "vercel-app-installed" => ListEventTypeName.VercelAppInstalled,
                 "vercel-app-tokens-revoked" => ListEventTypeName.VercelAppTokensRevoked,
                 "vercel-app-uninstalled" => ListEventTypeName.VercelAppUninstalled,
+                "vercel-ci-repository-settings-updated" => ListEventTypeName.VercelCiRepositorySettingsUpdated,
                 "vercel-toolbar" => ListEventTypeName.VercelToolbar,
                 "vpc-peering-connection-accepted" => ListEventTypeName.VpcPeeringConnectionAccepted,
                 "vpc-peering-connection-deleted" => ListEventTypeName.VpcPeeringConnectionDeleted,
