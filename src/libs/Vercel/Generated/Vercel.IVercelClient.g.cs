@@ -63,11 +63,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public ApiAiGatewayClient ApiAiGateway { get; }
-
-        /// <summary>
-        ///
-        /// </summary>
         public ArtifactsClient Artifacts { get; }
 
         /// <summary>
