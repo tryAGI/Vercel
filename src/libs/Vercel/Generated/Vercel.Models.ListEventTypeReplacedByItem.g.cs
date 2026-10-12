@@ -55,6 +55,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AdminSamlSpSigningKeyCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        AdminSamlSpSigningKeyUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         AdminSecondaryEmailAdded,
         /// <summary>
         ///
@@ -2917,6 +2925,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AdminPreviewDeploymentSuffixClear => "admin-preview-deployment-suffix-clear",
                 ListEventTypeReplacedByItem.AdminSamlIdpMaterialDeleted => "admin-saml-idp-material-deleted",
                 ListEventTypeReplacedByItem.AdminSamlIdpMaterialSet => "admin-saml-idp-material-set",
+                ListEventTypeReplacedByItem.AdminSamlSpSigningKeyCreated => "admin-saml-sp-signing-key-created",
+                ListEventTypeReplacedByItem.AdminSamlSpSigningKeyUpdated => "admin-saml-sp-signing-key-updated",
                 ListEventTypeReplacedByItem.AdminSecondaryEmailAdded => "admin-secondary-email-added",
                 ListEventTypeReplacedByItem.AdminSecondaryEmailRemoved => "admin-secondary-email-removed",
                 ListEventTypeReplacedByItem.AdminTeamNameUpdate => "admin-team-name-update",
@@ -3648,6 +3658,8 @@ namespace Vercel
                 "admin-preview-deployment-suffix-clear" => ListEventTypeReplacedByItem.AdminPreviewDeploymentSuffixClear,
                 "admin-saml-idp-material-deleted" => ListEventTypeReplacedByItem.AdminSamlIdpMaterialDeleted,
                 "admin-saml-idp-material-set" => ListEventTypeReplacedByItem.AdminSamlIdpMaterialSet,
+                "admin-saml-sp-signing-key-created" => ListEventTypeReplacedByItem.AdminSamlSpSigningKeyCreated,
+                "admin-saml-sp-signing-key-updated" => ListEventTypeReplacedByItem.AdminSamlSpSigningKeyUpdated,
                 "admin-secondary-email-added" => ListEventTypeReplacedByItem.AdminSecondaryEmailAdded,
                 "admin-secondary-email-removed" => ListEventTypeReplacedByItem.AdminSecondaryEmailRemoved,
                 "admin-team-name-update" => ListEventTypeReplacedByItem.AdminTeamNameUpdate,

@@ -383,10 +383,10 @@ namespace Vercel
         public global::Vercel.GetMicrofrontendsInGroupResponseProjectPassport? Passport { get; set; }
 
         /// <summary>
-        ///
+        /// Password protection settings returned without the secret password hash.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("passwordProtection")]
-        public object? PasswordProtection { get; set; }
+        public global::Vercel.GetMicrofrontendsInGroupResponseProjectPasswordProtection? PasswordProtection { get; set; }
 
         /// <summary>
         ///
@@ -681,7 +681,9 @@ namespace Vercel
         /// <param name="outputDirectory"></param>
         /// <param name="passiveConnectConfigurationId"></param>
         /// <param name="passport"></param>
-        /// <param name="passwordProtection"></param>
+        /// <param name="passwordProtection">
+        /// Password protection settings returned without the secret password hash.
+        /// </param>
         /// <param name="paused"></param>
         /// <param name="permissions">
         /// Requested and authorized operations when `checkPermissions` is used. Legacy `includePermissions` responses contain a broader, non-authoritative permission summary.
@@ -788,7 +790,7 @@ namespace Vercel
             string? outputDirectory,
             string? passiveConnectConfigurationId,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectPassport? passport,
-            object? passwordProtection,
+            global::Vercel.GetMicrofrontendsInGroupResponseProjectPasswordProtection? passwordProtection,
             bool? paused,
             global::Vercel.AutoSDKSharedc1bbed57dd671537? permissions,
             bool? productionDeploymentsFastLane,

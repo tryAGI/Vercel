@@ -56,6 +56,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AdminSamlSpSigningKeyCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        AdminSamlSpSigningKeyUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         AdminSecondaryEmailAdded,
         /// <summary>
         ///
@@ -2918,6 +2926,8 @@ namespace Vercel
                 ListEventTypeName.AdminPreviewDeploymentSuffixClear => "admin-preview-deployment-suffix-clear",
                 ListEventTypeName.AdminSamlIdpMaterialDeleted => "admin-saml-idp-material-deleted",
                 ListEventTypeName.AdminSamlIdpMaterialSet => "admin-saml-idp-material-set",
+                ListEventTypeName.AdminSamlSpSigningKeyCreated => "admin-saml-sp-signing-key-created",
+                ListEventTypeName.AdminSamlSpSigningKeyUpdated => "admin-saml-sp-signing-key-updated",
                 ListEventTypeName.AdminSecondaryEmailAdded => "admin-secondary-email-added",
                 ListEventTypeName.AdminSecondaryEmailRemoved => "admin-secondary-email-removed",
                 ListEventTypeName.AdminTeamNameUpdate => "admin-team-name-update",
@@ -3649,6 +3659,8 @@ namespace Vercel
                 "admin-preview-deployment-suffix-clear" => ListEventTypeName.AdminPreviewDeploymentSuffixClear,
                 "admin-saml-idp-material-deleted" => ListEventTypeName.AdminSamlIdpMaterialDeleted,
                 "admin-saml-idp-material-set" => ListEventTypeName.AdminSamlIdpMaterialSet,
+                "admin-saml-sp-signing-key-created" => ListEventTypeName.AdminSamlSpSigningKeyCreated,
+                "admin-saml-sp-signing-key-updated" => ListEventTypeName.AdminSamlSpSigningKeyUpdated,
                 "admin-secondary-email-added" => ListEventTypeName.AdminSecondaryEmailAdded,
                 "admin-secondary-email-removed" => ListEventTypeName.AdminSecondaryEmailRemoved,
                 "admin-team-name-update" => ListEventTypeName.AdminTeamNameUpdate,
