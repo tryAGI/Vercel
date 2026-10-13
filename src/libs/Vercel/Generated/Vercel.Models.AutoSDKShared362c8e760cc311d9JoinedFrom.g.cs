@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class TeamMembershipJoinedFrom
+    public sealed partial class AutoSDKShared362c8e760cc311d9JoinedFrom
     {
         /// <summary>
         ///
@@ -49,9 +49,9 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.TeamMembershipJoinedFromOriginJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared362c8e760cc311d9JoinedFromOriginJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.TeamMembershipJoinedFromOrigin Origin { get; set; }
+        public required global::Vercel.AutoSDKShared362c8e760cc311d9JoinedFromOrigin Origin { get; set; }
 
         /// <summary>
         ///
@@ -84,7 +84,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="TeamMembershipJoinedFrom" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared362c8e760cc311d9JoinedFrom" /> class.
         /// </summary>
         /// <param name="origin"></param>
         /// <param name="commitId"></param>
@@ -100,8 +100,8 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public TeamMembershipJoinedFrom(
-            global::Vercel.TeamMembershipJoinedFromOrigin origin,
+        public AutoSDKShared362c8e760cc311d9JoinedFrom(
+            global::Vercel.AutoSDKShared362c8e760cc311d9JoinedFromOrigin origin,
             string? commitId,
             double? dsyncConnectedAt,
             string? dsyncUserId,
@@ -127,9 +127,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="TeamMembershipJoinedFrom" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared362c8e760cc311d9JoinedFrom" /> class.
         /// </summary>
-        public TeamMembershipJoinedFrom()
+        public AutoSDKShared362c8e760cc311d9JoinedFrom()
         {
         }
 

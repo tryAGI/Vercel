@@ -3,10 +3,10 @@
 namespace Vercel.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class TeamMembershipRoleNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.TeamMembershipRole?>
+    public sealed class AutoSDKShared362c8e760cc311d9TeamRoleJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.AutoSDKShared362c8e760cc311d9TeamRole>
     {
         /// <inheritdoc />
-        public override global::Vercel.TeamMembershipRole? Read(
+        public override global::Vercel.AutoSDKShared362c8e760cc311d9TeamRole Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Vercel.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Vercel.TeamMembershipRoleExtensions.ToEnum(stringValue);
+                        return global::Vercel.AutoSDKShared362c8e760cc311d9TeamRoleExtensions.ToEnum(stringValue) ?? default;
                     }
 
                     break;
@@ -26,11 +26,11 @@ namespace Vercel.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Vercel.TeamMembershipRole)numValue;
+                    return (global::Vercel.AutoSDKShared362c8e760cc311d9TeamRole)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Vercel.TeamMembershipRole?);
+                    return default(global::Vercel.AutoSDKShared362c8e760cc311d9TeamRole);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,19 +42,12 @@ namespace Vercel.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Vercel.TeamMembershipRole? value,
+            global::Vercel.AutoSDKShared362c8e760cc311d9TeamRole value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
 
-            if (value == null)
-            {
-                writer.WriteNullValue();
-            }
-            else
-            {
-                writer.WriteStringValue(global::Vercel.TeamMembershipRoleExtensions.ToValueString(value.Value));
-            }
+            writer.WriteStringValue(global::Vercel.AutoSDKShared362c8e760cc311d9TeamRoleExtensions.ToValueString(value));
         }
     }
 }

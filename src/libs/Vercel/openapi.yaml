@@ -67485,9 +67485,6 @@
           "404": {
             "description": ""
           },
-          "409": {
-            "description": ""
-          },
           "410": {
             "description": ""
           },
@@ -67495,15 +67492,9 @@
             "description": ""
           },
           "429": {
-            "description": "The concurrency limit has been exceeded."
+            "description": ""
           },
           "500": {
-            "description": ""
-          },
-          "502": {
-            "description": ""
-          },
-          "503": {
             "description": ""
           }
         },
@@ -107474,179 +107465,7 @@
             "description": "Property indicating that this Team data contains full information. Limited Team data has `limited: true`."
           },
           "membership": {
-            "properties": {
-              "accessRequestedAt": {
-                "type": "number"
-              },
-              "confirmed": {
-                "type": "boolean",
-                "enum": [
-                  true
-                ]
-              },
-              "created": {
-                "type": "number"
-              },
-              "createdAt": {
-                "type": "number"
-              },
-              "entitlements": {
-                "items": {
-                  "properties": {
-                    "entitlement": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "entitlement"
-                  ],
-                  "type": "object"
-                },
-                "type": "array"
-              },
-              "joinedFrom": {
-                "properties": {
-                  "commitId": {
-                    "type": "string"
-                  },
-                  "dsyncConnectedAt": {
-                    "type": "number"
-                  },
-                  "dsyncUserId": {
-                    "type": "string"
-                  },
-                  "gitUserId": {
-                    "oneOf": [
-                      {
-                        "type": "string"
-                      },
-                      {
-                        "type": "number"
-                      }
-                    ]
-                  },
-                  "gitUserLogin": {
-                    "type": "string"
-                  },
-                  "idpUserId": {
-                    "type": "string"
-                  },
-                  "origin": {
-                    "type": "string",
-                    "enum": [
-                      "account-update",
-                      "bitbucket",
-                      "dsync",
-                      "feedback",
-                      "github",
-                      "gitlab",
-                      "import",
-                      "link",
-                      "mail",
-                      "nsnb-auto-approve",
-                      "nsnb-hobby-upgrade",
-                      "nsnb-invite",
-                      "nsnb-redeploy",
-                      "nsnb-redeploy-attribution-card",
-                      "nsnb-request-access",
-                      "nsnb-viewer-upgrade",
-                      "organization-teams",
-                      "saml",
-                      "teams"
-                    ]
-                  },
-                  "repoId": {
-                    "type": "string"
-                  },
-                  "repoPath": {
-                    "type": "string"
-                  },
-                  "ssoConnectedAt": {
-                    "type": "number"
-                  },
-                  "ssoUserId": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "origin"
-                ],
-                "type": "object"
-              },
-              "organizationId": {
-                "type": "string"
-              },
-              "role": {
-                "type": "string",
-                "enum": [
-                  "BILLING",
-                  "CONTRIBUTOR",
-                  "DEVELOPER",
-                  "MEMBER",
-                  "OWNER",
-                  "SECURITY",
-                  "VIEWER",
-                  "VIEWER_FOR_PLUS"
-                ]
-              },
-              "teamId": {
-                "type": "string"
-              },
-              "teamPermissions": {
-                "items": {
-                  "type": "string",
-                  "enum": [
-                    "AiGatewayBudgetManager",
-                    "AiGatewayCredits",
-                    "AiGatewaySettings",
-                    "AiGatewayTranscriptsManager",
-                    "AiGatewayTranscriptsViewer",
-                    "AiGatewayUser",
-                    "ConnectorManager",
-                    "CreateProject",
-                    "EnvVariableManager",
-                    "EnvironmentManager",
-                    "FullProductionDeployment",
-                    "IntegrationManager",
-                    "OrgAdmin",
-                    "OrgViewer",
-                    "UsageViewer",
-                    "V0Builder",
-                    "V0Chatter",
-                    "V0Viewer",
-                    "WorkflowDecryptor"
-                  ]
-                },
-                "type": "array"
-              },
-              "teamRoles": {
-                "items": {
-                  "type": "string",
-                  "enum": [
-                    "BILLING",
-                    "CONTRIBUTOR",
-                    "DEVELOPER",
-                    "MEMBER",
-                    "OWNER",
-                    "SECURITY",
-                    "VIEWER",
-                    "VIEWER_FOR_PLUS"
-                  ]
-                },
-                "type": "array"
-              },
-              "uid": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "confirmed",
-              "created",
-              "createdAt",
-              "role"
-            ],
-            "type": "object",
-            "description": "The membership of the authenticated User in relation to the Team."
+            "$ref": "#/components/schemas/AutoSDKShared362c8e760cc311d9"
           },
           "name": {
             "nullable": true,
@@ -108158,179 +107977,7 @@
             "type": "array"
           },
           "membership": {
-            "properties": {
-              "accessRequestedAt": {
-                "type": "number"
-              },
-              "confirmed": {
-                "type": "boolean",
-                "enum": [
-                  true
-                ]
-              },
-              "created": {
-                "type": "number"
-              },
-              "createdAt": {
-                "type": "number"
-              },
-              "entitlements": {
-                "items": {
-                  "properties": {
-                    "entitlement": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "entitlement"
-                  ],
-                  "type": "object"
-                },
-                "type": "array"
-              },
-              "joinedFrom": {
-                "properties": {
-                  "commitId": {
-                    "type": "string"
-                  },
-                  "dsyncConnectedAt": {
-                    "type": "number"
-                  },
-                  "dsyncUserId": {
-                    "type": "string"
-                  },
-                  "gitUserId": {
-                    "oneOf": [
-                      {
-                        "type": "string"
-                      },
-                      {
-                        "type": "number"
-                      }
-                    ]
-                  },
-                  "gitUserLogin": {
-                    "type": "string"
-                  },
-                  "idpUserId": {
-                    "type": "string"
-                  },
-                  "origin": {
-                    "type": "string",
-                    "enum": [
-                      "account-update",
-                      "bitbucket",
-                      "dsync",
-                      "feedback",
-                      "github",
-                      "gitlab",
-                      "import",
-                      "link",
-                      "mail",
-                      "nsnb-auto-approve",
-                      "nsnb-hobby-upgrade",
-                      "nsnb-invite",
-                      "nsnb-redeploy",
-                      "nsnb-redeploy-attribution-card",
-                      "nsnb-request-access",
-                      "nsnb-viewer-upgrade",
-                      "organization-teams",
-                      "saml",
-                      "teams"
-                    ]
-                  },
-                  "repoId": {
-                    "type": "string"
-                  },
-                  "repoPath": {
-                    "type": "string"
-                  },
-                  "ssoConnectedAt": {
-                    "type": "number"
-                  },
-                  "ssoUserId": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "origin"
-                ],
-                "type": "object"
-              },
-              "organizationId": {
-                "type": "string"
-              },
-              "role": {
-                "type": "string",
-                "enum": [
-                  "BILLING",
-                  "CONTRIBUTOR",
-                  "DEVELOPER",
-                  "MEMBER",
-                  "OWNER",
-                  "SECURITY",
-                  "VIEWER",
-                  "VIEWER_FOR_PLUS"
-                ]
-              },
-              "teamId": {
-                "type": "string"
-              },
-              "teamPermissions": {
-                "items": {
-                  "type": "string",
-                  "enum": [
-                    "AiGatewayBudgetManager",
-                    "AiGatewayCredits",
-                    "AiGatewaySettings",
-                    "AiGatewayTranscriptsManager",
-                    "AiGatewayTranscriptsViewer",
-                    "AiGatewayUser",
-                    "ConnectorManager",
-                    "CreateProject",
-                    "EnvVariableManager",
-                    "EnvironmentManager",
-                    "FullProductionDeployment",
-                    "IntegrationManager",
-                    "OrgAdmin",
-                    "OrgViewer",
-                    "UsageViewer",
-                    "V0Builder",
-                    "V0Chatter",
-                    "V0Viewer",
-                    "WorkflowDecryptor"
-                  ]
-                },
-                "type": "array"
-              },
-              "teamRoles": {
-                "items": {
-                  "type": "string",
-                  "enum": [
-                    "BILLING",
-                    "CONTRIBUTOR",
-                    "DEVELOPER",
-                    "MEMBER",
-                    "OWNER",
-                    "SECURITY",
-                    "VIEWER",
-                    "VIEWER_FOR_PLUS"
-                  ]
-                },
-                "type": "array"
-              },
-              "uid": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "confirmed",
-              "created",
-              "createdAt",
-              "role"
-            ],
-            "type": "object",
-            "description": "The membership of the authenticated User in relation to the Team."
+            "$ref": "#/components/schemas/AutoSDKShared362c8e760cc311d9"
           },
           "name": {
             "nullable": true,
@@ -114105,6 +113752,188 @@
             "type": "object"
           }
         ]
+      },
+      "AutoSDKShared362c8e760cc311d9": {
+        "properties": {
+          "accessRequestedAt": {
+            "type": "number"
+          },
+          "confirmed": {
+            "type": "boolean",
+            "enum": [
+              true
+            ]
+          },
+          "created": {
+            "type": "number"
+          },
+          "createdAt": {
+            "type": "number"
+          },
+          "entitlements": {
+            "items": {
+              "properties": {
+                "entitlement": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "entitlement"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "isOrgBackingTeamMembership": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "joinedFrom": {
+            "properties": {
+              "commitId": {
+                "type": "string"
+              },
+              "dsyncConnectedAt": {
+                "type": "number"
+              },
+              "dsyncUserId": {
+                "type": "string"
+              },
+              "gitUserId": {
+                "oneOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "number"
+                  }
+                ]
+              },
+              "gitUserLogin": {
+                "type": "string"
+              },
+              "idpUserId": {
+                "type": "string"
+              },
+              "origin": {
+                "type": "string",
+                "enum": [
+                  "account-update",
+                  "bitbucket",
+                  "dsync",
+                  "feedback",
+                  "github",
+                  "gitlab",
+                  "import",
+                  "link",
+                  "mail",
+                  "nsnb-auto-approve",
+                  "nsnb-hobby-upgrade",
+                  "nsnb-invite",
+                  "nsnb-redeploy",
+                  "nsnb-redeploy-attribution-card",
+                  "nsnb-request-access",
+                  "nsnb-viewer-upgrade",
+                  "organization-teams",
+                  "saml",
+                  "teams"
+                ]
+              },
+              "repoId": {
+                "type": "string"
+              },
+              "repoPath": {
+                "type": "string"
+              },
+              "ssoConnectedAt": {
+                "type": "number"
+              },
+              "ssoUserId": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "origin"
+            ],
+            "type": "object"
+          },
+          "organizationId": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "BILLING",
+              "CONTRIBUTOR",
+              "DEVELOPER",
+              "MEMBER",
+              "OWNER",
+              "SECURITY",
+              "VIEWER",
+              "VIEWER_FOR_PLUS"
+            ]
+          },
+          "teamId": {
+            "type": "string"
+          },
+          "teamPermissions": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "AiGatewayBudgetManager",
+                "AiGatewayCredits",
+                "AiGatewaySettings",
+                "AiGatewayTranscriptsManager",
+                "AiGatewayTranscriptsViewer",
+                "AiGatewayUser",
+                "ConnectorManager",
+                "CreateProject",
+                "EnvVariableManager",
+                "EnvironmentManager",
+                "FullProductionDeployment",
+                "IntegrationManager",
+                "OrgAdmin",
+                "OrgViewer",
+                "UsageViewer",
+                "V0Builder",
+                "V0Chatter",
+                "V0Viewer",
+                "WorkflowDecryptor"
+              ]
+            },
+            "type": "array"
+          },
+          "teamRoles": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "BILLING",
+                "CONTRIBUTOR",
+                "DEVELOPER",
+                "MEMBER",
+                "OWNER",
+                "SECURITY",
+                "VIEWER",
+                "VIEWER_FOR_PLUS"
+              ]
+            },
+            "type": "array"
+          },
+          "uid": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "confirmed",
+          "created",
+          "createdAt",
+          "role"
+        ],
+        "type": "object",
+        "description": "The membership of the authenticated User in relation to the Team."
       },
       "AutoSDKShared383028c008cc4ae0": {
         "properties": {
