@@ -216,7 +216,7 @@ namespace Vercel
         /// The membership of the authenticated User in relation to the Team.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("membership")]
-        public global::Vercel.TeamMembership? Membership { get; set; }
+        public global::Vercel.AutoSDKShared362c8e760cc311d9? Membership { get; set; }
 
         /// <summary>
         /// Name associated with the Team account, or `null` if none has been provided.<br/>
@@ -552,7 +552,7 @@ namespace Vercel
             double? integrationTokensInvalidatedAt,
             string? inviteCode,
             global::System.Collections.Generic.IList<global::Vercel.TeamIpBucket>? ipBuckets,
-            global::Vercel.TeamMembership? membership,
+            global::Vercel.AutoSDKShared362c8e760cc311d9? membership,
             string? name,
             global::Vercel.TeamNsnbConfig? nsnbConfig,
             string? orgRootTeamId,

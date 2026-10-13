@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class TeamMembershipEntitlement
+    public sealed partial class AutoSDKShared362c8e760cc311d9Entitlement
     {
         /// <summary>
         ///
@@ -22,22 +22,22 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="TeamMembershipEntitlement" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared362c8e760cc311d9Entitlement" /> class.
         /// </summary>
         /// <param name="entitlement"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public TeamMembershipEntitlement(
+        public AutoSDKShared362c8e760cc311d9Entitlement(
             string entitlement)
         {
             this.Entitlement = entitlement ?? throw new global::System.ArgumentNullException(nameof(entitlement));
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="TeamMembershipEntitlement" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared362c8e760cc311d9Entitlement" /> class.
         /// </summary>
-        public TeamMembershipEntitlement()
+        public AutoSDKShared362c8e760cc311d9Entitlement()
         {
         }
 
