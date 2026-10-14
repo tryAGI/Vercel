@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public enum AutoSDKShared348824e7d17eab26State
+    public enum AutoSDKShared2f24cdccbdde3d24State
     {
         /// <summary>
         ///
@@ -21,29 +21,29 @@ namespace Vercel
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class AutoSDKShared348824e7d17eab26StateExtensions
+    public static class AutoSDKShared2f24cdccbdde3d24StateExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this AutoSDKShared348824e7d17eab26State value)
+        public static string ToValueString(this AutoSDKShared2f24cdccbdde3d24State value)
         {
             return value switch
             {
-                AutoSDKShared348824e7d17eab26State.Active => "active",
-                AutoSDKShared348824e7d17eab26State.Archived => "archived",
+                AutoSDKShared2f24cdccbdde3d24State.Active => "active",
+                AutoSDKShared2f24cdccbdde3d24State.Archived => "archived",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static AutoSDKShared348824e7d17eab26State? ToEnum(string value)
+        public static AutoSDKShared2f24cdccbdde3d24State? ToEnum(string value)
         {
             return value switch
             {
-                "active" => AutoSDKShared348824e7d17eab26State.Active,
-                "archived" => AutoSDKShared348824e7d17eab26State.Archived,
+                "active" => AutoSDKShared2f24cdccbdde3d24State.Active,
+                "archived" => AutoSDKShared2f24cdccbdde3d24State.Archived,
                 _ => null,
             };
         }

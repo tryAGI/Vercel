@@ -3,10 +3,10 @@
 namespace Vercel.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class AutoSDKShared348824e7d17eab26KindJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.AutoSDKShared348824e7d17eab26Kind>
+    public sealed class AutoSDKShared2f24cdccbdde3d24KindJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.AutoSDKShared2f24cdccbdde3d24Kind>
     {
         /// <inheritdoc />
-        public override global::Vercel.AutoSDKShared348824e7d17eab26Kind Read(
+        public override global::Vercel.AutoSDKShared2f24cdccbdde3d24Kind Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Vercel.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Vercel.AutoSDKShared348824e7d17eab26KindExtensions.ToEnum(stringValue) ?? default;
+                        return global::Vercel.AutoSDKShared2f24cdccbdde3d24KindExtensions.ToEnum(stringValue) ?? default;
                     }
 
                     break;
@@ -26,11 +26,11 @@ namespace Vercel.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Vercel.AutoSDKShared348824e7d17eab26Kind)numValue;
+                    return (global::Vercel.AutoSDKShared2f24cdccbdde3d24Kind)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Vercel.AutoSDKShared348824e7d17eab26Kind);
+                    return default(global::Vercel.AutoSDKShared2f24cdccbdde3d24Kind);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,12 +42,12 @@ namespace Vercel.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Vercel.AutoSDKShared348824e7d17eab26Kind value,
+            global::Vercel.AutoSDKShared2f24cdccbdde3d24Kind value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
 
-            writer.WriteStringValue(global::Vercel.AutoSDKShared348824e7d17eab26KindExtensions.ToValueString(value));
+            writer.WriteStringValue(global::Vercel.AutoSDKShared2f24cdccbdde3d24KindExtensions.ToValueString(value));
         }
     }
 }

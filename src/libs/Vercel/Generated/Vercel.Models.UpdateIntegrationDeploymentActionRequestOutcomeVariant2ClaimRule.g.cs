@@ -15,11 +15,11 @@ namespace Vercel
         public global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant2ClaimRuleWhen? When { get; set; }
 
         /// <summary>
-        /// Claims to set (string, number, or boolean), shallow-merged over earlier rules and over the default claims. `null` removes a claim. Reserved claims cannot be set; `aud` and `sub` can be overridden with a string but not removed.
+        /// Claims to set (string, number, boolean, or array of strings), shallow-merged over earlier rules and over the default claims. `null` removes a claim. Reserved claims cannot be set; `aud` and `sub` can be overridden with a string but not removed.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("claims")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.OneOf<string, double?, bool?>?> Claims { get; set; }
+        public required object Claims { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,14 +31,14 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UpdateIntegrationDeploymentActionRequestOutcomeVariant2ClaimRule" /> class.
         /// </summary>
         /// <param name="claims">
-        /// Claims to set (string, number, or boolean), shallow-merged over earlier rules and over the default claims. `null` removes a claim. Reserved claims cannot be set; `aud` and `sub` can be overridden with a string but not removed.
+        /// Claims to set (string, number, boolean, or array of strings), shallow-merged over earlier rules and over the default claims. `null` removes a claim. Reserved claims cannot be set; `aud` and `sub` can be overridden with a string but not removed.
         /// </param>
         /// <param name="when"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateIntegrationDeploymentActionRequestOutcomeVariant2ClaimRule(
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.OneOf<string, double?, bool?>?> claims,
+            object claims,
             global::Vercel.UpdateIntegrationDeploymentActionRequestOutcomeVariant2ClaimRuleWhen? when)
         {
             this.When = when;

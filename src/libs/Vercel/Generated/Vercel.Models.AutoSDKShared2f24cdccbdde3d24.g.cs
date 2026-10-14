@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class AutoSDKShared348824e7d17eab26
+    public sealed partial class AutoSDKShared2f24cdccbdde3d24
     {
         /// <summary>
         ///
@@ -46,9 +46,9 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared348824e7d17eab26KindJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared2f24cdccbdde3d24KindJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AutoSDKShared348824e7d17eab26Kind Kind { get; set; }
+        public required global::Vercel.AutoSDKShared2f24cdccbdde3d24Kind Kind { get; set; }
 
         /// <summary>
         ///
@@ -93,6 +93,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("seenInProduction")]
+        public bool? SeenInProduction { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Slug { get; set; }
@@ -101,9 +107,9 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("state")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared348824e7d17eab26StateJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared2f24cdccbdde3d24StateJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AutoSDKShared348824e7d17eab26State State { get; set; }
+        public required global::Vercel.AutoSDKShared2f24cdccbdde3d24State State { get; set; }
 
         /// <summary>
         ///
@@ -115,8 +121,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("typeName")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared348824e7d17eab26TypeNameJsonConverter))]
-        public global::Vercel.AutoSDKShared348824e7d17eab26TypeName TypeName { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared2f24cdccbdde3d24TypeNameJsonConverter))]
+        public global::Vercel.AutoSDKShared2f24cdccbdde3d24TypeName TypeName { get; set; }
 
         /// <summary>
         ///
@@ -136,7 +142,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("variants")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared348824e7d17eab26Variant> Variants { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2f24cdccbdde3d24Variant> Variants { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -145,7 +151,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared348824e7d17eab26" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared2f24cdccbdde3d24" /> class.
         /// </summary>
         /// <param name="createdAt"></param>
         /// <param name="createdBy"></param>
@@ -163,31 +169,33 @@ namespace Vercel
         /// <param name="description"></param>
         /// <param name="maintainerIds"></param>
         /// <param name="permanent"></param>
+        /// <param name="seenInProduction"></param>
         /// <param name="tags"></param>
         /// <param name="typeName"></param>
         /// <param name="updatedBy"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public AutoSDKShared348824e7d17eab26(
+        public AutoSDKShared2f24cdccbdde3d24(
             double createdAt,
             string createdBy,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared76d2d4f0d6cc3e47> environments,
             string id,
-            global::Vercel.AutoSDKShared348824e7d17eab26Kind kind,
+            global::Vercel.AutoSDKShared2f24cdccbdde3d24Kind kind,
             string ownerId,
             string projectId,
             double revision,
             double seed,
             string slug,
-            global::Vercel.AutoSDKShared348824e7d17eab26State state,
+            global::Vercel.AutoSDKShared2f24cdccbdde3d24State state,
             double updatedAt,
-            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared348824e7d17eab26Variant> variants,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2f24cdccbdde3d24Variant> variants,
             string? description,
             global::System.Collections.Generic.IList<string>? maintainerIds,
             bool? permanent,
+            bool? seenInProduction,
             global::System.Collections.Generic.IList<string>? tags,
-            global::Vercel.AutoSDKShared348824e7d17eab26TypeName typeName,
+            global::Vercel.AutoSDKShared2f24cdccbdde3d24TypeName typeName,
             string? updatedBy)
         {
             this.CreatedAt = createdAt;
@@ -202,6 +210,7 @@ namespace Vercel
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.Revision = revision;
             this.Seed = seed;
+            this.SeenInProduction = seenInProduction;
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.State = state;
             this.Tags = tags;
@@ -212,9 +221,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared348824e7d17eab26" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared2f24cdccbdde3d24" /> class.
         /// </summary>
-        public AutoSDKShared348824e7d17eab26()
+        public AutoSDKShared2f24cdccbdde3d24()
         {
         }
 

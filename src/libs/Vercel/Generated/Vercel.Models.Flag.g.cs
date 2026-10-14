@@ -93,6 +93,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("seenInProduction")]
+        public bool? SeenInProduction { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Slug { get; set; }
@@ -169,6 +175,7 @@ namespace Vercel
         /// <param name="description"></param>
         /// <param name="maintainerIds"></param>
         /// <param name="permanent"></param>
+        /// <param name="seenInProduction"></param>
         /// <param name="tags"></param>
         /// <param name="typeName"></param>
         /// <param name="updatedBy"></param>
@@ -193,6 +200,7 @@ namespace Vercel
             string? description,
             global::System.Collections.Generic.IList<string>? maintainerIds,
             bool? permanent,
+            bool? seenInProduction,
             global::System.Collections.Generic.IList<string>? tags,
             global::Vercel.FlagTypeName typeName,
             string? updatedBy,
@@ -210,6 +218,7 @@ namespace Vercel
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.Revision = revision;
             this.Seed = seed;
+            this.SeenInProduction = seenInProduction;
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.State = state;
             this.Tags = tags;

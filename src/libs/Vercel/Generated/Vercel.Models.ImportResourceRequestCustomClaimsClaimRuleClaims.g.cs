@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Claims to set (string, number, or boolean), shallow-merged over earlier rules and over the default claims. `null` removes a claim. Reserved claims cannot be set; `aud` and `sub` can be overridden with a string but not removed.
+    /// Claims to set (string, number, boolean, or array of strings), shallow-merged over earlier rules and over the default claims. `null` removes a claim. Reserved claims cannot be set; `aud` and `sub` can be overridden with a string but not removed.
     /// </summary>
     public sealed partial class ImportResourceRequestCustomClaimsClaimRuleClaims
     {

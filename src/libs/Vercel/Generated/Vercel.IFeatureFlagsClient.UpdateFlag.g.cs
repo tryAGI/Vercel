@@ -30,7 +30,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared348824e7d17eab26> UpdateFlagAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared2f24cdccbdde3d24> UpdateFlagAsync(
             string projectIdOrName,
             string flagIdOrSlug,
 
@@ -67,7 +67,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared348824e7d17eab26>> UpdateFlagAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared2f24cdccbdde3d24>> UpdateFlagAsResponseAsync(
             string projectIdOrName,
             string flagIdOrSlug,
 
@@ -131,7 +131,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared348824e7d17eab26> UpdateFlagAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared2f24cdccbdde3d24> UpdateFlagAsync(
             string projectIdOrName,
             string flagIdOrSlug,
             string? ifMatch = default,
