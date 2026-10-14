@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class AutoSDKShared348824e7d17eab26Variant
+    public sealed partial class AutoSDKShared2f24cdccbdde3d24Variant
     {
         /// <summary>
         ///
@@ -41,7 +41,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared348824e7d17eab26Variant" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared2f24cdccbdde3d24Variant" /> class.
         /// </summary>
         /// <param name="id"></param>
         /// <param name="description"></param>
@@ -50,7 +50,7 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public AutoSDKShared348824e7d17eab26Variant(
+        public AutoSDKShared2f24cdccbdde3d24Variant(
             string id,
             string? description,
             string? label,
@@ -63,9 +63,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared348824e7d17eab26Variant" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared2f24cdccbdde3d24Variant" /> class.
         /// </summary>
-        public AutoSDKShared348824e7d17eab26Variant()
+        public AutoSDKShared2f24cdccbdde3d24Variant()
         {
         }
 

@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("claims")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.OneOf<string, double?, bool?>?> Claims { get; set; }
+        public required global::System.Collections.Generic.Dictionary<string, global::Vercel.OneOf<string, double?, global::System.Collections.Generic.IList<string>, bool?>?> Claims { get; set; }
 
         /// <summary>
         ///
@@ -36,7 +36,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetIntegrationResourceResponseCustomClaimsClaimRule(
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.OneOf<string, double?, bool?>?> claims,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.OneOf<string, double?, global::System.Collections.Generic.IList<string>, bool?>?> claims,
             global::Vercel.GetIntegrationResourceResponseCustomClaimsClaimRuleWhen? when)
         {
             this.Claims = claims ?? throw new global::System.ArgumentNullException(nameof(claims));

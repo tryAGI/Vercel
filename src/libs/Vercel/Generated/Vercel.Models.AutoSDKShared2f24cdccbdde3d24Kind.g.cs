@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public enum AutoSDKShared348824e7d17eab26Kind
+    public enum AutoSDKShared2f24cdccbdde3d24Kind
     {
         /// <summary>
         ///
@@ -29,33 +29,33 @@ namespace Vercel
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class AutoSDKShared348824e7d17eab26KindExtensions
+    public static class AutoSDKShared2f24cdccbdde3d24KindExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this AutoSDKShared348824e7d17eab26Kind value)
+        public static string ToValueString(this AutoSDKShared2f24cdccbdde3d24Kind value)
         {
             return value switch
             {
-                AutoSDKShared348824e7d17eab26Kind.Boolean => "boolean",
-                AutoSDKShared348824e7d17eab26Kind.Json => "json",
-                AutoSDKShared348824e7d17eab26Kind.Number => "number",
-                AutoSDKShared348824e7d17eab26Kind.String => "string",
+                AutoSDKShared2f24cdccbdde3d24Kind.Boolean => "boolean",
+                AutoSDKShared2f24cdccbdde3d24Kind.Json => "json",
+                AutoSDKShared2f24cdccbdde3d24Kind.Number => "number",
+                AutoSDKShared2f24cdccbdde3d24Kind.String => "string",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static AutoSDKShared348824e7d17eab26Kind? ToEnum(string value)
+        public static AutoSDKShared2f24cdccbdde3d24Kind? ToEnum(string value)
         {
             return value switch
             {
-                "boolean" => AutoSDKShared348824e7d17eab26Kind.Boolean,
-                "json" => AutoSDKShared348824e7d17eab26Kind.Json,
-                "number" => AutoSDKShared348824e7d17eab26Kind.Number,
-                "string" => AutoSDKShared348824e7d17eab26Kind.String,
+                "boolean" => AutoSDKShared2f24cdccbdde3d24Kind.Boolean,
+                "json" => AutoSDKShared2f24cdccbdde3d24Kind.Json,
+                "number" => AutoSDKShared2f24cdccbdde3d24Kind.Number,
+                "string" => AutoSDKShared2f24cdccbdde3d24Kind.String,
                 _ => null,
             };
         }

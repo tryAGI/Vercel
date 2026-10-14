@@ -14692,20 +14692,30 @@
                                   "claims": {
                                     "type": "object",
                                     "additionalProperties": {
-                                      "nullable": true,
-                                      "oneOf": [
+                                      "anyOf": [
                                         {
-                                          "type": "string"
+                                          "nullable": true,
+                                          "oneOf": [
+                                            {
+                                              "type": "string"
+                                            },
+                                            {
+                                              "type": "number"
+                                            },
+                                            {
+                                              "type": "boolean"
+                                            }
+                                          ]
                                         },
                                         {
-                                          "type": "number"
-                                        },
-                                        {
-                                          "type": "boolean"
+                                          "type": "array",
+                                          "items": {
+                                            "type": "string"
+                                          }
                                         }
                                       ]
                                     },
-                                    "description": "Claims to set (string, number, or boolean), shallow-merged over earlier rules and over the default claims. `null` removes a claim. Reserved claims cannot be set; `aud` and `sub` can be overridden with a string but not removed."
+                                    "description": "Claims to set (string, number, boolean, or array of strings), shallow-merged over earlier rules and over the default claims. `null` removes a claim. Reserved claims cannot be set; `aud` and `sub` can be overridden with a string but not removed."
                                   }
                                 },
                                 "additionalProperties": false
@@ -33358,7 +33368,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared348824e7d17eab26"
+                  "$ref": "#/components/schemas/AutoSDKShared2f24cdccbdde3d24"
                 }
               }
             }
@@ -33665,7 +33675,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared348824e7d17eab26"
+                  "$ref": "#/components/schemas/AutoSDKShared2f24cdccbdde3d24"
                 }
               }
             }
@@ -38357,6 +38367,12 @@
                                       "type": "number"
                                     },
                                     {
+                                      "items": {
+                                        "type": "string"
+                                      },
+                                      "type": "array"
+                                    },
+                                    {
                                       "type": "boolean",
                                       "enum": [
                                         false,
@@ -38952,20 +38968,30 @@
                             "claims": {
                               "type": "object",
                               "additionalProperties": {
-                                "nullable": true,
-                                "oneOf": [
+                                "anyOf": [
                                   {
-                                    "type": "string"
+                                    "nullable": true,
+                                    "oneOf": [
+                                      {
+                                        "type": "string"
+                                      },
+                                      {
+                                        "type": "number"
+                                      },
+                                      {
+                                        "type": "boolean"
+                                      }
+                                    ]
                                   },
                                   {
-                                    "type": "number"
-                                  },
-                                  {
-                                    "type": "boolean"
+                                    "type": "array",
+                                    "items": {
+                                      "type": "string"
+                                    }
                                   }
                                 ]
                               },
-                              "description": "Claims to set (string, number, or boolean), shallow-merged over earlier rules and over the default claims. `null` removes a claim. Reserved claims cannot be set; `aud` and `sub` can be overridden with a string but not removed."
+                              "description": "Claims to set (string, number, boolean, or array of strings), shallow-merged over earlier rules and over the default claims. `null` removes a claim. Reserved claims cannot be set; `aud` and `sub` can be overridden with a string but not removed."
                             }
                           },
                           "additionalProperties": false
@@ -39348,20 +39374,30 @@
                             "claims": {
                               "type": "object",
                               "additionalProperties": {
-                                "nullable": true,
-                                "oneOf": [
+                                "anyOf": [
                                   {
-                                    "type": "string"
+                                    "nullable": true,
+                                    "oneOf": [
+                                      {
+                                        "type": "string"
+                                      },
+                                      {
+                                        "type": "number"
+                                      },
+                                      {
+                                        "type": "boolean"
+                                      }
+                                    ]
                                   },
                                   {
-                                    "type": "number"
-                                  },
-                                  {
-                                    "type": "boolean"
+                                    "type": "array",
+                                    "items": {
+                                      "type": "string"
+                                    }
                                   }
                                 ]
                               },
-                              "description": "Claims to set (string, number, or boolean), shallow-merged over earlier rules and over the default claims. `null` removes a claim. Reserved claims cannot be set; `aud` and `sub` can be overridden with a string but not removed."
+                              "description": "Claims to set (string, number, boolean, or array of strings), shallow-merged over earlier rules and over the default claims. `null` removes a claim. Reserved claims cannot be set; `aud` and `sub` can be overridden with a string but not removed."
                             }
                           },
                           "additionalProperties": false
@@ -105352,6 +105388,13 @@
           "seed": {
             "type": "number"
           },
+          "seenInProduction": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
           "slug": {
             "type": "string"
           },
@@ -113378,6 +113421,158 @@
           }
         }
       },
+      "AutoSDKShared2f24cdccbdde3d24": {
+        "properties": {
+          "createdAt": {
+            "type": "number"
+          },
+          "createdBy": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "environments": {
+            "$ref": "#/components/schemas/AutoSDKShared7ff11793d596b8d4"
+          },
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "boolean",
+              "json",
+              "number",
+              "string"
+            ]
+          },
+          "maintainerIds": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "ownerId": {
+            "type": "string"
+          },
+          "permanent": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "projectId": {
+            "type": "string"
+          },
+          "revision": {
+            "type": "number"
+          },
+          "seed": {
+            "type": "number"
+          },
+          "seenInProduction": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "slug": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "active",
+              "archived"
+            ]
+          },
+          "tags": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "typeName": {
+            "type": "string",
+            "enum": [
+              "flag"
+            ]
+          },
+          "updatedAt": {
+            "type": "number"
+          },
+          "updatedBy": {
+            "type": "string"
+          },
+          "variants": {
+            "items": {
+              "properties": {
+                "description": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                },
+                "value": {
+                  "nullable": true,
+                  "oneOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "additionalProperties": true,
+                      "type": "object"
+                    },
+                    {
+                      "items": {},
+                      "type": "array"
+                    },
+                    {
+                      "type": "boolean",
+                      "enum": [
+                        false,
+                        true
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "value"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "createdAt",
+          "createdBy",
+          "environments",
+          "id",
+          "kind",
+          "ownerId",
+          "projectId",
+          "revision",
+          "seed",
+          "slug",
+          "state",
+          "typeName",
+          "updatedAt",
+          "variants"
+        ],
+        "type": "object"
+      },
       "AutoSDKShared30685e6067cce163": {
         "oneOf": [
           {
@@ -113537,151 +113732,6 @@
         },
         "type": "array",
         "description": "Optional overrides for the default same-env-by-slug matching. Provide explicit rules to allow cross-env access or presets. An empty array denies all access and is only allowed for the current project."
-      },
-      "AutoSDKShared348824e7d17eab26": {
-        "properties": {
-          "createdAt": {
-            "type": "number"
-          },
-          "createdBy": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "environments": {
-            "$ref": "#/components/schemas/AutoSDKShared7ff11793d596b8d4"
-          },
-          "id": {
-            "type": "string"
-          },
-          "kind": {
-            "type": "string",
-            "enum": [
-              "boolean",
-              "json",
-              "number",
-              "string"
-            ]
-          },
-          "maintainerIds": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "ownerId": {
-            "type": "string"
-          },
-          "permanent": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "projectId": {
-            "type": "string"
-          },
-          "revision": {
-            "type": "number"
-          },
-          "seed": {
-            "type": "number"
-          },
-          "slug": {
-            "type": "string"
-          },
-          "state": {
-            "type": "string",
-            "enum": [
-              "active",
-              "archived"
-            ]
-          },
-          "tags": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "typeName": {
-            "type": "string",
-            "enum": [
-              "flag"
-            ]
-          },
-          "updatedAt": {
-            "type": "number"
-          },
-          "updatedBy": {
-            "type": "string"
-          },
-          "variants": {
-            "items": {
-              "properties": {
-                "description": {
-                  "type": "string"
-                },
-                "id": {
-                  "type": "string"
-                },
-                "label": {
-                  "type": "string"
-                },
-                "value": {
-                  "nullable": true,
-                  "oneOf": [
-                    {
-                      "type": "string"
-                    },
-                    {
-                      "type": "number"
-                    },
-                    {
-                      "additionalProperties": true,
-                      "type": "object"
-                    },
-                    {
-                      "items": {},
-                      "type": "array"
-                    },
-                    {
-                      "type": "boolean",
-                      "enum": [
-                        false,
-                        true
-                      ]
-                    }
-                  ]
-                }
-              },
-              "required": [
-                "id",
-                "value"
-              ],
-              "type": "object"
-            },
-            "type": "array"
-          }
-        },
-        "required": [
-          "createdAt",
-          "createdBy",
-          "environments",
-          "id",
-          "kind",
-          "ownerId",
-          "projectId",
-          "revision",
-          "seed",
-          "slug",
-          "state",
-          "typeName",
-          "updatedAt",
-          "variants"
-        ],
-        "type": "object"
       },
       "AutoSDKShared34abcb2fd4803b5a": {
         "oneOf": [
