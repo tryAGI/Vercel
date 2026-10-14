@@ -11,6 +11,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("nextCursor")]
+        public string? NextCursor { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rules")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::Vercel.AiGatewayRule> Rules { get; set; }
@@ -25,12 +31,15 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="AiGatewayRuleList" /> class.
         /// </summary>
         /// <param name="rules"></param>
+        /// <param name="nextCursor"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AiGatewayRuleList(
-            global::System.Collections.Generic.IList<global::Vercel.AiGatewayRule> rules)
+            global::System.Collections.Generic.IList<global::Vercel.AiGatewayRule> rules,
+            string? nextCursor)
         {
+            this.NextCursor = nextCursor;
             this.Rules = rules ?? throw new global::System.ArgumentNullException(nameof(rules));
         }
 
