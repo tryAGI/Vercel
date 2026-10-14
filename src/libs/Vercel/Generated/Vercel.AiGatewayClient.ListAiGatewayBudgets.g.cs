@@ -28,12 +28,18 @@ namespace Vercel
         partial void PrepareListAiGatewayBudgetsArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::Vercel.ListAiGatewayBudgetsScopeType? scopeType,
+            ref global::Vercel.ListAiGatewayBudgetsIncludeDefaultCovered? includeDefaultCovered,
+            ref int? limit,
+            ref string? cursor,
             ref string? teamId,
             ref string? slug);
         partial void PrepareListAiGatewayBudgetsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             global::Vercel.ListAiGatewayBudgetsScopeType? scopeType,
+            global::Vercel.ListAiGatewayBudgetsIncludeDefaultCovered? includeDefaultCovered,
+            int? limit,
+            string? cursor,
             string? teamId,
             string? slug);
         partial void ProcessListAiGatewayBudgetsResponse(
@@ -47,10 +53,19 @@ namespace Vercel
 
         /// <summary>
         /// List AI Gateway budgets<br/>
-        /// List the team's AI Gateway budgets (team/project/user scopes, plus default-covered api-key spend) as a flat list, optionally filtered by scope.
+        /// List the team's AI Gateway budgets (team/project/user scopes, plus default-covered api-key spend) as a flat list, optionally filtered by scope. Without `limit` or `cursor`, returns every budget. With either, returns one page ordered by `quotaEntityId` plus `nextCursor` (null on the last page) and `defaultCoveredCounts`. Paging still reads the full merge server-side: the gateway meter list it joins has no cursor.
         /// </summary>
         /// <param name="scopeType">
         /// Restrict the list to a single budget scope.
+        /// </param>
+        /// <param name="includeDefaultCovered">
+        /// Whether to include rows inherited from a budget default (`source: "default"`). Defaults to true.
+        /// </param>
+        /// <param name="limit">
+        /// Maximum number of budgets to return (capped at 200). Enables pagination.
+        /// </param>
+        /// <param name="cursor">
+        /// Opaque cursor returned by a prior call as nextCursor.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -63,6 +78,9 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.AiGatewayBudgetList> ListAiGatewayBudgetsAsync(
             global::Vercel.ListAiGatewayBudgetsScopeType? scopeType = default,
+            global::Vercel.ListAiGatewayBudgetsIncludeDefaultCovered? includeDefaultCovered = default,
+            int? limit = default,
+            string? cursor = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -70,6 +88,9 @@ namespace Vercel
         {
             var __response = await ListAiGatewayBudgetsAsResponseAsync(
                 scopeType: scopeType,
+                includeDefaultCovered: includeDefaultCovered,
+                limit: limit,
+                cursor: cursor,
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -80,10 +101,19 @@ namespace Vercel
         }
         /// <summary>
         /// List AI Gateway budgets<br/>
-        /// List the team's AI Gateway budgets (team/project/user scopes, plus default-covered api-key spend) as a flat list, optionally filtered by scope.
+        /// List the team's AI Gateway budgets (team/project/user scopes, plus default-covered api-key spend) as a flat list, optionally filtered by scope. Without `limit` or `cursor`, returns every budget. With either, returns one page ordered by `quotaEntityId` plus `nextCursor` (null on the last page) and `defaultCoveredCounts`. Paging still reads the full merge server-side: the gateway meter list it joins has no cursor.
         /// </summary>
         /// <param name="scopeType">
         /// Restrict the list to a single budget scope.
+        /// </param>
+        /// <param name="includeDefaultCovered">
+        /// Whether to include rows inherited from a budget default (`source: "default"`). Defaults to true.
+        /// </param>
+        /// <param name="limit">
+        /// Maximum number of budgets to return (capped at 200). Enables pagination.
+        /// </param>
+        /// <param name="cursor">
+        /// Opaque cursor returned by a prior call as nextCursor.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -96,6 +126,9 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AiGatewayBudgetList>> ListAiGatewayBudgetsAsResponseAsync(
             global::Vercel.ListAiGatewayBudgetsScopeType? scopeType = default,
+            global::Vercel.ListAiGatewayBudgetsIncludeDefaultCovered? includeDefaultCovered = default,
+            int? limit = default,
+            string? cursor = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -106,6 +139,9 @@ namespace Vercel
             PrepareListAiGatewayBudgetsArguments(
                 httpClient: HttpClient,
                 scopeType: ref scopeType,
+                includeDefaultCovered: ref includeDefaultCovered,
+                limit: ref limit,
+                cursor: ref cursor,
                 teamId: ref teamId,
                 slug: ref slug);
 
@@ -137,6 +173,9 @@ namespace Vercel
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("scopeType", scopeType?.ToValueString())
+                                .AddOptionalParameter("includeDefaultCovered", includeDefaultCovered?.ToValueString())
+                                .AddOptionalParameter("limit", limit?.ToString())
+                                .AddOptionalParameter("cursor", cursor)
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -181,6 +220,9 @@ namespace Vercel
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     scopeType: scopeType,
+                    includeDefaultCovered: includeDefaultCovered,
+                    limit: limit,
+                    cursor: cursor,
                     teamId: teamId,
                     slug: slug);
 

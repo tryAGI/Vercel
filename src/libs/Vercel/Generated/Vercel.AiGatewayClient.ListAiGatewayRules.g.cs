@@ -28,12 +28,16 @@ namespace Vercel
         partial void PrepareListAiGatewayRulesArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::Vercel.ListAiGatewayRulesIncludeDisabled? includeDisabled,
+            ref int? limit,
+            ref string? cursor,
             ref string? teamId,
             ref string? slug);
         partial void PrepareListAiGatewayRulesRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             global::Vercel.ListAiGatewayRulesIncludeDisabled? includeDisabled,
+            int? limit,
+            string? cursor,
             string? teamId,
             string? slug);
         partial void ProcessListAiGatewayRulesResponse(
@@ -47,9 +51,15 @@ namespace Vercel
 
         /// <summary>
         /// List rules<br/>
-        /// List the authenticated team's routing rules
+        /// List the authenticated team's routing rules, oldest first. Without `limit` or `cursor`, returns every rule. With either, returns one page and a `nextCursor` for the next page (null on the last page). Paging reads and sorts the team's rules server-side, which is fine at current rule counts.
         /// </summary>
         /// <param name="includeDisabled"></param>
+        /// <param name="limit">
+        /// Maximum number of rules to return (capped at 200). Enables pagination.
+        /// </param>
+        /// <param name="cursor">
+        /// Opaque cursor returned by a prior call as nextCursor.
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -61,6 +71,8 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.AiGatewayRuleList> ListAiGatewayRulesAsync(
             global::Vercel.ListAiGatewayRulesIncludeDisabled? includeDisabled = default,
+            int? limit = default,
+            string? cursor = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -68,6 +80,8 @@ namespace Vercel
         {
             var __response = await ListAiGatewayRulesAsResponseAsync(
                 includeDisabled: includeDisabled,
+                limit: limit,
+                cursor: cursor,
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -78,9 +92,15 @@ namespace Vercel
         }
         /// <summary>
         /// List rules<br/>
-        /// List the authenticated team's routing rules
+        /// List the authenticated team's routing rules, oldest first. Without `limit` or `cursor`, returns every rule. With either, returns one page and a `nextCursor` for the next page (null on the last page). Paging reads and sorts the team's rules server-side, which is fine at current rule counts.
         /// </summary>
         /// <param name="includeDisabled"></param>
+        /// <param name="limit">
+        /// Maximum number of rules to return (capped at 200). Enables pagination.
+        /// </param>
+        /// <param name="cursor">
+        /// Opaque cursor returned by a prior call as nextCursor.
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -92,6 +112,8 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AiGatewayRuleList>> ListAiGatewayRulesAsResponseAsync(
             global::Vercel.ListAiGatewayRulesIncludeDisabled? includeDisabled = default,
+            int? limit = default,
+            string? cursor = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -102,6 +124,8 @@ namespace Vercel
             PrepareListAiGatewayRulesArguments(
                 httpClient: HttpClient,
                 includeDisabled: ref includeDisabled,
+                limit: ref limit,
+                cursor: ref cursor,
                 teamId: ref teamId,
                 slug: ref slug);
 
@@ -133,6 +157,8 @@ namespace Vercel
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("includeDisabled", includeDisabled?.ToValueString())
+                                .AddOptionalParameter("limit", limit?.ToString())
+                                .AddOptionalParameter("cursor", cursor)
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -177,6 +203,8 @@ namespace Vercel
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     includeDisabled: includeDisabled,
+                    limit: limit,
+                    cursor: cursor,
                     teamId: teamId,
                     slug: slug);
 

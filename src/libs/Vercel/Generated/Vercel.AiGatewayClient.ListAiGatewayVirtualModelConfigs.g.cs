@@ -30,6 +30,7 @@ namespace Vercel
             ref string? ownerId,
             ref int? limit,
             ref string? cursor,
+            ref global::Vercel.ListAiGatewayVirtualModelConfigsIncludeArchived? includeArchived,
             ref string? teamId,
             ref string? slug);
         partial void PrepareListAiGatewayVirtualModelConfigsRequest(
@@ -38,6 +39,7 @@ namespace Vercel
             string? ownerId,
             int? limit,
             string? cursor,
+            global::Vercel.ListAiGatewayVirtualModelConfigsIncludeArchived? includeArchived,
             string? teamId,
             string? slug);
         partial void ProcessListAiGatewayVirtualModelConfigsResponse(
@@ -51,11 +53,12 @@ namespace Vercel
 
         /// <summary>
         /// List virtual model configs<br/>
-        /// List virtual model configs. With `ownerId`, returns all of that team's VMCs. Without it, pages through VMCs across all teams (newest-first, `limit`/`cursor`).
+        /// List virtual model configs. For a team, returns all of its VMCs, or with `limit` or `cursor` one page ordered by `virtualModelSlug`. Across teams, pages newest-first. `includeArchived=false` omits archived VMCs.
         /// </summary>
         /// <param name="ownerId"></param>
         /// <param name="limit"></param>
         /// <param name="cursor"></param>
+        /// <param name="includeArchived"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -69,6 +72,7 @@ namespace Vercel
             string? ownerId = default,
             int? limit = default,
             string? cursor = default,
+            global::Vercel.ListAiGatewayVirtualModelConfigsIncludeArchived? includeArchived = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -78,6 +82,7 @@ namespace Vercel
                 ownerId: ownerId,
                 limit: limit,
                 cursor: cursor,
+                includeArchived: includeArchived,
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -88,11 +93,12 @@ namespace Vercel
         }
         /// <summary>
         /// List virtual model configs<br/>
-        /// List virtual model configs. With `ownerId`, returns all of that team's VMCs. Without it, pages through VMCs across all teams (newest-first, `limit`/`cursor`).
+        /// List virtual model configs. For a team, returns all of its VMCs, or with `limit` or `cursor` one page ordered by `virtualModelSlug`. Across teams, pages newest-first. `includeArchived=false` omits archived VMCs.
         /// </summary>
         /// <param name="ownerId"></param>
         /// <param name="limit"></param>
         /// <param name="cursor"></param>
+        /// <param name="includeArchived"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -106,6 +112,7 @@ namespace Vercel
             string? ownerId = default,
             int? limit = default,
             string? cursor = default,
+            global::Vercel.ListAiGatewayVirtualModelConfigsIncludeArchived? includeArchived = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -118,6 +125,7 @@ namespace Vercel
                 ownerId: ref ownerId,
                 limit: ref limit,
                 cursor: ref cursor,
+                includeArchived: ref includeArchived,
                 teamId: ref teamId,
                 slug: ref slug);
 
@@ -151,6 +159,7 @@ namespace Vercel
                                 .AddOptionalParameter("ownerId", ownerId)
                                 .AddOptionalParameter("limit", limit?.ToString())
                                 .AddOptionalParameter("cursor", cursor)
+                                .AddOptionalParameter("includeArchived", includeArchived?.ToValueString())
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -197,6 +206,7 @@ namespace Vercel
                     ownerId: ownerId,
                     limit: limit,
                     cursor: cursor,
+                    includeArchived: includeArchived,
                     teamId: teamId,
                     slug: slug);
 
