@@ -999,6 +999,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        FirewallConditionalBypassCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        FirewallConditionalBypassDeleted,
+        /// <summary>
+        ///
+        /// </summary>
         FirewallConfigModified,
         /// <summary>
         ///
@@ -3161,6 +3169,8 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ExperimentUpdated => "experiment-updated",
                 ListEventTypeReplacedByItem.FirewallBypassCreated => "firewall-bypass-created",
                 ListEventTypeReplacedByItem.FirewallBypassDeleted => "firewall-bypass-deleted",
+                ListEventTypeReplacedByItem.FirewallConditionalBypassCreated => "firewall-conditional-bypass-created",
+                ListEventTypeReplacedByItem.FirewallConditionalBypassDeleted => "firewall-conditional-bypass-deleted",
                 ListEventTypeReplacedByItem.FirewallConfigModified => "firewall-config-modified",
                 ListEventTypeReplacedByItem.FirewallConfigPromoted => "firewall-config-promoted",
                 ListEventTypeReplacedByItem.FirewallConfigRemoved => "firewall-config-removed",
@@ -3894,6 +3904,8 @@ namespace Vercel
                 "experiment-updated" => ListEventTypeReplacedByItem.ExperimentUpdated,
                 "firewall-bypass-created" => ListEventTypeReplacedByItem.FirewallBypassCreated,
                 "firewall-bypass-deleted" => ListEventTypeReplacedByItem.FirewallBypassDeleted,
+                "firewall-conditional-bypass-created" => ListEventTypeReplacedByItem.FirewallConditionalBypassCreated,
+                "firewall-conditional-bypass-deleted" => ListEventTypeReplacedByItem.FirewallConditionalBypassDeleted,
                 "firewall-config-modified" => ListEventTypeReplacedByItem.FirewallConfigModified,
                 "firewall-config-promoted" => ListEventTypeReplacedByItem.FirewallConfigPromoted,
                 "firewall-config-removed" => ListEventTypeReplacedByItem.FirewallConfigRemoved,

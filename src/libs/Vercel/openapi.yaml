@@ -8624,6 +8624,7 @@
           "content": {
             "application/json": {
               "schema": {
+                "additionalProperties": false,
                 "properties": {
                   "name": {
                     "type": "string"
@@ -75418,6 +75419,846 @@
         }
       }
     },
+    "/v1/security/firewall/bypass/rules": {
+      "get": {
+        "description": "Retrieve conditional firewall bypass rules for a project.",
+        "operationId": "getConditionalBypass",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Get conditional firewall bypasses",
+        "tags": [
+          "security"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    {
+                      "properties": {
+                        "result": {
+                          "items": {
+                            "properties": {
+                              "conditions": {
+                                "items": {
+                                  "properties": {
+                                    "key": {
+                                      "type": "string"
+                                    },
+                                    "neg": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "op": {
+                                      "type": "string",
+                                      "enum": [
+                                        "eq",
+                                        "ex",
+                                        "gt",
+                                        "gte",
+                                        "inc",
+                                        "list",
+                                        "lt",
+                                        "lte",
+                                        "neq",
+                                        "nex",
+                                        "ninc",
+                                        "pre",
+                                        "re",
+                                        "sub",
+                                        "suf"
+                                      ]
+                                    },
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "bot_category",
+                                        "bot_name",
+                                        "bot_protection",
+                                        "bot_status",
+                                        "cookie",
+                                        "domain_environment",
+                                        "environment",
+                                        "geo_as_number",
+                                        "geo_city",
+                                        "geo_continent",
+                                        "geo_country",
+                                        "geo_country_region",
+                                        "header",
+                                        "host",
+                                        "ip_address",
+                                        "ja3_digest",
+                                        "ja4_digest",
+                                        "method",
+                                        "path",
+                                        "protocol",
+                                        "query",
+                                        "rate_limit_api_id",
+                                        "raw_path",
+                                        "region",
+                                        "response_code",
+                                        "route",
+                                        "ruleset",
+                                        "scheme",
+                                        "server_action",
+                                        "shared_condition",
+                                        "target_path",
+                                        "traffic_source",
+                                        "trusted_source",
+                                        "user_agent"
+                                      ]
+                                    },
+                                    "value": {
+                                      "oneOf": [
+                                        {
+                                          "type": "string"
+                                        },
+                                        {
+                                          "type": "number"
+                                        },
+                                        {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "op",
+                                    "type"
+                                  ],
+                                  "type": "object"
+                                },
+                                "type": "array"
+                              }
+                            },
+                            "required": [
+                              "conditions"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "array"
+                        }
+                      },
+                      "required": [
+                        "result"
+                      ],
+                      "type": "object"
+                    },
+                    {
+                      "properties": {
+                        "pagination": {
+                          "properties": {
+                            "next": {
+                              "nullable": true,
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "next"
+                          ],
+                          "type": "object"
+                        },
+                        "result": {
+                          "items": {
+                            "properties": {
+                              "conditionGroup": {
+                                "items": {
+                                  "properties": {
+                                    "conditions": {
+                                      "items": {
+                                        "properties": {
+                                          "key": {
+                                            "type": "string"
+                                          },
+                                          "neg": {
+                                            "type": "boolean",
+                                            "enum": [
+                                              false,
+                                              true
+                                            ]
+                                          },
+                                          "op": {
+                                            "type": "string",
+                                            "enum": [
+                                              "eq",
+                                              "ex",
+                                              "gt",
+                                              "gte",
+                                              "inc",
+                                              "list",
+                                              "lt",
+                                              "lte",
+                                              "neq",
+                                              "nex",
+                                              "ninc",
+                                              "pre",
+                                              "re",
+                                              "sub",
+                                              "suf"
+                                            ]
+                                          },
+                                          "type": {
+                                            "type": "string",
+                                            "enum": [
+                                              "bot_category",
+                                              "bot_name",
+                                              "bot_protection",
+                                              "bot_status",
+                                              "cookie",
+                                              "domain_environment",
+                                              "environment",
+                                              "geo_as_number",
+                                              "geo_city",
+                                              "geo_continent",
+                                              "geo_country",
+                                              "geo_country_region",
+                                              "header",
+                                              "host",
+                                              "ip_address",
+                                              "ja3_digest",
+                                              "ja4_digest",
+                                              "method",
+                                              "path",
+                                              "protocol",
+                                              "query",
+                                              "rate_limit_api_id",
+                                              "raw_path",
+                                              "region",
+                                              "response_code",
+                                              "route",
+                                              "ruleset",
+                                              "scheme",
+                                              "server_action",
+                                              "shared_condition",
+                                              "target_path",
+                                              "traffic_source",
+                                              "trusted_source",
+                                              "user_agent"
+                                            ]
+                                          },
+                                          "value": {
+                                            "oneOf": [
+                                              {
+                                                "type": "string"
+                                              },
+                                              {
+                                                "type": "number"
+                                              },
+                                              {
+                                                "items": {
+                                                  "type": "string"
+                                                },
+                                                "type": "array"
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "required": [
+                                          "op",
+                                          "type"
+                                        ],
+                                        "type": "object"
+                                      },
+                                      "type": "array"
+                                    }
+                                  },
+                                  "required": [
+                                    "conditions"
+                                  ],
+                                  "type": "object"
+                                },
+                                "type": "array"
+                              },
+                              "domain": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "conditionGroup",
+                              "domain"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "array"
+                        }
+                      },
+                      "required": [
+                        "pagination",
+                        "result"
+                      ],
+                      "type": "object"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "slug",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          },
+          {
+            "name": "domain",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 100
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "maxLength": 512
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          }
+        ]
+      },
+      "post": {
+        "description": "Create a conditional firewall bypass rule for a project domain.",
+        "operationId": "createConditionalBypass",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Create conditional firewall bypass",
+        "tags": [
+          "security"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "result": {
+                      "properties": {
+                        "condition": {
+                          "type": "string"
+                        },
+                        "conditionGroup": {
+                          "items": {
+                            "properties": {
+                              "conditions": {
+                                "items": {
+                                  "properties": {
+                                    "key": {
+                                      "type": "string"
+                                    },
+                                    "neg": {
+                                      "type": "boolean",
+                                      "enum": [
+                                        false,
+                                        true
+                                      ]
+                                    },
+                                    "op": {
+                                      "type": "string",
+                                      "enum": [
+                                        "eq",
+                                        "ex",
+                                        "gt",
+                                        "gte",
+                                        "inc",
+                                        "list",
+                                        "lt",
+                                        "lte",
+                                        "neq",
+                                        "nex",
+                                        "ninc",
+                                        "pre",
+                                        "re",
+                                        "sub",
+                                        "suf"
+                                      ]
+                                    },
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "bot_category",
+                                        "bot_name",
+                                        "bot_protection",
+                                        "bot_status",
+                                        "cookie",
+                                        "domain_environment",
+                                        "environment",
+                                        "geo_as_number",
+                                        "geo_city",
+                                        "geo_continent",
+                                        "geo_country",
+                                        "geo_country_region",
+                                        "header",
+                                        "host",
+                                        "ip_address",
+                                        "ja3_digest",
+                                        "ja4_digest",
+                                        "method",
+                                        "path",
+                                        "protocol",
+                                        "query",
+                                        "rate_limit_api_id",
+                                        "raw_path",
+                                        "region",
+                                        "response_code",
+                                        "route",
+                                        "ruleset",
+                                        "scheme",
+                                        "server_action",
+                                        "shared_condition",
+                                        "target_path",
+                                        "traffic_source",
+                                        "trusted_source",
+                                        "user_agent"
+                                      ]
+                                    },
+                                    "value": {
+                                      "oneOf": [
+                                        {
+                                          "type": "string"
+                                        },
+                                        {
+                                          "type": "number"
+                                        },
+                                        {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "op",
+                                    "type"
+                                  ],
+                                  "type": "object"
+                                },
+                                "type": "array"
+                              }
+                            },
+                            "required": [
+                              "conditions"
+                            ],
+                            "type": "object"
+                          },
+                          "type": "array"
+                        },
+                        "createdAt": {
+                          "type": "string"
+                        },
+                        "domain": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "string"
+                        },
+                        "note": {
+                          "type": "string"
+                        },
+                        "projectId": {
+                          "type": "string"
+                        },
+                        "updatedAt": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "condition",
+                        "conditionGroup",
+                        "createdAt",
+                        "domain",
+                        "id",
+                        "projectId",
+                        "updatedAt"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "result"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "409": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "slug",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "domain",
+                  "conditionGroup"
+                ],
+                "properties": {
+                  "domain": {
+                    "type": "string"
+                  },
+                  "conditionGroup": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 25,
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "conditions"
+                      ],
+                      "properties": {
+                        "conditions": {
+                          "type": "array",
+                          "minItems": 1,
+                          "maxItems": 65,
+                          "items": {
+                            "oneOf": [
+                              {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "type",
+                                  "op",
+                                  "value"
+                                ],
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "user_agent"
+                                    ]
+                                  },
+                                  "op": {
+                                    "type": "string",
+                                    "enum": [
+                                      "eq",
+                                      "pre",
+                                      "suf",
+                                      "sub"
+                                    ]
+                                  },
+                                  "value": {
+                                    "type": "string",
+                                    "maxLength": 500
+                                  },
+                                  "key": {
+                                    "type": "string",
+                                    "enum": [
+                                      "user-agent"
+                                    ]
+                                  }
+                                }
+                              },
+                              {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "type",
+                                  "op",
+                                  "value"
+                                ],
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "path"
+                                    ]
+                                  },
+                                  "op": {
+                                    "type": "string",
+                                    "enum": [
+                                      "eq",
+                                      "pre",
+                                      "suf",
+                                      "sub"
+                                    ]
+                                  },
+                                  "value": {
+                                    "type": "string",
+                                    "maxLength": 500
+                                  }
+                                }
+                              },
+                              {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "type",
+                                  "op",
+                                  "key",
+                                  "value"
+                                ],
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "header"
+                                    ]
+                                  },
+                                  "op": {
+                                    "type": "string",
+                                    "enum": [
+                                      "eq",
+                                      "pre",
+                                      "suf",
+                                      "sub"
+                                    ]
+                                  },
+                                  "key": {
+                                    "type": "string",
+                                    "maxLength": 128,
+                                    "pattern": "^[!#$%&'*+.^_`|~0-9A-Za-z-]+$"
+                                  },
+                                  "value": {
+                                    "type": "string",
+                                    "maxLength": 500
+                                  }
+                                }
+                              },
+                              {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "type",
+                                  "op",
+                                  "key"
+                                ],
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "header"
+                                    ]
+                                  },
+                                  "op": {
+                                    "type": "string",
+                                    "enum": [
+                                      "ex"
+                                    ]
+                                  },
+                                  "key": {
+                                    "type": "string",
+                                    "maxLength": 128,
+                                    "pattern": "^[!#$%&'*+.^_`|~0-9A-Za-z-]+$"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "note": {
+                    "type": "string",
+                    "maxLength": 500
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "Delete a conditional firewall bypass rule from a project domain.",
+        "operationId": "deleteConditionalBypass",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Delete conditional firewall bypass",
+        "tags": [
+          "security"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "ok": {
+                      "type": "boolean",
+                      "enum": [
+                        false,
+                        true
+                      ]
+                    }
+                  },
+                  "required": [
+                    "ok"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "slug",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          },
+          {
+            "name": "domain",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          }
+        ]
+      }
+    },
     "/v1/security/firewall/events": {
       "get": {
         "description": "Retrieve firewall actions for a project Rule names are resolved against the project's *current* active firewall configuration and the team's active rulesets, so a rule that has since been renamed reports its new name and one that has been deleted reports `null`. System rules such as `sys_dos_mitigation` and `ip_blocking` have no configured name and always report `null`. Filters (`ip`, `isActive`, `action`, `actionType`, `ruleKind`, `ruleId`, `hosts`) are ANDed across params and ORed within a repeated param. They are applied to the policies before `limit`/`cursor`, so pages only count matching policies. A policy with no matching requests yields no action row, so a page can hold fewer than `limit` actions; only `pagination.next` signals the end. A `cursor` is only valid with the filters it was issued for.",
@@ -78323,6 +79164,13 @@
                               },
                               "name": {
                                 "type": "string"
+                              },
+                              "nonSensitive": {
+                                "type": "boolean",
+                                "enum": [
+                                  false,
+                                  true
+                                ]
                               }
                             },
                             "required": [
@@ -103299,6 +104147,8 @@
               "experiment-updated",
               "firewall-bypass-created",
               "firewall-bypass-deleted",
+              "firewall-conditional-bypass-created",
+              "firewall-conditional-bypass-deleted",
               "firewall-config-modified",
               "firewall-config-promoted",
               "firewall-config-removed",
@@ -104242,6 +105092,8 @@
               "experiment-updated",
               "firewall-bypass-created",
               "firewall-bypass-deleted",
+              "firewall-conditional-bypass-created",
+              "firewall-conditional-bypass-deleted",
               "firewall-config-modified",
               "firewall-config-promoted",
               "firewall-config-removed",
@@ -104973,6 +105825,8 @@
                 "experiment-updated",
                 "firewall-bypass-created",
                 "firewall-bypass-deleted",
+                "firewall-conditional-bypass-created",
+                "firewall-conditional-bypass-deleted",
                 "firewall-config-modified",
                 "firewall-config-promoted",
                 "firewall-config-removed",
