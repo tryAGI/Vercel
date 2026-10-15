@@ -11194,6 +11194,9 @@
           },
           "410": {
             "description": ""
+          },
+          "500": {
+            "description": ""
           }
         },
         "parameters": [
@@ -11458,6 +11461,9 @@
             "description": ""
           },
           "410": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           }
         },
