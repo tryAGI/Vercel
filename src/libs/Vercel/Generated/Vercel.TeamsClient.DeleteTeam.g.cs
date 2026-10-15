@@ -49,7 +49,7 @@ namespace Vercel
 
         /// <summary>
         /// Delete a Team<br/>
-        /// Delete a team under your account. You need to send a `DELETE` request with the desired team `id`. An optional array of reasons for deletion may also be sent.
+        /// Delete a team under your account. You need to send a `DELETE` request with the desired team `id`. An optional array of reasons for deletion may also be sent. Enterprise teams can only be deleted in test billing mode and when not linked to an organization.
         /// </summary>
         /// <param name="newDefaultTeamId">
         /// Id of the team to be set as the new default team<br/>
@@ -88,7 +88,7 @@ namespace Vercel
         }
         /// <summary>
         /// Delete a Team<br/>
-        /// Delete a team under your account. You need to send a `DELETE` request with the desired team `id`. An optional array of reasons for deletion may also be sent.
+        /// Delete a team under your account. You need to send a `DELETE` request with the desired team `id`. An optional array of reasons for deletion may also be sent. Enterprise teams can only be deleted in test billing mode and when not linked to an organization.
         /// </summary>
         /// <param name="newDefaultTeamId">
         /// Id of the team to be set as the new default team<br/>
@@ -736,7 +736,7 @@ namespace Vercel
         }
         /// <summary>
         /// Delete a Team<br/>
-        /// Delete a team under your account. You need to send a `DELETE` request with the desired team `id`. An optional array of reasons for deletion may also be sent.
+        /// Delete a team under your account. You need to send a `DELETE` request with the desired team `id`. An optional array of reasons for deletion may also be sent. Enterprise teams can only be deleted in test billing mode and when not linked to an organization.
         /// </summary>
         /// <param name="newDefaultTeamId">
         /// Id of the team to be set as the new default team<br/>

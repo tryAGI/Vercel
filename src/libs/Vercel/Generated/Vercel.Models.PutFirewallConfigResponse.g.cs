@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("active")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AutoSDKShared1629dac811485089 Active { get; set; }
+        public required global::Vercel.AutoSDKShared50b8524374e7cff8 Active { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,7 +29,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public PutFirewallConfigResponse(
-            global::Vercel.AutoSDKShared1629dac811485089 active)
+            global::Vercel.AutoSDKShared50b8524374e7cff8 active)
         {
             this.Active = active ?? throw new global::System.ArgumentNullException(nameof(active));
         }
