@@ -107,6 +107,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        ResponseCode,
+        /// <summary>
+        ///
+        /// </summary>
         Route,
         /// <summary>
         ///
@@ -174,6 +178,7 @@ namespace Vercel
                 UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.RateLimitApiId => "rate_limit_api_id",
                 UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.RawPath => "raw_path",
                 UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.Region => "region",
+                UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.ResponseCode => "response_code",
                 UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.Route => "route",
                 UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.Ruleset => "ruleset",
                 UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.Scheme => "scheme",
@@ -216,6 +221,7 @@ namespace Vercel
                 "rate_limit_api_id" => UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.RateLimitApiId,
                 "raw_path" => UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.RawPath,
                 "region" => UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.Region,
+                "response_code" => UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.ResponseCode,
                 "route" => UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.Route,
                 "ruleset" => UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.Ruleset,
                 "scheme" => UpdateFirewallConfigRequestVariant2ValueConditionGroupItemConditionType.Scheme,

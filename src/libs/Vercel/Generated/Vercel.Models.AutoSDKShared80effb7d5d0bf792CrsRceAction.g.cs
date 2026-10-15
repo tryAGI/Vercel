@@ -1,0 +1,51 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    ///
+    /// </summary>
+    public enum AutoSDKShared80effb7d5d0bf792CrsRceAction
+    {
+        /// <summary>
+        ///
+        /// </summary>
+        Deny,
+        /// <summary>
+        ///
+        /// </summary>
+        Log,
+    }
+
+    /// <summary>
+    /// Enum extensions to do fast conversions without the reflection.
+    /// </summary>
+    public static class AutoSDKShared80effb7d5d0bf792CrsRceActionExtensions
+    {
+        /// <summary>
+        /// Converts an enum to a string.
+        /// </summary>
+        public static string ToValueString(this AutoSDKShared80effb7d5d0bf792CrsRceAction value)
+        {
+            return value switch
+            {
+                AutoSDKShared80effb7d5d0bf792CrsRceAction.Deny => "deny",
+                AutoSDKShared80effb7d5d0bf792CrsRceAction.Log => "log",
+                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
+            };
+        }
+        /// <summary>
+        /// Converts an string to a enum.
+        /// </summary>
+        public static AutoSDKShared80effb7d5d0bf792CrsRceAction? ToEnum(string value)
+        {
+            return value switch
+            {
+                "deny" => AutoSDKShared80effb7d5d0bf792CrsRceAction.Deny,
+                "log" => AutoSDKShared80effb7d5d0bf792CrsRceAction.Log,
+                _ => null,
+            };
+        }
+    }
+}

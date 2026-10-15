@@ -19,7 +19,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared1629dac811485089> GetFirewallConfigAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared50b8524374e7cff8> GetFirewallConfigAsync(
             string projectId,
             string configVersion,
             string? teamId = default,
@@ -41,7 +41,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared1629dac811485089>> GetFirewallConfigAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared50b8524374e7cff8>> GetFirewallConfigAsResponseAsync(
             string projectId,
             string configVersion,
             string? teamId = default,
