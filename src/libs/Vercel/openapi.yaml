@@ -3604,6 +3604,31 @@
                         "status"
                       ],
                       "type": "object"
+                    },
+                    {
+                      "properties": {
+                        "readOnly": {
+                          "type": "boolean",
+                          "enum": [
+                            false,
+                            true
+                          ],
+                          "description": "Present and `true` when the token can read artifacts but cannot upload them."
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "disabled",
+                            "enabled",
+                            "over_limit",
+                            "paused"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "status"
+                      ],
+                      "type": "object"
                     }
                   ]
                 }
@@ -3675,11 +3700,7 @@
                       "items": {
                         "type": "string"
                       },
-                      "type": "array",
-                      "description": "Array of URLs where the artifact was updated",
-                      "example": [
-                        "https://api.vercel.com/v2/now/artifact/12HKQaOmR5t5Uy6vdcQsNIiZgHGB"
-                      ]
+                      "type": "array"
                     }
                   },
                   "required": [
@@ -67895,7 +67916,7 @@
         }
       },
       "delete": {
-        "description": "Deletes a sandbox by name. If sandboxes are currently running, they will be stopped first. This operation deletes all sandbox entities with the given name and the named sandbox metadata. Returns 404 if the sandbox does not exist or was deleted by a concurrent request.",
+        "description": "Deletes a sandbox by name. If sandboxes are currently running, they will be stopped first. This operation deletes all sandbox entities with the given name and the named sandbox metadata. When the config item is already missing, the returned sandbox uses stored metadata and defaults; config fields may be stale.",
         "operationId": "deleteSandbox",
         "security": [
           {
