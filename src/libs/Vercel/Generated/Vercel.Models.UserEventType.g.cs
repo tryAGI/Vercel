@@ -1000,6 +1000,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        FirewallConditionalBypassCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        FirewallConditionalBypassDeleted,
+        /// <summary>
+        ///
+        /// </summary>
         FirewallConfigModified,
         /// <summary>
         ///
@@ -3162,6 +3170,8 @@ namespace Vercel
                 UserEventType.ExperimentUpdated => "experiment-updated",
                 UserEventType.FirewallBypassCreated => "firewall-bypass-created",
                 UserEventType.FirewallBypassDeleted => "firewall-bypass-deleted",
+                UserEventType.FirewallConditionalBypassCreated => "firewall-conditional-bypass-created",
+                UserEventType.FirewallConditionalBypassDeleted => "firewall-conditional-bypass-deleted",
                 UserEventType.FirewallConfigModified => "firewall-config-modified",
                 UserEventType.FirewallConfigPromoted => "firewall-config-promoted",
                 UserEventType.FirewallConfigRemoved => "firewall-config-removed",
@@ -3895,6 +3905,8 @@ namespace Vercel
                 "experiment-updated" => UserEventType.ExperimentUpdated,
                 "firewall-bypass-created" => UserEventType.FirewallBypassCreated,
                 "firewall-bypass-deleted" => UserEventType.FirewallBypassDeleted,
+                "firewall-conditional-bypass-created" => UserEventType.FirewallConditionalBypassCreated,
+                "firewall-conditional-bypass-deleted" => UserEventType.FirewallConditionalBypassDeleted,
                 "firewall-config-modified" => UserEventType.FirewallConfigModified,
                 "firewall-config-promoted" => UserEventType.FirewallConfigPromoted,
                 "firewall-config-removed" => UserEventType.FirewallConfigRemoved,

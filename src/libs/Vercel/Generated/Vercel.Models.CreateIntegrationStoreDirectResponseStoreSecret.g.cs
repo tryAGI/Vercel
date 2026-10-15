@@ -29,6 +29,12 @@ namespace Vercel
         public required string Name { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("nonSensitive")]
+        public bool? NonSensitive { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -40,17 +46,20 @@ namespace Vercel
         /// <param name="length"></param>
         /// <param name="name"></param>
         /// <param name="frameworkPublishable"></param>
+        /// <param name="nonSensitive"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateIntegrationStoreDirectResponseStoreSecret(
             double length,
             string name,
-            bool? frameworkPublishable)
+            bool? frameworkPublishable,
+            bool? nonSensitive)
         {
             this.FrameworkPublishable = frameworkPublishable;
             this.Length = length;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.NonSensitive = nonSensitive;
         }
 
         /// <summary>
