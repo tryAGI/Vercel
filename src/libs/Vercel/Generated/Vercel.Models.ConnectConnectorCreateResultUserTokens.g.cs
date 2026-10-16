@@ -16,6 +16,13 @@ namespace Vercel
         public required bool CrossInstallation { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("isStaticCredential")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool IsStaticCredential { get; set; }
+
+        /// <summary>
         /// User authorization is completed by the Connect consent screen submitting a credential instead of an OAuth redirect.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("manualCredentialInput")]
@@ -58,6 +65,7 @@ namespace Vercel
         /// <param name="crossInstallation">
         /// Whether one user token can be used across installations.
         /// </param>
+        /// <param name="isStaticCredential"></param>
         /// <param name="supportsRefinement">
         /// Whether callers can narrow user-token grants per request.
         /// </param>
@@ -78,6 +86,7 @@ namespace Vercel
 #endif
         public ConnectConnectorCreateResultUserTokens(
             bool crossInstallation,
+            bool isStaticCredential,
             bool supportsRefinement,
             bool? manualCredentialInput,
             global::System.Collections.Generic.IList<string>? scopes,
@@ -85,6 +94,7 @@ namespace Vercel
             bool? supportsResources)
         {
             this.CrossInstallation = crossInstallation;
+            this.IsStaticCredential = isStaticCredential;
             this.ManualCredentialInput = manualCredentialInput;
             this.Scopes = scopes;
             this.SupportedAuthorizationDetails = supportedAuthorizationDetails;
