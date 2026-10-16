@@ -43,6 +43,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        x26X,
+        /// <summary>
+        ///
+        /// </summary>
         x810X,
     }
 
@@ -66,6 +70,7 @@ namespace Vercel
                 UpdateProjectResponseNodeVersion.x20X => "20.x",
                 UpdateProjectResponseNodeVersion.x22X => "22.x",
                 UpdateProjectResponseNodeVersion.x24X => "24.x",
+                UpdateProjectResponseNodeVersion.x26X => "26.x",
                 UpdateProjectResponseNodeVersion.x810X => "8.10.x",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -85,6 +90,7 @@ namespace Vercel
                 "20.x" => UpdateProjectResponseNodeVersion.x20X,
                 "22.x" => UpdateProjectResponseNodeVersion.x22X,
                 "24.x" => UpdateProjectResponseNodeVersion.x24X,
+                "26.x" => UpdateProjectResponseNodeVersion.x26X,
                 "8.10.x" => UpdateProjectResponseNodeVersion.x810X,
                 _ => null,
             };

@@ -6,40 +6,34 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class DeleteConditionalBypassResponse
+    public enum DeleteConditionalBypassResponse
+    {
+    }
+
+    /// <summary>
+    /// Enum extensions to do fast conversions without the reflection.
+    /// </summary>
+    public static class DeleteConditionalBypassResponseExtensions
     {
         /// <summary>
-        ///
+        /// Converts an enum to a string.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ok")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required bool Ok { get; set; }
-
-        /// <summary>
-        /// Additional properties that are not explicitly defined in the schema
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonExtensionData]
-        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="DeleteConditionalBypassResponse" /> class.
-        /// </summary>
-        /// <param name="ok"></param>
-#if NET7_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
-#endif
-        public DeleteConditionalBypassResponse(
-            bool ok)
+        public static string ToValueString(this DeleteConditionalBypassResponse value)
         {
-            this.Ok = ok;
+            return value switch
+            {
+                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
+            };
         }
-
         /// <summary>
-        /// Initializes a new instance of the <see cref="DeleteConditionalBypassResponse" /> class.
+        /// Converts an string to a enum.
         /// </summary>
-        public DeleteConditionalBypassResponse()
+        public static DeleteConditionalBypassResponse? ToEnum(string value)
         {
+            return value switch
+            {
+                _ => null,
+            };
         }
-
     }
 }

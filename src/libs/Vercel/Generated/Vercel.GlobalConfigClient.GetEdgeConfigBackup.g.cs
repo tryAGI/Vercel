@@ -49,7 +49,7 @@ namespace Vercel
 
         /// <summary>
         /// Get Global Config backup<br/>
-        /// Retrieves a specific version of a Global Config from backup storage.
+        /// Retrieves a specific version of a Global Config from backup storage. The `user` field is only included when the caller can list team members.
         /// </summary>
         /// <param name="edgeConfigId"></param>
         /// <param name="edgeConfigBackupVersionId"></param>
@@ -83,7 +83,7 @@ namespace Vercel
         }
         /// <summary>
         /// Get Global Config backup<br/>
-        /// Retrieves a specific version of a Global Config from backup storage.
+        /// Retrieves a specific version of a Global Config from backup storage. The `user` field is only included when the caller can list team members.
         /// </summary>
         /// <param name="edgeConfigId"></param>
         /// <param name="edgeConfigBackupVersionId"></param>

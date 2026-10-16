@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    ///
+    /// Omitted when the caller cannot list team members.
     /// </summary>
     public sealed partial class GetEdgeConfigBackupResponseVariant1User
     {
