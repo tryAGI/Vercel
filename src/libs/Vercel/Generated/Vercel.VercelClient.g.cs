@@ -293,6 +293,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        public OrganizationsClient Organizations => new OrganizationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
+        ///
+        /// </summary>
         public ProjectMembersClient ProjectMembers => new ProjectMembersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,

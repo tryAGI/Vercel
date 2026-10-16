@@ -16055,7 +16055,7 @@
                               "properties": {
                                 "cores": {
                                   "type": "number",
-                                  "description": "Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive."
+                                  "description": "Build cores. Deployment creation sets the requested value; dispatch replaces it with the cores assigned by routing."
                                 },
                                 "defaultPurchaseType": {
                                   "type": "string",
@@ -16077,7 +16077,7 @@
                                 },
                                 "memory": {
                                   "type": "number",
-                                  "description": "Memory, in MiB, the build machine ran with. Set at dispatch time once the build lands on a hive."
+                                  "description": "Build memory, in MiB. Deployment creation sets the requested value; dispatch replaces it with the memory assigned by routing."
                                 },
                                 "purchaseType": {
                                   "type": "string",
@@ -18247,7 +18247,7 @@
                               "properties": {
                                 "cores": {
                                   "type": "number",
-                                  "description": "Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive."
+                                  "description": "Build cores. Deployment creation sets the requested value; dispatch replaces it with the cores assigned by routing."
                                 },
                                 "defaultPurchaseType": {
                                   "type": "string",
@@ -18269,7 +18269,7 @@
                                 },
                                 "memory": {
                                   "type": "number",
-                                  "description": "Memory, in MiB, the build machine ran with. Set at dispatch time once the build lands on a hive."
+                                  "description": "Build memory, in MiB. Deployment creation sets the requested value; dispatch replaces it with the memory assigned by routing."
                                 },
                                 "purchaseType": {
                                   "type": "string",
@@ -20484,7 +20484,7 @@
                           "properties": {
                             "cores": {
                               "type": "number",
-                              "description": "Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive."
+                              "description": "Build cores. Deployment creation sets the requested value; dispatch replaces it with the cores assigned by routing."
                             },
                             "defaultPurchaseType": {
                               "type": "string",
@@ -20506,7 +20506,7 @@
                             },
                             "memory": {
                               "type": "number",
-                              "description": "Memory, in MiB, the build machine ran with. Set at dispatch time once the build lands on a hive."
+                              "description": "Build memory, in MiB. Deployment creation sets the requested value; dispatch replaces it with the memory assigned by routing."
                             },
                             "purchaseType": {
                               "type": "string",
@@ -48793,6 +48793,619 @@
         ]
       }
     },
+    "/v1/organizations": {
+      "post": {
+        "description": "Create a new Organization. This endpoint is in private beta. Contact your Vercel account team for access.",
+        "operationId": "createOrganization",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Create an Organization",
+        "tags": [
+          "organizations"
+        ],
+        "responses": {
+          "202": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Organization"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid.\nThe slug is already in use"
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "409": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "500": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "slug"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "slug": {
+                    "type": "string",
+                    "maxLength": 48,
+                    "pattern": "^(?!-)(?:[a-z0-9-]{1,48})(?<!-)$",
+                    "description": "The desired slug for the organization."
+                  },
+                  "name": {
+                    "type": "string",
+                    "maxLength": 256,
+                    "description": "The desired name for the organization. Generated from the slug if not provided."
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "description": "List the organizations where the authenticated user holds the OrgAdmin or OrgViewer permission on the organization's root or backing team \u2014 the same criteria as GET /v1/organizations/:organizationId/teams. This endpoint is in private beta. Contact your Vercel account team for access.",
+        "operationId": "listOrganizations",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "List Organizations",
+        "tags": [
+          "organizations"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "organizations": {
+                      "items": {
+                        "$ref": "#/components/schemas/Organization"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "organizations"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": ""
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "410": {
+            "description": ""
+          }
+        },
+        "parameters": []
+      }
+    },
+    "/v1/organizations/{organizationId}": {
+      "get": {
+        "description": "Get a single organization by ID. This endpoint is in private beta. Contact your Vercel account team for access.",
+        "operationId": "getOrganization",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Get an Organization",
+        "tags": [
+          "organizations"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Organization"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "organizationId",
+            "description": "The ID of the organization to retrieve.",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The ID of the organization to retrieve."
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
+      },
+      "patch": {
+        "description": "Update an organization's slug or avatar. Upload avatar images through the existing files API before setting their hash. The organization avatar is independent of the root team's avatar. This endpoint is in private beta. Contact your Vercel account team for access.",
+        "operationId": "updateOrganization",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Update an Organization",
+        "tags": [
+          "organizations"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Organization"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "409": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "organizationId",
+            "description": "The ID of the organization to update.",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The ID of the organization to update."
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "minProperties": 1,
+                "additionalProperties": false,
+                "properties": {
+                  "avatar": {
+                    "type": "string",
+                    "maxLength": 40,
+                    "pattern": "^[0-9a-f]+$",
+                    "description": "The hash value of an uploaded image, or `null` to clear the organization avatar. Omit to leave it unchanged.",
+                    "nullable": true
+                  },
+                  "slug": {
+                    "type": "string",
+                    "maxLength": 48,
+                    "pattern": "^(?!-)(?:[a-z0-9-]{1,48})(?<!-)$",
+                    "description": "The new slug for the organization."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/organizations/{organizationId}/teams": {
+      "get": {
+        "description": "List up to 100 teams in an organization, each enriched with the team's slug, name, and avatar. Set `includeMemberCount` to include counts that include pending memberships but exclude email invitations without a membership record. Teams whose underlying record no longer exists are omitted, so a page may contain fewer teams than the page size (or be empty) while still returning a `cursor`; paginate until `cursor` is absent. This endpoint is in private beta. Contact your Vercel account team for access.",
+        "operationId": "listOrganizationTeams",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "List Organization Teams",
+        "tags": [
+          "organizations"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "cursor": {
+                      "type": "string"
+                    },
+                    "teams": {
+                      "items": {
+                        "$ref": "#/components/schemas/OrganizationTeamListItem"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "teams"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "organizationId",
+            "description": "The ID of the organization.",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The ID of the organization."
+            }
+          },
+          {
+            "name": "cursor",
+            "description": "Pagination cursor.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "Pagination cursor."
+            }
+          },
+          {
+            "name": "includeMemberCount",
+            "description": "When true, includes each team's member count in the response.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "description": "When true, includes each team's member count in the response."
+            }
+          }
+        ]
+      },
+      "post": {
+        "description": "Create a new team under an organization, or add an existing team. `mode: \"create\"` creates a brand-new child team from `slug` + `name` \u2014 a platform child by default, or an enterprise child (billed on the organization root's flex subscription) when `billingPlan: \"enterprise\"` is supplied. `mode: \"link\"` links an existing team identified by `teamId` or `slug`; the child's billing profile is derived from the target team's plan (enterprise team \u2192 enterprise child, else platform), or explicitly supplied. Both modes respond with the resulting organization-team link. This endpoint is in private beta. Contact your Vercel account team for access.",
+        "operationId": "addOrganizationTeam",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Create or Add Team to Organization",
+        "tags": [
+          "organizations"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrganizationTeam"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid.\nThe slug is already in use"
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "409": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "500": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "organizationId",
+            "description": "The ID of the organization to create or add a team under.",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The ID of the organization to create or add a team under."
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "mode"
+                ],
+                "oneOf": [
+                  {
+                    "required": [
+                      "mode",
+                      "slug",
+                      "name"
+                    ],
+                    "properties": {
+                      "mode": {
+                        "enum": [
+                          "create"
+                        ]
+                      },
+                      "name": {}
+                    }
+                  },
+                  {
+                    "required": [
+                      "mode",
+                      "teamId"
+                    ],
+                    "properties": {
+                      "mode": {
+                        "enum": [
+                          "link"
+                        ]
+                      }
+                    },
+                    "not": {
+                      "required": [
+                        "name"
+                      ]
+                    }
+                  },
+                  {
+                    "required": [
+                      "mode",
+                      "slug"
+                    ],
+                    "properties": {
+                      "mode": {
+                        "enum": [
+                          "link"
+                        ]
+                      }
+                    },
+                    "not": {
+                      "required": [
+                        "name"
+                      ]
+                    }
+                  }
+                ],
+                "properties": {
+                  "mode": {
+                    "type": "string",
+                    "enum": [
+                      "create",
+                      "link"
+                    ],
+                    "description": "Whether to create a new team under the organization (\\\"create\\\") or link an existing one (\\\"link\\\")."
+                  },
+                  "teamId": {
+                    "type": "string",
+                    "description": "The ID of an existing team to add to the organization (link mode)."
+                  },
+                  "slug": {
+                    "type": "string",
+                    "description": "The slug of an existing team to link, or the slug for a new team to create."
+                  },
+                  "name": {
+                    "type": "string",
+                    "description": "The display name for a new team. Required in create mode; rejected in link mode."
+                  },
+                  "billingPlan": {
+                    "type": "string",
+                    "enum": [
+                      "enterprise",
+                      "platform"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/organizations/{organizationId}/teams/{targetTeamId}": {
+      "delete": {
+        "description": "Delete a team from an organization. This endpoint is in private beta. Contact your Vercel account team for access.",
+        "operationId": "removeOrganizationTeam",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Delete Team from Organization",
+        "tags": [
+          "organizations"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "organizationId": {
+                      "type": "string"
+                    },
+                    "teamId": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "organizationId",
+                    "teamId"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "409": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "organizationId",
+            "description": "The ID of the organization.",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The ID of the organization."
+            }
+          },
+          {
+            "name": "targetTeamId",
+            "description": "The ID of the team to remove.",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The ID of the team to remove."
+            }
+          }
+        ]
+      }
+    },
     "/v1/projects/{idOrName}/members": {
       "get": {
         "description": "Lists all members of a project.",
@@ -65469,7 +66082,7 @@
     },
     "/v2/sandboxes": {
       "get": {
-        "description": "Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix or status.",
+        "description": "Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix or status. Overdue sessions for running and stopping sandboxes are recovered before returning the page, so an entry may no longer match its queried status after recovery.",
         "operationId": "listNamedSandboxes",
         "security": [
           {
@@ -106998,6 +107611,158 @@
           "update"
         ],
         "description": "Requested and authorized operations when `checkPermissions` is used. Legacy `includePermissions` responses contain a broader, non-authoritative permission summary."
+      },
+      "Organization": {
+        "properties": {
+          "avatar": {
+            "nullable": true,
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string",
+            "description": "The organization's display name. Optional: organizations created before the name attribute existed have no stored value. New orgs always get one (provided or slug-derived) via the service layer."
+          },
+          "organizationId": {
+            "type": "string"
+          },
+          "ownerId": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "teamCount": {
+            "type": "number"
+          },
+          "teamId": {
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "string"
+          },
+          "userRole": {
+            "type": "string",
+            "description": "The authenticated user's role in the organization. Present on read endpoints when the user holds an organization role."
+          }
+        },
+        "required": [
+          "avatar",
+          "createdAt",
+          "organizationId",
+          "ownerId",
+          "slug",
+          "teamCount",
+          "teamId",
+          "updatedAt"
+        ],
+        "type": "object"
+      },
+      "OrganizationTeamListItem": {
+        "properties": {
+          "avatar": {
+            "nullable": true,
+            "type": "string",
+            "description": "The ID of the file used as the Team's avatar, or `null` if none."
+          },
+          "billingPlan": {
+            "type": "string",
+            "enum": [
+              "enterprise",
+              "platform"
+            ],
+            "description": "Billing profile of the organization link: how this team settles within the organization. This is not the team's billing.plan or planIteration. Links with `enterprise` billing participate in organization-level billing and usage rollups. This field is optional for legacy links that have no stored profile."
+          },
+          "createdAt": {
+            "type": "string",
+            "description": "ISO timestamp of when the team was linked to the organization."
+          },
+          "memberCount": {
+            "type": "number",
+            "description": "Present only when the request sets `includeMemberCount=true`. Number of members on the Team, including pending memberships. Excludes email invitations that do not have a membership record."
+          },
+          "name": {
+            "nullable": true,
+            "type": "string",
+            "description": "The Team's display name, or `null` if none has been set."
+          },
+          "organizationId": {
+            "type": "string",
+            "description": "The ID of the organization the team belongs to."
+          },
+          "slug": {
+            "type": "string",
+            "description": "The Team's slug, unique across Vercel."
+          },
+          "ssoMode": {
+            "type": "string",
+            "enum": [
+              "organization",
+              "team"
+            ]
+          },
+          "teamId": {
+            "type": "string",
+            "description": "The Team's unique identifier."
+          },
+          "updatedAt": {
+            "type": "string",
+            "description": "ISO timestamp of when the link was last updated."
+          }
+        },
+        "required": [
+          "avatar",
+          "createdAt",
+          "name",
+          "organizationId",
+          "slug",
+          "ssoMode",
+          "teamId",
+          "updatedAt"
+        ],
+        "type": "object",
+        "description": "An org-team link enriched with the linked team's display fields, as returned by the list-teams endpoint. We project to an explicit flat interface instead of spreading the ElectroDB `OrganizationTeamItem` because its recursive generics break the OpenAPI generator (which would silently drop the route)."
+      },
+      "OrganizationTeam": {
+        "properties": {
+          "billingPlan": {
+            "type": "string",
+            "enum": [
+              "enterprise",
+              "platform"
+            ],
+            "description": "The child team's billing profile within the organization. Optional: links created before this attribute existed have no stored value."
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "organizationId": {
+            "type": "string"
+          },
+          "ssoMode": {
+            "type": "string",
+            "enum": [
+              "organization",
+              "team"
+            ]
+          },
+          "teamId": {
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "createdAt",
+          "organizationId",
+          "ssoMode",
+          "teamId",
+          "updatedAt"
+        ],
+        "type": "object"
       },
       "NamedSandbox": {
         "properties": {
