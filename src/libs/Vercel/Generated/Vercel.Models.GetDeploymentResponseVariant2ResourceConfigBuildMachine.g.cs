@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class GetDeploymentResponseVariant2ResourceConfigBuildMachine
     {
         /// <summary>
-        /// Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive.
+        /// Build cores. Deployment creation sets the requested value; dispatch replaces it with the cores assigned by routing.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("cores")]
         public double? Cores { get; set; }
@@ -29,7 +29,7 @@ namespace Vercel
         public global::Vercel.GetDeploymentResponseVariant2ResourceConfigBuildMachineMachineSelectionType? MachineSelectionType { get; set; }
 
         /// <summary>
-        /// Memory, in MiB, the build machine ran with. Set at dispatch time once the build lands on a hive.
+        /// Build memory, in MiB. Deployment creation sets the requested value; dispatch replaces it with the memory assigned by routing.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("memory")]
         public double? Memory { get; set; }
@@ -58,7 +58,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetDeploymentResponseVariant2ResourceConfigBuildMachine" /> class.
         /// </summary>
         /// <param name="cores">
-        /// Number of cores the build machine ran with. Set at dispatch time once the build lands on a hive.
+        /// Build cores. Deployment creation sets the requested value; dispatch replaces it with the cores assigned by routing.
         /// </param>
         /// <param name="defaultPurchaseType">
         /// The build machine tier included with the customer's plan. For most customers this is standard; enhanced entitlements include enhanced, while `none` means every build is billed at its purchase type.
@@ -67,7 +67,7 @@ namespace Vercel
         /// Whether the build ran on a fixed or elastic machine. Used to drive billing for the build.
         /// </param>
         /// <param name="memory">
-        /// Memory, in MiB, the build machine ran with. Set at dispatch time once the build lands on a hive.
+        /// Build memory, in MiB. Deployment creation sets the requested value; dispatch replaces it with the memory assigned by routing.
         /// </param>
         /// <param name="purchaseType">
         /// Machine type which was purchased/selected for this build. `basic` is the 2vCPU tier, recorded on the deployment so the build pipeline can detect a basic build without consulting the project.

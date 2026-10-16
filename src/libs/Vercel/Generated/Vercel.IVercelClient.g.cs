@@ -183,6 +183,11 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        public OrganizationsClient Organizations { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
         public ProjectMembersClient ProjectMembers { get; }
 
         /// <summary>

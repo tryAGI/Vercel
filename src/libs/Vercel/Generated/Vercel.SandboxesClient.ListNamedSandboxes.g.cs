@@ -61,7 +61,7 @@ namespace Vercel
 
         /// <summary>
         /// List sandboxes<br/>
-        /// Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix or status.
+        /// Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix or status. Overdue sessions for running and stopping sandboxes are recovered before returning the page, so an entry may no longer match its queried status after recovery.
         /// </summary>
         /// <param name="project">
         /// The unique identifier or name of the project to list named sandboxes for.<br/>
@@ -134,7 +134,7 @@ namespace Vercel
         }
         /// <summary>
         /// List sandboxes<br/>
-        /// Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix or status.
+        /// Retrieves a paginated list of named sandboxes belonging to a specific project. Results can be sorted by creation time or name, and optionally filtered by name prefix or status. Overdue sessions for running and stopping sandboxes are recovered before returning the page, so an entry may no longer match its queried status after recovery.
         /// </summary>
         /// <param name="project">
         /// The unique identifier or name of the project to list named sandboxes for.<br/>
