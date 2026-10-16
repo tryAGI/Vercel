@@ -15,6 +15,12 @@ namespace Vercel
         public string? Avatar { get; set; }
 
         /// <summary>
+        /// The new display name for the organization.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        public string? Name { get; set; }
+
+        /// <summary>
         /// The new slug for the organization.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
@@ -32,6 +38,9 @@ namespace Vercel
         /// <param name="avatar">
         /// The hash value of an uploaded image, or `null` to clear the organization avatar. Omit to leave it unchanged.
         /// </param>
+        /// <param name="name">
+        /// The new display name for the organization.
+        /// </param>
         /// <param name="slug">
         /// The new slug for the organization.
         /// </param>
@@ -40,9 +49,11 @@ namespace Vercel
 #endif
         public UpdateOrganizationRequest(
             string? avatar,
+            string? name,
             string? slug)
         {
             this.Avatar = avatar;
+            this.Name = name;
             this.Slug = slug;
         }
 

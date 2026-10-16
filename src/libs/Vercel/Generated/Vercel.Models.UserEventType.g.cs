@@ -500,6 +500,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        ConnectCancelMcpEventSubscription,
+        /// <summary>
+        ///
+        /// </summary>
         ConnectConfigurationCreated,
         /// <summary>
         ///
@@ -525,6 +529,10 @@ namespace Vercel
         ///
         /// </summary>
         ConnectCreateConnector,
+        /// <summary>
+        ///
+        /// </summary>
+        ConnectCreateMcpEventSubscription,
         /// <summary>
         ///
         /// </summary>
@@ -1477,6 +1485,10 @@ namespace Vercel
         ///
         /// </summary>
         OrganizationEmuUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        OrganizationNameUpdate,
         /// <summary>
         ///
         /// </summary>
@@ -3045,6 +3057,7 @@ namespace Vercel
                 UserEventType.ConnectAttachProject => "connect-attach-project",
                 UserEventType.ConnectBitbucket => "connect-bitbucket",
                 UserEventType.ConnectBitbucketApp => "connect-bitbucket-app",
+                UserEventType.ConnectCancelMcpEventSubscription => "connect-cancel-mcp-event-subscription",
                 UserEventType.ConnectConfigurationCreated => "connect-configuration-created",
                 UserEventType.ConnectConfigurationDeleted => "connect-configuration-deleted",
                 UserEventType.ConnectConfigurationLinkUpdated => "connect-configuration-link-updated",
@@ -3052,6 +3065,7 @@ namespace Vercel
                 UserEventType.ConnectConfigurationUnlinked => "connect-configuration-unlinked",
                 UserEventType.ConnectConfigurationUpdated => "connect-configuration-updated",
                 UserEventType.ConnectCreateConnector => "connect-create-connector",
+                UserEventType.ConnectCreateMcpEventSubscription => "connect-create-mcp-event-subscription",
                 UserEventType.ConnectDeleteConnector => "connect-delete-connector",
                 UserEventType.ConnectDeleteInstallation => "connect-delete-installation",
                 UserEventType.ConnectDetachProject => "connect-detach-project",
@@ -3290,6 +3304,7 @@ namespace Vercel
                 UserEventType.OrganizationEmuDomainsMerged => "organization-emu-domains-merged",
                 UserEventType.OrganizationEmuTeamUpdated => "organization-emu-team-updated",
                 UserEventType.OrganizationEmuUpdated => "organization-emu-updated",
+                UserEventType.OrganizationNameUpdate => "organization-name-update",
                 UserEventType.OrganizationSlugUpdate => "organization-slug-update",
                 UserEventType.OrganizationSsoEnforced => "organization-sso-enforced",
                 UserEventType.OrganizationTeamAdd => "organization-team-add",
@@ -3780,6 +3795,7 @@ namespace Vercel
                 "connect-attach-project" => UserEventType.ConnectAttachProject,
                 "connect-bitbucket" => UserEventType.ConnectBitbucket,
                 "connect-bitbucket-app" => UserEventType.ConnectBitbucketApp,
+                "connect-cancel-mcp-event-subscription" => UserEventType.ConnectCancelMcpEventSubscription,
                 "connect-configuration-created" => UserEventType.ConnectConfigurationCreated,
                 "connect-configuration-deleted" => UserEventType.ConnectConfigurationDeleted,
                 "connect-configuration-link-updated" => UserEventType.ConnectConfigurationLinkUpdated,
@@ -3787,6 +3803,7 @@ namespace Vercel
                 "connect-configuration-unlinked" => UserEventType.ConnectConfigurationUnlinked,
                 "connect-configuration-updated" => UserEventType.ConnectConfigurationUpdated,
                 "connect-create-connector" => UserEventType.ConnectCreateConnector,
+                "connect-create-mcp-event-subscription" => UserEventType.ConnectCreateMcpEventSubscription,
                 "connect-delete-connector" => UserEventType.ConnectDeleteConnector,
                 "connect-delete-installation" => UserEventType.ConnectDeleteInstallation,
                 "connect-detach-project" => UserEventType.ConnectDetachProject,
@@ -4025,6 +4042,7 @@ namespace Vercel
                 "organization-emu-domains-merged" => UserEventType.OrganizationEmuDomainsMerged,
                 "organization-emu-team-updated" => UserEventType.OrganizationEmuTeamUpdated,
                 "organization-emu-updated" => UserEventType.OrganizationEmuUpdated,
+                "organization-name-update" => UserEventType.OrganizationNameUpdate,
                 "organization-slug-update" => UserEventType.OrganizationSlugUpdate,
                 "organization-sso-enforced" => UserEventType.OrganizationSsoEnforced,
                 "organization-team-add" => UserEventType.OrganizationTeamAdd,

@@ -196,7 +196,7 @@ namespace Vercel
         public string? Target { get; set; }
 
         /// <summary>
-        /// Destinations that incoming triggers should be forwarded to. Limited to 3 entries. Set the initial destination with `triggerDestination` during creation. Replace the complete set with `PATCH /v1/connect/connectors/{connector}/trigger-destinations`.
+        /// Destinations that incoming triggers should be forwarded to. Limited to 3 entries. Set the initial destination with `triggerDestination` during creation. Replace the complete set with `PATCH /v1/connect/connectors/{connector}/trigger-destinations`. Computed routing environments are stored internally, not returned here.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("triggerDestinations")]
         public global::System.Collections.Generic.IList<global::Vercel.ConnectTriggerDestination>? TriggerDestinations { get; set; }
@@ -370,7 +370,7 @@ namespace Vercel
         /// Which of the service's products/surfaces this connector points at.
         /// </param>
         /// <param name="triggerDestinations">
-        /// Destinations that incoming triggers should be forwarded to. Limited to 3 entries. Set the initial destination with `triggerDestination` during creation. Replace the complete set with `PATCH /v1/connect/connectors/{connector}/trigger-destinations`.
+        /// Destinations that incoming triggers should be forwarded to. Limited to 3 entries. Set the initial destination with `triggerDestination` during creation. Replace the complete set with `PATCH /v1/connect/connectors/{connector}/trigger-destinations`. Computed routing environments are stored internally, not returned here.
         /// </param>
         /// <param name="triggers">
         /// Incoming trigger configuration. Only present when enabled.

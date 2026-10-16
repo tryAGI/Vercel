@@ -49005,7 +49005,7 @@
         ]
       },
       "patch": {
-        "description": "Update an organization's slug or avatar. Upload avatar images through the existing files API before setting their hash. The organization avatar is independent of the root team's avatar. This endpoint is in private beta. Contact your Vercel account team for access.",
+        "description": "Update an organization's slug, name, or avatar. Upload avatar images through the existing files API before setting their hash. The organization avatar is independent of the root team's avatar. This endpoint is in private beta. Contact your Vercel account team for access.",
         "operationId": "updateOrganization",
         "security": [
           {
@@ -49072,6 +49072,11 @@
                     "pattern": "^[0-9a-f]+$",
                     "description": "The hash value of an uploaded image, or `null` to clear the organization avatar. Omit to leave it unchanged.",
                     "nullable": true
+                  },
+                  "name": {
+                    "type": "string",
+                    "maxLength": 256,
+                    "description": "The new display name for the organization."
                   },
                   "slug": {
                     "type": "string",
@@ -99624,7 +99629,7 @@
           "projectId"
         ],
         "type": "object",
-        "description": "Destinations that incoming triggers should be forwarded to. Limited to 3 entries. Set the initial destination with `triggerDestination` during creation. Replace the complete set with `PATCH /v1/connect/connectors/{connector}/trigger-destinations`."
+        "description": "Destinations that incoming triggers should be forwarded to. Limited to 3 entries. Set the initial destination with `triggerDestination` during creation. Replace the complete set with `PATCH /v1/connect/connectors/{connector}/trigger-destinations`. Computed routing environments are stored internally, not returned here."
       },
       "ConnectTriggerConfiguration": {
         "properties": {
@@ -99935,7 +99940,7 @@
               "$ref": "#/components/schemas/ConnectTriggerDestination"
             },
             "type": "array",
-            "description": "Destinations that incoming triggers should be forwarded to. Limited to 3 entries. Set the initial destination with `triggerDestination` during creation. Replace the complete set with `PATCH /v1/connect/connectors/{connector}/trigger-destinations`."
+            "description": "Destinations that incoming triggers should be forwarded to. Limited to 3 entries. Set the initial destination with `triggerDestination` during creation. Replace the complete set with `PATCH /v1/connect/connectors/{connector}/trigger-destinations`. Computed routing environments are stored internally, not returned here."
           },
           "triggers": {
             "$ref": "#/components/schemas/ConnectTriggerConfiguration",
@@ -100461,7 +100466,7 @@
               "$ref": "#/components/schemas/ConnectTriggerDestination"
             },
             "type": "array",
-            "description": "Destinations that incoming triggers should be forwarded to. Limited to 3 entries. Set the initial destination with `triggerDestination` during creation. Replace the complete set with `PATCH /v1/connect/connectors/{connector}/trigger-destinations`."
+            "description": "Destinations that incoming triggers should be forwarded to. Limited to 3 entries. Set the initial destination with `triggerDestination` during creation. Replace the complete set with `PATCH /v1/connect/connectors/{connector}/trigger-destinations`. Computed routing environments are stored internally, not returned here."
           },
           "triggers": {
             "$ref": "#/components/schemas/ConnectTriggerConfiguration",
@@ -104679,6 +104684,7 @@
               "connect-attach-project",
               "connect-bitbucket",
               "connect-bitbucket-app",
+              "connect-cancel-mcp-event-subscription",
               "connect-configuration-created",
               "connect-configuration-deleted",
               "connect-configuration-link-updated",
@@ -104686,6 +104692,7 @@
               "connect-configuration-unlinked",
               "connect-configuration-updated",
               "connect-create-connector",
+              "connect-create-mcp-event-subscription",
               "connect-delete-connector",
               "connect-delete-installation",
               "connect-detach-project",
@@ -104924,6 +104931,7 @@
               "organization-emu-domains-merged",
               "organization-emu-team-updated",
               "organization-emu-updated",
+              "organization-name-update",
               "organization-slug-update",
               "organization-sso-enforced",
               "organization-team-add",
@@ -105624,6 +105632,7 @@
               "connect-attach-project",
               "connect-bitbucket",
               "connect-bitbucket-app",
+              "connect-cancel-mcp-event-subscription",
               "connect-configuration-created",
               "connect-configuration-deleted",
               "connect-configuration-link-updated",
@@ -105631,6 +105640,7 @@
               "connect-configuration-unlinked",
               "connect-configuration-updated",
               "connect-create-connector",
+              "connect-create-mcp-event-subscription",
               "connect-delete-connector",
               "connect-delete-installation",
               "connect-detach-project",
@@ -105869,6 +105879,7 @@
               "organization-emu-domains-merged",
               "organization-emu-team-updated",
               "organization-emu-updated",
+              "organization-name-update",
               "organization-slug-update",
               "organization-sso-enforced",
               "organization-team-add",
@@ -106357,6 +106368,7 @@
                 "connect-attach-project",
                 "connect-bitbucket",
                 "connect-bitbucket-app",
+                "connect-cancel-mcp-event-subscription",
                 "connect-configuration-created",
                 "connect-configuration-deleted",
                 "connect-configuration-link-updated",
@@ -106364,6 +106376,7 @@
                 "connect-configuration-unlinked",
                 "connect-configuration-updated",
                 "connect-create-connector",
+                "connect-create-mcp-event-subscription",
                 "connect-delete-connector",
                 "connect-delete-installation",
                 "connect-detach-project",
@@ -106602,6 +106615,7 @@
                 "organization-emu-domains-merged",
                 "organization-emu-team-updated",
                 "organization-emu-updated",
+                "organization-name-update",
                 "organization-slug-update",
                 "organization-sso-enforced",
                 "organization-team-add",

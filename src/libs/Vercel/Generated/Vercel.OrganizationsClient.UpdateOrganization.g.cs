@@ -45,7 +45,7 @@ namespace Vercel
 
         /// <summary>
         /// Update an Organization<br/>
-        /// Update an organization's slug or avatar. Upload avatar images through the existing files API before setting their hash. The organization avatar is independent of the root team's avatar. This endpoint is in private beta. Contact your Vercel account team for access.
+        /// Update an organization's slug, name, or avatar. Upload avatar images through the existing files API before setting their hash. The organization avatar is independent of the root team's avatar. This endpoint is in private beta. Contact your Vercel account team for access.
         /// </summary>
         /// <param name="organizationId">
         /// The ID of the organization to update.
@@ -73,7 +73,7 @@ namespace Vercel
         }
         /// <summary>
         /// Update an Organization<br/>
-        /// Update an organization's slug or avatar. Upload avatar images through the existing files API before setting their hash. The organization avatar is independent of the root team's avatar. This endpoint is in private beta. Contact your Vercel account team for access.
+        /// Update an organization's slug, name, or avatar. Upload avatar images through the existing files API before setting their hash. The organization avatar is independent of the root team's avatar. This endpoint is in private beta. Contact your Vercel account team for access.
         /// </summary>
         /// <param name="organizationId">
         /// The ID of the organization to update.
@@ -640,13 +640,16 @@ namespace Vercel
         }
         /// <summary>
         /// Update an Organization<br/>
-        /// Update an organization's slug or avatar. Upload avatar images through the existing files API before setting their hash. The organization avatar is independent of the root team's avatar. This endpoint is in private beta. Contact your Vercel account team for access.
+        /// Update an organization's slug, name, or avatar. Upload avatar images through the existing files API before setting their hash. The organization avatar is independent of the root team's avatar. This endpoint is in private beta. Contact your Vercel account team for access.
         /// </summary>
         /// <param name="organizationId">
         /// The ID of the organization to update.
         /// </param>
         /// <param name="avatar">
         /// The hash value of an uploaded image, or `null` to clear the organization avatar. Omit to leave it unchanged.
+        /// </param>
+        /// <param name="name">
+        /// The new display name for the organization.
         /// </param>
         /// <param name="slug">
         /// The new slug for the organization.
@@ -657,6 +660,7 @@ namespace Vercel
         public async global::System.Threading.Tasks.Task<global::Vercel.Organization> UpdateOrganizationAsync(
             string organizationId,
             string? avatar = default,
+            string? name = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -664,6 +668,7 @@ namespace Vercel
             var __request = new global::Vercel.UpdateOrganizationRequest
             {
                 Avatar = avatar,
+                Name = name,
                 Slug = slug,
             };
 
