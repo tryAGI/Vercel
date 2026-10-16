@@ -13,8 +13,6 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="domain"></param>
-        /// <param name="limit"></param>
-        /// <param name="offset"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -25,8 +23,6 @@ namespace Vercel
             string projectId,
             string? slug = default,
             string? domain = default,
-            double? limit = default,
-            string? offset = default,
             string? teamId = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
@@ -39,8 +35,6 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="domain"></param>
-        /// <param name="limit"></param>
-        /// <param name="offset"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -51,8 +45,6 @@ namespace Vercel
             string projectId,
             string? slug = default,
             string? domain = default,
-            double? limit = default,
-            string? offset = default,
             string? teamId = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

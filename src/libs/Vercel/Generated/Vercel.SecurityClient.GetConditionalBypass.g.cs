@@ -30,8 +30,6 @@ namespace Vercel
             ref string projectId,
             ref string? slug,
             ref string? domain,
-            ref double? limit,
-            ref string? offset,
             ref string? teamId);
         partial void PrepareGetConditionalBypassRequest(
             global::System.Net.Http.HttpClient httpClient,
@@ -39,8 +37,6 @@ namespace Vercel
             string projectId,
             string? slug,
             string? domain,
-            double? limit,
-            string? offset,
             string? teamId);
         partial void ProcessGetConditionalBypassResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -60,8 +56,6 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="domain"></param>
-        /// <param name="limit"></param>
-        /// <param name="offset"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -72,8 +66,6 @@ namespace Vercel
             string projectId,
             string? slug = default,
             string? domain = default,
-            double? limit = default,
-            string? offset = default,
             string? teamId = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -82,8 +74,6 @@ namespace Vercel
                 projectId: projectId,
                 slug: slug,
                 domain: domain,
-                limit: limit,
-                offset: offset,
                 teamId: teamId,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
@@ -100,8 +90,6 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="domain"></param>
-        /// <param name="limit"></param>
-        /// <param name="offset"></param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -112,8 +100,6 @@ namespace Vercel
             string projectId,
             string? slug = default,
             string? domain = default,
-            double? limit = default,
-            string? offset = default,
             string? teamId = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -125,8 +111,6 @@ namespace Vercel
                 projectId: ref projectId,
                 slug: ref slug,
                 domain: ref domain,
-                limit: ref limit,
-                offset: ref offset,
                 teamId: ref teamId);
 
 
@@ -159,8 +143,6 @@ namespace Vercel
                                 .AddRequiredParameter("projectId", projectId)
                                 .AddOptionalParameter("slug", slug)
                                 .AddOptionalParameter("domain", domain)
-                                .AddOptionalParameter("limit", limit?.ToString())
-                                .AddOptionalParameter("offset", offset)
                                 .AddOptionalParameter("teamId", teamId)
                                 ;
                             var __path = __pathBuilder.ToString();
@@ -206,8 +188,6 @@ namespace Vercel
                     projectId: projectId,
                     slug: slug,
                     domain: domain,
-                    limit: limit,
-                    offset: offset,
                     teamId: teamId);
 
                 return __httpRequest;

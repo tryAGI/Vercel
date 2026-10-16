@@ -11,16 +11,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("pagination")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("rules")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetConditionalBypassResponseVariant2Pagination Pagination { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("result")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.GetConditionalBypassResponseVariant2ResultItem> Result { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.GetConditionalBypassResponseVariant2Rule> Rules { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -31,17 +24,14 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetConditionalBypassResponseVariant2" /> class.
         /// </summary>
-        /// <param name="pagination"></param>
-        /// <param name="result"></param>
+        /// <param name="rules"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetConditionalBypassResponseVariant2(
-            global::Vercel.GetConditionalBypassResponseVariant2Pagination pagination,
-            global::System.Collections.Generic.IList<global::Vercel.GetConditionalBypassResponseVariant2ResultItem> result)
+            global::System.Collections.Generic.IList<global::Vercel.GetConditionalBypassResponseVariant2Rule> rules)
         {
-            this.Pagination = pagination ?? throw new global::System.ArgumentNullException(nameof(pagination));
-            this.Result = result ?? throw new global::System.ArgumentNullException(nameof(result));
+            this.Rules = rules ?? throw new global::System.ArgumentNullException(nameof(rules));
         }
 
         /// <summary>

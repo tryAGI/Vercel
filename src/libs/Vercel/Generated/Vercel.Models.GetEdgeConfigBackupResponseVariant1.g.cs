@@ -37,7 +37,7 @@ namespace Vercel
         public required global::Vercel.GetEdgeConfigBackupResponseVariant1Metadata Metadata { get; set; }
 
         /// <summary>
-        ///
+        /// Omitted when the caller cannot list team members.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("user")]
         public global::Vercel.GetEdgeConfigBackupResponseVariant1User? User { get; set; }
@@ -55,7 +55,9 @@ namespace Vercel
         /// <param name="id"></param>
         /// <param name="lastModified"></param>
         /// <param name="metadata"></param>
-        /// <param name="user"></param>
+        /// <param name="user">
+        /// Omitted when the caller cannot list team members.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

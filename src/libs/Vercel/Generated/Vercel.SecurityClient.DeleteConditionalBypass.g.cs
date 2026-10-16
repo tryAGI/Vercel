@@ -549,7 +549,7 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.DeleteConditionalBypassResponse.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = (global::Vercel.DeleteConditionalBypassResponse?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::Vercel.DeleteConditionalBypassResponse?), JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
                                     return new global::Vercel.AutoSDKHttpResponse<global::Vercel.DeleteConditionalBypassResponse>(
                                         statusCode: __response.StatusCode,
@@ -581,7 +581,7 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.DeleteConditionalBypassResponse.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = (global::Vercel.DeleteConditionalBypassResponse?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::Vercel.DeleteConditionalBypassResponse?), JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
                                     return new global::Vercel.AutoSDKHttpResponse<global::Vercel.DeleteConditionalBypassResponse>(
                                         statusCode: __response.StatusCode,
