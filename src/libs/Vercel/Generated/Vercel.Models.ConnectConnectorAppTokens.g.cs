@@ -16,6 +16,13 @@ namespace Vercel
         public required bool CrossInstallation { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("isStaticCredential")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool IsStaticCredential { get; set; }
+
+        /// <summary>
         /// Link to the page on the service where this connector's app-level permissions are declared and granted, when the service has one and it differs from `clientUrl`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("permissionsUrl")]
@@ -64,6 +71,7 @@ namespace Vercel
         /// <param name="crossInstallation">
         /// Whether one app token can be used across installations.
         /// </param>
+        /// <param name="isStaticCredential"></param>
         /// <param name="supportsRefinement">
         /// Whether callers can narrow app-token grants per request.
         /// </param>
@@ -87,6 +95,7 @@ namespace Vercel
 #endif
         public ConnectConnectorAppTokens(
             bool crossInstallation,
+            bool isStaticCredential,
             bool supportsRefinement,
             string? permissionsUrl,
             bool? requiresReinstallation,
@@ -95,6 +104,7 @@ namespace Vercel
             bool? supportsResources)
         {
             this.CrossInstallation = crossInstallation;
+            this.IsStaticCredential = isStaticCredential;
             this.PermissionsUrl = permissionsUrl;
             this.RequiresReinstallation = requiresReinstallation;
             this.Scopes = scopes;

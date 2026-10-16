@@ -99034,6 +99034,13 @@
                 ],
                 "description": "Whether one app token can be used across installations."
               },
+              "isStaticCredential": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
               "permissionsUrl": {
                 "type": "string",
                 "description": "Link to the page on the service where this connector's app-level permissions are declared and granted, when the service has one and it differs from `clientUrl`."
@@ -99079,6 +99086,7 @@
             },
             "required": [
               "crossInstallation",
+              "isStaticCredential",
               "supportsRefinement"
             ],
             "type": "object",
@@ -99421,6 +99429,13 @@
                 ],
                 "description": "Whether one user token can be used across installations."
               },
+              "isStaticCredential": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
               "manualCredentialInput": {
                 "type": "boolean",
                 "enum": [
@@ -99462,6 +99477,7 @@
             },
             "required": [
               "crossInstallation",
+              "isStaticCredential",
               "supportsRefinement"
             ],
             "type": "object",
@@ -99542,6 +99558,13 @@
                 ],
                 "description": "Whether one app token can be used across installations."
               },
+              "isStaticCredential": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
               "permissionsUrl": {
                 "type": "string",
                 "description": "Link to the page on the service where this connector's app-level permissions are declared and granted, when the service has one and it differs from `clientUrl`."
@@ -99587,6 +99610,7 @@
             },
             "required": [
               "crossInstallation",
+              "isStaticCredential",
               "supportsRefinement"
             ],
             "type": "object",
@@ -99933,6 +99957,13 @@
                 ],
                 "description": "Whether one user token can be used across installations."
               },
+              "isStaticCredential": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
               "manualCredentialInput": {
                 "type": "boolean",
                 "enum": [
@@ -99974,6 +100005,7 @@
             },
             "required": [
               "crossInstallation",
+              "isStaticCredential",
               "supportsRefinement"
             ],
             "type": "object",
