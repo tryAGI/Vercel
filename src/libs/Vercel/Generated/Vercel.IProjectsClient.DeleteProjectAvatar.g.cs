@@ -20,7 +20,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared866bd5cb8fda1c51> DeleteProjectAvatarAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared94b26a5607c7a373> DeleteProjectAvatarAsync(
             string idOrName,
             string? teamId = default,
             string? slug = default,
@@ -42,7 +42,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared866bd5cb8fda1c51>> DeleteProjectAvatarAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared94b26a5607c7a373>> DeleteProjectAvatarAsResponseAsync(
             string idOrName,
             string? teamId = default,
             string? slug = default,

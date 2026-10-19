@@ -140,6 +140,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        public DaemonsClient Daemons => new DaemonsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
+        ///
+        /// </summary>
         public DeploymentsClient Deployments => new DeploymentsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,

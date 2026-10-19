@@ -98,6 +98,11 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        public DaemonsClient Daemons { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
         public DeploymentsClient Deployments { get; }
 
         /// <summary>
