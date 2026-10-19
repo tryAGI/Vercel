@@ -12,10 +12,6 @@ namespace Vercel
         /// The unique identifier of the session in which to execute the command.<br/>
         /// Example: sbx_abc123
         /// </param>
-        /// <param name="cmdId">
-        /// The unique identifier of the command to stream logs for.<br/>
-        /// Example: cmd_abc123
-        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -26,9 +22,8 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Collections.Generic.IAsyncEnumerable<global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant1, global::Vercel.RunSessionCommandResponseVariant2, global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant3Variant1, global::Vercel.RunSessionCommandResponseVariant3Variant2>?>> RunSessionCommandAsStreamAsync(
+        global::System.Collections.Generic.IAsyncEnumerable<global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant1, global::Vercel.RunSessionCommandResponseVariant2>> RunSessionCommandAsStreamAsync(
             string sessionId,
-            string cmdId,
 
             global::Vercel.RunSessionCommandRequest request,
             string? teamId = default,
@@ -42,10 +37,6 @@ namespace Vercel
         /// <param name="sessionId">
         /// The unique identifier of the session in which to execute the command.<br/>
         /// Example: sbx_abc123
-        /// </param>
-        /// <param name="cmdId">
-        /// The unique identifier of the command to stream logs for.<br/>
-        /// Example: cmd_abc123
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -93,9 +84,8 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Collections.Generic.IAsyncEnumerable<global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant1, global::Vercel.RunSessionCommandResponseVariant2, global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant3Variant1, global::Vercel.RunSessionCommandResponseVariant3Variant2>?>> RunSessionCommandAsStreamAsync(
+        global::System.Collections.Generic.IAsyncEnumerable<global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant1, global::Vercel.RunSessionCommandResponseVariant2>> RunSessionCommandAsStreamAsync(
             string sessionId,
-            string cmdId,
             string command,
             string? teamId = default,
             string? slug = default,

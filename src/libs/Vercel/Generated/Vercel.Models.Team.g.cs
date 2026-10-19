@@ -66,10 +66,11 @@ namespace Vercel
         public global::Vercel.TeamDefaultContinuousUsageKind? DefaultContinuousUsageKind { get; set; }
 
         /// <summary>
-        /// Default deployment protection for this team null indicates protection is disabled
+        /// Deployment protection defaults for new projects in this team. When no Vercel Authentication default is saved, `ssoProtection` shows Standard Protection. An explicitly saved `null` remains disabled. Organization policy may override the team default during project creation.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultDeploymentProtection")]
-        public global::Vercel.TeamDefaultDeploymentProtection? DefaultDeploymentProtection { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.TeamDefaultDeploymentProtection DefaultDeploymentProtection { get; set; }
 
         /// <summary>
         /// Default deployment expiration settings for this team
@@ -367,6 +368,9 @@ namespace Vercel
         /// The ID of the user who created the Team.<br/>
         /// Example: R6efeCJQ2HKXywuasPDc0fOWB
         /// </param>
+        /// <param name="defaultDeploymentProtection">
+        /// Deployment protection defaults for new projects in this team. When no Vercel Authentication default is saved, `ssoProtection` shows Standard Protection. An explicitly saved `null` remains disabled. Organization policy may override the team default during project creation.
+        /// </param>
         /// <param name="id">
         /// The Team's unique identifier.<br/>
         /// Example: team_nllPyCtREAqxxdyFKbbMDlxd
@@ -401,9 +405,6 @@ namespace Vercel
         /// <param name="connect"></param>
         /// <param name="defaultContinuousUsageKind">
         /// Default continuous-usage billing kind for projects under this team. Absent means projects stay unmetered.
-        /// </param>
-        /// <param name="defaultDeploymentProtection">
-        /// Default deployment protection for this team null indicates protection is disabled
         /// </param>
         /// <param name="defaultExpirationSettings">
         /// Default deployment expiration settings for this team
@@ -521,6 +522,7 @@ namespace Vercel
         public Team(
             double createdAt,
             string creatorId,
+            global::Vercel.TeamDefaultDeploymentProtection defaultDeploymentProtection,
             string id,
             bool limited,
             string slug,
@@ -532,7 +534,6 @@ namespace Vercel
             global::Vercel.TeamBilling? billing,
             global::Vercel.TeamConnect? connect,
             global::Vercel.TeamDefaultContinuousUsageKind? defaultContinuousUsageKind,
-            global::Vercel.TeamDefaultDeploymentProtection? defaultDeploymentProtection,
             global::Vercel.TeamDefaultExpirationSettings? defaultExpirationSettings,
             global::Vercel.TeamDefaultPassport? defaultPassport,
             global::Vercel.TeamDefaultProjectJobs? defaultProjectJobs,
@@ -578,7 +579,7 @@ namespace Vercel
             this.CreatedAt = createdAt;
             this.CreatorId = creatorId ?? throw new global::System.ArgumentNullException(nameof(creatorId));
             this.DefaultContinuousUsageKind = defaultContinuousUsageKind;
-            this.DefaultDeploymentProtection = defaultDeploymentProtection;
+            this.DefaultDeploymentProtection = defaultDeploymentProtection ?? throw new global::System.ArgumentNullException(nameof(defaultDeploymentProtection));
             this.DefaultExpirationSettings = defaultExpirationSettings;
             this.DefaultPassport = defaultPassport;
             this.DefaultProjectJobs = defaultProjectJobs;

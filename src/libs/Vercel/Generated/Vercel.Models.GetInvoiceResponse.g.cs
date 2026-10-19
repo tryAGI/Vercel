@@ -61,10 +61,28 @@ namespace Vercel
         public string? Memo { get; set; }
 
         /// <summary>
+        /// Amount still owed on the invoice, per the payment processor. Can be positive even for states "refunded" or "refund_requested", since a refund does not settle an unpaid remainder. A dollar-based decimal string. Absent when no payment data is available yet.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("outstandingTotal")]
+        public string? OutstandingTotal { get; set; }
+
+        /// <summary>
         /// Moment the invoice was paid. ISO 8601 timestamp.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("paidAt")]
         public string? PaidAt { get; set; }
+
+        /// <summary>
+        /// Total amount paid and retained: payments received minus refunds applied. A dollar-based decimal string. Absent when no payment data is available yet.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("paidTotal")]
+        public string? PaidTotal { get; set; }
+
+        /// <summary>
+        /// Requested refund amount not yet applied by the payment processor: "refundTotal" minus "refundedTotal". A dollar-based decimal string. Only present when a refund was requested or applied.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("pendingRefundTotal")]
+        public string? PendingRefundTotal { get; set; }
 
         /// <summary>
         /// Subscription period for this billing cycle. ISO 8601 timestamps.
@@ -80,19 +98,25 @@ namespace Vercel
         public string? RefundedAt { get; set; }
 
         /// <summary>
-        /// The reason for refund. Only applicable for states "refunded" or "refund_request".
+        /// Total refund amount applied by the payment processor, on the same pre-tax basis as "refundTotal". Counts both money returned and debt cancelled on unpaid invoices. May be lower than "refundTotal", which is the requested amount. A dollar-based decimal string. Only present when a refund was requested or applied.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("refundedTotal")]
+        public string? RefundedTotal { get; set; }
+
+        /// <summary>
+        /// The reason for refund. Only present when a refund has been requested.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("refundReason")]
         public string? RefundReason { get; set; }
 
         /// <summary>
-        /// Refund amount. Only applicable for states "refunded" or "refund_request". A dollar-based decimal string.
+        /// Total refund amount requested. Only present when a refund has been requested. A dollar-based decimal string.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("refundTotal")]
         public string? RefundTotal { get; set; }
 
         /// <summary>
-        /// Invoice state.
+        /// Invoice state. Reports the payment state of the invoice; refund progress is reported separately via "refundedTotal" and "pendingRefundTotal". The states "refunded" and "refund_requested" only appear when the payment state cannot be determined.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("state")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetInvoiceResponseStateJsonConverter))]
@@ -144,7 +168,7 @@ namespace Vercel
         /// Subscription period for this billing cycle. ISO 8601 timestamps.
         /// </param>
         /// <param name="state">
-        /// Invoice state.
+        /// Invoice state. Reports the payment state of the invoice; refund progress is reported separately via "refundedTotal" and "pendingRefundTotal". The states "refunded" and "refund_requested" only appear when the payment state cannot be determined.
         /// </param>
         /// <param name="total">
         /// Invoice total amount. A dollar-based decimal string.
@@ -164,17 +188,29 @@ namespace Vercel
         /// <param name="memo">
         /// Additional memo for the invoice.
         /// </param>
+        /// <param name="outstandingTotal">
+        /// Amount still owed on the invoice, per the payment processor. Can be positive even for states "refunded" or "refund_requested", since a refund does not settle an unpaid remainder. A dollar-based decimal string. Absent when no payment data is available yet.
+        /// </param>
         /// <param name="paidAt">
         /// Moment the invoice was paid. ISO 8601 timestamp.
+        /// </param>
+        /// <param name="paidTotal">
+        /// Total amount paid and retained: payments received minus refunds applied. A dollar-based decimal string. Absent when no payment data is available yet.
+        /// </param>
+        /// <param name="pendingRefundTotal">
+        /// Requested refund amount not yet applied by the payment processor: "refundTotal" minus "refundedTotal". A dollar-based decimal string. Only present when a refund was requested or applied.
         /// </param>
         /// <param name="refundedAt">
         /// Most recent moment the invoice was refunded. ISO 8601 timestamp.
         /// </param>
+        /// <param name="refundedTotal">
+        /// Total refund amount applied by the payment processor, on the same pre-tax basis as "refundTotal". Counts both money returned and debt cancelled on unpaid invoices. May be lower than "refundTotal", which is the requested amount. A dollar-based decimal string. Only present when a refund was requested or applied.
+        /// </param>
         /// <param name="refundReason">
-        /// The reason for refund. Only applicable for states "refunded" or "refund_request".
+        /// The reason for refund. Only present when a refund has been requested.
         /// </param>
         /// <param name="refundTotal">
-        /// Refund amount. Only applicable for states "refunded" or "refund_request". A dollar-based decimal string.
+        /// Total refund amount requested. Only present when a refund has been requested. A dollar-based decimal string.
         /// </param>
         /// <param name="test">
         /// Whether the invoice is in the testmode (no real transaction created).
@@ -195,8 +231,12 @@ namespace Vercel
             string? externalId,
             string? invoiceNumber,
             string? memo,
+            string? outstandingTotal,
             string? paidAt,
+            string? paidTotal,
+            string? pendingRefundTotal,
             string? refundedAt,
+            string? refundedTotal,
             string? refundReason,
             string? refundTotal,
             bool? test)
@@ -209,9 +249,13 @@ namespace Vercel
             this.InvoiceNumber = invoiceNumber;
             this.Items = items ?? throw new global::System.ArgumentNullException(nameof(items));
             this.Memo = memo;
+            this.OutstandingTotal = outstandingTotal;
             this.PaidAt = paidAt;
+            this.PaidTotal = paidTotal;
+            this.PendingRefundTotal = pendingRefundTotal;
             this.Period = period ?? throw new global::System.ArgumentNullException(nameof(period));
             this.RefundedAt = refundedAt;
+            this.RefundedTotal = refundedTotal;
             this.RefundReason = refundReason;
             this.RefundTotal = refundTotal;
             this.State = state;

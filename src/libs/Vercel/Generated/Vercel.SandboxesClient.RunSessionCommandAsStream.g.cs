@@ -28,7 +28,6 @@ namespace Vercel
         partial void PrepareRunSessionCommandAsStreamArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string sessionId,
-            ref string cmdId,
             ref string? teamId,
             ref string? slug,
             global::Vercel.RunSessionCommandRequest request);
@@ -36,7 +35,6 @@ namespace Vercel
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string sessionId,
-            string cmdId,
             string? teamId,
             string? slug,
             global::Vercel.RunSessionCommandRequest request);
@@ -52,10 +50,6 @@ namespace Vercel
         /// The unique identifier of the session in which to execute the command.<br/>
         /// Example: sbx_abc123
         /// </param>
-        /// <param name="cmdId">
-        /// The unique identifier of the command to stream logs for.<br/>
-        /// Example: cmd_abc123
-        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -66,9 +60,8 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Collections.Generic.IAsyncEnumerable<global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant1, global::Vercel.RunSessionCommandResponseVariant2, global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant3Variant1, global::Vercel.RunSessionCommandResponseVariant3Variant2>?>> RunSessionCommandAsStreamAsync(
+        public async global::System.Collections.Generic.IAsyncEnumerable<global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant1, global::Vercel.RunSessionCommandResponseVariant2>> RunSessionCommandAsStreamAsync(
             string sessionId,
-            string cmdId,
 
             global::Vercel.RunSessionCommandRequest request,
             string? teamId = default,
@@ -83,7 +76,6 @@ namespace Vercel
             PrepareRunSessionCommandAsStreamArguments(
                 httpClient: HttpClient,
                 sessionId: ref sessionId,
-                cmdId: ref cmdId,
                 teamId: ref teamId,
                 slug: ref slug,
                 request: request);
@@ -115,7 +107,6 @@ namespace Vercel
                                 path: $"/v2/sandboxes/sessions/{sessionId}/cmd",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
-                                .AddRequiredParameter("cmdId", cmdId)
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -170,7 +161,6 @@ namespace Vercel
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     sessionId: sessionId,
-                    cmdId: cmdId,
                     teamId: teamId,
                     slug: slug,
                     request: request);
@@ -408,7 +398,7 @@ namespace Vercel
                                     continue;
                                 }
 
-                                var __streamedResponse = global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant1, global::Vercel.RunSessionCommandResponseVariant2, global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant3Variant1, global::Vercel.RunSessionCommandResponseVariant3Variant2>?>.FromJson(__content, JsonSerializerContext) ??
+                                var __streamedResponse = global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant1, global::Vercel.RunSessionCommandResponseVariant2>.FromJson(__content, JsonSerializerContext) ??
                                                        throw global::Vercel.ApiException.Create(
                                                            statusCode: __response.StatusCode,
                                                            message: $"Response deserialization failed for \"{__content}\" ",
@@ -436,10 +426,6 @@ namespace Vercel
         /// <param name="sessionId">
         /// The unique identifier of the session in which to execute the command.<br/>
         /// Example: sbx_abc123
-        /// </param>
-        /// <param name="cmdId">
-        /// The unique identifier of the command to stream logs for.<br/>
-        /// Example: cmd_abc123
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -487,9 +473,8 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Collections.Generic.IAsyncEnumerable<global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant1, global::Vercel.RunSessionCommandResponseVariant2, global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant3Variant1, global::Vercel.RunSessionCommandResponseVariant3Variant2>?>> RunSessionCommandAsStreamAsync(
+        public async global::System.Collections.Generic.IAsyncEnumerable<global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant1, global::Vercel.RunSessionCommandResponseVariant2>> RunSessionCommandAsStreamAsync(
             string sessionId,
-            string cmdId,
             string command,
             string? teamId = default,
             string? slug = default,
@@ -519,7 +504,6 @@ namespace Vercel
 
             var __enumerable = RunSessionCommandAsStreamAsync(
                 sessionId: sessionId,
-                cmdId: cmdId,
                 teamId: teamId,
                 slug: slug,
                 request: __request,
