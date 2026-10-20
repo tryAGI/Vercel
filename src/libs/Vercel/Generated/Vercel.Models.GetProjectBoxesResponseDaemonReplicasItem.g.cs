@@ -28,12 +28,6 @@ namespace Vercel
         public string? Image { get; set; }
 
         /// <summary>
-        /// Encrypted Iroh endpoint data for internal consumers.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("iroh")]
-        public global::Vercel.GetProjectBoxesResponseDaemonReplicasItemIroh? Iroh { get; set; }
-
-        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lastCheckedAt")]
@@ -79,9 +73,6 @@ namespace Vercel
         /// <param name="startedAt"></param>
         /// <param name="alive"></param>
         /// <param name="image"></param>
-        /// <param name="iroh">
-        /// Encrypted Iroh endpoint data for internal consumers.
-        /// </param>
         /// <param name="lastCheckedAt"></param>
         /// <param name="memoryMiB"></param>
         /// <param name="stoppedAt"></param>
@@ -94,7 +85,6 @@ namespace Vercel
             string startedAt,
             bool? alive,
             string? image,
-            global::Vercel.GetProjectBoxesResponseDaemonReplicasItemIroh? iroh,
             string? lastCheckedAt,
             double? memoryMiB,
             string? stoppedAt)
@@ -102,7 +92,6 @@ namespace Vercel
             this.Alive = alive;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Image = image;
-            this.Iroh = iroh;
             this.LastCheckedAt = lastCheckedAt;
             this.MemoryMiB = memoryMiB;
             this.Region = region ?? throw new global::System.ArgumentNullException(nameof(region));
