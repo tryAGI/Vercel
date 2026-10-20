@@ -55,7 +55,7 @@ namespace Vercel
 
         /// <summary>
         /// Get project daemons<br/>
-        /// Lists project daemons.
+        /// List the daemons of a project.
         /// </summary>
         /// <param name="idOrName">
         /// The unique project identifier or the project name
@@ -108,7 +108,7 @@ namespace Vercel
         }
         /// <summary>
         /// Get project daemons<br/>
-        /// Lists project daemons.
+        /// List the daemons of a project.
         /// </summary>
         /// <param name="idOrName">
         /// The unique project identifier or the project name

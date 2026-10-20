@@ -22,6 +22,12 @@ namespace Vercel
         public required string PlanId { get; set; }
 
         /// <summary>
+        /// The plan item prices to set for the subscription, independent of quantities
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("planItemPrices")]
+        public global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsPlanItemPrice>? PlanItemPrices { get; set; }
+
+        /// <summary>
         /// The plan item quantities to set for the subscription
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("planItemQuantities")]
@@ -48,6 +54,9 @@ namespace Vercel
         /// <param name="fromPlan">
         /// The current plan being replaced by this purchase
         /// </param>
+        /// <param name="planItemPrices">
+        /// The plan item prices to set for the subscription, independent of quantities
+        /// </param>
         /// <param name="planItemQuantities">
         /// The plan item quantities to set for the subscription
         /// </param>
@@ -60,11 +69,13 @@ namespace Vercel
         public BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7Options(
             string planId,
             global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsFromPlan? fromPlan,
+            global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsPlanItemPrice>? planItemPrices,
             global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsPlanItemQuantitie>? planItemQuantities,
             string? rateVariantKey)
         {
             this.FromPlan = fromPlan;
             this.PlanId = planId ?? throw new global::System.ArgumentNullException(nameof(planId));
+            this.PlanItemPrices = planItemPrices;
             this.PlanItemQuantities = planItemQuantities;
             this.RateVariantKey = rateVariantKey;
         }

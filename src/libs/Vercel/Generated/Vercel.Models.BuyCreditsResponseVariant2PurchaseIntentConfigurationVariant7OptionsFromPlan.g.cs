@@ -9,6 +9,12 @@ namespace Vercel
     public sealed partial class BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsFromPlan
     {
         /// <summary>
+        /// Additional source subscriptions replaced by this purchase
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("additionalSubscriptions")]
+        public global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsFromPlanAdditionalSubscription>? AdditionalSubscriptions { get; set; }
+
+        /// <summary>
         /// The end of the current plan billing cycle
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("currentCycleEndDate")]
@@ -28,6 +34,12 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("planId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PlanId { get; set; }
+
+        /// <summary>
+        /// The current plan item price overrides
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("planItemPrices")]
+        public global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsFromPlanPlanItemPrice>? PlanItemPrices { get; set; }
 
         /// <summary>
         /// The current plan item quantities
@@ -59,6 +71,12 @@ namespace Vercel
         /// <param name="planId">
         /// The ID of the plan currently assigned
         /// </param>
+        /// <param name="additionalSubscriptions">
+        /// Additional source subscriptions replaced by this purchase
+        /// </param>
+        /// <param name="planItemPrices">
+        /// The current plan item price overrides
+        /// </param>
         /// <param name="planItemQuantities">
         /// The current plan item quantities
         /// </param>
@@ -72,12 +90,16 @@ namespace Vercel
             string currentCycleEndDate,
             string orbSubscriptionId,
             string planId,
+            global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsFromPlanAdditionalSubscription>? additionalSubscriptions,
+            global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsFromPlanPlanItemPrice>? planItemPrices,
             global::System.Collections.Generic.IList<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsFromPlanPlanItemQuantitie>? planItemQuantities,
             string? rateVariantKey)
         {
+            this.AdditionalSubscriptions = additionalSubscriptions;
             this.CurrentCycleEndDate = currentCycleEndDate ?? throw new global::System.ArgumentNullException(nameof(currentCycleEndDate));
             this.OrbSubscriptionId = orbSubscriptionId ?? throw new global::System.ArgumentNullException(nameof(orbSubscriptionId));
             this.PlanId = planId ?? throw new global::System.ArgumentNullException(nameof(planId));
+            this.PlanItemPrices = planItemPrices;
             this.PlanItemQuantities = planItemQuantities;
             this.RateVariantKey = rateVariantKey;
         }
