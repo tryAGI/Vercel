@@ -24,8 +24,16 @@ jobs:
       nuget-key: ${{ secrets.NUGET_KEY }}
 
   native-aot-smoke:
-    name: NativeAOT JSON smoke (offline)
-    runs-on: ubuntu-latest
+    name: NativeAOT JSON smoke (${{ matrix.runtime }}, offline)
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: ubuntu-latest
+            runtime: linux-x64
+          - runner: ubuntu-24.04-arm
+            runtime: linux-arm64
+    runs-on: ${{ matrix.runner }}
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v7
@@ -33,6 +41,6 @@ jobs:
         with:
           dotnet-version: 10.0.x
       - name: Publish native JSON contract harness
-        run: dotnet publish src/tests/NativeAotSmoke/Vercel.NativeAotSmoke.csproj -c Release -r linux-x64 -o artifacts/native-smoke
+        run: dotnet publish src/tests/NativeAotSmoke/Vercel.NativeAotSmoke.csproj -c Release -r ${{ matrix.runtime }} -o artifacts/native-smoke
       - name: Exercise generated metadata and converters
         run: ./artifacts/native-smoke/Vercel.NativeAotSmoke

@@ -82,4 +82,4 @@ autosdk generate openapi.yaml \
   --exclude-deprecated-operations \
   --security-scheme Http:Header:Bearer \
   --direction-aware-json-generation-mode \
-  --json-serializer-context-chunk-size 1000
+  --json-serializer-context-chunk-size 2000
