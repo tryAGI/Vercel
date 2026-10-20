@@ -40,6 +40,14 @@ using Vercel;
 using var client = new VercelClient(apiKey);
 ```
 
+## NativeAOT
+
+The offline CI harness validates the full generated serializer context on Linux
+x64 with an explicit compiler profile. See
+[the native smoke guide](src/tests/NativeAotSmoke/README.md) for build commands,
+compiler settings and platform limitations. Managed JSON tests and trimming are
+also checked separately; they do not substitute for executing a native binary.
+
 <!-- EXAMPLES:START -->
 <!-- EXAMPLES:END -->
 

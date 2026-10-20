@@ -8,6 +8,8 @@
     <!-- Match the SDK release build: native debug data is unnecessary for this contract harness. -->
     <DebugType>none</DebugType>
     <DebugSymbols>false</DebugSymbols>
+    <!-- Avoid pathological post-codegen deduplication for the full SDK on Linux x64. -->
+    <IlcFoldIdenticalMethodBodies Condition="'$(RuntimeIdentifier)' == 'linux-x64'">false</IlcFoldIdenticalMethodBodies>
     <JsonSerializerIsReflectionEnabledByDefault>false</JsonSerializerIsReflectionEnabledByDefault>
   </PropertyGroup>
   <ItemGroup>
