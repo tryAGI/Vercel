@@ -49637,7 +49637,7 @@
     },
     "/v1/organizations/{organizationId}": {
       "get": {
-        "description": "Get a single organization by ID. This endpoint is in private beta. Contact your Vercel account team for access.",
+        "description": "Get a single organization by ID or slug. This endpoint is in private beta. Contact your Vercel account team for access.",
         "operationId": "getOrganization",
         "security": [
           {
@@ -49678,12 +49678,12 @@
         "parameters": [
           {
             "name": "organizationId",
-            "description": "The ID of the organization to retrieve.",
+            "description": "The ID or slug of the organization to retrieve.",
             "in": "path",
             "required": true,
             "schema": {
               "type": "string",
-              "description": "The ID of the organization to retrieve."
+              "description": "The ID or slug of the organization to retrieve."
             }
           },
           {

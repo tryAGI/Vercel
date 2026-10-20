@@ -47,10 +47,10 @@ namespace Vercel
 
         /// <summary>
         /// Get an Organization<br/>
-        /// Get a single organization by ID. This endpoint is in private beta. Contact your Vercel account team for access.
+        /// Get a single organization by ID or slug. This endpoint is in private beta. Contact your Vercel account team for access.
         /// </summary>
         /// <param name="organizationId">
-        /// The ID of the organization to retrieve.
+        /// The ID or slug of the organization to retrieve.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -80,10 +80,10 @@ namespace Vercel
         }
         /// <summary>
         /// Get an Organization<br/>
-        /// Get a single organization by ID. This endpoint is in private beta. Contact your Vercel account team for access.
+        /// Get a single organization by ID or slug. This endpoint is in private beta. Contact your Vercel account team for access.
         /// </summary>
         /// <param name="organizationId">
-        /// The ID of the organization to retrieve.
+        /// The ID or slug of the organization to retrieve.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
