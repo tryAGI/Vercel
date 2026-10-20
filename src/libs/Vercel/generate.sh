@@ -72,10 +72,14 @@ with open('openapi.yaml', 'w') as f:
 # so their models and STJ metadata are generated once.
 python3 dedupe_inline_schemas.py openapi.yaml
 
+# Reduce repeated STJ metadata graphs across contexts. Keep JSON round-trip, CLR
+# type-loading, trim and NativeAOT smoke validation when changing these settings.
 autosdk generate openapi.yaml \
   --namespace Vercel \
   --clientClassName VercelClient \
   --targetFramework net10.0 \
   --output Generated \
   --exclude-deprecated-operations \
-  --security-scheme Http:Header:Bearer
+  --security-scheme Http:Header:Bearer \
+  --direction-aware-json-generation-mode \
+  --json-serializer-context-chunk-size 1000

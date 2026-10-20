@@ -310,6 +310,10 @@ namespace Vercel.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 1)
                 {
@@ -324,6 +328,10 @@ namespace Vercel.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 2)
@@ -340,6 +348,10 @@ namespace Vercel.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 3)
                 {
@@ -354,6 +366,10 @@ namespace Vercel.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 4)
@@ -370,6 +386,10 @@ namespace Vercel.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 5)
                 {
@@ -384,6 +404,10 @@ namespace Vercel.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 6)
@@ -400,6 +424,10 @@ namespace Vercel.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 7)
                 {
@@ -414,6 +442,10 @@ namespace Vercel.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 8)
@@ -430,6 +462,10 @@ namespace Vercel.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 9)
                 {
@@ -444,6 +480,10 @@ namespace Vercel.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
                 else if (__bestIndex == 10)
@@ -460,6 +500,10 @@ namespace Vercel.JsonConverters
                     catch (global::System.InvalidOperationException)
                     {
                     }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
+                    }
                 }
                 else if (__bestIndex == 11)
                 {
@@ -474,6 +518,10 @@ namespace Vercel.JsonConverters
                     }
                     catch (global::System.InvalidOperationException)
                     {
+                    }
+                    catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                    {
+                        // Legacy enum converters signal an incompatible JSON token with this exception.
                     }
                 }
             }
@@ -493,6 +541,10 @@ namespace Vercel.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (autoSDKSharedceccd47983fcf9deVariant1 == null && autoSDKSharedceccd47983fcf9deVariant2 == null && autoSDKSharedceccd47983fcf9deVariant3 == null && autoSDKSharedceccd47983fcf9deVariant4 == null && autoSDKSharedceccd47983fcf9deVariant5 == null && autoSDKSharedceccd47983fcf9deVariant6 == null && sharedaf3e034232cd964a == null && shared0603220ab3785539 == null && shared2c06e7f88512c8b8 == null && sharedfc279ab2bedb9f61 == null && autoSDKSharedceccd47983fcf9deVariant11 == null && autoSDKSharedceccd47983fcf9deVariant12 == null)
@@ -509,6 +561,10 @@ namespace Vercel.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -527,6 +583,10 @@ namespace Vercel.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (autoSDKSharedceccd47983fcf9deVariant1 == null && autoSDKSharedceccd47983fcf9deVariant2 == null && autoSDKSharedceccd47983fcf9deVariant3 == null && autoSDKSharedceccd47983fcf9deVariant4 == null && autoSDKSharedceccd47983fcf9deVariant5 == null && autoSDKSharedceccd47983fcf9deVariant6 == null && sharedaf3e034232cd964a == null && shared0603220ab3785539 == null && shared2c06e7f88512c8b8 == null && sharedfc279ab2bedb9f61 == null && autoSDKSharedceccd47983fcf9deVariant11 == null && autoSDKSharedceccd47983fcf9deVariant12 == null)
@@ -543,6 +603,10 @@ namespace Vercel.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -561,6 +625,10 @@ namespace Vercel.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (autoSDKSharedceccd47983fcf9deVariant1 == null && autoSDKSharedceccd47983fcf9deVariant2 == null && autoSDKSharedceccd47983fcf9deVariant3 == null && autoSDKSharedceccd47983fcf9deVariant4 == null && autoSDKSharedceccd47983fcf9deVariant5 == null && autoSDKSharedceccd47983fcf9deVariant6 == null && sharedaf3e034232cd964a == null && shared0603220ab3785539 == null && shared2c06e7f88512c8b8 == null && sharedfc279ab2bedb9f61 == null && autoSDKSharedceccd47983fcf9deVariant11 == null && autoSDKSharedceccd47983fcf9deVariant12 == null)
@@ -577,6 +645,10 @@ namespace Vercel.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -595,6 +667,10 @@ namespace Vercel.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (autoSDKSharedceccd47983fcf9deVariant1 == null && autoSDKSharedceccd47983fcf9deVariant2 == null && autoSDKSharedceccd47983fcf9deVariant3 == null && autoSDKSharedceccd47983fcf9deVariant4 == null && autoSDKSharedceccd47983fcf9deVariant5 == null && autoSDKSharedceccd47983fcf9deVariant6 == null && sharedaf3e034232cd964a == null && shared0603220ab3785539 == null && shared2c06e7f88512c8b8 == null && sharedfc279ab2bedb9f61 == null && autoSDKSharedceccd47983fcf9deVariant11 == null && autoSDKSharedceccd47983fcf9deVariant12 == null)
@@ -611,6 +687,10 @@ namespace Vercel.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -629,6 +709,10 @@ namespace Vercel.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (autoSDKSharedceccd47983fcf9deVariant1 == null && autoSDKSharedceccd47983fcf9deVariant2 == null && autoSDKSharedceccd47983fcf9deVariant3 == null && autoSDKSharedceccd47983fcf9deVariant4 == null && autoSDKSharedceccd47983fcf9deVariant5 == null && autoSDKSharedceccd47983fcf9deVariant6 == null && sharedaf3e034232cd964a == null && shared0603220ab3785539 == null && shared2c06e7f88512c8b8 == null && sharedfc279ab2bedb9f61 == null && autoSDKSharedceccd47983fcf9deVariant11 == null && autoSDKSharedceccd47983fcf9deVariant12 == null)
@@ -645,6 +729,10 @@ namespace Vercel.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 
@@ -663,6 +751,10 @@ namespace Vercel.JsonConverters
                 catch (global::System.InvalidOperationException)
                 {
                 }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
+                }
             }
 
             if (autoSDKSharedceccd47983fcf9deVariant1 == null && autoSDKSharedceccd47983fcf9deVariant2 == null && autoSDKSharedceccd47983fcf9deVariant3 == null && autoSDKSharedceccd47983fcf9deVariant4 == null && autoSDKSharedceccd47983fcf9deVariant5 == null && autoSDKSharedceccd47983fcf9deVariant6 == null && sharedaf3e034232cd964a == null && shared0603220ab3785539 == null && shared2c06e7f88512c8b8 == null && sharedfc279ab2bedb9f61 == null && autoSDKSharedceccd47983fcf9deVariant11 == null && autoSDKSharedceccd47983fcf9deVariant12 == null)
@@ -679,6 +771,10 @@ namespace Vercel.JsonConverters
                 }
                 catch (global::System.InvalidOperationException)
                 {
+                }
+                catch (global::System.ArgumentOutOfRangeException __enumTokenException) when (__enumTokenException.ParamName == "reader")
+                {
+                    // Legacy enum converters signal an incompatible JSON token with this exception.
                 }
             }
 

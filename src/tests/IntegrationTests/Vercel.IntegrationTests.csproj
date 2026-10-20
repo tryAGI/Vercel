@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="../NativeAotSmoke/SerializationSmoke.cs" Link="SerializationSmoke.cs" />
     <ProjectReference Include="..\..\libs\Vercel\Vercel.csproj" />
   </ItemGroup>
 
