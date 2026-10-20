@@ -3,6 +3,8 @@
     <TargetFramework>net10.0</TargetFramework>
     <OutputType>Exe</OutputType>
     <PublishAot>true</PublishAot>
+    <!-- Exercise the complete generated context while limiting native code expansion. -->
+    <OptimizationPreference>Size</OptimizationPreference>
     <JsonSerializerIsReflectionEnabledByDefault>false</JsonSerializerIsReflectionEnabledByDefault>
   </PropertyGroup>
   <ItemGroup>
