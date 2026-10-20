@@ -5,6 +5,9 @@
     <PublishAot>true</PublishAot>
     <!-- Exercise the complete generated context while limiting native code expansion. -->
     <OptimizationPreference>Size</OptimizationPreference>
+    <!-- Match the SDK release build: native debug data is unnecessary for this contract harness. -->
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
     <JsonSerializerIsReflectionEnabledByDefault>false</JsonSerializerIsReflectionEnabledByDefault>
   </PropertyGroup>
   <ItemGroup>
