@@ -2921,6 +2921,10 @@ namespace Vercel
         ///
         /// </summary>
         WorkflowDeploymentKeyAccessed,
+        /// <summary>
+        ///
+        /// </summary>
+        XaaUpdated,
     }
 
     /// <summary>
@@ -3663,6 +3667,7 @@ namespace Vercel
                 ListEventTypeName.WebhookDeleted => "webhook-deleted",
                 ListEventTypeName.WebhookUpdated => "webhook-updated",
                 ListEventTypeName.WorkflowDeploymentKeyAccessed => "workflow-deployment-key-accessed",
+                ListEventTypeName.XaaUpdated => "xaa-updated",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -4401,6 +4406,7 @@ namespace Vercel
                 "webhook-deleted" => ListEventTypeName.WebhookDeleted,
                 "webhook-updated" => ListEventTypeName.WebhookUpdated,
                 "workflow-deployment-key-accessed" => ListEventTypeName.WorkflowDeploymentKeyAccessed,
+                "xaa-updated" => ListEventTypeName.XaaUpdated,
                 _ => null,
             };
         }

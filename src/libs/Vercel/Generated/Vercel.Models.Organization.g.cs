@@ -37,13 +37,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required string OwnerId { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("slug")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Slug { get; set; }
@@ -86,7 +79,6 @@ namespace Vercel
         /// </summary>
         /// <param name="createdAt"></param>
         /// <param name="organizationId"></param>
-        /// <param name="ownerId"></param>
         /// <param name="slug"></param>
         /// <param name="teamCount"></param>
         /// <param name="teamId"></param>
@@ -104,7 +96,6 @@ namespace Vercel
         public Organization(
             string createdAt,
             string organizationId,
-            string ownerId,
             string slug,
             double teamCount,
             string teamId,
@@ -117,7 +108,6 @@ namespace Vercel
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.Name = name;
             this.OrganizationId = organizationId ?? throw new global::System.ArgumentNullException(nameof(organizationId));
-            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
             this.TeamCount = teamCount;
             this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));

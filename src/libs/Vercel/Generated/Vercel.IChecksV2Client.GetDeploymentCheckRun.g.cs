@@ -22,7 +22,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared72831758e763e72d> GetDeploymentCheckRunAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedef431bb3026a2de5> GetDeploymentCheckRunAsync(
             string deploymentId,
             string checkRunId,
             string? teamId = default,
@@ -47,7 +47,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared72831758e763e72d>> GetDeploymentCheckRunAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedef431bb3026a2de5>> GetDeploymentCheckRunAsResponseAsync(
             string deploymentId,
             string checkRunId,
             string? teamId = default,

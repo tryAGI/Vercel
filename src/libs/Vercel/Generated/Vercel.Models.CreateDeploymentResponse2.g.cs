@@ -278,7 +278,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("functions")]
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared5f7d6053e0f466da>? Functions { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared3aee88dc9f99cb9b>? Functions { get; set; }
 
         /// <summary>
         ///
@@ -556,7 +556,7 @@ namespace Vercel
         /// Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("services")]
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedeee32c9fbde3e88c>? Services { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared71992e3f571ee328>? Services { get; set; }
 
         /// <summary>
         /// flag to indicate if the deployment was deleted by retention policy<br/>
@@ -906,7 +906,7 @@ namespace Vercel
             string? errorMessage,
             string? errorStep,
             global::Vercel.OneOf<global::Vercel.CreateDeploymentResponseFlags, global::System.Collections.Generic.IList<object>>? flags,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared5f7d6053e0f466da>? functions,
+            global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared3aee88dc9f99cb9b>? functions,
             global::Vercel.AutoSDKShared6ed7be4e006b051d? gitRepo,
             global::Vercel.AutoSDKShared4cd5b795d6ac66fc? gitSource,
             global::Vercel.CreateDeploymentResponseImages? images,
@@ -935,7 +935,7 @@ namespace Vercel
             global::Vercel.CreateDeploymentResponseResourceConfig? resourceConfig,
             global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared34abcb2fd4803b5a>? routes,
             global::Vercel.CreateDeploymentResponseSeatBlock? seatBlock,
-            global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedeee32c9fbde3e88c>? services,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared71992e3f571ee328>? services,
             bool? softDeletedByRetention,
             global::Vercel.CreateDeploymentResponseSource? source,
             global::Vercel.CreateDeploymentResponseTarget? target,
