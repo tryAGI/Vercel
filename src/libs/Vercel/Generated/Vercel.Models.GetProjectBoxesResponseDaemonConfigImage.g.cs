@@ -23,13 +23,6 @@ namespace Vercel
         public required string Resolved { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("vhs")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetProjectBoxesResponseDaemonConfigImageVhsVariant1, global::Vercel.GetProjectBoxesResponseDaemonConfigImageVhsVariant2>))]
-        public global::Vercel.OneOf<global::Vercel.GetProjectBoxesResponseDaemonConfigImageVhsVariant1, global::Vercel.GetProjectBoxesResponseDaemonConfigImageVhsVariant2>? Vhs { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -40,18 +33,15 @@ namespace Vercel
         /// </summary>
         /// <param name="requested"></param>
         /// <param name="resolved"></param>
-        /// <param name="vhs"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetProjectBoxesResponseDaemonConfigImage(
             string requested,
-            string resolved,
-            global::Vercel.OneOf<global::Vercel.GetProjectBoxesResponseDaemonConfigImageVhsVariant1, global::Vercel.GetProjectBoxesResponseDaemonConfigImageVhsVariant2>? vhs)
+            string resolved)
         {
             this.Requested = requested ?? throw new global::System.ArgumentNullException(nameof(requested));
             this.Resolved = resolved ?? throw new global::System.ArgumentNullException(nameof(resolved));
-            this.Vhs = vhs;
         }
 
         /// <summary>

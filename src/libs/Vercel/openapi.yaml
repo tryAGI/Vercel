@@ -13921,63 +13921,6 @@
                                   },
                                   "resolved": {
                                     "type": "string"
-                                  },
-                                  "vhs": {
-                                    "oneOf": [
-                                      {
-                                        "properties": {
-                                          "config": {
-                                            "properties": {
-                                              "command": {
-                                                "items": {
-                                                  "type": "string"
-                                                },
-                                                "type": "array"
-                                              },
-                                              "entrypoint": {
-                                                "items": {
-                                                  "type": "string"
-                                                },
-                                                "type": "array"
-                                              },
-                                              "workingDir": {
-                                                "type": "string"
-                                              }
-                                            },
-                                            "type": "object"
-                                          },
-                                          "digest": {
-                                            "type": "string"
-                                          },
-                                          "path": {
-                                            "type": "string"
-                                          },
-                                          "repositoryName": {
-                                            "type": "string"
-                                          },
-                                          "sizeInBytes": {
-                                            "type": "number"
-                                          }
-                                        },
-                                        "required": [
-                                          "digest",
-                                          "path",
-                                          "repositoryName"
-                                        ],
-                                        "type": "object"
-                                      },
-                                      {
-                                        "properties": {
-                                          "repositoryName": {
-                                            "type": "string"
-                                          }
-                                        },
-                                        "required": [
-                                          "repositoryName"
-                                        ],
-                                        "type": "object"
-                                      }
-                                    ]
                                   }
                                 },
                                 "required": [
@@ -14062,8 +14005,7 @@
                                     "additionalProperties": {
                                       "type": "number"
                                     },
-                                    "type": "object",
-                                    "description": "Configured replicas with the overrides applied."
+                                    "type": "object"
                                   }
                                 ]
                               },
@@ -14127,18 +14069,6 @@
                                     },
                                     "image": {
                                       "type": "string"
-                                    },
-                                    "iroh": {
-                                      "properties": {
-                                        "publicKeyCiphertext": {
-                                          "type": "string"
-                                        }
-                                      },
-                                      "required": [
-                                        "publicKeyCiphertext"
-                                      ],
-                                      "type": "object",
-                                      "description": "Encrypted Iroh endpoint data for internal consumers."
                                     },
                                     "lastCheckedAt": {
                                       "type": "string"

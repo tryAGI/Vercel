@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Configured replicas with the overrides applied.
+    ///
     /// </summary>
     public sealed partial class GetProjectBoxesResponseDaemonConfigReplicas
     {
