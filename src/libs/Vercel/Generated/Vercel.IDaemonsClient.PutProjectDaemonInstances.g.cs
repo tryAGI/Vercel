@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Override a project daemon's instance counts<br/>
-        /// Override an existing daemon's instance counts by region. Each region in the map replaces the configured count for that region. Regions not in the map keep their configured count. An empty map removes the overrides. The daemon configuration is not changed. Missing or deleted daemons return 404. Repeating the same overrides succeeds without a storage write or reconciliation event.
+        /// Override the instance counts of a daemon by region, without changing its configuration. An empty map removes the overrides.
         /// </summary>
         /// <param name="idOrName">
         /// The unique project identifier or the project name
@@ -40,7 +40,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Override a project daemon's instance counts<br/>
-        /// Override an existing daemon's instance counts by region. Each region in the map replaces the configured count for that region. Regions not in the map keep their configured count. An empty map removes the overrides. The daemon configuration is not changed. Missing or deleted daemons return 404. Repeating the same overrides succeeds without a storage write or reconciliation event.
+        /// Override the instance counts of a daemon by region, without changing its configuration. An empty map removes the overrides.
         /// </summary>
         /// <param name="idOrName">
         /// The unique project identifier or the project name
@@ -74,7 +74,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Override a project daemon's instance counts<br/>
-        /// Override an existing daemon's instance counts by region. Each region in the map replaces the configured count for that region. Regions not in the map keep their configured count. An empty map removes the overrides. The daemon configuration is not changed. Missing or deleted daemons return 404. Repeating the same overrides succeeds without a storage write or reconciliation event.
+        /// Override the instance counts of a daemon by region, without changing its configuration. An empty map removes the overrides.
         /// </summary>
         /// <param name="idOrName">
         /// The unique project identifier or the project name

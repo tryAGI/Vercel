@@ -1312,7 +1312,23 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        MessageboardChannelCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardChannelUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         MessageboardCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardPrivateChannelCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardPrivateChannelUpdated,
         /// <summary>
         ///
         /// </summary>
@@ -1320,23 +1336,7 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        MessageboardPrivateSpaceCreated,
-        /// <summary>
-        ///
-        /// </summary>
-        MessageboardPrivateSpaceUpdated,
-        /// <summary>
-        ///
-        /// </summary>
         MessageboardSchemaRegistered,
-        /// <summary>
-        ///
-        /// </summary>
-        MessageboardSpaceCreated,
-        /// <summary>
-        ///
-        /// </summary>
-        MessageboardSpaceUpdated,
         /// <summary>
         ///
         /// </summary>
@@ -3264,13 +3264,13 @@ namespace Vercel
                 ListEventTypeName.MarketplaceBillingCollectionUpdated => "marketplace-billing-collection-updated",
                 ListEventTypeName.MarketplaceFlexCommitOptIn => "marketplace-flex-commit-opt-in",
                 ListEventTypeName.MarketplaceIntegrationAllowlistUpdated => "marketplace-integration-allowlist-updated",
+                ListEventTypeName.MessageboardChannelCreated => "messageboard-channel-created",
+                ListEventTypeName.MessageboardChannelUpdated => "messageboard-channel-updated",
                 ListEventTypeName.MessageboardCreated => "messageboard-created",
+                ListEventTypeName.MessageboardPrivateChannelCreated => "messageboard-private-channel-created",
+                ListEventTypeName.MessageboardPrivateChannelUpdated => "messageboard-private-channel-updated",
                 ListEventTypeName.MessageboardPrivateCreated => "messageboard-private-created",
-                ListEventTypeName.MessageboardPrivateSpaceCreated => "messageboard-private-space-created",
-                ListEventTypeName.MessageboardPrivateSpaceUpdated => "messageboard-private-space-updated",
                 ListEventTypeName.MessageboardSchemaRegistered => "messageboard-schema-registered",
-                ListEventTypeName.MessageboardSpaceCreated => "messageboard-space-created",
-                ListEventTypeName.MessageboardSpaceUpdated => "messageboard-space-updated",
                 ListEventTypeName.MessageboardVisibilityUpdated => "messageboard-visibility-updated",
                 ListEventTypeName.MicrofrontendGroupAdded => "microfrontend-group-added",
                 ListEventTypeName.MicrofrontendGroupDeleted => "microfrontend-group-deleted",
@@ -4003,13 +4003,13 @@ namespace Vercel
                 "marketplace-billing-collection-updated" => ListEventTypeName.MarketplaceBillingCollectionUpdated,
                 "marketplace-flex-commit-opt-in" => ListEventTypeName.MarketplaceFlexCommitOptIn,
                 "marketplace-integration-allowlist-updated" => ListEventTypeName.MarketplaceIntegrationAllowlistUpdated,
+                "messageboard-channel-created" => ListEventTypeName.MessageboardChannelCreated,
+                "messageboard-channel-updated" => ListEventTypeName.MessageboardChannelUpdated,
                 "messageboard-created" => ListEventTypeName.MessageboardCreated,
+                "messageboard-private-channel-created" => ListEventTypeName.MessageboardPrivateChannelCreated,
+                "messageboard-private-channel-updated" => ListEventTypeName.MessageboardPrivateChannelUpdated,
                 "messageboard-private-created" => ListEventTypeName.MessageboardPrivateCreated,
-                "messageboard-private-space-created" => ListEventTypeName.MessageboardPrivateSpaceCreated,
-                "messageboard-private-space-updated" => ListEventTypeName.MessageboardPrivateSpaceUpdated,
                 "messageboard-schema-registered" => ListEventTypeName.MessageboardSchemaRegistered,
-                "messageboard-space-created" => ListEventTypeName.MessageboardSpaceCreated,
-                "messageboard-space-updated" => ListEventTypeName.MessageboardSpaceUpdated,
                 "messageboard-visibility-updated" => ListEventTypeName.MessageboardVisibilityUpdated,
                 "microfrontend-group-added" => ListEventTypeName.MicrofrontendGroupAdded,
                 "microfrontend-group-deleted" => ListEventTypeName.MicrofrontendGroupDeleted,
