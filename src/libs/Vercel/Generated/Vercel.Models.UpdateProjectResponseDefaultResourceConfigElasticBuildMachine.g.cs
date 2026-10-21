@@ -16,7 +16,7 @@ namespace Vercel
         public required double Cores { get; set; }
 
         /// <summary>
-        /// Machine types an elastic decision can effectively apply or persist. The algorithm may consider Basic, but Basic is normalized to standard before an elastic decision becomes effective.
+        /// Machine types elastic can assign. Widens when the elastic algorithm adds the 14 CPU tier.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("label")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateProjectResponseDefaultResourceConfigElasticBuildMachineLabelJsonConverter))]
@@ -41,7 +41,7 @@ namespace Vercel
         /// </summary>
         /// <param name="cores"></param>
         /// <param name="label">
-        /// Machine types an elastic decision can effectively apply or persist. The algorithm may consider Basic, but Basic is normalized to standard before an elastic decision becomes effective.
+        /// Machine types elastic can assign. Widens when the elastic algorithm adds the 14 CPU tier.
         /// </param>
         /// <param name="memory"></param>
 #if NET7_0_OR_GREATER
