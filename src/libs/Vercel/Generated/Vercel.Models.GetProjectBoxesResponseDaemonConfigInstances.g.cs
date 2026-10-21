@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class GetProjectBoxesResponseDaemonConfigReplicas
+    public sealed partial class GetProjectBoxesResponseDaemonConfigInstances
     {
 
         /// <summary>

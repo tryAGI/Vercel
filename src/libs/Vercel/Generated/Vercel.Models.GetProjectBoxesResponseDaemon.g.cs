@@ -31,16 +31,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("instances")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required string Name { get; set; }
+        public required global::Vercel.GetProjectBoxesResponseDaemonInstances Instances { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("replicas")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetProjectBoxesResponseDaemonReplicas Replicas { get; set; }
+        public required string Name { get; set; }
 
         /// <summary>
         ///
@@ -76,8 +76,8 @@ namespace Vercel
         /// </summary>
         /// <param name="config"></param>
         /// <param name="createdAt"></param>
+        /// <param name="instances"></param>
         /// <param name="name"></param>
-        /// <param name="replicas"></param>
         /// <param name="scope"></param>
         /// <param name="status"></param>
         /// <param name="updatedAt"></param>
@@ -90,8 +90,8 @@ namespace Vercel
         public GetProjectBoxesResponseDaemon(
             global::Vercel.GetProjectBoxesResponseDaemonConfig config,
             string createdAt,
+            global::Vercel.GetProjectBoxesResponseDaemonInstances instances,
             string name,
-            global::Vercel.GetProjectBoxesResponseDaemonReplicas replicas,
             global::Vercel.OneOf<global::Vercel.GetProjectBoxesResponseDaemonScopeVariant1, global::Vercel.GetProjectBoxesResponseDaemonScopeVariant2, global::Vercel.GetProjectBoxesResponseDaemonScopeVariant3> scope,
             global::Vercel.GetProjectBoxesResponseDaemonStatus status,
             string updatedAt,
@@ -100,8 +100,8 @@ namespace Vercel
             this.Config = config ?? throw new global::System.ArgumentNullException(nameof(config));
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
             this.DeploymentId = deploymentId;
+            this.Instances = instances ?? throw new global::System.ArgumentNullException(nameof(instances));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
-            this.Replicas = replicas ?? throw new global::System.ArgumentNullException(nameof(replicas));
             this.Scope = scope;
             this.Status = status;
             this.UpdatedAt = updatedAt ?? throw new global::System.ArgumentNullException(nameof(updatedAt));
