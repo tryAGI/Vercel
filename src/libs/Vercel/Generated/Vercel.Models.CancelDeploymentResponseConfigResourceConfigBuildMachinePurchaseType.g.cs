@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        x14cpu28gb,
+        /// <summary>
+        ///
+        /// </summary>
         Basic,
         /// <summary>
         ///
@@ -38,6 +42,7 @@ namespace Vercel
         {
             return value switch
             {
+                CancelDeploymentResponseConfigResourceConfigBuildMachinePurchaseType.x14cpu28gb => "14cpu-28gb",
                 CancelDeploymentResponseConfigResourceConfigBuildMachinePurchaseType.Basic => "basic",
                 CancelDeploymentResponseConfigResourceConfigBuildMachinePurchaseType.Enhanced => "enhanced",
                 CancelDeploymentResponseConfigResourceConfigBuildMachinePurchaseType.Standard => "standard",
@@ -52,6 +57,7 @@ namespace Vercel
         {
             return value switch
             {
+                "14cpu-28gb" => CancelDeploymentResponseConfigResourceConfigBuildMachinePurchaseType.x14cpu28gb,
                 "basic" => CancelDeploymentResponseConfigResourceConfigBuildMachinePurchaseType.Basic,
                 "enhanced" => CancelDeploymentResponseConfigResourceConfigBuildMachinePurchaseType.Enhanced,
                 "standard" => CancelDeploymentResponseConfigResourceConfigBuildMachinePurchaseType.Standard,

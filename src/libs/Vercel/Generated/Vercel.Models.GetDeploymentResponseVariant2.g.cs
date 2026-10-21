@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Returns the deployment object for the authenticated owner, including private fields such as environment variables, build log URLs, and internal metadata.
+    ///
     /// </summary>
     public sealed partial class GetDeploymentResponseVariant2
     {
@@ -538,7 +538,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resourceConfig")]
-        public global::Vercel.GetDeploymentResponseVariant2ResourceConfig? ResourceConfig { get; set; }
+        public global::Vercel.AutoSDKShared752c0ef37987da35? ResourceConfig { get; set; }
 
         /// <summary>
         ///
@@ -556,7 +556,7 @@ namespace Vercel
         /// Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("services")]
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared71992e3f571ee328>? Services { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc1460711be3474a5>? Services { get; set; }
 
         /// <summary>
         /// flag to indicate if the deployment was deleted by retention policy<br/>
@@ -932,10 +932,10 @@ namespace Vercel
             double? ready,
             string? readyStateReason,
             global::Vercel.GetDeploymentResponseVariant2ReadySubstate? readySubstate,
-            global::Vercel.GetDeploymentResponseVariant2ResourceConfig? resourceConfig,
+            global::Vercel.AutoSDKShared752c0ef37987da35? resourceConfig,
             global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared34abcb2fd4803b5a>? routes,
             global::Vercel.GetDeploymentResponseVariant2SeatBlock? seatBlock,
-            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared71992e3f571ee328>? services,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc1460711be3474a5>? services,
             bool? softDeletedByRetention,
             global::Vercel.GetDeploymentResponseVariant2Source? source,
             global::Vercel.GetDeploymentResponseVariant2Target? target,

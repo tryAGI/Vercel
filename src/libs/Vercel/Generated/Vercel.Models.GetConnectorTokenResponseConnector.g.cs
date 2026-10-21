@@ -18,6 +18,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("service")]
+        public string? Service { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Type { get; set; }
@@ -41,15 +47,18 @@ namespace Vercel
         /// <param name="id"></param>
         /// <param name="type"></param>
         /// <param name="uid"></param>
+        /// <param name="service"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetConnectorTokenResponseConnector(
             string id,
             string type,
-            string uid)
+            string uid,
+            string? service)
         {
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Service = service;
             this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
             this.Uid = uid ?? throw new global::System.ArgumentNullException(nameof(uid));
         }

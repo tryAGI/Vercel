@@ -81,6 +81,18 @@ namespace Vercel
         public global::System.Collections.Generic.IList<global::Vercel.ConnectConnectorCreateDataTypeSlackShortcut>? Shortcuts { get; set; }
 
         /// <summary>
+        /// App Home settings for the managed Slack app. Updates preserve omitted settings.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("appHome")]
+        public global::Vercel.ConnectConnectorCreateDataTypeSlackAppHome? AppHome { get; set; }
+
+        /// <summary>
+        /// Work Object preview settings for the managed Slack app. Updates preserve omitted settings.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("richPreviews")]
+        public global::Vercel.ConnectConnectorCreateDataTypeSlackRichPreviews? RichPreviews { get; set; }
+
+        /// <summary>
         /// Additional provider metadata stored with the connector.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("extras")]
@@ -131,6 +143,12 @@ namespace Vercel
         /// <param name="shortcuts">
         /// Global and message shortcuts configured for the Slack app.
         /// </param>
+        /// <param name="appHome">
+        /// App Home settings for the managed Slack app. Updates preserve omitted settings.
+        /// </param>
+        /// <param name="richPreviews">
+        /// Work Object preview settings for the managed Slack app. Updates preserve omitted settings.
+        /// </param>
         /// <param name="extras">
         /// Additional provider metadata stored with the connector.
         /// </param>
@@ -149,6 +167,8 @@ namespace Vercel
             global::System.Collections.Generic.IList<string>? userScopes,
             global::System.Collections.Generic.IList<global::Vercel.ConnectConnectorCreateDataTypeSlackSlashCommand>? slashCommands,
             global::System.Collections.Generic.IList<global::Vercel.ConnectConnectorCreateDataTypeSlackShortcut>? shortcuts,
+            global::Vercel.ConnectConnectorCreateDataTypeSlackAppHome? appHome,
+            global::Vercel.ConnectConnectorCreateDataTypeSlackRichPreviews? richPreviews,
             object? extras)
         {
             this.AppId = appId ?? throw new global::System.ArgumentNullException(nameof(appId));
@@ -162,6 +182,8 @@ namespace Vercel
             this.UserScopes = userScopes;
             this.SlashCommands = slashCommands;
             this.Shortcuts = shortcuts;
+            this.AppHome = appHome;
+            this.RichPreviews = richPreviews;
             this.Extras = extras;
         }
 
