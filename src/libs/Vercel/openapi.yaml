@@ -35779,6 +35779,491 @@
         }
       }
     },
+    "/v1/projects/{projectIdOrName}/feature-flags/labels": {
+      "get": {
+        "description": "List labels for one entity attribute. Search can return a short or empty page with a continuation cursor; continue until pagination.next is null.",
+        "operationId": "listFlagLabels",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "List attribute labels",
+        "tags": [
+          "feature-flags"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "items": {
+                        "properties": {
+                          "attributeKey": {
+                            "type": "string"
+                          },
+                          "entityKind": {
+                            "type": "string"
+                          },
+                          "label": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "attributeKey",
+                          "entityKind",
+                          "label",
+                          "value"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
+                    "pagination": {
+                      "properties": {
+                        "next": {
+                          "nullable": true,
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "next"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "pagination"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "402": {
+            "description": "The account is missing a payment so payment method must be updated"
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100,
+              "default": 20
+            }
+          },
+          {
+            "name": "cursor",
+            "description": "The continuation cursor from the previous response.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "maxLength": 4096,
+              "description": "The continuation cursor from the previous response."
+            }
+          },
+          {
+            "name": "search",
+            "description": "Case-insensitive substring search on the value and label.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "maxLength": 128,
+              "description": "Case-insensitive substring search on the value and label."
+            }
+          },
+          {
+            "name": "entityKind",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "maxLength": 128
+            }
+          },
+          {
+            "name": "attributeKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "maxLength": 128
+            }
+          },
+          {
+            "name": "projectIdOrName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
+      }
+    },
+    "/v1/projects/{projectIdOrName}/feature-flags/labels/counts": {
+      "get": {
+        "description": "List label counts for configured entity attributes, including empty ones.",
+        "operationId": "listFlagLabelCounts",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "List attribute label counts",
+        "tags": [
+          "feature-flags"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "items": {
+                        "properties": {
+                          "attributeKey": {
+                            "type": "string"
+                          },
+                          "entityKind": {
+                            "type": "string"
+                          },
+                          "count": {
+                            "type": "number"
+                          }
+                        },
+                        "required": [
+                          "attributeKey",
+                          "count",
+                          "entityKind"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
+                    "pagination": {
+                      "properties": {
+                        "next": {
+                          "nullable": true,
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "next"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "pagination"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "402": {
+            "description": "The account is missing a payment so payment method must be updated"
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "entityKind",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "maxLength": 128
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 20,
+              "default": 20
+            }
+          },
+          {
+            "name": "cursor",
+            "description": "The continuation cursor from the previous response.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "maxLength": 4096,
+              "description": "The continuation cursor from the previous response."
+            }
+          },
+          {
+            "name": "projectIdOrName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
+      }
+    },
+    "/v1/projects/{projectIdOrName}/feature-flags/labels/lookup": {
+      "post": {
+        "description": "Look up at most 100 labels by entity kind, attribute key, and value. Duplicate keys are returned once; absent values are listed in missing.",
+        "operationId": "lookupFlagLabels",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Look up attribute labels",
+        "tags": [
+          "feature-flags"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "data": {
+                      "items": {
+                        "properties": {
+                          "attributeKey": {
+                            "type": "string"
+                          },
+                          "entityKind": {
+                            "type": "string"
+                          },
+                          "label": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "attributeKey",
+                          "entityKind",
+                          "label",
+                          "value"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
+                    "missing": {
+                      "items": {
+                        "properties": {
+                          "attributeKey": {
+                            "type": "string"
+                          },
+                          "entityKind": {
+                            "type": "string"
+                          },
+                          "value": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "attributeKey",
+                          "entityKind",
+                          "value"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
+                    }
+                  },
+                  "required": [
+                    "data",
+                    "missing"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "402": {
+            "description": "The account is missing a payment so payment method must be updated"
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "503": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "projectIdOrName",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "items"
+                ],
+                "properties": {
+                  "items": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "entityKind",
+                        "attributeKey",
+                        "value"
+                      ],
+                      "properties": {
+                        "value": {
+                          "type": "string",
+                          "maxLength": 128
+                        },
+                        "entityKind": {
+                          "type": "string",
+                          "maxLength": 128
+                        },
+                        "attributeKey": {
+                          "type": "string",
+                          "maxLength": 128
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/v1/teams/{teamId}/feature-flags/settings": {
       "get": {
         "description": "Retrieve feature flag settings for projects in a team.",
