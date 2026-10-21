@@ -17,9 +17,9 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("configuredReplicas")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("configuredInstances")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<double?, global::System.Collections.Generic.Dictionary<string, double>>))]
-        public global::Vercel.OneOf<double?, global::System.Collections.Generic.Dictionary<string, double>>? ConfiguredReplicas { get; set; }
+        public global::Vercel.OneOf<double?, global::System.Collections.Generic.Dictionary<string, double>>? ConfiguredInstances { get; set; }
 
         /// <summary>
         ///
@@ -31,16 +31,16 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("livenessProbe")]
-        public global::Vercel.GetProjectBoxesResponseDaemonConfigLivenessProbe? LivenessProbe { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("instances")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<double?, global::System.Collections.Generic.Dictionary<string, double>>))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.OneOf<double?, global::System.Collections.Generic.Dictionary<string, double>> Instances { get; set; }
 
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("replicas")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<double?, global::System.Collections.Generic.Dictionary<string, double>>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<double?, global::System.Collections.Generic.Dictionary<string, double>> Replicas { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("livenessProbe")]
+        public global::Vercel.GetProjectBoxesResponseDaemonConfigLivenessProbe? LivenessProbe { get; set; }
 
         /// <summary>
         ///
@@ -65,10 +65,10 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetProjectBoxesResponseDaemonConfig" /> class.
         /// </summary>
         /// <param name="image"></param>
-        /// <param name="replicas"></param>
+        /// <param name="instances"></param>
         /// <param name="resources"></param>
         /// <param name="command"></param>
-        /// <param name="configuredReplicas"></param>
+        /// <param name="configuredInstances"></param>
         /// <param name="livenessProbe"></param>
         /// <param name="terminationGracePeriodSeconds"></param>
 #if NET7_0_OR_GREATER
@@ -76,18 +76,18 @@ namespace Vercel
 #endif
         public GetProjectBoxesResponseDaemonConfig(
             global::Vercel.GetProjectBoxesResponseDaemonConfigImage image,
-            global::Vercel.OneOf<double?, global::System.Collections.Generic.Dictionary<string, double>> replicas,
+            global::Vercel.OneOf<double?, global::System.Collections.Generic.Dictionary<string, double>> instances,
             global::Vercel.GetProjectBoxesResponseDaemonConfigResources resources,
             global::System.Collections.Generic.IList<string>? command,
-            global::Vercel.OneOf<double?, global::System.Collections.Generic.Dictionary<string, double>>? configuredReplicas,
+            global::Vercel.OneOf<double?, global::System.Collections.Generic.Dictionary<string, double>>? configuredInstances,
             global::Vercel.GetProjectBoxesResponseDaemonConfigLivenessProbe? livenessProbe,
             double? terminationGracePeriodSeconds)
         {
             this.Command = command;
-            this.ConfiguredReplicas = configuredReplicas;
+            this.ConfiguredInstances = configuredInstances;
             this.Image = image ?? throw new global::System.ArgumentNullException(nameof(image));
+            this.Instances = instances;
             this.LivenessProbe = livenessProbe;
-            this.Replicas = replicas;
             this.Resources = resources ?? throw new global::System.ArgumentNullException(nameof(resources));
             this.TerminationGracePeriodSeconds = terminationGracePeriodSeconds;
         }

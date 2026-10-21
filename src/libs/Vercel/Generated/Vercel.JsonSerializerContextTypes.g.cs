@@ -15061,15 +15061,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectBoxesResponseDaemonReplicas? Type3757 { get; set; }
+        public global::Vercel.GetProjectBoxesResponseDaemonInstances? Type3757 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectBoxesResponseDaemonReplicasItem>? Type3758 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectBoxesResponseDaemonInstancesItem>? Type3758 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectBoxesResponseDaemonReplicasItem? Type3759 { get; set; }
+        public global::Vercel.GetProjectBoxesResponseDaemonInstancesItem? Type3759 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -25578,7 +25578,7 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.GetProjectBoxesResponseDaemonReplicasItem>? ListType429 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.GetProjectBoxesResponseDaemonInstancesItem>? ListType429 { get; set; }
         /// <summary>
         ///
         /// </summary>

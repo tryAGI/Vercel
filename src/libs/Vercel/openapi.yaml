@@ -14003,7 +14003,7 @@
                                 },
                                 "type": "array"
                               },
-                              "configuredReplicas": {
+                              "configuredInstances": {
                                 "oneOf": [
                                   {
                                     "type": "number"
@@ -14013,7 +14013,7 @@
                                       "type": "number"
                                     },
                                     "type": "object",
-                                    "description": "Configured replicas before the overrides. Present only when overrides exist."
+                                    "description": "Configured instances before the overrides. Present only when overrides exist."
                                   }
                                 ]
                               },
@@ -14031,6 +14031,19 @@
                                   "resolved"
                                 ],
                                 "type": "object"
+                              },
+                              "instances": {
+                                "oneOf": [
+                                  {
+                                    "type": "number"
+                                  },
+                                  {
+                                    "additionalProperties": {
+                                      "type": "number"
+                                    },
+                                    "type": "object"
+                                  }
+                                ]
                               },
                               "livenessProbe": {
                                 "properties": {
@@ -14099,19 +14112,6 @@
                                 ],
                                 "type": "object"
                               },
-                              "replicas": {
-                                "oneOf": [
-                                  {
-                                    "type": "number"
-                                  },
-                                  {
-                                    "additionalProperties": {
-                                      "type": "number"
-                                    },
-                                    "type": "object"
-                                  }
-                                ]
-                              },
                               "resources": {
                                 "properties": {
                                   "requests": {
@@ -14137,7 +14137,7 @@
                             },
                             "required": [
                               "image",
-                              "replicas",
+                              "instances",
                               "resources"
                             ],
                             "type": "object"
@@ -14149,10 +14149,7 @@
                             "type": "string",
                             "description": "The deployment whose daemons this configuration comes from. Absent for daemons managed through the daemons API."
                           },
-                          "name": {
-                            "type": "string"
-                          },
-                          "replicas": {
+                          "instances": {
                             "properties": {
                               "desired": {
                                 "type": "number"
@@ -14212,6 +14209,9 @@
                               "total"
                             ],
                             "type": "object"
+                          },
+                          "name": {
+                            "type": "string"
                           },
                           "scope": {
                             "oneOf": [
@@ -14291,8 +14291,8 @@
                         "required": [
                           "config",
                           "createdAt",
+                          "instances",
                           "name",
-                          "replicas",
                           "scope",
                           "status",
                           "updatedAt"

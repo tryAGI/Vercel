@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class GetProjectBoxesResponseDaemonReplicas
+    public sealed partial class GetProjectBoxesResponseDaemonInstances
     {
         /// <summary>
         ///
@@ -20,7 +20,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("items")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.GetProjectBoxesResponseDaemonReplicasItem> Items { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.GetProjectBoxesResponseDaemonInstancesItem> Items { get; set; }
 
         /// <summary>
         ///
@@ -43,7 +43,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetProjectBoxesResponseDaemonReplicas" /> class.
+        /// Initializes a new instance of the <see cref="GetProjectBoxesResponseDaemonInstances" /> class.
         /// </summary>
         /// <param name="desired"></param>
         /// <param name="items"></param>
@@ -52,9 +52,9 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public GetProjectBoxesResponseDaemonReplicas(
+        public GetProjectBoxesResponseDaemonInstances(
             double desired,
-            global::System.Collections.Generic.IList<global::Vercel.GetProjectBoxesResponseDaemonReplicasItem> items,
+            global::System.Collections.Generic.IList<global::Vercel.GetProjectBoxesResponseDaemonInstancesItem> items,
             double ready,
             double total)
         {
@@ -65,9 +65,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetProjectBoxesResponseDaemonReplicas" /> class.
+        /// Initializes a new instance of the <see cref="GetProjectBoxesResponseDaemonInstances" /> class.
         /// </summary>
-        public GetProjectBoxesResponseDaemonReplicas()
+        public GetProjectBoxesResponseDaemonInstances()
         {
         }
 

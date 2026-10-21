@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class GetProjectBoxesResponseDaemonReplicasItem
+    public sealed partial class GetProjectBoxesResponseDaemonInstancesItem
     {
         /// <summary>
         ///
@@ -66,7 +66,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetProjectBoxesResponseDaemonReplicasItem" /> class.
+        /// Initializes a new instance of the <see cref="GetProjectBoxesResponseDaemonInstancesItem" /> class.
         /// </summary>
         /// <param name="id"></param>
         /// <param name="region"></param>
@@ -79,7 +79,7 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public GetProjectBoxesResponseDaemonReplicasItem(
+        public GetProjectBoxesResponseDaemonInstancesItem(
             string id,
             string region,
             string startedAt,
@@ -100,9 +100,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetProjectBoxesResponseDaemonReplicasItem" /> class.
+        /// Initializes a new instance of the <see cref="GetProjectBoxesResponseDaemonInstancesItem" /> class.
         /// </summary>
-        public GetProjectBoxesResponseDaemonReplicasItem()
+        public GetProjectBoxesResponseDaemonInstancesItem()
         {
         }
 

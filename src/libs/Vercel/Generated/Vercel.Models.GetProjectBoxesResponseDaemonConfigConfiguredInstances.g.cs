@@ -4,9 +4,9 @@
 namespace Vercel
 {
     /// <summary>
-    /// Configured replicas before the overrides. Present only when overrides exist.
+    /// Configured instances before the overrides. Present only when overrides exist.
     /// </summary>
-    public sealed partial class GetProjectBoxesResponseDaemonConfigConfiguredReplicas
+    public sealed partial class GetProjectBoxesResponseDaemonConfigConfiguredInstances
     {
 
         /// <summary>
