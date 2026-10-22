@@ -82695,6 +82695,12 @@
           },
           "428": {
             "description": ""
+          },
+          "502": {
+            "description": ""
+          },
+          "503": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
