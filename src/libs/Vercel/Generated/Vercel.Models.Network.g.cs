@@ -16,7 +16,7 @@ namespace Vercel
         public required string AwsAccountId { get; set; }
 
         /// <summary>
-        /// The IDs of the AWS Availability Zones in which the network exists, if specified during creation.
+        /// The IDs of the AWS Availability Zones in which the network exists.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("awsAvailabilityZoneIds")]
         public global::System.Collections.Generic.IList<string>? AwsAvailabilityZoneIds { get; set; }
@@ -141,7 +141,7 @@ namespace Vercel
         /// The unique identifier of the Team that owns the Network.
         /// </param>
         /// <param name="awsAvailabilityZoneIds">
-        /// The IDs of the AWS Availability Zones in which the network exists, if specified during creation.
+        /// The IDs of the AWS Availability Zones in which the network exists.
         /// </param>
         /// <param name="egressIpAddresses"></param>
         /// <param name="hostedZones">

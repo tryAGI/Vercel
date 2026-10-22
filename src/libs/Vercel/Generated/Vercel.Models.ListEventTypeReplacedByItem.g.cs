@@ -1495,6 +1495,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        OrganizationSsoDeleted,
+        /// <summary>
+        ///
+        /// </summary>
         OrganizationSsoEnforced,
         /// <summary>
         ///
@@ -3309,6 +3313,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.OrganizationEmuUpdated => "organization-emu-updated",
                 ListEventTypeReplacedByItem.OrganizationNameUpdate => "organization-name-update",
                 ListEventTypeReplacedByItem.OrganizationSlugUpdate => "organization-slug-update",
+                ListEventTypeReplacedByItem.OrganizationSsoDeleted => "organization-sso-deleted",
                 ListEventTypeReplacedByItem.OrganizationSsoEnforced => "organization-sso-enforced",
                 ListEventTypeReplacedByItem.OrganizationTeamAdd => "organization-team-add",
                 ListEventTypeReplacedByItem.OrganizationTeamCreate => "organization-team-create",
@@ -4048,6 +4053,7 @@ namespace Vercel
                 "organization-emu-updated" => ListEventTypeReplacedByItem.OrganizationEmuUpdated,
                 "organization-name-update" => ListEventTypeReplacedByItem.OrganizationNameUpdate,
                 "organization-slug-update" => ListEventTypeReplacedByItem.OrganizationSlugUpdate,
+                "organization-sso-deleted" => ListEventTypeReplacedByItem.OrganizationSsoDeleted,
                 "organization-sso-enforced" => ListEventTypeReplacedByItem.OrganizationSsoEnforced,
                 "organization-team-add" => ListEventTypeReplacedByItem.OrganizationTeamAdd,
                 "organization-team-create" => ListEventTypeReplacedByItem.OrganizationTeamCreate,
