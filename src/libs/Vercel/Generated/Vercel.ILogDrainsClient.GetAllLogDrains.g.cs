@@ -13,6 +13,10 @@ namespace Vercel
         /// <param name="includeMetadata">
         /// Default Value: false
         /// </param>
+        /// <param name="includeDeliveryStats">
+        /// Include `deliveryStats` with the delivery health of each drain over the last 24 hours.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -22,10 +26,11 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedb13a6bca2ca06cfe>> GetAllLogDrainsAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedcb80cddcfcfd675b>> GetAllLogDrainsAsync(
             string? projectId = default,
             string? projectIdOrName = default,
             bool? includeMetadata = default,
+            bool? includeDeliveryStats = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -39,6 +44,10 @@ namespace Vercel
         /// <param name="includeMetadata">
         /// Default Value: false
         /// </param>
+        /// <param name="includeDeliveryStats">
+        /// Include `deliveryStats` with the delivery health of each drain over the last 24 hours.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -48,10 +57,11 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedb13a6bca2ca06cfe>>> GetAllLogDrainsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedcb80cddcfcfd675b>>> GetAllLogDrainsAsResponseAsync(
             string? projectId = default,
             string? projectIdOrName = default,
             bool? includeMetadata = default,
+            bool? includeDeliveryStats = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,

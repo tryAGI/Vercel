@@ -1,0 +1,66 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    ///
+    /// </summary>
+    public sealed partial class AutoSDKShared6df91f8a45eab833ProjectAccessVariant2
+    {
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("access")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared6df91f8a45eab833ProjectAccessVariant2AccessJsonConverter))]
+        public global::Vercel.AutoSDKShared6df91f8a45eab833ProjectAccessVariant2Access Access { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectIds")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<string> ProjectIds { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("managedBy")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared6df91f8a45eab833ProjectAccessVariant2ManagedByJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.AutoSDKShared6df91f8a45eab833ProjectAccessVariant2ManagedBy ManagedBy { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AutoSDKShared6df91f8a45eab833ProjectAccessVariant2" /> class.
+        /// </summary>
+        /// <param name="projectIds"></param>
+        /// <param name="managedBy"></param>
+        /// <param name="access"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public AutoSDKShared6df91f8a45eab833ProjectAccessVariant2(
+            global::System.Collections.Generic.IList<string> projectIds,
+            global::Vercel.AutoSDKShared6df91f8a45eab833ProjectAccessVariant2ManagedBy managedBy,
+            global::Vercel.AutoSDKShared6df91f8a45eab833ProjectAccessVariant2Access access)
+        {
+            this.Access = access;
+            this.ProjectIds = projectIds ?? throw new global::System.ArgumentNullException(nameof(projectIds));
+            this.ManagedBy = managedBy;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AutoSDKShared6df91f8a45eab833ProjectAccessVariant2" /> class.
+        /// </summary>
+        public AutoSDKShared6df91f8a45eab833ProjectAccessVariant2()
+        {
+        }
+
+    }
+}
