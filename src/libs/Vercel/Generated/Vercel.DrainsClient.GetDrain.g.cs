@@ -28,12 +28,14 @@ namespace Vercel
         partial void PrepareGetDrainArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string id,
+            ref bool? includeDeliveryStats,
             ref string? teamId,
             ref string? slug);
         partial void PrepareGetDrainRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string id,
+            bool? includeDeliveryStats,
             string? teamId,
             string? slug);
         partial void ProcessGetDrainResponse(
@@ -50,6 +52,10 @@ namespace Vercel
         /// Get the information for a specific Drain by passing the drain id in the URL.
         /// </summary>
         /// <param name="id"></param>
+        /// <param name="includeDeliveryStats">
+        /// Include `deliveryStats` with the delivery health of the drain over the last 24 hours.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -59,8 +65,9 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared90bb7952c1db9133> GetDrainAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared0695a89a4e02b217> GetDrainAsync(
             string id,
+            bool? includeDeliveryStats = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -68,6 +75,7 @@ namespace Vercel
         {
             var __response = await GetDrainAsResponseAsync(
                 id: id,
+                includeDeliveryStats: includeDeliveryStats,
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -81,6 +89,10 @@ namespace Vercel
         /// Get the information for a specific Drain by passing the drain id in the URL.
         /// </summary>
         /// <param name="id"></param>
+        /// <param name="includeDeliveryStats">
+        /// Include `deliveryStats` with the delivery health of the drain over the last 24 hours.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -90,8 +102,9 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared90bb7952c1db9133>> GetDrainAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared0695a89a4e02b217>> GetDrainAsResponseAsync(
             string id,
+            bool? includeDeliveryStats = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -102,6 +115,7 @@ namespace Vercel
             PrepareGetDrainArguments(
                 httpClient: HttpClient,
                 id: ref id,
+                includeDeliveryStats: ref includeDeliveryStats,
                 teamId: ref teamId,
                 slug: ref slug);
 
@@ -132,6 +146,7 @@ namespace Vercel
                                 path: $"/v1/drains/{id}",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
+                                .AddOptionalParameter("includeDeliveryStats", includeDeliveryStats?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -176,6 +191,7 @@ namespace Vercel
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     id: id,
+                    includeDeliveryStats: includeDeliveryStats,
                     teamId: teamId,
                     slug: slug);
 
@@ -538,9 +554,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.AutoSDKShared90bb7952c1db9133.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.AutoSDKShared0695a89a4e02b217.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared90bb7952c1db9133>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared0695a89a4e02b217>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -570,9 +586,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.AutoSDKShared90bb7952c1db9133.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.AutoSDKShared0695a89a4e02b217.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared90bb7952c1db9133>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared0695a89a4e02b217>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

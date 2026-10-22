@@ -30,6 +30,7 @@ namespace Vercel
             ref string? projectId,
             ref string? projectIdOrName,
             ref bool? includeMetadata,
+            ref bool? includeDeliveryStats,
             ref string? teamId,
             ref string? slug);
         partial void PrepareGetAllLogDrainsRequest(
@@ -38,6 +39,7 @@ namespace Vercel
             string? projectId,
             string? projectIdOrName,
             bool? includeMetadata,
+            bool? includeDeliveryStats,
             string? teamId,
             string? slug);
         partial void ProcessGetAllLogDrainsResponse(
@@ -58,6 +60,10 @@ namespace Vercel
         /// <param name="includeMetadata">
         /// Default Value: false
         /// </param>
+        /// <param name="includeDeliveryStats">
+        /// Include `deliveryStats` with the delivery health of each drain over the last 24 hours.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -67,10 +73,11 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedb13a6bca2ca06cfe>> GetAllLogDrainsAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedcb80cddcfcfd675b>> GetAllLogDrainsAsync(
             string? projectId = default,
             string? projectIdOrName = default,
             bool? includeMetadata = default,
+            bool? includeDeliveryStats = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -80,6 +87,7 @@ namespace Vercel
                 projectId: projectId,
                 projectIdOrName: projectIdOrName,
                 includeMetadata: includeMetadata,
+                includeDeliveryStats: includeDeliveryStats,
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -97,6 +105,10 @@ namespace Vercel
         /// <param name="includeMetadata">
         /// Default Value: false
         /// </param>
+        /// <param name="includeDeliveryStats">
+        /// Include `deliveryStats` with the delivery health of each drain over the last 24 hours.<br/>
+        /// Default Value: false
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -106,10 +118,11 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedb13a6bca2ca06cfe>>> GetAllLogDrainsAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedcb80cddcfcfd675b>>> GetAllLogDrainsAsResponseAsync(
             string? projectId = default,
             string? projectIdOrName = default,
             bool? includeMetadata = default,
+            bool? includeDeliveryStats = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -122,6 +135,7 @@ namespace Vercel
                 projectId: ref projectId,
                 projectIdOrName: ref projectIdOrName,
                 includeMetadata: ref includeMetadata,
+                includeDeliveryStats: ref includeDeliveryStats,
                 teamId: ref teamId,
                 slug: ref slug);
 
@@ -155,6 +169,7 @@ namespace Vercel
                                 .AddOptionalParameter("projectId", projectId)
                                 .AddOptionalParameter("projectIdOrName", projectIdOrName)
                                 .AddOptionalParameter("includeMetadata", includeMetadata?.ToString().ToLowerInvariant())
+                                .AddOptionalParameter("includeDeliveryStats", includeDeliveryStats?.ToString().ToLowerInvariant())
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -201,6 +216,7 @@ namespace Vercel
                     projectId: projectId,
                     projectIdOrName: projectIdOrName,
                     includeMetadata: includeMetadata,
+                    includeDeliveryStats: includeDeliveryStats,
                     teamId: teamId,
                     slug: slug);
 
@@ -563,9 +579,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedb13a6bca2ca06cfe>.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedcb80cddcfcfd675b>.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedb13a6bca2ca06cfe>>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedcb80cddcfcfd675b>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -595,9 +611,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedb13a6bca2ca06cfe>.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedcb80cddcfcfd675b>.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedb13a6bca2ca06cfe>>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedcb80cddcfcfd675b>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

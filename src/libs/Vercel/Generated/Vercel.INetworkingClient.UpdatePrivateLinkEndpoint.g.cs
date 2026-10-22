@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Update a PrivateLink endpoint<br/>
-        /// Updates a PrivateLink endpoint (name, privateDns).
+        /// Updates a PrivateLink endpoint (name, privateDns). Changes to endpoints of the same project are serialized. If another change holds them for too long, the request fails with `503 service_unavailable` and can be retried. If the change may have completed but the outcome is unknown, it fails with `409 uncertain_outcome`; read the endpoint before retrying.
         /// </summary>
         /// <param name="projectId">
         /// The project ID the PrivateLink endpoint belongs to.<br/>
@@ -37,7 +37,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a PrivateLink endpoint<br/>
-        /// Updates a PrivateLink endpoint (name, privateDns).
+        /// Updates a PrivateLink endpoint (name, privateDns). Changes to endpoints of the same project are serialized. If another change holds them for too long, the request fails with `503 service_unavailable` and can be retried. If the change may have completed but the outcome is unknown, it fails with `409 uncertain_outcome`; read the endpoint before retrying.
         /// </summary>
         /// <param name="projectId">
         /// The project ID the PrivateLink endpoint belongs to.<br/>
@@ -68,7 +68,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a PrivateLink endpoint<br/>
-        /// Updates a PrivateLink endpoint (name, privateDns).
+        /// Updates a PrivateLink endpoint (name, privateDns). Changes to endpoints of the same project are serialized. If another change holds them for too long, the request fails with `503 service_unavailable` and can be retried. If the change may have completed but the outcome is unknown, it fails with `409 uncertain_outcome`; read the endpoint before retrying.
         /// </summary>
         /// <param name="projectId">
         /// The project ID the PrivateLink endpoint belongs to.<br/>
