@@ -2320,6 +2320,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        StartupTermsAccepted,
+        /// <summary>
+        ///
+        /// </summary>
         StorageAcceptTos,
         /// <summary>
         ///
@@ -3520,6 +3524,7 @@ namespace Vercel
                 ListEventTypeName.SpendDeleted => "spend-deleted",
                 ListEventTypeName.SpendUpdated => "spend-updated",
                 ListEventTypeName.SsoLogin => "sso-login",
+                ListEventTypeName.StartupTermsAccepted => "startup-terms-accepted",
                 ListEventTypeName.StorageAcceptTos => "storage-accept-tos",
                 ListEventTypeName.StorageAccessTokenSet => "storage-access-token-set",
                 ListEventTypeName.StorageAccessedDataBrowser => "storage-accessed-data-browser",
@@ -4260,6 +4265,7 @@ namespace Vercel
                 "spend-deleted" => ListEventTypeName.SpendDeleted,
                 "spend-updated" => ListEventTypeName.SpendUpdated,
                 "sso-login" => ListEventTypeName.SsoLogin,
+                "startup-terms-accepted" => ListEventTypeName.StartupTermsAccepted,
                 "storage-accept-tos" => ListEventTypeName.StorageAcceptTos,
                 "storage-access-token-set" => ListEventTypeName.StorageAccessTokenSet,
                 "storage-accessed-data-browser" => ListEventTypeName.StorageAccessedDataBrowser,
