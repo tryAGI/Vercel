@@ -32,7 +32,7 @@ namespace Vercel
             ref global::Vercel.PutProjectDaemonInstancesTarget? target,
             ref string? teamId,
             ref string? slug,
-            global::System.Collections.Generic.Dictionary<string, int> request);
+            global::System.Collections.Generic.Dictionary<string, int?> request);
         partial void PreparePutProjectDaemonInstancesRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
@@ -41,7 +41,7 @@ namespace Vercel
             global::Vercel.PutProjectDaemonInstancesTarget? target,
             string? teamId,
             string? slug,
-            global::System.Collections.Generic.Dictionary<string, int> request);
+            global::System.Collections.Generic.Dictionary<string, int?> request);
         partial void ProcessPutProjectDaemonInstancesResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -53,7 +53,7 @@ namespace Vercel
 
         /// <summary>
         /// Override a project daemon's instance counts<br/>
-        /// Override the instance counts of a daemon by region, without changing its configuration. An empty map removes the overrides.
+        /// Override the instance counts of a daemon in the given regions, without changing its configuration or the overrides of other regions.
         /// </summary>
         /// <param name="idOrName">
         /// The unique project identifier or the project name
@@ -79,7 +79,7 @@ namespace Vercel
             string idOrName,
             string daemonName,
 
-            global::System.Collections.Generic.Dictionary<string, int> request,
+            global::System.Collections.Generic.Dictionary<string, int?> request,
             global::Vercel.PutProjectDaemonInstancesTarget? target = default,
             string? teamId = default,
             string? slug = default,
@@ -102,7 +102,7 @@ namespace Vercel
         }
         /// <summary>
         /// Override a project daemon's instance counts<br/>
-        /// Override the instance counts of a daemon by region, without changing its configuration. An empty map removes the overrides.
+        /// Override the instance counts of a daemon in the given regions, without changing its configuration or the overrides of other regions.
         /// </summary>
         /// <param name="idOrName">
         /// The unique project identifier or the project name
@@ -128,7 +128,7 @@ namespace Vercel
             string idOrName,
             string daemonName,
 
-            global::System.Collections.Generic.Dictionary<string, int> request,
+            global::System.Collections.Generic.Dictionary<string, int?> request,
             global::Vercel.PutProjectDaemonInstancesTarget? target = default,
             string? teamId = default,
             string? slug = default,
@@ -667,7 +667,7 @@ namespace Vercel
         }
         /// <summary>
         /// Override a project daemon's instance counts<br/>
-        /// Override the instance counts of a daemon by region, without changing its configuration. An empty map removes the overrides.
+        /// Override the instance counts of a daemon in the given regions, without changing its configuration or the overrides of other regions.
         /// </summary>
         /// <param name="idOrName">
         /// The unique project identifier or the project name
@@ -697,7 +697,7 @@ namespace Vercel
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
-            var __request = new global::System.Collections.Generic.Dictionary<string, int>
+            var __request = new global::System.Collections.Generic.Dictionary<string, int?>
             {
             };
 

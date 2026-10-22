@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Instance count overrides by region, for example { \"iad1\": 1 }. Regions not in the map keep their configured count. An empty map removes the overrides.
+    /// Instance count overrides for the given regions, for example { \"iad1\": 1 }. Overrides of regions not in the map are kept. A `null` count removes the region's override. An empty map removes all overrides.
     /// </summary>
     public sealed partial class PutProjectDaemonInstancesRequest
     {

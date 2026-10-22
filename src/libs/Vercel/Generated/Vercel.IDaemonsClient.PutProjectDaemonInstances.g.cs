@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Override a project daemon's instance counts<br/>
-        /// Override the instance counts of a daemon by region, without changing its configuration. An empty map removes the overrides.
+        /// Override the instance counts of a daemon in the given regions, without changing its configuration or the overrides of other regions.
         /// </summary>
         /// <param name="idOrName">
         /// The unique project identifier or the project name
@@ -32,7 +32,7 @@ namespace Vercel
             string idOrName,
             string daemonName,
 
-            global::System.Collections.Generic.Dictionary<string, int> request,
+            global::System.Collections.Generic.Dictionary<string, int?> request,
             global::Vercel.PutProjectDaemonInstancesTarget? target = default,
             string? teamId = default,
             string? slug = default,
@@ -40,7 +40,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Override a project daemon's instance counts<br/>
-        /// Override the instance counts of a daemon by region, without changing its configuration. An empty map removes the overrides.
+        /// Override the instance counts of a daemon in the given regions, without changing its configuration or the overrides of other regions.
         /// </summary>
         /// <param name="idOrName">
         /// The unique project identifier or the project name
@@ -66,7 +66,7 @@ namespace Vercel
             string idOrName,
             string daemonName,
 
-            global::System.Collections.Generic.Dictionary<string, int> request,
+            global::System.Collections.Generic.Dictionary<string, int?> request,
             global::Vercel.PutProjectDaemonInstancesTarget? target = default,
             string? teamId = default,
             string? slug = default,
@@ -74,7 +74,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Override a project daemon's instance counts<br/>
-        /// Override the instance counts of a daemon by region, without changing its configuration. An empty map removes the overrides.
+        /// Override the instance counts of a daemon in the given regions, without changing its configuration or the overrides of other regions.
         /// </summary>
         /// <param name="idOrName">
         /// The unique project identifier or the project name
