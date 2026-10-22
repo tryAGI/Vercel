@@ -18,7 +18,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("neg")]
-        public bool? Neg { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Neg { get; set; }
 
         /// <summary>
         ///
@@ -50,19 +51,19 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GenerateFirewallRuleResponseRuleConditionGroupItemCondition" /> class.
         /// </summary>
+        /// <param name="neg"></param>
         /// <param name="op"></param>
         /// <param name="type"></param>
         /// <param name="key"></param>
-        /// <param name="neg"></param>
         /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GenerateFirewallRuleResponseRuleConditionGroupItemCondition(
+            bool neg,
             string op,
             string type,
             string? key,
-            bool? neg,
             global::Vercel.OneOf<string, double?, global::System.Collections.Generic.IList<string>>? value)
         {
             this.Key = key;

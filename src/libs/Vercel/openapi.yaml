@@ -28818,6 +28818,9 @@
           },
           "410": {
             "description": ""
+          },
+          "503": {
+            "description": "The delivery stats could not be loaded. Retry, or omit `includeDeliveryStats`."
           }
         },
         "parameters": [
@@ -28966,6 +28969,9 @@
           },
           "410": {
             "description": ""
+          },
+          "503": {
+            "description": "The delivery stats could not be loaded. Retry, or omit `includeDeliveryStats`."
           }
         },
         "parameters": [
@@ -78652,6 +78658,7 @@
                                     }
                                   },
                                   "required": [
+                                    "neg",
                                     "op",
                                     "type"
                                   ],
@@ -100513,7 +100520,7 @@
               "type": "string"
             },
             "type": "array",
-            "description": "The IDs of the AWS Availability Zones in which the network exists, if specified during creation."
+            "description": "The IDs of the AWS Availability Zones in which the network exists."
           },
           "awsRegion": {
             "type": "string",
@@ -106123,6 +106130,7 @@
               "organization-emu-updated",
               "organization-name-update",
               "organization-slug-update",
+              "organization-sso-deleted",
               "organization-sso-enforced",
               "organization-team-add",
               "organization-team-create",
@@ -107072,6 +107080,7 @@
               "organization-emu-updated",
               "organization-name-update",
               "organization-slug-update",
+              "organization-sso-deleted",
               "organization-sso-enforced",
               "organization-team-add",
               "organization-team-create",
@@ -107809,6 +107818,7 @@
                 "organization-emu-updated",
                 "organization-name-update",
                 "organization-slug-update",
+                "organization-sso-deleted",
                 "organization-sso-enforced",
                 "organization-team-add",
                 "organization-team-create",
