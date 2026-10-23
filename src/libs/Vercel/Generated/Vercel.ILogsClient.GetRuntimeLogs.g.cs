@@ -8,8 +8,12 @@ namespace Vercel
         /// Get logs for a deployment<br/>
         /// Returns a stream of logs for a given deployment.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="deploymentId"></param>
+        /// <param name="projectId">
+        /// The ID or name of the project containing the deployment.
+        /// </param>
+        /// <param name="deploymentId">
+        /// The ID or hostname of the deployment.
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -30,8 +34,12 @@ namespace Vercel
         /// Get logs for a deployment<br/>
         /// Returns a stream of logs for a given deployment.
         /// </summary>
-        /// <param name="projectId"></param>
-        /// <param name="deploymentId"></param>
+        /// <param name="projectId">
+        /// The ID or name of the project containing the deployment.
+        /// </param>
+        /// <param name="deploymentId">
+        /// The ID or hostname of the deployment.
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>

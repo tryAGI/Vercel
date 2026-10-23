@@ -46,6 +46,13 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("groupId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string GroupId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("osName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string OsName { get; set; }
@@ -91,6 +98,13 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("route")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Route { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("userId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string UserId { get; set; }
 
         /// <summary>
         ///
@@ -148,6 +162,7 @@ namespace Vercel
         /// <param name="deviceType"></param>
         /// <param name="environment"></param>
         /// <param name="flags"></param>
+        /// <param name="groupId"></param>
         /// <param name="osName"></param>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
@@ -155,6 +170,7 @@ namespace Vercel
         /// <param name="requestHostname"></param>
         /// <param name="requestPath"></param>
         /// <param name="route"></param>
+        /// <param name="userId"></param>
         /// <param name="utmCampaign"></param>
         /// <param name="utmContent"></param>
         /// <param name="utmMedium"></param>
@@ -170,6 +186,7 @@ namespace Vercel
             string deviceType,
             string environment,
             string flags,
+            string groupId,
             string osName,
             string projectId,
             string projectName,
@@ -177,6 +194,7 @@ namespace Vercel
             string requestHostname,
             string requestPath,
             string route,
+            string userId,
             string utmCampaign,
             string utmContent,
             string utmMedium,
@@ -189,6 +207,7 @@ namespace Vercel
             this.DeviceType = deviceType ?? throw new global::System.ArgumentNullException(nameof(deviceType));
             this.Environment = environment ?? throw new global::System.ArgumentNullException(nameof(environment));
             this.Flags = flags ?? throw new global::System.ArgumentNullException(nameof(flags));
+            this.GroupId = groupId ?? throw new global::System.ArgumentNullException(nameof(groupId));
             this.OsName = osName ?? throw new global::System.ArgumentNullException(nameof(osName));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
             this.ProjectName = projectName ?? throw new global::System.ArgumentNullException(nameof(projectName));
@@ -196,6 +215,7 @@ namespace Vercel
             this.RequestHostname = requestHostname ?? throw new global::System.ArgumentNullException(nameof(requestHostname));
             this.RequestPath = requestPath ?? throw new global::System.ArgumentNullException(nameof(requestPath));
             this.Route = route ?? throw new global::System.ArgumentNullException(nameof(route));
+            this.UserId = userId ?? throw new global::System.ArgumentNullException(nameof(userId));
             this.UtmCampaign = utmCampaign ?? throw new global::System.ArgumentNullException(nameof(utmCampaign));
             this.UtmContent = utmContent ?? throw new global::System.ArgumentNullException(nameof(utmContent));
             this.UtmMedium = utmMedium ?? throw new global::System.ArgumentNullException(nameof(utmMedium));
