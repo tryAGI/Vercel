@@ -116,8 +116,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("creator")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKSharedf1f589ae3ca84945JsonConverter))]
-        public global::Vercel.AutoSDKSharedf1f589ae3ca84945? Creator { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared58ffef5c4d095b17JsonConverter))]
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17? Creator { get; set; }
 
         /// <summary>
         ///
@@ -753,7 +753,7 @@ namespace Vercel
             string? connectConfigurationId,
             global::System.Collections.Generic.IList<global::Vercel.GetMicrofrontendsInGroupResponseProjectConnectConfiguration>? connectConfigurations,
             double? createdAt,
-            global::Vercel.AutoSDKSharedf1f589ae3ca84945? creator,
+            global::Vercel.AutoSDKShared58ffef5c4d095b17? creator,
             global::Vercel.GetMicrofrontendsInGroupResponseProjectCrons? crons,
             global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7d4f4f5cff68219a>? customEnvironments,
             bool? customerSupportCodeVisibility,
