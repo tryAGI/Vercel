@@ -39970,9 +39970,6 @@
           },
           "410": {
             "description": ""
-          },
-          "422": {
-            "description": ""
           }
         },
         "parameters": [
@@ -40319,9 +40316,6 @@
             "description": ""
           },
           "410": {
-            "description": ""
-          },
-          "422": {
             "description": ""
           }
         },
@@ -41789,9 +41783,6 @@
           },
           "410": {
             "description": ""
-          },
-          "422": {
-            "description": ""
           }
         },
         "parameters": [
@@ -41915,9 +41906,6 @@
             "description": ""
           },
           "410": {
-            "description": ""
-          },
-          "422": {
             "description": ""
           }
         },
@@ -79292,6 +79280,12 @@
                               },
                               "projectId": {
                                 "type": "string"
+                              },
+                              "secretsOutdated": {
+                                "type": "boolean",
+                                "enum": [
+                                  true
+                                ]
                               }
                             },
                             "required": [
@@ -79612,6 +79606,12 @@
                               },
                               "projectId": {
                                 "type": "string"
+                              },
+                              "secretsOutdated": {
+                                "type": "boolean",
+                                "enum": [
+                                  true
+                                ]
                               }
                             },
                             "required": [
@@ -80095,6 +80095,12 @@
                               },
                               "projectId": {
                                 "type": "string"
+                              },
+                              "secretsOutdated": {
+                                "type": "boolean",
+                                "enum": [
+                                  true
+                                ]
                               }
                             },
                             "required": [
@@ -81175,6 +81181,9 @@
                             "type": "object"
                           },
                           "type": "array"
+                        },
+                        "secretsAppliedAt": {
+                          "type": "number"
                         },
                         "targets": {
                           "items": {
