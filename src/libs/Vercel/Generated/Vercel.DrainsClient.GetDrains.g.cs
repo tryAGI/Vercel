@@ -58,7 +58,7 @@ namespace Vercel
         /// Default Value: false
         /// </param>
         /// <param name="includeDeliveryStats">
-        /// Include `deliveryStats` with the delivery health of each drain over the last 24 hours.<br/>
+        /// Include `deliveryStats` with the delivery health of each drain over the last 24 hours. Ignored for teams without drain delivery metrics.<br/>
         /// Default Value: false
         /// </param>
         /// <param name="teamId">
@@ -100,7 +100,7 @@ namespace Vercel
         /// Default Value: false
         /// </param>
         /// <param name="includeDeliveryStats">
-        /// Include `deliveryStats` with the delivery health of each drain over the last 24 hours.<br/>
+        /// Include `deliveryStats` with the delivery health of each drain over the last 24 hours. Ignored for teams without drain delivery metrics.<br/>
         /// Default Value: false
         /// </param>
         /// <param name="teamId">

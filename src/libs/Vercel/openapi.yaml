@@ -28132,12 +28132,12 @@
           },
           {
             "name": "includeDeliveryStats",
-            "description": "Include `deliveryStats` with the delivery health of each drain over the last 24 hours.",
+            "description": "Include `deliveryStats` with the delivery health of each drain over the last 24 hours. Ignored for teams without drain delivery metrics.",
             "in": "query",
             "schema": {
               "type": "boolean",
               "default": false,
-              "description": "Include `deliveryStats` with the delivery health of each drain over the last 24 hours."
+              "description": "Include `deliveryStats` with the delivery health of each drain over the last 24 hours. Ignored for teams without drain delivery metrics."
             }
           },
           {
@@ -28845,12 +28845,12 @@
           },
           {
             "name": "includeDeliveryStats",
-            "description": "Include `deliveryStats` with the delivery health of each drain over the last 24 hours.",
+            "description": "Include `deliveryStats` with the delivery health of each drain over the last 24 hours. Ignored for teams without drain delivery metrics.",
             "in": "query",
             "schema": {
               "type": "boolean",
               "default": false,
-              "description": "Include `deliveryStats` with the delivery health of each drain over the last 24 hours."
+              "description": "Include `deliveryStats` with the delivery health of each drain over the last 24 hours. Ignored for teams without drain delivery metrics."
             }
           },
           {
@@ -46313,18 +46313,22 @@
         "parameters": [
           {
             "name": "projectId",
+            "description": "The ID or name of the project containing the deployment.",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "description": "The ID or name of the project containing the deployment."
             }
           },
           {
             "name": "deploymentId",
+            "description": "The ID or hostname of the deployment.",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "string",
+              "description": "The ID or hostname of the deployment."
             }
           },
           {
@@ -94658,6 +94662,9 @@
                               "flags": {
                                 "type": "string"
                               },
+                              "groupId": {
+                                "type": "string"
+                              },
                               "osName": {
                                 "type": "string"
                               },
@@ -94677,6 +94684,9 @@
                                 "type": "string"
                               },
                               "route": {
+                                "type": "string"
+                              },
+                              "userId": {
                                 "type": "string"
                               },
                               "utmCampaign": {
@@ -94727,6 +94737,9 @@
                               "flags": {
                                 "type": "string"
                               },
+                              "groupId": {
+                                "type": "string"
+                              },
                               "osName": {
                                 "type": "string"
                               },
@@ -94746,6 +94759,9 @@
                                 "type": "string"
                               },
                               "route": {
+                                "type": "string"
+                              },
+                              "userId": {
                                 "type": "string"
                               },
                               "utmCampaign": {
@@ -94773,6 +94789,7 @@
                               "deviceType",
                               "environment",
                               "flags",
+                              "groupId",
                               "osName",
                               "projectId",
                               "projectName",
@@ -94780,6 +94797,7 @@
                               "requestHostname",
                               "requestPath",
                               "route",
+                              "userId",
                               "utmCampaign",
                               "utmContent",
                               "utmMedium",
@@ -95074,6 +95092,9 @@
                               "flags": {
                                 "type": "string"
                               },
+                              "groupId": {
+                                "type": "string"
+                              },
                               "osName": {
                                 "type": "string"
                               },
@@ -95093,6 +95114,9 @@
                                 "type": "string"
                               },
                               "route": {
+                                "type": "string"
+                              },
+                              "userId": {
                                 "type": "string"
                               },
                               "utmCampaign": {
@@ -95149,6 +95173,9 @@
                               "flags": {
                                 "type": "string"
                               },
+                              "groupId": {
+                                "type": "string"
+                              },
                               "osName": {
                                 "type": "string"
                               },
@@ -95168,6 +95195,9 @@
                                 "type": "string"
                               },
                               "route": {
+                                "type": "string"
+                              },
+                              "userId": {
                                 "type": "string"
                               },
                               "utmCampaign": {
@@ -95197,6 +95227,7 @@
                               "eventData",
                               "eventName",
                               "flags",
+                              "groupId",
                               "osName",
                               "projectId",
                               "projectName",
@@ -95204,6 +95235,7 @@
                               "requestHostname",
                               "requestPath",
                               "route",
+                              "userId",
                               "utmCampaign",
                               "utmContent",
                               "utmMedium",
@@ -95495,6 +95527,9 @@
                             "flags": {
                               "type": "string"
                             },
+                            "groupId": {
+                              "type": "string"
+                            },
                             "osName": {
                               "type": "string"
                             },
@@ -95514,6 +95549,9 @@
                               "type": "string"
                             },
                             "route": {
+                              "type": "string"
+                            },
+                            "userId": {
                               "type": "string"
                             },
                             "utmCampaign": {
@@ -95541,6 +95579,7 @@
                             "deviceType",
                             "environment",
                             "flags",
+                            "groupId",
                             "osName",
                             "projectId",
                             "projectName",
@@ -95548,6 +95587,7 @@
                             "requestHostname",
                             "requestPath",
                             "route",
+                            "userId",
                             "utmCampaign",
                             "utmContent",
                             "utmMedium",
@@ -95758,6 +95798,9 @@
                             "flags": {
                               "type": "string"
                             },
+                            "groupId": {
+                              "type": "string"
+                            },
                             "osName": {
                               "type": "string"
                             },
@@ -95777,6 +95820,9 @@
                               "type": "string"
                             },
                             "route": {
+                              "type": "string"
+                            },
+                            "userId": {
                               "type": "string"
                             },
                             "utmCampaign": {
@@ -95806,6 +95852,7 @@
                             "eventData",
                             "eventName",
                             "flags",
+                            "groupId",
                             "osName",
                             "projectId",
                             "projectName",
@@ -95813,6 +95860,7 @@
                             "requestHostname",
                             "requestPath",
                             "route",
+                            "userId",
                             "utmCampaign",
                             "utmContent",
                             "utmMedium",

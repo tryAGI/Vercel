@@ -41,6 +41,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("groupId")]
+        public string? GroupId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("osName")]
         public string? OsName { get; set; }
 
@@ -79,6 +85,12 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("route")]
         public string? Route { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("userId")]
+        public string? UserId { get; set; }
 
         /// <summary>
         ///
@@ -138,6 +150,7 @@ namespace Vercel
         /// <param name="deviceType"></param>
         /// <param name="environment"></param>
         /// <param name="flags"></param>
+        /// <param name="groupId"></param>
         /// <param name="osName"></param>
         /// <param name="projectId"></param>
         /// <param name="projectName"></param>
@@ -145,6 +158,7 @@ namespace Vercel
         /// <param name="requestHostname"></param>
         /// <param name="requestPath"></param>
         /// <param name="route"></param>
+        /// <param name="userId"></param>
         /// <param name="utmCampaign"></param>
         /// <param name="utmContent"></param>
         /// <param name="utmMedium"></param>
@@ -161,6 +175,7 @@ namespace Vercel
             string? deviceType,
             string? environment,
             string? flags,
+            string? groupId,
             string? osName,
             string? projectId,
             string? projectName,
@@ -168,6 +183,7 @@ namespace Vercel
             string? requestHostname,
             string? requestPath,
             string? route,
+            string? userId,
             string? utmCampaign,
             string? utmContent,
             string? utmMedium,
@@ -180,6 +196,7 @@ namespace Vercel
             this.DeviceType = deviceType;
             this.Environment = environment;
             this.Flags = flags;
+            this.GroupId = groupId;
             this.OsName = osName;
             this.ProjectId = projectId;
             this.ProjectName = projectName;
@@ -187,6 +204,7 @@ namespace Vercel
             this.RequestHostname = requestHostname;
             this.RequestPath = requestPath;
             this.Route = route;
+            this.UserId = userId;
             this.UtmCampaign = utmCampaign;
             this.UtmContent = utmContent;
             this.UtmMedium = utmMedium;
