@@ -18,7 +18,7 @@ namespace Vercel
         public required string ApiKeyString { get; set; }
 
         /// <summary>
-        /// Information about the newly created API key.
+        /// Represents an API key.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("apiKey")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -38,7 +38,7 @@ namespace Vercel
         /// Example: uRKJSTt0L4RaSkiMj41QTkxM
         /// </param>
         /// <param name="apiKey">
-        /// Information about the newly created API key.
+        /// Represents an API key.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

@@ -1336,6 +1336,22 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        MessageboardPrivateProjectGranted,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardPrivateProjectRevoked,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardProjectGranted,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardProjectRevoked,
+        /// <summary>
+        ///
+        /// </summary>
         MessageboardSchemaRegistered,
         /// <summary>
         ///
@@ -3278,6 +3294,10 @@ namespace Vercel
                 UserEventType.MessageboardPrivateChannelCreated => "messageboard-private-channel-created",
                 UserEventType.MessageboardPrivateChannelUpdated => "messageboard-private-channel-updated",
                 UserEventType.MessageboardPrivateCreated => "messageboard-private-created",
+                UserEventType.MessageboardPrivateProjectGranted => "messageboard-private-project-granted",
+                UserEventType.MessageboardPrivateProjectRevoked => "messageboard-private-project-revoked",
+                UserEventType.MessageboardProjectGranted => "messageboard-project-granted",
+                UserEventType.MessageboardProjectRevoked => "messageboard-project-revoked",
                 UserEventType.MessageboardSchemaRegistered => "messageboard-schema-registered",
                 UserEventType.MessageboardVisibilityUpdated => "messageboard-visibility-updated",
                 UserEventType.MicrofrontendGroupAdded => "microfrontend-group-added",
@@ -4019,6 +4039,10 @@ namespace Vercel
                 "messageboard-private-channel-created" => UserEventType.MessageboardPrivateChannelCreated,
                 "messageboard-private-channel-updated" => UserEventType.MessageboardPrivateChannelUpdated,
                 "messageboard-private-created" => UserEventType.MessageboardPrivateCreated,
+                "messageboard-private-project-granted" => UserEventType.MessageboardPrivateProjectGranted,
+                "messageboard-private-project-revoked" => UserEventType.MessageboardPrivateProjectRevoked,
+                "messageboard-project-granted" => UserEventType.MessageboardProjectGranted,
+                "messageboard-project-revoked" => UserEventType.MessageboardProjectRevoked,
                 "messageboard-schema-registered" => UserEventType.MessageboardSchemaRegistered,
                 "messageboard-visibility-updated" => UserEventType.MessageboardVisibilityUpdated,
                 "microfrontend-group-added" => UserEventType.MicrofrontendGroupAdded,

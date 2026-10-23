@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Information about the newly created API key.
+    /// Represents an API key.
     /// </summary>
     public sealed partial class APIKey
     {

@@ -44468,6 +44468,244 @@
         }
       }
     },
+    "/api-keys/{apiKeyID}/quota": {
+      "patch": {
+        "description": "Set, change, or remove the AI Gateway budget on an API key. Creates the budget if the key does not have one.",
+        "operationId": "updateApiKeyQuota",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Update an AI Gateway API key budget",
+        "tags": [
+          "ai-gateway"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully updated the API key quota.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "apiKey": {
+                      "$ref": "#/components/schemas/APIKey"
+                    },
+                    "quota": {
+                      "$ref": "#/components/schemas/APIKeyQuota"
+                    }
+                  },
+                  "required": [
+                    "apiKey",
+                    "quota"
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "string"
+                        },
+                        "message": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "code",
+                        "message"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ]
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "You do not have permission to access this resource.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "string"
+                        },
+                        "message": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "code",
+                        "message"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ]
+                }
+              }
+            }
+          },
+          "404": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "429": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "message": {
+                          "type": "string"
+                        },
+                        "limit": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "code",
+                        "name",
+                        "message",
+                        "limit"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ]
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "error": {
+                      "type": "object",
+                      "properties": {
+                        "code": {
+                          "type": "string"
+                        },
+                        "message": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "code",
+                        "message"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "error"
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "apiKeyID",
+            "description": "The ID of the API key whose quota should be updated.",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The ID of the API key whose quota should be updated."
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "limitAmount": {
+                    "type": "number",
+                    "minimum": 1,
+                    "description": "The quota limit amount. Required if the quota does not yet exist."
+                  },
+                  "includeByokInQuota": {
+                    "type": "boolean",
+                    "description": "Whether BYOK (Bring Your Own Key) usage counts against the quota."
+                  },
+                  "refreshPeriod": {
+                    "type": "string",
+                    "enum": [
+                      "daily",
+                      "weekly",
+                      "monthly",
+                      "none"
+                    ],
+                    "description": "How often the quota refreshes."
+                  },
+                  "active": {
+                    "type": "boolean",
+                    "description": "Whether the quota is currently active."
+                  },
+                  "archived": {
+                    "type": "boolean",
+                    "description": "Set to true to archive (soft-delete) the quota. The api key itself is unaffected."
+                  },
+                  "alertThresholds": {
+                    "type": "array",
+                    "items": {
+                      "type": "number",
+                      "enum": [
+                        50,
+                        75,
+                        100
+                      ]
+                    },
+                    "description": "Spend percentages (a subset of [50, 75, 100]) at which to send a spend alert. Pass an empty array to disable alerts."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/v1/kms/issuers/{issuerId}/sign/message": {
       "post": {
         "description": "Sign a raw message with a KMS issuer's active signing key. Authenticate the request with a Vercel OIDC token in the `Authorization: Bearer` header; the issuer's policies decide which workloads are allowed to sign. The response `signature` is standard-base64 of the raw signature over the decoded message bytes. `keyId`, `algorithm`, and `fingerprint` identify the signing key in the issuer's JWKS.",
@@ -106118,6 +106356,10 @@
               "messageboard-private-channel-created",
               "messageboard-private-channel-updated",
               "messageboard-private-created",
+              "messageboard-private-project-granted",
+              "messageboard-private-project-revoked",
+              "messageboard-project-granted",
+              "messageboard-project-revoked",
               "messageboard-schema-registered",
               "messageboard-visibility-updated",
               "microfrontend-group-added",
@@ -107069,6 +107311,10 @@
               "messageboard-private-channel-created",
               "messageboard-private-channel-updated",
               "messageboard-private-created",
+              "messageboard-private-project-granted",
+              "messageboard-private-project-revoked",
+              "messageboard-project-granted",
+              "messageboard-project-revoked",
               "messageboard-schema-registered",
               "messageboard-visibility-updated",
               "microfrontend-group-added",
@@ -107808,6 +108054,10 @@
                 "messageboard-private-channel-created",
                 "messageboard-private-channel-updated",
                 "messageboard-private-created",
+                "messageboard-private-project-granted",
+                "messageboard-private-project-revoked",
+                "messageboard-project-granted",
+                "messageboard-project-revoked",
                 "messageboard-schema-registered",
                 "messageboard-visibility-updated",
                 "microfrontend-group-added",
@@ -108673,7 +108923,7 @@
         "description": "Representation of a Flags SDK key returned by CREATE. Includes cleartext secrets (`keyValue`, `tokenValue`, `connectionString`) which are only ever disclosed once, on creation."
       },
       "APIKey": {
-        "description": "Information about the newly created API key.",
+        "description": "Represents an API key.",
         "type": "object",
         "properties": {
           "id": {
