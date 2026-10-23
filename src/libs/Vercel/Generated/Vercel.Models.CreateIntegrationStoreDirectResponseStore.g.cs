@@ -143,6 +143,12 @@ namespace Vercel
         public required global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreSecret> Secrets { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("secretsAppliedAt")]
+        public double? SecretsAppliedAt { get; set; }
+
+        /// <summary>
         /// The deployment targets that this resource is available for.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("targets")]
@@ -188,6 +194,7 @@ namespace Vercel
         /// <param name="secretRotationRequestedReason">
         /// The reason for the secret rotation request.
         /// </param>
+        /// <param name="secretsAppliedAt"></param>
         /// <param name="targets">
         /// The deployment targets that this resource is available for.
         /// </param>
@@ -216,6 +223,7 @@ namespace Vercel
             double? secretRotationRequestedAt,
             string? secretRotationRequestedBy,
             string? secretRotationRequestedReason,
+            double? secretsAppliedAt,
             global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreTarget>? targets)
         {
             this.ProjectFilter = projectFilter;
@@ -239,6 +247,7 @@ namespace Vercel
             this.SecretRotationRequestedBy = secretRotationRequestedBy;
             this.SecretRotationRequestedReason = secretRotationRequestedReason;
             this.Secrets = secrets ?? throw new global::System.ArgumentNullException(nameof(secrets));
+            this.SecretsAppliedAt = secretsAppliedAt;
             this.Targets = targets;
         }
 

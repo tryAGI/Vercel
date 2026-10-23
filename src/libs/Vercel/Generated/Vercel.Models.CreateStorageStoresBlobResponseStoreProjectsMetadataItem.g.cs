@@ -75,6 +75,12 @@ namespace Vercel
         public required string ProjectId { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("secretsOutdated")]
+        public bool? SecretsOutdated { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -93,6 +99,7 @@ namespace Vercel
         /// <param name="framework"></param>
         /// <param name="latestDeployment"></param>
         /// <param name="makeEnvVarsSensitive"></param>
+        /// <param name="secretsOutdated"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -106,7 +113,8 @@ namespace Vercel
             string? envVarPrefix,
             global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework? framework,
             string? latestDeployment,
-            bool? makeEnvVarsSensitive)
+            bool? makeEnvVarsSensitive,
+            bool? secretsOutdated)
         {
             this.Deployments = deployments;
             this.Environments = environments ?? throw new global::System.ArgumentNullException(nameof(environments));
@@ -118,6 +126,7 @@ namespace Vercel
             this.MakeEnvVarsSensitive = makeEnvVarsSensitive;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.ProjectId = projectId ?? throw new global::System.ArgumentNullException(nameof(projectId));
+            this.SecretsOutdated = secretsOutdated;
         }
 
         /// <summary>
