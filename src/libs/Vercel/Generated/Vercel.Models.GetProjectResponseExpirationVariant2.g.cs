@@ -16,7 +16,7 @@ namespace Vercel
         public required double LockedAt { get; set; }
 
         /// <summary>
-        /// userId of the actor that triggered the lock (system or admin).
+        /// ID of the user, app, or integration that locked the project, or `system`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lockedBy")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -35,7 +35,7 @@ namespace Vercel
         /// Unix ms timestamp when the project was locked.
         /// </param>
         /// <param name="lockedBy">
-        /// userId of the actor that triggered the lock (system or admin).
+        /// ID of the user, app, or integration that locked the project, or `system`.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

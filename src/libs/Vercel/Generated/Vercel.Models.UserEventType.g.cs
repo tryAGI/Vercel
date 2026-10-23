@@ -1344,7 +1344,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        MessageboardProjectChannelCreated,
+        /// <summary>
+        ///
+        /// </summary>
         MessageboardProjectGranted,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardProjectPrivateChannelCreated,
         /// <summary>
         ///
         /// </summary>
@@ -3296,7 +3304,9 @@ namespace Vercel
                 UserEventType.MessageboardPrivateCreated => "messageboard-private-created",
                 UserEventType.MessageboardPrivateProjectGranted => "messageboard-private-project-granted",
                 UserEventType.MessageboardPrivateProjectRevoked => "messageboard-private-project-revoked",
+                UserEventType.MessageboardProjectChannelCreated => "messageboard-project-channel-created",
                 UserEventType.MessageboardProjectGranted => "messageboard-project-granted",
+                UserEventType.MessageboardProjectPrivateChannelCreated => "messageboard-project-private-channel-created",
                 UserEventType.MessageboardProjectRevoked => "messageboard-project-revoked",
                 UserEventType.MessageboardSchemaRegistered => "messageboard-schema-registered",
                 UserEventType.MessageboardVisibilityUpdated => "messageboard-visibility-updated",
@@ -4041,7 +4051,9 @@ namespace Vercel
                 "messageboard-private-created" => UserEventType.MessageboardPrivateCreated,
                 "messageboard-private-project-granted" => UserEventType.MessageboardPrivateProjectGranted,
                 "messageboard-private-project-revoked" => UserEventType.MessageboardPrivateProjectRevoked,
+                "messageboard-project-channel-created" => UserEventType.MessageboardProjectChannelCreated,
                 "messageboard-project-granted" => UserEventType.MessageboardProjectGranted,
+                "messageboard-project-private-channel-created" => UserEventType.MessageboardProjectPrivateChannelCreated,
                 "messageboard-project-revoked" => UserEventType.MessageboardProjectRevoked,
                 "messageboard-schema-registered" => UserEventType.MessageboardSchemaRegistered,
                 "messageboard-visibility-updated" => UserEventType.MessageboardVisibilityUpdated,

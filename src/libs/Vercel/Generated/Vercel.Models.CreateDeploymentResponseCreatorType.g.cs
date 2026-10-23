@@ -19,6 +19,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        Project,
+        /// <summary>
+        ///
+        /// </summary>
         System,
         /// <summary>
         ///
@@ -40,6 +44,7 @@ namespace Vercel
             {
                 CreateDeploymentResponseCreatorType.App => "app",
                 CreateDeploymentResponseCreatorType.Integration => "integration",
+                CreateDeploymentResponseCreatorType.Project => "project",
                 CreateDeploymentResponseCreatorType.System => "system",
                 CreateDeploymentResponseCreatorType.User => "user",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -54,6 +59,7 @@ namespace Vercel
             {
                 "app" => CreateDeploymentResponseCreatorType.App,
                 "integration" => CreateDeploymentResponseCreatorType.Integration,
+                "project" => CreateDeploymentResponseCreatorType.Project,
                 "system" => CreateDeploymentResponseCreatorType.System,
                 "user" => CreateDeploymentResponseCreatorType.User,
                 _ => null,
