@@ -11829,6 +11829,16 @@
               }
             }
           },
+          "500": {
+            "description": "An internal error occurred.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConnectError"
+                }
+              }
+            }
+          },
           "501": {
             "description": ""
           },
@@ -12023,6 +12033,16 @@
               }
             }
           },
+          "500": {
+            "description": "An internal error occurred.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConnectError"
+                }
+              }
+            }
+          },
           "501": {
             "description": ""
           },
@@ -12139,6 +12159,16 @@
           },
           "422": {
             "description": "The request cannot be completed in the current state.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConnectError"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "An internal error occurred.",
             "content": {
               "application/json": {
                 "schema": {
@@ -12608,6 +12638,16 @@
               }
             }
           },
+          "500": {
+            "description": "An internal error occurred.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConnectError"
+                }
+              }
+            }
+          },
           "501": {
             "description": ""
           },
@@ -12700,6 +12740,9 @@
             "description": ""
           },
           "422": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           },
           "501": {
@@ -12808,6 +12851,16 @@
           },
           "410": {
             "description": "The requested resource is no longer available.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConnectError"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "An internal error occurred.",
             "content": {
               "application/json": {
                 "schema": {
@@ -12954,6 +13007,16 @@
                 }
               }
             }
+          },
+          "500": {
+            "description": "An internal error occurred.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConnectError"
+                }
+              }
+            }
           }
         },
         "parameters": [
@@ -13072,6 +13135,16 @@
           },
           "410": {
             "description": "The requested resource is no longer available.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConnectError"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "An internal error occurred.",
             "content": {
               "application/json": {
                 "schema": {
@@ -13207,6 +13280,16 @@
                 }
               }
             }
+          },
+          "500": {
+            "description": "An internal error occurred.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConnectError"
+                }
+              }
+            }
           }
         },
         "parameters": [
@@ -13317,6 +13400,16 @@
           },
           "410": {
             "description": "The requested resource is no longer available.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ConnectError"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "An internal error occurred.",
             "content": {
               "application/json": {
                 "schema": {
@@ -13495,6 +13588,9 @@
             "description": ""
           },
           "429": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           }
         },
@@ -13784,6 +13880,9 @@
             "description": ""
           },
           "422": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           }
         },
@@ -59166,6 +59265,9 @@
             "description": ""
           },
           "428": {
+            "description": ""
+          },
+          "500": {
             "description": ""
           }
         },
@@ -106529,9 +106631,13 @@
               "project-git-commit-comments-toggled",
               "project-git-commit-status-toggled",
               "project-git-create-deployments-toggled",
+              "project-git-credential-attestation-created",
+              "project-git-credential-attestation-deleted",
               "project-git-credential-bound-created",
               "project-git-credential-bound-deleted",
               "project-git-credential-bound-updated",
+              "project-git-credential-grant-attestation-revoked",
+              "project-git-credential-grant-attested",
               "project-git-credential-grant-created",
               "project-git-credential-grant-deleted",
               "project-git-credential-grant-updated",
@@ -107486,9 +107592,13 @@
               "project-git-commit-comments-toggled",
               "project-git-commit-status-toggled",
               "project-git-create-deployments-toggled",
+              "project-git-credential-attestation-created",
+              "project-git-credential-attestation-deleted",
               "project-git-credential-bound-created",
               "project-git-credential-bound-deleted",
               "project-git-credential-bound-updated",
+              "project-git-credential-grant-attestation-revoked",
+              "project-git-credential-grant-attested",
               "project-git-credential-grant-created",
               "project-git-credential-grant-deleted",
               "project-git-credential-grant-updated",
@@ -108231,9 +108341,13 @@
                 "project-git-commit-comments-toggled",
                 "project-git-commit-status-toggled",
                 "project-git-create-deployments-toggled",
+                "project-git-credential-attestation-created",
+                "project-git-credential-attestation-deleted",
                 "project-git-credential-bound-created",
                 "project-git-credential-bound-deleted",
                 "project-git-credential-bound-updated",
+                "project-git-credential-grant-attestation-revoked",
+                "project-git-credential-grant-attested",
                 "project-git-credential-grant-created",
                 "project-git-credential-grant-deleted",
                 "project-git-credential-grant-updated",
