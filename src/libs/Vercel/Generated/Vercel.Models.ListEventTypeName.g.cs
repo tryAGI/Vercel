@@ -1876,6 +1876,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        ProjectGitCredentialAttestationCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        ProjectGitCredentialAttestationDeleted,
+        /// <summary>
+        ///
+        /// </summary>
         ProjectGitCredentialBoundCreated,
         /// <summary>
         ///
@@ -1885,6 +1893,14 @@ namespace Vercel
         ///
         /// </summary>
         ProjectGitCredentialBoundUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        ProjectGitCredentialGrantAttestationRevoked,
+        /// <summary>
+        ///
+        /// </summary>
+        ProjectGitCredentialGrantAttested,
         /// <summary>
         ///
         /// </summary>
@@ -3437,9 +3453,13 @@ namespace Vercel
                 ListEventTypeName.ProjectGitCommitCommentsToggled => "project-git-commit-comments-toggled",
                 ListEventTypeName.ProjectGitCommitStatusToggled => "project-git-commit-status-toggled",
                 ListEventTypeName.ProjectGitCreateDeploymentsToggled => "project-git-create-deployments-toggled",
+                ListEventTypeName.ProjectGitCredentialAttestationCreated => "project-git-credential-attestation-created",
+                ListEventTypeName.ProjectGitCredentialAttestationDeleted => "project-git-credential-attestation-deleted",
                 ListEventTypeName.ProjectGitCredentialBoundCreated => "project-git-credential-bound-created",
                 ListEventTypeName.ProjectGitCredentialBoundDeleted => "project-git-credential-bound-deleted",
                 ListEventTypeName.ProjectGitCredentialBoundUpdated => "project-git-credential-bound-updated",
+                ListEventTypeName.ProjectGitCredentialGrantAttestationRevoked => "project-git-credential-grant-attestation-revoked",
+                ListEventTypeName.ProjectGitCredentialGrantAttested => "project-git-credential-grant-attested",
                 ListEventTypeName.ProjectGitCredentialGrantCreated => "project-git-credential-grant-created",
                 ListEventTypeName.ProjectGitCredentialGrantDeleted => "project-git-credential-grant-deleted",
                 ListEventTypeName.ProjectGitCredentialGrantUpdated => "project-git-credential-grant-updated",
@@ -4184,9 +4204,13 @@ namespace Vercel
                 "project-git-commit-comments-toggled" => ListEventTypeName.ProjectGitCommitCommentsToggled,
                 "project-git-commit-status-toggled" => ListEventTypeName.ProjectGitCommitStatusToggled,
                 "project-git-create-deployments-toggled" => ListEventTypeName.ProjectGitCreateDeploymentsToggled,
+                "project-git-credential-attestation-created" => ListEventTypeName.ProjectGitCredentialAttestationCreated,
+                "project-git-credential-attestation-deleted" => ListEventTypeName.ProjectGitCredentialAttestationDeleted,
                 "project-git-credential-bound-created" => ListEventTypeName.ProjectGitCredentialBoundCreated,
                 "project-git-credential-bound-deleted" => ListEventTypeName.ProjectGitCredentialBoundDeleted,
                 "project-git-credential-bound-updated" => ListEventTypeName.ProjectGitCredentialBoundUpdated,
+                "project-git-credential-grant-attestation-revoked" => ListEventTypeName.ProjectGitCredentialGrantAttestationRevoked,
+                "project-git-credential-grant-attested" => ListEventTypeName.ProjectGitCredentialGrantAttested,
                 "project-git-credential-grant-created" => ListEventTypeName.ProjectGitCredentialGrantCreated,
                 "project-git-credential-grant-deleted" => ListEventTypeName.ProjectGitCredentialGrantDeleted,
                 "project-git-credential-grant-updated" => ListEventTypeName.ProjectGitCredentialGrantUpdated,

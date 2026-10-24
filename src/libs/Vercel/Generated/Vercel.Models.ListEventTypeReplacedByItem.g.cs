@@ -1875,6 +1875,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        ProjectGitCredentialAttestationCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        ProjectGitCredentialAttestationDeleted,
+        /// <summary>
+        ///
+        /// </summary>
         ProjectGitCredentialBoundCreated,
         /// <summary>
         ///
@@ -1884,6 +1892,14 @@ namespace Vercel
         ///
         /// </summary>
         ProjectGitCredentialBoundUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        ProjectGitCredentialGrantAttestationRevoked,
+        /// <summary>
+        ///
+        /// </summary>
+        ProjectGitCredentialGrantAttested,
         /// <summary>
         ///
         /// </summary>
@@ -3436,9 +3452,13 @@ namespace Vercel
                 ListEventTypeReplacedByItem.ProjectGitCommitCommentsToggled => "project-git-commit-comments-toggled",
                 ListEventTypeReplacedByItem.ProjectGitCommitStatusToggled => "project-git-commit-status-toggled",
                 ListEventTypeReplacedByItem.ProjectGitCreateDeploymentsToggled => "project-git-create-deployments-toggled",
+                ListEventTypeReplacedByItem.ProjectGitCredentialAttestationCreated => "project-git-credential-attestation-created",
+                ListEventTypeReplacedByItem.ProjectGitCredentialAttestationDeleted => "project-git-credential-attestation-deleted",
                 ListEventTypeReplacedByItem.ProjectGitCredentialBoundCreated => "project-git-credential-bound-created",
                 ListEventTypeReplacedByItem.ProjectGitCredentialBoundDeleted => "project-git-credential-bound-deleted",
                 ListEventTypeReplacedByItem.ProjectGitCredentialBoundUpdated => "project-git-credential-bound-updated",
+                ListEventTypeReplacedByItem.ProjectGitCredentialGrantAttestationRevoked => "project-git-credential-grant-attestation-revoked",
+                ListEventTypeReplacedByItem.ProjectGitCredentialGrantAttested => "project-git-credential-grant-attested",
                 ListEventTypeReplacedByItem.ProjectGitCredentialGrantCreated => "project-git-credential-grant-created",
                 ListEventTypeReplacedByItem.ProjectGitCredentialGrantDeleted => "project-git-credential-grant-deleted",
                 ListEventTypeReplacedByItem.ProjectGitCredentialGrantUpdated => "project-git-credential-grant-updated",
@@ -4183,9 +4203,13 @@ namespace Vercel
                 "project-git-commit-comments-toggled" => ListEventTypeReplacedByItem.ProjectGitCommitCommentsToggled,
                 "project-git-commit-status-toggled" => ListEventTypeReplacedByItem.ProjectGitCommitStatusToggled,
                 "project-git-create-deployments-toggled" => ListEventTypeReplacedByItem.ProjectGitCreateDeploymentsToggled,
+                "project-git-credential-attestation-created" => ListEventTypeReplacedByItem.ProjectGitCredentialAttestationCreated,
+                "project-git-credential-attestation-deleted" => ListEventTypeReplacedByItem.ProjectGitCredentialAttestationDeleted,
                 "project-git-credential-bound-created" => ListEventTypeReplacedByItem.ProjectGitCredentialBoundCreated,
                 "project-git-credential-bound-deleted" => ListEventTypeReplacedByItem.ProjectGitCredentialBoundDeleted,
                 "project-git-credential-bound-updated" => ListEventTypeReplacedByItem.ProjectGitCredentialBoundUpdated,
+                "project-git-credential-grant-attestation-revoked" => ListEventTypeReplacedByItem.ProjectGitCredentialGrantAttestationRevoked,
+                "project-git-credential-grant-attested" => ListEventTypeReplacedByItem.ProjectGitCredentialGrantAttested,
                 "project-git-credential-grant-created" => ListEventTypeReplacedByItem.ProjectGitCredentialGrantCreated,
                 "project-git-credential-grant-deleted" => ListEventTypeReplacedByItem.ProjectGitCredentialGrantDeleted,
                 "project-git-credential-grant-updated" => ListEventTypeReplacedByItem.ProjectGitCredentialGrantUpdated,
