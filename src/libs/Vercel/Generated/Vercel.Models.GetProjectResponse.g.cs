@@ -610,6 +610,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vercelFlags")]
+        public global::Vercel.GetProjectResponseVercelFlags? VercelFlags { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("webAnalytics")]
         public global::Vercel.GetProjectResponseWebAnalytics? WebAnalytics { get; set; }
 
@@ -731,6 +737,7 @@ namespace Vercel
         /// <param name="usageStatus"></param>
         /// <param name="v0"></param>
         /// <param name="v0Created"></param>
+        /// <param name="vercelFlags"></param>
         /// <param name="webAnalytics"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -833,6 +840,7 @@ namespace Vercel
             global::Vercel.GetProjectResponseUsageStatus? usageStatus,
             bool? v0,
             bool? v0Created,
+            global::Vercel.GetProjectResponseVercelFlags? vercelFlags,
             global::Vercel.GetProjectResponseWebAnalytics? webAnalytics)
         {
             this.AccountId = accountId ?? throw new global::System.ArgumentNullException(nameof(accountId));
@@ -932,6 +940,7 @@ namespace Vercel
             this.UsageStatus = usageStatus;
             this.V0 = v0;
             this.V0Created = v0Created;
+            this.VercelFlags = vercelFlags;
             this.WebAnalytics = webAnalytics;
         }
 

@@ -107,6 +107,12 @@ namespace Vercel
         public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsSpeedInsights? SpeedInsights { get; set; }
 
         /// <summary>
+        /// Vercel Flags activation metadata copied from the project at deployment creation.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("vercelFlags")]
+        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsVercelFlags? VercelFlags { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("webAnalytics")]
@@ -139,6 +145,9 @@ namespace Vercel
         /// <param name="skipGitConnectDuringLink"></param>
         /// <param name="sourceFilesOutsideRootDirectory"></param>
         /// <param name="speedInsights"></param>
+        /// <param name="vercelFlags">
+        /// Vercel Flags activation metadata copied from the project at deployment creation.
+        /// </param>
         /// <param name="webAnalytics"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -160,6 +169,7 @@ namespace Vercel
             bool? skipGitConnectDuringLink,
             bool? sourceFilesOutsideRootDirectory,
             global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsSpeedInsights? speedInsights,
+            global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsVercelFlags? vercelFlags,
             global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsWebAnalytics? webAnalytics)
         {
             this.BuildCommand = buildCommand;
@@ -178,6 +188,7 @@ namespace Vercel
             this.SkipGitConnectDuringLink = skipGitConnectDuringLink;
             this.SourceFilesOutsideRootDirectory = sourceFilesOutsideRootDirectory;
             this.SpeedInsights = speedInsights;
+            this.VercelFlags = vercelFlags;
             this.WebAnalytics = webAnalytics;
         }
 

@@ -485,7 +485,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectSettings")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AutoSDKSharedfcc5a22551853b26 ProjectSettings { get; set; }
+        public required global::Vercel.AutoSDKShared08ccbffba83732e3 ProjectSettings { get; set; }
 
         /// <summary>
         /// A boolean representing if the deployment is public or not. By default this is `false`<br/>
@@ -869,7 +869,7 @@ namespace Vercel
             string ownerId,
             global::Vercel.CancelDeploymentResponsePlan plan,
             string projectId,
-            global::Vercel.AutoSDKSharedfcc5a22551853b26 projectSettings,
+            global::Vercel.AutoSDKShared08ccbffba83732e3 projectSettings,
             bool @public,
             global::Vercel.CancelDeploymentResponseReadyState readyState,
             global::System.Collections.Generic.IList<string> regions,

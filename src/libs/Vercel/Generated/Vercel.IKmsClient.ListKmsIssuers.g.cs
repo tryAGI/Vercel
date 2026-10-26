@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// List issuers<br/>
-        /// Retrieve the list of KMS issuers that belong to the authenticated team. The results are paginated.
+        /// Retrieve the paginated KMS issuers that belong to the authenticated team or organization (`orgId`).
         /// </summary>
         /// <param name="limit">
         /// Maximum number of issuers to return.
@@ -32,7 +32,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// List issuers<br/>
-        /// Retrieve the list of KMS issuers that belong to the authenticated team. The results are paginated.
+        /// Retrieve the paginated KMS issuers that belong to the authenticated team or organization (`orgId`).
         /// </summary>
         /// <param name="limit">
         /// Maximum number of issuers to return.
