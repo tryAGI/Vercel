@@ -18,6 +18,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("caseSensitive")]
+        public bool? CaseSensitive { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("conditions")]
         public global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteCondition>? Conditions { get; set; }
 
@@ -55,6 +61,7 @@ namespace Vercel
         /// <param name="description"></param>
         /// <param name="name"></param>
         /// <param name="pathCondition"></param>
+        /// <param name="caseSensitive"></param>
         /// <param name="conditions"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -64,9 +71,11 @@ namespace Vercel
             string description,
             string name,
             global::Vercel.GenerateRouteResponseRoutePathCondition pathCondition,
+            bool? caseSensitive,
             global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteCondition>? conditions)
         {
             this.Actions = actions ?? throw new global::System.ArgumentNullException(nameof(actions));
+            this.CaseSensitive = caseSensitive;
             this.Conditions = conditions;
             this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
