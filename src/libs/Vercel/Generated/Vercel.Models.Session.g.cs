@@ -203,12 +203,6 @@ namespace Vercel
         public required double UpdatedAt { get; set; }
 
         /// <summary>
-        /// Whether this sandbox is managed by v0 on the customer's behalf.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("v0")]
-        public bool? V0 { get; set; }
-
-        /// <summary>
         /// Number of vCPUs allocated to this sandbox.<br/>
         /// Example: 2
         /// </summary>
@@ -216,6 +210,13 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonPropertyName("vcpus")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double Vcpus { get; set; }
+
+        /// <summary>
+        /// The workload type of this sandbox.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("workloadType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SessionWorkloadTypeJsonConverter))]
+        public global::Vercel.SessionWorkloadType? WorkloadType { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -320,8 +321,8 @@ namespace Vercel
         /// The time when the sandbox was stopped, in milliseconds since the epoch.<br/>
         /// Example: 1750344501629L
         /// </param>
-        /// <param name="v0">
-        /// Whether this sandbox is managed by v0 on the customer's behalf.
+        /// <param name="workloadType">
+        /// The workload type of this sandbox.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -351,7 +352,7 @@ namespace Vercel
             string? sourceSnapshotId,
             double? startedAt,
             double? stoppedAt,
-            bool? v0)
+            global::Vercel.SessionWorkloadType? workloadType)
         {
             this.AbortedAt = abortedAt;
             this.ActiveCpuDurationMs = activeCpuDurationMs;
@@ -376,8 +377,8 @@ namespace Vercel
             this.StoppedAt = stoppedAt;
             this.Timeout = timeout;
             this.UpdatedAt = updatedAt;
-            this.V0 = v0;
             this.Vcpus = vcpus;
+            this.WorkloadType = workloadType;
         }
 
         /// <summary>
