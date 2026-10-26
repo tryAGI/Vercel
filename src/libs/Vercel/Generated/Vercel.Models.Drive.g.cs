@@ -100,10 +100,11 @@ namespace Vercel
         public required double UpdatedAt { get; set; }
 
         /// <summary>
-        /// Whether this drive is managed by v0 on the customer's behalf.
+        /// The workload type of this drive.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("v0")]
-        public bool? V0 { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("workloadType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.DriveWorkloadTypeJsonConverter))]
+        public global::Vercel.DriveWorkloadType? WorkloadType { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -156,8 +157,8 @@ namespace Vercel
         /// <param name="rootDriveId">
         /// The ID of the original drive at the root of this fork.
         /// </param>
-        /// <param name="v0">
-        /// Whether this drive is managed by v0 on the customer's behalf.
+        /// <param name="workloadType">
+        /// The workload type of this drive.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -174,7 +175,7 @@ namespace Vercel
             string? currentSessionId,
             string? parentDriveId,
             string? rootDriveId,
-            bool? v0)
+            global::Vercel.DriveWorkloadType? workloadType)
         {
             this.CreatedAt = createdAt;
             this.CurrentSandboxName = currentSandboxName;
@@ -187,7 +188,7 @@ namespace Vercel
             this.Region = region ?? throw new global::System.ArgumentNullException(nameof(region));
             this.RootDriveId = rootDriveId;
             this.UpdatedAt = updatedAt;
-            this.V0 = v0;
+            this.WorkloadType = workloadType;
         }
 
         /// <summary>

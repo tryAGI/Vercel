@@ -220,18 +220,19 @@ namespace Vercel
         public required double UpdatedAt { get; set; }
 
         /// <summary>
-        /// Whether this sandbox is managed by v0 on the customer's behalf.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("v0")]
-        public bool? V0 { get; set; }
-
-        /// <summary>
         /// Number of virtual CPUs allocated.<br/>
         /// Example: 2
         /// </summary>
         /// <example>2</example>
         [global::System.Text.Json.Serialization.JsonPropertyName("vcpus")]
         public double? Vcpus { get; set; }
+
+        /// <summary>
+        /// The workload type of this sandbox.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("workloadType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.NamedSandboxWorkloadTypeJsonConverter))]
+        public global::Vercel.NamedSandboxWorkloadType? WorkloadType { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -343,12 +344,12 @@ namespace Vercel
         /// Cumulative ingress bytes across all sandbox runs.<br/>
         /// Example: 2048
         /// </param>
-        /// <param name="v0">
-        /// Whether this sandbox is managed by v0 on the customer's behalf.
-        /// </param>
         /// <param name="vcpus">
         /// Number of virtual CPUs allocated.<br/>
         /// Example: 2
+        /// </param>
+        /// <param name="workloadType">
+        /// The workload type of this sandbox.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -381,8 +382,8 @@ namespace Vercel
             double? totalDurationMs,
             double? totalEgressBytes,
             double? totalIngressBytes,
-            bool? v0,
-            double? vcpus)
+            double? vcpus,
+            global::Vercel.NamedSandboxWorkloadType? workloadType)
         {
             this.Architecture = architecture;
             this.CreatedAt = createdAt;
@@ -411,8 +412,8 @@ namespace Vercel
             this.TotalEgressBytes = totalEgressBytes;
             this.TotalIngressBytes = totalIngressBytes;
             this.UpdatedAt = updatedAt;
-            this.V0 = v0;
             this.Vcpus = vcpus;
+            this.WorkloadType = workloadType;
         }
 
         /// <summary>
