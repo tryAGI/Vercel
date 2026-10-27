@@ -33,6 +33,13 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? Events { get; set; }
 
         /// <summary>
+        /// MCP Events dashboard visibility. Auto (the default) shows the UI after the first successful delivery. Show and hide persist regardless of future deliveries. This does not enable or disable event delivery.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mcpEventsUiVisibility")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ConnectUpdateConnectorRequestMcpEventsUiVisibilityJsonConverter))]
+        public global::Vercel.ConnectUpdateConnectorRequestMcpEventsUiVisibility? McpEventsUiVisibility { get; set; }
+
+        /// <summary>
         /// Provider configuration fields for the connector type.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
@@ -117,6 +124,9 @@ namespace Vercel
         /// <param name="events">
         /// Default trigger events for this connector.
         /// </param>
+        /// <param name="mcpEventsUiVisibility">
+        /// MCP Events dashboard visibility. Auto (the default) shows the UI after the first successful delivery. Show and hide persist regardless of future deliveries. This does not enable or disable event delivery.
+        /// </param>
         /// <param name="data">
         /// Provider configuration fields for the connector type.
         /// </param>
@@ -166,6 +176,7 @@ namespace Vercel
             object? triggerVerificationInput,
             object? triggerRegistrationInput,
             global::System.Collections.Generic.IList<string>? events,
+            global::Vercel.ConnectUpdateConnectorRequestMcpEventsUiVisibility? mcpEventsUiVisibility,
             global::Vercel.ConnectConnectorUpdateData? data,
             string? icon,
             string? backgroundColor,
@@ -177,6 +188,7 @@ namespace Vercel
             this.TriggerVerificationInput = triggerVerificationInput;
             this.TriggerRegistrationInput = triggerRegistrationInput;
             this.Events = events;
+            this.McpEventsUiVisibility = mcpEventsUiVisibility;
             this.Data = data;
             this.Icon = icon;
             this.BackgroundColor = backgroundColor;

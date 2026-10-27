@@ -1,0 +1,154 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    ///
+    /// </summary>
+    public sealed partial class ListAiGatewayByokCredentialsResponseCredential
+    {
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("active")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Active { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double CreatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("credential")]
+        public string? Credential { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("credentialId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string CredentialId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("deleted")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Deleted { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("lastFourChars")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string LastFourChars { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("modelMappings")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.ListAiGatewayByokCredentialsResponseCredentialModelMapping> ModelMappings { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("name")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string Name { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ownerId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string OwnerId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("providerSlug")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string ProviderSlug { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double UpdatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("zeroDataRetention")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool ZeroDataRetention { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ListAiGatewayByokCredentialsResponseCredential" /> class.
+        /// </summary>
+        /// <param name="active"></param>
+        /// <param name="createdAt"></param>
+        /// <param name="credentialId"></param>
+        /// <param name="deleted"></param>
+        /// <param name="lastFourChars"></param>
+        /// <param name="modelMappings"></param>
+        /// <param name="name"></param>
+        /// <param name="ownerId"></param>
+        /// <param name="providerSlug"></param>
+        /// <param name="updatedAt"></param>
+        /// <param name="zeroDataRetention"></param>
+        /// <param name="credential"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public ListAiGatewayByokCredentialsResponseCredential(
+            bool active,
+            double createdAt,
+            string credentialId,
+            bool deleted,
+            string lastFourChars,
+            global::System.Collections.Generic.IList<global::Vercel.ListAiGatewayByokCredentialsResponseCredentialModelMapping> modelMappings,
+            string name,
+            string ownerId,
+            string providerSlug,
+            double updatedAt,
+            bool zeroDataRetention,
+            string? credential)
+        {
+            this.Active = active;
+            this.CreatedAt = createdAt;
+            this.Credential = credential;
+            this.CredentialId = credentialId ?? throw new global::System.ArgumentNullException(nameof(credentialId));
+            this.Deleted = deleted;
+            this.LastFourChars = lastFourChars ?? throw new global::System.ArgumentNullException(nameof(lastFourChars));
+            this.ModelMappings = modelMappings ?? throw new global::System.ArgumentNullException(nameof(modelMappings));
+            this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
+            this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
+            this.ProviderSlug = providerSlug ?? throw new global::System.ArgumentNullException(nameof(providerSlug));
+            this.UpdatedAt = updatedAt;
+            this.ZeroDataRetention = zeroDataRetention;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ListAiGatewayByokCredentialsResponseCredential" /> class.
+        /// </summary>
+        public ListAiGatewayByokCredentialsResponseCredential()
+        {
+        }
+
+    }
+}

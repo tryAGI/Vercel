@@ -9,7 +9,7 @@ namespace Vercel
         /// Get the connector by ID. Accepts a dashboard/team requester or a deployment's project OIDC token; project requesters may only read connectors linked to their project and environment.
         /// </summary>
         /// <param name="connector">
-        /// Stable connector ID or URL-encoded team-scoped UID. Examples: `scl_abc123` or `slack%2Fmy-bot`.
+        /// Stable connector ID or URL-encoded owner-scoped UID. Examples: `scl_abc123` or `slack%2Fmy-bot`.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -31,7 +31,7 @@ namespace Vercel
         /// Get the connector by ID. Accepts a dashboard/team requester or a deployment's project OIDC token; project requesters may only read connectors linked to their project and environment.
         /// </summary>
         /// <param name="connector">
-        /// Stable connector ID or URL-encoded team-scoped UID. Examples: `scl_abc123` or `slack%2Fmy-bot`.
+        /// Stable connector ID or URL-encoded owner-scoped UID. Examples: `scl_abc123` or `slack%2Fmy-bot`.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l

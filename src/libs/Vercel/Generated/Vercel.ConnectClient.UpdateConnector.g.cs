@@ -898,6 +898,9 @@ namespace Vercel
         /// <param name="events">
         /// Default trigger events for this connector.
         /// </param>
+        /// <param name="mcpEventsUiVisibility">
+        /// MCP Events dashboard visibility. Auto (the default) shows the UI after the first successful delivery. Show and hide persist regardless of future deliveries. This does not enable or disable event delivery.
+        /// </param>
         /// <param name="data">
         /// Provider configuration fields for the connector type.
         /// </param>
@@ -950,6 +953,7 @@ namespace Vercel
             object? triggerVerificationInput = default,
             object? triggerRegistrationInput = default,
             global::System.Collections.Generic.IList<string>? events = default,
+            global::Vercel.ConnectUpdateConnectorRequestMcpEventsUiVisibility? mcpEventsUiVisibility = default,
             global::Vercel.ConnectConnectorUpdateData? data = default,
             string? icon = default,
             string? backgroundColor = default,
@@ -965,6 +969,7 @@ namespace Vercel
                 TriggerVerificationInput = triggerVerificationInput,
                 TriggerRegistrationInput = triggerRegistrationInput,
                 Events = events,
+                McpEventsUiVisibility = mcpEventsUiVisibility,
                 Data = data,
                 Icon = icon,
                 BackgroundColor = backgroundColor,
