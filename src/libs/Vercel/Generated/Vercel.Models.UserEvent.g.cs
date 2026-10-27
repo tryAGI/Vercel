@@ -26,6 +26,12 @@ namespace Vercel
         public required double CreatedAt { get; set; }
 
         /// <summary>
+        /// Labeled event details for progressive disclosure in the activity feed.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("details")]
+        public global::System.Collections.Generic.IList<global::Vercel.UserEventDetail>? Details { get; set; }
+
+        /// <summary>
         /// A list of "entities" within the event `text`. Useful for enhancing the displayed text with additional styling and links.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("entities")]
@@ -72,6 +78,12 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sessionId")]
         public string? SessionId { get; set; }
+
+        /// <summary>
+        /// Compact activity-feed text, when the event has additional details.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("summary")]
+        public string? Summary { get; set; }
 
         /// <summary>
         /// The human-readable text of the Event.<br/>
@@ -154,6 +166,9 @@ namespace Vercel
         /// The categories that group this event with related event types. An event can belong to multiple categories (e.g. a firewall event is both Firewall and Security). The first entry is the "primary" category. Use the `/events/types` endpoint to discover the full list of categories.<br/>
         /// Example: [deployment]
         /// </param>
+        /// <param name="details">
+        /// Labeled event details for progressive disclosure in the activity feed.
+        /// </param>
         /// <param name="payload">
         /// The payload of the event, if requested.
         /// </param>
@@ -161,6 +176,9 @@ namespace Vercel
         /// <param name="requestId"></param>
         /// <param name="sessionId">
         /// The ID of the session that the principal's token belongs to, when it belongs to one.
+        /// </param>
+        /// <param name="summary">
+        /// Compact activity-feed text, when the event has additional details.
         /// </param>
         /// <param name="tokenId">
         /// The public ID of the token that the principal authenticated with, when the request behind this event carried one.
@@ -192,10 +210,12 @@ namespace Vercel
             string principalId,
             string text,
             global::System.Collections.Generic.IList<global::Vercel.UserEventCategorie>? categories,
+            global::System.Collections.Generic.IList<global::Vercel.UserEventDetail>? details,
             object? payload,
             global::Vercel.OneOf<global::Vercel.UserEventPrincipalVariant1, global::Vercel.UserEventPrincipalVariant2, global::Vercel.UserEventPrincipalVariant3, global::Vercel.UserEventPrincipalVariant4>? principal,
             string? requestId,
             string? sessionId,
+            string? summary,
             string? tokenId,
             global::Vercel.UserEventType? type,
             global::Vercel.UserEventUser? user,
@@ -205,6 +225,7 @@ namespace Vercel
         {
             this.Categories = categories;
             this.CreatedAt = createdAt;
+            this.Details = details;
             this.Entities = entities ?? throw new global::System.ArgumentNullException(nameof(entities));
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Payload = payload;
@@ -212,6 +233,7 @@ namespace Vercel
             this.PrincipalId = principalId ?? throw new global::System.ArgumentNullException(nameof(principalId));
             this.RequestId = requestId;
             this.SessionId = sessionId;
+            this.Summary = summary;
             this.Text = text ?? throw new global::System.ArgumentNullException(nameof(text));
             this.TokenId = tokenId;
             this.Type = type;

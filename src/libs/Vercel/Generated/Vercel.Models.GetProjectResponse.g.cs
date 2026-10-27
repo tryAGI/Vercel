@@ -148,7 +148,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultResourceConfig")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AutoSDKShareda38de73cc9e23e17 DefaultResourceConfig { get; set; }
+        public required global::Vercel.AutoSDKSharedbbf450e6ecd4e724 DefaultResourceConfig { get; set; }
 
         /// <summary>
         /// Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects.
@@ -404,7 +404,7 @@ namespace Vercel
         /// Requested and authorized operations when `checkPermissions` is used. Legacy `includePermissions` responses contain a broader, non-authoritative permission summary.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("permissions")]
-        public global::Vercel.AutoSDKShared4e3b7fd69aedd83b? Permissions { get; set; }
+        public global::Vercel.AutoSDKSharede1c4494d75488348? Permissions { get; set; }
 
         /// <summary>
         ///
@@ -435,7 +435,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resourceConfig")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AutoSDKShareda38de73cc9e23e17 ResourceConfig { get; set; }
+        public required global::Vercel.AutoSDKSharedbbf450e6ecd4e724 ResourceConfig { get; set; }
 
         /// <summary>
         /// Description of why a project was rolled back, and by whom. Note that lastAliasRequest contains the from/to details of the rollback.
@@ -745,13 +745,13 @@ namespace Vercel
         public GetProjectResponse(
             string accountId,
             global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared29b35dda7b3e47c4> alias,
-            global::Vercel.AutoSDKShareda38de73cc9e23e17 defaultResourceConfig,
+            global::Vercel.AutoSDKSharedbbf450e6ecd4e724 defaultResourceConfig,
             global::Vercel.GetProjectResponseDeploymentExpiration deploymentExpiration,
             bool directoryListing,
             string id,
             string name,
             global::Vercel.GetProjectResponseNodeVersion nodeVersion,
-            global::Vercel.AutoSDKShareda38de73cc9e23e17 resourceConfig,
+            global::Vercel.AutoSDKSharedbbf450e6ecd4e724 resourceConfig,
             global::Vercel.GetProjectResponseAnalytics? analytics,
             bool? appliedCve55182Migration,
             bool? autoAssignCustomDomains,
@@ -807,7 +807,7 @@ namespace Vercel
             global::Vercel.GetProjectResponsePassport? passport,
             global::Vercel.GetProjectResponsePasswordProtection? passwordProtection,
             bool? paused,
-            global::Vercel.AutoSDKShared4e3b7fd69aedd83b? permissions,
+            global::Vercel.AutoSDKSharede1c4494d75488348? permissions,
             bool? productionDeploymentsFastLane,
             bool? protectedSourcemaps,
             object? protectionBypass,

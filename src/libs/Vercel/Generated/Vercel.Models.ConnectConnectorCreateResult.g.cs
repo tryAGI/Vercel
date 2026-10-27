@@ -91,6 +91,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? Events { get; set; }
 
         /// <summary>
+        /// Whether Connect has successfully delivered an MCP event for this connector.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("hasMcpEventDeliveries")]
+        public bool? HasMcpEventDeliveries { get; set; }
+
+        /// <summary>
         /// Connector branding icon. SHA-1 hash that resolves to the uploaded icon through the Vercel avatar service. Consumers render this with `https://vercel.com/api/www/avatar/{icon}`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("icon")]
@@ -114,6 +120,13 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("managed")]
         public global::Vercel.ConnectConnectorCreateResultManaged? Managed { get; set; }
+
+        /// <summary>
+        /// MCP Events dashboard visibility. Defaults to auto: show after the first successful delivery.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("mcpEventsUiVisibility")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ConnectConnectorCreateResultMcpEventsUiVisibilityJsonConverter))]
+        public global::Vercel.ConnectConnectorCreateResultMcpEventsUiVisibility? McpEventsUiVisibility { get; set; }
 
         /// <summary>
         /// Connector name within the owning team.
@@ -345,6 +358,9 @@ namespace Vercel
         /// <param name="events">
         /// Known events this connector subscribes to (e.g. Slack bot events, GitHub webhook events). Names are type-specific and validated by the managed-create flow when forwarded to the third-party service.
         /// </param>
+        /// <param name="hasMcpEventDeliveries">
+        /// Whether Connect has successfully delivered an MCP event for this connector.
+        /// </param>
         /// <param name="icon">
         /// Connector branding icon. SHA-1 hash that resolves to the uploaded icon through the Vercel avatar service. Consumers render this with `https://vercel.com/api/www/avatar/{icon}`.
         /// </param>
@@ -353,6 +369,9 @@ namespace Vercel
         /// </param>
         /// <param name="managed">
         /// Managed connector metadata exposed without leaking the manager connector or installation identifiers.
+        /// </param>
+        /// <param name="mcpEventsUiVisibility">
+        /// MCP Events dashboard visibility. Defaults to auto: show after the first successful delivery.
         /// </param>
         /// <param name="redirectUri">
         /// Redirect URI registered with the third-party service for this connector, if any. Used by `startAuthorization`/`startInstallation` to replay the exact URI back to the provider's token endpoint. Absent on connectors created before this field was introduced; those callers fall back to the `https://connect.vercel.com/callback` default.
@@ -416,9 +435,11 @@ namespace Vercel
             string? devsite,
             string? docsite,
             global::System.Collections.Generic.IList<string>? events,
+            bool? hasMcpEventDeliveries,
             string? icon,
             bool? knownStale,
             global::Vercel.ConnectConnectorCreateResultManaged? managed,
+            global::Vercel.ConnectConnectorCreateResultMcpEventsUiVisibility? mcpEventsUiVisibility,
             string? redirectUri,
             double? reinstallAt,
             string? serviceIcon,
@@ -444,10 +465,12 @@ namespace Vercel
             this.DisplayName = displayName ?? throw new global::System.ArgumentNullException(nameof(displayName));
             this.Docsite = docsite;
             this.Events = events;
+            this.HasMcpEventDeliveries = hasMcpEventDeliveries;
             this.Icon = icon;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.KnownStale = knownStale;
             this.Managed = managed;
+            this.McpEventsUiVisibility = mcpEventsUiVisibility;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.RedirectUri = redirectUri;
             this.ReinstallAt = reinstallAt;
