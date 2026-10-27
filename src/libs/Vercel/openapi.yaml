@@ -47396,160 +47396,7 @@
                             "type": "object"
                           },
                           "defaultResourceConfig": {
-                            "properties": {
-                              "buildMachineElasticLastUpdated": {
-                                "type": "number"
-                              },
-                              "buildMachineElasticReason": {
-                                "type": "string",
-                                "enum": [
-                                  "basic-floor",
-                                  "build-timeout-failure",
-                                  "enospc-failure",
-                                  "enterprise-floor",
-                                  "high-peak-disk",
-                                  "high-peak-memory",
-                                  "long-build-duration",
-                                  "oom-failure",
-                                  "short-build-duration",
-                                  "sustained-high-cpu"
-                                ]
-                              },
-                              "buildMachineElasticTransition": {
-                                "properties": {
-                                  "algorithmVersion": {
-                                    "type": "string"
-                                  },
-                                  "at": {
-                                    "type": "number"
-                                  },
-                                  "direction": {
-                                    "type": "string",
-                                    "enum": [
-                                      "downgrade",
-                                      "upgrade"
-                                    ]
-                                  }
-                                },
-                                "required": [
-                                  "algorithmVersion",
-                                  "at",
-                                  "direction"
-                                ],
-                                "type": "object"
-                              },
-                              "buildMachineSelection": {
-                                "type": "string",
-                                "enum": [
-                                  "elastic",
-                                  "fixed"
-                                ]
-                              },
-                              "buildMachineType": {
-                                "type": "string",
-                                "enum": [
-                                  "basic",
-                                  "enhanced",
-                                  "standard",
-                                  "turbo"
-                                ]
-                              },
-                              "buildQueue": {
-                                "properties": {
-                                  "configuration": {
-                                    "type": "string",
-                                    "enum": [
-                                      "SKIP_NAMESPACE_QUEUE",
-                                      "WAIT_FOR_NAMESPACE_QUEUE"
-                                    ]
-                                  }
-                                },
-                                "type": "object"
-                              },
-                              "elasticConcurrencyEnabled": {
-                                "type": "boolean",
-                                "enum": [
-                                  false,
-                                  true
-                                ]
-                              },
-                              "enableFunctionsBeta": {
-                                "type": "boolean",
-                                "enum": [
-                                  false,
-                                  true
-                                ]
-                              },
-                              "fluid": {
-                                "type": "boolean",
-                                "enum": [
-                                  false,
-                                  true
-                                ]
-                              },
-                              "functionDefaultMemoryType": {
-                                "type": "string",
-                                "enum": [
-                                  "performance",
-                                  "performance_xl",
-                                  "standard",
-                                  "standard_legacy"
-                                ]
-                              },
-                              "functionDefaultRegions": {
-                                "items": {
-                                  "type": "string"
-                                },
-                                "type": "array"
-                              },
-                              "functionDefaultTimeout": {
-                                "type": "number"
-                              },
-                              "functionZeroConfigFailover": {
-                                "type": "boolean",
-                                "enum": [
-                                  false,
-                                  true
-                                ]
-                              },
-                              "isNSNBDisabled": {
-                                "type": "boolean",
-                                "enum": [
-                                  false,
-                                  true
-                                ]
-                              },
-                              "elasticBuildMachine": {
-                                "properties": {
-                                  "cores": {
-                                    "type": "number"
-                                  },
-                                  "label": {
-                                    "type": "string",
-                                    "enum": [
-                                      "enhanced",
-                                      "standard",
-                                      "turbo"
-                                    ],
-                                    "description": "Machine types elastic can assign. Widens when the elastic algorithm adds the 14 CPU tier."
-                                  },
-                                  "memory": {
-                                    "type": "number"
-                                  }
-                                },
-                                "required": [
-                                  "cores",
-                                  "label",
-                                  "memory"
-                                ],
-                                "type": "object",
-                                "description": "Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB."
-                              }
-                            },
-                            "type": "object",
-                            "required": [
-                              "functionDefaultRegions"
-                            ]
+                            "$ref": "#/components/schemas/AutoSDKShareda38de73cc9e23e17"
                           },
                           "deploymentExpiration": {
                             "properties": {
@@ -48394,160 +48241,7 @@
                             "type": "object"
                           },
                           "resourceConfig": {
-                            "properties": {
-                              "buildMachineElasticLastUpdated": {
-                                "type": "number"
-                              },
-                              "buildMachineElasticReason": {
-                                "type": "string",
-                                "enum": [
-                                  "basic-floor",
-                                  "build-timeout-failure",
-                                  "enospc-failure",
-                                  "enterprise-floor",
-                                  "high-peak-disk",
-                                  "high-peak-memory",
-                                  "long-build-duration",
-                                  "oom-failure",
-                                  "short-build-duration",
-                                  "sustained-high-cpu"
-                                ]
-                              },
-                              "buildMachineElasticTransition": {
-                                "properties": {
-                                  "algorithmVersion": {
-                                    "type": "string"
-                                  },
-                                  "at": {
-                                    "type": "number"
-                                  },
-                                  "direction": {
-                                    "type": "string",
-                                    "enum": [
-                                      "downgrade",
-                                      "upgrade"
-                                    ]
-                                  }
-                                },
-                                "required": [
-                                  "algorithmVersion",
-                                  "at",
-                                  "direction"
-                                ],
-                                "type": "object"
-                              },
-                              "buildMachineSelection": {
-                                "type": "string",
-                                "enum": [
-                                  "elastic",
-                                  "fixed"
-                                ]
-                              },
-                              "buildMachineType": {
-                                "type": "string",
-                                "enum": [
-                                  "basic",
-                                  "enhanced",
-                                  "standard",
-                                  "turbo"
-                                ]
-                              },
-                              "buildQueue": {
-                                "properties": {
-                                  "configuration": {
-                                    "type": "string",
-                                    "enum": [
-                                      "SKIP_NAMESPACE_QUEUE",
-                                      "WAIT_FOR_NAMESPACE_QUEUE"
-                                    ]
-                                  }
-                                },
-                                "type": "object"
-                              },
-                              "elasticConcurrencyEnabled": {
-                                "type": "boolean",
-                                "enum": [
-                                  false,
-                                  true
-                                ]
-                              },
-                              "enableFunctionsBeta": {
-                                "type": "boolean",
-                                "enum": [
-                                  false,
-                                  true
-                                ]
-                              },
-                              "fluid": {
-                                "type": "boolean",
-                                "enum": [
-                                  false,
-                                  true
-                                ]
-                              },
-                              "functionDefaultMemoryType": {
-                                "type": "string",
-                                "enum": [
-                                  "performance",
-                                  "performance_xl",
-                                  "standard",
-                                  "standard_legacy"
-                                ]
-                              },
-                              "functionDefaultRegions": {
-                                "items": {
-                                  "type": "string"
-                                },
-                                "type": "array"
-                              },
-                              "functionDefaultTimeout": {
-                                "type": "number"
-                              },
-                              "functionZeroConfigFailover": {
-                                "type": "boolean",
-                                "enum": [
-                                  false,
-                                  true
-                                ]
-                              },
-                              "isNSNBDisabled": {
-                                "type": "boolean",
-                                "enum": [
-                                  false,
-                                  true
-                                ]
-                              },
-                              "elasticBuildMachine": {
-                                "properties": {
-                                  "cores": {
-                                    "type": "number"
-                                  },
-                                  "label": {
-                                    "type": "string",
-                                    "enum": [
-                                      "enhanced",
-                                      "standard",
-                                      "turbo"
-                                    ],
-                                    "description": "Machine types elastic can assign. Widens when the elastic algorithm adds the 14 CPU tier."
-                                  },
-                                  "memory": {
-                                    "type": "number"
-                                  }
-                                },
-                                "required": [
-                                  "cores",
-                                  "label",
-                                  "memory"
-                                ],
-                                "type": "object",
-                                "description": "Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB."
-                              }
-                            },
-                            "type": "object",
-                            "required": [
-                              "functionDefaultRegions"
-                            ]
+                            "$ref": "#/components/schemas/AutoSDKShareda38de73cc9e23e17"
                           },
                           "rollbackDescription": {
                             "properties": {
@@ -53432,7 +53126,7 @@
                   "nullable": true,
                   "oneOf": [
                     {
-                      "$ref": "#/components/schemas/AutoSDKSharedd34b93d82d830758"
+                      "$ref": "#/components/schemas/AutoSDKShared81acc0790f518d6f"
                     },
                     {
                       "properties": {
@@ -53465,7 +53159,7 @@
                           ]
                         },
                         "projects": {
-                          "$ref": "#/components/schemas/AutoSDKSharedd34b93d82d830758"
+                          "$ref": "#/components/schemas/AutoSDKShared81acc0790f518d6f"
                         }
                       },
                       "required": [
@@ -53506,7 +53200,7 @@
                         },
                         "projects": {
                           "items": {
-                            "$ref": "#/components/schemas/AutoSDKSharedc9c79e81839bbccd"
+                            "$ref": "#/components/schemas/AutoSDKSharedbe3f0c688bc34a31"
                           },
                           "type": "array"
                         }
@@ -54025,7 +53719,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKSharedc9c79e81839bbccd"
+                  "$ref": "#/components/schemas/AutoSDKSharedbe3f0c688bc34a31"
                 }
               }
             }
@@ -55100,160 +54794,7 @@
                       "type": "object"
                     },
                     "defaultResourceConfig": {
-                      "properties": {
-                        "buildMachineElasticLastUpdated": {
-                          "type": "number"
-                        },
-                        "buildMachineElasticReason": {
-                          "type": "string",
-                          "enum": [
-                            "basic-floor",
-                            "build-timeout-failure",
-                            "enospc-failure",
-                            "enterprise-floor",
-                            "high-peak-disk",
-                            "high-peak-memory",
-                            "long-build-duration",
-                            "oom-failure",
-                            "short-build-duration",
-                            "sustained-high-cpu"
-                          ]
-                        },
-                        "buildMachineElasticTransition": {
-                          "properties": {
-                            "algorithmVersion": {
-                              "type": "string"
-                            },
-                            "at": {
-                              "type": "number"
-                            },
-                            "direction": {
-                              "type": "string",
-                              "enum": [
-                                "downgrade",
-                                "upgrade"
-                              ]
-                            }
-                          },
-                          "required": [
-                            "algorithmVersion",
-                            "at",
-                            "direction"
-                          ],
-                          "type": "object"
-                        },
-                        "buildMachineSelection": {
-                          "type": "string",
-                          "enum": [
-                            "elastic",
-                            "fixed"
-                          ]
-                        },
-                        "buildMachineType": {
-                          "type": "string",
-                          "enum": [
-                            "basic",
-                            "enhanced",
-                            "standard",
-                            "turbo"
-                          ]
-                        },
-                        "buildQueue": {
-                          "properties": {
-                            "configuration": {
-                              "type": "string",
-                              "enum": [
-                                "SKIP_NAMESPACE_QUEUE",
-                                "WAIT_FOR_NAMESPACE_QUEUE"
-                              ]
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "elasticConcurrencyEnabled": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "enableFunctionsBeta": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "fluid": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "functionDefaultMemoryType": {
-                          "type": "string",
-                          "enum": [
-                            "performance",
-                            "performance_xl",
-                            "standard",
-                            "standard_legacy"
-                          ]
-                        },
-                        "functionDefaultRegions": {
-                          "items": {
-                            "type": "string"
-                          },
-                          "type": "array"
-                        },
-                        "functionDefaultTimeout": {
-                          "type": "number"
-                        },
-                        "functionZeroConfigFailover": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "isNSNBDisabled": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "elasticBuildMachine": {
-                          "properties": {
-                            "cores": {
-                              "type": "number"
-                            },
-                            "label": {
-                              "type": "string",
-                              "enum": [
-                                "enhanced",
-                                "standard",
-                                "turbo"
-                              ],
-                              "description": "Machine types elastic can assign. Widens when the elastic algorithm adds the 14 CPU tier."
-                            },
-                            "memory": {
-                              "type": "number"
-                            }
-                          },
-                          "required": [
-                            "cores",
-                            "label",
-                            "memory"
-                          ],
-                          "type": "object",
-                          "description": "Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB."
-                        }
-                      },
-                      "type": "object",
-                      "required": [
-                        "functionDefaultRegions"
-                      ]
+                      "$ref": "#/components/schemas/AutoSDKShareda38de73cc9e23e17"
                     },
                     "deploymentExpiration": {
                       "properties": {
@@ -56276,160 +55817,7 @@
                       "type": "object"
                     },
                     "resourceConfig": {
-                      "properties": {
-                        "buildMachineElasticLastUpdated": {
-                          "type": "number"
-                        },
-                        "buildMachineElasticReason": {
-                          "type": "string",
-                          "enum": [
-                            "basic-floor",
-                            "build-timeout-failure",
-                            "enospc-failure",
-                            "enterprise-floor",
-                            "high-peak-disk",
-                            "high-peak-memory",
-                            "long-build-duration",
-                            "oom-failure",
-                            "short-build-duration",
-                            "sustained-high-cpu"
-                          ]
-                        },
-                        "buildMachineElasticTransition": {
-                          "properties": {
-                            "algorithmVersion": {
-                              "type": "string"
-                            },
-                            "at": {
-                              "type": "number"
-                            },
-                            "direction": {
-                              "type": "string",
-                              "enum": [
-                                "downgrade",
-                                "upgrade"
-                              ]
-                            }
-                          },
-                          "required": [
-                            "algorithmVersion",
-                            "at",
-                            "direction"
-                          ],
-                          "type": "object"
-                        },
-                        "buildMachineSelection": {
-                          "type": "string",
-                          "enum": [
-                            "elastic",
-                            "fixed"
-                          ]
-                        },
-                        "buildMachineType": {
-                          "type": "string",
-                          "enum": [
-                            "basic",
-                            "enhanced",
-                            "standard",
-                            "turbo"
-                          ]
-                        },
-                        "buildQueue": {
-                          "properties": {
-                            "configuration": {
-                              "type": "string",
-                              "enum": [
-                                "SKIP_NAMESPACE_QUEUE",
-                                "WAIT_FOR_NAMESPACE_QUEUE"
-                              ]
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "elasticConcurrencyEnabled": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "enableFunctionsBeta": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "fluid": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "functionDefaultMemoryType": {
-                          "type": "string",
-                          "enum": [
-                            "performance",
-                            "performance_xl",
-                            "standard",
-                            "standard_legacy"
-                          ]
-                        },
-                        "functionDefaultRegions": {
-                          "items": {
-                            "type": "string"
-                          },
-                          "type": "array"
-                        },
-                        "functionDefaultTimeout": {
-                          "type": "number"
-                        },
-                        "functionZeroConfigFailover": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "isNSNBDisabled": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "elasticBuildMachine": {
-                          "properties": {
-                            "cores": {
-                              "type": "number"
-                            },
-                            "label": {
-                              "type": "string",
-                              "enum": [
-                                "enhanced",
-                                "standard",
-                                "turbo"
-                              ],
-                              "description": "Machine types elastic can assign. Widens when the elastic algorithm adds the 14 CPU tier."
-                            },
-                            "memory": {
-                              "type": "number"
-                            }
-                          },
-                          "required": [
-                            "cores",
-                            "label",
-                            "memory"
-                          ],
-                          "type": "object",
-                          "description": "Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB."
-                        }
-                      },
-                      "type": "object",
-                      "required": [
-                        "functionDefaultRegions"
-                      ]
+                      "$ref": "#/components/schemas/AutoSDKShareda38de73cc9e23e17"
                     },
                     "rollbackDescription": {
                       "properties": {
@@ -57394,160 +56782,7 @@
                       "type": "object"
                     },
                     "defaultResourceConfig": {
-                      "properties": {
-                        "buildMachineElasticLastUpdated": {
-                          "type": "number"
-                        },
-                        "buildMachineElasticReason": {
-                          "type": "string",
-                          "enum": [
-                            "basic-floor",
-                            "build-timeout-failure",
-                            "enospc-failure",
-                            "enterprise-floor",
-                            "high-peak-disk",
-                            "high-peak-memory",
-                            "long-build-duration",
-                            "oom-failure",
-                            "short-build-duration",
-                            "sustained-high-cpu"
-                          ]
-                        },
-                        "buildMachineElasticTransition": {
-                          "properties": {
-                            "algorithmVersion": {
-                              "type": "string"
-                            },
-                            "at": {
-                              "type": "number"
-                            },
-                            "direction": {
-                              "type": "string",
-                              "enum": [
-                                "downgrade",
-                                "upgrade"
-                              ]
-                            }
-                          },
-                          "required": [
-                            "algorithmVersion",
-                            "at",
-                            "direction"
-                          ],
-                          "type": "object"
-                        },
-                        "buildMachineSelection": {
-                          "type": "string",
-                          "enum": [
-                            "elastic",
-                            "fixed"
-                          ]
-                        },
-                        "buildMachineType": {
-                          "type": "string",
-                          "enum": [
-                            "basic",
-                            "enhanced",
-                            "standard",
-                            "turbo"
-                          ]
-                        },
-                        "buildQueue": {
-                          "properties": {
-                            "configuration": {
-                              "type": "string",
-                              "enum": [
-                                "SKIP_NAMESPACE_QUEUE",
-                                "WAIT_FOR_NAMESPACE_QUEUE"
-                              ]
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "elasticConcurrencyEnabled": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "enableFunctionsBeta": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "fluid": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "functionDefaultMemoryType": {
-                          "type": "string",
-                          "enum": [
-                            "performance",
-                            "performance_xl",
-                            "standard",
-                            "standard_legacy"
-                          ]
-                        },
-                        "functionDefaultRegions": {
-                          "items": {
-                            "type": "string"
-                          },
-                          "type": "array"
-                        },
-                        "functionDefaultTimeout": {
-                          "type": "number"
-                        },
-                        "functionZeroConfigFailover": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "isNSNBDisabled": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "elasticBuildMachine": {
-                          "properties": {
-                            "cores": {
-                              "type": "number"
-                            },
-                            "label": {
-                              "type": "string",
-                              "enum": [
-                                "enhanced",
-                                "standard",
-                                "turbo"
-                              ],
-                              "description": "Machine types elastic can assign. Widens when the elastic algorithm adds the 14 CPU tier."
-                            },
-                            "memory": {
-                              "type": "number"
-                            }
-                          },
-                          "required": [
-                            "cores",
-                            "label",
-                            "memory"
-                          ],
-                          "type": "object",
-                          "description": "Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB."
-                        }
-                      },
-                      "type": "object",
-                      "required": [
-                        "functionDefaultRegions"
-                      ]
+                      "$ref": "#/components/schemas/AutoSDKShareda38de73cc9e23e17"
                     },
                     "deploymentExpiration": {
                       "properties": {
@@ -58530,160 +57765,7 @@
                       "type": "object"
                     },
                     "resourceConfig": {
-                      "properties": {
-                        "buildMachineElasticLastUpdated": {
-                          "type": "number"
-                        },
-                        "buildMachineElasticReason": {
-                          "type": "string",
-                          "enum": [
-                            "basic-floor",
-                            "build-timeout-failure",
-                            "enospc-failure",
-                            "enterprise-floor",
-                            "high-peak-disk",
-                            "high-peak-memory",
-                            "long-build-duration",
-                            "oom-failure",
-                            "short-build-duration",
-                            "sustained-high-cpu"
-                          ]
-                        },
-                        "buildMachineElasticTransition": {
-                          "properties": {
-                            "algorithmVersion": {
-                              "type": "string"
-                            },
-                            "at": {
-                              "type": "number"
-                            },
-                            "direction": {
-                              "type": "string",
-                              "enum": [
-                                "downgrade",
-                                "upgrade"
-                              ]
-                            }
-                          },
-                          "required": [
-                            "algorithmVersion",
-                            "at",
-                            "direction"
-                          ],
-                          "type": "object"
-                        },
-                        "buildMachineSelection": {
-                          "type": "string",
-                          "enum": [
-                            "elastic",
-                            "fixed"
-                          ]
-                        },
-                        "buildMachineType": {
-                          "type": "string",
-                          "enum": [
-                            "basic",
-                            "enhanced",
-                            "standard",
-                            "turbo"
-                          ]
-                        },
-                        "buildQueue": {
-                          "properties": {
-                            "configuration": {
-                              "type": "string",
-                              "enum": [
-                                "SKIP_NAMESPACE_QUEUE",
-                                "WAIT_FOR_NAMESPACE_QUEUE"
-                              ]
-                            }
-                          },
-                          "type": "object"
-                        },
-                        "elasticConcurrencyEnabled": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "enableFunctionsBeta": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "fluid": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "functionDefaultMemoryType": {
-                          "type": "string",
-                          "enum": [
-                            "performance",
-                            "performance_xl",
-                            "standard",
-                            "standard_legacy"
-                          ]
-                        },
-                        "functionDefaultRegions": {
-                          "items": {
-                            "type": "string"
-                          },
-                          "type": "array"
-                        },
-                        "functionDefaultTimeout": {
-                          "type": "number"
-                        },
-                        "functionZeroConfigFailover": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "isNSNBDisabled": {
-                          "type": "boolean",
-                          "enum": [
-                            false,
-                            true
-                          ]
-                        },
-                        "elasticBuildMachine": {
-                          "properties": {
-                            "cores": {
-                              "type": "number"
-                            },
-                            "label": {
-                              "type": "string",
-                              "enum": [
-                                "enhanced",
-                                "standard",
-                                "turbo"
-                              ],
-                              "description": "Machine types elastic can assign. Widens when the elastic algorithm adds the 14 CPU tier."
-                            },
-                            "memory": {
-                              "type": "number"
-                            }
-                          },
-                          "required": [
-                            "cores",
-                            "label",
-                            "memory"
-                          ],
-                          "type": "object",
-                          "description": "Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB."
-                        }
-                      },
-                      "type": "object",
-                      "required": [
-                        "functionDefaultRegions"
-                      ]
+                      "$ref": "#/components/schemas/AutoSDKShareda38de73cc9e23e17"
                     },
                     "rollbackDescription": {
                       "properties": {
@@ -60441,7 +59523,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKSharedc9c79e81839bbccd"
+                  "$ref": "#/components/schemas/AutoSDKSharedbe3f0c688bc34a31"
                 }
               }
             }
@@ -60527,7 +59609,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKSharedc9c79e81839bbccd"
+                  "$ref": "#/components/schemas/AutoSDKSharedbe3f0c688bc34a31"
                 }
               }
             }
@@ -67167,7 +66249,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKSharedc9c79e81839bbccd"
+                  "$ref": "#/components/schemas/AutoSDKSharedbe3f0c688bc34a31"
                 }
               }
             }
@@ -113533,6 +112615,671 @@
           }
         }
       },
+      "AutoSDKShared01d42c494b5636bb": {
+        "properties": {
+          "accountId": {
+            "type": "string"
+          },
+          "alias": {
+            "$ref": "#/components/schemas/AutoSDKSharedb0d372310a1a616c"
+          },
+          "analytics": {
+            "properties": {
+              "canceledAt": {
+                "nullable": true,
+                "type": "number"
+              },
+              "disabledAt": {
+                "type": "number"
+              },
+              "enabledAt": {
+                "type": "number"
+              },
+              "id": {
+                "type": "string"
+              },
+              "paidAt": {
+                "type": "number"
+              },
+              "sampleRatePercent": {
+                "nullable": true,
+                "type": "number"
+              },
+              "spendLimitInDollars": {
+                "nullable": true,
+                "type": "number"
+              }
+            },
+            "required": [
+              "disabledAt",
+              "enabledAt",
+              "id"
+            ],
+            "type": "object"
+          },
+          "appliedCve55182Migration": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "autoAssignCustomDomains": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "autoAssignCustomDomainsUpdatedBy": {
+            "type": "string"
+          },
+          "autoExposeSystemEnvs": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "buildCommand": {
+            "nullable": true,
+            "type": "string"
+          },
+          "commandForIgnoringBuildStep": {
+            "nullable": true,
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "number"
+          },
+          "creator": {
+            "$ref": "#/components/schemas/AutoSDKShared58ffef5c4d095b17"
+          },
+          "customerSupportCodeVisibility": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "deploymentExpiration": {
+            "properties": {
+              "deploymentsToKeep": {
+                "type": "number",
+                "description": "Minimum number of production deployments to keep for this project, even if they are over the production expiration limit."
+              },
+              "expirationDays": {
+                "type": "number",
+                "description": "Number of days to keep non-production deployments (mostly preview deployments) before soft deletion."
+              },
+              "expirationDaysCanceled": {
+                "type": "number",
+                "description": "Number of days to keep canceled deployments before soft deletion."
+              },
+              "expirationDaysErrored": {
+                "type": "number",
+                "description": "Number of days to keep errored deployments before soft deletion."
+              },
+              "expirationDaysProduction": {
+                "type": "number",
+                "description": "Number of days to keep production deployments before soft deletion."
+              }
+            },
+            "type": "object",
+            "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
+          },
+          "devCommand": {
+            "nullable": true,
+            "type": "string"
+          },
+          "directoryListing": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "env": {
+            "$ref": "#/components/schemas/AutoSDKSharedb50781eef24da20c"
+          },
+          "framework": {
+            "nullable": true,
+            "type": "string",
+            "enum": [
+              "actix-web",
+              "angular",
+              "ash",
+              "astro",
+              "axum",
+              "blitzjs",
+              "brunch",
+              "bun",
+              "container",
+              "create-react-app",
+              "django",
+              "docusaurus",
+              "docusaurus-2",
+              "dojo",
+              "eleventy",
+              "elysia",
+              "ember",
+              "eve",
+              "express",
+              "factory-eve",
+              "fastapi",
+              "fasthtml",
+              "fastify",
+              "flask",
+              "gatsby",
+              "go",
+              "gridsome",
+              "h3",
+              "hexo",
+              "hono",
+              "hugo",
+              "hydrogen",
+              "ionic-angular",
+              "ionic-react",
+              "jekyll",
+              "koa",
+              "mastra",
+              "middleman",
+              "nestjs",
+              "nextjs",
+              "nitro",
+              "node",
+              "nuxtjs",
+              "parcel",
+              "polymer",
+              "preact",
+              "python",
+              "react-router",
+              "redwoodjs",
+              "remix",
+              "ruby",
+              "rust",
+              "saber",
+              "sanity",
+              "sanity-v2",
+              "sapper",
+              "scully",
+              "services",
+              "solidstart",
+              "solidstart-1",
+              "stencil",
+              "storybook",
+              "svelte",
+              "sveltekit",
+              "sveltekit-1",
+              "tanstack-start",
+              "tanstack-start-lovable",
+              "umijs",
+              "vite",
+              "vitepress",
+              "vue",
+              "vuepress",
+              "xmcp",
+              "zola",
+              null
+            ]
+          },
+          "gitComments": {
+            "properties": {
+              "onCommit": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ],
+                "description": "Whether the Vercel bot should comment on commits"
+              },
+              "onPullRequest": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ],
+                "description": "Whether the Vercel bot should comment on PRs"
+              }
+            },
+            "required": [
+              "onCommit",
+              "onPullRequest"
+            ],
+            "type": "object"
+          },
+          "gitForkProtection": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "gitProviderOptions": {
+            "$ref": "#/components/schemas/AutoSDKSharedc12640b06f1c9105"
+          },
+          "hasActiveBranches": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "installCommand": {
+            "nullable": true,
+            "type": "string"
+          },
+          "internalRoutes": {
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "expiry": {
+                      "type": "number"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "src",
+                    "status"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "properties": {
+                    "has": {
+                      "items": {
+                        "oneOf": [
+                          {
+                            "properties": {
+                              "key": {
+                                "type": "string",
+                                "enum": [
+                                  "x-vercel-ip-country"
+                                ]
+                              },
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "header"
+                                ]
+                              },
+                              "value": {
+                                "properties": {
+                                  "eq": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "eq"
+                                ],
+                                "type": "object"
+                              }
+                            },
+                            "required": [
+                              "key",
+                              "type",
+                              "value"
+                            ],
+                            "type": "object"
+                          },
+                          {
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "host"
+                                ]
+                              },
+                              "value": {
+                                "properties": {
+                                  "eq": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "eq"
+                                ],
+                                "type": "object"
+                              }
+                            },
+                            "required": [
+                              "type",
+                              "value"
+                            ],
+                            "type": "object"
+                          }
+                        ]
+                      },
+                      "type": "array"
+                    },
+                    "mitigate": {
+                      "properties": {
+                        "action": {
+                          "type": "string",
+                          "enum": [
+                            "block_legal_cwc"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "action"
+                      ],
+                      "type": "object"
+                    },
+                    "src": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "has",
+                    "mitigate"
+                  ],
+                  "type": "object"
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "ipBuckets": {
+            "items": {
+              "properties": {
+                "bucket": {
+                  "type": "string"
+                },
+                "default": {
+                  "type": "boolean",
+                  "enum": [
+                    false,
+                    true
+                  ]
+                },
+                "supportUntil": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "bucket"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "latestDeployments": {
+            "$ref": "#/components/schemas/AutoSDKShared2b72c73af96370da"
+          },
+          "link": {
+            "$ref": "#/components/schemas/AutoSDKSharede0f9d68fc63cf31d"
+          },
+          "live": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "nodeVersion": {
+            "type": "string",
+            "enum": [
+              "10.x",
+              "12.x",
+              "14.x",
+              "16.x",
+              "18.x",
+              "20.x",
+              "22.x",
+              "24.x",
+              "26.x",
+              "8.10.x"
+            ]
+          },
+          "oidcTokenConfig": {
+            "properties": {
+              "enabled": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ],
+                "description": "Whether or not to generate OpenID Connect JSON Web Tokens."
+              },
+              "issuerMode": {
+                "type": "string",
+                "enum": [
+                  "global",
+                  "team"
+                ],
+                "description": "- team: `https://oidc.vercel.com/[team_slug]` - global: `https://oidc.vercel.com`"
+              }
+            },
+            "type": "object"
+          },
+          "outputDirectory": {
+            "nullable": true,
+            "type": "string"
+          },
+          "passport": {
+            "nullable": true,
+            "properties": {
+              "connectorId": {
+                "type": "string"
+              },
+              "deploymentType": {
+                "type": "string",
+                "enum": [
+                  "all",
+                  "all_except_custom_domains",
+                  "preview",
+                  "prod_deployment_urls_and_all_previews"
+                ]
+              }
+            },
+            "required": [
+              "connectorId",
+              "deploymentType"
+            ],
+            "type": "object"
+          },
+          "passwordProtection": {
+            "nullable": true,
+            "type": "object"
+          },
+          "paused": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "resourceConfig": {
+            "$ref": "#/components/schemas/AutoSDKShareda38de73cc9e23e17"
+          },
+          "rollingRelease": {
+            "$ref": "#/components/schemas/AutoSDKSharedce0c7f50e384322c"
+          },
+          "rootDirectory": {
+            "nullable": true,
+            "type": "string"
+          },
+          "security": {
+            "$ref": "#/components/schemas/AutoSDKShared18dae8be9b6aa4ff"
+          },
+          "serverlessFunctionRegion": {
+            "type": "string"
+          },
+          "serverlessFunctionZeroConfigFailover": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "skipGitConnectDuringLink": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "sourceFilesOutsideRootDirectory": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "speedInsights": {
+            "properties": {
+              "canceledAt": {
+                "type": "number"
+              },
+              "dataReceivedAt": {
+                "type": "number",
+                "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
+              },
+              "disabledAt": {
+                "type": "number"
+              },
+              "enabledAt": {
+                "type": "number"
+              },
+              "hasData": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "id": {
+                "type": "string"
+              },
+              "paidAt": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          },
+          "ssoProtection": {
+            "nullable": true,
+            "properties": {
+              "april2026SecurityIncidentMigrationAppliedFrom": {
+                "nullable": true,
+                "type": "string",
+                "enum": [
+                  "all",
+                  "all_except_custom_domains",
+                  "preview",
+                  "prod_deployment_urls_and_all_previews",
+                  null
+                ]
+              },
+              "cve55182MigrationAppliedFrom": {
+                "nullable": true,
+                "type": "string",
+                "enum": [
+                  "all",
+                  "all_except_custom_domains",
+                  "preview",
+                  "prod_deployment_urls_and_all_previews",
+                  null
+                ]
+              },
+              "deploymentType": {
+                "type": "string",
+                "enum": [
+                  "all",
+                  "all_except_custom_domains",
+                  "preview",
+                  "prod_deployment_urls_and_all_previews"
+                ]
+              }
+            },
+            "required": [
+              "deploymentType"
+            ],
+            "type": "object"
+          },
+          "targets": {
+            "$ref": "#/components/schemas/AutoSDKSharedd6cd5632365f1112"
+          },
+          "tier": {
+            "type": "string",
+            "enum": [
+              "priority"
+            ]
+          },
+          "transferCompletedAt": {
+            "type": "number"
+          },
+          "transferredFromAccountId": {
+            "type": "string"
+          },
+          "transferStartedAt": {
+            "type": "number"
+          },
+          "transferToAccountId": {
+            "type": "string"
+          },
+          "trustedSources": {
+            "$ref": "#/components/schemas/AutoSDKShared94938587734e5f57"
+          },
+          "updatedAt": {
+            "type": "number"
+          },
+          "webAnalytics": {
+            "properties": {
+              "canceledAt": {
+                "type": "number"
+              },
+              "disabledAt": {
+                "type": "number"
+              },
+              "enabledAt": {
+                "type": "number"
+              },
+              "hasData": {
+                "type": "boolean",
+                "enum": [
+                  true
+                ]
+              },
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "accountId",
+          "alias",
+          "deploymentExpiration",
+          "directoryListing",
+          "id",
+          "name",
+          "nodeVersion",
+          "resourceConfig",
+          "serverlessFunctionRegion"
+        ],
+        "type": "object"
+      },
       "AutoSDKShared037328971b8d11db": {
         "properties": {
           "action": {
@@ -126698,6 +126445,12 @@
         ],
         "type": "object"
       },
+      "AutoSDKShared81acc0790f518d6f": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKShared01d42c494b5636bb"
+        },
+        "type": "array"
+      },
       "AutoSDKShared82df63ae69e9ea93": {
         "oneOf": [
           {
@@ -129139,6 +128892,227 @@
         },
         "type": "object"
       },
+      "AutoSDKShareda38de73cc9e23e17": {
+        "properties": {
+          "buildMachineElasticLastUpdated": {
+            "type": "number"
+          },
+          "buildMachineElasticReason": {
+            "type": "string",
+            "enum": [
+              "basic-floor",
+              "build-timeout-failure",
+              "enospc-failure",
+              "enterprise-floor",
+              "high-peak-disk",
+              "high-peak-memory",
+              "long-build-duration",
+              "oom-failure",
+              "short-build-duration",
+              "sustained-high-cpu"
+            ]
+          },
+          "buildMachineElasticTransition": {
+            "properties": {
+              "algorithmVersion": {
+                "type": "string"
+              },
+              "at": {
+                "type": "number"
+              },
+              "direction": {
+                "type": "string",
+                "enum": [
+                  "downgrade",
+                  "upgrade"
+                ]
+              }
+            },
+            "required": [
+              "algorithmVersion",
+              "at",
+              "direction"
+            ],
+            "type": "object"
+          },
+          "buildMachineSelection": {
+            "type": "string",
+            "enum": [
+              "elastic",
+              "fixed"
+            ]
+          },
+          "buildMachineType": {
+            "type": "string",
+            "enum": [
+              "basic",
+              "enhanced",
+              "standard",
+              "turbo"
+            ]
+          },
+          "buildQueue": {
+            "properties": {
+              "configuration": {
+                "type": "string",
+                "enum": [
+                  "SKIP_NAMESPACE_QUEUE",
+                  "WAIT_FOR_NAMESPACE_QUEUE"
+                ]
+              }
+            },
+            "type": "object"
+          },
+          "elasticConcurrencyEnabled": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "enableFunctionsBeta": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "fluid": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "functionDefaultMemoryType": {
+            "type": "string",
+            "enum": [
+              "performance",
+              "performance_xl",
+              "standard",
+              "standard_legacy"
+            ]
+          },
+          "functionDefaultRegions": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "functionDefaultTimeout": {
+            "type": "number"
+          },
+          "functionZeroConfigFailover": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "isNSNBDisabled": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "elasticBuildMachine": {
+            "oneOf": [
+              {
+                "properties": {
+                  "cores": {
+                    "type": "number",
+                    "enum": [
+                      4
+                    ]
+                  },
+                  "label": {
+                    "type": "string",
+                    "enum": [
+                      "standard"
+                    ]
+                  },
+                  "memory": {
+                    "type": "number",
+                    "enum": [
+                      8192
+                    ]
+                  }
+                },
+                "required": [
+                  "cores",
+                  "label",
+                  "memory"
+                ],
+                "type": "object",
+                "description": "Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB."
+              },
+              {
+                "properties": {
+                  "cores": {
+                    "type": "number",
+                    "enum": [
+                      8
+                    ]
+                  },
+                  "label": {
+                    "type": "string",
+                    "enum": [
+                      "enhanced"
+                    ]
+                  },
+                  "memory": {
+                    "type": "number",
+                    "enum": [
+                      16384
+                    ]
+                  }
+                },
+                "required": [
+                  "cores",
+                  "label",
+                  "memory"
+                ],
+                "type": "object",
+                "description": "Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB."
+              },
+              {
+                "properties": {
+                  "cores": {
+                    "type": "number",
+                    "enum": [
+                      30
+                    ]
+                  },
+                  "label": {
+                    "type": "string",
+                    "enum": [
+                      "turbo"
+                    ]
+                  },
+                  "memory": {
+                    "type": "number",
+                    "enum": [
+                      61440
+                    ]
+                  }
+                },
+                "required": [
+                  "cores",
+                  "label",
+                  "memory"
+                ],
+                "type": "object",
+                "description": "Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB."
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "functionDefaultRegions"
+        ]
+      },
       "AutoSDKShareda43c8be44c1b9566": {
         "properties": {
           "applications": {
@@ -129397,824 +129371,6 @@
           "outcome",
           "id"
         ]
-      },
-      "AutoSDKShareda8d456fca5d8a771": {
-        "properties": {
-          "accountId": {
-            "type": "string"
-          },
-          "alias": {
-            "$ref": "#/components/schemas/AutoSDKSharedb0d372310a1a616c"
-          },
-          "analytics": {
-            "properties": {
-              "canceledAt": {
-                "nullable": true,
-                "type": "number"
-              },
-              "disabledAt": {
-                "type": "number"
-              },
-              "enabledAt": {
-                "type": "number"
-              },
-              "id": {
-                "type": "string"
-              },
-              "paidAt": {
-                "type": "number"
-              },
-              "sampleRatePercent": {
-                "nullable": true,
-                "type": "number"
-              },
-              "spendLimitInDollars": {
-                "nullable": true,
-                "type": "number"
-              }
-            },
-            "required": [
-              "disabledAt",
-              "enabledAt",
-              "id"
-            ],
-            "type": "object"
-          },
-          "appliedCve55182Migration": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "autoAssignCustomDomains": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "autoAssignCustomDomainsUpdatedBy": {
-            "type": "string"
-          },
-          "autoExposeSystemEnvs": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "buildCommand": {
-            "nullable": true,
-            "type": "string"
-          },
-          "commandForIgnoringBuildStep": {
-            "nullable": true,
-            "type": "string"
-          },
-          "createdAt": {
-            "type": "number"
-          },
-          "creator": {
-            "$ref": "#/components/schemas/AutoSDKShared58ffef5c4d095b17"
-          },
-          "customerSupportCodeVisibility": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "deploymentExpiration": {
-            "properties": {
-              "deploymentsToKeep": {
-                "type": "number",
-                "description": "Minimum number of production deployments to keep for this project, even if they are over the production expiration limit."
-              },
-              "expirationDays": {
-                "type": "number",
-                "description": "Number of days to keep non-production deployments (mostly preview deployments) before soft deletion."
-              },
-              "expirationDaysCanceled": {
-                "type": "number",
-                "description": "Number of days to keep canceled deployments before soft deletion."
-              },
-              "expirationDaysErrored": {
-                "type": "number",
-                "description": "Number of days to keep errored deployments before soft deletion."
-              },
-              "expirationDaysProduction": {
-                "type": "number",
-                "description": "Number of days to keep production deployments before soft deletion."
-              }
-            },
-            "type": "object",
-            "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
-          },
-          "devCommand": {
-            "nullable": true,
-            "type": "string"
-          },
-          "directoryListing": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "env": {
-            "$ref": "#/components/schemas/AutoSDKSharedb50781eef24da20c"
-          },
-          "framework": {
-            "nullable": true,
-            "type": "string",
-            "enum": [
-              "actix-web",
-              "angular",
-              "ash",
-              "astro",
-              "axum",
-              "blitzjs",
-              "brunch",
-              "bun",
-              "container",
-              "create-react-app",
-              "django",
-              "docusaurus",
-              "docusaurus-2",
-              "dojo",
-              "eleventy",
-              "elysia",
-              "ember",
-              "eve",
-              "express",
-              "factory-eve",
-              "fastapi",
-              "fasthtml",
-              "fastify",
-              "flask",
-              "gatsby",
-              "go",
-              "gridsome",
-              "h3",
-              "hexo",
-              "hono",
-              "hugo",
-              "hydrogen",
-              "ionic-angular",
-              "ionic-react",
-              "jekyll",
-              "koa",
-              "mastra",
-              "middleman",
-              "nestjs",
-              "nextjs",
-              "nitro",
-              "node",
-              "nuxtjs",
-              "parcel",
-              "polymer",
-              "preact",
-              "python",
-              "react-router",
-              "redwoodjs",
-              "remix",
-              "ruby",
-              "rust",
-              "saber",
-              "sanity",
-              "sanity-v2",
-              "sapper",
-              "scully",
-              "services",
-              "solidstart",
-              "solidstart-1",
-              "stencil",
-              "storybook",
-              "svelte",
-              "sveltekit",
-              "sveltekit-1",
-              "tanstack-start",
-              "tanstack-start-lovable",
-              "umijs",
-              "vite",
-              "vitepress",
-              "vue",
-              "vuepress",
-              "xmcp",
-              "zola",
-              null
-            ]
-          },
-          "gitComments": {
-            "properties": {
-              "onCommit": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ],
-                "description": "Whether the Vercel bot should comment on commits"
-              },
-              "onPullRequest": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ],
-                "description": "Whether the Vercel bot should comment on PRs"
-              }
-            },
-            "required": [
-              "onCommit",
-              "onPullRequest"
-            ],
-            "type": "object"
-          },
-          "gitForkProtection": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "gitProviderOptions": {
-            "$ref": "#/components/schemas/AutoSDKSharedc12640b06f1c9105"
-          },
-          "hasActiveBranches": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "id": {
-            "type": "string"
-          },
-          "installCommand": {
-            "nullable": true,
-            "type": "string"
-          },
-          "internalRoutes": {
-            "items": {
-              "oneOf": [
-                {
-                  "properties": {
-                    "expiry": {
-                      "type": "number"
-                    },
-                    "src": {
-                      "type": "string"
-                    },
-                    "status": {
-                      "type": "number"
-                    }
-                  },
-                  "required": [
-                    "src",
-                    "status"
-                  ],
-                  "type": "object"
-                },
-                {
-                  "properties": {
-                    "has": {
-                      "items": {
-                        "oneOf": [
-                          {
-                            "properties": {
-                              "key": {
-                                "type": "string",
-                                "enum": [
-                                  "x-vercel-ip-country"
-                                ]
-                              },
-                              "type": {
-                                "type": "string",
-                                "enum": [
-                                  "header"
-                                ]
-                              },
-                              "value": {
-                                "properties": {
-                                  "eq": {
-                                    "type": "string"
-                                  }
-                                },
-                                "required": [
-                                  "eq"
-                                ],
-                                "type": "object"
-                              }
-                            },
-                            "required": [
-                              "key",
-                              "type",
-                              "value"
-                            ],
-                            "type": "object"
-                          },
-                          {
-                            "properties": {
-                              "type": {
-                                "type": "string",
-                                "enum": [
-                                  "host"
-                                ]
-                              },
-                              "value": {
-                                "properties": {
-                                  "eq": {
-                                    "type": "string"
-                                  }
-                                },
-                                "required": [
-                                  "eq"
-                                ],
-                                "type": "object"
-                              }
-                            },
-                            "required": [
-                              "type",
-                              "value"
-                            ],
-                            "type": "object"
-                          }
-                        ]
-                      },
-                      "type": "array"
-                    },
-                    "mitigate": {
-                      "properties": {
-                        "action": {
-                          "type": "string",
-                          "enum": [
-                            "block_legal_cwc"
-                          ]
-                        }
-                      },
-                      "required": [
-                        "action"
-                      ],
-                      "type": "object"
-                    },
-                    "src": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "has",
-                    "mitigate"
-                  ],
-                  "type": "object"
-                }
-              ]
-            },
-            "type": "array"
-          },
-          "ipBuckets": {
-            "items": {
-              "properties": {
-                "bucket": {
-                  "type": "string"
-                },
-                "default": {
-                  "type": "boolean",
-                  "enum": [
-                    false,
-                    true
-                  ]
-                },
-                "supportUntil": {
-                  "type": "number"
-                }
-              },
-              "required": [
-                "bucket"
-              ],
-              "type": "object"
-            },
-            "type": "array"
-          },
-          "latestDeployments": {
-            "$ref": "#/components/schemas/AutoSDKShared2b72c73af96370da"
-          },
-          "link": {
-            "$ref": "#/components/schemas/AutoSDKSharede0f9d68fc63cf31d"
-          },
-          "live": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "name": {
-            "type": "string"
-          },
-          "nodeVersion": {
-            "type": "string",
-            "enum": [
-              "10.x",
-              "12.x",
-              "14.x",
-              "16.x",
-              "18.x",
-              "20.x",
-              "22.x",
-              "24.x",
-              "26.x",
-              "8.10.x"
-            ]
-          },
-          "oidcTokenConfig": {
-            "properties": {
-              "enabled": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ],
-                "description": "Whether or not to generate OpenID Connect JSON Web Tokens."
-              },
-              "issuerMode": {
-                "type": "string",
-                "enum": [
-                  "global",
-                  "team"
-                ],
-                "description": "- team: `https://oidc.vercel.com/[team_slug]` - global: `https://oidc.vercel.com`"
-              }
-            },
-            "type": "object"
-          },
-          "outputDirectory": {
-            "nullable": true,
-            "type": "string"
-          },
-          "passport": {
-            "nullable": true,
-            "properties": {
-              "connectorId": {
-                "type": "string"
-              },
-              "deploymentType": {
-                "type": "string",
-                "enum": [
-                  "all",
-                  "all_except_custom_domains",
-                  "preview",
-                  "prod_deployment_urls_and_all_previews"
-                ]
-              }
-            },
-            "required": [
-              "connectorId",
-              "deploymentType"
-            ],
-            "type": "object"
-          },
-          "passwordProtection": {
-            "nullable": true,
-            "type": "object"
-          },
-          "paused": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "resourceConfig": {
-            "properties": {
-              "buildMachineElasticLastUpdated": {
-                "type": "number"
-              },
-              "buildMachineElasticReason": {
-                "type": "string",
-                "enum": [
-                  "basic-floor",
-                  "build-timeout-failure",
-                  "enospc-failure",
-                  "enterprise-floor",
-                  "high-peak-disk",
-                  "high-peak-memory",
-                  "long-build-duration",
-                  "oom-failure",
-                  "short-build-duration",
-                  "sustained-high-cpu"
-                ]
-              },
-              "buildMachineElasticTransition": {
-                "properties": {
-                  "algorithmVersion": {
-                    "type": "string"
-                  },
-                  "at": {
-                    "type": "number"
-                  },
-                  "direction": {
-                    "type": "string",
-                    "enum": [
-                      "downgrade",
-                      "upgrade"
-                    ]
-                  }
-                },
-                "required": [
-                  "algorithmVersion",
-                  "at",
-                  "direction"
-                ],
-                "type": "object"
-              },
-              "buildMachineSelection": {
-                "type": "string",
-                "enum": [
-                  "elastic",
-                  "fixed"
-                ]
-              },
-              "buildMachineType": {
-                "type": "string",
-                "enum": [
-                  "basic",
-                  "enhanced",
-                  "standard",
-                  "turbo"
-                ]
-              },
-              "buildQueue": {
-                "properties": {
-                  "configuration": {
-                    "type": "string",
-                    "enum": [
-                      "SKIP_NAMESPACE_QUEUE",
-                      "WAIT_FOR_NAMESPACE_QUEUE"
-                    ]
-                  }
-                },
-                "type": "object"
-              },
-              "elasticConcurrencyEnabled": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "enableFunctionsBeta": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "fluid": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "functionDefaultMemoryType": {
-                "type": "string",
-                "enum": [
-                  "performance",
-                  "performance_xl",
-                  "standard",
-                  "standard_legacy"
-                ]
-              },
-              "functionDefaultRegions": {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
-              },
-              "functionDefaultTimeout": {
-                "type": "number"
-              },
-              "functionZeroConfigFailover": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "isNSNBDisabled": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "elasticBuildMachine": {
-                "properties": {
-                  "cores": {
-                    "type": "number"
-                  },
-                  "label": {
-                    "type": "string",
-                    "enum": [
-                      "enhanced",
-                      "standard",
-                      "turbo"
-                    ],
-                    "description": "Machine types elastic can assign. Widens when the elastic algorithm adds the 14 CPU tier."
-                  },
-                  "memory": {
-                    "type": "number"
-                  }
-                },
-                "required": [
-                  "cores",
-                  "label",
-                  "memory"
-                ],
-                "type": "object",
-                "description": "Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB."
-              }
-            },
-            "type": "object",
-            "required": [
-              "functionDefaultRegions"
-            ]
-          },
-          "rollingRelease": {
-            "$ref": "#/components/schemas/AutoSDKSharedce0c7f50e384322c"
-          },
-          "rootDirectory": {
-            "nullable": true,
-            "type": "string"
-          },
-          "security": {
-            "$ref": "#/components/schemas/AutoSDKShared18dae8be9b6aa4ff"
-          },
-          "serverlessFunctionRegion": {
-            "type": "string"
-          },
-          "serverlessFunctionZeroConfigFailover": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "skipGitConnectDuringLink": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "sourceFilesOutsideRootDirectory": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "speedInsights": {
-            "properties": {
-              "canceledAt": {
-                "type": "number"
-              },
-              "dataReceivedAt": {
-                "type": "number",
-                "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
-              },
-              "disabledAt": {
-                "type": "number"
-              },
-              "enabledAt": {
-                "type": "number"
-              },
-              "hasData": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "id": {
-                "type": "string"
-              },
-              "paidAt": {
-                "type": "number"
-              }
-            },
-            "required": [
-              "id"
-            ],
-            "type": "object"
-          },
-          "ssoProtection": {
-            "nullable": true,
-            "properties": {
-              "april2026SecurityIncidentMigrationAppliedFrom": {
-                "nullable": true,
-                "type": "string",
-                "enum": [
-                  "all",
-                  "all_except_custom_domains",
-                  "preview",
-                  "prod_deployment_urls_and_all_previews",
-                  null
-                ]
-              },
-              "cve55182MigrationAppliedFrom": {
-                "nullable": true,
-                "type": "string",
-                "enum": [
-                  "all",
-                  "all_except_custom_domains",
-                  "preview",
-                  "prod_deployment_urls_and_all_previews",
-                  null
-                ]
-              },
-              "deploymentType": {
-                "type": "string",
-                "enum": [
-                  "all",
-                  "all_except_custom_domains",
-                  "preview",
-                  "prod_deployment_urls_and_all_previews"
-                ]
-              }
-            },
-            "required": [
-              "deploymentType"
-            ],
-            "type": "object"
-          },
-          "targets": {
-            "$ref": "#/components/schemas/AutoSDKSharedd6cd5632365f1112"
-          },
-          "tier": {
-            "type": "string",
-            "enum": [
-              "priority"
-            ]
-          },
-          "transferCompletedAt": {
-            "type": "number"
-          },
-          "transferredFromAccountId": {
-            "type": "string"
-          },
-          "transferStartedAt": {
-            "type": "number"
-          },
-          "transferToAccountId": {
-            "type": "string"
-          },
-          "trustedSources": {
-            "$ref": "#/components/schemas/AutoSDKShared94938587734e5f57"
-          },
-          "updatedAt": {
-            "type": "number"
-          },
-          "webAnalytics": {
-            "properties": {
-              "canceledAt": {
-                "type": "number"
-              },
-              "disabledAt": {
-                "type": "number"
-              },
-              "enabledAt": {
-                "type": "number"
-              },
-              "hasData": {
-                "type": "boolean",
-                "enum": [
-                  true
-                ]
-              },
-              "id": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "id"
-            ],
-            "type": "object"
-          }
-        },
-        "required": [
-          "accountId",
-          "alias",
-          "deploymentExpiration",
-          "directoryListing",
-          "id",
-          "name",
-          "nodeVersion",
-          "resourceConfig",
-          "serverlessFunctionRegion"
-        ],
-        "type": "object"
       },
       "AutoSDKSharedacd8c1d4318adbff": {
         "items": {
@@ -131580,517 +130736,7 @@
           }
         ]
       },
-      "AutoSDKSharedc12640b06f1c9105": {
-        "properties": {
-          "consolidatedGitCommitStatus": {
-            "properties": {
-              "enabled": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ],
-                "description": "Whether consolidated commit status is enabled."
-              },
-              "propagateFailures": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ],
-                "description": "Whether to propagate individual deployment failures to the consolidated status."
-              }
-            },
-            "required": [
-              "enabled",
-              "propagateFailures"
-            ],
-            "type": "object",
-            "description": "Configuration for consolidated git commit status reporting. When enabled, Vercel will post a single consolidated commit status instead of individual statuses for each deployment."
-          },
-          "createDeployments": {
-            "type": "string",
-            "enum": [
-              "disabled",
-              "enabled"
-            ],
-            "description": "Whether the Vercel bot should automatically create GitHub deployments https://docs.github.com/en/rest/deployments/deployments#about-deployments NOTE: repository-dispatch events should be used instead"
-          },
-          "disableRepositoryDispatchEvents": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ],
-            "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events - `true`: disable repository-dispatch events for this project (explicit override of the team setting). - `false`: enable repository-dispatch events for this project (explicit override of the team setting). - absent: inherit from `team.disableRepositoryDispatchEvents`."
-          },
-          "gitCommitStatus": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ],
-            "description": "Whether Vercel should post commit statuses for this project. When omitted, commit statuses remain enabled."
-          },
-          "requireVerifiedCommits": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ],
-            "description": "Whether the project requires commits to be signed & verified before deployments will be created. - `true`: require verified commits for this project (explicit override of the team setting). - `false`: do not require verified commits (explicit override of the team setting). - absent: inherit from `team.requireVerifiedCommits`."
-          }
-        },
-        "required": [
-          "createDeployments"
-        ],
-        "type": "object"
-      },
-      "AutoSDKSharedc1460711be3474a5": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/AutoSDKShared03f29e765d13306d"
-          },
-          {
-            "$ref": "#/components/schemas/AutoSDKSharedec20b3976551b9eb"
-          }
-        ]
-      },
-      "AutoSDKSharedc396e89a7a8d84fb": {
-        "properties": {
-          "branch": {
-            "type": "string",
-            "description": "The branch regexp of log drain",
-            "example": "feature/*"
-          },
-          "clientId": {
-            "type": "string",
-            "description": "The oauth2 client application id that created this log drain",
-            "example": "oac_xRhY4LAB7yLhUADD69EvV7ct"
-          },
-          "configurationId": {
-            "type": "string",
-            "description": "The client configuration this log drain was created with",
-            "example": "icfg_3bwCLgxL8qt5kjRLcv2Dit7F"
-          },
-          "createdAt": {
-            "type": "number",
-            "description": "A timestamp that tells you when the log drain was created",
-            "example": 1558531915505
-          },
-          "createdFrom": {
-            "type": "string",
-            "enum": [
-              "integration",
-              "self-served"
-            ],
-            "description": "Whether the log drain was created by an integration or by a user",
-            "example": "integration"
-          },
-          "deliveryFormat": {
-            "type": "string",
-            "enum": [
-              "json",
-              "ndjson",
-              "protobuf"
-            ],
-            "description": "The delivery log format",
-            "example": "json"
-          },
-          "environments": {
-            "items": {
-              "type": "string",
-              "enum": [
-                "preview",
-                "production"
-              ],
-              "description": "The environment of log drain",
-              "example": [
-                "production"
-              ]
-            },
-            "type": "array",
-            "description": "The environment of log drain",
-            "example": [
-              "production"
-            ]
-          },
-          "headers": {
-            "additionalProperties": {
-              "type": "string"
-            },
-            "type": "object",
-            "description": "The headers to send with the request",
-            "example": "{\"Authorization\": \"Bearer 123\"}"
-          },
-          "id": {
-            "type": "string",
-            "description": "The unique identifier of the log drain. Always prefixed with `ld_`",
-            "example": "ld_nBuA7zCID8g4QZ8g"
-          },
-          "name": {
-            "type": "string",
-            "description": "The name of the log drain",
-            "example": "My first log drain"
-          },
-          "ownerId": {
-            "type": "string",
-            "description": "The identifier of the team or user whose events will trigger the log drain",
-            "example": "kr1PsOIzqEL5Xg6M4VZcZosf"
-          },
-          "projectId": {
-            "nullable": true,
-            "type": "string",
-            "example": "AbCgVkqoxXeXCDWehVir51LHGrrcWL4mkYm14W6UBPWQeb"
-          },
-          "projectIds": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array",
-            "description": "The identifier of the projects this log drain is associated with",
-            "example": "AbCgVkqoxXeXCDWehVir51LHGrrcWL4mkYm14W6UBPWQeb"
-          },
-          "samplingRate": {
-            "type": "number",
-            "description": "The sampling rate of log drain",
-            "example": 0.5
-          },
-          "source": {
-            "oneOf": [
-              {
-                "properties": {
-                  "defaultFor": {
-                    "type": "string",
-                    "enum": [
-                      "eve-tracing"
-                    ],
-                    "description": "Informational marker for a system-owned default drain."
-                  },
-                  "kind": {
-                    "type": "string",
-                    "enum": [
-                      "self-served"
-                    ]
-                  }
-                },
-                "required": [
-                  "kind"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "externalResourceId": {
-                    "type": "string"
-                  },
-                  "integrationConfigurationId": {
-                    "type": "string"
-                  },
-                  "integrationId": {
-                    "type": "string"
-                  },
-                  "kind": {
-                    "type": "string",
-                    "enum": [
-                      "integration"
-                    ]
-                  },
-                  "resourceId": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "integrationConfigurationId",
-                  "integrationId",
-                  "kind"
-                ],
-                "type": "object"
-              }
-            ]
-          },
-          "sources": {
-            "items": {
-              "type": "string",
-              "enum": [
-                "build",
-                "edge",
-                "external",
-                "firewall",
-                "lambda",
-                "redirect",
-                "static"
-              ],
-              "description": "The sources from which logs are currently being delivered to this log drain.",
-              "example": [
-                "build",
-                "edge"
-              ]
-            },
-            "type": "array",
-            "description": "The sources from which logs are currently being delivered to this log drain.",
-            "example": [
-              "build",
-              "edge"
-            ]
-          },
-          "url": {
-            "type": "string",
-            "description": "The URL to call when logs are generated",
-            "example": "https://example.com/log-drain"
-          }
-        },
-        "required": [
-          "createdAt",
-          "id",
-          "name",
-          "ownerId",
-          "source",
-          "url"
-        ],
-        "type": "object"
-      },
-      "AutoSDKSharedc525d78ff8d89818": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/AutoSDKShared037328971b8d11db"
-          },
-          {
-            "$ref": "#/components/schemas/AutoSDKShared7edb780247ab9fb3"
-          }
-        ]
-      },
-      "AutoSDKSharedc60721415ef8a2a0": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/AutoSDKSharedfb9c9ee0e5dd70ce"
-          },
-          {
-            "additionalProperties": {
-              "properties": {
-                "action": {
-                  "type": "string",
-                  "enum": [
-                    "allow",
-                    "bypass",
-                    "challenge",
-                    "deny",
-                    "log",
-                    "rate_limit",
-                    "redirect"
-                  ]
-                },
-                "actionDuration": {
-                  "nullable": true,
-                  "type": "string"
-                },
-                "bypassSystem": {
-                  "nullable": true,
-                  "type": "boolean",
-                  "enum": [
-                    false,
-                    true,
-                    null
-                  ]
-                },
-                "logHeaders": {
-                  "oneOf": [
-                    {
-                      "items": {
-                        "type": "string"
-                      },
-                      "type": "array"
-                    },
-                    {
-                      "type": "string",
-                      "enum": [
-                        "*"
-                      ]
-                    }
-                  ]
-                },
-                "rateLimit": {
-                  "nullable": true,
-                  "properties": {
-                    "action": {
-                      "nullable": true,
-                      "type": "string",
-                      "enum": [
-                        "challenge",
-                        "deny",
-                        "log",
-                        "rate_limit",
-                        null
-                      ]
-                    },
-                    "algo": {
-                      "type": "string",
-                      "enum": [
-                        "fixed_window",
-                        "token_bucket"
-                      ]
-                    },
-                    "keys": {
-                      "items": {
-                        "type": "string"
-                      },
-                      "type": "array"
-                    },
-                    "limit": {
-                      "type": "number"
-                    },
-                    "window": {
-                      "type": "number"
-                    }
-                  },
-                  "required": [
-                    "algo",
-                    "keys",
-                    "limit",
-                    "window"
-                  ],
-                  "type": "object"
-                },
-                "redirect": {
-                  "nullable": true,
-                  "properties": {
-                    "location": {
-                      "type": "string"
-                    },
-                    "permanent": {
-                      "type": "boolean",
-                      "enum": [
-                        false,
-                        true
-                      ]
-                    }
-                  },
-                  "required": [
-                    "location",
-                    "permanent"
-                  ],
-                  "type": "object"
-                }
-              },
-              "required": [
-                "action"
-              ],
-              "type": "object"
-            },
-            "type": "object"
-          }
-        ]
-      },
-      "AutoSDKSharedc97b32abf27d8b81": {
-        "description": "Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.",
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "path": {
-            "description": "Match on the request path. Comparison is case-sensitive.",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-              "exact": {
-                "type": "string",
-                "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
-              },
-              "startsWith": {
-                "type": "string",
-                "description": "Match values that start with the given prefix."
-              }
-            }
-          },
-          "method": {
-            "type": "array",
-            "description": "HTTP methods to match. Any single match succeeds (OR semantics).",
-            "items": {
-              "type": "string"
-            }
-          },
-          "queryString": {
-            "type": "array",
-            "description": "Query-string entry matchers. Multiple entries are ANDed. Query parameter names and values are both compared case-sensitively (RFC 3986). When a request has multiple values for the same key, any matching value satisfies the matcher.",
-            "items": {
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "key": {
-                  "description": "Matcher for the entry key (header name or query key).",
-                  "type": "object",
-                  "additionalProperties": false,
-                  "properties": {
-                    "exact": {
-                      "type": "string",
-                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
-                    },
-                    "startsWith": {
-                      "type": "string",
-                      "description": "Match values that start with the given prefix."
-                    }
-                  }
-                },
-                "value": {
-                  "description": "Matcher for the entry value.",
-                  "type": "object",
-                  "additionalProperties": false,
-                  "properties": {
-                    "exact": {
-                      "type": "string",
-                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
-                    },
-                    "startsWith": {
-                      "type": "string",
-                      "description": "Match values that start with the given prefix."
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "headers": {
-            "type": "array",
-            "description": "Header matchers. Multiple entries are ANDed. Header names are compared case-insensitively (RFC 9110); header values are compared case-sensitively. When a request has multiple values for the same header, any matching value satisfies the matcher.",
-            "items": {
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "key": {
-                  "description": "Matcher for the entry key (header name or query key).",
-                  "type": "object",
-                  "additionalProperties": false,
-                  "properties": {
-                    "exact": {
-                      "type": "string",
-                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
-                    },
-                    "startsWith": {
-                      "type": "string",
-                      "description": "Match values that start with the given prefix."
-                    }
-                  }
-                },
-                "value": {
-                  "description": "Matcher for the entry value.",
-                  "type": "object",
-                  "additionalProperties": false,
-                  "properties": {
-                    "exact": {
-                      "type": "string",
-                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
-                    },
-                    "startsWith": {
-                      "type": "string",
-                      "description": "Match values that start with the given prefix."
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "AutoSDKSharedc9c79e81839bbccd": {
+      "AutoSDKSharedbe3f0c688bc34a31": {
         "properties": {
           "accountId": {
             "type": "string"
@@ -132392,160 +131038,7 @@
             "type": "object"
           },
           "defaultResourceConfig": {
-            "properties": {
-              "buildMachineElasticLastUpdated": {
-                "type": "number"
-              },
-              "buildMachineElasticReason": {
-                "type": "string",
-                "enum": [
-                  "basic-floor",
-                  "build-timeout-failure",
-                  "enospc-failure",
-                  "enterprise-floor",
-                  "high-peak-disk",
-                  "high-peak-memory",
-                  "long-build-duration",
-                  "oom-failure",
-                  "short-build-duration",
-                  "sustained-high-cpu"
-                ]
-              },
-              "buildMachineElasticTransition": {
-                "properties": {
-                  "algorithmVersion": {
-                    "type": "string"
-                  },
-                  "at": {
-                    "type": "number"
-                  },
-                  "direction": {
-                    "type": "string",
-                    "enum": [
-                      "downgrade",
-                      "upgrade"
-                    ]
-                  }
-                },
-                "required": [
-                  "algorithmVersion",
-                  "at",
-                  "direction"
-                ],
-                "type": "object"
-              },
-              "buildMachineSelection": {
-                "type": "string",
-                "enum": [
-                  "elastic",
-                  "fixed"
-                ]
-              },
-              "buildMachineType": {
-                "type": "string",
-                "enum": [
-                  "basic",
-                  "enhanced",
-                  "standard",
-                  "turbo"
-                ]
-              },
-              "buildQueue": {
-                "properties": {
-                  "configuration": {
-                    "type": "string",
-                    "enum": [
-                      "SKIP_NAMESPACE_QUEUE",
-                      "WAIT_FOR_NAMESPACE_QUEUE"
-                    ]
-                  }
-                },
-                "type": "object"
-              },
-              "elasticConcurrencyEnabled": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "enableFunctionsBeta": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "fluid": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "functionDefaultMemoryType": {
-                "type": "string",
-                "enum": [
-                  "performance",
-                  "performance_xl",
-                  "standard",
-                  "standard_legacy"
-                ]
-              },
-              "functionDefaultRegions": {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
-              },
-              "functionDefaultTimeout": {
-                "type": "number"
-              },
-              "functionZeroConfigFailover": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "isNSNBDisabled": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "elasticBuildMachine": {
-                "properties": {
-                  "cores": {
-                    "type": "number"
-                  },
-                  "label": {
-                    "type": "string",
-                    "enum": [
-                      "enhanced",
-                      "standard",
-                      "turbo"
-                    ],
-                    "description": "Machine types elastic can assign. Widens when the elastic algorithm adds the 14 CPU tier."
-                  },
-                  "memory": {
-                    "type": "number"
-                  }
-                },
-                "required": [
-                  "cores",
-                  "label",
-                  "memory"
-                ],
-                "type": "object",
-                "description": "Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB."
-              }
-            },
-            "type": "object",
-            "required": [
-              "functionDefaultRegions"
-            ]
+            "$ref": "#/components/schemas/AutoSDKShareda38de73cc9e23e17"
           },
           "deploymentExpiration": {
             "properties": {
@@ -133390,160 +131883,7 @@
             "type": "object"
           },
           "resourceConfig": {
-            "properties": {
-              "buildMachineElasticLastUpdated": {
-                "type": "number"
-              },
-              "buildMachineElasticReason": {
-                "type": "string",
-                "enum": [
-                  "basic-floor",
-                  "build-timeout-failure",
-                  "enospc-failure",
-                  "enterprise-floor",
-                  "high-peak-disk",
-                  "high-peak-memory",
-                  "long-build-duration",
-                  "oom-failure",
-                  "short-build-duration",
-                  "sustained-high-cpu"
-                ]
-              },
-              "buildMachineElasticTransition": {
-                "properties": {
-                  "algorithmVersion": {
-                    "type": "string"
-                  },
-                  "at": {
-                    "type": "number"
-                  },
-                  "direction": {
-                    "type": "string",
-                    "enum": [
-                      "downgrade",
-                      "upgrade"
-                    ]
-                  }
-                },
-                "required": [
-                  "algorithmVersion",
-                  "at",
-                  "direction"
-                ],
-                "type": "object"
-              },
-              "buildMachineSelection": {
-                "type": "string",
-                "enum": [
-                  "elastic",
-                  "fixed"
-                ]
-              },
-              "buildMachineType": {
-                "type": "string",
-                "enum": [
-                  "basic",
-                  "enhanced",
-                  "standard",
-                  "turbo"
-                ]
-              },
-              "buildQueue": {
-                "properties": {
-                  "configuration": {
-                    "type": "string",
-                    "enum": [
-                      "SKIP_NAMESPACE_QUEUE",
-                      "WAIT_FOR_NAMESPACE_QUEUE"
-                    ]
-                  }
-                },
-                "type": "object"
-              },
-              "elasticConcurrencyEnabled": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "enableFunctionsBeta": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "fluid": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "functionDefaultMemoryType": {
-                "type": "string",
-                "enum": [
-                  "performance",
-                  "performance_xl",
-                  "standard",
-                  "standard_legacy"
-                ]
-              },
-              "functionDefaultRegions": {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
-              },
-              "functionDefaultTimeout": {
-                "type": "number"
-              },
-              "functionZeroConfigFailover": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "isNSNBDisabled": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "elasticBuildMachine": {
-                "properties": {
-                  "cores": {
-                    "type": "number"
-                  },
-                  "label": {
-                    "type": "string",
-                    "enum": [
-                      "enhanced",
-                      "standard",
-                      "turbo"
-                    ],
-                    "description": "Machine types elastic can assign. Widens when the elastic algorithm adds the 14 CPU tier."
-                  },
-                  "memory": {
-                    "type": "number"
-                  }
-                },
-                "required": [
-                  "cores",
-                  "label",
-                  "memory"
-                ],
-                "type": "object",
-                "description": "Server-owned Elastic assignment; responses may fall back to the legacy label. Not accepted as input. Memory is measured in MiB."
-              }
-            },
-            "type": "object",
-            "required": [
-              "functionDefaultRegions"
-            ]
+            "$ref": "#/components/schemas/AutoSDKShareda38de73cc9e23e17"
           },
           "rollbackDescription": {
             "properties": {
@@ -134126,6 +132466,516 @@
           "resourceConfig"
         ],
         "type": "object"
+      },
+      "AutoSDKSharedc12640b06f1c9105": {
+        "properties": {
+          "consolidatedGitCommitStatus": {
+            "properties": {
+              "enabled": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ],
+                "description": "Whether consolidated commit status is enabled."
+              },
+              "propagateFailures": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ],
+                "description": "Whether to propagate individual deployment failures to the consolidated status."
+              }
+            },
+            "required": [
+              "enabled",
+              "propagateFailures"
+            ],
+            "type": "object",
+            "description": "Configuration for consolidated git commit status reporting. When enabled, Vercel will post a single consolidated commit status instead of individual statuses for each deployment."
+          },
+          "createDeployments": {
+            "type": "string",
+            "enum": [
+              "disabled",
+              "enabled"
+            ],
+            "description": "Whether the Vercel bot should automatically create GitHub deployments https://docs.github.com/en/rest/deployments/deployments#about-deployments NOTE: repository-dispatch events should be used instead"
+          },
+          "disableRepositoryDispatchEvents": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ],
+            "description": "Whether the Vercel bot should not automatically create GitHub repository-dispatch events on deployment events. https://vercel.com/docs/git/vercel-for-github#repository-dispatch-events - `true`: disable repository-dispatch events for this project (explicit override of the team setting). - `false`: enable repository-dispatch events for this project (explicit override of the team setting). - absent: inherit from `team.disableRepositoryDispatchEvents`."
+          },
+          "gitCommitStatus": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ],
+            "description": "Whether Vercel should post commit statuses for this project. When omitted, commit statuses remain enabled."
+          },
+          "requireVerifiedCommits": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ],
+            "description": "Whether the project requires commits to be signed & verified before deployments will be created. - `true`: require verified commits for this project (explicit override of the team setting). - `false`: do not require verified commits (explicit override of the team setting). - absent: inherit from `team.requireVerifiedCommits`."
+          }
+        },
+        "required": [
+          "createDeployments"
+        ],
+        "type": "object"
+      },
+      "AutoSDKSharedc1460711be3474a5": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/AutoSDKShared03f29e765d13306d"
+          },
+          {
+            "$ref": "#/components/schemas/AutoSDKSharedec20b3976551b9eb"
+          }
+        ]
+      },
+      "AutoSDKSharedc396e89a7a8d84fb": {
+        "properties": {
+          "branch": {
+            "type": "string",
+            "description": "The branch regexp of log drain",
+            "example": "feature/*"
+          },
+          "clientId": {
+            "type": "string",
+            "description": "The oauth2 client application id that created this log drain",
+            "example": "oac_xRhY4LAB7yLhUADD69EvV7ct"
+          },
+          "configurationId": {
+            "type": "string",
+            "description": "The client configuration this log drain was created with",
+            "example": "icfg_3bwCLgxL8qt5kjRLcv2Dit7F"
+          },
+          "createdAt": {
+            "type": "number",
+            "description": "A timestamp that tells you when the log drain was created",
+            "example": 1558531915505
+          },
+          "createdFrom": {
+            "type": "string",
+            "enum": [
+              "integration",
+              "self-served"
+            ],
+            "description": "Whether the log drain was created by an integration or by a user",
+            "example": "integration"
+          },
+          "deliveryFormat": {
+            "type": "string",
+            "enum": [
+              "json",
+              "ndjson",
+              "protobuf"
+            ],
+            "description": "The delivery log format",
+            "example": "json"
+          },
+          "environments": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "preview",
+                "production"
+              ],
+              "description": "The environment of log drain",
+              "example": [
+                "production"
+              ]
+            },
+            "type": "array",
+            "description": "The environment of log drain",
+            "example": [
+              "production"
+            ]
+          },
+          "headers": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "description": "The headers to send with the request",
+            "example": "{\"Authorization\": \"Bearer 123\"}"
+          },
+          "id": {
+            "type": "string",
+            "description": "The unique identifier of the log drain. Always prefixed with `ld_`",
+            "example": "ld_nBuA7zCID8g4QZ8g"
+          },
+          "name": {
+            "type": "string",
+            "description": "The name of the log drain",
+            "example": "My first log drain"
+          },
+          "ownerId": {
+            "type": "string",
+            "description": "The identifier of the team or user whose events will trigger the log drain",
+            "example": "kr1PsOIzqEL5Xg6M4VZcZosf"
+          },
+          "projectId": {
+            "nullable": true,
+            "type": "string",
+            "example": "AbCgVkqoxXeXCDWehVir51LHGrrcWL4mkYm14W6UBPWQeb"
+          },
+          "projectIds": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "description": "The identifier of the projects this log drain is associated with",
+            "example": "AbCgVkqoxXeXCDWehVir51LHGrrcWL4mkYm14W6UBPWQeb"
+          },
+          "samplingRate": {
+            "type": "number",
+            "description": "The sampling rate of log drain",
+            "example": 0.5
+          },
+          "source": {
+            "oneOf": [
+              {
+                "properties": {
+                  "defaultFor": {
+                    "type": "string",
+                    "enum": [
+                      "eve-tracing"
+                    ],
+                    "description": "Informational marker for a system-owned default drain."
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "self-served"
+                    ]
+                  }
+                },
+                "required": [
+                  "kind"
+                ],
+                "type": "object"
+              },
+              {
+                "properties": {
+                  "externalResourceId": {
+                    "type": "string"
+                  },
+                  "integrationConfigurationId": {
+                    "type": "string"
+                  },
+                  "integrationId": {
+                    "type": "string"
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "integration"
+                    ]
+                  },
+                  "resourceId": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "integrationConfigurationId",
+                  "integrationId",
+                  "kind"
+                ],
+                "type": "object"
+              }
+            ]
+          },
+          "sources": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "build",
+                "edge",
+                "external",
+                "firewall",
+                "lambda",
+                "redirect",
+                "static"
+              ],
+              "description": "The sources from which logs are currently being delivered to this log drain.",
+              "example": [
+                "build",
+                "edge"
+              ]
+            },
+            "type": "array",
+            "description": "The sources from which logs are currently being delivered to this log drain.",
+            "example": [
+              "build",
+              "edge"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "description": "The URL to call when logs are generated",
+            "example": "https://example.com/log-drain"
+          }
+        },
+        "required": [
+          "createdAt",
+          "id",
+          "name",
+          "ownerId",
+          "source",
+          "url"
+        ],
+        "type": "object"
+      },
+      "AutoSDKSharedc525d78ff8d89818": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/AutoSDKShared037328971b8d11db"
+          },
+          {
+            "$ref": "#/components/schemas/AutoSDKShared7edb780247ab9fb3"
+          }
+        ]
+      },
+      "AutoSDKSharedc60721415ef8a2a0": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/AutoSDKSharedfb9c9ee0e5dd70ce"
+          },
+          {
+            "additionalProperties": {
+              "properties": {
+                "action": {
+                  "type": "string",
+                  "enum": [
+                    "allow",
+                    "bypass",
+                    "challenge",
+                    "deny",
+                    "log",
+                    "rate_limit",
+                    "redirect"
+                  ]
+                },
+                "actionDuration": {
+                  "nullable": true,
+                  "type": "string"
+                },
+                "bypassSystem": {
+                  "nullable": true,
+                  "type": "boolean",
+                  "enum": [
+                    false,
+                    true,
+                    null
+                  ]
+                },
+                "logHeaders": {
+                  "oneOf": [
+                    {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    {
+                      "type": "string",
+                      "enum": [
+                        "*"
+                      ]
+                    }
+                  ]
+                },
+                "rateLimit": {
+                  "nullable": true,
+                  "properties": {
+                    "action": {
+                      "nullable": true,
+                      "type": "string",
+                      "enum": [
+                        "challenge",
+                        "deny",
+                        "log",
+                        "rate_limit",
+                        null
+                      ]
+                    },
+                    "algo": {
+                      "type": "string",
+                      "enum": [
+                        "fixed_window",
+                        "token_bucket"
+                      ]
+                    },
+                    "keys": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "limit": {
+                      "type": "number"
+                    },
+                    "window": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "algo",
+                    "keys",
+                    "limit",
+                    "window"
+                  ],
+                  "type": "object"
+                },
+                "redirect": {
+                  "nullable": true,
+                  "properties": {
+                    "location": {
+                      "type": "string"
+                    },
+                    "permanent": {
+                      "type": "boolean",
+                      "enum": [
+                        false,
+                        true
+                      ]
+                    }
+                  },
+                  "required": [
+                    "location",
+                    "permanent"
+                  ],
+                  "type": "object"
+                }
+              },
+              "required": [
+                "action"
+              ],
+              "type": "object"
+            },
+            "type": "object"
+          }
+        ]
+      },
+      "AutoSDKSharedc97b32abf27d8b81": {
+        "description": "Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "description": "Match on the request path. Comparison is case-sensitive.",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "exact": {
+                "type": "string",
+                "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+              },
+              "startsWith": {
+                "type": "string",
+                "description": "Match values that start with the given prefix."
+              }
+            }
+          },
+          "method": {
+            "type": "array",
+            "description": "HTTP methods to match. Any single match succeeds (OR semantics).",
+            "items": {
+              "type": "string"
+            }
+          },
+          "queryString": {
+            "type": "array",
+            "description": "Query-string entry matchers. Multiple entries are ANDed. Query parameter names and values are both compared case-sensitively (RFC 3986). When a request has multiple values for the same key, any matching value satisfies the matcher.",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "key": {
+                  "description": "Matcher for the entry key (header name or query key).",
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "exact": {
+                      "type": "string",
+                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                    },
+                    "startsWith": {
+                      "type": "string",
+                      "description": "Match values that start with the given prefix."
+                    }
+                  }
+                },
+                "value": {
+                  "description": "Matcher for the entry value.",
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "exact": {
+                      "type": "string",
+                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                    },
+                    "startsWith": {
+                      "type": "string",
+                      "description": "Match values that start with the given prefix."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "headers": {
+            "type": "array",
+            "description": "Header matchers. Multiple entries are ANDed. Header names are compared case-insensitively (RFC 9110); header values are compared case-sensitively. When a request has multiple values for the same header, any matching value satisfies the matcher.",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "key": {
+                  "description": "Matcher for the entry key (header name or query key).",
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "exact": {
+                      "type": "string",
+                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                    },
+                    "startsWith": {
+                      "type": "string",
+                      "description": "Match values that start with the given prefix."
+                    }
+                  }
+                },
+                "value": {
+                  "description": "Matcher for the entry value.",
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "exact": {
+                      "type": "string",
+                      "description": "Match the value exactly. Case-sensitive for paths, header values, and methods; case-insensitive for domains and header keys."
+                    },
+                    "startsWith": {
+                      "type": "string",
+                      "description": "Match values that start with the given prefix."
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       },
       "AutoSDKSharedc9dedf1e16b35b81": {
         "nullable": true,
@@ -135841,12 +134691,6 @@
           "updatedAt"
         ],
         "type": "object"
-      },
-      "AutoSDKSharedd34b93d82d830758": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKShareda8d456fca5d8a771"
-        },
-        "type": "array"
       },
       "AutoSDKSharedd350ab9ee496d656": {
         "items": {
