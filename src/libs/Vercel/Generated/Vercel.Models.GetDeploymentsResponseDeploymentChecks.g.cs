@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class GetDeploymentsResponseDeploymentChecks
     {
         /// <summary>
-        /// Detailed information about v2 deployment checks. Includes information about blocked workflows in the deployment lifecycle.
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deployment-alias")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -24,9 +24,7 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDeploymentsResponseDeploymentChecks" /> class.
         /// </summary>
-        /// <param name="deploymentAlias">
-        /// Detailed information about v2 deployment checks. Includes information about blocked workflows in the deployment lifecycle.
-        /// </param>
+        /// <param name="deploymentAlias"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

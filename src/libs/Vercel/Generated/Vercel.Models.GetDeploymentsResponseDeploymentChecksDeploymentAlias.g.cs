@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Detailed information about v2 deployment checks. Includes information about blocked workflows in the deployment lifecycle.
+    ///
     /// </summary>
     public sealed partial class GetDeploymentsResponseDeploymentChecksDeploymentAlias
     {
