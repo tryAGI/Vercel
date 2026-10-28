@@ -4,19 +4,19 @@
 namespace Vercel
 {
     /// <summary>
-    /// Configuration input options for decreasing plan item quantity.
+    /// Configuration input options for increasing plan item quantity.
     /// </summary>
     public sealed partial class BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3Options
     {
         /// <summary>
-        /// The alias of the product to decrease quantity for.
+        /// The alias of the product to increase quantity for.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("productAlias")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProductAlias { get; set; }
 
         /// <summary>
-        /// The resource IDs to decrementally remove. The quantity of the plan item will be decreased by the number of resource IDs.
+        /// The resource IDs to incrementally add. The quantity of the plan item will be increased by the number of resource IDs.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resourceIds")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -32,10 +32,10 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant3Options" /> class.
         /// </summary>
         /// <param name="productAlias">
-        /// The alias of the product to decrease quantity for.
+        /// The alias of the product to increase quantity for.
         /// </param>
         /// <param name="resourceIds">
-        /// The resource IDs to decrementally remove. The quantity of the plan item will be decreased by the number of resource IDs.
+        /// The resource IDs to incrementally add. The quantity of the plan item will be increased by the number of resource IDs.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

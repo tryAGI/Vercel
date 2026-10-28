@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class AuthUser
     {
         /// <summary>
-        /// Context for the Update Account screen. Present only when `isAccountUpdateRequired` is true. `managedTeams` is empty for orphan mode (user matches an EMU domain but is not on the team).
+        /// Context for the Update Account screen. Present only when `isAccountUpdateRequired` is true. `managedTeams` is empty for orphan mode (user matches an EMU domain but is not on the team). When the teams the user must complete Update Account for include an organization's backing team, that team is listed as the organization, followed by the organization's Enterprise Managed root and child teams the user is a member of, including through Directory Sync group mappings.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("accountUpdateContext")]
         public global::Vercel.AuthUserAccountUpdateContext? AccountUpdateContext { get; set; }
@@ -221,7 +221,7 @@ namespace Vercel
         /// Example: jdoe
         /// </param>
         /// <param name="accountUpdateContext">
-        /// Context for the Update Account screen. Present only when `isAccountUpdateRequired` is true. `managedTeams` is empty for orphan mode (user matches an EMU domain but is not on the team).
+        /// Context for the Update Account screen. Present only when `isAccountUpdateRequired` is true. `managedTeams` is empty for orphan mode (user matches an EMU domain but is not on the team). When the teams the user must complete Update Account for include an organization's backing team, that team is listed as the organization, followed by the organization's Enterprise Managed root and child teams the user is a member of, including through Directory Sync group mappings.
         /// </param>
         /// <param name="activeDashboardViews">
         /// set of dashboard view preferences (cards or list) per scopeId

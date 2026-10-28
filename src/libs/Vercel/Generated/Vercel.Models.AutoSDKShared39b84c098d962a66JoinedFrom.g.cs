@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class AutoSDKShared362c8e760cc311d9JoinedFrom
+    public sealed partial class AutoSDKShared39b84c098d962a66JoinedFrom
     {
         /// <summary>
         ///
@@ -49,9 +49,9 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("origin")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared362c8e760cc311d9JoinedFromOriginJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared39b84c098d962a66JoinedFromOriginJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AutoSDKShared362c8e760cc311d9JoinedFromOrigin Origin { get; set; }
+        public required global::Vercel.AutoSDKShared39b84c098d962a66JoinedFromOrigin Origin { get; set; }
 
         /// <summary>
         ///
@@ -84,7 +84,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared362c8e760cc311d9JoinedFrom" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared39b84c098d962a66JoinedFrom" /> class.
         /// </summary>
         /// <param name="origin"></param>
         /// <param name="commitId"></param>
@@ -100,8 +100,8 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public AutoSDKShared362c8e760cc311d9JoinedFrom(
-            global::Vercel.AutoSDKShared362c8e760cc311d9JoinedFromOrigin origin,
+        public AutoSDKShared39b84c098d962a66JoinedFrom(
+            global::Vercel.AutoSDKShared39b84c098d962a66JoinedFromOrigin origin,
             string? commitId,
             double? dsyncConnectedAt,
             string? dsyncUserId,
@@ -127,9 +127,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared362c8e760cc311d9JoinedFrom" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared39b84c098d962a66JoinedFrom" /> class.
         /// </summary>
-        public AutoSDKShared362c8e760cc311d9JoinedFrom()
+        public AutoSDKShared39b84c098d962a66JoinedFrom()
         {
         }
 
