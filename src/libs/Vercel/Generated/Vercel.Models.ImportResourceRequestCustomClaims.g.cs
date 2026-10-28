@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class ImportResourceRequestCustomClaims
     {
         /// <summary>
-        /// Roles a deployment may request when minting a token. The selected role becomes the `sub` claim.
+        /// Roles a deployment may request when minting a token. The selected role is emitted as the `role` claim.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("roles")]
         public global::System.Collections.Generic.IList<string>? Roles { get; set; }
@@ -36,7 +36,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="ImportResourceRequestCustomClaims" /> class.
         /// </summary>
         /// <param name="roles">
-        /// Roles a deployment may request when minting a token. The selected role becomes the `sub` claim.
+        /// Roles a deployment may request when minting a token. The selected role is emitted as the `role` claim.
         /// </param>
         /// <param name="defaultRole">
         /// Role used when the deployment does not request one. Required when `roles` is set.

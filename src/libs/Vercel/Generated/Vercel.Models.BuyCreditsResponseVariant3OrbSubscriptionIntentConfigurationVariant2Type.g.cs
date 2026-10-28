@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        IncreasePlanItemQuantity,
+        SetPlanItemQuantity,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2Type.IncreasePlanItemQuantity => "increase_plan_item_quantity",
+                BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2Type.SetPlanItemQuantity => "set_plan_item_quantity",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "increase_plan_item_quantity" => BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2Type.IncreasePlanItemQuantity,
+                "set_plan_item_quantity" => BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2Type.SetPlanItemQuantity,
                 _ => null,
             };
         }

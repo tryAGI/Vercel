@@ -3,10 +3,10 @@
 namespace Vercel.JsonConverters
 {
     /// <inheritdoc />
-    public sealed class AutoSDKShared362c8e760cc311d9TeamRoleNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.AutoSDKShared362c8e760cc311d9TeamRole?>
+    public sealed class BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant5TypeNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant5Type?>
     {
         /// <inheritdoc />
-        public override global::Vercel.AutoSDKShared362c8e760cc311d9TeamRole? Read(
+        public override global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant5Type? Read(
             ref global::System.Text.Json.Utf8JsonReader reader,
             global::System.Type typeToConvert,
             global::System.Text.Json.JsonSerializerOptions options)
@@ -18,7 +18,7 @@ namespace Vercel.JsonConverters
                     var stringValue = reader.GetString();
                     if (stringValue != null)
                     {
-                        return global::Vercel.AutoSDKShared362c8e760cc311d9TeamRoleExtensions.ToEnum(stringValue);
+                        return global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant5TypeExtensions.ToEnum(stringValue);
                     }
 
                     break;
@@ -26,11 +26,11 @@ namespace Vercel.JsonConverters
                 case global::System.Text.Json.JsonTokenType.Number:
                 {
                     var numValue = reader.GetInt32();
-                    return (global::Vercel.AutoSDKShared362c8e760cc311d9TeamRole)numValue;
+                    return (global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant5Type)numValue;
                 }
                 case global::System.Text.Json.JsonTokenType.Null:
                 {
-                    return default(global::Vercel.AutoSDKShared362c8e760cc311d9TeamRole?);
+                    return default(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant5Type?);
                 }
                 default:
                     throw new global::System.ArgumentOutOfRangeException(nameof(reader));
@@ -42,7 +42,7 @@ namespace Vercel.JsonConverters
         /// <inheritdoc />
         public override void Write(
             global::System.Text.Json.Utf8JsonWriter writer,
-            global::Vercel.AutoSDKShared362c8e760cc311d9TeamRole? value,
+            global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant5Type? value,
             global::System.Text.Json.JsonSerializerOptions options)
         {
             writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
@@ -53,7 +53,7 @@ namespace Vercel.JsonConverters
             }
             else
             {
-                writer.WriteStringValue(global::Vercel.AutoSDKShared362c8e760cc311d9TeamRoleExtensions.ToValueString(value.Value));
+                writer.WriteStringValue(global::Vercel.BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant5TypeExtensions.ToValueString(value.Value));
             }
         }
     }

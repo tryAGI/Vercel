@@ -4,30 +4,23 @@
 namespace Vercel
 {
     /// <summary>
-    /// Configuration input options for adjusting plan item quantity.
+    /// Configuration input options for decreasing plan item quantity.
     /// </summary>
     public sealed partial class BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4Options
     {
         /// <summary>
-        /// The resource IDs to incrementally add. The quantity of the plan item will be increased by the number of resource IDs.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("addedResourceIds")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> AddedResourceIds { get; set; }
-
-        /// <summary>
-        /// The alias of the product to adjust quantity for.
+        /// The alias of the product to decrease quantity for.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("productAlias")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProductAlias { get; set; }
 
         /// <summary>
-        /// The resource IDs to incrementally remove. The quantity of the plan item will be decreased by the number of resource IDs.
+        /// The resource IDs to decrementally remove. The quantity of the plan item will be decreased by the number of resource IDs.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("removedResourceIds")]
+        [global::System.Text.Json.Serialization.JsonPropertyName("resourceIds")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<string> RemovedResourceIds { get; set; }
+        public required global::System.Collections.Generic.IList<string> ResourceIds { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -38,26 +31,21 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4Options" /> class.
         /// </summary>
-        /// <param name="addedResourceIds">
-        /// The resource IDs to incrementally add. The quantity of the plan item will be increased by the number of resource IDs.
-        /// </param>
         /// <param name="productAlias">
-        /// The alias of the product to adjust quantity for.
+        /// The alias of the product to decrease quantity for.
         /// </param>
-        /// <param name="removedResourceIds">
-        /// The resource IDs to incrementally remove. The quantity of the plan item will be decreased by the number of resource IDs.
+        /// <param name="resourceIds">
+        /// The resource IDs to decrementally remove. The quantity of the plan item will be decreased by the number of resource IDs.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4Options(
-            global::System.Collections.Generic.IList<string> addedResourceIds,
             string productAlias,
-            global::System.Collections.Generic.IList<string> removedResourceIds)
+            global::System.Collections.Generic.IList<string> resourceIds)
         {
-            this.AddedResourceIds = addedResourceIds ?? throw new global::System.ArgumentNullException(nameof(addedResourceIds));
             this.ProductAlias = productAlias ?? throw new global::System.ArgumentNullException(nameof(productAlias));
-            this.RemovedResourceIds = removedResourceIds ?? throw new global::System.ArgumentNullException(nameof(removedResourceIds));
+            this.ResourceIds = resourceIds ?? throw new global::System.ArgumentNullException(nameof(resourceIds));
         }
 
         /// <summary>

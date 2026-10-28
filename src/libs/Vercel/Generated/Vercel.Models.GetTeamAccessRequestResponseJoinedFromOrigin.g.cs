@@ -75,6 +75,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        OrgAdminSync,
+        /// <summary>
+        ///
+        /// </summary>
         OrganizationTeams,
         /// <summary>
         ///
@@ -114,6 +118,7 @@ namespace Vercel
                 GetTeamAccessRequestResponseJoinedFromOrigin.NsnbRedeployAttributionCard => "nsnb-redeploy-attribution-card",
                 GetTeamAccessRequestResponseJoinedFromOrigin.NsnbRequestAccess => "nsnb-request-access",
                 GetTeamAccessRequestResponseJoinedFromOrigin.NsnbViewerUpgrade => "nsnb-viewer-upgrade",
+                GetTeamAccessRequestResponseJoinedFromOrigin.OrgAdminSync => "org-admin-sync",
                 GetTeamAccessRequestResponseJoinedFromOrigin.OrganizationTeams => "organization-teams",
                 GetTeamAccessRequestResponseJoinedFromOrigin.Saml => "saml",
                 GetTeamAccessRequestResponseJoinedFromOrigin.Teams => "teams",
@@ -143,6 +148,7 @@ namespace Vercel
                 "nsnb-redeploy-attribution-card" => GetTeamAccessRequestResponseJoinedFromOrigin.NsnbRedeployAttributionCard,
                 "nsnb-request-access" => GetTeamAccessRequestResponseJoinedFromOrigin.NsnbRequestAccess,
                 "nsnb-viewer-upgrade" => GetTeamAccessRequestResponseJoinedFromOrigin.NsnbViewerUpgrade,
+                "org-admin-sync" => GetTeamAccessRequestResponseJoinedFromOrigin.OrgAdminSync,
                 "organization-teams" => GetTeamAccessRequestResponseJoinedFromOrigin.OrganizationTeams,
                 "saml" => GetTeamAccessRequestResponseJoinedFromOrigin.Saml,
                 "teams" => GetTeamAccessRequestResponseJoinedFromOrigin.Teams,

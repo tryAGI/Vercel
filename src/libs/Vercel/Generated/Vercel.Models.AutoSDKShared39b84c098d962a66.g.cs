@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     /// The membership of the authenticated User in relation to the Team.
     /// </summary>
-    public sealed partial class AutoSDKShared362c8e760cc311d9
+    public sealed partial class AutoSDKShared39b84c098d962a66
     {
         /// <summary>
         ///
@@ -39,7 +39,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("entitlements")]
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared362c8e760cc311d9Entitlement>? Entitlements { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39b84c098d962a66Entitlement>? Entitlements { get; set; }
 
         /// <summary>
         ///
@@ -51,7 +51,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("joinedFrom")]
-        public global::Vercel.AutoSDKShared362c8e760cc311d9JoinedFrom? JoinedFrom { get; set; }
+        public global::Vercel.AutoSDKShared39b84c098d962a66JoinedFrom? JoinedFrom { get; set; }
 
         /// <summary>
         ///
@@ -63,9 +63,9 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("role")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared362c8e760cc311d9RoleJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared39b84c098d962a66RoleJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AutoSDKShared362c8e760cc311d9Role Role { get; set; }
+        public required global::Vercel.AutoSDKShared39b84c098d962a66Role Role { get; set; }
 
         /// <summary>
         ///
@@ -77,13 +77,13 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamPermissions")]
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared362c8e760cc311d9TeamPermission>? TeamPermissions { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39b84c098d962a66TeamPermission>? TeamPermissions { get; set; }
 
         /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teamRoles")]
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared362c8e760cc311d9TeamRole>? TeamRoles { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39b84c098d962a66TeamRole>? TeamRoles { get; set; }
 
         /// <summary>
         ///
@@ -98,7 +98,7 @@ namespace Vercel
         public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared362c8e760cc311d9" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared39b84c098d962a66" /> class.
         /// </summary>
         /// <param name="confirmed"></param>
         /// <param name="created"></param>
@@ -116,19 +116,19 @@ namespace Vercel
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
-        public AutoSDKShared362c8e760cc311d9(
+        public AutoSDKShared39b84c098d962a66(
             bool confirmed,
             double created,
             double createdAt,
-            global::Vercel.AutoSDKShared362c8e760cc311d9Role role,
+            global::Vercel.AutoSDKShared39b84c098d962a66Role role,
             double? accessRequestedAt,
-            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared362c8e760cc311d9Entitlement>? entitlements,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39b84c098d962a66Entitlement>? entitlements,
             bool? isOrgBackingTeamMembership,
-            global::Vercel.AutoSDKShared362c8e760cc311d9JoinedFrom? joinedFrom,
+            global::Vercel.AutoSDKShared39b84c098d962a66JoinedFrom? joinedFrom,
             string? organizationId,
             string? teamId,
-            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared362c8e760cc311d9TeamPermission>? teamPermissions,
-            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared362c8e760cc311d9TeamRole>? teamRoles,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39b84c098d962a66TeamPermission>? teamPermissions,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39b84c098d962a66TeamRole>? teamRoles,
             string? uid)
         {
             this.AccessRequestedAt = accessRequestedAt;
@@ -147,9 +147,9 @@ namespace Vercel
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutoSDKShared362c8e760cc311d9" /> class.
+        /// Initializes a new instance of the <see cref="AutoSDKShared39b84c098d962a66" /> class.
         /// </summary>
-        public AutoSDKShared362c8e760cc311d9()
+        public AutoSDKShared39b84c098d962a66()
         {
         }
 

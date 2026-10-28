@@ -4,19 +4,26 @@
 namespace Vercel
 {
     /// <summary>
-    /// Configuration input options for increasing plan item quantity.
+    /// Configuration input options for setting plan item quantity.
     /// </summary>
     public sealed partial class BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2Options
     {
         /// <summary>
-        /// The alias of the product to increase quantity for.
+        /// The alias of the product to set quantity for.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("productAlias")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ProductAlias { get; set; }
 
         /// <summary>
-        /// The resource IDs to incrementally add. The quantity of the plan item will be increased by the number of resource IDs.
+        /// The quantity to set for the plan item.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("quantity")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double Quantity { get; set; }
+
+        /// <summary>
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resourceIds")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -32,19 +39,22 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2Options" /> class.
         /// </summary>
         /// <param name="productAlias">
-        /// The alias of the product to increase quantity for.
+        /// The alias of the product to set quantity for.
         /// </param>
-        /// <param name="resourceIds">
-        /// The resource IDs to incrementally add. The quantity of the plan item will be increased by the number of resource IDs.
+        /// <param name="quantity">
+        /// The quantity to set for the plan item.
         /// </param>
+        /// <param name="resourceIds"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant2Options(
             string productAlias,
+            double quantity,
             global::System.Collections.Generic.IList<string> resourceIds)
         {
             this.ProductAlias = productAlias ?? throw new global::System.ArgumentNullException(nameof(productAlias));
+            this.Quantity = quantity;
             this.ResourceIds = resourceIds ?? throw new global::System.ArgumentNullException(nameof(resourceIds));
         }
 

@@ -23,6 +23,14 @@ namespace Vercel
         public required string CreatedAt { get; set; }
 
         /// <summary>
+        /// Whether the organization's Directory Sync manages the team's memberships.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("dsyncMode")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OrganizationTeamDsyncModeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.OrganizationTeamDsyncMode DsyncMode { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("organizationId")]
@@ -61,6 +69,9 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="OrganizationTeam" /> class.
         /// </summary>
         /// <param name="createdAt"></param>
+        /// <param name="dsyncMode">
+        /// Whether the organization's Directory Sync manages the team's memberships.
+        /// </param>
         /// <param name="organizationId"></param>
         /// <param name="ssoMode"></param>
         /// <param name="teamId"></param>
@@ -73,6 +84,7 @@ namespace Vercel
 #endif
         public OrganizationTeam(
             string createdAt,
+            global::Vercel.OrganizationTeamDsyncMode dsyncMode,
             string organizationId,
             global::Vercel.OrganizationTeamSsoMode ssoMode,
             string teamId,
@@ -81,6 +93,7 @@ namespace Vercel
         {
             this.BillingPlan = billingPlan;
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
+            this.DsyncMode = dsyncMode;
             this.OrganizationId = organizationId ?? throw new global::System.ArgumentNullException(nameof(organizationId));
             this.SsoMode = ssoMode;
             this.TeamId = teamId ?? throw new global::System.ArgumentNullException(nameof(teamId));

@@ -6424,18 +6424,55 @@
                                         "quantity": {
                                           "type": "number",
                                           "description": "The quantity to set for the plan item."
-                                        },
-                                        "resourceIds": {
-                                          "items": {
-                                            "type": "string"
-                                          },
-                                          "type": "array",
-                                          "description": "The resource IDs for the plan item. Only set if SKU requires resource entitlements."
                                         }
                                       },
                                       "required": [
                                         "productAlias",
                                         "quantity"
+                                      ],
+                                      "type": "object"
+                                    },
+                                    "output": {
+                                      "$ref": "#/components/schemas/AutoSDKShareda15210bade0a7c46"
+                                    },
+                                    "type": {
+                                      "type": "string",
+                                      "enum": [
+                                        "set_plan_item_quantity"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "options",
+                                    "output",
+                                    "type"
+                                  ],
+                                  "type": "object",
+                                  "description": "Configuration for the Orb subscription intent."
+                                },
+                                {
+                                  "properties": {
+                                    "options": {
+                                      "properties": {
+                                        "productAlias": {
+                                          "type": "string",
+                                          "description": "The alias of the product to set quantity for."
+                                        },
+                                        "quantity": {
+                                          "type": "number",
+                                          "description": "The quantity to set for the plan item."
+                                        },
+                                        "resourceIds": {
+                                          "items": {
+                                            "type": "string"
+                                          },
+                                          "type": "array"
+                                        }
+                                      },
+                                      "required": [
+                                        "productAlias",
+                                        "quantity",
+                                        "resourceIds"
                                       ],
                                       "type": "object",
                                       "description": "Configuration input options for setting plan item quantity."
@@ -41084,7 +41121,7 @@
                           "type": "string",
                           "maxLength": 32
                         },
-                        "description": "Roles a deployment may request when minting a token. The selected role becomes the `sub` claim."
+                        "description": "Roles a deployment may request when minting a token. The selected role is emitted as the `role` claim."
                       },
                       "defaultRole": {
                         "type": "string",
@@ -41487,7 +41524,7 @@
                           "type": "string",
                           "maxLength": 32
                         },
-                        "description": "Roles a deployment may request when minting a token. The selected role becomes the `sub` claim."
+                        "description": "Roles a deployment may request when minting a token. The selected role is emitted as the `role` claim."
                       },
                       "defaultRole": {
                         "type": "string",
@@ -81679,6 +81716,7 @@
                                   "nsnb-redeploy-attribution-card",
                                   "nsnb-request-access",
                                   "nsnb-viewer-upgrade",
+                                  "org-admin-sync",
                                   "organization-teams",
                                   "saml",
                                   "teams"
@@ -82212,6 +82250,7 @@
                             "nsnb-redeploy-attribution-card",
                             "nsnb-request-access",
                             "nsnb-viewer-upgrade",
+                            "org-admin-sync",
                             "organization-teams",
                             "saml",
                             "teams"
@@ -82472,6 +82511,7 @@
                             "nsnb-redeploy-attribution-card",
                             "nsnb-request-access",
                             "nsnb-viewer-upgrade",
+                            "org-admin-sync",
                             "organization-teams",
                             "saml",
                             "teams"
@@ -109372,6 +109412,14 @@
             "type": "string",
             "description": "ISO timestamp of when the team was linked to the organization."
           },
+          "dsyncMode": {
+            "type": "string",
+            "enum": [
+              "organization",
+              "team"
+            ],
+            "description": "Whether the organization's Directory Sync manages the team's memberships."
+          },
           "memberCount": {
             "type": "number",
             "description": "Present only when the request sets `includeMemberCount=true`. Number of members on the Team, including pending memberships. Excludes email invitations that do not have a membership record."
@@ -109408,6 +109456,7 @@
         "required": [
           "avatar",
           "createdAt",
+          "dsyncMode",
           "name",
           "organizationId",
           "slug",
@@ -109431,6 +109480,14 @@
           "createdAt": {
             "type": "string"
           },
+          "dsyncMode": {
+            "type": "string",
+            "enum": [
+              "organization",
+              "team"
+            ],
+            "description": "Whether the organization's Directory Sync manages the team's memberships."
+          },
           "organizationId": {
             "type": "string"
           },
@@ -109450,6 +109507,7 @@
         },
         "required": [
           "createdAt",
+          "dsyncMode",
           "organizationId",
           "ssoMode",
           "teamId",
@@ -111041,7 +111099,7 @@
             "description": "Property indicating that this Team data contains full information. Limited Team data has `limited: true`."
           },
           "membership": {
-            "$ref": "#/components/schemas/AutoSDKShared362c8e760cc311d9"
+            "$ref": "#/components/schemas/AutoSDKShared39b84c098d962a66"
           },
           "name": {
             "nullable": true,
@@ -111554,7 +111612,7 @@
             "type": "array"
           },
           "membership": {
-            "$ref": "#/components/schemas/AutoSDKShared362c8e760cc311d9"
+            "$ref": "#/components/schemas/AutoSDKShared39b84c098d962a66"
           },
           "name": {
             "nullable": true,
@@ -111971,7 +112029,7 @@
               "verifiedEmuDomains"
             ],
             "type": "object",
-            "description": "Context for the Update Account screen. Present only when `isAccountUpdateRequired` is true. `managedTeams` is empty for orphan mode (user matches an EMU domain but is not on the team)."
+            "description": "Context for the Update Account screen. Present only when `isAccountUpdateRequired` is true. `managedTeams` is empty for orphan mode (user matches an EMU domain but is not on the team). When the teams the user must complete Update Account for include an organization's backing team, that team is listed as the organization, followed by the organization's Enterprise Managed root and child teams the user is a member of, including through Directory Sync group mappings."
           },
           "activeDashboardViews": {
             "items": {
@@ -117736,7 +117794,104 @@
           }
         ]
       },
-      "AutoSDKShared362c8e760cc311d9": {
+      "AutoSDKShared38e9af03824d67bc": {
+        "properties": {
+          "activateAt": {
+            "type": "string"
+          },
+          "activatedAt": {
+            "type": "string",
+            "description": "When the key became the active signer. Present for active and revoking keys (and absent for pending keys and rows predating this field)."
+          },
+          "algorithm": {
+            "type": "string"
+          },
+          "certificatePem": {
+            "type": "string",
+            "description": "The stored X.509 certificate (from `publicKey.x5c[0]`) in PEM form, ready to render. Present only for keys created with a stored certificate; omitted for keys created before certificates were stored."
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "importKeyId": {
+            "type": "string",
+            "description": "The caller-supplied key id (imported keys only), used as the JWT/JWKS `kid`. Not unique across an issuer's keys; omitted for generated keys."
+          },
+          "issuerId": {
+            "type": "string"
+          },
+          "keyId": {
+            "type": "string",
+            "description": "The server-minted, unique record identifier. Use this to address the key on the activate / certificate endpoints."
+          },
+          "publicKey": {
+            "properties": {
+              "alg": {
+                "type": "string"
+              },
+              "key_ops": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "kid": {
+                "type": "string"
+              },
+              "kty": {
+                "type": "string"
+              },
+              "use": {
+                "type": "string"
+              },
+              "x5c": {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array",
+                "description": "The X.509 certificate chain (RFC 7517 \u00a74.7). Each entry is the base64 DER (not base64url) of a certificate. For keys minted with a stored certificate this holds the single self-signed cert as `[x5c]`."
+              },
+              "x5t#S256": {
+                "type": "string",
+                "description": "The base64url SHA-256 thumbprint of the DER certificate in `x5c[0]` (RFC 7517 \u00a74.9)."
+              }
+            },
+            "type": "object"
+          },
+          "publicKeyFingerprint": {
+            "type": "string"
+          },
+          "publicKeyPem": {
+            "type": "string",
+            "description": "The public key in SPKI PEM form, ready to render. Present whenever the key has public key material. Derived from `publicKey`; the embedded certificate members (`x5c`/`x5t#S256`) do not affect it."
+          },
+          "revokeAt": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "pending",
+              "revoking"
+            ]
+          },
+          "updatedAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "algorithm",
+          "createdAt",
+          "issuerId",
+          "keyId",
+          "publicKeyFingerprint",
+          "status",
+          "updatedAt"
+        ],
+        "type": "object"
+      },
+      "AutoSDKShared39b84c098d962a66": {
         "properties": {
           "accessRequestedAt": {
             "type": "number"
@@ -117820,6 +117975,7 @@
                   "nsnb-redeploy-attribution-card",
                   "nsnb-request-access",
                   "nsnb-viewer-upgrade",
+                  "org-admin-sync",
                   "organization-teams",
                   "saml",
                   "teams"
@@ -117917,103 +118073,6 @@
         ],
         "type": "object",
         "description": "The membership of the authenticated User in relation to the Team."
-      },
-      "AutoSDKShared38e9af03824d67bc": {
-        "properties": {
-          "activateAt": {
-            "type": "string"
-          },
-          "activatedAt": {
-            "type": "string",
-            "description": "When the key became the active signer. Present for active and revoking keys (and absent for pending keys and rows predating this field)."
-          },
-          "algorithm": {
-            "type": "string"
-          },
-          "certificatePem": {
-            "type": "string",
-            "description": "The stored X.509 certificate (from `publicKey.x5c[0]`) in PEM form, ready to render. Present only for keys created with a stored certificate; omitted for keys created before certificates were stored."
-          },
-          "createdAt": {
-            "type": "string"
-          },
-          "importKeyId": {
-            "type": "string",
-            "description": "The caller-supplied key id (imported keys only), used as the JWT/JWKS `kid`. Not unique across an issuer's keys; omitted for generated keys."
-          },
-          "issuerId": {
-            "type": "string"
-          },
-          "keyId": {
-            "type": "string",
-            "description": "The server-minted, unique record identifier. Use this to address the key on the activate / certificate endpoints."
-          },
-          "publicKey": {
-            "properties": {
-              "alg": {
-                "type": "string"
-              },
-              "key_ops": {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array"
-              },
-              "kid": {
-                "type": "string"
-              },
-              "kty": {
-                "type": "string"
-              },
-              "use": {
-                "type": "string"
-              },
-              "x5c": {
-                "items": {
-                  "type": "string"
-                },
-                "type": "array",
-                "description": "The X.509 certificate chain (RFC 7517 \u00a74.7). Each entry is the base64 DER (not base64url) of a certificate. For keys minted with a stored certificate this holds the single self-signed cert as `[x5c]`."
-              },
-              "x5t#S256": {
-                "type": "string",
-                "description": "The base64url SHA-256 thumbprint of the DER certificate in `x5c[0]` (RFC 7517 \u00a74.9)."
-              }
-            },
-            "type": "object"
-          },
-          "publicKeyFingerprint": {
-            "type": "string"
-          },
-          "publicKeyPem": {
-            "type": "string",
-            "description": "The public key in SPKI PEM form, ready to render. Present whenever the key has public key material. Derived from `publicKey`; the embedded certificate members (`x5c`/`x5t#S256`) do not affect it."
-          },
-          "revokeAt": {
-            "type": "string"
-          },
-          "status": {
-            "type": "string",
-            "enum": [
-              "active",
-              "pending",
-              "revoking"
-            ]
-          },
-          "updatedAt": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "algorithm",
-          "createdAt",
-          "issuerId",
-          "keyId",
-          "publicKeyFingerprint",
-          "status",
-          "updatedAt"
-        ],
-        "type": "object"
       },
       "AutoSDKShared3a9de5f7dac7cd23": {
         "items": {

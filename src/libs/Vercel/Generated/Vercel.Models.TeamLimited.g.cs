@@ -52,7 +52,7 @@ namespace Vercel
         /// The membership of the authenticated User in relation to the Team.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("membership")]
-        public global::Vercel.AutoSDKShared362c8e760cc311d9? Membership { get; set; }
+        public global::Vercel.AutoSDKShared39b84c098d962a66? Membership { get; set; }
 
         /// <summary>
         /// Name associated with the Team account, or `null` if none has been provided.<br/>
@@ -150,7 +150,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.TeamLimitedLimitedByItem> limitedBy,
             string slug,
             string? avatar,
-            global::Vercel.AutoSDKShared362c8e760cc311d9? membership,
+            global::Vercel.AutoSDKShared39b84c098d962a66? membership,
             string? name,
             string? orgRootTeamId,
             string? parentId,

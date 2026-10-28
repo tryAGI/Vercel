@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4
     {
         /// <summary>
-        /// Configuration input options for adjusting plan item quantity.
+        /// Configuration input options for decreasing plan item quantity.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("options")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -39,7 +39,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="BuyCreditsResponseVariant3OrbSubscriptionIntentConfigurationVariant4" /> class.
         /// </summary>
         /// <param name="options">
-        /// Configuration input options for adjusting plan item quantity.
+        /// Configuration input options for decreasing plan item quantity.
         /// </param>
         /// <param name="output">
         /// Output returned after configuring an OrbSubscriptionIntent.

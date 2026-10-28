@@ -29,6 +29,14 @@ namespace Vercel
         public required string CreatedAt { get; set; }
 
         /// <summary>
+        /// Whether the organization's Directory Sync manages the team's memberships.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("dsyncMode")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OrganizationTeamListItemDsyncModeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.OrganizationTeamListItemDsyncMode DsyncMode { get; set; }
+
+        /// <summary>
         /// Present only when the request sets `includeMemberCount=true`. Number of members on the Team, including pending memberships. Excludes email invitations that do not have a membership record.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("memberCount")]
@@ -88,6 +96,9 @@ namespace Vercel
         /// <param name="createdAt">
         /// ISO timestamp of when the team was linked to the organization.
         /// </param>
+        /// <param name="dsyncMode">
+        /// Whether the organization's Directory Sync manages the team's memberships.
+        /// </param>
         /// <param name="organizationId">
         /// The ID of the organization the team belongs to.
         /// </param>
@@ -118,6 +129,7 @@ namespace Vercel
 #endif
         public OrganizationTeamListItem(
             string createdAt,
+            global::Vercel.OrganizationTeamListItemDsyncMode dsyncMode,
             string organizationId,
             string slug,
             global::Vercel.OrganizationTeamListItemSsoMode ssoMode,
@@ -131,6 +143,7 @@ namespace Vercel
             this.Avatar = avatar;
             this.BillingPlan = billingPlan;
             this.CreatedAt = createdAt ?? throw new global::System.ArgumentNullException(nameof(createdAt));
+            this.DsyncMode = dsyncMode;
             this.MemberCount = memberCount;
             this.Name = name;
             this.OrganizationId = organizationId ?? throw new global::System.ArgumentNullException(nameof(organizationId));
