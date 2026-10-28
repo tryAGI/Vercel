@@ -9,7 +9,7 @@ namespace Vercel
     public sealed partial class CreateDeploymentResponseChecks
     {
         /// <summary>
-        /// Condensed check data. Retrieve individual check and check run data using api-checks v2 routes.
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deployment-alias")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -24,9 +24,7 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateDeploymentResponseChecks" /> class.
         /// </summary>
-        /// <param name="deploymentAlias">
-        /// Condensed check data. Retrieve individual check and check run data using api-checks v2 routes.
-        /// </param>
+        /// <param name="deploymentAlias"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

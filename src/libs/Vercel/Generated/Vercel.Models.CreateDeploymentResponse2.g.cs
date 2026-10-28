@@ -538,7 +538,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resourceConfig")]
-        public global::Vercel.AutoSDKShared752c0ef37987da35? ResourceConfig { get; set; }
+        public global::Vercel.AutoSDKShared693ab19349d28dd8? ResourceConfig { get; set; }
 
         /// <summary>
         ///
@@ -932,7 +932,7 @@ namespace Vercel
             double? ready,
             string? readyStateReason,
             global::Vercel.CreateDeploymentResponseReadySubstate? readySubstate,
-            global::Vercel.AutoSDKShared752c0ef37987da35? resourceConfig,
+            global::Vercel.AutoSDKShared693ab19349d28dd8? resourceConfig,
             global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared34abcb2fd4803b5a>? routes,
             global::Vercel.CreateDeploymentResponseSeatBlock? seatBlock,
             global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbebfd10f1fbc8cec>? services,

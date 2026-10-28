@@ -84,7 +84,7 @@ namespace Vercel
             : throw new global::System.InvalidOperationException($"Expected union variant 'FlagJSONValueVariant2' but the value was {ToString()}.");
 
         /// <summary>
-        /// TODO: The following types will eventually be exported by a more relevant package.
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::System.Collections.Generic.IList<global::Vercel.FlagJSONValue?>? FlagJSONValueVariant3 { get; init; }

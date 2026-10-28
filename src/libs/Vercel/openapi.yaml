@@ -16897,8 +16897,7 @@
                                 "startedAt",
                                 "state"
                               ],
-                              "type": "object",
-                              "description": "Condensed check data. Retrieve individual check and check run data using api-checks v2 routes."
+                              "type": "object"
                             }
                           },
                           "required": [
@@ -17755,7 +17754,7 @@
                           ]
                         },
                         "resourceConfig": {
-                          "$ref": "#/components/schemas/AutoSDKShared752c0ef37987da35"
+                          "$ref": "#/components/schemas/AutoSDKShared693ab19349d28dd8"
                         },
                         "routes": {
                           "$ref": "#/components/schemas/AutoSDKShared27c528b47ce4ffd7"
@@ -19038,8 +19037,7 @@
                                 "startedAt",
                                 "state"
                               ],
-                              "type": "object",
-                              "description": "Condensed check data. Retrieve individual check and check run data using api-checks v2 routes."
+                              "type": "object"
                             }
                           },
                           "required": [
@@ -19896,7 +19894,7 @@
                           ]
                         },
                         "resourceConfig": {
-                          "$ref": "#/components/schemas/AutoSDKShared752c0ef37987da35"
+                          "$ref": "#/components/schemas/AutoSDKShared693ab19349d28dd8"
                         },
                         "routes": {
                           "$ref": "#/components/schemas/AutoSDKShared27c528b47ce4ffd7"
@@ -21221,8 +21219,7 @@
                             "startedAt",
                             "state"
                           ],
-                          "type": "object",
-                          "description": "Condensed check data. Retrieve individual check and check run data using api-checks v2 routes."
+                          "type": "object"
                         }
                       },
                       "required": [
@@ -22079,7 +22076,7 @@
                       ]
                     },
                     "resourceConfig": {
-                      "$ref": "#/components/schemas/AutoSDKShared752c0ef37987da35"
+                      "$ref": "#/components/schemas/AutoSDKShared693ab19349d28dd8"
                     },
                     "routes": {
                       "$ref": "#/components/schemas/AutoSDKShared27c528b47ce4ffd7"
@@ -99095,8 +99092,7 @@
                                   "startedAt",
                                   "state"
                                 ],
-                                "type": "object",
-                                "description": "Detailed information about v2 deployment checks. Includes information about blocked workflows in the deployment lifecycle."
+                                "type": "object"
                               }
                             },
                             "required": [
@@ -104583,8 +104579,7 @@
             "items": {
               "$ref": "#/components/schemas/FlagJSONValue"
             },
-            "type": "array",
-            "description": "TODO: The following types will eventually be exported by a more relevant package."
+            "type": "array"
           },
           {
             "additionalProperties": {
@@ -116436,120 +116431,6 @@
           }
         }
       },
-      "AutoSDKShared24b8e64f7956d798": {
-        "oneOf": [
-          {
-            "properties": {
-              "machineSelectionType": {
-                "type": "string",
-                "enum": [
-                  "elastic"
-                ],
-                "description": "The build ran on an elastic machine. Drives billing."
-              },
-              "purchaseType": {
-                "type": "string",
-                "enum": [
-                  "14cpu-28gb",
-                  "basic",
-                  "enhanced",
-                  "standard",
-                  "turbo"
-                ],
-                "description": "Machine type purchased for this build. `basic` is the 2vCPU tier, recorded so the build pipeline can detect a basic build without consulting the project."
-              },
-              "cores": {
-                "type": "number",
-                "description": "Build cores. Deployment creation sets the requested value; dispatch replaces it with the cores assigned by routing."
-              },
-              "defaultPurchaseType": {
-                "type": "string",
-                "enum": [
-                  "basic",
-                  "enhanced",
-                  "none",
-                  "standard"
-                ],
-                "description": "The build machine tier included with the customer's plan. For most customers this is standard; enhanced entitlements include enhanced, while `none` means every build is billed at its purchase type."
-              },
-              "memory": {
-                "type": "number",
-                "description": "Build memory, in MiB. Deployment creation sets the requested value; dispatch replaces it with the memory assigned by routing."
-              },
-              "selectionSource": {
-                "type": "string",
-                "enum": [
-                  "deployment-override",
-                  "elastic-algorithm",
-                  "plan-default",
-                  "project-setting",
-                  "team-entitlement",
-                  "team-setting"
-                ],
-                "description": "The setting which selected the build machine when the deployment was created. Frozen here so later project or team changes do not rewrite its history."
-              }
-            },
-            "required": [
-              "machineSelectionType"
-            ],
-            "type": "object",
-            "description": "Build machine configuration recorded for this deployment's build. See {@link DeploymentBuildMachine}. Distinct from the team/user `resourceConfig.buildMachine`, which only carries `default`."
-          },
-          {
-            "properties": {
-              "machineSelectionType": {
-                "type": "string",
-                "enum": [
-                  "fixed"
-                ],
-                "description": "The build ran on a fixed machine. Drives billing."
-              },
-              "purchaseType": {
-                "type": "string",
-                "enum": [
-                  "basic",
-                  "enhanced",
-                  "standard",
-                  "turbo"
-                ],
-                "description": "Machine type purchased for this build."
-              },
-              "cores": {
-                "type": "number",
-                "description": "Build cores. Deployment creation sets the requested value; dispatch replaces it with the cores assigned by routing."
-              },
-              "defaultPurchaseType": {
-                "type": "string",
-                "enum": [
-                  "basic",
-                  "enhanced",
-                  "none",
-                  "standard"
-                ],
-                "description": "The build machine tier included with the customer's plan. For most customers this is standard; enhanced entitlements include enhanced, while `none` means every build is billed at its purchase type."
-              },
-              "memory": {
-                "type": "number",
-                "description": "Build memory, in MiB. Deployment creation sets the requested value; dispatch replaces it with the memory assigned by routing."
-              },
-              "selectionSource": {
-                "type": "string",
-                "enum": [
-                  "deployment-override",
-                  "elastic-algorithm",
-                  "plan-default",
-                  "project-setting",
-                  "team-entitlement",
-                  "team-setting"
-                ],
-                "description": "The setting which selected the build machine when the deployment was created. Frozen here so later project or team changes do not rewrite its history."
-              }
-            },
-            "type": "object",
-            "description": "Build machine configuration recorded for this deployment's build. See {@link DeploymentBuildMachine}. Distinct from the team/user `resourceConfig.buildMachine`, which only carries `default`."
-          }
-        ]
-      },
       "AutoSDKShared258edac9bcd00342": {
         "properties": {
           "description": {
@@ -122926,6 +122807,118 @@
         ],
         "type": "object"
       },
+      "AutoSDKShared6120795acc1bdfb3": {
+        "oneOf": [
+          {
+            "properties": {
+              "machineSelectionType": {
+                "type": "string",
+                "enum": [
+                  "elastic"
+                ],
+                "description": "The build ran on an elastic machine. Drives billing."
+              },
+              "purchaseType": {
+                "type": "string",
+                "enum": [
+                  "14cpu-28gb",
+                  "basic",
+                  "enhanced",
+                  "standard",
+                  "turbo"
+                ],
+                "description": "Machine type purchased for this build. `basic` is the 2vCPU tier, recorded so the build pipeline can detect a basic build without consulting the project."
+              },
+              "cores": {
+                "type": "number",
+                "description": "Build cores. Deployment creation sets the requested value; dispatch replaces it with the cores assigned by routing."
+              },
+              "defaultPurchaseType": {
+                "type": "string",
+                "enum": [
+                  "basic",
+                  "enhanced",
+                  "none",
+                  "standard"
+                ],
+                "description": "The build machine tier included with the customer's plan. For most customers this is standard; enhanced entitlements include enhanced, while `none` means every build is billed at its purchase type."
+              },
+              "memory": {
+                "type": "number",
+                "description": "Build memory, in MiB. Deployment creation sets the requested value; dispatch replaces it with the memory assigned by routing."
+              },
+              "selectionSource": {
+                "type": "string",
+                "enum": [
+                  "deployment-override",
+                  "elastic-algorithm",
+                  "plan-default",
+                  "project-setting",
+                  "team-entitlement",
+                  "team-setting"
+                ],
+                "description": "The setting which selected the build machine when the deployment was created. Frozen here so later project or team changes do not rewrite its history."
+              }
+            },
+            "required": [
+              "machineSelectionType"
+            ],
+            "type": "object"
+          },
+          {
+            "properties": {
+              "machineSelectionType": {
+                "type": "string",
+                "enum": [
+                  "fixed"
+                ],
+                "description": "The build ran on a fixed machine. Drives billing."
+              },
+              "purchaseType": {
+                "type": "string",
+                "enum": [
+                  "basic",
+                  "enhanced",
+                  "standard",
+                  "turbo"
+                ],
+                "description": "Machine type purchased for this build."
+              },
+              "cores": {
+                "type": "number",
+                "description": "Build cores. Deployment creation sets the requested value; dispatch replaces it with the cores assigned by routing."
+              },
+              "defaultPurchaseType": {
+                "type": "string",
+                "enum": [
+                  "basic",
+                  "enhanced",
+                  "none",
+                  "standard"
+                ],
+                "description": "The build machine tier included with the customer's plan. For most customers this is standard; enhanced entitlements include enhanced, while `none` means every build is billed at its purchase type."
+              },
+              "memory": {
+                "type": "number",
+                "description": "Build memory, in MiB. Deployment creation sets the requested value; dispatch replaces it with the memory assigned by routing."
+              },
+              "selectionSource": {
+                "type": "string",
+                "enum": [
+                  "deployment-override",
+                  "elastic-algorithm",
+                  "plan-default",
+                  "project-setting",
+                  "team-entitlement",
+                  "team-setting"
+                ],
+                "description": "The setting which selected the build machine when the deployment was created. Frozen here so later project or team changes do not rewrite its history."
+              }
+            },
+            "type": "object"
+          }
+        ]
+      },
       "AutoSDKShared62800e8e12d3c345": {
         "properties": {
           "destination": {
@@ -123415,6 +123408,14 @@
           "updatedAt",
           "url"
         ],
+        "type": "object"
+      },
+      "AutoSDKShared693ab19349d28dd8": {
+        "properties": {
+          "buildMachine": {
+            "$ref": "#/components/schemas/AutoSDKShared6120795acc1bdfb3"
+          }
+        },
         "type": "object"
       },
       "AutoSDKShared6a7dd045a7a1bf61": {
@@ -124536,14 +124537,6 @@
         "items": {
           "$ref": "#/components/schemas/AutoSDKShared3fd5b0acfe2f4f54"
         }
-      },
-      "AutoSDKShared752c0ef37987da35": {
-        "properties": {
-          "buildMachine": {
-            "$ref": "#/components/schemas/AutoSDKShared24b8e64f7956d798"
-          }
-        },
-        "type": "object"
       },
       "AutoSDKShared76d2d4f0d6cc3e47": {
         "properties": {
