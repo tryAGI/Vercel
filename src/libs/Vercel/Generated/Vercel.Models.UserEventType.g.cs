@@ -500,6 +500,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        ConnectBrandingUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         ConnectCancelMcpEventSubscription,
         /// <summary>
         ///
@@ -3109,6 +3113,7 @@ namespace Vercel
                 UserEventType.ConnectAttachProject => "connect-attach-project",
                 UserEventType.ConnectBitbucket => "connect-bitbucket",
                 UserEventType.ConnectBitbucketApp => "connect-bitbucket-app",
+                UserEventType.ConnectBrandingUpdated => "connect-branding-updated",
                 UserEventType.ConnectCancelMcpEventSubscription => "connect-cancel-mcp-event-subscription",
                 UserEventType.ConnectConfigurationCreated => "connect-configuration-created",
                 UserEventType.ConnectConfigurationDeleted => "connect-configuration-deleted",
@@ -3860,6 +3865,7 @@ namespace Vercel
                 "connect-attach-project" => UserEventType.ConnectAttachProject,
                 "connect-bitbucket" => UserEventType.ConnectBitbucket,
                 "connect-bitbucket-app" => UserEventType.ConnectBitbucketApp,
+                "connect-branding-updated" => UserEventType.ConnectBrandingUpdated,
                 "connect-cancel-mcp-event-subscription" => UserEventType.ConnectCancelMcpEventSubscription,
                 "connect-configuration-created" => UserEventType.ConnectConfigurationCreated,
                 "connect-configuration-deleted" => UserEventType.ConnectConfigurationDeleted,
