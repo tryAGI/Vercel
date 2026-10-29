@@ -2495,6 +2495,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        TeamDataCacheUserDisabledUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         TeamDefaultBuildMachineUpdated,
         /// <summary>
         ///
@@ -3611,6 +3615,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.TeamAgentBillingMigrationDecisionChanged => "team-agent-billing-migration-decision-changed",
                 ListEventTypeReplacedByItem.TeamAvatarUpdate => "team-avatar-update",
                 ListEventTypeReplacedByItem.TeamCollaborationSettingsUpdated => "team-collaboration-settings-updated",
+                ListEventTypeReplacedByItem.TeamDataCacheUserDisabledUpdated => "team-data-cache-user-disabled-updated",
                 ListEventTypeReplacedByItem.TeamDefaultBuildMachineUpdated => "team-default-build-machine-updated",
                 ListEventTypeReplacedByItem.TeamDefaultPassportUpdated => "team-default-passport-updated",
                 ListEventTypeReplacedByItem.TeamDelete => "team-delete",
@@ -4363,6 +4368,7 @@ namespace Vercel
                 "team-agent-billing-migration-decision-changed" => ListEventTypeReplacedByItem.TeamAgentBillingMigrationDecisionChanged,
                 "team-avatar-update" => ListEventTypeReplacedByItem.TeamAvatarUpdate,
                 "team-collaboration-settings-updated" => ListEventTypeReplacedByItem.TeamCollaborationSettingsUpdated,
+                "team-data-cache-user-disabled-updated" => ListEventTypeReplacedByItem.TeamDataCacheUserDisabledUpdated,
                 "team-default-build-machine-updated" => ListEventTypeReplacedByItem.TeamDefaultBuildMachineUpdated,
                 "team-default-passport-updated" => ListEventTypeReplacedByItem.TeamDefaultPassportUpdated,
                 "team-delete" => ListEventTypeReplacedByItem.TeamDelete,

@@ -13160,6 +13160,9 @@
               }
             }
           },
+          "503": {
+            "description": ""
+          },
           "504": {
             "description": ""
           }
@@ -13463,6 +13466,9 @@
             }
           },
           "501": {
+            "description": ""
+          },
+          "503": {
             "description": ""
           },
           "504": {
@@ -13978,6 +13984,9 @@
             }
           },
           "501": {
+            "description": ""
+          },
+          "503": {
             "description": ""
           },
           "504": {
@@ -106864,6 +106873,7 @@
               "team-agent-billing-migration-decision-changed",
               "team-avatar-update",
               "team-collaboration-settings-updated",
+              "team-data-cache-user-disabled-updated",
               "team-default-build-machine-updated",
               "team-default-passport-updated",
               "team-delete",
@@ -107826,6 +107836,7 @@
               "team-agent-billing-migration-decision-changed",
               "team-avatar-update",
               "team-collaboration-settings-updated",
+              "team-data-cache-user-disabled-updated",
               "team-default-build-machine-updated",
               "team-default-passport-updated",
               "team-delete",
@@ -108576,6 +108587,7 @@
                 "team-agent-billing-migration-decision-changed",
                 "team-avatar-update",
                 "team-collaboration-settings-updated",
+                "team-data-cache-user-disabled-updated",
                 "team-default-build-machine-updated",
                 "team-default-passport-updated",
                 "team-delete",
