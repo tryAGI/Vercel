@@ -184,14 +184,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("transferRequest")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.GetConfigurationResponseVariant1TransferRequestVariant1, global::Vercel.GetConfigurationResponseVariant1TransferRequestVariant2>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<global::Vercel.GetConfigurationResponseVariant1TransferRequestVariant1, global::Vercel.GetConfigurationResponseVariant1TransferRequestVariant2> TransferRequest { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetConfigurationResponseVariant1TypeJsonConverter))]
         public global::Vercel.GetConfigurationResponseVariant1Type Type { get; set; }
@@ -252,7 +244,6 @@ namespace Vercel
         /// The slug of the integration the configuration is created for.<br/>
         /// Example: slack
         /// </param>
-        /// <param name="transferRequest"></param>
         /// <param name="updatedAt">
         /// A timestamp that tells you when the configuration was updated.<br/>
         /// Example: 1558531915505L
@@ -319,7 +310,6 @@ namespace Vercel
             global::Vercel.GetConfigurationResponseVariant1ProjectSelection projectSelection,
             global::System.Collections.Generic.IList<string> scopes,
             string slug,
-            global::Vercel.OneOf<global::Vercel.GetConfigurationResponseVariant1TransferRequestVariant1, global::Vercel.GetConfigurationResponseVariant1TransferRequestVariant2> transferRequest,
             double updatedAt,
             string userId,
             string? acceptedPoliciesInheritedFromInstallationId,
@@ -360,7 +350,6 @@ namespace Vercel
             this.Source = source;
             this.Status = status;
             this.TeamId = teamId;
-            this.TransferRequest = transferRequest;
             this.Type = type;
             this.UpdatedAt = updatedAt;
             this.UserId = userId ?? throw new global::System.ArgumentNullException(nameof(userId));

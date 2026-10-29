@@ -1020,6 +1020,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        FirewallConditionalBypassUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         FirewallConfigModified,
         /// <summary>
         ///
@@ -2664,6 +2668,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        TeamRuntimeCacheUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         TeamSamlEnforced,
         /// <summary>
         ///
@@ -2897,6 +2905,10 @@ namespace Vercel
         ///
         /// </summary>
         VercelAgentElevatedPermissionsRequested,
+        /// <summary>
+        ///
+        /// </summary>
+        VercelAgentSecurityFindingCreated,
         /// <summary>
         ///
         /// </summary>
@@ -3247,6 +3259,7 @@ namespace Vercel
                 ListEventTypeName.FirewallBypassDeleted => "firewall-bypass-deleted",
                 ListEventTypeName.FirewallConditionalBypassCreated => "firewall-conditional-bypass-created",
                 ListEventTypeName.FirewallConditionalBypassDeleted => "firewall-conditional-bypass-deleted",
+                ListEventTypeName.FirewallConditionalBypassUpdated => "firewall-conditional-bypass-updated",
                 ListEventTypeName.FirewallConfigModified => "firewall-config-modified",
                 ListEventTypeName.FirewallConfigPromoted => "firewall-config-promoted",
                 ListEventTypeName.FirewallConfigRemoved => "firewall-config-removed",
@@ -3658,6 +3671,7 @@ namespace Vercel
                 ListEventTypeName.TeamProgramEnrollmentChanged => "team-program-enrollment-changed",
                 ListEventTypeName.TeamRemoteCachingPurge => "team-remote-caching-purge",
                 ListEventTypeName.TeamRemoteCachingUpdate => "team-remote-caching-update",
+                ListEventTypeName.TeamRuntimeCacheUpdated => "team-runtime-cache-updated",
                 ListEventTypeName.TeamSamlEnforced => "team-saml-enforced",
                 ListEventTypeName.TeamSamlRoles => "team-saml-roles",
                 ListEventTypeName.TeamSlugUpdate => "team-slug-update",
@@ -3717,6 +3731,7 @@ namespace Vercel
                 ListEventTypeName.VcrRepositoryVisibilityChanged => "vcr-repository-visibility-changed",
                 ListEventTypeName.VercelAgentElevatedPermissionsApproved => "vercel-agent-elevated-permissions-approved",
                 ListEventTypeName.VercelAgentElevatedPermissionsRequested => "vercel-agent-elevated-permissions-requested",
+                ListEventTypeName.VercelAgentSecurityFindingCreated => "vercel-agent-security-finding-created",
                 ListEventTypeName.VercelAgentSessionCreated => "vercel-agent-session-created",
                 ListEventTypeName.VercelAgentTeamTrialCreditsApplied => "vercel-agent-team-trial-credits-applied",
                 ListEventTypeName.VercelAppInstallationRequestDismissed => "vercel-app-installation-request-dismissed",
@@ -4000,6 +4015,7 @@ namespace Vercel
                 "firewall-bypass-deleted" => ListEventTypeName.FirewallBypassDeleted,
                 "firewall-conditional-bypass-created" => ListEventTypeName.FirewallConditionalBypassCreated,
                 "firewall-conditional-bypass-deleted" => ListEventTypeName.FirewallConditionalBypassDeleted,
+                "firewall-conditional-bypass-updated" => ListEventTypeName.FirewallConditionalBypassUpdated,
                 "firewall-config-modified" => ListEventTypeName.FirewallConfigModified,
                 "firewall-config-promoted" => ListEventTypeName.FirewallConfigPromoted,
                 "firewall-config-removed" => ListEventTypeName.FirewallConfigRemoved,
@@ -4411,6 +4427,7 @@ namespace Vercel
                 "team-program-enrollment-changed" => ListEventTypeName.TeamProgramEnrollmentChanged,
                 "team-remote-caching-purge" => ListEventTypeName.TeamRemoteCachingPurge,
                 "team-remote-caching-update" => ListEventTypeName.TeamRemoteCachingUpdate,
+                "team-runtime-cache-updated" => ListEventTypeName.TeamRuntimeCacheUpdated,
                 "team-saml-enforced" => ListEventTypeName.TeamSamlEnforced,
                 "team-saml-roles" => ListEventTypeName.TeamSamlRoles,
                 "team-slug-update" => ListEventTypeName.TeamSlugUpdate,
@@ -4470,6 +4487,7 @@ namespace Vercel
                 "vcr-repository-visibility-changed" => ListEventTypeName.VcrRepositoryVisibilityChanged,
                 "vercel-agent-elevated-permissions-approved" => ListEventTypeName.VercelAgentElevatedPermissionsApproved,
                 "vercel-agent-elevated-permissions-requested" => ListEventTypeName.VercelAgentElevatedPermissionsRequested,
+                "vercel-agent-security-finding-created" => ListEventTypeName.VercelAgentSecurityFindingCreated,
                 "vercel-agent-session-created" => ListEventTypeName.VercelAgentSessionCreated,
                 "vercel-agent-team-trial-credits-applied" => ListEventTypeName.VercelAgentTeamTrialCreditsApplied,
                 "vercel-app-installation-request-dismissed" => ListEventTypeName.VercelAppInstallationRequestDismissed,
