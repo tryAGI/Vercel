@@ -43654,178 +43654,6 @@
                           "description": "When the configuration was created for a team, this will show the ID of the team.",
                           "example": "team_nLlpyC6RE1qxydlFKbrxDlud"
                         },
-                        "transferRequest": {
-                          "oneOf": [
-                            {
-                              "properties": {
-                                "approvedAt": {
-                                  "type": "number"
-                                },
-                                "approvedBy": {
-                                  "type": "string"
-                                },
-                                "authorizationId": {
-                                  "type": "string"
-                                },
-                                "billingPlan": {
-                                  "properties": {
-                                    "description": {
-                                      "type": "string"
-                                    },
-                                    "id": {
-                                      "type": "string"
-                                    },
-                                    "name": {
-                                      "type": "string"
-                                    },
-                                    "paymentMethodRequired": {
-                                      "type": "boolean",
-                                      "enum": [
-                                        false,
-                                        true
-                                      ]
-                                    },
-                                    "preauthorizationAmount": {
-                                      "type": "number"
-                                    },
-                                    "scope": {
-                                      "type": "string",
-                                      "enum": [
-                                        "installation",
-                                        "resource"
-                                      ]
-                                    },
-                                    "type": {
-                                      "type": "string",
-                                      "enum": [
-                                        "prepayment",
-                                        "subscription"
-                                      ]
-                                    }
-                                  },
-                                  "required": [
-                                    "description",
-                                    "id",
-                                    "name",
-                                    "type"
-                                  ],
-                                  "type": "object"
-                                },
-                                "createdAt": {
-                                  "type": "number"
-                                },
-                                "discardedAt": {
-                                  "type": "number"
-                                },
-                                "discardedBy": {
-                                  "type": "string"
-                                },
-                                "expiresAt": {
-                                  "type": "number"
-                                },
-                                "kind": {
-                                  "type": "string",
-                                  "enum": [
-                                    "transfer-to-marketplace"
-                                  ]
-                                },
-                                "metadata": {
-                                  "additionalProperties": true,
-                                  "type": "object"
-                                },
-                                "requester": {
-                                  "properties": {
-                                    "email": {
-                                      "type": "string"
-                                    },
-                                    "name": {
-                                      "type": "string"
-                                    }
-                                  },
-                                  "required": [
-                                    "name"
-                                  ],
-                                  "type": "object"
-                                },
-                                "requestId": {
-                                  "type": "string"
-                                },
-                                "transferId": {
-                                  "type": "string"
-                                }
-                              },
-                              "required": [
-                                "createdAt",
-                                "expiresAt",
-                                "kind",
-                                "requestId",
-                                "requester",
-                                "transferId"
-                              ],
-                              "type": "object"
-                            },
-                            {
-                              "properties": {
-                                "approvedAt": {
-                                  "type": "number"
-                                },
-                                "approvedBy": {
-                                  "type": "string"
-                                },
-                                "authorizationId": {
-                                  "type": "string"
-                                },
-                                "createdAt": {
-                                  "type": "number"
-                                },
-                                "discardedAt": {
-                                  "type": "number"
-                                },
-                                "discardedBy": {
-                                  "type": "string"
-                                },
-                                "expiresAt": {
-                                  "type": "number"
-                                },
-                                "kind": {
-                                  "type": "string",
-                                  "enum": [
-                                    "transfer-from-marketplace"
-                                  ]
-                                },
-                                "requester": {
-                                  "properties": {
-                                    "email": {
-                                      "type": "string"
-                                    },
-                                    "name": {
-                                      "type": "string"
-                                    }
-                                  },
-                                  "required": [
-                                    "name"
-                                  ],
-                                  "type": "object"
-                                },
-                                "requestId": {
-                                  "type": "string"
-                                },
-                                "transferId": {
-                                  "type": "string"
-                                }
-                              },
-                              "required": [
-                                "createdAt",
-                                "expiresAt",
-                                "kind",
-                                "requestId",
-                                "requester",
-                                "transferId"
-                              ],
-                              "type": "object"
-                            }
-                          ]
-                        },
                         "type": {
                           "type": "string",
                           "enum": [
@@ -43852,7 +43680,6 @@
                         "projectSelection",
                         "scopes",
                         "slug",
-                        "transferRequest",
                         "type",
                         "updatedAt",
                         "userId"
@@ -78266,6 +78093,389 @@
           }
         }
       },
+      "put": {
+        "description": "Update a conditional firewall bypass rule for a project domain. Replaces conditions and the note for the domain's existing rule. Omitting `note` clears it. The rule ID, domain, creator, and creation time are preserved. Missing or deleted rules are not created.",
+        "operationId": "updateConditionalBypass",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Update conditional firewall bypass",
+        "tags": [
+          "security"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "condition": {
+                      "type": "string"
+                    },
+                    "conditionGroup": {
+                      "items": {
+                        "properties": {
+                          "conditions": {
+                            "items": {
+                              "properties": {
+                                "key": {
+                                  "type": "string"
+                                },
+                                "neg": {
+                                  "type": "boolean",
+                                  "enum": [
+                                    false,
+                                    true
+                                  ]
+                                },
+                                "op": {
+                                  "type": "string",
+                                  "enum": [
+                                    "eq",
+                                    "ex",
+                                    "gt",
+                                    "gte",
+                                    "inc",
+                                    "list",
+                                    "lt",
+                                    "lte",
+                                    "neq",
+                                    "nex",
+                                    "ninc",
+                                    "pre",
+                                    "re",
+                                    "sub",
+                                    "suf"
+                                  ]
+                                },
+                                "type": {
+                                  "type": "string",
+                                  "enum": [
+                                    "bot_category",
+                                    "bot_name",
+                                    "bot_protection",
+                                    "bot_status",
+                                    "cookie",
+                                    "domain_environment",
+                                    "environment",
+                                    "geo_as_number",
+                                    "geo_city",
+                                    "geo_continent",
+                                    "geo_country",
+                                    "geo_country_region",
+                                    "header",
+                                    "host",
+                                    "ip_address",
+                                    "ja3_digest",
+                                    "ja4_digest",
+                                    "method",
+                                    "path",
+                                    "protocol",
+                                    "query",
+                                    "rate_limit_api_id",
+                                    "raw_path",
+                                    "region",
+                                    "response_code",
+                                    "route",
+                                    "ruleset",
+                                    "scheme",
+                                    "server_action",
+                                    "shared_condition",
+                                    "target_path",
+                                    "traffic_source",
+                                    "trusted_source",
+                                    "user_agent"
+                                  ]
+                                },
+                                "value": {
+                                  "oneOf": [
+                                    {
+                                      "type": "string"
+                                    },
+                                    {
+                                      "type": "number"
+                                    },
+                                    {
+                                      "items": {
+                                        "type": "string"
+                                      },
+                                      "type": "array"
+                                    }
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "op",
+                                "type"
+                              ],
+                              "type": "object"
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "required": [
+                          "conditions"
+                        ],
+                        "type": "object"
+                      },
+                      "type": "array"
+                    },
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "domain": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "note": {
+                      "type": "string"
+                    },
+                    "projectId": {
+                      "type": "string"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "condition",
+                    "conditionGroup",
+                    "createdAt",
+                    "domain",
+                    "id",
+                    "projectId",
+                    "updatedAt"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "projectId",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "slug",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "domain",
+                  "conditionGroup"
+                ],
+                "properties": {
+                  "domain": {
+                    "type": "string"
+                  },
+                  "conditionGroup": {
+                    "type": "array",
+                    "minItems": 1,
+                    "maxItems": 25,
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "conditions"
+                      ],
+                      "properties": {
+                        "conditions": {
+                          "type": "array",
+                          "minItems": 1,
+                          "maxItems": 65,
+                          "items": {
+                            "oneOf": [
+                              {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "type",
+                                  "op",
+                                  "value"
+                                ],
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "user_agent"
+                                    ]
+                                  },
+                                  "op": {
+                                    "type": "string",
+                                    "enum": [
+                                      "eq",
+                                      "pre",
+                                      "suf",
+                                      "sub"
+                                    ]
+                                  },
+                                  "value": {
+                                    "type": "string",
+                                    "maxLength": 500
+                                  },
+                                  "key": {
+                                    "type": "string",
+                                    "enum": [
+                                      "user-agent"
+                                    ]
+                                  }
+                                }
+                              },
+                              {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "type",
+                                  "op",
+                                  "value"
+                                ],
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "path"
+                                    ]
+                                  },
+                                  "op": {
+                                    "type": "string",
+                                    "enum": [
+                                      "eq",
+                                      "pre",
+                                      "suf",
+                                      "sub"
+                                    ]
+                                  },
+                                  "value": {
+                                    "type": "string",
+                                    "maxLength": 500
+                                  }
+                                }
+                              },
+                              {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "type",
+                                  "op",
+                                  "key",
+                                  "value"
+                                ],
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "header"
+                                    ]
+                                  },
+                                  "op": {
+                                    "type": "string",
+                                    "enum": [
+                                      "eq",
+                                      "pre",
+                                      "suf",
+                                      "sub"
+                                    ]
+                                  },
+                                  "key": {
+                                    "type": "string",
+                                    "maxLength": 128,
+                                    "pattern": "^[!#$%&'*+.^_`|~0-9A-Za-z-]+$"
+                                  },
+                                  "value": {
+                                    "type": "string",
+                                    "maxLength": 500
+                                  }
+                                }
+                              },
+                              {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "required": [
+                                  "type",
+                                  "op",
+                                  "key"
+                                ],
+                                "properties": {
+                                  "type": {
+                                    "type": "string",
+                                    "enum": [
+                                      "header"
+                                    ]
+                                  },
+                                  "op": {
+                                    "type": "string",
+                                    "enum": [
+                                      "ex"
+                                    ]
+                                  },
+                                  "key": {
+                                    "type": "string",
+                                    "maxLength": 128,
+                                    "pattern": "^[!#$%&'*+.^_`|~0-9A-Za-z-]+$"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "note": {
+                    "type": "string",
+                    "maxLength": 500
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
       "delete": {
         "description": "Delete a conditional firewall bypass rule from a project domain.",
         "operationId": "deleteConditionalBypass",
@@ -106524,6 +106734,7 @@
               "firewall-bypass-deleted",
               "firewall-conditional-bypass-created",
               "firewall-conditional-bypass-deleted",
+              "firewall-conditional-bypass-updated",
               "firewall-config-modified",
               "firewall-config-promoted",
               "firewall-config-removed",
@@ -106935,6 +107146,7 @@
               "team-program-enrollment-changed",
               "team-remote-caching-purge",
               "team-remote-caching-update",
+              "team-runtime-cache-updated",
               "team-saml-enforced",
               "team-saml-roles",
               "team-slug-update",
@@ -106994,6 +107206,7 @@
               "vcr-repository-visibility-changed",
               "vercel-agent-elevated-permissions-approved",
               "vercel-agent-elevated-permissions-requested",
+              "vercel-agent-security-finding-created",
               "vercel-agent-session-created",
               "vercel-agent-team-trial-credits-applied",
               "vercel-app-installation-request-dismissed",
@@ -107487,6 +107700,7 @@
               "firewall-bypass-deleted",
               "firewall-conditional-bypass-created",
               "firewall-conditional-bypass-deleted",
+              "firewall-conditional-bypass-updated",
               "firewall-config-modified",
               "firewall-config-promoted",
               "firewall-config-removed",
@@ -107898,6 +108112,7 @@
               "team-program-enrollment-changed",
               "team-remote-caching-purge",
               "team-remote-caching-update",
+              "team-runtime-cache-updated",
               "team-saml-enforced",
               "team-saml-roles",
               "team-slug-update",
@@ -107957,6 +108172,7 @@
               "vcr-repository-visibility-changed",
               "vercel-agent-elevated-permissions-approved",
               "vercel-agent-elevated-permissions-requested",
+              "vercel-agent-security-finding-created",
               "vercel-agent-session-created",
               "vercel-agent-team-trial-credits-applied",
               "vercel-app-installation-request-dismissed",
@@ -108238,6 +108454,7 @@
                 "firewall-bypass-deleted",
                 "firewall-conditional-bypass-created",
                 "firewall-conditional-bypass-deleted",
+                "firewall-conditional-bypass-updated",
                 "firewall-config-modified",
                 "firewall-config-promoted",
                 "firewall-config-removed",
@@ -108649,6 +108866,7 @@
                 "team-program-enrollment-changed",
                 "team-remote-caching-purge",
                 "team-remote-caching-update",
+                "team-runtime-cache-updated",
                 "team-saml-enforced",
                 "team-saml-roles",
                 "team-slug-update",
@@ -108708,6 +108926,7 @@
                 "vcr-repository-visibility-changed",
                 "vercel-agent-elevated-permissions-approved",
                 "vercel-agent-elevated-permissions-requested",
+                "vercel-agent-security-finding-created",
                 "vercel-agent-session-created",
                 "vercel-agent-team-trial-credits-applied",
                 "vercel-app-installation-request-dismissed",
