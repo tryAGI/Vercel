@@ -80,6 +80,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("rotatedAt")]
+        public double? RotatedAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("updatedAt")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required double UpdatedAt { get; set; }
@@ -112,6 +118,7 @@ namespace Vercel
         /// <param name="updatedAt"></param>
         /// <param name="zeroDataRetention"></param>
         /// <param name="credential"></param>
+        /// <param name="rotatedAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -127,7 +134,8 @@ namespace Vercel
             string providerSlug,
             double updatedAt,
             bool zeroDataRetention,
-            string? credential)
+            string? credential,
+            double? rotatedAt)
         {
             this.Active = active;
             this.CreatedAt = createdAt;
@@ -139,6 +147,7 @@ namespace Vercel
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.OwnerId = ownerId ?? throw new global::System.ArgumentNullException(nameof(ownerId));
             this.ProviderSlug = providerSlug ?? throw new global::System.ArgumentNullException(nameof(providerSlug));
+            this.RotatedAt = rotatedAt;
             this.UpdatedAt = updatedAt;
             this.ZeroDataRetention = zeroDataRetention;
         }
