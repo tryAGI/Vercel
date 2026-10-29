@@ -1816,6 +1816,10 @@
                     "providerSlug": {
                       "type": "string"
                     },
+                    "rotatedAt": {
+                      "nullable": true,
+                      "type": "number"
+                    },
                     "updatedAt": {
                       "type": "number"
                     },
@@ -1835,6 +1839,7 @@
                     "name",
                     "ownerId",
                     "providerSlug",
+                    "rotatedAt",
                     "updatedAt",
                     "zeroDataRetention"
                   ],
@@ -2029,6 +2034,10 @@
                           "providerSlug": {
                             "type": "string"
                           },
+                          "rotatedAt": {
+                            "nullable": true,
+                            "type": "number"
+                          },
                           "updatedAt": {
                             "type": "number"
                           },
@@ -2051,6 +2060,7 @@
                           "name",
                           "ownerId",
                           "providerSlug",
+                          "rotatedAt",
                           "updatedAt",
                           "zeroDataRetention"
                         ],
@@ -2213,6 +2223,10 @@
                     "providerSlug": {
                       "type": "string"
                     },
+                    "rotatedAt": {
+                      "nullable": true,
+                      "type": "number"
+                    },
                     "updatedAt": {
                       "type": "number"
                     },
@@ -2232,6 +2246,7 @@
                     "name",
                     "ownerId",
                     "providerSlug",
+                    "rotatedAt",
                     "updatedAt",
                     "zeroDataRetention"
                   ],
@@ -2342,6 +2357,10 @@
                     "providerSlug": {
                       "type": "string"
                     },
+                    "rotatedAt": {
+                      "nullable": true,
+                      "type": "number"
+                    },
                     "updatedAt": {
                       "type": "number"
                     },
@@ -2361,6 +2380,7 @@
                     "name",
                     "ownerId",
                     "providerSlug",
+                    "rotatedAt",
                     "updatedAt",
                     "zeroDataRetention"
                   ],
