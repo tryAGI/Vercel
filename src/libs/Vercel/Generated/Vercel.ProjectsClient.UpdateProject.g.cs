@@ -867,6 +867,12 @@ namespace Vercel
         /// <param name="tracing">
         /// Tracing configuration for this project
         /// </param>
+        /// <param name="gitComments">
+        /// Opt-in to Git pull request and commit comments on the project level. Replaces `github.silent`.
+        /// </param>
+        /// <param name="gitProviderOptions">
+        /// Miscellaneous options related to how this projects interacts with the linked git source.
+        /// </param>
         /// <param name="oidcTokenConfig">
         /// OpenID Connect JSON Web Token generation configuration.
         /// </param>
@@ -937,6 +943,8 @@ namespace Vercel
             bool? enableExternalRewriteCaching = default,
             global::Vercel.UpdateProjectRequestStaticIps? staticIps = default,
             global::Vercel.UpdateProjectRequestTracing? tracing = default,
+            global::Vercel.UpdateProjectRequestGitComments? gitComments = default,
+            global::Vercel.UpdateProjectRequestGitProviderOptions? gitProviderOptions = default,
             global::Vercel.UpdateProjectRequestOidcTokenConfig? oidcTokenConfig = default,
             global::Vercel.UpdateProjectRequestPasswordProtection? passwordProtection = default,
             global::Vercel.UpdateProjectRequestPassport? passport = default,
@@ -985,6 +993,8 @@ namespace Vercel
                 EnableExternalRewriteCaching = enableExternalRewriteCaching,
                 StaticIps = staticIps,
                 Tracing = tracing,
+                GitComments = gitComments,
+                GitProviderOptions = gitProviderOptions,
                 OidcTokenConfig = oidcTokenConfig,
                 PasswordProtection = passwordProtection,
                 Passport = passport,
