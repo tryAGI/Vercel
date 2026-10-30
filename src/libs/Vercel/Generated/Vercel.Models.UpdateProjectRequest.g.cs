@@ -221,6 +221,18 @@ namespace Vercel
         public global::Vercel.UpdateProjectRequestTracing? Tracing { get; set; }
 
         /// <summary>
+        /// Opt-in to Git pull request and commit comments on the project level. Replaces `github.silent`.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitComments")]
+        public global::Vercel.UpdateProjectRequestGitComments? GitComments { get; set; }
+
+        /// <summary>
+        /// Miscellaneous options related to how this projects interacts with the linked git source.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gitProviderOptions")]
+        public global::Vercel.UpdateProjectRequestGitProviderOptions? GitProviderOptions { get; set; }
+
+        /// <summary>
         /// OpenID Connect JSON Web Token generation configuration.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("oidcTokenConfig")]
@@ -381,6 +393,12 @@ namespace Vercel
         /// <param name="tracing">
         /// Tracing configuration for this project
         /// </param>
+        /// <param name="gitComments">
+        /// Opt-in to Git pull request and commit comments on the project level. Replaces `github.silent`.
+        /// </param>
+        /// <param name="gitProviderOptions">
+        /// Miscellaneous options related to how this projects interacts with the linked git source.
+        /// </param>
         /// <param name="oidcTokenConfig">
         /// OpenID Connect JSON Web Token generation configuration.
         /// </param>
@@ -448,6 +466,8 @@ namespace Vercel
             bool? enableExternalRewriteCaching,
             global::Vercel.UpdateProjectRequestStaticIps? staticIps,
             global::Vercel.UpdateProjectRequestTracing? tracing,
+            global::Vercel.UpdateProjectRequestGitComments? gitComments,
+            global::Vercel.UpdateProjectRequestGitProviderOptions? gitProviderOptions,
             global::Vercel.UpdateProjectRequestOidcTokenConfig? oidcTokenConfig,
             global::Vercel.UpdateProjectRequestPasswordProtection? passwordProtection,
             global::Vercel.UpdateProjectRequestPassport? passport,
@@ -492,6 +512,8 @@ namespace Vercel
             this.EnableExternalRewriteCaching = enableExternalRewriteCaching;
             this.StaticIps = staticIps;
             this.Tracing = tracing;
+            this.GitComments = gitComments;
+            this.GitProviderOptions = gitProviderOptions;
             this.OidcTokenConfig = oidcTokenConfig;
             this.PasswordProtection = passwordProtection;
             this.Passport = passport;

@@ -90,6 +90,12 @@ namespace Vercel
         public global::Vercel.ConnectConnectorUpdateDataTypeSlackRichPreviews? RichPreviews { get; set; }
 
         /// <summary>
+        /// Code channel settings for the managed Slack app. Updates preserve omitted settings.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("codeChannels")]
+        public global::Vercel.ConnectConnectorUpdateDataTypeSlackCodeChannels? CodeChannels { get; set; }
+
+        /// <summary>
         /// Additional provider metadata stored with the connector.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("extras")]
@@ -146,6 +152,9 @@ namespace Vercel
         /// <param name="richPreviews">
         /// Work Object preview settings for the managed Slack app. Updates preserve omitted settings.
         /// </param>
+        /// <param name="codeChannels">
+        /// Code channel settings for the managed Slack app. Updates preserve omitted settings.
+        /// </param>
         /// <param name="extras">
         /// Additional provider metadata stored with the connector.
         /// </param>
@@ -166,6 +175,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ConnectConnectorUpdateDataTypeSlackShortcut>? shortcuts,
             global::Vercel.ConnectConnectorUpdateDataTypeSlackAppHome? appHome,
             global::Vercel.ConnectConnectorUpdateDataTypeSlackRichPreviews? richPreviews,
+            global::Vercel.ConnectConnectorUpdateDataTypeSlackCodeChannels? codeChannels,
             object? extras)
         {
             this.AppId = appId;
@@ -181,6 +191,7 @@ namespace Vercel
             this.Shortcuts = shortcuts;
             this.AppHome = appHome;
             this.RichPreviews = richPreviews;
+            this.CodeChannels = codeChannels;
             this.Extras = extras;
         }
 

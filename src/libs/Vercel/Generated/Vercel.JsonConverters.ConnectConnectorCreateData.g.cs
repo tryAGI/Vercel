@@ -177,6 +177,8 @@ namespace Vercel.JsonConverters
             if (__jsonProps.Contains("botScopes")) __score7++;
             if (__jsonProps.Contains("clientId")) __score7++;
             if (__jsonProps.Contains("clientSecret")) __score7++;
+            if (__jsonProps.Contains("codeChannels")) __score7++;
+            if (__jsonProps.Contains("codeChannels.enabled")) __score7++;
             if (__jsonProps.Contains("extras")) __score7++;
             if (__jsonProps.Contains("richPreviews")) __score7++;
             if (__jsonProps.Contains("richPreviews.entityTypes")) __score7++;
