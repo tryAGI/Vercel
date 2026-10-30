@@ -41800,11 +41800,11 @@
                   "eod": {
                     "type": "string",
                     "format": "date-time",
-                    "description": "End of Day, the UTC datetime for when the end of the billing/usage day is in UTC time. This tells us which day the usage data is for, and also allows for your \"end of day\" to be different from UTC 00:00:00. eod must be within the period dates, and cannot be older than 24h earlier from our server's current time."
+                    "description": "End of Day, the UTC datetime for when the end of the billing/usage day is in UTC time. This tells us which day the usage data is for, and also allows for your \"end of day\" to be different from UTC 00:00:00. eod must be within the period dates, and cannot be older than 30 days earlier from our server's current time."
                   },
                   "period": {
                     "type": "object",
-                    "description": "Period for the billing cycle. The period end date cannot be older than 24 hours earlier than our current server's time.",
+                    "description": "Period for the billing cycle. The period end date cannot be older than 30 days earlier than our current server's time.",
                     "properties": {
                       "start": {
                         "type": "string",
@@ -45821,7 +45821,7 @@
                   "properties": {
                     "issuers": {
                       "items": {
-                        "$ref": "#/components/schemas/AutoSDKShared6a7dd045a7a1bf61"
+                        "$ref": "#/components/schemas/AutoSDKSharedc57b57fa067d8814"
                       },
                       "type": "array"
                     },
@@ -45928,7 +45928,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared6a7dd045a7a1bf61"
+                  "$ref": "#/components/schemas/AutoSDKSharedc57b57fa067d8814"
                 }
               }
             }
@@ -45943,6 +45943,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "409": {
             "description": ""
           },
           "410": {
@@ -46333,7 +46336,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared6a7dd045a7a1bf61"
+                  "$ref": "#/components/schemas/AutoSDKSharedc57b57fa067d8814"
                 }
               }
             }
@@ -46418,7 +46421,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared6a7dd045a7a1bf61"
+                  "$ref": "#/components/schemas/AutoSDKSharedc57b57fa067d8814"
                 }
               }
             }
@@ -46488,7 +46491,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared6a7dd045a7a1bf61"
+                  "$ref": "#/components/schemas/AutoSDKSharedc57b57fa067d8814"
                 }
               }
             }
@@ -123919,147 +123922,6 @@
         },
         "type": "object"
       },
-      "AutoSDKShared6a7dd045a7a1bf61": {
-        "properties": {
-          "algorithm": {
-            "type": "string",
-            "enum": [
-              "ES256",
-              "ES384",
-              "ES512",
-              "PS256",
-              "PS384",
-              "PS512",
-              "RS256",
-              "RS384",
-              "RS512"
-            ]
-          },
-          "claimsSchema": {
-            "additionalProperties": true,
-            "type": "object"
-          },
-          "createdAt": {
-            "type": "string"
-          },
-          "id": {
-            "type": "string"
-          },
-          "managedBy": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "origin": {
-            "type": "string",
-            "enum": [
-              "external",
-              "vercel"
-            ]
-          },
-          "ownerId": {
-            "type": "string"
-          },
-          "policies": {
-            "items": {
-              "oneOf": [
-                {
-                  "properties": {
-                    "createdAt": {
-                      "type": "string"
-                    },
-                    "environments": {
-                      "items": {
-                        "type": "string"
-                      },
-                      "type": "array",
-                      "description": "Environments whose OIDC tokens this grant authorizes. Each entry is either a system environment slug (`production`, `preview`, `development`) or a custom environment ID (prefixed `env_`). Custom environments are matched against the token's `custom_environment_id` claim (the stable ID); system environments against its `environment` claim."
-                    },
-                    "kind": {
-                      "type": "string",
-                      "enum": [
-                        "project-grant"
-                      ]
-                    },
-                    "projectId": {
-                      "type": "string"
-                    },
-                    "teamId": {
-                      "type": "string"
-                    },
-                    "tokenClaims": {
-                      "additionalProperties": true,
-                      "type": "object"
-                    },
-                    "updatedAt": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "createdAt",
-                    "environments",
-                    "kind",
-                    "projectId",
-                    "teamId",
-                    "updatedAt"
-                  ],
-                  "type": "object"
-                },
-                {
-                  "properties": {
-                    "clientId": {
-                      "type": "string"
-                    },
-                    "createdAt": {
-                      "type": "string"
-                    },
-                    "kind": {
-                      "type": "string",
-                      "enum": [
-                        "connex-grant"
-                      ]
-                    },
-                    "tokenClaims": {
-                      "additionalProperties": true,
-                      "type": "object"
-                    },
-                    "updatedAt": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "clientId",
-                    "createdAt",
-                    "kind",
-                    "updatedAt"
-                  ],
-                  "type": "object"
-                }
-              ]
-            },
-            "type": "array"
-          },
-          "signingKeys": {
-            "$ref": "#/components/schemas/AutoSDKSharedd350ab9ee496d656"
-          },
-          "updatedAt": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "algorithm",
-          "createdAt",
-          "id",
-          "name",
-          "origin",
-          "ownerId",
-          "policies",
-          "signingKeys",
-          "updatedAt"
-        ],
-        "type": "object"
-      },
       "AutoSDKShared6ce7a2d665426cb4": {
         "properties": {
           "description": {
@@ -131626,6 +131488,155 @@
             "$ref": "#/components/schemas/AutoSDKShared7edb780247ab9fb3"
           }
         ]
+      },
+      "AutoSDKSharedc57b57fa067d8814": {
+        "properties": {
+          "algorithm": {
+            "type": "string",
+            "enum": [
+              "ES256",
+              "ES384",
+              "ES512",
+              "PS256",
+              "PS384",
+              "PS512",
+              "RS256",
+              "RS384",
+              "RS512"
+            ]
+          },
+          "claimsSchema": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "discoveryLayout": {
+            "type": "string",
+            "enum": [
+              "connect",
+              "kms"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "managedBy": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string",
+            "enum": [
+              "external",
+              "vercel"
+            ]
+          },
+          "ownerId": {
+            "type": "string"
+          },
+          "policies": {
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "environments": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array",
+                      "description": "Environments whose OIDC tokens this grant authorizes. Each entry is either a system environment slug (`production`, `preview`, `development`) or a custom environment ID (prefixed `env_`). Custom environments are matched against the token's `custom_environment_id` claim (the stable ID); system environments against its `environment` claim."
+                    },
+                    "kind": {
+                      "type": "string",
+                      "enum": [
+                        "project-grant"
+                      ]
+                    },
+                    "projectId": {
+                      "type": "string"
+                    },
+                    "teamId": {
+                      "type": "string"
+                    },
+                    "tokenClaims": {
+                      "additionalProperties": true,
+                      "type": "object"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "createdAt",
+                    "environments",
+                    "kind",
+                    "projectId",
+                    "teamId",
+                    "updatedAt"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "properties": {
+                    "clientId": {
+                      "type": "string"
+                    },
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "kind": {
+                      "type": "string",
+                      "enum": [
+                        "connex-grant"
+                      ]
+                    },
+                    "tokenClaims": {
+                      "additionalProperties": true,
+                      "type": "object"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "clientId",
+                    "createdAt",
+                    "kind",
+                    "updatedAt"
+                  ],
+                  "type": "object"
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "signingKeys": {
+            "$ref": "#/components/schemas/AutoSDKSharedd350ab9ee496d656"
+          },
+          "updatedAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "algorithm",
+          "createdAt",
+          "discoveryLayout",
+          "id",
+          "name",
+          "origin",
+          "ownerId",
+          "policies",
+          "signingKeys",
+          "updatedAt"
+        ],
+        "type": "object"
       },
       "AutoSDKSharedc60721415ef8a2a0": {
         "oneOf": [

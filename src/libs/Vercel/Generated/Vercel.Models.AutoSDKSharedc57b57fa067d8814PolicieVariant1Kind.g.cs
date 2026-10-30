@@ -6,7 +6,7 @@ namespace Vercel
     /// <summary>
     ///
     /// </summary>
-    public enum AutoSDKShared6a7dd045a7a1bf61PolicieVariant1Kind
+    public enum AutoSDKSharedc57b57fa067d8814PolicieVariant1Kind
     {
         /// <summary>
         ///
@@ -17,27 +17,27 @@ namespace Vercel
     /// <summary>
     /// Enum extensions to do fast conversions without the reflection.
     /// </summary>
-    public static class AutoSDKShared6a7dd045a7a1bf61PolicieVariant1KindExtensions
+    public static class AutoSDKSharedc57b57fa067d8814PolicieVariant1KindExtensions
     {
         /// <summary>
         /// Converts an enum to a string.
         /// </summary>
-        public static string ToValueString(this AutoSDKShared6a7dd045a7a1bf61PolicieVariant1Kind value)
+        public static string ToValueString(this AutoSDKSharedc57b57fa067d8814PolicieVariant1Kind value)
         {
             return value switch
             {
-                AutoSDKShared6a7dd045a7a1bf61PolicieVariant1Kind.ProjectGrant => "project-grant",
+                AutoSDKSharedc57b57fa067d8814PolicieVariant1Kind.ProjectGrant => "project-grant",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
         /// <summary>
         /// Converts an string to a enum.
         /// </summary>
-        public static AutoSDKShared6a7dd045a7a1bf61PolicieVariant1Kind? ToEnum(string value)
+        public static AutoSDKSharedc57b57fa067d8814PolicieVariant1Kind? ToEnum(string value)
         {
             return value switch
             {
-                "project-grant" => AutoSDKShared6a7dd045a7a1bf61PolicieVariant1Kind.ProjectGrant,
+                "project-grant" => AutoSDKSharedc57b57fa067d8814PolicieVariant1Kind.ProjectGrant,
                 _ => null,
             };
         }

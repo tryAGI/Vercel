@@ -59,7 +59,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared6a7dd045a7a1bf61> CreateKmsIssuerAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedc57b57fa067d8814> CreateKmsIssuerAsync(
 
             global::Vercel.CreateKmsIssuerRequest request,
             string? teamId = default,
@@ -92,7 +92,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared6a7dd045a7a1bf61>> CreateKmsIssuerAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedc57b57fa067d8814>> CreateKmsIssuerAsResponseAsync(
 
             global::Vercel.CreateKmsIssuerRequest request,
             string? teamId = default,
@@ -496,6 +496,38 @@ namespace Vercel
                                         h => h.Value));
                             }
                             //
+                            if ((int)__response.StatusCode == 409)
+                            {
+                                string? __content_409 = null;
+                                global::System.Exception? __exception_409 = null;
+                                try
+                                {
+                                    if (__effectiveReadResponseAsString)
+                                    {
+                                        __content_409 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                    else
+                                    {
+                                        __content_409 = await __response.Content.ReadAsStringAsync(__effectiveCancellationToken).ConfigureAwait(false);
+                                    }
+                                }
+                                catch (global::System.Exception __ex)
+                                {
+                                    __exception_409 = __ex;
+                                }
+
+
+                                throw global::Vercel.ApiException.Create(
+                                    statusCode: __response.StatusCode,
+                                    message: __content_409 ?? __response.ReasonPhrase ?? string.Empty,
+                                    innerException: __exception_409,
+                                    responseBody: __content_409,
+                                    responseHeaders: global::System.Linq.Enumerable.ToDictionary(
+                                        __response.Headers,
+                                        h => h.Key,
+                                        h => h.Value));
+                            }
+                            //
                             if ((int)__response.StatusCode == 410)
                             {
                                 string? __content_410 = null;
@@ -549,9 +581,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.AutoSDKShared6a7dd045a7a1bf61.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.AutoSDKSharedc57b57fa067d8814.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared6a7dd045a7a1bf61>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedc57b57fa067d8814>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -581,9 +613,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.AutoSDKShared6a7dd045a7a1bf61.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.AutoSDKSharedc57b57fa067d8814.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared6a7dd045a7a1bf61>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedc57b57fa067d8814>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -653,7 +685,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared6a7dd045a7a1bf61> CreateKmsIssuerAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedc57b57fa067d8814> CreateKmsIssuerAsync(
             string name,
             string? teamId = default,
             string? slug = default,
