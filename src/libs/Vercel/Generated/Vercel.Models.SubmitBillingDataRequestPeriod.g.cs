@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Period for the billing cycle. The period end date cannot be older than 24 hours earlier than our current server's time.
+    /// Period for the billing cycle. The period end date cannot be older than 30 days earlier than our current server's time.
     /// </summary>
     public sealed partial class SubmitBillingDataRequestPeriod
     {
