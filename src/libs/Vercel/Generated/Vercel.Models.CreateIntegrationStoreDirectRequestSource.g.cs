@@ -45,6 +45,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        ProjectOverviewRecommendedIntegrations,
+        /// <summary>
+        ///
+        /// </summary>
         ResourceClaims,
         /// <summary>
         ///
@@ -72,6 +76,7 @@ namespace Vercel
                 CreateIntegrationStoreDirectRequestSource.Marketplace => "marketplace",
                 CreateIntegrationStoreDirectRequestSource.Oauth => "oauth",
                 CreateIntegrationStoreDirectRequestSource.Organization => "organization",
+                CreateIntegrationStoreDirectRequestSource.ProjectOverviewRecommendedIntegrations => "project-overview-recommended-integrations",
                 CreateIntegrationStoreDirectRequestSource.ResourceClaims => "resource-claims",
                 CreateIntegrationStoreDirectRequestSource.V0 => "v0",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -92,6 +97,7 @@ namespace Vercel
                 "marketplace" => CreateIntegrationStoreDirectRequestSource.Marketplace,
                 "oauth" => CreateIntegrationStoreDirectRequestSource.Oauth,
                 "organization" => CreateIntegrationStoreDirectRequestSource.Organization,
+                "project-overview-recommended-integrations" => CreateIntegrationStoreDirectRequestSource.ProjectOverviewRecommendedIntegrations,
                 "resource-claims" => CreateIntegrationStoreDirectRequestSource.ResourceClaims,
                 "v0" => CreateIntegrationStoreDirectRequestSource.V0,
                 _ => null,

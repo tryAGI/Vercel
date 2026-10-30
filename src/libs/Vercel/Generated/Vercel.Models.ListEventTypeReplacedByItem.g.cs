@@ -311,6 +311,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiSecurityReview,
+        /// <summary>
+        ///
+        /// </summary>
         AlertInvestigationProjectAllowlistUpdated,
         /// <summary>
         ///
@@ -1211,6 +1215,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        IntegrationPreviousSecretRevoked,
+        /// <summary>
+        ///
+        /// </summary>
         IntegrationResourceRedisCommandExecuted,
         /// <summary>
         ///
@@ -1220,6 +1228,10 @@ namespace Vercel
         ///
         /// </summary>
         IntegrationScopeChanged,
+        /// <summary>
+        ///
+        /// </summary>
+        IntegrationSecretRotated,
         /// <summary>
         ///
         /// </summary>
@@ -3081,6 +3093,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigUpdated => "ai-gateway-virtual-model-config-updated",
                 ListEventTypeReplacedByItem.AiGatewayZeroDataRetentionToggled => "ai-gateway-zero-data-retention-toggled",
                 ListEventTypeReplacedByItem.AiOmniagent => "ai-omniagent",
+                ListEventTypeReplacedByItem.AiSecurityReview => "ai-security-review",
                 ListEventTypeReplacedByItem.AlertInvestigationProjectAllowlistUpdated => "alert-investigation-project-allowlist-updated",
                 ListEventTypeReplacedByItem.AlertRuleCreated => "alert-rule-created",
                 ListEventTypeReplacedByItem.AlertRuleDeleted => "alert-rule-deleted",
@@ -3306,9 +3319,11 @@ namespace Vercel
                 ListEventTypeReplacedByItem.IntegrationInstallationCompleted => "integration-installation-completed",
                 ListEventTypeReplacedByItem.IntegrationInstallationPermissionUpdated => "integration-installation-permission-updated",
                 ListEventTypeReplacedByItem.IntegrationInstallationRemoved => "integration-installation-removed",
+                ListEventTypeReplacedByItem.IntegrationPreviousSecretRevoked => "integration-previous-secret-revoked",
                 ListEventTypeReplacedByItem.IntegrationResourceRedisCommandExecuted => "integration-resource-redis-command-executed",
                 ListEventTypeReplacedByItem.IntegrationResourceSqlQueryExecuted => "integration-resource-sql-query-executed",
                 ListEventTypeReplacedByItem.IntegrationScopeChanged => "integration-scope-changed",
+                ListEventTypeReplacedByItem.IntegrationSecretRotated => "integration-secret-rotated",
                 ListEventTypeReplacedByItem.InvoiceModified => "invoice-modified",
                 ListEventTypeReplacedByItem.InvoiceRefunded => "invoice-refunded",
                 ListEventTypeReplacedByItem.KmsIssuerCreated => "kms-issuer-created",
@@ -3837,6 +3852,7 @@ namespace Vercel
                 "ai-gateway-virtual-model-config-updated" => ListEventTypeReplacedByItem.AiGatewayVirtualModelConfigUpdated,
                 "ai-gateway-zero-data-retention-toggled" => ListEventTypeReplacedByItem.AiGatewayZeroDataRetentionToggled,
                 "ai-omniagent" => ListEventTypeReplacedByItem.AiOmniagent,
+                "ai-security-review" => ListEventTypeReplacedByItem.AiSecurityReview,
                 "alert-investigation-project-allowlist-updated" => ListEventTypeReplacedByItem.AlertInvestigationProjectAllowlistUpdated,
                 "alert-rule-created" => ListEventTypeReplacedByItem.AlertRuleCreated,
                 "alert-rule-deleted" => ListEventTypeReplacedByItem.AlertRuleDeleted,
@@ -4062,9 +4078,11 @@ namespace Vercel
                 "integration-installation-completed" => ListEventTypeReplacedByItem.IntegrationInstallationCompleted,
                 "integration-installation-permission-updated" => ListEventTypeReplacedByItem.IntegrationInstallationPermissionUpdated,
                 "integration-installation-removed" => ListEventTypeReplacedByItem.IntegrationInstallationRemoved,
+                "integration-previous-secret-revoked" => ListEventTypeReplacedByItem.IntegrationPreviousSecretRevoked,
                 "integration-resource-redis-command-executed" => ListEventTypeReplacedByItem.IntegrationResourceRedisCommandExecuted,
                 "integration-resource-sql-query-executed" => ListEventTypeReplacedByItem.IntegrationResourceSqlQueryExecuted,
                 "integration-scope-changed" => ListEventTypeReplacedByItem.IntegrationScopeChanged,
+                "integration-secret-rotated" => ListEventTypeReplacedByItem.IntegrationSecretRotated,
                 "invoice-modified" => ListEventTypeReplacedByItem.InvoiceModified,
                 "invoice-refunded" => ListEventTypeReplacedByItem.InvoiceRefunded,
                 "kms-issuer-created" => ListEventTypeReplacedByItem.KmsIssuerCreated,

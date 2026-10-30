@@ -43,6 +43,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        ProjectOverviewRecommendedIntegrations,
+        /// <summary>
+        ///
+        /// </summary>
         ResourceClaims,
         /// <summary>
         ///
@@ -70,6 +74,7 @@ namespace Vercel
                 GetBillingPlansSource.Marketplace => "marketplace",
                 GetBillingPlansSource.Oauth => "oauth",
                 GetBillingPlansSource.Organization => "organization",
+                GetBillingPlansSource.ProjectOverviewRecommendedIntegrations => "project-overview-recommended-integrations",
                 GetBillingPlansSource.ResourceClaims => "resource-claims",
                 GetBillingPlansSource.V0 => "v0",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -90,6 +95,7 @@ namespace Vercel
                 "marketplace" => GetBillingPlansSource.Marketplace,
                 "oauth" => GetBillingPlansSource.Oauth,
                 "organization" => GetBillingPlansSource.Organization,
+                "project-overview-recommended-integrations" => GetBillingPlansSource.ProjectOverviewRecommendedIntegrations,
                 "resource-claims" => GetBillingPlansSource.ResourceClaims,
                 "v0" => GetBillingPlansSource.V0,
                 _ => null,
