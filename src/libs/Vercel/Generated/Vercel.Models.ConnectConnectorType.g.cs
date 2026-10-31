@@ -15,7 +15,7 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        AwsAlpha,
+        AwsOidc,
         /// <summary>
         ///
         /// </summary>
@@ -91,7 +91,7 @@ namespace Vercel
             return value switch
             {
                 ConnectConnectorType.ApiKey => "api-key",
-                ConnectConnectorType.AwsAlpha => "aws-alpha",
+                ConnectConnectorType.AwsOidc => "aws-oidc",
                 ConnectConnectorType.Custom => "custom",
                 ConnectConnectorType.Discord => "discord",
                 ConnectConnectorType.Github => "github",
@@ -118,7 +118,7 @@ namespace Vercel
             return value switch
             {
                 "api-key" => ConnectConnectorType.ApiKey,
-                "aws-alpha" => ConnectConnectorType.AwsAlpha,
+                "aws-oidc" => ConnectConnectorType.AwsOidc,
                 "custom" => ConnectConnectorType.Custom,
                 "discord" => ConnectConnectorType.Discord,
                 "github" => ConnectConnectorType.Github,

@@ -1559,6 +1559,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        OrganizationTeamDsyncUpdate,
+        /// <summary>
+        ///
+        /// </summary>
         OrganizationTeamSsoUpdate,
         /// <summary>
         ///
@@ -3405,6 +3409,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.OrganizationTeamAdd => "organization-team-add",
                 ListEventTypeReplacedByItem.OrganizationTeamCreate => "organization-team-create",
                 ListEventTypeReplacedByItem.OrganizationTeamDelete => "organization-team-delete",
+                ListEventTypeReplacedByItem.OrganizationTeamDsyncUpdate => "organization-team-dsync-update",
                 ListEventTypeReplacedByItem.OrganizationTeamSsoUpdate => "organization-team-sso-update",
                 ListEventTypeReplacedByItem.OrganizationUpdateAccountFlowDismissed => "organization-update-account-flow-dismissed",
                 ListEventTypeReplacedByItem.OrganizationUpdateAccountFlowTriggered => "organization-update-account-flow-triggered",
@@ -4164,6 +4169,7 @@ namespace Vercel
                 "organization-team-add" => ListEventTypeReplacedByItem.OrganizationTeamAdd,
                 "organization-team-create" => ListEventTypeReplacedByItem.OrganizationTeamCreate,
                 "organization-team-delete" => ListEventTypeReplacedByItem.OrganizationTeamDelete,
+                "organization-team-dsync-update" => ListEventTypeReplacedByItem.OrganizationTeamDsyncUpdate,
                 "organization-team-sso-update" => ListEventTypeReplacedByItem.OrganizationTeamSsoUpdate,
                 "organization-update-account-flow-dismissed" => ListEventTypeReplacedByItem.OrganizationUpdateAccountFlowDismissed,
                 "organization-update-account-flow-triggered" => ListEventTypeReplacedByItem.OrganizationUpdateAccountFlowTriggered,
