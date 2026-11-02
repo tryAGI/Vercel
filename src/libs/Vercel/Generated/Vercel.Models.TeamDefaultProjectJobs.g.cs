@@ -17,6 +17,12 @@ namespace Vercel
         /// <summary>
         /// Default job configuration applied to new projects created in this team.
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("health-check")]
+        public global::Vercel.TeamDefaultProjectJobsHealthCheck? HealthCheck { get; set; }
+
+        /// <summary>
+        /// Default job configuration applied to new projects created in this team.
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lint")]
         public global::Vercel.TeamDefaultProjectJobsLint? Lint { get; set; }
 
@@ -44,6 +50,9 @@ namespace Vercel
         /// <param name="flagDefinitionsPresent">
         /// Default job configuration applied to new projects created in this team.
         /// </param>
+        /// <param name="healthCheck">
+        /// Default job configuration applied to new projects created in this team.
+        /// </param>
         /// <param name="lint">
         /// Default job configuration applied to new projects created in this team.
         /// </param>
@@ -58,11 +67,13 @@ namespace Vercel
 #endif
         public TeamDefaultProjectJobs(
             global::Vercel.TeamDefaultProjectJobsFlagDefinitionsPresent? flagDefinitionsPresent,
+            global::Vercel.TeamDefaultProjectJobsHealthCheck? healthCheck,
             global::Vercel.TeamDefaultProjectJobsLint? lint,
             global::Vercel.TeamDefaultProjectJobsMfeConfigPresent? mfeConfigPresent,
             global::Vercel.TeamDefaultProjectJobsTypecheck? typecheck)
         {
             this.FlagDefinitionsPresent = flagDefinitionsPresent;
+            this.HealthCheck = healthCheck;
             this.Lint = lint;
             this.MfeConfigPresent = mfeConfigPresent;
             this.Typecheck = typecheck;

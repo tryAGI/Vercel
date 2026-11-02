@@ -17,6 +17,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("health-check")]
+        public global::Vercel.GetProjectResponseJobsHealthCheck? HealthCheck { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lint")]
         public global::Vercel.GetProjectResponseJobsLint? Lint { get; set; }
 
@@ -42,6 +48,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetProjectResponseJobs" /> class.
         /// </summary>
         /// <param name="flagDefinitionsPresent"></param>
+        /// <param name="healthCheck"></param>
         /// <param name="lint"></param>
         /// <param name="mfeConfigPresent"></param>
         /// <param name="typecheck"></param>
@@ -50,11 +57,13 @@ namespace Vercel
 #endif
         public GetProjectResponseJobs(
             global::Vercel.GetProjectResponseJobsFlagDefinitionsPresent? flagDefinitionsPresent,
+            global::Vercel.GetProjectResponseJobsHealthCheck? healthCheck,
             global::Vercel.GetProjectResponseJobsLint? lint,
             global::Vercel.GetProjectResponseJobsMfeConfigPresent? mfeConfigPresent,
             global::Vercel.GetProjectResponseJobsTypecheck? typecheck)
         {
             this.FlagDefinitionsPresent = flagDefinitionsPresent;
+            this.HealthCheck = healthCheck;
             this.Lint = lint;
             this.MfeConfigPresent = mfeConfigPresent;
             this.Typecheck = typecheck;
