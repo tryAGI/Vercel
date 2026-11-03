@@ -2928,6 +2928,18 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        VercelAgentSecurityFindingDismissed,
+        /// <summary>
+        ///
+        /// </summary>
+        VercelAgentSecurityFindingReopened,
+        /// <summary>
+        ///
+        /// </summary>
+        VercelAgentSecurityFindingResolved,
+        /// <summary>
+        ///
+        /// </summary>
         VercelAgentSessionCreated,
         /// <summary>
         ///
@@ -3752,6 +3764,9 @@ namespace Vercel
                 ListEventTypeName.VercelAgentElevatedPermissionsApproved => "vercel-agent-elevated-permissions-approved",
                 ListEventTypeName.VercelAgentElevatedPermissionsRequested => "vercel-agent-elevated-permissions-requested",
                 ListEventTypeName.VercelAgentSecurityFindingCreated => "vercel-agent-security-finding-created",
+                ListEventTypeName.VercelAgentSecurityFindingDismissed => "vercel-agent-security-finding-dismissed",
+                ListEventTypeName.VercelAgentSecurityFindingReopened => "vercel-agent-security-finding-reopened",
+                ListEventTypeName.VercelAgentSecurityFindingResolved => "vercel-agent-security-finding-resolved",
                 ListEventTypeName.VercelAgentSessionCreated => "vercel-agent-session-created",
                 ListEventTypeName.VercelAgentTeamTrialCreditsApplied => "vercel-agent-team-trial-credits-applied",
                 ListEventTypeName.VercelAppInstallationRequestDismissed => "vercel-app-installation-request-dismissed",
@@ -4512,6 +4527,9 @@ namespace Vercel
                 "vercel-agent-elevated-permissions-approved" => ListEventTypeName.VercelAgentElevatedPermissionsApproved,
                 "vercel-agent-elevated-permissions-requested" => ListEventTypeName.VercelAgentElevatedPermissionsRequested,
                 "vercel-agent-security-finding-created" => ListEventTypeName.VercelAgentSecurityFindingCreated,
+                "vercel-agent-security-finding-dismissed" => ListEventTypeName.VercelAgentSecurityFindingDismissed,
+                "vercel-agent-security-finding-reopened" => ListEventTypeName.VercelAgentSecurityFindingReopened,
+                "vercel-agent-security-finding-resolved" => ListEventTypeName.VercelAgentSecurityFindingResolved,
                 "vercel-agent-session-created" => ListEventTypeName.VercelAgentSessionCreated,
                 "vercel-agent-team-trial-credits-applied" => ListEventTypeName.VercelAgentTeamTrialCreditsApplied,
                 "vercel-app-installation-request-dismissed" => ListEventTypeName.VercelAppInstallationRequestDismissed,

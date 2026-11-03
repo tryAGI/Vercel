@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Get log lines for the tasks of an invocation attempt<br/>
-        /// Returns log lines for the tasks of an invocation attempt in a single request, grouped by task. Tasks can be narrowed by name and by conclusion, for example `conclusion=failed` to fetch only the logs of failed tasks. With `search`, every matching task is searched at once and only tasks with matching lines are returned.
+        /// Returns log lines for the tasks of an invocation attempt in a single request, grouped by task. Tasks can be narrowed by name and by conclusion, for example `conclusion=failed` to fetch only the logs of failed tasks. With `search`, every matching task is searched at once and only tasks with matching lines are returned. Without `search`, a task restored from the remote cache returns the log of the run that produced the cache entry.
         /// </summary>
         /// <param name="invocationId"></param>
         /// <param name="attempt"></param>
@@ -48,7 +48,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Get log lines for the tasks of an invocation attempt<br/>
-        /// Returns log lines for the tasks of an invocation attempt in a single request, grouped by task. Tasks can be narrowed by name and by conclusion, for example `conclusion=failed` to fetch only the logs of failed tasks. With `search`, every matching task is searched at once and only tasks with matching lines are returned.
+        /// Returns log lines for the tasks of an invocation attempt in a single request, grouped by task. Tasks can be narrowed by name and by conclusion, for example `conclusion=failed` to fetch only the logs of failed tasks. With `search`, every matching task is searched at once and only tasks with matching lines are returned. Without `search`, a task restored from the remote cache returns the log of the run that produced the cache entry.
         /// </summary>
         /// <param name="invocationId"></param>
         /// <param name="attempt"></param>

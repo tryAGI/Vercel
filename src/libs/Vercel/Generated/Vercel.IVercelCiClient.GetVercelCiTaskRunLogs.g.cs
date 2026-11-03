@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Get log lines for a specific task run attempt<br/>
-        /// Get Task Run Logs With `follow=1` the response is a newline-delimited JSON stream of log lines that ends once the task run has finished and its logs are flushed, or when the stream reaches its maximum duration.
+        /// Get Task Run Logs With `follow=1` the response is a newline-delimited JSON stream of log lines that ends once the task run has finished and its logs are flushed, or when the stream reaches its maximum duration. A task run restored from the remote cache returns the log of the run that produced the cache entry, timestamped when the cached run completed.
         /// </summary>
         /// <param name="invocationId"></param>
         /// <param name="attempt"></param>
@@ -46,7 +46,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Get log lines for a specific task run attempt<br/>
-        /// Get Task Run Logs With `follow=1` the response is a newline-delimited JSON stream of log lines that ends once the task run has finished and its logs are flushed, or when the stream reaches its maximum duration.
+        /// Get Task Run Logs With `follow=1` the response is a newline-delimited JSON stream of log lines that ends once the task run has finished and its logs are flushed, or when the stream reaches its maximum duration. A task run restored from the remote cache returns the log of the run that produced the cache entry, timestamped when the cached run completed.
         /// </summary>
         /// <param name="invocationId"></param>
         /// <param name="attempt"></param>
