@@ -33,6 +33,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? DeniedCIDRs { get; set; }
 
         /// <summary>
+        /// Rules that forward outgoing requests matching specific domains.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("forwardRules")]
+        public global::System.Collections.Generic.IList<global::Vercel.SandboxForwardRule>? ForwardRules { get; set; }
+
+        /// <summary>
         /// HTTP header injection rules for outgoing requests matching specific domains.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("injectionRules")]
@@ -47,6 +53,12 @@ namespace Vercel
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SandboxNetworkPolicyModeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::Vercel.SandboxNetworkPolicyMode Mode { get; set; }
+
+        /// <summary>
+        /// Rules that return custom responses for requests matching specific domains.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("responseRules")]
+        public global::System.Collections.Generic.IList<global::Vercel.SandboxResponseRule>? ResponseRules { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -73,8 +85,14 @@ namespace Vercel
         /// List of IP address ranges (in CIDR notation) the sandbox is blocked from connecting to. These rules take precedence over all allowed rules.<br/>
         /// Example: [10.0.0.0/8]
         /// </param>
+        /// <param name="forwardRules">
+        /// Rules that forward outgoing requests matching specific domains.
+        /// </param>
         /// <param name="injectionRules">
         /// HTTP header injection rules for outgoing requests matching specific domains.
+        /// </param>
+        /// <param name="responseRules">
+        /// Rules that return custom responses for requests matching specific domains.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -84,13 +102,17 @@ namespace Vercel
             global::System.Collections.Generic.IList<string>? allowedCIDRs,
             global::System.Collections.Generic.IList<string>? allowedDomains,
             global::System.Collections.Generic.IList<string>? deniedCIDRs,
-            global::System.Collections.Generic.IList<global::Vercel.SandboxInjectionRule>? injectionRules)
+            global::System.Collections.Generic.IList<global::Vercel.SandboxForwardRule>? forwardRules,
+            global::System.Collections.Generic.IList<global::Vercel.SandboxInjectionRule>? injectionRules,
+            global::System.Collections.Generic.IList<global::Vercel.SandboxResponseRule>? responseRules)
         {
             this.AllowedCIDRs = allowedCIDRs;
             this.AllowedDomains = allowedDomains;
             this.DeniedCIDRs = deniedCIDRs;
+            this.ForwardRules = forwardRules;
             this.InjectionRules = injectionRules;
             this.Mode = mode;
+            this.ResponseRules = responseRules;
         }
 
         /// <summary>

@@ -56,7 +56,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc396e89a7a8d84fb>> GetIntegrationLogDrainsAsync(
+        public async global::System.Threading.Tasks.Task<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2208dea57c17c8da>> GetIntegrationLogDrainsAsync(
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -84,7 +84,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc396e89a7a8d84fb>>> GetIntegrationLogDrainsAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2208dea57c17c8da>>> GetIntegrationLogDrainsAsResponseAsync(
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -529,9 +529,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = (global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc396e89a7a8d84fb>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc396e89a7a8d84fb>), JsonSerializerContext) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2208dea57c17c8da>?)global::System.Text.Json.JsonSerializer.Deserialize(__content, typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2208dea57c17c8da>), JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc396e89a7a8d84fb>>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2208dea57c17c8da>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -561,9 +561,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = (global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc396e89a7a8d84fb>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc396e89a7a8d84fb>), JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = (global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2208dea57c17c8da>?)await global::System.Text.Json.JsonSerializer.DeserializeAsync(__content, typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2208dea57c17c8da>), JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc396e89a7a8d84fb>>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2208dea57c17c8da>>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,

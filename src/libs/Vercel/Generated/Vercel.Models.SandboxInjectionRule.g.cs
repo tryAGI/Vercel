@@ -26,6 +26,14 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? HeaderNames { get; set; }
 
         /// <summary>
+        /// Request dimensions used to match this rule. Matcher values are omitted.<br/>
+        /// Example: [path, method]
+        /// </summary>
+        /// <example>[path, method]</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("matchDimensions")]
+        public global::System.Collections.Generic.IList<string>? MatchDimensions { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -42,15 +50,21 @@ namespace Vercel
         /// The names of HTTP headers that have value that will be injected for requests to this domain.<br/>
         /// Example: [Authorization, X-API-Key]
         /// </param>
+        /// <param name="matchDimensions">
+        /// Request dimensions used to match this rule. Matcher values are omitted.<br/>
+        /// Example: [path, method]
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SandboxInjectionRule(
             string domain,
-            global::System.Collections.Generic.IList<string>? headerNames)
+            global::System.Collections.Generic.IList<string>? headerNames,
+            global::System.Collections.Generic.IList<string>? matchDimensions)
         {
             this.Domain = domain ?? throw new global::System.ArgumentNullException(nameof(domain));
             this.HeaderNames = headerNames;
+            this.MatchDimensions = matchDimensions;
         }
 
         /// <summary>
