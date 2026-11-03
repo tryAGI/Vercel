@@ -667,10 +667,10 @@ namespace Vercel
         /// </param>
         /// <param name="scopeType"></param>
         /// <param name="projectId">
-        /// Required when scopeType is "project".
+        /// Required when scopeType is \"project\".
         /// </param>
         /// <param name="userId">
-        /// Required when scopeType is "user".
+        /// Required when scopeType is \"user\".
         /// </param>
         /// <param name="limitAmount">
         /// Budget limit in dollars.
@@ -682,6 +682,9 @@ namespace Vercel
         /// Whether BYOK usage counts toward this budget.
         /// </param>
         /// <param name="alertThresholds"></param>
+        /// <param name="justification">
+        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -695,6 +698,7 @@ namespace Vercel
             global::Vercel.UpsertAiGatewayBudgetRequestRefreshPeriod? refreshPeriod = default,
             bool? includeByokInQuota = default,
             global::System.Collections.Generic.IList<double>? alertThresholds = default,
+            string? justification = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -707,6 +711,7 @@ namespace Vercel
                 RefreshPeriod = refreshPeriod,
                 IncludeByokInQuota = includeByokInQuota,
                 AlertThresholds = alertThresholds,
+                Justification = justification,
             };
 
             return await UpsertAiGatewayBudgetAsync(

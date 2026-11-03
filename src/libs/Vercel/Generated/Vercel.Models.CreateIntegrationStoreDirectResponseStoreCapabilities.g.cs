@@ -29,6 +29,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("credentialTypesTransitions")]
+        public global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilitiesCredentialTypesTransitionItem>>? CredentialTypesTransitions { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mcp")]
         public bool? Mcp { get; set; }
 
@@ -87,6 +93,7 @@ namespace Vercel
         /// <param name="agentTools"></param>
         /// <param name="autoSensitive"></param>
         /// <param name="billable"></param>
+        /// <param name="credentialTypesTransitions"></param>
         /// <param name="mcp"></param>
         /// <param name="mcpReadonly"></param>
         /// <param name="projects"></param>
@@ -102,6 +109,7 @@ namespace Vercel
             bool? agentTools,
             bool? autoSensitive,
             bool? billable,
+            global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilitiesCredentialTypesTransitionItem>>? credentialTypesTransitions,
             bool? mcp,
             bool? mcpReadonly,
             bool? projects,
@@ -114,6 +122,7 @@ namespace Vercel
             this.AgentTools = agentTools;
             this.AutoSensitive = autoSensitive;
             this.Billable = billable;
+            this.CredentialTypesTransitions = credentialTypesTransitions;
             this.Mcp = mcp;
             this.McpReadonly = mcpReadonly;
             this.Projects = projects;

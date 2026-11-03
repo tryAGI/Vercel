@@ -37,6 +37,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<double>? AlertThresholds { get; set; }
 
         /// <summary>
+        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("justification")]
+        public string? Justification { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -51,6 +57,9 @@ namespace Vercel
         /// </param>
         /// <param name="refreshPeriod"></param>
         /// <param name="alertThresholds"></param>
+        /// <param name="justification">
+        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -58,12 +67,14 @@ namespace Vercel
             global::Vercel.UpsertAiGatewayBudgetDefaultRequestScopeType scopeType,
             double limitAmount,
             global::Vercel.UpsertAiGatewayBudgetDefaultRequestRefreshPeriod? refreshPeriod,
-            global::System.Collections.Generic.IList<double>? alertThresholds)
+            global::System.Collections.Generic.IList<double>? alertThresholds,
+            string? justification)
         {
             this.ScopeType = scopeType;
             this.LimitAmount = limitAmount;
             this.RefreshPeriod = refreshPeriod;
             this.AlertThresholds = alertThresholds;
+            this.Justification = justification;
         }
 
         /// <summary>

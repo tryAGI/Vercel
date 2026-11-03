@@ -67,6 +67,12 @@ namespace Vercel
         public global::Vercel.UpdateResourceRequestCustomClaims? CustomClaims { get; set; }
 
         /// <summary>
+        /// The credential types the resource accepts: `static` for long-lived secrets, `oidc` for Vercel resource OIDC tokens. Can be set freely while the resource has none. After that, only to confirm a change Vercel requested with a secrets rotation, once it is complete. Without `static`, all long-lived secrets must be expired and removed, and no new ones minted or injected.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("credentialTypes")]
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateResourceRequestCredentialType>? CredentialTypes { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -86,6 +92,9 @@ namespace Vercel
         /// <param name="customClaims">
         /// Custom claims embedded in the resource tokens Vercel mints for this resource.
         /// </param>
+        /// <param name="credentialTypes">
+        /// The credential types the resource accepts: `static` for long-lived secrets, `oidc` for Vercel resource OIDC tokens. Can be set freely while the resource has none. After that, only to confirm a change Vercel requested with a secrets rotation, once it is complete. Without `static`, all long-lived secrets must be expired and removed, and no new ones minted or injected.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -98,7 +107,8 @@ namespace Vercel
             global::Vercel.OneOf<global::Vercel.UpdateResourceRequestNotification, string>? notification,
             object? extras,
             global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.UpdateResourceRequestSecret>, global::Vercel.UpdateResourceRequestSecrets>? secrets,
-            global::Vercel.UpdateResourceRequestCustomClaims? customClaims)
+            global::Vercel.UpdateResourceRequestCustomClaims? customClaims,
+            global::System.Collections.Generic.IList<global::Vercel.UpdateResourceRequestCredentialType>? credentialTypes)
         {
             this.Ownership = ownership;
             this.Name = name;
@@ -109,6 +119,7 @@ namespace Vercel
             this.Extras = extras;
             this.Secrets = secrets;
             this.CustomClaims = customClaims;
+            this.CredentialTypes = credentialTypes;
         }
 
         /// <summary>

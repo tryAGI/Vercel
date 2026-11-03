@@ -28,12 +28,14 @@ namespace Vercel
         partial void PrepareArchiveAiGatewayBudgetDefaultArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref global::Vercel.ArchiveAiGatewayBudgetDefaultScopeType scopeType,
+            ref string? justification,
             ref string? teamId,
             ref string? slug);
         partial void PrepareArchiveAiGatewayBudgetDefaultRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             global::Vercel.ArchiveAiGatewayBudgetDefaultScopeType scopeType,
+            string? justification,
             string? teamId,
             string? slug);
         partial void ProcessArchiveAiGatewayBudgetDefaultResponse(
@@ -47,6 +49,9 @@ namespace Vercel
         /// <param name="scopeType">
         /// The budget default scope to delete.
         /// </param>
+        /// <param name="justification">
+        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains. Only recorded when scopeType is set.
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -58,6 +63,7 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task ArchiveAiGatewayBudgetDefaultAsync(
             global::Vercel.ArchiveAiGatewayBudgetDefaultScopeType scopeType,
+            string? justification = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -65,6 +71,7 @@ namespace Vercel
         {
             await ArchiveAiGatewayBudgetDefaultAsResponseAsync(
                 scopeType: scopeType,
+                justification: justification,
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -78,6 +85,9 @@ namespace Vercel
         /// <param name="scopeType">
         /// The budget default scope to delete.
         /// </param>
+        /// <param name="justification">
+        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains. Only recorded when scopeType is set.
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -89,6 +99,7 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse> ArchiveAiGatewayBudgetDefaultAsResponseAsync(
             global::Vercel.ArchiveAiGatewayBudgetDefaultScopeType scopeType,
+            string? justification = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -99,6 +110,7 @@ namespace Vercel
             PrepareArchiveAiGatewayBudgetDefaultArguments(
                 httpClient: HttpClient,
                 scopeType: ref scopeType,
+                justification: ref justification,
                 teamId: ref teamId,
                 slug: ref slug);
 
@@ -130,6 +142,7 @@ namespace Vercel
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddRequiredParameter("scopeType", scopeType.ToValueString())
+                                .AddOptionalParameter("justification", justification)
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -174,6 +187,7 @@ namespace Vercel
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     scopeType: scopeType,
+                    justification: justification,
                     teamId: teamId,
                     slug: slug);
 

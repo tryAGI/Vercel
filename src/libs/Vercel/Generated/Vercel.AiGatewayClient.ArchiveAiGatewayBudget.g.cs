@@ -30,6 +30,7 @@ namespace Vercel
             ref global::Vercel.ArchiveAiGatewayBudgetScopeType scopeType,
             ref string? projectId,
             ref string? userId,
+            ref string? justification,
             ref string? teamId,
             ref string? slug);
         partial void PrepareArchiveAiGatewayBudgetRequest(
@@ -38,6 +39,7 @@ namespace Vercel
             global::Vercel.ArchiveAiGatewayBudgetScopeType scopeType,
             string? projectId,
             string? userId,
+            string? justification,
             string? teamId,
             string? slug);
         partial void ProcessArchiveAiGatewayBudgetResponse(
@@ -57,10 +59,13 @@ namespace Vercel
         /// The budget scope to archive.
         /// </param>
         /// <param name="projectId">
-        /// Required when scopeType is "project".
+        /// Required when scopeType is \"project\".
         /// </param>
         /// <param name="userId">
-        /// Required when scopeType is "user".
+        /// Required when scopeType is \"user\".
+        /// </param>
+        /// <param name="justification">
+        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -75,6 +80,7 @@ namespace Vercel
             global::Vercel.ArchiveAiGatewayBudgetScopeType scopeType,
             string? projectId = default,
             string? userId = default,
+            string? justification = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -84,6 +90,7 @@ namespace Vercel
                 scopeType: scopeType,
                 projectId: projectId,
                 userId: userId,
+                justification: justification,
                 teamId: teamId,
                 slug: slug,
                 requestOptions: requestOptions,
@@ -100,10 +107,13 @@ namespace Vercel
         /// The budget scope to archive.
         /// </param>
         /// <param name="projectId">
-        /// Required when scopeType is "project".
+        /// Required when scopeType is \"project\".
         /// </param>
         /// <param name="userId">
-        /// Required when scopeType is "user".
+        /// Required when scopeType is \"user\".
+        /// </param>
+        /// <param name="justification">
+        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -118,6 +128,7 @@ namespace Vercel
             global::Vercel.ArchiveAiGatewayBudgetScopeType scopeType,
             string? projectId = default,
             string? userId = default,
+            string? justification = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -130,6 +141,7 @@ namespace Vercel
                 scopeType: ref scopeType,
                 projectId: ref projectId,
                 userId: ref userId,
+                justification: ref justification,
                 teamId: ref teamId,
                 slug: ref slug);
 
@@ -163,6 +175,7 @@ namespace Vercel
                                 .AddRequiredParameter("scopeType", scopeType.ToValueString())
                                 .AddOptionalParameter("projectId", projectId)
                                 .AddOptionalParameter("userId", userId)
+                                .AddOptionalParameter("justification", justification)
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
                                 ;
@@ -209,6 +222,7 @@ namespace Vercel
                     scopeType: scopeType,
                     projectId: projectId,
                     userId: userId,
+                    justification: justification,
                     teamId: teamId,
                     slug: slug);
 

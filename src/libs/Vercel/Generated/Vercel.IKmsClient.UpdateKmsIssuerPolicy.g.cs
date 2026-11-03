@@ -27,7 +27,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.UpdateKmsIssuerPolicyResponseVariant1, global::Vercel.UpdateKmsIssuerPolicyResponseVariant2>> UpdateKmsIssuerPolicyAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.UpdateKmsIssuerPolicyResponseVariant1, global::Vercel.UpdateKmsIssuerPolicyResponseVariant2, global::Vercel.UpdateKmsIssuerPolicyResponseVariant3>> UpdateKmsIssuerPolicyAsync(
             string issuerId,
             global::Vercel.UpdateKmsIssuerPolicyKind kind,
             string policyKey,
@@ -60,7 +60,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.UpdateKmsIssuerPolicyResponseVariant1, global::Vercel.UpdateKmsIssuerPolicyResponseVariant2>>> UpdateKmsIssuerPolicyAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.UpdateKmsIssuerPolicyResponseVariant1, global::Vercel.UpdateKmsIssuerPolicyResponseVariant2, global::Vercel.UpdateKmsIssuerPolicyResponseVariant3>>> UpdateKmsIssuerPolicyAsResponseAsync(
             string issuerId,
             global::Vercel.UpdateKmsIssuerPolicyKind kind,
             string policyKey,
@@ -98,7 +98,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.UpdateKmsIssuerPolicyResponseVariant1, global::Vercel.UpdateKmsIssuerPolicyResponseVariant2>> UpdateKmsIssuerPolicyAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.UpdateKmsIssuerPolicyResponseVariant1, global::Vercel.UpdateKmsIssuerPolicyResponseVariant2, global::Vercel.UpdateKmsIssuerPolicyResponseVariant3>> UpdateKmsIssuerPolicyAsync(
             string issuerId,
             global::Vercel.UpdateKmsIssuerPolicyKind kind,
             string policyKey,

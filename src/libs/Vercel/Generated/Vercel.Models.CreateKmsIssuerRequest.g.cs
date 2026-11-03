@@ -33,8 +33,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("policy")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateKmsIssuerRequestPolicyVariant1, global::Vercel.CreateKmsIssuerRequestPolicyVariant2>))]
-        public global::Vercel.OneOf<global::Vercel.CreateKmsIssuerRequestPolicyVariant1, global::Vercel.CreateKmsIssuerRequestPolicyVariant2>? Policy { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.CreateKmsIssuerRequestPolicyVariant1, global::Vercel.CreateKmsIssuerRequestPolicyVariant2, global::Vercel.CreateKmsIssuerRequestPolicyVariant3>))]
+        public global::Vercel.OneOf<global::Vercel.CreateKmsIssuerRequestPolicyVariant1, global::Vercel.CreateKmsIssuerRequestPolicyVariant2, global::Vercel.CreateKmsIssuerRequestPolicyVariant3>? Policy { get; set; }
 
         /// <summary>
         /// The PEM-encoded private key to use for the issuer.
@@ -81,7 +81,7 @@ namespace Vercel
             string name,
             global::Vercel.CreateKmsIssuerRequestAlgorithm? algorithm,
             object? claimsSchema,
-            global::Vercel.OneOf<global::Vercel.CreateKmsIssuerRequestPolicyVariant1, global::Vercel.CreateKmsIssuerRequestPolicyVariant2>? policy,
+            global::Vercel.OneOf<global::Vercel.CreateKmsIssuerRequestPolicyVariant1, global::Vercel.CreateKmsIssuerRequestPolicyVariant2, global::Vercel.CreateKmsIssuerRequestPolicyVariant3>? policy,
             string? importKey,
             string? importKeyId)
         {

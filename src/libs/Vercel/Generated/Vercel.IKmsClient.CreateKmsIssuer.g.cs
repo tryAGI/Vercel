@@ -18,7 +18,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedc57b57fa067d8814> CreateKmsIssuerAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared6bb335e8fa392fa3> CreateKmsIssuerAsync(
 
             global::Vercel.CreateKmsIssuerRequest request,
             string? teamId = default,
@@ -39,7 +39,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedc57b57fa067d8814>> CreateKmsIssuerAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared6bb335e8fa392fa3>> CreateKmsIssuerAsResponseAsync(
 
             global::Vercel.CreateKmsIssuerRequest request,
             string? teamId = default,
@@ -76,13 +76,13 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedc57b57fa067d8814> CreateKmsIssuerAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared6bb335e8fa392fa3> CreateKmsIssuerAsync(
             string name,
             string? teamId = default,
             string? slug = default,
             global::Vercel.CreateKmsIssuerRequestAlgorithm? algorithm = default,
             object? claimsSchema = default,
-            global::Vercel.OneOf<global::Vercel.CreateKmsIssuerRequestPolicyVariant1, global::Vercel.CreateKmsIssuerRequestPolicyVariant2>? policy = default,
+            global::Vercel.OneOf<global::Vercel.CreateKmsIssuerRequestPolicyVariant1, global::Vercel.CreateKmsIssuerRequestPolicyVariant2, global::Vercel.CreateKmsIssuerRequestPolicyVariant3>? policy = default,
             string? importKey = default,
             string? importKeyId = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
