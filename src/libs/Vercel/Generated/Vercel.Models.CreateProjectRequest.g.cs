@@ -23,6 +23,12 @@ namespace Vercel
         public bool? EnableProductionFeedback { get; set; }
 
         /// <summary>
+        /// Schedules the project for automatic deletion after the given timeframe.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiration")]
+        public global::Vercel.CreateProjectRequestExpiration? Expiration { get; set; }
+
+        /// <summary>
         /// Specifies whether preview deployments are disabled for this project.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("previewDeploymentsDisabled")]
@@ -173,6 +179,9 @@ namespace Vercel
         /// <param name="enableProductionFeedback">
         /// Opt-in to production toolbar on the project level
         /// </param>
+        /// <param name="expiration">
+        /// Schedules the project for automatic deletion after the given timeframe.
+        /// </param>
         /// <param name="previewDeploymentsDisabled">
         /// Specifies whether preview deployments are disabled for this project.
         /// </param>
@@ -232,6 +241,7 @@ namespace Vercel
             string name,
             bool? enablePreviewFeedback,
             bool? enableProductionFeedback,
+            global::Vercel.CreateProjectRequestExpiration? expiration,
             bool? previewDeploymentsDisabled,
             string? previewDeploymentSuffix,
             string? buildCommand,
@@ -253,6 +263,7 @@ namespace Vercel
         {
             this.EnablePreviewFeedback = enablePreviewFeedback;
             this.EnableProductionFeedback = enableProductionFeedback;
+            this.Expiration = expiration;
             this.PreviewDeploymentsDisabled = previewDeploymentsDisabled;
             this.PreviewDeploymentSuffix = previewDeploymentSuffix;
             this.BuildCommand = buildCommand;

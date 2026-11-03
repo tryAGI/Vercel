@@ -55,6 +55,9 @@ namespace Vercel
         /// <param name="customClaims">
         /// Custom claims embedded in the resource tokens Vercel mints for this resource.
         /// </param>
+        /// <param name="credentialTypes">
+        /// The credential types the resource accepts: `static` for long-lived secrets, `oidc` for Vercel resource OIDC tokens. Can be set freely while the resource has none. After that, only to confirm a change Vercel requested with a secrets rotation, once it is complete. Without `static`, all long-lived secrets must be expired and removed, and no new ones minted or injected.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
@@ -70,6 +73,7 @@ namespace Vercel
             object? extras = default,
             global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.UpdateResourceRequestSecret>, global::Vercel.UpdateResourceRequestSecrets>? secrets = default,
             global::Vercel.UpdateResourceRequestCustomClaims? customClaims = default,
+            global::System.Collections.Generic.IList<global::Vercel.UpdateResourceRequestCredentialType>? credentialTypes = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

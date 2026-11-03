@@ -3828,11 +3828,11 @@
                   },
                   "projectId": {
                     "type": "string",
-                    "description": "Required when scopeType is \"project\"."
+                    "description": "Required when scopeType is \\\"project\\\"."
                   },
                   "userId": {
                     "type": "string",
-                    "description": "Required when scopeType is \"user\"."
+                    "description": "Required when scopeType is \\\"user\\\"."
                   },
                   "limitAmount": {
                     "type": "number",
@@ -3863,6 +3863,10 @@
                         100
                       ]
                     }
+                  },
+                  "justification": {
+                    "type": "string",
+                    "description": "Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains."
                   }
                 }
               }
@@ -3930,22 +3934,32 @@
           },
           {
             "name": "projectId",
-            "description": "Required when scopeType is \"project\".",
+            "description": "Required when scopeType is \\\"project\\\".",
             "in": "query",
             "required": false,
             "schema": {
               "type": "string",
-              "description": "Required when scopeType is \"project\"."
+              "description": "Required when scopeType is \\\"project\\\"."
             }
           },
           {
             "name": "userId",
-            "description": "Required when scopeType is \"user\".",
+            "description": "Required when scopeType is \\\"user\\\".",
             "in": "query",
             "required": false,
             "schema": {
               "type": "string",
-              "description": "Required when scopeType is \"user\"."
+              "description": "Required when scopeType is \\\"user\\\"."
+            }
+          },
+          {
+            "name": "justification",
+            "description": "Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains."
             }
           },
           {
@@ -4141,6 +4155,10 @@
                         100
                       ]
                     }
+                  },
+                  "justification": {
+                    "type": "string",
+                    "description": "Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains."
                   }
                 }
               }
@@ -4198,6 +4216,16 @@
                 "user"
               ],
               "description": "The budget default scope to delete."
+            }
+          },
+          {
+            "name": "justification",
+            "description": "Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains. Only recorded when scopeType is set.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains. Only recorded when scopeType is set.",
+              "type": "string"
             }
           },
           {
@@ -27133,6 +27161,21 @@
                                   "enum": [
                                     "payment-failed"
                                   ]
+                                },
+                                "details": {
+                                  "type": "object",
+                                  "required": [
+                                    "reason"
+                                  ],
+                                  "properties": {
+                                    "reason": {
+                                      "type": "string",
+                                      "enum": [
+                                        "authentication-required"
+                                      ]
+                                    }
+                                  },
+                                  "additionalProperties": false
                                 }
                               },
                               "additionalProperties": false
@@ -42004,9 +42047,9 @@
                         "description": "Roles a deployment may request when minting a token. The selected role is emitted as the `role` claim."
                       },
                       "defaultRole": {
+                        "description": "Role used when the deployment does not request one. Required when `roles` is set.",
                         "type": "string",
-                        "maxLength": 32,
-                        "description": "Role used when the deployment does not request one. Required when `roles` is set."
+                        "maxLength": 32
                       },
                       "claimRules": {
                         "type": "array",
@@ -42077,6 +42120,20 @@
                     },
                     "additionalProperties": false,
                     "description": "Custom claims embedded in the resource tokens Vercel mints for this resource."
+                  },
+                  "credentialTypes": {
+                    "description": "The credential types the resource accepts: `static` for long-lived secrets, `oidc` for Vercel resource OIDC tokens. Can be set freely while the resource has none. After that, only to confirm a change Vercel requested with a secrets rotation, once it is complete. Without `static`, all long-lived secrets must be expired and removed, and no new ones minted or injected.",
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "static",
+                        "oidc"
+                      ]
+                    },
+                    "minItems": 1,
+                    "maxItems": 2,
+                    "uniqueItems": true
                   }
                 },
                 "additionalProperties": false
@@ -45931,6 +45988,10 @@
                       ]
                     },
                     "description": "Spend percentages (a subset of [50, 75, 100]) at which to send a spend alert. Pass an empty array to disable alerts."
+                  },
+                  "justification": {
+                    "type": "string",
+                    "description": "Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains."
                   }
                 }
               }
@@ -46164,7 +46225,7 @@
                   "properties": {
                     "issuers": {
                       "items": {
-                        "$ref": "#/components/schemas/AutoSDKSharedc57b57fa067d8814"
+                        "$ref": "#/components/schemas/AutoSDKShared6bb335e8fa392fa3"
                       },
                       "type": "array"
                     },
@@ -46271,7 +46332,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKSharedc57b57fa067d8814"
+                  "$ref": "#/components/schemas/AutoSDKShared6bb335e8fa392fa3"
                 }
               }
             }
@@ -46410,6 +46471,31 @@
                           "clientId": {
                             "type": "string",
                             "description": "The Connex client ID for the Connex grant policy."
+                          },
+                          "tokenClaims": {
+                            "type": "object",
+                            "description": "The claims that KMS should include in signed JWTs for this policy.",
+                            "additionalProperties": true
+                          }
+                        }
+                      },
+                      {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "kind",
+                          "integrationId"
+                        ],
+                        "properties": {
+                          "kind": {
+                            "type": "string",
+                            "enum": [
+                              "integration-tokens-grant"
+                            ]
+                          },
+                          "integrationId": {
+                            "type": "string",
+                            "description": "The marketplace integration ID for the integration tokens grant policy."
                           },
                           "tokenClaims": {
                             "type": "object",
@@ -46679,7 +46765,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKSharedc57b57fa067d8814"
+                  "$ref": "#/components/schemas/AutoSDKShared6bb335e8fa392fa3"
                 }
               }
             }
@@ -46764,7 +46850,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKSharedc57b57fa067d8814"
+                  "$ref": "#/components/schemas/AutoSDKShared6bb335e8fa392fa3"
                 }
               }
             }
@@ -46834,7 +46920,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKSharedc57b57fa067d8814"
+                  "$ref": "#/components/schemas/AutoSDKShared6bb335e8fa392fa3"
                 }
               }
             }
@@ -47064,6 +47150,37 @@
                         "updatedAt"
                       ],
                       "type": "object"
+                    },
+                    {
+                      "properties": {
+                        "createdAt": {
+                          "type": "string"
+                        },
+                        "integrationId": {
+                          "type": "string"
+                        },
+                        "kind": {
+                          "type": "string",
+                          "enum": [
+                            "integration-tokens-grant"
+                          ]
+                        },
+                        "tokenClaims": {
+                          "additionalProperties": true,
+                          "type": "object"
+                        },
+                        "updatedAt": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "createdAt",
+                        "integrationId",
+                        "kind",
+                        "updatedAt"
+                      ],
+                      "type": "object",
+                      "description": "Lets the integration-tokens service sign marketplace resource tokens for one integration (`oac_\u2026`)."
                     }
                   ]
                 }
@@ -47251,6 +47368,37 @@
                         "updatedAt"
                       ],
                       "type": "object"
+                    },
+                    {
+                      "properties": {
+                        "createdAt": {
+                          "type": "string"
+                        },
+                        "integrationId": {
+                          "type": "string"
+                        },
+                        "kind": {
+                          "type": "string",
+                          "enum": [
+                            "integration-tokens-grant"
+                          ]
+                        },
+                        "tokenClaims": {
+                          "additionalProperties": true,
+                          "type": "object"
+                        },
+                        "updatedAt": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "createdAt",
+                        "integrationId",
+                        "kind",
+                        "updatedAt"
+                      ],
+                      "type": "object",
+                      "description": "Lets the integration-tokens service sign marketplace resource tokens for one integration (`oac_\u2026`)."
                     }
                   ]
                 }
@@ -47407,7 +47555,8 @@
               "type": "string",
               "enum": [
                 "project-grant",
-                "connex-grant"
+                "connex-grant",
+                "integration-tokens-grant"
               ],
               "description": "The issuer policy kind."
             }
@@ -54941,6 +55090,27 @@
                     "description": "Opt-in to production toolbar on the project level",
                     "type": "boolean",
                     "nullable": true
+                  },
+                  "expiration": {
+                    "description": "Schedules the project for automatic deletion after the given timeframe.",
+                    "type": "object",
+                    "required": [
+                      "timeframe"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "timeframe": {
+                        "type": "string",
+                        "enum": [
+                          "1-hour",
+                          "1-day",
+                          "1-week",
+                          "2-week",
+                          "1-month"
+                        ],
+                        "description": "How far in the future the project will be automatically deleted"
+                      }
+                    }
                   },
                   "previewDeploymentsDisabled": {
                     "description": "Specifies whether preview deployments are disabled for this project.",
@@ -81073,6 +81243,19 @@
                                 true
                               ]
                             },
+                            "credentialTypesTransitions": {
+                              "items": {
+                                "items": {
+                                  "type": "string",
+                                  "enum": [
+                                    "oidc",
+                                    "static"
+                                  ]
+                                },
+                                "type": "array"
+                              },
+                              "type": "array"
+                            },
                             "mcp": {
                               "type": "boolean",
                               "enum": [
@@ -81148,6 +81331,44 @@
                             }
                           },
                           "type": "object"
+                        },
+                        "credentialTypes": {
+                          "items": {
+                            "type": "string",
+                            "enum": [
+                              "oidc",
+                              "static"
+                            ],
+                            "description": "The credential types the resource accepts: `static` for long-lived secrets, `oidc` for resource OIDC tokens."
+                          },
+                          "type": "array",
+                          "description": "The credential types the resource accepts: `static` for long-lived secrets, `oidc` for resource OIDC tokens."
+                        },
+                        "credentialTypesTransition": {
+                          "properties": {
+                            "completedAt": {
+                              "type": "number"
+                            },
+                            "requestedAt": {
+                              "type": "number"
+                            },
+                            "to": {
+                              "items": {
+                                "type": "string",
+                                "enum": [
+                                  "oidc",
+                                  "static"
+                                ]
+                              },
+                              "type": "array"
+                            }
+                          },
+                          "required": [
+                            "requestedAt",
+                            "to"
+                          ],
+                          "type": "object",
+                          "description": "The latest requested change of `credentialTypes`, and when the provider completed it."
                         },
                         "directPartnerConsoleUrl": {
                           "type": "string"
@@ -107435,6 +107656,7 @@
               "project-elastic-concurrency-updated",
               "project-expiration-locked",
               "project-expiration-reached",
+              "project-expiration-removed",
               "project-expiration-scheduled",
               "project-expiration-unlocked",
               "project-external-rewrite-caching-updated",
@@ -108408,6 +108630,7 @@
               "project-elastic-concurrency-updated",
               "project-expiration-locked",
               "project-expiration-reached",
+              "project-expiration-removed",
               "project-expiration-scheduled",
               "project-expiration-unlocked",
               "project-external-rewrite-caching-updated",
@@ -109169,6 +109392,7 @@
                 "project-elastic-concurrency-updated",
                 "project-expiration-locked",
                 "project-expiration-reached",
+                "project-expiration-removed",
                 "project-expiration-scheduled",
                 "project-expiration-unlocked",
                 "project-external-rewrite-caching-updated",
@@ -123073,6 +123297,186 @@
         },
         "type": "object"
       },
+      "AutoSDKShared6bb335e8fa392fa3": {
+        "properties": {
+          "algorithm": {
+            "type": "string",
+            "enum": [
+              "ES256",
+              "ES384",
+              "ES512",
+              "PS256",
+              "PS384",
+              "PS512",
+              "RS256",
+              "RS384",
+              "RS512"
+            ]
+          },
+          "claimsSchema": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "createdAt": {
+            "type": "string"
+          },
+          "discoveryLayout": {
+            "type": "string",
+            "enum": [
+              "connect",
+              "kms"
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "managedBy": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "origin": {
+            "type": "string",
+            "enum": [
+              "external",
+              "vercel"
+            ]
+          },
+          "ownerId": {
+            "type": "string"
+          },
+          "policies": {
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "environments": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array",
+                      "description": "Environments whose OIDC tokens this grant authorizes. Each entry is either a system environment slug (`production`, `preview`, `development`) or a custom environment ID (prefixed `env_`). Custom environments are matched against the token's `custom_environment_id` claim (the stable ID); system environments against its `environment` claim."
+                    },
+                    "kind": {
+                      "type": "string",
+                      "enum": [
+                        "project-grant"
+                      ]
+                    },
+                    "projectId": {
+                      "type": "string"
+                    },
+                    "teamId": {
+                      "type": "string"
+                    },
+                    "tokenClaims": {
+                      "additionalProperties": true,
+                      "type": "object"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "createdAt",
+                    "environments",
+                    "kind",
+                    "projectId",
+                    "teamId",
+                    "updatedAt"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "properties": {
+                    "clientId": {
+                      "type": "string"
+                    },
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "kind": {
+                      "type": "string",
+                      "enum": [
+                        "connex-grant"
+                      ]
+                    },
+                    "tokenClaims": {
+                      "additionalProperties": true,
+                      "type": "object"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "clientId",
+                    "createdAt",
+                    "kind",
+                    "updatedAt"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "properties": {
+                    "createdAt": {
+                      "type": "string"
+                    },
+                    "integrationId": {
+                      "type": "string"
+                    },
+                    "kind": {
+                      "type": "string",
+                      "enum": [
+                        "integration-tokens-grant"
+                      ]
+                    },
+                    "tokenClaims": {
+                      "additionalProperties": true,
+                      "type": "object"
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "createdAt",
+                    "integrationId",
+                    "kind",
+                    "updatedAt"
+                  ],
+                  "type": "object",
+                  "description": "Lets the integration-tokens service sign marketplace resource tokens for one integration (`oac_\u2026`)."
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "signingKeys": {
+            "$ref": "#/components/schemas/AutoSDKSharedd350ab9ee496d656"
+          },
+          "updatedAt": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "algorithm",
+          "createdAt",
+          "discoveryLayout",
+          "id",
+          "name",
+          "origin",
+          "ownerId",
+          "policies",
+          "signingKeys",
+          "updatedAt"
+        ],
+        "type": "object"
+      },
       "AutoSDKShared6ce7a2d665426cb4": {
         "properties": {
           "description": {
@@ -131526,155 +131930,6 @@
             "$ref": "#/components/schemas/AutoSDKShared7edb780247ab9fb3"
           }
         ]
-      },
-      "AutoSDKSharedc57b57fa067d8814": {
-        "properties": {
-          "algorithm": {
-            "type": "string",
-            "enum": [
-              "ES256",
-              "ES384",
-              "ES512",
-              "PS256",
-              "PS384",
-              "PS512",
-              "RS256",
-              "RS384",
-              "RS512"
-            ]
-          },
-          "claimsSchema": {
-            "additionalProperties": true,
-            "type": "object"
-          },
-          "createdAt": {
-            "type": "string"
-          },
-          "discoveryLayout": {
-            "type": "string",
-            "enum": [
-              "connect",
-              "kms"
-            ]
-          },
-          "id": {
-            "type": "string"
-          },
-          "managedBy": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "origin": {
-            "type": "string",
-            "enum": [
-              "external",
-              "vercel"
-            ]
-          },
-          "ownerId": {
-            "type": "string"
-          },
-          "policies": {
-            "items": {
-              "oneOf": [
-                {
-                  "properties": {
-                    "createdAt": {
-                      "type": "string"
-                    },
-                    "environments": {
-                      "items": {
-                        "type": "string"
-                      },
-                      "type": "array",
-                      "description": "Environments whose OIDC tokens this grant authorizes. Each entry is either a system environment slug (`production`, `preview`, `development`) or a custom environment ID (prefixed `env_`). Custom environments are matched against the token's `custom_environment_id` claim (the stable ID); system environments against its `environment` claim."
-                    },
-                    "kind": {
-                      "type": "string",
-                      "enum": [
-                        "project-grant"
-                      ]
-                    },
-                    "projectId": {
-                      "type": "string"
-                    },
-                    "teamId": {
-                      "type": "string"
-                    },
-                    "tokenClaims": {
-                      "additionalProperties": true,
-                      "type": "object"
-                    },
-                    "updatedAt": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "createdAt",
-                    "environments",
-                    "kind",
-                    "projectId",
-                    "teamId",
-                    "updatedAt"
-                  ],
-                  "type": "object"
-                },
-                {
-                  "properties": {
-                    "clientId": {
-                      "type": "string"
-                    },
-                    "createdAt": {
-                      "type": "string"
-                    },
-                    "kind": {
-                      "type": "string",
-                      "enum": [
-                        "connex-grant"
-                      ]
-                    },
-                    "tokenClaims": {
-                      "additionalProperties": true,
-                      "type": "object"
-                    },
-                    "updatedAt": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "clientId",
-                    "createdAt",
-                    "kind",
-                    "updatedAt"
-                  ],
-                  "type": "object"
-                }
-              ]
-            },
-            "type": "array"
-          },
-          "signingKeys": {
-            "$ref": "#/components/schemas/AutoSDKSharedd350ab9ee496d656"
-          },
-          "updatedAt": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "algorithm",
-          "createdAt",
-          "discoveryLayout",
-          "id",
-          "name",
-          "origin",
-          "ownerId",
-          "policies",
-          "signingKeys",
-          "updatedAt"
-        ],
-        "type": "object"
       },
       "AutoSDKSharedc60721415ef8a2a0": {
         "oneOf": [

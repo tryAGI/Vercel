@@ -16,6 +16,12 @@ namespace Vercel
         public global::Vercel.GetOrderResponseErrorVariant1Code Code { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("details")]
+        public global::Vercel.GetOrderResponseErrorVariant1Details? Details { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -25,13 +31,16 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="GetOrderResponseErrorVariant1" /> class.
         /// </summary>
         /// <param name="code"></param>
+        /// <param name="details"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetOrderResponseErrorVariant1(
-            global::Vercel.GetOrderResponseErrorVariant1Code code)
+            global::Vercel.GetOrderResponseErrorVariant1Code code,
+            global::Vercel.GetOrderResponseErrorVariant1Details? details)
         {
             this.Code = code;
+            this.Details = details;
         }
 
         /// <summary>

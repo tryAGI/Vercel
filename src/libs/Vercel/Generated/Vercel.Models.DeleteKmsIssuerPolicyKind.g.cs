@@ -15,6 +15,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        IntegrationTokensGrant,
+        /// <summary>
+        ///
+        /// </summary>
         ProjectGrant,
     }
 
@@ -31,6 +35,7 @@ namespace Vercel
             return value switch
             {
                 DeleteKmsIssuerPolicyKind.ConnexGrant => "connex-grant",
+                DeleteKmsIssuerPolicyKind.IntegrationTokensGrant => "integration-tokens-grant",
                 DeleteKmsIssuerPolicyKind.ProjectGrant => "project-grant",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -43,6 +48,7 @@ namespace Vercel
             return value switch
             {
                 "connex-grant" => DeleteKmsIssuerPolicyKind.ConnexGrant,
+                "integration-tokens-grant" => DeleteKmsIssuerPolicyKind.IntegrationTokensGrant,
                 "project-grant" => DeleteKmsIssuerPolicyKind.ProjectGrant,
                 _ => null,
             };

@@ -46,6 +46,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<double>? AlertThresholds { get; set; }
 
         /// <summary>
+        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("justification")]
+        public string? Justification { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -72,6 +78,9 @@ namespace Vercel
         /// <param name="alertThresholds">
         /// Spend percentages (a subset of [50, 75, 100]) at which to send a spend alert. Pass an empty array to disable alerts.
         /// </param>
+        /// <param name="justification">
+        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -81,7 +90,8 @@ namespace Vercel
             global::Vercel.UpdateApiKeyQuotaRequestRefreshPeriod? refreshPeriod,
             bool? active,
             bool? archived,
-            global::System.Collections.Generic.IList<double>? alertThresholds)
+            global::System.Collections.Generic.IList<double>? alertThresholds,
+            string? justification)
         {
             this.LimitAmount = limitAmount;
             this.IncludeByokInQuota = includeByokInQuota;
@@ -89,6 +99,7 @@ namespace Vercel
             this.Active = active;
             this.Archived = archived;
             this.AlertThresholds = alertThresholds;
+            this.Justification = justification;
         }
 
         /// <summary>

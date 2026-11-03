@@ -54,6 +54,18 @@ namespace Vercel
         public global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilities? Capabilities { get; set; }
 
         /// <summary>
+        /// The credential types the resource accepts: `static` for long-lived secrets, `oidc` for resource OIDC tokens.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("credentialTypes")]
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreCredentialType>? CredentialTypes { get; set; }
+
+        /// <summary>
+        /// The latest requested change of `credentialTypes`, and when the provider completed it.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("credentialTypesTransition")]
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreCredentialTypesTransition? CredentialTypesTransition { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("directPartnerConsoleUrl")]
@@ -173,6 +185,12 @@ namespace Vercel
         /// <param name="totalConnectedProjects"></param>
         /// <param name="billingPlan"></param>
         /// <param name="capabilities"></param>
+        /// <param name="credentialTypes">
+        /// The credential types the resource accepts: `static` for long-lived secrets, `oidc` for resource OIDC tokens.
+        /// </param>
+        /// <param name="credentialTypesTransition">
+        /// The latest requested change of `credentialTypes`, and when the provider completed it.
+        /// </param>
         /// <param name="directPartnerConsoleUrl"></param>
         /// <param name="externalResourceStatus"></param>
         /// <param name="metadata"></param>
@@ -212,6 +230,8 @@ namespace Vercel
             double? totalConnectedProjects,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlan? billingPlan,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilities? capabilities,
+            global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreCredentialType>? credentialTypes,
+            global::Vercel.CreateIntegrationStoreDirectResponseStoreCredentialTypesTransition? credentialTypesTransition,
             string? directPartnerConsoleUrl,
             global::Vercel.CreateIntegrationStoreDirectResponseStoreExternalResourceStatus? externalResourceStatus,
             object? metadata,
@@ -233,6 +253,8 @@ namespace Vercel
             this.UsageQuotaExceeded = usageQuotaExceeded;
             this.BillingPlan = billingPlan;
             this.Capabilities = capabilities;
+            this.CredentialTypes = credentialTypes;
+            this.CredentialTypesTransition = credentialTypesTransition;
             this.DirectPartnerConsoleUrl = directPartnerConsoleUrl;
             this.ExternalResourceId = externalResourceId ?? throw new global::System.ArgumentNullException(nameof(externalResourceId));
             this.ExternalResourceStatus = externalResourceStatus;

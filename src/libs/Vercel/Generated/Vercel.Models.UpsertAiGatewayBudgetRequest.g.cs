@@ -17,13 +17,13 @@ namespace Vercel
         public required global::Vercel.UpsertAiGatewayBudgetRequestScopeType ScopeType { get; set; }
 
         /// <summary>
-        /// Required when scopeType is "project".
+        /// Required when scopeType is \"project\".
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
         public string? ProjectId { get; set; }
 
         /// <summary>
-        /// Required when scopeType is "user".
+        /// Required when scopeType is \"user\".
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("userId")]
         public string? UserId { get; set; }
@@ -55,6 +55,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<double>? AlertThresholds { get; set; }
 
         /// <summary>
+        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("justification")]
+        public string? Justification { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -68,10 +74,10 @@ namespace Vercel
         /// Budget limit in dollars.
         /// </param>
         /// <param name="projectId">
-        /// Required when scopeType is "project".
+        /// Required when scopeType is \"project\".
         /// </param>
         /// <param name="userId">
-        /// Required when scopeType is "user".
+        /// Required when scopeType is \"user\".
         /// </param>
         /// <param name="refreshPeriod">
         /// Default Value: monthly
@@ -80,6 +86,9 @@ namespace Vercel
         /// Whether BYOK usage counts toward this budget.
         /// </param>
         /// <param name="alertThresholds"></param>
+        /// <param name="justification">
+        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -90,7 +99,8 @@ namespace Vercel
             string? userId,
             global::Vercel.UpsertAiGatewayBudgetRequestRefreshPeriod? refreshPeriod,
             bool? includeByokInQuota,
-            global::System.Collections.Generic.IList<double>? alertThresholds)
+            global::System.Collections.Generic.IList<double>? alertThresholds,
+            string? justification)
         {
             this.ScopeType = scopeType;
             this.ProjectId = projectId;
@@ -99,6 +109,7 @@ namespace Vercel
             this.RefreshPeriod = refreshPeriod;
             this.IncludeByokInQuota = includeByokInQuota;
             this.AlertThresholds = alertThresholds;
+            this.Justification = justification;
         }
 
         /// <summary>

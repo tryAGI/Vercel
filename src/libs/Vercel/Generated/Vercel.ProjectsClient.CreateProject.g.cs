@@ -801,6 +801,9 @@ namespace Vercel
         /// <param name="enableProductionFeedback">
         /// Opt-in to production toolbar on the project level
         /// </param>
+        /// <param name="expiration">
+        /// Schedules the project for automatic deletion after the given timeframe.
+        /// </param>
         /// <param name="previewDeploymentsDisabled">
         /// Specifies whether preview deployments are disabled for this project.
         /// </param>
@@ -866,6 +869,7 @@ namespace Vercel
             string? slug = default,
             bool? enablePreviewFeedback = default,
             bool? enableProductionFeedback = default,
+            global::Vercel.CreateProjectRequestExpiration? expiration = default,
             bool? previewDeploymentsDisabled = default,
             string? previewDeploymentSuffix = default,
             string? buildCommand = default,
@@ -891,6 +895,7 @@ namespace Vercel
             {
                 EnablePreviewFeedback = enablePreviewFeedback,
                 EnableProductionFeedback = enableProductionFeedback,
+                Expiration = expiration,
                 PreviewDeploymentsDisabled = previewDeploymentsDisabled,
                 PreviewDeploymentSuffix = previewDeploymentSuffix,
                 BuildCommand = buildCommand,
