@@ -441,7 +441,7 @@ namespace Vercel
         /// Description of why a project was rolled back, and by whom. Note that lastAliasRequest contains the from/to details of the rollback.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rollbackDescription")]
-        public global::Vercel.GetProjectResponseRollbackDescription? RollbackDescription { get; set; }
+        public global::Vercel.AutoSDKShared15ac57d28c37cbda? RollbackDescription { get; set; }
 
         /// <summary>
         /// Project-level rolling release configuration that defines how deployments should be gradually rolled out
@@ -812,7 +812,7 @@ namespace Vercel
             bool? protectedSourcemaps,
             object? protectionBypass,
             global::Vercel.GetProjectResponseProtectionConfig? protectionConfig,
-            global::Vercel.GetProjectResponseRollbackDescription? rollbackDescription,
+            global::Vercel.AutoSDKShared15ac57d28c37cbda? rollbackDescription,
             global::Vercel.AutoSDKSharedce0c7f50e384322c? rollingRelease,
             string? rootDirectory,
             global::Vercel.GetProjectResponseSandbox? sandbox,
