@@ -544,7 +544,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("routes")]
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared34abcb2fd4803b5a>? Routes { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShareda2a71ce8831cd3f8>? Routes { get; set; }
 
         /// <summary>
         /// NSNB Blocked metadata
@@ -556,7 +556,7 @@ namespace Vercel
         /// Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("services")]
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbebfd10f1fbc8cec>? Services { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared45365de6dac5caf5>? Services { get; set; }
 
         /// <summary>
         /// flag to indicate if the deployment was deleted by retention policy<br/>
@@ -933,9 +933,9 @@ namespace Vercel
             string? readyStateReason,
             global::Vercel.CreateDeploymentResponseReadySubstate? readySubstate,
             global::Vercel.AutoSDKShared693ab19349d28dd8? resourceConfig,
-            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared34abcb2fd4803b5a>? routes,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShareda2a71ce8831cd3f8>? routes,
             global::Vercel.CreateDeploymentResponseSeatBlock? seatBlock,
-            global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbebfd10f1fbc8cec>? services,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared45365de6dac5caf5>? services,
             bool? softDeletedByRetention,
             global::Vercel.CreateDeploymentResponseSource? source,
             global::Vercel.CreateDeploymentResponseTarget? target,

@@ -35,6 +35,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("credentialTypesCreate")]
+        public global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesCredentialTypesCreateItemItem>>? CredentialTypesCreate { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("flexCommitEligible")]
         public bool? FlexCommitEligible { get; set; }
 
@@ -136,6 +142,7 @@ namespace Vercel
         /// <param name="checks"></param>
         /// <param name="connectedImportResource"></param>
         /// <param name="connectedProvisioning"></param>
+        /// <param name="credentialTypesCreate"></param>
         /// <param name="flexCommitEligible"></param>
         /// <param name="importResource"></param>
         /// <param name="maxAllowedTeams"></param>
@@ -159,6 +166,7 @@ namespace Vercel
             bool? checks,
             bool? connectedImportResource,
             bool? connectedProvisioning,
+            global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesCredentialTypesCreateItemItem>>? credentialTypesCreate,
             bool? flexCommitEligible,
             bool? importResource,
             double? maxAllowedTeams,
@@ -179,6 +187,7 @@ namespace Vercel
             this.Checks = checks;
             this.ConnectedImportResource = connectedImportResource;
             this.ConnectedProvisioning = connectedProvisioning;
+            this.CredentialTypesCreate = credentialTypesCreate;
             this.FlexCommitEligible = flexCommitEligible;
             this.ImportResource = importResource;
             this.MaxAllowedTeams = maxAllowedTeams;

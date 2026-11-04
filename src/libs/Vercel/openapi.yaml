@@ -17955,7 +17955,7 @@
                           "$ref": "#/components/schemas/AutoSDKShared693ab19349d28dd8"
                         },
                         "routes": {
-                          "$ref": "#/components/schemas/AutoSDKShared27c528b47ce4ffd7"
+                          "$ref": "#/components/schemas/AutoSDKShared5b382f460fe3aa4b"
                         },
                         "seatBlock": {
                           "properties": {
@@ -18006,7 +18006,7 @@
                           "description": "NSNB Blocked metadata"
                         },
                         "services": {
-                          "$ref": "#/components/schemas/AutoSDKSharedd328db242e02bf28"
+                          "$ref": "#/components/schemas/AutoSDKShared9d0d69cfe1716c23"
                         },
                         "softDeletedByRetention": {
                           "type": "boolean",
@@ -20095,7 +20095,7 @@
                           "$ref": "#/components/schemas/AutoSDKShared693ab19349d28dd8"
                         },
                         "routes": {
-                          "$ref": "#/components/schemas/AutoSDKShared27c528b47ce4ffd7"
+                          "$ref": "#/components/schemas/AutoSDKShared5b382f460fe3aa4b"
                         },
                         "seatBlock": {
                           "properties": {
@@ -20146,7 +20146,7 @@
                           "description": "NSNB Blocked metadata"
                         },
                         "services": {
-                          "$ref": "#/components/schemas/AutoSDKSharedd328db242e02bf28"
+                          "$ref": "#/components/schemas/AutoSDKShared9d0d69cfe1716c23"
                         },
                         "softDeletedByRetention": {
                           "type": "boolean",
@@ -22277,7 +22277,7 @@
                       "$ref": "#/components/schemas/AutoSDKShared693ab19349d28dd8"
                     },
                     "routes": {
-                      "$ref": "#/components/schemas/AutoSDKShared27c528b47ce4ffd7"
+                      "$ref": "#/components/schemas/AutoSDKShared5b382f460fe3aa4b"
                     },
                     "seatBlock": {
                       "properties": {
@@ -22328,7 +22328,7 @@
                       "description": "NSNB Blocked metadata"
                     },
                     "services": {
-                      "$ref": "#/components/schemas/AutoSDKSharedd328db242e02bf28"
+                      "$ref": "#/components/schemas/AutoSDKShared9d0d69cfe1716c23"
                     },
                     "softDeletedByRetention": {
                       "type": "boolean",
@@ -52433,7 +52433,7 @@
                           "type": "number"
                         },
                         "routes": {
-                          "$ref": "#/components/schemas/AutoSDKShared1bd85de7e2b8d12b"
+                          "$ref": "#/components/schemas/AutoSDKSharedc7b2d1ad11fad9d8"
                         },
                         "version": {
                           "properties": {
@@ -52498,7 +52498,7 @@
                     {
                       "properties": {
                         "routes": {
-                          "$ref": "#/components/schemas/AutoSDKShared1bd85de7e2b8d12b"
+                          "$ref": "#/components/schemas/AutoSDKSharedc7b2d1ad11fad9d8"
                         },
                         "version": {
                           "properties": {
@@ -52577,7 +52577,7 @@
                           "type": "object"
                         },
                         "routes": {
-                          "$ref": "#/components/schemas/AutoSDKShared1bd85de7e2b8d12b"
+                          "$ref": "#/components/schemas/AutoSDKSharedc7b2d1ad11fad9d8"
                         },
                         "version": {
                           "properties": {
@@ -53037,7 +53037,7 @@
                 "schema": {
                   "properties": {
                     "route": {
-                      "$ref": "#/components/schemas/AutoSDKShared258edac9bcd00342"
+                      "$ref": "#/components/schemas/AutoSDKShareda5bc732e1681aab5"
                     },
                     "version": {
                       "properties": {
@@ -53500,7 +53500,7 @@
                 "schema": {
                   "properties": {
                     "route": {
-                      "$ref": "#/components/schemas/AutoSDKShared258edac9bcd00342"
+                      "$ref": "#/components/schemas/AutoSDKShareda5bc732e1681aab5"
                     },
                     "version": {
                       "properties": {
@@ -54419,7 +54419,7 @@
                   "nullable": true,
                   "oneOf": [
                     {
-                      "$ref": "#/components/schemas/AutoSDKShared6e10ec8f95de42b6"
+                      "$ref": "#/components/schemas/AutoSDKShared778f053a00f0b881"
                     },
                     {
                       "properties": {
@@ -54452,7 +54452,7 @@
                           ]
                         },
                         "projects": {
-                          "$ref": "#/components/schemas/AutoSDKShared6e10ec8f95de42b6"
+                          "$ref": "#/components/schemas/AutoSDKShared778f053a00f0b881"
                         }
                       },
                       "required": [
@@ -81870,6 +81870,19 @@
                                         false,
                                         true
                                       ]
+                                    },
+                                    "credentialTypesCreate": {
+                                      "items": {
+                                        "items": {
+                                          "type": "string",
+                                          "enum": [
+                                            "oidc",
+                                            "static"
+                                          ]
+                                        },
+                                        "type": "array"
+                                      },
+                                      "type": "array"
                                     },
                                     "flexCommitEligible": {
                                       "type": "boolean",
@@ -115427,6 +115440,12 @@
         },
         "type": "object"
       },
+      "AutoSDKShared09502d2961d7cce5": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKSharedfaf92fa84e99abdd"
+        },
+        "type": "array"
+      },
       "AutoSDKShared0f45691814810f14": {
         "properties": {
           "conditions": {
@@ -116101,6 +116120,12 @@
         },
         "type": "object"
       },
+      "AutoSDKShared11b10e8379fb77ea": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKShared82154186cc88506c"
+        },
+        "type": "array"
+      },
       "AutoSDKShared133a7ec19e4ac4f6": {
         "oneOf": [
           {
@@ -116119,12 +116144,6 @@
             "description": "If the deployment was created using a Custom Environment, then this property contains information regarding the environment used."
           }
         ]
-      },
-      "AutoSDKShared136d1cc7a12ad23d": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKSharedec768aa2f540dc85"
-        },
-        "type": "array"
       },
       "AutoSDKShared148176ff46df85b9": {
         "type": "array",
@@ -116743,12 +116762,6 @@
         },
         "type": "object"
       },
-      "AutoSDKShared1bd85de7e2b8d12b": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKShared6ce7a2d665426cb4"
-        },
-        "type": "array"
-      },
       "AutoSDKShared1cc535808e9f997c": {
         "items": {
           "$ref": "#/components/schemas/AutoSDKShared9554e4a81de92250"
@@ -117260,73 +117273,6 @@
           }
         }
       },
-      "AutoSDKShared258edac9bcd00342": {
-        "properties": {
-          "description": {
-            "type": "string",
-            "description": "Optional description of what the routing rule does."
-          },
-          "enabled": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ],
-            "description": "Whether the routing rule is enabled. Defaults to true."
-          },
-          "id": {
-            "type": "string",
-            "description": "Unique identifier for the routing rule."
-          },
-          "name": {
-            "type": "string",
-            "description": "Human-readable name for the routing rule."
-          },
-          "rawDest": {
-            "type": "string",
-            "description": "Original destination provided by user."
-          },
-          "rawSrc": {
-            "type": "string",
-            "description": "Original source pattern provided by user (path-to-regexp or regex). Used to display the user's input in API responses."
-          },
-          "route": {
-            "$ref": "#/components/schemas/AutoSDKShared8dbad85779e5c1fb"
-          },
-          "routeType": {
-            "type": "string",
-            "enum": [
-              "redirect",
-              "rewrite",
-              "set_status",
-              "transform"
-            ]
-          },
-          "srcSyntax": {
-            "type": "string",
-            "enum": [
-              "equals",
-              "path-to-regexp",
-              "regex"
-            ],
-            "description": "The syntax type of the source pattern. Determines how the pattern is compiled to regex."
-          },
-          "staged": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ],
-            "description": "Whether this route is new and not yet published to production. Set to true only when a route is first created via add-route. Cleared (set to false) when a version is promoted to production."
-          }
-        },
-        "required": [
-          "id",
-          "name",
-          "route"
-        ],
-        "type": "object"
-      },
       "AutoSDKShared266c3858ab83ab52": {
         "additionalProperties": {
           "$ref": "#/components/schemas/AutoSDKShared3aee88dc9f99cb9b"
@@ -117338,13 +117284,6 @@
         "items": {
           "$ref": "#/components/schemas/AutoSDKSharedba1f75615f04b60c"
         }
-      },
-      "AutoSDKShared27c528b47ce4ffd7": {
-        "nullable": true,
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKShared34abcb2fd4803b5a"
-        },
-        "type": "array"
       },
       "AutoSDKShared2899f8f1b76807ed": {
         "oneOf": [
@@ -117620,12 +117559,6 @@
           "target"
         ],
         "type": "object"
-      },
-      "AutoSDKShared2b643c284f6ed817": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKShared62800e8e12d3c345"
-        },
-        "type": "array"
       },
       "AutoSDKShared2b72c73af96370da": {
         "items": {
@@ -118718,67 +118651,6 @@
         },
         "type": "array",
         "description": "Optional overrides for the default same-env-by-slug matching. Provide explicit rules to allow cross-env access or presets. An empty array denies all access and is only allowed for the current project."
-      },
-      "AutoSDKShared34abcb2fd4803b5a": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/AutoSDKShared5f73cd821829ef28"
-          },
-          {
-            "properties": {
-              "dest": {
-                "type": "string"
-              },
-              "handle": {
-                "type": "string",
-                "enum": [
-                  "error",
-                  "filesystem",
-                  "hit",
-                  "miss",
-                  "resource",
-                  "rewrite"
-                ]
-              },
-              "src": {
-                "type": "string"
-              },
-              "status": {
-                "type": "number"
-              }
-            },
-            "required": [
-              "handle"
-            ],
-            "type": "object"
-          },
-          {
-            "properties": {
-              "continue": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "middleware": {
-                "type": "number",
-                "enum": [
-                  0
-                ]
-              },
-              "src": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "continue",
-              "middleware",
-              "src"
-            ],
-            "type": "object"
-          }
-        ]
       },
       "AutoSDKShared38e9af03824d67bc": {
         "properties": {
@@ -119911,6 +119783,16 @@
         },
         "additionalProperties": true,
         "default": {}
+      },
+      "AutoSDKShared45365de6dac5caf5": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/AutoSDKShared303c00bc2455dd70"
+          },
+          {
+            "$ref": "#/components/schemas/AutoSDKShared82fc3497d7089534"
+          }
+        ]
       },
       "AutoSDKShared470bc56668090392": {
         "properties": {
@@ -122067,624 +121949,12 @@
         ],
         "type": "object"
       },
-      "AutoSDKShared5f73cd821829ef28": {
-        "properties": {
-          "caseSensitive": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "check": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "continue": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "dest": {
-            "type": "string"
-          },
-          "destination": {
-            "oneOf": [
-              {
-                "type": "string"
-              },
-              {
-                "properties": {
-                  "path": {
-                    "type": "string",
-                    "description": "Routing-only path used to select a route inside the target service."
-                  },
-                  "service": {
-                    "type": "string"
-                  },
-                  "type": {
-                    "type": "string",
-                    "enum": [
-                      "service"
-                    ],
-                    "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
-                  }
-                },
-                "required": [
-                  "service"
-                ],
-                "type": "object"
-              }
-            ]
-          },
-          "env": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "has": {
-            "items": {
-              "oneOf": [
-                {
-                  "properties": {
-                    "type": {
-                      "type": "string",
-                      "enum": [
-                        "host"
-                      ]
-                    },
-                    "value": {
-                      "oneOf": [
-                        {
-                          "type": "string"
-                        },
-                        {
-                          "properties": {
-                            "eq": {
-                              "oneOf": [
-                                {
-                                  "type": "string"
-                                },
-                                {
-                                  "type": "number"
-                                }
-                              ]
-                            },
-                            "gt": {
-                              "type": "number"
-                            },
-                            "gte": {
-                              "type": "number"
-                            },
-                            "inc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "lt": {
-                              "type": "number"
-                            },
-                            "lte": {
-                              "type": "number"
-                            },
-                            "neq": {
-                              "type": "string"
-                            },
-                            "ninc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "pre": {
-                              "type": "string"
-                            },
-                            "re": {
-                              "type": "string"
-                            },
-                            "suf": {
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        }
-                      ]
-                    }
-                  },
-                  "required": [
-                    "type",
-                    "value"
-                  ],
-                  "type": "object"
-                },
-                {
-                  "properties": {
-                    "key": {
-                      "type": "string"
-                    },
-                    "type": {
-                      "type": "string",
-                      "enum": [
-                        "cookie",
-                        "header",
-                        "query"
-                      ]
-                    },
-                    "value": {
-                      "oneOf": [
-                        {
-                          "type": "string"
-                        },
-                        {
-                          "properties": {
-                            "eq": {
-                              "oneOf": [
-                                {
-                                  "type": "string"
-                                },
-                                {
-                                  "type": "number"
-                                }
-                              ]
-                            },
-                            "gt": {
-                              "type": "number"
-                            },
-                            "gte": {
-                              "type": "number"
-                            },
-                            "inc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "lt": {
-                              "type": "number"
-                            },
-                            "lte": {
-                              "type": "number"
-                            },
-                            "neq": {
-                              "type": "string"
-                            },
-                            "ninc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "pre": {
-                              "type": "string"
-                            },
-                            "re": {
-                              "type": "string"
-                            },
-                            "suf": {
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        }
-                      ]
-                    }
-                  },
-                  "required": [
-                    "key",
-                    "type"
-                  ],
-                  "type": "object"
-                }
-              ]
-            },
-            "type": "array"
-          },
-          "headers": {
-            "additionalProperties": {
-              "type": "string"
-            },
-            "type": "object"
-          },
-          "important": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "locale": {
-            "properties": {
-              "cookie": {
-                "type": "string"
-              },
-              "redirect": {
-                "additionalProperties": {
-                  "type": "string"
-                },
-                "type": "object"
-              }
-            },
-            "type": "object"
-          },
-          "methods": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "middleware": {
-            "type": "number",
-            "description": "A middleware index in the `middleware` key under the build result"
-          },
-          "middlewarePath": {
-            "type": "string",
-            "description": "A middleware key within the `output` key under the build result. Overrides a `middleware` definition."
-          },
-          "middlewareRawSrc": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array",
-            "description": "The original middleware matchers."
-          },
-          "missing": {
-            "items": {
-              "oneOf": [
-                {
-                  "properties": {
-                    "type": {
-                      "type": "string",
-                      "enum": [
-                        "host"
-                      ]
-                    },
-                    "value": {
-                      "oneOf": [
-                        {
-                          "type": "string"
-                        },
-                        {
-                          "properties": {
-                            "eq": {
-                              "oneOf": [
-                                {
-                                  "type": "string"
-                                },
-                                {
-                                  "type": "number"
-                                }
-                              ]
-                            },
-                            "gt": {
-                              "type": "number"
-                            },
-                            "gte": {
-                              "type": "number"
-                            },
-                            "inc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "lt": {
-                              "type": "number"
-                            },
-                            "lte": {
-                              "type": "number"
-                            },
-                            "neq": {
-                              "type": "string"
-                            },
-                            "ninc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "pre": {
-                              "type": "string"
-                            },
-                            "re": {
-                              "type": "string"
-                            },
-                            "suf": {
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        }
-                      ]
-                    }
-                  },
-                  "required": [
-                    "type",
-                    "value"
-                  ],
-                  "type": "object"
-                },
-                {
-                  "properties": {
-                    "key": {
-                      "type": "string"
-                    },
-                    "type": {
-                      "type": "string",
-                      "enum": [
-                        "cookie",
-                        "header",
-                        "query"
-                      ]
-                    },
-                    "value": {
-                      "oneOf": [
-                        {
-                          "type": "string"
-                        },
-                        {
-                          "properties": {
-                            "eq": {
-                              "oneOf": [
-                                {
-                                  "type": "string"
-                                },
-                                {
-                                  "type": "number"
-                                }
-                              ]
-                            },
-                            "gt": {
-                              "type": "number"
-                            },
-                            "gte": {
-                              "type": "number"
-                            },
-                            "inc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "lt": {
-                              "type": "number"
-                            },
-                            "lte": {
-                              "type": "number"
-                            },
-                            "neq": {
-                              "type": "string"
-                            },
-                            "ninc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "pre": {
-                              "type": "string"
-                            },
-                            "re": {
-                              "type": "string"
-                            },
-                            "suf": {
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        }
-                      ]
-                    }
-                  },
-                  "required": [
-                    "key",
-                    "type"
-                  ],
-                  "type": "object"
-                }
-              ]
-            },
-            "type": "array"
-          },
-          "mitigate": {
-            "properties": {
-              "action": {
-                "type": "string",
-                "enum": [
-                  "challenge",
-                  "deny"
-                ]
-              }
-            },
-            "required": [
-              "action"
-            ],
-            "type": "object"
-          },
-          "override": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "respectOriginCacheControl": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "source": {
-            "type": "string",
-            "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, the string forms are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object. `destination` may also be a service-targeted object, in which case routing is delegated into the named service's internal route table and the object is preserved as-is (not folded into `dest`)."
-          },
-          "src": {
-            "type": "string"
-          },
-          "status": {
-            "type": "number"
-          },
-          "statusCode": {
-            "type": "number"
-          },
-          "transforms": {
-            "items": {
-              "oneOf": [
-                {
-                  "properties": {
-                    "args": {
-                      "oneOf": [
-                        {
-                          "type": "string"
-                        },
-                        {
-                          "items": {
-                            "type": "string"
-                          },
-                          "type": "array"
-                        }
-                      ]
-                    },
-                    "env": {
-                      "items": {
-                        "type": "string"
-                      },
-                      "type": "array"
-                    },
-                    "op": {
-                      "type": "string",
-                      "enum": [
-                        "append",
-                        "delete",
-                        "set"
-                      ]
-                    },
-                    "target": {
-                      "properties": {
-                        "key": {
-                          "oneOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "properties": {
-                                "eq": {
-                                  "oneOf": [
-                                    {
-                                      "type": "string"
-                                    },
-                                    {
-                                      "type": "number"
-                                    }
-                                  ]
-                                },
-                                "gt": {
-                                  "type": "number"
-                                },
-                                "gte": {
-                                  "type": "number"
-                                },
-                                "inc": {
-                                  "items": {
-                                    "type": "string"
-                                  },
-                                  "type": "array"
-                                },
-                                "lt": {
-                                  "type": "number"
-                                },
-                                "lte": {
-                                  "type": "number"
-                                },
-                                "neq": {
-                                  "type": "string"
-                                },
-                                "ninc": {
-                                  "items": {
-                                    "type": "string"
-                                  },
-                                  "type": "array"
-                                },
-                                "pre": {
-                                  "type": "string"
-                                },
-                                "suf": {
-                                  "type": "string"
-                                }
-                              },
-                              "type": "object"
-                            }
-                          ]
-                        }
-                      },
-                      "required": [
-                        "key"
-                      ],
-                      "type": "object"
-                    },
-                    "type": {
-                      "type": "string",
-                      "enum": [
-                        "request.headers",
-                        "request.query",
-                        "response.headers"
-                      ]
-                    }
-                  },
-                  "required": [
-                    "op",
-                    "target",
-                    "type"
-                  ],
-                  "type": "object"
-                },
-                {
-                  "properties": {
-                    "args": {
-                      "type": "string"
-                    },
-                    "env": {
-                      "items": {
-                        "type": "string"
-                      },
-                      "type": "array"
-                    },
-                    "op": {
-                      "type": "string",
-                      "enum": [
-                        "set"
-                      ]
-                    },
-                    "type": {
-                      "type": "string",
-                      "enum": [
-                        "request.path"
-                      ]
-                    }
-                  },
-                  "required": [
-                    "args",
-                    "op",
-                    "type"
-                  ],
-                  "type": "object"
-                }
-              ]
-            },
-            "type": "array"
-          }
+      "AutoSDKShared5b382f460fe3aa4b": {
+        "nullable": true,
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKShareda2a71ce8831cd3f8"
         },
-        "required": [
-          "src"
-        ],
-        "type": "object"
+        "type": "array"
       },
       "AutoSDKShared6120795acc1bdfb3": {
         "oneOf": [
@@ -122797,413 +122067,6 @@
             "type": "object"
           }
         ]
-      },
-      "AutoSDKShared62800e8e12d3c345": {
-        "properties": {
-          "destination": {
-            "oneOf": [
-              {
-                "type": "string"
-              },
-              {
-                "properties": {
-                  "path": {
-                    "type": "string",
-                    "description": "Routing-only path used to select a route inside the target service."
-                  },
-                  "service": {
-                    "type": "string"
-                  },
-                  "type": {
-                    "type": "string",
-                    "enum": [
-                      "service"
-                    ],
-                    "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
-                  }
-                },
-                "required": [
-                  "service"
-                ],
-                "type": "object"
-              }
-            ]
-          },
-          "env": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "has": {
-            "items": {
-              "oneOf": [
-                {
-                  "properties": {
-                    "type": {
-                      "type": "string",
-                      "enum": [
-                        "host"
-                      ]
-                    },
-                    "value": {
-                      "oneOf": [
-                        {
-                          "type": "string"
-                        },
-                        {
-                          "properties": {
-                            "eq": {
-                              "oneOf": [
-                                {
-                                  "type": "string"
-                                },
-                                {
-                                  "type": "number"
-                                }
-                              ]
-                            },
-                            "gt": {
-                              "type": "number"
-                            },
-                            "gte": {
-                              "type": "number"
-                            },
-                            "inc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "lt": {
-                              "type": "number"
-                            },
-                            "lte": {
-                              "type": "number"
-                            },
-                            "neq": {
-                              "type": "string"
-                            },
-                            "ninc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "pre": {
-                              "type": "string"
-                            },
-                            "re": {
-                              "type": "string"
-                            },
-                            "suf": {
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        }
-                      ]
-                    }
-                  },
-                  "required": [
-                    "type",
-                    "value"
-                  ],
-                  "type": "object"
-                },
-                {
-                  "properties": {
-                    "key": {
-                      "type": "string"
-                    },
-                    "type": {
-                      "type": "string",
-                      "enum": [
-                        "cookie",
-                        "header",
-                        "query"
-                      ]
-                    },
-                    "value": {
-                      "oneOf": [
-                        {
-                          "type": "string"
-                        },
-                        {
-                          "properties": {
-                            "eq": {
-                              "oneOf": [
-                                {
-                                  "type": "string"
-                                },
-                                {
-                                  "type": "number"
-                                }
-                              ]
-                            },
-                            "gt": {
-                              "type": "number"
-                            },
-                            "gte": {
-                              "type": "number"
-                            },
-                            "inc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "lt": {
-                              "type": "number"
-                            },
-                            "lte": {
-                              "type": "number"
-                            },
-                            "neq": {
-                              "type": "string"
-                            },
-                            "ninc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "pre": {
-                              "type": "string"
-                            },
-                            "re": {
-                              "type": "string"
-                            },
-                            "suf": {
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        }
-                      ]
-                    }
-                  },
-                  "required": [
-                    "key",
-                    "type"
-                  ],
-                  "type": "object"
-                }
-              ]
-            },
-            "type": "array"
-          },
-          "missing": {
-            "items": {
-              "oneOf": [
-                {
-                  "properties": {
-                    "type": {
-                      "type": "string",
-                      "enum": [
-                        "host"
-                      ]
-                    },
-                    "value": {
-                      "oneOf": [
-                        {
-                          "type": "string"
-                        },
-                        {
-                          "properties": {
-                            "eq": {
-                              "oneOf": [
-                                {
-                                  "type": "string"
-                                },
-                                {
-                                  "type": "number"
-                                }
-                              ]
-                            },
-                            "gt": {
-                              "type": "number"
-                            },
-                            "gte": {
-                              "type": "number"
-                            },
-                            "inc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "lt": {
-                              "type": "number"
-                            },
-                            "lte": {
-                              "type": "number"
-                            },
-                            "neq": {
-                              "type": "string"
-                            },
-                            "ninc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "pre": {
-                              "type": "string"
-                            },
-                            "re": {
-                              "type": "string"
-                            },
-                            "suf": {
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        }
-                      ]
-                    }
-                  },
-                  "required": [
-                    "type",
-                    "value"
-                  ],
-                  "type": "object"
-                },
-                {
-                  "properties": {
-                    "key": {
-                      "type": "string"
-                    },
-                    "type": {
-                      "type": "string",
-                      "enum": [
-                        "cookie",
-                        "header",
-                        "query"
-                      ]
-                    },
-                    "value": {
-                      "oneOf": [
-                        {
-                          "type": "string"
-                        },
-                        {
-                          "properties": {
-                            "eq": {
-                              "oneOf": [
-                                {
-                                  "type": "string"
-                                },
-                                {
-                                  "type": "number"
-                                }
-                              ]
-                            },
-                            "gt": {
-                              "type": "number"
-                            },
-                            "gte": {
-                              "type": "number"
-                            },
-                            "inc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "lt": {
-                              "type": "number"
-                            },
-                            "lte": {
-                              "type": "number"
-                            },
-                            "neq": {
-                              "type": "string"
-                            },
-                            "ninc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "pre": {
-                              "type": "string"
-                            },
-                            "re": {
-                              "type": "string"
-                            },
-                            "suf": {
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        }
-                      ]
-                    }
-                  },
-                  "required": [
-                    "key",
-                    "type"
-                  ],
-                  "type": "object"
-                }
-              ]
-            },
-            "type": "array"
-          },
-          "respectOriginCacheControl": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "source": {
-            "type": "string"
-          },
-          "statusCode": {
-            "type": "number"
-          },
-          "transforms": {
-            "items": {
-              "properties": {
-                "args": {
-                  "type": "string"
-                },
-                "env": {
-                  "items": {
-                    "type": "string"
-                  },
-                  "type": "array"
-                },
-                "op": {
-                  "type": "string",
-                  "enum": [
-                    "set"
-                  ]
-                },
-                "type": {
-                  "type": "string",
-                  "enum": [
-                    "request.path"
-                  ]
-                }
-              },
-              "required": [
-                "args",
-                "op",
-                "type"
-              ],
-              "type": "object"
-            },
-            "type": "array"
-          }
-        },
-        "required": [
-          "destination",
-          "source"
-        ],
-        "type": "object"
       },
       "AutoSDKShared650e942fd9ba5744": {
         "type": "object",
@@ -123476,81 +122339,6 @@
           "updatedAt"
         ],
         "type": "object"
-      },
-      "AutoSDKShared6ce7a2d665426cb4": {
-        "properties": {
-          "description": {
-            "type": "string",
-            "description": "Optional description of what the routing rule does."
-          },
-          "enabled": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ],
-            "description": "Whether the routing rule is enabled. Defaults to true."
-          },
-          "id": {
-            "type": "string",
-            "description": "Unique identifier for the routing rule."
-          },
-          "name": {
-            "type": "string",
-            "description": "Human-readable name for the routing rule."
-          },
-          "rawDest": {
-            "type": "string",
-            "description": "Original destination provided by user."
-          },
-          "rawSrc": {
-            "type": "string",
-            "description": "Original source pattern provided by user (path-to-regexp or regex). Used to display the user's input in API responses."
-          },
-          "route": {
-            "$ref": "#/components/schemas/AutoSDKShared8dbad85779e5c1fb"
-          },
-          "routeType": {
-            "type": "string",
-            "enum": [
-              "redirect",
-              "rewrite",
-              "set_status",
-              "transform"
-            ],
-            "description": "Computed route type based on the route configuration. Only present in API responses, not stored in S3."
-          },
-          "srcSyntax": {
-            "type": "string",
-            "enum": [
-              "equals",
-              "path-to-regexp",
-              "regex"
-            ],
-            "description": "The syntax type of the source pattern. Determines how the pattern is compiled to regex."
-          },
-          "staged": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ],
-            "description": "Whether this route is new and not yet published to production. Set to true only when a route is first created via add-route. Cleared (set to false) when a version is promoted to production."
-          }
-        },
-        "required": [
-          "id",
-          "name",
-          "route"
-        ],
-        "type": "object",
-        "description": "A routing rule with metadata for project-level routing."
-      },
-      "AutoSDKShared6e10ec8f95de42b6": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKSharedfc5823c22a1eaa2b"
-        },
-        "type": "array"
       },
       "AutoSDKShared6ed7be4e006b051d": {
         "nullable": true,
@@ -124084,6 +122872,12 @@
           "rules"
         ],
         "type": "object"
+      },
+      "AutoSDKShared778f053a00f0b881": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKSharedcbbf169fc3cfe485"
+        },
+        "type": "array"
       },
       "AutoSDKShared78353984d471628d": {
         "oneOf": [
@@ -125869,6 +124663,421 @@
         ],
         "type": "object"
       },
+      "AutoSDKShared82154186cc88506c": {
+        "properties": {
+          "destination": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "properties": {
+                  "path": {
+                    "type": "string",
+                    "description": "Routing-only path used to select a route inside the target service."
+                  },
+                  "service": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "service"
+                    ],
+                    "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
+                  }
+                },
+                "required": [
+                  "service"
+                ],
+                "type": "object"
+              }
+            ]
+          },
+          "env": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "has": {
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "host"
+                      ]
+                    },
+                    "value": {
+                      "oneOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "properties": {
+                            "eq": {
+                              "oneOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "number"
+                                }
+                              ]
+                            },
+                            "gt": {
+                              "type": "number"
+                            },
+                            "gte": {
+                              "type": "number"
+                            },
+                            "inc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "lt": {
+                              "type": "number"
+                            },
+                            "lte": {
+                              "type": "number"
+                            },
+                            "neq": {
+                              "type": "string"
+                            },
+                            "ninc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "pre": {
+                              "type": "string"
+                            },
+                            "re": {
+                              "type": "string"
+                            },
+                            "suf": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "value"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "properties": {
+                    "key": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "cookie",
+                        "header",
+                        "query"
+                      ]
+                    },
+                    "value": {
+                      "oneOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "properties": {
+                            "eq": {
+                              "oneOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "number"
+                                }
+                              ]
+                            },
+                            "gt": {
+                              "type": "number"
+                            },
+                            "gte": {
+                              "type": "number"
+                            },
+                            "inc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "lt": {
+                              "type": "number"
+                            },
+                            "lte": {
+                              "type": "number"
+                            },
+                            "neq": {
+                              "type": "string"
+                            },
+                            "ninc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "pre": {
+                              "type": "string"
+                            },
+                            "re": {
+                              "type": "string"
+                            },
+                            "suf": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "key",
+                    "type"
+                  ],
+                  "type": "object"
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "missing": {
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "host"
+                      ]
+                    },
+                    "value": {
+                      "oneOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "properties": {
+                            "eq": {
+                              "oneOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "number"
+                                }
+                              ]
+                            },
+                            "gt": {
+                              "type": "number"
+                            },
+                            "gte": {
+                              "type": "number"
+                            },
+                            "inc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "lt": {
+                              "type": "number"
+                            },
+                            "lte": {
+                              "type": "number"
+                            },
+                            "neq": {
+                              "type": "string"
+                            },
+                            "ninc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "pre": {
+                              "type": "string"
+                            },
+                            "re": {
+                              "type": "string"
+                            },
+                            "suf": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "value"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "properties": {
+                    "key": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "cookie",
+                        "header",
+                        "query"
+                      ]
+                    },
+                    "value": {
+                      "oneOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "properties": {
+                            "eq": {
+                              "oneOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "number"
+                                }
+                              ]
+                            },
+                            "gt": {
+                              "type": "number"
+                            },
+                            "gte": {
+                              "type": "number"
+                            },
+                            "inc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "lt": {
+                              "type": "number"
+                            },
+                            "lte": {
+                              "type": "number"
+                            },
+                            "neq": {
+                              "type": "string"
+                            },
+                            "ninc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "pre": {
+                              "type": "string"
+                            },
+                            "re": {
+                              "type": "string"
+                            },
+                            "suf": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "key",
+                    "type"
+                  ],
+                  "type": "object"
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "respectOriginCacheControl": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "source": {
+            "type": "string"
+          },
+          "statusCode": {
+            "type": "number"
+          },
+          "transforms": {
+            "items": {
+              "properties": {
+                "args": {
+                  "type": "string"
+                },
+                "env": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                "fallback": {
+                  "type": "boolean",
+                  "enum": [
+                    false,
+                    true
+                  ],
+                  "description": "Keep an earlier request.path value. Builders use this for fallback routes."
+                },
+                "op": {
+                  "type": "string",
+                  "enum": [
+                    "set"
+                  ]
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "request.path"
+                  ]
+                }
+              },
+              "required": [
+                "args",
+                "op",
+                "type"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "destination",
+          "source"
+        ],
+        "type": "object"
+      },
       "AutoSDKShared82df63ae69e9ea93": {
         "oneOf": [
           {
@@ -125957,6 +125166,132 @@
             "description": "A list of the deployment routing information for each project."
           }
         ]
+      },
+      "AutoSDKShared82fc3497d7089534": {
+        "properties": {
+          "bindings": {
+            "items": {
+              "properties": {
+                "env": {
+                  "type": "string",
+                  "description": "Environment variable name that will store the generated value"
+                },
+                "format": {
+                  "type": "string",
+                  "enum": [
+                    "url"
+                  ],
+                  "description": "Generated value shape, must be `\"url\"`."
+                },
+                "service": {
+                  "type": "string",
+                  "description": "Target service name from `services`."
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "service"
+                  ],
+                  "description": "If present, must be `\"service\"` for Service-to-Service HTTP bindings."
+                }
+              },
+              "required": [
+                "env",
+                "format",
+                "service"
+              ],
+              "type": "object",
+              "description": "Caller-side bindings to other services."
+            },
+            "type": "array",
+            "description": "Caller-side bindings to other services."
+          },
+          "buildCommand": {
+            "type": "string"
+          },
+          "builder": {
+            "$ref": "#/components/schemas/AutoSDKShared99bbe712df7b2f21"
+          },
+          "cleanUrls": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "command": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "description": "Command override for `runtime: \"container\"` services."
+          },
+          "devCommand": {
+            "type": "string"
+          },
+          "entrypoint": {
+            "type": "string",
+            "description": "Resolved entrypoint, relative to the service root."
+          },
+          "framework": {
+            "type": "string"
+          },
+          "functions": {
+            "$ref": "#/components/schemas/AutoSDKShared9213b55e2a5cf1ce"
+          },
+          "headers": {
+            "$ref": "#/components/schemas/AutoSDKShared1cc535808e9f997c"
+          },
+          "ignoreCommand": {
+            "type": "string"
+          },
+          "installCommand": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "outputDirectory": {
+            "type": "string"
+          },
+          "redirects": {
+            "$ref": "#/components/schemas/AutoSDKSharedd8f4627308e44215"
+          },
+          "rewrites": {
+            "$ref": "#/components/schemas/AutoSDKShared11b10e8379fb77ea"
+          },
+          "root": {
+            "type": "string",
+            "description": "Path to the service root, relative to the project root."
+          },
+          "routes": {
+            "$ref": "#/components/schemas/AutoSDKShared09502d2961d7cce5"
+          },
+          "runtime": {
+            "type": "string"
+          },
+          "schema": {
+            "type": "string",
+            "enum": [
+              "experimentalServicesV2"
+            ]
+          },
+          "trailingSlash": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          }
+        },
+        "required": [
+          "builder",
+          "name",
+          "root",
+          "schema"
+        ],
+        "type": "object",
+        "description": "Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime."
       },
       "AutoSDKShared8422af433e1bf486": {
         "nullable": true,
@@ -126320,626 +125655,6 @@
           "runs"
         ],
         "type": "object"
-      },
-      "AutoSDKShared8dbad85779e5c1fb": {
-        "properties": {
-          "caseSensitive": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "check": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "continue": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "dest": {
-            "type": "string"
-          },
-          "destination": {
-            "oneOf": [
-              {
-                "type": "string"
-              },
-              {
-                "properties": {
-                  "path": {
-                    "type": "string",
-                    "description": "Routing-only path used to select a route inside the target service."
-                  },
-                  "service": {
-                    "type": "string"
-                  },
-                  "type": {
-                    "type": "string",
-                    "enum": [
-                      "service"
-                    ],
-                    "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
-                  }
-                },
-                "required": [
-                  "service"
-                ],
-                "type": "object"
-              }
-            ]
-          },
-          "env": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "has": {
-            "items": {
-              "oneOf": [
-                {
-                  "properties": {
-                    "type": {
-                      "type": "string",
-                      "enum": [
-                        "host"
-                      ]
-                    },
-                    "value": {
-                      "oneOf": [
-                        {
-                          "type": "string"
-                        },
-                        {
-                          "properties": {
-                            "eq": {
-                              "oneOf": [
-                                {
-                                  "type": "string"
-                                },
-                                {
-                                  "type": "number"
-                                }
-                              ]
-                            },
-                            "gt": {
-                              "type": "number"
-                            },
-                            "gte": {
-                              "type": "number"
-                            },
-                            "inc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "lt": {
-                              "type": "number"
-                            },
-                            "lte": {
-                              "type": "number"
-                            },
-                            "neq": {
-                              "type": "string"
-                            },
-                            "ninc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "pre": {
-                              "type": "string"
-                            },
-                            "re": {
-                              "type": "string"
-                            },
-                            "suf": {
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        }
-                      ]
-                    }
-                  },
-                  "required": [
-                    "type",
-                    "value"
-                  ],
-                  "type": "object"
-                },
-                {
-                  "properties": {
-                    "key": {
-                      "type": "string"
-                    },
-                    "type": {
-                      "type": "string",
-                      "enum": [
-                        "cookie",
-                        "header",
-                        "query"
-                      ]
-                    },
-                    "value": {
-                      "oneOf": [
-                        {
-                          "type": "string"
-                        },
-                        {
-                          "properties": {
-                            "eq": {
-                              "oneOf": [
-                                {
-                                  "type": "string"
-                                },
-                                {
-                                  "type": "number"
-                                }
-                              ]
-                            },
-                            "gt": {
-                              "type": "number"
-                            },
-                            "gte": {
-                              "type": "number"
-                            },
-                            "inc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "lt": {
-                              "type": "number"
-                            },
-                            "lte": {
-                              "type": "number"
-                            },
-                            "neq": {
-                              "type": "string"
-                            },
-                            "ninc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "pre": {
-                              "type": "string"
-                            },
-                            "re": {
-                              "type": "string"
-                            },
-                            "suf": {
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        }
-                      ]
-                    }
-                  },
-                  "required": [
-                    "key",
-                    "type"
-                  ],
-                  "type": "object"
-                }
-              ]
-            },
-            "type": "array"
-          },
-          "headers": {
-            "additionalProperties": {
-              "type": "string"
-            },
-            "type": "object"
-          },
-          "important": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "locale": {
-            "properties": {
-              "cookie": {
-                "type": "string"
-              },
-              "redirect": {
-                "additionalProperties": {
-                  "type": "string"
-                },
-                "type": "object"
-              }
-            },
-            "type": "object"
-          },
-          "methods": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "middleware": {
-            "type": "number",
-            "description": "A middleware index in the `middleware` key under the build result"
-          },
-          "middlewarePath": {
-            "type": "string",
-            "description": "A middleware key within the `output` key under the build result. Overrides a `middleware` definition."
-          },
-          "middlewareRawSrc": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array",
-            "description": "The original middleware matchers."
-          },
-          "missing": {
-            "items": {
-              "oneOf": [
-                {
-                  "properties": {
-                    "type": {
-                      "type": "string",
-                      "enum": [
-                        "host"
-                      ]
-                    },
-                    "value": {
-                      "oneOf": [
-                        {
-                          "type": "string"
-                        },
-                        {
-                          "properties": {
-                            "eq": {
-                              "oneOf": [
-                                {
-                                  "type": "string"
-                                },
-                                {
-                                  "type": "number"
-                                }
-                              ]
-                            },
-                            "gt": {
-                              "type": "number"
-                            },
-                            "gte": {
-                              "type": "number"
-                            },
-                            "inc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "lt": {
-                              "type": "number"
-                            },
-                            "lte": {
-                              "type": "number"
-                            },
-                            "neq": {
-                              "type": "string"
-                            },
-                            "ninc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "pre": {
-                              "type": "string"
-                            },
-                            "re": {
-                              "type": "string"
-                            },
-                            "suf": {
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        }
-                      ]
-                    }
-                  },
-                  "required": [
-                    "type",
-                    "value"
-                  ],
-                  "type": "object"
-                },
-                {
-                  "properties": {
-                    "key": {
-                      "type": "string"
-                    },
-                    "type": {
-                      "type": "string",
-                      "enum": [
-                        "cookie",
-                        "header",
-                        "query"
-                      ]
-                    },
-                    "value": {
-                      "oneOf": [
-                        {
-                          "type": "string"
-                        },
-                        {
-                          "properties": {
-                            "eq": {
-                              "oneOf": [
-                                {
-                                  "type": "string"
-                                },
-                                {
-                                  "type": "number"
-                                }
-                              ]
-                            },
-                            "gt": {
-                              "type": "number"
-                            },
-                            "gte": {
-                              "type": "number"
-                            },
-                            "inc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "lt": {
-                              "type": "number"
-                            },
-                            "lte": {
-                              "type": "number"
-                            },
-                            "neq": {
-                              "type": "string"
-                            },
-                            "ninc": {
-                              "items": {
-                                "type": "string"
-                              },
-                              "type": "array"
-                            },
-                            "pre": {
-                              "type": "string"
-                            },
-                            "re": {
-                              "type": "string"
-                            },
-                            "suf": {
-                              "type": "string"
-                            }
-                          },
-                          "type": "object"
-                        }
-                      ]
-                    }
-                  },
-                  "required": [
-                    "key",
-                    "type"
-                  ],
-                  "type": "object"
-                }
-              ]
-            },
-            "type": "array"
-          },
-          "mitigate": {
-            "properties": {
-              "action": {
-                "type": "string",
-                "enum": [
-                  "challenge",
-                  "deny"
-                ]
-              }
-            },
-            "required": [
-              "action"
-            ],
-            "type": "object"
-          },
-          "override": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "respectOriginCacheControl": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "source": {
-            "type": "string",
-            "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, the string forms are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object. `destination` may also be a service-targeted object, in which case routing is delegated into the named service's internal route table and the object is preserved as-is (not folded into `dest`)."
-          },
-          "src": {
-            "type": "string"
-          },
-          "status": {
-            "type": "number"
-          },
-          "statusCode": {
-            "type": "number"
-          },
-          "transforms": {
-            "items": {
-              "oneOf": [
-                {
-                  "properties": {
-                    "args": {
-                      "oneOf": [
-                        {
-                          "type": "string"
-                        },
-                        {
-                          "items": {
-                            "type": "string"
-                          },
-                          "type": "array"
-                        }
-                      ]
-                    },
-                    "env": {
-                      "items": {
-                        "type": "string"
-                      },
-                      "type": "array"
-                    },
-                    "op": {
-                      "type": "string",
-                      "enum": [
-                        "append",
-                        "delete",
-                        "set"
-                      ]
-                    },
-                    "target": {
-                      "properties": {
-                        "key": {
-                          "oneOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "properties": {
-                                "eq": {
-                                  "oneOf": [
-                                    {
-                                      "type": "string"
-                                    },
-                                    {
-                                      "type": "number"
-                                    }
-                                  ]
-                                },
-                                "gt": {
-                                  "type": "number"
-                                },
-                                "gte": {
-                                  "type": "number"
-                                },
-                                "inc": {
-                                  "items": {
-                                    "type": "string"
-                                  },
-                                  "type": "array"
-                                },
-                                "lt": {
-                                  "type": "number"
-                                },
-                                "lte": {
-                                  "type": "number"
-                                },
-                                "neq": {
-                                  "type": "string"
-                                },
-                                "ninc": {
-                                  "items": {
-                                    "type": "string"
-                                  },
-                                  "type": "array"
-                                },
-                                "pre": {
-                                  "type": "string"
-                                },
-                                "suf": {
-                                  "type": "string"
-                                }
-                              },
-                              "type": "object"
-                            }
-                          ]
-                        }
-                      },
-                      "required": [
-                        "key"
-                      ],
-                      "type": "object"
-                    },
-                    "type": {
-                      "type": "string",
-                      "enum": [
-                        "request.headers",
-                        "request.query",
-                        "response.headers"
-                      ]
-                    }
-                  },
-                  "required": [
-                    "op",
-                    "target",
-                    "type"
-                  ],
-                  "type": "object"
-                },
-                {
-                  "properties": {
-                    "args": {
-                      "type": "string"
-                    },
-                    "env": {
-                      "items": {
-                        "type": "string"
-                      },
-                      "type": "array"
-                    },
-                    "op": {
-                      "type": "string",
-                      "enum": [
-                        "set"
-                      ]
-                    },
-                    "type": {
-                      "type": "string",
-                      "enum": [
-                        "request.path"
-                      ]
-                    }
-                  },
-                  "required": [
-                    "args",
-                    "op",
-                    "type"
-                  ],
-                  "type": "object"
-                }
-              ]
-            },
-            "type": "array"
-          }
-        },
-        "required": [
-          "src"
-        ],
-        "type": "object",
-        "description": "The route definition from @vercel/routing-utils."
       },
       "AutoSDKShared8e5249ecd42210ed": {
         "properties": {
@@ -128684,6 +127399,633 @@
         },
         "type": "object"
       },
+      "AutoSDKShared947f69fa305d000e": {
+        "properties": {
+          "caseSensitive": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "check": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "continue": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "dest": {
+            "type": "string"
+          },
+          "destination": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "properties": {
+                  "path": {
+                    "type": "string",
+                    "description": "Routing-only path used to select a route inside the target service."
+                  },
+                  "service": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "service"
+                    ],
+                    "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
+                  }
+                },
+                "required": [
+                  "service"
+                ],
+                "type": "object"
+              }
+            ]
+          },
+          "env": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "has": {
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "host"
+                      ]
+                    },
+                    "value": {
+                      "oneOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "properties": {
+                            "eq": {
+                              "oneOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "number"
+                                }
+                              ]
+                            },
+                            "gt": {
+                              "type": "number"
+                            },
+                            "gte": {
+                              "type": "number"
+                            },
+                            "inc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "lt": {
+                              "type": "number"
+                            },
+                            "lte": {
+                              "type": "number"
+                            },
+                            "neq": {
+                              "type": "string"
+                            },
+                            "ninc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "pre": {
+                              "type": "string"
+                            },
+                            "re": {
+                              "type": "string"
+                            },
+                            "suf": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "value"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "properties": {
+                    "key": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "cookie",
+                        "header",
+                        "query"
+                      ]
+                    },
+                    "value": {
+                      "oneOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "properties": {
+                            "eq": {
+                              "oneOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "number"
+                                }
+                              ]
+                            },
+                            "gt": {
+                              "type": "number"
+                            },
+                            "gte": {
+                              "type": "number"
+                            },
+                            "inc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "lt": {
+                              "type": "number"
+                            },
+                            "lte": {
+                              "type": "number"
+                            },
+                            "neq": {
+                              "type": "string"
+                            },
+                            "ninc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "pre": {
+                              "type": "string"
+                            },
+                            "re": {
+                              "type": "string"
+                            },
+                            "suf": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "key",
+                    "type"
+                  ],
+                  "type": "object"
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "headers": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object"
+          },
+          "important": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "locale": {
+            "properties": {
+              "cookie": {
+                "type": "string"
+              },
+              "redirect": {
+                "additionalProperties": {
+                  "type": "string"
+                },
+                "type": "object"
+              }
+            },
+            "type": "object"
+          },
+          "methods": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "middleware": {
+            "type": "number",
+            "description": "A middleware index in the `middleware` key under the build result"
+          },
+          "middlewarePath": {
+            "type": "string",
+            "description": "A middleware key within the `output` key under the build result. Overrides a `middleware` definition."
+          },
+          "middlewareRawSrc": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "description": "The original middleware matchers."
+          },
+          "missing": {
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "host"
+                      ]
+                    },
+                    "value": {
+                      "oneOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "properties": {
+                            "eq": {
+                              "oneOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "number"
+                                }
+                              ]
+                            },
+                            "gt": {
+                              "type": "number"
+                            },
+                            "gte": {
+                              "type": "number"
+                            },
+                            "inc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "lt": {
+                              "type": "number"
+                            },
+                            "lte": {
+                              "type": "number"
+                            },
+                            "neq": {
+                              "type": "string"
+                            },
+                            "ninc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "pre": {
+                              "type": "string"
+                            },
+                            "re": {
+                              "type": "string"
+                            },
+                            "suf": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "value"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "properties": {
+                    "key": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "cookie",
+                        "header",
+                        "query"
+                      ]
+                    },
+                    "value": {
+                      "oneOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "properties": {
+                            "eq": {
+                              "oneOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "number"
+                                }
+                              ]
+                            },
+                            "gt": {
+                              "type": "number"
+                            },
+                            "gte": {
+                              "type": "number"
+                            },
+                            "inc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "lt": {
+                              "type": "number"
+                            },
+                            "lte": {
+                              "type": "number"
+                            },
+                            "neq": {
+                              "type": "string"
+                            },
+                            "ninc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "pre": {
+                              "type": "string"
+                            },
+                            "re": {
+                              "type": "string"
+                            },
+                            "suf": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "key",
+                    "type"
+                  ],
+                  "type": "object"
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "mitigate": {
+            "properties": {
+              "action": {
+                "type": "string",
+                "enum": [
+                  "challenge",
+                  "deny"
+                ]
+              }
+            },
+            "required": [
+              "action"
+            ],
+            "type": "object"
+          },
+          "override": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "respectOriginCacheControl": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "source": {
+            "type": "string",
+            "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, the string forms are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object. `destination` may also be a service-targeted object, in which case routing is delegated into the named service's internal route table and the object is preserved as-is (not folded into `dest`)."
+          },
+          "src": {
+            "type": "string"
+          },
+          "status": {
+            "type": "number"
+          },
+          "statusCode": {
+            "type": "number"
+          },
+          "transforms": {
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "args": {
+                      "oneOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        }
+                      ]
+                    },
+                    "env": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "op": {
+                      "type": "string",
+                      "enum": [
+                        "append",
+                        "delete",
+                        "set"
+                      ]
+                    },
+                    "target": {
+                      "properties": {
+                        "key": {
+                          "oneOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "properties": {
+                                "eq": {
+                                  "oneOf": [
+                                    {
+                                      "type": "string"
+                                    },
+                                    {
+                                      "type": "number"
+                                    }
+                                  ]
+                                },
+                                "gt": {
+                                  "type": "number"
+                                },
+                                "gte": {
+                                  "type": "number"
+                                },
+                                "inc": {
+                                  "items": {
+                                    "type": "string"
+                                  },
+                                  "type": "array"
+                                },
+                                "lt": {
+                                  "type": "number"
+                                },
+                                "lte": {
+                                  "type": "number"
+                                },
+                                "neq": {
+                                  "type": "string"
+                                },
+                                "ninc": {
+                                  "items": {
+                                    "type": "string"
+                                  },
+                                  "type": "array"
+                                },
+                                "pre": {
+                                  "type": "string"
+                                },
+                                "suf": {
+                                  "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "key"
+                      ],
+                      "type": "object"
+                    },
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "request.headers",
+                        "request.query",
+                        "response.headers"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "op",
+                    "target",
+                    "type"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "properties": {
+                    "args": {
+                      "type": "string"
+                    },
+                    "env": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "fallback": {
+                      "type": "boolean",
+                      "enum": [
+                        false,
+                        true
+                      ],
+                      "description": "Keep an earlier request.path value. Builders use this for fallback routes."
+                    },
+                    "op": {
+                      "type": "string",
+                      "enum": [
+                        "set"
+                      ]
+                    },
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "request.path"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "args",
+                    "op",
+                    "type"
+                  ],
+                  "type": "object"
+                }
+              ]
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "src"
+        ],
+        "type": "object"
+      },
       "AutoSDKShared94938587734e5f57": {
         "nullable": true,
         "properties": {
@@ -129140,6 +128482,13 @@
         "type": "object",
         "description": "Builder selected by the resolver."
       },
+      "AutoSDKShared9d0d69cfe1716c23": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKShared45365de6dac5caf5"
+        },
+        "type": "array",
+        "description": "Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime."
+      },
       "AutoSDKShareda0db2c4b058f2749": {
         "oneOf": [
           {
@@ -129358,6 +128707,67 @@
         ],
         "type": "object",
         "description": "Output returned after configuring an OrbSubscriptionIntent."
+      },
+      "AutoSDKShareda2a71ce8831cd3f8": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/AutoSDKShared947f69fa305d000e"
+          },
+          {
+            "properties": {
+              "dest": {
+                "type": "string"
+              },
+              "handle": {
+                "type": "string",
+                "enum": [
+                  "error",
+                  "filesystem",
+                  "hit",
+                  "miss",
+                  "resource",
+                  "rewrite"
+                ]
+              },
+              "src": {
+                "type": "string"
+              },
+              "status": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "handle"
+            ],
+            "type": "object"
+          },
+          {
+            "properties": {
+              "continue": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "middleware": {
+                "type": "number",
+                "enum": [
+                  0
+                ]
+              },
+              "src": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "continue",
+              "middleware",
+              "src"
+            ],
+            "type": "object"
+          }
+        ]
       },
       "AutoSDKShareda3770e4df73b880d": {
         "properties": {
@@ -129939,6 +129349,73 @@
           "id"
         ]
       },
+      "AutoSDKShareda5bc732e1681aab5": {
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Optional description of what the routing rule does."
+          },
+          "enabled": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ],
+            "description": "Whether the routing rule is enabled. Defaults to true."
+          },
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the routing rule."
+          },
+          "name": {
+            "type": "string",
+            "description": "Human-readable name for the routing rule."
+          },
+          "rawDest": {
+            "type": "string",
+            "description": "Original destination provided by user."
+          },
+          "rawSrc": {
+            "type": "string",
+            "description": "Original source pattern provided by user (path-to-regexp or regex). Used to display the user's input in API responses."
+          },
+          "route": {
+            "$ref": "#/components/schemas/AutoSDKSharedada259eacea6cff6"
+          },
+          "routeType": {
+            "type": "string",
+            "enum": [
+              "redirect",
+              "rewrite",
+              "set_status",
+              "transform"
+            ]
+          },
+          "srcSyntax": {
+            "type": "string",
+            "enum": [
+              "equals",
+              "path-to-regexp",
+              "regex"
+            ],
+            "description": "The syntax type of the source pattern. Determines how the pattern is compiled to regex."
+          },
+          "staged": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ],
+            "description": "Whether this route is new and not yet published to production. Set to true only when a route is first created via add-route. Cleared (set to false) when a version is promoted to production."
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "route"
+        ],
+        "type": "object"
+      },
       "AutoSDKSharedad42af066f165baa": {
         "description": "A rule applied to requests matching a domain in the network policy. Only one of `transform`, `forwardURL`, or `response` can be specified per rule.",
         "type": "object",
@@ -129953,6 +129430,634 @@
         "type": "array",
         "description": "The webhooks events",
         "example": "deployment.created"
+      },
+      "AutoSDKSharedada259eacea6cff6": {
+        "properties": {
+          "caseSensitive": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "check": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "continue": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "dest": {
+            "type": "string"
+          },
+          "destination": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "properties": {
+                  "path": {
+                    "type": "string",
+                    "description": "Routing-only path used to select a route inside the target service."
+                  },
+                  "service": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "service"
+                    ],
+                    "description": "Optional explicit format marker. The destination is identified by the presence of `service`, so `type` is no longer required."
+                  }
+                },
+                "required": [
+                  "service"
+                ],
+                "type": "object"
+              }
+            ]
+          },
+          "env": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "has": {
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "host"
+                      ]
+                    },
+                    "value": {
+                      "oneOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "properties": {
+                            "eq": {
+                              "oneOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "number"
+                                }
+                              ]
+                            },
+                            "gt": {
+                              "type": "number"
+                            },
+                            "gte": {
+                              "type": "number"
+                            },
+                            "inc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "lt": {
+                              "type": "number"
+                            },
+                            "lte": {
+                              "type": "number"
+                            },
+                            "neq": {
+                              "type": "string"
+                            },
+                            "ninc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "pre": {
+                              "type": "string"
+                            },
+                            "re": {
+                              "type": "string"
+                            },
+                            "suf": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "value"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "properties": {
+                    "key": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "cookie",
+                        "header",
+                        "query"
+                      ]
+                    },
+                    "value": {
+                      "oneOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "properties": {
+                            "eq": {
+                              "oneOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "number"
+                                }
+                              ]
+                            },
+                            "gt": {
+                              "type": "number"
+                            },
+                            "gte": {
+                              "type": "number"
+                            },
+                            "inc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "lt": {
+                              "type": "number"
+                            },
+                            "lte": {
+                              "type": "number"
+                            },
+                            "neq": {
+                              "type": "string"
+                            },
+                            "ninc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "pre": {
+                              "type": "string"
+                            },
+                            "re": {
+                              "type": "string"
+                            },
+                            "suf": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "key",
+                    "type"
+                  ],
+                  "type": "object"
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "headers": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object"
+          },
+          "important": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "locale": {
+            "properties": {
+              "cookie": {
+                "type": "string"
+              },
+              "redirect": {
+                "additionalProperties": {
+                  "type": "string"
+                },
+                "type": "object"
+              }
+            },
+            "type": "object"
+          },
+          "methods": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "middleware": {
+            "type": "number",
+            "description": "A middleware index in the `middleware` key under the build result"
+          },
+          "middlewarePath": {
+            "type": "string",
+            "description": "A middleware key within the `output` key under the build result. Overrides a `middleware` definition."
+          },
+          "middlewareRawSrc": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "description": "The original middleware matchers."
+          },
+          "missing": {
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "host"
+                      ]
+                    },
+                    "value": {
+                      "oneOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "properties": {
+                            "eq": {
+                              "oneOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "number"
+                                }
+                              ]
+                            },
+                            "gt": {
+                              "type": "number"
+                            },
+                            "gte": {
+                              "type": "number"
+                            },
+                            "inc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "lt": {
+                              "type": "number"
+                            },
+                            "lte": {
+                              "type": "number"
+                            },
+                            "neq": {
+                              "type": "string"
+                            },
+                            "ninc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "pre": {
+                              "type": "string"
+                            },
+                            "re": {
+                              "type": "string"
+                            },
+                            "suf": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "value"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "properties": {
+                    "key": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "cookie",
+                        "header",
+                        "query"
+                      ]
+                    },
+                    "value": {
+                      "oneOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "properties": {
+                            "eq": {
+                              "oneOf": [
+                                {
+                                  "type": "string"
+                                },
+                                {
+                                  "type": "number"
+                                }
+                              ]
+                            },
+                            "gt": {
+                              "type": "number"
+                            },
+                            "gte": {
+                              "type": "number"
+                            },
+                            "inc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "lt": {
+                              "type": "number"
+                            },
+                            "lte": {
+                              "type": "number"
+                            },
+                            "neq": {
+                              "type": "string"
+                            },
+                            "ninc": {
+                              "items": {
+                                "type": "string"
+                              },
+                              "type": "array"
+                            },
+                            "pre": {
+                              "type": "string"
+                            },
+                            "re": {
+                              "type": "string"
+                            },
+                            "suf": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "key",
+                    "type"
+                  ],
+                  "type": "object"
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "mitigate": {
+            "properties": {
+              "action": {
+                "type": "string",
+                "enum": [
+                  "challenge",
+                  "deny"
+                ]
+              }
+            },
+            "required": [
+              "action"
+            ],
+            "type": "object"
+          },
+          "override": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "respectOriginCacheControl": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "source": {
+            "type": "string",
+            "description": "Aliases for `src`, `dest`, and `status`. These provide consistency with the `rewrites`, `redirects`, and `headers` fields which use `source`, `destination`, and `statusCode`. During normalization, the string forms are converted to their canonical forms (`src`, `dest`, `status`) and stripped from the route object. `destination` may also be a service-targeted object, in which case routing is delegated into the named service's internal route table and the object is preserved as-is (not folded into `dest`)."
+          },
+          "src": {
+            "type": "string"
+          },
+          "status": {
+            "type": "number"
+          },
+          "statusCode": {
+            "type": "number"
+          },
+          "transforms": {
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "args": {
+                      "oneOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "items": {
+                            "type": "string"
+                          },
+                          "type": "array"
+                        }
+                      ]
+                    },
+                    "env": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "op": {
+                      "type": "string",
+                      "enum": [
+                        "append",
+                        "delete",
+                        "set"
+                      ]
+                    },
+                    "target": {
+                      "properties": {
+                        "key": {
+                          "oneOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "properties": {
+                                "eq": {
+                                  "oneOf": [
+                                    {
+                                      "type": "string"
+                                    },
+                                    {
+                                      "type": "number"
+                                    }
+                                  ]
+                                },
+                                "gt": {
+                                  "type": "number"
+                                },
+                                "gte": {
+                                  "type": "number"
+                                },
+                                "inc": {
+                                  "items": {
+                                    "type": "string"
+                                  },
+                                  "type": "array"
+                                },
+                                "lt": {
+                                  "type": "number"
+                                },
+                                "lte": {
+                                  "type": "number"
+                                },
+                                "neq": {
+                                  "type": "string"
+                                },
+                                "ninc": {
+                                  "items": {
+                                    "type": "string"
+                                  },
+                                  "type": "array"
+                                },
+                                "pre": {
+                                  "type": "string"
+                                },
+                                "suf": {
+                                  "type": "string"
+                                }
+                              },
+                              "type": "object"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "key"
+                      ],
+                      "type": "object"
+                    },
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "request.headers",
+                        "request.query",
+                        "response.headers"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "op",
+                    "target",
+                    "type"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "properties": {
+                    "args": {
+                      "type": "string"
+                    },
+                    "env": {
+                      "items": {
+                        "type": "string"
+                      },
+                      "type": "array"
+                    },
+                    "fallback": {
+                      "type": "boolean",
+                      "enum": [
+                        false,
+                        true
+                      ],
+                      "description": "Keep an earlier request.path value. Builders use this for fallback routes."
+                    },
+                    "op": {
+                      "type": "string",
+                      "enum": [
+                        "set"
+                      ]
+                    },
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "request.path"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "args",
+                    "op",
+                    "type"
+                  ],
+                  "type": "object"
+                }
+              ]
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "src"
+        ],
+        "type": "object",
+        "description": "The route definition from @vercel/routing-utils."
       },
       "AutoSDKSharedaf3e034232cd964a": {
         "properties": {
@@ -130643,137 +130748,80 @@
         "type": "object",
         "description": "Set when this build produces the named daemon."
       },
+      "AutoSDKSharedb49e2a5785c6f473": {
+        "properties": {
+          "description": {
+            "type": "string",
+            "description": "Optional description of what the routing rule does."
+          },
+          "enabled": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ],
+            "description": "Whether the routing rule is enabled. Defaults to true."
+          },
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the routing rule."
+          },
+          "name": {
+            "type": "string",
+            "description": "Human-readable name for the routing rule."
+          },
+          "rawDest": {
+            "type": "string",
+            "description": "Original destination provided by user."
+          },
+          "rawSrc": {
+            "type": "string",
+            "description": "Original source pattern provided by user (path-to-regexp or regex). Used to display the user's input in API responses."
+          },
+          "route": {
+            "$ref": "#/components/schemas/AutoSDKSharedada259eacea6cff6"
+          },
+          "routeType": {
+            "type": "string",
+            "enum": [
+              "redirect",
+              "rewrite",
+              "set_status",
+              "transform"
+            ],
+            "description": "Computed route type based on the route configuration. Only present in API responses, not stored in S3."
+          },
+          "srcSyntax": {
+            "type": "string",
+            "enum": [
+              "equals",
+              "path-to-regexp",
+              "regex"
+            ],
+            "description": "The syntax type of the source pattern. Determines how the pattern is compiled to regex."
+          },
+          "staged": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ],
+            "description": "Whether this route is new and not yet published to production. Set to true only when a route is first created via add-route. Cleared (set to false) when a version is promoted to production."
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "route"
+        ],
+        "type": "object",
+        "description": "A routing rule with metadata for project-level routing."
+      },
       "AutoSDKSharedb50781eef24da20c": {
         "items": {
           "$ref": "#/components/schemas/AutoSDKShared470bc56668090392"
         },
         "type": "array"
-      },
-      "AutoSDKSharedb7e537bead367337": {
-        "properties": {
-          "bindings": {
-            "items": {
-              "properties": {
-                "env": {
-                  "type": "string",
-                  "description": "Environment variable name that will store the generated value"
-                },
-                "format": {
-                  "type": "string",
-                  "enum": [
-                    "url"
-                  ],
-                  "description": "Generated value shape, must be `\"url\"`."
-                },
-                "service": {
-                  "type": "string",
-                  "description": "Target service name from `services`."
-                },
-                "type": {
-                  "type": "string",
-                  "enum": [
-                    "service"
-                  ],
-                  "description": "If present, must be `\"service\"` for Service-to-Service HTTP bindings."
-                }
-              },
-              "required": [
-                "env",
-                "format",
-                "service"
-              ],
-              "type": "object",
-              "description": "Caller-side bindings to other services."
-            },
-            "type": "array",
-            "description": "Caller-side bindings to other services."
-          },
-          "buildCommand": {
-            "type": "string"
-          },
-          "builder": {
-            "$ref": "#/components/schemas/AutoSDKShared99bbe712df7b2f21"
-          },
-          "cleanUrls": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "command": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array",
-            "description": "Command override for `runtime: \"container\"` services."
-          },
-          "devCommand": {
-            "type": "string"
-          },
-          "entrypoint": {
-            "type": "string",
-            "description": "Resolved entrypoint, relative to the service root."
-          },
-          "framework": {
-            "type": "string"
-          },
-          "functions": {
-            "$ref": "#/components/schemas/AutoSDKShared9213b55e2a5cf1ce"
-          },
-          "headers": {
-            "$ref": "#/components/schemas/AutoSDKShared1cc535808e9f997c"
-          },
-          "ignoreCommand": {
-            "type": "string"
-          },
-          "installCommand": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "outputDirectory": {
-            "type": "string"
-          },
-          "redirects": {
-            "$ref": "#/components/schemas/AutoSDKSharedd8f4627308e44215"
-          },
-          "rewrites": {
-            "$ref": "#/components/schemas/AutoSDKShared2b643c284f6ed817"
-          },
-          "root": {
-            "type": "string",
-            "description": "Path to the service root, relative to the project root."
-          },
-          "routes": {
-            "$ref": "#/components/schemas/AutoSDKShared136d1cc7a12ad23d"
-          },
-          "runtime": {
-            "type": "string"
-          },
-          "schema": {
-            "type": "string",
-            "enum": [
-              "experimentalServicesV2"
-            ]
-          },
-          "trailingSlash": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          }
-        },
-        "required": [
-          "builder",
-          "name",
-          "root",
-          "schema"
-        ],
-        "type": "object",
-        "description": "Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime."
       },
       "AutoSDKSharedba1f75615f04b60c": {
         "type": "object",
@@ -131845,16 +131893,6 @@
           }
         ]
       },
-      "AutoSDKSharedbebfd10f1fbc8cec": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/AutoSDKShared303c00bc2455dd70"
-          },
-          {
-            "$ref": "#/components/schemas/AutoSDKSharedb7e537bead367337"
-          }
-        ]
-      },
       "AutoSDKSharedc12640b06f1c9105": {
         "properties": {
           "consolidatedGitCommitStatus": {
@@ -132052,6 +132090,12 @@
           }
         ]
       },
+      "AutoSDKSharedc7b2d1ad11fad9d8": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKSharedb49e2a5785c6f473"
+        },
+        "type": "array"
+      },
       "AutoSDKSharedc97b32abf27d8b81": {
         "description": "Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.",
         "type": "object",
@@ -132186,6 +132230,704 @@
             "$ref": "#/components/schemas/AutoSDKSharedad42af066f165baa"
           }
         ]
+      },
+      "AutoSDKSharedcbbf169fc3cfe485": {
+        "properties": {
+          "accountId": {
+            "type": "string"
+          },
+          "alias": {
+            "$ref": "#/components/schemas/AutoSDKSharedb0d372310a1a616c"
+          },
+          "analytics": {
+            "properties": {
+              "canceledAt": {
+                "nullable": true,
+                "type": "number"
+              },
+              "disabledAt": {
+                "type": "number"
+              },
+              "enabledAt": {
+                "type": "number"
+              },
+              "id": {
+                "type": "string"
+              },
+              "paidAt": {
+                "type": "number"
+              },
+              "sampleRatePercent": {
+                "nullable": true,
+                "type": "number"
+              },
+              "spendLimitInDollars": {
+                "nullable": true,
+                "type": "number"
+              }
+            },
+            "required": [
+              "disabledAt",
+              "enabledAt",
+              "id"
+            ],
+            "type": "object"
+          },
+          "appliedCve55182Migration": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "autoAssignCustomDomains": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "autoAssignCustomDomainsUpdatedBy": {
+            "type": "string"
+          },
+          "autoExposeSystemEnvs": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "buildCommand": {
+            "nullable": true,
+            "type": "string"
+          },
+          "commandForIgnoringBuildStep": {
+            "nullable": true,
+            "type": "string"
+          },
+          "createdAt": {
+            "type": "number"
+          },
+          "creator": {
+            "$ref": "#/components/schemas/AutoSDKShared58ffef5c4d095b17"
+          },
+          "customerSupportCodeVisibility": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "deploymentExpiration": {
+            "properties": {
+              "deploymentsToKeep": {
+                "type": "number",
+                "description": "Minimum number of production deployments to keep for this project, even if they are over the production expiration limit."
+              },
+              "expirationDays": {
+                "type": "number",
+                "description": "Number of days to keep non-production deployments (mostly preview deployments) before soft deletion."
+              },
+              "expirationDaysCanceled": {
+                "type": "number",
+                "description": "Number of days to keep canceled deployments before soft deletion."
+              },
+              "expirationDaysErrored": {
+                "type": "number",
+                "description": "Number of days to keep errored deployments before soft deletion."
+              },
+              "expirationDaysProduction": {
+                "type": "number",
+                "description": "Number of days to keep production deployments before soft deletion."
+              }
+            },
+            "type": "object",
+            "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
+          },
+          "devCommand": {
+            "nullable": true,
+            "type": "string"
+          },
+          "directoryListing": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "env": {
+            "$ref": "#/components/schemas/AutoSDKSharedb50781eef24da20c"
+          },
+          "expiration": {
+            "oneOf": [
+              {
+                "properties": {
+                  "expiresAt": {
+                    "type": "number",
+                    "description": "Unix ms timestamp when the project is scheduled to expire."
+                  }
+                },
+                "required": [
+                  "expiresAt"
+                ],
+                "type": "object"
+              },
+              {
+                "properties": {
+                  "lockedAt": {
+                    "type": "number",
+                    "description": "Unix ms timestamp when the project was locked."
+                  },
+                  "lockedBy": {
+                    "type": "string",
+                    "description": "ID of the user, app, or integration that locked the project, or `system`."
+                  }
+                },
+                "required": [
+                  "lockedAt",
+                  "lockedBy"
+                ],
+                "type": "object"
+              }
+            ]
+          },
+          "framework": {
+            "nullable": true,
+            "type": "string",
+            "enum": [
+              "actix-web",
+              "angular",
+              "ash",
+              "astro",
+              "axum",
+              "blitzjs",
+              "brunch",
+              "bun",
+              "container",
+              "create-react-app",
+              "django",
+              "docusaurus",
+              "docusaurus-2",
+              "dojo",
+              "eleventy",
+              "elysia",
+              "ember",
+              "eve",
+              "express",
+              "factory-eve",
+              "fastapi",
+              "fasthtml",
+              "fastify",
+              "flask",
+              "gatsby",
+              "go",
+              "gridsome",
+              "h3",
+              "hexo",
+              "hono",
+              "hugo",
+              "hydrogen",
+              "ionic-angular",
+              "ionic-react",
+              "jekyll",
+              "koa",
+              "mastra",
+              "middleman",
+              "nestjs",
+              "nextjs",
+              "nitro",
+              "node",
+              "nuxtjs",
+              "parcel",
+              "polymer",
+              "preact",
+              "python",
+              "react-router",
+              "redwoodjs",
+              "remix",
+              "ruby",
+              "rust",
+              "saber",
+              "sanity",
+              "sanity-v2",
+              "sapper",
+              "scully",
+              "services",
+              "solidstart",
+              "solidstart-1",
+              "stencil",
+              "storybook",
+              "svelte",
+              "sveltekit",
+              "sveltekit-1",
+              "tanstack-start",
+              "tanstack-start-lovable",
+              "umijs",
+              "vite",
+              "vitepress",
+              "vue",
+              "vuepress",
+              "xmcp",
+              "zola",
+              null
+            ]
+          },
+          "gitComments": {
+            "properties": {
+              "onCommit": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ],
+                "description": "Whether the Vercel bot should comment on commits"
+              },
+              "onPullRequest": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ],
+                "description": "Whether the Vercel bot should comment on PRs"
+              }
+            },
+            "required": [
+              "onCommit",
+              "onPullRequest"
+            ],
+            "type": "object"
+          },
+          "gitForkProtection": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "gitProviderOptions": {
+            "$ref": "#/components/schemas/AutoSDKSharedc12640b06f1c9105"
+          },
+          "hasActiveBranches": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "installCommand": {
+            "nullable": true,
+            "type": "string"
+          },
+          "internalRoutes": {
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "expiry": {
+                      "type": "number"
+                    },
+                    "src": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "src",
+                    "status"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "properties": {
+                    "has": {
+                      "items": {
+                        "oneOf": [
+                          {
+                            "properties": {
+                              "key": {
+                                "type": "string",
+                                "enum": [
+                                  "x-vercel-ip-country"
+                                ]
+                              },
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "header"
+                                ]
+                              },
+                              "value": {
+                                "properties": {
+                                  "eq": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "eq"
+                                ],
+                                "type": "object"
+                              }
+                            },
+                            "required": [
+                              "key",
+                              "type",
+                              "value"
+                            ],
+                            "type": "object"
+                          },
+                          {
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "host"
+                                ]
+                              },
+                              "value": {
+                                "properties": {
+                                  "eq": {
+                                    "type": "string"
+                                  }
+                                },
+                                "required": [
+                                  "eq"
+                                ],
+                                "type": "object"
+                              }
+                            },
+                            "required": [
+                              "type",
+                              "value"
+                            ],
+                            "type": "object"
+                          }
+                        ]
+                      },
+                      "type": "array"
+                    },
+                    "mitigate": {
+                      "properties": {
+                        "action": {
+                          "type": "string",
+                          "enum": [
+                            "block_legal_cwc"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "action"
+                      ],
+                      "type": "object"
+                    },
+                    "src": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "has",
+                    "mitigate"
+                  ],
+                  "type": "object"
+                }
+              ]
+            },
+            "type": "array"
+          },
+          "ipBuckets": {
+            "items": {
+              "properties": {
+                "bucket": {
+                  "type": "string"
+                },
+                "default": {
+                  "type": "boolean",
+                  "enum": [
+                    false,
+                    true
+                  ]
+                },
+                "supportUntil": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "bucket"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "latestDeployments": {
+            "$ref": "#/components/schemas/AutoSDKShared2b72c73af96370da"
+          },
+          "link": {
+            "$ref": "#/components/schemas/AutoSDKSharede0f9d68fc63cf31d"
+          },
+          "live": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "nodeVersion": {
+            "type": "string",
+            "enum": [
+              "10.x",
+              "12.x",
+              "14.x",
+              "16.x",
+              "18.x",
+              "20.x",
+              "22.x",
+              "24.x",
+              "26.x",
+              "8.10.x"
+            ]
+          },
+          "oidcTokenConfig": {
+            "properties": {
+              "enabled": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ],
+                "description": "Whether or not to generate OpenID Connect JSON Web Tokens."
+              },
+              "issuerMode": {
+                "type": "string",
+                "enum": [
+                  "global",
+                  "team"
+                ],
+                "description": "- team: `https://oidc.vercel.com/[team_slug]` - global: `https://oidc.vercel.com`"
+              }
+            },
+            "type": "object"
+          },
+          "outputDirectory": {
+            "nullable": true,
+            "type": "string"
+          },
+          "passport": {
+            "nullable": true,
+            "properties": {
+              "connectorId": {
+                "type": "string"
+              },
+              "deploymentType": {
+                "type": "string",
+                "enum": [
+                  "all",
+                  "all_except_custom_domains",
+                  "preview",
+                  "prod_deployment_urls_and_all_previews"
+                ]
+              }
+            },
+            "required": [
+              "connectorId",
+              "deploymentType"
+            ],
+            "type": "object"
+          },
+          "passwordProtection": {
+            "nullable": true,
+            "type": "object"
+          },
+          "paused": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "resourceConfig": {
+            "$ref": "#/components/schemas/AutoSDKSharedbbf450e6ecd4e724"
+          },
+          "rollingRelease": {
+            "$ref": "#/components/schemas/AutoSDKSharedce0c7f50e384322c"
+          },
+          "rootDirectory": {
+            "nullable": true,
+            "type": "string"
+          },
+          "security": {
+            "$ref": "#/components/schemas/AutoSDKShared18dae8be9b6aa4ff"
+          },
+          "serverlessFunctionRegion": {
+            "type": "string"
+          },
+          "serverlessFunctionZeroConfigFailover": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "skipGitConnectDuringLink": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "sourceFilesOutsideRootDirectory": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "speedInsights": {
+            "properties": {
+              "canceledAt": {
+                "type": "number"
+              },
+              "dataReceivedAt": {
+                "type": "number",
+                "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
+              },
+              "disabledAt": {
+                "type": "number"
+              },
+              "enabledAt": {
+                "type": "number"
+              },
+              "hasData": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              },
+              "id": {
+                "type": "string"
+              },
+              "paidAt": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          },
+          "ssoProtection": {
+            "nullable": true,
+            "properties": {
+              "april2026SecurityIncidentMigrationAppliedFrom": {
+                "nullable": true,
+                "type": "string",
+                "enum": [
+                  "all",
+                  "all_except_custom_domains",
+                  "preview",
+                  "prod_deployment_urls_and_all_previews",
+                  null
+                ]
+              },
+              "cve55182MigrationAppliedFrom": {
+                "nullable": true,
+                "type": "string",
+                "enum": [
+                  "all",
+                  "all_except_custom_domains",
+                  "preview",
+                  "prod_deployment_urls_and_all_previews",
+                  null
+                ]
+              },
+              "deploymentType": {
+                "type": "string",
+                "enum": [
+                  "all",
+                  "all_except_custom_domains",
+                  "preview",
+                  "prod_deployment_urls_and_all_previews"
+                ]
+              }
+            },
+            "required": [
+              "deploymentType"
+            ],
+            "type": "object"
+          },
+          "targets": {
+            "$ref": "#/components/schemas/AutoSDKSharedd6cd5632365f1112"
+          },
+          "tier": {
+            "type": "string",
+            "enum": [
+              "priority"
+            ]
+          },
+          "transferCompletedAt": {
+            "type": "number"
+          },
+          "transferredFromAccountId": {
+            "type": "string"
+          },
+          "transferStartedAt": {
+            "type": "number"
+          },
+          "transferToAccountId": {
+            "type": "string"
+          },
+          "trustedSources": {
+            "$ref": "#/components/schemas/AutoSDKShared94938587734e5f57"
+          },
+          "updatedAt": {
+            "type": "number"
+          },
+          "webAnalytics": {
+            "properties": {
+              "canceledAt": {
+                "type": "number"
+              },
+              "disabledAt": {
+                "type": "number"
+              },
+              "enabledAt": {
+                "type": "number"
+              },
+              "hasData": {
+                "type": "boolean",
+                "enum": [
+                  true
+                ]
+              },
+              "id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "accountId",
+          "alias",
+          "deploymentExpiration",
+          "directoryListing",
+          "id",
+          "name",
+          "nodeVersion",
+          "resourceConfig",
+          "serverlessFunctionRegion"
+        ],
+        "type": "object"
       },
       "AutoSDKSharedce0c7f50e384322c": {
         "nullable": true,
@@ -133870,13 +134612,6 @@
           "updatedAt"
         ],
         "type": "object"
-      },
-      "AutoSDKSharedd328db242e02bf28": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKSharedbebfd10f1fbc8cec"
-        },
-        "type": "array",
-        "description": "Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime."
       },
       "AutoSDKSharedd350ab9ee496d656": {
         "items": {
@@ -137032,41 +137767,6 @@
         ],
         "type": "object"
       },
-      "AutoSDKSharedec768aa2f540dc85": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/AutoSDKShared5f73cd821829ef28"
-          },
-          {
-            "properties": {
-              "dest": {
-                "type": "string"
-              },
-              "handle": {
-                "type": "string",
-                "enum": [
-                  "error",
-                  "filesystem",
-                  "hit",
-                  "miss",
-                  "resource",
-                  "rewrite"
-                ]
-              },
-              "src": {
-                "type": "string"
-              },
-              "status": {
-                "type": "number"
-              }
-            },
-            "required": [
-              "handle"
-            ],
-            "type": "object"
-          }
-        ]
-      },
       "AutoSDKSharedece966f61a605cd3": {
         "type": "string",
         "enum": [
@@ -139008,6 +139708,41 @@
         "type": "object",
         "description": "Rolling release information including configuration and document details, or null if no rolling release exists"
       },
+      "AutoSDKSharedfaf92fa84e99abdd": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/AutoSDKShared947f69fa305d000e"
+          },
+          {
+            "properties": {
+              "dest": {
+                "type": "string"
+              },
+              "handle": {
+                "type": "string",
+                "enum": [
+                  "error",
+                  "filesystem",
+                  "hit",
+                  "miss",
+                  "resource",
+                  "rewrite"
+                ]
+              },
+              "src": {
+                "type": "string"
+              },
+              "status": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "handle"
+            ],
+            "type": "object"
+          }
+        ]
+      },
       "AutoSDKSharedfb6f42506e3e02ae": {
         "anyOf": [
           {
@@ -139565,671 +140300,6 @@
           "type",
           "ui:control",
           "ui:options"
-        ],
-        "type": "object"
-      },
-      "AutoSDKSharedfc5823c22a1eaa2b": {
-        "properties": {
-          "accountId": {
-            "type": "string"
-          },
-          "alias": {
-            "$ref": "#/components/schemas/AutoSDKSharedb0d372310a1a616c"
-          },
-          "analytics": {
-            "properties": {
-              "canceledAt": {
-                "nullable": true,
-                "type": "number"
-              },
-              "disabledAt": {
-                "type": "number"
-              },
-              "enabledAt": {
-                "type": "number"
-              },
-              "id": {
-                "type": "string"
-              },
-              "paidAt": {
-                "type": "number"
-              },
-              "sampleRatePercent": {
-                "nullable": true,
-                "type": "number"
-              },
-              "spendLimitInDollars": {
-                "nullable": true,
-                "type": "number"
-              }
-            },
-            "required": [
-              "disabledAt",
-              "enabledAt",
-              "id"
-            ],
-            "type": "object"
-          },
-          "appliedCve55182Migration": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "autoAssignCustomDomains": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "autoAssignCustomDomainsUpdatedBy": {
-            "type": "string"
-          },
-          "autoExposeSystemEnvs": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "buildCommand": {
-            "nullable": true,
-            "type": "string"
-          },
-          "commandForIgnoringBuildStep": {
-            "nullable": true,
-            "type": "string"
-          },
-          "createdAt": {
-            "type": "number"
-          },
-          "creator": {
-            "$ref": "#/components/schemas/AutoSDKShared58ffef5c4d095b17"
-          },
-          "customerSupportCodeVisibility": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "deploymentExpiration": {
-            "properties": {
-              "deploymentsToKeep": {
-                "type": "number",
-                "description": "Minimum number of production deployments to keep for this project, even if they are over the production expiration limit."
-              },
-              "expirationDays": {
-                "type": "number",
-                "description": "Number of days to keep non-production deployments (mostly preview deployments) before soft deletion."
-              },
-              "expirationDaysCanceled": {
-                "type": "number",
-                "description": "Number of days to keep canceled deployments before soft deletion."
-              },
-              "expirationDaysErrored": {
-                "type": "number",
-                "description": "Number of days to keep errored deployments before soft deletion."
-              },
-              "expirationDaysProduction": {
-                "type": "number",
-                "description": "Number of days to keep production deployments before soft deletion."
-              }
-            },
-            "type": "object",
-            "description": "Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects."
-          },
-          "devCommand": {
-            "nullable": true,
-            "type": "string"
-          },
-          "directoryListing": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "env": {
-            "$ref": "#/components/schemas/AutoSDKSharedb50781eef24da20c"
-          },
-          "framework": {
-            "nullable": true,
-            "type": "string",
-            "enum": [
-              "actix-web",
-              "angular",
-              "ash",
-              "astro",
-              "axum",
-              "blitzjs",
-              "brunch",
-              "bun",
-              "container",
-              "create-react-app",
-              "django",
-              "docusaurus",
-              "docusaurus-2",
-              "dojo",
-              "eleventy",
-              "elysia",
-              "ember",
-              "eve",
-              "express",
-              "factory-eve",
-              "fastapi",
-              "fasthtml",
-              "fastify",
-              "flask",
-              "gatsby",
-              "go",
-              "gridsome",
-              "h3",
-              "hexo",
-              "hono",
-              "hugo",
-              "hydrogen",
-              "ionic-angular",
-              "ionic-react",
-              "jekyll",
-              "koa",
-              "mastra",
-              "middleman",
-              "nestjs",
-              "nextjs",
-              "nitro",
-              "node",
-              "nuxtjs",
-              "parcel",
-              "polymer",
-              "preact",
-              "python",
-              "react-router",
-              "redwoodjs",
-              "remix",
-              "ruby",
-              "rust",
-              "saber",
-              "sanity",
-              "sanity-v2",
-              "sapper",
-              "scully",
-              "services",
-              "solidstart",
-              "solidstart-1",
-              "stencil",
-              "storybook",
-              "svelte",
-              "sveltekit",
-              "sveltekit-1",
-              "tanstack-start",
-              "tanstack-start-lovable",
-              "umijs",
-              "vite",
-              "vitepress",
-              "vue",
-              "vuepress",
-              "xmcp",
-              "zola",
-              null
-            ]
-          },
-          "gitComments": {
-            "properties": {
-              "onCommit": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ],
-                "description": "Whether the Vercel bot should comment on commits"
-              },
-              "onPullRequest": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ],
-                "description": "Whether the Vercel bot should comment on PRs"
-              }
-            },
-            "required": [
-              "onCommit",
-              "onPullRequest"
-            ],
-            "type": "object"
-          },
-          "gitForkProtection": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "gitProviderOptions": {
-            "$ref": "#/components/schemas/AutoSDKSharedc12640b06f1c9105"
-          },
-          "hasActiveBranches": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "id": {
-            "type": "string"
-          },
-          "installCommand": {
-            "nullable": true,
-            "type": "string"
-          },
-          "internalRoutes": {
-            "items": {
-              "oneOf": [
-                {
-                  "properties": {
-                    "expiry": {
-                      "type": "number"
-                    },
-                    "src": {
-                      "type": "string"
-                    },
-                    "status": {
-                      "type": "number"
-                    }
-                  },
-                  "required": [
-                    "src",
-                    "status"
-                  ],
-                  "type": "object"
-                },
-                {
-                  "properties": {
-                    "has": {
-                      "items": {
-                        "oneOf": [
-                          {
-                            "properties": {
-                              "key": {
-                                "type": "string",
-                                "enum": [
-                                  "x-vercel-ip-country"
-                                ]
-                              },
-                              "type": {
-                                "type": "string",
-                                "enum": [
-                                  "header"
-                                ]
-                              },
-                              "value": {
-                                "properties": {
-                                  "eq": {
-                                    "type": "string"
-                                  }
-                                },
-                                "required": [
-                                  "eq"
-                                ],
-                                "type": "object"
-                              }
-                            },
-                            "required": [
-                              "key",
-                              "type",
-                              "value"
-                            ],
-                            "type": "object"
-                          },
-                          {
-                            "properties": {
-                              "type": {
-                                "type": "string",
-                                "enum": [
-                                  "host"
-                                ]
-                              },
-                              "value": {
-                                "properties": {
-                                  "eq": {
-                                    "type": "string"
-                                  }
-                                },
-                                "required": [
-                                  "eq"
-                                ],
-                                "type": "object"
-                              }
-                            },
-                            "required": [
-                              "type",
-                              "value"
-                            ],
-                            "type": "object"
-                          }
-                        ]
-                      },
-                      "type": "array"
-                    },
-                    "mitigate": {
-                      "properties": {
-                        "action": {
-                          "type": "string",
-                          "enum": [
-                            "block_legal_cwc"
-                          ]
-                        }
-                      },
-                      "required": [
-                        "action"
-                      ],
-                      "type": "object"
-                    },
-                    "src": {
-                      "type": "string"
-                    }
-                  },
-                  "required": [
-                    "has",
-                    "mitigate"
-                  ],
-                  "type": "object"
-                }
-              ]
-            },
-            "type": "array"
-          },
-          "ipBuckets": {
-            "items": {
-              "properties": {
-                "bucket": {
-                  "type": "string"
-                },
-                "default": {
-                  "type": "boolean",
-                  "enum": [
-                    false,
-                    true
-                  ]
-                },
-                "supportUntil": {
-                  "type": "number"
-                }
-              },
-              "required": [
-                "bucket"
-              ],
-              "type": "object"
-            },
-            "type": "array"
-          },
-          "latestDeployments": {
-            "$ref": "#/components/schemas/AutoSDKShared2b72c73af96370da"
-          },
-          "link": {
-            "$ref": "#/components/schemas/AutoSDKSharede0f9d68fc63cf31d"
-          },
-          "live": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "name": {
-            "type": "string"
-          },
-          "nodeVersion": {
-            "type": "string",
-            "enum": [
-              "10.x",
-              "12.x",
-              "14.x",
-              "16.x",
-              "18.x",
-              "20.x",
-              "22.x",
-              "24.x",
-              "26.x",
-              "8.10.x"
-            ]
-          },
-          "oidcTokenConfig": {
-            "properties": {
-              "enabled": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ],
-                "description": "Whether or not to generate OpenID Connect JSON Web Tokens."
-              },
-              "issuerMode": {
-                "type": "string",
-                "enum": [
-                  "global",
-                  "team"
-                ],
-                "description": "- team: `https://oidc.vercel.com/[team_slug]` - global: `https://oidc.vercel.com`"
-              }
-            },
-            "type": "object"
-          },
-          "outputDirectory": {
-            "nullable": true,
-            "type": "string"
-          },
-          "passport": {
-            "nullable": true,
-            "properties": {
-              "connectorId": {
-                "type": "string"
-              },
-              "deploymentType": {
-                "type": "string",
-                "enum": [
-                  "all",
-                  "all_except_custom_domains",
-                  "preview",
-                  "prod_deployment_urls_and_all_previews"
-                ]
-              }
-            },
-            "required": [
-              "connectorId",
-              "deploymentType"
-            ],
-            "type": "object"
-          },
-          "passwordProtection": {
-            "nullable": true,
-            "type": "object"
-          },
-          "paused": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "resourceConfig": {
-            "$ref": "#/components/schemas/AutoSDKSharedbbf450e6ecd4e724"
-          },
-          "rollingRelease": {
-            "$ref": "#/components/schemas/AutoSDKSharedce0c7f50e384322c"
-          },
-          "rootDirectory": {
-            "nullable": true,
-            "type": "string"
-          },
-          "security": {
-            "$ref": "#/components/schemas/AutoSDKShared18dae8be9b6aa4ff"
-          },
-          "serverlessFunctionRegion": {
-            "type": "string"
-          },
-          "serverlessFunctionZeroConfigFailover": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "skipGitConnectDuringLink": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "sourceFilesOutsideRootDirectory": {
-            "type": "boolean",
-            "enum": [
-              false,
-              true
-            ]
-          },
-          "speedInsights": {
-            "properties": {
-              "canceledAt": {
-                "type": "number"
-              },
-              "dataReceivedAt": {
-                "type": "number",
-                "description": "When the first free (not Speed Insights Plus) production data point was observed, in ms. Set once by subscriber-analytics-events; projects that already had data before this field shipped get it backfilled on their next batch, so it reads \"first free data point observed\", not necessarily \"first ever\"."
-              },
-              "disabledAt": {
-                "type": "number"
-              },
-              "enabledAt": {
-                "type": "number"
-              },
-              "hasData": {
-                "type": "boolean",
-                "enum": [
-                  false,
-                  true
-                ]
-              },
-              "id": {
-                "type": "string"
-              },
-              "paidAt": {
-                "type": "number"
-              }
-            },
-            "required": [
-              "id"
-            ],
-            "type": "object"
-          },
-          "ssoProtection": {
-            "nullable": true,
-            "properties": {
-              "april2026SecurityIncidentMigrationAppliedFrom": {
-                "nullable": true,
-                "type": "string",
-                "enum": [
-                  "all",
-                  "all_except_custom_domains",
-                  "preview",
-                  "prod_deployment_urls_and_all_previews",
-                  null
-                ]
-              },
-              "cve55182MigrationAppliedFrom": {
-                "nullable": true,
-                "type": "string",
-                "enum": [
-                  "all",
-                  "all_except_custom_domains",
-                  "preview",
-                  "prod_deployment_urls_and_all_previews",
-                  null
-                ]
-              },
-              "deploymentType": {
-                "type": "string",
-                "enum": [
-                  "all",
-                  "all_except_custom_domains",
-                  "preview",
-                  "prod_deployment_urls_and_all_previews"
-                ]
-              }
-            },
-            "required": [
-              "deploymentType"
-            ],
-            "type": "object"
-          },
-          "targets": {
-            "$ref": "#/components/schemas/AutoSDKSharedd6cd5632365f1112"
-          },
-          "tier": {
-            "type": "string",
-            "enum": [
-              "priority"
-            ]
-          },
-          "transferCompletedAt": {
-            "type": "number"
-          },
-          "transferredFromAccountId": {
-            "type": "string"
-          },
-          "transferStartedAt": {
-            "type": "number"
-          },
-          "transferToAccountId": {
-            "type": "string"
-          },
-          "trustedSources": {
-            "$ref": "#/components/schemas/AutoSDKShared94938587734e5f57"
-          },
-          "updatedAt": {
-            "type": "number"
-          },
-          "webAnalytics": {
-            "properties": {
-              "canceledAt": {
-                "type": "number"
-              },
-              "disabledAt": {
-                "type": "number"
-              },
-              "enabledAt": {
-                "type": "number"
-              },
-              "hasData": {
-                "type": "boolean",
-                "enum": [
-                  true
-                ]
-              },
-              "id": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "id"
-            ],
-            "type": "object"
-          }
-        },
-        "required": [
-          "accountId",
-          "alias",
-          "deploymentExpiration",
-          "directoryListing",
-          "id",
-          "name",
-          "nodeVersion",
-          "resourceConfig",
-          "serverlessFunctionRegion"
         ],
         "type": "object"
       },
