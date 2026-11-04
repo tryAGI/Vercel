@@ -59670,6 +59670,9 @@
           },
           "500": {
             "description": ""
+          },
+          "503": {
+            "description": ""
           }
         },
         "x-vercel-cli": {
@@ -107680,6 +107683,7 @@
               "organization-slug-update",
               "organization-sso-deleted",
               "organization-sso-enforced",
+              "organization-sso-new-teams-update",
               "organization-team-add",
               "organization-team-create",
               "organization-team-delete",
@@ -107806,6 +107810,7 @@
               "project-passport-updated",
               "project-password-protection",
               "project-paused",
+              "project-perimeters-updated",
               "project-preview-deployment-suffix",
               "project-preview-environment-branch-tracking-updated",
               "project-prioritize-production-builds-updated",
@@ -108044,6 +108049,7 @@
               "vpc-peering-connection-rejected",
               "vpc-peering-connection-updated",
               "vulnerability-banner-dismissed",
+              "web-analytics-summary-subscription-updated",
               "web-analytics-tier-updated",
               "webhook-created",
               "webhook-deleted",
@@ -108655,6 +108661,7 @@
               "organization-slug-update",
               "organization-sso-deleted",
               "organization-sso-enforced",
+              "organization-sso-new-teams-update",
               "organization-team-add",
               "organization-team-create",
               "organization-team-delete",
@@ -108781,6 +108788,7 @@
               "project-passport-updated",
               "project-password-protection",
               "project-paused",
+              "project-perimeters-updated",
               "project-preview-deployment-suffix",
               "project-preview-environment-branch-tracking-updated",
               "project-prioritize-production-builds-updated",
@@ -109019,6 +109027,7 @@
               "vpc-peering-connection-rejected",
               "vpc-peering-connection-updated",
               "vulnerability-banner-dismissed",
+              "web-analytics-summary-subscription-updated",
               "web-analytics-tier-updated",
               "webhook-created",
               "webhook-deleted",
@@ -109418,6 +109427,7 @@
                 "organization-slug-update",
                 "organization-sso-deleted",
                 "organization-sso-enforced",
+                "organization-sso-new-teams-update",
                 "organization-team-add",
                 "organization-team-create",
                 "organization-team-delete",
@@ -109544,6 +109554,7 @@
                 "project-passport-updated",
                 "project-password-protection",
                 "project-paused",
+                "project-perimeters-updated",
                 "project-preview-deployment-suffix",
                 "project-preview-environment-branch-tracking-updated",
                 "project-prioritize-production-builds-updated",
@@ -109782,6 +109793,7 @@
                 "vpc-peering-connection-rejected",
                 "vpc-peering-connection-updated",
                 "vulnerability-banner-dismissed",
+                "web-analytics-summary-subscription-updated",
                 "web-analytics-tier-updated",
                 "webhook-created",
                 "webhook-deleted",
