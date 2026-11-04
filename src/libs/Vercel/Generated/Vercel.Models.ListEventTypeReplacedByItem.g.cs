@@ -39,6 +39,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AdminObservabilityDisabled,
+        /// <summary>
+        ///
+        /// </summary>
         AdminPlanUpdated,
         /// <summary>
         ///
@@ -3045,6 +3049,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AccessGroupUserAdded => "access-group-user-added",
                 ListEventTypeReplacedByItem.AccessGroupUserRemoved => "access-group-user-removed",
                 ListEventTypeReplacedByItem.AdminAgenticProvisioningAccountUnlinked => "admin-agentic-provisioning-account-unlinked",
+                ListEventTypeReplacedByItem.AdminObservabilityDisabled => "admin-observability-disabled",
                 ListEventTypeReplacedByItem.AdminPlanUpdated => "admin-plan-updated",
                 ListEventTypeReplacedByItem.AdminPreviewDeploymentSuffixClear => "admin-preview-deployment-suffix-clear",
                 ListEventTypeReplacedByItem.AdminSamlIdpMaterialDeleted => "admin-saml-idp-material-deleted",
@@ -3809,6 +3814,7 @@ namespace Vercel
                 "access-group-user-added" => ListEventTypeReplacedByItem.AccessGroupUserAdded,
                 "access-group-user-removed" => ListEventTypeReplacedByItem.AccessGroupUserRemoved,
                 "admin-agentic-provisioning-account-unlinked" => ListEventTypeReplacedByItem.AdminAgenticProvisioningAccountUnlinked,
+                "admin-observability-disabled" => ListEventTypeReplacedByItem.AdminObservabilityDisabled,
                 "admin-plan-updated" => ListEventTypeReplacedByItem.AdminPlanUpdated,
                 "admin-preview-deployment-suffix-clear" => ListEventTypeReplacedByItem.AdminPreviewDeploymentSuffixClear,
                 "admin-saml-idp-material-deleted" => ListEventTypeReplacedByItem.AdminSamlIdpMaterialDeleted,
