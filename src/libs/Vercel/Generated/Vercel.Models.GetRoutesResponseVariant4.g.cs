@@ -20,7 +20,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("routes")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6ce7a2d665426cb4> Routes { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb49e2a5785c6f473> Routes { get; set; }
 
         /// <summary>
         /// A version of routing rules stored in S3.
@@ -48,7 +48,7 @@ namespace Vercel
 #endif
         public GetRoutesResponseVariant4(
             global::Vercel.GetRoutesResponseVariant4Limit limit,
-            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6ce7a2d665426cb4> routes,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb49e2a5785c6f473> routes,
             global::Vercel.GetRoutesResponseVariant4Version version)
         {
             this.Limit = limit ?? throw new global::System.ArgumentNullException(nameof(limit));

@@ -12,7 +12,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("route")]
-        public global::Vercel.AutoSDKShared258edac9bcd00342? Route { get; set; }
+        public global::Vercel.AutoSDKShareda5bc732e1681aab5? Route { get; set; }
 
         /// <summary>
         /// A version of routing rules stored in S3.
@@ -39,7 +39,7 @@ namespace Vercel
 #endif
         public EditRouteResponse(
             global::Vercel.EditRouteResponseVersion version,
-            global::Vercel.AutoSDKShared258edac9bcd00342? route)
+            global::Vercel.AutoSDKShareda5bc732e1681aab5? route)
         {
             this.Route = route;
             this.Version = version ?? throw new global::System.ArgumentNullException(nameof(version));
