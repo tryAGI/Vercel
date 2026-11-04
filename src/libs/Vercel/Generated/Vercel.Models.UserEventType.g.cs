@@ -1552,6 +1552,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        OrganizationSsoNewTeamsUpdate,
+        /// <summary>
+        ///
+        /// </summary>
         OrganizationTeamAdd,
         /// <summary>
         ///
@@ -2053,6 +2057,10 @@ namespace Vercel
         ///
         /// </summary>
         ProjectPaused,
+        /// <summary>
+        ///
+        /// </summary>
+        ProjectPerimetersUpdated,
         /// <summary>
         ///
         /// </summary>
@@ -3008,6 +3016,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        WebAnalyticsSummarySubscriptionUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         WebAnalyticsTierUpdated,
         /// <summary>
         ///
@@ -3428,6 +3440,7 @@ namespace Vercel
                 UserEventType.OrganizationSlugUpdate => "organization-slug-update",
                 UserEventType.OrganizationSsoDeleted => "organization-sso-deleted",
                 UserEventType.OrganizationSsoEnforced => "organization-sso-enforced",
+                UserEventType.OrganizationSsoNewTeamsUpdate => "organization-sso-new-teams-update",
                 UserEventType.OrganizationTeamAdd => "organization-team-add",
                 UserEventType.OrganizationTeamCreate => "organization-team-create",
                 UserEventType.OrganizationTeamDelete => "organization-team-delete",
@@ -3554,6 +3567,7 @@ namespace Vercel
                 UserEventType.ProjectPassportUpdated => "project-passport-updated",
                 UserEventType.ProjectPasswordProtection => "project-password-protection",
                 UserEventType.ProjectPaused => "project-paused",
+                UserEventType.ProjectPerimetersUpdated => "project-perimeters-updated",
                 UserEventType.ProjectPreviewDeploymentSuffix => "project-preview-deployment-suffix",
                 UserEventType.ProjectPreviewEnvironmentBranchTrackingUpdated => "project-preview-environment-branch-tracking-updated",
                 UserEventType.ProjectPrioritizeProductionBuildsUpdated => "project-prioritize-production-builds-updated",
@@ -3792,6 +3806,7 @@ namespace Vercel
                 UserEventType.VpcPeeringConnectionRejected => "vpc-peering-connection-rejected",
                 UserEventType.VpcPeeringConnectionUpdated => "vpc-peering-connection-updated",
                 UserEventType.VulnerabilityBannerDismissed => "vulnerability-banner-dismissed",
+                UserEventType.WebAnalyticsSummarySubscriptionUpdated => "web-analytics-summary-subscription-updated",
                 UserEventType.WebAnalyticsTierUpdated => "web-analytics-tier-updated",
                 UserEventType.WebhookCreated => "webhook-created",
                 UserEventType.WebhookDeleted => "webhook-deleted",
@@ -4193,6 +4208,7 @@ namespace Vercel
                 "organization-slug-update" => UserEventType.OrganizationSlugUpdate,
                 "organization-sso-deleted" => UserEventType.OrganizationSsoDeleted,
                 "organization-sso-enforced" => UserEventType.OrganizationSsoEnforced,
+                "organization-sso-new-teams-update" => UserEventType.OrganizationSsoNewTeamsUpdate,
                 "organization-team-add" => UserEventType.OrganizationTeamAdd,
                 "organization-team-create" => UserEventType.OrganizationTeamCreate,
                 "organization-team-delete" => UserEventType.OrganizationTeamDelete,
@@ -4319,6 +4335,7 @@ namespace Vercel
                 "project-passport-updated" => UserEventType.ProjectPassportUpdated,
                 "project-password-protection" => UserEventType.ProjectPasswordProtection,
                 "project-paused" => UserEventType.ProjectPaused,
+                "project-perimeters-updated" => UserEventType.ProjectPerimetersUpdated,
                 "project-preview-deployment-suffix" => UserEventType.ProjectPreviewDeploymentSuffix,
                 "project-preview-environment-branch-tracking-updated" => UserEventType.ProjectPreviewEnvironmentBranchTrackingUpdated,
                 "project-prioritize-production-builds-updated" => UserEventType.ProjectPrioritizeProductionBuildsUpdated,
@@ -4557,6 +4574,7 @@ namespace Vercel
                 "vpc-peering-connection-rejected" => UserEventType.VpcPeeringConnectionRejected,
                 "vpc-peering-connection-updated" => UserEventType.VpcPeeringConnectionUpdated,
                 "vulnerability-banner-dismissed" => UserEventType.VulnerabilityBannerDismissed,
+                "web-analytics-summary-subscription-updated" => UserEventType.WebAnalyticsSummarySubscriptionUpdated,
                 "web-analytics-tier-updated" => UserEventType.WebAnalyticsTierUpdated,
                 "webhook-created" => UserEventType.WebhookCreated,
                 "webhook-deleted" => UserEventType.WebhookDeleted,
