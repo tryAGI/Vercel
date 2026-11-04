@@ -40,6 +40,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AdminObservabilityDisabled,
+        /// <summary>
+        ///
+        /// </summary>
         AdminPlanUpdated,
         /// <summary>
         ///
@@ -3046,6 +3050,7 @@ namespace Vercel
                 UserEventType.AccessGroupUserAdded => "access-group-user-added",
                 UserEventType.AccessGroupUserRemoved => "access-group-user-removed",
                 UserEventType.AdminAgenticProvisioningAccountUnlinked => "admin-agentic-provisioning-account-unlinked",
+                UserEventType.AdminObservabilityDisabled => "admin-observability-disabled",
                 UserEventType.AdminPlanUpdated => "admin-plan-updated",
                 UserEventType.AdminPreviewDeploymentSuffixClear => "admin-preview-deployment-suffix-clear",
                 UserEventType.AdminSamlIdpMaterialDeleted => "admin-saml-idp-material-deleted",
@@ -3810,6 +3815,7 @@ namespace Vercel
                 "access-group-user-added" => UserEventType.AccessGroupUserAdded,
                 "access-group-user-removed" => UserEventType.AccessGroupUserRemoved,
                 "admin-agentic-provisioning-account-unlinked" => UserEventType.AdminAgenticProvisioningAccountUnlinked,
+                "admin-observability-disabled" => UserEventType.AdminObservabilityDisabled,
                 "admin-plan-updated" => UserEventType.AdminPlanUpdated,
                 "admin-preview-deployment-suffix-clear" => UserEventType.AdminPreviewDeploymentSuffixClear,
                 "admin-saml-idp-material-deleted" => UserEventType.AdminSamlIdpMaterialDeleted,

@@ -72174,6 +72174,9 @@
           },
           "500": {
             "description": ""
+          },
+          "504": {
+            "description": ""
           }
         },
         "parameters": [
@@ -73128,6 +73131,9 @@
             "description": ""
           },
           "500": {
+            "description": ""
+          },
+          "504": {
             "description": ""
           }
         },
@@ -101641,6 +101647,84 @@
         "type": "object",
         "description": "Public response shape for AI Gateway routing rules. Used so OpenAPI generation can avoid ElectroDB's recursive EntityItem types."
       },
+      "AiGatewayRuleListItem": {
+        "properties": {
+          "action": {
+            "properties": {
+              "reason": {
+                "type": "string"
+              },
+              "rewriteModel": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "createdAt": {
+            "type": "number"
+          },
+          "createdBy": {
+            "type": "string"
+          },
+          "deleted": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "description": {
+            "type": "string"
+          },
+          "enabled": {
+            "type": "boolean",
+            "enum": [
+              false,
+              true
+            ]
+          },
+          "match": {
+            "properties": {
+              "model": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "ownerId": {
+            "type": "string"
+          },
+          "ruleId": {
+            "type": "string"
+          },
+          "shadowedBy": {
+            "type": "string",
+            "description": "Rule that takes precedence over this enabled rule for the same model, so this one never applies"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "deny",
+              "rewrite"
+            ]
+          },
+          "updatedAt": {
+            "type": "number"
+          },
+          "updatedBy": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "createdAt",
+          "enabled",
+          "ownerId",
+          "ruleId",
+          "type",
+          "updatedAt"
+        ],
+        "type": "object"
+      },
       "AiGatewayRuleList": {
         "properties": {
           "nextCursor": {
@@ -101649,7 +101733,7 @@
           },
           "rules": {
             "items": {
-              "$ref": "#/components/schemas/AiGatewayRule"
+              "$ref": "#/components/schemas/AiGatewayRuleListItem"
             },
             "type": "array"
           }
@@ -107218,6 +107302,7 @@
               "access-group-user-added",
               "access-group-user-removed",
               "admin-agentic-provisioning-account-unlinked",
+              "admin-observability-disabled",
               "admin-plan-updated",
               "admin-preview-deployment-suffix-clear",
               "admin-saml-idp-material-deleted",
@@ -108192,6 +108277,7 @@
               "access-group-user-added",
               "access-group-user-removed",
               "admin-agentic-provisioning-account-unlinked",
+              "admin-observability-disabled",
               "admin-plan-updated",
               "admin-preview-deployment-suffix-clear",
               "admin-saml-idp-material-deleted",
@@ -108954,6 +109040,7 @@
                 "access-group-user-added",
                 "access-group-user-removed",
                 "admin-agentic-provisioning-account-unlinked",
+                "admin-observability-disabled",
                 "admin-plan-updated",
                 "admin-preview-deployment-suffix-clear",
                 "admin-saml-idp-material-deleted",

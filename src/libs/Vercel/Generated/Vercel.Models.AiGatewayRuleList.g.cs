@@ -19,7 +19,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rules")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.AiGatewayRule> Rules { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AiGatewayRuleListItem> Rules { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -36,7 +36,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AiGatewayRuleList(
-            global::System.Collections.Generic.IList<global::Vercel.AiGatewayRule> rules,
+            global::System.Collections.Generic.IList<global::Vercel.AiGatewayRuleListItem> rules,
             string? nextCursor)
         {
             this.NextCursor = nextCursor;
