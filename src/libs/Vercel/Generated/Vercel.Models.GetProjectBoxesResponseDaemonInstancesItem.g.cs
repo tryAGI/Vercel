@@ -40,6 +40,12 @@ namespace Vercel
         public double? MemoryMiB { get; set; }
 
         /// <summary>
+        /// Quick restarts of the user container in a row. Absent when there are none.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("process")]
+        public global::Vercel.GetProjectBoxesResponseDaemonInstancesItemProcess? Process { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("region")]
@@ -75,6 +81,9 @@ namespace Vercel
         /// <param name="image"></param>
         /// <param name="lastCheckedAt"></param>
         /// <param name="memoryMiB"></param>
+        /// <param name="process">
+        /// Quick restarts of the user container in a row. Absent when there are none.
+        /// </param>
         /// <param name="stoppedAt"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -87,6 +96,7 @@ namespace Vercel
             string? image,
             string? lastCheckedAt,
             double? memoryMiB,
+            global::Vercel.GetProjectBoxesResponseDaemonInstancesItemProcess? process,
             string? stoppedAt)
         {
             this.Alive = alive;
@@ -94,6 +104,7 @@ namespace Vercel
             this.Image = image;
             this.LastCheckedAt = lastCheckedAt;
             this.MemoryMiB = memoryMiB;
+            this.Process = process;
             this.Region = region ?? throw new global::System.ArgumentNullException(nameof(region));
             this.StartedAt = startedAt ?? throw new global::System.ArgumentNullException(nameof(startedAt));
             this.StoppedAt = stoppedAt;

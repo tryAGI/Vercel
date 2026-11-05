@@ -5055,7 +5055,7 @@
     },
     "/v1/billing/charges": {
       "get": {
-        "description": "Returns the billing charge data in FOCUS v1.3 JSONL format for a specified Vercel team, within a date range specified by `from` and `to` query parameters. Supports 1-day granularity with a maximum date range of 1 year. The response is streamed as newline-delimited JSON (JSONL) and can be optionally compressed with gzip if the `Accept-Encoding: gzip` header is provided. `SkuId` is the stable product ID. For unmapped items, it is derived from the item identifier. This is only available for Owner, Member, Developer, Security, Billing, and Enterprise Viewer roles for the supplied team.",
+        "description": "Returns the billing charge data in FOCUS v1.3 JSONL format for a specified Vercel team, within a date range specified by `from` and `to` query parameters. Supports 1-day granularity with a maximum date range of 1 year. The response is streamed as newline-delimited JSON (JSONL) and can be optionally compressed with gzip if the `Accept-Encoding: gzip` header is provided. `SkuId` is the stable product ID. For unmapped items, it is derived from the item identifier. `SubAccountId` and `SubAccountName` are the team. With `orgId` instead of a team, returns a row per team and product in an organization with Enterprise teams, plus Organization (unallocated) rows for spend no single team used; this requires the OrgAdmin or OrgViewer role. A team in such an organization, including the one that holds its subscription, gets only its own rows. Those rows are not split by region or project, and `x_CostAttribution` marks how cost was split between teams. This is only available for Owner, Member, Developer, Security, Billing, and Enterprise Viewer roles for the supplied team.",
         "operationId": "listBillingCharges",
         "security": [
           {
@@ -5188,12 +5188,41 @@
                       "type": "string",
                       "description": "Identifier for the price applied to the charge. Equal to `SkuId`, which FOCUS allows."
                     },
+                    "SubAccountId": {
+                      "nullable": true,
+                      "type": "string",
+                      "description": "Vercel team the charge belongs to. Null on an org root's Organization (unallocated) rows, which no single team used."
+                    },
+                    "SubAccountName": {
+                      "nullable": true,
+                      "type": "string",
+                      "description": "Team name, or `Organization (unallocated)`"
+                    },
+                    "SubAccountType": {
+                      "nullable": true,
+                      "type": "string",
+                      "enum": [
+                        "Team",
+                        null
+                      ],
+                      "description": "`Team`, or null on Organization (unallocated) rows"
+                    },
                     "Tags": {
                       "additionalProperties": {
                         "type": "string"
                       },
                       "type": "object",
                       "description": "Charge metadata including the Vercel ProjectId and ProjectName information"
+                    },
+                    "x_CostAttribution": {
+                      "nullable": true,
+                      "type": "string",
+                      "enum": [
+                        "calibrated_estimate",
+                        "uncalibrated_estimate",
+                        null
+                      ],
+                      "description": "How the row's cost was split between teams. `uncalibrated_estimate` divides billed usage by each team's usage share; `calibrated_estimate` also scales each team to its rated cycle subtotal. Null on rows not split between teams. Product and day totals are billed amounts either way."
                     }
                   },
                   "required": [
@@ -5213,7 +5242,11 @@
                     "ServiceProviderName",
                     "SkuId",
                     "SkuPriceId",
-                    "Tags"
+                    "SubAccountId",
+                    "SubAccountName",
+                    "SubAccountType",
+                    "Tags",
+                    "x_CostAttribution"
                   ],
                   "type": "object",
                   "description": "Extension of the base schema for Focus charges. Includes pricing information for all customers."
@@ -5264,6 +5297,17 @@
               "type": "string",
               "description": "Exclusive end of the date range as an ISO 8601 date-time string in UTC.",
               "example": "2025-01-31T00:00:00.000Z"
+            }
+          },
+          {
+            "name": "orgId",
+            "description": "The Organization identifier. Returns charges for every team in the organization, split by team, instead of a single team. Cannot be combined with `teamId` or `slug`. Requires the OrgAdmin or OrgViewer role.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "The Organization identifier. Returns charges for every team in the organization, split by team, instead of a single team. Cannot be combined with `teamId` or `slug`. Requires the OrgAdmin or OrgViewer role.",
+              "example": "org_123"
             }
           },
           {
@@ -15292,6 +15336,29 @@
                                     "memoryMiB": {
                                       "type": "number"
                                     },
+                                    "process": {
+                                      "properties": {
+                                        "lastExitCode": {
+                                          "type": "number"
+                                        },
+                                        "restarts": {
+                                          "type": "number"
+                                        },
+                                        "crashLooping": {
+                                          "type": "boolean",
+                                          "enum": [
+                                            false,
+                                            true
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "crashLooping",
+                                        "restarts"
+                                      ],
+                                      "type": "object",
+                                      "description": "Quick restarts of the user container in a row. Absent when there are none."
+                                    },
                                     "region": {
                                       "type": "string"
                                     },
@@ -15395,6 +15462,7 @@
                           "status": {
                             "type": "string",
                             "enum": [
+                              "crash_looping",
                               "ready",
                               "reconciling",
                               "stopped"
@@ -84123,7 +84191,7 @@
                     "type": "string",
                     "maxLength": 140,
                     "example": "Our mission is to make cloud computing accessible to everyone",
-                    "description": "A short text that describes the team."
+                    "description": "A short text that describes the team. Set to an empty string to clear the description. Omit to keep the current description."
                   },
                   "emailDomain": {
                     "type": "string",
@@ -107251,6 +107319,36 @@
               },
               {
                 "properties": {
+                  "avatar": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string",
+                    "description": "The OAuth2 integration ID."
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "slug": {
+                    "type": "string"
+                  },
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "integration"
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "name",
+                  "type"
+                ],
+                "type": "object",
+                "description": "Metadata for {@link principalId}."
+              },
+              {
+                "properties": {
                   "email": {
                     "type": "string"
                   },
@@ -107804,6 +107902,7 @@
               "project-git-credential-grant-created",
               "project-git-credential-grant-deleted",
               "project-git-credential-grant-updated",
+              "project-git-credential-token-minted",
               "project-git-fork-protection-updated",
               "project-git-lfs-toggled",
               "project-git-pr-comments-toggled",
@@ -108171,6 +108270,36 @@
                   },
                   "required": [
                     "clientId",
+                    "name",
+                    "type"
+                  ],
+                  "type": "object",
+                  "description": "Metadata for {@link viaIds}."
+                },
+                {
+                  "properties": {
+                    "avatar": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "string",
+                      "description": "The OAuth2 integration ID."
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "slug": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string",
+                      "enum": [
+                        "integration"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "id",
                     "name",
                     "type"
                   ],
@@ -108782,6 +108911,7 @@
               "project-git-credential-grant-created",
               "project-git-credential-grant-deleted",
               "project-git-credential-grant-updated",
+              "project-git-credential-token-minted",
               "project-git-fork-protection-updated",
               "project-git-lfs-toggled",
               "project-git-pr-comments-toggled",
@@ -109548,6 +109678,7 @@
                 "project-git-credential-grant-created",
                 "project-git-credential-grant-deleted",
                 "project-git-credential-grant-updated",
+                "project-git-credential-token-minted",
                 "project-git-fork-protection-updated",
                 "project-git-lfs-toggled",
                 "project-git-pr-comments-toggled",

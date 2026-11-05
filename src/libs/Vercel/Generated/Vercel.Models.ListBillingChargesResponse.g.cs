@@ -140,11 +140,37 @@ namespace Vercel
         public required string SkuPriceId { get; set; }
 
         /// <summary>
+        /// Vercel team the charge belongs to. Null on an org root's Organization (unallocated) rows, which no single team used.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("SubAccountId")]
+        public string? SubAccountId { get; set; }
+
+        /// <summary>
+        /// Team name, or `Organization (unallocated)`
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("SubAccountName")]
+        public string? SubAccountName { get; set; }
+
+        /// <summary>
+        /// `Team`, or null on Organization (unallocated) rows
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("SubAccountType")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListBillingChargesResponseSubAccountTypeJsonConverter))]
+        public global::Vercel.ListBillingChargesResponseSubAccountType? SubAccountType { get; set; }
+
+        /// <summary>
         /// Charge metadata including the Vercel ProjectId and ProjectName information
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("Tags")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.Dictionary<string, string> Tags { get; set; }
+
+        /// <summary>
+        /// How the row's cost was split between teams. `uncalibrated_estimate` divides billed usage by each team's usage share; `calibrated_estimate` also scales each team to its rated cycle subtotal. Null on rows not split between teams. Product and day totals are billed amounts either way.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("x_CostAttribution")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListBillingChargesResponseXCostAttributionJsonConverter))]
+        public global::Vercel.ListBillingChargesResponseXCostAttribution? XCostAttribution { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -209,6 +235,18 @@ namespace Vercel
         /// <param name="serviceCategory">
         /// High-level category of the service
         /// </param>
+        /// <param name="subAccountId">
+        /// Vercel team the charge belongs to. Null on an org root's Organization (unallocated) rows, which no single team used.
+        /// </param>
+        /// <param name="subAccountName">
+        /// Team name, or `Organization (unallocated)`
+        /// </param>
+        /// <param name="subAccountType">
+        /// `Team`, or null on Organization (unallocated) rows
+        /// </param>
+        /// <param name="xCostAttribution">
+        /// How the row's cost was split between teams. `uncalibrated_estimate` divides billed usage by each team's usage share; `calibrated_estimate` also scales each team to its rated cycle subtotal. Null on rows not split between teams. Product and day totals are billed amounts either way.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -232,7 +270,11 @@ namespace Vercel
             global::Vercel.ListBillingChargesResponsePricingCurrency pricingCurrency,
             string? regionId,
             string? regionName,
-            global::Vercel.ListBillingChargesResponseServiceCategory? serviceCategory)
+            global::Vercel.ListBillingChargesResponseServiceCategory? serviceCategory,
+            string? subAccountId,
+            string? subAccountName,
+            global::Vercel.ListBillingChargesResponseSubAccountType? subAccountType,
+            global::Vercel.ListBillingChargesResponseXCostAttribution? xCostAttribution)
         {
             this.BilledCost = billedCost;
             this.BillingCurrency = billingCurrency;
@@ -253,7 +295,11 @@ namespace Vercel
             this.ServiceProviderName = serviceProviderName ?? throw new global::System.ArgumentNullException(nameof(serviceProviderName));
             this.SkuId = skuId ?? throw new global::System.ArgumentNullException(nameof(skuId));
             this.SkuPriceId = skuPriceId ?? throw new global::System.ArgumentNullException(nameof(skuPriceId));
+            this.SubAccountId = subAccountId;
+            this.SubAccountName = subAccountName;
+            this.SubAccountType = subAccountType;
             this.Tags = tags ?? throw new global::System.ArgumentNullException(nameof(tags));
+            this.XCostAttribution = xCostAttribution;
         }
 
         /// <summary>

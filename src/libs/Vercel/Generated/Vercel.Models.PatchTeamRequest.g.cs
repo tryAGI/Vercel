@@ -15,7 +15,7 @@ namespace Vercel
         public string? Avatar { get; set; }
 
         /// <summary>
-        /// A short text that describes the team.<br/>
+        /// A short text that describes the team. Set to an empty string to clear the description. Omit to keep the current description.<br/>
         /// Example: Our mission is to make cloud computing accessible to everyone
         /// </summary>
         /// <example>Our mission is to make cloud computing accessible to everyone</example>
@@ -228,7 +228,7 @@ namespace Vercel
         /// The hash value of an uploaded image, or `null` to clear the avatar.
         /// </param>
         /// <param name="description">
-        /// A short text that describes the team.<br/>
+        /// A short text that describes the team. Set to an empty string to clear the description. Omit to keep the current description.<br/>
         /// Example: Our mission is to make cloud computing accessible to everyone
         /// </param>
         /// <param name="emailDomain">

@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// List FOCUS billing charges<br/>
-        /// Returns the billing charge data in FOCUS v1.3 JSONL format for a specified Vercel team, within a date range specified by `from` and `to` query parameters. Supports 1-day granularity with a maximum date range of 1 year. The response is streamed as newline-delimited JSON (JSONL) and can be optionally compressed with gzip if the `Accept-Encoding: gzip` header is provided. `SkuId` is the stable product ID. For unmapped items, it is derived from the item identifier. This is only available for Owner, Member, Developer, Security, Billing, and Enterprise Viewer roles for the supplied team.
+        /// Returns the billing charge data in FOCUS v1.3 JSONL format for a specified Vercel team, within a date range specified by `from` and `to` query parameters. Supports 1-day granularity with a maximum date range of 1 year. The response is streamed as newline-delimited JSON (JSONL) and can be optionally compressed with gzip if the `Accept-Encoding: gzip` header is provided. `SkuId` is the stable product ID. For unmapped items, it is derived from the item identifier. `SubAccountId` and `SubAccountName` are the team. With `orgId` instead of a team, returns a row per team and product in an organization with Enterprise teams, plus Organization (unallocated) rows for spend no single team used; this requires the OrgAdmin or OrgViewer role. A team in such an organization, including the one that holds its subscription, gets only its own rows. Those rows are not split by region or project, and `x_CostAttribution` marks how cost was split between teams. This is only available for Owner, Member, Developer, Security, Billing, and Enterprise Viewer roles for the supplied team.
         /// </summary>
         /// <param name="from">
         /// Inclusive start of the date range as an ISO 8601 date-time string in UTC.<br/>
@@ -15,6 +15,10 @@ namespace Vercel
         /// <param name="to">
         /// Exclusive end of the date range as an ISO 8601 date-time string in UTC.<br/>
         /// Example: 2025-01-31T00:00:00.000Z
+        /// </param>
+        /// <param name="orgId">
+        /// The Organization identifier. Returns charges for every team in the organization, split by team, instead of a single team. Cannot be combined with `teamId` or `slug`. Requires the OrgAdmin or OrgViewer role.<br/>
+        /// Example: org_123
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -35,6 +39,7 @@ namespace Vercel
         global::System.Collections.Generic.IAsyncEnumerable<global::Vercel.ListBillingChargesResponse> ListBillingChargesAsync(
             string from,
             string to,
+            string? orgId = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
