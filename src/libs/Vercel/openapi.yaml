@@ -5093,7 +5093,7 @@
                         "Tax",
                         "Usage"
                       ],
-                      "description": "Classification of the charge"
+                      "description": "Classification of the charge. `Usage` for measured consumption; `Purchase` for flat-fee or licensed charges without a consumption unit."
                     },
                     "ChargePeriodEnd": {
                       "type": "string",
@@ -5106,7 +5106,7 @@
                     "ConsumedQuantity": {
                       "nullable": true,
                       "type": "number",
-                      "description": "Volume of resource consumed. Null when a charge does not involve measurable consumption quantity."
+                      "description": "Volume of resource consumed. Null when ChargeCategory is not `Usage`; always paired with a non-null ConsumedUnit."
                     },
                     "ConsumedUnit": {
                       "nullable": true,
@@ -5184,6 +5184,10 @@
                       "type": "string",
                       "description": "Stable identifier for the charged product or item"
                     },
+                    "SkuPriceId": {
+                      "type": "string",
+                      "description": "Identifier for the price applied to the charge. Equal to `SkuId`, which FOCUS allows."
+                    },
                     "Tags": {
                       "additionalProperties": {
                         "type": "string"
@@ -5208,6 +5212,7 @@
                     "ServiceName",
                     "ServiceProviderName",
                     "SkuId",
+                    "SkuPriceId",
                     "Tags"
                   ],
                   "type": "object",

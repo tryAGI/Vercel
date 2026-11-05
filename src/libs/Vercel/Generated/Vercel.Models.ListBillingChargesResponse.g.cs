@@ -23,7 +23,7 @@ namespace Vercel
         public global::Vercel.ListBillingChargesResponseBillingCurrency BillingCurrency { get; set; }
 
         /// <summary>
-        /// Classification of the charge
+        /// Classification of the charge. `Usage` for measured consumption; `Purchase` for flat-fee or licensed charges without a consumption unit.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ChargeCategory")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ListBillingChargesResponseChargeCategoryJsonConverter))]
@@ -45,7 +45,7 @@ namespace Vercel
         public required string ChargePeriodStart { get; set; }
 
         /// <summary>
-        /// Volume of resource consumed. Null when a charge does not involve measurable consumption quantity.
+        /// Volume of resource consumed. Null when ChargeCategory is not `Usage`; always paired with a non-null ConsumedUnit.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ConsumedQuantity")]
         public double? ConsumedQuantity { get; set; }
@@ -133,6 +133,13 @@ namespace Vercel
         public required string SkuId { get; set; }
 
         /// <summary>
+        /// Identifier for the price applied to the charge. Equal to `SkuId`, which FOCUS allows.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("SkuPriceId")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required string SkuPriceId { get; set; }
+
+        /// <summary>
         /// Charge metadata including the Vercel ProjectId and ProjectName information
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("Tags")]
@@ -152,7 +159,7 @@ namespace Vercel
         /// Charge amount serving as the basis for invoicing
         /// </param>
         /// <param name="chargeCategory">
-        /// Classification of the charge
+        /// Classification of the charge. `Usage` for measured consumption; `Purchase` for flat-fee or licensed charges without a consumption unit.
         /// </param>
         /// <param name="chargePeriodEnd">
         /// Exclusive end of the charge period (ISO 8601 UTC) - Required in v1.3
@@ -177,6 +184,9 @@ namespace Vercel
         /// <param name="skuId">
         /// Stable identifier for the charged product or item
         /// </param>
+        /// <param name="skuPriceId">
+        /// Identifier for the price applied to the charge. Equal to `SkuId`, which FOCUS allows.
+        /// </param>
         /// <param name="tags">
         /// Charge metadata including the Vercel ProjectId and ProjectName information
         /// </param>
@@ -184,7 +194,7 @@ namespace Vercel
         /// Currency used for billing (ISO 4217)
         /// </param>
         /// <param name="consumedQuantity">
-        /// Volume of resource consumed. Null when a charge does not involve measurable consumption quantity.
+        /// Volume of resource consumed. Null when ChargeCategory is not `Usage`; always paired with a non-null ConsumedUnit.
         /// </param>
         /// <param name="consumedUnit">
         /// Unit of measurement for consumed quantity. Null when the charge is not measured in units.
@@ -214,6 +224,7 @@ namespace Vercel
             string serviceName,
             string serviceProviderName,
             string skuId,
+            string skuPriceId,
             global::System.Collections.Generic.Dictionary<string, string> tags,
             global::Vercel.ListBillingChargesResponseBillingCurrency billingCurrency,
             double? consumedQuantity,
@@ -241,6 +252,7 @@ namespace Vercel
             this.ServiceName = serviceName ?? throw new global::System.ArgumentNullException(nameof(serviceName));
             this.ServiceProviderName = serviceProviderName ?? throw new global::System.ArgumentNullException(nameof(serviceProviderName));
             this.SkuId = skuId ?? throw new global::System.ArgumentNullException(nameof(skuId));
+            this.SkuPriceId = skuPriceId ?? throw new global::System.ArgumentNullException(nameof(skuPriceId));
             this.Tags = tags ?? throw new global::System.ArgumentNullException(nameof(tags));
         }
 
