@@ -12,7 +12,7 @@ namespace Vercel
         /// The budget default scope to delete.
         /// </param>
         /// <param name="justification">
-        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains. Only recorded when scopeType is set.
+        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains, and sent in the ai-gateway.budget.updated webhook. Only recorded when scopeType is set.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -38,7 +38,7 @@ namespace Vercel
         /// The budget default scope to delete.
         /// </param>
         /// <param name="justification">
-        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains. Only recorded when scopeType is set.
+        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains, and sent in the ai-gateway.budget.updated webhook. Only recorded when scopeType is set.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l

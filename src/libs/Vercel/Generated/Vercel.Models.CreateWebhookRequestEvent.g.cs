@@ -19,6 +19,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiGatewayBudgetUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         AlertsTriggered,
         /// <summary>
         ///
@@ -472,6 +476,7 @@ namespace Vercel
             {
                 CreateWebhookRequestEvent.AiGatewayAutoReloadLimitReached => "ai-gateway.auto-reload.limit-reached",
                 CreateWebhookRequestEvent.AiGatewayBalanceDepleted => "ai-gateway.balance-depleted",
+                CreateWebhookRequestEvent.AiGatewayBudgetUpdated => "ai-gateway.budget.updated",
                 CreateWebhookRequestEvent.AlertsTriggered => "alerts.triggered",
                 CreateWebhookRequestEvent.BotidAnomaly => "botid.anomaly",
                 CreateWebhookRequestEvent.BudgetReached => "budget.reached",
@@ -594,6 +599,7 @@ namespace Vercel
             {
                 "ai-gateway.auto-reload.limit-reached" => CreateWebhookRequestEvent.AiGatewayAutoReloadLimitReached,
                 "ai-gateway.balance-depleted" => CreateWebhookRequestEvent.AiGatewayBalanceDepleted,
+                "ai-gateway.budget.updated" => CreateWebhookRequestEvent.AiGatewayBudgetUpdated,
                 "alerts.triggered" => CreateWebhookRequestEvent.AlertsTriggered,
                 "botid.anomaly" => CreateWebhookRequestEvent.BotidAnomaly,
                 "budget.reached" => CreateWebhookRequestEvent.BudgetReached,
