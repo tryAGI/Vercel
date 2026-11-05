@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Classification of the charge
+    /// Classification of the charge. `Usage` for measured consumption; `Purchase` for flat-fee or licensed charges without a consumption unit.
     /// </summary>
     public enum ListBillingChargesResponseChargeCategory
     {
