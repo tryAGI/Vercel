@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        CrashLooping,
+        /// <summary>
+        ///
+        /// </summary>
         Ready,
         /// <summary>
         ///
@@ -34,6 +38,7 @@ namespace Vercel
         {
             return value switch
             {
+                GetProjectBoxesResponseDaemonStatus.CrashLooping => "crash_looping",
                 GetProjectBoxesResponseDaemonStatus.Ready => "ready",
                 GetProjectBoxesResponseDaemonStatus.Reconciling => "reconciling",
                 GetProjectBoxesResponseDaemonStatus.Stopped => "stopped",
@@ -47,6 +52,7 @@ namespace Vercel
         {
             return value switch
             {
+                "crash_looping" => GetProjectBoxesResponseDaemonStatus.CrashLooping,
                 "ready" => GetProjectBoxesResponseDaemonStatus.Ready,
                 "reconciling" => GetProjectBoxesResponseDaemonStatus.Reconciling,
                 "stopped" => GetProjectBoxesResponseDaemonStatus.Stopped,

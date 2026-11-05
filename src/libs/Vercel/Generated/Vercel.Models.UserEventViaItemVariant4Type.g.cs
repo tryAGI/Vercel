@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        System,
+        External,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                UserEventViaItemVariant4Type.System => "system",
+                UserEventViaItemVariant4Type.External => "external",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "system" => UserEventViaItemVariant4Type.System,
+                "external" => UserEventViaItemVariant4Type.External,
                 _ => null,
             };
         }

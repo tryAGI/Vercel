@@ -1952,6 +1952,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        ProjectGitCredentialTokenMinted,
+        /// <summary>
+        ///
+        /// </summary>
         ProjectGitForkProtectionUpdated,
         /// <summary>
         ///
@@ -3540,6 +3544,7 @@ namespace Vercel
                 ListEventTypeName.ProjectGitCredentialGrantCreated => "project-git-credential-grant-created",
                 ListEventTypeName.ProjectGitCredentialGrantDeleted => "project-git-credential-grant-deleted",
                 ListEventTypeName.ProjectGitCredentialGrantUpdated => "project-git-credential-grant-updated",
+                ListEventTypeName.ProjectGitCredentialTokenMinted => "project-git-credential-token-minted",
                 ListEventTypeName.ProjectGitForkProtectionUpdated => "project-git-fork-protection-updated",
                 ListEventTypeName.ProjectGitLfsToggled => "project-git-lfs-toggled",
                 ListEventTypeName.ProjectGitPrCommentsToggled => "project-git-pr-comments-toggled",
@@ -4308,6 +4313,7 @@ namespace Vercel
                 "project-git-credential-grant-created" => ListEventTypeName.ProjectGitCredentialGrantCreated,
                 "project-git-credential-grant-deleted" => ListEventTypeName.ProjectGitCredentialGrantDeleted,
                 "project-git-credential-grant-updated" => ListEventTypeName.ProjectGitCredentialGrantUpdated,
+                "project-git-credential-token-minted" => ListEventTypeName.ProjectGitCredentialTokenMinted,
                 "project-git-fork-protection-updated" => ListEventTypeName.ProjectGitForkProtectionUpdated,
                 "project-git-lfs-toggled" => ListEventTypeName.ProjectGitLfsToggled,
                 "project-git-pr-comments-toggled" => ListEventTypeName.ProjectGitPrCommentsToggled,
