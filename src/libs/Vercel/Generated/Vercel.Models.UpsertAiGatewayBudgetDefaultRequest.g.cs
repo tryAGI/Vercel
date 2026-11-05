@@ -37,7 +37,7 @@ namespace Vercel
         public global::System.Collections.Generic.IList<double>? AlertThresholds { get; set; }
 
         /// <summary>
-        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains.
+        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains, and sent in the ai-gateway.budget.updated webhook.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("justification")]
         public string? Justification { get; set; }
@@ -58,7 +58,7 @@ namespace Vercel
         /// <param name="refreshPeriod"></param>
         /// <param name="alertThresholds"></param>
         /// <param name="justification">
-        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains.
+        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains, and sent in the ai-gateway.budget.updated webhook.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

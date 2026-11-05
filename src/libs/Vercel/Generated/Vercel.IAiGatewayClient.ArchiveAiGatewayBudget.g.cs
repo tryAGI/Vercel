@@ -18,7 +18,7 @@ namespace Vercel
         /// Required when scopeType is \"user\".
         /// </param>
         /// <param name="justification">
-        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains.
+        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains, and sent in the ai-gateway.budget.updated webhook.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -52,7 +52,7 @@ namespace Vercel
         /// Required when scopeType is \"user\".
         /// </param>
         /// <param name="justification">
-        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains.
+        /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains, and sent in the ai-gateway.budget.updated webhook.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l

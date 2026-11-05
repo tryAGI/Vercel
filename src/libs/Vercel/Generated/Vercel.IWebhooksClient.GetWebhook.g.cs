@@ -18,7 +18,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared689f04e7e807eaff> GetWebhookAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedb83631959dd7e56b> GetWebhookAsync(
             string id,
             string? teamId = default,
             string? slug = default,
@@ -38,7 +38,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared689f04e7e807eaff>> GetWebhookAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedb83631959dd7e56b>> GetWebhookAsResponseAsync(
             string id,
             string? teamId = default,
             string? slug = default,

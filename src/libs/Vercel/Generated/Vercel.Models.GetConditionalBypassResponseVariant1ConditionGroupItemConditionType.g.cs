@@ -111,6 +111,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        ResponseHeader,
+        /// <summary>
+        ///
+        /// </summary>
         Route,
         /// <summary>
         ///
@@ -183,6 +187,7 @@ namespace Vercel
                 GetConditionalBypassResponseVariant1ConditionGroupItemConditionType.RawPath => "raw_path",
                 GetConditionalBypassResponseVariant1ConditionGroupItemConditionType.Region => "region",
                 GetConditionalBypassResponseVariant1ConditionGroupItemConditionType.ResponseCode => "response_code",
+                GetConditionalBypassResponseVariant1ConditionGroupItemConditionType.ResponseHeader => "response_header",
                 GetConditionalBypassResponseVariant1ConditionGroupItemConditionType.Route => "route",
                 GetConditionalBypassResponseVariant1ConditionGroupItemConditionType.Ruleset => "ruleset",
                 GetConditionalBypassResponseVariant1ConditionGroupItemConditionType.Scheme => "scheme",
@@ -227,6 +232,7 @@ namespace Vercel
                 "raw_path" => GetConditionalBypassResponseVariant1ConditionGroupItemConditionType.RawPath,
                 "region" => GetConditionalBypassResponseVariant1ConditionGroupItemConditionType.Region,
                 "response_code" => GetConditionalBypassResponseVariant1ConditionGroupItemConditionType.ResponseCode,
+                "response_header" => GetConditionalBypassResponseVariant1ConditionGroupItemConditionType.ResponseHeader,
                 "route" => GetConditionalBypassResponseVariant1ConditionGroupItemConditionType.Route,
                 "ruleset" => GetConditionalBypassResponseVariant1ConditionGroupItemConditionType.Ruleset,
                 "scheme" => GetConditionalBypassResponseVariant1ConditionGroupItemConditionType.Scheme,
