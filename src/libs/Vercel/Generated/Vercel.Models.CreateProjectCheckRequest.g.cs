@@ -16,7 +16,7 @@ namespace Vercel
         public required string Name { get; set; }
 
         /// <summary>
-        ///
+        /// Whether check runs can be manually re-requested. Git provider checks cannot be re-requested.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isRerequestable")]
         public bool? IsRerequestable { get; set; }
@@ -31,7 +31,7 @@ namespace Vercel
         public required global::Vercel.CreateProjectCheckRequestRequires Requires { get; set; } = global::Vercel.CreateProjectCheckRequestRequires.DeploymentUrl;
 
         /// <summary>
-        ///
+        /// Deployment targets where this check applies. Valid values are "production", "preview", "all", or a Custom Environment ID such as "env_...". If omitted, defaults to ["production"]. "all" cannot be combined with other targets.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("targets")]
         public global::System.Collections.Generic.IList<string>? Targets { get; set; }
@@ -69,8 +69,12 @@ namespace Vercel
         /// <param name="requires">
         /// Default Value: deployment-url
         /// </param>
-        /// <param name="isRerequestable"></param>
-        /// <param name="targets"></param>
+        /// <param name="isRerequestable">
+        /// Whether check runs can be manually re-requested. Git provider checks cannot be re-requested.
+        /// </param>
+        /// <param name="targets">
+        /// Deployment targets where this check applies. Valid values are "production", "preview", "all", or a Custom Environment ID such as "env_...". If omitted, defaults to ["production"]. "all" cannot be combined with other targets.
+        /// </param>
         /// <param name="blocks">
         /// Default Value: deployment-alias
         /// </param>

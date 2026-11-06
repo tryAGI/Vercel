@@ -2288,6 +2288,30 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        ScheduleCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        ScheduleDeleted,
+        /// <summary>
+        ///
+        /// </summary>
+        ScheduleDisabled,
+        /// <summary>
+        ///
+        /// </summary>
+        ScheduleEnabled,
+        /// <summary>
+        ///
+        /// </summary>
+        ScheduleInvoked,
+        /// <summary>
+        ///
+        /// </summary>
+        ScheduleUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         SecondaryEmailAdded,
         /// <summary>
         ///
@@ -3632,6 +3656,12 @@ namespace Vercel
                 UserEventType.SandboxSnapshotRegionsUpdated => "sandbox-snapshot-regions-updated",
                 UserEventType.Scale => "scale",
                 UserEventType.ScaleAuto => "scale-auto",
+                UserEventType.ScheduleCreated => "schedule-created",
+                UserEventType.ScheduleDeleted => "schedule-deleted",
+                UserEventType.ScheduleDisabled => "schedule-disabled",
+                UserEventType.ScheduleEnabled => "schedule-enabled",
+                UserEventType.ScheduleInvoked => "schedule-invoked",
+                UserEventType.ScheduleUpdated => "schedule-updated",
                 UserEventType.SecondaryEmailAdded => "secondary-email-added",
                 UserEventType.SecondaryEmailRemoved => "secondary-email-removed",
                 UserEventType.SecondaryEmailVerified => "secondary-email-verified",
@@ -4402,6 +4432,12 @@ namespace Vercel
                 "sandbox-snapshot-regions-updated" => UserEventType.SandboxSnapshotRegionsUpdated,
                 "scale" => UserEventType.Scale,
                 "scale-auto" => UserEventType.ScaleAuto,
+                "schedule-created" => UserEventType.ScheduleCreated,
+                "schedule-deleted" => UserEventType.ScheduleDeleted,
+                "schedule-disabled" => UserEventType.ScheduleDisabled,
+                "schedule-enabled" => UserEventType.ScheduleEnabled,
+                "schedule-invoked" => UserEventType.ScheduleInvoked,
+                "schedule-updated" => UserEventType.ScheduleUpdated,
                 "secondary-email-added" => UserEventType.SecondaryEmailAdded,
                 "secondary-email-removed" => UserEventType.SecondaryEmailRemoved,
                 "secondary-email-verified" => UserEventType.SecondaryEmailVerified,

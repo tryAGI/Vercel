@@ -2,7 +2,84 @@
 #nullable enable
 
 namespace Vercel
-{    /// <summary>
+{
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
+    )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProvider>, global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProviders?>), TypeInfoPropertyName = "GetStorageStoresByIdResponseStoreProjectFilterGitProviders_0a34ff62f0ff0f26")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProvider>, global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProviders?>), TypeInfoPropertyName = "CreateStorageStoresBlobResponseStoreProjectFilterGitProviders_82a156b6a4d09885")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProvider>, global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProviders?>?), TypeInfoPropertyName = "GetStorageStoresByIdResponseStoreProjectFilterGitProviders_85bb75bc47869be1")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProvider>, global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProviders?>?), TypeInfoPropertyName = "CreateStorageStoresBlobResponseStoreProjectFilterGitProviders_09bc542c96466396")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProvider>, global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProviders?>), TypeInfoPropertyName = "GetStorageStoresByIdResponseStoreProjectFilterGitProviders_36eb3ecf9ad87902")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProvider>, global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProviders?>), TypeInfoPropertyName = "CreateStorageStoresBlobResponseStoreProjectFilterGitProviders_aa7865470a6d78c7")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobRequestRegion), TypeInfoPropertyName = "CreateStorageStoresBlobRequestRegion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobRequestAccess), TypeInfoPropertyName = "CreateStorageStoresBlobRequestAccess2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetStorageStoresByIdResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetStorageStoresByIdResponseStore))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectFilter))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGit))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProvider>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProvider), TypeInfoPropertyName = "GetStorageStoresByIdResponseStoreProjectFilterGitProvider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProviders), TypeInfoPropertyName = "GetStorageStoresByIdResponseStoreProjectFilterGitProviders2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemDeployments))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemDeploymentsAction>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemDeploymentsAction))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework), TypeInfoPropertyName = "GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetStorageStoresByIdResponseStoreStatus), TypeInfoPropertyName = "GetStorageStoresByIdResponseStoreStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStore))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilter))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGit))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProvider>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProvider), TypeInfoPropertyName = "CreateStorageStoresBlobResponseStoreProjectFilterGitProvider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProviders), TypeInfoPropertyName = "CreateStorageStoresBlobResponseStoreProjectFilterGitProviders2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeployments))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsAction>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsAction))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework), TypeInfoPropertyName = "CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreStatus), TypeInfoPropertyName = "CreateStorageStoresBlobResponseStoreStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreAccess), TypeInfoPropertyName = "CreateStorageStoresBlobResponseStoreAccess2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreKind), TypeInfoPropertyName = "CreateStorageStoresBlobResponseStoreKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreRegion), TypeInfoPropertyName = "CreateStorageStoresBlobResponseStoreRegion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteStorageStoresBlobByIdResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string?>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobRequestRegion?), TypeInfoPropertyName = "NullableCreateStorageStoresBlobRequestRegion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobRequestAccess?), TypeInfoPropertyName = "NullableCreateStorageStoresBlobRequestAccess2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProvider?), TypeInfoPropertyName = "NullableGetStorageStoresByIdResponseStoreProjectFilterGitProvider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProviders?), TypeInfoPropertyName = "NullableGetStorageStoresByIdResponseStoreProjectFilterGitProviders2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework?), TypeInfoPropertyName = "NullableGetStorageStoresByIdResponseStoreProjectsMetadataItemFramework2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetStorageStoresByIdResponseStoreStatus?), TypeInfoPropertyName = "NullableGetStorageStoresByIdResponseStoreStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProvider?), TypeInfoPropertyName = "NullableCreateStorageStoresBlobResponseStoreProjectFilterGitProvider2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProviders?), TypeInfoPropertyName = "NullableCreateStorageStoresBlobResponseStoreProjectFilterGitProviders2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework?), TypeInfoPropertyName = "NullableCreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreStatus?), TypeInfoPropertyName = "NullableCreateStorageStoresBlobResponseStoreStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreAccess?), TypeInfoPropertyName = "NullableCreateStorageStoresBlobResponseStoreAccess2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreKind?), TypeInfoPropertyName = "NullableCreateStorageStoresBlobResponseStoreKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateStorageStoresBlobResponseStoreRegion?), TypeInfoPropertyName = "NullableCreateStorageStoresBlobResponseStoreRegion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProvider>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemDeploymentsAction>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProvider>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsAction>))]
+    internal sealed partial class StorageSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
     ///
     /// </summary>
     public sealed partial class StorageSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -46,7 +123,10 @@ namespace Vercel
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::Vercel.SourceGenerationContext.AddConverters(options);
+            global::Vercel.PartitionCoreSourceGenerationContext.AddConverters(options);
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProvider>, global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProviders?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProvider>, global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProviders?>());
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -61,10 +141,206 @@ namespace Vercel
             return options;
         }
 
+
+        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
+        {
+            public override bool CanConvert(global::System.Type typeToConvert)
+            {
+                return
+                    typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobRequestRegion)
+
+                    || typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobRequestRegion?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobRequestAccess)
+
+                    || typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobRequestAccess?)
+
+                    || typeToConvert == typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProvider)
+
+                    || typeToConvert == typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProvider?)
+
+                    || typeToConvert == typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProviders)
+
+                    || typeToConvert == typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProviders?)
+
+                    || typeToConvert == typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework)
+
+                    || typeToConvert == typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework?)
+
+                    || typeToConvert == typeof(global::Vercel.GetStorageStoresByIdResponseStoreStatus)
+
+                    || typeToConvert == typeof(global::Vercel.GetStorageStoresByIdResponseStoreStatus?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProvider)
+
+                    || typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProvider?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProviders)
+
+                    || typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProviders?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework)
+
+                    || typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreStatus)
+
+                    || typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreStatus?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreAccess)
+
+                    || typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreAccess?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreKind)
+
+                    || typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreKind?)
+
+                    || typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreRegion)
+
+                    || typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreRegion?);
+            }
+
+            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
+                global::System.Type typeToConvert,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobRequestRegion))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobRequestRegionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobRequestRegion?))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobRequestRegionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobRequestAccess))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobRequestAccessJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobRequestAccess?))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobRequestAccessNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProvider))
+                {
+                    return new global::Vercel.JsonConverters.GetStorageStoresByIdResponseStoreProjectFilterGitProviderJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProvider?))
+                {
+                    return new global::Vercel.JsonConverters.GetStorageStoresByIdResponseStoreProjectFilterGitProviderNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProviders))
+                {
+                    return new global::Vercel.JsonConverters.GetStorageStoresByIdResponseStoreProjectFilterGitProvidersJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProviders?))
+                {
+                    return new global::Vercel.JsonConverters.GetStorageStoresByIdResponseStoreProjectFilterGitProvidersNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework))
+                {
+                    return new global::Vercel.JsonConverters.GetStorageStoresByIdResponseStoreProjectsMetadataItemFrameworkJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework?))
+                {
+                    return new global::Vercel.JsonConverters.GetStorageStoresByIdResponseStoreProjectsMetadataItemFrameworkNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetStorageStoresByIdResponseStoreStatus))
+                {
+                    return new global::Vercel.JsonConverters.GetStorageStoresByIdResponseStoreStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetStorageStoresByIdResponseStoreStatus?))
+                {
+                    return new global::Vercel.JsonConverters.GetStorageStoresByIdResponseStoreStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProvider))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobResponseStoreProjectFilterGitProviderJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProvider?))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobResponseStoreProjectFilterGitProviderNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProviders))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProviders?))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobResponseStoreProjectFilterGitProvidersNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobResponseStoreProjectsMetadataItemFrameworkJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework?))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobResponseStoreProjectsMetadataItemFrameworkNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreStatus))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobResponseStoreStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreStatus?))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobResponseStoreStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreAccess))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobResponseStoreAccessJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreAccess?))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobResponseStoreAccessNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreKind))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobResponseStoreKindJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreKind?))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobResponseStoreKindNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreRegion))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobResponseStoreRegionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.CreateStorageStoresBlobResponseStoreRegion?))
+                {
+                    return new global::Vercel.JsonConverters.CreateStorageStoresBlobResponseStoreRegionNullableJsonConverter();
+                }
+                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
+            }
+        }
+
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[1];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -100,7 +376,9 @@ namespace Vercel
             {
                 return index switch
                 {
-                    0 => global::Vercel.SourceGenerationContext.TypeInfoResolver,
+                    0 => new StorageSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    1 => global::Vercel.PartitionCoreSourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

@@ -459,7 +459,7 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("security")]
-        public global::Vercel.AutoSDKShareda3770e4df73b880d? Security { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30? Security { get; set; }
 
         /// <summary>
         ///
@@ -808,7 +808,7 @@ namespace Vercel
             global::Vercel.AutoSDKSharedce0c7f50e384322c? rollingRelease,
             string? rootDirectory,
             global::Vercel.UpdateProjectResponseSandbox? sandbox,
-            global::Vercel.AutoSDKShareda3770e4df73b880d? security,
+            global::Vercel.AutoSDKShared25e1e81cf9eecd30? security,
             bool? serverlessFunctionZeroConfigFailover,
             global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseService>? services,
             global::System.Collections.Generic.IList<string>? skewProtectionAllowedDomains,

@@ -9,14 +9,14 @@ namespace Vercel
     public sealed partial class CreateProjectCheckRequestSourceVariant3
     {
         /// <summary>
-        ///
+        /// Imports Git provider check results, such as GitHub check runs or commit statuses, as Deployment Checks.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Kind { get; set; }
 
         /// <summary>
-        ///
+        /// The Git provider check name or context to match, for example a GitHub Actions job name.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("externalCheckName")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -38,8 +38,12 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateProjectCheckRequestSourceVariant3" /> class.
         /// </summary>
-        /// <param name="kind"></param>
-        /// <param name="externalCheckName"></param>
+        /// <param name="kind">
+        /// Imports Git provider check results, such as GitHub check runs or commit statuses, as Deployment Checks.
+        /// </param>
+        /// <param name="externalCheckName">
+        /// The Git provider check name or context to match, for example a GitHub Actions job name.
+        /// </param>
         /// <param name="provider"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

@@ -21,7 +21,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedfa8b687d5ac48c48> Projects { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShareda2d284b091a73479> Projects { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,7 +39,7 @@ namespace Vercel
 #endif
         public GetProjectsResponseVariant3(
             global::Vercel.OneOf<global::Vercel.GetProjectsResponseVariant3Pagination, global::Vercel.Pagination> pagination,
-            global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedfa8b687d5ac48c48> projects)
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShareda2d284b091a73479> projects)
         {
             this.Pagination = pagination;
             this.Projects = projects ?? throw new global::System.ArgumentNullException(nameof(projects));

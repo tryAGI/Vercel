@@ -2,7 +2,57 @@
 #nullable enable
 
 namespace Vercel
-{    /// <summary>
+{
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
+    )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UserEvent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventType))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListEventTypeCategorie>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypeCategorie), TypeInfoPropertyName = "ListEventTypeCategorie2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypeName), TypeInfoPropertyName = "ListEventTypeName2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListEventTypeReplacedByItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypeReplacedByItem), TypeInfoPropertyName = "ListEventTypeReplacedByItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypesResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListEventTypesResponseCategorie>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypesResponseCategorie))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypesResponseCategorieName), TypeInfoPropertyName = "ListEventTypesResponseCategorieName2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListEventType>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUser))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthUserLimited))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RequestDeleteRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.RequestDeleteRequestReason>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RequestDeleteRequestReason))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListUserEventsResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UserEvent>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAuthUserResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AuthUser, global::Vercel.AuthUserLimited>), TypeInfoPropertyName = "OneOfAuthUserAuthUserLimited2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RequestDeleteResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string?>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypeCategorie?), TypeInfoPropertyName = "NullableListEventTypeCategorie2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypeName?), TypeInfoPropertyName = "NullableListEventTypeName2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypeReplacedByItem?), TypeInfoPropertyName = "NullableListEventTypeReplacedByItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListEventTypesResponseCategorieName?), TypeInfoPropertyName = "NullableListEventTypesResponseCategorieName2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AuthUser, global::Vercel.AuthUserLimited>?), TypeInfoPropertyName = "NullableOneOfAuthUserAuthUserLimited2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ListEventTypeCategorie>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ListEventTypeReplacedByItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ListEventTypesResponseCategorie>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ListEventType>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.RequestDeleteRequestReason>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UserEvent>))]
+    internal sealed partial class UserSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
     ///
     /// </summary>
     public sealed partial class UserSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -46,7 +96,9 @@ namespace Vercel
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::Vercel.SourceGenerationContext.AddConverters(options);
+            global::Vercel.PartitionCoreSourceGenerationContext.AddConverters(options);
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AuthUser, global::Vercel.AuthUserLimited>());
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -61,10 +113,80 @@ namespace Vercel
             return options;
         }
 
+
+        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
+        {
+            public override bool CanConvert(global::System.Type typeToConvert)
+            {
+                return
+                    typeToConvert == typeof(global::Vercel.ListEventTypeCategorie)
+
+                    || typeToConvert == typeof(global::Vercel.ListEventTypeCategorie?)
+
+                    || typeToConvert == typeof(global::Vercel.ListEventTypeName)
+
+                    || typeToConvert == typeof(global::Vercel.ListEventTypeName?)
+
+                    || typeToConvert == typeof(global::Vercel.ListEventTypeReplacedByItem)
+
+                    || typeToConvert == typeof(global::Vercel.ListEventTypeReplacedByItem?)
+
+                    || typeToConvert == typeof(global::Vercel.ListEventTypesResponseCategorieName)
+
+                    || typeToConvert == typeof(global::Vercel.ListEventTypesResponseCategorieName?);
+            }
+
+            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
+                global::System.Type typeToConvert,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                if (typeToConvert == typeof(global::Vercel.ListEventTypeCategorie))
+                {
+                    return new global::Vercel.JsonConverters.ListEventTypeCategorieJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ListEventTypeCategorie?))
+                {
+                    return new global::Vercel.JsonConverters.ListEventTypeCategorieNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ListEventTypeName))
+                {
+                    return new global::Vercel.JsonConverters.ListEventTypeNameJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ListEventTypeName?))
+                {
+                    return new global::Vercel.JsonConverters.ListEventTypeNameNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ListEventTypeReplacedByItem))
+                {
+                    return new global::Vercel.JsonConverters.ListEventTypeReplacedByItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ListEventTypeReplacedByItem?))
+                {
+                    return new global::Vercel.JsonConverters.ListEventTypeReplacedByItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ListEventTypesResponseCategorieName))
+                {
+                    return new global::Vercel.JsonConverters.ListEventTypesResponseCategorieNameJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ListEventTypesResponseCategorieName?))
+                {
+                    return new global::Vercel.JsonConverters.ListEventTypesResponseCategorieNameNullableJsonConverter();
+                }
+                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
+            }
+        }
+
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[1];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -100,7 +222,9 @@ namespace Vercel
             {
                 return index switch
                 {
-                    0 => global::Vercel.SourceGenerationContext.TypeInfoResolver,
+                    0 => new UserSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    1 => global::Vercel.PartitionCoreSourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

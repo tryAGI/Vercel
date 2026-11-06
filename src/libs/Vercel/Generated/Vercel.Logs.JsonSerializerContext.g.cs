@@ -2,7 +2,29 @@
 #nullable enable
 
 namespace Vercel
-{    /// <summary>
+{
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
+    )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRuntimeLogsResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRuntimeLogsResponseLevel), TypeInfoPropertyName = "GetRuntimeLogsResponseLevel2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRuntimeLogsResponseSource), TypeInfoPropertyName = "GetRuntimeLogsResponseSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string?>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRuntimeLogsResponseLevel?), TypeInfoPropertyName = "NullableGetRuntimeLogsResponseLevel2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetRuntimeLogsResponseSource?), TypeInfoPropertyName = "NullableGetRuntimeLogsResponseSource2")]
+    internal sealed partial class LogsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
     ///
     /// </summary>
     public sealed partial class LogsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -46,7 +68,8 @@ namespace Vercel
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::Vercel.SourceGenerationContext.AddConverters(options);
+            global::Vercel.PartitionCoreSourceGenerationContext.AddConverters(options);
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -61,10 +84,52 @@ namespace Vercel
             return options;
         }
 
+
+        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
+        {
+            public override bool CanConvert(global::System.Type typeToConvert)
+            {
+                return
+                    typeToConvert == typeof(global::Vercel.GetRuntimeLogsResponseLevel)
+
+                    || typeToConvert == typeof(global::Vercel.GetRuntimeLogsResponseLevel?)
+
+                    || typeToConvert == typeof(global::Vercel.GetRuntimeLogsResponseSource)
+
+                    || typeToConvert == typeof(global::Vercel.GetRuntimeLogsResponseSource?);
+            }
+
+            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
+                global::System.Type typeToConvert,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                if (typeToConvert == typeof(global::Vercel.GetRuntimeLogsResponseLevel))
+                {
+                    return new global::Vercel.JsonConverters.GetRuntimeLogsResponseLevelJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetRuntimeLogsResponseLevel?))
+                {
+                    return new global::Vercel.JsonConverters.GetRuntimeLogsResponseLevelNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetRuntimeLogsResponseSource))
+                {
+                    return new global::Vercel.JsonConverters.GetRuntimeLogsResponseSourceJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetRuntimeLogsResponseSource?))
+                {
+                    return new global::Vercel.JsonConverters.GetRuntimeLogsResponseSourceNullableJsonConverter();
+                }
+                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
+            }
+        }
+
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[1];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -100,7 +165,9 @@ namespace Vercel
             {
                 return index switch
                 {
-                    0 => global::Vercel.SourceGenerationContext.TypeInfoResolver,
+                    0 => new LogsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    1 => global::Vercel.PartitionCoreSourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }
