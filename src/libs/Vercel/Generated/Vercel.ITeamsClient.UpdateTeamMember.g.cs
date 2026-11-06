@@ -72,7 +72,7 @@ namespace Vercel
         /// Example: VIEWER
         /// </param>
         /// <param name="teamPermissions">
-        /// The team permissions to set for the member. Permissions must be compatible with the team roles assigned to the member.<br/>
+        /// The team permissions to set for the member. Permissions must be available to the team and compatible with the team roles assigned to the member.<br/>
         /// Example: [CreateProject, FullProductionDeployment]
         /// </param>
         /// <param name="projects"></param>
