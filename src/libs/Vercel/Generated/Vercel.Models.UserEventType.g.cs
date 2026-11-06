@@ -124,6 +124,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiAgentUsageBilling,
+        /// <summary>
+        ///
+        /// </summary>
         AiAlertInvestigation,
         /// <summary>
         ///
@@ -3087,6 +3091,7 @@ namespace Vercel
                 UserEventType.AgenticProvisioningCredentialsRotated => "agentic-provisioning-credentials-rotated",
                 UserEventType.AgenticProvisioningPlanChanged => "agentic-provisioning-plan-changed",
                 UserEventType.AgenticProvisioningTeamCreated => "agentic-provisioning-team-created",
+                UserEventType.AiAgentUsageBilling => "ai-agent-usage-billing",
                 UserEventType.AiAlertInvestigation => "ai-alert-investigation",
                 UserEventType.AiCodeReview => "ai-code-review",
                 UserEventType.AiGatewayAccessPolicyCreated => "ai-gateway-access-policy-created",
@@ -3856,6 +3861,7 @@ namespace Vercel
                 "agentic-provisioning-credentials-rotated" => UserEventType.AgenticProvisioningCredentialsRotated,
                 "agentic-provisioning-plan-changed" => UserEventType.AgenticProvisioningPlanChanged,
                 "agentic-provisioning-team-created" => UserEventType.AgenticProvisioningTeamCreated,
+                "ai-agent-usage-billing" => UserEventType.AiAgentUsageBilling,
                 "ai-alert-investigation" => UserEventType.AiAlertInvestigation,
                 "ai-code-review" => UserEventType.AiCodeReview,
                 "ai-gateway-access-policy-created" => UserEventType.AiGatewayAccessPolicyCreated,
