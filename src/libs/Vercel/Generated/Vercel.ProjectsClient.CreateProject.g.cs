@@ -61,7 +61,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared8e5249ecd42210ed> CreateProjectAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedfa8b687d5ac48c48> CreateProjectAsync(
 
             global::Vercel.CreateProjectRequest request,
             string? teamId = default,
@@ -94,7 +94,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared8e5249ecd42210ed>> CreateProjectAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedfa8b687d5ac48c48>> CreateProjectAsResponseAsync(
 
             global::Vercel.CreateProjectRequest request,
             string? teamId = default,
@@ -711,9 +711,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.AutoSDKShared8e5249ecd42210ed.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.AutoSDKSharedfa8b687d5ac48c48.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared8e5249ecd42210ed>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedfa8b687d5ac48c48>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -743,9 +743,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.AutoSDKShared8e5249ecd42210ed.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.AutoSDKSharedfa8b687d5ac48c48.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared8e5249ecd42210ed>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedfa8b687d5ac48c48>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -863,7 +863,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared8e5249ecd42210ed> CreateProjectAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedfa8b687d5ac48c48> CreateProjectAsync(
             string name,
             string? teamId = default,
             string? slug = default,
