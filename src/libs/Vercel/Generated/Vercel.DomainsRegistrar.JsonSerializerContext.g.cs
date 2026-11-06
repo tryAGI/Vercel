@@ -2,7 +2,182 @@
 #nullable enable
 
 namespace Vercel
-{    /// <summary>
+{
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
+    )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.DomainTooShort, global::Vercel.OrderTooExpensive, global::Vercel.InvalidAdditionalContactInfo, global::Vercel.AdditionalContactInfoRequired, global::Vercel.ExpectedPriceMismatch, global::Vercel.DomainNotAvailable, global::Vercel.EmojiTldNotSupported, global::Vercel.LanguageCodeRequired, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>), TypeInfoPropertyName = "HttpApiDecodeError_c52ca4da997e19f4")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.DomainTooShort, global::Vercel.OrderTooExpensive, global::Vercel.TooManyDomains, global::Vercel.InvalidAdditionalContactInfo, global::Vercel.AdditionalContactInfoRequired, global::Vercel.DuplicateDomains, global::Vercel.ExpectedPriceMismatch, global::Vercel.DomainNotAvailable, global::Vercel.EmojiTldNotSupported, global::Vercel.LanguageCodeRequired, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>), TypeInfoPropertyName = "HttpApiDecodeError_a54a377387895af9")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.BadRequest, global::Vercel.DomainAlreadyOwned, global::Vercel.DomainTooShort, global::Vercel.DNSSECEnabled, global::Vercel.ExpectedPriceMismatch, global::Vercel.DomainNotAvailable, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>), TypeInfoPropertyName = "HttpApiDecodeError_8133517629ad14dc")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.DomainTooShort, global::Vercel.OrderTooExpensive, global::Vercel.InvalidAdditionalContactInfo, global::Vercel.AdditionalContactInfoRequired, global::Vercel.ExpectedPriceMismatch, global::Vercel.DomainNotAvailable, global::Vercel.EmojiTldNotSupported, global::Vercel.LanguageCodeRequired, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>?), TypeInfoPropertyName = "HttpApiDecodeError_622adb2eec2140a8")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.DomainTooShort, global::Vercel.OrderTooExpensive, global::Vercel.TooManyDomains, global::Vercel.InvalidAdditionalContactInfo, global::Vercel.AdditionalContactInfoRequired, global::Vercel.DuplicateDomains, global::Vercel.ExpectedPriceMismatch, global::Vercel.DomainNotAvailable, global::Vercel.EmojiTldNotSupported, global::Vercel.LanguageCodeRequired, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>?), TypeInfoPropertyName = "HttpApiDecodeError_21de2c66648ab6ca")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.BadRequest, global::Vercel.DomainAlreadyOwned, global::Vercel.DomainTooShort, global::Vercel.DNSSECEnabled, global::Vercel.ExpectedPriceMismatch, global::Vercel.DomainNotAvailable, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>?), TypeInfoPropertyName = "HttpApiDecodeError_dabc7b432af58837")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.BadRequest, global::Vercel.DomainTooShort, global::Vercel.DomainNotRegistered, global::Vercel.ExpectedPriceMismatch, global::Vercel.DomainNotAvailable, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>?), TypeInfoPropertyName = "HttpApiDecodeError_e5b73838d134854f")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.HttpApiDecodeError))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.Issue>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.Issue))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.PropertyKey>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PropertyKey), TypeInfoPropertyName = "PropertyKey2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PropertyKeyVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PropertyKeyVariant3Tag), TypeInfoPropertyName = "PropertyKeyVariant3Tag2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TooManyRequests))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TooManyRequestsCode), TypeInfoPropertyName = "TooManyRequestsCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TooManyRequestsRetryAfter))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TooManyRequestsLimit))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.Unauthorized))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UnauthorizedCode), TypeInfoPropertyName = "UnauthorizedCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NotAuthorizedForScope))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NotAuthorizedForScopeCode), TypeInfoPropertyName = "NotAuthorizedForScopeCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.InternalServerError))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.InternalServerErrorCode), TypeInfoPropertyName = "InternalServerErrorCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TldNotSupported))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TldNotSupportedCode), TypeInfoPropertyName = "TldNotSupportedCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NotFound))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NotFoundCode), TypeInfoPropertyName = "NotFoundCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainTooShort))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainTooShortCode), TypeInfoPropertyName = "DomainTooShortCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BadRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BadRequestCode), TypeInfoPropertyName = "BadRequestCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainNotRegistered))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainNotRegisteredCode), TypeInfoPropertyName = "DomainNotRegisteredCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainNotFound))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainNotFoundCode), TypeInfoPropertyName = "DomainNotFoundCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainCannotBeTransferedOutUntil))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainCannotBeTransferedOutUntilCode), TypeInfoPropertyName = "DomainCannotBeTransferedOutUntilCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.Forbidden))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ForbiddenCode), TypeInfoPropertyName = "ForbiddenCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.LanguageCodeRequired))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.LanguageCodeRequiredCode), TypeInfoPropertyName = "LanguageCodeRequiredCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.EmojiTldNotSupported))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.EmojiTldNotSupportedCode), TypeInfoPropertyName = "EmojiTldNotSupportedCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainNotAvailable))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainNotAvailableCode), TypeInfoPropertyName = "DomainNotAvailableCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ExpectedPriceMismatch))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ExpectedPriceMismatchCode), TypeInfoPropertyName = "ExpectedPriceMismatchCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AdditionalContactInfoRequired))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AdditionalContactInfoRequiredCode), TypeInfoPropertyName = "AdditionalContactInfoRequiredCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.InvalidAdditionalContactInfo))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.InvalidAdditionalContactInfoCode), TypeInfoPropertyName = "InvalidAdditionalContactInfoCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OrderTooExpensive))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OrderTooExpensiveCode), TypeInfoPropertyName = "OrderTooExpensiveCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DuplicateDomains))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DuplicateDomainsCode), TypeInfoPropertyName = "DuplicateDomainsCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TooManyDomains))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TooManyDomainsCode), TypeInfoPropertyName = "TooManyDomainsCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DNSSECEnabled))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DNSSECEnabledCode), TypeInfoPropertyName = "DNSSECEnabledCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainAlreadyOwned))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainAlreadyOwnedCode), TypeInfoPropertyName = "DomainAlreadyOwnedCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainNotRenewable))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainNotRenewableCode), TypeInfoPropertyName = "DomainNotRenewableCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainAlreadyRenewing))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainAlreadyRenewingCode), TypeInfoPropertyName = "DomainAlreadyRenewingCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ContactVerified))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ContactPendingVerification))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BoughtTooRecently))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BoughtTooRecentlyCode), TypeInfoPropertyName = "BoughtTooRecentlyCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SearchDomainsRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetBulkPriceRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetBulkAvailabilityRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuySingleDomainRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyDomainsRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TransferInDomainRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TransferInDomainRequestContactInformation))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RenewDomainRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RenewDomainRequestContactInformation))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDomainAutoRenewRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateDomainNameserversRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SearchDomainsResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.SearchDomainsResponseResultVariant1, global::Vercel.SearchDomainsResponseResultVariant2>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.SearchDomainsResponseResultVariant1, global::Vercel.SearchDomainsResponseResultVariant2>), TypeInfoPropertyName = "AnyOfSearchDomainsResponseResultVariant1SearchDomainsResponseResultVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SearchDomainsResponseResultVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SearchDomainsResponseResultVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetTldResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>), TypeInfoPropertyName = "AnyOfTldNotSupportedHttpApiDecodeError2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetTldPriceResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDomainAvailabilityResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDomainPriceResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.BadRequest, global::Vercel.DomainTooShort, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>), TypeInfoPropertyName = "AnyOfBadRequestDomainTooShortTldNotSupportedHttpApiDecodeError2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetBulkPriceResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetBulkPriceResponseResult>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetBulkPriceResponseResult))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetBulkAvailabilityResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.GetBulkAvailabilityResponseResult>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetBulkAvailabilityResponseResult))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.BadRequest, global::Vercel.HttpApiDecodeError>), TypeInfoPropertyName = "AnyOfBadRequestHttpApiDecodeError2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDomainAuthCodeResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.DomainNotRegistered, global::Vercel.HttpApiDecodeError>), TypeInfoPropertyName = "AnyOfDomainNotRegisteredHttpApiDecodeError2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.Forbidden, global::Vercel.NotAuthorizedForScope>), TypeInfoPropertyName = "AnyOfForbiddenNotAuthorizedForScope2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuySingleDomainResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyDomainsResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TransferInDomainResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDomainTransferInResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDomainTransferInResponseStatus), TypeInfoPropertyName = "GetDomainTransferInResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RenewDomainResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.BadRequest, global::Vercel.DomainTooShort, global::Vercel.DomainNotRegistered, global::Vercel.ExpectedPriceMismatch, global::Vercel.DomainNotAvailable, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>), TypeInfoPropertyName = "HttpApiDecodeError_3a03406836c566c6")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.DomainAlreadyRenewing, global::Vercel.DomainNotRenewable, global::Vercel.DomainNotRegistered, global::Vercel.HttpApiDecodeError>), TypeInfoPropertyName = "AnyOfDomainAlreadyRenewingDomainNotRenewableDomainNotRegisteredHttpApiDecodeError2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.ContactVerified, global::Vercel.ContactPendingVerification>), TypeInfoPropertyName = "AnyOfContactVerifiedContactPendingVerification2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.BoughtTooRecently, global::Vercel.DomainNotRegistered, global::Vercel.HttpApiDecodeError>), TypeInfoPropertyName = "AnyOfBoughtTooRecentlyDomainNotRegisteredHttpApiDecodeError2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrderResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.NotAuthorizedForScope, global::Vercel.Forbidden>), TypeInfoPropertyName = "AnyOfNotAuthorizedForScopeForbidden2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string?>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PropertyKey?), TypeInfoPropertyName = "NullablePropertyKey2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PropertyKeyVariant3Tag?), TypeInfoPropertyName = "NullablePropertyKeyVariant3Tag2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TooManyRequestsCode?), TypeInfoPropertyName = "NullableTooManyRequestsCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UnauthorizedCode?), TypeInfoPropertyName = "NullableUnauthorizedCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NotAuthorizedForScopeCode?), TypeInfoPropertyName = "NullableNotAuthorizedForScopeCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.InternalServerErrorCode?), TypeInfoPropertyName = "NullableInternalServerErrorCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TldNotSupportedCode?), TypeInfoPropertyName = "NullableTldNotSupportedCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NotFoundCode?), TypeInfoPropertyName = "NullableNotFoundCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainTooShortCode?), TypeInfoPropertyName = "NullableDomainTooShortCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BadRequestCode?), TypeInfoPropertyName = "NullableBadRequestCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainNotRegisteredCode?), TypeInfoPropertyName = "NullableDomainNotRegisteredCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainNotFoundCode?), TypeInfoPropertyName = "NullableDomainNotFoundCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainCannotBeTransferedOutUntilCode?), TypeInfoPropertyName = "NullableDomainCannotBeTransferedOutUntilCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ForbiddenCode?), TypeInfoPropertyName = "NullableForbiddenCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.LanguageCodeRequiredCode?), TypeInfoPropertyName = "NullableLanguageCodeRequiredCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.EmojiTldNotSupportedCode?), TypeInfoPropertyName = "NullableEmojiTldNotSupportedCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainNotAvailableCode?), TypeInfoPropertyName = "NullableDomainNotAvailableCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ExpectedPriceMismatchCode?), TypeInfoPropertyName = "NullableExpectedPriceMismatchCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AdditionalContactInfoRequiredCode?), TypeInfoPropertyName = "NullableAdditionalContactInfoRequiredCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.InvalidAdditionalContactInfoCode?), TypeInfoPropertyName = "NullableInvalidAdditionalContactInfoCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OrderTooExpensiveCode?), TypeInfoPropertyName = "NullableOrderTooExpensiveCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DuplicateDomainsCode?), TypeInfoPropertyName = "NullableDuplicateDomainsCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TooManyDomainsCode?), TypeInfoPropertyName = "NullableTooManyDomainsCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DNSSECEnabledCode?), TypeInfoPropertyName = "NullableDNSSECEnabledCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainAlreadyOwnedCode?), TypeInfoPropertyName = "NullableDomainAlreadyOwnedCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainNotRenewableCode?), TypeInfoPropertyName = "NullableDomainNotRenewableCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DomainAlreadyRenewingCode?), TypeInfoPropertyName = "NullableDomainAlreadyRenewingCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BoughtTooRecentlyCode?), TypeInfoPropertyName = "NullableBoughtTooRecentlyCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.SearchDomainsResponseResultVariant1, global::Vercel.SearchDomainsResponseResultVariant2>?), TypeInfoPropertyName = "NullableAnyOfSearchDomainsResponseResultVariant1SearchDomainsResponseResultVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>?), TypeInfoPropertyName = "NullableAnyOfTldNotSupportedHttpApiDecodeError2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.BadRequest, global::Vercel.DomainTooShort, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>?), TypeInfoPropertyName = "NullableAnyOfBadRequestDomainTooShortTldNotSupportedHttpApiDecodeError2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.BadRequest, global::Vercel.HttpApiDecodeError>?), TypeInfoPropertyName = "NullableAnyOfBadRequestHttpApiDecodeError2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.DomainNotRegistered, global::Vercel.HttpApiDecodeError>?), TypeInfoPropertyName = "NullableAnyOfDomainNotRegisteredHttpApiDecodeError2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.Forbidden, global::Vercel.NotAuthorizedForScope>?), TypeInfoPropertyName = "NullableAnyOfForbiddenNotAuthorizedForScope2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDomainTransferInResponseStatus?), TypeInfoPropertyName = "NullableGetDomainTransferInResponseStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.DomainAlreadyRenewing, global::Vercel.DomainNotRenewable, global::Vercel.DomainNotRegistered, global::Vercel.HttpApiDecodeError>?), TypeInfoPropertyName = "NullableAnyOfDomainAlreadyRenewingDomainNotRenewableDomainNotRegisteredHttpApiDecodeError2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.ContactVerified, global::Vercel.ContactPendingVerification>?), TypeInfoPropertyName = "NullableAnyOfContactVerifiedContactPendingVerification2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.BoughtTooRecently, global::Vercel.DomainNotRegistered, global::Vercel.HttpApiDecodeError>?), TypeInfoPropertyName = "NullableAnyOfBoughtTooRecentlyDomainNotRegisteredHttpApiDecodeError2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.NotAuthorizedForScope, global::Vercel.Forbidden>?), TypeInfoPropertyName = "NullableAnyOfNotAuthorizedForScopeForbidden2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.Issue>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.PropertyKey>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AnyOf<global::Vercel.SearchDomainsResponseResultVariant1, global::Vercel.SearchDomainsResponseResultVariant2>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetBulkPriceResponseResult>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.GetBulkAvailabilityResponseResult>))]
+    internal sealed partial class DomainsRegistrarSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
     ///
     /// </summary>
     public sealed partial class DomainsRegistrarSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -46,7 +221,34 @@ namespace Vercel
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::Vercel.SourceGenerationContext.AddConverters(options);
+            global::Vercel.PartitionCoreSourceGenerationContext.AddConverters(options);
+            options.Converters.Add(new global::Vercel.JsonConverters.PropertyKeyJsonConverter());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.SearchDomainsResponseResultVariant1, global::Vercel.SearchDomainsResponseResultVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.BadRequest, global::Vercel.DomainTooShort, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.BadRequest, global::Vercel.DomainTooShort, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.BadRequest, global::Vercel.HttpApiDecodeError>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.DomainNotRegistered, global::Vercel.HttpApiDecodeError>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.Forbidden, global::Vercel.NotAuthorizedForScope>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.DomainTooShort, global::Vercel.OrderTooExpensive, global::Vercel.InvalidAdditionalContactInfo, global::Vercel.AdditionalContactInfoRequired, global::Vercel.ExpectedPriceMismatch, global::Vercel.DomainNotAvailable, global::Vercel.EmojiTldNotSupported, global::Vercel.LanguageCodeRequired, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.Forbidden, global::Vercel.NotAuthorizedForScope>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.DomainTooShort, global::Vercel.OrderTooExpensive, global::Vercel.TooManyDomains, global::Vercel.InvalidAdditionalContactInfo, global::Vercel.AdditionalContactInfoRequired, global::Vercel.DuplicateDomains, global::Vercel.ExpectedPriceMismatch, global::Vercel.DomainNotAvailable, global::Vercel.EmojiTldNotSupported, global::Vercel.LanguageCodeRequired, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.Forbidden, global::Vercel.NotAuthorizedForScope>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.BadRequest, global::Vercel.DomainAlreadyOwned, global::Vercel.DomainTooShort, global::Vercel.DNSSECEnabled, global::Vercel.ExpectedPriceMismatch, global::Vercel.DomainNotAvailable, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.Forbidden, global::Vercel.NotAuthorizedForScope>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.Forbidden, global::Vercel.NotAuthorizedForScope>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.BadRequest, global::Vercel.DomainTooShort, global::Vercel.DomainNotRegistered, global::Vercel.ExpectedPriceMismatch, global::Vercel.DomainNotAvailable, global::Vercel.TldNotSupported, global::Vercel.HttpApiDecodeError>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.Forbidden, global::Vercel.NotAuthorizedForScope>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.DomainAlreadyRenewing, global::Vercel.DomainNotRenewable, global::Vercel.DomainNotRegistered, global::Vercel.HttpApiDecodeError>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.Forbidden, global::Vercel.NotAuthorizedForScope>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.DomainNotRegistered, global::Vercel.HttpApiDecodeError>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.Forbidden, global::Vercel.NotAuthorizedForScope>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.ContactVerified, global::Vercel.ContactPendingVerification>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.BoughtTooRecently, global::Vercel.DomainNotRegistered, global::Vercel.HttpApiDecodeError>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.Forbidden, global::Vercel.NotAuthorizedForScope>());
+            options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.NotAuthorizedForScope, global::Vercel.Forbidden>());
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -61,10 +263,416 @@ namespace Vercel
             return options;
         }
 
+
+        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
+        {
+            public override bool CanConvert(global::System.Type typeToConvert)
+            {
+                return
+                    typeToConvert == typeof(global::Vercel.PropertyKeyVariant3Tag)
+
+                    || typeToConvert == typeof(global::Vercel.PropertyKeyVariant3Tag?)
+
+                    || typeToConvert == typeof(global::Vercel.TooManyRequestsCode)
+
+                    || typeToConvert == typeof(global::Vercel.TooManyRequestsCode?)
+
+                    || typeToConvert == typeof(global::Vercel.UnauthorizedCode)
+
+                    || typeToConvert == typeof(global::Vercel.UnauthorizedCode?)
+
+                    || typeToConvert == typeof(global::Vercel.NotAuthorizedForScopeCode)
+
+                    || typeToConvert == typeof(global::Vercel.NotAuthorizedForScopeCode?)
+
+                    || typeToConvert == typeof(global::Vercel.InternalServerErrorCode)
+
+                    || typeToConvert == typeof(global::Vercel.InternalServerErrorCode?)
+
+                    || typeToConvert == typeof(global::Vercel.TldNotSupportedCode)
+
+                    || typeToConvert == typeof(global::Vercel.TldNotSupportedCode?)
+
+                    || typeToConvert == typeof(global::Vercel.NotFoundCode)
+
+                    || typeToConvert == typeof(global::Vercel.NotFoundCode?)
+
+                    || typeToConvert == typeof(global::Vercel.DomainTooShortCode)
+
+                    || typeToConvert == typeof(global::Vercel.DomainTooShortCode?)
+
+                    || typeToConvert == typeof(global::Vercel.BadRequestCode)
+
+                    || typeToConvert == typeof(global::Vercel.BadRequestCode?)
+
+                    || typeToConvert == typeof(global::Vercel.DomainNotRegisteredCode)
+
+                    || typeToConvert == typeof(global::Vercel.DomainNotRegisteredCode?)
+
+                    || typeToConvert == typeof(global::Vercel.DomainNotFoundCode)
+
+                    || typeToConvert == typeof(global::Vercel.DomainNotFoundCode?)
+
+                    || typeToConvert == typeof(global::Vercel.DomainCannotBeTransferedOutUntilCode)
+
+                    || typeToConvert == typeof(global::Vercel.DomainCannotBeTransferedOutUntilCode?)
+
+                    || typeToConvert == typeof(global::Vercel.ForbiddenCode)
+
+                    || typeToConvert == typeof(global::Vercel.ForbiddenCode?)
+
+                    || typeToConvert == typeof(global::Vercel.LanguageCodeRequiredCode)
+
+                    || typeToConvert == typeof(global::Vercel.LanguageCodeRequiredCode?)
+
+                    || typeToConvert == typeof(global::Vercel.EmojiTldNotSupportedCode)
+
+                    || typeToConvert == typeof(global::Vercel.EmojiTldNotSupportedCode?)
+
+                    || typeToConvert == typeof(global::Vercel.DomainNotAvailableCode)
+
+                    || typeToConvert == typeof(global::Vercel.DomainNotAvailableCode?)
+
+                    || typeToConvert == typeof(global::Vercel.ExpectedPriceMismatchCode)
+
+                    || typeToConvert == typeof(global::Vercel.ExpectedPriceMismatchCode?)
+
+                    || typeToConvert == typeof(global::Vercel.AdditionalContactInfoRequiredCode)
+
+                    || typeToConvert == typeof(global::Vercel.AdditionalContactInfoRequiredCode?)
+
+                    || typeToConvert == typeof(global::Vercel.InvalidAdditionalContactInfoCode)
+
+                    || typeToConvert == typeof(global::Vercel.InvalidAdditionalContactInfoCode?)
+
+                    || typeToConvert == typeof(global::Vercel.OrderTooExpensiveCode)
+
+                    || typeToConvert == typeof(global::Vercel.OrderTooExpensiveCode?)
+
+                    || typeToConvert == typeof(global::Vercel.DuplicateDomainsCode)
+
+                    || typeToConvert == typeof(global::Vercel.DuplicateDomainsCode?)
+
+                    || typeToConvert == typeof(global::Vercel.TooManyDomainsCode)
+
+                    || typeToConvert == typeof(global::Vercel.TooManyDomainsCode?)
+
+                    || typeToConvert == typeof(global::Vercel.DNSSECEnabledCode)
+
+                    || typeToConvert == typeof(global::Vercel.DNSSECEnabledCode?)
+
+                    || typeToConvert == typeof(global::Vercel.DomainAlreadyOwnedCode)
+
+                    || typeToConvert == typeof(global::Vercel.DomainAlreadyOwnedCode?)
+
+                    || typeToConvert == typeof(global::Vercel.DomainNotRenewableCode)
+
+                    || typeToConvert == typeof(global::Vercel.DomainNotRenewableCode?)
+
+                    || typeToConvert == typeof(global::Vercel.DomainAlreadyRenewingCode)
+
+                    || typeToConvert == typeof(global::Vercel.DomainAlreadyRenewingCode?)
+
+                    || typeToConvert == typeof(global::Vercel.BoughtTooRecentlyCode)
+
+                    || typeToConvert == typeof(global::Vercel.BoughtTooRecentlyCode?)
+
+                    || typeToConvert == typeof(global::Vercel.GetDomainTransferInResponseStatus)
+
+                    || typeToConvert == typeof(global::Vercel.GetDomainTransferInResponseStatus?);
+            }
+
+            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
+                global::System.Type typeToConvert,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                if (typeToConvert == typeof(global::Vercel.PropertyKeyVariant3Tag))
+                {
+                    return new global::Vercel.JsonConverters.PropertyKeyVariant3TagJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.PropertyKeyVariant3Tag?))
+                {
+                    return new global::Vercel.JsonConverters.PropertyKeyVariant3TagNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.TooManyRequestsCode))
+                {
+                    return new global::Vercel.JsonConverters.TooManyRequestsCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.TooManyRequestsCode?))
+                {
+                    return new global::Vercel.JsonConverters.TooManyRequestsCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UnauthorizedCode))
+                {
+                    return new global::Vercel.JsonConverters.UnauthorizedCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.UnauthorizedCode?))
+                {
+                    return new global::Vercel.JsonConverters.UnauthorizedCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.NotAuthorizedForScopeCode))
+                {
+                    return new global::Vercel.JsonConverters.NotAuthorizedForScopeCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.NotAuthorizedForScopeCode?))
+                {
+                    return new global::Vercel.JsonConverters.NotAuthorizedForScopeCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.InternalServerErrorCode))
+                {
+                    return new global::Vercel.JsonConverters.InternalServerErrorCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.InternalServerErrorCode?))
+                {
+                    return new global::Vercel.JsonConverters.InternalServerErrorCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.TldNotSupportedCode))
+                {
+                    return new global::Vercel.JsonConverters.TldNotSupportedCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.TldNotSupportedCode?))
+                {
+                    return new global::Vercel.JsonConverters.TldNotSupportedCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.NotFoundCode))
+                {
+                    return new global::Vercel.JsonConverters.NotFoundCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.NotFoundCode?))
+                {
+                    return new global::Vercel.JsonConverters.NotFoundCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DomainTooShortCode))
+                {
+                    return new global::Vercel.JsonConverters.DomainTooShortCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DomainTooShortCode?))
+                {
+                    return new global::Vercel.JsonConverters.DomainTooShortCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.BadRequestCode))
+                {
+                    return new global::Vercel.JsonConverters.BadRequestCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.BadRequestCode?))
+                {
+                    return new global::Vercel.JsonConverters.BadRequestCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DomainNotRegisteredCode))
+                {
+                    return new global::Vercel.JsonConverters.DomainNotRegisteredCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DomainNotRegisteredCode?))
+                {
+                    return new global::Vercel.JsonConverters.DomainNotRegisteredCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DomainNotFoundCode))
+                {
+                    return new global::Vercel.JsonConverters.DomainNotFoundCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DomainNotFoundCode?))
+                {
+                    return new global::Vercel.JsonConverters.DomainNotFoundCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DomainCannotBeTransferedOutUntilCode))
+                {
+                    return new global::Vercel.JsonConverters.DomainCannotBeTransferedOutUntilCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DomainCannotBeTransferedOutUntilCode?))
+                {
+                    return new global::Vercel.JsonConverters.DomainCannotBeTransferedOutUntilCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ForbiddenCode))
+                {
+                    return new global::Vercel.JsonConverters.ForbiddenCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ForbiddenCode?))
+                {
+                    return new global::Vercel.JsonConverters.ForbiddenCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.LanguageCodeRequiredCode))
+                {
+                    return new global::Vercel.JsonConverters.LanguageCodeRequiredCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.LanguageCodeRequiredCode?))
+                {
+                    return new global::Vercel.JsonConverters.LanguageCodeRequiredCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.EmojiTldNotSupportedCode))
+                {
+                    return new global::Vercel.JsonConverters.EmojiTldNotSupportedCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.EmojiTldNotSupportedCode?))
+                {
+                    return new global::Vercel.JsonConverters.EmojiTldNotSupportedCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DomainNotAvailableCode))
+                {
+                    return new global::Vercel.JsonConverters.DomainNotAvailableCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DomainNotAvailableCode?))
+                {
+                    return new global::Vercel.JsonConverters.DomainNotAvailableCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ExpectedPriceMismatchCode))
+                {
+                    return new global::Vercel.JsonConverters.ExpectedPriceMismatchCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ExpectedPriceMismatchCode?))
+                {
+                    return new global::Vercel.JsonConverters.ExpectedPriceMismatchCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AdditionalContactInfoRequiredCode))
+                {
+                    return new global::Vercel.JsonConverters.AdditionalContactInfoRequiredCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AdditionalContactInfoRequiredCode?))
+                {
+                    return new global::Vercel.JsonConverters.AdditionalContactInfoRequiredCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.InvalidAdditionalContactInfoCode))
+                {
+                    return new global::Vercel.JsonConverters.InvalidAdditionalContactInfoCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.InvalidAdditionalContactInfoCode?))
+                {
+                    return new global::Vercel.JsonConverters.InvalidAdditionalContactInfoCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.OrderTooExpensiveCode))
+                {
+                    return new global::Vercel.JsonConverters.OrderTooExpensiveCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.OrderTooExpensiveCode?))
+                {
+                    return new global::Vercel.JsonConverters.OrderTooExpensiveCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DuplicateDomainsCode))
+                {
+                    return new global::Vercel.JsonConverters.DuplicateDomainsCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DuplicateDomainsCode?))
+                {
+                    return new global::Vercel.JsonConverters.DuplicateDomainsCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.TooManyDomainsCode))
+                {
+                    return new global::Vercel.JsonConverters.TooManyDomainsCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.TooManyDomainsCode?))
+                {
+                    return new global::Vercel.JsonConverters.TooManyDomainsCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DNSSECEnabledCode))
+                {
+                    return new global::Vercel.JsonConverters.DNSSECEnabledCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DNSSECEnabledCode?))
+                {
+                    return new global::Vercel.JsonConverters.DNSSECEnabledCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DomainAlreadyOwnedCode))
+                {
+                    return new global::Vercel.JsonConverters.DomainAlreadyOwnedCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DomainAlreadyOwnedCode?))
+                {
+                    return new global::Vercel.JsonConverters.DomainAlreadyOwnedCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DomainNotRenewableCode))
+                {
+                    return new global::Vercel.JsonConverters.DomainNotRenewableCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DomainNotRenewableCode?))
+                {
+                    return new global::Vercel.JsonConverters.DomainNotRenewableCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DomainAlreadyRenewingCode))
+                {
+                    return new global::Vercel.JsonConverters.DomainAlreadyRenewingCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DomainAlreadyRenewingCode?))
+                {
+                    return new global::Vercel.JsonConverters.DomainAlreadyRenewingCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.BoughtTooRecentlyCode))
+                {
+                    return new global::Vercel.JsonConverters.BoughtTooRecentlyCodeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.BoughtTooRecentlyCode?))
+                {
+                    return new global::Vercel.JsonConverters.BoughtTooRecentlyCodeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetDomainTransferInResponseStatus))
+                {
+                    return new global::Vercel.JsonConverters.GetDomainTransferInResponseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetDomainTransferInResponseStatus?))
+                {
+                    return new global::Vercel.JsonConverters.GetDomainTransferInResponseStatusNullableJsonConverter();
+                }
+                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
+            }
+        }
+
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[1];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -100,7 +708,9 @@ namespace Vercel
             {
                 return index switch
                 {
-                    0 => global::Vercel.SourceGenerationContext.TypeInfoResolver,
+                    0 => new DomainsRegistrarSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    1 => global::Vercel.PartitionCoreSourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

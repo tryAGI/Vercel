@@ -2,7 +2,31 @@
 #nullable enable
 
 namespace Vercel
-{    /// <summary>
+{
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
+    )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectBoxesScopeType), TypeInfoPropertyName = "GetProjectBoxesScopeType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutProjectDaemonInstancesTarget), TypeInfoPropertyName = "PutProjectDaemonInstancesTarget2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectBoxesResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutProjectDaemonInstancesResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.RestartProjectDaemonInstanceResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string?>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetProjectBoxesScopeType?), TypeInfoPropertyName = "NullableGetProjectBoxesScopeType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PutProjectDaemonInstancesTarget?), TypeInfoPropertyName = "NullablePutProjectDaemonInstancesTarget2")]
+    internal sealed partial class DaemonsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
     ///
     /// </summary>
     public sealed partial class DaemonsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -46,7 +70,8 @@ namespace Vercel
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::Vercel.SourceGenerationContext.AddConverters(options);
+            global::Vercel.PartitionCoreSourceGenerationContext.AddConverters(options);
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -61,10 +86,52 @@ namespace Vercel
             return options;
         }
 
+
+        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
+        {
+            public override bool CanConvert(global::System.Type typeToConvert)
+            {
+                return
+                    typeToConvert == typeof(global::Vercel.GetProjectBoxesScopeType)
+
+                    || typeToConvert == typeof(global::Vercel.GetProjectBoxesScopeType?)
+
+                    || typeToConvert == typeof(global::Vercel.PutProjectDaemonInstancesTarget)
+
+                    || typeToConvert == typeof(global::Vercel.PutProjectDaemonInstancesTarget?);
+            }
+
+            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
+                global::System.Type typeToConvert,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                if (typeToConvert == typeof(global::Vercel.GetProjectBoxesScopeType))
+                {
+                    return new global::Vercel.JsonConverters.GetProjectBoxesScopeTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.GetProjectBoxesScopeType?))
+                {
+                    return new global::Vercel.JsonConverters.GetProjectBoxesScopeTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.PutProjectDaemonInstancesTarget))
+                {
+                    return new global::Vercel.JsonConverters.PutProjectDaemonInstancesTargetJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.PutProjectDaemonInstancesTarget?))
+                {
+                    return new global::Vercel.JsonConverters.PutProjectDaemonInstancesTargetNullableJsonConverter();
+                }
+                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
+            }
+        }
+
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[1];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -100,7 +167,9 @@ namespace Vercel
             {
                 return index switch
                 {
-                    0 => global::Vercel.SourceGenerationContext.TypeInfoResolver,
+                    0 => new DaemonsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    1 => global::Vercel.PartitionCoreSourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

@@ -15,7 +15,7 @@ namespace Vercel
         public string? Name { get; set; }
 
         /// <summary>
-        ///
+        /// Whether check runs can be manually re-requested. Git provider checks cannot be re-requested.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isRerequestable")]
         public bool? IsRerequestable { get; set; }
@@ -28,7 +28,7 @@ namespace Vercel
         public global::Vercel.UpdateProjectCheckRequestRequires? Requires { get; set; }
 
         /// <summary>
-        ///
+        /// Deployment targets where this check applies. Valid values are "production", "preview", "all", or a Custom Environment ID such as "env_...". "all" cannot be combined with other targets.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("targets")]
         public global::System.Collections.Generic.IList<string>? Targets { get; set; }
@@ -56,11 +56,15 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UpdateProjectCheckRequest" /> class.
         /// </summary>
         /// <param name="name"></param>
-        /// <param name="isRerequestable"></param>
+        /// <param name="isRerequestable">
+        /// Whether check runs can be manually re-requested. Git provider checks cannot be re-requested.
+        /// </param>
         /// <param name="requires">
         /// Default Value: deployment-url
         /// </param>
-        /// <param name="targets"></param>
+        /// <param name="targets">
+        /// Deployment targets where this check applies. Valid values are "production", "preview", "all", or a Custom Environment ID such as "env_...". "all" cannot be combined with other targets.
+        /// </param>
         /// <param name="blocks">
         /// Default Value: deployment-alias
         /// </param>

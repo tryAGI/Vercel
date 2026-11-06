@@ -2,7 +2,57 @@
 #nullable enable
 
 namespace Vercel
-{    /// <summary>
+{
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
+    )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string[]))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthToken))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AuthTokenScopeVariant1, global::Vercel.AuthTokenScopeVariant2>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AuthTokenScopeVariant1, global::Vercel.AuthTokenScopeVariant2>), TypeInfoPropertyName = "OneOfAuthTokenScopeVariant1AuthTokenScopeVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthTokenScopeVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthTokenScopeVariant1Origin), TypeInfoPropertyName = "AuthTokenScopeVariant1Origin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthTokenScopeVariant1Sudo))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthTokenScopeVariant1SudoOrigin), TypeInfoPropertyName = "AuthTokenScopeVariant1SudoOrigin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthTokenScopeVariant1Type), TypeInfoPropertyName = "AuthTokenScopeVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthTokenScopeVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthTokenScopeVariant2Origin), TypeInfoPropertyName = "AuthTokenScopeVariant2Origin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthTokenScopeVariant2Type), TypeInfoPropertyName = "AuthTokenScopeVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateAuthTokenRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteAuthTokenReason), TypeInfoPropertyName = "DeleteAuthTokenReason2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteAuthTokenLogoutSource), TypeInfoPropertyName = "DeleteAuthTokenLogoutSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ListAuthTokensResponseVariant1, global::Vercel.ListAuthTokensResponseVariant2>), TypeInfoPropertyName = "OneOfListAuthTokensResponseVariant1ListAuthTokensResponseVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListAuthTokensResponseVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListAuthTokensResponseVariant1Pagination))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AuthToken>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListAuthTokensResponseVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateAuthTokenResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetAuthTokenResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteAuthTokenResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string?>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string_3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AuthTokenScopeVariant1, global::Vercel.AuthTokenScopeVariant2>?), TypeInfoPropertyName = "NullableOneOfAuthTokenScopeVariant1AuthTokenScopeVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthTokenScopeVariant1Origin?), TypeInfoPropertyName = "NullableAuthTokenScopeVariant1Origin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthTokenScopeVariant1SudoOrigin?), TypeInfoPropertyName = "NullableAuthTokenScopeVariant1SudoOrigin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthTokenScopeVariant1Type?), TypeInfoPropertyName = "NullableAuthTokenScopeVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthTokenScopeVariant2Origin?), TypeInfoPropertyName = "NullableAuthTokenScopeVariant2Origin2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AuthTokenScopeVariant2Type?), TypeInfoPropertyName = "NullableAuthTokenScopeVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteAuthTokenReason?), TypeInfoPropertyName = "NullableDeleteAuthTokenReason2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DeleteAuthTokenLogoutSource?), TypeInfoPropertyName = "NullableDeleteAuthTokenLogoutSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ListAuthTokensResponseVariant1, global::Vercel.ListAuthTokensResponseVariant2>?), TypeInfoPropertyName = "NullableOneOfListAuthTokensResponseVariant1ListAuthTokensResponseVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AuthTokenScopeVariant1, global::Vercel.AuthTokenScopeVariant2>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AuthToken>))]
+    internal sealed partial class AuthenticationSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
     ///
     /// </summary>
     public sealed partial class AuthenticationSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -46,7 +96,10 @@ namespace Vercel
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::Vercel.SourceGenerationContext.AddConverters(options);
+            global::Vercel.PartitionCoreSourceGenerationContext.AddConverters(options);
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AuthTokenScopeVariant1, global::Vercel.AuthTokenScopeVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ListAuthTokensResponseVariant1, global::Vercel.ListAuthTokensResponseVariant2>());
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -61,10 +114,122 @@ namespace Vercel
             return options;
         }
 
+
+        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
+        {
+            public override bool CanConvert(global::System.Type typeToConvert)
+            {
+                return
+                    typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant1Origin)
+
+                    || typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant1Origin?)
+
+                    || typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant1SudoOrigin)
+
+                    || typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant1SudoOrigin?)
+
+                    || typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant1Type)
+
+                    || typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant1Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant2Origin)
+
+                    || typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant2Origin?)
+
+                    || typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant2Type)
+
+                    || typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant2Type?)
+
+                    || typeToConvert == typeof(global::Vercel.DeleteAuthTokenReason)
+
+                    || typeToConvert == typeof(global::Vercel.DeleteAuthTokenReason?)
+
+                    || typeToConvert == typeof(global::Vercel.DeleteAuthTokenLogoutSource)
+
+                    || typeToConvert == typeof(global::Vercel.DeleteAuthTokenLogoutSource?);
+            }
+
+            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
+                global::System.Type typeToConvert,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                if (typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant1Origin))
+                {
+                    return new global::Vercel.JsonConverters.AuthTokenScopeVariant1OriginJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant1Origin?))
+                {
+                    return new global::Vercel.JsonConverters.AuthTokenScopeVariant1OriginNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant1SudoOrigin))
+                {
+                    return new global::Vercel.JsonConverters.AuthTokenScopeVariant1SudoOriginJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant1SudoOrigin?))
+                {
+                    return new global::Vercel.JsonConverters.AuthTokenScopeVariant1SudoOriginNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant1Type))
+                {
+                    return new global::Vercel.JsonConverters.AuthTokenScopeVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant1Type?))
+                {
+                    return new global::Vercel.JsonConverters.AuthTokenScopeVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant2Origin))
+                {
+                    return new global::Vercel.JsonConverters.AuthTokenScopeVariant2OriginJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant2Origin?))
+                {
+                    return new global::Vercel.JsonConverters.AuthTokenScopeVariant2OriginNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant2Type))
+                {
+                    return new global::Vercel.JsonConverters.AuthTokenScopeVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AuthTokenScopeVariant2Type?))
+                {
+                    return new global::Vercel.JsonConverters.AuthTokenScopeVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DeleteAuthTokenReason))
+                {
+                    return new global::Vercel.JsonConverters.DeleteAuthTokenReasonJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DeleteAuthTokenReason?))
+                {
+                    return new global::Vercel.JsonConverters.DeleteAuthTokenReasonNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DeleteAuthTokenLogoutSource))
+                {
+                    return new global::Vercel.JsonConverters.DeleteAuthTokenLogoutSourceJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.DeleteAuthTokenLogoutSource?))
+                {
+                    return new global::Vercel.JsonConverters.DeleteAuthTokenLogoutSourceNullableJsonConverter();
+                }
+                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
+            }
+        }
+
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[1];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -100,7 +265,9 @@ namespace Vercel
             {
                 return index switch
                 {
-                    0 => global::Vercel.SourceGenerationContext.TypeInfoResolver,
+                    0 => new AuthenticationSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    1 => global::Vercel.PartitionCoreSourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

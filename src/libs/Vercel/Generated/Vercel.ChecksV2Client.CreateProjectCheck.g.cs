@@ -676,11 +676,15 @@ namespace Vercel
         /// Example: my-team-url-slug
         /// </param>
         /// <param name="name"></param>
-        /// <param name="isRerequestable"></param>
+        /// <param name="isRerequestable">
+        /// Whether check runs can be manually re-requested. Git provider checks cannot be re-requested.
+        /// </param>
         /// <param name="requires">
         /// Default Value: deployment-url
         /// </param>
-        /// <param name="targets"></param>
+        /// <param name="targets">
+        /// Deployment targets where this check applies. Valid values are "production", "preview", "all", or a Custom Environment ID such as "env_...". If omitted, defaults to ["production"]. "all" cannot be combined with other targets.
+        /// </param>
         /// <param name="blocks">
         /// Default Value: deployment-alias
         /// </param>
