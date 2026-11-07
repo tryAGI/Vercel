@@ -200,6 +200,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiGatewayHeadquartersUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         AiGatewayHipaaComplianceToggled,
         /// <summary>
         ///
@@ -1177,6 +1181,10 @@ namespace Vercel
         ///
         /// </summary>
         InstantRollbackCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        IntegrationAccessTokenSettingsUpdated,
         /// <summary>
         ///
         /// </summary>
@@ -3134,6 +3142,7 @@ namespace Vercel
                 ListEventTypeName.AiGatewayByokModelMappingsUpdated => "ai-gateway-byok-model-mappings-updated",
                 ListEventTypeName.AiGatewayCreditsPurchased => "ai-gateway-credits-purchased",
                 ListEventTypeName.AiGatewayGuardrailsUpdated => "ai-gateway-guardrails-updated",
+                ListEventTypeName.AiGatewayHeadquartersUpdated => "ai-gateway-headquarters-updated",
                 ListEventTypeName.AiGatewayHipaaComplianceToggled => "ai-gateway-hipaa-compliance-toggled",
                 ListEventTypeName.AiGatewayInferenceRegionsUpdated => "ai-gateway-inference-regions-updated",
                 ListEventTypeName.AiGatewayModelAllowlistModelsUpdated => "ai-gateway-model-allowlist-models-updated",
@@ -3379,6 +3388,7 @@ namespace Vercel
                 ListEventTypeName.GlobalConfigTransferOut => "global-config-transfer-out",
                 ListEventTypeName.GlobalConfigUpdated => "global-config-updated",
                 ListEventTypeName.InstantRollbackCreated => "instant-rollback-created",
+                ListEventTypeName.IntegrationAccessTokenSettingsUpdated => "integration-access-token-settings-updated",
                 ListEventTypeName.IntegrationConfigurationCredentialRevoked => "integration-configuration-credential-revoked",
                 ListEventTypeName.IntegrationConfigurationCredentialRotated => "integration-configuration-credential-rotated",
                 ListEventTypeName.IntegrationConfigurationOwnerChanged => "integration-configuration-owner-changed",
@@ -3910,6 +3920,7 @@ namespace Vercel
                 "ai-gateway-byok-model-mappings-updated" => ListEventTypeName.AiGatewayByokModelMappingsUpdated,
                 "ai-gateway-credits-purchased" => ListEventTypeName.AiGatewayCreditsPurchased,
                 "ai-gateway-guardrails-updated" => ListEventTypeName.AiGatewayGuardrailsUpdated,
+                "ai-gateway-headquarters-updated" => ListEventTypeName.AiGatewayHeadquartersUpdated,
                 "ai-gateway-hipaa-compliance-toggled" => ListEventTypeName.AiGatewayHipaaComplianceToggled,
                 "ai-gateway-inference-regions-updated" => ListEventTypeName.AiGatewayInferenceRegionsUpdated,
                 "ai-gateway-model-allowlist-models-updated" => ListEventTypeName.AiGatewayModelAllowlistModelsUpdated,
@@ -4155,6 +4166,7 @@ namespace Vercel
                 "global-config-transfer-out" => ListEventTypeName.GlobalConfigTransferOut,
                 "global-config-updated" => ListEventTypeName.GlobalConfigUpdated,
                 "instant-rollback-created" => ListEventTypeName.InstantRollbackCreated,
+                "integration-access-token-settings-updated" => ListEventTypeName.IntegrationAccessTokenSettingsUpdated,
                 "integration-configuration-credential-revoked" => ListEventTypeName.IntegrationConfigurationCredentialRevoked,
                 "integration-configuration-credential-rotated" => ListEventTypeName.IntegrationConfigurationCredentialRotated,
                 "integration-configuration-owner-changed" => ListEventTypeName.IntegrationConfigurationOwnerChanged,
