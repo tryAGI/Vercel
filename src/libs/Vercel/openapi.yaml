@@ -80253,6 +80253,10 @@
                                   false,
                                   true
                                 ]
+                              },
+                              "tokenSetKey": {
+                                "type": "string",
+                                "description": "The token set key `name` is built from; absent for env vars that are not in the token set."
                               }
                             },
                             "required": [
