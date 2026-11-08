@@ -35,6 +35,12 @@ namespace Vercel
         public bool? NonSensitive { get; set; }
 
         /// <summary>
+        /// The token set key `name` is built from; absent for env vars that are not in the token set.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("tokenSetKey")]
+        public string? TokenSetKey { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -47,6 +53,9 @@ namespace Vercel
         /// <param name="name"></param>
         /// <param name="frameworkPublishable"></param>
         /// <param name="nonSensitive"></param>
+        /// <param name="tokenSetKey">
+        /// The token set key `name` is built from; absent for env vars that are not in the token set.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -54,12 +63,14 @@ namespace Vercel
             double length,
             string name,
             bool? frameworkPublishable,
-            bool? nonSensitive)
+            bool? nonSensitive,
+            string? tokenSetKey)
         {
             this.FrameworkPublishable = frameworkPublishable;
             this.Length = length;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.NonSensitive = nonSensitive;
+            this.TokenSetKey = tokenSetKey;
         }
 
         /// <summary>
