@@ -69021,7 +69021,7 @@
     },
     "/v2/sandboxes/sessions/{sessionId}/cmd/{cmdId}": {
       "get": {
-        "description": "Retrieves the current status and details of a command executed in a session. Use the `wait` parameter to block until the command finishes execution.",
+        "description": "Retrieves the current status and details of a command executed in a session. Without `wait`, the stored command is returned as-is: its `exitCode` is `null` unless a previous request waited for the command to finish. Set `wait` to `true` to block until the command finishes and get its exit code.",
         "operationId": "getSessionCommand",
         "security": [
           {
@@ -69034,7 +69034,7 @@
         ],
         "responses": {
           "200": {
-            "description": "The command data along with the exit code if the command did finish.",
+            "description": "The command data. `exitCode` is set if this or a previous request waited for the command to finish, and `null` otherwise.",
             "content": {
               "application/json": {
                 "schema": {
@@ -69098,12 +69098,12 @@
           },
           {
             "name": "wait",
-            "description": "If set to \"true\", the request will block until the command finishes execution. Useful for synchronously waiting for command completion.",
+            "description": "If set to \"true\", the request will block until the command finishes execution and the response will include its exit code. Otherwise, `exitCode` is `null` unless a previous request waited for the command to finish.",
             "in": "query",
             "required": false,
             "schema": {
               "type": "string",
-              "description": "If set to \"true\", the request will block until the command finishes execution. Useful for synchronously waiting for command completion.",
+              "description": "If set to \"true\", the request will block until the command finishes execution and the response will include its exit code. Otherwise, `exitCode` is `null` unless a previous request waited for the command to finish.",
               "enum": [
                 "true",
                 "false"
@@ -105594,6 +105594,10 @@
               "drain-disabled",
               "drain-enabled",
               "drain-updated",
+              "drive-created",
+              "drive-deleted",
+              "drive-snapshot-created",
+              "drive-snapshot-deleted",
               "edge-cache-dangerously-delete-by-src-images",
               "edge-cache-dangerously-delete-by-tags",
               "edge-cache-dangerously-delete-immutable-static",
@@ -106612,6 +106616,10 @@
               "drain-disabled",
               "drain-enabled",
               "drain-updated",
+              "drive-created",
+              "drive-deleted",
+              "drive-snapshot-created",
+              "drive-snapshot-deleted",
               "edge-cache-dangerously-delete-by-src-images",
               "edge-cache-dangerously-delete-by-tags",
               "edge-cache-dangerously-delete-immutable-static",
@@ -107388,6 +107396,10 @@
                 "drain-disabled",
                 "drain-enabled",
                 "drain-updated",
+                "drive-created",
+                "drive-deleted",
+                "drive-snapshot-created",
+                "drive-snapshot-deleted",
                 "edge-cache-dangerously-delete-by-src-images",
                 "edge-cache-dangerously-delete-by-tags",
                 "edge-cache-dangerously-delete-immutable-static",
@@ -109632,7 +109644,7 @@
           "exitCode": {
             "nullable": true,
             "type": "number",
-            "description": "If the command did finish, the exit code.",
+            "description": "The exit code of the command, or `null` if no exit code has been recorded. The exit code is recorded only when a request waits for the command to finish (`wait=true` when running or getting the command). Polling without `wait=true` returns `null` until such a request records it, even if the command has already finished.",
             "example": 0
           },
           "id": {

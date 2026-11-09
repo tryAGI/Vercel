@@ -851,6 +851,22 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        DriveCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        DriveDeleted,
+        /// <summary>
+        ///
+        /// </summary>
+        DriveSnapshotCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        DriveSnapshotDeleted,
+        /// <summary>
+        ///
+        /// </summary>
         EdgeCacheDangerouslyDeleteBySrcImages,
         /// <summary>
         ///
@@ -3304,6 +3320,10 @@ namespace Vercel
                 ListEventTypeReplacedByItem.DrainDisabled => "drain-disabled",
                 ListEventTypeReplacedByItem.DrainEnabled => "drain-enabled",
                 ListEventTypeReplacedByItem.DrainUpdated => "drain-updated",
+                ListEventTypeReplacedByItem.DriveCreated => "drive-created",
+                ListEventTypeReplacedByItem.DriveDeleted => "drive-deleted",
+                ListEventTypeReplacedByItem.DriveSnapshotCreated => "drive-snapshot-created",
+                ListEventTypeReplacedByItem.DriveSnapshotDeleted => "drive-snapshot-deleted",
                 ListEventTypeReplacedByItem.EdgeCacheDangerouslyDeleteBySrcImages => "edge-cache-dangerously-delete-by-src-images",
                 ListEventTypeReplacedByItem.EdgeCacheDangerouslyDeleteByTags => "edge-cache-dangerously-delete-by-tags",
                 ListEventTypeReplacedByItem.EdgeCacheDangerouslyDeleteImmutableStatic => "edge-cache-dangerously-delete-immutable-static",
@@ -4082,6 +4102,10 @@ namespace Vercel
                 "drain-disabled" => ListEventTypeReplacedByItem.DrainDisabled,
                 "drain-enabled" => ListEventTypeReplacedByItem.DrainEnabled,
                 "drain-updated" => ListEventTypeReplacedByItem.DrainUpdated,
+                "drive-created" => ListEventTypeReplacedByItem.DriveCreated,
+                "drive-deleted" => ListEventTypeReplacedByItem.DriveDeleted,
+                "drive-snapshot-created" => ListEventTypeReplacedByItem.DriveSnapshotCreated,
+                "drive-snapshot-deleted" => ListEventTypeReplacedByItem.DriveSnapshotDeleted,
                 "edge-cache-dangerously-delete-by-src-images" => ListEventTypeReplacedByItem.EdgeCacheDangerouslyDeleteBySrcImages,
                 "edge-cache-dangerously-delete-by-tags" => ListEventTypeReplacedByItem.EdgeCacheDangerouslyDeleteByTags,
                 "edge-cache-dangerously-delete-immutable-static" => ListEventTypeReplacedByItem.EdgeCacheDangerouslyDeleteImmutableStatic,
