@@ -852,6 +852,22 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        DriveCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        DriveDeleted,
+        /// <summary>
+        ///
+        /// </summary>
+        DriveSnapshotCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        DriveSnapshotDeleted,
+        /// <summary>
+        ///
+        /// </summary>
         EdgeCacheDangerouslyDeleteBySrcImages,
         /// <summary>
         ///
@@ -3305,6 +3321,10 @@ namespace Vercel
                 UserEventType.DrainDisabled => "drain-disabled",
                 UserEventType.DrainEnabled => "drain-enabled",
                 UserEventType.DrainUpdated => "drain-updated",
+                UserEventType.DriveCreated => "drive-created",
+                UserEventType.DriveDeleted => "drive-deleted",
+                UserEventType.DriveSnapshotCreated => "drive-snapshot-created",
+                UserEventType.DriveSnapshotDeleted => "drive-snapshot-deleted",
                 UserEventType.EdgeCacheDangerouslyDeleteBySrcImages => "edge-cache-dangerously-delete-by-src-images",
                 UserEventType.EdgeCacheDangerouslyDeleteByTags => "edge-cache-dangerously-delete-by-tags",
                 UserEventType.EdgeCacheDangerouslyDeleteImmutableStatic => "edge-cache-dangerously-delete-immutable-static",
@@ -4083,6 +4103,10 @@ namespace Vercel
                 "drain-disabled" => UserEventType.DrainDisabled,
                 "drain-enabled" => UserEventType.DrainEnabled,
                 "drain-updated" => UserEventType.DrainUpdated,
+                "drive-created" => UserEventType.DriveCreated,
+                "drive-deleted" => UserEventType.DriveDeleted,
+                "drive-snapshot-created" => UserEventType.DriveSnapshotCreated,
+                "drive-snapshot-deleted" => UserEventType.DriveSnapshotDeleted,
                 "edge-cache-dangerously-delete-by-src-images" => UserEventType.EdgeCacheDangerouslyDeleteBySrcImages,
                 "edge-cache-dangerously-delete-by-tags" => UserEventType.EdgeCacheDangerouslyDeleteByTags,
                 "edge-cache-dangerously-delete-immutable-static" => UserEventType.EdgeCacheDangerouslyDeleteImmutableStatic,

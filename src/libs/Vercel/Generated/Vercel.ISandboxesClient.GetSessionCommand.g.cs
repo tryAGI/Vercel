@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Get a command<br/>
-        /// Retrieves the current status and details of a command executed in a session. Use the `wait` parameter to block until the command finishes execution.
+        /// Retrieves the current status and details of a command executed in a session. Without `wait`, the stored command is returned as-is: its `exitCode` is `null` unless a previous request waited for the command to finish. Set `wait` to `true` to block until the command finishes and get its exit code.
         /// </summary>
         /// <param name="sessionId">
         /// The unique identifier of the session containing the command.<br/>
@@ -17,7 +17,7 @@ namespace Vercel
         /// Example: cmd_abc123
         /// </param>
         /// <param name="wait">
-        /// If set to "true", the request will block until the command finishes execution. Useful for synchronously waiting for command completion.<br/>
+        /// If set to "true", the request will block until the command finishes execution and the response will include its exit code. Otherwise, `exitCode` is `null` unless a previous request waited for the command to finish.<br/>
         /// Default Value: false
         /// </param>
         /// <param name="teamId">
@@ -39,7 +39,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Get a command<br/>
-        /// Retrieves the current status and details of a command executed in a session. Use the `wait` parameter to block until the command finishes execution.
+        /// Retrieves the current status and details of a command executed in a session. Without `wait`, the stored command is returned as-is: its `exitCode` is `null` unless a previous request waited for the command to finish. Set `wait` to `true` to block until the command finishes and get its exit code.
         /// </summary>
         /// <param name="sessionId">
         /// The unique identifier of the session containing the command.<br/>
@@ -50,7 +50,7 @@ namespace Vercel
         /// Example: cmd_abc123
         /// </param>
         /// <param name="wait">
-        /// If set to "true", the request will block until the command finishes execution. Useful for synchronously waiting for command completion.<br/>
+        /// If set to "true", the request will block until the command finishes execution and the response will include its exit code. Otherwise, `exitCode` is `null` unless a previous request waited for the command to finish.<br/>
         /// Default Value: false
         /// </param>
         /// <param name="teamId">
