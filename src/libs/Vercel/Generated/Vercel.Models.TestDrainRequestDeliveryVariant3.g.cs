@@ -69,6 +69,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("kmsKeyId")]
+        public string? KmsKeyId { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("objectAcl")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.TestDrainRequestDeliveryVariant3ObjectAclJsonConverter))]
         public global::Vercel.TestDrainRequestDeliveryVariant3ObjectAcl? ObjectAcl { get; set; }
@@ -92,6 +98,7 @@ namespace Vercel
         /// <param name="serverSideEncryption">
         /// Default Value: AES256
         /// </param>
+        /// <param name="kmsKeyId"></param>
         /// <param name="objectAcl"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -105,6 +112,7 @@ namespace Vercel
             string region,
             global::Vercel.TestDrainRequestDeliveryVariant3FileStructure fileStructure,
             global::Vercel.TestDrainRequestDeliveryVariant3ServerSideEncryption? serverSideEncryption,
+            string? kmsKeyId,
             global::Vercel.TestDrainRequestDeliveryVariant3ObjectAcl? objectAcl)
         {
             this.Type = type ?? throw new global::System.ArgumentNullException(nameof(type));
@@ -115,6 +123,7 @@ namespace Vercel
             this.RoleArn = roleArn ?? throw new global::System.ArgumentNullException(nameof(roleArn));
             this.Region = region ?? throw new global::System.ArgumentNullException(nameof(region));
             this.ServerSideEncryption = serverSideEncryption;
+            this.KmsKeyId = kmsKeyId;
             this.ObjectAcl = objectAcl;
         }
 

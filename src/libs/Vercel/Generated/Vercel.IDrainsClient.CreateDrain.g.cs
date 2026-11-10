@@ -18,7 +18,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared6687b646db8a0ceb> CreateDrainAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared941c226a2733bfbb> CreateDrainAsync(
 
             global::Vercel.CreateDrainRequest request,
             string? teamId = default,
@@ -39,7 +39,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared6687b646db8a0ceb>> CreateDrainAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared941c226a2733bfbb>> CreateDrainAsResponseAsync(
 
             global::Vercel.CreateDrainRequest request,
             string? teamId = default,
@@ -68,7 +68,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared6687b646db8a0ceb> CreateDrainAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared941c226a2733bfbb> CreateDrainAsync(
             string name,
             global::Vercel.CreateDrainRequestProjects projects,
             global::System.Collections.Generic.Dictionary<string, global::Vercel.CreateDrainRequestSchemas2> schemas,

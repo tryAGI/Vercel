@@ -36,6 +36,12 @@ namespace Vercel
         public required string Cidr { get; set; }
 
         /// <summary>
+        /// Whether both dedicated connection test sources are provisioned and ready. Feature flag access and management permission are checked on submission.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("connectionTesting")]
+        public global::Vercel.NetworkConnectionTesting? ConnectionTesting { get; set; }
+
+        /// <summary>
         /// The date at which the Network was created, represented as a UNIX timestamp since EPOCH.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
@@ -49,7 +55,7 @@ namespace Vercel
         public global::System.Collections.Generic.IList<string>? EgressIpAddresses { get; set; }
 
         /// <summary>
-        /// Metadata about any AWS Route53 Hosted Zones associated with the Network.
+        /// Metadata about customer-managed AWS Route53 Hosted Zones associated with the Network.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("hostedZones")]
         public global::Vercel.NetworkHostedZones? HostedZones { get; set; }
@@ -143,9 +149,12 @@ namespace Vercel
         /// <param name="awsAvailabilityZoneIds">
         /// The IDs of the AWS Availability Zones in which the network exists.
         /// </param>
+        /// <param name="connectionTesting">
+        /// Whether both dedicated connection test sources are provisioned and ready. Feature flag access and management permission are checked on submission.
+        /// </param>
         /// <param name="egressIpAddresses"></param>
         /// <param name="hostedZones">
-        /// Metadata about any AWS Route53 Hosted Zones associated with the Network.
+        /// Metadata about customer-managed AWS Route53 Hosted Zones associated with the Network.
         /// </param>
         /// <param name="peeringConnections">
         /// Metadata about any AWS Route53 Hosted Zones associated with the Network.
@@ -172,6 +181,7 @@ namespace Vercel
             global::Vercel.NetworkStatus status,
             string teamId,
             global::System.Collections.Generic.IList<string>? awsAvailabilityZoneIds,
+            global::Vercel.NetworkConnectionTesting? connectionTesting,
             global::System.Collections.Generic.IList<string>? egressIpAddresses,
             global::Vercel.NetworkHostedZones? hostedZones,
             global::Vercel.NetworkPeeringConnections? peeringConnections,
@@ -183,6 +193,7 @@ namespace Vercel
             this.AwsAvailabilityZoneIds = awsAvailabilityZoneIds;
             this.AwsRegion = awsRegion ?? throw new global::System.ArgumentNullException(nameof(awsRegion));
             this.Cidr = cidr ?? throw new global::System.ArgumentNullException(nameof(cidr));
+            this.ConnectionTesting = connectionTesting;
             this.CreatedAt = createdAt;
             this.EgressIpAddresses = egressIpAddresses;
             this.HostedZones = hostedZones;

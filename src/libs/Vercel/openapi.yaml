@@ -27675,7 +27675,7 @@
     },
     "/v9/domains/{domain}/verification": {
       "get": {
-        "description": "Get the TXT verification record needed to claim ownership of a domain for the authenticated team. The caller must add this TXT record to `_vercel.{domain}` in their DNS configuration, then call POST /domains/:domain/claim to complete the ownership transfer.",
+        "description": "Get the TXT verification record needed to claim ownership of a domain for the authenticated team. The caller must add this TXT record to `_vercel.{domain}` in their DNS configuration, then call POST /domains/:domain/claim to complete the ownership transfer. Records expire at the returned expiresAt (at most 24 hours) or when ownership changes.",
         "operationId": "getDomainVerificationRecord",
         "security": [
           {
@@ -27693,6 +27693,9 @@
               "application/json": {
                 "schema": {
                   "properties": {
+                    "expiresAt": {
+                      "type": "number"
+                    },
                     "txtRecord": {
                       "type": "string"
                     },
@@ -27701,6 +27704,7 @@
                     }
                   },
                   "required": [
+                    "expiresAt",
                     "txtRecord",
                     "verificationDomain"
                   ],
@@ -27719,6 +27723,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "409": {
             "description": ""
           },
           "410": {
@@ -27760,7 +27767,7 @@
     },
     "/v9/domains/{domain}/claim": {
       "post": {
-        "description": "Claim ownership of a domain for the authenticated team by verifying a TXT record. The caller must first add a TXT record to `_vercel.{domain}` (obtained from GET /domains/:domain/verification), then call this endpoint to complete the ownership transfer. If the TXT record is verified, the domain ownership will be transferred to the caller's team, even if the domain is currently owned by another user or team.",
+        "description": "Claim ownership of a domain for the authenticated team by verifying a TXT record. The caller must first add a TXT record to `_vercel.{domain}` (obtained from GET /domains/:domain/verification), then call this endpoint to complete the ownership transfer. Proof must be unexpired and issued for the domain's current ownership. If the TXT record is verified, the domain ownership will be transferred to the caller's team, even if the domain is currently owned by another user or team.",
         "operationId": "claimDomainOwnership",
         "security": [
           {
@@ -27792,6 +27799,9 @@
             "description": "You do not have permission to access this resource."
           },
           "404": {
+            "description": ""
+          },
+          "409": {
             "description": ""
           },
           "410": {
@@ -29274,7 +29284,7 @@
                       "type": "array"
                     },
                     {
-                      "$ref": "#/components/schemas/AutoSDKShared5d69ee365fec194b"
+                      "$ref": "#/components/schemas/AutoSDKShared75ce2a6cc9b78675"
                     }
                   ]
                 }
@@ -29522,7 +29532,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared6687b646db8a0ceb"
+                  "$ref": "#/components/schemas/AutoSDKShared941c226a2733bfbb"
                 }
               }
             }
@@ -29847,6 +29857,9 @@
                             ],
                             "default": "AES256"
                           },
+                          "kmsKeyId": {
+                            "type": "string"
+                          },
                           "objectAcl": {
                             "type": "string",
                             "enum": [
@@ -29995,7 +30008,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared5d69ee365fec194b"
+                  "$ref": "#/components/schemas/AutoSDKShared75ce2a6cc9b78675"
                 }
               }
             }
@@ -30146,7 +30159,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared8df5bff0bb4332b8"
+                  "$ref": "#/components/schemas/AutoSDKShared92580a598ccc210f"
                 }
               }
             }
@@ -30228,7 +30241,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared6687b646db8a0ceb"
+                  "$ref": "#/components/schemas/AutoSDKShared941c226a2733bfbb"
                 }
               }
             }
@@ -30563,6 +30576,9 @@
                               "aws:kms:dsse"
                             ],
                             "default": "AES256"
+                          },
+                          "kmsKeyId": {
+                            "type": "string"
                           },
                           "objectAcl": {
                             "type": "string",
@@ -30960,6 +30976,9 @@
                             ],
                             "default": "AES256"
                           },
+                          "kmsKeyId": {
+                            "type": "string"
+                          },
                           "objectAcl": {
                             "type": "string",
                             "enum": [
@@ -30971,6 +30990,659 @@
                         }
                       }
                     ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/drives": {
+      "get": {
+        "description": "Retrieves a paginated list of drives belonging to a specific project.",
+        "operationId": "listDrivesV1",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "List drives",
+        "tags": [
+          "drives"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "drives": {
+                      "items": {
+                        "$ref": "#/components/schemas/Drive"
+                      },
+                      "type": "array"
+                    },
+                    "pagination": {
+                      "properties": {
+                        "count": {
+                          "type": "number"
+                        },
+                        "next": {
+                          "nullable": true,
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "count",
+                        "next"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "drives",
+                    "pagination"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "429": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "projectId",
+            "description": "The project ID or name associated with the drives. Required unless using a Vercel OIDC token scoped to a project.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "The project ID or name associated with the drives. Required unless using a Vercel OIDC token scoped to a project.",
+              "example": "prj_abc123"
+            }
+          },
+          {
+            "name": "limit",
+            "description": "Maximum number of drives to return in the response. Used for pagination.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Maximum number of drives to return in the response. Used for pagination.",
+              "type": "number",
+              "minimum": 1,
+              "maximum": 50,
+              "default": 20,
+              "example": 20
+            }
+          },
+          {
+            "name": "cursor",
+            "description": "Opaque pagination cursor from a previous response.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Opaque pagination cursor from a previous response.",
+              "type": "string"
+            }
+          },
+          {
+            "name": "sortBy",
+            "description": "Field to sort drives by.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Field to sort drives by.",
+              "type": "string",
+              "enum": [
+                "createdAt",
+                "updatedAt",
+                "name"
+              ],
+              "default": "createdAt"
+            }
+          },
+          {
+            "name": "namePrefix",
+            "description": "Filter drives whose name starts with this prefix. Only valid when sortBy=name.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Filter drives whose name starts with this prefix. Only valid when sortBy=name.",
+              "type": "string"
+            }
+          },
+          {
+            "name": "sortOrder",
+            "description": "Sort direction for results.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "description": "Sort direction for results.",
+              "type": "string",
+              "enum": [
+                "asc",
+                "desc"
+              ],
+              "default": "desc"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
+      }
+    },
+    "/v1/drives/{nameOrId}": {
+      "get": {
+        "description": "Gets an existing drive by project and name or drive ID. Returns 404 if doesn't exist.",
+        "operationId": "getDriveV1",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Get a drive",
+        "tags": [
+          "drives"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "drive": {
+                      "$ref": "#/components/schemas/Drive"
+                    }
+                  },
+                  "required": [
+                    "drive"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "429": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "nameOrId",
+            "description": "The drive name or ID.",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The drive name or ID.",
+              "pattern": "^[a-zA-Z0-9_-]+$",
+              "maxLength": 64,
+              "example": "workspace"
+            }
+          },
+          {
+            "name": "projectId",
+            "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
+              "example": "prj_abc123"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
+      }
+    },
+    "/v1/drives/{name}": {
+      "post": {
+        "description": "Gets an existing drive by project and name, or creates it when it does not exist.",
+        "operationId": "getOrCreateDriveV1",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Get or create a drive",
+        "tags": [
+          "drives"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "drive": {
+                      "$ref": "#/components/schemas/Drive"
+                    }
+                  },
+                  "required": [
+                    "drive"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "drive": {
+                      "$ref": "#/components/schemas/Drive"
+                    }
+                  },
+                  "required": [
+                    "drive"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "402": {
+            "description": "The account is missing a payment so payment method must be updated"
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "409": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "429": {
+            "description": ""
+          },
+          "503": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "name",
+            "description": "Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).",
+              "pattern": "^[a-zA-Z0-9_-]+$",
+              "maxLength": 64,
+              "example": "workspace"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "projectId": {
+                    "type": "string",
+                    "description": "The project ID or name to associate the drive with. Required unless using a Vercel OIDC token scoped to a project.",
+                    "example": "prj_abc123"
+                  },
+                  "maxSizeBytes": {
+                    "type": "integer",
+                    "description": "Maximum drive size in bytes. Must be a multiple of 4096 bytes. Defaults to 1 TiB when omitted (1 GiB for Hobby). The maximum quota is 16 TiB. Request a quota above 16 TiB at https://vercel.com/help."
+                  },
+                  "region": {
+                    "type": "string",
+                    "description": "Region where the drive is stored. Defaults to iad1.",
+                    "enum": [
+                      "iad1",
+                      "sfo1",
+                      "cle1",
+                      "cdg1",
+                      "fra1",
+                      "arn1",
+                      "sin1",
+                      "pdx1",
+                      "lhr1",
+                      "icn1",
+                      "bom1",
+                      "cpt1",
+                      "dub1",
+                      "gru1",
+                      "hkg1",
+                      "syd1",
+                      "yul1",
+                      "hnd1",
+                      "kix1"
+                    ],
+                    "default": "iad1",
+                    "example": "iad1"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "description": "Deletes a drive by project and name. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion.",
+        "operationId": "deleteDriveV1",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Delete a drive",
+        "tags": [
+          "drives"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "drive": {
+                      "$ref": "#/components/schemas/Drive"
+                    }
+                  },
+                  "required": [
+                    "drive"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "409": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "429": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "name",
+            "description": "Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).",
+              "pattern": "^[a-zA-Z0-9_-]+$",
+              "maxLength": 64,
+              "example": "workspace"
+            }
+          },
+          {
+            "name": "projectId",
+            "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
+              "example": "prj_abc123"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
+      }
+    },
+    "/v1/drives/{name}/fork": {
+      "post": {
+        "description": "Fork the provided drive into a new one with the provided name, inheriting the region and max size.",
+        "operationId": "forkDriveV1",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Fork a drive",
+        "tags": [
+          "drives"
+        ],
+        "responses": {
+          "201": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "drive": {
+                      "$ref": "#/components/schemas/Drive"
+                    }
+                  },
+                  "required": [
+                    "drive"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request body is invalid.\nOne of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "402": {
+            "description": "The account is missing a payment so payment method must be updated"
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "409": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "429": {
+            "description": ""
+          },
+          "503": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "name",
+            "description": "Name of the source drive to fork.",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9_-]+$",
+              "maxLength": 64,
+              "description": "Name of the source drive to fork.",
+              "example": "workspace"
+            }
+          },
+          {
+            "name": "projectId",
+            "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
+              "example": "prj_abc123"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9_-]+$",
+                    "maxLength": 64,
+                    "description": "Name for the forked drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).",
+                    "example": "workspace-fork"
                   }
                 }
               }
@@ -65138,6 +65810,9 @@
           "404": {
             "description": ""
           },
+          "409": {
+            "description": ""
+          },
           "410": {
             "description": ""
           },
@@ -66785,10 +67460,11 @@
             "bearerToken": []
           }
         ],
-        "summary": "List drives",
+        "summary": "Deprecated: Use GET /v1/drives. Requires the read:drive app scope instead of read:sandbox, and drive:list instead of vercelRun:read. List drives",
         "tags": [
           "sandboxes"
         ],
+        "deprecated": true,
         "responses": {
           "200": {
             "description": "",
@@ -66957,10 +67633,11 @@
             "bearerToken": []
           }
         ],
-        "summary": "Get a drive",
+        "summary": "Deprecated: Use GET /v1/drives/:nameOrId. Requires the read:drive app scope instead of read:sandbox, and drive:read instead of vercelRun:read. Get a drive",
         "tags": [
           "sandboxes"
         ],
+        "deprecated": true,
         "responses": {
           "200": {
             "description": "",
@@ -67057,10 +67734,11 @@
             "bearerToken": []
           }
         ],
-        "summary": "Get or create a drive",
+        "summary": "Deprecated: Use POST /v1/drives/:name. Requires the read-write:drive app scope instead of read-write:sandbox, and drive:create instead of vercelRun:create.\nEmits drive-created activity events instead of sandbox-drive-created. Get or create a drive",
         "tags": [
           "sandboxes"
         ],
+        "deprecated": true,
         "responses": {
           "200": {
             "description": "",
@@ -67219,10 +67897,11 @@
             "bearerToken": []
           }
         ],
-        "summary": "Delete a drive",
+        "summary": "Deprecated: Use DELETE /v1/drives/:name. Requires the read-write:drive app scope instead of read-write:sandbox, and drive:delete instead of vercelRun:delete.\nEmits drive-deleted activity events instead of sandbox-drive-deleted. Delete a drive",
         "tags": [
           "sandboxes"
         ],
+        "deprecated": true,
         "responses": {
           "200": {
             "description": "",
@@ -67322,10 +68001,11 @@
             "bearerToken": []
           }
         ],
-        "summary": "Fork a drive",
+        "summary": "Deprecated: Use POST /v1/drives/:name/fork. Requires the read-write:drive app scope instead of read-write:sandbox, and drive:read and drive:create instead of vercelRun:read and vercelRun:create.\nEmits drive-created activity events instead of sandbox-drive-created. Fork a drive",
         "tags": [
           "sandboxes"
         ],
+        "deprecated": true,
         "responses": {
           "201": {
             "description": "",
@@ -100041,6 +100721,22 @@
             "type": "string",
             "description": "The CIDR range of the Network."
           },
+          "connectionTesting": {
+            "properties": {
+              "available": {
+                "type": "boolean",
+                "enum": [
+                  false,
+                  true
+                ]
+              }
+            },
+            "required": [
+              "available"
+            ],
+            "type": "object",
+            "description": "Whether both dedicated connection test sources are provisioned and ready. Feature flag access and management permission are checked on submission."
+          },
           "createdAt": {
             "type": "number",
             "description": "The date at which the Network was created, represented as a UNIX timestamp since EPOCH."
@@ -100055,14 +100751,14 @@
             "properties": {
               "count": {
                 "type": "number",
-                "description": "The number of AWS Route53 Hosted Zones associated with the Network."
+                "description": "The number of customer-managed AWS Route53 Hosted Zones associated with the Network."
               }
             },
             "required": [
               "count"
             ],
             "type": "object",
-            "description": "Metadata about any AWS Route53 Hosted Zones associated with the Network."
+            "description": "Metadata about customer-managed AWS Route53 Hosted Zones associated with the Network."
           },
           "id": {
             "type": "string",
@@ -100076,7 +100772,7 @@
             "properties": {
               "count": {
                 "type": "number",
-                "description": "The number of AWS Route53 Hosted Zones associated with the Network."
+                "description": "The number of AWS VPC Peering Connections associated with the Network."
               }
             },
             "required": [
@@ -104947,6 +105643,82 @@
         "additionalProperties": false,
         "description": "The domain was bought too recently to determine verification status."
       },
+      "Drive": {
+        "properties": {
+          "createdAt": {
+            "type": "number",
+            "description": "The time when the drive was created, in milliseconds since the epoch.",
+            "example": 1750344501629
+          },
+          "currentSandboxName": {
+            "type": "string",
+            "description": "Current sandbox name the drive is attached to, if any.",
+            "example": "my-sandbox"
+          },
+          "currentSessionId": {
+            "type": "string",
+            "description": "Current session ID the drive is attached to, if any.",
+            "example": "sbx_123"
+          },
+          "id": {
+            "type": "string",
+            "description": "The unique drive ID.",
+            "example": "drive_abc123"
+          },
+          "maxSizeBytes": {
+            "type": "number",
+            "description": "The maximum drive size in bytes.",
+            "example": 1099511627776
+          },
+          "name": {
+            "type": "string",
+            "description": "The unique drive name within the project.",
+            "example": "workspace"
+          },
+          "parentDriveId": {
+            "type": "string",
+            "description": "The ID of the source drive when this drive is a fork."
+          },
+          "projectId": {
+            "type": "string",
+            "description": "The project that owns the drive.",
+            "example": "prj_abc123"
+          },
+          "region": {
+            "type": "string",
+            "description": "The region where the drive is stored.",
+            "example": "iad1"
+          },
+          "rootDriveId": {
+            "type": "string",
+            "description": "The ID of the original drive at the root of this fork."
+          },
+          "updatedAt": {
+            "type": "number",
+            "description": "The last time the drive was updated, in milliseconds since the epoch.",
+            "example": 1750344501629
+          },
+          "workloadType": {
+            "type": "string",
+            "enum": [
+              "sandbox",
+              "v0"
+            ],
+            "description": "The workload type of this drive."
+          }
+        },
+        "required": [
+          "createdAt",
+          "id",
+          "maxSizeBytes",
+          "name",
+          "projectId",
+          "region",
+          "updatedAt"
+        ],
+        "type": "object",
+        "description": "This object contains information related to a Vercel Sandbox Drive."
+      },
       "GlobalConfigItemValue": {
         "nullable": true,
         "oneOf": [
@@ -109449,82 +110221,6 @@
         ],
         "type": "object",
         "description": "This object contains information related to a Vercel Sandbox Session. v2 endpoints return \"session\" instead of \"sandbox\" as the response wrapper key."
-      },
-      "Drive": {
-        "properties": {
-          "createdAt": {
-            "type": "number",
-            "description": "The time when the drive was created, in milliseconds since the epoch.",
-            "example": 1750344501629
-          },
-          "currentSandboxName": {
-            "type": "string",
-            "description": "Current sandbox name the drive is attached to, if any.",
-            "example": "my-sandbox"
-          },
-          "currentSessionId": {
-            "type": "string",
-            "description": "Current session ID the drive is attached to, if any.",
-            "example": "sbx_123"
-          },
-          "id": {
-            "type": "string",
-            "description": "The unique drive ID.",
-            "example": "drive_abc123"
-          },
-          "maxSizeBytes": {
-            "type": "number",
-            "description": "The maximum drive size in bytes.",
-            "example": 1099511627776
-          },
-          "name": {
-            "type": "string",
-            "description": "The unique drive name within the project.",
-            "example": "workspace"
-          },
-          "parentDriveId": {
-            "type": "string",
-            "description": "The ID of the source drive when this drive is a fork."
-          },
-          "projectId": {
-            "type": "string",
-            "description": "The project that owns the drive.",
-            "example": "prj_abc123"
-          },
-          "region": {
-            "type": "string",
-            "description": "The region where the drive is stored.",
-            "example": "iad1"
-          },
-          "rootDriveId": {
-            "type": "string",
-            "description": "The ID of the original drive at the root of this fork."
-          },
-          "updatedAt": {
-            "type": "number",
-            "description": "The last time the drive was updated, in milliseconds since the epoch.",
-            "example": 1750344501629
-          },
-          "workloadType": {
-            "type": "string",
-            "enum": [
-              "sandbox",
-              "v0"
-            ],
-            "description": "The workload type of this drive."
-          }
-        },
-        "required": [
-          "createdAt",
-          "id",
-          "maxSizeBytes",
-          "name",
-          "projectId",
-          "region",
-          "updatedAt"
-        ],
-        "type": "object",
-        "description": "This object contains information related to a Vercel Sandbox Drive."
       },
       "Snapshot": {
         "properties": {
@@ -115612,6 +116308,389 @@
         },
         "type": "array"
       },
+      "AutoSDKShared2bfc0b0e9e85f636": {
+        "properties": {
+          "createdAt": {
+            "type": "number"
+          },
+          "delivery": {
+            "$ref": "#/components/schemas/AutoSDKSharedfa633702cac2aa68"
+          },
+          "disabledAt": {
+            "type": "number"
+          },
+          "disabledBy": {
+            "type": "string"
+          },
+          "disabledReason": {
+            "type": "string",
+            "enum": [
+              "account-plan-downgrade",
+              "disabled-by-admin",
+              "disabled-by-owner",
+              "feature-not-available",
+              "limits-exceeded"
+            ]
+          },
+          "firstErrorTimestamp": {
+            "type": "number"
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "ownerId": {
+            "type": "string"
+          },
+          "projectIds": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "sampling": {
+            "items": {
+              "properties": {
+                "env": {
+                  "type": "string",
+                  "enum": [
+                    "preview",
+                    "production"
+                  ]
+                },
+                "rate": {
+                  "type": "number"
+                },
+                "requestPath": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "head_sampling"
+                  ]
+                }
+              },
+              "required": [
+                "rate",
+                "type"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "schemas": {
+            "properties": {
+              "ai_gateway": {
+                "type": "object"
+              },
+              "analytics": {
+                "type": "object"
+              },
+              "audit_log": {
+                "type": "object"
+              },
+              "connect": {
+                "type": "object"
+              },
+              "log": {
+                "type": "object"
+              },
+              "speed_insights": {
+                "type": "object"
+              },
+              "trace": {
+                "type": "object"
+              }
+            },
+            "type": "object"
+          },
+          "source": {
+            "oneOf": [
+              {
+                "properties": {
+                  "defaultFor": {
+                    "type": "string",
+                    "enum": [
+                      "eve-tracing",
+                      "nextjs-tracing"
+                    ],
+                    "description": "Informational marker for a system-owned default drain."
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "self-served"
+                    ]
+                  }
+                },
+                "required": [
+                  "kind"
+                ],
+                "type": "object"
+              },
+              {
+                "properties": {
+                  "externalResourceId": {
+                    "type": "string"
+                  },
+                  "integrationConfigurationId": {
+                    "type": "string"
+                  },
+                  "integrationId": {
+                    "type": "string"
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "integration"
+                    ]
+                  },
+                  "resourceId": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "integrationConfigurationId",
+                  "integrationId",
+                  "kind"
+                ],
+                "type": "object"
+              }
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "disabled",
+              "enabled",
+              "errored"
+            ]
+          },
+          "teamId": {
+            "nullable": true,
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "number"
+          },
+          "deliveryStats": {
+            "properties": {
+              "attempts": {
+                "type": "number",
+                "description": "All delivery attempts in the window."
+              },
+              "failures": {
+                "type": "number",
+                "description": "Delivery attempts that did not succeed in the window."
+              },
+              "state": {
+                "type": "string",
+                "enum": [
+                  "failing",
+                  "healthy",
+                  "unknown"
+                ]
+              },
+              "window": {
+                "type": "string",
+                "enum": [
+                  "24h"
+                ]
+              }
+            },
+            "required": [
+              "attempts",
+              "failures",
+              "state",
+              "window"
+            ],
+            "type": "object",
+            "description": "Delivery health of a drain over the last 24 hours: `failing` when more than 5 delivery attempts and at least 1% of all attempts did not succeed, `healthy` otherwise, and `unknown` when there were no attempts or the stats could not be loaded."
+          },
+          "filterV2": {
+            "properties": {
+              "filter": {
+                "oneOf": [
+                  {
+                    "properties": {
+                      "deployment": {
+                        "properties": {
+                          "environments": {
+                            "items": {
+                              "type": "string",
+                              "enum": [
+                                "preview",
+                                "production"
+                              ]
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "log": {
+                        "properties": {
+                          "legacy_excludeCachedStaticAssetLogs": {
+                            "type": "boolean",
+                            "enum": [
+                              false,
+                              true
+                            ]
+                          },
+                          "sources": {
+                            "items": {
+                              "type": "string",
+                              "enum": [
+                                "build",
+                                "edge",
+                                "external",
+                                "firewall",
+                                "lambda",
+                                "redirect",
+                                "static"
+                              ]
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "project": {
+                        "properties": {
+                          "ids": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "basic"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type"
+                    ],
+                    "type": "object"
+                  },
+                  {
+                    "properties": {
+                      "text": {
+                        "type": "string"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "odata"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "text",
+                      "type"
+                    ],
+                    "type": "object"
+                  }
+                ]
+              },
+              "version": {
+                "type": "string",
+                "enum": [
+                  "v2"
+                ]
+              }
+            },
+            "required": [
+              "filter",
+              "version"
+            ],
+            "type": "object"
+          },
+          "integrationConfigurationUri": {
+            "type": "string"
+          },
+          "integrationIcon": {
+            "type": "string"
+          },
+          "integrationWebsite": {
+            "type": "string"
+          },
+          "projectAccess": {
+            "oneOf": [
+              {
+                "properties": {
+                  "access": {
+                    "type": "string",
+                    "enum": [
+                      "all"
+                    ]
+                  },
+                  "managedBy": {
+                    "type": "string",
+                    "enum": [
+                      "drain",
+                      "integration"
+                    ]
+                  }
+                },
+                "required": [
+                  "access",
+                  "managedBy"
+                ],
+                "type": "object"
+              },
+              {
+                "properties": {
+                  "access": {
+                    "type": "string",
+                    "enum": [
+                      "some"
+                    ]
+                  },
+                  "projectIds": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array"
+                  },
+                  "managedBy": {
+                    "type": "string",
+                    "enum": [
+                      "drain",
+                      "integration"
+                    ]
+                  }
+                },
+                "required": [
+                  "access",
+                  "managedBy",
+                  "projectIds"
+                ],
+                "type": "object"
+              }
+            ]
+          }
+        },
+        "required": [
+          "createdAt",
+          "delivery",
+          "id",
+          "name",
+          "ownerId",
+          "schemas",
+          "source",
+          "updatedAt"
+        ],
+        "type": "object"
+      },
       "AutoSDKShared2c06e7f88512c8b8": {
         "properties": {
           "default": {
@@ -119127,6 +120206,16 @@
           }
         }
       },
+      "AutoSDKShared50f3542265814add": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/AutoSDKSharedc991458598e3986a"
+          },
+          {
+            "$ref": "#/components/schemas/AutoSDKShared8f57dc3c0d3f87ad"
+          }
+        ]
+      },
       "AutoSDKShared53a3c7ee42f9c50b": {
         "items": {
           "$ref": "#/components/schemas/AutoSDKSharedab64e9622c80dc17"
@@ -119461,17 +120550,6 @@
         },
         "type": "array"
       },
-      "AutoSDKShared5d69ee365fec194b": {
-        "properties": {
-          "drains": {
-            "$ref": "#/components/schemas/AutoSDKShareddd8c7067b962d71a"
-          }
-        },
-        "required": [
-          "drains"
-        ],
-        "type": "object"
-      },
       "AutoSDKShared6120795acc1bdfb3": {
         "oneOf": [
           {
@@ -119610,16 +120688,6 @@
             }
           }
         }
-      },
-      "AutoSDKShared6687b646db8a0ceb": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/AutoSDKShared8df5bff0bb4332b8"
-          },
-          {
-            "$ref": "#/components/schemas/AutoSDKShareda861c3cb40ec56dc"
-          }
-        ]
       },
       "AutoSDKShared693ab19349d28dd8": {
         "properties": {
@@ -123042,6 +124110,17 @@
         },
         "type": "array"
       },
+      "AutoSDKShared75ce2a6cc9b78675": {
+        "properties": {
+          "drains": {
+            "$ref": "#/components/schemas/AutoSDKShared50f3542265814add"
+          }
+        },
+        "required": [
+          "drains"
+        ],
+        "type": "object"
+      },
       "AutoSDKShared76d2d4f0d6cc3e47": {
         "properties": {
           "active": {
@@ -123335,12 +124414,6 @@
             "type": "string"
           }
         ]
-      },
-      "AutoSDKShared7c2d806b1e52ea93": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKShareda861c3cb40ec56dc"
-        },
-        "type": "array"
       },
       "AutoSDKShared7d4f4f5cff68219a": {
         "properties": {
@@ -124742,249 +125815,26 @@
         ],
         "type": "object"
       },
-      "AutoSDKShared8df5bff0bb4332b8": {
+      "AutoSDKShared8f57dc3c0d3f87ad": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKShared2bfc0b0e9e85f636"
+        },
+        "type": "array"
+      },
+      "AutoSDKShared9213b55e2a5cf1ce": {
+        "additionalProperties": {
+          "$ref": "#/components/schemas/AutoSDKSharedafa4bcd6bd044b8b"
+        },
+        "type": "object",
+        "description": "Function configuration scoped to this service."
+      },
+      "AutoSDKShared92580a598ccc210f": {
         "properties": {
           "createdAt": {
             "type": "number"
           },
           "delivery": {
-            "oneOf": [
-              {
-                "properties": {
-                  "compression": {
-                    "type": "string",
-                    "enum": [
-                      "gzip",
-                      "none"
-                    ]
-                  },
-                  "encoding": {
-                    "type": "string",
-                    "enum": [
-                      "json",
-                      "ndjson"
-                    ]
-                  },
-                  "endpoint": {
-                    "type": "string"
-                  },
-                  "headers": {
-                    "additionalProperties": {
-                      "type": "string"
-                    },
-                    "type": "object"
-                  },
-                  "secret": {
-                    "oneOf": [
-                      {
-                        "type": "string"
-                      },
-                      {
-                        "properties": {
-                          "kind": {
-                            "type": "string",
-                            "enum": [
-                              "INTEGRATION_SECRET"
-                            ]
-                          }
-                        },
-                        "required": [
-                          "kind"
-                        ],
-                        "type": "object"
-                      }
-                    ]
-                  },
-                  "type": {
-                    "type": "string",
-                    "enum": [
-                      "http"
-                    ]
-                  }
-                },
-                "required": [
-                  "encoding",
-                  "endpoint",
-                  "headers",
-                  "type"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "encoding": {
-                    "type": "string",
-                    "enum": [
-                      "json",
-                      "proto"
-                    ]
-                  },
-                  "endpoint": {
-                    "properties": {
-                      "traces": {
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "traces"
-                    ],
-                    "type": "object"
-                  },
-                  "headers": {
-                    "additionalProperties": {
-                      "type": "string"
-                    },
-                    "type": "object"
-                  },
-                  "secret": {
-                    "oneOf": [
-                      {
-                        "type": "string"
-                      },
-                      {
-                        "properties": {
-                          "kind": {
-                            "type": "string",
-                            "enum": [
-                              "INTEGRATION_SECRET"
-                            ]
-                          }
-                        },
-                        "required": [
-                          "kind"
-                        ],
-                        "type": "object"
-                      }
-                    ]
-                  },
-                  "type": {
-                    "type": "string",
-                    "enum": [
-                      "otlphttp"
-                    ]
-                  }
-                },
-                "required": [
-                  "encoding",
-                  "endpoint",
-                  "headers",
-                  "type"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "endpoint": {
-                    "type": "string"
-                  },
-                  "table": {
-                    "type": "string"
-                  },
-                  "type": {
-                    "type": "string",
-                    "enum": [
-                      "clickhouse"
-                    ]
-                  }
-                },
-                "required": [
-                  "endpoint",
-                  "table",
-                  "type"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "compression": {
-                    "type": "string",
-                    "enum": [
-                      "gzip",
-                      "none"
-                    ]
-                  },
-                  "encoding": {
-                    "type": "string",
-                    "enum": [
-                      "json",
-                      "ndjson"
-                    ]
-                  },
-                  "endpoint": {
-                    "type": "string"
-                  },
-                  "fileStructure": {
-                    "type": "string",
-                    "enum": [
-                      "hive"
-                    ]
-                  },
-                  "objectAcl": {
-                    "type": "string",
-                    "enum": [
-                      "authenticated-read",
-                      "aws-exec-read",
-                      "bucket-owner-full-control",
-                      "bucket-owner-read",
-                      "private",
-                      "public-read",
-                      "public-read-write"
-                    ]
-                  },
-                  "region": {
-                    "type": "string"
-                  },
-                  "roleArn": {
-                    "type": "string"
-                  },
-                  "serverSideEncryption": {
-                    "type": "string",
-                    "enum": [
-                      "AES256",
-                      "aws:kms",
-                      "aws:kms:dsse"
-                    ]
-                  },
-                  "type": {
-                    "type": "string",
-                    "enum": [
-                      "s3"
-                    ]
-                  }
-                },
-                "required": [
-                  "compression",
-                  "encoding",
-                  "endpoint",
-                  "fileStructure",
-                  "region",
-                  "roleArn",
-                  "type"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "target": {
-                    "type": "string",
-                    "enum": [
-                      "vercel-otel-traces-db"
-                    ]
-                  },
-                  "type": {
-                    "type": "string",
-                    "enum": [
-                      "internal"
-                    ]
-                  }
-                },
-                "required": [
-                  "target",
-                  "type"
-                ],
-                "type": "object"
-              }
-            ]
+            "$ref": "#/components/schemas/AutoSDKSharedfa633702cac2aa68"
           },
           "disabledAt": {
             "type": "number"
@@ -125297,13 +126147,6 @@
         ],
         "type": "object"
       },
-      "AutoSDKShared9213b55e2a5cf1ce": {
-        "additionalProperties": {
-          "$ref": "#/components/schemas/AutoSDKSharedafa4bcd6bd044b8b"
-        },
-        "type": "object",
-        "description": "Function configuration scoped to this service."
-      },
       "AutoSDKShared9296e9c5692fbba2": {
         "oneOf": [
           {
@@ -125311,6 +126154,16 @@
           },
           {
             "$ref": "#/components/schemas/AutoSDKShared650e942fd9ba5744"
+          }
+        ]
+      },
+      "AutoSDKShared941c226a2733bfbb": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/AutoSDKShared92580a598ccc210f"
+          },
+          {
+            "$ref": "#/components/schemas/AutoSDKShared2bfc0b0e9e85f636"
           }
         ]
       },
@@ -128708,625 +129561,6 @@
           "id",
           "name",
           "route"
-        ],
-        "type": "object"
-      },
-      "AutoSDKShareda861c3cb40ec56dc": {
-        "properties": {
-          "createdAt": {
-            "type": "number"
-          },
-          "delivery": {
-            "oneOf": [
-              {
-                "properties": {
-                  "compression": {
-                    "type": "string",
-                    "enum": [
-                      "gzip",
-                      "none"
-                    ]
-                  },
-                  "encoding": {
-                    "type": "string",
-                    "enum": [
-                      "json",
-                      "ndjson"
-                    ]
-                  },
-                  "endpoint": {
-                    "type": "string"
-                  },
-                  "headers": {
-                    "additionalProperties": {
-                      "type": "string"
-                    },
-                    "type": "object"
-                  },
-                  "secret": {
-                    "oneOf": [
-                      {
-                        "type": "string"
-                      },
-                      {
-                        "properties": {
-                          "kind": {
-                            "type": "string",
-                            "enum": [
-                              "INTEGRATION_SECRET"
-                            ]
-                          }
-                        },
-                        "required": [
-                          "kind"
-                        ],
-                        "type": "object"
-                      }
-                    ]
-                  },
-                  "type": {
-                    "type": "string",
-                    "enum": [
-                      "http"
-                    ]
-                  }
-                },
-                "required": [
-                  "encoding",
-                  "endpoint",
-                  "headers",
-                  "type"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "encoding": {
-                    "type": "string",
-                    "enum": [
-                      "json",
-                      "proto"
-                    ]
-                  },
-                  "endpoint": {
-                    "properties": {
-                      "traces": {
-                        "type": "string"
-                      }
-                    },
-                    "required": [
-                      "traces"
-                    ],
-                    "type": "object"
-                  },
-                  "headers": {
-                    "additionalProperties": {
-                      "type": "string"
-                    },
-                    "type": "object"
-                  },
-                  "secret": {
-                    "oneOf": [
-                      {
-                        "type": "string"
-                      },
-                      {
-                        "properties": {
-                          "kind": {
-                            "type": "string",
-                            "enum": [
-                              "INTEGRATION_SECRET"
-                            ]
-                          }
-                        },
-                        "required": [
-                          "kind"
-                        ],
-                        "type": "object"
-                      }
-                    ]
-                  },
-                  "type": {
-                    "type": "string",
-                    "enum": [
-                      "otlphttp"
-                    ]
-                  }
-                },
-                "required": [
-                  "encoding",
-                  "endpoint",
-                  "headers",
-                  "type"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "endpoint": {
-                    "type": "string"
-                  },
-                  "table": {
-                    "type": "string"
-                  },
-                  "type": {
-                    "type": "string",
-                    "enum": [
-                      "clickhouse"
-                    ]
-                  }
-                },
-                "required": [
-                  "endpoint",
-                  "table",
-                  "type"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "compression": {
-                    "type": "string",
-                    "enum": [
-                      "gzip",
-                      "none"
-                    ]
-                  },
-                  "encoding": {
-                    "type": "string",
-                    "enum": [
-                      "json",
-                      "ndjson"
-                    ]
-                  },
-                  "endpoint": {
-                    "type": "string"
-                  },
-                  "fileStructure": {
-                    "type": "string",
-                    "enum": [
-                      "hive"
-                    ]
-                  },
-                  "objectAcl": {
-                    "type": "string",
-                    "enum": [
-                      "authenticated-read",
-                      "aws-exec-read",
-                      "bucket-owner-full-control",
-                      "bucket-owner-read",
-                      "private",
-                      "public-read",
-                      "public-read-write"
-                    ]
-                  },
-                  "region": {
-                    "type": "string"
-                  },
-                  "roleArn": {
-                    "type": "string"
-                  },
-                  "serverSideEncryption": {
-                    "type": "string",
-                    "enum": [
-                      "AES256",
-                      "aws:kms",
-                      "aws:kms:dsse"
-                    ]
-                  },
-                  "type": {
-                    "type": "string",
-                    "enum": [
-                      "s3"
-                    ]
-                  }
-                },
-                "required": [
-                  "compression",
-                  "encoding",
-                  "endpoint",
-                  "fileStructure",
-                  "region",
-                  "roleArn",
-                  "type"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "target": {
-                    "type": "string",
-                    "enum": [
-                      "vercel-otel-traces-db"
-                    ]
-                  },
-                  "type": {
-                    "type": "string",
-                    "enum": [
-                      "internal"
-                    ]
-                  }
-                },
-                "required": [
-                  "target",
-                  "type"
-                ],
-                "type": "object"
-              }
-            ]
-          },
-          "disabledAt": {
-            "type": "number"
-          },
-          "disabledBy": {
-            "type": "string"
-          },
-          "disabledReason": {
-            "type": "string",
-            "enum": [
-              "account-plan-downgrade",
-              "disabled-by-admin",
-              "disabled-by-owner",
-              "feature-not-available",
-              "limits-exceeded"
-            ]
-          },
-          "firstErrorTimestamp": {
-            "type": "number"
-          },
-          "id": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "ownerId": {
-            "type": "string"
-          },
-          "projectIds": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "sampling": {
-            "items": {
-              "properties": {
-                "env": {
-                  "type": "string",
-                  "enum": [
-                    "preview",
-                    "production"
-                  ]
-                },
-                "rate": {
-                  "type": "number"
-                },
-                "requestPath": {
-                  "type": "string"
-                },
-                "type": {
-                  "type": "string",
-                  "enum": [
-                    "head_sampling"
-                  ]
-                }
-              },
-              "required": [
-                "rate",
-                "type"
-              ],
-              "type": "object"
-            },
-            "type": "array"
-          },
-          "schemas": {
-            "properties": {
-              "ai_gateway": {
-                "type": "object"
-              },
-              "analytics": {
-                "type": "object"
-              },
-              "audit_log": {
-                "type": "object"
-              },
-              "connect": {
-                "type": "object"
-              },
-              "log": {
-                "type": "object"
-              },
-              "speed_insights": {
-                "type": "object"
-              },
-              "trace": {
-                "type": "object"
-              }
-            },
-            "type": "object"
-          },
-          "source": {
-            "oneOf": [
-              {
-                "properties": {
-                  "defaultFor": {
-                    "type": "string",
-                    "enum": [
-                      "eve-tracing",
-                      "nextjs-tracing"
-                    ],
-                    "description": "Informational marker for a system-owned default drain."
-                  },
-                  "kind": {
-                    "type": "string",
-                    "enum": [
-                      "self-served"
-                    ]
-                  }
-                },
-                "required": [
-                  "kind"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "externalResourceId": {
-                    "type": "string"
-                  },
-                  "integrationConfigurationId": {
-                    "type": "string"
-                  },
-                  "integrationId": {
-                    "type": "string"
-                  },
-                  "kind": {
-                    "type": "string",
-                    "enum": [
-                      "integration"
-                    ]
-                  },
-                  "resourceId": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "integrationConfigurationId",
-                  "integrationId",
-                  "kind"
-                ],
-                "type": "object"
-              }
-            ]
-          },
-          "status": {
-            "type": "string",
-            "enum": [
-              "disabled",
-              "enabled",
-              "errored"
-            ]
-          },
-          "teamId": {
-            "nullable": true,
-            "type": "string"
-          },
-          "updatedAt": {
-            "type": "number"
-          },
-          "deliveryStats": {
-            "properties": {
-              "attempts": {
-                "type": "number",
-                "description": "All delivery attempts in the window."
-              },
-              "failures": {
-                "type": "number",
-                "description": "Delivery attempts that did not succeed in the window."
-              },
-              "state": {
-                "type": "string",
-                "enum": [
-                  "failing",
-                  "healthy",
-                  "unknown"
-                ]
-              },
-              "window": {
-                "type": "string",
-                "enum": [
-                  "24h"
-                ]
-              }
-            },
-            "required": [
-              "attempts",
-              "failures",
-              "state",
-              "window"
-            ],
-            "type": "object",
-            "description": "Delivery health of a drain over the last 24 hours: `failing` when more than 5 delivery attempts and at least 1% of all attempts did not succeed, `healthy` otherwise, and `unknown` when there were no attempts or the stats could not be loaded."
-          },
-          "filterV2": {
-            "properties": {
-              "filter": {
-                "oneOf": [
-                  {
-                    "properties": {
-                      "deployment": {
-                        "properties": {
-                          "environments": {
-                            "items": {
-                              "type": "string",
-                              "enum": [
-                                "preview",
-                                "production"
-                              ]
-                            },
-                            "type": "array"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "log": {
-                        "properties": {
-                          "legacy_excludeCachedStaticAssetLogs": {
-                            "type": "boolean",
-                            "enum": [
-                              false,
-                              true
-                            ]
-                          },
-                          "sources": {
-                            "items": {
-                              "type": "string",
-                              "enum": [
-                                "build",
-                                "edge",
-                                "external",
-                                "firewall",
-                                "lambda",
-                                "redirect",
-                                "static"
-                              ]
-                            },
-                            "type": "array"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "project": {
-                        "properties": {
-                          "ids": {
-                            "items": {
-                              "type": "string"
-                            },
-                            "type": "array"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "type": {
-                        "type": "string",
-                        "enum": [
-                          "basic"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "type"
-                    ],
-                    "type": "object"
-                  },
-                  {
-                    "properties": {
-                      "text": {
-                        "type": "string"
-                      },
-                      "type": {
-                        "type": "string",
-                        "enum": [
-                          "odata"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "text",
-                      "type"
-                    ],
-                    "type": "object"
-                  }
-                ]
-              },
-              "version": {
-                "type": "string",
-                "enum": [
-                  "v2"
-                ]
-              }
-            },
-            "required": [
-              "filter",
-              "version"
-            ],
-            "type": "object"
-          },
-          "integrationConfigurationUri": {
-            "type": "string"
-          },
-          "integrationIcon": {
-            "type": "string"
-          },
-          "integrationWebsite": {
-            "type": "string"
-          },
-          "projectAccess": {
-            "oneOf": [
-              {
-                "properties": {
-                  "access": {
-                    "type": "string",
-                    "enum": [
-                      "all"
-                    ]
-                  },
-                  "managedBy": {
-                    "type": "string",
-                    "enum": [
-                      "drain",
-                      "integration"
-                    ]
-                  }
-                },
-                "required": [
-                  "access",
-                  "managedBy"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "access": {
-                    "type": "string",
-                    "enum": [
-                      "some"
-                    ]
-                  },
-                  "projectIds": {
-                    "items": {
-                      "type": "string"
-                    },
-                    "type": "array"
-                  },
-                  "managedBy": {
-                    "type": "string",
-                    "enum": [
-                      "drain",
-                      "integration"
-                    ]
-                  }
-                },
-                "required": [
-                  "access",
-                  "managedBy",
-                  "projectIds"
-                ],
-                "type": "object"
-              }
-            ]
-          }
-        },
-        "required": [
-          "createdAt",
-          "delivery",
-          "id",
-          "name",
-          "ownerId",
-          "schemas",
-          "source",
-          "updatedAt"
         ],
         "type": "object"
       },
@@ -134032,6 +134266,12 @@
           }
         }
       },
+      "AutoSDKSharedc991458598e3986a": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKShared92580a598ccc210f"
+        },
+        "type": "array"
+      },
       "AutoSDKSharedc9dedf1e16b35b81": {
         "nullable": true,
         "additionalProperties": {
@@ -136021,12 +136261,6 @@
         },
         "type": "array"
       },
-      "AutoSDKSharedd9480afa024ae3ea": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKShared8df5bff0bb4332b8"
-        },
-        "type": "array"
-      },
       "AutoSDKShareddb8a6ccf5b64d660": {
         "properties": {
           "blocks": {
@@ -136238,16 +136472,6 @@
         ],
         "type": "object",
         "description": "Vercel CI check run without a parent `check` (no `checkId` field)."
-      },
-      "AutoSDKShareddd8c7067b962d71a": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/AutoSDKSharedd9480afa024ae3ea"
-          },
-          {
-            "$ref": "#/components/schemas/AutoSDKShared7c2d806b1e52ea93"
-          }
-        ]
       },
       "AutoSDKSharede064e44b973b9ad0": {
         "properties": {
@@ -139573,6 +139797,248 @@
         ],
         "type": "object",
         "description": "Returns the reduced deployment view for anonymous (`vcn_`) callers. Pool-team details are withheld."
+      },
+      "AutoSDKSharedfa633702cac2aa68": {
+        "oneOf": [
+          {
+            "properties": {
+              "compression": {
+                "type": "string",
+                "enum": [
+                  "gzip",
+                  "none"
+                ]
+              },
+              "encoding": {
+                "type": "string",
+                "enum": [
+                  "json",
+                  "ndjson"
+                ]
+              },
+              "endpoint": {
+                "type": "string"
+              },
+              "headers": {
+                "additionalProperties": {
+                  "type": "string"
+                },
+                "type": "object"
+              },
+              "secret": {
+                "oneOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "properties": {
+                      "kind": {
+                        "type": "string",
+                        "enum": [
+                          "INTEGRATION_SECRET"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "kind"
+                    ],
+                    "type": "object"
+                  }
+                ]
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "http"
+                ]
+              }
+            },
+            "required": [
+              "encoding",
+              "endpoint",
+              "headers",
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "properties": {
+              "encoding": {
+                "type": "string",
+                "enum": [
+                  "json",
+                  "proto"
+                ]
+              },
+              "endpoint": {
+                "properties": {
+                  "traces": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "traces"
+                ],
+                "type": "object"
+              },
+              "headers": {
+                "additionalProperties": {
+                  "type": "string"
+                },
+                "type": "object"
+              },
+              "secret": {
+                "oneOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "properties": {
+                      "kind": {
+                        "type": "string",
+                        "enum": [
+                          "INTEGRATION_SECRET"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "kind"
+                    ],
+                    "type": "object"
+                  }
+                ]
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "otlphttp"
+                ]
+              }
+            },
+            "required": [
+              "encoding",
+              "endpoint",
+              "headers",
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "properties": {
+              "endpoint": {
+                "type": "string"
+              },
+              "table": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "clickhouse"
+                ]
+              }
+            },
+            "required": [
+              "endpoint",
+              "table",
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "properties": {
+              "compression": {
+                "type": "string",
+                "enum": [
+                  "gzip",
+                  "none"
+                ]
+              },
+              "encoding": {
+                "type": "string",
+                "enum": [
+                  "json",
+                  "ndjson"
+                ]
+              },
+              "endpoint": {
+                "type": "string"
+              },
+              "fileStructure": {
+                "type": "string",
+                "enum": [
+                  "hive"
+                ]
+              },
+              "kmsKeyId": {
+                "type": "string"
+              },
+              "objectAcl": {
+                "type": "string",
+                "enum": [
+                  "authenticated-read",
+                  "aws-exec-read",
+                  "bucket-owner-full-control",
+                  "bucket-owner-read",
+                  "private",
+                  "public-read",
+                  "public-read-write"
+                ]
+              },
+              "region": {
+                "type": "string"
+              },
+              "roleArn": {
+                "type": "string"
+              },
+              "serverSideEncryption": {
+                "type": "string",
+                "enum": [
+                  "AES256",
+                  "aws:kms",
+                  "aws:kms:dsse"
+                ]
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "s3"
+                ]
+              }
+            },
+            "required": [
+              "compression",
+              "encoding",
+              "endpoint",
+              "fileStructure",
+              "region",
+              "roleArn",
+              "type"
+            ],
+            "type": "object"
+          },
+          {
+            "properties": {
+              "target": {
+                "type": "string",
+                "enum": [
+                  "vercel-otel-traces-db"
+                ]
+              },
+              "type": {
+                "type": "string",
+                "enum": [
+                  "internal"
+                ]
+              }
+            },
+            "required": [
+              "target",
+              "type"
+            ],
+            "type": "object"
+          }
+        ]
       },
       "AutoSDKSharedfabd867705b7541a": {
         "nullable": true,

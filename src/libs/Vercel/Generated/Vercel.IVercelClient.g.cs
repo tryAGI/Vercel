@@ -128,6 +128,11 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        public DrivesClient Drives { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
         public EdgeCacheClient EdgeCache { get; }
 
         /// <summary>

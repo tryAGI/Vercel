@@ -30,8 +30,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SessionNetworkTransfer))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SessionStatus), TypeInfoPropertyName = "SessionStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SessionWorkloadType), TypeInfoPropertyName = "SessionWorkloadType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.Drive))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DriveWorkloadType), TypeInfoPropertyName = "DriveWorkloadType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.Snapshot))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SnapshotArchitecture), TypeInfoPropertyName = "SnapshotArchitecture2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SnapshotCreationMethod), TypeInfoPropertyName = "SnapshotCreationMethod2")]
@@ -90,7 +88,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateSandboxesV2Response))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.SandboxPublicRoute>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDrivesResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.Drive>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListDrivesResponsePagination))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDriveResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetOrCreateDriveResponse))]
@@ -147,7 +144,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SessionArchitecture?), TypeInfoPropertyName = "NullableSessionArchitecture2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SessionStatus?), TypeInfoPropertyName = "NullableSessionStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SessionWorkloadType?), TypeInfoPropertyName = "NullableSessionWorkloadType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.DriveWorkloadType?), TypeInfoPropertyName = "NullableDriveWorkloadType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SnapshotArchitecture?), TypeInfoPropertyName = "NullableSnapshotArchitecture2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SnapshotCreationMethod?), TypeInfoPropertyName = "NullableSnapshotCreationMethod2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.SnapshotStatus?), TypeInfoPropertyName = "NullableSnapshotStatus2")]
@@ -184,7 +180,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc97b32abf27d8b81Header>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.NamedSandbox>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.SandboxPublicRoute>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.Drive>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.Snapshot>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.Session>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.SessionCommand>))]
@@ -280,10 +275,6 @@ namespace Vercel
                     || typeToConvert == typeof(global::Vercel.SessionWorkloadType)
 
                     || typeToConvert == typeof(global::Vercel.SessionWorkloadType?)
-
-                    || typeToConvert == typeof(global::Vercel.DriveWorkloadType)
-
-                    || typeToConvert == typeof(global::Vercel.DriveWorkloadType?)
 
                     || typeToConvert == typeof(global::Vercel.SnapshotArchitecture)
 
@@ -400,16 +391,6 @@ namespace Vercel
                 if (typeToConvert == typeof(global::Vercel.SessionWorkloadType?))
                 {
                     return new global::Vercel.JsonConverters.SessionWorkloadTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.DriveWorkloadType))
-                {
-                    return new global::Vercel.JsonConverters.DriveWorkloadTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.DriveWorkloadType?))
-                {
-                    return new global::Vercel.JsonConverters.DriveWorkloadTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Vercel.SnapshotArchitecture))
