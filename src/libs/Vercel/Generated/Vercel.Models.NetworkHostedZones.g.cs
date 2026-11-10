@@ -4,12 +4,12 @@
 namespace Vercel
 {
     /// <summary>
-    /// Metadata about any AWS Route53 Hosted Zones associated with the Network.
+    /// Metadata about customer-managed AWS Route53 Hosted Zones associated with the Network.
     /// </summary>
     public sealed partial class NetworkHostedZones
     {
         /// <summary>
-        /// The number of AWS Route53 Hosted Zones associated with the Network.
+        /// The number of customer-managed AWS Route53 Hosted Zones associated with the Network.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("count")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -25,7 +25,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="NetworkHostedZones" /> class.
         /// </summary>
         /// <param name="count">
-        /// The number of AWS Route53 Hosted Zones associated with the Network.
+        /// The number of customer-managed AWS Route53 Hosted Zones associated with the Network.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

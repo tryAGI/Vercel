@@ -1,0 +1,77 @@
+
+#nullable enable
+
+namespace Vercel
+{
+    /// <summary>
+    ///
+    /// </summary>
+    public sealed partial class GetOrCreateDriveV1Request
+    {
+        /// <summary>
+        /// The project ID or name to associate the drive with. Required unless using a Vercel OIDC token scoped to a project.<br/>
+        /// Example: prj_abc123
+        /// </summary>
+        /// <example>prj_abc123</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("projectId")]
+        public string? ProjectId { get; set; }
+
+        /// <summary>
+        /// Maximum drive size in bytes. Must be a multiple of 4096 bytes. Defaults to 1 TiB when omitted (1 GiB for Hobby). The maximum quota is 16 TiB. Request a quota above 16 TiB at https://vercel.com/help.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("maxSizeBytes")]
+        public int? MaxSizeBytes { get; set; }
+
+        /// <summary>
+        /// Region where the drive is stored. Defaults to iad1.<br/>
+        /// Default Value: iad1<br/>
+        /// Example: iad1
+        /// </summary>
+        /// <example>iad1</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("region")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetOrCreateDriveV1RequestRegionJsonConverter))]
+        public global::Vercel.GetOrCreateDriveV1RequestRegion? Region { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GetOrCreateDriveV1Request" /> class.
+        /// </summary>
+        /// <param name="projectId">
+        /// The project ID or name to associate the drive with. Required unless using a Vercel OIDC token scoped to a project.<br/>
+        /// Example: prj_abc123
+        /// </param>
+        /// <param name="maxSizeBytes">
+        /// Maximum drive size in bytes. Must be a multiple of 4096 bytes. Defaults to 1 TiB when omitted (1 GiB for Hobby). The maximum quota is 16 TiB. Request a quota above 16 TiB at https://vercel.com/help.
+        /// </param>
+        /// <param name="region">
+        /// Region where the drive is stored. Defaults to iad1.<br/>
+        /// Default Value: iad1<br/>
+        /// Example: iad1
+        /// </param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public GetOrCreateDriveV1Request(
+            string? projectId,
+            int? maxSizeBytes,
+            global::Vercel.GetOrCreateDriveV1RequestRegion? region)
+        {
+            this.ProjectId = projectId;
+            this.MaxSizeBytes = maxSizeBytes;
+            this.Region = region;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GetOrCreateDriveV1Request" /> class.
+        /// </summary>
+        public GetOrCreateDriveV1Request()
+        {
+        }
+
+    }
+}

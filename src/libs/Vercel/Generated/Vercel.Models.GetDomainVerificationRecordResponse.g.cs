@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double ExpiresAt { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("txtRecord")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string TxtRecord { get; set; }
@@ -31,15 +38,18 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetDomainVerificationRecordResponse" /> class.
         /// </summary>
+        /// <param name="expiresAt"></param>
         /// <param name="txtRecord"></param>
         /// <param name="verificationDomain"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetDomainVerificationRecordResponse(
+            double expiresAt,
             string txtRecord,
             string verificationDomain)
         {
+            this.ExpiresAt = expiresAt;
             this.TxtRecord = txtRecord ?? throw new global::System.ArgumentNullException(nameof(txtRecord));
             this.VerificationDomain = verificationDomain ?? throw new global::System.ArgumentNullException(nameof(verificationDomain));
         }
