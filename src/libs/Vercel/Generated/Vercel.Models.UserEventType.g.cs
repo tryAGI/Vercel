@@ -2296,6 +2296,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        SandboxNpmCredentialsConfigured,
+        /// <summary>
+        ///
+        /// </summary>
         SandboxSignedCommitIdentityConfigured,
         /// <summary>
         ///
@@ -3682,6 +3686,7 @@ namespace Vercel
                 UserEventType.SandboxDriveDeleted => "sandbox-drive-deleted",
                 UserEventType.SandboxDriveSnapshotCreated => "sandbox-drive-snapshot-created",
                 UserEventType.SandboxDriveSnapshotDeleted => "sandbox-drive-snapshot-deleted",
+                UserEventType.SandboxNpmCredentialsConfigured => "sandbox-npm-credentials-configured",
                 UserEventType.SandboxSignedCommitIdentityConfigured => "sandbox-signed-commit-identity-configured",
                 UserEventType.SandboxSnapshotRegionsUpdated => "sandbox-snapshot-regions-updated",
                 UserEventType.Scale => "scale",
@@ -4464,6 +4469,7 @@ namespace Vercel
                 "sandbox-drive-deleted" => UserEventType.SandboxDriveDeleted,
                 "sandbox-drive-snapshot-created" => UserEventType.SandboxDriveSnapshotCreated,
                 "sandbox-drive-snapshot-deleted" => UserEventType.SandboxDriveSnapshotDeleted,
+                "sandbox-npm-credentials-configured" => UserEventType.SandboxNpmCredentialsConfigured,
                 "sandbox-signed-commit-identity-configured" => UserEventType.SandboxSignedCommitIdentityConfigured,
                 "sandbox-snapshot-regions-updated" => UserEventType.SandboxSnapshotRegionsUpdated,
                 "scale" => UserEventType.Scale,
