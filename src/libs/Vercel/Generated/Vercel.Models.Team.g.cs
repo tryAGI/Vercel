@@ -117,13 +117,6 @@ namespace Vercel
         public string? Description { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("disableHardAutoBlocks")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>))]
-        public global::Vercel.OneOf<double?, bool?>? DisableHardAutoBlocks { get; set; }
-
-        /// <summary>
         /// Default for projects in the team. When `true`, projects in this team will not emit GitHub repository-dispatch events on deployment events unless the project explicitly overrides this setting via `project.gitProviderOptions.disableRepositoryDispatchEvents`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("disableRepositoryDispatchEvents")]
@@ -428,7 +421,6 @@ namespace Vercel
         /// A short description of the Team.<br/>
         /// Example: Our mission is to make cloud computing accessible to everyone.
         /// </param>
-        /// <param name="disableHardAutoBlocks"></param>
         /// <param name="disableRepositoryDispatchEvents">
         /// Default for projects in the team. When `true`, projects in this team will not emit GitHub repository-dispatch events on deployment events unless the project explicitly overrides this setting via `project.gitProviderOptions.disableRepositoryDispatchEvents`.
         /// </param>
@@ -541,7 +533,6 @@ namespace Vercel
             global::Vercel.TeamDeploymentPolicy? deploymentPolicy,
             global::Vercel.TeamDeploymentStorageRollout? deploymentStorageRollout,
             string? description,
-            global::Vercel.OneOf<double?, bool?>? disableHardAutoBlocks,
             bool? disableRepositoryDispatchEvents,
             global::Vercel.TeamDisjunctiveProductionSecretPolicy? disjunctiveProductionSecretPolicy,
             global::Vercel.TeamDpAccessRequestsMode? dpAccessRequestsMode,
@@ -587,7 +578,6 @@ namespace Vercel
             this.DeploymentPolicy = deploymentPolicy;
             this.DeploymentStorageRollout = deploymentStorageRollout;
             this.Description = description;
-            this.DisableHardAutoBlocks = disableHardAutoBlocks;
             this.DisableRepositoryDispatchEvents = disableRepositoryDispatchEvents;
             this.DisjunctiveProductionSecretPolicy = disjunctiveProductionSecretPolicy;
             this.DpAccessRequestsMode = dpAccessRequestsMode;

@@ -29,8 +29,8 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.GetSecurityFirewallEventsSummaryResponse> GetSecurityFirewallEventsSummaryAsync(
             string projectId,
-            double? startTimestamp = default,
-            double? endTimestamp = default,
+            int? startTimestamp = default,
+            int? endTimestamp = default,
             string? hosts = default,
             global::System.Collections.Generic.IList<string>? ip = default,
             bool? isActive = default,
@@ -67,8 +67,8 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetSecurityFirewallEventsSummaryResponse>> GetSecurityFirewallEventsSummaryAsResponseAsync(
             string projectId,
-            double? startTimestamp = default,
-            double? endTimestamp = default,
+            int? startTimestamp = default,
+            int? endTimestamp = default,
             string? hosts = default,
             global::System.Collections.Generic.IList<string>? ip = default,
             bool? isActive = default,
