@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        Gzip,
+        /// <summary>
+        ///
+        /// </summary>
         None,
     }
 
@@ -26,6 +30,7 @@ namespace Vercel
         {
             return value switch
             {
+                TestDrainRequestDeliveryVariant3Compression.Gzip => "gzip",
                 TestDrainRequestDeliveryVariant3Compression.None => "none",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -37,6 +42,7 @@ namespace Vercel
         {
             return value switch
             {
+                "gzip" => TestDrainRequestDeliveryVariant3Compression.Gzip,
                 "none" => TestDrainRequestDeliveryVariant3Compression.None,
                 _ => null,
             };

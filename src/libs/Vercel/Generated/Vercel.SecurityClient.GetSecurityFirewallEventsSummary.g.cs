@@ -28,8 +28,8 @@ namespace Vercel
         partial void PrepareGetSecurityFirewallEventsSummaryArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string projectId,
-            ref double? startTimestamp,
-            ref double? endTimestamp,
+            ref int? startTimestamp,
+            ref int? endTimestamp,
             ref string? hosts,
             global::System.Collections.Generic.IList<string>? ip,
             ref bool? isActive,
@@ -43,8 +43,8 @@ namespace Vercel
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string projectId,
-            double? startTimestamp,
-            double? endTimestamp,
+            int? startTimestamp,
+            int? endTimestamp,
             string? hosts,
             global::System.Collections.Generic.IList<string>? ip,
             bool? isActive,
@@ -88,8 +88,8 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.GetSecurityFirewallEventsSummaryResponse> GetSecurityFirewallEventsSummaryAsync(
             string projectId,
-            double? startTimestamp = default,
-            double? endTimestamp = default,
+            int? startTimestamp = default,
+            int? endTimestamp = default,
             string? hosts = default,
             global::System.Collections.Generic.IList<string>? ip = default,
             bool? isActive = default,
@@ -146,8 +146,8 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetSecurityFirewallEventsSummaryResponse>> GetSecurityFirewallEventsSummaryAsResponseAsync(
             string projectId,
-            double? startTimestamp = default,
-            double? endTimestamp = default,
+            int? startTimestamp = default,
+            int? endTimestamp = default,
             string? hosts = default,
             global::System.Collections.Generic.IList<string>? ip = default,
             bool? isActive = default,

@@ -556,7 +556,7 @@ namespace Vercel
         /// Services detected during build from vercel.json experimentalServices or auto-detected from project structure. Used to inject service URLs as environment variables at runtime.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("services")]
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared45365de6dac5caf5>? Services { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb3e24a966396db5b>? Services { get; set; }
 
         /// <summary>
         /// flag to indicate if the deployment was deleted by retention policy<br/>
@@ -935,7 +935,7 @@ namespace Vercel
             global::Vercel.AutoSDKShared693ab19349d28dd8? resourceConfig,
             global::System.Collections.Generic.IList<global::Vercel.AutoSDKShareda2a71ce8831cd3f8>? routes,
             global::Vercel.CancelDeploymentResponseSeatBlock? seatBlock,
-            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared45365de6dac5caf5>? services,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb3e24a966396db5b>? services,
             bool? softDeletedByRetention,
             global::Vercel.CancelDeploymentResponseSource? source,
             global::Vercel.CancelDeploymentResponseTarget? target,

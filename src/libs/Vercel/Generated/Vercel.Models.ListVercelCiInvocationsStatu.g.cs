@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AwaitingApproval,
+        /// <summary>
+        ///
+        /// </summary>
         AwaitingJobs,
         /// <summary>
         ///
@@ -70,6 +74,7 @@ namespace Vercel
         {
             return value switch
             {
+                ListVercelCiInvocationsStatu.AwaitingApproval => "awaiting_approval",
                 ListVercelCiInvocationsStatu.AwaitingJobs => "awaiting_jobs",
                 ListVercelCiInvocationsStatu.Bootstrapping => "bootstrapping",
                 ListVercelCiInvocationsStatu.BootstrappingFailed => "bootstrapping_failed",
@@ -92,6 +97,7 @@ namespace Vercel
         {
             return value switch
             {
+                "awaiting_approval" => ListVercelCiInvocationsStatu.AwaitingApproval,
                 "awaiting_jobs" => ListVercelCiInvocationsStatu.AwaitingJobs,
                 "bootstrapping" => ListVercelCiInvocationsStatu.Bootstrapping,
                 "bootstrapping_failed" => ListVercelCiInvocationsStatu.BootstrappingFailed,

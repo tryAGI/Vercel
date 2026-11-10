@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("attempts")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared3fd5b0acfe2f4f54> Attempts { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared18cf6c9c9480cd61> Attempts { get; set; }
 
         /// <summary>
         ///
@@ -37,7 +37,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListVercelCiInvocationAttemptsResponse(
-            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared3fd5b0acfe2f4f54> attempts,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared18cf6c9c9480cd61> attempts,
             object repositories)
         {
             this.Attempts = attempts ?? throw new global::System.ArgumentNullException(nameof(attempts));

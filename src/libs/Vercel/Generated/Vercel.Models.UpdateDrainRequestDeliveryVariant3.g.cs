@@ -35,7 +35,8 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("compression")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpdateDrainRequestDeliveryVariant3CompressionJsonConverter))]
-        public global::Vercel.UpdateDrainRequestDeliveryVariant3Compression Compression { get; set; }
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.UpdateDrainRequestDeliveryVariant3Compression Compression { get; set; }
 
         /// <summary>
         ///
@@ -84,9 +85,9 @@ namespace Vercel
         /// <param name="type"></param>
         /// <param name="endpoint"></param>
         /// <param name="encoding"></param>
+        /// <param name="compression"></param>
         /// <param name="roleArn"></param>
         /// <param name="region"></param>
-        /// <param name="compression"></param>
         /// <param name="fileStructure"></param>
         /// <param name="serverSideEncryption">
         /// Default Value: AES256
@@ -99,9 +100,9 @@ namespace Vercel
             string type,
             string endpoint,
             global::Vercel.UpdateDrainRequestDeliveryVariant3Encoding encoding,
+            global::Vercel.UpdateDrainRequestDeliveryVariant3Compression compression,
             string roleArn,
             string region,
-            global::Vercel.UpdateDrainRequestDeliveryVariant3Compression compression,
             global::Vercel.UpdateDrainRequestDeliveryVariant3FileStructure fileStructure,
             global::Vercel.UpdateDrainRequestDeliveryVariant3ServerSideEncryption? serverSideEncryption,
             global::Vercel.UpdateDrainRequestDeliveryVariant3ObjectAcl? objectAcl)
