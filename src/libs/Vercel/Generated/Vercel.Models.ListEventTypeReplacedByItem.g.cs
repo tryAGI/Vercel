@@ -2295,6 +2295,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        SandboxNpmCredentialsConfigured,
+        /// <summary>
+        ///
+        /// </summary>
         SandboxSignedCommitIdentityConfigured,
         /// <summary>
         ///
@@ -3681,6 +3685,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.SandboxDriveDeleted => "sandbox-drive-deleted",
                 ListEventTypeReplacedByItem.SandboxDriveSnapshotCreated => "sandbox-drive-snapshot-created",
                 ListEventTypeReplacedByItem.SandboxDriveSnapshotDeleted => "sandbox-drive-snapshot-deleted",
+                ListEventTypeReplacedByItem.SandboxNpmCredentialsConfigured => "sandbox-npm-credentials-configured",
                 ListEventTypeReplacedByItem.SandboxSignedCommitIdentityConfigured => "sandbox-signed-commit-identity-configured",
                 ListEventTypeReplacedByItem.SandboxSnapshotRegionsUpdated => "sandbox-snapshot-regions-updated",
                 ListEventTypeReplacedByItem.Scale => "scale",
@@ -4463,6 +4468,7 @@ namespace Vercel
                 "sandbox-drive-deleted" => ListEventTypeReplacedByItem.SandboxDriveDeleted,
                 "sandbox-drive-snapshot-created" => ListEventTypeReplacedByItem.SandboxDriveSnapshotCreated,
                 "sandbox-drive-snapshot-deleted" => ListEventTypeReplacedByItem.SandboxDriveSnapshotDeleted,
+                "sandbox-npm-credentials-configured" => ListEventTypeReplacedByItem.SandboxNpmCredentialsConfigured,
                 "sandbox-signed-commit-identity-configured" => ListEventTypeReplacedByItem.SandboxSignedCommitIdentityConfigured,
                 "sandbox-snapshot-regions-updated" => ListEventTypeReplacedByItem.SandboxSnapshotRegionsUpdated,
                 "scale" => ListEventTypeReplacedByItem.Scale,
