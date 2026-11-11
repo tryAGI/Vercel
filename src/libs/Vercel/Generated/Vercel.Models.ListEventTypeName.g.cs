@@ -1116,6 +1116,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        FlagsOverridesSigned,
+        /// <summary>
+        ///
+        /// </summary>
         FlagsSdkKey,
         /// <summary>
         ///
@@ -1380,6 +1384,18 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        MessageboardGrantCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardGrantRevoked,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardGrantUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         MessageboardPrivateChannelCreated,
         /// <summary>
         ///
@@ -1392,6 +1408,18 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        MessageboardPrivateGrantCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardPrivateGrantRevoked,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardPrivateGrantUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         MessageboardPrivateProjectGranted,
         /// <summary>
         ///
@@ -1401,6 +1429,10 @@ namespace Vercel
         ///
         /// </summary>
         MessageboardProjectChannelCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardProjectCreated,
         /// <summary>
         ///
         /// </summary>
@@ -3395,6 +3427,7 @@ namespace Vercel
                 ListEventTypeName.FlagsConnectionCreated => "flags-connection-created",
                 ListEventTypeName.FlagsConnectionDeleted => "flags-connection-deleted",
                 ListEventTypeName.FlagsExplorerSubscription => "flags-explorer-subscription",
+                ListEventTypeName.FlagsOverridesSigned => "flags-overrides-signed",
                 ListEventTypeName.FlagsSdkKey => "flags-sdk-key",
                 ListEventTypeName.FlagsSdkKeyAdded => "flags-sdk-key-added",
                 ListEventTypeName.FlagsSdkKeyDeleted => "flags-sdk-key-deleted",
@@ -3461,12 +3494,19 @@ namespace Vercel
                 ListEventTypeName.MessageboardChannelCreated => "messageboard-channel-created",
                 ListEventTypeName.MessageboardChannelUpdated => "messageboard-channel-updated",
                 ListEventTypeName.MessageboardCreated => "messageboard-created",
+                ListEventTypeName.MessageboardGrantCreated => "messageboard-grant-created",
+                ListEventTypeName.MessageboardGrantRevoked => "messageboard-grant-revoked",
+                ListEventTypeName.MessageboardGrantUpdated => "messageboard-grant-updated",
                 ListEventTypeName.MessageboardPrivateChannelCreated => "messageboard-private-channel-created",
                 ListEventTypeName.MessageboardPrivateChannelUpdated => "messageboard-private-channel-updated",
                 ListEventTypeName.MessageboardPrivateCreated => "messageboard-private-created",
+                ListEventTypeName.MessageboardPrivateGrantCreated => "messageboard-private-grant-created",
+                ListEventTypeName.MessageboardPrivateGrantRevoked => "messageboard-private-grant-revoked",
+                ListEventTypeName.MessageboardPrivateGrantUpdated => "messageboard-private-grant-updated",
                 ListEventTypeName.MessageboardPrivateProjectGranted => "messageboard-private-project-granted",
                 ListEventTypeName.MessageboardPrivateProjectRevoked => "messageboard-private-project-revoked",
                 ListEventTypeName.MessageboardProjectChannelCreated => "messageboard-project-channel-created",
+                ListEventTypeName.MessageboardProjectCreated => "messageboard-project-created",
                 ListEventTypeName.MessageboardProjectGranted => "messageboard-project-granted",
                 ListEventTypeName.MessageboardProjectPrivateChannelCreated => "messageboard-project-private-channel-created",
                 ListEventTypeName.MessageboardProjectRevoked => "messageboard-project-revoked",
@@ -4179,6 +4219,7 @@ namespace Vercel
                 "flags-connection-created" => ListEventTypeName.FlagsConnectionCreated,
                 "flags-connection-deleted" => ListEventTypeName.FlagsConnectionDeleted,
                 "flags-explorer-subscription" => ListEventTypeName.FlagsExplorerSubscription,
+                "flags-overrides-signed" => ListEventTypeName.FlagsOverridesSigned,
                 "flags-sdk-key" => ListEventTypeName.FlagsSdkKey,
                 "flags-sdk-key-added" => ListEventTypeName.FlagsSdkKeyAdded,
                 "flags-sdk-key-deleted" => ListEventTypeName.FlagsSdkKeyDeleted,
@@ -4245,12 +4286,19 @@ namespace Vercel
                 "messageboard-channel-created" => ListEventTypeName.MessageboardChannelCreated,
                 "messageboard-channel-updated" => ListEventTypeName.MessageboardChannelUpdated,
                 "messageboard-created" => ListEventTypeName.MessageboardCreated,
+                "messageboard-grant-created" => ListEventTypeName.MessageboardGrantCreated,
+                "messageboard-grant-revoked" => ListEventTypeName.MessageboardGrantRevoked,
+                "messageboard-grant-updated" => ListEventTypeName.MessageboardGrantUpdated,
                 "messageboard-private-channel-created" => ListEventTypeName.MessageboardPrivateChannelCreated,
                 "messageboard-private-channel-updated" => ListEventTypeName.MessageboardPrivateChannelUpdated,
                 "messageboard-private-created" => ListEventTypeName.MessageboardPrivateCreated,
+                "messageboard-private-grant-created" => ListEventTypeName.MessageboardPrivateGrantCreated,
+                "messageboard-private-grant-revoked" => ListEventTypeName.MessageboardPrivateGrantRevoked,
+                "messageboard-private-grant-updated" => ListEventTypeName.MessageboardPrivateGrantUpdated,
                 "messageboard-private-project-granted" => ListEventTypeName.MessageboardPrivateProjectGranted,
                 "messageboard-private-project-revoked" => ListEventTypeName.MessageboardPrivateProjectRevoked,
                 "messageboard-project-channel-created" => ListEventTypeName.MessageboardProjectChannelCreated,
+                "messageboard-project-created" => ListEventTypeName.MessageboardProjectCreated,
                 "messageboard-project-granted" => ListEventTypeName.MessageboardProjectGranted,
                 "messageboard-project-private-channel-created" => ListEventTypeName.MessageboardProjectPrivateChannelCreated,
                 "messageboard-project-revoked" => ListEventTypeName.MessageboardProjectRevoked,

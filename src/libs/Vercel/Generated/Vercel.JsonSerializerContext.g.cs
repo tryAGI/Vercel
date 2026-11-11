@@ -173,6 +173,15 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.AutoSDKShared4d5a5876dd584f34ConnectConfigurationEnvId?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::Vercel.AutoSDKShared4d5a5876dd584f34DismissedToastValue, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared4d5a5876dd584f34ExpirationVariant1, global::Vercel.AutoSDKShared4d5a5876dd584f34ExpirationVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant1, global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant1, global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant1, global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1, global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant2>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKShared5461df8584cbc999Variant2LogHeaders?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant1, global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant2>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared6bb335e8fa392fa3PolicieVariant1, global::Vercel.AutoSDKShared6bb335e8fa392fa3PolicieVariant2, global::Vercel.AutoSDKShared6bb335e8fa392fa3PolicieVariant3>());
@@ -263,15 +272,6 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKSharedb4cb9cbf2561e851LogHeaders?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant1, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant2, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant3, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant4>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ConnectConfigurationEnvId?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::Vercel.AutoSDKSharedc1c2f92d02e0feb6DismissedToastValue, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ExpirationVariant1, global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ExpirationVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant1, global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ProtectionBypassVariant1, global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ProtectionBypassVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant1, global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant2>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedc30663411f76e3c9ExpirationVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9ExpirationVariant2>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2>());
@@ -2102,6 +2102,126 @@ namespace Vercel
 
                     || typeToConvert == typeof(global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant19Type?)
 
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ConnectConfigurationEnvId)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ConnectConfigurationEnvId?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34CronsDefinitionSource)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34CronsDefinitionSource?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34DismissedToastAction)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34DismissedToastAction?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34Framework)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34Framework?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant1Key)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant1Key?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant1Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant1Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant2Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant2Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2MitigateAction)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2MitigateAction?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34LastAliasRequestJobStatus)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34LastAliasRequestJobStatus?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34LastAliasRequestType)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34LastAliasRequestType?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34NodeVersion)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34NodeVersion?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34OidcTokenConfigIssuerMode)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34OidcTokenConfigIssuerMode?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34PassportDeploymentType)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34PassportDeploymentType?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34PasswordProtectionDeploymentType)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34PasswordProtectionDeploymentType?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant1Scope)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant1Scope?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant2Scope)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant2Scope?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SandboxFailoverRegion)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SandboxFailoverRegion?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SandboxRegion)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SandboxRegion?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ServiceFramework)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ServiceFramework?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ServiceServiceType)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ServiceServiceType?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SsoProtectionApril2026SecurityIncidentMigrationAppliedFrom)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SsoProtectionCve55182MigrationAppliedFrom)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SsoProtectionCve55182MigrationAppliedFrom?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SsoProtectionDeploymentType)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SsoProtectionDeploymentType?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34Tier)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34Tier?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TracingSamplingRuleDestination)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TracingSamplingRuleDestination?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TracingSamplingRuleEnv)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TracingSamplingRuleEnv?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1DeploymentType)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1DeploymentType?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1ProtectionMode)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1ProtectionMode?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant2DeploymentType)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant2DeploymentType?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34UsageStatusKind)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34UsageStatusKind?)
+
                     || typeToConvert == typeof(global::Vercel.AutoSDKShared4f336dbaf7392e8fMode)
 
                     || typeToConvert == typeof(global::Vercel.AutoSDKShared4f336dbaf7392e8fMode?)
@@ -2973,126 +3093,6 @@ namespace Vercel
                     || typeToConvert == typeof(global::Vercel.AutoSDKSharedc12640b06f1c9105CreateDeployments)
 
                     || typeToConvert == typeof(global::Vercel.AutoSDKSharedc12640b06f1c9105CreateDeployments?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ConnectConfigurationEnvId)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ConnectConfigurationEnvId?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6CronsDefinitionSource)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6CronsDefinitionSource?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6DismissedToastAction)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6DismissedToastAction?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6Framework)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6Framework?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant1Key)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant1Key?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant1Type)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant1Type?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant2Type)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant2Type?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2MitigateAction)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2MitigateAction?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6LastAliasRequestJobStatus)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6LastAliasRequestJobStatus?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6LastAliasRequestType)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6LastAliasRequestType?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6NodeVersion)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6NodeVersion?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6OidcTokenConfigIssuerMode)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6OidcTokenConfigIssuerMode?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6PassportDeploymentType)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6PassportDeploymentType?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6PasswordProtectionDeploymentType)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6PasswordProtectionDeploymentType?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ProtectionBypassVariant1Scope)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ProtectionBypassVariant1Scope?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ProtectionBypassVariant2Scope)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ProtectionBypassVariant2Scope?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SandboxFailoverRegion)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SandboxFailoverRegion?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SandboxRegion)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SandboxRegion?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ServiceFramework)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ServiceFramework?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ServiceServiceType)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ServiceServiceType?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionApril2026SecurityIncidentMigrationAppliedFrom)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionCve55182MigrationAppliedFrom)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionCve55182MigrationAppliedFrom?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionDeploymentType)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionDeploymentType?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6Tier)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6Tier?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TracingSamplingRuleDestination)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TracingSamplingRuleDestination?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TracingSamplingRuleEnv)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TracingSamplingRuleEnv?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant1DeploymentType)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant1DeploymentType?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant1ProtectionMode)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant1ProtectionMode?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant2DeploymentType)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant2DeploymentType?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6UsageStatusKind)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6UsageStatusKind?)
 
                     || typeToConvert == typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9Framework)
 
@@ -11383,6 +11383,306 @@ namespace Vercel
                     return new global::Vercel.JsonConverters.AutoSDKShared4cd5b795d6ac66fcVariant19TypeNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ConnectConfigurationEnvId))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34ConnectConfigurationEnvIdJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ConnectConfigurationEnvId?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34ConnectConfigurationEnvIdNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34CronsDefinitionSource))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34CronsDefinitionSourceJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34CronsDefinitionSource?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34CronsDefinitionSourceNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34DismissedToastAction))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34DismissedToastActionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34DismissedToastAction?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34DismissedToastActionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34Framework))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34FrameworkJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34Framework?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34FrameworkNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant1Key))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant1KeyJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant1Key?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant1KeyNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant1Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant1Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant2Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant2Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2MitigateAction))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2MitigateActionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2MitigateAction?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2MitigateActionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34LastAliasRequestJobStatus))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34LastAliasRequestJobStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34LastAliasRequestJobStatus?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34LastAliasRequestJobStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34LastAliasRequestType))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34LastAliasRequestTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34LastAliasRequestType?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34LastAliasRequestTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34NodeVersion))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34NodeVersionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34NodeVersion?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34NodeVersionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34OidcTokenConfigIssuerMode))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34OidcTokenConfigIssuerModeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34OidcTokenConfigIssuerMode?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34OidcTokenConfigIssuerModeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34PassportDeploymentType))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34PassportDeploymentTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34PassportDeploymentType?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34PassportDeploymentTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34PasswordProtectionDeploymentType))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34PasswordProtectionDeploymentTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34PasswordProtectionDeploymentType?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34PasswordProtectionDeploymentTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant1Scope))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant1ScopeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant1Scope?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant1ScopeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant2Scope))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant2ScopeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant2Scope?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant2ScopeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SandboxFailoverRegion))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34SandboxFailoverRegionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SandboxFailoverRegion?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34SandboxFailoverRegionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SandboxRegion))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34SandboxRegionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SandboxRegion?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34SandboxRegionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ServiceFramework))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34ServiceFrameworkJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ServiceFramework?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34ServiceFrameworkNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ServiceServiceType))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34ServiceServiceTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34ServiceServiceType?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34ServiceServiceTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SsoProtectionApril2026SecurityIncidentMigrationAppliedFrom))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34SsoProtectionApril2026SecurityIncidentMigrationAppliedFromJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34SsoProtectionApril2026SecurityIncidentMigrationAppliedFromNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SsoProtectionCve55182MigrationAppliedFrom))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34SsoProtectionCve55182MigrationAppliedFromJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SsoProtectionCve55182MigrationAppliedFrom?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34SsoProtectionCve55182MigrationAppliedFromNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SsoProtectionDeploymentType))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34SsoProtectionDeploymentTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34SsoProtectionDeploymentType?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34SsoProtectionDeploymentTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34Tier))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34TierJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34Tier?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34TierNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TracingSamplingRuleDestination))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34TracingSamplingRuleDestinationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TracingSamplingRuleDestination?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34TracingSamplingRuleDestinationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TracingSamplingRuleEnv))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34TracingSamplingRuleEnvJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TracingSamplingRuleEnv?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34TracingSamplingRuleEnvNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1DeploymentType))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1DeploymentTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1DeploymentType?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1DeploymentTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1ProtectionMode))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1ProtectionModeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1ProtectionMode?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1ProtectionModeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant2DeploymentType))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant2DeploymentTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant2DeploymentType?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant2DeploymentTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34UsageStatusKind))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34UsageStatusKindJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKShared4d5a5876dd584f34UsageStatusKind?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKShared4d5a5876dd584f34UsageStatusKindNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::Vercel.AutoSDKShared4f336dbaf7392e8fMode))
                 {
                     return new global::Vercel.JsonConverters.AutoSDKShared4f336dbaf7392e8fModeJsonConverter();
@@ -13561,306 +13861,6 @@ namespace Vercel
                 if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc12640b06f1c9105CreateDeployments?))
                 {
                     return new global::Vercel.JsonConverters.AutoSDKSharedc12640b06f1c9105CreateDeploymentsNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ConnectConfigurationEnvId))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6ConnectConfigurationEnvIdJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ConnectConfigurationEnvId?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6ConnectConfigurationEnvIdNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6CronsDefinitionSource))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6CronsDefinitionSourceJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6CronsDefinitionSource?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6CronsDefinitionSourceNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6DismissedToastAction))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6DismissedToastActionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6DismissedToastAction?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6DismissedToastActionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6Framework))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6FrameworkJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6Framework?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6FrameworkNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant1Key))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant1KeyJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant1Key?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant1KeyNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant1Type))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant1TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant1Type?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant1TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant2Type))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant2TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant2Type?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2HaVariant2TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2MitigateAction))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2MitigateActionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2MitigateAction?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6InternalRouteVariant2MitigateActionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6LastAliasRequestJobStatus))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6LastAliasRequestJobStatusJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6LastAliasRequestJobStatus?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6LastAliasRequestJobStatusNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6LastAliasRequestType))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6LastAliasRequestTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6LastAliasRequestType?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6LastAliasRequestTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6NodeVersion))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6NodeVersionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6NodeVersion?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6NodeVersionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6OidcTokenConfigIssuerMode))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6OidcTokenConfigIssuerModeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6OidcTokenConfigIssuerMode?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6OidcTokenConfigIssuerModeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6PassportDeploymentType))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6PassportDeploymentTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6PassportDeploymentType?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6PassportDeploymentTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6PasswordProtectionDeploymentType))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6PasswordProtectionDeploymentTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6PasswordProtectionDeploymentType?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6PasswordProtectionDeploymentTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ProtectionBypassVariant1Scope))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6ProtectionBypassVariant1ScopeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ProtectionBypassVariant1Scope?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6ProtectionBypassVariant1ScopeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ProtectionBypassVariant2Scope))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6ProtectionBypassVariant2ScopeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ProtectionBypassVariant2Scope?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6ProtectionBypassVariant2ScopeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SandboxFailoverRegion))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6SandboxFailoverRegionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SandboxFailoverRegion?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6SandboxFailoverRegionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SandboxRegion))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6SandboxRegionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SandboxRegion?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6SandboxRegionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ServiceFramework))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6ServiceFrameworkJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ServiceFramework?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6ServiceFrameworkNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ServiceServiceType))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6ServiceServiceTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6ServiceServiceType?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6ServiceServiceTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionApril2026SecurityIncidentMigrationAppliedFrom))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionApril2026SecurityIncidentMigrationAppliedFromJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionApril2026SecurityIncidentMigrationAppliedFromNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionCve55182MigrationAppliedFrom))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionCve55182MigrationAppliedFromJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionCve55182MigrationAppliedFrom?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionCve55182MigrationAppliedFromNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionDeploymentType))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionDeploymentTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionDeploymentType?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6SsoProtectionDeploymentTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6Tier))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6TierJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6Tier?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6TierNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TracingSamplingRuleDestination))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6TracingSamplingRuleDestinationJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TracingSamplingRuleDestination?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6TracingSamplingRuleDestinationNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TracingSamplingRuleEnv))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6TracingSamplingRuleEnvJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TracingSamplingRuleEnv?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6TracingSamplingRuleEnvNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant1DeploymentType))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant1DeploymentTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant1DeploymentType?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant1DeploymentTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant1ProtectionMode))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant1ProtectionModeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant1ProtectionMode?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant1ProtectionModeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant2DeploymentType))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant2DeploymentTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant2DeploymentType?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6TrustedIpsVariant2DeploymentTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6UsageStatusKind))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6UsageStatusKindJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc1c2f92d02e0feb6UsageStatusKind?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKSharedc1c2f92d02e0feb6UsageStatusKindNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9Framework))

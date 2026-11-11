@@ -29,6 +29,12 @@ namespace Vercel
         public global::Vercel.AuthUserAccountUpdateContextOrganization? Organization { get; set; }
 
         /// <summary>
+        /// Orphans only: the team whose Directory Sync invite SSO sign-in redeems for a managed account once Update Account is complete.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("orphanSsoTeam")]
+        public global::Vercel.AuthUserAccountUpdateContextOrphanSsoTeam? OrphanSsoTeam { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("verifiedEmuDomains")]
@@ -50,6 +56,9 @@ namespace Vercel
         /// <param name="managedTeams"></param>
         /// <param name="verifiedEmuDomains"></param>
         /// <param name="organization"></param>
+        /// <param name="orphanSsoTeam">
+        /// Orphans only: the team whose Directory Sync invite SSO sign-in redeems for a managed account once Update Account is complete.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -57,11 +66,13 @@ namespace Vercel
             bool canOptOut,
             global::System.Collections.Generic.IList<global::Vercel.AuthUserAccountUpdateContextManagedTeam> managedTeams,
             global::System.Collections.Generic.IList<string> verifiedEmuDomains,
-            global::Vercel.AuthUserAccountUpdateContextOrganization? organization)
+            global::Vercel.AuthUserAccountUpdateContextOrganization? organization,
+            global::Vercel.AuthUserAccountUpdateContextOrphanSsoTeam? orphanSsoTeam)
         {
             this.CanOptOut = canOptOut;
             this.ManagedTeams = managedTeams ?? throw new global::System.ArgumentNullException(nameof(managedTeams));
             this.Organization = organization;
+            this.OrphanSsoTeam = orphanSsoTeam;
             this.VerifiedEmuDomains = verifiedEmuDomains ?? throw new global::System.ArgumentNullException(nameof(verifiedEmuDomains));
         }
 
