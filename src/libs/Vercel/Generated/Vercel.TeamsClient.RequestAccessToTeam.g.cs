@@ -45,7 +45,7 @@ namespace Vercel
 
         /// <summary>
         /// Request access to a team<br/>
-        /// Request access to a team as a member. An owner has to approve the request. Only 100 users can request access to a team at the same time.
+        /// Request access to a team as a member. An owner has to approve the request. Only 100 users can request access to a team at the same time. Organization-directory access must be granted through the directory administrator.
         /// </summary>
         /// <param name="teamId">
         /// The unique team identifier<br/>
@@ -74,7 +74,7 @@ namespace Vercel
         }
         /// <summary>
         /// Request access to a team<br/>
-        /// Request access to a team as a member. An owner has to approve the request. Only 100 users can request access to a team at the same time.
+        /// Request access to a team as a member. An owner has to approve the request. Only 100 users can request access to a team at the same time. Organization-directory access must be granted through the directory administrator.
         /// </summary>
         /// <param name="teamId">
         /// The unique team identifier<br/>
@@ -674,7 +674,7 @@ namespace Vercel
         }
         /// <summary>
         /// Request access to a team<br/>
-        /// Request access to a team as a member. An owner has to approve the request. Only 100 users can request access to a team at the same time.
+        /// Request access to a team as a member. An owner has to approve the request. Only 100 users can request access to a team at the same time. Organization-directory access must be granted through the directory administrator.
         /// </summary>
         /// <param name="teamId">
         /// The unique team identifier<br/>
