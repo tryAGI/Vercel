@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Get access request status<br/>
-        /// Check the status of a join request. It'll respond with a 404 if the request has been declined. If no `userId` path segment was provided, this endpoint will instead return the status of the authenticated user.
+        /// Check the status of a join request. It'll respond with a 404 if the request has been declined or enabled directory reads suppress access. If no `userId` path segment was provided, this endpoint will instead return the status of the authenticated user.
         /// </summary>
         /// <param name="userId">
         /// The unique user identifier
@@ -25,7 +25,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Get access request status<br/>
-        /// Check the status of a join request. It'll respond with a 404 if the request has been declined. If no `userId` path segment was provided, this endpoint will instead return the status of the authenticated user.
+        /// Check the status of a join request. It'll respond with a 404 if the request has been declined or enabled directory reads suppress access. If no `userId` path segment was provided, this endpoint will instead return the status of the authenticated user.
         /// </summary>
         /// <param name="userId">
         /// The unique user identifier

@@ -276,6 +276,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiGatewaySystemCredentialFallbackOptOutToggled,
+        /// <summary>
+        ///
+        /// </summary>
         AiGatewayTranscriptsDefaultDisabled,
         /// <summary>
         ///
@@ -3181,6 +3185,7 @@ namespace Vercel
                 ListEventTypeName.AiGatewayRuleDeleted => "ai-gateway-rule-deleted",
                 ListEventTypeName.AiGatewayRuleUpdated => "ai-gateway-rule-updated",
                 ListEventTypeName.AiGatewayScopeBudgetUpdated => "ai-gateway-scope-budget-updated",
+                ListEventTypeName.AiGatewaySystemCredentialFallbackOptOutToggled => "ai-gateway-system-credential-fallback-opt-out-toggled",
                 ListEventTypeName.AiGatewayTranscriptsDefaultDisabled => "ai-gateway-transcripts-default-disabled",
                 ListEventTypeName.AiGatewayTranscriptsDefaultEnabled => "ai-gateway-transcripts-default-enabled",
                 ListEventTypeName.AiGatewayTranscriptsDisabled => "ai-gateway-transcripts-disabled",
@@ -3964,6 +3969,7 @@ namespace Vercel
                 "ai-gateway-rule-deleted" => ListEventTypeName.AiGatewayRuleDeleted,
                 "ai-gateway-rule-updated" => ListEventTypeName.AiGatewayRuleUpdated,
                 "ai-gateway-scope-budget-updated" => ListEventTypeName.AiGatewayScopeBudgetUpdated,
+                "ai-gateway-system-credential-fallback-opt-out-toggled" => ListEventTypeName.AiGatewaySystemCredentialFallbackOptOutToggled,
                 "ai-gateway-transcripts-default-disabled" => ListEventTypeName.AiGatewayTranscriptsDefaultDisabled,
                 "ai-gateway-transcripts-default-enabled" => ListEventTypeName.AiGatewayTranscriptsDefaultEnabled,
                 "ai-gateway-transcripts-disabled" => ListEventTypeName.AiGatewayTranscriptsDisabled,
