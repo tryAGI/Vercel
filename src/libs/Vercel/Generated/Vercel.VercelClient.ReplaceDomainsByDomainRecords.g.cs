@@ -27,11 +27,15 @@ namespace Vercel
             };
         partial void PrepareReplaceDomainsByDomainRecordsArguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string domain);
+            ref string domain,
+            ref string? teamId,
+            ref string? slug);
         partial void PrepareReplaceDomainsByDomainRecordsRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string domain);
+            string domain,
+            string? teamId,
+            string? slug);
         partial void ProcessReplaceDomainsByDomainRecordsResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -48,16 +52,26 @@ namespace Vercel
         /// The domain name<br/>
         /// Example: example.com
         /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.ReplaceDomainsByDomainRecordsResponse> ReplaceDomainsByDomainRecordsAsync(
             string domain,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await ReplaceDomainsByDomainRecordsAsResponseAsync(
                 domain: domain,
+                teamId: teamId,
+                slug: slug,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -71,11 +85,19 @@ namespace Vercel
         /// The domain name<br/>
         /// Example: example.com
         /// </param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.ReplaceDomainsByDomainRecordsResponse>> ReplaceDomainsByDomainRecordsAsResponseAsync(
             string domain,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -83,7 +105,9 @@ namespace Vercel
                 client: HttpClient);
             PrepareReplaceDomainsByDomainRecordsArguments(
                 httpClient: HttpClient,
-                domain: ref domain);
+                domain: ref domain,
+                teamId: ref teamId,
+                slug: ref slug);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
@@ -111,6 +135,10 @@ namespace Vercel
                             var __pathBuilder = new global::Vercel.PathBuilder(
                                 path: $"/domains/{domain}/records",
                                 baseUri: HttpClient.BaseAddress);
+                            __pathBuilder
+                                .AddOptionalParameter("teamId", teamId)
+                                .AddOptionalParameter("slug", slug)
+                                ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
@@ -151,7 +179,9 @@ namespace Vercel
                 PrepareReplaceDomainsByDomainRecordsRequest(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    domain: domain);
+                    domain: domain,
+                    teamId: teamId,
+                    slug: slug);
 
                 return __httpRequest;
             }

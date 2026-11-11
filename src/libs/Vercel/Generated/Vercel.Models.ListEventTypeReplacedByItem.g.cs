@@ -1115,6 +1115,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        FlagsOverridesSigned,
+        /// <summary>
+        ///
+        /// </summary>
         FlagsSdkKey,
         /// <summary>
         ///
@@ -1379,6 +1383,18 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        MessageboardGrantCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardGrantRevoked,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardGrantUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         MessageboardPrivateChannelCreated,
         /// <summary>
         ///
@@ -1391,6 +1407,18 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        MessageboardPrivateGrantCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardPrivateGrantRevoked,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardPrivateGrantUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         MessageboardPrivateProjectGranted,
         /// <summary>
         ///
@@ -1400,6 +1428,10 @@ namespace Vercel
         ///
         /// </summary>
         MessageboardProjectChannelCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardProjectCreated,
         /// <summary>
         ///
         /// </summary>
@@ -3394,6 +3426,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.FlagsConnectionCreated => "flags-connection-created",
                 ListEventTypeReplacedByItem.FlagsConnectionDeleted => "flags-connection-deleted",
                 ListEventTypeReplacedByItem.FlagsExplorerSubscription => "flags-explorer-subscription",
+                ListEventTypeReplacedByItem.FlagsOverridesSigned => "flags-overrides-signed",
                 ListEventTypeReplacedByItem.FlagsSdkKey => "flags-sdk-key",
                 ListEventTypeReplacedByItem.FlagsSdkKeyAdded => "flags-sdk-key-added",
                 ListEventTypeReplacedByItem.FlagsSdkKeyDeleted => "flags-sdk-key-deleted",
@@ -3460,12 +3493,19 @@ namespace Vercel
                 ListEventTypeReplacedByItem.MessageboardChannelCreated => "messageboard-channel-created",
                 ListEventTypeReplacedByItem.MessageboardChannelUpdated => "messageboard-channel-updated",
                 ListEventTypeReplacedByItem.MessageboardCreated => "messageboard-created",
+                ListEventTypeReplacedByItem.MessageboardGrantCreated => "messageboard-grant-created",
+                ListEventTypeReplacedByItem.MessageboardGrantRevoked => "messageboard-grant-revoked",
+                ListEventTypeReplacedByItem.MessageboardGrantUpdated => "messageboard-grant-updated",
                 ListEventTypeReplacedByItem.MessageboardPrivateChannelCreated => "messageboard-private-channel-created",
                 ListEventTypeReplacedByItem.MessageboardPrivateChannelUpdated => "messageboard-private-channel-updated",
                 ListEventTypeReplacedByItem.MessageboardPrivateCreated => "messageboard-private-created",
+                ListEventTypeReplacedByItem.MessageboardPrivateGrantCreated => "messageboard-private-grant-created",
+                ListEventTypeReplacedByItem.MessageboardPrivateGrantRevoked => "messageboard-private-grant-revoked",
+                ListEventTypeReplacedByItem.MessageboardPrivateGrantUpdated => "messageboard-private-grant-updated",
                 ListEventTypeReplacedByItem.MessageboardPrivateProjectGranted => "messageboard-private-project-granted",
                 ListEventTypeReplacedByItem.MessageboardPrivateProjectRevoked => "messageboard-private-project-revoked",
                 ListEventTypeReplacedByItem.MessageboardProjectChannelCreated => "messageboard-project-channel-created",
+                ListEventTypeReplacedByItem.MessageboardProjectCreated => "messageboard-project-created",
                 ListEventTypeReplacedByItem.MessageboardProjectGranted => "messageboard-project-granted",
                 ListEventTypeReplacedByItem.MessageboardProjectPrivateChannelCreated => "messageboard-project-private-channel-created",
                 ListEventTypeReplacedByItem.MessageboardProjectRevoked => "messageboard-project-revoked",
@@ -4178,6 +4218,7 @@ namespace Vercel
                 "flags-connection-created" => ListEventTypeReplacedByItem.FlagsConnectionCreated,
                 "flags-connection-deleted" => ListEventTypeReplacedByItem.FlagsConnectionDeleted,
                 "flags-explorer-subscription" => ListEventTypeReplacedByItem.FlagsExplorerSubscription,
+                "flags-overrides-signed" => ListEventTypeReplacedByItem.FlagsOverridesSigned,
                 "flags-sdk-key" => ListEventTypeReplacedByItem.FlagsSdkKey,
                 "flags-sdk-key-added" => ListEventTypeReplacedByItem.FlagsSdkKeyAdded,
                 "flags-sdk-key-deleted" => ListEventTypeReplacedByItem.FlagsSdkKeyDeleted,
@@ -4244,12 +4285,19 @@ namespace Vercel
                 "messageboard-channel-created" => ListEventTypeReplacedByItem.MessageboardChannelCreated,
                 "messageboard-channel-updated" => ListEventTypeReplacedByItem.MessageboardChannelUpdated,
                 "messageboard-created" => ListEventTypeReplacedByItem.MessageboardCreated,
+                "messageboard-grant-created" => ListEventTypeReplacedByItem.MessageboardGrantCreated,
+                "messageboard-grant-revoked" => ListEventTypeReplacedByItem.MessageboardGrantRevoked,
+                "messageboard-grant-updated" => ListEventTypeReplacedByItem.MessageboardGrantUpdated,
                 "messageboard-private-channel-created" => ListEventTypeReplacedByItem.MessageboardPrivateChannelCreated,
                 "messageboard-private-channel-updated" => ListEventTypeReplacedByItem.MessageboardPrivateChannelUpdated,
                 "messageboard-private-created" => ListEventTypeReplacedByItem.MessageboardPrivateCreated,
+                "messageboard-private-grant-created" => ListEventTypeReplacedByItem.MessageboardPrivateGrantCreated,
+                "messageboard-private-grant-revoked" => ListEventTypeReplacedByItem.MessageboardPrivateGrantRevoked,
+                "messageboard-private-grant-updated" => ListEventTypeReplacedByItem.MessageboardPrivateGrantUpdated,
                 "messageboard-private-project-granted" => ListEventTypeReplacedByItem.MessageboardPrivateProjectGranted,
                 "messageboard-private-project-revoked" => ListEventTypeReplacedByItem.MessageboardPrivateProjectRevoked,
                 "messageboard-project-channel-created" => ListEventTypeReplacedByItem.MessageboardProjectChannelCreated,
+                "messageboard-project-created" => ListEventTypeReplacedByItem.MessageboardProjectCreated,
                 "messageboard-project-granted" => ListEventTypeReplacedByItem.MessageboardProjectGranted,
                 "messageboard-project-private-channel-created" => ListEventTypeReplacedByItem.MessageboardProjectPrivateChannelCreated,
                 "messageboard-project-revoked" => ListEventTypeReplacedByItem.MessageboardProjectRevoked,

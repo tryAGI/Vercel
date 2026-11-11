@@ -1116,6 +1116,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        FlagsOverridesSigned,
+        /// <summary>
+        ///
+        /// </summary>
         FlagsSdkKey,
         /// <summary>
         ///
@@ -1380,6 +1384,18 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        MessageboardGrantCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardGrantRevoked,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardGrantUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         MessageboardPrivateChannelCreated,
         /// <summary>
         ///
@@ -1392,6 +1408,18 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        MessageboardPrivateGrantCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardPrivateGrantRevoked,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardPrivateGrantUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         MessageboardPrivateProjectGranted,
         /// <summary>
         ///
@@ -1401,6 +1429,10 @@ namespace Vercel
         ///
         /// </summary>
         MessageboardProjectChannelCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        MessageboardProjectCreated,
         /// <summary>
         ///
         /// </summary>
@@ -3395,6 +3427,7 @@ namespace Vercel
                 UserEventType.FlagsConnectionCreated => "flags-connection-created",
                 UserEventType.FlagsConnectionDeleted => "flags-connection-deleted",
                 UserEventType.FlagsExplorerSubscription => "flags-explorer-subscription",
+                UserEventType.FlagsOverridesSigned => "flags-overrides-signed",
                 UserEventType.FlagsSdkKey => "flags-sdk-key",
                 UserEventType.FlagsSdkKeyAdded => "flags-sdk-key-added",
                 UserEventType.FlagsSdkKeyDeleted => "flags-sdk-key-deleted",
@@ -3461,12 +3494,19 @@ namespace Vercel
                 UserEventType.MessageboardChannelCreated => "messageboard-channel-created",
                 UserEventType.MessageboardChannelUpdated => "messageboard-channel-updated",
                 UserEventType.MessageboardCreated => "messageboard-created",
+                UserEventType.MessageboardGrantCreated => "messageboard-grant-created",
+                UserEventType.MessageboardGrantRevoked => "messageboard-grant-revoked",
+                UserEventType.MessageboardGrantUpdated => "messageboard-grant-updated",
                 UserEventType.MessageboardPrivateChannelCreated => "messageboard-private-channel-created",
                 UserEventType.MessageboardPrivateChannelUpdated => "messageboard-private-channel-updated",
                 UserEventType.MessageboardPrivateCreated => "messageboard-private-created",
+                UserEventType.MessageboardPrivateGrantCreated => "messageboard-private-grant-created",
+                UserEventType.MessageboardPrivateGrantRevoked => "messageboard-private-grant-revoked",
+                UserEventType.MessageboardPrivateGrantUpdated => "messageboard-private-grant-updated",
                 UserEventType.MessageboardPrivateProjectGranted => "messageboard-private-project-granted",
                 UserEventType.MessageboardPrivateProjectRevoked => "messageboard-private-project-revoked",
                 UserEventType.MessageboardProjectChannelCreated => "messageboard-project-channel-created",
+                UserEventType.MessageboardProjectCreated => "messageboard-project-created",
                 UserEventType.MessageboardProjectGranted => "messageboard-project-granted",
                 UserEventType.MessageboardProjectPrivateChannelCreated => "messageboard-project-private-channel-created",
                 UserEventType.MessageboardProjectRevoked => "messageboard-project-revoked",
@@ -4179,6 +4219,7 @@ namespace Vercel
                 "flags-connection-created" => UserEventType.FlagsConnectionCreated,
                 "flags-connection-deleted" => UserEventType.FlagsConnectionDeleted,
                 "flags-explorer-subscription" => UserEventType.FlagsExplorerSubscription,
+                "flags-overrides-signed" => UserEventType.FlagsOverridesSigned,
                 "flags-sdk-key" => UserEventType.FlagsSdkKey,
                 "flags-sdk-key-added" => UserEventType.FlagsSdkKeyAdded,
                 "flags-sdk-key-deleted" => UserEventType.FlagsSdkKeyDeleted,
@@ -4245,12 +4286,19 @@ namespace Vercel
                 "messageboard-channel-created" => UserEventType.MessageboardChannelCreated,
                 "messageboard-channel-updated" => UserEventType.MessageboardChannelUpdated,
                 "messageboard-created" => UserEventType.MessageboardCreated,
+                "messageboard-grant-created" => UserEventType.MessageboardGrantCreated,
+                "messageboard-grant-revoked" => UserEventType.MessageboardGrantRevoked,
+                "messageboard-grant-updated" => UserEventType.MessageboardGrantUpdated,
                 "messageboard-private-channel-created" => UserEventType.MessageboardPrivateChannelCreated,
                 "messageboard-private-channel-updated" => UserEventType.MessageboardPrivateChannelUpdated,
                 "messageboard-private-created" => UserEventType.MessageboardPrivateCreated,
+                "messageboard-private-grant-created" => UserEventType.MessageboardPrivateGrantCreated,
+                "messageboard-private-grant-revoked" => UserEventType.MessageboardPrivateGrantRevoked,
+                "messageboard-private-grant-updated" => UserEventType.MessageboardPrivateGrantUpdated,
                 "messageboard-private-project-granted" => UserEventType.MessageboardPrivateProjectGranted,
                 "messageboard-private-project-revoked" => UserEventType.MessageboardPrivateProjectRevoked,
                 "messageboard-project-channel-created" => UserEventType.MessageboardProjectChannelCreated,
+                "messageboard-project-created" => UserEventType.MessageboardProjectCreated,
                 "messageboard-project-granted" => UserEventType.MessageboardProjectGranted,
                 "messageboard-project-private-channel-created" => UserEventType.MessageboardProjectPrivateChannelCreated,
                 "messageboard-project-revoked" => UserEventType.MessageboardProjectRevoked,
