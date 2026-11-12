@@ -6046,47 +6046,133 @@
                                 {
                                   "properties": {
                                     "options": {
-                                      "properties": {
-                                        "fromPlan": {
+                                      "oneOf": [
+                                        {
                                           "properties": {
-                                            "additionalSubscriptions": {
-                                              "items": {
-                                                "properties": {
-                                                  "currentCycleEndDate": {
-                                                    "type": "string",
-                                                    "description": "The end of the additional source subscription billing cycle"
+                                            "fromPlan": {
+                                              "properties": {
+                                                "additionalSubscriptions": {
+                                                  "items": {
+                                                    "properties": {
+                                                      "currentCycleEndDate": {
+                                                        "type": "string",
+                                                        "description": "The end of the additional source subscription billing cycle"
+                                                      },
+                                                      "orbSubscriptionId": {
+                                                        "type": "string",
+                                                        "description": "The additional source Orb subscription ID"
+                                                      },
+                                                      "planId": {
+                                                        "type": "string",
+                                                        "description": "The ID of the plan assigned to the additional source subscription"
+                                                      }
+                                                    },
+                                                    "required": [
+                                                      "currentCycleEndDate",
+                                                      "orbSubscriptionId",
+                                                      "planId"
+                                                    ],
+                                                    "type": "object",
+                                                    "description": "Additional source subscriptions replaced by this purchase"
                                                   },
-                                                  "orbSubscriptionId": {
-                                                    "type": "string",
-                                                    "description": "The additional source Orb subscription ID"
-                                                  },
-                                                  "planId": {
-                                                    "type": "string",
-                                                    "description": "The ID of the plan assigned to the additional source subscription"
-                                                  }
+                                                  "type": "array",
+                                                  "description": "Additional source subscriptions replaced by this purchase"
                                                 },
-                                                "required": [
-                                                  "currentCycleEndDate",
-                                                  "orbSubscriptionId",
-                                                  "planId"
-                                                ],
-                                                "type": "object",
-                                                "description": "Additional source subscriptions replaced by this purchase"
+                                                "currentCycleEndDate": {
+                                                  "type": "string",
+                                                  "description": "The end of the current plan billing cycle"
+                                                },
+                                                "orbSubscriptionId": {
+                                                  "type": "string",
+                                                  "description": "The Orb subscription ID currently active for the owner on the source plan"
+                                                },
+                                                "planId": {
+                                                  "type": "string",
+                                                  "description": "The ID of the plan currently assigned"
+                                                },
+                                                "planItemPrices": {
+                                                  "items": {
+                                                    "properties": {
+                                                      "planItemId": {
+                                                        "type": "string",
+                                                        "description": "The ID of the plan item to set the price for"
+                                                      },
+                                                      "price": {
+                                                        "properties": {
+                                                          "model": {
+                                                            "type": "string",
+                                                            "enum": [
+                                                              "unit"
+                                                            ]
+                                                          },
+                                                          "unitAmount": {
+                                                            "type": "string",
+                                                            "description": "The non-negative per-unit USD amount, with at most two decimal places"
+                                                          }
+                                                        },
+                                                        "required": [
+                                                          "model",
+                                                          "unitAmount"
+                                                        ],
+                                                        "type": "object",
+                                                        "description": "The absolute price that replaces the plan item price, after any rate variant"
+                                                      }
+                                                    },
+                                                    "required": [
+                                                      "planItemId",
+                                                      "price"
+                                                    ],
+                                                    "type": "object",
+                                                    "description": "The current plan item price overrides"
+                                                  },
+                                                  "type": "array",
+                                                  "description": "The current plan item price overrides"
+                                                },
+                                                "planItemQuantities": {
+                                                  "items": {
+                                                    "properties": {
+                                                      "planItemId": {
+                                                        "type": "string",
+                                                        "description": "The ID of the current plan item to set the quantity for"
+                                                      },
+                                                      "quantity": {
+                                                        "type": "number",
+                                                        "description": "The nonnegative integer quantity for the current plan item"
+                                                      },
+                                                      "resourceIds": {
+                                                        "items": {
+                                                          "type": "string"
+                                                        },
+                                                        "type": "array",
+                                                        "description": "The resource IDs associated with the current plan item quantity"
+                                                      }
+                                                    },
+                                                    "required": [
+                                                      "planItemId",
+                                                      "quantity"
+                                                    ],
+                                                    "type": "object",
+                                                    "description": "The current plan item quantities"
+                                                  },
+                                                  "type": "array",
+                                                  "description": "The current plan item quantities"
+                                                },
+                                                "rateVariantKey": {
+                                                  "type": "string",
+                                                  "description": "The rate variant currently assigned"
+                                                }
                                               },
-                                              "type": "array",
-                                              "description": "Additional source subscriptions replaced by this purchase"
-                                            },
-                                            "currentCycleEndDate": {
-                                              "type": "string",
-                                              "description": "The end of the current plan billing cycle"
-                                            },
-                                            "orbSubscriptionId": {
-                                              "type": "string",
-                                              "description": "The Orb subscription ID currently active for the owner on the source plan"
+                                              "required": [
+                                                "currentCycleEndDate",
+                                                "orbSubscriptionId",
+                                                "planId"
+                                              ],
+                                              "type": "object",
+                                              "description": "The current plan being replaced by this purchase"
                                             },
                                             "planId": {
                                               "type": "string",
-                                              "description": "The ID of the plan currently assigned"
+                                              "description": "The ID of the plan to subscribe to"
                                             },
                                             "planItemPrices": {
                                               "items": {
@@ -6121,28 +6207,28 @@
                                                   "price"
                                                 ],
                                                 "type": "object",
-                                                "description": "The current plan item price overrides"
+                                                "description": "The plan item prices to set for the subscription, independent of quantities"
                                               },
                                               "type": "array",
-                                              "description": "The current plan item price overrides"
+                                              "description": "The plan item prices to set for the subscription, independent of quantities"
                                             },
                                             "planItemQuantities": {
                                               "items": {
                                                 "properties": {
                                                   "planItemId": {
                                                     "type": "string",
-                                                    "description": "The ID of the current plan item to set the quantity for"
+                                                    "description": "The ID of the plan item to set the quantity for"
                                                   },
                                                   "quantity": {
                                                     "type": "number",
-                                                    "description": "The nonnegative integer quantity for the current plan item"
+                                                    "description": "The nonnegative integer quantity for the plan item"
                                                   },
                                                   "resourceIds": {
                                                     "items": {
                                                       "type": "string"
                                                     },
                                                     "type": "array",
-                                                    "description": "The resource IDs associated with the current plan item quantity"
+                                                    "description": "The resource IDs to associate with the plan item quantity"
                                                   }
                                                 },
                                                 "required": [
@@ -6150,105 +6236,99 @@
                                                   "quantity"
                                                 ],
                                                 "type": "object",
-                                                "description": "The current plan item quantities"
+                                                "description": "The plan item quantities to set for the subscription"
                                               },
                                               "type": "array",
-                                              "description": "The current plan item quantities"
+                                              "description": "The plan item quantities to set for the subscription"
                                             },
                                             "rateVariantKey": {
                                               "type": "string",
-                                              "description": "The rate variant currently assigned"
+                                              "description": "The rate variant key to apply to the subscription"
+                                            },
+                                            "transition": {
+                                              "properties": {
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "restart_cycle"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "type"
+                                              ],
+                                              "type": "object",
+                                              "description": "Replacement billing-cycle policy. Defaults to restart_cycle."
                                             }
                                           },
                                           "required": [
-                                            "currentCycleEndDate",
-                                            "orbSubscriptionId",
                                             "planId"
                                           ],
                                           "type": "object",
-                                          "description": "The current plan being replaced by this purchase"
+                                          "description": "Restart-cycle purchase options"
                                         },
-                                        "planId": {
-                                          "type": "string",
-                                          "description": "The ID of the plan to subscribe to"
-                                        },
-                                        "planItemPrices": {
-                                          "items": {
-                                            "properties": {
-                                              "planItemId": {
-                                                "type": "string",
-                                                "description": "The ID of the plan item to set the price for"
+                                        {
+                                          "properties": {
+                                            "fromPlan": {
+                                              "properties": {
+                                                "orbSubscriptionId": {
+                                                  "type": "string",
+                                                  "description": "The owned active source subscription recorded by Copper"
+                                                }
                                               },
-                                              "price": {
+                                              "required": [
+                                                "orbSubscriptionId"
+                                              ],
+                                              "type": "object"
+                                            },
+                                            "planId": {
+                                              "type": "string",
+                                              "description": "The destination plan"
+                                            },
+                                            "planItemQuantities": {
+                                              "items": {
                                                 "properties": {
-                                                  "model": {
-                                                    "type": "string",
-                                                    "enum": [
-                                                      "unit"
-                                                    ]
+                                                  "planItemId": {
+                                                    "type": "string"
                                                   },
-                                                  "unitAmount": {
-                                                    "type": "string",
-                                                    "description": "The non-negative per-unit USD amount, with at most two decimal places"
+                                                  "quantity": {
+                                                    "type": "number"
                                                   }
                                                 },
                                                 "required": [
-                                                  "model",
-                                                  "unitAmount"
+                                                  "planItemId",
+                                                  "quantity"
                                                 ],
                                                 "type": "object",
-                                                "description": "The absolute price that replaces the plan item price, after any rate variant"
-                                              }
-                                            },
-                                            "required": [
-                                              "planItemId",
-                                              "price"
-                                            ],
-                                            "type": "object",
-                                            "description": "The plan item prices to set for the subscription, independent of quantities"
-                                          },
-                                          "type": "array",
-                                          "description": "The plan item prices to set for the subscription, independent of quantities"
-                                        },
-                                        "planItemQuantities": {
-                                          "items": {
-                                            "properties": {
-                                              "planItemId": {
-                                                "type": "string",
-                                                "description": "The ID of the plan item to set the quantity for"
+                                                "description": "Destination-only licensed quantities; shared quantities come from Copper"
                                               },
-                                              "quantity": {
-                                                "type": "number",
-                                                "description": "The nonnegative integer quantity for the plan item"
-                                              },
-                                              "resourceIds": {
-                                                "items": {
-                                                  "type": "string"
-                                                },
-                                                "type": "array",
-                                                "description": "The resource IDs to associate with the plan item quantity"
-                                              }
+                                              "type": "array",
+                                              "description": "Destination-only licensed quantities; shared quantities come from Copper"
                                             },
-                                            "required": [
-                                              "planItemId",
-                                              "quantity"
-                                            ],
-                                            "type": "object",
-                                            "description": "The plan item quantities to set for the subscription"
+                                            "transition": {
+                                              "properties": {
+                                                "type": {
+                                                  "type": "string",
+                                                  "enum": [
+                                                    "preserve_source_cycle"
+                                                  ]
+                                                }
+                                              },
+                                              "required": [
+                                                "type"
+                                              ],
+                                              "type": "object"
+                                            }
                                           },
-                                          "type": "array",
-                                          "description": "The plan item quantities to set for the subscription"
-                                        },
-                                        "rateVariantKey": {
-                                          "type": "string",
-                                          "description": "The rate variant key to apply to the subscription"
+                                          "required": [
+                                            "fromPlan",
+                                            "planId",
+                                            "transition"
+                                          ],
+                                          "type": "object",
+                                          "description": "Restart-cycle purchase options"
                                         }
-                                      },
-                                      "required": [
-                                        "planId"
-                                      ],
-                                      "type": "object",
-                                      "description": "Purchase configuration specific options"
+                                      ]
                                     },
                                     "output": {
                                       "properties": {
@@ -29320,7 +29400,7 @@
                       "type": "array"
                     },
                     {
-                      "$ref": "#/components/schemas/AutoSDKShared75ce2a6cc9b78675"
+                      "$ref": "#/components/schemas/AutoSDKSharedf4f6de8967844f78"
                     }
                   ]
                 }
@@ -29568,7 +29648,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared941c226a2733bfbb"
+                  "$ref": "#/components/schemas/AutoSDKSharedaf1cf971744a2ae1"
                 }
               }
             }
@@ -30044,7 +30124,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared75ce2a6cc9b78675"
+                  "$ref": "#/components/schemas/AutoSDKSharedf4f6de8967844f78"
                 }
               }
             }
@@ -30195,7 +30275,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared92580a598ccc210f"
+                  "$ref": "#/components/schemas/AutoSDKShared90103a1814ebf3a8"
                 }
               }
             }
@@ -30277,7 +30357,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared941c226a2733bfbb"
+                  "$ref": "#/components/schemas/AutoSDKSharedaf1cf971744a2ae1"
                 }
               }
             }
@@ -111090,6 +111170,19 @@
             "description": "A short description of the Team.",
             "example": "Our mission is to make cloud computing accessible to everyone."
           },
+          "directorySyncSource": {
+            "type": "string",
+            "enum": [
+              "none",
+              "organization",
+              "team"
+            ],
+            "description": "Directory Sync source, using existing local connection and organization authority rules."
+          },
+          "directorySyncType": {
+            "type": "string",
+            "description": "Provider type of the directory selected by directorySyncSource."
+          },
           "disableRepositoryDispatchEvents": {
             "type": "boolean",
             "enum": [
@@ -111683,6 +111776,7 @@
           "creatorId",
           "defaultDeploymentProtection",
           "description",
+          "directorySyncSource",
           "id",
           "limited",
           "name",
@@ -111706,6 +111800,19 @@
             "type": "number",
             "description": "UNIX timestamp (in milliseconds) when the Team was created.",
             "example": 1630748523395
+          },
+          "directorySyncSource": {
+            "type": "string",
+            "enum": [
+              "none",
+              "organization",
+              "team"
+            ],
+            "description": "Directory Sync source, using existing local connection and organization authority rules."
+          },
+          "directorySyncType": {
+            "type": "string",
+            "description": "Provider type of the directory selected by directorySyncSource."
           },
           "id": {
             "type": "string",
@@ -111867,6 +111974,7 @@
         "required": [
           "avatar",
           "createdAt",
+          "directorySyncSource",
           "id",
           "limited",
           "limitedBy",
@@ -116401,389 +116509,6 @@
           "$ref": "#/components/schemas/AutoSDKSharedbca3e7a986162538"
         },
         "type": "array"
-      },
-      "AutoSDKShared2bfc0b0e9e85f636": {
-        "properties": {
-          "createdAt": {
-            "type": "number"
-          },
-          "delivery": {
-            "$ref": "#/components/schemas/AutoSDKSharedfa633702cac2aa68"
-          },
-          "disabledAt": {
-            "type": "number"
-          },
-          "disabledBy": {
-            "type": "string"
-          },
-          "disabledReason": {
-            "type": "string",
-            "enum": [
-              "account-plan-downgrade",
-              "disabled-by-admin",
-              "disabled-by-owner",
-              "feature-not-available",
-              "limits-exceeded"
-            ]
-          },
-          "firstErrorTimestamp": {
-            "type": "number"
-          },
-          "id": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "ownerId": {
-            "type": "string"
-          },
-          "projectIds": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "sampling": {
-            "items": {
-              "properties": {
-                "env": {
-                  "type": "string",
-                  "enum": [
-                    "preview",
-                    "production"
-                  ]
-                },
-                "rate": {
-                  "type": "number"
-                },
-                "requestPath": {
-                  "type": "string"
-                },
-                "type": {
-                  "type": "string",
-                  "enum": [
-                    "head_sampling"
-                  ]
-                }
-              },
-              "required": [
-                "rate",
-                "type"
-              ],
-              "type": "object"
-            },
-            "type": "array"
-          },
-          "schemas": {
-            "properties": {
-              "ai_gateway": {
-                "type": "object"
-              },
-              "analytics": {
-                "type": "object"
-              },
-              "audit_log": {
-                "type": "object"
-              },
-              "connect": {
-                "type": "object"
-              },
-              "log": {
-                "type": "object"
-              },
-              "speed_insights": {
-                "type": "object"
-              },
-              "trace": {
-                "type": "object"
-              }
-            },
-            "type": "object"
-          },
-          "source": {
-            "oneOf": [
-              {
-                "properties": {
-                  "defaultFor": {
-                    "type": "string",
-                    "enum": [
-                      "eve-tracing",
-                      "nextjs-tracing"
-                    ],
-                    "description": "Informational marker for a system-owned default drain."
-                  },
-                  "kind": {
-                    "type": "string",
-                    "enum": [
-                      "self-served"
-                    ]
-                  }
-                },
-                "required": [
-                  "kind"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "externalResourceId": {
-                    "type": "string"
-                  },
-                  "integrationConfigurationId": {
-                    "type": "string"
-                  },
-                  "integrationId": {
-                    "type": "string"
-                  },
-                  "kind": {
-                    "type": "string",
-                    "enum": [
-                      "integration"
-                    ]
-                  },
-                  "resourceId": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "integrationConfigurationId",
-                  "integrationId",
-                  "kind"
-                ],
-                "type": "object"
-              }
-            ]
-          },
-          "status": {
-            "type": "string",
-            "enum": [
-              "disabled",
-              "enabled",
-              "errored"
-            ]
-          },
-          "teamId": {
-            "nullable": true,
-            "type": "string"
-          },
-          "updatedAt": {
-            "type": "number"
-          },
-          "deliveryStats": {
-            "properties": {
-              "attempts": {
-                "type": "number",
-                "description": "All delivery attempts in the window."
-              },
-              "failures": {
-                "type": "number",
-                "description": "Delivery attempts that did not succeed in the window."
-              },
-              "state": {
-                "type": "string",
-                "enum": [
-                  "failing",
-                  "healthy",
-                  "unknown"
-                ]
-              },
-              "window": {
-                "type": "string",
-                "enum": [
-                  "24h"
-                ]
-              }
-            },
-            "required": [
-              "attempts",
-              "failures",
-              "state",
-              "window"
-            ],
-            "type": "object",
-            "description": "Delivery health of a drain over the last 24 hours: `failing` when more than 5 delivery attempts and at least 1% of all attempts did not succeed, `healthy` otherwise, and `unknown` when there were no attempts or the stats could not be loaded."
-          },
-          "filterV2": {
-            "properties": {
-              "filter": {
-                "oneOf": [
-                  {
-                    "properties": {
-                      "deployment": {
-                        "properties": {
-                          "environments": {
-                            "items": {
-                              "type": "string",
-                              "enum": [
-                                "preview",
-                                "production"
-                              ]
-                            },
-                            "type": "array"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "log": {
-                        "properties": {
-                          "legacy_excludeCachedStaticAssetLogs": {
-                            "type": "boolean",
-                            "enum": [
-                              false,
-                              true
-                            ]
-                          },
-                          "sources": {
-                            "items": {
-                              "type": "string",
-                              "enum": [
-                                "build",
-                                "edge",
-                                "external",
-                                "firewall",
-                                "lambda",
-                                "redirect",
-                                "static"
-                              ]
-                            },
-                            "type": "array"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "project": {
-                        "properties": {
-                          "ids": {
-                            "items": {
-                              "type": "string"
-                            },
-                            "type": "array"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "type": {
-                        "type": "string",
-                        "enum": [
-                          "basic"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "type"
-                    ],
-                    "type": "object"
-                  },
-                  {
-                    "properties": {
-                      "text": {
-                        "type": "string"
-                      },
-                      "type": {
-                        "type": "string",
-                        "enum": [
-                          "odata"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "text",
-                      "type"
-                    ],
-                    "type": "object"
-                  }
-                ]
-              },
-              "version": {
-                "type": "string",
-                "enum": [
-                  "v2"
-                ]
-              }
-            },
-            "required": [
-              "filter",
-              "version"
-            ],
-            "type": "object"
-          },
-          "integrationConfigurationUri": {
-            "type": "string"
-          },
-          "integrationIcon": {
-            "type": "string"
-          },
-          "integrationWebsite": {
-            "type": "string"
-          },
-          "projectAccess": {
-            "oneOf": [
-              {
-                "properties": {
-                  "access": {
-                    "type": "string",
-                    "enum": [
-                      "all"
-                    ]
-                  },
-                  "managedBy": {
-                    "type": "string",
-                    "enum": [
-                      "drain",
-                      "integration"
-                    ]
-                  }
-                },
-                "required": [
-                  "access",
-                  "managedBy"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "access": {
-                    "type": "string",
-                    "enum": [
-                      "some"
-                    ]
-                  },
-                  "projectIds": {
-                    "items": {
-                      "type": "string"
-                    },
-                    "type": "array"
-                  },
-                  "managedBy": {
-                    "type": "string",
-                    "enum": [
-                      "drain",
-                      "integration"
-                    ]
-                  }
-                },
-                "required": [
-                  "access",
-                  "managedBy",
-                  "projectIds"
-                ],
-                "type": "object"
-              }
-            ]
-          }
-        },
-        "required": [
-          "createdAt",
-          "delivery",
-          "id",
-          "name",
-          "ownerId",
-          "schemas",
-          "source",
-          "updatedAt"
-        ],
-        "type": "object"
       },
       "AutoSDKShared2c06e7f88512c8b8": {
         "properties": {
@@ -122020,16 +121745,6 @@
           }
         }
       },
-      "AutoSDKShared50f3542265814add": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/AutoSDKSharedc991458598e3986a"
-          },
-          {
-            "$ref": "#/components/schemas/AutoSDKShared8f57dc3c0d3f87ad"
-          }
-        ]
-      },
       "AutoSDKShared53a3c7ee42f9c50b": {
         "items": {
           "$ref": "#/components/schemas/AutoSDKSharedab64e9622c80dc17"
@@ -123825,17 +123540,6 @@
         },
         "type": "array"
       },
-      "AutoSDKShared75ce2a6cc9b78675": {
-        "properties": {
-          "drains": {
-            "$ref": "#/components/schemas/AutoSDKShared50f3542265814add"
-          }
-        },
-        "required": [
-          "drains"
-        ],
-        "type": "object"
-      },
       "AutoSDKShared76d2d4f0d6cc3e47": {
         "properties": {
           "active": {
@@ -125530,20 +125234,7 @@
         ],
         "type": "object"
       },
-      "AutoSDKShared8f57dc3c0d3f87ad": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKShared2bfc0b0e9e85f636"
-        },
-        "type": "array"
-      },
-      "AutoSDKShared9213b55e2a5cf1ce": {
-        "additionalProperties": {
-          "$ref": "#/components/schemas/AutoSDKSharedafa4bcd6bd044b8b"
-        },
-        "type": "object",
-        "description": "Function configuration scoped to this service."
-      },
-      "AutoSDKShared92580a598ccc210f": {
+      "AutoSDKShared90103a1814ebf3a8": {
         "properties": {
           "createdAt": {
             "type": "number"
@@ -125715,11 +125406,11 @@
             "properties": {
               "attempts": {
                 "type": "number",
-                "description": "All delivery attempts in the window."
+                "description": "Finished deliveries in the window: delivered plus finally failed."
               },
               "failures": {
                 "type": "number",
-                "description": "Delivery attempts that did not succeed in the window."
+                "description": "Deliveries that finally failed in the window, after any automatic retries."
               },
               "state": {
                 "type": "string",
@@ -125743,7 +125434,7 @@
               "window"
             ],
             "type": "object",
-            "description": "Delivery health of a drain over the last 24 hours: `failing` when more than 5 delivery attempts and at least 1% of all attempts did not succeed, `healthy` otherwise, and `unknown` when there were no attempts or the stats could not be loaded."
+            "description": "Delivery health of a drain over the last 24 hours, counted on finished deliveries (a delivery saved by an automatic retry counts once, as delivered): `failing` when more than 5 deliveries failed and they are at least 1% of all finished deliveries, `healthy` otherwise, and `unknown` when no delivery finished in the window."
           },
           "filterV2": {
             "properties": {
@@ -125862,6 +125553,13 @@
         ],
         "type": "object"
       },
+      "AutoSDKShared9213b55e2a5cf1ce": {
+        "additionalProperties": {
+          "$ref": "#/components/schemas/AutoSDKSharedafa4bcd6bd044b8b"
+        },
+        "type": "object",
+        "description": "Function configuration scoped to this service."
+      },
       "AutoSDKShared9296e9c5692fbba2": {
         "oneOf": [
           {
@@ -125869,16 +125567,6 @@
           },
           {
             "$ref": "#/components/schemas/AutoSDKShared650e942fd9ba5744"
-          }
-        ]
-      },
-      "AutoSDKShared941c226a2733bfbb": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/AutoSDKShared92580a598ccc210f"
-          },
-          {
-            "$ref": "#/components/schemas/AutoSDKShared2bfc0b0e9e85f636"
           }
         ]
       },
@@ -126950,6 +126638,389 @@
         "required": [
           "headers",
           "source"
+        ],
+        "type": "object"
+      },
+      "AutoSDKShared9f8c0585e20078fc": {
+        "properties": {
+          "createdAt": {
+            "type": "number"
+          },
+          "delivery": {
+            "$ref": "#/components/schemas/AutoSDKSharedfa633702cac2aa68"
+          },
+          "disabledAt": {
+            "type": "number"
+          },
+          "disabledBy": {
+            "type": "string"
+          },
+          "disabledReason": {
+            "type": "string",
+            "enum": [
+              "account-plan-downgrade",
+              "disabled-by-admin",
+              "disabled-by-owner",
+              "feature-not-available",
+              "limits-exceeded"
+            ]
+          },
+          "firstErrorTimestamp": {
+            "type": "number"
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "ownerId": {
+            "type": "string"
+          },
+          "projectIds": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "sampling": {
+            "items": {
+              "properties": {
+                "env": {
+                  "type": "string",
+                  "enum": [
+                    "preview",
+                    "production"
+                  ]
+                },
+                "rate": {
+                  "type": "number"
+                },
+                "requestPath": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "head_sampling"
+                  ]
+                }
+              },
+              "required": [
+                "rate",
+                "type"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "schemas": {
+            "properties": {
+              "ai_gateway": {
+                "type": "object"
+              },
+              "analytics": {
+                "type": "object"
+              },
+              "audit_log": {
+                "type": "object"
+              },
+              "connect": {
+                "type": "object"
+              },
+              "log": {
+                "type": "object"
+              },
+              "speed_insights": {
+                "type": "object"
+              },
+              "trace": {
+                "type": "object"
+              }
+            },
+            "type": "object"
+          },
+          "source": {
+            "oneOf": [
+              {
+                "properties": {
+                  "defaultFor": {
+                    "type": "string",
+                    "enum": [
+                      "eve-tracing",
+                      "nextjs-tracing"
+                    ],
+                    "description": "Informational marker for a system-owned default drain."
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "self-served"
+                    ]
+                  }
+                },
+                "required": [
+                  "kind"
+                ],
+                "type": "object"
+              },
+              {
+                "properties": {
+                  "externalResourceId": {
+                    "type": "string"
+                  },
+                  "integrationConfigurationId": {
+                    "type": "string"
+                  },
+                  "integrationId": {
+                    "type": "string"
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "integration"
+                    ]
+                  },
+                  "resourceId": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "integrationConfigurationId",
+                  "integrationId",
+                  "kind"
+                ],
+                "type": "object"
+              }
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "disabled",
+              "enabled",
+              "errored"
+            ]
+          },
+          "teamId": {
+            "nullable": true,
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "number"
+          },
+          "deliveryStats": {
+            "properties": {
+              "attempts": {
+                "type": "number",
+                "description": "Finished deliveries in the window: delivered plus finally failed."
+              },
+              "failures": {
+                "type": "number",
+                "description": "Deliveries that finally failed in the window, after any automatic retries."
+              },
+              "state": {
+                "type": "string",
+                "enum": [
+                  "failing",
+                  "healthy",
+                  "unknown"
+                ]
+              },
+              "window": {
+                "type": "string",
+                "enum": [
+                  "24h"
+                ]
+              }
+            },
+            "required": [
+              "attempts",
+              "failures",
+              "state",
+              "window"
+            ],
+            "type": "object",
+            "description": "Delivery health of a drain over the last 24 hours, counted on finished deliveries (a delivery saved by an automatic retry counts once, as delivered): `failing` when more than 5 deliveries failed and they are at least 1% of all finished deliveries, `healthy` otherwise, and `unknown` when no delivery finished in the window."
+          },
+          "filterV2": {
+            "properties": {
+              "filter": {
+                "oneOf": [
+                  {
+                    "properties": {
+                      "deployment": {
+                        "properties": {
+                          "environments": {
+                            "items": {
+                              "type": "string",
+                              "enum": [
+                                "preview",
+                                "production"
+                              ]
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "log": {
+                        "properties": {
+                          "legacy_excludeCachedStaticAssetLogs": {
+                            "type": "boolean",
+                            "enum": [
+                              false,
+                              true
+                            ]
+                          },
+                          "sources": {
+                            "items": {
+                              "type": "string",
+                              "enum": [
+                                "build",
+                                "edge",
+                                "external",
+                                "firewall",
+                                "lambda",
+                                "redirect",
+                                "static"
+                              ]
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "project": {
+                        "properties": {
+                          "ids": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "basic"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type"
+                    ],
+                    "type": "object"
+                  },
+                  {
+                    "properties": {
+                      "text": {
+                        "type": "string"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "odata"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "text",
+                      "type"
+                    ],
+                    "type": "object"
+                  }
+                ]
+              },
+              "version": {
+                "type": "string",
+                "enum": [
+                  "v2"
+                ]
+              }
+            },
+            "required": [
+              "filter",
+              "version"
+            ],
+            "type": "object"
+          },
+          "integrationConfigurationUri": {
+            "type": "string"
+          },
+          "integrationIcon": {
+            "type": "string"
+          },
+          "integrationWebsite": {
+            "type": "string"
+          },
+          "projectAccess": {
+            "oneOf": [
+              {
+                "properties": {
+                  "access": {
+                    "type": "string",
+                    "enum": [
+                      "all"
+                    ]
+                  },
+                  "managedBy": {
+                    "type": "string",
+                    "enum": [
+                      "drain",
+                      "integration"
+                    ]
+                  }
+                },
+                "required": [
+                  "access",
+                  "managedBy"
+                ],
+                "type": "object"
+              },
+              {
+                "properties": {
+                  "access": {
+                    "type": "string",
+                    "enum": [
+                      "some"
+                    ]
+                  },
+                  "projectIds": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array"
+                  },
+                  "managedBy": {
+                    "type": "string",
+                    "enum": [
+                      "drain",
+                      "integration"
+                    ]
+                  }
+                },
+                "required": [
+                  "access",
+                  "managedBy",
+                  "projectIds"
+                ],
+                "type": "object"
+              }
+            ]
+          }
+        },
+        "required": [
+          "createdAt",
+          "delivery",
+          "id",
+          "name",
+          "ownerId",
+          "schemas",
+          "source",
+          "updatedAt"
         ],
         "type": "object"
       },
@@ -128710,6 +128781,16 @@
         "type": "object",
         "description": "The route definition from @vercel/routing-utils."
       },
+      "AutoSDKSharedaf1cf971744a2ae1": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/AutoSDKShared90103a1814ebf3a8"
+          },
+          {
+            "$ref": "#/components/schemas/AutoSDKShared9f8c0585e20078fc"
+          }
+        ]
+      },
       "AutoSDKSharedaf3e034232cd964a": {
         "properties": {
           "default": {
@@ -130458,6 +130539,12 @@
           "fallthrough"
         ]
       },
+      "AutoSDKSharedbb8e91b17b7d885c": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKShared90103a1814ebf3a8"
+        },
+        "type": "array"
+      },
       "AutoSDKSharedbbf450e6ecd4e724": {
         "properties": {
           "buildMachineElasticLastUpdated": {
@@ -132152,6 +132239,12 @@
         },
         "type": "array"
       },
+      "AutoSDKSharedc7ea0f9c95e22568": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKShared9f8c0585e20078fc"
+        },
+        "type": "array"
+      },
       "AutoSDKSharedc97b32abf27d8b81": {
         "description": "Optional L7 match. When provided, the injection rule only applies to requests that satisfy every specified dimension. When multiple injection rules target the same domain they are evaluated in order and the first match wins; a rule without `match` matches any request and shadows later rules for the same domain.",
         "type": "object",
@@ -132260,12 +132353,6 @@
             }
           }
         }
-      },
-      "AutoSDKSharedc991458598e3986a": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKShared92580a598ccc210f"
-        },
-        "type": "array"
       },
       "AutoSDKSharedc9dedf1e16b35b81": {
         "nullable": true,
@@ -134255,6 +134342,16 @@
           "$ref": "#/components/schemas/AutoSDKSharedec1121c0746f62d9"
         },
         "type": "array"
+      },
+      "AutoSDKSharedd91738a37c191d9e": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/AutoSDKSharedbb8e91b17b7d885c"
+          },
+          {
+            "$ref": "#/components/schemas/AutoSDKSharedc7ea0f9c95e22568"
+          }
+        ]
       },
       "AutoSDKShareddb8a6ccf5b64d660": {
         "properties": {
@@ -137620,6 +137717,17 @@
             "type": "string"
           }
         },
+        "type": "object"
+      },
+      "AutoSDKSharedf4f6de8967844f78": {
+        "properties": {
+          "drains": {
+            "$ref": "#/components/schemas/AutoSDKSharedd91738a37c191d9e"
+          }
+        },
+        "required": [
+          "drains"
+        ],
         "type": "object"
       },
       "AutoSDKSharedf9b373cd1ded5c73": {

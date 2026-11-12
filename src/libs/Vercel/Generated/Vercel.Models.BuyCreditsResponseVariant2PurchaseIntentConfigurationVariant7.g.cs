@@ -9,11 +9,12 @@ namespace Vercel
     public sealed partial class BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7
     {
         /// <summary>
-        /// Purchase configuration specific options
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("options")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsVariant1, global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsVariant2>))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7Options Options { get; set; }
+        public required global::Vercel.OneOf<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsVariant1, global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsVariant2> Options { get; set; }
 
         /// <summary>
         ///
@@ -38,20 +39,18 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7" /> class.
         /// </summary>
-        /// <param name="options">
-        /// Purchase configuration specific options
-        /// </param>
+        /// <param name="options"></param>
         /// <param name="output"></param>
         /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7(
-            global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7Options options,
+            global::Vercel.OneOf<global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsVariant1, global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7OptionsVariant2> options,
             global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7Output output,
             global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant7Type type)
         {
-            this.Options = options ?? throw new global::System.ArgumentNullException(nameof(options));
+            this.Options = options;
             this.Output = output ?? throw new global::System.ArgumentNullException(nameof(output));
             this.Type = type;
         }
