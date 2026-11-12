@@ -117,6 +117,20 @@ namespace Vercel
         public string? Description { get; set; }
 
         /// <summary>
+        /// Directory Sync source, using existing local connection and organization authority rules.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("directorySyncSource")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.TeamDirectorySyncSourceJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.TeamDirectorySyncSource DirectorySyncSource { get; set; }
+
+        /// <summary>
+        /// Provider type of the directory selected by directorySyncSource.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("directorySyncType")]
+        public string? DirectorySyncType { get; set; }
+
+        /// <summary>
         /// Default for projects in the team. When `true`, projects in this team will not emit GitHub repository-dispatch events on deployment events unless the project explicitly overrides this setting via `project.gitProviderOptions.disableRepositoryDispatchEvents`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("disableRepositoryDispatchEvents")]
@@ -364,6 +378,9 @@ namespace Vercel
         /// <param name="defaultDeploymentProtection">
         /// Deployment protection defaults for new projects in this team. When no Vercel Authentication default is saved, `ssoProtection` shows Standard Protection. An explicitly saved `null` remains disabled. Organization policy may override the team default during project creation.
         /// </param>
+        /// <param name="directorySyncSource">
+        /// Directory Sync source, using existing local connection and organization authority rules.
+        /// </param>
         /// <param name="id">
         /// The Team's unique identifier.<br/>
         /// Example: team_nllPyCtREAqxxdyFKbbMDlxd
@@ -420,6 +437,9 @@ namespace Vercel
         /// <param name="description">
         /// A short description of the Team.<br/>
         /// Example: Our mission is to make cloud computing accessible to everyone.
+        /// </param>
+        /// <param name="directorySyncType">
+        /// Provider type of the directory selected by directorySyncSource.
         /// </param>
         /// <param name="disableRepositoryDispatchEvents">
         /// Default for projects in the team. When `true`, projects in this team will not emit GitHub repository-dispatch events on deployment events unless the project explicitly overrides this setting via `project.gitProviderOptions.disableRepositoryDispatchEvents`.
@@ -515,6 +535,7 @@ namespace Vercel
             double createdAt,
             string creatorId,
             global::Vercel.TeamDefaultDeploymentProtection defaultDeploymentProtection,
+            global::Vercel.TeamDirectorySyncSource directorySyncSource,
             string id,
             bool limited,
             string slug,
@@ -533,6 +554,7 @@ namespace Vercel
             global::Vercel.TeamDeploymentPolicy? deploymentPolicy,
             global::Vercel.TeamDeploymentStorageRollout? deploymentStorageRollout,
             string? description,
+            string? directorySyncType,
             bool? disableRepositoryDispatchEvents,
             global::Vercel.TeamDisjunctiveProductionSecretPolicy? disjunctiveProductionSecretPolicy,
             global::Vercel.TeamDpAccessRequestsMode? dpAccessRequestsMode,
@@ -578,6 +600,8 @@ namespace Vercel
             this.DeploymentPolicy = deploymentPolicy;
             this.DeploymentStorageRollout = deploymentStorageRollout;
             this.Description = description;
+            this.DirectorySyncSource = directorySyncSource;
+            this.DirectorySyncType = directorySyncType;
             this.DisableRepositoryDispatchEvents = disableRepositoryDispatchEvents;
             this.DisjunctiveProductionSecretPolicy = disjunctiveProductionSecretPolicy;
             this.DpAccessRequestsMode = dpAccessRequestsMode;

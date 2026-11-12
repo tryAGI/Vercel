@@ -24,6 +24,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.Team))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared39b84c098d962a66))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamLimited))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamLimitedDirectorySyncSource), TypeInfoPropertyName = "TeamLimitedDirectorySyncSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.TeamLimitedLimitedByItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamLimitedLimitedByItem), TypeInfoPropertyName = "TeamLimitedLimitedByItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamLimitedSaml))]
@@ -96,6 +97,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.InvitedTeamMemberRole?), TypeInfoPropertyName = "NullableInvitedTeamMemberRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.InvitedTeamMemberTeamPermission?), TypeInfoPropertyName = "NullableInvitedTeamMemberTeamPermission2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.InvitedTeamMemberTeamRole?), TypeInfoPropertyName = "NullableInvitedTeamMemberTeamRole2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamLimitedDirectorySyncSource?), TypeInfoPropertyName = "NullableTeamLimitedDirectorySyncSource2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamLimitedLimitedByItem?), TypeInfoPropertyName = "NullableTeamLimitedLimitedByItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamLimitedSamlConnectionSyncState?), TypeInfoPropertyName = "NullableTeamLimitedSamlConnectionSyncState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.TeamLimitedSamlDirectorySyncState?), TypeInfoPropertyName = "NullableTeamLimitedSamlDirectorySyncState2")]
@@ -206,6 +208,10 @@ namespace Vercel
 
                     || typeToConvert == typeof(global::Vercel.InvitedTeamMemberTeamRole?)
 
+                    || typeToConvert == typeof(global::Vercel.TeamLimitedDirectorySyncSource)
+
+                    || typeToConvert == typeof(global::Vercel.TeamLimitedDirectorySyncSource?)
+
                     || typeToConvert == typeof(global::Vercel.TeamLimitedLimitedByItem)
 
                     || typeToConvert == typeof(global::Vercel.TeamLimitedLimitedByItem?)
@@ -299,6 +305,16 @@ namespace Vercel
                 if (typeToConvert == typeof(global::Vercel.InvitedTeamMemberTeamRole?))
                 {
                     return new global::Vercel.JsonConverters.InvitedTeamMemberTeamRoleNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.TeamLimitedDirectorySyncSource))
+                {
+                    return new global::Vercel.JsonConverters.TeamLimitedDirectorySyncSourceJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.TeamLimitedDirectorySyncSource?))
+                {
+                    return new global::Vercel.JsonConverters.TeamLimitedDirectorySyncSourceNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Vercel.TeamLimitedLimitedByItem))

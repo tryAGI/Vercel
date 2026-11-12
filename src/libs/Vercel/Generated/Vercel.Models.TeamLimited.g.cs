@@ -26,6 +26,20 @@ namespace Vercel
         public required double CreatedAt { get; set; }
 
         /// <summary>
+        /// Directory Sync source, using existing local connection and organization authority rules.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("directorySyncSource")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.TeamLimitedDirectorySyncSourceJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.TeamLimitedDirectorySyncSource DirectorySyncSource { get; set; }
+
+        /// <summary>
+        /// Provider type of the directory selected by directorySyncSource.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("directorySyncType")]
+        public string? DirectorySyncType { get; set; }
+
+        /// <summary>
         /// The Team's unique identifier.<br/>
         /// Example: team_nllPyCtREAqxxdyFKbbMDlxd
         /// </summary>
@@ -106,6 +120,9 @@ namespace Vercel
         /// UNIX timestamp (in milliseconds) when the Team was created.<br/>
         /// Example: 1630748523395L
         /// </param>
+        /// <param name="directorySyncSource">
+        /// Directory Sync source, using existing local connection and organization authority rules.
+        /// </param>
         /// <param name="id">
         /// The Team's unique identifier.<br/>
         /// Example: team_nllPyCtREAqxxdyFKbbMDlxd
@@ -121,6 +138,9 @@ namespace Vercel
         /// <param name="avatar">
         /// The ID of the file used as avatar for this Team.<br/>
         /// Example: 6eb07268bcfadd309905ffb1579354084c24655c
+        /// </param>
+        /// <param name="directorySyncType">
+        /// Provider type of the directory selected by directorySyncSource.
         /// </param>
         /// <param name="membership">
         /// The membership of the authenticated User in relation to the Team.
@@ -145,11 +165,13 @@ namespace Vercel
 #endif
         public TeamLimited(
             double createdAt,
+            global::Vercel.TeamLimitedDirectorySyncSource directorySyncSource,
             string id,
             bool limited,
             global::System.Collections.Generic.IList<global::Vercel.TeamLimitedLimitedByItem> limitedBy,
             string slug,
             string? avatar,
+            string? directorySyncType,
             global::Vercel.AutoSDKShared39b84c098d962a66? membership,
             string? name,
             string? orgRootTeamId,
@@ -158,6 +180,8 @@ namespace Vercel
         {
             this.Avatar = avatar;
             this.CreatedAt = createdAt;
+            this.DirectorySyncSource = directorySyncSource;
+            this.DirectorySyncType = directorySyncType;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Limited = limited;
             this.LimitedBy = limitedBy ?? throw new global::System.ArgumentNullException(nameof(limitedBy));

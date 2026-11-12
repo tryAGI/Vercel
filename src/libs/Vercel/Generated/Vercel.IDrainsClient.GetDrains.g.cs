@@ -25,7 +25,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared75ce2a6cc9b78675> GetDrainsAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedf4f6de8967844f78> GetDrainsAsync(
             string? projectId = default,
             bool? includeMetadata = default,
             bool? includeDeliveryStats = default,
@@ -54,7 +54,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared75ce2a6cc9b78675>> GetDrainsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedf4f6de8967844f78>> GetDrainsAsResponseAsync(
             string? projectId = default,
             bool? includeMetadata = default,
             bool? includeDeliveryStats = default,
