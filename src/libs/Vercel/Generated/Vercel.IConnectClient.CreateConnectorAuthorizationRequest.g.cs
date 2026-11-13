@@ -9,6 +9,12 @@ namespace Vercel
         /// Create an authorization request for a connector and return the URL and verifier details needed to complete the flow.
         /// </summary>
         /// <param name="connector"></param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -17,6 +23,8 @@ namespace Vercel
             string connector,
 
             global::Vercel.CreateConnectorAuthorizationRequestRequest request,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -24,6 +32,12 @@ namespace Vercel
         /// Create an authorization request for a connector and return the URL and verifier details needed to complete the flow.
         /// </summary>
         /// <param name="connector"></param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -32,6 +46,8 @@ namespace Vercel
             string connector,
 
             global::Vercel.CreateConnectorAuthorizationRequestRequest request,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -39,6 +55,12 @@ namespace Vercel
         /// Create an authorization request for a connector and return the URL and verifier details needed to complete the flow.
         /// </summary>
         /// <param name="connector"></param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="subject"></param>
         /// <param name="installationId"></param>
         /// <param name="audience"></param>
@@ -57,6 +79,8 @@ namespace Vercel
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.CreateConnectorAuthorizationRequestResponse> CreateConnectorAuthorizationRequestAsync(
             string connector,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AnyOf<global::Vercel.CreateConnectorAuthorizationRequestRequestSubjectTypeApp, global::Vercel.CreateConnectorAuthorizationRequestRequestSubjectTypeUser, global::Vercel.CreateConnectorAuthorizationRequestRequestSubjectTypeJwtBearer, global::Vercel.CreateConnectorAuthorizationRequestRequestSubjectTypeToken, global::Vercel.CreateConnectorAuthorizationRequestRequestSubjectTypeOther>? subject = default,
             string? installationId = default,
             global::System.Collections.Generic.IList<string>? audience = default,

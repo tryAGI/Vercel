@@ -4,14 +4,14 @@
 namespace Vercel
 {
     /// <summary>
-    /// Principal kind.
+    ///
     /// </summary>
     public enum ConnectConnectorUpdatedByVariant1Type
     {
         /// <summary>
         ///
         /// </summary>
-        User,
+        App,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                ConnectConnectorUpdatedByVariant1Type.User => "user",
+                ConnectConnectorUpdatedByVariant1Type.App => "app",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "user" => ConnectConnectorUpdatedByVariant1Type.User,
+                "app" => ConnectConnectorUpdatedByVariant1Type.App,
                 _ => null,
             };
         }

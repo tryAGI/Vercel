@@ -49,8 +49,8 @@ namespace Vercel
         /// Principal that created the connector.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdBy")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ConnectConnectorCreatedByVariant1, global::Vercel.ConnectConnectorCreatedByVariant2>))]
-        public global::Vercel.OneOf<global::Vercel.ConnectConnectorCreatedByVariant1, global::Vercel.ConnectConnectorCreatedByVariant2>? CreatedBy { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ConnectConnectorCreatedByVariant1, global::Vercel.ConnectConnectorCreatedByVariant2, global::Vercel.ConnectConnectorCreatedByVariant3>))]
+        public global::Vercel.OneOf<global::Vercel.ConnectConnectorCreatedByVariant1, global::Vercel.ConnectConnectorCreatedByVariant2, global::Vercel.ConnectConnectorCreatedByVariant3>? CreatedBy { get; set; }
 
         /// <summary>
         /// How the connector row was originally created. New create paths stamp this explicitly; older rows may omit it.
@@ -259,8 +259,8 @@ namespace Vercel
         /// Principal that most recently updated the connector.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("updatedBy")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ConnectConnectorUpdatedByVariant1, global::Vercel.ConnectConnectorUpdatedByVariant2>))]
-        public global::Vercel.OneOf<global::Vercel.ConnectConnectorUpdatedByVariant1, global::Vercel.ConnectConnectorUpdatedByVariant2>? UpdatedBy { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ConnectConnectorUpdatedByVariant1, global::Vercel.ConnectConnectorUpdatedByVariant2, global::Vercel.ConnectConnectorUpdatedByVariant3>))]
+        public global::Vercel.OneOf<global::Vercel.ConnectConnectorUpdatedByVariant1, global::Vercel.ConnectConnectorUpdatedByVariant2, global::Vercel.ConnectConnectorUpdatedByVariant3>? UpdatedBy { get; set; }
 
         /// <summary>
         /// User-token capabilities and known grants for the connector.
@@ -429,7 +429,7 @@ namespace Vercel
             string? backgroundColor,
             string? clientUrl,
             string? connectionMethod,
-            global::Vercel.OneOf<global::Vercel.ConnectConnectorCreatedByVariant1, global::Vercel.ConnectConnectorCreatedByVariant2>? createdBy,
+            global::Vercel.OneOf<global::Vercel.ConnectConnectorCreatedByVariant1, global::Vercel.ConnectConnectorCreatedByVariant2, global::Vercel.ConnectConnectorCreatedByVariant3>? createdBy,
             global::Vercel.ConnectConnectorCreationMode? creationMode,
             string? defaultInstallationId,
             string? devsite,
@@ -448,7 +448,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.ConnectTriggerDestination>? triggerDestinations,
             global::Vercel.ConnectTriggerConfiguration? triggers,
             string? typeIcon,
-            global::Vercel.OneOf<global::Vercel.ConnectConnectorUpdatedByVariant1, global::Vercel.ConnectConnectorUpdatedByVariant2>? updatedBy,
+            global::Vercel.OneOf<global::Vercel.ConnectConnectorUpdatedByVariant1, global::Vercel.ConnectConnectorUpdatedByVariant2, global::Vercel.ConnectConnectorUpdatedByVariant3>? updatedBy,
             global::Vercel.ConnectConnectorUserTokens? userTokens,
             string? website)
         {

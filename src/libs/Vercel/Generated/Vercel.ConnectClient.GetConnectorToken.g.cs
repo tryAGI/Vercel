@@ -28,11 +28,15 @@ namespace Vercel
         partial void PrepareGetConnectorTokenArguments(
             global::System.Net.Http.HttpClient httpClient,
             ref string connector,
+            ref string? teamId,
+            ref string? slug,
             global::Vercel.GetConnectorTokenRequest request);
         partial void PrepareGetConnectorTokenRequest(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
             string connector,
+            string? teamId,
+            string? slug,
             global::Vercel.GetConnectorTokenRequest request);
         partial void ProcessGetConnectorTokenResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -48,6 +52,12 @@ namespace Vercel
         /// Get an access token for a connector identified by the path parameter and scoped to the requester.
         /// </summary>
         /// <param name="connector"></param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -56,6 +66,8 @@ namespace Vercel
             string connector,
 
             global::Vercel.GetConnectorTokenRequest request,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -63,6 +75,8 @@ namespace Vercel
                 connector: connector,
 
                 request: request,
+                teamId: teamId,
+                slug: slug,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -74,6 +88,12 @@ namespace Vercel
         /// Get an access token for a connector identified by the path parameter and scoped to the requester.
         /// </summary>
         /// <param name="connector"></param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -82,6 +102,8 @@ namespace Vercel
             string connector,
 
             global::Vercel.GetConnectorTokenRequest request,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -92,6 +114,8 @@ namespace Vercel
             PrepareGetConnectorTokenArguments(
                 httpClient: HttpClient,
                 connector: ref connector,
+                teamId: ref teamId,
+                slug: ref slug,
                 request: request);
 
 
@@ -120,6 +144,10 @@ namespace Vercel
                             var __pathBuilder = new global::Vercel.PathBuilder(
                                 path: $"/v1/connect/token/{connector}",
                                 baseUri: HttpClient.BaseAddress);
+                            __pathBuilder
+                                .AddOptionalParameter("teamId", teamId)
+                                .AddOptionalParameter("slug", slug)
+                                ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
@@ -167,6 +195,8 @@ namespace Vercel
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
                     connector: connector,
+                    teamId: teamId,
+                    slug: slug,
                     request: request);
 
                 return __httpRequest;
@@ -735,6 +765,12 @@ namespace Vercel
         /// Get an access token for a connector identified by the path parameter and scoped to the requester.
         /// </summary>
         /// <param name="connector"></param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="subject"></param>
         /// <param name="installationId"></param>
         /// <param name="audience"></param>
@@ -747,6 +783,8 @@ namespace Vercel
         /// <exception cref="global::System.InvalidOperationException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.GetConnectorTokenResponse> GetConnectorTokenAsync(
             string connector,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AnyOf<global::Vercel.GetConnectorTokenRequestSubjectTypeApp, global::Vercel.GetConnectorTokenRequestSubjectTypeUser, global::Vercel.GetConnectorTokenRequestSubjectTypeJwtBearer, global::Vercel.GetConnectorTokenRequestSubjectTypeToken, global::Vercel.GetConnectorTokenRequestSubjectTypeOther>? subject = default,
             string? installationId = default,
             global::System.Collections.Generic.IList<string>? audience = default,
@@ -770,6 +808,8 @@ namespace Vercel
 
             return await GetConnectorTokenAsync(
                 connector: connector,
+                teamId: teamId,
+                slug: slug,
                 request: __request,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken).ConfigureAwait(false);

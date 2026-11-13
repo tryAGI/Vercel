@@ -37,7 +37,7 @@ namespace Vercel
         public required global::Vercel.OrganizationTeamListItemDsyncMode DsyncMode { get; set; }
 
         /// <summary>
-        /// Present only when the request sets `includeMemberCount=true`. Number of members on the Team, including pending memberships. Excludes email invitations that do not have a membership record.
+        /// Present only when the request sets `includeMemberCount=true`. Number of members on the Team, including pending memberships and organization Directory Sync grants. Excludes suppressed memberships and email invitations that do not have a membership record.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("memberCount")]
         public double? MemberCount { get; set; }
@@ -119,7 +119,7 @@ namespace Vercel
         /// Billing profile of the organization link: how this team settles within the organization. This is not the team's billing.plan or planIteration. Links with `enterprise` billing participate in organization-level billing and usage rollups. This field is optional for legacy links that have no stored profile.
         /// </param>
         /// <param name="memberCount">
-        /// Present only when the request sets `includeMemberCount=true`. Number of members on the Team, including pending memberships. Excludes email invitations that do not have a membership record.
+        /// Present only when the request sets `includeMemberCount=true`. Number of members on the Team, including pending memberships and organization Directory Sync grants. Excludes suppressed memberships and email invitations that do not have a membership record.
         /// </param>
         /// <param name="name">
         /// The Team's display name, or `null` if none has been set.

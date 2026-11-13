@@ -1576,6 +1576,18 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        OrganizationDomainVerificationCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        OrganizationDomainVerificationDeleted,
+        /// <summary>
+        ///
+        /// </summary>
+        OrganizationDomainVerificationVerified,
+        /// <summary>
+        ///
+        /// </summary>
         OrganizationDsyncDelete,
         /// <summary>
         ///
@@ -2896,6 +2908,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        UserLandingPageUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         UserMfaChallengeFailed,
         /// <summary>
         ///
@@ -2997,6 +3013,14 @@ namespace Vercel
         ///
         /// </summary>
         V0MigrationSubscriptionCompleted,
+        /// <summary>
+        ///
+        /// </summary>
+        V0SharedPoolCreditLimitDefaultUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        V0SharedPoolCreditLimitUpdated,
         /// <summary>
         ///
         /// </summary>
@@ -3546,6 +3570,9 @@ namespace Vercel
                 UserEventType.OrganizationAvatarUpdate => "organization-avatar-update",
                 UserEventType.OrganizationCreate => "organization-create",
                 UserEventType.OrganizationDelete => "organization-delete",
+                UserEventType.OrganizationDomainVerificationCreated => "organization-domain-verification-created",
+                UserEventType.OrganizationDomainVerificationDeleted => "organization-domain-verification-deleted",
+                UserEventType.OrganizationDomainVerificationVerified => "organization-domain-verification-verified",
                 UserEventType.OrganizationDsyncDelete => "organization-dsync-delete",
                 UserEventType.OrganizationDsyncGroupDelete => "organization-dsync-group-delete",
                 UserEventType.OrganizationDsyncGroupUpsert => "organization-dsync-group-upsert",
@@ -3876,6 +3903,7 @@ namespace Vercel
                 UserEventType.UserEmuRecoveryEmailSent => "user-emu-recovery-email-sent",
                 UserEventType.UserEmuRecoveryInitiated => "user-emu-recovery-initiated",
                 UserEventType.UserEmuToggled => "user-emu-toggled",
+                UserEventType.UserLandingPageUpdated => "user-landing-page-updated",
                 UserEventType.UserMfaChallengeFailed => "user-mfa-challenge-failed",
                 UserEventType.UserMfaChallengeInitiated => "user-mfa-challenge-initiated",
                 UserEventType.UserMfaChallengeVerified => "user-mfa-challenge-verified",
@@ -3902,6 +3930,8 @@ namespace Vercel
                 UserEventType.V0ChatMessageSent => "v0-chat-message-sent",
                 UserEventType.V0MigrationPaymentConfirmed => "v0-migration-payment-confirmed",
                 UserEventType.V0MigrationSubscriptionCompleted => "v0-migration-subscription-completed",
+                UserEventType.V0SharedPoolCreditLimitDefaultUpdated => "v0-shared-pool-credit-limit-default-updated",
+                UserEventType.V0SharedPoolCreditLimitUpdated => "v0-shared-pool-credit-limit-updated",
                 UserEventType.VcrImageDeleted => "vcr-image-deleted",
                 UserEventType.VcrImagePushed => "vcr-image-pushed",
                 UserEventType.VcrRepositoryCreated => "vcr-repository-created",
@@ -4339,6 +4369,9 @@ namespace Vercel
                 "organization-avatar-update" => UserEventType.OrganizationAvatarUpdate,
                 "organization-create" => UserEventType.OrganizationCreate,
                 "organization-delete" => UserEventType.OrganizationDelete,
+                "organization-domain-verification-created" => UserEventType.OrganizationDomainVerificationCreated,
+                "organization-domain-verification-deleted" => UserEventType.OrganizationDomainVerificationDeleted,
+                "organization-domain-verification-verified" => UserEventType.OrganizationDomainVerificationVerified,
                 "organization-dsync-delete" => UserEventType.OrganizationDsyncDelete,
                 "organization-dsync-group-delete" => UserEventType.OrganizationDsyncGroupDelete,
                 "organization-dsync-group-upsert" => UserEventType.OrganizationDsyncGroupUpsert,
@@ -4669,6 +4702,7 @@ namespace Vercel
                 "user-emu-recovery-email-sent" => UserEventType.UserEmuRecoveryEmailSent,
                 "user-emu-recovery-initiated" => UserEventType.UserEmuRecoveryInitiated,
                 "user-emu-toggled" => UserEventType.UserEmuToggled,
+                "user-landing-page-updated" => UserEventType.UserLandingPageUpdated,
                 "user-mfa-challenge-failed" => UserEventType.UserMfaChallengeFailed,
                 "user-mfa-challenge-initiated" => UserEventType.UserMfaChallengeInitiated,
                 "user-mfa-challenge-verified" => UserEventType.UserMfaChallengeVerified,
@@ -4695,6 +4729,8 @@ namespace Vercel
                 "v0-chat-message-sent" => UserEventType.V0ChatMessageSent,
                 "v0-migration-payment-confirmed" => UserEventType.V0MigrationPaymentConfirmed,
                 "v0-migration-subscription-completed" => UserEventType.V0MigrationSubscriptionCompleted,
+                "v0-shared-pool-credit-limit-default-updated" => UserEventType.V0SharedPoolCreditLimitDefaultUpdated,
+                "v0-shared-pool-credit-limit-updated" => UserEventType.V0SharedPoolCreditLimitUpdated,
                 "vcr-image-deleted" => UserEventType.VcrImageDeleted,
                 "vcr-image-pushed" => UserEventType.VcrImagePushed,
                 "vcr-repository-created" => UserEventType.VcrRepositoryCreated,

@@ -20,7 +20,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared0f99f1735f329c6c> CreateProjectAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedc734cd9afdf7614a> CreateProjectAsync(
 
             global::Vercel.CreateProjectRequest request,
             string? teamId = default,
@@ -41,7 +41,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared0f99f1735f329c6c>> CreateProjectAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedc734cd9afdf7614a>> CreateProjectAsResponseAsync(
 
             global::Vercel.CreateProjectRequest request,
             string? teamId = default,
@@ -126,7 +126,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared0f99f1735f329c6c> CreateProjectAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedc734cd9afdf7614a> CreateProjectAsync(
             string name,
             string? teamId = default,
             string? slug = default,

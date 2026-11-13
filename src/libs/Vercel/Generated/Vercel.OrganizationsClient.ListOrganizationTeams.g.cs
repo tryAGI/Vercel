@@ -47,7 +47,7 @@ namespace Vercel
 
         /// <summary>
         /// List Organization Teams<br/>
-        /// List up to 100 teams in an organization, each enriched with the team's slug, name, and avatar. Set `includeMemberCount` to include counts that include pending memberships but exclude email invitations without a membership record. Teams whose underlying record no longer exists are omitted, so a page may contain fewer teams than the page size (or be empty) while still returning a `cursor`; paginate until `cursor` is absent. This endpoint is in private beta. Contact your Vercel account team for access.
+        /// List up to 100 teams in an organization, each enriched with the team's slug, name, and avatar. Set `includeMemberCount` to include counts that include pending memberships and organization Directory Sync grants, while excluding suppressed memberships and email invitations without a membership record. Teams whose underlying record no longer exists are omitted, so a page may contain fewer teams than the page size (or be empty) while still returning a `cursor`; paginate until `cursor` is absent. This endpoint is in private beta. Contact your Vercel account team for access.
         /// </summary>
         /// <param name="organizationId">
         /// The ID of the organization.
@@ -56,7 +56,7 @@ namespace Vercel
         /// Pagination cursor.
         /// </param>
         /// <param name="includeMemberCount">
-        /// When true, includes each team's member count in the response.
+        /// When true, includes each team's member count, including organization Directory Sync members. Counting Directory Sync members can add latency.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -80,7 +80,7 @@ namespace Vercel
         }
         /// <summary>
         /// List Organization Teams<br/>
-        /// List up to 100 teams in an organization, each enriched with the team's slug, name, and avatar. Set `includeMemberCount` to include counts that include pending memberships but exclude email invitations without a membership record. Teams whose underlying record no longer exists are omitted, so a page may contain fewer teams than the page size (or be empty) while still returning a `cursor`; paginate until `cursor` is absent. This endpoint is in private beta. Contact your Vercel account team for access.
+        /// List up to 100 teams in an organization, each enriched with the team's slug, name, and avatar. Set `includeMemberCount` to include counts that include pending memberships and organization Directory Sync grants, while excluding suppressed memberships and email invitations without a membership record. Teams whose underlying record no longer exists are omitted, so a page may contain fewer teams than the page size (or be empty) while still returning a `cursor`; paginate until `cursor` is absent. This endpoint is in private beta. Contact your Vercel account team for access.
         /// </summary>
         /// <param name="organizationId">
         /// The ID of the organization.
@@ -89,7 +89,7 @@ namespace Vercel
         /// Pagination cursor.
         /// </param>
         /// <param name="includeMemberCount">
-        /// When true, includes each team's member count in the response.
+        /// When true, includes each team's member count, including organization Directory Sync members. Counting Directory Sync members can add latency.
         /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
