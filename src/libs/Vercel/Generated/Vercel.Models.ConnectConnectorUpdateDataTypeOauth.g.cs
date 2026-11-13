@@ -34,7 +34,7 @@ namespace Vercel
         public string? ClientName { get; set; }
 
         /// <summary>
-        /// OAuth client secret.<br/>
+        /// OAuth client secret. An update that changes the authorization server removes the stored secret unless the same update sends a new one.<br/>
         /// Included only in requests
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clientSecret")]
@@ -147,7 +147,7 @@ namespace Vercel
         /// OAuth client name.
         /// </param>
         /// <param name="clientSecret">
-        /// OAuth client secret.<br/>
+        /// OAuth client secret. An update that changes the authorization server removes the stored secret unless the same update sends a new one.<br/>
         /// Included only in requests
         /// </param>
         /// <param name="tokenEndpointAuthMethod">

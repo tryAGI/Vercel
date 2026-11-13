@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Update a Team Member<br/>
-        /// Update the membership of a Team Member on the Team specified by `teamId`, such as changing the _role_ of the member, or confirming a request to join the Team for an unconfirmed member. The authenticated user must be an `OWNER` of the Team. An update that would leave the Team's organization without an organization admin is refused.
+        /// Update the membership of a Team Member on the Team specified by `teamId`, such as changing the _role_ of the member, or confirming a request to join the Team for an unconfirmed member. Organization-directory-managed team access and roles must be changed through the organization's identity provider. Unsupported changes return `organization_directory_managed`; supported local assignments remain editable. The authenticated user must be an `OWNER` of the Team. An update that would leave the Team's organization without an organization admin is refused.
         /// </summary>
         /// <param name="uid">
         /// The ID of the member.<br/>
@@ -29,7 +29,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a Team Member<br/>
-        /// Update the membership of a Team Member on the Team specified by `teamId`, such as changing the _role_ of the member, or confirming a request to join the Team for an unconfirmed member. The authenticated user must be an `OWNER` of the Team. An update that would leave the Team's organization without an organization admin is refused.
+        /// Update the membership of a Team Member on the Team specified by `teamId`, such as changing the _role_ of the member, or confirming a request to join the Team for an unconfirmed member. Organization-directory-managed team access and roles must be changed through the organization's identity provider. Unsupported changes return `organization_directory_managed`; supported local assignments remain editable. The authenticated user must be an `OWNER` of the Team. An update that would leave the Team's organization without an organization admin is refused.
         /// </summary>
         /// <param name="uid">
         /// The ID of the member.<br/>
@@ -52,7 +52,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update a Team Member<br/>
-        /// Update the membership of a Team Member on the Team specified by `teamId`, such as changing the _role_ of the member, or confirming a request to join the Team for an unconfirmed member. The authenticated user must be an `OWNER` of the Team. An update that would leave the Team's organization without an organization admin is refused.
+        /// Update the membership of a Team Member on the Team specified by `teamId`, such as changing the _role_ of the member, or confirming a request to join the Team for an unconfirmed member. Organization-directory-managed team access and roles must be changed through the organization's identity provider. Unsupported changes return `organization_directory_managed`; supported local assignments remain editable. The authenticated user must be an `OWNER` of the Team. An update that would leave the Team's organization without an organization admin is refused.
         /// </summary>
         /// <param name="uid">
         /// The ID of the member.<br/>

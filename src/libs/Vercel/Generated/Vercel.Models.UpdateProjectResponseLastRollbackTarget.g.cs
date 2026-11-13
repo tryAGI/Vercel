@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    ///
+    /// Legacy mirror of `lastAliasRequest` without `type`, kept for CLI compatibility. Only populated by `GET /v9/projects/{idOrName}` when called with `rollbackInfo=true`; `null` in every other response.
     /// </summary>
     public sealed partial class UpdateProjectResponseLastRollbackTarget
     {

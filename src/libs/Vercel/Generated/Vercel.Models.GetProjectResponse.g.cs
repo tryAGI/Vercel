@@ -306,13 +306,13 @@ namespace Vercel
         public global::Vercel.GetProjectResponseJobs? Jobs { get; set; }
 
         /// <summary>
-        ///
+        /// The last promote or rollback request for the project and its job status. Only populated by `GET /v9/projects/{idOrName}` when called with `rollbackInfo=true`; `null` in every other response, even if a request exists.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lastAliasRequest")]
         public global::Vercel.GetProjectResponseLastAliasRequest? LastAliasRequest { get; set; }
 
         /// <summary>
-        ///
+        /// Legacy mirror of `lastAliasRequest` without `type`, kept for CLI compatibility. Only populated by `GET /v9/projects/{idOrName}` when called with `rollbackInfo=true`; `null` in every other response.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lastRollbackTarget")]
         public object? LastRollbackTarget { get; set; }
@@ -404,7 +404,7 @@ namespace Vercel
         /// Requested and authorized operations when `checkPermissions` is used. Legacy `includePermissions` responses contain a broader, non-authoritative permission summary.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("permissions")]
-        public global::Vercel.AutoSDKSharedfe53701268010f56? Permissions { get; set; }
+        public global::Vercel.AutoSDKShared9740c1f045f457da? Permissions { get; set; }
 
         /// <summary>
         ///
@@ -683,8 +683,12 @@ namespace Vercel
         /// <param name="internalRoutes"></param>
         /// <param name="ipBuckets"></param>
         /// <param name="jobs"></param>
-        /// <param name="lastAliasRequest"></param>
-        /// <param name="lastRollbackTarget"></param>
+        /// <param name="lastAliasRequest">
+        /// The last promote or rollback request for the project and its job status. Only populated by `GET /v9/projects/{idOrName}` when called with `rollbackInfo=true`; `null` in every other response, even if a request exists.
+        /// </param>
+        /// <param name="lastRollbackTarget">
+        /// Legacy mirror of `lastAliasRequest` without `type`, kept for CLI compatibility. Only populated by `GET /v9/projects/{idOrName}` when called with `rollbackInfo=true`; `null` in every other response.
+        /// </param>
         /// <param name="latestDeployments"></param>
         /// <param name="link"></param>
         /// <param name="live"></param>
@@ -807,7 +811,7 @@ namespace Vercel
             global::Vercel.GetProjectResponsePassport? passport,
             global::Vercel.GetProjectResponsePasswordProtection? passwordProtection,
             bool? paused,
-            global::Vercel.AutoSDKSharedfe53701268010f56? permissions,
+            global::Vercel.AutoSDKShared9740c1f045f457da? permissions,
             bool? productionDeploymentsFastLane,
             bool? protectedSourcemaps,
             object? protectionBypass,

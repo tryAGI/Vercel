@@ -12,6 +12,9 @@ namespace Vercel
         /// The unique project identifier or the project name<br/>
         /// Example: prj_12HKQaOmR5t5Uy6vdcQsNIiZgHGB
         /// </param>
+        /// <param name="rollbackInfo">
+        /// Include the status of the last promote or rollback request in `lastAliasRequest` (and its legacy mirror `lastRollbackTarget`). When omitted or `false`, both fields are always `null` regardless of project state.
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -23,6 +26,7 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.GetProjectResponse> GetProjectAsync(
             string idOrName,
+            bool? rollbackInfo = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -35,6 +39,9 @@ namespace Vercel
         /// The unique project identifier or the project name<br/>
         /// Example: prj_12HKQaOmR5t5Uy6vdcQsNIiZgHGB
         /// </param>
+        /// <param name="rollbackInfo">
+        /// Include the status of the last promote or rollback request in `lastAliasRequest` (and its legacy mirror `lastRollbackTarget`). When omitted or `false`, both fields are always `null` regardless of project state.
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -46,6 +53,7 @@ namespace Vercel
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetProjectResponse>> GetProjectAsResponseAsync(
             string idOrName,
+            bool? rollbackInfo = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,

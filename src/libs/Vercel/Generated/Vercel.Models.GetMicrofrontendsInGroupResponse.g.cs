@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared4d5a5876dd584f34> Projects { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6c> Projects { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,7 +29,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetMicrofrontendsInGroupResponse(
-            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared4d5a5876dd584f34> projects)
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6c> projects)
         {
             this.Projects = projects ?? throw new global::System.ArgumentNullException(nameof(projects));
         }

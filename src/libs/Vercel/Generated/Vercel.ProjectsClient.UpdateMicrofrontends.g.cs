@@ -65,7 +65,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared4d5a5876dd584f34> UpdateMicrofrontendsAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared0f99f1735f329c6c> UpdateMicrofrontendsAsync(
             string projectId,
 
             global::Vercel.UpdateMicrofrontendsRequest request,
@@ -104,7 +104,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared4d5a5876dd584f34>> UpdateMicrofrontendsAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared0f99f1735f329c6c>> UpdateMicrofrontendsAsResponseAsync(
             string projectId,
 
             global::Vercel.UpdateMicrofrontendsRequest request,
@@ -628,9 +628,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.AutoSDKShared4d5a5876dd584f34.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.AutoSDKShared0f99f1735f329c6c.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared4d5a5876dd584f34>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared0f99f1735f329c6c>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -660,9 +660,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.AutoSDKShared4d5a5876dd584f34.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.AutoSDKShared0f99f1735f329c6c.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared4d5a5876dd584f34>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared0f99f1735f329c6c>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -741,7 +741,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared4d5a5876dd584f34> UpdateMicrofrontendsAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared0f99f1735f329c6c> UpdateMicrofrontendsAsync(
             string projectId,
             string? teamId = default,
             string? slug = default,

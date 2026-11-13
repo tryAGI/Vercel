@@ -2674,6687 +2674,6687 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared4d5a5876dd584f34>? Type659 { get; set; }
+        public global::Vercel.AutoSDKShared08ccbffba83732e3? Type659 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34? Type660 { get; set; }
+        public global::Vercel.AutoSDKShared08ccbffba83732e3Framework? Type660 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared08ccbffba83732e3? Type661 { get; set; }
+        public global::Vercel.AutoSDKShared08ccbffba83732e3NodeVersion? Type661 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared08ccbffba83732e3Framework? Type662 { get; set; }
+        public global::Vercel.AutoSDKShared08ccbffba83732e3SpeedInsights? Type662 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared08ccbffba83732e3NodeVersion? Type663 { get; set; }
+        public global::Vercel.AutoSDKShared08ccbffba83732e3VercelFlags? Type663 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared08ccbffba83732e3SpeedInsights? Type664 { get; set; }
+        public global::Vercel.AutoSDKShared08ccbffba83732e3WebAnalytics? Type664 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared08ccbffba83732e3VercelFlags? Type665 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedfaf92fa84e99abdd>? Type665 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared08ccbffba83732e3WebAnalytics? Type666 { get; set; }
+        public global::Vercel.AutoSDKSharedfaf92fa84e99abdd? Type666 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedfaf92fa84e99abdd>? Type667 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14? Type667 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfaf92fa84e99abdd? Type668 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f45691814810f14Condition>? Type668 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14? Type669 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14Condition? Type669 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f45691814810f14Condition>? Type670 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14ConditionCmp? Type670 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14Condition? Type671 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14ConditionCmpOptions? Type671 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14ConditionCmp? Type672 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared0f45691814810f14ConditionLhsVariant1, global::Vercel.AutoSDKShared0f45691814810f14ConditionLhsVariant2>? Type672 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14ConditionCmpOptions? Type673 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14ConditionLhsVariant1? Type673 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared0f45691814810f14ConditionLhsVariant1, global::Vercel.AutoSDKShared0f45691814810f14ConditionLhsVariant2>? Type674 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14ConditionLhsVariant1Type? Type674 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14ConditionLhsVariant1? Type675 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14ConditionLhsVariant2? Type675 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14ConditionLhsVariant1Type? Type676 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14ConditionLhsVariant2Type? Type676 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14ConditionLhsVariant2? Type677 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant3? Type677 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14ConditionLhsVariant2Type? Type678 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant3ItemVariant1? Type678 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant3? Type679 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant3ItemVariant2? Type679 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant3ItemVariant1? Type680 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant3Type? Type680 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant3ItemVariant2? Type681 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant4? Type681 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant3Type? Type682 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant4Type? Type682 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant4? Type683 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant1? Type683 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant4Type? Type684 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant1Type? Type684 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant1? Type685 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant2? Type685 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant1Type? Type686 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant2Base? Type686 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant2? Type687 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant2BaseType? Type687 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant2Base? Type688 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant2Type? Type688 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant2BaseType? Type689 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant3? Type689 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant2Type? Type690 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant3Base? Type690 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant3? Type691 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant3BaseType? Type691 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant3Base? Type692 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant3Slot>? Type692 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant3BaseType? Type693 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant3Slot? Type693 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant3Slot>? Type694 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant3Type? Type694 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant3Slot? Type695 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant4? Type695 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant3Type? Type696 { get; set; }
+        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant4Type? Type696 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant4? Type697 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f637bb8b5caf2d6ExcludeItem>>>? Type697 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant4Type? Type698 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f637bb8b5caf2d6ExcludeItem>>? Type698 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f637bb8b5caf2d6ExcludeItem>>>? Type699 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f637bb8b5caf2d6ExcludeItem>? Type699 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f637bb8b5caf2d6ExcludeItem>>? Type700 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6ExcludeItem? Type700 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f637bb8b5caf2d6ExcludeItem>? Type701 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f637bb8b5caf2d6IncludeItem>>>? Type701 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6ExcludeItem? Type702 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f637bb8b5caf2d6IncludeItem>>? Type702 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f637bb8b5caf2d6IncludeItem>>>? Type703 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f637bb8b5caf2d6IncludeItem>? Type703 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f637bb8b5caf2d6IncludeItem>>? Type704 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6IncludeItem? Type704 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f637bb8b5caf2d6IncludeItem>? Type705 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f637bb8b5caf2d6Rule>? Type705 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6IncludeItem? Type706 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6Rule? Type706 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f637bb8b5caf2d6Rule>? Type707 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleCondition>? Type707 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6Rule? Type708 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleCondition? Type708 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleCondition>? Type709 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionCmp? Type709 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleCondition? Type710 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionCmpOptions? Type710 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionCmp? Type711 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionLhsVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionLhsVariant2>? Type711 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionCmpOptions? Type712 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionLhsVariant1? Type712 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionLhsVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionLhsVariant2>? Type713 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionLhsVariant1Type? Type713 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionLhsVariant1? Type714 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionLhsVariant2? Type714 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionLhsVariant1Type? Type715 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionLhsVariant2Type? Type715 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionLhsVariant2? Type716 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3? Type716 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionLhsVariant2Type? Type717 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant1? Type717 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3? Type718 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2? Type718 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant1? Type719 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3Type? Type719 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2? Type720 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant4? Type720 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3Type? Type721 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant4Type? Type721 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant4? Type722 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2>? Type722 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant4Type? Type723 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant1? Type723 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2>? Type724 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant1Type? Type724 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant1? Type725 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2? Type725 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant1Type? Type726 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2Base? Type726 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2? Type727 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2BaseType? Type727 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2Base? Type728 { get; set; }
+        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2Type? Type728 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2BaseType? Type729 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6c? Type729 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2Type? Type730 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared29b35dda7b3e47c4>? Type730 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared82154186cc88506c>? Type731 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cAnalytics? Type731 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506c? Type732 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cBlobs? Type732 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared133a7ec19e4ac4f6? Type733 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfiguration>? Type733 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede064e44b973b9ad0? Type734 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfiguration? Type734 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared133a7ec19e4ac4f6Variant2? Type735 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfigurationAws? Type735 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede7fa7575dde4720d>? Type736 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfigurationEnvId?>? Type736 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede7fa7575dde4720d? Type737 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfigurationEnvId? Type737 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared15ac57d28c37cbda? Type738 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17? Type738 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807ed? Type739 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cCrons? Type739 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared18cf6c9c9480cd61? Type740 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cCronsDefinition>? Type740 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AnyOf<global::Vercel.AutoSDKShared18cf6c9c9480cd61SourceVariant1, global::Vercel.AutoSDKShared18cf6c9c9480cd61SourceVariant2>? Type741 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cCronsDefinition? Type741 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared18cf6c9c9480cd61SourceVariant1? Type742 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cCronsDefinitionSource? Type742 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared18cf6c9c9480cd61SourceVariant2? Type743 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7d4f4f5cff68219a>? Type743 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared18cf6c9c9480cd61Skipped? Type744 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cDataCache? Type744 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared18cf6c9c9480cd61BootstrappingStarted? Type745 { get; set; }
+        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724? Type745 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared18cf6c9c9480cd61BootstrappingFailed? Type746 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cDeploymentExpiration? Type746 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared18cf6c9c9480cd61SandboxSnapshotted? Type747 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295? Type747 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared18cf6c9c9480cd61SandboxNamed? Type748 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToast>? Type748 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared18cf6c9c9480cd61JobDefinitionsCreated? Type749 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToast? Type749 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared18cf6c9c9480cd61Completed? Type750 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToastAction? Type750 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared18cf6c9c9480cd61SetupConclusion? Type751 { get; set; }
+        public global::Vercel.OneOf<string, double?, global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToastValue, bool?>? Type751 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared18cf6c9c9480cd61RunConclusion? Type752 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToastValue? Type752 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared18cf6c9c9480cd61>? Type753 { get; set; }
+        public global::Vercel.OneOf<string, double?, bool?>? Type753 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9554e4a81de92250>? Type754 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared470bc56668090392>? Type754 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9554e4a81de92250? Type755 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cExpirationVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cExpirationVariant2>? Type755 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared209b2cb84e1d7219? Type756 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cExpirationVariant1? Type756 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared3ee0b14b2005812d? Type757 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cExpirationVariant2? Type757 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2208dea57c17c8da? Type758 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cFeatures? Type758 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2208dea57c17c8daCreatedFrom? Type759 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cFramework? Type759 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2208dea57c17c8daDeliveryFormat? Type760 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cGitComments? Type760 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2208dea57c17c8daEnvironment>? Type761 { get; set; }
+        public global::Vercel.AutoSDKSharedc12640b06f1c9105? Type761 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2208dea57c17c8daEnvironment? Type762 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2>>? Type762 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared2208dea57c17c8daSourceVariant1, global::Vercel.AutoSDKShared2208dea57c17c8daSourceVariant2>? Type763 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2>? Type763 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2208dea57c17c8daSourceVariant1? Type764 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant1? Type764 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2208dea57c17c8daSourceVariant1DefaultFor? Type765 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2? Type765 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2208dea57c17c8daSourceVariant1Kind? Type766 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1? Type766 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2208dea57c17c8daSourceVariant2? Type767 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Key? Type767 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2208dea57c17c8daSourceVariant2Kind? Type768 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Type? Type768 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2208dea57c17c8daSource>? Type769 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Value? Type769 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2208dea57c17c8daSource? Type770 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2? Type770 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared238fc1521601aa81? Type771 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2Type? Type771 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared238fc1521601aa81MfeConfigUploadState? Type772 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2Value? Type772 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared24441ee6c19033d7? Type773 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2Mitigate? Type773 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfabd867705b7541a? Type774 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2MitigateAction? Type774 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75f? Type775 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cIpBucket>? Type775 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AnyOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1Item>, string>? Type776 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cIpBucket? Type776 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1Item>? Type777 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cJobs? Type777 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1Item? Type778 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cJobsFlagDefinitionsPresent? Type778 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1? Type779 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cJobsHealthCheck? Type779 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1Type? Type780 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cJobsLint? Type780 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1Target? Type781 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cJobsMfeConfigPresent? Type781 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2? Type782 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cJobsTypecheck? Type782 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2Type? Type783 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cLastAliasRequest? Type783 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant1? Type784 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cLastAliasRequestJobStatus? Type784 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant1Provider? Type785 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cLastAliasRequestType? Type785 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2? Type786 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbca3e7a986162538>? Type786 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2Provider? Type787 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31d? Type787 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AnyOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1Item>, string>? Type788 { get; set; }
+        public global::Vercel.AutoSDKShared7ff9e6410c724535? Type788 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1Item>? Type789 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cNodeVersion? Type789 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1Item? Type790 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cOidcTokenConfig? Type790 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant1? Type791 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cOidcTokenConfigIssuerMode? Type791 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant1Type? Type792 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cOptionsAllowlist? Type792 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant1Target? Type793 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cOptionsAllowlistPath>? Type793 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2? Type794 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cOptionsAllowlistPath? Type794 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2Type? Type795 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cPassport? Type795 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemSource>? Type796 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cPassportDeploymentType? Type796 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemSource? Type797 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cPasswordProtection? Type797 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30? Type798 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cPasswordProtectionDeploymentType? Type798 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKShared25e1e81cf9eecd30LogHeaders?>? Type799 { get; set; }
+        public global::Vercel.AutoSDKShared9740c1f045f457da? Type799 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30LogHeaders? Type800 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant2>? Type800 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRules? Type801 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant1? Type801 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesAiBots? Type802 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant1Scope? Type802 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesAiBotsAction? Type803 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant2? Type803 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesBotFilter? Type804 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant2Scope? Type804 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesBotFilterAction? Type805 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionConfig? Type805 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesOwasp? Type806 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionConfigSandboxUrls? Type806 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesOwaspAction? Type807 { get; set; }
+        public global::Vercel.AutoSDKShared15ac57d28c37cbda? Type807 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesTrafficSources? Type808 { get; set; }
+        public global::Vercel.AutoSDKSharedce0c7f50e384322c? Type808 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesTrafficSourcesAction? Type809 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cSandbox? Type809 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesVercelRuleset? Type810 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxFailoverRegion>? Type810 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesVercelRulesetAction? Type811 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxFailoverRegion? Type811 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared25e1e81cf9eecd30Rulesets2>? Type812 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxRegion? Type812 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30Rulesets2? Type813 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30? Type813 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsAction? Type814 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cService>? Type814 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsLogHeaders?>? Type815 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cService? Type815 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsLogHeaders? Type816 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cServiceFramework? Type816 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsRateLimit? Type817 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cServiceServiceType? Type817 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsRateLimitAction? Type818 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cSpeedInsights? Type818 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsRateLimitAlgo? Type819 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtection? Type819 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsRedirect? Type820 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom? Type820 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared3aee88dc9f99cb9b>? Type821 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionCve55182MigrationAppliedFrom? Type821 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared3aee88dc9f99cb9b? Type822 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionDeploymentType? Type822 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedba1f75615f04b60c>? Type823 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cStaticIps? Type823 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedba1f75615f04b60c? Type824 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared8422af433e1bf486?>? Type824 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1? Type825 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cTier? Type825 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1Type? Type826 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cTracing? Type826 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant1, global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant2>? Type827 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRule>? Type827 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant1? Type828 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRule? Type828 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant1App? Type829 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleDestination? Type829 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant1Type? Type830 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleEnv? Type830 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant2? Type831 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant2>? Type831 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant2Integration? Type832 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1? Type832 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant2Type? Type833 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1Addresse>? Type833 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1User? Type834 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1Addresse? Type834 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant2? Type835 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1DeploymentType? Type835 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant2Project? Type836 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1ProtectionMode? Type836 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant2Type? Type837 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant2? Type837 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant3? Type838 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant2DeploymentType? Type838 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant3App? Type839 { get; set; }
+        public global::Vercel.AutoSDKShared94938587734e5f57? Type839 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant3Type? Type840 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cUsageStatus? Type840 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant4? Type841 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cUsageStatusKind? Type841 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant4Integration? Type842 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cVercelFlags? Type842 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant4Type? Type843 { get; set; }
+        public global::Vercel.AutoSDKShared0f99f1735f329c6cWebAnalytics? Type843 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant5? Type844 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared82154186cc88506c>? Type844 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant5Type? Type845 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506c? Type845 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared29b35dda7b3e47c4? Type846 { get; set; }
+        public global::Vercel.AutoSDKShared133a7ec19e4ac4f6? Type846 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared29b35dda7b3e47c4ConfiguredBy? Type847 { get; set; }
+        public global::Vercel.AutoSDKSharede064e44b973b9ad0? Type847 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared8422af433e1bf486? Type848 { get; set; }
+        public global::Vercel.AutoSDKShared133a7ec19e4ac4f6Variant2? Type848 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared29b35dda7b3e47c4Environment? Type849 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede7fa7575dde4720d>? Type849 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared29b35dda7b3e47c4Target? Type850 { get; set; }
+        public global::Vercel.AutoSDKSharede7fa7575dde4720d? Type850 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2a792fc701a6e66d? Type851 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807ed? Type851 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb38a5d43be350768? Type852 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9554e4a81de92250>? Type852 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared44c5e53073934a2b? Type853 { get; set; }
+        public global::Vercel.AutoSDKShared9554e4a81de92250? Type853 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbca3e7a986162538>? Type854 { get; set; }
+        public global::Vercel.AutoSDKShared209b2cb84e1d7219? Type854 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbca3e7a986162538? Type855 { get; set; }
+        public global::Vercel.AutoSDKShared3ee0b14b2005812d? Type855 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8? Type856 { get; set; }
+        public global::Vercel.AutoSDKShared2208dea57c17c8da? Type856 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8Items? Type857 { get; set; }
+        public global::Vercel.AutoSDKShared2208dea57c17c8daCreatedFrom? Type857 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8ItemsType? Type858 { get; set; }
+        public global::Vercel.AutoSDKShared2208dea57c17c8daDeliveryFormat? Type858 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8Type? Type859 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2208dea57c17c8daEnvironment>? Type859 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiControl? Type860 { get; set; }
+        public global::Vercel.AutoSDKShared2208dea57c17c8daEnvironment? Type860 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared2c06e7f88512c8b8UiDescription>? Type861 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared2208dea57c17c8daSourceVariant1, global::Vercel.AutoSDKShared2208dea57c17c8daSourceVariant2>? Type861 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiDescription? Type862 { get; set; }
+        public global::Vercel.AutoSDKShared2208dea57c17c8daSourceVariant1? Type862 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared2c06e7f88512c8b8UiDisabledEnum, bool?, global::Vercel.AutoSDKShared2c06e7f88512c8b8UiDisabledEnum2?>? Type863 { get; set; }
+        public global::Vercel.AutoSDKShared2208dea57c17c8daSourceVariant1DefaultFor? Type863 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiDisabledEnum? Type864 { get; set; }
+        public global::Vercel.AutoSDKShared2208dea57c17c8daSourceVariant1Kind? Type864 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiDisabledEnum2? Type865 { get; set; }
+        public global::Vercel.AutoSDKShared2208dea57c17c8daSourceVariant2? Type865 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiFormattedValue? Type866 { get; set; }
+        public global::Vercel.AutoSDKShared2208dea57c17c8daSourceVariant2Kind? Type866 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared2c06e7f88512c8b8UiHiddenEnum, bool?, global::Vercel.AutoSDKShared2c06e7f88512c8b8UiHiddenEnum2?>? Type867 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2208dea57c17c8daSource>? Type867 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiHiddenEnum? Type868 { get; set; }
+        public global::Vercel.AutoSDKShared2208dea57c17c8daSource? Type868 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiHiddenEnum2? Type869 { get; set; }
+        public global::Vercel.AutoSDKShared238fc1521601aa81? Type869 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant1, string, global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant3>>? Type870 { get; set; }
+        public global::Vercel.AutoSDKShared238fc1521601aa81MfeConfigUploadState? Type870 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant1, string, global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant3>? Type871 { get; set; }
+        public global::Vercel.AutoSDKShared24441ee6c19033d7? Type871 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant1? Type872 { get; set; }
+        public global::Vercel.AutoSDKSharedfabd867705b7541a? Type872 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant1DisabledEnum? Type873 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75f? Type873 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant1DisabledEnum2? Type874 { get; set; }
+        public global::Vercel.AnyOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1Item>, string>? Type874 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant1HiddenEnum? Type875 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1Item>? Type875 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant1HiddenEnum2? Type876 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1Item? Type876 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant3? Type877 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1? Type877 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant3DisabledEnum? Type878 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1Type? Type878 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant3DisabledEnum2? Type879 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1Target? Type879 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant3HiddenEnum? Type880 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2? Type880 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant3HiddenEnum2? Type881 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2Type? Type881 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared2c06e7f88512c8b8UiReadOnlyEnum, bool?, global::Vercel.AutoSDKShared2c06e7f88512c8b8UiReadOnlyEnum2?>? Type882 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant1? Type882 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiReadOnlyEnum? Type883 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant1Provider? Type883 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiReadOnlyEnum2? Type884 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2? Type884 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2e531c6dd7d2b280? Type885 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2Provider? Type885 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.DateTime? Type886 { get; set; }
+        public global::Vercel.AnyOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1Item>, string>? Type886 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2e531c6dd7d2b280LastEditedByPrincipalVariant1? Type887 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1Item>? Type887 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2e531c6dd7d2b280LastEditedByPrincipalVariant1Type? Type888 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1Item? Type888 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2e531c6dd7d2b280LastEditedByPrincipalVariant2? Type889 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant1? Type889 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2e531c6dd7d2b280LastEditedByPrincipalVariant2Type? Type890 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant1Type? Type890 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2e531c6dd7d2b280TargetItem>? Type891 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant1Target? Type891 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2e531c6dd7d2b280TargetItem? Type892 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2? Type892 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2e531c6dd7d2b280Type? Type893 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2Type? Type893 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2ea6923996597ff4? Type894 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemSource>? Type894 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShareda4dd3b1b30ff7300>? Type895 { get; set; }
+        public global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemSource? Type895 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem>>>? Type896 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKShared25e1e81cf9eecd30LogHeaders?>? Type896 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem>>? Type897 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30LogHeaders? Type897 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem>? Type898 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRules? Type898 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem? Type899 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesAiBots? Type899 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2ea6923996597ff4ExcludeItem>>>? Type900 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesAiBotsAction? Type900 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2ea6923996597ff4ExcludeItem>>? Type901 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesBotFilter? Type901 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2ea6923996597ff4ExcludeItem>? Type902 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesBotFilterAction? Type902 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2ea6923996597ff4ExcludeItem? Type903 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesOwasp? Type903 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2f24cdccbdde3d24? Type904 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesOwaspAction? Type904 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2f24cdccbdde3d24Kind? Type905 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesTrafficSources? Type905 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2f24cdccbdde3d24State? Type906 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesTrafficSourcesAction? Type906 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2f24cdccbdde3d24TypeName? Type907 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesVercelRuleset? Type907 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2f24cdccbdde3d24Variant>? Type908 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRulesVercelRulesetAction? Type908 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared2f24cdccbdde3d24Variant? Type909 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared25e1e81cf9eecd30Rulesets2>? Type909 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared30685e6067cce163? Type910 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30Rulesets2? Type910 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared30685e6067cce163Variant1? Type911 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsAction? Type911 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared30685e6067cce163Variant1Development? Type912 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsLogHeaders?>? Type912 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaffe019c1a64bb83? Type913 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsLogHeaders? Type913 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared31ad55d5a9d0e802Item>? Type914 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsRateLimit? Type914 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared31ad55d5a9d0e802Item? Type915 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsRateLimitAction? Type915 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemFromVariant1, global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemFromVariant2>? Type916 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsRateLimitAlgo? Type916 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemFromVariant1? Type917 { get; set; }
+        public global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsRedirect? Type917 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemFromVariant1Preset? Type918 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared3aee88dc9f99cb9b>? Type918 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemFromVariant2? Type919 { get; set; }
+        public global::Vercel.AutoSDKShared3aee88dc9f99cb9b? Type919 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemFromVariant2Preset? Type920 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedba1f75615f04b60c>? Type920 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemToVariant1, global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemToVariant2>? Type921 { get; set; }
+        public global::Vercel.AutoSDKSharedba1f75615f04b60c? Type921 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemToVariant1? Type922 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6c>? Type922 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemToVariant1Preset? Type923 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1? Type923 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemToVariant2? Type924 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1Type? Type924 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemToVariant2Preset? Type925 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant1, global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant2>? Type925 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared37c775f169729655? Type926 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant1? Type926 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared37c775f169729655Binding>? Type927 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant1App? Type927 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared37c775f169729655Binding? Type928 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant1Type? Type928 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared37c775f169729655BindingFormat? Type929 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant2? Type929 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared37c775f169729655BindingType? Type930 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant2Integration? Type930 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared37c775f169729655LivenessProbe? Type931 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant2Type? Type931 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared37c775f169729655LivenessProbeHttpGet? Type932 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant1User? Type932 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared37c775f169729655LivenessProbeHttpGetHttpHeader>? Type933 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant2? Type933 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared37c775f169729655LivenessProbeHttpGetHttpHeader? Type934 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant2Project? Type934 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared37c775f169729655LivenessProbeHttpGetScheme? Type935 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant2Type? Type935 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared37c775f169729655Resources? Type936 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant3? Type936 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared37c775f169729655ResourcesRequests? Type937 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant3App? Type937 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared37c775f169729655ResourcesRequestsMemory? Type938 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant3Type? Type938 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared38e9af03824d67bc? Type939 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant4? Type939 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared38e9af03824d67bcPublicKey? Type940 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant4Integration? Type940 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared38e9af03824d67bcStatus? Type941 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant4Type? Type941 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39b84c098d962a66Entitlement>? Type942 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant5? Type942 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared39b84c098d962a66Entitlement? Type943 { get; set; }
+        public global::Vercel.AutoSDKShared2899f8f1b76807edVariant5Type? Type943 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared39b84c098d962a66JoinedFrom? Type944 { get; set; }
+        public global::Vercel.AutoSDKShared29b35dda7b3e47c4? Type944 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared39b84c098d962a66JoinedFromOrigin? Type945 { get; set; }
+        public global::Vercel.AutoSDKShared29b35dda7b3e47c4ConfiguredBy? Type945 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared39b84c098d962a66Role? Type946 { get; set; }
+        public global::Vercel.AutoSDKShared8422af433e1bf486? Type946 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39b84c098d962a66TeamPermission>? Type947 { get; set; }
+        public global::Vercel.AutoSDKShared29b35dda7b3e47c4Environment? Type947 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared39b84c098d962a66TeamPermission? Type948 { get; set; }
+        public global::Vercel.AutoSDKShared29b35dda7b3e47c4Target? Type948 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39b84c098d962a66TeamRole>? Type949 { get; set; }
+        public global::Vercel.AutoSDKShared2a792fc701a6e66d? Type949 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared39b84c098d962a66TeamRole? Type950 { get; set; }
+        public global::Vercel.AutoSDKSharedb38a5d43be350768? Type950 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2e531c6dd7d2b280>? Type951 { get; set; }
+        public global::Vercel.AutoSDKShared44c5e53073934a2b? Type951 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared3aee88dc9f99cb9bAffinity? Type952 { get; set; }
+        public global::Vercel.AutoSDKSharedbca3e7a986162538? Type952 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared3aee88dc9f99cb9bAffinityMode? Type953 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8? Type953 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared3aee88dc9f99cb9bArchitecture? Type954 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8Items? Type954 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShareda0db2c4b058f2749>? Type955 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8ItemsType? Type955 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<double?, global::Vercel.AutoSDKShared3aee88dc9f99cb9bMaxDuration?>? Type956 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8Type? Type956 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared3aee88dc9f99cb9bMaxDuration? Type957 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiControl? Type957 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKSharedf435ee41818aa67d>? Type958 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared2c06e7f88512c8b8UiDescription>? Type958 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf435ee41818aa67d? Type959 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiDescription? Type959 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared3ee0b14b2005812dCreator? Type960 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared2c06e7f88512c8b8UiDisabledEnum, bool?, global::Vercel.AutoSDKShared2c06e7f88512c8b8UiDisabledEnum2?>? Type960 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared3ee0b14b2005812dEchMode? Type961 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiDisabledEnum? Type961 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared3ee0b14b2005812dServiceType? Type962 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiDisabledEnum2? Type962 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedf010caf53b41f392>? Type963 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiFormattedValue? Type963 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf010caf53b41f392? Type964 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared2c06e7f88512c8b8UiHiddenEnum, bool?, global::Vercel.AutoSDKShared2c06e7f88512c8b8UiHiddenEnum2?>? Type964 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared43b4aa57cd7998fd? Type965 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiHiddenEnum? Type965 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02ae? Type966 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiHiddenEnum2? Type966 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared43b4aa57cd7998fdVariant2? Type967 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant1, string, global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant3>>? Type967 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f45691814810f14>? Type968 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant1, string, global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant3>? Type968 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared448ea965c003fe05Jwks? Type969 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant1? Type969 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared448ea965c003fe05JwksKey>? Type970 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant1DisabledEnum? Type970 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared448ea965c003fe05JwksKey? Type971 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant1DisabledEnum2? Type971 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared448ea965c003fe05JwksKeyUse? Type972 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant1HiddenEnum? Type972 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared44c5e53073934a2bAction? Type973 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant1HiddenEnum2? Type973 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigate? Type974 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant3? Type974 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigateAction? Type975 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant3DisabledEnum? Type975 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigateLogHeaders?>? Type976 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant3DisabledEnum2? Type976 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigateLogHeaders? Type977 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant3HiddenEnum? Type977 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigateRateLimit? Type978 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant3HiddenEnum2? Type978 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigateRateLimitAction? Type979 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared2c06e7f88512c8b8UiReadOnlyEnum, bool?, global::Vercel.AutoSDKShared2c06e7f88512c8b8UiReadOnlyEnum2?>? Type979 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigateRateLimitAlgo? Type980 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiReadOnlyEnum? Type980 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigateRedirect? Type981 { get; set; }
+        public global::Vercel.AutoSDKShared2c06e7f88512c8b8UiReadOnlyEnum2? Type981 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared44c5e53073934a2bConditionGroupItem>? Type982 { get; set; }
+        public global::Vercel.AutoSDKShared2e531c6dd7d2b280? Type982 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared44c5e53073934a2bConditionGroupItem? Type983 { get; set; }
+        public global::System.DateTime? Type983 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared44c5e53073934a2bConditionGroupItemCondition>? Type984 { get; set; }
+        public global::Vercel.AutoSDKShared2e531c6dd7d2b280LastEditedByPrincipalVariant1? Type984 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared44c5e53073934a2bConditionGroupItemCondition? Type985 { get; set; }
+        public global::Vercel.AutoSDKShared2e531c6dd7d2b280LastEditedByPrincipalVariant1Type? Type985 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared44c5e53073934a2bConditionGroupItemConditionOp? Type986 { get; set; }
+        public global::Vercel.AutoSDKShared2e531c6dd7d2b280LastEditedByPrincipalVariant2? Type986 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared44c5e53073934a2bConditionGroupItemConditionType? Type987 { get; set; }
+        public global::Vercel.AutoSDKShared2e531c6dd7d2b280LastEditedByPrincipalVariant2Type? Type987 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, double?, global::System.Collections.Generic.IList<string>>? Type988 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2e531c6dd7d2b280TargetItem>? Type988 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared470bc56668090392? Type989 { get; set; }
+        public global::Vercel.AutoSDKShared2e531c6dd7d2b280TargetItem? Type989 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared470bc56668090392InternalContentHint? Type990 { get; set; }
+        public global::Vercel.AutoSDKShared2e531c6dd7d2b280Type? Type990 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared470bc56668090392InternalContentHintType? Type991 { get; set; }
+        public global::Vercel.AutoSDKShared2ea6923996597ff4? Type991 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared470bc56668090392TargetItem>, global::Vercel.AutoSDKShared470bc56668090392Target?>? Type992 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShareda4dd3b1b30ff7300>? Type992 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared470bc56668090392TargetItem>? Type993 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem>>>? Type993 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared470bc56668090392TargetItem? Type994 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem>>? Type994 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared470bc56668090392Target? Type995 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem>? Type995 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared470bc56668090392Type? Type996 { get; set; }
+        public global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem? Type996 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared470bc56668090392Visibility? Type997 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2ea6923996597ff4ExcludeItem>>>? Type997 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedef431bb3026a2de5>? Type998 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2ea6923996597ff4ExcludeItem>>? Type998 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedef431bb3026a2de5? Type999 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2ea6923996597ff4ExcludeItem>? Type999 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558? Type1000 { get; set; }
+        public global::Vercel.AutoSDKShared2ea6923996597ff4ExcludeItem? Type1000 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedab64e9622c80dc17>? Type1001 { get; set; }
+        public global::Vercel.AutoSDKShared2f24cdccbdde3d24? Type1001 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKShared4c958b4a81a75558LogHeaders?>? Type1002 { get; set; }
+        public global::Vercel.AutoSDKShared2f24cdccbdde3d24Kind? Type1002 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558LogHeaders? Type1003 { get; set; }
+        public global::Vercel.AutoSDKShared2f24cdccbdde3d24State? Type1003 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRules? Type1004 { get; set; }
+        public global::Vercel.AutoSDKShared2f24cdccbdde3d24TypeName? Type1004 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesAiBots? Type1005 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2f24cdccbdde3d24Variant>? Type1005 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesAiBotsAction? Type1006 { get; set; }
+        public global::Vercel.AutoSDKShared2f24cdccbdde3d24Variant? Type1006 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesBotFilter? Type1007 { get; set; }
+        public global::Vercel.AutoSDKShared30685e6067cce163? Type1007 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesBotFilterAction? Type1008 { get; set; }
+        public global::Vercel.AutoSDKShared30685e6067cce163Variant1? Type1008 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesOwasp? Type1009 { get; set; }
+        public global::Vercel.AutoSDKShared30685e6067cce163Variant1Development? Type1009 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesOwaspAction? Type1010 { get; set; }
+        public global::Vercel.AutoSDKSharedaffe019c1a64bb83? Type1010 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesTrafficSources? Type1011 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared31ad55d5a9d0e802Item>? Type1011 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesTrafficSourcesAction? Type1012 { get; set; }
+        public global::Vercel.AutoSDKShared31ad55d5a9d0e802Item? Type1012 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesVercelRuleset? Type1013 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemFromVariant1, global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemFromVariant2>? Type1013 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesVercelRulesetAction? Type1014 { get; set; }
+        public global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemFromVariant1? Type1014 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared4c958b4a81a75558Rulesets2>? Type1015 { get; set; }
+        public global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemFromVariant1Preset? Type1015 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558Rulesets2? Type1016 { get; set; }
+        public global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemFromVariant2? Type1016 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsAction? Type1017 { get; set; }
+        public global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemFromVariant2Preset? Type1017 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsLogHeaders?>? Type1018 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemToVariant1, global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemToVariant2>? Type1018 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsLogHeaders? Type1019 { get; set; }
+        public global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemToVariant1? Type1019 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsRateLimit? Type1020 { get; set; }
+        public global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemToVariant1Preset? Type1020 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsRateLimitAction? Type1021 { get; set; }
+        public global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemToVariant2? Type1021 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsRateLimitAlgo? Type1022 { get; set; }
+        public global::Vercel.AutoSDKShared31ad55d5a9d0e802ItemToVariant2Preset? Type1022 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsRedirect? Type1023 { get; set; }
+        public global::Vercel.AutoSDKShared37c775f169729655? Type1023 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fc? Type1024 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared37c775f169729655Binding>? Type1024 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant1? Type1025 { get; set; }
+        public global::Vercel.AutoSDKShared37c775f169729655Binding? Type1025 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant1Type? Type1026 { get; set; }
+        public global::Vercel.AutoSDKShared37c775f169729655BindingFormat? Type1026 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant2? Type1027 { get; set; }
+        public global::Vercel.AutoSDKShared37c775f169729655BindingType? Type1027 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant2Type? Type1028 { get; set; }
+        public global::Vercel.AutoSDKShared37c775f169729655LivenessProbe? Type1028 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant3? Type1029 { get; set; }
+        public global::Vercel.AutoSDKShared37c775f169729655LivenessProbeHttpGet? Type1029 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant3Type? Type1030 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared37c775f169729655LivenessProbeHttpGetHttpHeader>? Type1030 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant4? Type1031 { get; set; }
+        public global::Vercel.AutoSDKShared37c775f169729655LivenessProbeHttpGetHttpHeader? Type1031 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant4Type? Type1032 { get; set; }
+        public global::Vercel.AutoSDKShared37c775f169729655LivenessProbeHttpGetScheme? Type1032 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant5? Type1033 { get; set; }
+        public global::Vercel.AutoSDKShared37c775f169729655Resources? Type1033 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant5Type? Type1034 { get; set; }
+        public global::Vercel.AutoSDKShared37c775f169729655ResourcesRequests? Type1034 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant6? Type1035 { get; set; }
+        public global::Vercel.AutoSDKShared37c775f169729655ResourcesRequestsMemory? Type1035 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant6Type? Type1036 { get; set; }
+        public global::Vercel.AutoSDKShared38e9af03824d67bc? Type1036 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant7? Type1037 { get; set; }
+        public global::Vercel.AutoSDKShared38e9af03824d67bcPublicKey? Type1037 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant7Type? Type1038 { get; set; }
+        public global::Vercel.AutoSDKShared38e9af03824d67bcStatus? Type1038 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant8? Type1039 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39b84c098d962a66Entitlement>? Type1039 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant8Type? Type1040 { get; set; }
+        public global::Vercel.AutoSDKShared39b84c098d962a66Entitlement? Type1040 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant9? Type1041 { get; set; }
+        public global::Vercel.AutoSDKShared39b84c098d962a66JoinedFrom? Type1041 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant9Type? Type1042 { get; set; }
+        public global::Vercel.AutoSDKShared39b84c098d962a66JoinedFromOrigin? Type1042 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant10? Type1043 { get; set; }
+        public global::Vercel.AutoSDKShared39b84c098d962a66Role? Type1043 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant10CommitMetadata? Type1044 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39b84c098d962a66TeamPermission>? Type1044 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant10CommitMetadataAuthor? Type1045 { get; set; }
+        public global::Vercel.AutoSDKShared39b84c098d962a66TeamPermission? Type1045 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant10CommitMetadataCommitter? Type1046 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared39b84c098d962a66TeamRole>? Type1046 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant10Type? Type1047 { get; set; }
+        public global::Vercel.AutoSDKShared39b84c098d962a66TeamRole? Type1047 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant11? Type1048 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2e531c6dd7d2b280>? Type1048 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant11Type? Type1049 { get; set; }
+        public global::Vercel.AutoSDKShared3aee88dc9f99cb9bAffinity? Type1049 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant12? Type1050 { get; set; }
+        public global::Vercel.AutoSDKShared3aee88dc9f99cb9bAffinityMode? Type1050 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant12Type? Type1051 { get; set; }
+        public global::Vercel.AutoSDKShared3aee88dc9f99cb9bArchitecture? Type1051 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant13? Type1052 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShareda0db2c4b058f2749>? Type1052 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant13Type? Type1053 { get; set; }
+        public global::Vercel.OneOf<double?, global::Vercel.AutoSDKShared3aee88dc9f99cb9bMaxDuration?>? Type1053 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant14? Type1054 { get; set; }
+        public global::Vercel.AutoSDKShared3aee88dc9f99cb9bMaxDuration? Type1054 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant14Type? Type1055 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKSharedf435ee41818aa67d>? Type1055 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant15? Type1056 { get; set; }
+        public global::Vercel.AutoSDKSharedf435ee41818aa67d? Type1056 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant15Type? Type1057 { get; set; }
+        public global::Vercel.AutoSDKShared3ee0b14b2005812dCreator? Type1057 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant16? Type1058 { get; set; }
+        public global::Vercel.AutoSDKShared3ee0b14b2005812dEchMode? Type1058 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant16Type? Type1059 { get; set; }
+        public global::Vercel.AutoSDKShared3ee0b14b2005812dServiceType? Type1059 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant17? Type1060 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedf010caf53b41f392>? Type1060 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant17Type? Type1061 { get; set; }
+        public global::Vercel.AutoSDKSharedf010caf53b41f392? Type1061 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant18? Type1062 { get; set; }
+        public global::Vercel.AutoSDKShared43b4aa57cd7998fd? Type1062 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant18CommitMetadata? Type1063 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02ae? Type1063 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant18CommitMetadataAuthor? Type1064 { get; set; }
+        public global::Vercel.AutoSDKShared43b4aa57cd7998fdVariant2? Type1064 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant18CommitMetadataCommitter? Type1065 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f45691814810f14>? Type1065 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant18Type? Type1066 { get; set; }
+        public global::Vercel.AutoSDKShared448ea965c003fe05Jwks? Type1066 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant19? Type1067 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared448ea965c003fe05JwksKey>? Type1067 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant19Type? Type1068 { get; set; }
+        public global::Vercel.AutoSDKShared448ea965c003fe05JwksKey? Type1068 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared29b35dda7b3e47c4>? Type1069 { get; set; }
+        public global::Vercel.AutoSDKShared448ea965c003fe05JwksKeyUse? Type1069 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34Analytics? Type1070 { get; set; }
+        public global::Vercel.AutoSDKShared44c5e53073934a2bAction? Type1070 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34Blobs? Type1071 { get; set; }
+        public global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigate? Type1071 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared4d5a5876dd584f34ConnectConfiguration>? Type1072 { get; set; }
+        public global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigateAction? Type1072 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34ConnectConfiguration? Type1073 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigateLogHeaders?>? Type1073 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34ConnectConfigurationAws? Type1074 { get; set; }
+        public global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigateLogHeaders? Type1074 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared4d5a5876dd584f34ConnectConfigurationEnvId?>? Type1075 { get; set; }
+        public global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigateRateLimit? Type1075 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34ConnectConfigurationEnvId? Type1076 { get; set; }
+        public global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigateRateLimitAction? Type1076 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17? Type1077 { get; set; }
+        public global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigateRateLimitAlgo? Type1077 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34Crons? Type1078 { get; set; }
+        public global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigateRedirect? Type1078 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared4d5a5876dd584f34CronsDefinition>? Type1079 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared44c5e53073934a2bConditionGroupItem>? Type1079 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34CronsDefinition? Type1080 { get; set; }
+        public global::Vercel.AutoSDKShared44c5e53073934a2bConditionGroupItem? Type1080 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34CronsDefinitionSource? Type1081 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared44c5e53073934a2bConditionGroupItemCondition>? Type1081 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7d4f4f5cff68219a>? Type1082 { get; set; }
+        public global::Vercel.AutoSDKShared44c5e53073934a2bConditionGroupItemCondition? Type1082 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34DataCache? Type1083 { get; set; }
+        public global::Vercel.AutoSDKShared44c5e53073934a2bConditionGroupItemConditionOp? Type1083 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724? Type1084 { get; set; }
+        public global::Vercel.AutoSDKShared44c5e53073934a2bConditionGroupItemConditionType? Type1084 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34DeploymentExpiration? Type1085 { get; set; }
+        public global::Vercel.OneOf<string, double?, global::System.Collections.Generic.IList<string>>? Type1085 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295? Type1086 { get; set; }
+        public global::Vercel.AutoSDKShared470bc56668090392? Type1086 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared4d5a5876dd584f34DismissedToast>? Type1087 { get; set; }
+        public global::Vercel.AutoSDKShared470bc56668090392InternalContentHint? Type1087 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34DismissedToast? Type1088 { get; set; }
+        public global::Vercel.AutoSDKShared470bc56668090392InternalContentHintType? Type1088 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34DismissedToastAction? Type1089 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared470bc56668090392TargetItem>, global::Vercel.AutoSDKShared470bc56668090392Target?>? Type1089 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, double?, global::Vercel.AutoSDKShared4d5a5876dd584f34DismissedToastValue, bool?>? Type1090 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared470bc56668090392TargetItem>? Type1090 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34DismissedToastValue? Type1091 { get; set; }
+        public global::Vercel.AutoSDKShared470bc56668090392TargetItem? Type1091 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, double?, bool?>? Type1092 { get; set; }
+        public global::Vercel.AutoSDKShared470bc56668090392Target? Type1092 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared470bc56668090392>? Type1093 { get; set; }
+        public global::Vercel.AutoSDKShared470bc56668090392Type? Type1093 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared4d5a5876dd584f34ExpirationVariant1, global::Vercel.AutoSDKShared4d5a5876dd584f34ExpirationVariant2>? Type1094 { get; set; }
+        public global::Vercel.AutoSDKShared470bc56668090392Visibility? Type1094 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34ExpirationVariant1? Type1095 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedef431bb3026a2de5>? Type1095 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34ExpirationVariant2? Type1096 { get; set; }
+        public global::Vercel.AutoSDKSharedef431bb3026a2de5? Type1096 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34Features? Type1097 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558? Type1097 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34Framework? Type1098 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedab64e9622c80dc17>? Type1098 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34GitComments? Type1099 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKShared4c958b4a81a75558LogHeaders?>? Type1099 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc12640b06f1c9105? Type1100 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558LogHeaders? Type1100 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant1, global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2>>? Type1101 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRules? Type1101 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant1, global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2>? Type1102 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesAiBots? Type1102 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant1? Type1103 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesAiBotsAction? Type1103 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2? Type1104 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesBotFilter? Type1104 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant1? Type1105 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesBotFilterAction? Type1105 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant1Key? Type1106 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesOwasp? Type1106 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant1Type? Type1107 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesOwaspAction? Type1107 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant1Value? Type1108 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesTrafficSources? Type1108 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant2? Type1109 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesTrafficSourcesAction? Type1109 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant2Type? Type1110 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesVercelRuleset? Type1110 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2HaVariant2Value? Type1111 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558ManagedRulesVercelRulesetAction? Type1111 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2Mitigate? Type1112 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared4c958b4a81a75558Rulesets2>? Type1112 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2MitigateAction? Type1113 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558Rulesets2? Type1113 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared4d5a5876dd584f34IpBucket>? Type1114 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsAction? Type1114 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34IpBucket? Type1115 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsLogHeaders?>? Type1115 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34Jobs? Type1116 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsLogHeaders? Type1116 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34JobsFlagDefinitionsPresent? Type1117 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsRateLimit? Type1117 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34JobsHealthCheck? Type1118 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsRateLimitAction? Type1118 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34JobsLint? Type1119 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsRateLimitAlgo? Type1119 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34JobsMfeConfigPresent? Type1120 { get; set; }
+        public global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsRedirect? Type1120 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34JobsTypecheck? Type1121 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fc? Type1121 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34LastAliasRequest? Type1122 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant1? Type1122 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34LastAliasRequestJobStatus? Type1123 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant1Type? Type1123 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34LastAliasRequestType? Type1124 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant2? Type1124 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31d? Type1125 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant2Type? Type1125 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared7ff9e6410c724535? Type1126 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant3? Type1126 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34NodeVersion? Type1127 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant3Type? Type1127 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34OidcTokenConfig? Type1128 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant4? Type1128 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34OidcTokenConfigIssuerMode? Type1129 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant4Type? Type1129 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34OptionsAllowlist? Type1130 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant5? Type1130 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared4d5a5876dd584f34OptionsAllowlistPath>? Type1131 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant5Type? Type1131 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34OptionsAllowlistPath? Type1132 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant6? Type1132 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34Passport? Type1133 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant6Type? Type1133 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34PassportDeploymentType? Type1134 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant7? Type1134 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34PasswordProtection? Type1135 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant7Type? Type1135 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34PasswordProtectionDeploymentType? Type1136 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant8? Type1136 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfe53701268010f56? Type1137 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant8Type? Type1137 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant1, global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant2>? Type1138 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant9? Type1138 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant1? Type1139 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant9Type? Type1139 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant1Scope? Type1140 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant10? Type1140 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant2? Type1141 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant10CommitMetadata? Type1141 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionBypassVariant2Scope? Type1142 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant10CommitMetadataAuthor? Type1142 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionConfig? Type1143 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant10CommitMetadataCommitter? Type1143 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34ProtectionConfigSandboxUrls? Type1144 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant10Type? Type1144 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedce0c7f50e384322c? Type1145 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant11? Type1145 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34Sandbox? Type1146 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant11Type? Type1146 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared4d5a5876dd584f34SandboxFailoverRegion>? Type1147 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant12? Type1147 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34SandboxFailoverRegion? Type1148 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant12Type? Type1148 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34SandboxRegion? Type1149 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant13? Type1149 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared4d5a5876dd584f34Service>? Type1150 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant13Type? Type1150 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34Service? Type1151 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant14? Type1151 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34ServiceFramework? Type1152 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant14Type? Type1152 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34ServiceServiceType? Type1153 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant15? Type1153 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34SpeedInsights? Type1154 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant15Type? Type1154 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34SsoProtection? Type1155 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant16? Type1155 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34SsoProtectionApril2026SecurityIncidentMigrationAppliedFrom? Type1156 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant16Type? Type1156 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34SsoProtectionCve55182MigrationAppliedFrom? Type1157 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant17? Type1157 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34SsoProtectionDeploymentType? Type1158 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant17Type? Type1158 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34StaticIps? Type1159 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant18? Type1159 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared8422af433e1bf486?>? Type1160 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant18CommitMetadata? Type1160 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34Tier? Type1161 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant18CommitMetadataAuthor? Type1161 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34Tracing? Type1162 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant18CommitMetadataCommitter? Type1162 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared4d5a5876dd584f34TracingSamplingRule>? Type1163 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant18Type? Type1163 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34TracingSamplingRule? Type1164 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant19? Type1164 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34TracingSamplingRuleDestination? Type1165 { get; set; }
+        public global::Vercel.AutoSDKShared4cd5b795d6ac66fcVariant19Type? Type1165 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34TracingSamplingRuleEnv? Type1166 { get; set; }
+        public global::Vercel.AutoSDKShared4f336dbaf7392e8f? Type1166 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1, global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant2>? Type1167 { get; set; }
+        public global::Vercel.AutoSDKShared4f336dbaf7392e8fMode? Type1167 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1? Type1168 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb0ea9e8a9b37de26>? Type1168 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1Addresse>? Type1169 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17? Type1169 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1Addresse? Type1170 { get; set; }
+        public global::Vercel.AutoSDKShared5461df8584cbc999? Type1170 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1DeploymentType? Type1171 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede10df3c22a339c10>? Type1171 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1ProtectionMode? Type1172 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared5461df8584cbc999Variant22>? Type1172 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant2? Type1173 { get; set; }
+        public global::Vercel.AutoSDKShared5461df8584cbc999Variant22? Type1173 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant2DeploymentType? Type1174 { get; set; }
+        public global::Vercel.AutoSDKShared5461df8584cbc999Variant2Action? Type1174 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared94938587734e5f57? Type1175 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKShared5461df8584cbc999Variant2LogHeaders?>? Type1175 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34UsageStatus? Type1176 { get; set; }
+        public global::Vercel.AutoSDKShared5461df8584cbc999Variant2LogHeaders? Type1176 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34UsageStatusKind? Type1177 { get; set; }
+        public global::Vercel.AutoSDKShared5461df8584cbc999Variant2RateLimit? Type1177 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34VercelFlags? Type1178 { get; set; }
+        public global::Vercel.AutoSDKShared5461df8584cbc999Variant2RateLimitAction? Type1178 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4d5a5876dd584f34WebAnalytics? Type1179 { get; set; }
+        public global::Vercel.AutoSDKShared5461df8584cbc999Variant2RateLimitAlgo? Type1179 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4f336dbaf7392e8f? Type1180 { get; set; }
+        public global::Vercel.AutoSDKShared5461df8584cbc999Variant2Redirect? Type1180 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared4f336dbaf7392e8fMode? Type1181 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1? Type1181 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb0ea9e8a9b37de26>? Type1182 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1Type? Type1182 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17? Type1183 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant1, global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant2>? Type1183 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared5461df8584cbc999? Type1184 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant1? Type1184 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede10df3c22a339c10>? Type1185 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant1App? Type1185 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared5461df8584cbc999Variant22>? Type1186 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant1Type? Type1186 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared5461df8584cbc999Variant22? Type1187 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant2? Type1187 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared5461df8584cbc999Variant2Action? Type1188 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant2Integration? Type1188 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKShared5461df8584cbc999Variant2LogHeaders?>? Type1189 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant2Type? Type1189 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared5461df8584cbc999Variant2LogHeaders? Type1190 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1User? Type1190 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared5461df8584cbc999Variant2RateLimit? Type1191 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant2? Type1191 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared5461df8584cbc999Variant2RateLimitAction? Type1192 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant2Project? Type1192 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared5461df8584cbc999Variant2RateLimitAlgo? Type1193 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant2Type? Type1193 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared5461df8584cbc999Variant2Redirect? Type1194 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant3? Type1194 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1? Type1195 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant3App? Type1195 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1Type? Type1196 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant3Type? Type1196 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant1, global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant2>? Type1197 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant4? Type1197 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant1? Type1198 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant4Integration? Type1198 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant1App? Type1199 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant4Type? Type1199 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant1Type? Type1200 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant5? Type1200 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant2? Type1201 { get; set; }
+        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant5Type? Type1201 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant2Integration? Type1202 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShareda2a71ce8831cd3f8>? Type1202 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant2Type? Type1203 { get; set; }
+        public global::Vercel.AutoSDKShareda2a71ce8831cd3f8? Type1203 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1User? Type1204 { get; set; }
+        public global::Vercel.AutoSDKShared6120795acc1bdfb3? Type1204 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant2? Type1205 { get; set; }
+        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant1? Type1205 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant2Project? Type1206 { get; set; }
+        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant1MachineSelectionType? Type1206 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant2Type? Type1207 { get; set; }
+        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant1PurchaseType? Type1207 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant3? Type1208 { get; set; }
+        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant1DefaultPurchaseType? Type1208 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant3App? Type1209 { get; set; }
+        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant1SelectionSource? Type1209 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant3Type? Type1210 { get; set; }
+        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant2? Type1210 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant4? Type1211 { get; set; }
+        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant2MachineSelectionType? Type1211 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant4Integration? Type1212 { get; set; }
+        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant2PurchaseType? Type1212 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant4Type? Type1213 { get; set; }
+        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant2DefaultPurchaseType? Type1213 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant5? Type1214 { get; set; }
+        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant2SelectionSource? Type1214 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared58ffef5c4d095b17Variant5Type? Type1215 { get; set; }
+        public global::Vercel.AutoSDKShared650e942fd9ba5744? Type1215 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShareda2a71ce8831cd3f8>? Type1216 { get; set; }
+        public global::Vercel.AutoSDKSharedcac2d258b36c4083? Type1216 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda2a71ce8831cd3f8? Type1217 { get; set; }
+        public global::Vercel.AutoSDKShared650e942fd9ba5744Subnets? Type1217 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6120795acc1bdfb3? Type1218 { get; set; }
+        public global::Vercel.AutoSDKShared693ab19349d28dd8? Type1218 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant1? Type1219 { get; set; }
+        public global::Vercel.AutoSDKShared6bb335e8fa392fa3? Type1219 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant1MachineSelectionType? Type1220 { get; set; }
+        public global::Vercel.AutoSDKShared6bb335e8fa392fa3Algorithm? Type1220 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant1PurchaseType? Type1221 { get; set; }
+        public global::Vercel.AutoSDKShared6bb335e8fa392fa3DiscoveryLayout? Type1221 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant1DefaultPurchaseType? Type1222 { get; set; }
+        public global::Vercel.AutoSDKShared6bb335e8fa392fa3Origin? Type1222 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant1SelectionSource? Type1223 { get; set; }
+        public global::Vercel.AutoSDKShared6bb335e8fa392fa3PolicieVariant1? Type1223 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant2? Type1224 { get; set; }
+        public global::Vercel.AutoSDKShared6bb335e8fa392fa3PolicieVariant1Kind? Type1224 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant2MachineSelectionType? Type1225 { get; set; }
+        public global::Vercel.AutoSDKShared6bb335e8fa392fa3PolicieVariant2? Type1225 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant2PurchaseType? Type1226 { get; set; }
+        public global::Vercel.AutoSDKShared6bb335e8fa392fa3PolicieVariant2Kind? Type1226 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant2DefaultPurchaseType? Type1227 { get; set; }
+        public global::Vercel.AutoSDKShared6bb335e8fa392fa3PolicieVariant3? Type1227 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6120795acc1bdfb3Variant2SelectionSource? Type1228 { get; set; }
+        public global::Vercel.AutoSDKShared6bb335e8fa392fa3PolicieVariant3Kind? Type1228 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared650e942fd9ba5744? Type1229 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared38e9af03824d67bc>? Type1229 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedcac2d258b36c4083? Type1230 { get; set; }
+        public global::Vercel.AutoSDKShared6bbdd9b0474e1d24? Type1230 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared650e942fd9ba5744Subnets? Type1231 { get; set; }
+        public global::Vercel.AutoSDKShareded968b11b9b54542? Type1231 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared693ab19349d28dd8? Type1232 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared6bbdd9b0474e1d24Env2>? Type1232 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bb335e8fa392fa3? Type1233 { get; set; }
+        public global::Vercel.AutoSDKShared6bbdd9b0474e1d24Env2? Type1233 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bb335e8fa392fa3Algorithm? Type1234 { get; set; }
+        public global::Vercel.AutoSDKShared6bbdd9b0474e1d24EnvType? Type1234 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bb335e8fa392fa3DiscoveryLayout? Type1235 { get; set; }
+        public global::Vercel.AutoSDKShared6bbdd9b0474e1d24RoutePrefixSource? Type1235 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bb335e8fa392fa3Origin? Type1236 { get; set; }
+        public global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? Type1236 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bb335e8fa392fa3PolicieVariant1? Type1237 { get; set; }
+        public global::Vercel.AutoSDKShared6bbdd9b0474e1d24Schema? Type1237 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bb335e8fa392fa3PolicieVariant1Kind? Type1238 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6bbdd9b0474e1d24TopicsVariant2Item>>? Type1238 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bb335e8fa392fa3PolicieVariant2? Type1239 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6bbdd9b0474e1d24TopicsVariant2Item>? Type1239 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bb335e8fa392fa3PolicieVariant2Kind? Type1240 { get; set; }
+        public global::Vercel.AutoSDKShared6bbdd9b0474e1d24TopicsVariant2Item? Type1240 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bb335e8fa392fa3PolicieVariant3? Type1241 { get; set; }
+        public global::Vercel.AutoSDKShared6bbdd9b0474e1d24Trigger? Type1241 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bb335e8fa392fa3PolicieVariant3Kind? Type1242 { get; set; }
+        public global::Vercel.AutoSDKShared6bbdd9b0474e1d24Type? Type1242 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared38e9af03824d67bc>? Type1243 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170a? Type1243 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bbdd9b0474e1d24? Type1244 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6ed60ada20c5170aCondition>? Type1244 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareded968b11b9b54542? Type1245 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCondition? Type1245 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared6bbdd9b0474e1d24Env2>? Type1246 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6ed60ada20c5170aConditionConditionGroupItem>? Type1246 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bbdd9b0474e1d24Env2? Type1247 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aConditionConditionGroupItem? Type1247 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bbdd9b0474e1d24EnvType? Type1248 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6ed60ada20c5170aConditionConditionGroupItemCondition>? Type1248 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bbdd9b0474e1d24RoutePrefixSource? Type1249 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aConditionConditionGroupItemCondition? Type1249 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::System.Collections.Generic.IList<string>>? Type1250 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aConditionConditionGroupItemConditionOp? Type1250 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bbdd9b0474e1d24Schema? Type1251 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aConditionConditionGroupItemConditionType? Type1251 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6bbdd9b0474e1d24TopicsVariant2Item>>? Type1252 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrs? Type1252 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6bbdd9b0474e1d24TopicsVariant2Item>? Type1253 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsGen? Type1253 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bbdd9b0474e1d24TopicsVariant2Item? Type1254 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsGenAction? Type1254 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bbdd9b0474e1d24Trigger? Type1255 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsJava? Type1255 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6bbdd9b0474e1d24Type? Type1256 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsJavaAction? Type1256 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170a? Type1257 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsLfi? Type1257 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6ed60ada20c5170aCondition>? Type1258 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsLfiAction? Type1258 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCondition? Type1259 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsMa? Type1259 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6ed60ada20c5170aConditionConditionGroupItem>? Type1260 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsMaAction? Type1260 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aConditionConditionGroupItem? Type1261 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsPhp? Type1261 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6ed60ada20c5170aConditionConditionGroupItemCondition>? Type1262 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsPhpAction? Type1262 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aConditionConditionGroupItemCondition? Type1263 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsRce? Type1263 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aConditionConditionGroupItemConditionOp? Type1264 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsRceAction? Type1264 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aConditionConditionGroupItemConditionType? Type1265 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsRfi? Type1265 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrs? Type1266 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsRfiAction? Type1266 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsGen? Type1267 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsSd? Type1267 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsGenAction? Type1268 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsSdAction? Type1268 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsJava? Type1269 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsSf? Type1269 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsJavaAction? Type1270 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsSfAction? Type1270 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsLfi? Type1271 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsSqli? Type1271 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsLfiAction? Type1272 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsSqliAction? Type1272 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsMa? Type1273 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsXss? Type1273 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsMaAction? Type1274 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsXssAction? Type1274 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsPhp? Type1275 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6ed60ada20c5170aIp>? Type1275 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsPhpAction? Type1276 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aIp? Type1276 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsRce? Type1277 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aIpAction? Type1277 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsRceAction? Type1278 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKShared6ed60ada20c5170aLogHeaders?>? Type1278 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsRfi? Type1279 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aLogHeaders? Type1279 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsRfiAction? Type1280 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRules? Type1280 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsSd? Type1281 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesAiBots? Type1281 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsSdAction? Type1282 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesAiBotsAction? Type1282 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsSf? Type1283 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesBotProtection? Type1283 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsSfAction? Type1284 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesBotProtectionAction? Type1284 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsSqli? Type1285 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesOwasp? Type1285 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsSqliAction? Type1286 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesOwaspAction? Type1286 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsXss? Type1287 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesTrafficSources? Type1287 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aCrsXssAction? Type1288 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesTrafficSourcesAction? Type1288 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6ed60ada20c5170aIp>? Type1289 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesVercelRuleset? Type1289 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aIp? Type1290 { get; set; }
+        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesVercelRulesetAction? Type1290 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aIpAction? Type1291 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2a792fc701a6e66d>? Type1291 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKShared6ed60ada20c5170aLogHeaders?>? Type1292 { get; set; }
+        public global::Vercel.AutoSDKShared6ed7be4e006b051d? Type1292 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aLogHeaders? Type1293 { get; set; }
+        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant1? Type1293 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRules? Type1294 { get; set; }
+        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant1OwnerType? Type1294 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesAiBots? Type1295 { get; set; }
+        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant1Type? Type1295 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesAiBotsAction? Type1296 { get; set; }
+        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant2? Type1296 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesBotProtection? Type1297 { get; set; }
+        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant2OwnerType? Type1297 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesBotProtectionAction? Type1298 { get; set; }
+        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant2Type? Type1298 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesOwasp? Type1299 { get; set; }
+        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant3? Type1299 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesOwaspAction? Type1300 { get; set; }
+        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant3OwnerType? Type1300 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesTrafficSources? Type1301 { get; set; }
+        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant3Type? Type1301 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesTrafficSourcesAction? Type1302 { get; set; }
+        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant4? Type1302 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesVercelRuleset? Type1303 { get; set; }
+        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant4OwnerType? Type1303 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed60ada20c5170aManagedRulesVercelRulesetAction? Type1304 { get; set; }
+        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant4Type? Type1304 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2a792fc701a6e66d>? Type1305 { get; set; }
+        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant5? Type1305 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed7be4e006b051d? Type1306 { get; set; }
+        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant5OwnerType? Type1306 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant1? Type1307 { get; set; }
+        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant5Type? Type1307 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant1OwnerType? Type1308 { get; set; }
+        public global::Vercel.AutoSDKShared6f8a79e3e6c211af? Type1308 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant1Type? Type1309 { get; set; }
+        public global::Vercel.AutoSDKSharedcdaac4bd3d3c6643? Type1309 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant2? Type1310 { get; set; }
+        public global::Vercel.AutoSDKSharede10df3c22a339c10? Type1310 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant2OwnerType? Type1311 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47? Type1311 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant2Type? Type1312 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant1? Type1312 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant3? Type1313 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant1Type? Type1313 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant3OwnerType? Type1314 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant2? Type1314 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant3Type? Type1315 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant2Base? Type1315 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant4? Type1316 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant2BaseType? Type1316 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant4OwnerType? Type1317 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant2Type? Type1317 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant4Type? Type1318 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant3? Type1318 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant5? Type1319 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant3Base? Type1319 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant5OwnerType? Type1320 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant3BaseType? Type1320 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6ed7be4e006b051dVariant5Type? Type1321 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant3Slot>? Type1321 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared6f8a79e3e6c211af? Type1322 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant3Slot? Type1322 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedcdaac4bd3d3c6643? Type1323 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant3Type? Type1323 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede10df3c22a339c10? Type1324 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant4? Type1324 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47? Type1325 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant4Type? Type1325 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant1? Type1326 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47PausedOutcome? Type1326 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant1Type? Type1327 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47PausedOutcomeType? Type1327 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant2? Type1328 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Reuse? Type1328 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant2Base? Type1329 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target>>>>? Type1329 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant2BaseType? Type1330 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target>>>? Type1330 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant2Type? Type1331 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target>>? Type1331 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant3? Type1332 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target>? Type1332 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant3Base? Type1333 { get; set; }
+        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target? Type1333 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant3BaseType? Type1334 { get; set; }
+        public global::Vercel.AutoSDKShared78353984d471628d? Type1334 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant3Slot>? Type1335 { get; set; }
+        public global::Vercel.AutoSDKShared78353984d471628dVariant1? Type1335 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant3Slot? Type1336 { get; set; }
+        public global::Vercel.AutoSDKShared78fcc629ea8987ed? Type1336 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant3Type? Type1337 { get; set; }
+        public global::Vercel.AutoSDKShared7d4f4f5cff68219a? Type1337 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant4? Type1338 { get; set; }
+        public global::Vercel.AutoSDKShared7d4f4f5cff68219aBranchMatcher? Type1338 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant4Type? Type1339 { get; set; }
+        public global::Vercel.AutoSDKShared7d4f4f5cff68219aBranchMatcherType? Type1339 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47PausedOutcome? Type1340 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7d4f4f5cff68219aDomain>? Type1340 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47PausedOutcomeType? Type1341 { get; set; }
+        public global::Vercel.AutoSDKShared7d4f4f5cff68219aDomain? Type1341 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Reuse? Type1342 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7d4f4f5cff68219aDomainVerificationItem>? Type1342 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target>>>>? Type1343 { get; set; }
+        public global::Vercel.AutoSDKShared7d4f4f5cff68219aDomainVerificationItem? Type1343 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target>>>? Type1344 { get; set; }
+        public global::Vercel.AutoSDKShared7d4f4f5cff68219aType? Type1344 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target>>? Type1345 { get; set; }
+        public global::Vercel.AutoSDKShared7ff9e6410c724535Variant1? Type1345 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target>? Type1346 { get; set; }
+        public global::Vercel.AutoSDKShared7ff9e6410c724535Variant2? Type1346 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target? Type1347 { get; set; }
+        public global::Vercel.AutoSDKShared7ff9e6410c724535Variant3? Type1347 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared78353984d471628d? Type1348 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared803d328dcef47295DeploymentSource>? Type1348 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared78353984d471628dVariant1? Type1349 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295DeploymentSource? Type1349 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared78fcc629ea8987ed? Type1350 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceEnvironmentVariant1? Type1350 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared7d4f4f5cff68219a? Type1351 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceEnvironmentVariant1Target? Type1351 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared7d4f4f5cff68219aBranchMatcher? Type1352 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceEnvironmentVariant1Type? Type1352 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared7d4f4f5cff68219aBranchMatcherType? Type1353 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceEnvironmentVariant2? Type1353 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7d4f4f5cff68219aDomain>? Type1354 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceEnvironmentVariant2Type? Type1354 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared7d4f4f5cff68219aDomain? Type1355 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceSource>? Type1355 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7d4f4f5cff68219aDomainVerificationItem>? Type1356 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceSource? Type1356 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared7d4f4f5cff68219aDomainVerificationItem? Type1357 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared803d328dcef47295GitSource>? Type1357 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared7d4f4f5cff68219aType? Type1358 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295GitSource? Type1358 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared7ff9e6410c724535Variant1? Type1359 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant1? Type1359 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared7ff9e6410c724535Variant2? Type1360 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant1Target? Type1360 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared7ff9e6410c724535Variant3? Type1361 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant1Type? Type1361 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared803d328dcef47295DeploymentSource>? Type1362 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant2? Type1362 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295DeploymentSource? Type1363 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant2Type? Type1363 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceEnvironmentVariant1? Type1364 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared803d328dcef47295GitSourceSourceVariant1, global::Vercel.AutoSDKShared803d328dcef47295GitSourceSourceVariant2>? Type1364 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceEnvironmentVariant1Target? Type1365 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceSourceVariant1? Type1365 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceEnvironmentVariant1Type? Type1366 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceSourceVariant1Provider? Type1366 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceEnvironmentVariant2? Type1367 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceSourceVariant2? Type1367 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceEnvironmentVariant2Type? Type1368 { get; set; }
+        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceSourceVariant2Provider? Type1368 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceSource>? Type1369 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared82154186cc88506cDestination>? Type1369 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceSource? Type1370 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506cDestination? Type1370 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared803d328dcef47295GitSource>? Type1371 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506cDestinationType? Type1371 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295GitSource? Type1372 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared82154186cc88506cHaVariant1, global::Vercel.AutoSDKShared82154186cc88506cHaVariant2>>? Type1372 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant1? Type1373 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared82154186cc88506cHaVariant1, global::Vercel.AutoSDKShared82154186cc88506cHaVariant2>? Type1373 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant1Target? Type1374 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506cHaVariant1? Type1374 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant1Type? Type1375 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506cHaVariant1Type? Type1375 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant2? Type1376 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared82154186cc88506cHaVariant1Value>? Type1376 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant2Type? Type1377 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506cHaVariant1Value? Type1377 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared803d328dcef47295GitSourceSourceVariant1, global::Vercel.AutoSDKShared803d328dcef47295GitSourceSourceVariant2>? Type1378 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506cHaVariant2? Type1378 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceSourceVariant1? Type1379 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506cHaVariant2Type? Type1379 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceSourceVariant1Provider? Type1380 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared82154186cc88506cHaVariant2Value>? Type1380 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceSourceVariant2? Type1381 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506cHaVariant2Value? Type1381 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared803d328dcef47295GitSourceSourceVariant2Provider? Type1382 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant1, global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant2>>? Type1382 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared82154186cc88506cDestination>? Type1383 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant1, global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant2>? Type1383 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506cDestination? Type1384 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant1? Type1384 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506cDestinationType? Type1385 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant1Type? Type1385 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared82154186cc88506cHaVariant1, global::Vercel.AutoSDKShared82154186cc88506cHaVariant2>>? Type1386 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant1Value>? Type1386 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared82154186cc88506cHaVariant1, global::Vercel.AutoSDKShared82154186cc88506cHaVariant2>? Type1387 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant1Value? Type1387 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506cHaVariant1? Type1388 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant2? Type1388 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506cHaVariant1Type? Type1389 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant2Type? Type1389 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared82154186cc88506cHaVariant1Value>? Type1390 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant2Value>? Type1390 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506cHaVariant1Value? Type1391 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant2Value? Type1391 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506cHaVariant2? Type1392 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared82154186cc88506cTransform>? Type1392 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506cHaVariant2Type? Type1393 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506cTransform? Type1393 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared82154186cc88506cHaVariant2Value>? Type1394 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506cTransformOp? Type1394 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506cHaVariant2Value? Type1395 { get; set; }
+        public global::Vercel.AutoSDKShared82154186cc88506cTransformType? Type1395 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant1, global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant2>>? Type1396 { get; set; }
+        public global::Vercel.AutoSDKShared82df63ae69e9ea93? Type1396 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant1, global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant2>? Type1397 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared82df63ae69e9ea93Variant1Item>? Type1397 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant1? Type1398 { get; set; }
+        public global::Vercel.AutoSDKShared82df63ae69e9ea93Variant1Item? Type1398 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant1Type? Type1399 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared82df63ae69e9ea93Variant2Item>? Type1399 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant1Value>? Type1400 { get; set; }
+        public global::Vercel.AutoSDKShared82df63ae69e9ea93Variant2Item? Type1400 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant1Value? Type1401 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared82df63ae69e9ea93Variant3Item>? Type1401 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant2? Type1402 { get; set; }
+        public global::Vercel.AutoSDKShared82df63ae69e9ea93Variant3Item? Type1402 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant2Type? Type1403 { get; set; }
+        public global::Vercel.OneOf<double?, bool?>? Type1403 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant2Value>? Type1404 { get; set; }
+        public global::Vercel.AutoSDKShared8422af433e1bf486AliasError? Type1404 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant2Value? Type1405 { get; set; }
+        public global::Vercel.AutoSDKShared8422af433e1bf486BranchMatcher? Type1405 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared82154186cc88506cTransform>? Type1406 { get; set; }
+        public global::Vercel.AutoSDKShared8422af433e1bf486BranchMatcherType? Type1406 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506cTransform? Type1407 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared8422af433e1bf486Build>? Type1407 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506cTransformOp? Type1408 { get; set; }
+        public global::Vercel.AutoSDKShared8422af433e1bf486Build? Type1408 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82154186cc88506cTransformType? Type1409 { get; set; }
+        public global::Vercel.AutoSDKShared8422af433e1bf486ChecksConclusion? Type1409 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82df63ae69e9ea93? Type1410 { get; set; }
+        public global::Vercel.AutoSDKShared8422af433e1bf486ChecksState? Type1410 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared82df63ae69e9ea93Variant1Item>? Type1411 { get; set; }
+        public global::Vercel.AutoSDKShared8422af433e1bf486Creator? Type1411 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82df63ae69e9ea93Variant1Item? Type1412 { get; set; }
+        public global::Vercel.AutoSDKShared8422af433e1bf486OidcTokenClaims? Type1412 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared82df63ae69e9ea93Variant2Item>? Type1413 { get; set; }
+        public global::Vercel.AutoSDKShared8422af433e1bf486Plan? Type1413 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82df63ae69e9ea93Variant2Item? Type1414 { get; set; }
+        public global::Vercel.AutoSDKShared8422af433e1bf486ReadyState? Type1414 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared82df63ae69e9ea93Variant3Item>? Type1415 { get; set; }
+        public global::Vercel.AutoSDKShared8422af433e1bf486ReadySubstate? Type1415 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared82df63ae69e9ea93Variant3Item? Type1416 { get; set; }
+        public global::Vercel.AutoSDKShared8422af433e1bf486Type? Type1416 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<double?, bool?>? Type1417 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9695014f26667713>? Type1417 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared8422af433e1bf486AliasError? Type1418 { get; set; }
+        public global::Vercel.AutoSDKShared9695014f26667713? Type1418 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared8422af433e1bf486BranchMatcher? Type1419 { get; set; }
+        public global::Vercel.AutoSDKShared8497046ac346003c? Type1419 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared8422af433e1bf486BranchMatcherType? Type1420 { get; set; }
+        public global::Vercel.AutoSDKSharedb2aa6c85fab0cd65? Type1420 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared8422af433e1bf486Build>? Type1421 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared30685e6067cce163>? Type1421 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared8422af433e1bf486Build? Type1422 { get; set; }
+        public global::Vercel.AutoSDKShared8d702c849eb14eb6? Type1422 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared8422af433e1bf486ChecksConclusion? Type1423 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8? Type1423 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared8422af433e1bf486ChecksState? Type1424 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68? Type1424 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared8422af433e1bf486Creator? Type1425 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8DisabledReason? Type1425 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared8422af433e1bf486OidcTokenClaims? Type1426 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared90103a1814ebf3a8SamplingItem>? Type1426 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared8422af433e1bf486Plan? Type1427 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8SamplingItem? Type1427 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared8422af433e1bf486ReadyState? Type1428 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8SamplingItemEnv? Type1428 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared8422af433e1bf486ReadySubstate? Type1429 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8SamplingItemType? Type1429 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared8422af433e1bf486Type? Type1430 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8Schemas? Type1430 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared8497046ac346003c? Type1431 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared90103a1814ebf3a8SourceVariant1, global::Vercel.AutoSDKShared90103a1814ebf3a8SourceVariant2>? Type1431 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb2aa6c85fab0cd65? Type1432 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8SourceVariant1? Type1432 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared30685e6067cce163>? Type1433 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8SourceVariant1DefaultFor? Type1433 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared8d702c849eb14eb6? Type1434 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8SourceVariant1Kind? Type1434 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8? Type1435 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8SourceVariant2? Type1435 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68? Type1436 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8SourceVariant2Kind? Type1436 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8DisabledReason? Type1437 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8Status? Type1437 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared90103a1814ebf3a8SamplingItem>? Type1438 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8DeliveryStats? Type1438 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8SamplingItem? Type1439 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8DeliveryStatsState? Type1439 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8SamplingItemEnv? Type1440 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8DeliveryStatsWindow? Type1440 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8SamplingItemType? Type1441 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2? Type1441 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8Schemas? Type1442 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1, global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant2>? Type1442 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared90103a1814ebf3a8SourceVariant1, global::Vercel.AutoSDKShared90103a1814ebf3a8SourceVariant2>? Type1443 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1? Type1443 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8SourceVariant1? Type1444 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1Deployment? Type1444 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8SourceVariant1DefaultFor? Type1445 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1DeploymentEnvironment>? Type1445 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8SourceVariant1Kind? Type1446 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1DeploymentEnvironment? Type1446 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8SourceVariant2? Type1447 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1Log? Type1447 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8SourceVariant2Kind? Type1448 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1LogSource>? Type1448 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8Status? Type1449 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1LogSource? Type1449 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8DeliveryStats? Type1450 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1Project? Type1450 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8DeliveryStatsState? Type1451 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1Type? Type1451 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8DeliveryStatsWindow? Type1452 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant2? Type1452 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2? Type1453 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant2Type? Type1453 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1, global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant2>? Type1454 { get; set; }
+        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2Version? Type1454 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1? Type1455 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKSharedafa4bcd6bd044b8b>? Type1455 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1Deployment? Type1456 { get; set; }
+        public global::Vercel.AutoSDKSharedafa4bcd6bd044b8b? Type1456 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1DeploymentEnvironment>? Type1457 { get; set; }
+        public global::Vercel.AutoSDKShared9296e9c5692fbba2? Type1457 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1DeploymentEnvironment? Type1458 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKSharedceccd47983fcf9de>? Type1458 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1Log? Type1459 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9de? Type1459 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1LogSource>? Type1460 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000e? Type1460 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1LogSource? Type1461 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared947f69fa305d000eDestination>? Type1461 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1Project? Type1462 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eDestination? Type1462 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant1Type? Type1463 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eDestinationType? Type1463 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant2? Type1464 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared947f69fa305d000eHaVariant1, global::Vercel.AutoSDKShared947f69fa305d000eHaVariant2>>? Type1464 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2FilterVariant2Type? Type1465 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared947f69fa305d000eHaVariant1, global::Vercel.AutoSDKShared947f69fa305d000eHaVariant2>? Type1465 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared90103a1814ebf3a8FilterV2Version? Type1466 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eHaVariant1? Type1466 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKSharedafa4bcd6bd044b8b>? Type1467 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eHaVariant1Type? Type1467 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedafa4bcd6bd044b8b? Type1468 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared947f69fa305d000eHaVariant1Value>? Type1468 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9296e9c5692fbba2? Type1469 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eHaVariant1Value? Type1469 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKSharedceccd47983fcf9de>? Type1470 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eHaVariant2? Type1470 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9de? Type1471 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eHaVariant2Type? Type1471 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000e? Type1472 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared947f69fa305d000eHaVariant2Value>? Type1472 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared947f69fa305d000eDestination>? Type1473 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eHaVariant2Value? Type1473 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eDestination? Type1474 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eLocale? Type1474 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eDestinationType? Type1475 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant1, global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant2>>? Type1475 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared947f69fa305d000eHaVariant1, global::Vercel.AutoSDKShared947f69fa305d000eHaVariant2>>? Type1476 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant1, global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant2>? Type1476 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared947f69fa305d000eHaVariant1, global::Vercel.AutoSDKShared947f69fa305d000eHaVariant2>? Type1477 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant1? Type1477 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eHaVariant1? Type1478 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant1Type? Type1478 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eHaVariant1Type? Type1479 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant1Value>? Type1479 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared947f69fa305d000eHaVariant1Value>? Type1480 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant1Value? Type1480 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eHaVariant1Value? Type1481 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant2? Type1481 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eHaVariant2? Type1482 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant2Type? Type1482 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eHaVariant2Type? Type1483 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant2Value>? Type1483 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared947f69fa305d000eHaVariant2Value>? Type1484 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant2Value? Type1484 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eHaVariant2Value? Type1485 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eMitigate? Type1485 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eLocale? Type1486 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eMitigateAction? Type1486 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant1, global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant2>>? Type1487 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant1, global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant2>>? Type1487 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant1, global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant2>? Type1488 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant1, global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant2>? Type1488 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant1? Type1489 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant1? Type1489 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant1Type? Type1490 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant1Op? Type1490 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant1Value>? Type1491 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant1Target? Type1491 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant1Value? Type1492 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant1TargetKey>? Type1492 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant2? Type1493 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant1TargetKey? Type1493 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant2Type? Type1494 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant1Type? Type1494 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant2Value>? Type1495 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant2? Type1495 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant2Value? Type1496 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant2Op? Type1496 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eMitigate? Type1497 { get; set; }
+        public global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant2Type? Type1497 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eMitigateAction? Type1498 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared94938587734e5f57OidcProvider>>? Type1498 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant1, global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant2>>? Type1499 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared94938587734e5f57OidcProvider>? Type1499 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant1, global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant2>? Type1500 { get; set; }
+        public global::Vercel.AutoSDKShared94938587734e5f57OidcProvider? Type1500 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant1? Type1501 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared94938587734e5f57OidcProviderToVariant1, global::Vercel.AutoSDKShared94938587734e5f57OidcProviderToVariant2>? Type1501 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant1Op? Type1502 { get; set; }
+        public global::Vercel.AutoSDKShared94938587734e5f57OidcProviderToVariant1? Type1502 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant1Target? Type1503 { get; set; }
+        public global::Vercel.AutoSDKShared94938587734e5f57OidcProviderToVariant1Preset? Type1503 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant1TargetKey>? Type1504 { get; set; }
+        public global::Vercel.AutoSDKShared94938587734e5f57OidcProviderToVariant2? Type1504 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant1TargetKey? Type1505 { get; set; }
+        public global::Vercel.AutoSDKShared94938587734e5f57OidcProviderToVariant2Preset? Type1505 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant1Type? Type1506 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<string>>? Type1506 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant2? Type1507 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared9554e4a81de92250HaVariant1, global::Vercel.AutoSDKShared9554e4a81de92250HaVariant2>>? Type1507 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant2Op? Type1508 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared9554e4a81de92250HaVariant1, global::Vercel.AutoSDKShared9554e4a81de92250HaVariant2>? Type1508 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant2Type? Type1509 { get; set; }
+        public global::Vercel.AutoSDKShared9554e4a81de92250HaVariant1? Type1509 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared94938587734e5f57OidcProvider>>? Type1510 { get; set; }
+        public global::Vercel.AutoSDKShared9554e4a81de92250HaVariant1Type? Type1510 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared94938587734e5f57OidcProvider>? Type1511 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared9554e4a81de92250HaVariant1Value>? Type1511 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared94938587734e5f57OidcProvider? Type1512 { get; set; }
+        public global::Vercel.AutoSDKShared9554e4a81de92250HaVariant1Value? Type1512 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared94938587734e5f57OidcProviderToVariant1, global::Vercel.AutoSDKShared94938587734e5f57OidcProviderToVariant2>? Type1513 { get; set; }
+        public global::Vercel.AutoSDKShared9554e4a81de92250HaVariant2? Type1513 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared94938587734e5f57OidcProviderToVariant1? Type1514 { get; set; }
+        public global::Vercel.AutoSDKShared9554e4a81de92250HaVariant2Type? Type1514 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared94938587734e5f57OidcProviderToVariant1Preset? Type1515 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared9554e4a81de92250HaVariant2Value>? Type1515 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared94938587734e5f57OidcProviderToVariant2? Type1516 { get; set; }
+        public global::Vercel.AutoSDKShared9554e4a81de92250HaVariant2Value? Type1516 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared94938587734e5f57OidcProviderToVariant2Preset? Type1517 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9554e4a81de92250Header>? Type1517 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<string>>? Type1518 { get; set; }
+        public global::Vercel.AutoSDKShared9554e4a81de92250Header? Type1518 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared9554e4a81de92250HaVariant1, global::Vercel.AutoSDKShared9554e4a81de92250HaVariant2>>? Type1519 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant1, global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant2>>? Type1519 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared9554e4a81de92250HaVariant1, global::Vercel.AutoSDKShared9554e4a81de92250HaVariant2>? Type1520 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant1, global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant2>? Type1520 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9554e4a81de92250HaVariant1? Type1521 { get; set; }
+        public global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant1? Type1521 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9554e4a81de92250HaVariant1Type? Type1522 { get; set; }
+        public global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant1Type? Type1522 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared9554e4a81de92250HaVariant1Value>? Type1523 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant1Value>? Type1523 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9554e4a81de92250HaVariant1Value? Type1524 { get; set; }
+        public global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant1Value? Type1524 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9554e4a81de92250HaVariant2? Type1525 { get; set; }
+        public global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant2? Type1525 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9554e4a81de92250HaVariant2Type? Type1526 { get; set; }
+        public global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant2Type? Type1526 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared9554e4a81de92250HaVariant2Value>? Type1527 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant2Value>? Type1527 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9554e4a81de92250HaVariant2Value? Type1528 { get; set; }
+        public global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant2Value? Type1528 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9554e4a81de92250Header>? Type1529 { get; set; }
+        public global::Vercel.AnyOf<global::Vercel.AutoSDKShared9695014f26667713SourceVariant1, global::Vercel.AutoSDKShared9695014f26667713SourceVariant2>? Type1529 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9554e4a81de92250Header? Type1530 { get; set; }
+        public global::Vercel.AutoSDKShared9695014f26667713SourceVariant1? Type1530 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant1, global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant2>>? Type1531 { get; set; }
+        public global::Vercel.AutoSDKShared9695014f26667713SourceVariant2? Type1531 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant1, global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant2>? Type1532 { get; set; }
+        public global::Vercel.AutoSDKShared9695014f26667713Skipped? Type1532 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant1? Type1533 { get; set; }
+        public global::Vercel.AutoSDKShared9695014f26667713BootstrappingStarted? Type1533 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant1Type? Type1534 { get; set; }
+        public global::Vercel.AutoSDKShared9695014f26667713BootstrappingFailed? Type1534 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant1Value>? Type1535 { get; set; }
+        public global::Vercel.AutoSDKShared9695014f26667713SandboxSnapshotted? Type1535 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant1Value? Type1536 { get; set; }
+        public global::Vercel.AutoSDKShared9695014f26667713SandboxNamed? Type1536 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant2? Type1537 { get; set; }
+        public global::Vercel.AutoSDKShared9695014f26667713JobDefinitionsCreated? Type1537 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant2Type? Type1538 { get; set; }
+        public global::Vercel.AutoSDKShared9695014f26667713Completed? Type1538 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant2Value>? Type1539 { get; set; }
+        public global::Vercel.AutoSDKShared9695014f26667713SetupConclusion? Type1539 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9554e4a81de92250MissingItemVariant2Value? Type1540 { get; set; }
+        public global::Vercel.AutoSDKShared9695014f26667713RunConclusion? Type1540 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fc? Type1541 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Type1541 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcDisabledReason? Type1542 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fc? Type1542 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9f8c0585e20078fcSamplingItem>? Type1543 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcDisabledReason? Type1543 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcSamplingItem? Type1544 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9f8c0585e20078fcSamplingItem>? Type1544 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcSamplingItemEnv? Type1545 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcSamplingItem? Type1545 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcSamplingItemType? Type1546 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcSamplingItemEnv? Type1546 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcSchemas? Type1547 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcSamplingItemType? Type1547 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared9f8c0585e20078fcSourceVariant1, global::Vercel.AutoSDKShared9f8c0585e20078fcSourceVariant2>? Type1548 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcSchemas? Type1548 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcSourceVariant1? Type1549 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared9f8c0585e20078fcSourceVariant1, global::Vercel.AutoSDKShared9f8c0585e20078fcSourceVariant2>? Type1549 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcSourceVariant1DefaultFor? Type1550 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcSourceVariant1? Type1550 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcSourceVariant1Kind? Type1551 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcSourceVariant1DefaultFor? Type1551 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcSourceVariant2? Type1552 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcSourceVariant1Kind? Type1552 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcSourceVariant2Kind? Type1553 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcSourceVariant2? Type1553 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcStatus? Type1554 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcSourceVariant2Kind? Type1554 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcDeliveryStats? Type1555 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcStatus? Type1555 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcDeliveryStatsState? Type1556 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcDeliveryStats? Type1556 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcDeliveryStatsWindow? Type1557 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcDeliveryStatsState? Type1557 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2? Type1558 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcDeliveryStatsWindow? Type1558 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1, global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant2>? Type1559 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2? Type1559 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1? Type1560 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1, global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant2>? Type1560 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1Deployment? Type1561 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1? Type1561 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1DeploymentEnvironment>? Type1562 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1Deployment? Type1562 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1DeploymentEnvironment? Type1563 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1DeploymentEnvironment>? Type1563 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1Log? Type1564 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1DeploymentEnvironment? Type1564 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1LogSource>? Type1565 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1Log? Type1565 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1LogSource? Type1566 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1LogSource>? Type1566 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1Project? Type1567 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1LogSource? Type1567 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1Type? Type1568 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1Project? Type1568 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant2? Type1569 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1Type? Type1569 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant2Type? Type1570 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant2? Type1570 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2Version? Type1571 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant2Type? Type1571 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShared9f8c0585e20078fcProjectAccessVariant1, global::Vercel.AutoSDKShared9f8c0585e20078fcProjectAccessVariant2>? Type1572 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2Version? Type1572 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcProjectAccessVariant1? Type1573 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShared9f8c0585e20078fcProjectAccessVariant1, global::Vercel.AutoSDKShared9f8c0585e20078fcProjectAccessVariant2>? Type1573 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcProjectAccessVariant1Access? Type1574 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcProjectAccessVariant1? Type1574 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcProjectAccessVariant1ManagedBy? Type1575 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcProjectAccessVariant1Access? Type1575 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcProjectAccessVariant2? Type1576 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcProjectAccessVariant1ManagedBy? Type1576 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcProjectAccessVariant2Access? Type1577 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcProjectAccessVariant2? Type1577 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShared9f8c0585e20078fcProjectAccessVariant2ManagedBy? Type1578 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcProjectAccessVariant2Access? Type1578 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda0db2c4b058f2749? Type1579 { get; set; }
+        public global::Vercel.AutoSDKShared9f8c0585e20078fcProjectAccessVariant2ManagedBy? Type1579 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda0db2c4b058f2749Variant1? Type1580 { get; set; }
+        public global::Vercel.AutoSDKShareda0db2c4b058f2749? Type1580 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda0db2c4b058f2749Variant1Type? Type1581 { get; set; }
+        public global::Vercel.AutoSDKShareda0db2c4b058f2749Variant1? Type1581 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda0db2c4b058f2749Variant2? Type1582 { get; set; }
+        public global::Vercel.AutoSDKShareda0db2c4b058f2749Variant1Type? Type1582 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda0db2c4b058f2749Variant2Type? Type1583 { get; set; }
+        public global::Vercel.AutoSDKShareda0db2c4b058f2749Variant2? Type1583 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda0db2c4b058f2749Variant3? Type1584 { get; set; }
+        public global::Vercel.AutoSDKShareda0db2c4b058f2749Variant2Type? Type1584 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda0db2c4b058f2749Variant3Type? Type1585 { get; set; }
+        public global::Vercel.AutoSDKShareda0db2c4b058f2749Variant3? Type1585 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda15210bade0a7c46? Type1586 { get; set; }
+        public global::Vercel.AutoSDKShareda0db2c4b058f2749Variant3Type? Type1586 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShareda15210bade0a7c46ChangedResource>? Type1587 { get; set; }
+        public global::Vercel.AutoSDKShareda15210bade0a7c46? Type1587 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda15210bade0a7c46ChangedResource? Type1588 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShareda15210bade0a7c46ChangedResource>? Type1588 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda15210bade0a7c46EffectiveBehavior? Type1589 { get; set; }
+        public global::Vercel.AutoSDKShareda15210bade0a7c46ChangedResource? Type1589 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda15210bade0a7c46PricingSource? Type1590 { get; set; }
+        public global::Vercel.AutoSDKShareda15210bade0a7c46EffectiveBehavior? Type1590 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda15210bade0a7c46ReferenceBillingPeriod? Type1591 { get; set; }
+        public global::Vercel.AutoSDKShareda15210bade0a7c46PricingSource? Type1591 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda2a71ce8831cd3f8Variant2? Type1592 { get; set; }
+        public global::Vercel.AutoSDKShareda15210bade0a7c46ReferenceBillingPeriod? Type1592 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda2a71ce8831cd3f8Variant2Handle? Type1593 { get; set; }
+        public global::Vercel.AutoSDKShareda2a71ce8831cd3f8Variant2? Type1593 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda2a71ce8831cd3f8Variant3? Type1594 { get; set; }
+        public global::Vercel.AutoSDKShareda2a71ce8831cd3f8Variant2Handle? Type1594 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda43c8be44c1b9566? Type1595 { get; set; }
+        public global::Vercel.AutoSDKShareda2a71ce8831cd3f8Variant3? Type1595 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda43c8be44c1b9566DefaultApp? Type1596 { get; set; }
+        public global::Vercel.AutoSDKShareda43c8be44c1b9566? Type1596 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300? Type1597 { get; set; }
+        public global::Vercel.AutoSDKShareda43c8be44c1b9566DefaultApp? Type1597 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShareda4dd3b1b30ff7300Condition>? Type1598 { get; set; }
+        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300? Type1598 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300Condition? Type1599 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShareda4dd3b1b30ff7300Condition>? Type1599 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AnyOf<global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionLhsVariant1, global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionLhsVariant2>? Type1600 { get; set; }
+        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300Condition? Type1600 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionLhsVariant1? Type1601 { get; set; }
+        public global::Vercel.AnyOf<global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionLhsVariant1, global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionLhsVariant2>? Type1601 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionLhsVariant2? Type1602 { get; set; }
+        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionLhsVariant1? Type1602 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionCmp? Type1603 { get; set; }
+        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionLhsVariant2? Type1603 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1? Type1604 { get; set; }
+        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionCmp? Type1604 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1Type? Type1605 { get; set; }
+        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1? Type1605 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant1? Type1606 { get; set; }
+        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1Type? Type1606 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant2? Type1607 { get; set; }
+        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant1? Type1607 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant2? Type1608 { get; set; }
+        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant2? Type1608 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionCmpOptions? Type1609 { get; set; }
+        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant2? Type1609 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AnyOf<global::Vercel.AutoSDKShareda4dd3b1b30ff7300OutcomeVariant1, global::Vercel.AutoSDKShareda4dd3b1b30ff7300OutcomeVariant2>? Type1610 { get; set; }
+        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionCmpOptions? Type1610 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300OutcomeVariant1? Type1611 { get; set; }
+        public global::Vercel.AnyOf<global::Vercel.AutoSDKShareda4dd3b1b30ff7300OutcomeVariant1, global::Vercel.AutoSDKShareda4dd3b1b30ff7300OutcomeVariant2>? Type1611 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300OutcomeVariant2? Type1612 { get; set; }
+        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300OutcomeVariant1? Type1612 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300OutcomeVariant2Base? Type1613 { get; set; }
+        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300OutcomeVariant2? Type1613 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda5bc732e1681aab5? Type1614 { get; set; }
+        public global::Vercel.AutoSDKShareda4dd3b1b30ff7300OutcomeVariant2Base? Type1614 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6? Type1615 { get; set; }
+        public global::Vercel.AutoSDKShareda5bc732e1681aab5? Type1615 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda5bc732e1681aab5RouteType? Type1616 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6? Type1616 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareda5bc732e1681aab5SrcSyntax? Type1617 { get; set; }
+        public global::Vercel.AutoSDKShareda5bc732e1681aab5RouteType? Type1617 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17Handle? Type1618 { get; set; }
+        public global::Vercel.AutoSDKShareda5bc732e1681aab5SrcSyntax? Type1618 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedab64e9622c80dc17Ha>? Type1619 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17Handle? Type1619 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17Ha? Type1620 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedab64e9622c80dc17Ha>? Type1620 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17HaType? Type1621 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17Ha? Type1621 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedab64e9622c80dc17HaValue>? Type1622 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17HaType? Type1622 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17HaValue? Type1623 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedab64e9622c80dc17HaValue>? Type1623 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedab64e9622c80dc17MissingItem>? Type1624 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17HaValue? Type1624 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17MissingItem? Type1625 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedab64e9622c80dc17MissingItem>? Type1625 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17MissingItemType? Type1626 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17MissingItem? Type1626 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedab64e9622c80dc17MissingItemValue>? Type1627 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17MissingItemType? Type1627 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17MissingItemValue? Type1628 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedab64e9622c80dc17MissingItemValue>? Type1628 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17Mitigate? Type1629 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17MissingItemValue? Type1629 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17MitigateAction? Type1630 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17Mitigate? Type1630 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17MitigateErl? Type1631 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17MitigateAction? Type1631 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17MitigateErlAlgo? Type1632 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17MitigateErl? Type1632 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKSharedab64e9622c80dc17MitigateLogHeaders?>? Type1633 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17MitigateErlAlgo? Type1633 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17MitigateLogHeaders? Type1634 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKSharedab64e9622c80dc17MitigateLogHeaders?>? Type1634 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseHa>? Type1635 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17MitigateLogHeaders? Type1635 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseHa? Type1636 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseHa>? Type1636 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseHaType? Type1637 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseHa? Type1637 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseHaValue>? Type1638 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseHaType? Type1638 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseHaValue? Type1639 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseHaValue>? Type1639 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseMissingItem>? Type1640 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseHaValue? Type1640 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseMissingItem? Type1641 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseMissingItem>? Type1641 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseMissingItemType? Type1642 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseMissingItem? Type1642 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseMissingItemValue>? Type1643 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseMissingItemType? Type1643 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseMissingItemValue? Type1644 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseMissingItemValue>? Type1644 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedab64e9622c80dc17Src>? Type1645 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseMissingItemValue? Type1645 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17Src? Type1646 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedab64e9622c80dc17Src>? Type1646 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17TierRequirement? Type1647 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17Src? Type1647 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedab64e9622c80dc17Transform>? Type1648 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17TierRequirement? Type1648 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17Transform? Type1649 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedab64e9622c80dc17Transform>? Type1649 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17TransformOp? Type1650 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17Transform? Type1650 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17TransformTarget? Type1651 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17TransformOp? Type1651 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedab64e9622c80dc17TransformType? Type1652 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17TransformTarget? Type1652 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedba1f75615f04b60c>>? Type1653 { get; set; }
+        public global::Vercel.AutoSDKSharedab64e9622c80dc17TransformType? Type1653 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedada259eacea6cff6Destination>? Type1654 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedba1f75615f04b60c>>? Type1654 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6Destination? Type1655 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedada259eacea6cff6Destination>? Type1655 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6DestinationType? Type1656 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6Destination? Type1656 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant2>>? Type1657 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6DestinationType? Type1657 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant2>? Type1658 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant2>>? Type1658 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant1? Type1659 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant2>? Type1659 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant1Type? Type1660 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant1? Type1660 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant1Value>? Type1661 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant1Type? Type1661 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant1Value? Type1662 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant1Value>? Type1662 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant2? Type1663 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant1Value? Type1663 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant2Type? Type1664 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant2? Type1664 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant2Value>? Type1665 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant2Type? Type1665 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant2Value? Type1666 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant2Value>? Type1666 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6Locale? Type1667 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant2Value? Type1667 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant2>>? Type1668 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6Locale? Type1668 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant2>? Type1669 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant2>>? Type1669 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant1? Type1670 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant2>? Type1670 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant1Type? Type1671 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant1? Type1671 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant1Value>? Type1672 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant1Type? Type1672 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant1Value? Type1673 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant1Value>? Type1673 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant2? Type1674 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant1Value? Type1674 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant2Type? Type1675 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant2? Type1675 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant2Value>? Type1676 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant2Type? Type1676 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant2Value? Type1677 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant2Value>? Type1677 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6Mitigate? Type1678 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant2Value? Type1678 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6MitigateAction? Type1679 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6Mitigate? Type1679 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant2>>? Type1680 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6MitigateAction? Type1680 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant2>? Type1681 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant2>>? Type1681 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1? Type1682 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant2>? Type1682 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1Op? Type1683 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1? Type1683 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1Target? Type1684 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1Op? Type1684 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1TargetKey>? Type1685 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1Target? Type1685 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1TargetKey? Type1686 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1TargetKey>? Type1686 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1Type? Type1687 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1TargetKey? Type1687 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant2? Type1688 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1Type? Type1688 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant2Op? Type1689 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant2? Type1689 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant2Type? Type1690 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant2Op? Type1690 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf1cf971744a2ae1? Type1691 { get; set; }
+        public global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant2Type? Type1691 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964a? Type1692 { get; set; }
+        public global::Vercel.AutoSDKSharedaf1cf971744a2ae1? Type1692 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964aItems? Type1693 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964a? Type1693 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964aItemsType? Type1694 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964aItems? Type1694 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964aType? Type1695 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964aItemsType? Type1695 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiControl? Type1696 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964aType? Type1696 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedaf3e034232cd964aUiDescription>? Type1697 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiControl? Type1697 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiDescription? Type1698 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedaf3e034232cd964aUiDescription>? Type1698 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedaf3e034232cd964aUiDisabledEnum, bool?, global::Vercel.AutoSDKSharedaf3e034232cd964aUiDisabledEnum2?>? Type1699 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiDescription? Type1699 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiDisabledEnum? Type1700 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedaf3e034232cd964aUiDisabledEnum, bool?, global::Vercel.AutoSDKSharedaf3e034232cd964aUiDisabledEnum2?>? Type1700 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiDisabledEnum2? Type1701 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiDisabledEnum? Type1701 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiFormattedValue? Type1702 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiDisabledEnum2? Type1702 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedaf3e034232cd964aUiHiddenEnum, bool?, global::Vercel.AutoSDKSharedaf3e034232cd964aUiHiddenEnum2?>? Type1703 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiFormattedValue? Type1703 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiHiddenEnum? Type1704 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedaf3e034232cd964aUiHiddenEnum, bool?, global::Vercel.AutoSDKSharedaf3e034232cd964aUiHiddenEnum2?>? Type1704 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiHiddenEnum2? Type1705 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiHiddenEnum? Type1705 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedaf3e034232cd964aUiOption>? Type1706 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiHiddenEnum2? Type1706 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiOption? Type1707 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedaf3e034232cd964aUiOption>? Type1707 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionDisabledEnum, bool?, global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionDisabledEnum2?>? Type1708 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiOption? Type1708 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionDisabledEnum? Type1709 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionDisabledEnum, bool?, global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionDisabledEnum2?>? Type1709 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionDisabledEnum2? Type1710 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionDisabledEnum? Type1710 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionHiddenEnum, bool?, global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionHiddenEnum2?>? Type1711 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionDisabledEnum2? Type1711 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionHiddenEnum? Type1712 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionHiddenEnum, bool?, global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionHiddenEnum2?>? Type1712 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionHiddenEnum2? Type1713 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionHiddenEnum? Type1713 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedaf3e034232cd964aUiReadOnlyEnum, bool?, global::Vercel.AutoSDKSharedaf3e034232cd964aUiReadOnlyEnum2?>? Type1714 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiOptionHiddenEnum2? Type1714 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiReadOnlyEnum? Type1715 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedaf3e034232cd964aUiReadOnlyEnum, bool?, global::Vercel.AutoSDKSharedaf3e034232cd964aUiReadOnlyEnum2?>? Type1715 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiReadOnlyEnum2? Type1716 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiReadOnlyEnum? Type1716 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedafa4bcd6bd044b8bAffinity? Type1717 { get; set; }
+        public global::Vercel.AutoSDKSharedaf3e034232cd964aUiReadOnlyEnum2? Type1717 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedafa4bcd6bd044b8bAffinityMode? Type1718 { get; set; }
+        public global::Vercel.AutoSDKSharedafa4bcd6bd044b8bAffinity? Type1718 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedafa4bcd6bd044b8bArchitecture? Type1719 { get; set; }
+        public global::Vercel.AutoSDKSharedafa4bcd6bd044b8bAffinityMode? Type1719 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<double?, global::Vercel.AutoSDKSharedafa4bcd6bd044b8bMaxDuration?>? Type1720 { get; set; }
+        public global::Vercel.AutoSDKSharedafa4bcd6bd044b8bArchitecture? Type1720 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedafa4bcd6bd044b8bMaxDuration? Type1721 { get; set; }
+        public global::Vercel.OneOf<double?, global::Vercel.AutoSDKSharedafa4bcd6bd044b8bMaxDuration?>? Type1721 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaffe019c1a64bb83Development? Type1722 { get; set; }
+        public global::Vercel.AutoSDKSharedafa4bcd6bd044b8bMaxDuration? Type1722 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedaffe019c1a64bb83RoutingItem>? Type1723 { get; set; }
+        public global::Vercel.AutoSDKSharedaffe019c1a64bb83Development? Type1723 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedaffe019c1a64bb83RoutingItem? Type1724 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedaffe019c1a64bb83RoutingItem>? Type1724 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb0ea9e8a9b37de26? Type1725 { get; set; }
+        public global::Vercel.AutoSDKSharedaffe019c1a64bb83RoutingItem? Type1725 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc97b32abf27d8b81? Type1726 { get; set; }
+        public global::Vercel.AutoSDKSharedb0ea9e8a9b37de26? Type1726 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb2aa6c85fab0cd65Options? Type1727 { get; set; }
+        public global::Vercel.AutoSDKSharedc97b32abf27d8b81? Type1727 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb2aa6c85fab0cd65Version? Type1728 { get; set; }
+        public global::Vercel.AutoSDKSharedb2aa6c85fab0cd65Options? Type1728 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb38a5d43be350768Action? Type1729 { get; set; }
+        public global::Vercel.AutoSDKSharedb2aa6c85fab0cd65Version? Type1729 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigate? Type1730 { get; set; }
+        public global::Vercel.AutoSDKSharedb38a5d43be350768Action? Type1730 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigateAction? Type1731 { get; set; }
+        public global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigate? Type1731 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigateLogHeaders?>? Type1732 { get; set; }
+        public global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigateAction? Type1732 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigateLogHeaders? Type1733 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigateLogHeaders?>? Type1733 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigateRateLimit? Type1734 { get; set; }
+        public global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigateLogHeaders? Type1734 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigateRateLimitAction? Type1735 { get; set; }
+        public global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigateRateLimit? Type1735 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigateRateLimitAlgo? Type1736 { get; set; }
+        public global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigateRateLimitAction? Type1736 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigateRedirect? Type1737 { get; set; }
+        public global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigateRateLimitAlgo? Type1737 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb38a5d43be350768ConditionGroupItem>? Type1738 { get; set; }
+        public global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigateRedirect? Type1738 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb38a5d43be350768ConditionGroupItem? Type1739 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb38a5d43be350768ConditionGroupItem>? Type1739 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb38a5d43be350768ConditionGroupItemCondition>? Type1740 { get; set; }
+        public global::Vercel.AutoSDKSharedb38a5d43be350768ConditionGroupItem? Type1740 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb38a5d43be350768ConditionGroupItemCondition? Type1741 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb38a5d43be350768ConditionGroupItemCondition>? Type1741 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb38a5d43be350768ConditionGroupItemConditionOp? Type1742 { get; set; }
+        public global::Vercel.AutoSDKSharedb38a5d43be350768ConditionGroupItemCondition? Type1742 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb38a5d43be350768ConditionGroupItemConditionType? Type1743 { get; set; }
+        public global::Vercel.AutoSDKSharedb38a5d43be350768ConditionGroupItemConditionOp? Type1743 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb3e24a966396db5b? Type1744 { get; set; }
+        public global::Vercel.AutoSDKSharedb38a5d43be350768ConditionGroupItemConditionType? Type1744 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfeb17b1223c8bf77? Type1745 { get; set; }
+        public global::Vercel.AutoSDKSharedb3e24a966396db5b? Type1745 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb49e2a5785c6f473? Type1746 { get; set; }
+        public global::Vercel.AutoSDKSharedfeb17b1223c8bf77? Type1746 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb49e2a5785c6f473RouteType? Type1747 { get; set; }
+        public global::Vercel.AutoSDKSharedb49e2a5785c6f473? Type1747 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb49e2a5785c6f473SrcSyntax? Type1748 { get; set; }
+        public global::Vercel.AutoSDKSharedb49e2a5785c6f473RouteType? Type1748 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851? Type1749 { get; set; }
+        public global::Vercel.AutoSDKSharedb49e2a5785c6f473SrcSyntax? Type1749 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb4cb9cbf2561e851Condition>? Type1750 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851? Type1750 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851Condition? Type1751 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb4cb9cbf2561e851Condition>? Type1751 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItem>? Type1752 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851Condition? Type1752 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItem? Type1753 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItem>? Type1753 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItemCondition>? Type1754 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItem? Type1754 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItemCondition? Type1755 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItemCondition>? Type1755 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItemConditionOp? Type1756 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItemCondition? Type1756 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItemConditionType? Type1757 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItemConditionOp? Type1757 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851Crs? Type1758 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItemConditionType? Type1758 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsGen? Type1759 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851Crs? Type1759 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsGenAction? Type1760 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsGen? Type1760 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsJava? Type1761 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsGenAction? Type1761 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsJavaAction? Type1762 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsJava? Type1762 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsLfi? Type1763 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsJavaAction? Type1763 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsLfiAction? Type1764 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsLfi? Type1764 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsMa? Type1765 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsLfiAction? Type1765 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsMaAction? Type1766 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsMa? Type1766 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsPhp? Type1767 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsMaAction? Type1767 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsPhpAction? Type1768 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsPhp? Type1768 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsRce? Type1769 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsPhpAction? Type1769 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsRceAction? Type1770 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsRce? Type1770 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsRfi? Type1771 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsRceAction? Type1771 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsRfiAction? Type1772 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsRfi? Type1772 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsSd? Type1773 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsRfiAction? Type1773 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsSdAction? Type1774 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsSd? Type1774 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsSf? Type1775 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsSdAction? Type1775 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsSfAction? Type1776 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsSf? Type1776 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsSqli? Type1777 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsSfAction? Type1777 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsSqliAction? Type1778 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsSqli? Type1778 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsXss? Type1779 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsSqliAction? Type1779 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsXssAction? Type1780 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsXss? Type1780 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb4cb9cbf2561e851Ip>? Type1781 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851CrsXssAction? Type1781 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851Ip? Type1782 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb4cb9cbf2561e851Ip>? Type1782 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851IpAction? Type1783 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851Ip? Type1783 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKSharedb4cb9cbf2561e851LogHeaders?>? Type1784 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851IpAction? Type1784 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851LogHeaders? Type1785 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKSharedb4cb9cbf2561e851LogHeaders?>? Type1785 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRules? Type1786 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851LogHeaders? Type1786 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesAiBots? Type1787 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRules? Type1787 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesAiBotsAction? Type1788 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesAiBots? Type1788 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesBotProtection? Type1789 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesAiBotsAction? Type1789 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesBotProtectionAction? Type1790 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesBotProtection? Type1790 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesOwasp? Type1791 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesBotProtectionAction? Type1791 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesOwaspAction? Type1792 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesOwasp? Type1792 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesTrafficSources? Type1793 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesOwaspAction? Type1793 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesTrafficSourcesAction? Type1794 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesTrafficSources? Type1794 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesVercelRuleset? Type1795 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesTrafficSourcesAction? Type1795 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesVercelRulesetAction? Type1796 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesVercelRuleset? Type1796 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedb83631959dd7e56b? Type1797 { get; set; }
+        public global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesVercelRulesetAction? Type1797 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedba1f75615f04b60cTransformItem>? Type1798 { get; set; }
+        public global::Vercel.AutoSDKSharedb83631959dd7e56b? Type1798 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedba1f75615f04b60cTransformItem? Type1799 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedba1f75615f04b60cTransformItem>? Type1799 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedba1f75615f04b60cResponse? Type1800 { get; set; }
+        public global::Vercel.AutoSDKSharedba1f75615f04b60cTransformItem? Type1800 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedba25b79c660ac1ce? Type1801 { get; set; }
+        public global::Vercel.AutoSDKSharedba1f75615f04b60cResponse? Type1801 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedba25b79c660ac1ceReuse? Type1802 { get; set; }
+        public global::Vercel.AutoSDKSharedba25b79c660ac1ce? Type1802 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>>>>? Type1803 { get; set; }
+        public global::Vercel.AutoSDKSharedba25b79c660ac1ceReuse? Type1803 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>>>? Type1804 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>>>>? Type1804 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>>? Type1805 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>>>? Type1805 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>? Type1806 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>>? Type1806 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget? Type1807 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>? Type1807 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedba25b79c660ac1cePausedOutcome? Type1808 { get; set; }
+        public global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget? Type1808 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede68d1538d48d5cc1? Type1809 { get; set; }
+        public global::Vercel.AutoSDKSharedba25b79c660ac1cePausedOutcome? Type1809 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared90103a1814ebf3a8>? Type1810 { get; set; }
+        public global::Vercel.AutoSDKSharede68d1538d48d5cc1? Type1810 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724BuildMachineElasticReason? Type1811 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared90103a1814ebf3a8>? Type1811 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724BuildMachineElasticTransition? Type1812 { get; set; }
+        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724BuildMachineElasticReason? Type1812 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724BuildMachineElasticTransitionDirection? Type1813 { get; set; }
+        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724BuildMachineElasticTransition? Type1813 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724BuildMachineSelection? Type1814 { get; set; }
+        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724BuildMachineElasticTransitionDirection? Type1814 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724BuildMachineType? Type1815 { get; set; }
+        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724BuildMachineSelection? Type1815 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724BuildQueue? Type1816 { get; set; }
+        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724BuildMachineType? Type1816 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724BuildQueueConfiguration? Type1817 { get; set; }
+        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724BuildQueue? Type1817 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724FunctionDefaultMemoryType? Type1818 { get; set; }
+        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724BuildQueueConfiguration? Type1818 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant1? Type1819 { get; set; }
+        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724FunctionDefaultMemoryType? Type1819 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant1Label? Type1820 { get; set; }
+        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant1? Type1820 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant2? Type1821 { get; set; }
+        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant1Label? Type1821 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant2Label? Type1822 { get; set; }
+        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant2? Type1822 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant3? Type1823 { get; set; }
+        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant2Label? Type1823 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant3Label? Type1824 { get; set; }
+        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant3? Type1824 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant4? Type1825 { get; set; }
+        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant3Label? Type1825 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant4Label? Type1826 { get; set; }
+        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant4? Type1826 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbca3e7a986162538AliasError? Type1827 { get; set; }
+        public global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant4Label? Type1827 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbca3e7a986162538BranchMatcher? Type1828 { get; set; }
+        public global::Vercel.AutoSDKSharedbca3e7a986162538AliasError? Type1828 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbca3e7a986162538BranchMatcherType? Type1829 { get; set; }
+        public global::Vercel.AutoSDKSharedbca3e7a986162538BranchMatcher? Type1829 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbca3e7a986162538Build>? Type1830 { get; set; }
+        public global::Vercel.AutoSDKSharedbca3e7a986162538BranchMatcherType? Type1830 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbca3e7a986162538Build? Type1831 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbca3e7a986162538Build>? Type1831 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbca3e7a986162538ChecksConclusion? Type1832 { get; set; }
+        public global::Vercel.AutoSDKSharedbca3e7a986162538Build? Type1832 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbca3e7a986162538ChecksState? Type1833 { get; set; }
+        public global::Vercel.AutoSDKSharedbca3e7a986162538ChecksConclusion? Type1833 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbca3e7a986162538Creator? Type1834 { get; set; }
+        public global::Vercel.AutoSDKSharedbca3e7a986162538ChecksState? Type1834 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbca3e7a986162538OidcTokenClaims? Type1835 { get; set; }
+        public global::Vercel.AutoSDKSharedbca3e7a986162538Creator? Type1835 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbca3e7a986162538Plan? Type1836 { get; set; }
+        public global::Vercel.AutoSDKSharedbca3e7a986162538OidcTokenClaims? Type1836 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbca3e7a986162538ReadyState? Type1837 { get; set; }
+        public global::Vercel.AutoSDKSharedbca3e7a986162538Plan? Type1837 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbca3e7a986162538ReadySubstate? Type1838 { get; set; }
+        public global::Vercel.AutoSDKSharedbca3e7a986162538ReadyState? Type1838 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbca3e7a986162538Type? Type1839 { get; set; }
+        public global::Vercel.AutoSDKSharedbca3e7a986162538ReadySubstate? Type1839 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3d? Type1840 { get; set; }
+        public global::Vercel.AutoSDKSharedbca3e7a986162538Type? Type1840 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant1? Type1841 { get; set; }
+        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3d? Type1841 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant1Payload? Type1842 { get; set; }
+        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant1? Type1842 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant1PayloadInfo? Type1843 { get; set; }
+        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant1Payload? Type1843 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant1PayloadProxy? Type1844 { get; set; }
+        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant1PayloadInfo? Type1844 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant1PayloadProxyVercelCache? Type1845 { get; set; }
+        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant1PayloadProxy? Type1845 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant1PayloadProxyWafAction? Type1846 { get; set; }
+        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant1PayloadProxyVercelCache? Type1846 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant1Type? Type1847 { get; set; }
+        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant1PayloadProxyWafAction? Type1847 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant2? Type1848 { get; set; }
+        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant1Type? Type1848 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant2Info? Type1849 { get; set; }
+        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant2? Type1849 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant2Level? Type1850 { get; set; }
+        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant2Info? Type1850 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant2Type? Type1851 { get; set; }
+        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant2Level? Type1851 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant3? Type1852 { get; set; }
+        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant2Type? Type1852 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant3Type? Type1853 { get; set; }
+        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant3? Type1853 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant3AliasError? Type1854 { get; set; }
+        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant3Type? Type1854 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant3AliasWarning? Type1855 { get; set; }
+        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant3AliasError? Type1855 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc12640b06f1c9105ConsolidatedGitCommitStatus? Type1856 { get; set; }
+        public global::Vercel.AutoSDKSharedbd3f01cc8f6abd3dVariant3AliasWarning? Type1856 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc12640b06f1c9105CreateDeployments? Type1857 { get; set; }
+        public global::Vercel.AutoSDKSharedc12640b06f1c9105ConsolidatedGitCommitStatus? Type1857 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9? Type1858 { get; set; }
+        public global::Vercel.AutoSDKSharedc12640b06f1c9105CreateDeployments? Type1858 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9Analytics? Type1859 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9? Type1859 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9DeploymentExpiration? Type1860 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9Analytics? Type1860 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9ExpirationVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9ExpirationVariant2>? Type1861 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9DeploymentExpiration? Type1861 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9ExpirationVariant1? Type1862 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9ExpirationVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9ExpirationVariant2>? Type1862 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9ExpirationVariant2? Type1863 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9ExpirationVariant1? Type1863 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9Framework? Type1864 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9ExpirationVariant2? Type1864 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9GitComments? Type1865 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9Framework? Type1865 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2>>? Type1866 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9GitComments? Type1866 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2>? Type1867 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2>>? Type1867 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant1? Type1868 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2>? Type1868 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2? Type1869 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant1? Type1869 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1? Type1870 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2? Type1870 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1Key? Type1871 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1? Type1871 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1Type? Type1872 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1Key? Type1872 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1Value? Type1873 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1Type? Type1873 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2? Type1874 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1Value? Type1874 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2Type? Type1875 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2? Type1875 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2Value? Type1876 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2Type? Type1876 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2Mitigate? Type1877 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2Value? Type1877 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2MitigateAction? Type1878 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2Mitigate? Type1878 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc30663411f76e3c9IpBucket>? Type1879 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2MitigateAction? Type1879 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9IpBucket? Type1880 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc30663411f76e3c9IpBucket>? Type1880 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9NodeVersion? Type1881 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9IpBucket? Type1881 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9OidcTokenConfig? Type1882 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9NodeVersion? Type1882 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9OidcTokenConfigIssuerMode? Type1883 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9OidcTokenConfig? Type1883 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9Passport? Type1884 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9OidcTokenConfigIssuerMode? Type1884 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9PassportDeploymentType? Type1885 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9Passport? Type1885 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9SpeedInsights? Type1886 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9PassportDeploymentType? Type1886 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9SsoProtection? Type1887 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9SpeedInsights? Type1887 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9SsoProtectionApril2026SecurityIncidentMigrationAppliedFrom? Type1888 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9SsoProtection? Type1888 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9SsoProtectionCve55182MigrationAppliedFrom? Type1889 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9SsoProtectionApril2026SecurityIncidentMigrationAppliedFrom? Type1889 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9SsoProtectionDeploymentType? Type1890 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9SsoProtectionCve55182MigrationAppliedFrom? Type1890 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9Tier? Type1891 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9SsoProtectionDeploymentType? Type1891 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc30663411f76e3c9WebAnalytics? Type1892 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9Tier? Type1892 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb49e2a5785c6f473>? Type1893 { get; set; }
+        public global::Vercel.AutoSDKSharedc30663411f76e3c9WebAnalytics? Type1893 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9f8c0585e20078fc>? Type1894 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb49e2a5785c6f473>? Type1894 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc97b32abf27d8b81Path? Type1895 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9f8c0585e20078fc>? Type1895 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc97b32abf27d8b81QueryStringItem>? Type1896 { get; set; }
+        public global::Vercel.AutoSDKSharedc97b32abf27d8b81Path? Type1896 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc97b32abf27d8b81QueryStringItem? Type1897 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc97b32abf27d8b81QueryStringItem>? Type1897 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc97b32abf27d8b81QueryStringItemKey? Type1898 { get; set; }
+        public global::Vercel.AutoSDKSharedc97b32abf27d8b81QueryStringItem? Type1898 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc97b32abf27d8b81QueryStringItemValue? Type1899 { get; set; }
+        public global::Vercel.AutoSDKSharedc97b32abf27d8b81QueryStringItemKey? Type1899 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc97b32abf27d8b81Header>? Type1900 { get; set; }
+        public global::Vercel.AutoSDKSharedc97b32abf27d8b81QueryStringItemValue? Type1900 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc97b32abf27d8b81Header? Type1901 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc97b32abf27d8b81Header>? Type1901 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc97b32abf27d8b81HeaderKey? Type1902 { get; set; }
+        public global::Vercel.AutoSDKSharedc97b32abf27d8b81Header? Type1902 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedc97b32abf27d8b81HeaderValue? Type1903 { get; set; }
+        public global::Vercel.AutoSDKSharedc97b32abf27d8b81HeaderKey? Type1903 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedcdaac4bd3d3c6643MiddlewareRuntime? Type1904 { get; set; }
+        public global::Vercel.AutoSDKSharedc97b32abf27d8b81HeaderValue? Type1904 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedcdaac4bd3d3c6643ProjectSettings? Type1905 { get; set; }
+        public global::Vercel.AutoSDKSharedcdaac4bd3d3c6643MiddlewareRuntime? Type1905 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedcdaac4bd3d3c6643ProjectSettingsVercelFlags? Type1906 { get; set; }
+        public global::Vercel.AutoSDKSharedcdaac4bd3d3c6643ProjectSettings? Type1906 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedcdaac4bd3d3c6643ScheduleFunction? Type1907 { get; set; }
+        public global::Vercel.AutoSDKSharedcdaac4bd3d3c6643ProjectSettingsVercelFlags? Type1907 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedcdaac4bd3d3c6643ScheduleFunctionEntrypoint>? Type1908 { get; set; }
+        public global::Vercel.AutoSDKSharedcdaac4bd3d3c6643ScheduleFunction? Type1908 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedcdaac4bd3d3c6643ScheduleFunctionEntrypoint? Type1909 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedcdaac4bd3d3c6643ScheduleFunctionEntrypoint>? Type1909 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf29c7949a8a48e4a? Type1910 { get; set; }
+        public global::Vercel.AutoSDKSharedcdaac4bd3d3c6643ScheduleFunctionEntrypoint? Type1910 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedce0c7f50e384322cStage>? Type1911 { get; set; }
+        public global::Vercel.AutoSDKSharedf29c7949a8a48e4a? Type1911 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedce0c7f50e384322cStage? Type1912 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedce0c7f50e384322cStage>? Type1912 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1? Type1913 { get; set; }
+        public global::Vercel.AutoSDKSharedce0c7f50e384322cStage? Type1913 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1Type? Type1914 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1? Type1914 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiControl? Type1915 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1Type? Type1915 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiDescription>? Type1916 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiControl? Type1916 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiDescription? Type1917 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiDescription>? Type1917 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiDisabledEnum? Type1918 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiDescription? Type1918 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiDisabledEnum2? Type1919 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiDisabledEnum? Type1919 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiFormattedValue? Type1920 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiDisabledEnum2? Type1920 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiHiddenEnum, bool?, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiHiddenEnum2?>? Type1921 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiFormattedValue? Type1921 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiHiddenEnum? Type1922 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiHiddenEnum, bool?, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiHiddenEnum2?>? Type1922 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiHiddenEnum2? Type1923 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiHiddenEnum? Type1923 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiReadOnlyEnum? Type1924 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiHiddenEnum2? Type1924 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiReadOnlyEnum2? Type1925 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiReadOnlyEnum? Type1925 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2? Type1926 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant1UiReadOnlyEnum2? Type1926 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2Type? Type1927 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2? Type1927 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiControl? Type1928 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2Type? Type1928 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiDescription>? Type1929 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiControl? Type1929 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiDescription? Type1930 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiDescription>? Type1930 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiDisabledEnum? Type1931 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiDescription? Type1931 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiDisabledEnum2? Type1932 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiDisabledEnum? Type1932 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiFormattedValue? Type1933 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiDisabledEnum2? Type1933 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiHiddenEnum, bool?, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiHiddenEnum2?>? Type1934 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiFormattedValue? Type1934 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiHiddenEnum? Type1935 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiHiddenEnum, bool?, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiHiddenEnum2?>? Type1935 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiHiddenEnum2? Type1936 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiHiddenEnum? Type1936 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiReadOnlyEnum? Type1937 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiHiddenEnum2? Type1937 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiReadOnlyEnum2? Type1938 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiReadOnlyEnum? Type1938 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3? Type1939 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant2UiReadOnlyEnum2? Type1939 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3Type? Type1940 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3? Type1940 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiControl? Type1941 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3Type? Type1941 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiDescription>? Type1942 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiControl? Type1942 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiDescription? Type1943 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiDescription>? Type1943 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiDisabledEnum? Type1944 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiDescription? Type1944 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiDisabledEnum2? Type1945 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiDisabledEnum? Type1945 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiFormattedValue? Type1946 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiDisabledEnum2? Type1946 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiHiddenEnum, bool?, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiHiddenEnum2?>? Type1947 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiFormattedValue? Type1947 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiHiddenEnum? Type1948 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiHiddenEnum, bool?, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiHiddenEnum2?>? Type1948 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiHiddenEnum2? Type1949 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiHiddenEnum? Type1949 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiReadOnlyEnum? Type1950 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiHiddenEnum2? Type1950 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiReadOnlyEnum2? Type1951 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiReadOnlyEnum? Type1951 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4? Type1952 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant3UiReadOnlyEnum2? Type1952 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4Items? Type1953 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4? Type1953 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4ItemsType? Type1954 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4Items? Type1954 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4Type? Type1955 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4ItemsType? Type1955 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiControl? Type1956 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4Type? Type1956 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiDescription>? Type1957 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiControl? Type1957 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiDescription? Type1958 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiDescription>? Type1958 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiDisabledEnum? Type1959 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiDescription? Type1959 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiDisabledEnum2? Type1960 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiDisabledEnum? Type1960 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiFormattedValue? Type1961 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiDisabledEnum2? Type1961 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiHiddenEnum, bool?, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiHiddenEnum2?>? Type1962 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiFormattedValue? Type1962 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiHiddenEnum? Type1963 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiHiddenEnum, bool?, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiHiddenEnum2?>? Type1963 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiHiddenEnum2? Type1964 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiHiddenEnum? Type1964 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiReadOnlyEnum? Type1965 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiHiddenEnum2? Type1965 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiReadOnlyEnum2? Type1966 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiReadOnlyEnum? Type1966 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5? Type1967 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant4UiReadOnlyEnum2? Type1967 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5Type? Type1968 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5? Type1968 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiControl? Type1969 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5Type? Type1969 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiDescription>? Type1970 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiControl? Type1970 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiDescription? Type1971 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiDescription>? Type1971 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiDisabledEnum? Type1972 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiDescription? Type1972 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiDisabledEnum2? Type1973 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiDisabledEnum? Type1973 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiFormattedValue? Type1974 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiDisabledEnum2? Type1974 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiHiddenEnum, bool?, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiHiddenEnum2?>? Type1975 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiFormattedValue? Type1975 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiHiddenEnum? Type1976 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiHiddenEnum, bool?, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiHiddenEnum2?>? Type1976 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiHiddenEnum2? Type1977 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiHiddenEnum? Type1977 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiOption>? Type1978 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiHiddenEnum2? Type1978 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiOption? Type1979 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiOption>? Type1979 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiOptionDisabledEnum? Type1980 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiOption? Type1980 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiOptionDisabledEnum2? Type1981 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiOptionDisabledEnum? Type1981 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiOptionHiddenEnum? Type1982 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiOptionDisabledEnum2? Type1982 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiOptionHiddenEnum2? Type1983 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiOptionHiddenEnum? Type1983 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiReadOnlyEnum? Type1984 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiOptionHiddenEnum2? Type1984 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiReadOnlyEnum2? Type1985 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiReadOnlyEnum? Type1985 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6? Type1986 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiReadOnlyEnum2? Type1986 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6Type? Type1987 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6? Type1987 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiControl? Type1988 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6Type? Type1988 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiDescription>? Type1989 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiControl? Type1989 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiDescription? Type1990 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiDescription>? Type1990 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiDisabledEnum? Type1991 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiDescription? Type1991 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiDisabledEnum2? Type1992 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiDisabledEnum? Type1992 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiFormattedValue? Type1993 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiDisabledEnum2? Type1993 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiHiddenEnum, bool?, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiHiddenEnum2?>? Type1994 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiFormattedValue? Type1994 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiHiddenEnum? Type1995 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiHiddenEnum, bool?, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiHiddenEnum2?>? Type1995 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiHiddenEnum2? Type1996 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiHiddenEnum? Type1996 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiOption>? Type1997 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiHiddenEnum2? Type1997 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiOption? Type1998 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiOption>? Type1998 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiOptionDisabledEnum? Type1999 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiOption? Type1999 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiOptionDisabledEnum2? Type2000 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiOptionDisabledEnum? Type2000 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiOptionHiddenEnum? Type2001 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiOptionDisabledEnum2? Type2001 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiOptionHiddenEnum2? Type2002 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiOptionHiddenEnum? Type2002 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiReadOnlyEnum? Type2003 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiOptionHiddenEnum2? Type2003 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiReadOnlyEnum2? Type2004 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiReadOnlyEnum? Type2004 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61? Type2005 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiReadOnlyEnum2? Type2005 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11? Type2006 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61? Type2006 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11Type? Type2007 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11? Type2007 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiControl? Type2008 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11Type? Type2008 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiDescription>? Type2009 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiControl? Type2009 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiDescription? Type2010 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiDescription>? Type2010 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiDisabledEnum? Type2011 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiDescription? Type2011 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiDisabledEnum2? Type2012 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiDisabledEnum? Type2012 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiFormattedValue? Type2013 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiDisabledEnum2? Type2013 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiHiddenEnum? Type2014 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiFormattedValue? Type2014 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiHiddenEnum2? Type2015 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiHiddenEnum? Type2015 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiReadOnlyEnum? Type2016 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiHiddenEnum2? Type2016 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiReadOnlyEnum2? Type2017 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiReadOnlyEnum? Type2017 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12? Type2018 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant11UiReadOnlyEnum2? Type2018 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12GitProvider>? Type2019 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12? Type2019 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12GitProvider? Type2020 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12GitProvider>? Type2020 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12Type? Type2021 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12GitProvider? Type2021 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiControl? Type2022 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12Type? Type2022 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiDescription>? Type2023 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiControl? Type2023 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiDescription? Type2024 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiDescription>? Type2024 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiDisabledEnum? Type2025 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiDescription? Type2025 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiDisabledEnum2? Type2026 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiDisabledEnum? Type2026 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiFormattedValue? Type2027 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiDisabledEnum2? Type2027 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiHiddenEnum? Type2028 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiFormattedValue? Type2028 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiHiddenEnum2? Type2029 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiHiddenEnum? Type2029 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiReadOnlyEnum? Type2030 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiHiddenEnum2? Type2030 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiReadOnlyEnum2? Type2031 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiReadOnlyEnum? Type2031 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedd2d51fdc45c5e627? Type2032 { get; set; }
+        public global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12UiReadOnlyEnum2? Type2032 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedd2d51fdc45c5e627TypeName? Type2033 { get; set; }
+        public global::Vercel.AutoSDKSharedd2d51fdc45c5e627? Type2033 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedec1121c0746f62d9>? Type2034 { get; set; }
+        public global::Vercel.AutoSDKSharedd2d51fdc45c5e627TypeName? Type2034 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedec1121c0746f62d9? Type2035 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedec1121c0746f62d9>? Type2035 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedd91738a37c191d9e? Type2036 { get; set; }
+        public global::Vercel.AutoSDKSharedec1121c0746f62d9? Type2036 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660? Type2037 { get; set; }
+        public global::Vercel.AutoSDKSharedd91738a37c191d9e? Type2037 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660Blocks? Type2038 { get; set; }
+        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660? Type2038 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660Conclusion? Type2039 { get; set; }
+        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660Blocks? Type2039 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660ExpectationRef? Type2040 { get; set; }
+        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660Conclusion? Type2040 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660Requires? Type2041 { get; set; }
+        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660ExpectationRef? Type2041 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660Status? Type2042 { get; set; }
+        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660Requires? Type2042 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660TaskSummary? Type2043 { get; set; }
+        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660Status? Type2043 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant1, global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant2>? Type2044 { get; set; }
+        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660TaskSummary? Type2044 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant1? Type2045 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant1, global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant2>? Type2045 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant1Origin? Type2046 { get; set; }
+        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant1? Type2046 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant1SubKind? Type2047 { get; set; }
+        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant1Origin? Type2047 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant2? Type2048 { get; set; }
+        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant1SubKind? Type2048 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant2Origin? Type2049 { get; set; }
+        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant2? Type2049 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant2SubKind? Type2050 { get; set; }
+        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant2Origin? Type2050 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede064e44b973b9ad0BranchMatcher? Type2051 { get; set; }
+        public global::Vercel.AutoSDKShareddb8a6ccf5b64d660SourceVariant2SubKind? Type2051 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede064e44b973b9ad0BranchMatcherType? Type2052 { get; set; }
+        public global::Vercel.AutoSDKSharede064e44b973b9ad0BranchMatcher? Type2052 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede064e44b973b9ad0Domain>? Type2053 { get; set; }
+        public global::Vercel.AutoSDKSharede064e44b973b9ad0BranchMatcherType? Type2053 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede064e44b973b9ad0Domain? Type2054 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede064e44b973b9ad0Domain>? Type2054 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede064e44b973b9ad0DomainVerificationItem>? Type2055 { get; set; }
+        public global::Vercel.AutoSDKSharede064e44b973b9ad0Domain? Type2055 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede064e44b973b9ad0DomainVerificationItem? Type2056 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede064e44b973b9ad0DomainVerificationItem>? Type2056 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede064e44b973b9ad0Type? Type2057 { get; set; }
+        public global::Vercel.AutoSDKSharede064e44b973b9ad0DomainVerificationItem? Type2057 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant1? Type2058 { get; set; }
+        public global::Vercel.AutoSDKSharede064e44b973b9ad0Type? Type2058 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant1DeployHook>? Type2059 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant1? Type2059 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant1DeployHook? Type2060 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant1DeployHook>? Type2060 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant1Type? Type2061 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant1DeployHook? Type2061 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant2? Type2062 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant1Type? Type2062 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant2DeployHook>? Type2063 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant2? Type2063 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant2DeployHook? Type2064 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant2DeployHook>? Type2064 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant2Type? Type2065 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant2DeployHook? Type2065 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant3? Type2066 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant2Type? Type2066 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant3DeployHook>? Type2067 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant3? Type2067 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant3DeployHook? Type2068 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant3DeployHook>? Type2068 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant3Type? Type2069 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant3DeployHook? Type2069 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant4? Type2070 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant3Type? Type2070 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant4DeployHook>? Type2071 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant4? Type2071 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant4DeployHook? Type2072 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant4DeployHook>? Type2072 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant4Type? Type2073 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant4DeployHook? Type2073 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant5? Type2074 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant4Type? Type2074 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant5DeployHook>? Type2075 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant5? Type2075 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant5DeployHook? Type2076 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant5DeployHook>? Type2076 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant5Type? Type2077 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant5DeployHook? Type2077 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant6? Type2078 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant5Type? Type2078 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant6DeployHook>? Type2079 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant6? Type2079 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant6DeployHook? Type2080 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant6DeployHook>? Type2080 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant6Type? Type2081 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant6DeployHook? Type2081 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant7? Type2082 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant6Type? Type2082 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant7DeployHook>? Type2083 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant7? Type2083 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant7DeployHook? Type2084 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant7DeployHook>? Type2084 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant7Type? Type2085 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant7DeployHook? Type2085 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant8? Type2086 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant7Type? Type2086 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant8DeployHook>? Type2087 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant8? Type2087 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant8DeployHook? Type2088 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant8DeployHook>? Type2088 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant8Type? Type2089 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant8DeployHook? Type2089 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede10df3c22a339c10ConditionGroupItem>? Type2090 { get; set; }
+        public global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant8Type? Type2090 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede10df3c22a339c10ConditionGroupItem? Type2091 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede10df3c22a339c10ConditionGroupItem>? Type2091 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede10df3c22a339c10ConditionGroupItemCondition>? Type2092 { get; set; }
+        public global::Vercel.AutoSDKSharede10df3c22a339c10ConditionGroupItem? Type2092 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede10df3c22a339c10ConditionGroupItemCondition? Type2093 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede10df3c22a339c10ConditionGroupItemCondition>? Type2093 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede10df3c22a339c10ConditionGroupItemConditionOp? Type2094 { get; set; }
+        public global::Vercel.AutoSDKSharede10df3c22a339c10ConditionGroupItemCondition? Type2094 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede10df3c22a339c10ConditionGroupItemConditionType? Type2095 { get; set; }
+        public global::Vercel.AutoSDKSharede10df3c22a339c10ConditionGroupItemConditionOp? Type2095 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede10df3c22a339c10Action? Type2096 { get; set; }
+        public global::Vercel.AutoSDKSharede10df3c22a339c10ConditionGroupItemConditionType? Type2096 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigate? Type2097 { get; set; }
+        public global::Vercel.AutoSDKSharede10df3c22a339c10Action? Type2097 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigateAction? Type2098 { get; set; }
+        public global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigate? Type2098 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigateLogHeaders?>? Type2099 { get; set; }
+        public global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigateAction? Type2099 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigateLogHeaders? Type2100 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigateLogHeaders?>? Type2100 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigateRateLimit? Type2101 { get; set; }
+        public global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigateLogHeaders? Type2101 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigateRateLimitAction? Type2102 { get; set; }
+        public global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigateRateLimit? Type2102 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigateRateLimitAlgo? Type2103 { get; set; }
+        public global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigateRateLimitAction? Type2103 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigateRedirect? Type2104 { get; set; }
+        public global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigateRateLimitAlgo? Type2104 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15be? Type2105 { get; set; }
+        public global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigateRedirect? Type2105 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beBlocks? Type2106 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15be? Type2106 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beConclusion? Type2107 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beBlocks? Type2107 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beExpectationRef? Type2108 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beConclusion? Type2108 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beRequires? Type2109 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beExpectationRef? Type2109 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beStatus? Type2110 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beRequires? Type2110 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beTaskSummary? Type2111 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beStatus? Type2111 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant1? Type2112 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beTaskSummary? Type2112 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant1Kind? Type2113 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant1? Type2113 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant2? Type2114 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant1Kind? Type2114 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant2Kind? Type2115 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant2? Type2115 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant3? Type2116 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant2Kind? Type2116 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant3Kind? Type2117 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant3? Type2117 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant3Provider? Type2118 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant3Kind? Type2118 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant4? Type2119 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant3Provider? Type2119 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant4Origin? Type2120 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant4? Type2120 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant4SubKind? Type2121 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant4Origin? Type2121 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5? Type2122 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant4SubKind? Type2122 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5Origin? Type2123 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5? Type2123 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant1? Type2124 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5Origin? Type2124 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant1Kind? Type2125 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant1? Type2125 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant2? Type2126 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant1Kind? Type2126 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant2Kind? Type2127 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant2? Type2127 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3? Type2128 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant2Kind? Type2128 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3Job? Type2129 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3? Type2129 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3Kind? Type2130 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3Job? Type2130 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SubKind? Type2131 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3Kind? Type2131 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKSharedba25b79c660ac1ce>? Type2132 { get; set; }
+        public global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SubKind? Type2132 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc30663411f76e3c9>? Type2133 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKSharedba25b79c660ac1ce>? Type2133 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede68d1538d48d5cc1Variant1? Type2134 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc30663411f76e3c9>? Type2134 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede68d1538d48d5cc1Variant2? Type2135 { get; set; }
+        public global::Vercel.AutoSDKSharede68d1538d48d5cc1Variant1? Type2135 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede68d1538d48d5cc1Variant2Base? Type2136 { get; set; }
+        public global::Vercel.AutoSDKSharede68d1538d48d5cc1Variant2? Type2136 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede68d1538d48d5cc1Variant3? Type2137 { get; set; }
+        public global::Vercel.AutoSDKSharede68d1538d48d5cc1Variant2Base? Type2137 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede68d1538d48d5cc1Variant3Base? Type2138 { get; set; }
+        public global::Vercel.AutoSDKSharede68d1538d48d5cc1Variant3? Type2138 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede68d1538d48d5cc1Variant3Slot>? Type2139 { get; set; }
+        public global::Vercel.AutoSDKSharede68d1538d48d5cc1Variant3Base? Type2139 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede68d1538d48d5cc1Variant3Slot? Type2140 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede68d1538d48d5cc1Variant3Slot>? Type2140 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb3e24a966396db5b>? Type2141 { get; set; }
+        public global::Vercel.AutoSDKSharede68d1538d48d5cc1Variant3Slot? Type2141 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede7fa7575dde4720dCondition>? Type2142 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb3e24a966396db5b>? Type2142 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede7fa7575dde4720dCondition? Type2143 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharede7fa7575dde4720dCondition>? Type2143 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AnyOf<global::Vercel.AutoSDKSharede7fa7575dde4720dConditionLhsVariant1, global::Vercel.AutoSDKSharede7fa7575dde4720dConditionLhsVariant2>? Type2144 { get; set; }
+        public global::Vercel.AutoSDKSharede7fa7575dde4720dCondition? Type2144 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionLhsVariant1? Type2145 { get; set; }
+        public global::Vercel.AnyOf<global::Vercel.AutoSDKSharede7fa7575dde4720dConditionLhsVariant1, global::Vercel.AutoSDKSharede7fa7575dde4720dConditionLhsVariant2>? Type2145 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionLhsVariant2? Type2146 { get; set; }
+        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionLhsVariant1? Type2146 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionCmp? Type2147 { get; set; }
+        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionLhsVariant2? Type2147 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1? Type2148 { get; set; }
+        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionCmp? Type2148 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1Type? Type2149 { get; set; }
+        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1? Type2149 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1ItemVariant1? Type2150 { get; set; }
+        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1Type? Type2150 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1ItemVariant2? Type2151 { get; set; }
+        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1ItemVariant1? Type2151 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant2? Type2152 { get; set; }
+        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1ItemVariant2? Type2152 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionCmpOptions? Type2153 { get; set; }
+        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant2? Type2153 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865c? Type2154 { get; set; }
+        public global::Vercel.AutoSDKSharede7fa7575dde4720dConditionCmpOptions? Type2154 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedeb5fe0ead5db865cCondition>? Type2155 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865c? Type2155 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cCondition? Type2156 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedeb5fe0ead5db865cCondition>? Type2156 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedeb5fe0ead5db865cConditionConditionGroupItem>? Type2157 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cCondition? Type2157 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cConditionConditionGroupItem? Type2158 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedeb5fe0ead5db865cConditionConditionGroupItem>? Type2158 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedeb5fe0ead5db865cConditionConditionGroupItemCondition>? Type2159 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cConditionConditionGroupItem? Type2159 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cConditionConditionGroupItemCondition? Type2160 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedeb5fe0ead5db865cConditionConditionGroupItemCondition>? Type2160 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cConditionConditionGroupItemConditionOp? Type2161 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cConditionConditionGroupItemCondition? Type2161 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cConditionConditionGroupItemConditionType? Type2162 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cConditionConditionGroupItemConditionOp? Type2162 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1f? Type2163 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cConditionConditionGroupItemConditionType? Type2163 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedeb5fe0ead5db865cIp>? Type2164 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1f? Type2164 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cIp? Type2165 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedeb5fe0ead5db865cIp>? Type2165 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cIpAction? Type2166 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cIp? Type2166 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKSharedeb5fe0ead5db865cLogHeaders?>? Type2167 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cIpAction? Type2167 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cLogHeaders? Type2168 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKSharedeb5fe0ead5db865cLogHeaders?>? Type2168 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRules? Type2169 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cLogHeaders? Type2169 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesAiBots? Type2170 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRules? Type2170 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesAiBotsAction? Type2171 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesAiBots? Type2171 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesBotProtection? Type2172 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesAiBotsAction? Type2172 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesBotProtectionAction? Type2173 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesBotProtection? Type2173 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesOwasp? Type2174 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesBotProtectionAction? Type2174 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesOwaspAction? Type2175 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesOwasp? Type2175 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesTrafficSources? Type2176 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesOwaspAction? Type2176 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesTrafficSourcesAction? Type2177 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesTrafficSources? Type2177 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesVercelRuleset? Type2178 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesTrafficSourcesAction? Type2178 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesVercelRulesetAction? Type2179 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesVercelRuleset? Type2179 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant1, global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant2>>? Type2180 { get; set; }
+        public global::Vercel.AutoSDKSharedeb5fe0ead5db865cManagedRulesVercelRulesetAction? Type2180 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant1, global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant2>? Type2181 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant1, global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant2>>? Type2181 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant1? Type2182 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant1, global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant2>? Type2182 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant1Type? Type2183 { get; set; }
+        public global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant1? Type2183 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant1Value>? Type2184 { get; set; }
+        public global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant1Type? Type2184 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant1Value? Type2185 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant1Value>? Type2185 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant2? Type2186 { get; set; }
+        public global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant1Value? Type2186 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant2Type? Type2187 { get; set; }
+        public global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant2? Type2187 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant2Value>? Type2188 { get; set; }
+        public global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant2Type? Type2188 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant2Value? Type2189 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant2Value>? Type2189 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant1, global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant2>>? Type2190 { get; set; }
+        public global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant2Value? Type2190 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant1, global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant2>? Type2191 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant1, global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant2>>? Type2191 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant1? Type2192 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant1, global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant2>? Type2192 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant1Type? Type2193 { get; set; }
+        public global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant1? Type2193 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant1Value>? Type2194 { get; set; }
+        public global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant1Type? Type2194 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant1Value? Type2195 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant1Value>? Type2195 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant2? Type2196 { get; set; }
+        public global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant1Value? Type2196 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant2Type? Type2197 { get; set; }
+        public global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant2? Type2197 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant2Value>? Type2198 { get; set; }
+        public global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant2Type? Type2198 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant2Value? Type2199 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant2Value>? Type2199 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fGen? Type2200 { get; set; }
+        public global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant2Value? Type2200 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fGenAction? Type2201 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fGen? Type2201 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fJava? Type2202 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fGenAction? Type2202 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fJavaAction? Type2203 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fJava? Type2203 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fLfi? Type2204 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fJavaAction? Type2204 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fLfiAction? Type2205 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fLfi? Type2205 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fMa? Type2206 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fLfiAction? Type2206 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fMaAction? Type2207 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fMa? Type2207 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fPhp? Type2208 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fMaAction? Type2208 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fPhpAction? Type2209 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fPhp? Type2209 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fRce? Type2210 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fPhpAction? Type2210 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fRceAction? Type2211 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fRce? Type2211 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fRfi? Type2212 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fRceAction? Type2212 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fRfiAction? Type2213 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fRfi? Type2213 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fSd? Type2214 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fRfiAction? Type2214 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fSdAction? Type2215 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fSd? Type2215 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fSf? Type2216 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fSdAction? Type2216 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fSfAction? Type2217 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fSf? Type2217 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fSqli? Type2218 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fSfAction? Type2218 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fSqliAction? Type2219 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fSqli? Type2219 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fXss? Type2220 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fSqliAction? Type2220 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf05f436e77310b1fXssAction? Type2221 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fXss? Type2221 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf29c7949a8a48e4aAction? Type2222 { get; set; }
+        public global::Vercel.AutoSDKSharedf05f436e77310b1fXssAction? Type2222 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedf29c7949a8a48e4aCheck>? Type2223 { get; set; }
+        public global::Vercel.AutoSDKSharedf29c7949a8a48e4aAction? Type2223 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf29c7949a8a48e4aCheck? Type2224 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedf29c7949a8a48e4aCheck>? Type2224 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf29c7949a8a48e4aCheckType? Type2225 { get; set; }
+        public global::Vercel.AutoSDKSharedf29c7949a8a48e4aCheck? Type2225 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf4f6de8967844f78? Type2226 { get; set; }
+        public global::Vercel.AutoSDKSharedf29c7949a8a48e4aCheckType? Type2226 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf9b373cd1ded5c73? Type2227 { get; set; }
+        public global::Vercel.AutoSDKSharedf4f6de8967844f78? Type2227 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedf9b373cd1ded5c73Type? Type2228 { get; set; }
+        public global::Vercel.AutoSDKSharedf9b373cd1ded5c73? Type2228 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa14d5567a1f8352? Type2229 { get; set; }
+        public global::Vercel.AutoSDKSharedf9b373cd1ded5c73Type? Type2229 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa14d5567a1f8352AliasError? Type2230 { get; set; }
+        public global::Vercel.AutoSDKSharedfa14d5567a1f8352? Type2230 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa14d5567a1f8352AliasWarning? Type2231 { get; set; }
+        public global::Vercel.AutoSDKSharedfa14d5567a1f8352AliasError? Type2231 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa14d5567a1f8352Duration? Type2232 { get; set; }
+        public global::Vercel.AutoSDKSharedfa14d5567a1f8352AliasWarning? Type2232 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa14d5567a1f8352ReadyState? Type2233 { get; set; }
+        public global::Vercel.AutoSDKSharedfa14d5567a1f8352Duration? Type2233 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa14d5567a1f8352Target? Type2234 { get; set; }
+        public global::Vercel.AutoSDKSharedfa14d5567a1f8352ReadyState? Type2234 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant1? Type2235 { get; set; }
+        public global::Vercel.AutoSDKSharedfa14d5567a1f8352Target? Type2235 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant1Compression? Type2236 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant1? Type2236 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant1Encoding? Type2237 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant1Compression? Type2237 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedfa633702cac2aa68Variant1Secret>? Type2238 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant1Encoding? Type2238 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant1Secret? Type2239 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedfa633702cac2aa68Variant1Secret>? Type2239 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant1SecretKind? Type2240 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant1Secret? Type2240 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant1Type? Type2241 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant1SecretKind? Type2241 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant2? Type2242 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant1Type? Type2242 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant2Encoding? Type2243 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant2? Type2243 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant2Endpoint? Type2244 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant2Encoding? Type2244 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedfa633702cac2aa68Variant2Secret>? Type2245 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant2Endpoint? Type2245 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant2Secret? Type2246 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedfa633702cac2aa68Variant2Secret>? Type2246 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant2SecretKind? Type2247 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant2Secret? Type2247 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant2Type? Type2248 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant2SecretKind? Type2248 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant3? Type2249 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant2Type? Type2249 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant3Type? Type2250 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant3? Type2250 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant4? Type2251 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant3Type? Type2251 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant4Compression? Type2252 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant4? Type2252 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant4Encoding? Type2253 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant4Compression? Type2253 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant4FileStructure? Type2254 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant4Encoding? Type2254 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant4ObjectAcl? Type2255 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant4FileStructure? Type2255 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant4ServerSideEncryption? Type2256 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant4ObjectAcl? Type2256 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant4Type? Type2257 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant4ServerSideEncryption? Type2257 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant5? Type2258 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant4Type? Type2258 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant5Target? Type2259 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant5? Type2259 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant5Type? Type2260 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant5Target? Type2260 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfabd867705b7541aActiveStage? Type2261 { get; set; }
+        public global::Vercel.AutoSDKSharedfa633702cac2aa68Variant5Type? Type2261 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfabd867705b7541aAdvancementType? Type2262 { get; set; }
+        public global::Vercel.AutoSDKSharedfabd867705b7541aActiveStage? Type2262 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfabd867705b7541aCanaryDeployment? Type2263 { get; set; }
+        public global::Vercel.AutoSDKSharedfabd867705b7541aAdvancementType? Type2263 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfabd867705b7541aCanaryDeploymentReadyState? Type2264 { get; set; }
+        public global::Vercel.AutoSDKSharedfabd867705b7541aCanaryDeployment? Type2264 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfabd867705b7541aCanaryDeploymentSource? Type2265 { get; set; }
+        public global::Vercel.AutoSDKSharedfabd867705b7541aCanaryDeploymentReadyState? Type2265 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfabd867705b7541aCanaryDeploymentTarget? Type2266 { get; set; }
+        public global::Vercel.AutoSDKSharedfabd867705b7541aCanaryDeploymentSource? Type2266 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfabd867705b7541aCurrentDeployment? Type2267 { get; set; }
+        public global::Vercel.AutoSDKSharedfabd867705b7541aCanaryDeploymentTarget? Type2267 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfabd867705b7541aCurrentDeploymentReadyState? Type2268 { get; set; }
+        public global::Vercel.AutoSDKSharedfabd867705b7541aCurrentDeployment? Type2268 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfabd867705b7541aCurrentDeploymentSource? Type2269 { get; set; }
+        public global::Vercel.AutoSDKSharedfabd867705b7541aCurrentDeploymentReadyState? Type2269 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfabd867705b7541aCurrentDeploymentTarget? Type2270 { get; set; }
+        public global::Vercel.AutoSDKSharedfabd867705b7541aCurrentDeploymentSource? Type2270 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfabd867705b7541aNextStage? Type2271 { get; set; }
+        public global::Vercel.AutoSDKSharedfabd867705b7541aCurrentDeploymentTarget? Type2271 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedfabd867705b7541aStage>? Type2272 { get; set; }
+        public global::Vercel.AutoSDKSharedfabd867705b7541aNextStage? Type2272 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfabd867705b7541aStage? Type2273 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedfabd867705b7541aStage>? Type2273 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfabd867705b7541aState? Type2274 { get; set; }
+        public global::Vercel.AutoSDKSharedfabd867705b7541aStage? Type2274 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfabd867705b7541aSubstate? Type2275 { get; set; }
+        public global::Vercel.AutoSDKSharedfabd867705b7541aState? Type2275 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfaf92fa84e99abddVariant2? Type2276 { get; set; }
+        public global::Vercel.AutoSDKSharedfabd867705b7541aSubstate? Type2276 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfaf92fa84e99abddVariant2Handle? Type2277 { get; set; }
+        public global::Vercel.AutoSDKSharedfaf92fa84e99abddVariant2? Type2277 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant1? Type2278 { get; set; }
+        public global::Vercel.AutoSDKSharedfaf92fa84e99abddVariant2Handle? Type2278 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant1Code? Type2279 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant1? Type2279 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant1Details? Type2280 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant1Code? Type2280 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant2? Type2281 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant1Details? Type2281 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant2Code? Type2282 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant2? Type2282 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant2Details? Type2283 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant2Code? Type2283 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant3? Type2284 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant2Details? Type2284 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant3Code? Type2285 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant3? Type2285 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant4? Type2286 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant3Code? Type2286 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant4Code? Type2287 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant4? Type2287 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant5? Type2288 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant4Code? Type2288 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant5Code? Type2289 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant5? Type2289 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant6? Type2290 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant5Code? Type2290 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant6Code? Type2291 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant6? Type2291 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant6Details? Type2292 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant6Code? Type2292 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant7? Type2293 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant6Details? Type2293 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant7Code? Type2294 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant7? Type2294 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant8? Type2295 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant7Code? Type2295 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant8Code? Type2296 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant8? Type2296 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant9? Type2297 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant8Code? Type2297 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant9Code? Type2298 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant9? Type2298 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant10? Type2299 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant9Code? Type2299 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant10Code? Type2300 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant10? Type2300 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant10Details? Type2301 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant10Code? Type2301 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant10DetailsInvalidField? Type2302 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant10Details? Type2302 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61Type? Type2303 { get; set; }
+        public global::Vercel.AutoSDKSharedfb6f42506e3e02aeVariant10DetailsInvalidField? Type2303 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiControl? Type2304 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61Type? Type2304 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiDescription>? Type2305 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiControl? Type2305 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiDescription? Type2306 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiDescription>? Type2306 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiDisabledEnum, bool?, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiDisabledEnum2?>? Type2307 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiDescription? Type2307 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiDisabledEnum? Type2308 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiDisabledEnum, bool?, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiDisabledEnum2?>? Type2308 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiDisabledEnum2? Type2309 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiDisabledEnum? Type2309 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiFormattedValue? Type2310 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiDisabledEnum2? Type2310 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiHiddenEnum, bool?, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiHiddenEnum2?>? Type2311 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiFormattedValue? Type2311 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiHiddenEnum? Type2312 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiHiddenEnum, bool?, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiHiddenEnum2?>? Type2312 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiHiddenEnum2? Type2313 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiHiddenEnum? Type2313 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1, string, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3>>? Type2314 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiHiddenEnum2? Type2314 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1, string, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3>? Type2315 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1, string, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3>>? Type2315 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1? Type2316 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1, string, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3>? Type2316 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1DisabledEnum? Type2317 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1? Type2317 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1DisabledEnum2? Type2318 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1DisabledEnum? Type2318 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1HiddenEnum? Type2319 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1DisabledEnum2? Type2319 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1HiddenEnum2? Type2320 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1HiddenEnum? Type2320 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3? Type2321 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1HiddenEnum2? Type2321 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3DisabledEnum? Type2322 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3? Type2322 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3DisabledEnum2? Type2323 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3DisabledEnum? Type2323 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3HiddenEnum? Type2324 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3DisabledEnum2? Type2324 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3HiddenEnum2? Type2325 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3HiddenEnum? Type2325 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiReadOnlyEnum, bool?, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiReadOnlyEnum2?>? Type2326 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3HiddenEnum2? Type2326 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiReadOnlyEnum? Type2327 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiReadOnlyEnum, bool?, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiReadOnlyEnum2?>? Type2327 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiReadOnlyEnum2? Type2328 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiReadOnlyEnum? Type2328 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.ACLAction>? Type2329 { get; set; }
+        public global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiReadOnlyEnum2? Type2329 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -18358,7 +18358,7 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.GetConfigurationResponseVariant1, global::Vercel.GetConfigurationResponseVariant2, global::Vercel.GetConfigurationResponseVariant3>? Type4580 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.GetConfigurationResponseVariant1, global::Vercel.GetConfigurationResponseVariant2>? Type4580 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -18422,5271 +18422,5255 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationResponseVariant3? Type4596 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponse? Type4596 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationResponseVariant3DisabledReason? Type4597 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseConfiguration? Type4597 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationResponseVariant3InstallationType? Type4598 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseIntegration? Type4598 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationResponseVariant3Source? Type4599 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetConfigurationProductsResponseProduct>? Type4599 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationResponseVariant3Status? Type4600 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProduct? Type4600 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationResponseVariant3Type? Type4601 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductPrimaryProtocol? Type4601 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponse? Type4602 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocols? Type4602 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseConfiguration? Type4603 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsAi? Type4603 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseIntegration? Type4604 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsAiStatus? Type4604 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetConfigurationProductsResponseProduct>? Type4605 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsAuthentication? Type4605 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProduct? Type4606 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsAuthenticationStatus? Type4606 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductPrimaryProtocol? Type4607 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsChecks? Type4607 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocols? Type4608 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsChecksStatus? Type4608 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsAi? Type4609 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsExperimentation? Type4609 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsAiStatus? Type4610 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsExperimentationStatus? Type4610 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsAuthentication? Type4611 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsLogDrain? Type4611 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsAuthenticationStatus? Type4612 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsLogDrainStatus? Type4612 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsChecks? Type4613 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsLogDrainFormat? Type4613 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsChecksStatus? Type4614 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsMessaging? Type4614 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsExperimentation? Type4615 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsMessagingStatus? Type4615 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsExperimentationStatus? Type4616 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsObservability? Type4616 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsLogDrain? Type4617 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsObservabilityStatus? Type4617 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsLogDrainStatus? Type4618 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsOther? Type4618 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsLogDrainFormat? Type4619 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsOtherStatus? Type4619 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsMessaging? Type4620 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsStorage? Type4620 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsMessagingStatus? Type4621 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsStorageStatus? Type4621 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsObservability? Type4622 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsStorageRepl? Type4622 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsObservabilityStatus? Type4623 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsTraceDrain? Type4623 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsOther? Type4624 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsTraceDrainStatus? Type4624 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsOtherStatus? Type4625 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsTraceDrainFormat? Type4625 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsStorage? Type4626 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsVideo? Type4626 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsStorageStatus? Type4627 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsVideoStatus? Type4627 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsStorageRepl? Type4628 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsWorkflow? Type4628 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsTraceDrain? Type4629 { get; set; }
+        public global::Vercel.GetConfigurationProductsResponseProductProtocolsWorkflowStatus? Type4629 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsTraceDrainStatus? Type4630 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.ExchangeSsoTokenResponseVariant1, global::Vercel.ExchangeSsoTokenResponseVariant2>? Type4630 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsTraceDrainFormat? Type4631 { get; set; }
+        public global::Vercel.ExchangeSsoTokenResponseVariant1? Type4631 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsVideo? Type4632 { get; set; }
+        public global::Vercel.ExchangeSsoTokenResponseVariant2? Type4632 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsVideoStatus? Type4633 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2208dea57c17c8da>? Type4633 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsWorkflow? Type4634 { get; set; }
+        public global::Vercel.CreateApiKeysResponse? Type4634 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConfigurationProductsResponseProductProtocolsWorkflowStatus? Type4635 { get; set; }
+        public global::Vercel.CreateApiKeysResponse2? Type4635 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.ExchangeSsoTokenResponseVariant1, global::Vercel.ExchangeSsoTokenResponseVariant2>? Type4636 { get; set; }
+        public global::Vercel.CreateApiKeysResponseError? Type4636 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ExchangeSsoTokenResponseVariant1? Type4637 { get; set; }
+        public global::Vercel.CreateApiKeysResponse3? Type4637 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ExchangeSsoTokenResponseVariant2? Type4638 { get; set; }
+        public global::Vercel.CreateApiKeysResponseError2? Type4638 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2208dea57c17c8da>? Type4639 { get; set; }
+        public global::Vercel.CreateApiKeysResponse4? Type4639 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateApiKeysResponse? Type4640 { get; set; }
+        public global::Vercel.CreateApiKeysResponseError3? Type4640 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateApiKeysResponse2? Type4641 { get; set; }
+        public global::Vercel.CreateApiKeysResponse5? Type4641 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateApiKeysResponseError? Type4642 { get; set; }
+        public global::Vercel.CreateApiKeysResponseError4? Type4642 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateApiKeysResponse3? Type4643 { get; set; }
+        public global::Vercel.UpdateApiKeyQuotaResponse? Type4643 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateApiKeysResponseError2? Type4644 { get; set; }
+        public global::Vercel.UpdateApiKeyQuotaResponse2? Type4644 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateApiKeysResponse4? Type4645 { get; set; }
+        public global::Vercel.UpdateApiKeyQuotaResponseError? Type4645 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateApiKeysResponseError3? Type4646 { get; set; }
+        public global::Vercel.UpdateApiKeyQuotaResponse3? Type4646 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateApiKeysResponse5? Type4647 { get; set; }
+        public global::Vercel.UpdateApiKeyQuotaResponseError2? Type4647 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateApiKeysResponseError4? Type4648 { get; set; }
+        public global::Vercel.UpdateApiKeyQuotaResponse4? Type4648 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateApiKeyQuotaResponse? Type4649 { get; set; }
+        public global::Vercel.UpdateApiKeyQuotaResponseError3? Type4649 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateApiKeyQuotaResponse2? Type4650 { get; set; }
+        public global::Vercel.UpdateApiKeyQuotaResponse5? Type4650 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateApiKeyQuotaResponseError? Type4651 { get; set; }
+        public global::Vercel.UpdateApiKeyQuotaResponseError4? Type4651 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateApiKeyQuotaResponse3? Type4652 { get; set; }
+        public global::Vercel.SignKmsMessageResponse? Type4652 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateApiKeyQuotaResponseError2? Type4653 { get; set; }
+        public global::Vercel.SignKmsTokenResponse? Type4653 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateApiKeyQuotaResponse4? Type4654 { get; set; }
+        public global::Vercel.ListKmsIssuersResponse? Type4654 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateApiKeyQuotaResponseError3? Type4655 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6bb335e8fa392fa3>? Type4655 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateApiKeyQuotaResponse5? Type4656 { get; set; }
+        public global::Vercel.ListKmsIssuersResponsePagination? Type4656 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateApiKeyQuotaResponseError4? Type4657 { get; set; }
+        public global::Vercel.CreateKmsIssuerPolicyResponseVariant1? Type4657 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SignKmsMessageResponse? Type4658 { get; set; }
+        public global::Vercel.CreateKmsIssuerPolicyResponseVariant1Kind? Type4658 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SignKmsTokenResponse? Type4659 { get; set; }
+        public global::Vercel.CreateKmsIssuerPolicyResponseVariant2? Type4659 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListKmsIssuersResponse? Type4660 { get; set; }
+        public global::Vercel.CreateKmsIssuerPolicyResponseVariant2Kind? Type4660 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6bb335e8fa392fa3>? Type4661 { get; set; }
+        public global::Vercel.CreateKmsIssuerPolicyResponseVariant3? Type4661 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListKmsIssuersResponsePagination? Type4662 { get; set; }
+        public global::Vercel.CreateKmsIssuerPolicyResponseVariant3Kind? Type4662 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateKmsIssuerPolicyResponseVariant1? Type4663 { get; set; }
+        public global::Vercel.UpdateKmsIssuerPolicyResponseVariant1? Type4663 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateKmsIssuerPolicyResponseVariant1Kind? Type4664 { get; set; }
+        public global::Vercel.UpdateKmsIssuerPolicyResponseVariant1Kind? Type4664 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateKmsIssuerPolicyResponseVariant2? Type4665 { get; set; }
+        public global::Vercel.UpdateKmsIssuerPolicyResponseVariant2? Type4665 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateKmsIssuerPolicyResponseVariant2Kind? Type4666 { get; set; }
+        public global::Vercel.UpdateKmsIssuerPolicyResponseVariant2Kind? Type4666 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateKmsIssuerPolicyResponseVariant3? Type4667 { get; set; }
+        public global::Vercel.UpdateKmsIssuerPolicyResponseVariant3? Type4667 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateKmsIssuerPolicyResponseVariant3Kind? Type4668 { get; set; }
+        public global::Vercel.UpdateKmsIssuerPolicyResponseVariant3Kind? Type4668 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateKmsIssuerPolicyResponseVariant1? Type4669 { get; set; }
+        public global::Vercel.GetRuntimeLogsResponse? Type4669 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateKmsIssuerPolicyResponseVariant1Kind? Type4670 { get; set; }
+        public global::Vercel.GetRuntimeLogsResponseLevel? Type4670 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateKmsIssuerPolicyResponseVariant2? Type4671 { get; set; }
+        public global::Vercel.GetRuntimeLogsResponseSource? Type4671 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateKmsIssuerPolicyResponseVariant2Kind? Type4672 { get; set; }
+        public global::Vercel.HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponse? Type4672 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateKmsIssuerPolicyResponseVariant3? Type4673 { get; set; }
+        public global::Vercel.HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose? Type4673 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateKmsIssuerPolicyResponseVariant3Kind? Type4674 { get; set; }
+        public global::Vercel.GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponse? Type4674 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRuntimeLogsResponse? Type4675 { get; set; }
+        public global::Vercel.GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose? Type4675 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRuntimeLogsResponseLevel? Type4676 { get; set; }
+        public global::Vercel.ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponse? Type4676 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRuntimeLogsResponseSource? Type4677 { get; set; }
+        public global::Vercel.ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose? Type4677 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponse? Type4678 { get; set; }
+        public global::Vercel.GetMicrofrontendsInGroupResponse? Type4678 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.HeadInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose? Type4679 { get; set; }
+        public global::Vercel.CreateMicrofrontendsGroupWithApplicationsResponse? Type4679 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponse? Type4680 { get; set; }
+        public global::Vercel.CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup? Type4680 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose? Type4681 { get; set; }
+        public global::Vercel.GetObservabilityConfigurationProjectsResponse? Type4681 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponse? Type4682 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetObservabilityConfigurationProjectsResponseDisabledProject>? Type4682 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ReplaceInstallationsByIntegrationConfigurationIdResourcesByResourceIdExperimentationGlobalConfigResponsePurpose? Type4683 { get; set; }
+        public global::Vercel.GetObservabilityConfigurationProjectsResponseDisabledProject? Type4683 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetMicrofrontendsInGroupResponse? Type4684 { get; set; }
+        public global::Vercel.UpdateObservabilityConfigurationProjectResponse? Type4684 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateMicrofrontendsGroupWithApplicationsResponse? Type4685 { get; set; }
+        public global::Vercel.GetObservabilitySchemaResponse? Type4685 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateMicrofrontendsGroupWithApplicationsResponseNewMicrofrontendsGroup? Type4686 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetObservabilitySchemaResponseMetric>? Type4686 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetObservabilityConfigurationProjectsResponse? Type4687 { get; set; }
+        public global::Vercel.GetObservabilitySchemaResponseMetric? Type4687 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetObservabilityConfigurationProjectsResponseDisabledProject>? Type4688 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetObservabilitySchemaByMetricIdResponseItem>? Type4688 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetObservabilityConfigurationProjectsResponseDisabledProject? Type4689 { get; set; }
+        public global::Vercel.GetObservabilitySchemaByMetricIdResponseItem? Type4689 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateObservabilityConfigurationProjectResponse? Type4690 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetObservabilitySchemaByMetricIdResponseItemDimension>? Type4690 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetObservabilitySchemaResponse? Type4691 { get; set; }
+        public global::Vercel.GetObservabilitySchemaByMetricIdResponseItemDimension? Type4691 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetObservabilitySchemaResponseMetric>? Type4692 { get; set; }
+        public global::Vercel.ListOrganizationsResponse? Type4692 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetObservabilitySchemaResponseMetric? Type4693 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.Organization>? Type4693 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetObservabilitySchemaByMetricIdResponseItem>? Type4694 { get; set; }
+        public global::Vercel.ListOrganizationTeamsResponse? Type4694 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetObservabilitySchemaByMetricIdResponseItem? Type4695 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OrganizationTeamListItem>? Type4695 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetObservabilitySchemaByMetricIdResponseItemDimension>? Type4696 { get; set; }
+        public global::Vercel.RemoveOrganizationTeamResponse? Type4696 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetObservabilitySchemaByMetricIdResponseItemDimension? Type4697 { get; set; }
+        public global::Vercel.OneOf<object, global::Vercel.GetProjectMembersResponseVariant2>? Type4697 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListOrganizationsResponse? Type4698 { get; set; }
+        public global::Vercel.GetProjectMembersResponseVariant2? Type4698 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.Organization>? Type4699 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectMembersResponseVariant2Member>? Type4699 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListOrganizationTeamsResponse? Type4700 { get; set; }
+        public global::Vercel.GetProjectMembersResponseVariant2Member? Type4700 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OrganizationTeamListItem>? Type4701 { get; set; }
+        public global::Vercel.GetProjectMembersResponseVariant2MemberComputedProjectRole? Type4701 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveOrganizationTeamResponse? Type4702 { get; set; }
+        public global::Vercel.GetProjectMembersResponseVariant2MemberRole? Type4702 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<object, global::Vercel.GetProjectMembersResponseVariant2>? Type4703 { get; set; }
+        public global::Vercel.GetProjectMembersResponseVariant2MemberTeamRole? Type4703 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectMembersResponseVariant2? Type4704 { get; set; }
+        public global::Vercel.GetProjectMembersResponseVariant2Pagination? Type4704 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectMembersResponseVariant2Member>? Type4705 { get; set; }
+        public global::Vercel.AddProjectMemberResponse? Type4705 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectMembersResponseVariant2Member? Type4706 { get; set; }
+        public global::Vercel.RemoveProjectMemberResponse? Type4706 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectMembersResponseVariant2MemberComputedProjectRole? Type4707 { get; set; }
+        public global::Vercel.OneOf<object, global::Vercel.GetRoutesResponseVariant2, global::Vercel.GetRoutesResponseVariant3, global::Vercel.GetRoutesResponseVariant4>? Type4707 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectMembersResponseVariant2MemberRole? Type4708 { get; set; }
+        public global::Vercel.GetRoutesResponseVariant2? Type4708 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectMembersResponseVariant2MemberTeamRole? Type4709 { get; set; }
+        public global::Vercel.GetRoutesResponseVariant2Version? Type4709 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectMembersResponseVariant2Pagination? Type4710 { get; set; }
+        public global::Vercel.GetRoutesResponseVariant3? Type4710 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AddProjectMemberResponse? Type4711 { get; set; }
+        public global::Vercel.GetRoutesResponseVariant3Version? Type4711 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectMemberResponse? Type4712 { get; set; }
+        public global::Vercel.GetRoutesResponseVariant4? Type4712 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<object, global::Vercel.GetRoutesResponseVariant2, global::Vercel.GetRoutesResponseVariant3, global::Vercel.GetRoutesResponseVariant4>? Type4713 { get; set; }
+        public global::Vercel.GetRoutesResponseVariant4Limit? Type4713 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRoutesResponseVariant2? Type4714 { get; set; }
+        public global::Vercel.GetRoutesResponseVariant4Version? Type4714 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRoutesResponseVariant2Version? Type4715 { get; set; }
+        public global::Vercel.StageRoutesResponse? Type4715 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRoutesResponseVariant3? Type4716 { get; set; }
+        public global::Vercel.StageRoutesResponseVersion? Type4716 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRoutesResponseVariant3Version? Type4717 { get; set; }
+        public global::Vercel.AddRouteResponse? Type4717 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRoutesResponseVariant4? Type4718 { get; set; }
+        public global::Vercel.AddRouteResponseVersion? Type4718 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRoutesResponseVariant4Limit? Type4719 { get; set; }
+        public global::Vercel.DeleteRoutesResponse? Type4719 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRoutesResponseVariant4Version? Type4720 { get; set; }
+        public global::Vercel.DeleteRoutesResponseVersion? Type4720 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.StageRoutesResponse? Type4721 { get; set; }
+        public global::Vercel.EditRouteResponse? Type4721 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.StageRoutesResponseVersion? Type4722 { get; set; }
+        public global::Vercel.EditRouteResponseVersion? Type4722 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AddRouteResponse? Type4723 { get; set; }
+        public global::Vercel.GenerateRouteResponse? Type4723 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AddRouteResponseVersion? Type4724 { get; set; }
+        public global::Vercel.GenerateRouteResponseRoute? Type4724 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.DeleteRoutesResponse? Type4725 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteAction>? Type4725 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.DeleteRoutesResponseVersion? Type4726 { get; set; }
+        public global::Vercel.GenerateRouteResponseRouteAction? Type4726 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.EditRouteResponse? Type4727 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteActionHeader>? Type4727 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.EditRouteResponseVersion? Type4728 { get; set; }
+        public global::Vercel.GenerateRouteResponseRouteActionHeader? Type4728 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateRouteResponse? Type4729 { get; set; }
+        public global::Vercel.GenerateRouteResponseRouteActionHeaderOp? Type4729 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateRouteResponseRoute? Type4730 { get; set; }
+        public global::Vercel.GenerateRouteResponseRouteActionSubType? Type4730 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteAction>? Type4731 { get; set; }
+        public global::Vercel.GenerateRouteResponseRouteActionType? Type4731 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateRouteResponseRouteAction? Type4732 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteCondition>? Type4732 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteActionHeader>? Type4733 { get; set; }
+        public global::Vercel.GenerateRouteResponseRouteCondition? Type4733 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateRouteResponseRouteActionHeader? Type4734 { get; set; }
+        public global::Vercel.GenerateRouteResponseRouteConditionField? Type4734 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateRouteResponseRouteActionHeaderOp? Type4735 { get; set; }
+        public global::Vercel.GenerateRouteResponseRouteConditionOperator? Type4735 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateRouteResponseRouteActionSubType? Type4736 { get; set; }
+        public global::Vercel.GenerateRouteResponseRoutePathCondition? Type4736 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateRouteResponseRouteActionType? Type4737 { get; set; }
+        public global::Vercel.GenerateRouteResponseRoutePathConditionSyntax? Type4737 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GenerateRouteResponseRouteCondition>? Type4738 { get; set; }
+        public global::Vercel.GetRouteVersionsResponse? Type4738 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateRouteResponseRouteCondition? Type4739 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetRouteVersionsResponseVersion>? Type4739 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateRouteResponseRouteConditionField? Type4740 { get; set; }
+        public global::Vercel.GetRouteVersionsResponseVersion? Type4740 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateRouteResponseRouteConditionOperator? Type4741 { get; set; }
+        public global::Vercel.UpdateRouteVersionsResponse? Type4741 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateRouteResponseRoutePathCondition? Type4742 { get; set; }
+        public global::Vercel.UpdateRouteVersionsResponseVersion? Type4742 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateRouteResponseRoutePathConditionSyntax? Type4743 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc30663411f76e3c9>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>? Type4743 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRouteVersionsResponse? Type4744 { get; set; }
+        public global::Vercel.GetProjectsResponseVariant2? Type4744 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetRouteVersionsResponseVersion>? Type4745 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.GetProjectsResponseVariant2Pagination, global::Vercel.Pagination>? Type4745 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRouteVersionsResponseVersion? Type4746 { get; set; }
+        public global::Vercel.GetProjectsResponseVariant2Pagination? Type4746 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateRouteVersionsResponse? Type4747 { get; set; }
+        public global::Vercel.GetProjectsResponseVariant3? Type4747 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateRouteVersionsResponseVersion? Type4748 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.GetProjectsResponseVariant3Pagination, global::Vercel.Pagination>? Type4748 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc30663411f76e3c9>, global::Vercel.GetProjectsResponseVariant2, global::Vercel.GetProjectsResponseVariant3>? Type4749 { get; set; }
+        public global::Vercel.GetProjectsResponseVariant3Pagination? Type4749 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectsResponseVariant2? Type4750 { get; set; }
+        public global::Vercel.GetProjectTraceResponse? Type4750 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.GetProjectsResponseVariant2Pagination, global::Vercel.Pagination>? Type4751 { get; set; }
+        public global::Vercel.GetProjectTraceResponseTrace? Type4751 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectsResponseVariant2Pagination? Type4752 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectTraceResponseTraceResource>? Type4752 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectsResponseVariant3? Type4753 { get; set; }
+        public global::Vercel.GetProjectTraceResponseTraceResource? Type4753 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.GetProjectsResponseVariant3Pagination, global::Vercel.Pagination>? Type4754 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectTraceResponseTraceSpan>? Type4754 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectsResponseVariant3Pagination? Type4755 { get; set; }
+        public global::Vercel.GetProjectTraceResponseTraceSpan? Type4755 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectTraceResponse? Type4756 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectTraceResponseTraceSpanEvent>? Type4756 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectTraceResponseTrace? Type4757 { get; set; }
+        public global::Vercel.GetProjectTraceResponseTraceSpanEvent? Type4757 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectTraceResponseTraceResource>? Type4758 { get; set; }
+        public global::Vercel.GetProjectTraceResponseTraceSpanLibrary? Type4758 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectTraceResponseTraceResource? Type4759 { get; set; }
+        public global::Vercel.GetProjectTraceResponseTraceSpanStatus? Type4759 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectTraceResponseTraceSpan>? Type4760 { get; set; }
+        public global::Vercel.GetProjectTokenResponse? Type4760 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectTraceResponseTraceSpan? Type4761 { get; set; }
+        public global::Vercel.CreateTraceSessionResponse? Type4761 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectTraceResponseTraceSpanEvent>? Type4762 { get; set; }
+        public global::Vercel.GetProjectResponse? Type4762 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectTraceResponseTraceSpanEvent? Type4763 { get; set; }
+        public global::Vercel.GetProjectResponseAnalytics? Type4763 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectTraceResponseTraceSpanLibrary? Type4764 { get; set; }
+        public global::Vercel.GetProjectResponseBlobs? Type4764 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectTraceResponseTraceSpanStatus? Type4765 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseConnectConfiguration>? Type4765 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectTokenResponse? Type4766 { get; set; }
+        public global::Vercel.GetProjectResponseConnectConfiguration? Type4766 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateTraceSessionResponse? Type4767 { get; set; }
+        public global::Vercel.GetProjectResponseConnectConfigurationAws? Type4767 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponse? Type4768 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.GetProjectResponseConnectConfigurationEnvId?>? Type4768 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseAnalytics? Type4769 { get; set; }
+        public global::Vercel.GetProjectResponseConnectConfigurationEnvId? Type4769 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseBlobs? Type4770 { get; set; }
+        public global::Vercel.GetProjectResponseCrons? Type4770 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseConnectConfiguration>? Type4771 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseCronsDefinition>? Type4771 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseConnectConfiguration? Type4772 { get; set; }
+        public global::Vercel.GetProjectResponseCronsDefinition? Type4772 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseConnectConfigurationAws? Type4773 { get; set; }
+        public global::Vercel.GetProjectResponseCronsDefinitionSource? Type4773 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.GetProjectResponseConnectConfigurationEnvId?>? Type4774 { get; set; }
+        public global::Vercel.GetProjectResponseDataCache? Type4774 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseConnectConfigurationEnvId? Type4775 { get; set; }
+        public global::Vercel.GetProjectResponseDeploymentExpiration? Type4775 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseCrons? Type4776 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseDismissedToast>? Type4776 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseCronsDefinition>? Type4777 { get; set; }
+        public global::Vercel.GetProjectResponseDismissedToast? Type4777 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseCronsDefinition? Type4778 { get; set; }
+        public global::Vercel.GetProjectResponseDismissedToastAction? Type4778 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseCronsDefinitionSource? Type4779 { get; set; }
+        public global::Vercel.OneOf<string, double?, global::Vercel.GetProjectResponseDismissedToastValue, bool?>? Type4779 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseDataCache? Type4780 { get; set; }
+        public global::Vercel.GetProjectResponseDismissedToastValue? Type4780 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseDeploymentExpiration? Type4781 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseEnvItem>? Type4781 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseDismissedToast>? Type4782 { get; set; }
+        public global::Vercel.GetProjectResponseEnvItem? Type4782 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseDismissedToast? Type4783 { get; set; }
+        public global::Vercel.GetProjectResponseEnvItemInternalContentHint? Type4783 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseDismissedToastAction? Type4784 { get; set; }
+        public global::Vercel.GetProjectResponseEnvItemInternalContentHintType? Type4784 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, double?, global::Vercel.GetProjectResponseDismissedToastValue, bool?>? Type4785 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseEnvItemTargetItem>, global::Vercel.GetProjectResponseEnvItemTarget?>? Type4785 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseDismissedToastValue? Type4786 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseEnvItemTargetItem>? Type4786 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseEnvItem>? Type4787 { get; set; }
+        public global::Vercel.GetProjectResponseEnvItemTargetItem? Type4787 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseEnvItem? Type4788 { get; set; }
+        public global::Vercel.GetProjectResponseEnvItemTarget? Type4788 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseEnvItemInternalContentHint? Type4789 { get; set; }
+        public global::Vercel.GetProjectResponseEnvItemType? Type4789 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseEnvItemInternalContentHintType? Type4790 { get; set; }
+        public global::Vercel.GetProjectResponseEnvItemVisibility? Type4790 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseEnvItemTargetItem>, global::Vercel.GetProjectResponseEnvItemTarget?>? Type4791 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.GetProjectResponseExpirationVariant1, global::Vercel.GetProjectResponseExpirationVariant2>? Type4791 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseEnvItemTargetItem>? Type4792 { get; set; }
+        public global::Vercel.GetProjectResponseExpirationVariant1? Type4792 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseEnvItemTargetItem? Type4793 { get; set; }
+        public global::Vercel.GetProjectResponseExpirationVariant2? Type4793 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseEnvItemTarget? Type4794 { get; set; }
+        public global::Vercel.GetProjectResponseFeatures? Type4794 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseEnvItemType? Type4795 { get; set; }
+        public global::Vercel.GetProjectResponseFramework? Type4795 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseEnvItemVisibility? Type4796 { get; set; }
+        public global::Vercel.GetProjectResponseGitComments? Type4796 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.GetProjectResponseExpirationVariant1, global::Vercel.GetProjectResponseExpirationVariant2>? Type4797 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseIntegration>? Type4797 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseExpirationVariant1? Type4798 { get; set; }
+        public global::Vercel.GetProjectResponseIntegration? Type4798 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseExpirationVariant2? Type4799 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseIntegrationResource>? Type4799 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseFeatures? Type4800 { get; set; }
+        public global::Vercel.GetProjectResponseIntegrationResource? Type4800 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseFramework? Type4801 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetProjectResponseInternalRouteVariant1, global::Vercel.GetProjectResponseInternalRouteVariant2>>? Type4801 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseGitComments? Type4802 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.GetProjectResponseInternalRouteVariant1, global::Vercel.GetProjectResponseInternalRouteVariant2>? Type4802 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseIntegration>? Type4803 { get; set; }
+        public global::Vercel.GetProjectResponseInternalRouteVariant1? Type4803 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseIntegration? Type4804 { get; set; }
+        public global::Vercel.GetProjectResponseInternalRouteVariant2? Type4804 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseIntegrationResource>? Type4805 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant1, global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant2>>? Type4805 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseIntegrationResource? Type4806 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant1, global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant2>? Type4806 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetProjectResponseInternalRouteVariant1, global::Vercel.GetProjectResponseInternalRouteVariant2>>? Type4807 { get; set; }
+        public global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant1? Type4807 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.GetProjectResponseInternalRouteVariant1, global::Vercel.GetProjectResponseInternalRouteVariant2>? Type4808 { get; set; }
+        public global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant1Key? Type4808 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseInternalRouteVariant1? Type4809 { get; set; }
+        public global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant1Type? Type4809 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseInternalRouteVariant2? Type4810 { get; set; }
+        public global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant1Value? Type4810 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant1, global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant2>>? Type4811 { get; set; }
+        public global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant2? Type4811 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant1, global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant2>? Type4812 { get; set; }
+        public global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant2Type? Type4812 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant1? Type4813 { get; set; }
+        public global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant2Value? Type4813 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant1Key? Type4814 { get; set; }
+        public global::Vercel.GetProjectResponseInternalRouteVariant2Mitigate? Type4814 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant1Type? Type4815 { get; set; }
+        public global::Vercel.GetProjectResponseInternalRouteVariant2MitigateAction? Type4815 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant1Value? Type4816 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseIpBucket>? Type4816 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant2? Type4817 { get; set; }
+        public global::Vercel.GetProjectResponseIpBucket? Type4817 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant2Type? Type4818 { get; set; }
+        public global::Vercel.GetProjectResponseJobs? Type4818 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseInternalRouteVariant2HaVariant2Value? Type4819 { get; set; }
+        public global::Vercel.GetProjectResponseJobsFlagDefinitionsPresent? Type4819 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseInternalRouteVariant2Mitigate? Type4820 { get; set; }
+        public global::Vercel.GetProjectResponseJobsHealthCheck? Type4820 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseInternalRouteVariant2MitigateAction? Type4821 { get; set; }
+        public global::Vercel.GetProjectResponseJobsLint? Type4821 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseIpBucket>? Type4822 { get; set; }
+        public global::Vercel.GetProjectResponseJobsMfeConfigPresent? Type4822 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseIpBucket? Type4823 { get; set; }
+        public global::Vercel.GetProjectResponseJobsTypecheck? Type4823 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseJobs? Type4824 { get; set; }
+        public global::Vercel.GetProjectResponseLastAliasRequest? Type4824 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseJobsFlagDefinitionsPresent? Type4825 { get; set; }
+        public global::Vercel.GetProjectResponseLastAliasRequestJobStatus? Type4825 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseJobsHealthCheck? Type4826 { get; set; }
+        public global::Vercel.GetProjectResponseLastAliasRequestType? Type4826 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseJobsLint? Type4827 { get; set; }
+        public global::Vercel.GetProjectResponseNodeVersion? Type4827 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseJobsMfeConfigPresent? Type4828 { get; set; }
+        public global::Vercel.GetProjectResponseOidcTokenConfig? Type4828 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseJobsTypecheck? Type4829 { get; set; }
+        public global::Vercel.GetProjectResponseOidcTokenConfigIssuerMode? Type4829 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseLastAliasRequest? Type4830 { get; set; }
+        public global::Vercel.GetProjectResponseOptionsAllowlist? Type4830 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseLastAliasRequestJobStatus? Type4831 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseOptionsAllowlistPath>? Type4831 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseLastAliasRequestType? Type4832 { get; set; }
+        public global::Vercel.GetProjectResponseOptionsAllowlistPath? Type4832 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseNodeVersion? Type4833 { get; set; }
+        public global::Vercel.GetProjectResponsePassport? Type4833 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseOidcTokenConfig? Type4834 { get; set; }
+        public global::Vercel.GetProjectResponsePassportDeploymentType? Type4834 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseOidcTokenConfigIssuerMode? Type4835 { get; set; }
+        public global::Vercel.GetProjectResponsePasswordProtection? Type4835 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseOptionsAllowlist? Type4836 { get; set; }
+        public global::Vercel.GetProjectResponsePasswordProtectionDeploymentType? Type4836 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseOptionsAllowlistPath>? Type4837 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.GetProjectResponseProtectionBypassVariant1, global::Vercel.GetProjectResponseProtectionBypassVariant2>? Type4837 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseOptionsAllowlistPath? Type4838 { get; set; }
+        public global::Vercel.GetProjectResponseProtectionBypassVariant1? Type4838 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponsePassport? Type4839 { get; set; }
+        public global::Vercel.GetProjectResponseProtectionBypassVariant1Scope? Type4839 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponsePassportDeploymentType? Type4840 { get; set; }
+        public global::Vercel.GetProjectResponseProtectionBypassVariant2? Type4840 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponsePasswordProtection? Type4841 { get; set; }
+        public global::Vercel.GetProjectResponseProtectionBypassVariant2Scope? Type4841 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponsePasswordProtectionDeploymentType? Type4842 { get; set; }
+        public global::Vercel.GetProjectResponseProtectionConfig? Type4842 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.GetProjectResponseProtectionBypassVariant1, global::Vercel.GetProjectResponseProtectionBypassVariant2>? Type4843 { get; set; }
+        public global::Vercel.GetProjectResponseProtectionConfigSandboxUrls? Type4843 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseProtectionBypassVariant1? Type4844 { get; set; }
+        public global::Vercel.GetProjectResponseSandbox? Type4844 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseProtectionBypassVariant1Scope? Type4845 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseSandboxFailoverRegion>? Type4845 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseProtectionBypassVariant2? Type4846 { get; set; }
+        public global::Vercel.GetProjectResponseSandboxFailoverRegion? Type4846 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseProtectionBypassVariant2Scope? Type4847 { get; set; }
+        public global::Vercel.GetProjectResponseSandboxRegion? Type4847 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseProtectionConfig? Type4848 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseService>? Type4848 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseProtectionConfigSandboxUrls? Type4849 { get; set; }
+        public global::Vercel.GetProjectResponseService? Type4849 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseSandbox? Type4850 { get; set; }
+        public global::Vercel.GetProjectResponseServiceFramework? Type4850 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseSandboxFailoverRegion>? Type4851 { get; set; }
+        public global::Vercel.GetProjectResponseServiceServiceType? Type4851 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseSandboxFailoverRegion? Type4852 { get; set; }
+        public global::Vercel.GetProjectResponseSpeedInsights? Type4852 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseSandboxRegion? Type4853 { get; set; }
+        public global::Vercel.GetProjectResponseSsoProtection? Type4853 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseService>? Type4854 { get; set; }
+        public global::Vercel.GetProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom? Type4854 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseService? Type4855 { get; set; }
+        public global::Vercel.GetProjectResponseSsoProtectionCve55182MigrationAppliedFrom? Type4855 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseServiceFramework? Type4856 { get; set; }
+        public global::Vercel.GetProjectResponseSsoProtectionDeploymentType? Type4856 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseServiceServiceType? Type4857 { get; set; }
+        public global::Vercel.GetProjectResponseStaticIps? Type4857 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseSpeedInsights? Type4858 { get; set; }
+        public global::Vercel.GetProjectResponseTier? Type4858 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseSsoProtection? Type4859 { get; set; }
+        public global::Vercel.GetProjectResponseTracing? Type4859 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom? Type4860 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseTracingSamplingRule>? Type4860 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseSsoProtectionCve55182MigrationAppliedFrom? Type4861 { get; set; }
+        public global::Vercel.GetProjectResponseTracingSamplingRule? Type4861 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseSsoProtectionDeploymentType? Type4862 { get; set; }
+        public global::Vercel.GetProjectResponseTracingSamplingRuleDestination? Type4862 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseStaticIps? Type4863 { get; set; }
+        public global::Vercel.GetProjectResponseTracingSamplingRuleEnv? Type4863 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseTier? Type4864 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.GetProjectResponseTrustedIpsVariant1, global::Vercel.GetProjectResponseTrustedIpsVariant2>? Type4864 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseTracing? Type4865 { get; set; }
+        public global::Vercel.GetProjectResponseTrustedIpsVariant1? Type4865 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseTracingSamplingRule>? Type4866 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseTrustedIpsVariant1Addresse>? Type4866 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseTracingSamplingRule? Type4867 { get; set; }
+        public global::Vercel.GetProjectResponseTrustedIpsVariant1Addresse? Type4867 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseTracingSamplingRuleDestination? Type4868 { get; set; }
+        public global::Vercel.GetProjectResponseTrustedIpsVariant1DeploymentType? Type4868 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseTracingSamplingRuleEnv? Type4869 { get; set; }
+        public global::Vercel.GetProjectResponseTrustedIpsVariant1ProtectionMode? Type4869 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.GetProjectResponseTrustedIpsVariant1, global::Vercel.GetProjectResponseTrustedIpsVariant2>? Type4870 { get; set; }
+        public global::Vercel.GetProjectResponseTrustedIpsVariant2? Type4870 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseTrustedIpsVariant1? Type4871 { get; set; }
+        public global::Vercel.GetProjectResponseTrustedIpsVariant2DeploymentType? Type4871 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectResponseTrustedIpsVariant1Addresse>? Type4872 { get; set; }
+        public global::Vercel.GetProjectResponseUsageStatus? Type4872 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseTrustedIpsVariant1Addresse? Type4873 { get; set; }
+        public global::Vercel.GetProjectResponseUsageStatusKind? Type4873 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseTrustedIpsVariant1DeploymentType? Type4874 { get; set; }
+        public global::Vercel.GetProjectResponseVercelFlags? Type4874 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseTrustedIpsVariant1ProtectionMode? Type4875 { get; set; }
+        public global::Vercel.GetProjectResponseWebAnalytics? Type4875 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseTrustedIpsVariant2? Type4876 { get; set; }
+        public global::Vercel.UpdateProjectResponse? Type4876 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseTrustedIpsVariant2DeploymentType? Type4877 { get; set; }
+        public global::Vercel.UpdateProjectResponseAnalytics? Type4877 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseUsageStatus? Type4878 { get; set; }
+        public global::Vercel.UpdateProjectResponseBlobs? Type4878 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseUsageStatusKind? Type4879 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseConnectConfiguration>? Type4879 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseVercelFlags? Type4880 { get; set; }
+        public global::Vercel.UpdateProjectResponseConnectConfiguration? Type4880 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectResponseWebAnalytics? Type4881 { get; set; }
+        public global::Vercel.UpdateProjectResponseConnectConfigurationAws? Type4881 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponse? Type4882 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.UpdateProjectResponseConnectConfigurationEnvId?>? Type4882 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseAnalytics? Type4883 { get; set; }
+        public global::Vercel.UpdateProjectResponseConnectConfigurationEnvId? Type4883 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseBlobs? Type4884 { get; set; }
+        public global::Vercel.UpdateProjectResponseCrons? Type4884 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseConnectConfiguration>? Type4885 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseCronsDefinition>? Type4885 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseConnectConfiguration? Type4886 { get; set; }
+        public global::Vercel.UpdateProjectResponseCronsDefinition? Type4886 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseConnectConfigurationAws? Type4887 { get; set; }
+        public global::Vercel.UpdateProjectResponseCronsDefinitionSource? Type4887 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.UpdateProjectResponseConnectConfigurationEnvId?>? Type4888 { get; set; }
+        public global::Vercel.UpdateProjectResponseDataCache? Type4888 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseConnectConfigurationEnvId? Type4889 { get; set; }
+        public global::Vercel.UpdateProjectResponseDeploymentExpiration? Type4889 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseCrons? Type4890 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseDismissedToast>? Type4890 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseCronsDefinition>? Type4891 { get; set; }
+        public global::Vercel.UpdateProjectResponseDismissedToast? Type4891 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseCronsDefinition? Type4892 { get; set; }
+        public global::Vercel.UpdateProjectResponseDismissedToastAction? Type4892 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseCronsDefinitionSource? Type4893 { get; set; }
+        public global::Vercel.OneOf<string, double?, global::Vercel.UpdateProjectResponseDismissedToastValue, bool?>? Type4893 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseDataCache? Type4894 { get; set; }
+        public global::Vercel.UpdateProjectResponseDismissedToastValue? Type4894 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseDeploymentExpiration? Type4895 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseEnvItem>? Type4895 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseDismissedToast>? Type4896 { get; set; }
+        public global::Vercel.UpdateProjectResponseEnvItem? Type4896 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseDismissedToast? Type4897 { get; set; }
+        public global::Vercel.UpdateProjectResponseEnvItemInternalContentHint? Type4897 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseDismissedToastAction? Type4898 { get; set; }
+        public global::Vercel.UpdateProjectResponseEnvItemInternalContentHintType? Type4898 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, double?, global::Vercel.UpdateProjectResponseDismissedToastValue, bool?>? Type4899 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.UpdateProjectResponseEnvItemTarget?>? Type4899 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseDismissedToastValue? Type4900 { get; set; }
+        public global::Vercel.UpdateProjectResponseEnvItemTarget? Type4900 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseEnvItem>? Type4901 { get; set; }
+        public global::Vercel.UpdateProjectResponseEnvItemType? Type4901 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseEnvItem? Type4902 { get; set; }
+        public global::Vercel.UpdateProjectResponseEnvItemVisibility? Type4902 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseEnvItemInternalContentHint? Type4903 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseExpirationVariant1, global::Vercel.UpdateProjectResponseExpirationVariant2>? Type4903 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseEnvItemInternalContentHintType? Type4904 { get; set; }
+        public global::Vercel.UpdateProjectResponseExpirationVariant1? Type4904 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.UpdateProjectResponseEnvItemTarget?>? Type4905 { get; set; }
+        public global::Vercel.UpdateProjectResponseExpirationVariant2? Type4905 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseEnvItemTarget? Type4906 { get; set; }
+        public global::Vercel.UpdateProjectResponseFeatures? Type4906 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseEnvItemType? Type4907 { get; set; }
+        public global::Vercel.UpdateProjectResponseFramework? Type4907 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseEnvItemVisibility? Type4908 { get; set; }
+        public global::Vercel.UpdateProjectResponseGitComments? Type4908 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseExpirationVariant1, global::Vercel.UpdateProjectResponseExpirationVariant2>? Type4909 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UpdateProjectResponseInternalRouteVariant1, global::Vercel.UpdateProjectResponseInternalRouteVariant2>>? Type4909 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseExpirationVariant1? Type4910 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseInternalRouteVariant1, global::Vercel.UpdateProjectResponseInternalRouteVariant2>? Type4910 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseExpirationVariant2? Type4911 { get; set; }
+        public global::Vercel.UpdateProjectResponseInternalRouteVariant1? Type4911 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseFeatures? Type4912 { get; set; }
+        public global::Vercel.UpdateProjectResponseInternalRouteVariant2? Type4912 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseFramework? Type4913 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant1, global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant2>? Type4913 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseGitComments? Type4914 { get; set; }
+        public global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant1? Type4914 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.UpdateProjectResponseInternalRouteVariant1, global::Vercel.UpdateProjectResponseInternalRouteVariant2>>? Type4915 { get; set; }
+        public global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant1Key? Type4915 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseInternalRouteVariant1, global::Vercel.UpdateProjectResponseInternalRouteVariant2>? Type4916 { get; set; }
+        public global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant1Type? Type4916 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseInternalRouteVariant1? Type4917 { get; set; }
+        public global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant1Value? Type4917 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseInternalRouteVariant2? Type4918 { get; set; }
+        public global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant2? Type4918 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant1, global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant2>? Type4919 { get; set; }
+        public global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant2Type? Type4919 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant1? Type4920 { get; set; }
+        public global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant2Value? Type4920 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant1Key? Type4921 { get; set; }
+        public global::Vercel.UpdateProjectResponseInternalRouteVariant2Mitigate? Type4921 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant1Type? Type4922 { get; set; }
+        public global::Vercel.UpdateProjectResponseInternalRouteVariant2MitigateAction? Type4922 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant1Value? Type4923 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseIpBucket>? Type4923 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant2? Type4924 { get; set; }
+        public global::Vercel.UpdateProjectResponseIpBucket? Type4924 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant2Type? Type4925 { get; set; }
+        public global::Vercel.UpdateProjectResponseJobs? Type4925 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseInternalRouteVariant2HaVariant2Value? Type4926 { get; set; }
+        public global::Vercel.UpdateProjectResponseJobsFlagDefinitionsPresent? Type4926 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseInternalRouteVariant2Mitigate? Type4927 { get; set; }
+        public global::Vercel.UpdateProjectResponseJobsHealthCheck? Type4927 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseInternalRouteVariant2MitigateAction? Type4928 { get; set; }
+        public global::Vercel.UpdateProjectResponseJobsLint? Type4928 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseIpBucket>? Type4929 { get; set; }
+        public global::Vercel.UpdateProjectResponseJobsMfeConfigPresent? Type4929 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseIpBucket? Type4930 { get; set; }
+        public global::Vercel.UpdateProjectResponseJobsTypecheck? Type4930 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseJobs? Type4931 { get; set; }
+        public global::Vercel.UpdateProjectResponseLastAliasRequest? Type4931 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseJobsFlagDefinitionsPresent? Type4932 { get; set; }
+        public global::Vercel.UpdateProjectResponseLastAliasRequestJobStatus? Type4932 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseJobsHealthCheck? Type4933 { get; set; }
+        public global::Vercel.UpdateProjectResponseLastAliasRequestType? Type4933 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseJobsLint? Type4934 { get; set; }
+        public global::Vercel.UpdateProjectResponseNodeVersion? Type4934 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseJobsMfeConfigPresent? Type4935 { get; set; }
+        public global::Vercel.UpdateProjectResponseOidcTokenConfig? Type4935 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseJobsTypecheck? Type4936 { get; set; }
+        public global::Vercel.UpdateProjectResponseOidcTokenConfigIssuerMode? Type4936 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseLastAliasRequest? Type4937 { get; set; }
+        public global::Vercel.UpdateProjectResponseOptionsAllowlist? Type4937 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseLastAliasRequestJobStatus? Type4938 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseOptionsAllowlistPath>? Type4938 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseLastAliasRequestType? Type4939 { get; set; }
+        public global::Vercel.UpdateProjectResponseOptionsAllowlistPath? Type4939 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseNodeVersion? Type4940 { get; set; }
+        public global::Vercel.UpdateProjectResponsePassport? Type4940 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseOidcTokenConfig? Type4941 { get; set; }
+        public global::Vercel.UpdateProjectResponsePassportDeploymentType? Type4941 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseOidcTokenConfigIssuerMode? Type4942 { get; set; }
+        public global::Vercel.UpdateProjectResponsePasswordProtection? Type4942 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseOptionsAllowlist? Type4943 { get; set; }
+        public global::Vercel.UpdateProjectResponsePasswordProtectionDeploymentType? Type4943 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseOptionsAllowlistPath>? Type4944 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseProtectionBypassVariant1, global::Vercel.UpdateProjectResponseProtectionBypassVariant2>? Type4944 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseOptionsAllowlistPath? Type4945 { get; set; }
+        public global::Vercel.UpdateProjectResponseProtectionBypassVariant1? Type4945 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponsePassport? Type4946 { get; set; }
+        public global::Vercel.UpdateProjectResponseProtectionBypassVariant1Scope? Type4946 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponsePassportDeploymentType? Type4947 { get; set; }
+        public global::Vercel.UpdateProjectResponseProtectionBypassVariant2? Type4947 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponsePasswordProtection? Type4948 { get; set; }
+        public global::Vercel.UpdateProjectResponseProtectionBypassVariant2Scope? Type4948 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponsePasswordProtectionDeploymentType? Type4949 { get; set; }
+        public global::Vercel.UpdateProjectResponseProtectionConfig? Type4949 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseProtectionBypassVariant1, global::Vercel.UpdateProjectResponseProtectionBypassVariant2>? Type4950 { get; set; }
+        public global::Vercel.UpdateProjectResponseProtectionConfigSandboxUrls? Type4950 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseProtectionBypassVariant1? Type4951 { get; set; }
+        public global::Vercel.UpdateProjectResponseSandbox? Type4951 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseProtectionBypassVariant1Scope? Type4952 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseSandboxFailoverRegion>? Type4952 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseProtectionBypassVariant2? Type4953 { get; set; }
+        public global::Vercel.UpdateProjectResponseSandboxFailoverRegion? Type4953 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseProtectionBypassVariant2Scope? Type4954 { get; set; }
+        public global::Vercel.UpdateProjectResponseSandboxRegion? Type4954 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseProtectionConfig? Type4955 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseService>? Type4955 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseProtectionConfigSandboxUrls? Type4956 { get; set; }
+        public global::Vercel.UpdateProjectResponseService? Type4956 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseSandbox? Type4957 { get; set; }
+        public global::Vercel.UpdateProjectResponseServiceFramework? Type4957 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseSandboxFailoverRegion>? Type4958 { get; set; }
+        public global::Vercel.UpdateProjectResponseServiceServiceType? Type4958 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseSandboxFailoverRegion? Type4959 { get; set; }
+        public global::Vercel.UpdateProjectResponseSpeedInsights? Type4959 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseSandboxRegion? Type4960 { get; set; }
+        public global::Vercel.UpdateProjectResponseSsoProtection? Type4960 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseService>? Type4961 { get; set; }
+        public global::Vercel.UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom? Type4961 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseService? Type4962 { get; set; }
+        public global::Vercel.UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom? Type4962 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseServiceFramework? Type4963 { get; set; }
+        public global::Vercel.UpdateProjectResponseSsoProtectionDeploymentType? Type4963 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseServiceServiceType? Type4964 { get; set; }
+        public global::Vercel.UpdateProjectResponseStaticIps? Type4964 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseSpeedInsights? Type4965 { get; set; }
+        public global::Vercel.UpdateProjectResponseTier? Type4965 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseSsoProtection? Type4966 { get; set; }
+        public global::Vercel.UpdateProjectResponseTracing? Type4966 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom? Type4967 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseTracingSamplingRule>? Type4967 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseSsoProtectionCve55182MigrationAppliedFrom? Type4968 { get; set; }
+        public global::Vercel.UpdateProjectResponseTracingSamplingRule? Type4968 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseSsoProtectionDeploymentType? Type4969 { get; set; }
+        public global::Vercel.UpdateProjectResponseTracingSamplingRuleDestination? Type4969 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseStaticIps? Type4970 { get; set; }
+        public global::Vercel.UpdateProjectResponseTracingSamplingRuleEnv? Type4970 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseTier? Type4971 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseTrustedIpsVariant1, global::Vercel.UpdateProjectResponseTrustedIpsVariant2>? Type4971 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseTracing? Type4972 { get; set; }
+        public global::Vercel.UpdateProjectResponseTrustedIpsVariant1? Type4972 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseTracingSamplingRule>? Type4973 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseTrustedIpsVariant1Addresse>? Type4973 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseTracingSamplingRule? Type4974 { get; set; }
+        public global::Vercel.UpdateProjectResponseTrustedIpsVariant1Addresse? Type4974 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseTracingSamplingRuleDestination? Type4975 { get; set; }
+        public global::Vercel.UpdateProjectResponseTrustedIpsVariant1DeploymentType? Type4975 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseTracingSamplingRuleEnv? Type4976 { get; set; }
+        public global::Vercel.UpdateProjectResponseTrustedIpsVariant1ProtectionMode? Type4976 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.UpdateProjectResponseTrustedIpsVariant1, global::Vercel.UpdateProjectResponseTrustedIpsVariant2>? Type4977 { get; set; }
+        public global::Vercel.UpdateProjectResponseTrustedIpsVariant2? Type4977 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseTrustedIpsVariant1? Type4978 { get; set; }
+        public global::Vercel.UpdateProjectResponseTrustedIpsVariant2DeploymentType? Type4978 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectResponseTrustedIpsVariant1Addresse>? Type4979 { get; set; }
+        public global::Vercel.UpdateProjectResponseUsageStatus? Type4979 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseTrustedIpsVariant1Addresse? Type4980 { get; set; }
+        public global::Vercel.UpdateProjectResponseUsageStatusKind? Type4980 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseTrustedIpsVariant1DeploymentType? Type4981 { get; set; }
+        public global::Vercel.UpdateProjectResponseVercelFlags? Type4981 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseTrustedIpsVariant1ProtectionMode? Type4982 { get; set; }
+        public global::Vercel.UpdateProjectResponseWebAnalytics? Type4982 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseTrustedIpsVariant2? Type4983 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>? Type4983 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseTrustedIpsVariant2DeploymentType? Type4984 { get; set; }
+        public global::Vercel.UpdateStaticIpsResponseItem? Type4984 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseUsageStatus? Type4985 { get; set; }
+        public global::Vercel.UpdateStaticIpsResponseItemAws? Type4985 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseUsageStatusKind? Type4986 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.UpdateStaticIpsResponseItemEnvId?>? Type4986 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseVercelFlags? Type4987 { get; set; }
+        public global::Vercel.UpdateStaticIpsResponseItemEnvId? Type4987 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectResponseWebAnalytics? Type4988 { get; set; }
+        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponse? Type4988 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateStaticIpsResponseItem>? Type4989 { get; set; }
+        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseAccountLimit? Type4989 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateStaticIpsResponseItem? Type4990 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironment>? Type4990 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateStaticIpsResponseItemAws? Type4991 { get; set; }
+        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironment? Type4991 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.UpdateStaticIpsResponseItemEnvId?>? Type4992 { get; set; }
+        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcher? Type4992 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateStaticIpsResponseItemEnvId? Type4993 { get; set; }
+        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcherType? Type4993 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponse? Type4994 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomain>? Type4994 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseAccountLimit? Type4995 { get; set; }
+        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomain? Type4995 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironment>? Type4996 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomainVerificationItem>? Type4996 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironment? Type4997 { get; set; }
+        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomainVerificationItem? Type4997 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcher? Type4998 { get; set; }
+        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentType? Type4998 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentBranchMatcherType? Type4999 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.GetProjectDomainsResponseVariant1, global::Vercel.GetProjectDomainsResponseVariant2>? Type4999 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomain>? Type5000 { get; set; }
+        public global::Vercel.GetProjectDomainsResponseVariant1? Type5000 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomain? Type5001 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectDomainsResponseVariant1Domain>? Type5001 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomainVerificationItem>? Type5002 { get; set; }
+        public global::Vercel.GetProjectDomainsResponseVariant1Domain? Type5002 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentDomainVerificationItem? Type5003 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectDomainsResponseVariant1DomainVerificationItem>? Type5003 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectsByIdOrNameCustomEnvironmentsResponseEnvironmentType? Type5004 { get; set; }
+        public global::Vercel.GetProjectDomainsResponseVariant1DomainVerificationItem? Type5004 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.GetProjectDomainsResponseVariant1, global::Vercel.GetProjectDomainsResponseVariant2>? Type5005 { get; set; }
+        public global::Vercel.GetProjectDomainsResponseVariant1Pagination? Type5005 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectDomainsResponseVariant1? Type5006 { get; set; }
+        public global::Vercel.GetProjectDomainsResponseVariant2? Type5006 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectDomainsResponseVariant1Domain>? Type5007 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectDomainsResponseVariant2Domain>? Type5007 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectDomainsResponseVariant1Domain? Type5008 { get; set; }
+        public global::Vercel.GetProjectDomainsResponseVariant2Domain? Type5008 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectDomainsResponseVariant1DomainVerificationItem>? Type5009 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectDomainsResponseVariant2DomainVerificationItem>? Type5009 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectDomainsResponseVariant1DomainVerificationItem? Type5010 { get; set; }
+        public global::Vercel.GetProjectDomainsResponseVariant2DomainVerificationItem? Type5010 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectDomainsResponseVariant1Pagination? Type5011 { get; set; }
+        public global::Vercel.GetProjectDomainResponse? Type5011 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectDomainsResponseVariant2? Type5012 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectDomainResponseVerificationItem>? Type5012 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectDomainsResponseVariant2Domain>? Type5013 { get; set; }
+        public global::Vercel.GetProjectDomainResponseVerificationItem? Type5013 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectDomainsResponseVariant2Domain? Type5014 { get; set; }
+        public global::Vercel.UpdateProjectDomainResponse? Type5014 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectDomainsResponseVariant2DomainVerificationItem>? Type5015 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectDomainResponseVerificationItem>? Type5015 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectDomainsResponseVariant2DomainVerificationItem? Type5016 { get; set; }
+        public global::Vercel.UpdateProjectDomainResponseVerificationItem? Type5016 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectDomainResponse? Type5017 { get; set; }
+        public global::Vercel.AddProjectDomainResponse? Type5017 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectDomainResponseVerificationItem>? Type5018 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AddProjectDomainResponseVerificationItem>? Type5018 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectDomainResponseVerificationItem? Type5019 { get; set; }
+        public global::Vercel.AddProjectDomainResponseVerificationItem? Type5019 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectDomainResponse? Type5020 { get; set; }
+        public global::Vercel.MoveProjectDomainResponse? Type5020 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateProjectDomainResponseVerificationItem>? Type5021 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.MoveProjectDomainResponseVerificationItem>? Type5021 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectDomainResponseVerificationItem? Type5022 { get; set; }
+        public global::Vercel.MoveProjectDomainResponseVerificationItem? Type5022 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AddProjectDomainResponse? Type5023 { get; set; }
+        public global::Vercel.VerifyProjectDomainResponse? Type5023 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AddProjectDomainResponseVerificationItem>? Type5024 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.FilterProjectEnvsResponseVariant1, global::Vercel.FilterProjectEnvsResponseVariant2, global::Vercel.FilterProjectEnvsResponseVariant3>? Type5024 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AddProjectDomainResponseVerificationItem? Type5025 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant1? Type5025 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.MoveProjectDomainResponse? Type5026 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant1SecurityIssue>? Type5026 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.MoveProjectDomainResponseVerificationItem>? Type5027 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant1SecurityIssue? Type5027 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.MoveProjectDomainResponseVerificationItem? Type5028 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant1TargetItem>, global::Vercel.FilterProjectEnvsResponseVariant1Target?>? Type5028 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.VerifyProjectDomainResponse? Type5029 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant1TargetItem>? Type5029 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.FilterProjectEnvsResponseVariant1, global::Vercel.FilterProjectEnvsResponseVariant2, global::Vercel.FilterProjectEnvsResponseVariant3>? Type5030 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant1TargetItem? Type5030 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant1? Type5031 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant1Target? Type5031 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant1SecurityIssue>? Type5032 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant1Type? Type5032 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant1SecurityIssue? Type5033 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant1Visibility? Type5033 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant1TargetItem>, global::Vercel.FilterProjectEnvsResponseVariant1Target?>? Type5034 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant2? Type5034 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant1TargetItem>? Type5035 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant2Env>? Type5035 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant1TargetItem? Type5036 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant2Env? Type5036 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant1Target? Type5037 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant2EnvSecurityIssue>? Type5037 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant1Type? Type5038 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant2EnvSecurityIssue? Type5038 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant1Visibility? Type5039 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant2EnvTargetItem>, global::Vercel.FilterProjectEnvsResponseVariant2EnvTarget?>? Type5039 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant2? Type5040 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant2EnvTargetItem>? Type5040 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant2Env>? Type5041 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant2EnvTargetItem? Type5041 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant2Env? Type5042 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant2EnvTarget? Type5042 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant2EnvSecurityIssue>? Type5043 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant2EnvType? Type5043 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant2EnvSecurityIssue? Type5044 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant2EnvVisibility? Type5044 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant2EnvTargetItem>, global::Vercel.FilterProjectEnvsResponseVariant2EnvTarget?>? Type5045 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant3? Type5045 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant2EnvTargetItem>? Type5046 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant3Env>? Type5046 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant2EnvTargetItem? Type5047 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant3Env? Type5047 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant2EnvTarget? Type5048 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant3EnvSecurityIssue>? Type5048 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant2EnvType? Type5049 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant3EnvSecurityIssue? Type5049 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant2EnvVisibility? Type5050 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant3EnvTargetItem>, global::Vercel.FilterProjectEnvsResponseVariant3EnvTarget?>? Type5050 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant3? Type5051 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant3EnvTargetItem>? Type5051 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant3Env>? Type5052 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant3EnvTargetItem? Type5052 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant3Env? Type5053 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant3EnvTarget? Type5053 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant3EnvSecurityIssue>? Type5054 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant3EnvType? Type5054 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant3EnvSecurityIssue? Type5055 { get; set; }
+        public global::Vercel.FilterProjectEnvsResponseVariant3EnvVisibility? Type5055 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant3EnvTargetItem>, global::Vercel.FilterProjectEnvsResponseVariant3EnvTarget?>? Type5056 { get; set; }
+        public global::Vercel.CreateProjectEnvResponse? Type5056 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.FilterProjectEnvsResponseVariant3EnvTargetItem>? Type5057 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.CreateProjectEnvResponseCreated, global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseCreatedItem>>? Type5057 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant3EnvTargetItem? Type5058 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseCreated? Type5058 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant3EnvTarget? Type5059 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseCreatedInternalContentHint? Type5059 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant3EnvType? Type5060 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseCreatedInternalContentHintType? Type5060 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.FilterProjectEnvsResponseVariant3EnvVisibility? Type5061 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseCreatedTargetItem>, global::Vercel.CreateProjectEnvResponseCreatedTarget?>? Type5061 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponse? Type5062 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseCreatedTargetItem>? Type5062 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.CreateProjectEnvResponseCreated, global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseCreatedItem>>? Type5063 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseCreatedTargetItem? Type5063 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseCreated? Type5064 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseCreatedTarget? Type5064 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseCreatedInternalContentHint? Type5065 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseCreatedType? Type5065 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseCreatedInternalContentHintType? Type5066 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseCreatedVisibility? Type5066 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseCreatedTargetItem>, global::Vercel.CreateProjectEnvResponseCreatedTarget?>? Type5067 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseCreatedItem>? Type5067 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseCreatedTargetItem>? Type5068 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseCreatedItem? Type5068 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseCreatedTargetItem? Type5069 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseCreatedItemInternalContentHint? Type5069 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseCreatedTarget? Type5070 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseCreatedItemInternalContentHintType? Type5070 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseCreatedType? Type5071 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.CreateProjectEnvResponseCreatedItemTarget?>? Type5071 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseCreatedVisibility? Type5072 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseCreatedItemTarget? Type5072 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseCreatedItem>? Type5073 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseCreatedItemType? Type5073 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseCreatedItem? Type5074 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseCreatedItemVisibility? Type5074 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseCreatedItemInternalContentHint? Type5075 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseFailedItem>? Type5075 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseCreatedItemInternalContentHintType? Type5076 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseFailedItem? Type5076 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.CreateProjectEnvResponseCreatedItemTarget?>? Type5077 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseFailedItemError? Type5077 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseCreatedItemTarget? Type5078 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseFailedItemErrorTargetItem>, global::Vercel.CreateProjectEnvResponseFailedItemErrorTarget?>? Type5078 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseCreatedItemType? Type5079 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseFailedItemErrorTargetItem>? Type5079 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseCreatedItemVisibility? Type5080 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseFailedItemErrorTargetItem? Type5080 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseFailedItem>? Type5081 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseFailedItemErrorTarget? Type5081 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseFailedItem? Type5082 { get; set; }
+        public global::Vercel.OneOf<string, global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseFailedItemErrorValueVariant2Item>>? Type5082 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseFailedItemError? Type5083 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseFailedItemErrorValueVariant2Item>? Type5083 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseFailedItemErrorTargetItem>, global::Vercel.CreateProjectEnvResponseFailedItemErrorTarget?>? Type5084 { get; set; }
+        public global::Vercel.CreateProjectEnvResponseFailedItemErrorValueVariant2Item? Type5084 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseFailedItemErrorTargetItem>? Type5085 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.GetProjectEnvResponseVariant1, global::Vercel.GetProjectEnvResponseVariant2, global::Vercel.GetProjectEnvResponseVariant3>? Type5085 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseFailedItemErrorTargetItem? Type5086 { get; set; }
+        public global::Vercel.GetProjectEnvResponseVariant1? Type5086 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseFailedItemErrorTarget? Type5087 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant1TargetItem>, global::Vercel.GetProjectEnvResponseVariant1Target?>? Type5087 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseFailedItemErrorValueVariant2Item>>? Type5088 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant1TargetItem>? Type5088 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateProjectEnvResponseFailedItemErrorValueVariant2Item>? Type5089 { get; set; }
+        public global::Vercel.GetProjectEnvResponseVariant1TargetItem? Type5089 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectEnvResponseFailedItemErrorValueVariant2Item? Type5090 { get; set; }
+        public global::Vercel.GetProjectEnvResponseVariant1Target? Type5090 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.GetProjectEnvResponseVariant1, global::Vercel.GetProjectEnvResponseVariant2, global::Vercel.GetProjectEnvResponseVariant3>? Type5091 { get; set; }
+        public global::Vercel.GetProjectEnvResponseVariant1Type? Type5091 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectEnvResponseVariant1? Type5092 { get; set; }
+        public global::Vercel.GetProjectEnvResponseVariant1Visibility? Type5092 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant1TargetItem>, global::Vercel.GetProjectEnvResponseVariant1Target?>? Type5093 { get; set; }
+        public global::Vercel.GetProjectEnvResponseVariant2? Type5093 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant1TargetItem>? Type5094 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant2TargetItem>, global::Vercel.GetProjectEnvResponseVariant2Target?>? Type5094 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectEnvResponseVariant1TargetItem? Type5095 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant2TargetItem>? Type5095 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectEnvResponseVariant1Target? Type5096 { get; set; }
+        public global::Vercel.GetProjectEnvResponseVariant2TargetItem? Type5096 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectEnvResponseVariant1Type? Type5097 { get; set; }
+        public global::Vercel.GetProjectEnvResponseVariant2Target? Type5097 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectEnvResponseVariant1Visibility? Type5098 { get; set; }
+        public global::Vercel.GetProjectEnvResponseVariant2Type? Type5098 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectEnvResponseVariant2? Type5099 { get; set; }
+        public global::Vercel.GetProjectEnvResponseVariant2Visibility? Type5099 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant2TargetItem>, global::Vercel.GetProjectEnvResponseVariant2Target?>? Type5100 { get; set; }
+        public global::Vercel.GetProjectEnvResponseVariant3? Type5100 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetProjectEnvResponseVariant2TargetItem>? Type5101 { get; set; }
+        public global::Vercel.GetProjectEnvResponseVariant3InternalContentHint? Type5101 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectEnvResponseVariant2TargetItem? Type5102 { get; set; }
+        public global::Vercel.GetProjectEnvResponseVariant3InternalContentHintType? Type5102 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectEnvResponseVariant2Target? Type5103 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetProjectEnvResponseVariant3Target?>? Type5103 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectEnvResponseVariant2Type? Type5104 { get; set; }
+        public global::Vercel.GetProjectEnvResponseVariant3Target? Type5104 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectEnvResponseVariant2Visibility? Type5105 { get; set; }
+        public global::Vercel.GetProjectEnvResponseVariant3Type? Type5105 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectEnvResponseVariant3? Type5106 { get; set; }
+        public global::Vercel.GetProjectEnvResponseVariant3Visibility? Type5106 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectEnvResponseVariant3InternalContentHint? Type5107 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.RemoveProjectEnvResponseVariant1Item?>, global::Vercel.RemoveProjectEnvResponseVariant2, global::Vercel.RemoveProjectEnvResponseVariant3>? Type5107 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectEnvResponseVariant3InternalContentHintType? Type5108 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.RemoveProjectEnvResponseVariant1Item?>? Type5108 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.GetProjectEnvResponseVariant3Target?>? Type5109 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant1Item? Type5109 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectEnvResponseVariant3Target? Type5110 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant1ItemInternalContentHint? Type5110 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectEnvResponseVariant3Type? Type5111 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant1ItemInternalContentHintType? Type5111 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetProjectEnvResponseVariant3Visibility? Type5112 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.RemoveProjectEnvResponseVariant1ItemTargetItem>, global::Vercel.RemoveProjectEnvResponseVariant1ItemTarget?>? Type5112 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.RemoveProjectEnvResponseVariant1Item?>, global::Vercel.RemoveProjectEnvResponseVariant2, global::Vercel.RemoveProjectEnvResponseVariant3>? Type5113 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.RemoveProjectEnvResponseVariant1ItemTargetItem>? Type5113 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.RemoveProjectEnvResponseVariant1Item?>? Type5114 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant1ItemTargetItem? Type5114 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant1Item? Type5115 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant1ItemTarget? Type5115 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant1ItemInternalContentHint? Type5116 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant1ItemType? Type5116 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant1ItemInternalContentHintType? Type5117 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant1ItemVisibility? Type5117 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.RemoveProjectEnvResponseVariant1ItemTargetItem>, global::Vercel.RemoveProjectEnvResponseVariant1ItemTarget?>? Type5118 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant2? Type5118 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.RemoveProjectEnvResponseVariant1ItemTargetItem>? Type5119 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant2InternalContentHint? Type5119 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant1ItemTargetItem? Type5120 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant2InternalContentHintType? Type5120 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant1ItemTarget? Type5121 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.RemoveProjectEnvResponseVariant2TargetItem>, global::Vercel.RemoveProjectEnvResponseVariant2Target?>? Type5121 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant1ItemType? Type5122 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.RemoveProjectEnvResponseVariant2TargetItem>? Type5122 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant1ItemVisibility? Type5123 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant2TargetItem? Type5123 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant2? Type5124 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant2Target? Type5124 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant2InternalContentHint? Type5125 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant2Type? Type5125 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant2InternalContentHintType? Type5126 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant2Visibility? Type5126 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.RemoveProjectEnvResponseVariant2TargetItem>, global::Vercel.RemoveProjectEnvResponseVariant2Target?>? Type5127 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant3? Type5127 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.RemoveProjectEnvResponseVariant2TargetItem>? Type5128 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant3InternalContentHint? Type5128 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant2TargetItem? Type5129 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant3InternalContentHintType? Type5129 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant2Target? Type5130 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.RemoveProjectEnvResponseVariant3TargetItem>, global::Vercel.RemoveProjectEnvResponseVariant3Target?>? Type5130 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant2Type? Type5131 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.RemoveProjectEnvResponseVariant3TargetItem>? Type5131 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant2Visibility? Type5132 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant3TargetItem? Type5132 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant3? Type5133 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant3Target? Type5133 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant3InternalContentHint? Type5134 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant3Type? Type5134 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant3InternalContentHintType? Type5135 { get; set; }
+        public global::Vercel.RemoveProjectEnvResponseVariant3Visibility? Type5135 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.RemoveProjectEnvResponseVariant3TargetItem>, global::Vercel.RemoveProjectEnvResponseVariant3Target?>? Type5136 { get; set; }
+        public global::Vercel.EditProjectEnvResponse? Type5136 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.RemoveProjectEnvResponseVariant3TargetItem>? Type5137 { get; set; }
+        public global::Vercel.EditProjectEnvResponseInternalContentHint? Type5137 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant3TargetItem? Type5138 { get; set; }
+        public global::Vercel.EditProjectEnvResponseInternalContentHintType? Type5138 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant3Target? Type5139 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.EditProjectEnvResponseTargetItem>, global::Vercel.EditProjectEnvResponseTarget?>? Type5139 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant3Type? Type5140 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.EditProjectEnvResponseTargetItem>? Type5140 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveProjectEnvResponseVariant3Visibility? Type5141 { get; set; }
+        public global::Vercel.EditProjectEnvResponseTargetItem? Type5141 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.EditProjectEnvResponse? Type5142 { get; set; }
+        public global::Vercel.EditProjectEnvResponseTarget? Type5142 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.EditProjectEnvResponseInternalContentHint? Type5143 { get; set; }
+        public global::Vercel.EditProjectEnvResponseType? Type5143 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.EditProjectEnvResponseInternalContentHintType? Type5144 { get; set; }
+        public global::Vercel.EditProjectEnvResponseVisibility? Type5144 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.EditProjectEnvResponseTargetItem>, global::Vercel.EditProjectEnvResponseTarget?>? Type5145 { get; set; }
+        public global::Vercel.BatchRemoveProjectEnvResponse? Type5145 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.EditProjectEnvResponseTargetItem>? Type5146 { get; set; }
+        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant1? Type5146 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.EditProjectEnvResponseTargetItem? Type5147 { get; set; }
+        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant1Reason? Type5147 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.EditProjectEnvResponseTarget? Type5148 { get; set; }
+        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant2? Type5148 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.EditProjectEnvResponseType? Type5149 { get; set; }
+        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant2AvailableSlots? Type5149 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.EditProjectEnvResponseVisibility? Type5150 { get; set; }
+        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant2Reason? Type5150 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.BatchRemoveProjectEnvResponse? Type5151 { get; set; }
+        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant3? Type5151 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant1? Type5152 { get; set; }
+        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant3Reason? Type5152 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant1Reason? Type5153 { get; set; }
+        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant4? Type5153 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant2? Type5154 { get; set; }
+        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant4Reason? Type5154 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant2AvailableSlots? Type5155 { get; set; }
+        public global::Vercel.GetRollingReleaseConfigResponse? Type5155 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant2Reason? Type5156 { get; set; }
+        public global::Vercel.DeleteRollingReleaseConfigResponse? Type5156 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant3? Type5157 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.UpdateRollingReleaseConfigResponseVariant1, global::Vercel.UpdateRollingReleaseConfigResponseVariant2>? Type5157 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant3Reason? Type5158 { get; set; }
+        public global::Vercel.UpdateRollingReleaseConfigResponseVariant1? Type5158 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant4? Type5159 { get; set; }
+        public global::Vercel.UpdateRollingReleaseConfigResponseVariant2? Type5159 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRollingReleaseBillingStatusResponseVariant4Reason? Type5160 { get; set; }
+        public global::Vercel.UpdateRollingReleaseConfigResponseVariant2RollingRelease? Type5160 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRollingReleaseConfigResponse? Type5161 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateRollingReleaseConfigResponseVariant2RollingReleaseStage>? Type5161 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.DeleteRollingReleaseConfigResponse? Type5162 { get; set; }
+        public global::Vercel.UpdateRollingReleaseConfigResponseVariant2RollingReleaseStage? Type5162 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.UpdateRollingReleaseConfigResponseVariant1, global::Vercel.UpdateRollingReleaseConfigResponseVariant2>? Type5163 { get; set; }
+        public global::Vercel.CreateProjectTransferRequestResponse? Type5163 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateRollingReleaseConfigResponseVariant1? Type5164 { get; set; }
+        public global::Vercel.AcceptProjectTransferRequestResponse? Type5164 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateRollingReleaseConfigResponseVariant2? Type5165 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AcceptProjectTransferRequestResponsePartnerCall>? Type5165 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateRollingReleaseConfigResponseVariant2RollingRelease? Type5166 { get; set; }
+        public global::Vercel.AcceptProjectTransferRequestResponsePartnerCall? Type5166 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateRollingReleaseConfigResponseVariant2RollingReleaseStage>? Type5167 { get; set; }
+        public global::Vercel.AcceptProjectTransferRequestResponsePartnerCallResult? Type5167 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateRollingReleaseConfigResponseVariant2RollingReleaseStage? Type5168 { get; set; }
+        public global::Vercel.AcceptProjectTransferRequestResponsePartnerCallResultStatus? Type5168 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateProjectTransferRequestResponse? Type5169 { get; set; }
+        public global::Vercel.UpdateProjectProtectionBypassResponse? Type5169 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AcceptProjectTransferRequestResponse? Type5170 { get; set; }
+        public global::Vercel.UpdateProjectProtectionBypassResponseProtectionBypassVariant1? Type5170 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AcceptProjectTransferRequestResponsePartnerCall>? Type5171 { get; set; }
+        public global::Vercel.UpdateProjectProtectionBypassResponseProtectionBypassVariant1Scope? Type5171 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AcceptProjectTransferRequestResponsePartnerCall? Type5172 { get; set; }
+        public global::Vercel.UpdateProjectProtectionBypassResponseProtectionBypassVariant2? Type5172 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AcceptProjectTransferRequestResponsePartnerCallResult? Type5173 { get; set; }
+        public global::Vercel.UpdateProjectProtectionBypassResponseProtectionBypassVariant2Scope? Type5173 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AcceptProjectTransferRequestResponsePartnerCallResultStatus? Type5174 { get; set; }
+        public global::Vercel.OneOf<object, global::Vercel.ListPromoteAliasesResponseVariant2>? Type5174 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectProtectionBypassResponse? Type5175 { get; set; }
+        public global::Vercel.ListPromoteAliasesResponseVariant2? Type5175 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectProtectionBypassResponseProtectionBypassVariant1? Type5176 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.ListPromoteAliasesResponseVariant2Aliase>? Type5176 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectProtectionBypassResponseProtectionBypassVariant1Scope? Type5177 { get; set; }
+        public global::Vercel.ListPromoteAliasesResponseVariant2Aliase? Type5177 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectProtectionBypassResponseProtectionBypassVariant2? Type5178 { get; set; }
+        public global::Vercel.ListPromoteAliasesResponseVariant2AliaseStatus? Type5178 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateProjectProtectionBypassResponseProtectionBypassVariant2Scope? Type5179 { get; set; }
+        public global::Vercel.ListNamedSandboxesResponse? Type5179 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<object, global::Vercel.ListPromoteAliasesResponseVariant2>? Type5180 { get; set; }
+        public global::Vercel.ListNamedSandboxesResponsePagination? Type5180 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListPromoteAliasesResponseVariant2? Type5181 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.NamedSandbox>? Type5181 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.ListPromoteAliasesResponseVariant2Aliase>? Type5182 { get; set; }
+        public global::Vercel.CreateSandboxesV2Response? Type5182 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListPromoteAliasesResponseVariant2Aliase? Type5183 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.SandboxPublicRoute>? Type5183 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListNamedSandboxesResponse? Type5184 { get; set; }
+        public global::Vercel.ListDrivesResponse? Type5184 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListNamedSandboxesResponsePagination? Type5185 { get; set; }
+        public global::Vercel.ListDrivesResponsePagination? Type5185 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.NamedSandbox>? Type5186 { get; set; }
+        public global::Vercel.GetDriveResponse? Type5186 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateSandboxesV2Response? Type5187 { get; set; }
+        public global::Vercel.GetOrCreateDriveResponse? Type5187 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.SandboxPublicRoute>? Type5188 { get; set; }
+        public global::Vercel.GetOrCreateDriveResponse2? Type5188 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListDrivesResponse? Type5189 { get; set; }
+        public global::Vercel.DeleteDriveResponse? Type5189 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListDrivesResponsePagination? Type5190 { get; set; }
+        public global::Vercel.ForkDriveResponse? Type5190 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDriveResponse? Type5191 { get; set; }
+        public global::Vercel.OneOf<object, global::Vercel.ListSessionSnapshotsResponseVariant2>? Type5191 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetOrCreateDriveResponse? Type5192 { get; set; }
+        public global::Vercel.ListSessionSnapshotsResponseVariant2? Type5192 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetOrCreateDriveResponse2? Type5193 { get; set; }
+        public global::Vercel.ListSessionSnapshotsResponseVariant2Pagination? Type5193 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.DeleteDriveResponse? Type5194 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.Snapshot>? Type5194 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ForkDriveResponse? Type5195 { get; set; }
+        public global::Vercel.GetSessionSnapshotResponse? Type5195 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<object, global::Vercel.ListSessionSnapshotsResponseVariant2>? Type5196 { get; set; }
+        public global::Vercel.DeleteSessionSnapshotResponse? Type5196 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListSessionSnapshotsResponseVariant2? Type5197 { get; set; }
+        public global::Vercel.OneOf<object, global::Vercel.ListSessionsResponseVariant2>? Type5197 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListSessionSnapshotsResponseVariant2Pagination? Type5198 { get; set; }
+        public global::Vercel.ListSessionsResponseVariant2? Type5198 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.Snapshot>? Type5199 { get; set; }
+        public global::Vercel.ListSessionsResponseVariant2Pagination? Type5199 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetSessionSnapshotResponse? Type5200 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.Session>? Type5200 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.DeleteSessionSnapshotResponse? Type5201 { get; set; }
+        public global::Vercel.GetSessionResponse? Type5201 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<object, global::Vercel.ListSessionsResponseVariant2>? Type5202 { get; set; }
+        public global::Vercel.GetNamedSandboxResponse? Type5202 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListSessionsResponseVariant2? Type5203 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.UpdateSandboxResponseVariant1, global::Vercel.UpdateSandboxResponseVariant2>? Type5203 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListSessionsResponseVariant2Pagination? Type5204 { get; set; }
+        public global::Vercel.UpdateSandboxResponseVariant1? Type5204 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.Session>? Type5205 { get; set; }
+        public global::Vercel.UpdateSandboxResponseVariant2? Type5205 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetSessionResponse? Type5206 { get; set; }
+        public global::Vercel.DeleteSandboxResponse? Type5206 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetNamedSandboxResponse? Type5207 { get; set; }
+        public global::Vercel.ListSessionCommandsResponse? Type5207 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.UpdateSandboxResponseVariant1, global::Vercel.UpdateSandboxResponseVariant2>? Type5208 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.SessionCommand>? Type5208 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateSandboxResponseVariant1? Type5209 { get; set; }
+        public global::Vercel.RunSessionCommandResponse? Type5209 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateSandboxResponseVariant2? Type5210 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant1, global::Vercel.RunSessionCommandResponseVariant2>? Type5210 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.DeleteSandboxResponse? Type5211 { get; set; }
+        public global::Vercel.RunSessionCommandResponseVariant1? Type5211 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListSessionCommandsResponse? Type5212 { get; set; }
+        public global::Vercel.RunSessionCommandResponseVariant1Data? Type5212 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.SessionCommand>? Type5213 { get; set; }
+        public global::Vercel.RunSessionCommandResponseVariant1DataCode? Type5213 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RunSessionCommandResponse? Type5214 { get; set; }
+        public global::Vercel.RunSessionCommandResponseVariant1DataMessage? Type5214 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.RunSessionCommandResponseVariant1, global::Vercel.RunSessionCommandResponseVariant2>? Type5215 { get; set; }
+        public global::Vercel.RunSessionCommandResponseVariant2? Type5215 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RunSessionCommandResponseVariant1? Type5216 { get; set; }
+        public global::Vercel.GetSessionCommandResponse? Type5216 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RunSessionCommandResponseVariant1Data? Type5217 { get; set; }
+        public global::Vercel.KillSessionCommandResponse? Type5217 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RunSessionCommandResponseVariant1DataCode? Type5218 { get; set; }
+        public global::Vercel.WriteSessionCommandStdinResponse? Type5218 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RunSessionCommandResponseVariant1DataMessage? Type5219 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.GetSessionCommandLogsResponseVariant1, global::Vercel.GetSessionCommandLogsResponseVariant2>? Type5219 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RunSessionCommandResponseVariant2? Type5220 { get; set; }
+        public global::Vercel.GetSessionCommandLogsResponseVariant1? Type5220 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetSessionCommandResponse? Type5221 { get; set; }
+        public global::Vercel.GetSessionCommandLogsResponseVariant1Data? Type5221 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.KillSessionCommandResponse? Type5222 { get; set; }
+        public global::Vercel.GetSessionCommandLogsResponseVariant1DataCode? Type5222 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.WriteSessionCommandStdinResponse? Type5223 { get; set; }
+        public global::Vercel.GetSessionCommandLogsResponseVariant1DataMessage? Type5223 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.GetSessionCommandLogsResponseVariant1, global::Vercel.GetSessionCommandLogsResponseVariant2>? Type5224 { get; set; }
+        public global::Vercel.GetSessionCommandLogsResponseVariant2? Type5224 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetSessionCommandLogsResponseVariant1? Type5225 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.StopSessionResponseVariant1, global::Vercel.StopSessionResponseVariant2>? Type5225 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetSessionCommandLogsResponseVariant1Data? Type5226 { get; set; }
+        public global::Vercel.StopSessionResponseVariant1? Type5226 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetSessionCommandLogsResponseVariant1DataCode? Type5227 { get; set; }
+        public global::Vercel.StopSessionResponseVariant2? Type5227 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetSessionCommandLogsResponseVariant1DataMessage? Type5228 { get; set; }
+        public global::Vercel.ExtendSessionTimeoutResponse? Type5228 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetSessionCommandLogsResponseVariant2? Type5229 { get; set; }
+        public global::Vercel.UpdateSessionNetworkPolicyResponse? Type5229 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.StopSessionResponseVariant1, global::Vercel.StopSessionResponseVariant2>? Type5230 { get; set; }
+        public global::Vercel.CreateSandboxesSessionsBySessionIdSnapshotV2Response? Type5230 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.StopSessionResponseVariant1? Type5231 { get; set; }
+        public global::Vercel.CreateSandboxesByNameForkV2Response? Type5231 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.StopSessionResponseVariant2? Type5232 { get; set; }
+        public global::Vercel.CreateSandboxesV3Response? Type5232 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ExtendSessionTimeoutResponse? Type5233 { get; set; }
+        public global::Vercel.CreateSandboxesSessionsBySessionIdSnapshotV3Response? Type5233 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateSessionNetworkPolicyResponse? Type5234 { get; set; }
+        public global::Vercel.CreateSandboxesByNameForkV3Response? Type5234 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateSandboxesSessionsBySessionIdSnapshotV2Response? Type5235 { get; set; }
+        public global::Vercel.CreateSandboxesV4Response? Type5235 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateSandboxesByNameForkV2Response? Type5236 { get; set; }
+        public global::Vercel.UpdateAttackChallengeModeResponse? Type5236 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateSandboxesV3Response? Type5237 { get; set; }
+        public global::Vercel.GetSecurityFirewallConfigResponse? Type5237 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateSandboxesSessionsBySessionIdSnapshotV3Response? Type5238 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6ed60ada20c5170a>? Type5238 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateSandboxesByNameForkV3Response? Type5239 { get; set; }
+        public global::Vercel.PutFirewallConfigResponse? Type5239 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateSandboxesV4Response? Type5240 { get; set; }
+        public global::Vercel.DeleteSecurityFirewallConfigByConfigVersionResponse? Type5240 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateAttackChallengeModeResponse? Type5241 { get; set; }
+        public global::Vercel.OneOf<object, global::Vercel.GetActiveAttackStatusResponseVariant2>? Type5241 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetSecurityFirewallConfigResponse? Type5242 { get; set; }
+        public global::Vercel.GetActiveAttackStatusResponseVariant2? Type5242 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared6ed60ada20c5170a>? Type5243 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetActiveAttackStatusResponseVariant2Anomalie>? Type5243 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.PutFirewallConfigResponse? Type5244 { get; set; }
+        public global::Vercel.GetActiveAttackStatusResponseVariant2Anomalie? Type5244 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.DeleteSecurityFirewallConfigByConfigVersionResponse? Type5245 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMap2>? Type5245 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<object, global::Vercel.GetActiveAttackStatusResponseVariant2>? Type5246 { get; set; }
+        public global::Vercel.GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMap2? Type5246 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetActiveAttackStatusResponseVariant2? Type5247 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMapAnomalyAlerts2>? Type5247 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetActiveAttackStatusResponseVariant2Anomalie>? Type5248 { get; set; }
+        public global::Vercel.GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMapAnomalyAlerts2? Type5248 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetActiveAttackStatusResponseVariant2Anomalie? Type5249 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMapDdosAlerts2>? Type5249 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMap2>? Type5250 { get; set; }
+        public global::Vercel.GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMapDdosAlerts2? Type5250 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMap2? Type5251 { get; set; }
+        public global::Vercel.GetBypassIpResponse? Type5251 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMapAnomalyAlerts2>? Type5252 { get; set; }
+        public global::Vercel.GetBypassIpResponsePagination? Type5252 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMapAnomalyAlerts2? Type5253 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetBypassIpResponseResultItem>? Type5253 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMapDdosAlerts2>? Type5254 { get; set; }
+        public global::Vercel.GetBypassIpResponseResultItem? Type5254 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetActiveAttackStatusResponseVariant2AnomalieAffectedHostMapDdosAlerts2? Type5255 { get; set; }
+        public global::Vercel.GetBypassIpResponseResultItemAction? Type5255 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetBypassIpResponse? Type5256 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AddBypassIpResponseVariant1, global::Vercel.AddBypassIpResponseVariant2>? Type5256 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetBypassIpResponsePagination? Type5257 { get; set; }
+        public global::Vercel.AddBypassIpResponseVariant1? Type5257 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetBypassIpResponseResultItem>? Type5258 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AddBypassIpResponseVariant1ResultItem>? Type5258 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetBypassIpResponseResultItem? Type5259 { get; set; }
+        public global::Vercel.AddBypassIpResponseVariant1ResultItem? Type5259 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetBypassIpResponseResultItemAction? Type5260 { get; set; }
+        public global::Vercel.AddBypassIpResponseVariant2? Type5260 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AddBypassIpResponseVariant1, global::Vercel.AddBypassIpResponseVariant2>? Type5261 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AddBypassIpResponseVariant2ResultItem>? Type5261 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AddBypassIpResponseVariant1? Type5262 { get; set; }
+        public global::Vercel.AddBypassIpResponseVariant2ResultItem? Type5262 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AddBypassIpResponseVariant1ResultItem>? Type5263 { get; set; }
+        public global::Vercel.AddBypassIpResponseVariant2ResultItemAction? Type5263 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AddBypassIpResponseVariant1ResultItem? Type5264 { get; set; }
+        public global::Vercel.RemoveBypassIpResponse? Type5264 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AddBypassIpResponseVariant2? Type5265 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.GetConditionalBypassResponseVariant1, global::Vercel.GetConditionalBypassResponseVariant2>? Type5265 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AddBypassIpResponseVariant2ResultItem>? Type5266 { get; set; }
+        public global::Vercel.GetConditionalBypassResponseVariant1? Type5266 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AddBypassIpResponseVariant2ResultItem? Type5267 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetConditionalBypassResponseVariant1ConditionGroupItem>? Type5267 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AddBypassIpResponseVariant2ResultItemAction? Type5268 { get; set; }
+        public global::Vercel.GetConditionalBypassResponseVariant1ConditionGroupItem? Type5268 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveBypassIpResponse? Type5269 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetConditionalBypassResponseVariant1ConditionGroupItemCondition>? Type5269 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.GetConditionalBypassResponseVariant1, global::Vercel.GetConditionalBypassResponseVariant2>? Type5270 { get; set; }
+        public global::Vercel.GetConditionalBypassResponseVariant1ConditionGroupItemCondition? Type5270 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConditionalBypassResponseVariant1? Type5271 { get; set; }
+        public global::Vercel.GetConditionalBypassResponseVariant1ConditionGroupItemConditionOp? Type5271 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetConditionalBypassResponseVariant1ConditionGroupItem>? Type5272 { get; set; }
+        public global::Vercel.GetConditionalBypassResponseVariant1ConditionGroupItemConditionType? Type5272 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConditionalBypassResponseVariant1ConditionGroupItem? Type5273 { get; set; }
+        public global::Vercel.GetConditionalBypassResponseVariant2? Type5273 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetConditionalBypassResponseVariant1ConditionGroupItemCondition>? Type5274 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetConditionalBypassResponseVariant2Rule>? Type5274 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConditionalBypassResponseVariant1ConditionGroupItemCondition? Type5275 { get; set; }
+        public global::Vercel.GetConditionalBypassResponseVariant2Rule? Type5275 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConditionalBypassResponseVariant1ConditionGroupItemConditionOp? Type5276 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetConditionalBypassResponseVariant2RuleConditionGroupItem>? Type5276 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConditionalBypassResponseVariant1ConditionGroupItemConditionType? Type5277 { get; set; }
+        public global::Vercel.GetConditionalBypassResponseVariant2RuleConditionGroupItem? Type5277 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConditionalBypassResponseVariant2? Type5278 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetConditionalBypassResponseVariant2RuleConditionGroupItemCondition>? Type5278 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetConditionalBypassResponseVariant2Rule>? Type5279 { get; set; }
+        public global::Vercel.GetConditionalBypassResponseVariant2RuleConditionGroupItemCondition? Type5279 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConditionalBypassResponseVariant2Rule? Type5280 { get; set; }
+        public global::Vercel.GetConditionalBypassResponseVariant2RuleConditionGroupItemConditionOp? Type5280 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetConditionalBypassResponseVariant2RuleConditionGroupItem>? Type5281 { get; set; }
+        public global::Vercel.GetConditionalBypassResponseVariant2RuleConditionGroupItemConditionType? Type5281 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConditionalBypassResponseVariant2RuleConditionGroupItem? Type5282 { get; set; }
+        public global::Vercel.CreateConditionalBypassResponse? Type5282 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetConditionalBypassResponseVariant2RuleConditionGroupItemCondition>? Type5283 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateConditionalBypassResponseConditionGroupItem>? Type5283 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConditionalBypassResponseVariant2RuleConditionGroupItemCondition? Type5284 { get; set; }
+        public global::Vercel.CreateConditionalBypassResponseConditionGroupItem? Type5284 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConditionalBypassResponseVariant2RuleConditionGroupItemConditionOp? Type5285 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateConditionalBypassResponseConditionGroupItemCondition>? Type5285 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetConditionalBypassResponseVariant2RuleConditionGroupItemConditionType? Type5286 { get; set; }
+        public global::Vercel.CreateConditionalBypassResponseConditionGroupItemCondition? Type5286 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateConditionalBypassResponse? Type5287 { get; set; }
+        public global::Vercel.CreateConditionalBypassResponseConditionGroupItemConditionOp? Type5287 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateConditionalBypassResponseConditionGroupItem>? Type5288 { get; set; }
+        public global::Vercel.CreateConditionalBypassResponseConditionGroupItemConditionType? Type5288 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateConditionalBypassResponseConditionGroupItem? Type5289 { get; set; }
+        public global::Vercel.UpdateConditionalBypassResponse? Type5289 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateConditionalBypassResponseConditionGroupItemCondition>? Type5290 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateConditionalBypassResponseConditionGroupItem>? Type5290 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateConditionalBypassResponseConditionGroupItemCondition? Type5291 { get; set; }
+        public global::Vercel.UpdateConditionalBypassResponseConditionGroupItem? Type5291 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateConditionalBypassResponseConditionGroupItemConditionOp? Type5292 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.UpdateConditionalBypassResponseConditionGroupItemCondition>? Type5292 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateConditionalBypassResponseConditionGroupItemConditionType? Type5293 { get; set; }
+        public global::Vercel.UpdateConditionalBypassResponseConditionGroupItemCondition? Type5293 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateConditionalBypassResponse? Type5294 { get; set; }
+        public global::Vercel.UpdateConditionalBypassResponseConditionGroupItemConditionOp? Type5294 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateConditionalBypassResponseConditionGroupItem>? Type5295 { get; set; }
+        public global::Vercel.UpdateConditionalBypassResponseConditionGroupItemConditionType? Type5295 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateConditionalBypassResponseConditionGroupItem? Type5296 { get; set; }
+        public global::Vercel.DeleteConditionalBypassResponse? Type5296 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.UpdateConditionalBypassResponseConditionGroupItemCondition>? Type5297 { get; set; }
+        public global::Vercel.GetSecurityFirewallEventsResponse? Type5297 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateConditionalBypassResponseConditionGroupItemCondition? Type5298 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetSecurityFirewallEventsResponseAction>? Type5298 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateConditionalBypassResponseConditionGroupItemConditionOp? Type5299 { get; set; }
+        public global::Vercel.GetSecurityFirewallEventsResponseAction? Type5299 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateConditionalBypassResponseConditionGroupItemConditionType? Type5300 { get; set; }
+        public global::Vercel.GetSecurityFirewallEventsResponsePagination? Type5300 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.DeleteConditionalBypassResponse? Type5301 { get; set; }
+        public global::Vercel.GetSecurityFirewallEventsSummaryResponse? Type5301 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetSecurityFirewallEventsResponse? Type5302 { get; set; }
+        public global::Vercel.GenerateFirewallRuleResponse? Type5302 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetSecurityFirewallEventsResponseAction>? Type5303 { get; set; }
+        public global::Vercel.GenerateFirewallRuleResponseRule? Type5303 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetSecurityFirewallEventsResponseAction? Type5304 { get; set; }
+        public global::Vercel.GenerateFirewallRuleResponseRuleAction? Type5304 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetSecurityFirewallEventsResponsePagination? Type5305 { get; set; }
+        public global::Vercel.GenerateFirewallRuleResponseRuleActionMitigate? Type5305 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetSecurityFirewallEventsSummaryResponse? Type5306 { get; set; }
+        public global::Vercel.GenerateFirewallRuleResponseRuleActionMitigateRateLimit? Type5306 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateFirewallRuleResponse? Type5307 { get; set; }
+        public global::Vercel.GenerateFirewallRuleResponseRuleActionMitigateRedirect? Type5307 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateFirewallRuleResponseRule? Type5308 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GenerateFirewallRuleResponseRuleConditionGroupItem>? Type5308 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateFirewallRuleResponseRuleAction? Type5309 { get; set; }
+        public global::Vercel.GenerateFirewallRuleResponseRuleConditionGroupItem? Type5309 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateFirewallRuleResponseRuleActionMitigate? Type5310 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GenerateFirewallRuleResponseRuleConditionGroupItemCondition>? Type5310 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateFirewallRuleResponseRuleActionMitigateRateLimit? Type5311 { get; set; }
+        public global::Vercel.GenerateFirewallRuleResponseRuleConditionGroupItemCondition? Type5311 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateFirewallRuleResponseRuleActionMitigateRedirect? Type5312 { get; set; }
+        public global::Vercel.CreateSpeedInsightsToggleResponse? Type5312 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GenerateFirewallRuleResponseRuleConditionGroupItem>? Type5313 { get; set; }
+        public global::Vercel.GetStorageStoresByIdResponse? Type5313 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateFirewallRuleResponseRuleConditionGroupItem? Type5314 { get; set; }
+        public global::Vercel.GetStorageStoresByIdResponseStore? Type5314 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GenerateFirewallRuleResponseRuleConditionGroupItemCondition>? Type5315 { get; set; }
+        public global::Vercel.GetStorageStoresByIdResponseStoreProjectFilter? Type5315 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GenerateFirewallRuleResponseRuleConditionGroupItemCondition? Type5316 { get; set; }
+        public global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGit? Type5316 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateSpeedInsightsToggleResponse? Type5317 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProvider>? Type5317 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetStorageStoresByIdResponse? Type5318 { get; set; }
+        public global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProvider? Type5318 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetStorageStoresByIdResponseStore? Type5319 { get; set; }
+        public global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProviders? Type5319 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetStorageStoresByIdResponseStoreProjectFilter? Type5320 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItem>? Type5320 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGit? Type5321 { get; set; }
+        public global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItem? Type5321 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProvider>? Type5322 { get; set; }
+        public global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemDeployments? Type5322 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProvider? Type5323 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemDeploymentsAction>? Type5323 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetStorageStoresByIdResponseStoreProjectFilterGitProviders? Type5324 { get; set; }
+        public global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemDeploymentsAction? Type5324 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItem>? Type5325 { get; set; }
+        public global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework? Type5325 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItem? Type5326 { get; set; }
+        public global::Vercel.GetStorageStoresByIdResponseStoreStatus? Type5326 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemDeployments? Type5327 { get; set; }
+        public global::Vercel.CreateStorageStoresBlobResponse? Type5327 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemDeploymentsAction>? Type5328 { get; set; }
+        public global::Vercel.CreateStorageStoresBlobResponseStore? Type5328 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemDeploymentsAction? Type5329 { get; set; }
+        public global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilter? Type5329 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetStorageStoresByIdResponseStoreProjectsMetadataItemFramework? Type5330 { get; set; }
+        public global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGit? Type5330 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetStorageStoresByIdResponseStoreStatus? Type5331 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProvider>? Type5331 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateStorageStoresBlobResponse? Type5332 { get; set; }
+        public global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProvider? Type5332 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateStorageStoresBlobResponseStore? Type5333 { get; set; }
+        public global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProviders? Type5333 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilter? Type5334 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItem>? Type5334 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGit? Type5335 { get; set; }
+        public global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItem? Type5335 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProvider>? Type5336 { get; set; }
+        public global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeployments? Type5336 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProvider? Type5337 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsAction>? Type5337 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateStorageStoresBlobResponseStoreProjectFilterGitProviders? Type5338 { get; set; }
+        public global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsAction? Type5338 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItem>? Type5339 { get; set; }
+        public global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework? Type5339 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItem? Type5340 { get; set; }
+        public global::Vercel.CreateStorageStoresBlobResponseStoreStatus? Type5340 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeployments? Type5341 { get; set; }
+        public global::Vercel.CreateStorageStoresBlobResponseStoreAccess? Type5341 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsAction>? Type5342 { get; set; }
+        public global::Vercel.CreateStorageStoresBlobResponseStoreKind? Type5342 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemDeploymentsAction? Type5343 { get; set; }
+        public global::Vercel.CreateStorageStoresBlobResponseStoreRegion? Type5343 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateStorageStoresBlobResponseStoreProjectsMetadataItemFramework? Type5344 { get; set; }
+        public global::Vercel.DeleteStorageStoresBlobByIdResponse? Type5344 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateStorageStoresBlobResponseStoreStatus? Type5345 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponse? Type5345 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateStorageStoresBlobResponseStoreAccess? Type5346 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStore? Type5346 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateStorageStoresBlobResponseStoreKind? Type5347 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilter? Type5347 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateStorageStoresBlobResponseStoreRegion? Type5348 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGit? Type5348 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.DeleteStorageStoresBlobByIdResponse? Type5349 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvider>? Type5349 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponse? Type5350 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvider? Type5350 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStore? Type5351 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProviders? Type5351 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilter? Type5352 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItem>? Type5352 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGit? Type5353 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItem? Type5353 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvider>? Type5354 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeployments? Type5354 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvider? Type5355 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeploymentsAction>? Type5355 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProviders? Type5356 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeploymentsAction? Type5356 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItem>? Type5357 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework? Type5357 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItem? Type5358 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreStatus? Type5358 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeployments? Type5359 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlan? Type5359 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeploymentsAction>? Type5360 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanDetail>? Type5360 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemDeploymentsAction? Type5361 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanDetail? Type5361 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectsMetadataItemFramework? Type5362 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanHighlightedDetail>? Type5362 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreStatus? Type5363 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanHighlightedDetail? Type5363 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlan? Type5364 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanQuoteItem>? Type5364 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanDetail>? Type5365 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanQuoteItem? Type5365 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanDetail? Type5366 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanScope? Type5366 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanHighlightedDetail>? Type5367 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanType? Type5367 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanHighlightedDetail? Type5368 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilities? Type5368 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanQuoteItem>? Type5369 { get; set; }
+        public global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilitiesCredentialTypesTransitionItem>>? Type5369 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanQuoteItem? Type5370 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilitiesCredentialTypesTransitionItem>? Type5370 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanScope? Type5371 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilitiesCredentialTypesTransitionItem? Type5371 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreBillingPlanType? Type5372 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation, bool?>? Type5372 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilities? Type5373 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation? Type5373 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilitiesCredentialTypesTransitionItem>>? Type5374 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreCredentialType>? Type5374 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilitiesCredentialTypesTransitionItem>? Type5375 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreCredentialType? Type5375 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilitiesCredentialTypesTransitionItem? Type5376 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreCredentialTypesTransition? Type5376 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation, bool?>? Type5377 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreCredentialTypesTransitionToItem>? Type5377 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreCapabilitiesSecretRotation? Type5378 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreCredentialTypesTransitionToItem? Type5378 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreCredentialType>? Type5379 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreExternalResourceStatus? Type5379 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreCredentialType? Type5380 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreNotification? Type5380 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreCredentialTypesTransition? Type5381 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreNotificationLevel? Type5381 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreCredentialTypesTransitionToItem>? Type5382 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreOwnership? Type5382 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreCredentialTypesTransitionToItem? Type5383 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProduct? Type5383 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreExternalResourceStatus? Type5384 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductCapabilities? Type5384 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreNotification? Type5385 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation, bool?>? Type5385 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreNotificationLevel? Type5386 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation? Type5386 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreOwnership? Type5387 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductProjectConnectionScope>? Type5387 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProduct? Type5388 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductProjectConnectionScope? Type5388 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductCapabilities? Type5389 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductResourceLink>? Type5389 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation, bool?>? Type5390 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductResourceLink? Type5390 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductCapabilitiesSecretRotation? Type5391 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductTag>? Type5391 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductProjectConnectionScope>? Type5392 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductTag? Type5392 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductProjectConnectionScope? Type5393 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductRepl? Type5393 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductResourceLink>? Type5394 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuide>? Type5394 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductResourceLink? Type5395 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuide? Type5395 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductTag>? Type5396 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStep>? Type5396 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductTag? Type5397 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStep? Type5397 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductRepl? Type5398 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStepAction>? Type5398 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuide>? Type5399 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStepAction? Type5399 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuide? Type5400 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStepActionType? Type5400 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStep>? Type5401 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegration? Type5401 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStep? Type5402 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilities? Type5402 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStepAction>? Type5403 { get; set; }
+        public global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesCredentialTypesCreateItemItem>>? Type5403 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStepAction? Type5404 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesCredentialTypesCreateItemItem>? Type5404 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductGuideStepActionType? Type5405 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesCredentialTypesCreateItemItem? Type5405 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegration? Type5406 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotation, bool?>? Type5406 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilities? Type5407 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotation? Type5407 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesCredentialTypesCreateItemItem>>? Type5408 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductLogDrainStatus? Type5408 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesCredentialTypesCreateItemItem>? Type5409 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductPrimaryProtocol? Type5409 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesCredentialTypesCreateItemItem? Type5410 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductSupportedProtocol>? Type5410 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotation, bool?>? Type5411 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductSupportedProtocol? Type5411 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductIntegrationCapabilitiesSecretRotation? Type5412 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProtocolSettings? Type5412 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductLogDrainStatus? Type5413 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication? Type5413 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductPrimaryProtocol? Type5414 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrl>? Type5414 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProductSupportedProtocol>? Type5415 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrl? Type5415 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProductSupportedProtocol? Type5416 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlTarget? Type5416 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProtocolSettings? Type5417 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation? Type5417 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthentication? Type5418 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreSecret>? Type5418 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrl>? Type5419 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreSecret? Type5419 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrl? Type5420 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreTarget>? Type5420 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProtocolSettingsAuthenticationAppUrlTarget? Type5421 { get; set; }
+        public global::Vercel.CreateIntegrationStoreDirectResponseStoreTarget? Type5421 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreProtocolSettingsExperimentation? Type5422 { get; set; }
+        public global::Vercel.GetTeamMembersResponse? Type5422 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreSecret>? Type5423 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCode>? Type5423 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreSecret? Type5424 { get; set; }
+        public global::Vercel.GetTeamMembersResponseEmailInviteCode? Type5424 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.CreateIntegrationStoreDirectResponseStoreTarget>? Type5425 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GetTeamMembersResponseEmailInviteCodeProjects2>? Type5425 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateIntegrationStoreDirectResponseStoreTarget? Type5426 { get; set; }
+        public global::Vercel.GetTeamMembersResponseEmailInviteCodeProjects2? Type5426 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamMembersResponse? Type5427 { get; set; }
+        public global::Vercel.GetTeamMembersResponseEmailInviteCodeRole? Type5427 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCode>? Type5428 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamPermission>? Type5428 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamMembersResponseEmailInviteCode? Type5429 { get; set; }
+        public global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamPermission? Type5429 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::Vercel.GetTeamMembersResponseEmailInviteCodeProjects2>? Type5430 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamRole>? Type5430 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamMembersResponseEmailInviteCodeProjects2? Type5431 { get; set; }
+        public global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamRole? Type5431 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamMembersResponseEmailInviteCodeRole? Type5432 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseMember>? Type5432 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamPermission>? Type5433 { get; set; }
+        public global::Vercel.GetTeamMembersResponseMember? Type5433 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamPermission? Type5434 { get; set; }
+        public global::Vercel.GetTeamMembersResponseMemberBitbucket? Type5434 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamRole>? Type5435 { get; set; }
+        public global::Vercel.GetTeamMembersResponseMemberGithub? Type5435 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamMembersResponseEmailInviteCodeTeamRole? Type5436 { get; set; }
+        public global::Vercel.GetTeamMembersResponseMemberGitlab? Type5436 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseMember>? Type5437 { get; set; }
+        public global::Vercel.GetTeamMembersResponseMemberJoinedFrom? Type5437 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamMembersResponseMember? Type5438 { get; set; }
+        public global::Vercel.GetTeamMembersResponseMemberJoinedFromOrigin? Type5438 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamMembersResponseMemberBitbucket? Type5439 { get; set; }
+        public global::Vercel.GetTeamMembersResponseMemberMembershipSource? Type5439 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamMembersResponseMemberGithub? Type5440 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseMemberProject>? Type5440 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamMembersResponseMemberGitlab? Type5441 { get; set; }
+        public global::Vercel.GetTeamMembersResponseMemberProject? Type5441 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamMembersResponseMemberJoinedFrom? Type5442 { get; set; }
+        public global::Vercel.GetTeamMembersResponseMemberProjectRole? Type5442 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamMembersResponseMemberJoinedFromOrigin? Type5443 { get; set; }
+        public global::Vercel.GetTeamMembersResponseMemberRole? Type5443 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetTeamMembersResponseMemberProject>? Type5444 { get; set; }
+        public global::Vercel.GetTeamMembersResponsePagination? Type5444 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamMembersResponseMemberProject? Type5445 { get; set; }
+        public global::Vercel.RequestAccessToTeamResponse? Type5445 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamMembersResponseMemberProjectRole? Type5446 { get; set; }
+        public global::Vercel.RequestAccessToTeamResponseBitbucket? Type5446 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamMembersResponseMemberRole? Type5447 { get; set; }
+        public global::Vercel.RequestAccessToTeamResponseGithub? Type5447 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamMembersResponsePagination? Type5448 { get; set; }
+        public global::Vercel.RequestAccessToTeamResponseGitlab? Type5448 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RequestAccessToTeamResponse? Type5449 { get; set; }
+        public global::Vercel.RequestAccessToTeamResponseJoinedFrom? Type5449 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RequestAccessToTeamResponseBitbucket? Type5450 { get; set; }
+        public global::Vercel.RequestAccessToTeamResponseJoinedFromOrigin? Type5450 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RequestAccessToTeamResponseGithub? Type5451 { get; set; }
+        public global::Vercel.GetTeamAccessRequestResponse? Type5451 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RequestAccessToTeamResponseGitlab? Type5452 { get; set; }
+        public global::Vercel.GetTeamAccessRequestResponseBitbucket? Type5452 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RequestAccessToTeamResponseJoinedFrom? Type5453 { get; set; }
+        public global::Vercel.GetTeamAccessRequestResponseGithub? Type5453 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RequestAccessToTeamResponseJoinedFromOrigin? Type5454 { get; set; }
+        public global::Vercel.GetTeamAccessRequestResponseGitlab? Type5454 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamAccessRequestResponse? Type5455 { get; set; }
+        public global::Vercel.GetTeamAccessRequestResponseJoinedFrom? Type5455 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamAccessRequestResponseBitbucket? Type5456 { get; set; }
+        public global::Vercel.GetTeamAccessRequestResponseJoinedFromOrigin? Type5456 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamAccessRequestResponseGithub? Type5457 { get; set; }
+        public global::Vercel.JoinTeamResponse? Type5457 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamAccessRequestResponseGitlab? Type5458 { get; set; }
+        public global::Vercel.UpdateTeamMemberResponse? Type5458 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamAccessRequestResponseJoinedFrom? Type5459 { get; set; }
+        public global::Vercel.RemoveTeamMemberResponse? Type5459 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamAccessRequestResponseJoinedFromOrigin? Type5460 { get; set; }
+        public global::Vercel.GetTeamsResponse? Type5460 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.JoinTeamResponse? Type5461 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.Team, global::Vercel.TeamLimited>>? Type5461 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateTeamMemberResponse? Type5462 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.Team, global::Vercel.TeamLimited>? Type5462 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RemoveTeamMemberResponse? Type5463 { get; set; }
+        public global::Vercel.CreateTeamResponse? Type5463 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetTeamsResponse? Type5464 { get; set; }
+        public global::Vercel.PostTeamDsyncRolesResponse? Type5464 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.Team, global::Vercel.TeamLimited>>? Type5465 { get; set; }
+        public global::Vercel.DeleteTeamResponse? Type5465 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.Team, global::Vercel.TeamLimited>? Type5466 { get; set; }
+        public global::Vercel.DeleteTeamInviteCodeResponse? Type5466 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateTeamResponse? Type5467 { get; set; }
+        public global::Vercel.UpdateMicrofrontendsGroupResponse? Type5467 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.PostTeamDsyncRolesResponse? Type5468 { get; set; }
+        public global::Vercel.UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup? Type5468 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.DeleteTeamResponse? Type5469 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.UploadFileResponseVariant1, object>? Type5469 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.DeleteTeamInviteCodeResponse? Type5470 { get; set; }
+        public global::Vercel.UploadFileResponseVariant1? Type5470 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateMicrofrontendsGroupResponse? Type5471 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.ListAuthTokensResponseVariant1, global::Vercel.ListAuthTokensResponseVariant2>? Type5471 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateMicrofrontendsGroupResponseUpdatedMicrofrontendsGroup? Type5472 { get; set; }
+        public global::Vercel.ListAuthTokensResponseVariant1? Type5472 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.UploadFileResponseVariant1, object>? Type5473 { get; set; }
+        public global::Vercel.ListAuthTokensResponseVariant1Pagination? Type5473 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UploadFileResponseVariant1? Type5474 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AuthToken>? Type5474 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.ListAuthTokensResponseVariant1, global::Vercel.ListAuthTokensResponseVariant2>? Type5475 { get; set; }
+        public global::Vercel.ListAuthTokensResponseVariant2? Type5475 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListAuthTokensResponseVariant1? Type5476 { get; set; }
+        public global::Vercel.CreateAuthTokenResponse? Type5476 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListAuthTokensResponseVariant1Pagination? Type5477 { get; set; }
+        public global::Vercel.GetAuthTokenResponse? Type5477 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AuthToken>? Type5478 { get; set; }
+        public global::Vercel.DeleteAuthTokenResponse? Type5478 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListAuthTokensResponseVariant2? Type5479 { get; set; }
+        public global::Vercel.GetAuthUserResponse? Type5479 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateAuthTokenResponse? Type5480 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.AuthUser, global::Vercel.AuthUserLimited>? Type5480 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetAuthTokenResponse? Type5481 { get; set; }
+        public global::Vercel.RequestDeleteResponse? Type5481 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.DeleteAuthTokenResponse? Type5482 { get; set; }
+        public global::Vercel.CreateRepositoryResponse? Type5482 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetAuthUserResponse? Type5483 { get; set; }
+        public global::Vercel.GetRepositoryResponse? Type5483 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.AuthUser, global::Vercel.AuthUserLimited>? Type5484 { get; set; }
+        public global::Vercel.AddRepositoryPermissionResponse? Type5484 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RequestDeleteResponse? Type5485 { get; set; }
+        public global::Vercel.ListRepositoryTagsResponse? Type5485 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateRepositoryResponse? Type5486 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.ListRepositoryTagsResponseTag>? Type5486 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRepositoryResponse? Type5487 { get; set; }
+        public global::Vercel.ListRepositoryTagsResponseTag? Type5487 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AddRepositoryPermissionResponse? Type5488 { get; set; }
+        public global::Vercel.ListRepositoryTagsResponseTagKind? Type5488 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListRepositoryTagsResponse? Type5489 { get; set; }
+        public global::Vercel.ListRepositoryTagsResponseTagStatus? Type5489 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.ListRepositoryTagsResponseTag>? Type5490 { get; set; }
+        public global::Vercel.GetRepositoryTagResponse? Type5490 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListRepositoryTagsResponseTag? Type5491 { get; set; }
+        public global::Vercel.GetRepositoryImageResponse? Type5491 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListRepositoryTagsResponseTagKind? Type5492 { get; set; }
+        public global::Vercel.GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse? Type5492 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListRepositoryTagsResponseTagStatus? Type5493 { get; set; }
+        public global::Vercel.GetVercelCiRepositorySettingsResponse? Type5493 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRepositoryTagResponse? Type5494 { get; set; }
+        public global::Vercel.GetVercelCiRepositorySettingsResponse2? Type5494 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetRepositoryImageResponse? Type5495 { get; set; }
+        public global::Vercel.GetVercelCiRepositorySettingsResponseError? Type5495 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetByTeamSlugByProjectSlugByRepositoryNameTagsListResponse? Type5496 { get; set; }
+        public global::Vercel.GetVercelCiRepositorySettingsResponse3? Type5496 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiRepositorySettingsResponse? Type5497 { get; set; }
+        public global::Vercel.GetVercelCiRepositorySettingsResponseError2? Type5497 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiRepositorySettingsResponse2? Type5498 { get; set; }
+        public global::Vercel.GetVercelCiRepositorySettingsResponse4? Type5498 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiRepositorySettingsResponseError? Type5499 { get; set; }
+        public global::Vercel.GetVercelCiRepositorySettingsResponseError3? Type5499 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiRepositorySettingsResponse3? Type5500 { get; set; }
+        public global::Vercel.GetVercelCiRepositorySettingsResponse5? Type5500 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiRepositorySettingsResponseError2? Type5501 { get; set; }
+        public global::Vercel.GetVercelCiRepositorySettingsResponseError4? Type5501 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiRepositorySettingsResponse4? Type5502 { get; set; }
+        public global::Vercel.UpdateVercelCiRepositorySettingsResponse? Type5502 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiRepositorySettingsResponseError3? Type5503 { get; set; }
+        public global::Vercel.UpdateVercelCiRepositorySettingsResponse2? Type5503 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiRepositorySettingsResponse5? Type5504 { get; set; }
+        public global::Vercel.UpdateVercelCiRepositorySettingsResponseError? Type5504 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiRepositorySettingsResponseError4? Type5505 { get; set; }
+        public global::Vercel.UpdateVercelCiRepositorySettingsResponse3? Type5505 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateVercelCiRepositorySettingsResponse? Type5506 { get; set; }
+        public global::Vercel.UpdateVercelCiRepositorySettingsResponseError2? Type5506 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateVercelCiRepositorySettingsResponse2? Type5507 { get; set; }
+        public global::Vercel.UpdateVercelCiRepositorySettingsResponse4? Type5507 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateVercelCiRepositorySettingsResponseError? Type5508 { get; set; }
+        public global::Vercel.UpdateVercelCiRepositorySettingsResponseError3? Type5508 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateVercelCiRepositorySettingsResponse3? Type5509 { get; set; }
+        public global::Vercel.UpdateVercelCiRepositorySettingsResponse5? Type5509 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateVercelCiRepositorySettingsResponseError2? Type5510 { get; set; }
+        public global::Vercel.UpdateVercelCiRepositorySettingsResponseError4? Type5510 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateVercelCiRepositorySettingsResponse4? Type5511 { get; set; }
+        public global::Vercel.ListVercelCiInvocationsResponse? Type5511 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateVercelCiRepositorySettingsResponseError3? Type5512 { get; set; }
+        public global::Vercel.ListVercelCiInvocationsResponsePagination? Type5512 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateVercelCiRepositorySettingsResponse5? Type5513 { get; set; }
+        public global::Vercel.ListVercelCiInvocationsResponse2? Type5513 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UpdateVercelCiRepositorySettingsResponseError4? Type5514 { get; set; }
+        public global::Vercel.ListVercelCiInvocationsResponseError? Type5514 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationsResponse? Type5515 { get; set; }
+        public global::Vercel.ListVercelCiInvocationsResponse3? Type5515 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationsResponsePagination? Type5516 { get; set; }
+        public global::Vercel.ListVercelCiInvocationsResponseError2? Type5516 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationsResponse2? Type5517 { get; set; }
+        public global::Vercel.ListVercelCiInvocationsResponse4? Type5517 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationsResponseError? Type5518 { get; set; }
+        public global::Vercel.ListVercelCiInvocationsResponseError3? Type5518 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationsResponse3? Type5519 { get; set; }
+        public global::Vercel.ListVercelCiInvocationsResponse5? Type5519 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationsResponseError2? Type5520 { get; set; }
+        public global::Vercel.ListVercelCiInvocationsResponseError4? Type5520 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationsResponse4? Type5521 { get; set; }
+        public global::Vercel.ListVercelCiBranchesResponse? Type5521 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationsResponseError3? Type5522 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.ListVercelCiBranchesResponseBranche>? Type5522 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationsResponse5? Type5523 { get; set; }
+        public global::Vercel.ListVercelCiBranchesResponseBranche? Type5523 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationsResponseError4? Type5524 { get; set; }
+        public global::Vercel.ListVercelCiBranchesResponse2? Type5524 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiBranchesResponse? Type5525 { get; set; }
+        public global::Vercel.ListVercelCiBranchesResponseError? Type5525 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.ListVercelCiBranchesResponseBranche>? Type5526 { get; set; }
+        public global::Vercel.ListVercelCiBranchesResponse3? Type5526 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiBranchesResponseBranche? Type5527 { get; set; }
+        public global::Vercel.ListVercelCiBranchesResponseError2? Type5527 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiBranchesResponse2? Type5528 { get; set; }
+        public global::Vercel.ListVercelCiBranchesResponse4? Type5528 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiBranchesResponseError? Type5529 { get; set; }
+        public global::Vercel.ListVercelCiBranchesResponseError3? Type5529 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiBranchesResponse3? Type5530 { get; set; }
+        public global::Vercel.ListVercelCiBranchesResponse5? Type5530 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiBranchesResponseError2? Type5531 { get; set; }
+        public global::Vercel.ListVercelCiBranchesResponseError4? Type5531 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiBranchesResponse4? Type5532 { get; set; }
+        public global::Vercel.CreateVercelCiTaskAnalysisResponse? Type5532 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiBranchesResponseError3? Type5533 { get; set; }
+        public global::Vercel.CreateVercelCiTaskAnalysisResponse2? Type5533 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiBranchesResponse5? Type5534 { get; set; }
+        public global::Vercel.CreateVercelCiTaskAnalysisResponseError? Type5534 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiBranchesResponseError4? Type5535 { get; set; }
+        public global::Vercel.CreateVercelCiTaskAnalysisResponse3? Type5535 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskAnalysisResponse? Type5536 { get; set; }
+        public global::Vercel.CreateVercelCiTaskAnalysisResponseError2? Type5536 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskAnalysisResponse2? Type5537 { get; set; }
+        public global::Vercel.CreateVercelCiTaskAnalysisResponse4? Type5537 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskAnalysisResponseError? Type5538 { get; set; }
+        public global::Vercel.CreateVercelCiTaskAnalysisResponseError3? Type5538 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskAnalysisResponse3? Type5539 { get; set; }
+        public global::Vercel.CreateVercelCiTaskAnalysisResponse5? Type5539 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskAnalysisResponseError2? Type5540 { get; set; }
+        public global::Vercel.CreateVercelCiTaskAnalysisResponseError4? Type5540 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskAnalysisResponse4? Type5541 { get; set; }
+        public global::Vercel.GetVercelCiTaskAnalysisResponse? Type5541 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskAnalysisResponseError3? Type5542 { get; set; }
+        public global::Vercel.GetVercelCiTaskAnalysisResponse2? Type5542 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskAnalysisResponse5? Type5543 { get; set; }
+        public global::Vercel.GetVercelCiTaskAnalysisResponseError? Type5543 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskAnalysisResponseError4? Type5544 { get; set; }
+        public global::Vercel.GetVercelCiTaskAnalysisResponse3? Type5544 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskAnalysisResponse? Type5545 { get; set; }
+        public global::Vercel.GetVercelCiTaskAnalysisResponseError2? Type5545 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskAnalysisResponse2? Type5546 { get; set; }
+        public global::Vercel.GetVercelCiTaskAnalysisResponse4? Type5546 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskAnalysisResponseError? Type5547 { get; set; }
+        public global::Vercel.GetVercelCiTaskAnalysisResponseError3? Type5547 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskAnalysisResponse3? Type5548 { get; set; }
+        public global::Vercel.GetVercelCiTaskAnalysisResponse5? Type5548 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskAnalysisResponseError2? Type5549 { get; set; }
+        public global::Vercel.GetVercelCiTaskAnalysisResponseError4? Type5549 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskAnalysisResponse4? Type5550 { get; set; }
+        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponse? Type5550 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskAnalysisResponseError3? Type5551 { get; set; }
+        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponse2? Type5551 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskAnalysisResponse5? Type5552 { get; set; }
+        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponseError? Type5552 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskAnalysisResponseError4? Type5553 { get; set; }
+        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponse3? Type5553 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponse? Type5554 { get; set; }
+        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponseError2? Type5554 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponse2? Type5555 { get; set; }
+        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponse4? Type5555 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponseError? Type5556 { get; set; }
+        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponseError3? Type5556 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponse3? Type5557 { get; set; }
+        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponse5? Type5557 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponseError2? Type5558 { get; set; }
+        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponseError4? Type5558 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponse4? Type5559 { get; set; }
+        public global::Vercel.ListVercelCiTaskAnalysisTasksResponse? Type5559 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponseError3? Type5560 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.ListVercelCiTaskAnalysisTasksResponseTask>? Type5560 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponse5? Type5561 { get; set; }
+        public global::Vercel.ListVercelCiTaskAnalysisTasksResponseTask? Type5561 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateVercelCiTaskConfigurationPullRequestResponseError4? Type5562 { get; set; }
+        public global::Vercel.ListVercelCiTaskAnalysisTasksResponsePagination? Type5562 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskAnalysisTasksResponse? Type5563 { get; set; }
+        public global::Vercel.ListVercelCiTaskAnalysisTasksResponse2? Type5563 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.ListVercelCiTaskAnalysisTasksResponseTask>? Type5564 { get; set; }
+        public global::Vercel.ListVercelCiTaskAnalysisTasksResponseError? Type5564 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskAnalysisTasksResponseTask? Type5565 { get; set; }
+        public global::Vercel.ListVercelCiTaskAnalysisTasksResponse3? Type5565 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskAnalysisTasksResponsePagination? Type5566 { get; set; }
+        public global::Vercel.ListVercelCiTaskAnalysisTasksResponseError2? Type5566 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskAnalysisTasksResponse2? Type5567 { get; set; }
+        public global::Vercel.ListVercelCiTaskAnalysisTasksResponse4? Type5567 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskAnalysisTasksResponseError? Type5568 { get; set; }
+        public global::Vercel.ListVercelCiTaskAnalysisTasksResponseError3? Type5568 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskAnalysisTasksResponse3? Type5569 { get; set; }
+        public global::Vercel.ListVercelCiTaskAnalysisTasksResponse5? Type5569 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskAnalysisTasksResponseError2? Type5570 { get; set; }
+        public global::Vercel.ListVercelCiTaskAnalysisTasksResponseError4? Type5570 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskAnalysisTasksResponse4? Type5571 { get; set; }
+        public global::Vercel.ListVercelCiInvocationAttemptsResponse? Type5571 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskAnalysisTasksResponseError3? Type5572 { get; set; }
+        public global::Vercel.ListVercelCiInvocationAttemptsResponse2? Type5572 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskAnalysisTasksResponse5? Type5573 { get; set; }
+        public global::Vercel.ListVercelCiInvocationAttemptsResponseError? Type5573 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskAnalysisTasksResponseError4? Type5574 { get; set; }
+        public global::Vercel.ListVercelCiInvocationAttemptsResponse3? Type5574 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationAttemptsResponse? Type5575 { get; set; }
+        public global::Vercel.ListVercelCiInvocationAttemptsResponseError2? Type5575 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationAttemptsResponse2? Type5576 { get; set; }
+        public global::Vercel.ListVercelCiInvocationAttemptsResponse4? Type5576 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationAttemptsResponseError? Type5577 { get; set; }
+        public global::Vercel.ListVercelCiInvocationAttemptsResponseError3? Type5577 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationAttemptsResponse3? Type5578 { get; set; }
+        public global::Vercel.ListVercelCiInvocationAttemptsResponse5? Type5578 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationAttemptsResponseError2? Type5579 { get; set; }
+        public global::Vercel.ListVercelCiInvocationAttemptsResponseError4? Type5579 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationAttemptsResponse4? Type5580 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponse? Type5580 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationAttemptsResponseError3? Type5581 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetVercelCiInvocationTreeResponseJob>? Type5581 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationAttemptsResponse5? Type5582 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJob? Type5582 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiInvocationAttemptsResponseError4? Type5583 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobDefinition? Type5583 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponse? Type5584 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobRun? Type5584 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetVercelCiInvocationTreeResponseJob>? Type5585 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobRunStarted? Type5585 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJob? Type5586 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobRunCompleted? Type5586 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobDefinition? Type5587 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobRunCompletedConclusionVariant1? Type5587 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobRun? Type5588 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobRunCompletedConclusionVariant2? Type5588 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobRunStarted? Type5589 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobRunCompletedConclusionVariant3? Type5589 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobRunCompleted? Type5590 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetVercelCiInvocationTreeResponseJobTask>? Type5590 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobRunCompletedConclusionVariant1? Type5591 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobTask? Type5591 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobRunCompletedConclusionVariant2? Type5592 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskDefinition? Type5592 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobRunCompletedConclusionVariant3? Type5593 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskDefinitionOperationVariant1? Type5593 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetVercelCiInvocationTreeResponseJobTask>? Type5594 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskDefinitionOperationVariant2? Type5594 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobTask? Type5595 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRun? Type5595 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskDefinition? Type5596 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunStarted? Type5596 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskDefinitionOperationVariant1? Type5597 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunCompleted? Type5597 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskDefinitionOperationVariant2? Type5598 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunCompletedConclusionVariant1? Type5598 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRun? Type5599 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunCompletedConclusionVariant2? Type5599 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunStarted? Type5600 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunCompletedConclusionVariant3? Type5600 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunCompleted? Type5601 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunCompletedConclusionVariant4? Type5601 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunCompletedConclusionVariant1? Type5602 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunDeploymentBinding? Type5602 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunCompletedConclusionVariant2? Type5603 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponse2? Type5603 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunCompletedConclusionVariant3? Type5604 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseError? Type5604 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunCompletedConclusionVariant4? Type5605 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponse3? Type5605 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseJobTaskRunDeploymentBinding? Type5606 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseError2? Type5606 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponse2? Type5607 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponse4? Type5607 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseError? Type5608 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseError3? Type5608 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponse3? Type5609 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponse5? Type5609 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseError2? Type5610 { get; set; }
+        public global::Vercel.GetVercelCiInvocationTreeResponseError4? Type5610 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponse4? Type5611 { get; set; }
+        public global::Vercel.GetVercelCiInvocationResponse? Type5611 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseError3? Type5612 { get; set; }
+        public global::Vercel.GetVercelCiInvocationResponse2? Type5612 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponse5? Type5613 { get; set; }
+        public global::Vercel.GetVercelCiInvocationResponseError? Type5613 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationTreeResponseError4? Type5614 { get; set; }
+        public global::Vercel.GetVercelCiInvocationResponse3? Type5614 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationResponse? Type5615 { get; set; }
+        public global::Vercel.GetVercelCiInvocationResponseError2? Type5615 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationResponse2? Type5616 { get; set; }
+        public global::Vercel.GetVercelCiInvocationResponse4? Type5616 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationResponseError? Type5617 { get; set; }
+        public global::Vercel.GetVercelCiInvocationResponseError3? Type5617 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationResponse3? Type5618 { get; set; }
+        public global::Vercel.GetVercelCiInvocationResponse5? Type5618 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationResponseError2? Type5619 { get; set; }
+        public global::Vercel.GetVercelCiInvocationResponseError4? Type5619 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationResponse4? Type5620 { get; set; }
+        public global::Vercel.RetryVercelCiInvocationResponse? Type5620 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationResponseError3? Type5621 { get; set; }
+        public global::Vercel.RetryVercelCiInvocationResponse2? Type5621 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationResponse5? Type5622 { get; set; }
+        public global::Vercel.RetryVercelCiInvocationResponseError? Type5622 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationResponseError4? Type5623 { get; set; }
+        public global::Vercel.RetryVercelCiInvocationResponse3? Type5623 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RetryVercelCiInvocationResponse? Type5624 { get; set; }
+        public global::Vercel.RetryVercelCiInvocationResponseError2? Type5624 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RetryVercelCiInvocationResponse2? Type5625 { get; set; }
+        public global::Vercel.RetryVercelCiInvocationResponse4? Type5625 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RetryVercelCiInvocationResponseError? Type5626 { get; set; }
+        public global::Vercel.RetryVercelCiInvocationResponseError3? Type5626 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RetryVercelCiInvocationResponse3? Type5627 { get; set; }
+        public global::Vercel.RetryVercelCiInvocationResponse5? Type5627 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RetryVercelCiInvocationResponseError2? Type5628 { get; set; }
+        public global::Vercel.RetryVercelCiInvocationResponseError4? Type5628 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RetryVercelCiInvocationResponse4? Type5629 { get; set; }
+        public global::Vercel.ListVercelCiJobDefinitionsResponse? Type5629 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RetryVercelCiInvocationResponseError3? Type5630 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.ListVercelCiJobDefinitionsResponseJobDefinition>? Type5630 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RetryVercelCiInvocationResponse5? Type5631 { get; set; }
+        public global::Vercel.ListVercelCiJobDefinitionsResponseJobDefinition? Type5631 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.RetryVercelCiInvocationResponseError4? Type5632 { get; set; }
+        public global::Vercel.ListVercelCiJobDefinitionsResponse2? Type5632 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobDefinitionsResponse? Type5633 { get; set; }
+        public global::Vercel.ListVercelCiJobDefinitionsResponseError? Type5633 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.ListVercelCiJobDefinitionsResponseJobDefinition>? Type5634 { get; set; }
+        public global::Vercel.ListVercelCiJobDefinitionsResponse3? Type5634 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobDefinitionsResponseJobDefinition? Type5635 { get; set; }
+        public global::Vercel.ListVercelCiJobDefinitionsResponseError2? Type5635 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobDefinitionsResponse2? Type5636 { get; set; }
+        public global::Vercel.ListVercelCiJobDefinitionsResponse4? Type5636 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobDefinitionsResponseError? Type5637 { get; set; }
+        public global::Vercel.ListVercelCiJobDefinitionsResponseError3? Type5637 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobDefinitionsResponse3? Type5638 { get; set; }
+        public global::Vercel.ListVercelCiJobDefinitionsResponse5? Type5638 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobDefinitionsResponseError2? Type5639 { get; set; }
+        public global::Vercel.ListVercelCiJobDefinitionsResponseError4? Type5639 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobDefinitionsResponse4? Type5640 { get; set; }
+        public global::Vercel.GetVercelCiJobDefinitionResponse? Type5640 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobDefinitionsResponseError3? Type5641 { get; set; }
+        public global::Vercel.GetVercelCiJobDefinitionResponseJobDefinition? Type5641 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobDefinitionsResponse5? Type5642 { get; set; }
+        public global::Vercel.GetVercelCiJobDefinitionResponse2? Type5642 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobDefinitionsResponseError4? Type5643 { get; set; }
+        public global::Vercel.GetVercelCiJobDefinitionResponseError? Type5643 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobDefinitionResponse? Type5644 { get; set; }
+        public global::Vercel.GetVercelCiJobDefinitionResponse3? Type5644 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobDefinitionResponseJobDefinition? Type5645 { get; set; }
+        public global::Vercel.GetVercelCiJobDefinitionResponseError2? Type5645 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobDefinitionResponse2? Type5646 { get; set; }
+        public global::Vercel.GetVercelCiJobDefinitionResponse4? Type5646 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobDefinitionResponseError? Type5647 { get; set; }
+        public global::Vercel.GetVercelCiJobDefinitionResponseError3? Type5647 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobDefinitionResponse3? Type5648 { get; set; }
+        public global::Vercel.GetVercelCiJobDefinitionResponse5? Type5648 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobDefinitionResponseError2? Type5649 { get; set; }
+        public global::Vercel.GetVercelCiJobDefinitionResponseError4? Type5649 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobDefinitionResponse4? Type5650 { get; set; }
+        public global::Vercel.ListVercelCiJobRunsResponse? Type5650 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobDefinitionResponseError3? Type5651 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.ListVercelCiJobRunsResponseJobRun>? Type5651 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobDefinitionResponse5? Type5652 { get; set; }
+        public global::Vercel.ListVercelCiJobRunsResponseJobRun? Type5652 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobDefinitionResponseError4? Type5653 { get; set; }
+        public global::Vercel.ListVercelCiJobRunsResponseJobRunStarted? Type5653 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobRunsResponse? Type5654 { get; set; }
+        public global::Vercel.ListVercelCiJobRunsResponseJobRunCompleted? Type5654 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.ListVercelCiJobRunsResponseJobRun>? Type5655 { get; set; }
+        public global::Vercel.ListVercelCiJobRunsResponseJobRunCompletedConclusionVariant1? Type5655 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobRunsResponseJobRun? Type5656 { get; set; }
+        public global::Vercel.ListVercelCiJobRunsResponseJobRunCompletedConclusionVariant2? Type5656 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobRunsResponseJobRunStarted? Type5657 { get; set; }
+        public global::Vercel.ListVercelCiJobRunsResponseJobRunCompletedConclusionVariant3? Type5657 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobRunsResponseJobRunCompleted? Type5658 { get; set; }
+        public global::Vercel.ListVercelCiJobRunsResponse2? Type5658 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobRunsResponseJobRunCompletedConclusionVariant1? Type5659 { get; set; }
+        public global::Vercel.ListVercelCiJobRunsResponseError? Type5659 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobRunsResponseJobRunCompletedConclusionVariant2? Type5660 { get; set; }
+        public global::Vercel.ListVercelCiJobRunsResponse3? Type5660 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobRunsResponseJobRunCompletedConclusionVariant3? Type5661 { get; set; }
+        public global::Vercel.ListVercelCiJobRunsResponseError2? Type5661 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobRunsResponse2? Type5662 { get; set; }
+        public global::Vercel.ListVercelCiJobRunsResponse4? Type5662 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobRunsResponseError? Type5663 { get; set; }
+        public global::Vercel.ListVercelCiJobRunsResponseError3? Type5663 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobRunsResponse3? Type5664 { get; set; }
+        public global::Vercel.ListVercelCiJobRunsResponse5? Type5664 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobRunsResponseError2? Type5665 { get; set; }
+        public global::Vercel.ListVercelCiJobRunsResponseError4? Type5665 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobRunsResponse4? Type5666 { get; set; }
+        public global::Vercel.GetVercelCiJobRunResponse? Type5666 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobRunsResponseError3? Type5667 { get; set; }
+        public global::Vercel.GetVercelCiJobRunResponseJobRun? Type5667 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobRunsResponse5? Type5668 { get; set; }
+        public global::Vercel.GetVercelCiJobRunResponseJobRunStarted? Type5668 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiJobRunsResponseError4? Type5669 { get; set; }
+        public global::Vercel.GetVercelCiJobRunResponseJobRunCompleted? Type5669 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunResponse? Type5670 { get; set; }
+        public global::Vercel.GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1? Type5670 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunResponseJobRun? Type5671 { get; set; }
+        public global::Vercel.GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2? Type5671 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunResponseJobRunStarted? Type5672 { get; set; }
+        public global::Vercel.GetVercelCiJobRunResponseJobRunCompletedConclusionVariant3? Type5672 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunResponseJobRunCompleted? Type5673 { get; set; }
+        public global::Vercel.GetVercelCiJobRunResponse2? Type5673 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunResponseJobRunCompletedConclusionVariant1? Type5674 { get; set; }
+        public global::Vercel.GetVercelCiJobRunResponseError? Type5674 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunResponseJobRunCompletedConclusionVariant2? Type5675 { get; set; }
+        public global::Vercel.GetVercelCiJobRunResponse3? Type5675 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunResponseJobRunCompletedConclusionVariant3? Type5676 { get; set; }
+        public global::Vercel.GetVercelCiJobRunResponseError2? Type5676 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunResponse2? Type5677 { get; set; }
+        public global::Vercel.GetVercelCiJobRunResponse4? Type5677 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunResponseError? Type5678 { get; set; }
+        public global::Vercel.GetVercelCiJobRunResponseError3? Type5678 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunResponse3? Type5679 { get; set; }
+        public global::Vercel.GetVercelCiJobRunResponse5? Type5679 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunResponseError2? Type5680 { get; set; }
+        public global::Vercel.GetVercelCiJobRunResponseError4? Type5680 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunResponse4? Type5681 { get; set; }
+        public global::Vercel.ListVercelCiTaskDefinitionsResponse? Type5681 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunResponseError3? Type5682 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.ListVercelCiTaskDefinitionsResponseTaskDefinition>? Type5682 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunResponse5? Type5683 { get; set; }
+        public global::Vercel.ListVercelCiTaskDefinitionsResponseTaskDefinition? Type5683 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunResponseError4? Type5684 { get; set; }
+        public global::Vercel.ListVercelCiTaskDefinitionsResponseTaskDefinitionOperationVariant1? Type5684 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskDefinitionsResponse? Type5685 { get; set; }
+        public global::Vercel.ListVercelCiTaskDefinitionsResponseTaskDefinitionOperationVariant2? Type5685 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.ListVercelCiTaskDefinitionsResponseTaskDefinition>? Type5686 { get; set; }
+        public global::Vercel.ListVercelCiTaskDefinitionsResponse2? Type5686 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskDefinitionsResponseTaskDefinition? Type5687 { get; set; }
+        public global::Vercel.ListVercelCiTaskDefinitionsResponseError? Type5687 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskDefinitionsResponseTaskDefinitionOperationVariant1? Type5688 { get; set; }
+        public global::Vercel.ListVercelCiTaskDefinitionsResponse3? Type5688 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskDefinitionsResponseTaskDefinitionOperationVariant2? Type5689 { get; set; }
+        public global::Vercel.ListVercelCiTaskDefinitionsResponseError2? Type5689 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskDefinitionsResponse2? Type5690 { get; set; }
+        public global::Vercel.ListVercelCiTaskDefinitionsResponse4? Type5690 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskDefinitionsResponseError? Type5691 { get; set; }
+        public global::Vercel.ListVercelCiTaskDefinitionsResponseError3? Type5691 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskDefinitionsResponse3? Type5692 { get; set; }
+        public global::Vercel.ListVercelCiTaskDefinitionsResponse5? Type5692 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskDefinitionsResponseError2? Type5693 { get; set; }
+        public global::Vercel.ListVercelCiTaskDefinitionsResponseError4? Type5693 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskDefinitionsResponse4? Type5694 { get; set; }
+        public global::Vercel.ListVercelCiTaskRunsResponse? Type5694 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskDefinitionsResponseError3? Type5695 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.ListVercelCiTaskRunsResponseTaskRun>? Type5695 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskDefinitionsResponse5? Type5696 { get; set; }
+        public global::Vercel.ListVercelCiTaskRunsResponseTaskRun? Type5696 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskDefinitionsResponseError4? Type5697 { get; set; }
+        public global::Vercel.ListVercelCiTaskRunsResponseTaskRunStarted? Type5697 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskRunsResponse? Type5698 { get; set; }
+        public global::Vercel.ListVercelCiTaskRunsResponseTaskRunCompleted? Type5698 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.ListVercelCiTaskRunsResponseTaskRun>? Type5699 { get; set; }
+        public global::Vercel.ListVercelCiTaskRunsResponseTaskRunCompletedConclusionVariant1? Type5699 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskRunsResponseTaskRun? Type5700 { get; set; }
+        public global::Vercel.ListVercelCiTaskRunsResponseTaskRunCompletedConclusionVariant2? Type5700 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskRunsResponseTaskRunStarted? Type5701 { get; set; }
+        public global::Vercel.ListVercelCiTaskRunsResponseTaskRunCompletedConclusionVariant3? Type5701 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskRunsResponseTaskRunCompleted? Type5702 { get; set; }
+        public global::Vercel.ListVercelCiTaskRunsResponseTaskRunCompletedConclusionVariant4? Type5702 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskRunsResponseTaskRunCompletedConclusionVariant1? Type5703 { get; set; }
+        public global::Vercel.ListVercelCiTaskRunsResponseTaskRunDeploymentBinding? Type5703 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskRunsResponseTaskRunCompletedConclusionVariant2? Type5704 { get; set; }
+        public global::Vercel.ListVercelCiTaskRunsResponse2? Type5704 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskRunsResponseTaskRunCompletedConclusionVariant3? Type5705 { get; set; }
+        public global::Vercel.ListVercelCiTaskRunsResponseError? Type5705 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskRunsResponseTaskRunCompletedConclusionVariant4? Type5706 { get; set; }
+        public global::Vercel.ListVercelCiTaskRunsResponse3? Type5706 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskRunsResponseTaskRunDeploymentBinding? Type5707 { get; set; }
+        public global::Vercel.ListVercelCiTaskRunsResponseError2? Type5707 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskRunsResponse2? Type5708 { get; set; }
+        public global::Vercel.ListVercelCiTaskRunsResponse4? Type5708 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskRunsResponseError? Type5709 { get; set; }
+        public global::Vercel.ListVercelCiTaskRunsResponseError3? Type5709 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskRunsResponse3? Type5710 { get; set; }
+        public global::Vercel.ListVercelCiTaskRunsResponse5? Type5710 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskRunsResponseError2? Type5711 { get; set; }
+        public global::Vercel.ListVercelCiTaskRunsResponseError4? Type5711 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskRunsResponse4? Type5712 { get; set; }
+        public global::Vercel.GetVercelCiInvocationLogsResponse? Type5712 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskRunsResponseError3? Type5713 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetVercelCiInvocationLogsResponseLine>? Type5713 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskRunsResponse5? Type5714 { get; set; }
+        public global::Vercel.GetVercelCiInvocationLogsResponseLine? Type5714 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListVercelCiTaskRunsResponseError4? Type5715 { get; set; }
+        public global::Vercel.GetVercelCiInvocationLogsResponse2? Type5715 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationLogsResponse? Type5716 { get; set; }
+        public global::Vercel.GetVercelCiInvocationLogsResponseError? Type5716 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetVercelCiInvocationLogsResponseLine>? Type5717 { get; set; }
+        public global::Vercel.GetVercelCiInvocationLogsResponse3? Type5717 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationLogsResponseLine? Type5718 { get; set; }
+        public global::Vercel.GetVercelCiInvocationLogsResponseError2? Type5718 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationLogsResponse2? Type5719 { get; set; }
+        public global::Vercel.GetVercelCiInvocationLogsResponse4? Type5719 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationLogsResponseError? Type5720 { get; set; }
+        public global::Vercel.GetVercelCiInvocationLogsResponseError3? Type5720 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationLogsResponse3? Type5721 { get; set; }
+        public global::Vercel.GetVercelCiInvocationLogsResponse5? Type5721 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationLogsResponseError2? Type5722 { get; set; }
+        public global::Vercel.GetVercelCiInvocationLogsResponseError4? Type5722 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationLogsResponse4? Type5723 { get; set; }
+        public global::Vercel.GetVercelCiTaskLogsResponse? Type5723 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationLogsResponseError3? Type5724 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetVercelCiTaskLogsResponseTask>? Type5724 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationLogsResponse5? Type5725 { get; set; }
+        public global::Vercel.GetVercelCiTaskLogsResponseTask? Type5725 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiInvocationLogsResponseError4? Type5726 { get; set; }
+        public global::Vercel.GetVercelCiTaskLogsResponseTaskConclusionVariant1? Type5726 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskLogsResponse? Type5727 { get; set; }
+        public global::Vercel.GetVercelCiTaskLogsResponseTaskConclusionVariant2? Type5727 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetVercelCiTaskLogsResponseTask>? Type5728 { get; set; }
+        public global::Vercel.GetVercelCiTaskLogsResponseTaskConclusionVariant3? Type5728 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskLogsResponseTask? Type5729 { get; set; }
+        public global::Vercel.GetVercelCiTaskLogsResponseTaskConclusionVariant4? Type5729 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskLogsResponseTaskConclusionVariant1? Type5730 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetVercelCiTaskLogsResponseTaskLine>? Type5730 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskLogsResponseTaskConclusionVariant2? Type5731 { get; set; }
+        public global::Vercel.GetVercelCiTaskLogsResponseTaskLine? Type5731 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskLogsResponseTaskConclusionVariant3? Type5732 { get; set; }
+        public global::Vercel.GetVercelCiTaskLogsResponse2? Type5732 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskLogsResponseTaskConclusionVariant4? Type5733 { get; set; }
+        public global::Vercel.GetVercelCiTaskLogsResponseError? Type5733 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetVercelCiTaskLogsResponseTaskLine>? Type5734 { get; set; }
+        public global::Vercel.GetVercelCiTaskLogsResponse3? Type5734 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskLogsResponseTaskLine? Type5735 { get; set; }
+        public global::Vercel.GetVercelCiTaskLogsResponseError2? Type5735 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskLogsResponse2? Type5736 { get; set; }
+        public global::Vercel.GetVercelCiTaskLogsResponse4? Type5736 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskLogsResponseError? Type5737 { get; set; }
+        public global::Vercel.GetVercelCiTaskLogsResponseError3? Type5737 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskLogsResponse3? Type5738 { get; set; }
+        public global::Vercel.GetVercelCiTaskLogsResponse5? Type5738 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskLogsResponseError2? Type5739 { get; set; }
+        public global::Vercel.GetVercelCiTaskLogsResponseError4? Type5739 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskLogsResponse4? Type5740 { get; set; }
+        public global::Vercel.SearchVercelCiLogsResponse? Type5740 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskLogsResponseError3? Type5741 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.SearchVercelCiLogsResponseInvocation>? Type5741 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskLogsResponse5? Type5742 { get; set; }
+        public global::Vercel.SearchVercelCiLogsResponseInvocation? Type5742 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskLogsResponseError4? Type5743 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.SearchVercelCiLogsResponseInvocationTask>? Type5743 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SearchVercelCiLogsResponse? Type5744 { get; set; }
+        public global::Vercel.SearchVercelCiLogsResponseInvocationTask? Type5744 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.SearchVercelCiLogsResponseInvocation>? Type5745 { get; set; }
+        public global::Vercel.SearchVercelCiLogsResponseInvocationTaskConclusionVariant1? Type5745 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SearchVercelCiLogsResponseInvocation? Type5746 { get; set; }
+        public global::Vercel.SearchVercelCiLogsResponseInvocationTaskConclusionVariant2? Type5746 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.SearchVercelCiLogsResponseInvocationTask>? Type5747 { get; set; }
+        public global::Vercel.SearchVercelCiLogsResponseInvocationTaskConclusionVariant3? Type5747 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SearchVercelCiLogsResponseInvocationTask? Type5748 { get; set; }
+        public global::Vercel.SearchVercelCiLogsResponseInvocationTaskConclusionVariant4? Type5748 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SearchVercelCiLogsResponseInvocationTaskConclusionVariant1? Type5749 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.SearchVercelCiLogsResponseInvocationTaskLine>? Type5749 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SearchVercelCiLogsResponseInvocationTaskConclusionVariant2? Type5750 { get; set; }
+        public global::Vercel.SearchVercelCiLogsResponseInvocationTaskLine? Type5750 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SearchVercelCiLogsResponseInvocationTaskConclusionVariant3? Type5751 { get; set; }
+        public global::Vercel.SearchVercelCiLogsResponse2? Type5751 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SearchVercelCiLogsResponseInvocationTaskConclusionVariant4? Type5752 { get; set; }
+        public global::Vercel.SearchVercelCiLogsResponseError? Type5752 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.SearchVercelCiLogsResponseInvocationTaskLine>? Type5753 { get; set; }
+        public global::Vercel.SearchVercelCiLogsResponse3? Type5753 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SearchVercelCiLogsResponseInvocationTaskLine? Type5754 { get; set; }
+        public global::Vercel.SearchVercelCiLogsResponseError2? Type5754 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SearchVercelCiLogsResponse2? Type5755 { get; set; }
+        public global::Vercel.SearchVercelCiLogsResponse4? Type5755 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SearchVercelCiLogsResponseError? Type5756 { get; set; }
+        public global::Vercel.SearchVercelCiLogsResponseError3? Type5756 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SearchVercelCiLogsResponse3? Type5757 { get; set; }
+        public global::Vercel.SearchVercelCiLogsResponse5? Type5757 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SearchVercelCiLogsResponseError2? Type5758 { get; set; }
+        public global::Vercel.SearchVercelCiLogsResponseError4? Type5758 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SearchVercelCiLogsResponse4? Type5759 { get; set; }
+        public global::Vercel.GetVercelCiJobRunLogsResponse? Type5759 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SearchVercelCiLogsResponseError3? Type5760 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetVercelCiJobRunLogsResponseLine>? Type5760 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SearchVercelCiLogsResponse5? Type5761 { get; set; }
+        public global::Vercel.GetVercelCiJobRunLogsResponseLine? Type5761 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.SearchVercelCiLogsResponseError4? Type5762 { get; set; }
+        public global::Vercel.GetVercelCiJobRunLogsResponse2? Type5762 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunLogsResponse? Type5763 { get; set; }
+        public global::Vercel.GetVercelCiJobRunLogsResponseError? Type5763 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetVercelCiJobRunLogsResponseLine>? Type5764 { get; set; }
+        public global::Vercel.GetVercelCiJobRunLogsResponse3? Type5764 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunLogsResponseLine? Type5765 { get; set; }
+        public global::Vercel.GetVercelCiJobRunLogsResponseError2? Type5765 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunLogsResponse2? Type5766 { get; set; }
+        public global::Vercel.GetVercelCiJobRunLogsResponse4? Type5766 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunLogsResponseError? Type5767 { get; set; }
+        public global::Vercel.GetVercelCiJobRunLogsResponseError3? Type5767 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunLogsResponse3? Type5768 { get; set; }
+        public global::Vercel.GetVercelCiJobRunLogsResponse5? Type5768 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunLogsResponseError2? Type5769 { get; set; }
+        public global::Vercel.GetVercelCiJobRunLogsResponseError4? Type5769 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunLogsResponse4? Type5770 { get; set; }
+        public global::Vercel.GetVercelCiTaskRunLogsResponse? Type5770 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunLogsResponseError3? Type5771 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetVercelCiTaskRunLogsResponseLine>? Type5771 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunLogsResponse5? Type5772 { get; set; }
+        public global::Vercel.GetVercelCiTaskRunLogsResponseLine? Type5772 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiJobRunLogsResponseError4? Type5773 { get; set; }
+        public global::Vercel.GetVercelCiTaskRunLogsResponse2? Type5773 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskRunLogsResponse? Type5774 { get; set; }
+        public global::Vercel.GetVercelCiTaskRunLogsResponseError? Type5774 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetVercelCiTaskRunLogsResponseLine>? Type5775 { get; set; }
+        public global::Vercel.GetVercelCiTaskRunLogsResponse3? Type5775 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskRunLogsResponseLine? Type5776 { get; set; }
+        public global::Vercel.GetVercelCiTaskRunLogsResponseError2? Type5776 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskRunLogsResponse2? Type5777 { get; set; }
+        public global::Vercel.GetVercelCiTaskRunLogsResponse4? Type5777 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskRunLogsResponseError? Type5778 { get; set; }
+        public global::Vercel.GetVercelCiTaskRunLogsResponseError3? Type5778 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskRunLogsResponse3? Type5779 { get; set; }
+        public global::Vercel.GetVercelCiTaskRunLogsResponse5? Type5779 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskRunLogsResponseError2? Type5780 { get; set; }
+        public global::Vercel.GetVercelCiTaskRunLogsResponseError4? Type5780 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskRunLogsResponse4? Type5781 { get; set; }
+        public global::Vercel.CreateWebInsightsToggleResponse? Type5781 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskRunLogsResponseError3? Type5782 { get; set; }
+        public global::Vercel.AggregatePageviewsResponse? Type5782 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskRunLogsResponse5? Type5783 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AggregatePageviewsResponseDataVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.AggregatePageviewsResponseDataVariant2Item>>? Type5783 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetVercelCiTaskRunLogsResponseError4? Type5784 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AggregatePageviewsResponseDataVariant1Item>? Type5784 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateWebInsightsToggleResponse? Type5785 { get; set; }
+        public global::Vercel.AggregatePageviewsResponseDataVariant1Item? Type5785 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AggregatePageviewsResponse? Type5786 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AggregatePageviewsResponseDataVariant2Item>? Type5786 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AggregatePageviewsResponseDataVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.AggregatePageviewsResponseDataVariant2Item>>? Type5787 { get; set; }
+        public global::Vercel.AggregatePageviewsResponseDataVariant2Item? Type5787 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AggregatePageviewsResponseDataVariant1Item>? Type5788 { get; set; }
+        public global::Vercel.AggregatePageviewsResponseQuery? Type5788 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AggregatePageviewsResponseDataVariant1Item? Type5789 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<string, global::Vercel.AggregatePageviewsResponseQueryGroupByItem?>>? Type5789 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AggregatePageviewsResponseDataVariant2Item>? Type5790 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AggregatePageviewsResponseQueryGroupByItem?>? Type5790 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AggregatePageviewsResponseDataVariant2Item? Type5791 { get; set; }
+        public global::Vercel.AggregatePageviewsResponseQueryGroupByItem? Type5791 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AggregatePageviewsResponseQuery? Type5792 { get; set; }
+        public global::Vercel.AggregateEventsResponse? Type5792 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<string, global::Vercel.AggregatePageviewsResponseQueryGroupByItem?>>? Type5793 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AggregateEventsResponseDataVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.AggregateEventsResponseDataVariant2Item>>? Type5793 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AggregatePageviewsResponseQueryGroupByItem?>? Type5794 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AggregateEventsResponseDataVariant1Item>? Type5794 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AggregatePageviewsResponseQueryGroupByItem? Type5795 { get; set; }
+        public global::Vercel.AggregateEventsResponseDataVariant1Item? Type5795 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AggregateEventsResponse? Type5796 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AggregateEventsResponseDataVariant2Item>? Type5796 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.AggregateEventsResponseDataVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.AggregateEventsResponseDataVariant2Item>>? Type5797 { get; set; }
+        public global::Vercel.AggregateEventsResponseDataVariant2Item? Type5797 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AggregateEventsResponseDataVariant1Item>? Type5798 { get; set; }
+        public global::Vercel.AggregateEventsResponseQuery? Type5798 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AggregateEventsResponseDataVariant1Item? Type5799 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.OneOf<string, global::Vercel.AggregateEventsResponseQueryGroupByItem?>>? Type5799 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AggregateEventsResponseDataVariant2Item>? Type5800 { get; set; }
+        public global::Vercel.OneOf<string, global::Vercel.AggregateEventsResponseQueryGroupByItem?>? Type5800 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AggregateEventsResponseDataVariant2Item? Type5801 { get; set; }
+        public global::Vercel.AggregateEventsResponseQueryGroupByItem? Type5801 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AggregateEventsResponseQuery? Type5802 { get; set; }
+        public global::Vercel.CountPageviewsResponse? Type5802 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.OneOf<string, global::Vercel.AggregateEventsResponseQueryGroupByItem?>>? Type5803 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.CountPageviewsResponseDataVariant1, global::Vercel.CountPageviewsResponseDataVariant2>? Type5803 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::Vercel.AggregateEventsResponseQueryGroupByItem?>? Type5804 { get; set; }
+        public global::Vercel.CountPageviewsResponseDataVariant1? Type5804 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AggregateEventsResponseQueryGroupByItem? Type5805 { get; set; }
+        public global::Vercel.CountPageviewsResponseDataVariant2? Type5805 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CountPageviewsResponse? Type5806 { get; set; }
+        public global::Vercel.CountPageviewsResponseQuery? Type5806 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.CountPageviewsResponseDataVariant1, global::Vercel.CountPageviewsResponseDataVariant2>? Type5807 { get; set; }
+        public global::Vercel.CountEventsResponse? Type5807 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CountPageviewsResponseDataVariant1? Type5808 { get; set; }
+        public global::Vercel.OneOf<global::Vercel.CountEventsResponseDataVariant1, global::Vercel.CountEventsResponseDataVariant2>? Type5808 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CountPageviewsResponseDataVariant2? Type5809 { get; set; }
+        public global::Vercel.CountEventsResponseDataVariant1? Type5809 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CountPageviewsResponseQuery? Type5810 { get; set; }
+        public global::Vercel.CountEventsResponseDataVariant2? Type5810 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CountEventsResponse? Type5811 { get; set; }
+        public global::Vercel.CountEventsResponseQuery? Type5811 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::Vercel.CountEventsResponseDataVariant1, global::Vercel.CountEventsResponseDataVariant2>? Type5812 { get; set; }
+        public global::Vercel.CreateWebhookResponse? Type5812 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CountEventsResponseDataVariant1? Type5813 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb83631959dd7e56b>>? Type5813 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CountEventsResponseDataVariant2? Type5814 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant1Item>? Type5814 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CountEventsResponseQuery? Type5815 { get; set; }
+        public global::Vercel.GetWebhooksResponseVariant1Item? Type5815 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.CreateWebhookResponse? Type5816 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant1ItemProjectsMetadataItem>? Type5816 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant1Item>, global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb83631959dd7e56b>>? Type5817 { get; set; }
+        public global::Vercel.GetWebhooksResponseVariant1ItemProjectsMetadataItem? Type5817 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant1Item>? Type5818 { get; set; }
+        public global::Vercel.GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework? Type5818 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetWebhooksResponseVariant1Item? Type5819 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb83631959dd7e56b>? Type5819 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetWebhooksResponseVariant1ItemProjectsMetadataItem>? Type5820 { get; set; }
+        public global::Vercel.ListDeploymentAliasesResponse? Type5820 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetWebhooksResponseVariant1ItemProjectsMetadataItem? Type5821 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.ListDeploymentAliasesResponseAliase>? Type5821 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetWebhooksResponseVariant1ItemProjectsMetadataItemFramework? Type5822 { get; set; }
+        public global::Vercel.ListDeploymentAliasesResponseAliase? Type5822 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb83631959dd7e56b>? Type5823 { get; set; }
+        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant1? Type5823 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListDeploymentAliasesResponse? Type5824 { get; set; }
+        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant1Scope? Type5824 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.ListDeploymentAliasesResponseAliase>? Type5825 { get; set; }
+        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant2? Type5825 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListDeploymentAliasesResponseAliase? Type5826 { get; set; }
+        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant2Access? Type5826 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant1? Type5827 { get; set; }
+        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant2Scope? Type5827 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant1Scope? Type5828 { get; set; }
+        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant3? Type5828 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant2? Type5829 { get; set; }
+        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant3Scope? Type5829 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant2Access? Type5830 { get; set; }
+        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant4? Type5830 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant2Scope? Type5831 { get; set; }
+        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant4Scope? Type5831 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant3? Type5832 { get; set; }
+        public global::Vercel.AssignAliasResponse? Type5832 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant3Scope? Type5833 { get; set; }
+        public global::Vercel.ListAliasesResponse? Type5833 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant4? Type5834 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.ListAliasesResponseAliase>? Type5834 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListDeploymentAliasesResponseAliaseProtectionBypassVariant4Scope? Type5835 { get; set; }
+        public global::Vercel.ListAliasesResponseAliase? Type5835 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AssignAliasResponse? Type5836 { get; set; }
+        public global::Vercel.ListAliasesResponseAliaseCreator? Type5836 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListAliasesResponse? Type5837 { get; set; }
+        public global::Vercel.ListAliasesResponseAliaseDeployment? Type5837 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.ListAliasesResponseAliase>? Type5838 { get; set; }
+        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant1? Type5838 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListAliasesResponseAliase? Type5839 { get; set; }
+        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant1Scope? Type5839 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListAliasesResponseAliaseCreator? Type5840 { get; set; }
+        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant2? Type5840 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListAliasesResponseAliaseDeployment? Type5841 { get; set; }
+        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant2Access? Type5841 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant1? Type5842 { get; set; }
+        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant2Scope? Type5842 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant1Scope? Type5843 { get; set; }
+        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant3? Type5843 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant2? Type5844 { get; set; }
+        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant3Scope? Type5844 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant2Access? Type5845 { get; set; }
+        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant4? Type5845 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant2Scope? Type5846 { get; set; }
+        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant4Scope? Type5846 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant3? Type5847 { get; set; }
+        public global::Vercel.GetAliasResponse? Type5847 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant3Scope? Type5848 { get; set; }
+        public global::Vercel.GetAliasResponseCreator? Type5848 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant4? Type5849 { get; set; }
+        public global::Vercel.GetAliasResponseDeployment? Type5849 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.ListAliasesResponseAliaseProtectionBypassVariant4Scope? Type5850 { get; set; }
+        public global::Vercel.GetAliasResponseProtectionBypassVariant1? Type5850 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetAliasResponse? Type5851 { get; set; }
+        public global::Vercel.GetAliasResponseProtectionBypassVariant1Scope? Type5851 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetAliasResponseCreator? Type5852 { get; set; }
+        public global::Vercel.GetAliasResponseProtectionBypassVariant2? Type5852 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetAliasResponseDeployment? Type5853 { get; set; }
+        public global::Vercel.GetAliasResponseProtectionBypassVariant2Access? Type5853 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetAliasResponseProtectionBypassVariant1? Type5854 { get; set; }
+        public global::Vercel.GetAliasResponseProtectionBypassVariant2Scope? Type5854 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetAliasResponseProtectionBypassVariant1Scope? Type5855 { get; set; }
+        public global::Vercel.GetAliasResponseProtectionBypassVariant3? Type5855 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetAliasResponseProtectionBypassVariant2? Type5856 { get; set; }
+        public global::Vercel.GetAliasResponseProtectionBypassVariant3Scope? Type5856 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetAliasResponseProtectionBypassVariant2Access? Type5857 { get; set; }
+        public global::Vercel.GetAliasResponseProtectionBypassVariant4? Type5857 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetAliasResponseProtectionBypassVariant2Scope? Type5858 { get; set; }
+        public global::Vercel.GetAliasResponseProtectionBypassVariant4Scope? Type5858 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetAliasResponseProtectionBypassVariant3? Type5859 { get; set; }
+        public global::Vercel.DeleteAliasResponse? Type5859 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetAliasResponseProtectionBypassVariant3Scope? Type5860 { get; set; }
+        public global::Vercel.DeleteAliasResponseStatus? Type5860 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetAliasResponseProtectionBypassVariant4? Type5861 { get; set; }
+        public global::Vercel.GetCertByIdResponse? Type5861 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetAliasResponseProtectionBypassVariant4Scope? Type5862 { get; set; }
+        public global::Vercel.GetCertsResponse? Type5862 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.DeleteAliasResponse? Type5863 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetCertsResponseCert>? Type5863 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.DeleteAliasResponseStatus? Type5864 { get; set; }
+        public global::Vercel.GetCertsResponseCert? Type5864 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetCertByIdResponse? Type5865 { get; set; }
+        public global::Vercel.IssueCertResponse? Type5865 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetCertsResponse? Type5866 { get; set; }
+        public global::Vercel.UploadCertResponse? Type5866 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetCertsResponseCert>? Type5867 { get; set; }
+        public global::Vercel.GetDeploymentsResponse? Type5867 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetCertsResponseCert? Type5868 { get; set; }
+        public global::System.Collections.Generic.IList<global::Vercel.GetDeploymentsResponseDeployment>? Type5868 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.IssueCertResponse? Type5869 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeployment? Type5869 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.UploadCertResponse? Type5870 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentAliasError? Type5870 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponse? Type5871 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentAttribution? Type5871 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::Vercel.GetDeploymentsResponseDeployment>? Type5872 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentAttributionCommitMeta? Type5872 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeployment? Type5873 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentAttributionGitUser? Type5873 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentAliasError? Type5874 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentAttributionVercelUser? Type5874 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentAttribution? Type5875 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentChecks? Type5875 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentAttributionCommitMeta? Type5876 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentChecksDeploymentAlias? Type5876 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentAttributionGitUser? Type5877 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentChecksDeploymentAliasState? Type5877 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentAttributionVercelUser? Type5878 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentChecksConclusion? Type5878 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentChecks? Type5879 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentChecksState? Type5879 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentChecksDeploymentAlias? Type5880 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentCreator? Type5880 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentChecksDeploymentAliasState? Type5881 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentCreatorType? Type5881 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentChecksConclusion? Type5882 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentCustomEnvironment? Type5882 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentChecksState? Type5883 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentManualProvisioning? Type5883 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentCreator? Type5884 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentManualProvisioningState? Type5884 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentCreatorType? Type5885 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentOomReport? Type5885 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentCustomEnvironment? Type5886 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentPlatform? Type5886 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentManualProvisioning? Type5887 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentPlatformCreator? Type5887 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentManualProvisioningState? Type5888 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentPlatformOrigin? Type5888 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentOomReport? Type5889 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentPlatformOriginType? Type5889 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentPlatform? Type5890 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentPlatformSource? Type5890 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentPlatformCreator? Type5891 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettings? Type5891 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentPlatformOrigin? Type5892 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsFramework? Type5892 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentPlatformOriginType? Type5893 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsGitComments? Type5893 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentPlatformSource? Type5894 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsNodeVersion? Type5894 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettings? Type5895 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsSpeedInsights? Type5895 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsFramework? Type5896 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsVercelFlags? Type5896 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsGitComments? Type5897 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsWebAnalytics? Type5897 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsNodeVersion? Type5898 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentReadyState? Type5898 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsSpeedInsights? Type5899 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentReadySubstate? Type5899 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsVercelFlags? Type5900 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentSeatBlock? Type5900 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentProjectSettingsWebAnalytics? Type5901 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentSeatBlockBlockCode? Type5901 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentReadyState? Type5902 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentSeatBlockGitProvider? Type5902 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentReadySubstate? Type5903 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentSource? Type5903 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentSeatBlock? Type5904 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentState? Type5904 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentSeatBlockBlockCode? Type5905 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentTarget? Type5905 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentSeatBlockGitProvider? Type5906 { get; set; }
+        public global::Vercel.GetDeploymentsResponseDeploymentType? Type5906 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentSource? Type5907 { get; set; }
+        public global::Vercel.DeleteDeploymentResponse? Type5907 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentState? Type5908 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentTarget? Type5909 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Vercel.GetDeploymentsResponseDeploymentType? Type5910 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Vercel.DeleteDeploymentResponse? Type5911 { get; set; }
-        /// <summary>
-        ///
-        /// </summary>
-        public global::Vercel.DeleteDeploymentResponseState? Type5912 { get; set; }
+        public global::Vercel.DeleteDeploymentResponseState? Type5908 { get; set; }
 
         /// <summary>
         ///
@@ -23975,411 +23959,411 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared4d5a5876dd584f34>? ListType71 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedfaf92fa84e99abdd>? ListType71 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedfaf92fa84e99abdd>? ListType72 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f45691814810f14Condition>? ListType72 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f45691814810f14Condition>? ListType73 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant3Slot>? ListType73 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant3Slot>? ListType74 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6ExcludeItem>>>? ListType74 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6ExcludeItem>>>? ListType75 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6ExcludeItem>>? ListType75 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6ExcludeItem>>? ListType76 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6ExcludeItem>? ListType76 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6ExcludeItem>? ListType77 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6IncludeItem>>>? ListType77 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6IncludeItem>>>? ListType78 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6IncludeItem>>? ListType78 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6IncludeItem>>? ListType79 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6IncludeItem>? ListType79 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6IncludeItem>? ListType80 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6Rule>? ListType80 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6Rule>? ListType81 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleCondition>? ListType81 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleCondition>? ListType82 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared29b35dda7b3e47c4>? ListType82 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared82154186cc88506c>? ListType83 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfiguration>? ListType83 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede7fa7575dde4720d>? ListType84 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cCronsDefinition>? ListType84 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared18cf6c9c9480cd61>? ListType85 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared7d4f4f5cff68219a>? ListType85 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared9554e4a81de92250>? ListType86 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToast>? ListType86 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2208dea57c17c8daEnvironment>? ListType87 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared470bc56668090392>? ListType87 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2208dea57c17c8daSource>? ListType88 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2>>? ListType88 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AnyOf<global::System.Collections.Generic.List<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1Item>, string>? ListType89 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cIpBucket>? ListType89 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1Item>? ListType90 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedbca3e7a986162538>? ListType90 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.AnyOf<global::System.Collections.Generic.List<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1Item>, string>? ListType91 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cOptionsAllowlistPath>? ListType91 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1Item>? ListType92 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxFailoverRegion>? ListType92 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemSource>? ListType93 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cService>? ListType93 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKShared25e1e81cf9eecd30LogHeaders?>? ListType94 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRule>? ListType94 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsLogHeaders?>? ListType95 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1Addresse>? ListType95 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedba1f75615f04b60c>? ListType96 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared82154186cc88506c>? ListType96 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedbca3e7a986162538>? ListType97 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede7fa7575dde4720d>? ListType97 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant1, string, global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant3>>? ListType98 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared9554e4a81de92250>? ListType98 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2e531c6dd7d2b280TargetItem>? ListType99 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2208dea57c17c8daEnvironment>? ListType99 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShareda4dd3b1b30ff7300>? ListType100 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2208dea57c17c8daSource>? ListType100 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem>>>? ListType101 { get; set; }
+        public global::Vercel.AnyOf<global::System.Collections.Generic.List<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1Item>, string>? ListType101 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem>>? ListType102 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1Item>? ListType102 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem>? ListType103 { get; set; }
+        public global::Vercel.AnyOf<global::System.Collections.Generic.List<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1Item>, string>? ListType103 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2ea6923996597ff4ExcludeItem>>>? ListType104 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1Item>? ListType104 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2ea6923996597ff4ExcludeItem>>? ListType105 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemSource>? ListType105 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2ea6923996597ff4ExcludeItem>? ListType106 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKShared25e1e81cf9eecd30LogHeaders?>? ListType106 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2f24cdccbdde3d24Variant>? ListType107 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsLogHeaders?>? ListType107 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared31ad55d5a9d0e802Item>? ListType108 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedba1f75615f04b60c>? ListType108 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared37c775f169729655Binding>? ListType109 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6c>? ListType109 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared37c775f169729655LivenessProbeHttpGetHttpHeader>? ListType110 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant1, string, global::Vercel.AutoSDKShared2c06e7f88512c8b8UiOptionVariant3>>? ListType110 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared39b84c098d962a66Entitlement>? ListType111 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2e531c6dd7d2b280TargetItem>? ListType111 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared39b84c098d962a66TeamPermission>? ListType112 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShareda4dd3b1b30ff7300>? ListType112 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared39b84c098d962a66TeamRole>? ListType113 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem>>>? ListType113 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2e531c6dd7d2b280>? ListType114 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem>>? ListType114 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShareda0db2c4b058f2749>? ListType115 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem>? ListType115 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedf010caf53b41f392>? ListType116 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2ea6923996597ff4ExcludeItem>>>? ListType116 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f45691814810f14>? ListType117 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2ea6923996597ff4ExcludeItem>>? ListType117 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared448ea965c003fe05JwksKey>? ListType118 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2ea6923996597ff4ExcludeItem>? ListType118 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigateLogHeaders?>? ListType119 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2f24cdccbdde3d24Variant>? ListType119 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared44c5e53073934a2bConditionGroupItem>? ListType120 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared31ad55d5a9d0e802Item>? ListType120 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared44c5e53073934a2bConditionGroupItemCondition>? ListType121 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared37c775f169729655Binding>? ListType121 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, double?, global::System.Collections.Generic.List<string>>? ListType122 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared37c775f169729655LivenessProbeHttpGetHttpHeader>? ListType122 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.AutoSDKShared470bc56668090392TargetItem>, global::Vercel.AutoSDKShared470bc56668090392Target?>? ListType123 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared39b84c098d962a66Entitlement>? ListType123 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared470bc56668090392TargetItem>? ListType124 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared39b84c098d962a66TeamPermission>? ListType124 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedef431bb3026a2de5>? ListType125 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared39b84c098d962a66TeamRole>? ListType125 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedab64e9622c80dc17>? ListType126 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2e531c6dd7d2b280>? ListType126 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKShared4c958b4a81a75558LogHeaders?>? ListType127 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShareda0db2c4b058f2749>? ListType127 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsLogHeaders?>? ListType128 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedf010caf53b41f392>? ListType128 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared29b35dda7b3e47c4>? ListType129 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f45691814810f14>? ListType129 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared4d5a5876dd584f34ConnectConfiguration>? ListType130 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared448ea965c003fe05JwksKey>? ListType130 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared4d5a5876dd584f34CronsDefinition>? ListType131 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKShared44c5e53073934a2bActionMitigateLogHeaders?>? ListType131 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared7d4f4f5cff68219a>? ListType132 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared44c5e53073934a2bConditionGroupItem>? ListType132 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared4d5a5876dd584f34DismissedToast>? ListType133 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared44c5e53073934a2bConditionGroupItemCondition>? ListType133 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared470bc56668090392>? ListType134 { get; set; }
+        public global::Vercel.OneOf<string, double?, global::System.Collections.Generic.List<string>>? ListType134 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant1, global::Vercel.AutoSDKShared4d5a5876dd584f34InternalRouteVariant2>>? ListType135 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.AutoSDKShared470bc56668090392TargetItem>, global::Vercel.AutoSDKShared470bc56668090392Target?>? ListType135 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared4d5a5876dd584f34IpBucket>? ListType136 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared470bc56668090392TargetItem>? ListType136 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared4d5a5876dd584f34OptionsAllowlistPath>? ListType137 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedef431bb3026a2de5>? ListType137 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared4d5a5876dd584f34SandboxFailoverRegion>? ListType138 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedab64e9622c80dc17>? ListType138 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared4d5a5876dd584f34Service>? ListType139 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKShared4c958b4a81a75558LogHeaders?>? ListType139 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared4d5a5876dd584f34TracingSamplingRule>? ListType140 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsLogHeaders?>? ListType140 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared4d5a5876dd584f34TrustedIpsVariant1Addresse>? ListType141 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb0ea9e8a9b37de26>? ListType141 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb0ea9e8a9b37de26>? ListType142 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede10df3c22a339c10>? ListType142 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede10df3c22a339c10>? ListType143 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKShared5461df8584cbc999Variant2LogHeaders?>? ListType143 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKShared5461df8584cbc999Variant2LogHeaders?>? ListType144 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShareda2a71ce8831cd3f8>? ListType144 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShareda2a71ce8831cd3f8>? ListType145 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared38e9af03824d67bc>? ListType145 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared38e9af03824d67bc>? ListType146 { get; set; }
+        public global::Vercel.OneOf<string, global::System.Collections.Generic.List<string>>? ListType146 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<string, global::System.Collections.Generic.List<string>>? ListType147 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared6bbdd9b0474e1d24TopicsVariant2Item>>? ListType147 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared6bbdd9b0474e1d24TopicsVariant2Item>>? ListType148 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared6bbdd9b0474e1d24TopicsVariant2Item>? ListType148 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared6bbdd9b0474e1d24TopicsVariant2Item>? ListType149 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared6ed60ada20c5170aCondition>? ListType149 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared6ed60ada20c5170aCondition>? ListType150 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared6ed60ada20c5170aConditionConditionGroupItem>? ListType150 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared6ed60ada20c5170aConditionConditionGroupItem>? ListType151 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared6ed60ada20c5170aConditionConditionGroupItemCondition>? ListType151 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared6ed60ada20c5170aConditionConditionGroupItemCondition>? ListType152 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared6ed60ada20c5170aIp>? ListType152 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared6ed60ada20c5170aIp>? ListType153 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKShared6ed60ada20c5170aLogHeaders?>? ListType153 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKShared6ed60ada20c5170aLogHeaders?>? ListType154 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2a792fc701a6e66d>? ListType154 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2a792fc701a6e66d>? ListType155 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant3Slot>? ListType155 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47FallthroughVariant3Slot>? ListType156 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target>>>>? ListType156 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target>>>>? ListType157 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target>>>? ListType157 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target>>>? ListType158 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target>>? ListType158 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target>>? ListType159 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target>? ListType159 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared76d2d4f0d6cc3e47Target>? ListType160 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared7d4f4f5cff68219aDomain>? ListType160 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared7d4f4f5cff68219aDomain>? ListType161 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared7d4f4f5cff68219aDomainVerificationItem>? ListType161 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared7d4f4f5cff68219aDomainVerificationItem>? ListType162 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared803d328dcef47295DeploymentSource>? ListType162 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared803d328dcef47295DeploymentSource>? ListType163 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceSource>? ListType163 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceSource>? ListType164 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared803d328dcef47295GitSource>? ListType164 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared803d328dcef47295GitSource>? ListType165 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared82154186cc88506cHaVariant1, global::Vercel.AutoSDKShared82154186cc88506cHaVariant2>>? ListType165 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared82154186cc88506cHaVariant1, global::Vercel.AutoSDKShared82154186cc88506cHaVariant2>>? ListType166 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant1, global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant2>>? ListType166 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant1, global::Vercel.AutoSDKShared82154186cc88506cMissingItemVariant2>>? ListType167 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared82154186cc88506cTransform>? ListType167 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared82154186cc88506cTransform>? ListType168 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared82df63ae69e9ea93Variant1Item>? ListType168 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared82df63ae69e9ea93Variant1Item>? ListType169 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared82df63ae69e9ea93Variant2Item>? ListType169 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared82df63ae69e9ea93Variant2Item>? ListType170 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared82df63ae69e9ea93Variant3Item>? ListType170 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared82df63ae69e9ea93Variant3Item>? ListType171 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared8422af433e1bf486Build>? ListType171 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared8422af433e1bf486Build>? ListType172 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared9695014f26667713>? ListType172 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -24431,291 +24415,291 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared9f8c0585e20078fcSamplingItem>? ListType185 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.ACLAction>? ListType185 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1DeploymentEnvironment>? ListType186 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared9f8c0585e20078fcSamplingItem>? ListType186 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1LogSource>? ListType187 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1DeploymentEnvironment>? ListType187 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShareda15210bade0a7c46ChangedResource>? ListType188 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared9f8c0585e20078fcFilterV2FilterVariant1LogSource>? ListType188 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShareda4dd3b1b30ff7300Condition>? ListType189 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShareda15210bade0a7c46ChangedResource>? ListType189 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedab64e9622c80dc17Ha>? ListType190 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShareda4dd3b1b30ff7300Condition>? ListType190 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedab64e9622c80dc17MissingItem>? ListType191 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedab64e9622c80dc17Ha>? ListType191 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKSharedab64e9622c80dc17MitigateLogHeaders?>? ListType192 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedab64e9622c80dc17MissingItem>? ListType192 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseHa>? ListType193 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKSharedab64e9622c80dc17MitigateLogHeaders?>? ListType193 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseMissingItem>? ListType194 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseHa>? ListType194 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedab64e9622c80dc17Transform>? ListType195 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedab64e9622c80dc17ResponseMissingItem>? ListType195 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedba1f75615f04b60c>>? ListType196 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedab64e9622c80dc17Transform>? ListType196 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant2>>? ListType197 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedba1f75615f04b60c>>? ListType197 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant2>>? ListType198 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant2>>? ListType198 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant2>>? ListType199 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant2>>? ListType199 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedaf3e034232cd964aUiOption>? ListType200 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant2>>? ListType200 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedaffe019c1a64bb83RoutingItem>? ListType201 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedaf3e034232cd964aUiOption>? ListType201 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigateLogHeaders?>? ListType202 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedaffe019c1a64bb83RoutingItem>? ListType202 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb38a5d43be350768ConditionGroupItem>? ListType203 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKSharedb38a5d43be350768ActionMitigateLogHeaders?>? ListType203 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb38a5d43be350768ConditionGroupItemCondition>? ListType204 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb38a5d43be350768ConditionGroupItem>? ListType204 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb4cb9cbf2561e851Condition>? ListType205 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb38a5d43be350768ConditionGroupItemCondition>? ListType205 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItem>? ListType206 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb4cb9cbf2561e851Condition>? ListType206 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItemCondition>? ListType207 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItem>? ListType207 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb4cb9cbf2561e851Ip>? ListType208 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItemCondition>? ListType208 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKSharedb4cb9cbf2561e851LogHeaders?>? ListType209 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb4cb9cbf2561e851Ip>? ListType209 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedba1f75615f04b60cTransformItem>? ListType210 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKSharedb4cb9cbf2561e851LogHeaders?>? ListType210 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>>>>? ListType211 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedba1f75615f04b60cTransformItem>? ListType211 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>>>? ListType212 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>>>>? ListType212 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>>? ListType213 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>>>? ListType213 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>? ListType214 { get; set; }
+        public global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>>? ListType214 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared90103a1814ebf3a8>? ListType215 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>? ListType215 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedbca3e7a986162538Build>? ListType216 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared90103a1814ebf3a8>? ListType216 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2>>? ListType217 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedbca3e7a986162538Build>? ListType217 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc30663411f76e3c9IpBucket>? ListType218 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2>>? ListType218 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb49e2a5785c6f473>? ListType219 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc30663411f76e3c9IpBucket>? ListType219 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared9f8c0585e20078fc>? ListType220 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb49e2a5785c6f473>? ListType220 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc97b32abf27d8b81QueryStringItem>? ListType221 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKShared9f8c0585e20078fc>? ListType221 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc97b32abf27d8b81Header>? ListType222 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc97b32abf27d8b81QueryStringItem>? ListType222 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedcdaac4bd3d3c6643ScheduleFunctionEntrypoint>? ListType223 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc97b32abf27d8b81Header>? ListType223 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedce0c7f50e384322cStage>? ListType224 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedcdaac4bd3d3c6643ScheduleFunctionEntrypoint>? ListType224 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiOption>? ListType225 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedce0c7f50e384322cStage>? ListType225 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiOption>? ListType226 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant5UiOption>? ListType226 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12GitProvider>? ListType227 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant6UiOption>? ListType227 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedec1121c0746f62d9>? ListType228 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedceccd47983fcf9deVariant12GitProvider>? ListType228 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede064e44b973b9ad0Domain>? ListType229 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedec1121c0746f62d9>? ListType229 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede064e44b973b9ad0DomainVerificationItem>? ListType230 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede064e44b973b9ad0Domain>? ListType230 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant1DeployHook>? ListType231 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede064e44b973b9ad0DomainVerificationItem>? ListType231 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant2DeployHook>? ListType232 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant1DeployHook>? ListType232 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant3DeployHook>? ListType233 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant2DeployHook>? ListType233 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant4DeployHook>? ListType234 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant3DeployHook>? ListType234 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant5DeployHook>? ListType235 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant4DeployHook>? ListType235 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant6DeployHook>? ListType236 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant5DeployHook>? ListType236 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant7DeployHook>? ListType237 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant6DeployHook>? ListType237 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant8DeployHook>? ListType238 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant7DeployHook>? ListType238 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede10df3c22a339c10ConditionGroupItem>? ListType239 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant8DeployHook>? ListType239 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede10df3c22a339c10ConditionGroupItemCondition>? ListType240 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede10df3c22a339c10ConditionGroupItem>? ListType240 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigateLogHeaders?>? ListType241 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede10df3c22a339c10ConditionGroupItemCondition>? ListType241 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc30663411f76e3c9>? ListType242 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKSharede10df3c22a339c10ActionMitigateLogHeaders?>? ListType242 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede68d1538d48d5cc1Variant3Slot>? ListType243 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc30663411f76e3c9>? ListType243 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb3e24a966396db5b>? ListType244 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede68d1538d48d5cc1Variant3Slot>? ListType244 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede7fa7575dde4720dCondition>? ListType245 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb3e24a966396db5b>? ListType245 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedeb5fe0ead5db865cCondition>? ListType246 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede7fa7575dde4720dCondition>? ListType246 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedeb5fe0ead5db865cConditionConditionGroupItem>? ListType247 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedeb5fe0ead5db865cCondition>? ListType247 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedeb5fe0ead5db865cConditionConditionGroupItemCondition>? ListType248 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedeb5fe0ead5db865cConditionConditionGroupItem>? ListType248 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedeb5fe0ead5db865cIp>? ListType249 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedeb5fe0ead5db865cConditionConditionGroupItemCondition>? ListType249 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKSharedeb5fe0ead5db865cLogHeaders?>? ListType250 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedeb5fe0ead5db865cIp>? ListType250 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant1, global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant2>>? ListType251 { get; set; }
+        public global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKSharedeb5fe0ead5db865cLogHeaders?>? ListType251 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant1, global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant2>>? ListType252 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant1, global::Vercel.AutoSDKSharedec1121c0746f62d9HaVariant2>>? ListType252 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedf29c7949a8a48e4aCheck>? ListType253 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant1, global::Vercel.AutoSDKSharedec1121c0746f62d9MissingItemVariant2>>? ListType253 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedfabd867705b7541aStage>? ListType254 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedf29c7949a8a48e4aCheck>? ListType254 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1, string, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3>>? ListType255 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedfabd867705b7541aStage>? ListType255 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::Vercel.ACLAction>? ListType256 { get; set; }
+        public global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant1, string, global::Vercel.AutoSDKSharedfc279ab2bedb9f61UiOptionVariant3>>? ListType256 { get; set; }
         /// <summary>
         ///
         /// </summary>

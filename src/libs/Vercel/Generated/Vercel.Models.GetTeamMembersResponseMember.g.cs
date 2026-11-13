@@ -82,6 +82,14 @@ namespace Vercel
         public global::Vercel.GetTeamMembersResponseMemberJoinedFrom? JoinedFrom { get; set; }
 
         /// <summary>
+        /// The source controlling this member's team access and roles. Individual permissions may have a different source. This does not replace authorization checks.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("membershipSource")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.GetTeamMembersResponseMemberMembershipSourceJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.GetTeamMembersResponseMemberMembershipSource MembershipSource { get; set; }
+
+        /// <summary>
         /// The name of this user.<br/>
         /// Example: Jane Doe
         /// </summary>
@@ -144,6 +152,9 @@ namespace Vercel
         /// The email of this member.<br/>
         /// Example: jane.doe@example.com
         /// </param>
+        /// <param name="membershipSource">
+        /// The source controlling this member's team access and roles. Individual permissions may have a different source. This does not replace authorization checks.
+        /// </param>
         /// <param name="role">
         /// Role of this user in the team.<br/>
         /// Example: OWNER
@@ -193,6 +204,7 @@ namespace Vercel
             bool confirmed,
             double createdAt,
             string email,
+            global::Vercel.GetTeamMembersResponseMemberMembershipSource membershipSource,
             global::Vercel.GetTeamMembersResponseMemberRole role,
             string uid,
             string username,
@@ -216,6 +228,7 @@ namespace Vercel
             this.Gitlab = gitlab;
             this.IsEnterpriseManaged = isEnterpriseManaged;
             this.JoinedFrom = joinedFrom;
+            this.MembershipSource = membershipSource;
             this.Name = name;
             this.Projects = projects;
             this.Role = role;

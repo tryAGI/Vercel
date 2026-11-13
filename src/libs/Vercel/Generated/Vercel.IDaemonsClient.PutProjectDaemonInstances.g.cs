@@ -18,6 +18,9 @@ namespace Vercel
         /// The deployment target for the daemon configuration.<br/>
         /// Default Value: production
         /// </param>
+        /// <param name="customEnvironmentId">
+        /// The ID of the custom environment of the daemon, instead of `target`.
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -34,6 +37,7 @@ namespace Vercel
 
             global::System.Collections.Generic.Dictionary<string, int?> request,
             global::Vercel.PutProjectDaemonInstancesTarget? target = default,
+            string? customEnvironmentId = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -51,6 +55,9 @@ namespace Vercel
         /// <param name="target">
         /// The deployment target for the daemon configuration.<br/>
         /// Default Value: production
+        /// </param>
+        /// <param name="customEnvironmentId">
+        /// The ID of the custom environment of the daemon, instead of `target`.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -68,6 +75,7 @@ namespace Vercel
 
             global::System.Collections.Generic.Dictionary<string, int?> request,
             global::Vercel.PutProjectDaemonInstancesTarget? target = default,
+            string? customEnvironmentId = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
@@ -86,6 +94,9 @@ namespace Vercel
         /// The deployment target for the daemon configuration.<br/>
         /// Default Value: production
         /// </param>
+        /// <param name="customEnvironmentId">
+        /// The ID of the custom environment of the daemon, instead of `target`.
+        /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
         /// </param>
@@ -99,6 +110,7 @@ namespace Vercel
             string idOrName,
             string daemonName,
             global::Vercel.PutProjectDaemonInstancesTarget? target = default,
+            string? customEnvironmentId = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,

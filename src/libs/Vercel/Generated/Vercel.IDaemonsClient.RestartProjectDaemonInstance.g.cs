@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Force restart a project daemon instance<br/>
-        /// Force restart a running production daemon instance. The new container starts asynchronously after the restart is accepted.
+        /// Force restart a running daemon instance in production, or in a custom environment when `customEnvironmentId` is given. The new container starts asynchronously after the restart is accepted.
         /// </summary>
         /// <param name="idOrName">
         /// The unique project identifier or the project name
@@ -16,6 +16,9 @@ namespace Vercel
         /// </param>
         /// <param name="instanceId">
         /// The ID of the daemon instance to restart
+        /// </param>
+        /// <param name="customEnvironmentId">
+        /// The ID of the custom environment of the instance. Production instances are restarted when omitted.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -30,13 +33,14 @@ namespace Vercel
             string idOrName,
             string daemonName,
             string instanceId,
+            string? customEnvironmentId = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Force restart a project daemon instance<br/>
-        /// Force restart a running production daemon instance. The new container starts asynchronously after the restart is accepted.
+        /// Force restart a running daemon instance in production, or in a custom environment when `customEnvironmentId` is given. The new container starts asynchronously after the restart is accepted.
         /// </summary>
         /// <param name="idOrName">
         /// The unique project identifier or the project name
@@ -46,6 +50,9 @@ namespace Vercel
         /// </param>
         /// <param name="instanceId">
         /// The ID of the daemon instance to restart
+        /// </param>
+        /// <param name="customEnvironmentId">
+        /// The ID of the custom environment of the instance. Production instances are restarted when omitted.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -60,6 +67,7 @@ namespace Vercel
             string idOrName,
             string daemonName,
             string instanceId,
+            string? customEnvironmentId = default,
             string? teamId = default,
             string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
