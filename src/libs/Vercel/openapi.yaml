@@ -29422,7 +29422,7 @@
                       "type": "array"
                     },
                     {
-                      "$ref": "#/components/schemas/AutoSDKSharedf4f6de8967844f78"
+                      "$ref": "#/components/schemas/AutoSDKSharedfc4bd5d7b0e51454"
                     }
                   ]
                 }
@@ -29670,7 +29670,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKSharedaf1cf971744a2ae1"
+                  "$ref": "#/components/schemas/AutoSDKShareda7f579f4cee9d4f4"
                 }
               }
             }
@@ -30146,7 +30146,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKSharedf4f6de8967844f78"
+                  "$ref": "#/components/schemas/AutoSDKSharedfc4bd5d7b0e51454"
                 }
               }
             }
@@ -30297,7 +30297,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKShared90103a1814ebf3a8"
+                  "$ref": "#/components/schemas/AutoSDKSharedab96da75e8212e8f"
                 }
               }
             }
@@ -30332,13 +30332,13 @@
           },
           {
             "name": "includeDeliveryStats",
-            "description": "Include `deliveryStats` with the delivery health of the drain over the last 24 hours.",
+            "description": "Include `deliveryStats` with the delivery health of the drain over the last 24 hours. Ignored for teams without drain delivery metrics.",
             "in": "query",
             "required": false,
             "schema": {
               "type": "boolean",
               "default": false,
-              "description": "Include `deliveryStats` with the delivery health of the drain over the last 24 hours."
+              "description": "Include `deliveryStats` with the delivery health of the drain over the last 24 hours. Ignored for teams without drain delivery metrics."
             }
           },
           {
@@ -30379,7 +30379,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/AutoSDKSharedaf1cf971744a2ae1"
+                  "$ref": "#/components/schemas/AutoSDKShareda7f579f4cee9d4f4"
                 }
               }
             }
@@ -113705,6 +113705,404 @@
           }
         }
       },
+      "AutoSDKShared0001bb8e789a120e": {
+        "properties": {
+          "createdAt": {
+            "type": "number"
+          },
+          "delivery": {
+            "$ref": "#/components/schemas/AutoSDKSharedfa633702cac2aa68"
+          },
+          "disabledAt": {
+            "type": "number"
+          },
+          "disabledBy": {
+            "type": "string"
+          },
+          "disabledReason": {
+            "type": "string",
+            "enum": [
+              "account-plan-downgrade",
+              "disabled-by-admin",
+              "disabled-by-owner",
+              "feature-not-available",
+              "limits-exceeded"
+            ]
+          },
+          "firstErrorTimestamp": {
+            "type": "number"
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "ownerId": {
+            "type": "string"
+          },
+          "projectIds": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "sampling": {
+            "items": {
+              "properties": {
+                "env": {
+                  "type": "string",
+                  "enum": [
+                    "preview",
+                    "production"
+                  ]
+                },
+                "rate": {
+                  "type": "number"
+                },
+                "requestPath": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "head_sampling"
+                  ]
+                }
+              },
+              "required": [
+                "rate",
+                "type"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "schemas": {
+            "properties": {
+              "ai_gateway": {
+                "type": "object"
+              },
+              "analytics": {
+                "type": "object"
+              },
+              "audit_log": {
+                "type": "object"
+              },
+              "connect": {
+                "type": "object"
+              },
+              "log": {
+                "type": "object"
+              },
+              "speed_insights": {
+                "type": "object"
+              },
+              "trace": {
+                "type": "object"
+              }
+            },
+            "type": "object"
+          },
+          "source": {
+            "oneOf": [
+              {
+                "properties": {
+                  "defaultFor": {
+                    "type": "string",
+                    "enum": [
+                      "eve-tracing",
+                      "nextjs-tracing"
+                    ],
+                    "description": "Informational marker for a system-owned default drain."
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "self-served"
+                    ]
+                  }
+                },
+                "required": [
+                  "kind"
+                ],
+                "type": "object"
+              },
+              {
+                "properties": {
+                  "externalResourceId": {
+                    "type": "string"
+                  },
+                  "integrationConfigurationId": {
+                    "type": "string"
+                  },
+                  "integrationId": {
+                    "type": "string"
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "integration"
+                    ]
+                  },
+                  "resourceId": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "integrationConfigurationId",
+                  "integrationId",
+                  "kind"
+                ],
+                "type": "object"
+              }
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "disabled",
+              "enabled",
+              "errored"
+            ]
+          },
+          "teamId": {
+            "nullable": true,
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "number"
+          },
+          "deliveryStats": {
+            "properties": {
+              "attempts": {
+                "type": "number",
+                "description": "Finished deliveries in the window: delivered plus finally failed."
+              },
+              "failures": {
+                "type": "number",
+                "description": "Deliveries that finally failed in the window."
+              },
+              "state": {
+                "type": "string",
+                "enum": [
+                  "failing",
+                  "healthy",
+                  "unknown"
+                ]
+              },
+              "totalFailedDeliveries": {
+                "type": "number",
+                "description": "Deliveries that finally failed in the window, after any automatic retries."
+              },
+              "totalRetriedDeliveries": {
+                "type": "number",
+                "description": "Deliveries whose first try failed and were scheduled for an automatic retry in the window, whatever their final outcome."
+              },
+              "totalSuccessfulDeliveries": {
+                "type": "number",
+                "description": "Deliveries delivered in the window, on the first try or after automatic retries."
+              },
+              "window": {
+                "type": "string",
+                "enum": [
+                  "24h"
+                ]
+              }
+            },
+            "required": [
+              "attempts",
+              "failures",
+              "state",
+              "totalFailedDeliveries",
+              "totalRetriedDeliveries",
+              "totalSuccessfulDeliveries",
+              "window"
+            ],
+            "type": "object",
+            "description": "Delivery health of a drain over the last 24 hours, counted on finished deliveries (a delivery saved by an automatic retry counts once, as delivered): `failing` when more than 5 deliveries failed and they are at least 1% of all finished deliveries, `healthy` otherwise, and `unknown` when no delivery finished in the window."
+          },
+          "filterV2": {
+            "properties": {
+              "filter": {
+                "oneOf": [
+                  {
+                    "properties": {
+                      "deployment": {
+                        "properties": {
+                          "environments": {
+                            "items": {
+                              "type": "string",
+                              "enum": [
+                                "preview",
+                                "production"
+                              ]
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "log": {
+                        "properties": {
+                          "legacy_excludeCachedStaticAssetLogs": {
+                            "type": "boolean",
+                            "enum": [
+                              false,
+                              true
+                            ]
+                          },
+                          "sources": {
+                            "items": {
+                              "type": "string",
+                              "enum": [
+                                "build",
+                                "edge",
+                                "external",
+                                "firewall",
+                                "lambda",
+                                "redirect",
+                                "static"
+                              ]
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "project": {
+                        "properties": {
+                          "ids": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "basic"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type"
+                    ],
+                    "type": "object"
+                  },
+                  {
+                    "properties": {
+                      "text": {
+                        "type": "string"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "odata"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "text",
+                      "type"
+                    ],
+                    "type": "object"
+                  }
+                ]
+              },
+              "version": {
+                "type": "string",
+                "enum": [
+                  "v2"
+                ]
+              }
+            },
+            "required": [
+              "filter",
+              "version"
+            ],
+            "type": "object"
+          },
+          "integrationConfigurationUri": {
+            "type": "string"
+          },
+          "integrationIcon": {
+            "type": "string"
+          },
+          "integrationWebsite": {
+            "type": "string"
+          },
+          "projectAccess": {
+            "oneOf": [
+              {
+                "properties": {
+                  "access": {
+                    "type": "string",
+                    "enum": [
+                      "all"
+                    ]
+                  },
+                  "managedBy": {
+                    "type": "string",
+                    "enum": [
+                      "drain",
+                      "integration"
+                    ]
+                  }
+                },
+                "required": [
+                  "access",
+                  "managedBy"
+                ],
+                "type": "object"
+              },
+              {
+                "properties": {
+                  "access": {
+                    "type": "string",
+                    "enum": [
+                      "some"
+                    ]
+                  },
+                  "projectIds": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array"
+                  },
+                  "managedBy": {
+                    "type": "string",
+                    "enum": [
+                      "drain",
+                      "integration"
+                    ]
+                  }
+                },
+                "required": [
+                  "access",
+                  "managedBy",
+                  "projectIds"
+                ],
+                "type": "object"
+              }
+            ]
+          }
+        },
+        "required": [
+          "createdAt",
+          "delivery",
+          "id",
+          "name",
+          "ownerId",
+          "schemas",
+          "source",
+          "updatedAt"
+        ],
+        "type": "object"
+      },
       "AutoSDKShared0603220ab3785539": {
         "properties": {
           "default": {
@@ -114228,6 +114626,12 @@
       "AutoSDKShared09502d2961d7cce5": {
         "items": {
           "$ref": "#/components/schemas/AutoSDKSharedfaf92fa84e99abdd"
+        },
+        "type": "array"
+      },
+      "AutoSDKShared0b826f992bd75d02": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKSharedab96da75e8212e8f"
         },
         "type": "array"
       },
@@ -124823,325 +125227,6 @@
         ],
         "type": "object"
       },
-      "AutoSDKShared90103a1814ebf3a8": {
-        "properties": {
-          "createdAt": {
-            "type": "number"
-          },
-          "delivery": {
-            "$ref": "#/components/schemas/AutoSDKSharedfa633702cac2aa68"
-          },
-          "disabledAt": {
-            "type": "number"
-          },
-          "disabledBy": {
-            "type": "string"
-          },
-          "disabledReason": {
-            "type": "string",
-            "enum": [
-              "account-plan-downgrade",
-              "disabled-by-admin",
-              "disabled-by-owner",
-              "feature-not-available",
-              "limits-exceeded"
-            ]
-          },
-          "firstErrorTimestamp": {
-            "type": "number"
-          },
-          "id": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "ownerId": {
-            "type": "string"
-          },
-          "projectIds": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "sampling": {
-            "items": {
-              "properties": {
-                "env": {
-                  "type": "string",
-                  "enum": [
-                    "preview",
-                    "production"
-                  ]
-                },
-                "rate": {
-                  "type": "number"
-                },
-                "requestPath": {
-                  "type": "string"
-                },
-                "type": {
-                  "type": "string",
-                  "enum": [
-                    "head_sampling"
-                  ]
-                }
-              },
-              "required": [
-                "rate",
-                "type"
-              ],
-              "type": "object"
-            },
-            "type": "array"
-          },
-          "schemas": {
-            "properties": {
-              "ai_gateway": {
-                "type": "object"
-              },
-              "analytics": {
-                "type": "object"
-              },
-              "audit_log": {
-                "type": "object"
-              },
-              "connect": {
-                "type": "object"
-              },
-              "log": {
-                "type": "object"
-              },
-              "speed_insights": {
-                "type": "object"
-              },
-              "trace": {
-                "type": "object"
-              }
-            },
-            "type": "object"
-          },
-          "source": {
-            "oneOf": [
-              {
-                "properties": {
-                  "defaultFor": {
-                    "type": "string",
-                    "enum": [
-                      "eve-tracing",
-                      "nextjs-tracing"
-                    ],
-                    "description": "Informational marker for a system-owned default drain."
-                  },
-                  "kind": {
-                    "type": "string",
-                    "enum": [
-                      "self-served"
-                    ]
-                  }
-                },
-                "required": [
-                  "kind"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "externalResourceId": {
-                    "type": "string"
-                  },
-                  "integrationConfigurationId": {
-                    "type": "string"
-                  },
-                  "integrationId": {
-                    "type": "string"
-                  },
-                  "kind": {
-                    "type": "string",
-                    "enum": [
-                      "integration"
-                    ]
-                  },
-                  "resourceId": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "integrationConfigurationId",
-                  "integrationId",
-                  "kind"
-                ],
-                "type": "object"
-              }
-            ]
-          },
-          "status": {
-            "type": "string",
-            "enum": [
-              "disabled",
-              "enabled",
-              "errored"
-            ]
-          },
-          "teamId": {
-            "nullable": true,
-            "type": "string"
-          },
-          "updatedAt": {
-            "type": "number"
-          },
-          "deliveryStats": {
-            "properties": {
-              "attempts": {
-                "type": "number",
-                "description": "Finished deliveries in the window: delivered plus finally failed."
-              },
-              "failures": {
-                "type": "number",
-                "description": "Deliveries that finally failed in the window, after any automatic retries."
-              },
-              "state": {
-                "type": "string",
-                "enum": [
-                  "failing",
-                  "healthy",
-                  "unknown"
-                ]
-              },
-              "window": {
-                "type": "string",
-                "enum": [
-                  "24h"
-                ]
-              }
-            },
-            "required": [
-              "attempts",
-              "failures",
-              "state",
-              "window"
-            ],
-            "type": "object",
-            "description": "Delivery health of a drain over the last 24 hours, counted on finished deliveries (a delivery saved by an automatic retry counts once, as delivered): `failing` when more than 5 deliveries failed and they are at least 1% of all finished deliveries, `healthy` otherwise, and `unknown` when no delivery finished in the window."
-          },
-          "filterV2": {
-            "properties": {
-              "filter": {
-                "oneOf": [
-                  {
-                    "properties": {
-                      "deployment": {
-                        "properties": {
-                          "environments": {
-                            "items": {
-                              "type": "string",
-                              "enum": [
-                                "preview",
-                                "production"
-                              ]
-                            },
-                            "type": "array"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "log": {
-                        "properties": {
-                          "legacy_excludeCachedStaticAssetLogs": {
-                            "type": "boolean",
-                            "enum": [
-                              false,
-                              true
-                            ]
-                          },
-                          "sources": {
-                            "items": {
-                              "type": "string",
-                              "enum": [
-                                "build",
-                                "edge",
-                                "external",
-                                "firewall",
-                                "lambda",
-                                "redirect",
-                                "static"
-                              ]
-                            },
-                            "type": "array"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "project": {
-                        "properties": {
-                          "ids": {
-                            "items": {
-                              "type": "string"
-                            },
-                            "type": "array"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "type": {
-                        "type": "string",
-                        "enum": [
-                          "basic"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "type"
-                    ],
-                    "type": "object"
-                  },
-                  {
-                    "properties": {
-                      "text": {
-                        "type": "string"
-                      },
-                      "type": {
-                        "type": "string",
-                        "enum": [
-                          "odata"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "text",
-                      "type"
-                    ],
-                    "type": "object"
-                  }
-                ]
-              },
-              "version": {
-                "type": "string",
-                "enum": [
-                  "v2"
-                ]
-              }
-            },
-            "required": [
-              "filter",
-              "version"
-            ],
-            "type": "object"
-          }
-        },
-        "required": [
-          "createdAt",
-          "delivery",
-          "id",
-          "name",
-          "ownerId",
-          "schemas",
-          "source",
-          "updatedAt"
-        ],
-        "type": "object"
-      },
       "AutoSDKShared9213b55e2a5cf1ce": {
         "additionalProperties": {
           "$ref": "#/components/schemas/AutoSDKSharedafa4bcd6bd044b8b"
@@ -128673,388 +128758,15 @@
         "type": "object",
         "description": "Requested and authorized operations when `checkPermissions` is used. Legacy `includePermissions` responses contain a broader, non-authoritative permission summary."
       },
-      "AutoSDKShared9f8c0585e20078fc": {
-        "properties": {
-          "createdAt": {
-            "type": "number"
+      "AutoSDKShared9d9b15d71f2603e1": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/AutoSDKShared0b826f992bd75d02"
           },
-          "delivery": {
-            "$ref": "#/components/schemas/AutoSDKSharedfa633702cac2aa68"
-          },
-          "disabledAt": {
-            "type": "number"
-          },
-          "disabledBy": {
-            "type": "string"
-          },
-          "disabledReason": {
-            "type": "string",
-            "enum": [
-              "account-plan-downgrade",
-              "disabled-by-admin",
-              "disabled-by-owner",
-              "feature-not-available",
-              "limits-exceeded"
-            ]
-          },
-          "firstErrorTimestamp": {
-            "type": "number"
-          },
-          "id": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "ownerId": {
-            "type": "string"
-          },
-          "projectIds": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "sampling": {
-            "items": {
-              "properties": {
-                "env": {
-                  "type": "string",
-                  "enum": [
-                    "preview",
-                    "production"
-                  ]
-                },
-                "rate": {
-                  "type": "number"
-                },
-                "requestPath": {
-                  "type": "string"
-                },
-                "type": {
-                  "type": "string",
-                  "enum": [
-                    "head_sampling"
-                  ]
-                }
-              },
-              "required": [
-                "rate",
-                "type"
-              ],
-              "type": "object"
-            },
-            "type": "array"
-          },
-          "schemas": {
-            "properties": {
-              "ai_gateway": {
-                "type": "object"
-              },
-              "analytics": {
-                "type": "object"
-              },
-              "audit_log": {
-                "type": "object"
-              },
-              "connect": {
-                "type": "object"
-              },
-              "log": {
-                "type": "object"
-              },
-              "speed_insights": {
-                "type": "object"
-              },
-              "trace": {
-                "type": "object"
-              }
-            },
-            "type": "object"
-          },
-          "source": {
-            "oneOf": [
-              {
-                "properties": {
-                  "defaultFor": {
-                    "type": "string",
-                    "enum": [
-                      "eve-tracing",
-                      "nextjs-tracing"
-                    ],
-                    "description": "Informational marker for a system-owned default drain."
-                  },
-                  "kind": {
-                    "type": "string",
-                    "enum": [
-                      "self-served"
-                    ]
-                  }
-                },
-                "required": [
-                  "kind"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "externalResourceId": {
-                    "type": "string"
-                  },
-                  "integrationConfigurationId": {
-                    "type": "string"
-                  },
-                  "integrationId": {
-                    "type": "string"
-                  },
-                  "kind": {
-                    "type": "string",
-                    "enum": [
-                      "integration"
-                    ]
-                  },
-                  "resourceId": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "integrationConfigurationId",
-                  "integrationId",
-                  "kind"
-                ],
-                "type": "object"
-              }
-            ]
-          },
-          "status": {
-            "type": "string",
-            "enum": [
-              "disabled",
-              "enabled",
-              "errored"
-            ]
-          },
-          "teamId": {
-            "nullable": true,
-            "type": "string"
-          },
-          "updatedAt": {
-            "type": "number"
-          },
-          "deliveryStats": {
-            "properties": {
-              "attempts": {
-                "type": "number",
-                "description": "Finished deliveries in the window: delivered plus finally failed."
-              },
-              "failures": {
-                "type": "number",
-                "description": "Deliveries that finally failed in the window, after any automatic retries."
-              },
-              "state": {
-                "type": "string",
-                "enum": [
-                  "failing",
-                  "healthy",
-                  "unknown"
-                ]
-              },
-              "window": {
-                "type": "string",
-                "enum": [
-                  "24h"
-                ]
-              }
-            },
-            "required": [
-              "attempts",
-              "failures",
-              "state",
-              "window"
-            ],
-            "type": "object",
-            "description": "Delivery health of a drain over the last 24 hours, counted on finished deliveries (a delivery saved by an automatic retry counts once, as delivered): `failing` when more than 5 deliveries failed and they are at least 1% of all finished deliveries, `healthy` otherwise, and `unknown` when no delivery finished in the window."
-          },
-          "filterV2": {
-            "properties": {
-              "filter": {
-                "oneOf": [
-                  {
-                    "properties": {
-                      "deployment": {
-                        "properties": {
-                          "environments": {
-                            "items": {
-                              "type": "string",
-                              "enum": [
-                                "preview",
-                                "production"
-                              ]
-                            },
-                            "type": "array"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "log": {
-                        "properties": {
-                          "legacy_excludeCachedStaticAssetLogs": {
-                            "type": "boolean",
-                            "enum": [
-                              false,
-                              true
-                            ]
-                          },
-                          "sources": {
-                            "items": {
-                              "type": "string",
-                              "enum": [
-                                "build",
-                                "edge",
-                                "external",
-                                "firewall",
-                                "lambda",
-                                "redirect",
-                                "static"
-                              ]
-                            },
-                            "type": "array"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "project": {
-                        "properties": {
-                          "ids": {
-                            "items": {
-                              "type": "string"
-                            },
-                            "type": "array"
-                          }
-                        },
-                        "type": "object"
-                      },
-                      "type": {
-                        "type": "string",
-                        "enum": [
-                          "basic"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "type"
-                    ],
-                    "type": "object"
-                  },
-                  {
-                    "properties": {
-                      "text": {
-                        "type": "string"
-                      },
-                      "type": {
-                        "type": "string",
-                        "enum": [
-                          "odata"
-                        ]
-                      }
-                    },
-                    "required": [
-                      "text",
-                      "type"
-                    ],
-                    "type": "object"
-                  }
-                ]
-              },
-              "version": {
-                "type": "string",
-                "enum": [
-                  "v2"
-                ]
-              }
-            },
-            "required": [
-              "filter",
-              "version"
-            ],
-            "type": "object"
-          },
-          "integrationConfigurationUri": {
-            "type": "string"
-          },
-          "integrationIcon": {
-            "type": "string"
-          },
-          "integrationWebsite": {
-            "type": "string"
-          },
-          "projectAccess": {
-            "oneOf": [
-              {
-                "properties": {
-                  "access": {
-                    "type": "string",
-                    "enum": [
-                      "all"
-                    ]
-                  },
-                  "managedBy": {
-                    "type": "string",
-                    "enum": [
-                      "drain",
-                      "integration"
-                    ]
-                  }
-                },
-                "required": [
-                  "access",
-                  "managedBy"
-                ],
-                "type": "object"
-              },
-              {
-                "properties": {
-                  "access": {
-                    "type": "string",
-                    "enum": [
-                      "some"
-                    ]
-                  },
-                  "projectIds": {
-                    "items": {
-                      "type": "string"
-                    },
-                    "type": "array"
-                  },
-                  "managedBy": {
-                    "type": "string",
-                    "enum": [
-                      "drain",
-                      "integration"
-                    ]
-                  }
-                },
-                "required": [
-                  "access",
-                  "managedBy",
-                  "projectIds"
-                ],
-                "type": "object"
-              }
-            ]
+          {
+            "$ref": "#/components/schemas/AutoSDKSharedd868534aefc42f1c"
           }
-        },
-        "required": [
-          "createdAt",
-          "delivery",
-          "id",
-          "name",
-          "ownerId",
-          "schemas",
-          "source",
-          "updatedAt"
-        ],
-        "type": "object"
+        ]
       },
       "AutoSDKShareda0db2c4b058f2749": {
         "oneOf": [
@@ -129662,6 +129374,16 @@
         ],
         "type": "object"
       },
+      "AutoSDKShareda7f579f4cee9d4f4": {
+        "oneOf": [
+          {
+            "$ref": "#/components/schemas/AutoSDKSharedab96da75e8212e8f"
+          },
+          {
+            "$ref": "#/components/schemas/AutoSDKShared0001bb8e789a120e"
+          }
+        ]
+      },
       "AutoSDKSharedab64e9622c80dc17": {
         "properties": {
           "dest": {
@@ -130176,6 +129898,340 @@
             "type": "array"
           }
         },
+        "type": "object"
+      },
+      "AutoSDKSharedab96da75e8212e8f": {
+        "properties": {
+          "createdAt": {
+            "type": "number"
+          },
+          "delivery": {
+            "$ref": "#/components/schemas/AutoSDKSharedfa633702cac2aa68"
+          },
+          "disabledAt": {
+            "type": "number"
+          },
+          "disabledBy": {
+            "type": "string"
+          },
+          "disabledReason": {
+            "type": "string",
+            "enum": [
+              "account-plan-downgrade",
+              "disabled-by-admin",
+              "disabled-by-owner",
+              "feature-not-available",
+              "limits-exceeded"
+            ]
+          },
+          "firstErrorTimestamp": {
+            "type": "number"
+          },
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "ownerId": {
+            "type": "string"
+          },
+          "projectIds": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "sampling": {
+            "items": {
+              "properties": {
+                "env": {
+                  "type": "string",
+                  "enum": [
+                    "preview",
+                    "production"
+                  ]
+                },
+                "rate": {
+                  "type": "number"
+                },
+                "requestPath": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "head_sampling"
+                  ]
+                }
+              },
+              "required": [
+                "rate",
+                "type"
+              ],
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "schemas": {
+            "properties": {
+              "ai_gateway": {
+                "type": "object"
+              },
+              "analytics": {
+                "type": "object"
+              },
+              "audit_log": {
+                "type": "object"
+              },
+              "connect": {
+                "type": "object"
+              },
+              "log": {
+                "type": "object"
+              },
+              "speed_insights": {
+                "type": "object"
+              },
+              "trace": {
+                "type": "object"
+              }
+            },
+            "type": "object"
+          },
+          "source": {
+            "oneOf": [
+              {
+                "properties": {
+                  "defaultFor": {
+                    "type": "string",
+                    "enum": [
+                      "eve-tracing",
+                      "nextjs-tracing"
+                    ],
+                    "description": "Informational marker for a system-owned default drain."
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "self-served"
+                    ]
+                  }
+                },
+                "required": [
+                  "kind"
+                ],
+                "type": "object"
+              },
+              {
+                "properties": {
+                  "externalResourceId": {
+                    "type": "string"
+                  },
+                  "integrationConfigurationId": {
+                    "type": "string"
+                  },
+                  "integrationId": {
+                    "type": "string"
+                  },
+                  "kind": {
+                    "type": "string",
+                    "enum": [
+                      "integration"
+                    ]
+                  },
+                  "resourceId": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "integrationConfigurationId",
+                  "integrationId",
+                  "kind"
+                ],
+                "type": "object"
+              }
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "disabled",
+              "enabled",
+              "errored"
+            ]
+          },
+          "teamId": {
+            "nullable": true,
+            "type": "string"
+          },
+          "updatedAt": {
+            "type": "number"
+          },
+          "deliveryStats": {
+            "properties": {
+              "attempts": {
+                "type": "number",
+                "description": "Finished deliveries in the window: delivered plus finally failed."
+              },
+              "failures": {
+                "type": "number",
+                "description": "Deliveries that finally failed in the window."
+              },
+              "state": {
+                "type": "string",
+                "enum": [
+                  "failing",
+                  "healthy",
+                  "unknown"
+                ]
+              },
+              "totalFailedDeliveries": {
+                "type": "number",
+                "description": "Deliveries that finally failed in the window, after any automatic retries."
+              },
+              "totalRetriedDeliveries": {
+                "type": "number",
+                "description": "Deliveries whose first try failed and were scheduled for an automatic retry in the window, whatever their final outcome."
+              },
+              "totalSuccessfulDeliveries": {
+                "type": "number",
+                "description": "Deliveries delivered in the window, on the first try or after automatic retries."
+              },
+              "window": {
+                "type": "string",
+                "enum": [
+                  "24h"
+                ]
+              }
+            },
+            "required": [
+              "attempts",
+              "failures",
+              "state",
+              "totalFailedDeliveries",
+              "totalRetriedDeliveries",
+              "totalSuccessfulDeliveries",
+              "window"
+            ],
+            "type": "object",
+            "description": "Delivery health of a drain over the last 24 hours, counted on finished deliveries (a delivery saved by an automatic retry counts once, as delivered): `failing` when more than 5 deliveries failed and they are at least 1% of all finished deliveries, `healthy` otherwise, and `unknown` when no delivery finished in the window."
+          },
+          "filterV2": {
+            "properties": {
+              "filter": {
+                "oneOf": [
+                  {
+                    "properties": {
+                      "deployment": {
+                        "properties": {
+                          "environments": {
+                            "items": {
+                              "type": "string",
+                              "enum": [
+                                "preview",
+                                "production"
+                              ]
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "log": {
+                        "properties": {
+                          "legacy_excludeCachedStaticAssetLogs": {
+                            "type": "boolean",
+                            "enum": [
+                              false,
+                              true
+                            ]
+                          },
+                          "sources": {
+                            "items": {
+                              "type": "string",
+                              "enum": [
+                                "build",
+                                "edge",
+                                "external",
+                                "firewall",
+                                "lambda",
+                                "redirect",
+                                "static"
+                              ]
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "project": {
+                        "properties": {
+                          "ids": {
+                            "items": {
+                              "type": "string"
+                            },
+                            "type": "array"
+                          }
+                        },
+                        "type": "object"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "basic"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "type"
+                    ],
+                    "type": "object"
+                  },
+                  {
+                    "properties": {
+                      "text": {
+                        "type": "string"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "odata"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "text",
+                      "type"
+                    ],
+                    "type": "object"
+                  }
+                ]
+              },
+              "version": {
+                "type": "string",
+                "enum": [
+                  "v2"
+                ]
+              }
+            },
+            "required": [
+              "filter",
+              "version"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "createdAt",
+          "delivery",
+          "id",
+          "name",
+          "ownerId",
+          "schemas",
+          "source",
+          "updatedAt"
+        ],
         "type": "object"
       },
       "AutoSDKSharedad42af066f165baa": {
@@ -130812,16 +130868,6 @@
         ],
         "type": "object",
         "description": "The route definition from @vercel/routing-utils."
-      },
-      "AutoSDKSharedaf1cf971744a2ae1": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/AutoSDKShared90103a1814ebf3a8"
-          },
-          {
-            "$ref": "#/components/schemas/AutoSDKShared9f8c0585e20078fc"
-          }
-        ]
       },
       "AutoSDKSharedaf3e034232cd964a": {
         "properties": {
@@ -132571,12 +132617,6 @@
           "fallthrough"
         ]
       },
-      "AutoSDKSharedbb8e91b17b7d885c": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKShared90103a1814ebf3a8"
-        },
-        "type": "array"
-      },
       "AutoSDKSharedbbf450e6ecd4e724": {
         "properties": {
           "buildMachineElasticLastUpdated": {
@@ -134268,12 +134308,6 @@
       "AutoSDKSharedc7b2d1ad11fad9d8": {
         "items": {
           "$ref": "#/components/schemas/AutoSDKSharedb49e2a5785c6f473"
-        },
-        "type": "array"
-      },
-      "AutoSDKSharedc7ea0f9c95e22568": {
-        "items": {
-          "$ref": "#/components/schemas/AutoSDKShared9f8c0585e20078fc"
         },
         "type": "array"
       },
@@ -136369,21 +136403,17 @@
         },
         "maxItems": 10000
       },
+      "AutoSDKSharedd868534aefc42f1c": {
+        "items": {
+          "$ref": "#/components/schemas/AutoSDKShared0001bb8e789a120e"
+        },
+        "type": "array"
+      },
       "AutoSDKSharedd8f4627308e44215": {
         "items": {
           "$ref": "#/components/schemas/AutoSDKSharedec1121c0746f62d9"
         },
         "type": "array"
-      },
-      "AutoSDKSharedd91738a37c191d9e": {
-        "oneOf": [
-          {
-            "$ref": "#/components/schemas/AutoSDKSharedbb8e91b17b7d885c"
-          },
-          {
-            "$ref": "#/components/schemas/AutoSDKSharedc7ea0f9c95e22568"
-          }
-        ]
       },
       "AutoSDKShareddb8a6ccf5b64d660": {
         "properties": {
@@ -139751,17 +139781,6 @@
         },
         "type": "object"
       },
-      "AutoSDKSharedf4f6de8967844f78": {
-        "properties": {
-          "drains": {
-            "$ref": "#/components/schemas/AutoSDKSharedd91738a37c191d9e"
-          }
-        },
-        "required": [
-          "drains"
-        ],
-        "type": "object"
-      },
       "AutoSDKSharedf9b373cd1ded5c73": {
         "properties": {
           "properties": {
@@ -141246,6 +141265,17 @@
           "type",
           "ui:control",
           "ui:options"
+        ],
+        "type": "object"
+      },
+      "AutoSDKSharedfc4bd5d7b0e51454": {
+        "properties": {
+          "drains": {
+            "$ref": "#/components/schemas/AutoSDKShared9d9b15d71f2603e1"
+          }
+        },
+        "required": [
+          "drains"
         ],
         "type": "object"
       },

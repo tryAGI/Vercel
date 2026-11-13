@@ -26,7 +26,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedf4f6de8967844f78>> GetAllLogDrainsAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedfc4bd5d7b0e51454>> GetAllLogDrainsAsync(
             string? projectId = default,
             string? projectIdOrName = default,
             bool? includeMetadata = default,
@@ -57,7 +57,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedf4f6de8967844f78>>> GetAllLogDrainsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.GetAllLogDrainsResponseVariant1Item>, global::Vercel.AutoSDKSharedfc4bd5d7b0e51454>>> GetAllLogDrainsAsResponseAsync(
             string? projectId = default,
             string? projectIdOrName = default,
             bool? includeMetadata = default,

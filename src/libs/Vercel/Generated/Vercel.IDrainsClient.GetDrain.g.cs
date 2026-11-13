@@ -10,7 +10,7 @@ namespace Vercel
         /// </summary>
         /// <param name="id"></param>
         /// <param name="includeDeliveryStats">
-        /// Include `deliveryStats` with the delivery health of the drain over the last 24 hours.<br/>
+        /// Include `deliveryStats` with the delivery health of the drain over the last 24 hours. Ignored for teams without drain delivery metrics.<br/>
         /// Default Value: false
         /// </param>
         /// <param name="teamId">
@@ -22,7 +22,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared90103a1814ebf3a8> GetDrainAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedab96da75e8212e8f> GetDrainAsync(
             string id,
             bool? includeDeliveryStats = default,
             string? teamId = default,
@@ -35,7 +35,7 @@ namespace Vercel
         /// </summary>
         /// <param name="id"></param>
         /// <param name="includeDeliveryStats">
-        /// Include `deliveryStats` with the delivery health of the drain over the last 24 hours.<br/>
+        /// Include `deliveryStats` with the delivery health of the drain over the last 24 hours. Ignored for teams without drain delivery metrics.<br/>
         /// Default Value: false
         /// </param>
         /// <param name="teamId">
@@ -47,7 +47,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared90103a1814ebf3a8>> GetDrainAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedab96da75e8212e8f>> GetDrainAsResponseAsync(
             string id,
             bool? includeDeliveryStats = default,
             string? teamId = default,
