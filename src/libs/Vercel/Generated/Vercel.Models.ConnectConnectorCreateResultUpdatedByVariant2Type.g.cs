@@ -11,7 +11,7 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        Project,
+        User,
     }
 
     /// <summary>
@@ -26,7 +26,7 @@ namespace Vercel
         {
             return value switch
             {
-                ConnectConnectorCreateResultUpdatedByVariant2Type.Project => "project",
+                ConnectConnectorCreateResultUpdatedByVariant2Type.User => "user",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -37,7 +37,7 @@ namespace Vercel
         {
             return value switch
             {
-                "project" => ConnectConnectorCreateResultUpdatedByVariant2Type.Project,
+                "user" => ConnectConnectorCreateResultUpdatedByVariant2Type.User,
                 _ => null,
             };
         }

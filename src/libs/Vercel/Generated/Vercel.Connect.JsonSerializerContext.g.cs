@@ -10,6 +10,10 @@ namespace Vercel
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
         GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectConnectorCreateResultCreatedByVariant1, global::Vercel.ConnectConnectorCreateResultCreatedByVariant2, global::Vercel.ConnectConnectorCreateResultCreatedByVariant3>), TypeInfoPropertyName = "ConnectConnectorCreateResultCreatedByVariant3_86d7771f4b3e5f74")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectConnectorCreateResultUpdatedByVariant1, global::Vercel.ConnectConnectorCreateResultUpdatedByVariant2, global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3>), TypeInfoPropertyName = "ConnectConnectorCreateResultUpdatedByVariant3_d1ea6c0faf76ca06")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectConnectorCreateResultCreatedByVariant1, global::Vercel.ConnectConnectorCreateResultCreatedByVariant2, global::Vercel.ConnectConnectorCreateResultCreatedByVariant3>?), TypeInfoPropertyName = "ConnectConnectorCreateResultCreatedByVariant3_58bd1c1396eb832b")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectConnectorCreateResultUpdatedByVariant1, global::Vercel.ConnectConnectorCreateResultUpdatedByVariant2, global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3>?), TypeInfoPropertyName = "ConnectConnectorCreateResultUpdatedByVariant3_0429955b8d5edbc1")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
@@ -19,51 +23,57 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectTriggerConfiguration))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnector))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorAppTokens))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectConnectorCreatedByVariant1, global::Vercel.ConnectConnectorCreatedByVariant2>), TypeInfoPropertyName = "OneOfConnectConnectorCreatedByVariant1ConnectConnectorCreatedByVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectConnectorCreatedByVariant1, global::Vercel.ConnectConnectorCreatedByVariant2, global::Vercel.ConnectConnectorCreatedByVariant3>), TypeInfoPropertyName = "OneOfConnectConnectorCreatedByVariant1ConnectConnectorCreatedByVariant2ConnectConnectorCreatedByVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreatedByVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreatedByVariant1Type), TypeInfoPropertyName = "ConnectConnectorCreatedByVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreatedByVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.ConnectConnectorCreatedByVariant2Environment?>), TypeInfoPropertyName = "OneOfStringConnectConnectorCreatedByVariant2Environment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreatedByVariant2Environment), TypeInfoPropertyName = "ConnectConnectorCreatedByVariant2Environment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreatedByVariant2Type), TypeInfoPropertyName = "ConnectConnectorCreatedByVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreatedByVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.ConnectConnectorCreatedByVariant3Environment?>), TypeInfoPropertyName = "OneOfStringConnectConnectorCreatedByVariant3Environment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreatedByVariant3Environment), TypeInfoPropertyName = "ConnectConnectorCreatedByVariant3Environment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreatedByVariant3Type), TypeInfoPropertyName = "ConnectConnectorCreatedByVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreationMode), TypeInfoPropertyName = "ConnectConnectorCreationMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorManaged))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorMcpEventsUiVisibility), TypeInfoPropertyName = "ConnectConnectorMcpEventsUiVisibility2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorSupportsIcon), TypeInfoPropertyName = "ConnectConnectorSupportsIcon2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ConnectTriggerDestination>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorType), TypeInfoPropertyName = "ConnectConnectorType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectConnectorUpdatedByVariant1, global::Vercel.ConnectConnectorUpdatedByVariant2>), TypeInfoPropertyName = "OneOfConnectConnectorUpdatedByVariant1ConnectConnectorUpdatedByVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectConnectorUpdatedByVariant1, global::Vercel.ConnectConnectorUpdatedByVariant2, global::Vercel.ConnectConnectorUpdatedByVariant3>), TypeInfoPropertyName = "OneOfConnectConnectorUpdatedByVariant1ConnectConnectorUpdatedByVariant2ConnectConnectorUpdatedByVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorUpdatedByVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorUpdatedByVariant1Type), TypeInfoPropertyName = "ConnectConnectorUpdatedByVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorUpdatedByVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.ConnectConnectorUpdatedByVariant2Environment?>), TypeInfoPropertyName = "OneOfStringConnectConnectorUpdatedByVariant2Environment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorUpdatedByVariant2Environment), TypeInfoPropertyName = "ConnectConnectorUpdatedByVariant2Environment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorUpdatedByVariant2Type), TypeInfoPropertyName = "ConnectConnectorUpdatedByVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorUpdatedByVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.ConnectConnectorUpdatedByVariant3Environment?>), TypeInfoPropertyName = "OneOfStringConnectConnectorUpdatedByVariant3Environment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorUpdatedByVariant3Environment), TypeInfoPropertyName = "ConnectConnectorUpdatedByVariant3Environment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorUpdatedByVariant3Type), TypeInfoPropertyName = "ConnectConnectorUpdatedByVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorUserTokens))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectPagination))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorList))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ConnectConnector>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResult))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultAppTokens))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectConnectorCreateResultCreatedByVariant1, global::Vercel.ConnectConnectorCreateResultCreatedByVariant2>), TypeInfoPropertyName = "OneOfConnectConnectorCreateResultCreatedByVariant1ConnectConnectorCreateResultCreatedByVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant1Type), TypeInfoPropertyName = "ConnectConnectorCreateResultCreatedByVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.CreatedByEnvironment?>), TypeInfoPropertyName = "OneOfStringCreatedByEnvironment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreatedByEnvironment), TypeInfoPropertyName = "CreatedByEnvironment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant2Type), TypeInfoPropertyName = "ConnectConnectorCreateResultCreatedByVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.ConnectConnectorCreateResultCreatedByVariant3Environment?>), TypeInfoPropertyName = "OneOfStringConnectConnectorCreateResultCreatedByVariant3Environment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant3Environment), TypeInfoPropertyName = "ConnectConnectorCreateResultCreatedByVariant3Environment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant3Type), TypeInfoPropertyName = "ConnectConnectorCreateResultCreatedByVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultCreationMode), TypeInfoPropertyName = "ConnectConnectorCreateResultCreationMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultManaged))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultMcpEventsUiVisibility), TypeInfoPropertyName = "ConnectConnectorCreateResultMcpEventsUiVisibility2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultSupportsIcon), TypeInfoPropertyName = "ConnectConnectorCreateResultSupportsIcon2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultType), TypeInfoPropertyName = "ConnectConnectorCreateResultType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectConnectorCreateResultUpdatedByVariant1, global::Vercel.ConnectConnectorCreateResultUpdatedByVariant2>), TypeInfoPropertyName = "OneOfConnectConnectorCreateResultUpdatedByVariant1ConnectConnectorCreateResultUpdatedByVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant1Type), TypeInfoPropertyName = "ConnectConnectorCreateResultUpdatedByVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.UpdatedByEnvironment?>), TypeInfoPropertyName = "OneOfStringUpdatedByEnvironment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdatedByEnvironment), TypeInfoPropertyName = "UpdatedByEnvironment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant2Type), TypeInfoPropertyName = "ConnectConnectorCreateResultUpdatedByVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3Environment?>), TypeInfoPropertyName = "OneOfStringConnectConnectorCreateResultUpdatedByVariant3Environment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3Environment), TypeInfoPropertyName = "ConnectConnectorCreateResultUpdatedByVariant3Environment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3Type), TypeInfoPropertyName = "ConnectConnectorCreateResultUpdatedByVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultUserTokens))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateData), TypeInfoPropertyName = "ConnectConnectorCreateData2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateDataTypeOauth))]
@@ -139,34 +149,36 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorAuthorizationRequestResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreateConnectorAuthorizationRequestResponseConnector))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string?>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectConnectorCreatedByVariant1, global::Vercel.ConnectConnectorCreatedByVariant2>?), TypeInfoPropertyName = "NullableOneOfConnectConnectorCreatedByVariant1ConnectConnectorCreatedByVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectConnectorCreatedByVariant1, global::Vercel.ConnectConnectorCreatedByVariant2, global::Vercel.ConnectConnectorCreatedByVariant3>?), TypeInfoPropertyName = "NullableOneOfConnectConnectorCreatedByVariant1ConnectConnectorCreatedByVariant2ConnectConnectorCreatedByVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreatedByVariant1Type?), TypeInfoPropertyName = "NullableConnectConnectorCreatedByVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.ConnectConnectorCreatedByVariant2Environment?>?), TypeInfoPropertyName = "NullableOneOfStringConnectConnectorCreatedByVariant2Environment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreatedByVariant2Environment?), TypeInfoPropertyName = "NullableConnectConnectorCreatedByVariant2Environment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreatedByVariant2Type?), TypeInfoPropertyName = "NullableConnectConnectorCreatedByVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.ConnectConnectorCreatedByVariant3Environment?>?), TypeInfoPropertyName = "NullableOneOfStringConnectConnectorCreatedByVariant3Environment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreatedByVariant3Environment?), TypeInfoPropertyName = "NullableConnectConnectorCreatedByVariant3Environment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreatedByVariant3Type?), TypeInfoPropertyName = "NullableConnectConnectorCreatedByVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreationMode?), TypeInfoPropertyName = "NullableConnectConnectorCreationMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorMcpEventsUiVisibility?), TypeInfoPropertyName = "NullableConnectConnectorMcpEventsUiVisibility2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorSupportsIcon?), TypeInfoPropertyName = "NullableConnectConnectorSupportsIcon2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorType?), TypeInfoPropertyName = "NullableConnectConnectorType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectConnectorUpdatedByVariant1, global::Vercel.ConnectConnectorUpdatedByVariant2>?), TypeInfoPropertyName = "NullableOneOfConnectConnectorUpdatedByVariant1ConnectConnectorUpdatedByVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectConnectorUpdatedByVariant1, global::Vercel.ConnectConnectorUpdatedByVariant2, global::Vercel.ConnectConnectorUpdatedByVariant3>?), TypeInfoPropertyName = "NullableOneOfConnectConnectorUpdatedByVariant1ConnectConnectorUpdatedByVariant2ConnectConnectorUpdatedByVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorUpdatedByVariant1Type?), TypeInfoPropertyName = "NullableConnectConnectorUpdatedByVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.ConnectConnectorUpdatedByVariant2Environment?>?), TypeInfoPropertyName = "NullableOneOfStringConnectConnectorUpdatedByVariant2Environment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorUpdatedByVariant2Environment?), TypeInfoPropertyName = "NullableConnectConnectorUpdatedByVariant2Environment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorUpdatedByVariant2Type?), TypeInfoPropertyName = "NullableConnectConnectorUpdatedByVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectConnectorCreateResultCreatedByVariant1, global::Vercel.ConnectConnectorCreateResultCreatedByVariant2>?), TypeInfoPropertyName = "NullableOneOfConnectConnectorCreateResultCreatedByVariant1ConnectConnectorCreateResultCreatedByVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.ConnectConnectorUpdatedByVariant3Environment?>?), TypeInfoPropertyName = "NullableOneOfStringConnectConnectorUpdatedByVariant3Environment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorUpdatedByVariant3Environment?), TypeInfoPropertyName = "NullableConnectConnectorUpdatedByVariant3Environment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorUpdatedByVariant3Type?), TypeInfoPropertyName = "NullableConnectConnectorUpdatedByVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant1Type?), TypeInfoPropertyName = "NullableConnectConnectorCreateResultCreatedByVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.CreatedByEnvironment?>?), TypeInfoPropertyName = "NullableOneOfStringCreatedByEnvironment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.CreatedByEnvironment?), TypeInfoPropertyName = "NullableCreatedByEnvironment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant2Type?), TypeInfoPropertyName = "NullableConnectConnectorCreateResultCreatedByVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.ConnectConnectorCreateResultCreatedByVariant3Environment?>?), TypeInfoPropertyName = "NullableOneOfStringConnectConnectorCreateResultCreatedByVariant3Environment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant3Environment?), TypeInfoPropertyName = "NullableConnectConnectorCreateResultCreatedByVariant3Environment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant3Type?), TypeInfoPropertyName = "NullableConnectConnectorCreateResultCreatedByVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultCreationMode?), TypeInfoPropertyName = "NullableConnectConnectorCreateResultCreationMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultMcpEventsUiVisibility?), TypeInfoPropertyName = "NullableConnectConnectorCreateResultMcpEventsUiVisibility2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultSupportsIcon?), TypeInfoPropertyName = "NullableConnectConnectorCreateResultSupportsIcon2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultType?), TypeInfoPropertyName = "NullableConnectConnectorCreateResultType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.ConnectConnectorCreateResultUpdatedByVariant1, global::Vercel.ConnectConnectorCreateResultUpdatedByVariant2>?), TypeInfoPropertyName = "NullableOneOfConnectConnectorCreateResultUpdatedByVariant1ConnectConnectorCreateResultUpdatedByVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant1Type?), TypeInfoPropertyName = "NullableConnectConnectorCreateResultUpdatedByVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.UpdatedByEnvironment?>?), TypeInfoPropertyName = "NullableOneOfStringUpdatedByEnvironment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdatedByEnvironment?), TypeInfoPropertyName = "NullableUpdatedByEnvironment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant2Type?), TypeInfoPropertyName = "NullableConnectConnectorCreateResultUpdatedByVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3Environment?>?), TypeInfoPropertyName = "NullableOneOfStringConnectConnectorCreateResultUpdatedByVariant3Environment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3Environment?), TypeInfoPropertyName = "NullableConnectConnectorCreateResultUpdatedByVariant3Environment2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3Type?), TypeInfoPropertyName = "NullableConnectConnectorCreateResultUpdatedByVariant3Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateData?), TypeInfoPropertyName = "NullableConnectConnectorCreateData2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectConnectorCreateDataTypeApiKeySubjectType?), TypeInfoPropertyName = "NullableConnectConnectorCreateDataTypeApiKeySubjectType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ConnectReconsentScope?), TypeInfoPropertyName = "NullableConnectReconsentScope2")]
@@ -242,14 +254,14 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.ConnectConnectorCreateDataJsonConverter());
             options.Converters.Add(new global::Vercel.JsonConverters.ConnectConnectorUpdateDataJsonConverter());
             options.Converters.Add(new global::Vercel.JsonConverters.ConnectTriggerDestinationInputJsonConverter());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ConnectConnectorCreatedByVariant1, global::Vercel.ConnectConnectorCreatedByVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.ConnectConnectorCreatedByVariant2Environment?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ConnectConnectorUpdatedByVariant1, global::Vercel.ConnectConnectorUpdatedByVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.ConnectConnectorUpdatedByVariant2Environment?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ConnectConnectorCreateResultCreatedByVariant1, global::Vercel.ConnectConnectorCreateResultCreatedByVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.CreatedByEnvironment?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ConnectConnectorCreateResultUpdatedByVariant1, global::Vercel.ConnectConnectorCreateResultUpdatedByVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.UpdatedByEnvironment?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ConnectConnectorCreatedByVariant1, global::Vercel.ConnectConnectorCreatedByVariant2, global::Vercel.ConnectConnectorCreatedByVariant3>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.ConnectConnectorCreatedByVariant3Environment?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ConnectConnectorUpdatedByVariant1, global::Vercel.ConnectConnectorUpdatedByVariant2, global::Vercel.ConnectConnectorUpdatedByVariant3>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.ConnectConnectorUpdatedByVariant3Environment?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ConnectConnectorCreateResultCreatedByVariant1, global::Vercel.ConnectConnectorCreateResultCreatedByVariant2, global::Vercel.ConnectConnectorCreateResultCreatedByVariant3>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.ConnectConnectorCreateResultCreatedByVariant3Environment?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.ConnectConnectorCreateResultUpdatedByVariant1, global::Vercel.ConnectConnectorCreateResultUpdatedByVariant2, global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3Environment?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.ConnectProjectConnectionEnabledEnvironment?>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.ConnectUpsertProjectConnectionRequestEnvironment?, string>());
             options.Converters.Add(new LazyEnumJsonConverterFactory());
@@ -277,13 +289,17 @@ namespace Vercel
 
                     || typeToConvert == typeof(global::Vercel.ConnectConnectorCreatedByVariant1Type?)
 
-                    || typeToConvert == typeof(global::Vercel.ConnectConnectorCreatedByVariant2Environment)
-
-                    || typeToConvert == typeof(global::Vercel.ConnectConnectorCreatedByVariant2Environment?)
-
                     || typeToConvert == typeof(global::Vercel.ConnectConnectorCreatedByVariant2Type)
 
                     || typeToConvert == typeof(global::Vercel.ConnectConnectorCreatedByVariant2Type?)
+
+                    || typeToConvert == typeof(global::Vercel.ConnectConnectorCreatedByVariant3Environment)
+
+                    || typeToConvert == typeof(global::Vercel.ConnectConnectorCreatedByVariant3Environment?)
+
+                    || typeToConvert == typeof(global::Vercel.ConnectConnectorCreatedByVariant3Type)
+
+                    || typeToConvert == typeof(global::Vercel.ConnectConnectorCreatedByVariant3Type?)
 
                     || typeToConvert == typeof(global::Vercel.ConnectConnectorCreationMode)
 
@@ -305,25 +321,33 @@ namespace Vercel
 
                     || typeToConvert == typeof(global::Vercel.ConnectConnectorUpdatedByVariant1Type?)
 
-                    || typeToConvert == typeof(global::Vercel.ConnectConnectorUpdatedByVariant2Environment)
-
-                    || typeToConvert == typeof(global::Vercel.ConnectConnectorUpdatedByVariant2Environment?)
-
                     || typeToConvert == typeof(global::Vercel.ConnectConnectorUpdatedByVariant2Type)
 
                     || typeToConvert == typeof(global::Vercel.ConnectConnectorUpdatedByVariant2Type?)
+
+                    || typeToConvert == typeof(global::Vercel.ConnectConnectorUpdatedByVariant3Environment)
+
+                    || typeToConvert == typeof(global::Vercel.ConnectConnectorUpdatedByVariant3Environment?)
+
+                    || typeToConvert == typeof(global::Vercel.ConnectConnectorUpdatedByVariant3Type)
+
+                    || typeToConvert == typeof(global::Vercel.ConnectConnectorUpdatedByVariant3Type?)
 
                     || typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant1Type)
 
                     || typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant1Type?)
 
-                    || typeToConvert == typeof(global::Vercel.CreatedByEnvironment)
-
-                    || typeToConvert == typeof(global::Vercel.CreatedByEnvironment?)
-
                     || typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant2Type)
 
                     || typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant2Type?)
+
+                    || typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant3Environment)
+
+                    || typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant3Environment?)
+
+                    || typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant3Type)
+
+                    || typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant3Type?)
 
                     || typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultCreationMode)
 
@@ -345,13 +369,17 @@ namespace Vercel
 
                     || typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant1Type?)
 
-                    || typeToConvert == typeof(global::Vercel.UpdatedByEnvironment)
-
-                    || typeToConvert == typeof(global::Vercel.UpdatedByEnvironment?)
-
                     || typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant2Type)
 
                     || typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant2Type?)
+
+                    || typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3Environment)
+
+                    || typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3Environment?)
+
+                    || typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3Type)
+
+                    || typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3Type?)
 
                     || typeToConvert == typeof(global::Vercel.ConnectConnectorCreateDataTypeApiKeySubjectType)
 
@@ -396,16 +424,6 @@ namespace Vercel
                     return new global::Vercel.JsonConverters.ConnectConnectorCreatedByVariant1TypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreatedByVariant2Environment))
-                {
-                    return new global::Vercel.JsonConverters.ConnectConnectorCreatedByVariant2EnvironmentJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreatedByVariant2Environment?))
-                {
-                    return new global::Vercel.JsonConverters.ConnectConnectorCreatedByVariant2EnvironmentNullableJsonConverter();
-                }
-
                 if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreatedByVariant2Type))
                 {
                     return new global::Vercel.JsonConverters.ConnectConnectorCreatedByVariant2TypeJsonConverter();
@@ -414,6 +432,26 @@ namespace Vercel
                 if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreatedByVariant2Type?))
                 {
                     return new global::Vercel.JsonConverters.ConnectConnectorCreatedByVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreatedByVariant3Environment))
+                {
+                    return new global::Vercel.JsonConverters.ConnectConnectorCreatedByVariant3EnvironmentJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreatedByVariant3Environment?))
+                {
+                    return new global::Vercel.JsonConverters.ConnectConnectorCreatedByVariant3EnvironmentNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreatedByVariant3Type))
+                {
+                    return new global::Vercel.JsonConverters.ConnectConnectorCreatedByVariant3TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreatedByVariant3Type?))
+                {
+                    return new global::Vercel.JsonConverters.ConnectConnectorCreatedByVariant3TypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreationMode))
@@ -466,16 +504,6 @@ namespace Vercel
                     return new global::Vercel.JsonConverters.ConnectConnectorUpdatedByVariant1TypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Vercel.ConnectConnectorUpdatedByVariant2Environment))
-                {
-                    return new global::Vercel.JsonConverters.ConnectConnectorUpdatedByVariant2EnvironmentJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.ConnectConnectorUpdatedByVariant2Environment?))
-                {
-                    return new global::Vercel.JsonConverters.ConnectConnectorUpdatedByVariant2EnvironmentNullableJsonConverter();
-                }
-
                 if (typeToConvert == typeof(global::Vercel.ConnectConnectorUpdatedByVariant2Type))
                 {
                     return new global::Vercel.JsonConverters.ConnectConnectorUpdatedByVariant2TypeJsonConverter();
@@ -484,6 +512,26 @@ namespace Vercel
                 if (typeToConvert == typeof(global::Vercel.ConnectConnectorUpdatedByVariant2Type?))
                 {
                     return new global::Vercel.JsonConverters.ConnectConnectorUpdatedByVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ConnectConnectorUpdatedByVariant3Environment))
+                {
+                    return new global::Vercel.JsonConverters.ConnectConnectorUpdatedByVariant3EnvironmentJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ConnectConnectorUpdatedByVariant3Environment?))
+                {
+                    return new global::Vercel.JsonConverters.ConnectConnectorUpdatedByVariant3EnvironmentNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ConnectConnectorUpdatedByVariant3Type))
+                {
+                    return new global::Vercel.JsonConverters.ConnectConnectorUpdatedByVariant3TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ConnectConnectorUpdatedByVariant3Type?))
+                {
+                    return new global::Vercel.JsonConverters.ConnectConnectorUpdatedByVariant3TypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant1Type))
@@ -496,16 +544,6 @@ namespace Vercel
                     return new global::Vercel.JsonConverters.ConnectConnectorCreateResultCreatedByVariant1TypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Vercel.CreatedByEnvironment))
-                {
-                    return new global::Vercel.JsonConverters.CreatedByEnvironmentJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.CreatedByEnvironment?))
-                {
-                    return new global::Vercel.JsonConverters.CreatedByEnvironmentNullableJsonConverter();
-                }
-
                 if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant2Type))
                 {
                     return new global::Vercel.JsonConverters.ConnectConnectorCreateResultCreatedByVariant2TypeJsonConverter();
@@ -514,6 +552,26 @@ namespace Vercel
                 if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant2Type?))
                 {
                     return new global::Vercel.JsonConverters.ConnectConnectorCreateResultCreatedByVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant3Environment))
+                {
+                    return new global::Vercel.JsonConverters.ConnectConnectorCreateResultCreatedByVariant3EnvironmentJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant3Environment?))
+                {
+                    return new global::Vercel.JsonConverters.ConnectConnectorCreateResultCreatedByVariant3EnvironmentNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant3Type))
+                {
+                    return new global::Vercel.JsonConverters.ConnectConnectorCreateResultCreatedByVariant3TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultCreatedByVariant3Type?))
+                {
+                    return new global::Vercel.JsonConverters.ConnectConnectorCreateResultCreatedByVariant3TypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultCreationMode))
@@ -566,16 +624,6 @@ namespace Vercel
                     return new global::Vercel.JsonConverters.ConnectConnectorCreateResultUpdatedByVariant1TypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Vercel.UpdatedByEnvironment))
-                {
-                    return new global::Vercel.JsonConverters.UpdatedByEnvironmentJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.UpdatedByEnvironment?))
-                {
-                    return new global::Vercel.JsonConverters.UpdatedByEnvironmentNullableJsonConverter();
-                }
-
                 if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant2Type))
                 {
                     return new global::Vercel.JsonConverters.ConnectConnectorCreateResultUpdatedByVariant2TypeJsonConverter();
@@ -584,6 +632,26 @@ namespace Vercel
                 if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant2Type?))
                 {
                     return new global::Vercel.JsonConverters.ConnectConnectorCreateResultUpdatedByVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3Environment))
+                {
+                    return new global::Vercel.JsonConverters.ConnectConnectorCreateResultUpdatedByVariant3EnvironmentJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3Environment?))
+                {
+                    return new global::Vercel.JsonConverters.ConnectConnectorCreateResultUpdatedByVariant3EnvironmentNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3Type))
+                {
+                    return new global::Vercel.JsonConverters.ConnectConnectorCreateResultUpdatedByVariant3TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreateResultUpdatedByVariant3Type?))
+                {
+                    return new global::Vercel.JsonConverters.ConnectConnectorCreateResultUpdatedByVariant3TypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Vercel.ConnectConnectorCreateDataTypeApiKeySubjectType))

@@ -19,6 +19,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NetworkConnectionTesting))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NetworkHostedZones))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NetworkPeeringConnections))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NetworkPrivateLinks))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NetworkProjects))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.NetworkStatus), TypeInfoPropertyName = "NetworkStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.PrivateLinkEndpoint))]

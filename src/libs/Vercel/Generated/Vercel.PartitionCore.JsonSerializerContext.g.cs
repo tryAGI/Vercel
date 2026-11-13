@@ -21,8 +21,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant4, bool?>), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant4_bool_ff7e7eead0ab8732")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2_c4b215700c2531d6")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2>), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2_74214ffd455eb2c0")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2_5026ac9e57880b43")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2>), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2_9488bcf287ea7972")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2>>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2_ebb2b381cd9f605d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2_02adc5f3dd443517")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2>>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2_ce3bb41ef0e8fffa")]
@@ -41,6 +39,8 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant1, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant2, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant3, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant4>), TypeInfoPropertyName = "AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant4_57d6f8e0c233573e")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2_b56c1842a68cdef7")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2>), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2_94e70ecbd025fb43")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2_f6a5cb6bc2bd8ce4")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2>), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2_4701682bcf257d75")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant1, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant2, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant3, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant4, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5>), TypeInfoPropertyName = "AutoSDKSharede3c00aaf9d3a15beSourceVariant5_bb2eda587ae7d458")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant1, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant2, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3>), TypeInfoPropertyName = "AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3_555ec7d89e63a21f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1, global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKSharede7fa7575dde4720dConditionRhsVariant2_string_double_bool_d6e57cc7a1b2fde5")]
@@ -73,7 +73,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant1, global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant2, global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant3, global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant4>?), TypeInfoPropertyName = "AutoSDKShared0f45691814810f14OutcomeVariant4_2c30f1cde7c695c1")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant4, bool?>?), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant4_bool_3b1990858abf1e2a")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2>?), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2_b58adad04a0f528a")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2>?), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2_245892d2dc791cdd")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2>?), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2_acb703bc65d7989e")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2>?), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2_61fd7336168e76eb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2>?), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2_872afdd8f2ed4943")]
@@ -85,6 +84,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant2>?), TypeInfoPropertyName = "AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant2_7fe4a551cf54f612")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant1, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant2, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant3, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant4>?), TypeInfoPropertyName = "AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant4_c9f1b320ec6e6702")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2>?), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2_32f09f63c90d0736")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2>?), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2_6459bfb1bfc5f66f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant1, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant2, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant3, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant4, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5>?), TypeInfoPropertyName = "AutoSDKSharede3c00aaf9d3a15beSourceVariant5_a78425e81a175ed6")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant1, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant2, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3>?), TypeInfoPropertyName = "AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3_38232865ffd9763d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1, global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant2, string, double?, bool?>?), TypeInfoPropertyName = "AutoSDKSharede7fa7575dde4720dConditionRhsVariant2_string_double_bool_65c09a038fb946ae")]
@@ -115,7 +115,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.UserEventViaItemVariant1, global::Vercel.UserEventViaItemVariant2, global::Vercel.UserEventViaItemVariant3, global::Vercel.UserEventViaItemVariant4, global::Vercel.UserEventViaItemVariant5>>), TypeInfoPropertyName = "UserEventViaItemVariant5_cbfb401da7350f0b")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant3ItemVariant1, global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant3ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared0f45691814810f14ConditionRhsVariant3ItemVariant2_96bc202170d00c02")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2_b980883f3467fa4a")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2_29998261554b0b65")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2>>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2_1cb0b7faf68fdd69")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2>>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2_0befd1486ce5b7b2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2>>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2_f0f3f7c54aa3ab56")]
@@ -124,6 +123,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant1, global::Vercel.AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant2>>), TypeInfoPropertyName = "AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant2_db7fcccc46c89b27")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AnyOf<global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant2_8d830cd6540d7db9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2_cf272b8b824b99e3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2_5f730bc32dc23683")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AnyOf<global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKSharede7fa7575dde4720dConditionRhsVariant1ItemVariant2_e47ff46f49907b11")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvider>, global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProviders?>), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProjectFilterGitProviders_1da342ad0298fa46")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string")]
@@ -534,121 +534,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2Base))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2BaseType), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2BaseType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2Type), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6c))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared29b35dda7b3e47c4>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cAnalytics))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cBlobs))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfiguration>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfiguration))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfigurationAws))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfigurationEnvId?>), TypeInfoPropertyName = "OneOfStringAutoSDKShared0f99f1735f329c6cConnectConfigurationEnvId2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfigurationEnvId), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cConnectConfigurationEnvId2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared58ffef5c4d095b17), TypeInfoPropertyName = "AutoSDKShared58ffef5c4d095b172")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cCrons))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cCronsDefinition>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cCronsDefinition))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cCronsDefinitionSource), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cCronsDefinitionSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7d4f4f5cff68219a>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cDataCache))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedbbf450e6ecd4e724))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cDeploymentExpiration))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared803d328dcef47295))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToast>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToast))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToastAction), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cDismissedToastAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToastValue, bool?>), TypeInfoPropertyName = "OneOfStringDoubleAutoSDKShared0f99f1735f329c6cDismissedToastValueBoolean2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToastValue))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, bool?>), TypeInfoPropertyName = "OneOfStringDoubleBoolean2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared470bc56668090392>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cExpirationVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cExpirationVariant2>), TypeInfoPropertyName = "OneOfAutoSDKShared0f99f1735f329c6cExpirationVariant1AutoSDKShared0f99f1735f329c6cExpirationVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cExpirationVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cExpirationVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cFeatures))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cFramework), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cFramework2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cGitComments))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc12640b06f1c9105))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2>), TypeInfoPropertyName = "OneOfAutoSDKShared0f99f1735f329c6cInternalRouteVariant1AutoSDKShared0f99f1735f329c6cInternalRouteVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Key), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Key2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Type), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Value))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2Type), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2Value))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2Mitigate))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2MitigateAction), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cInternalRouteVariant2MitigateAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cIpBucket>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cIpBucket))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cJobs))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cJobsFlagDefinitionsPresent))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cJobsHealthCheck))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cJobsLint))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cJobsMfeConfigPresent))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cJobsTypecheck))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cLastAliasRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cLastAliasRequestJobStatus), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cLastAliasRequestJobStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cLastAliasRequestType), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cLastAliasRequestType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbca3e7a986162538>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharede0f9d68fc63cf31d), TypeInfoPropertyName = "AutoSDKSharede0f9d68fc63cf31d2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared7ff9e6410c724535), TypeInfoPropertyName = "AutoSDKShared7ff9e6410c7245352")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cNodeVersion), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cNodeVersion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cOidcTokenConfig))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cOidcTokenConfigIssuerMode), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cOidcTokenConfigIssuerMode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cOptionsAllowlist))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cOptionsAllowlistPath>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cOptionsAllowlistPath))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cPassport))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cPassportDeploymentType), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cPassportDeploymentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cPasswordProtection))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cPasswordProtectionDeploymentType), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cPasswordProtectionDeploymentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9740c1f045f457da))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant2>), TypeInfoPropertyName = "OneOfAutoSDKShared0f99f1735f329c6cProtectionBypassVariant1AutoSDKShared0f99f1735f329c6cProtectionBypassVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant1Scope), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cProtectionBypassVariant1Scope2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant2Scope), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cProtectionBypassVariant2Scope2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionConfig))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionConfigSandboxUrls))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared15ac57d28c37cbda))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedce0c7f50e384322c))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSandbox))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxFailoverRegion>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxFailoverRegion), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cSandboxFailoverRegion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxRegion), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cSandboxRegion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared25e1e81cf9eecd30))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cService>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cService))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cServiceFramework), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cServiceFramework2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cServiceServiceType), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cServiceServiceType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSpeedInsights))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtection))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionCve55182MigrationAppliedFrom), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cSsoProtectionCve55182MigrationAppliedFrom2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionDeploymentType), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cSsoProtectionDeploymentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cStaticIps))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared8422af433e1bf486?>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTier), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cTier2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTracing))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRule>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRule))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleDestination), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cTracingSamplingRuleDestination2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleEnv), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cTracingSamplingRuleEnv2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant2>), TypeInfoPropertyName = "OneOfAutoSDKShared0f99f1735f329c6cTrustedIpsVariant1AutoSDKShared0f99f1735f329c6cTrustedIpsVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1Addresse>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1Addresse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1DeploymentType), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1DeploymentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1ProtectionMode), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1ProtectionMode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant2DeploymentType), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cTrustedIpsVariant2DeploymentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared94938587734e5f57))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cUsageStatus))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cUsageStatusKind), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cUsageStatusKind2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cVercelFlags))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cWebAnalytics))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared2899f8f1b76807ed), TypeInfoPropertyName = "AutoSDKShared2899f8f1b76807ed2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared2208dea57c17c8daCreatedFrom), TypeInfoPropertyName = "AutoSDKShared2208dea57c17c8daCreatedFrom2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared2208dea57c17c8daDeliveryFormat), TypeInfoPropertyName = "AutoSDKShared2208dea57c17c8daDeliveryFormat2")]
@@ -685,6 +571,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2Type), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemSource>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemSource), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared25e1e81cf9eecd30))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<string>, global::Vercel.AutoSDKShared25e1e81cf9eecd30LogHeaders?>), TypeInfoPropertyName = "OneOfIListStringAutoSDKShared25e1e81cf9eecd30LogHeaders2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared25e1e81cf9eecd30LogHeaders), TypeInfoPropertyName = "AutoSDKShared25e1e81cf9eecd30LogHeaders2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared25e1e81cf9eecd30ManagedRules))]
@@ -707,7 +594,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsRateLimitAction), TypeInfoPropertyName = "AutoSDKShared25e1e81cf9eecd30RulesetsRateLimitAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsRateLimitAlgo), TypeInfoPropertyName = "AutoSDKShared25e1e81cf9eecd30RulesetsRateLimitAlgo2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsRedirect))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0f99f1735f329c6c>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared2899f8f1b76807edVariant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared2899f8f1b76807edVariant1Type), TypeInfoPropertyName = "AutoSDKShared2899f8f1b76807edVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant1, global::Vercel.AutoSDKShared2899f8f1b76807edVariant1ViaVariant2>), TypeInfoPropertyName = "OneOfAutoSDKShared2899f8f1b76807edVariant1ViaVariant1AutoSDKShared2899f8f1b76807edVariant1ViaVariant22")]
@@ -734,6 +620,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared8422af433e1bf486))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared29b35dda7b3e47c4Environment), TypeInfoPropertyName = "AutoSDKShared29b35dda7b3e47c4Environment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared29b35dda7b3e47c4Target), TypeInfoPropertyName = "AutoSDKShared29b35dda7b3e47c4Target2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbca3e7a986162538>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedbca3e7a986162538))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem>>>))]
@@ -810,6 +697,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsRateLimitAction), TypeInfoPropertyName = "AutoSDKShared4c958b4a81a75558RulesetsRateLimitAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsRateLimitAlgo), TypeInfoPropertyName = "AutoSDKShared4c958b4a81a75558RulesetsRateLimitAlgo2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsRedirect))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared58ffef5c4d095b17), TypeInfoPropertyName = "AutoSDKShared58ffef5c4d095b172")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1Type), TypeInfoPropertyName = "AutoSDKShared58ffef5c4d095b17Variant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant1, global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant2>), TypeInfoPropertyName = "OneOfAutoSDKShared58ffef5c4d095b17Variant1ViaVariant1AutoSDKShared58ffef5c4d095b17Variant1ViaVariant22")]
@@ -929,9 +817,11 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7d4f4f5cff68219aDomainVerificationItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared7d4f4f5cff68219aDomainVerificationItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared7d4f4f5cff68219aType), TypeInfoPropertyName = "AutoSDKShared7d4f4f5cff68219aType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared7ff9e6410c724535), TypeInfoPropertyName = "AutoSDKShared7ff9e6410c7245352")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared7ff9e6410c724535Variant1))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared7ff9e6410c724535Variant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared7ff9e6410c724535Variant3))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared803d328dcef47295))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared803d328dcef47295DeploymentSource>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared803d328dcef47295DeploymentSource))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceEnvironmentVariant1))]
@@ -976,6 +866,8 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared8422af433e1bf486ReadyState), TypeInfoPropertyName = "AutoSDKShared8422af433e1bf486ReadyState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared8422af433e1bf486ReadySubstate), TypeInfoPropertyName = "AutoSDKShared8422af433e1bf486ReadySubstate2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared8422af433e1bf486Type), TypeInfoPropertyName = "AutoSDKShared8422af433e1bf486Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc734cd9afdf7614a>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614a))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.AutoSDKShared947f69fa305d000eDestination>), TypeInfoPropertyName = "OneOfStringAutoSDKShared947f69fa305d000eDestination2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared947f69fa305d000eDestination))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared947f69fa305d000eDestinationType), TypeInfoPropertyName = "AutoSDKShared947f69fa305d000eDestinationType2")]
@@ -1013,6 +905,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant2Op), TypeInfoPropertyName = "AutoSDKShared947f69fa305d000eTransformVariant2Op2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant2Type), TypeInfoPropertyName = "AutoSDKShared947f69fa305d000eTransformVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared94938587734e5f57))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared94938587734e5f57OidcProvider>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared94938587734e5f57OidcProvider>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared94938587734e5f57OidcProvider))]
@@ -1022,9 +915,10 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared94938587734e5f57OidcProviderToVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared94938587734e5f57OidcProviderToVariant2Preset), TypeInfoPropertyName = "AutoSDKShared94938587734e5f57OidcProviderToVariant2Preset2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.IList<string>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ACLAction>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9d9b15d71f2603e1), TypeInfoPropertyName = "AutoSDKShared9d9b15d71f2603e12")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared0001bb8e789a120e>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared9e6492646a60c627))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ACLAction>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShareda15210bade0a7c46ChangedResource>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShareda15210bade0a7c46ChangedResource))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShareda15210bade0a7c46EffectiveBehavior), TypeInfoPropertyName = "AutoSDKShareda15210bade0a7c46EffectiveBehavior2")]
@@ -1115,6 +1009,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant2Op), TypeInfoPropertyName = "AutoSDKSharedada259eacea6cff6TransformVariant2Op2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant2Type), TypeInfoPropertyName = "AutoSDKSharedada259eacea6cff6TransformVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared29b35dda7b3e47c4>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb4cb9cbf2561e851Condition>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedb4cb9cbf2561e851Condition))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItem>))]
@@ -1162,6 +1057,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesTrafficSourcesAction), TypeInfoPropertyName = "AutoSDKSharedb4cb9cbf2561e851ManagedRulesTrafficSourcesAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesVercelRuleset))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedb4cb9cbf2561e851ManagedRulesVercelRulesetAction), TypeInfoPropertyName = "AutoSDKSharedb4cb9cbf2561e851ManagedRulesVercelRulesetAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared470bc56668090392>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedba1f75615f04b60cTransformItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedba1f75615f04b60cTransformItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedba1f75615f04b60cResponse))]
@@ -1172,6 +1068,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedba25b79c660ac1cePausedOutcome))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedbbf450e6ecd4e724))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedbbf450e6ecd4e724BuildMachineElasticReason), TypeInfoPropertyName = "AutoSDKSharedbbf450e6ecd4e724BuildMachineElasticReason2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedbbf450e6ecd4e724BuildMachineElasticTransition))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedbbf450e6ecd4e724BuildMachineElasticTransitionDirection), TypeInfoPropertyName = "AutoSDKSharedbbf450e6ecd4e724BuildMachineElasticTransitionDirection2")]
@@ -1201,6 +1098,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedbca3e7a986162538ReadyState), TypeInfoPropertyName = "AutoSDKSharedbca3e7a986162538ReadyState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedbca3e7a986162538ReadySubstate), TypeInfoPropertyName = "AutoSDKSharedbca3e7a986162538ReadySubstate2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedbca3e7a986162538Type), TypeInfoPropertyName = "AutoSDKSharedbca3e7a986162538Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc12640b06f1c9105))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc12640b06f1c9105ConsolidatedGitCommitStatus))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc12640b06f1c9105CreateDeployments), TypeInfoPropertyName = "AutoSDKSharedc12640b06f1c9105CreateDeployments2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9Analytics))]
@@ -1225,18 +1123,120 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2MitigateAction), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9InternalRouteVariant2MitigateAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc30663411f76e3c9IpBucket>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9IpBucket))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharede0f9d68fc63cf31d), TypeInfoPropertyName = "AutoSDKSharede0f9d68fc63cf31d2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9NodeVersion), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9NodeVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9OidcTokenConfig))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9OidcTokenConfigIssuerMode), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9OidcTokenConfigIssuerMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9Passport))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9PassportDeploymentType), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9PassportDeploymentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedce0c7f50e384322c))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9SpeedInsights))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9SsoProtection))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9SsoProtectionApril2026SecurityIncidentMigrationAppliedFrom), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9SsoProtectionApril2026SecurityIncidentMigrationAppliedFrom2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9SsoProtectionCve55182MigrationAppliedFrom), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9SsoProtectionCve55182MigrationAppliedFrom2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9SsoProtectionDeploymentType), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9SsoProtectionDeploymentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKShared8422af433e1bf486?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9Tier), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9Tier2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9WebAnalytics))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aAnalytics))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aBlobs))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc734cd9afdf7614aConnectConfiguration>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aConnectConfiguration))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aConnectConfigurationAws))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedc734cd9afdf7614aConnectConfigurationEnvId?>), TypeInfoPropertyName = "OneOfStringAutoSDKSharedc734cd9afdf7614aConnectConfigurationEnvId2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aConnectConfigurationEnvId), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aConnectConfigurationEnvId2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aCrons))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc734cd9afdf7614aCronsDefinition>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aCronsDefinition))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aCronsDefinitionSource), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aCronsDefinitionSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared7d4f4f5cff68219a>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aDataCache))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aDeploymentExpiration))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc734cd9afdf7614aDismissedToast>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aDismissedToast))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aDismissedToastAction), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aDismissedToastAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::Vercel.AutoSDKSharedc734cd9afdf7614aDismissedToastValue, bool?>), TypeInfoPropertyName = "OneOfStringDoubleAutoSDKSharedc734cd9afdf7614aDismissedToastValueBoolean2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aDismissedToastValue))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, bool?>), TypeInfoPropertyName = "OneOfStringDoubleBoolean2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aExpirationVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aExpirationVariant2>), TypeInfoPropertyName = "OneOfAutoSDKSharedc734cd9afdf7614aExpirationVariant1AutoSDKSharedc734cd9afdf7614aExpirationVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aExpirationVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aExpirationVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aFeatures))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aFramework), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aFramework2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aGitComments))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2>), TypeInfoPropertyName = "OneOfAutoSDKSharedc734cd9afdf7614aInternalRouteVariant1AutoSDKSharedc734cd9afdf7614aInternalRouteVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1Key), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1Key2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1Type), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1Value))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2Type), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2Value))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2Mitigate))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2MitigateAction), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2MitigateAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc734cd9afdf7614aIpBucket>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aIpBucket))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aJobs))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aJobsFlagDefinitionsPresent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aJobsHealthCheck))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aJobsLint))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aJobsMfeConfigPresent))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aJobsTypecheck))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aLastAliasRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aLastAliasRequestJobStatus), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aLastAliasRequestJobStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aLastAliasRequestType), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aLastAliasRequestType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aNodeVersion), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aNodeVersion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aOidcTokenConfig))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aOidcTokenConfigIssuerMode), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aOidcTokenConfigIssuerMode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aOptionsAllowlist))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc734cd9afdf7614aOptionsAllowlistPath>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aOptionsAllowlistPath))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aPassport))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aPassportDeploymentType), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aPassportDeploymentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aPasswordProtection))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aPasswordProtectionDeploymentType), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aPasswordProtectionDeploymentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant2>), TypeInfoPropertyName = "OneOfAutoSDKSharedc734cd9afdf7614aProtectionBypassVariant1AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant1Scope), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant1Scope2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant2Scope), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant2Scope2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionConfig))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionConfigSandboxUrls))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSandbox))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc734cd9afdf7614aSandboxFailoverRegion>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSandboxFailoverRegion), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aSandboxFailoverRegion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSandboxRegion), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aSandboxRegion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc734cd9afdf7614aService>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aService))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aServiceFramework), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aServiceFramework2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aServiceServiceType), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aServiceServiceType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSpeedInsights))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtection))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionCve55182MigrationAppliedFrom), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aSsoProtectionCve55182MigrationAppliedFrom2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionDeploymentType), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aSsoProtectionDeploymentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aStaticIps))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTier), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aTier2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTracing))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc734cd9afdf7614aTracingSamplingRule>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTracingSamplingRule))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleDestination), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleDestination2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleEnv), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleEnv2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant2>), TypeInfoPropertyName = "OneOfAutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1Addresse>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1Addresse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1DeploymentType), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1DeploymentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1ProtectionMode), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1ProtectionMode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant2DeploymentType), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant2DeploymentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aUsageStatus))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aUsageStatusKind), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aUsageStatusKind2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aVercelFlags))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aWebAnalytics))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedcdaac4bd3d3c6643MiddlewareRuntime), TypeInfoPropertyName = "AutoSDKSharedcdaac4bd3d3c6643MiddlewareRuntime2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedcdaac4bd3d3c6643ProjectSettings))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedcdaac4bd3d3c6643ProjectSettingsVercelFlags))]
@@ -2032,8 +2032,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant4, bool?>), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant4_bool_ff7e7eead0ab8732")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2_c4b215700c2531d6")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2>), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2_74214ffd455eb2c0")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2_5026ac9e57880b43")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2>), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2_9488bcf287ea7972")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2>>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2_ebb2b381cd9f605d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2_02adc5f3dd443517")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2>>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2_ce3bb41ef0e8fffa")]
@@ -2052,6 +2050,8 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant1, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant2, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant3, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant4>), TypeInfoPropertyName = "AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant4_57d6f8e0c233573e")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2_b56c1842a68cdef7")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2>), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2_94e70ecbd025fb43")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2_f6a5cb6bc2bd8ce4")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2>), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2_4701682bcf257d75")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant1, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant2, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant3, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant4, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5>), TypeInfoPropertyName = "AutoSDKSharede3c00aaf9d3a15beSourceVariant5_bb2eda587ae7d458")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant1, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant2, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3>), TypeInfoPropertyName = "AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3_555ec7d89e63a21f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1, global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKSharede7fa7575dde4720dConditionRhsVariant2_string_double_bool_d6e57cc7a1b2fde5")]
@@ -2084,7 +2084,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant1, global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant2, global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant3, global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant4>?), TypeInfoPropertyName = "AutoSDKShared0f45691814810f14OutcomeVariant4_2c30f1cde7c695c1")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant4, bool?>?), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant4_bool_3b1990858abf1e2a")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2>?), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2_b58adad04a0f528a")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2>?), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2_245892d2dc791cdd")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2>?), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2_acb703bc65d7989e")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2>?), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2_61fd7336168e76eb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2>?), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2_872afdd8f2ed4943")]
@@ -2096,6 +2095,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant2>?), TypeInfoPropertyName = "AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant2_7fe4a551cf54f612")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant1, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant2, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant3, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant4>?), TypeInfoPropertyName = "AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant4_c9f1b320ec6e6702")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2>?), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2_32f09f63c90d0736")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2>?), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2_6459bfb1bfc5f66f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant1, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant2, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant3, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant4, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5>?), TypeInfoPropertyName = "AutoSDKSharede3c00aaf9d3a15beSourceVariant5_a78425e81a175ed6")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant1, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant2, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3>?), TypeInfoPropertyName = "AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3_38232865ffd9763d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1, global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant2, string, double?, bool?>?), TypeInfoPropertyName = "AutoSDKSharede7fa7575dde4720dConditionRhsVariant2_string_double_bool_65c09a038fb946ae")]
@@ -2126,7 +2126,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.UserEventViaItemVariant1, global::Vercel.UserEventViaItemVariant2, global::Vercel.UserEventViaItemVariant3, global::Vercel.UserEventViaItemVariant4, global::Vercel.UserEventViaItemVariant5>>), TypeInfoPropertyName = "UserEventViaItemVariant5_cbfb401da7350f0b")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant3ItemVariant1, global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant3ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared0f45691814810f14ConditionRhsVariant3ItemVariant2_96bc202170d00c02")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2_b980883f3467fa4a")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2_29998261554b0b65")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2>>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2_1cb0b7faf68fdd69")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2>>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2_0befd1486ce5b7b2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2>>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2_f0f3f7c54aa3ab56")]
@@ -2135,6 +2134,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant1, global::Vercel.AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant2>>), TypeInfoPropertyName = "AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant2_db7fcccc46c89b27")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AnyOf<global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant2_8d830cd6540d7db9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2_cf272b8b824b99e3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2_5f730bc32dc23683")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AnyOf<global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKSharede7fa7575dde4720dConditionRhsVariant1ItemVariant2_e47ff46f49907b11")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvider>, global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProviders?>), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProjectFilterGitProviders_1da342ad0298fa46")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.BuyCreditsResponseVariant2PurchaseIntentConfigurationVariant5))]
@@ -3333,46 +3333,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant1Type?), TypeInfoPropertyName = "NullableAutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2BaseType?), TypeInfoPropertyName = "NullableAutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2BaseType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2Type?), TypeInfoPropertyName = "NullableAutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfigurationEnvId?>?), TypeInfoPropertyName = "NullableOneOfStringAutoSDKShared0f99f1735f329c6cConnectConfigurationEnvId2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfigurationEnvId?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cConnectConfigurationEnvId2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared58ffef5c4d095b17?), TypeInfoPropertyName = "NullableAutoSDKShared58ffef5c4d095b172")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cCronsDefinitionSource?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cCronsDefinitionSource2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToastAction?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cDismissedToastAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToastValue, bool?>?), TypeInfoPropertyName = "NullableOneOfStringDoubleAutoSDKShared0f99f1735f329c6cDismissedToastValueBoolean2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, bool?>?), TypeInfoPropertyName = "NullableOneOfStringDoubleBoolean2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cExpirationVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cExpirationVariant2>?), TypeInfoPropertyName = "NullableOneOfAutoSDKShared0f99f1735f329c6cExpirationVariant1AutoSDKShared0f99f1735f329c6cExpirationVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cFramework?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cFramework2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2>?), TypeInfoPropertyName = "NullableOneOfAutoSDKShared0f99f1735f329c6cInternalRouteVariant1AutoSDKShared0f99f1735f329c6cInternalRouteVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Key?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Key2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Type?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2Type?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2Type2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2MitigateAction?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cInternalRouteVariant2MitigateAction2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cLastAliasRequestJobStatus?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cLastAliasRequestJobStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cLastAliasRequestType?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cLastAliasRequestType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharede0f9d68fc63cf31d?), TypeInfoPropertyName = "NullableAutoSDKSharede0f9d68fc63cf31d2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared7ff9e6410c724535?), TypeInfoPropertyName = "NullableAutoSDKShared7ff9e6410c7245352")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cNodeVersion?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cNodeVersion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cOidcTokenConfigIssuerMode?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cOidcTokenConfigIssuerMode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cPassportDeploymentType?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cPassportDeploymentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cPasswordProtectionDeploymentType?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cPasswordProtectionDeploymentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant2>?), TypeInfoPropertyName = "NullableOneOfAutoSDKShared0f99f1735f329c6cProtectionBypassVariant1AutoSDKShared0f99f1735f329c6cProtectionBypassVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant1Scope?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cProtectionBypassVariant1Scope2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant2Scope?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cProtectionBypassVariant2Scope2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxFailoverRegion?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cSandboxFailoverRegion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxRegion?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cSandboxRegion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cServiceFramework?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cServiceFramework2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cServiceServiceType?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cServiceServiceType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionCve55182MigrationAppliedFrom?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cSsoProtectionCve55182MigrationAppliedFrom2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionDeploymentType?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cSsoProtectionDeploymentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTier?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cTier2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleDestination?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cTracingSamplingRuleDestination2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleEnv?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cTracingSamplingRuleEnv2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant2>?), TypeInfoPropertyName = "NullableOneOfAutoSDKShared0f99f1735f329c6cTrustedIpsVariant1AutoSDKShared0f99f1735f329c6cTrustedIpsVariant22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1DeploymentType?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cTrustedIpsVariant1DeploymentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1ProtectionMode?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cTrustedIpsVariant1ProtectionMode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant2DeploymentType?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cTrustedIpsVariant2DeploymentType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cUsageStatusKind?), TypeInfoPropertyName = "NullableAutoSDKShared0f99f1735f329c6cUsageStatusKind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared2899f8f1b76807ed?), TypeInfoPropertyName = "NullableAutoSDKShared2899f8f1b76807ed2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared2208dea57c17c8daCreatedFrom?), TypeInfoPropertyName = "NullableAutoSDKShared2208dea57c17c8daCreatedFrom2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared2208dea57c17c8daDeliveryFormat?), TypeInfoPropertyName = "NullableAutoSDKShared2208dea57c17c8daDeliveryFormat2")]
@@ -3451,6 +3411,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsLogHeaders?), TypeInfoPropertyName = "NullableAutoSDKShared4c958b4a81a75558RulesetsLogHeaders2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsRateLimitAction?), TypeInfoPropertyName = "NullableAutoSDKShared4c958b4a81a75558RulesetsRateLimitAction2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared4c958b4a81a75558RulesetsRateLimitAlgo?), TypeInfoPropertyName = "NullableAutoSDKShared4c958b4a81a75558RulesetsRateLimitAlgo2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared58ffef5c4d095b17?), TypeInfoPropertyName = "NullableAutoSDKShared58ffef5c4d095b172")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1Type?), TypeInfoPropertyName = "NullableAutoSDKShared58ffef5c4d095b17Variant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant1, global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant2>?), TypeInfoPropertyName = "NullableOneOfAutoSDKShared58ffef5c4d095b17Variant1ViaVariant1AutoSDKShared58ffef5c4d095b17Variant1ViaVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared58ffef5c4d095b17Variant1ViaVariant1Type?), TypeInfoPropertyName = "NullableAutoSDKShared58ffef5c4d095b17Variant1ViaVariant1Type2")]
@@ -3503,6 +3464,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared78fcc629ea8987ed?), TypeInfoPropertyName = "NullableAutoSDKShared78fcc629ea8987ed2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared7d4f4f5cff68219aBranchMatcherType?), TypeInfoPropertyName = "NullableAutoSDKShared7d4f4f5cff68219aBranchMatcherType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared7d4f4f5cff68219aType?), TypeInfoPropertyName = "NullableAutoSDKShared7d4f4f5cff68219aType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared7ff9e6410c724535?), TypeInfoPropertyName = "NullableAutoSDKShared7ff9e6410c7245352")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceEnvironmentVariant1Target?), TypeInfoPropertyName = "NullableAutoSDKShared803d328dcef47295DeploymentSourceEnvironmentVariant1Target2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceEnvironmentVariant1Type?), TypeInfoPropertyName = "NullableAutoSDKShared803d328dcef47295DeploymentSourceEnvironmentVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShared803d328dcef47295DeploymentSourceEnvironmentVariant2Type?), TypeInfoPropertyName = "NullableAutoSDKShared803d328dcef47295DeploymentSourceEnvironmentVariant2Type2")]
@@ -3632,6 +3594,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1Type?), TypeInfoPropertyName = "NullableAutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2Type?), TypeInfoPropertyName = "NullableAutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2Type2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2MitigateAction?), TypeInfoPropertyName = "NullableAutoSDKSharedc30663411f76e3c9InternalRouteVariant2MitigateAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharede0f9d68fc63cf31d?), TypeInfoPropertyName = "NullableAutoSDKSharede0f9d68fc63cf31d2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9NodeVersion?), TypeInfoPropertyName = "NullableAutoSDKSharedc30663411f76e3c9NodeVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9OidcTokenConfigIssuerMode?), TypeInfoPropertyName = "NullableAutoSDKSharedc30663411f76e3c9OidcTokenConfigIssuerMode2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9PassportDeploymentType?), TypeInfoPropertyName = "NullableAutoSDKSharedc30663411f76e3c9PassportDeploymentType2")]
@@ -3639,6 +3602,43 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9SsoProtectionCve55182MigrationAppliedFrom?), TypeInfoPropertyName = "NullableAutoSDKSharedc30663411f76e3c9SsoProtectionCve55182MigrationAppliedFrom2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9SsoProtectionDeploymentType?), TypeInfoPropertyName = "NullableAutoSDKSharedc30663411f76e3c9SsoProtectionDeploymentType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9Tier?), TypeInfoPropertyName = "NullableAutoSDKSharedc30663411f76e3c9Tier2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, global::Vercel.AutoSDKSharedc734cd9afdf7614aConnectConfigurationEnvId?>?), TypeInfoPropertyName = "NullableOneOfStringAutoSDKSharedc734cd9afdf7614aConnectConfigurationEnvId2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aConnectConfigurationEnvId?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aConnectConfigurationEnvId2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aCronsDefinitionSource?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aCronsDefinitionSource2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aDismissedToastAction?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aDismissedToastAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::Vercel.AutoSDKSharedc734cd9afdf7614aDismissedToastValue, bool?>?), TypeInfoPropertyName = "NullableOneOfStringDoubleAutoSDKSharedc734cd9afdf7614aDismissedToastValueBoolean2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, bool?>?), TypeInfoPropertyName = "NullableOneOfStringDoubleBoolean2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aExpirationVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aExpirationVariant2>?), TypeInfoPropertyName = "NullableOneOfAutoSDKSharedc734cd9afdf7614aExpirationVariant1AutoSDKSharedc734cd9afdf7614aExpirationVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aFramework?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aFramework2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2>?), TypeInfoPropertyName = "NullableOneOfAutoSDKSharedc734cd9afdf7614aInternalRouteVariant1AutoSDKSharedc734cd9afdf7614aInternalRouteVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1Key?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1Key2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1Type?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2Type?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2MitigateAction?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aInternalRouteVariant2MitigateAction2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aLastAliasRequestJobStatus?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aLastAliasRequestJobStatus2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aLastAliasRequestType?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aLastAliasRequestType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aNodeVersion?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aNodeVersion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aOidcTokenConfigIssuerMode?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aOidcTokenConfigIssuerMode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aPassportDeploymentType?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aPassportDeploymentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aPasswordProtectionDeploymentType?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aPasswordProtectionDeploymentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant2>?), TypeInfoPropertyName = "NullableOneOfAutoSDKSharedc734cd9afdf7614aProtectionBypassVariant1AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant1Scope?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aProtectionBypassVariant1Scope2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant2Scope?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aProtectionBypassVariant2Scope2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSandboxFailoverRegion?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aSandboxFailoverRegion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSandboxRegion?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aSandboxRegion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aServiceFramework?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aServiceFramework2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aServiceServiceType?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aServiceServiceType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionCve55182MigrationAppliedFrom?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aSsoProtectionCve55182MigrationAppliedFrom2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionDeploymentType?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aSsoProtectionDeploymentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTier?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aTier2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleDestination?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aTracingSamplingRuleDestination2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleEnv?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aTracingSamplingRuleEnv2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant2>?), TypeInfoPropertyName = "NullableOneOfAutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1DeploymentType?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1DeploymentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1ProtectionMode?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1ProtectionMode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant2DeploymentType?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aTrustedIpsVariant2DeploymentType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aUsageStatusKind?), TypeInfoPropertyName = "NullableAutoSDKSharedc734cd9afdf7614aUsageStatusKind2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedcdaac4bd3d3c6643MiddlewareRuntime?), TypeInfoPropertyName = "NullableAutoSDKSharedcdaac4bd3d3c6643MiddlewareRuntime2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShareddb8a6ccf5b64d660Blocks?), TypeInfoPropertyName = "NullableAutoSDKShareddb8a6ccf5b64d660Blocks2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKShareddb8a6ccf5b64d660Conclusion?), TypeInfoPropertyName = "NullableAutoSDKShareddb8a6ccf5b64d660Conclusion2")]
@@ -4043,8 +4043,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant4, bool?>), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant4_bool_ff7e7eead0ab8732")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2_c4b215700c2531d6")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2>), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2_74214ffd455eb2c0")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2_5026ac9e57880b43")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2>), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2_9488bcf287ea7972")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2>>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2_ebb2b381cd9f605d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2_02adc5f3dd443517")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2>>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2_ce3bb41ef0e8fffa")]
@@ -4063,6 +4061,8 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant1, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant2, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant3, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant4>), TypeInfoPropertyName = "AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant4_57d6f8e0c233573e")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2_b56c1842a68cdef7")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2>), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2_94e70ecbd025fb43")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2_f6a5cb6bc2bd8ce4")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2>), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2_4701682bcf257d75")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant1, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant2, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant3, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant4, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5>), TypeInfoPropertyName = "AutoSDKSharede3c00aaf9d3a15beSourceVariant5_bb2eda587ae7d458")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant1, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant2, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3>), TypeInfoPropertyName = "AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3_555ec7d89e63a21f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1, global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant2, string, double?, bool?>), TypeInfoPropertyName = "AutoSDKSharede7fa7575dde4720dConditionRhsVariant2_string_double_bool_d6e57cc7a1b2fde5")]
@@ -4095,7 +4095,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant1, global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant2, global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant3, global::Vercel.AutoSDKShared0f45691814810f14OutcomeVariant4>?), TypeInfoPropertyName = "AutoSDKShared0f45691814810f14OutcomeVariant4_2c30f1cde7c695c1")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<string, double?, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant4, bool?>?), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant4_bool_3b1990858abf1e2a")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2>?), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2_b58adad04a0f528a")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2>?), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2_245892d2dc791cdd")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2>?), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2_acb703bc65d7989e")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2>?), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2_61fd7336168e76eb")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2>?), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2_872afdd8f2ed4943")]
@@ -4107,6 +4106,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant2>?), TypeInfoPropertyName = "AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant2_7fe4a551cf54f612")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant1, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant2, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant3, global::Vercel.AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant4>?), TypeInfoPropertyName = "AutoSDKSharedbbf450e6ecd4e724ElasticBuildMachineVariant4_c9f1b320ec6e6702")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2>?), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2_32f09f63c90d0736")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2>?), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2_6459bfb1bfc5f66f")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant1, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant2, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant3, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant4, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5>?), TypeInfoPropertyName = "AutoSDKSharede3c00aaf9d3a15beSourceVariant5_a78425e81a175ed6")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant1, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant2, global::Vercel.AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3>?), TypeInfoPropertyName = "AutoSDKSharede3c00aaf9d3a15beSourceVariant5SelectionVariant3_38232865ffd9763d")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1, global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant2, string, double?, bool?>?), TypeInfoPropertyName = "AutoSDKSharede7fa7575dde4720dConditionRhsVariant2_string_double_bool_65c09a038fb946ae")]
@@ -4137,7 +4137,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.UserEventViaItemVariant1, global::Vercel.UserEventViaItemVariant2, global::Vercel.UserEventViaItemVariant3, global::Vercel.UserEventViaItemVariant4, global::Vercel.UserEventViaItemVariant5>>), TypeInfoPropertyName = "UserEventViaItemVariant5_cbfb401da7350f0b")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant3ItemVariant1, global::Vercel.AutoSDKShared0f45691814810f14ConditionRhsVariant3ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared0f45691814810f14ConditionRhsVariant3ItemVariant2_96bc202170d00c02")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2_b980883f3467fa4a")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2_29998261554b0b65")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2>>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2_1cb0b7faf68fdd69")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2>>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemSourceVariant2_0befd1486ce5b7b2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AnyOf<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2>>), TypeInfoPropertyName = "AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemEnvironmentVariant2_f0f3f7c54aa3ab56")]
@@ -4146,6 +4145,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant1, global::Vercel.AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant2>>), TypeInfoPropertyName = "AutoSDKShared803d328dcef47295GitSourceEnvironmentVariant2_db7fcccc46c89b27")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AnyOf<global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKShareda4dd3b1b30ff7300ConditionRhsVariant1ItemVariant2_8d830cd6540d7db9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2_cf272b8b824b99e3")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2>>), TypeInfoPropertyName = "AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2_5f730bc32dc23683")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AnyOf<global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1ItemVariant1, global::Vercel.AutoSDKSharede7fa7575dde4720dConditionRhsVariant1ItemVariant2>>), TypeInfoPropertyName = "AutoSDKSharede7fa7575dde4720dConditionRhsVariant1ItemVariant2_e47ff46f49907b11")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProvider>, global::Vercel.CreateIntegrationStoreDirectResponseStoreProjectFilterGitProviders?>), TypeInfoPropertyName = "CreateIntegrationStoreDirectResponseStoreProjectFilterGitProviders_1da342ad0298fa46")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetDeploymentResponseVariant3LambdaReadyState?), TypeInfoPropertyName = "NullableGetDeploymentResponseVariant3LambdaReadyState2")]
@@ -4552,20 +4552,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6IncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6Rule>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleCondition>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared29b35dda7b3e47c4>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfiguration>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cCronsDefinition>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared7d4f4f5cff68219a>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToast>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared470bc56668090392>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cIpBucket>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedbca3e7a986162538>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cOptionsAllowlistPath>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxFailoverRegion>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cService>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRule>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1Addresse>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2208dea57c17c8daEnvironment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2208dea57c17c8daSource>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AnyOf<global::System.Collections.Generic.List<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1Item>, string>))]
@@ -4575,7 +4561,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared248d74bb1449b75fDeploymentSourcesVariant1ItemSource>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKShared25e1e81cf9eecd30LogHeaders?>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKShared25e1e81cf9eecd30RulesetsLogHeaders?>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0f99f1735f329c6c>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedbca3e7a986162538>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem>>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared2ea6923996597ff4IncludeItem>))]
@@ -4614,14 +4600,15 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared82df63ae69e9ea93Variant2Item>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared82df63ae69e9ea93Variant3Item>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared8422af433e1bf486Build>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc734cd9afdf7614a>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared947f69fa305d000eHaVariant1, global::Vercel.AutoSDKShared947f69fa305d000eHaVariant2>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant1, global::Vercel.AutoSDKShared947f69fa305d000eMissingItemVariant2>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant1, global::Vercel.AutoSDKShared947f69fa305d000eTransformVariant2>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKShared94938587734e5f57OidcProvider>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared94938587734e5f57OidcProvider>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<string>>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ACLAction>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared0001bb8e789a120e>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ACLAction>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShareda15210bade0a7c46ChangedResource>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShareda4dd3b1b30ff7300Condition>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedab96da75e8212e8fSamplingItem>))]
@@ -4630,11 +4617,13 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6HaVariant2>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6MissingItemVariant2>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant1, global::Vercel.AutoSDKSharedada259eacea6cff6TransformVariant2>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared29b35dda7b3e47c4>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb4cb9cbf2561e851Condition>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb4cb9cbf2561e851ConditionConditionGroupItemCondition>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedb4cb9cbf2561e851Ip>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.List<string>, global::Vercel.AutoSDKSharedb4cb9cbf2561e851LogHeaders?>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared470bc56668090392>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedba1f75615f04b60cTransformItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>>>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.Dictionary<string, global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedba25b79c660ac1ceTarget>>>))]
@@ -4643,6 +4632,17 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedbca3e7a986162538Build>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2>>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc30663411f76e3c9IpBucket>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc734cd9afdf7614aConnectConfiguration>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc734cd9afdf7614aCronsDefinition>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKShared7d4f4f5cff68219a>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc734cd9afdf7614aDismissedToast>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.OneOf<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2>>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc734cd9afdf7614aIpBucket>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc734cd9afdf7614aOptionsAllowlistPath>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc734cd9afdf7614aSandboxFailoverRegion>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc734cd9afdf7614aService>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc734cd9afdf7614aTracingSamplingRule>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1Addresse>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedcdaac4bd3d3c6643ScheduleFunctionEntrypoint>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedce0c7f50e384322cStage>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharede0f9d68fc63cf31dVariant1DeployHook>))]
@@ -5001,15 +5001,6 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant4, bool?>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleConditionRhsVariant3ItemVariant2>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant1, global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfigurationEnvId?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToastValue, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared0f99f1735f329c6cExpirationVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cExpirationVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant2>());
-            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1, global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant2>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKShared2208dea57c17c8daSourceVariant1, global::Vercel.AutoSDKShared2208dea57c17c8daSourceVariant2>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1Item>, string>());
             options.Converters.Add(new global::Vercel.JsonConverters.AnyOfJsonConverter<global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant1, global::Vercel.AutoSDKShared248d74bb1449b75fGitSourcesVariant1ItemEnvironmentVariant2>());
@@ -5097,6 +5088,15 @@ namespace Vercel
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedc30663411f76e3c9ExpirationVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9ExpirationVariant2>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc30663411f76e3c9InternalRouteVariant2HaVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.AutoSDKSharedc734cd9afdf7614aConnectConfigurationEnvId?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, global::Vercel.AutoSDKSharedc734cd9afdf7614aDismissedToastValue, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, double?, bool?>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedc734cd9afdf7614aExpirationVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aExpirationVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant2>());
+            options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1, global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant2>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
             options.Converters.Add(new global::Vercel.JsonConverters.OneOfJsonConverter<string, global::System.Collections.Generic.IList<string>>());
@@ -5812,126 +5812,6 @@ namespace Vercel
                     || typeToConvert == typeof(global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2Type)
 
                     || typeToConvert == typeof(global::Vercel.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2Type?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfigurationEnvId)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfigurationEnvId?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cCronsDefinitionSource)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cCronsDefinitionSource?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToastAction)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToastAction?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cFramework)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cFramework?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Key)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Key?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Type)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Type?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2Type)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2Type?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2MitigateAction)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2MitigateAction?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cLastAliasRequestJobStatus)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cLastAliasRequestJobStatus?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cLastAliasRequestType)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cLastAliasRequestType?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cNodeVersion)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cNodeVersion?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cOidcTokenConfigIssuerMode)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cOidcTokenConfigIssuerMode?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cPassportDeploymentType)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cPassportDeploymentType?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cPasswordProtectionDeploymentType)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cPasswordProtectionDeploymentType?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant1Scope)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant1Scope?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant2Scope)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant2Scope?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxFailoverRegion)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxFailoverRegion?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxRegion)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxRegion?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cServiceFramework)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cServiceFramework?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cServiceServiceType)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cServiceServiceType?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionCve55182MigrationAppliedFrom)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionCve55182MigrationAppliedFrom?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionDeploymentType)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionDeploymentType?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTier)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTier?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleDestination)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleDestination?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleEnv)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleEnv?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1DeploymentType)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1DeploymentType?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1ProtectionMode)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1ProtectionMode?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant2DeploymentType)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant2DeploymentType?)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cUsageStatusKind)
-
-                    || typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cUsageStatusKind?)
 
                     || typeToConvert == typeof(global::Vercel.AutoSDKShared2208dea57c17c8daCreatedFrom)
 
@@ -6792,6 +6672,126 @@ namespace Vercel
                     || typeToConvert == typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9Tier)
 
                     || typeToConvert == typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9Tier?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aConnectConfigurationEnvId)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aConnectConfigurationEnvId?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aCronsDefinitionSource)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aCronsDefinitionSource?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aDismissedToastAction)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aDismissedToastAction?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aFramework)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aFramework?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1Key)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1Key?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2Type)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2Type?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2MitigateAction)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2MitigateAction?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aLastAliasRequestJobStatus)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aLastAliasRequestJobStatus?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aLastAliasRequestType)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aLastAliasRequestType?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aNodeVersion)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aNodeVersion?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aOidcTokenConfigIssuerMode)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aOidcTokenConfigIssuerMode?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aPassportDeploymentType)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aPassportDeploymentType?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aPasswordProtectionDeploymentType)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aPasswordProtectionDeploymentType?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant1Scope)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant1Scope?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant2Scope)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant2Scope?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSandboxFailoverRegion)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSandboxFailoverRegion?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSandboxRegion)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSandboxRegion?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aServiceFramework)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aServiceFramework?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aServiceServiceType)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aServiceServiceType?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionCve55182MigrationAppliedFrom)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionCve55182MigrationAppliedFrom?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionDeploymentType)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionDeploymentType?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTier)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTier?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleDestination)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleDestination?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleEnv)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleEnv?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1DeploymentType)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1DeploymentType?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1ProtectionMode)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1ProtectionMode?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant2DeploymentType)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant2DeploymentType?)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aUsageStatusKind)
+
+                    || typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aUsageStatusKind?)
 
                     || typeToConvert == typeof(global::Vercel.AutoSDKSharedcdaac4bd3d3c6643MiddlewareRuntime)
 
@@ -10568,306 +10568,6 @@ namespace Vercel
                     return new global::Vercel.JsonConverters.AutoSDKShared0f637bb8b5caf2d6RuleOutcomeVariant2TypeNullableJsonConverter();
                 }
 
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfigurationEnvId))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cConnectConfigurationEnvIdJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cConnectConfigurationEnvId?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cConnectConfigurationEnvIdNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cCronsDefinitionSource))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cCronsDefinitionSourceJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cCronsDefinitionSource?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cCronsDefinitionSourceNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToastAction))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cDismissedToastActionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cDismissedToastAction?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cDismissedToastActionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cFramework))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cFrameworkJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cFramework?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cFrameworkNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Key))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1KeyJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Key?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1KeyNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Type))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1Type?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant1TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2Type))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2TypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2Type?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2HaVariant2TypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2MitigateAction))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2MitigateActionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2MitigateAction?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cInternalRouteVariant2MitigateActionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cLastAliasRequestJobStatus))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cLastAliasRequestJobStatusJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cLastAliasRequestJobStatus?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cLastAliasRequestJobStatusNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cLastAliasRequestType))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cLastAliasRequestTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cLastAliasRequestType?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cLastAliasRequestTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cNodeVersion))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cNodeVersionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cNodeVersion?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cNodeVersionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cOidcTokenConfigIssuerMode))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cOidcTokenConfigIssuerModeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cOidcTokenConfigIssuerMode?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cOidcTokenConfigIssuerModeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cPassportDeploymentType))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cPassportDeploymentTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cPassportDeploymentType?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cPassportDeploymentTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cPasswordProtectionDeploymentType))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cPasswordProtectionDeploymentTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cPasswordProtectionDeploymentType?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cPasswordProtectionDeploymentTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant1Scope))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant1ScopeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant1Scope?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant1ScopeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant2Scope))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant2ScopeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant2Scope?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cProtectionBypassVariant2ScopeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxFailoverRegion))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cSandboxFailoverRegionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxFailoverRegion?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cSandboxFailoverRegionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxRegion))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cSandboxRegionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSandboxRegion?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cSandboxRegionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cServiceFramework))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cServiceFrameworkJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cServiceFramework?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cServiceFrameworkNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cServiceServiceType))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cServiceServiceTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cServiceServiceType?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cServiceServiceTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cSsoProtectionApril2026SecurityIncidentMigrationAppliedFromJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cSsoProtectionApril2026SecurityIncidentMigrationAppliedFromNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionCve55182MigrationAppliedFrom))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cSsoProtectionCve55182MigrationAppliedFromJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionCve55182MigrationAppliedFrom?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cSsoProtectionCve55182MigrationAppliedFromNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionDeploymentType))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cSsoProtectionDeploymentTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cSsoProtectionDeploymentType?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cSsoProtectionDeploymentTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTier))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cTierJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTier?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cTierNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleDestination))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleDestinationJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleDestination?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleDestinationNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleEnv))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleEnvJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleEnv?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cTracingSamplingRuleEnvNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1DeploymentType))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1DeploymentTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1DeploymentType?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1DeploymentTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1ProtectionMode))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1ProtectionModeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1ProtectionMode?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant1ProtectionModeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant2DeploymentType))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant2DeploymentTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant2DeploymentType?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cTrustedIpsVariant2DeploymentTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cUsageStatusKind))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cUsageStatusKindJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.AutoSDKShared0f99f1735f329c6cUsageStatusKind?))
-                {
-                    return new global::Vercel.JsonConverters.AutoSDKShared0f99f1735f329c6cUsageStatusKindNullableJsonConverter();
-                }
-
                 if (typeToConvert == typeof(global::Vercel.AutoSDKShared2208dea57c17c8daCreatedFrom))
                 {
                     return new global::Vercel.JsonConverters.AutoSDKShared2208dea57c17c8daCreatedFromJsonConverter();
@@ -13016,6 +12716,306 @@ namespace Vercel
                 if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc30663411f76e3c9Tier?))
                 {
                     return new global::Vercel.JsonConverters.AutoSDKSharedc30663411f76e3c9TierNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aConnectConfigurationEnvId))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aConnectConfigurationEnvIdJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aConnectConfigurationEnvId?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aConnectConfigurationEnvIdNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aCronsDefinitionSource))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aCronsDefinitionSourceJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aCronsDefinitionSource?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aCronsDefinitionSourceNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aDismissedToastAction))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aDismissedToastActionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aDismissedToastAction?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aDismissedToastActionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aFramework))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aFrameworkJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aFramework?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aFrameworkNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1Key))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1KeyJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1Key?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1KeyNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant1TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2Type))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2Type?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2HaVariant2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2MitigateAction))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2MitigateActionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2MitigateAction?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aInternalRouteVariant2MitigateActionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aLastAliasRequestJobStatus))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aLastAliasRequestJobStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aLastAliasRequestJobStatus?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aLastAliasRequestJobStatusNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aLastAliasRequestType))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aLastAliasRequestTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aLastAliasRequestType?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aLastAliasRequestTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aNodeVersion))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aNodeVersionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aNodeVersion?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aNodeVersionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aOidcTokenConfigIssuerMode))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aOidcTokenConfigIssuerModeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aOidcTokenConfigIssuerMode?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aOidcTokenConfigIssuerModeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aPassportDeploymentType))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aPassportDeploymentTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aPassportDeploymentType?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aPassportDeploymentTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aPasswordProtectionDeploymentType))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aPasswordProtectionDeploymentTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aPasswordProtectionDeploymentType?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aPasswordProtectionDeploymentTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant1Scope))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant1ScopeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant1Scope?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant1ScopeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant2Scope))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant2ScopeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant2Scope?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aProtectionBypassVariant2ScopeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSandboxFailoverRegion))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aSandboxFailoverRegionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSandboxFailoverRegion?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aSandboxFailoverRegionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSandboxRegion))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aSandboxRegionJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSandboxRegion?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aSandboxRegionNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aServiceFramework))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aServiceFrameworkJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aServiceFramework?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aServiceFrameworkNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aServiceServiceType))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aServiceServiceTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aServiceServiceType?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aServiceServiceTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aSsoProtectionApril2026SecurityIncidentMigrationAppliedFromJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionApril2026SecurityIncidentMigrationAppliedFrom?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aSsoProtectionApril2026SecurityIncidentMigrationAppliedFromNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionCve55182MigrationAppliedFrom))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aSsoProtectionCve55182MigrationAppliedFromJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionCve55182MigrationAppliedFrom?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aSsoProtectionCve55182MigrationAppliedFromNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionDeploymentType))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aSsoProtectionDeploymentTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aSsoProtectionDeploymentType?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aSsoProtectionDeploymentTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTier))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aTierJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTier?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aTierNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleDestination))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleDestinationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleDestination?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleDestinationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleEnv))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleEnvJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleEnv?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aTracingSamplingRuleEnvNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1DeploymentType))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1DeploymentTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1DeploymentType?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1DeploymentTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1ProtectionMode))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1ProtectionModeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1ProtectionMode?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant1ProtectionModeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant2DeploymentType))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant2DeploymentTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant2DeploymentType?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aTrustedIpsVariant2DeploymentTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aUsageStatusKind))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aUsageStatusKindJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.AutoSDKSharedc734cd9afdf7614aUsageStatusKind?))
+                {
+                    return new global::Vercel.JsonConverters.AutoSDKSharedc734cd9afdf7614aUsageStatusKindNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Vercel.AutoSDKSharedcdaac4bd3d3c6643MiddlewareRuntime))

@@ -9,6 +9,12 @@ namespace Vercel
         /// Get an access token for a connector identified by the path parameter and scoped to the requester.
         /// </summary>
         /// <param name="connector"></param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -17,6 +23,8 @@ namespace Vercel
             string connector,
 
             global::Vercel.GetConnectorTokenRequest request,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -24,6 +32,12 @@ namespace Vercel
         /// Get an access token for a connector identified by the path parameter and scoped to the requester.
         /// </summary>
         /// <param name="connector"></param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="request"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -32,6 +46,8 @@ namespace Vercel
             string connector,
 
             global::Vercel.GetConnectorTokenRequest request,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -39,6 +55,12 @@ namespace Vercel
         /// Get an access token for a connector identified by the path parameter and scoped to the requester.
         /// </summary>
         /// <param name="connector"></param>
+        /// <param name="teamId">
+        /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
+        /// </param>
+        /// <param name="slug">
+        /// Example: my-team-url-slug
+        /// </param>
         /// <param name="subject"></param>
         /// <param name="installationId"></param>
         /// <param name="audience"></param>
@@ -51,6 +73,8 @@ namespace Vercel
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.GetConnectorTokenResponse> GetConnectorTokenAsync(
             string connector,
+            string? teamId = default,
+            string? slug = default,
             global::Vercel.AnyOf<global::Vercel.GetConnectorTokenRequestSubjectTypeApp, global::Vercel.GetConnectorTokenRequestSubjectTypeUser, global::Vercel.GetConnectorTokenRequestSubjectTypeJwtBearer, global::Vercel.GetConnectorTokenRequestSubjectTypeToken, global::Vercel.GetConnectorTokenRequestSubjectTypeOther>? subject = default,
             string? installationId = default,
             global::System.Collections.Generic.IList<string>? audience = default,

@@ -81,6 +81,12 @@ namespace Vercel
         public global::Vercel.NetworkPeeringConnections? PeeringConnections { get; set; }
 
         /// <summary>
+        /// The number of PrivateLink endpoints on the Network, when listing networks.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("privateLinks")]
+        public global::Vercel.NetworkPrivateLinks? PrivateLinks { get; set; }
+
+        /// <summary>
         /// Metadata about any projects associated with the Network.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("projects")]
@@ -159,6 +165,9 @@ namespace Vercel
         /// <param name="peeringConnections">
         /// Metadata about any AWS Route53 Hosted Zones associated with the Network.
         /// </param>
+        /// <param name="privateLinks">
+        /// The number of PrivateLink endpoints on the Network, when listing networks.
+        /// </param>
         /// <param name="projects">
         /// Metadata about any projects associated with the Network.
         /// </param>
@@ -185,6 +194,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<string>? egressIpAddresses,
             global::Vercel.NetworkHostedZones? hostedZones,
             global::Vercel.NetworkPeeringConnections? peeringConnections,
+            global::Vercel.NetworkPrivateLinks? privateLinks,
             global::Vercel.NetworkProjects? projects,
             string? region,
             string? vpcId)
@@ -200,6 +210,7 @@ namespace Vercel
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));
             this.PeeringConnections = peeringConnections;
+            this.PrivateLinks = privateLinks;
             this.Projects = projects;
             this.Region = region;
             this.Status = status;

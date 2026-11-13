@@ -9,14 +9,14 @@ namespace Vercel
     public sealed partial class ConnectConnectorCreateResultUpdatedByVariant1
     {
         /// <summary>
-        /// Vercel user ID.
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Id { get; set; }
 
         /// <summary>
-        /// Principal kind.
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.ConnectConnectorCreateResultUpdatedByVariant1TypeJsonConverter))]
@@ -31,12 +31,8 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ConnectConnectorCreateResultUpdatedByVariant1" /> class.
         /// </summary>
-        /// <param name="id">
-        /// Vercel user ID.
-        /// </param>
-        /// <param name="type">
-        /// Principal kind.
-        /// </param>
+        /// <param name="id"></param>
+        /// <param name="type"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif

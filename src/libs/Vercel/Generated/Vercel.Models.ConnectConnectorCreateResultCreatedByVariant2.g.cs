@@ -9,15 +9,7 @@ namespace Vercel
     public sealed partial class ConnectConnectorCreateResultCreatedByVariant2
     {
         /// <summary>
-        /// Deployment environment of the project principal.
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("environment")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.OneOfJsonConverter<string, global::Vercel.CreatedByEnvironment?>))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.OneOf<string, global::Vercel.CreatedByEnvironment?> Environment { get; set; }
-
-        /// <summary>
-        /// Vercel project ID.
+        /// Vercel user ID.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -39,11 +31,8 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="ConnectConnectorCreateResultCreatedByVariant2" /> class.
         /// </summary>
-        /// <param name="environment">
-        /// Deployment environment of the project principal.
-        /// </param>
         /// <param name="id">
-        /// Vercel project ID.
+        /// Vercel user ID.
         /// </param>
         /// <param name="type">
         /// Principal kind.
@@ -52,11 +41,9 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ConnectConnectorCreateResultCreatedByVariant2(
-            global::Vercel.OneOf<string, global::Vercel.CreatedByEnvironment?> environment,
             string id,
             global::Vercel.ConnectConnectorCreateResultCreatedByVariant2Type type)
         {
-            this.Environment = environment;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
             this.Type = type;
         }
