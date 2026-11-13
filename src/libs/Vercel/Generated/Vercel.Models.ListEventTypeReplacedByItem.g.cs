@@ -211,6 +211,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiGatewayMemberBudgetChanges,
+        /// <summary>
+        ///
+        /// </summary>
         AiGatewayModelAllowlistModelsUpdated,
         /// <summary>
         ///
@@ -3200,6 +3204,7 @@ namespace Vercel
                 ListEventTypeReplacedByItem.AiGatewayHeadquartersUpdated => "ai-gateway-headquarters-updated",
                 ListEventTypeReplacedByItem.AiGatewayHipaaComplianceToggled => "ai-gateway-hipaa-compliance-toggled",
                 ListEventTypeReplacedByItem.AiGatewayInferenceRegionsUpdated => "ai-gateway-inference-regions-updated",
+                ListEventTypeReplacedByItem.AiGatewayMemberBudgetChanges => "ai-gateway-member-budget-changes",
                 ListEventTypeReplacedByItem.AiGatewayModelAllowlistModelsUpdated => "ai-gateway-model-allowlist-models-updated",
                 ListEventTypeReplacedByItem.AiGatewayModelAllowlistToggled => "ai-gateway-model-allowlist-toggled",
                 ListEventTypeReplacedByItem.AiGatewayModelCatalogAlertSettingsUpdated => "ai-gateway-model-catalog-alert-settings-updated",
@@ -3992,6 +3997,7 @@ namespace Vercel
                 "ai-gateway-headquarters-updated" => ListEventTypeReplacedByItem.AiGatewayHeadquartersUpdated,
                 "ai-gateway-hipaa-compliance-toggled" => ListEventTypeReplacedByItem.AiGatewayHipaaComplianceToggled,
                 "ai-gateway-inference-regions-updated" => ListEventTypeReplacedByItem.AiGatewayInferenceRegionsUpdated,
+                "ai-gateway-member-budget-changes" => ListEventTypeReplacedByItem.AiGatewayMemberBudgetChanges,
                 "ai-gateway-model-allowlist-models-updated" => ListEventTypeReplacedByItem.AiGatewayModelAllowlistModelsUpdated,
                 "ai-gateway-model-allowlist-toggled" => ListEventTypeReplacedByItem.AiGatewayModelAllowlistToggled,
                 "ai-gateway-model-catalog-alert-settings-updated" => ListEventTypeReplacedByItem.AiGatewayModelCatalogAlertSettingsUpdated,

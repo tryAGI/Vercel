@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("invocations")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared18cf6c9c9480cd61> Invocations { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9695014f26667713> Invocations { get; set; }
 
         /// <summary>
         ///
@@ -45,7 +45,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ListVercelCiInvocationsResponse(
-            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared18cf6c9c9480cd61> invocations,
+            global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared9695014f26667713> invocations,
             object repositories,
             global::Vercel.ListVercelCiInvocationsResponsePagination pagination)
         {

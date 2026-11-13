@@ -212,6 +212,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiGatewayMemberBudgetChanges,
+        /// <summary>
+        ///
+        /// </summary>
         AiGatewayModelAllowlistModelsUpdated,
         /// <summary>
         ///
@@ -3201,6 +3205,7 @@ namespace Vercel
                 ListEventTypeName.AiGatewayHeadquartersUpdated => "ai-gateway-headquarters-updated",
                 ListEventTypeName.AiGatewayHipaaComplianceToggled => "ai-gateway-hipaa-compliance-toggled",
                 ListEventTypeName.AiGatewayInferenceRegionsUpdated => "ai-gateway-inference-regions-updated",
+                ListEventTypeName.AiGatewayMemberBudgetChanges => "ai-gateway-member-budget-changes",
                 ListEventTypeName.AiGatewayModelAllowlistModelsUpdated => "ai-gateway-model-allowlist-models-updated",
                 ListEventTypeName.AiGatewayModelAllowlistToggled => "ai-gateway-model-allowlist-toggled",
                 ListEventTypeName.AiGatewayModelCatalogAlertSettingsUpdated => "ai-gateway-model-catalog-alert-settings-updated",
@@ -3993,6 +3998,7 @@ namespace Vercel
                 "ai-gateway-headquarters-updated" => ListEventTypeName.AiGatewayHeadquartersUpdated,
                 "ai-gateway-hipaa-compliance-toggled" => ListEventTypeName.AiGatewayHipaaComplianceToggled,
                 "ai-gateway-inference-regions-updated" => ListEventTypeName.AiGatewayInferenceRegionsUpdated,
+                "ai-gateway-member-budget-changes" => ListEventTypeName.AiGatewayMemberBudgetChanges,
                 "ai-gateway-model-allowlist-models-updated" => ListEventTypeName.AiGatewayModelAllowlistModelsUpdated,
                 "ai-gateway-model-allowlist-toggled" => ListEventTypeName.AiGatewayModelAllowlistToggled,
                 "ai-gateway-model-catalog-alert-settings-updated" => ListEventTypeName.AiGatewayModelCatalogAlertSettingsUpdated,

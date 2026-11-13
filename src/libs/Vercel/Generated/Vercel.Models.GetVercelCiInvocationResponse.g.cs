@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("invocation")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AutoSDKShared18cf6c9c9480cd61 Invocation { get; set; }
+        public required global::Vercel.AutoSDKShared9695014f26667713 Invocation { get; set; }
 
         /// <summary>
         ///
@@ -37,7 +37,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetVercelCiInvocationResponse(
-            global::Vercel.AutoSDKShared18cf6c9c9480cd61 invocation,
+            global::Vercel.AutoSDKShared9695014f26667713 invocation,
             object repositories)
         {
             this.Invocation = invocation ?? throw new global::System.ArgumentNullException(nameof(invocation));

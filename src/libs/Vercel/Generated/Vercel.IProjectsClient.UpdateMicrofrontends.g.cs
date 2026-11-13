@@ -22,7 +22,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared4d5a5876dd584f34> UpdateMicrofrontendsAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared0f99f1735f329c6c> UpdateMicrofrontendsAsync(
             string projectId,
 
             global::Vercel.UpdateMicrofrontendsRequest request,
@@ -48,7 +48,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared4d5a5876dd584f34>> UpdateMicrofrontendsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared0f99f1735f329c6c>> UpdateMicrofrontendsAsResponseAsync(
             string projectId,
 
             global::Vercel.UpdateMicrofrontendsRequest request,
@@ -95,7 +95,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared4d5a5876dd584f34> UpdateMicrofrontendsAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared0f99f1735f329c6c> UpdateMicrofrontendsAsync(
             string projectId,
             string? teamId = default,
             string? slug = default,

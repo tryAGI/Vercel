@@ -181,6 +181,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListPromoteAliasesResponseVariant2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListPromoteAliasesResponseVariant2Aliase>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListPromoteAliasesResponseVariant2Aliase))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListPromoteAliasesResponseVariant2AliaseStatus), TypeInfoPropertyName = "ListPromoteAliasesResponseVariant2AliaseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string?>), TypeInfoPropertyName = "DictionaryStringString_System_Collections_Generic_Dictionary_string_string_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedab64e9622c80dc17Handle?), TypeInfoPropertyName = "NullableAutoSDKSharedab64e9622c80dc17Handle2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.AutoSDKSharedab64e9622c80dc17HaType?), TypeInfoPropertyName = "NullableAutoSDKSharedab64e9622c80dc17HaType2")]
@@ -239,6 +240,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.GetProjectEnvResponseVariant1, global::Vercel.GetProjectEnvResponseVariant2, global::Vercel.GetProjectEnvResponseVariant3>?), TypeInfoPropertyName = "NullableOneOfGetProjectEnvResponseVariant1GetProjectEnvResponseVariant2GetProjectEnvResponseVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::System.Collections.Generic.IList<global::Vercel.RemoveProjectEnvResponseVariant1Item?>, global::Vercel.RemoveProjectEnvResponseVariant2, global::Vercel.RemoveProjectEnvResponseVariant3>?), TypeInfoPropertyName = "NullableOneOfIListRemoveProjectEnvResponseVariant1ItemRemoveProjectEnvResponseVariant2RemoveProjectEnvResponseVariant32")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<object, global::Vercel.ListPromoteAliasesResponseVariant2>?), TypeInfoPropertyName = "NullableOneOfObjectListPromoteAliasesResponseVariant22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListPromoteAliasesResponseVariant2AliaseStatus?), TypeInfoPropertyName = "NullableListPromoteAliasesResponseVariant2AliaseStatus2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedab64e9622c80dc17>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedab64e9622c80dc17Ha>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.AutoSDKSharedab64e9622c80dc17MissingItem>))]
@@ -505,7 +507,11 @@ namespace Vercel
 
                     || typeToConvert == typeof(global::Vercel.FilterProjectEnvsDecrypt)
 
-                    || typeToConvert == typeof(global::Vercel.FilterProjectEnvsDecrypt?);
+                    || typeToConvert == typeof(global::Vercel.FilterProjectEnvsDecrypt?)
+
+                    || typeToConvert == typeof(global::Vercel.ListPromoteAliasesResponseVariant2AliaseStatus)
+
+                    || typeToConvert == typeof(global::Vercel.ListPromoteAliasesResponseVariant2AliaseStatus?);
             }
 
             public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
@@ -900,6 +906,16 @@ namespace Vercel
                 if (typeToConvert == typeof(global::Vercel.FilterProjectEnvsDecrypt?))
                 {
                     return new global::Vercel.JsonConverters.FilterProjectEnvsDecryptNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ListPromoteAliasesResponseVariant2AliaseStatus))
+                {
+                    return new global::Vercel.JsonConverters.ListPromoteAliasesResponseVariant2AliaseStatusJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::Vercel.ListPromoteAliasesResponseVariant2AliaseStatus?))
+                {
+                    return new global::Vercel.JsonConverters.ListPromoteAliasesResponseVariant2AliaseStatusNullableJsonConverter();
                 }
                 throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
             }
