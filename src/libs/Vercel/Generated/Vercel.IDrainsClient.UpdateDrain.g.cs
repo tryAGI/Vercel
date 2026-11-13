@@ -19,7 +19,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedaf1cf971744a2ae1> UpdateDrainAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShareda7f579f4cee9d4f4> UpdateDrainAsync(
             string id,
 
             global::Vercel.UpdateDrainRequest request,
@@ -42,7 +42,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedaf1cf971744a2ae1>> UpdateDrainAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShareda7f579f4cee9d4f4>> UpdateDrainAsResponseAsync(
             string id,
 
             global::Vercel.UpdateDrainRequest request,
@@ -74,7 +74,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedaf1cf971744a2ae1> UpdateDrainAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShareda7f579f4cee9d4f4> UpdateDrainAsync(
             string id,
             string? teamId = default,
             string? slug = default,
