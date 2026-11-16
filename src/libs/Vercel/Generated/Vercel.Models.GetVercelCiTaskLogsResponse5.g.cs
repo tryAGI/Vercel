@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("error")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.GetVercelCiTaskLogsResponseError4 Error { get; set; }
+        public required global::Vercel.GetVercelCiTaskLogsResponseError Error { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -29,7 +29,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetVercelCiTaskLogsResponse5(
-            global::Vercel.GetVercelCiTaskLogsResponseError4 error)
+            global::Vercel.GetVercelCiTaskLogsResponseError error)
         {
             this.Error = error ?? throw new global::System.ArgumentNullException(nameof(error));
         }

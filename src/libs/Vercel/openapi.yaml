@@ -31436,6 +31436,104 @@
             }
           }
         ]
+      },
+      "delete": {
+        "description": "Deletes a drive by project and name or drive ID. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion.",
+        "operationId": "deleteDriveV1",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Delete a drive",
+        "tags": [
+          "drives"
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "drive": {
+                      "$ref": "#/components/schemas/Drive"
+                    }
+                  },
+                  "required": [
+                    "drive"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "409": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "429": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "nameOrId",
+            "description": "The drive name or ID.",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The drive name or ID.",
+              "pattern": "^[a-zA-Z0-9_-]+$",
+              "maxLength": 64,
+              "example": "workspace"
+            }
+          },
+          {
+            "name": "projectId",
+            "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
+              "example": "prj_abc123"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
       }
     },
     "/v1/drives/{name}": {
@@ -31597,104 +31695,6 @@
             }
           }
         }
-      },
-      "delete": {
-        "description": "Deletes a drive by project and name. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion.",
-        "operationId": "deleteDriveV1",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Delete a drive",
-        "tags": [
-          "drives"
-        ],
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "drive": {
-                      "$ref": "#/components/schemas/Drive"
-                    }
-                  },
-                  "required": [
-                    "drive"
-                  ],
-                  "type": "object"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "One of the provided values in the request query is invalid."
-          },
-          "401": {
-            "description": "The request is not authorized."
-          },
-          "403": {
-            "description": "You do not have permission to access this resource."
-          },
-          "404": {
-            "description": ""
-          },
-          "409": {
-            "description": ""
-          },
-          "410": {
-            "description": ""
-          },
-          "429": {
-            "description": ""
-          }
-        },
-        "parameters": [
-          {
-            "name": "name",
-            "description": "Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "description": "Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).",
-              "pattern": "^[a-zA-Z0-9_-]+$",
-              "maxLength": 64,
-              "example": "workspace"
-            }
-          },
-          {
-            "name": "projectId",
-            "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
-              "example": "prj_abc123"
-            }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
-          }
-        ]
       }
     },
     "/v1/drives/{name}/fork": {
@@ -67760,6 +67760,108 @@
             }
           }
         ]
+      },
+      "delete": {
+        "description": "Deletes a drive by project and name or drive ID. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion.",
+        "operationId": "deleteDrive",
+        "security": [
+          {
+            "bearerToken": []
+          }
+        ],
+        "summary": "Deprecated: Use DELETE /v1/drives/:nameOrId. Requires the read-write:drive app scope instead of read-write:sandbox, and drive:delete instead of vercelRun:delete.\nEmits drive-deleted activity events instead of sandbox-drive-deleted. Delete a drive",
+        "tags": [
+          "sandboxes"
+        ],
+        "deprecated": true,
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "drive": {
+                      "$ref": "#/components/schemas/Drive"
+                    }
+                  },
+                  "required": [
+                    "drive"
+                  ],
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "One of the provided values in the request query is invalid."
+          },
+          "401": {
+            "description": "The request is not authorized."
+          },
+          "403": {
+            "description": "You do not have permission to access this resource."
+          },
+          "404": {
+            "description": ""
+          },
+          "409": {
+            "description": ""
+          },
+          "410": {
+            "description": ""
+          },
+          "422": {
+            "description": ""
+          },
+          "429": {
+            "description": ""
+          }
+        },
+        "parameters": [
+          {
+            "name": "nameOrId",
+            "description": "The drive name or ID.",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The drive name or ID.",
+              "pattern": "^[a-zA-Z0-9_-]+$",
+              "maxLength": 64,
+              "example": "workspace"
+            }
+          },
+          {
+            "name": "projectId",
+            "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
+              "example": "prj_abc123"
+            }
+          },
+          {
+            "description": "The Team identifier to perform the request on behalf of.",
+            "in": "query",
+            "name": "teamId",
+            "schema": {
+              "type": "string",
+              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
+            }
+          },
+          {
+            "description": "The Team slug to perform the request on behalf of.",
+            "in": "query",
+            "name": "slug",
+            "schema": {
+              "type": "string",
+              "example": "my-team-url-slug"
+            }
+          }
+        ]
       }
     },
     "/v2/sandboxes/drives/{name}": {
@@ -67925,108 +68027,6 @@
             }
           }
         }
-      },
-      "delete": {
-        "description": "Deletes a drive by project and name. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion.",
-        "operationId": "deleteDrive",
-        "security": [
-          {
-            "bearerToken": []
-          }
-        ],
-        "summary": "Deprecated: Use DELETE /v1/drives/:name. Requires the read-write:drive app scope instead of read-write:sandbox, and drive:delete instead of vercelRun:delete.\nEmits drive-deleted activity events instead of sandbox-drive-deleted. Delete a drive",
-        "tags": [
-          "sandboxes"
-        ],
-        "deprecated": true,
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "drive": {
-                      "$ref": "#/components/schemas/Drive"
-                    }
-                  },
-                  "required": [
-                    "drive"
-                  ],
-                  "type": "object"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "One of the provided values in the request query is invalid."
-          },
-          "401": {
-            "description": "The request is not authorized."
-          },
-          "403": {
-            "description": "You do not have permission to access this resource."
-          },
-          "404": {
-            "description": ""
-          },
-          "409": {
-            "description": ""
-          },
-          "410": {
-            "description": ""
-          },
-          "422": {
-            "description": ""
-          },
-          "429": {
-            "description": ""
-          }
-        },
-        "parameters": [
-          {
-            "name": "name",
-            "description": "Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "description": "Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).",
-              "pattern": "^[a-zA-Z0-9_-]+$",
-              "maxLength": 64,
-              "example": "workspace"
-            }
-          },
-          {
-            "name": "projectId",
-            "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "string",
-              "description": "The project ID or name associated with the drive. Required unless using a Vercel OIDC token scoped to a project.",
-              "example": "prj_abc123"
-            }
-          },
-          {
-            "description": "The Team identifier to perform the request on behalf of.",
-            "in": "query",
-            "name": "teamId",
-            "schema": {
-              "type": "string",
-              "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l"
-            }
-          },
-          {
-            "description": "The Team slug to perform the request on behalf of.",
-            "in": "query",
-            "name": "slug",
-            "schema": {
-              "type": "string",
-              "example": "my-team-url-slug"
-            }
-          }
-        ]
       }
     },
     "/v2/sandboxes/drives/{name}/fork": {

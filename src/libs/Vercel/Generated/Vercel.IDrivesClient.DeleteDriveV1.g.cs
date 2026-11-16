@@ -6,10 +6,10 @@ namespace Vercel
     {
         /// <summary>
         /// Delete a drive<br/>
-        /// Deletes a drive by project and name. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion.
+        /// Deletes a drive by project and name or drive ID. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion.
         /// </summary>
-        /// <param name="name">
-        /// Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
+        /// <param name="nameOrId">
+        /// The drive name or ID.<br/>
         /// Example: workspace
         /// </param>
         /// <param name="projectId">
@@ -26,7 +26,7 @@ namespace Vercel
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.DeleteDriveV1Response> DeleteDriveV1Async(
-            string name,
+            string nameOrId,
             string? projectId = default,
             string? teamId = default,
             string? slug = default,
@@ -34,10 +34,10 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Delete a drive<br/>
-        /// Deletes a drive by project and name. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion.
+        /// Deletes a drive by project and name or drive ID. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion.
         /// </summary>
-        /// <param name="name">
-        /// Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
+        /// <param name="nameOrId">
+        /// The drive name or ID.<br/>
         /// Example: workspace
         /// </param>
         /// <param name="projectId">
@@ -54,7 +54,7 @@ namespace Vercel
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.DeleteDriveV1Response>> DeleteDriveV1AsResponseAsync(
-            string name,
+            string nameOrId,
             string? projectId = default,
             string? teamId = default,
             string? slug = default,
