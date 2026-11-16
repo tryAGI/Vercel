@@ -99,16 +99,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSettingsResponseEntitieAttributeLabel>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSettingsResponseEntitieAttributeLabel))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSettingsResponseMetadata))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSettingsResponseTypeName), TypeInfoPropertyName = "UpdateFlagSettingsResponseTypeName2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSettingsResponse2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSettingsResponseEntitie2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSettingsResponseEntitie2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSettingsResponseEntitieAttribute2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSettingsResponseEntitieAttribute2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSettingsResponseEntitieAttributeLabel2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSettingsResponseEntitieAttributeLabel2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSettingsResponseMetadata2))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSettingsResponseTypeName2), TypeInfoPropertyName = "UpdateFlagSettingsResponseTypeName22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSettingsResponseTypeName), TypeInfoPropertyName = "UpdateFlagSettingsResponseTypeName2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagLabelsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::Vercel.ListFlagLabelsResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListFlagLabelsResponseDataItem))]
@@ -172,8 +163,7 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFlagsProjectConnectionsRole?), TypeInfoPropertyName = "NullableGetFlagsProjectConnectionsRole2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.Flag, global::Vercel.MarketplaceFlag>?), TypeInfoPropertyName = "NullableOneOfFlagMarketplaceFlag2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.GetFlagSettingsResponseTypeName?), TypeInfoPropertyName = "NullableGetFlagSettingsResponseTypeName2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSettingsResponseTypeName?), TypeInfoPropertyName = "NullableUpdateFlagSettingsResponseTypeName2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSettingsResponseTypeName2?), TypeInfoPropertyName = "NullableUpdateFlagSettingsResponseTypeName22")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.UpdateFlagSettingsResponseTypeName?), TypeInfoPropertyName = "NullableUpdateFlagSettingsResponseTypeName2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<object, global::Vercel.ListTeamFlagSettingsResponseVariant2>?), TypeInfoPropertyName = "NullableOneOfObjectListTeamFlagSettingsResponseVariant22")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.ListTeamFlagSettingsResponseVariant2DataItemTypeName?), TypeInfoPropertyName = "NullableListTeamFlagSettingsResponseVariant2DataItemTypeName2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::Vercel.OneOf<global::Vercel.AutoSDKSharedd2d51fdc45c5e627, global::Vercel.Segment>?), TypeInfoPropertyName = "NullableOneOfAutoSDKSharedd2d51fdc45c5e627Segment2")]
@@ -195,9 +185,6 @@ namespace Vercel
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateFlagSettingsResponseEntitie>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateFlagSettingsResponseEntitieAttribute>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateFlagSettingsResponseEntitieAttributeLabel>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateFlagSettingsResponseEntitie2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateFlagSettingsResponseEntitieAttribute2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.UpdateFlagSettingsResponseEntitieAttributeLabel2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ListFlagLabelsResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.ListFlagLabelCountsResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::Vercel.LookupFlagLabelsResponseDataItem>))]
@@ -355,10 +342,6 @@ namespace Vercel
                     || typeToConvert == typeof(global::Vercel.UpdateFlagSettingsResponseTypeName)
 
                     || typeToConvert == typeof(global::Vercel.UpdateFlagSettingsResponseTypeName?)
-
-                    || typeToConvert == typeof(global::Vercel.UpdateFlagSettingsResponseTypeName2)
-
-                    || typeToConvert == typeof(global::Vercel.UpdateFlagSettingsResponseTypeName2?)
 
                     || typeToConvert == typeof(global::Vercel.ListTeamFlagSettingsResponseVariant2DataItemTypeName)
 
@@ -551,16 +534,6 @@ namespace Vercel
                 if (typeToConvert == typeof(global::Vercel.UpdateFlagSettingsResponseTypeName?))
                 {
                     return new global::Vercel.JsonConverters.UpdateFlagSettingsResponseTypeNameNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.UpdateFlagSettingsResponseTypeName2))
-                {
-                    return new global::Vercel.JsonConverters.UpdateFlagSettingsResponseTypeName2JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.UpdateFlagSettingsResponseTypeName2?))
-                {
-                    return new global::Vercel.JsonConverters.UpdateFlagSettingsResponseTypeName2NullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Vercel.ListTeamFlagSettingsResponseVariant2DataItemTypeName))

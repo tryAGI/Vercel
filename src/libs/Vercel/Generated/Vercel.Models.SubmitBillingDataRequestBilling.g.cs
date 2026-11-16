@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("items")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::System.Collections.Generic.IList<global::Vercel.SubmitBillingDataRequestBillingItem2> Items { get; set; }
+        public required global::System.Collections.Generic.IList<global::Vercel.SubmitBillingDataRequestBillingItem> Items { get; set; }
 
         /// <summary>
         ///
@@ -36,7 +36,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SubmitBillingDataRequestBilling(
-            global::System.Collections.Generic.IList<global::Vercel.SubmitBillingDataRequestBillingItem2> items,
+            global::System.Collections.Generic.IList<global::Vercel.SubmitBillingDataRequestBillingItem> items,
             global::System.Collections.Generic.IList<global::Vercel.SubmitBillingDataRequestBillingDiscount>? discounts)
         {
             this.Items = items ?? throw new global::System.ArgumentNullException(nameof(items));

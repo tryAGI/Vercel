@@ -27,14 +27,14 @@ namespace Vercel
             };
         partial void PrepareDeleteDriveV1Arguments(
             global::System.Net.Http.HttpClient httpClient,
-            ref string name,
+            ref string nameOrId,
             ref string? projectId,
             ref string? teamId,
             ref string? slug);
         partial void PrepareDeleteDriveV1Request(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpRequestMessage httpRequestMessage,
-            string name,
+            string nameOrId,
             string? projectId,
             string? teamId,
             string? slug);
@@ -49,10 +49,10 @@ namespace Vercel
 
         /// <summary>
         /// Delete a drive<br/>
-        /// Deletes a drive by project and name. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion.
+        /// Deletes a drive by project and name or drive ID. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion.
         /// </summary>
-        /// <param name="name">
-        /// Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
+        /// <param name="nameOrId">
+        /// The drive name or ID.<br/>
         /// Example: workspace
         /// </param>
         /// <param name="projectId">
@@ -69,7 +69,7 @@ namespace Vercel
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.DeleteDriveV1Response> DeleteDriveV1Async(
-            string name,
+            string nameOrId,
             string? projectId = default,
             string? teamId = default,
             string? slug = default,
@@ -77,7 +77,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await DeleteDriveV1AsResponseAsync(
-                name: name,
+                nameOrId: nameOrId,
                 projectId: projectId,
                 teamId: teamId,
                 slug: slug,
@@ -89,10 +89,10 @@ namespace Vercel
         }
         /// <summary>
         /// Delete a drive<br/>
-        /// Deletes a drive by project and name. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion.
+        /// Deletes a drive by project and name or drive ID. Attached drives cannot be deleted. Stop or replace the session currently using the drive before retrying deletion.
         /// </summary>
-        /// <param name="name">
-        /// Name for the drive. Must be unique per project and URL-safe (alphanumeric, hyphens, underscores).<br/>
+        /// <param name="nameOrId">
+        /// The drive name or ID.<br/>
         /// Example: workspace
         /// </param>
         /// <param name="projectId">
@@ -109,7 +109,7 @@ namespace Vercel
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.DeleteDriveV1Response>> DeleteDriveV1AsResponseAsync(
-            string name,
+            string nameOrId,
             string? projectId = default,
             string? teamId = default,
             string? slug = default,
@@ -120,7 +120,7 @@ namespace Vercel
                 client: HttpClient);
             PrepareDeleteDriveV1Arguments(
                 httpClient: HttpClient,
-                name: ref name,
+                nameOrId: ref nameOrId,
                 projectId: ref projectId,
                 teamId: ref teamId,
                 slug: ref slug);
@@ -149,7 +149,7 @@ namespace Vercel
             {
 
                             var __pathBuilder = new global::Vercel.PathBuilder(
-                                path: $"/v1/drives/{name}",
+                                path: $"/v1/drives/{nameOrId}",
                                 baseUri: HttpClient.BaseAddress);
                             __pathBuilder
                                 .AddOptionalParameter("projectId", projectId)
@@ -196,7 +196,7 @@ namespace Vercel
                 PrepareDeleteDriveV1Request(
                     httpClient: HttpClient,
                     httpRequestMessage: __httpRequest,
-                    name: name,
+                    nameOrId: nameOrId,
                     projectId: projectId,
                     teamId: teamId,
                     slug: slug);
@@ -218,7 +218,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "DeleteDriveV1",
                                 methodName: "DeleteDriveV1Async",
-                                pathTemplate: "$\"/v1/drives/{name}\"",
+                                pathTemplate: "$\"/v1/drives/{nameOrId}\"",
                                 httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
@@ -252,7 +252,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "DeleteDriveV1",
                                 methodName: "DeleteDriveV1Async",
-                                pathTemplate: "$\"/v1/drives/{name}\"",
+                                pathTemplate: "$\"/v1/drives/{nameOrId}\"",
                                 httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
@@ -293,7 +293,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "DeleteDriveV1",
                                 methodName: "DeleteDriveV1Async",
-                                pathTemplate: "$\"/v1/drives/{name}\"",
+                                pathTemplate: "$\"/v1/drives/{nameOrId}\"",
                                 httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
@@ -341,7 +341,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "DeleteDriveV1",
                                 methodName: "DeleteDriveV1Async",
-                                pathTemplate: "$\"/v1/drives/{name}\"",
+                                pathTemplate: "$\"/v1/drives/{nameOrId}\"",
                                 httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
@@ -363,7 +363,7 @@ namespace Vercel
                             context: global::Vercel.AutoSDKRequestOptionsSupport.CreateHookContext(
                                 operationId: "DeleteDriveV1",
                                 methodName: "DeleteDriveV1Async",
-                                pathTemplate: "$\"/v1/drives/{name}\"",
+                                pathTemplate: "$\"/v1/drives/{nameOrId}\"",
                                 httpMethod: "DELETE",
                                 baseUri: BaseUri,
                                 request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),

@@ -6619,10 +6619,6 @@ namespace Vercel
 
                     || typeToConvert == typeof(global::Vercel.UpdateFlagSettingsResponseTypeName?)
 
-                    || typeToConvert == typeof(global::Vercel.UpdateFlagSettingsResponseTypeName2)
-
-                    || typeToConvert == typeof(global::Vercel.UpdateFlagSettingsResponseTypeName2?)
-
                     || typeToConvert == typeof(global::Vercel.ListTeamFlagSettingsResponseVariant2DataItemTypeName)
 
                     || typeToConvert == typeof(global::Vercel.ListTeamFlagSettingsResponseVariant2DataItemTypeName?)
@@ -22692,16 +22688,6 @@ namespace Vercel
                 if (typeToConvert == typeof(global::Vercel.UpdateFlagSettingsResponseTypeName?))
                 {
                     return new global::Vercel.JsonConverters.UpdateFlagSettingsResponseTypeNameNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.UpdateFlagSettingsResponseTypeName2))
-                {
-                    return new global::Vercel.JsonConverters.UpdateFlagSettingsResponseTypeName2JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::Vercel.UpdateFlagSettingsResponseTypeName2?))
-                {
-                    return new global::Vercel.JsonConverters.UpdateFlagSettingsResponseTypeName2NullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::Vercel.ListTeamFlagSettingsResponseVariant2DataItemTypeName))
