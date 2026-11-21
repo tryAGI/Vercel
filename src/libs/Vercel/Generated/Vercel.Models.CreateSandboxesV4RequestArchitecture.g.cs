@@ -4,7 +4,6 @@
 namespace Vercel
 {
     /// <summary>
-    /// CPU architecture. Inherits a snapshot or single image manifest when omitted. Image indexes default to amd64. Must match the source. ARM64 creation requires API v3 or v4 without runtime and team access.<br/>
     /// Example: arm64
     /// </summary>
     public enum CreateSandboxesV4RequestArchitecture

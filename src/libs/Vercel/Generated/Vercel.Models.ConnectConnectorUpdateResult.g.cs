@@ -34,6 +34,12 @@ namespace Vercel
         public global::Vercel.ConnectServiceSync? ServiceSync { get; set; }
 
         /// <summary>
+        /// When true, scopes were removed. The provider keeps scopes it already granted, so remove the app from the provider workspace and install it again before the removal takes effect. Reinstalling alone does not remove scopes.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("uninstallNeeded")]
+        public bool? UninstallNeeded { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -54,6 +60,9 @@ namespace Vercel
         /// <param name="serviceSync">
         /// Provider-side configuration synchronization result.
         /// </param>
+        /// <param name="uninstallNeeded">
+        /// When true, scopes were removed. The provider keeps scopes it already granted, so remove the app from the provider workspace and install it again before the removal takes effect. Reinstalling alone does not remove scopes.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -61,12 +70,14 @@ namespace Vercel
             global::Vercel.ConnectConnector connector,
             global::Vercel.ConnectReconsent? reconsentNeeded,
             bool? reinstallNeeded,
-            global::Vercel.ConnectServiceSync? serviceSync)
+            global::Vercel.ConnectServiceSync? serviceSync,
+            bool? uninstallNeeded)
         {
             this.Connector = connector ?? throw new global::System.ArgumentNullException(nameof(connector));
             this.ReconsentNeeded = reconsentNeeded;
             this.ReinstallNeeded = reinstallNeeded;
             this.ServiceSync = serviceSync;
+            this.UninstallNeeded = uninstallNeeded;
         }
 
         /// <summary>

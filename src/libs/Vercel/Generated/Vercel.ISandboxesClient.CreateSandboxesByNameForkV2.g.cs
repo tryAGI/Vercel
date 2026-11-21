@@ -124,6 +124,10 @@ namespace Vercel
         /// Default snapshot expiration time in milliseconds. Set to 0 to disable expiration. When set, this value is used as the default expiration for all snapshots created for this sandbox.<br/>
         /// Example: 604800000
         /// </param>
+        /// <param name="expiryNotificationLeadTime">
+        /// How long before a session expires, in milliseconds, the `sandbox.session.expiring` webhook is sent. Defaults to the source sandbox setting.<br/>
+        /// Example: 300000
+        /// </param>
         /// <param name="keepLastSnapshots">
         /// Protect the N most recent snapshots with different expiration/deletion behavior.
         /// </param>
@@ -152,6 +156,7 @@ namespace Vercel
             string? requestName = default,
             bool? persistent = default,
             global::Vercel.OneOf<object, int?>? snapshotExpiration = default,
+            int? expiryNotificationLeadTime = default,
             global::Vercel.CreateSandboxesByNameForkV2RequestKeepLastSnapshots? keepLastSnapshots = default,
             global::System.Collections.Generic.Dictionary<string, string>? tags = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,

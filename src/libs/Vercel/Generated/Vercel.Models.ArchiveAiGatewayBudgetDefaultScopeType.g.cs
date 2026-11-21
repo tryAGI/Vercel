@@ -15,6 +15,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        App,
+        /// <summary>
+        ///
+        /// </summary>
         Project,
         /// <summary>
         ///
@@ -39,6 +43,7 @@ namespace Vercel
             return value switch
             {
                 ArchiveAiGatewayBudgetDefaultScopeType.ApiKey => "api-key",
+                ArchiveAiGatewayBudgetDefaultScopeType.App => "app",
                 ArchiveAiGatewayBudgetDefaultScopeType.Project => "project",
                 ArchiveAiGatewayBudgetDefaultScopeType.Team => "team",
                 ArchiveAiGatewayBudgetDefaultScopeType.User => "user",
@@ -53,6 +58,7 @@ namespace Vercel
             return value switch
             {
                 "api-key" => ArchiveAiGatewayBudgetDefaultScopeType.ApiKey,
+                "app" => ArchiveAiGatewayBudgetDefaultScopeType.App,
                 "project" => ArchiveAiGatewayBudgetDefaultScopeType.Project,
                 "team" => ArchiveAiGatewayBudgetDefaultScopeType.Team,
                 "user" => ArchiveAiGatewayBudgetDefaultScopeType.User,

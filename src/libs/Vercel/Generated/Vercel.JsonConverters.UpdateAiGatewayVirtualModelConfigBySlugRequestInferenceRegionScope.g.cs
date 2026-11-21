@@ -1,0 +1,53 @@
+#nullable enable
+
+namespace Vercel.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class UpdateAiGatewayVirtualModelConfigBySlugRequestInferenceRegionScopeJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.UpdateAiGatewayVirtualModelConfigBySlugRequestInferenceRegionScope>
+    {
+        /// <inheritdoc />
+        public override global::Vercel.UpdateAiGatewayVirtualModelConfigBySlugRequestInferenceRegionScope Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::Vercel.UpdateAiGatewayVirtualModelConfigBySlugRequestInferenceRegionScopeExtensions.ToEnum(stringValue) ?? default;
+                    }
+
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::Vercel.UpdateAiGatewayVirtualModelConfigBySlugRequestInferenceRegionScope)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::Vercel.UpdateAiGatewayVirtualModelConfigBySlugRequestInferenceRegionScope);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::Vercel.UpdateAiGatewayVirtualModelConfigBySlugRequestInferenceRegionScope value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            writer.WriteStringValue(global::Vercel.UpdateAiGatewayVirtualModelConfigBySlugRequestInferenceRegionScopeExtensions.ToValueString(value));
+        }
+    }
+}

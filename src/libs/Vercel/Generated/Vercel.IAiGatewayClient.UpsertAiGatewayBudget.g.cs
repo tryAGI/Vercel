@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Upsert AI Gateway budget<br/>
-        /// Create or update a team-, project-, or user-scope AI Gateway budget.
+        /// Create or update a team-, project-, user-, or app-scope AI Gateway budget. Set a total with `limitAmount`, or raise the current budget with `increaseBy`.
         /// </summary>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -27,7 +27,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Upsert AI Gateway budget<br/>
-        /// Create or update a team-, project-, or user-scope AI Gateway budget.
+        /// Create or update a team-, project-, user-, or app-scope AI Gateway budget. Set a total with `limitAmount`, or raise the current budget with `increaseBy`.
         /// </summary>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -48,7 +48,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Upsert AI Gateway budget<br/>
-        /// Create or update a team-, project-, or user-scope AI Gateway budget.
+        /// Create or update a team-, project-, user-, or app-scope AI Gateway budget. Set a total with `limitAmount`, or raise the current budget with `increaseBy`.
         /// </summary>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -63,11 +63,17 @@ namespace Vercel
         /// <param name="userId">
         /// Required when scopeType is \"user\".
         /// </param>
+        /// <param name="appId">
+        /// Required when scopeType is \"app\". The id of a Vercel App (`cl_…`).
+        /// </param>
         /// <param name="limitAmount">
-        /// Budget limit in dollars.
+        /// Budget limit in dollars. Provide this or `increaseBy`, not both.
+        /// </param>
+        /// <param name="increaseBy">
+        /// Dollars to add to the current budget, or to the scope's default when it has no budget of its own. Provide this or `limitAmount`, not both. Keeps the current refresh period and BYOK setting unless they are given.
         /// </param>
         /// <param name="refreshPeriod">
-        /// Default Value: monthly
+        /// Defaults to monthly with `limitAmount`; `increaseBy` keeps the current period.
         /// </param>
         /// <param name="includeByokInQuota">
         /// Whether BYOK usage counts toward this budget.
@@ -81,11 +87,13 @@ namespace Vercel
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.AiGatewayBudget> UpsertAiGatewayBudgetAsync(
             global::Vercel.UpsertAiGatewayBudgetRequestScopeType scopeType,
-            double limitAmount,
             string? teamId = default,
             string? slug = default,
             string? projectId = default,
             string? userId = default,
+            string? appId = default,
+            double? limitAmount = default,
+            double? increaseBy = default,
             global::Vercel.UpsertAiGatewayBudgetRequestRefreshPeriod? refreshPeriod = default,
             bool? includeByokInQuota = default,
             global::System.Collections.Generic.IList<double>? alertThresholds = default,

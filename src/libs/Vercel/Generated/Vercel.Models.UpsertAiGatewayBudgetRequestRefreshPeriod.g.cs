@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Default Value: monthly
+    /// Defaults to monthly with `limitAmount`; `increaseBy` keeps the current period.
     /// </summary>
     public enum UpsertAiGatewayBudgetRequestRefreshPeriod
     {

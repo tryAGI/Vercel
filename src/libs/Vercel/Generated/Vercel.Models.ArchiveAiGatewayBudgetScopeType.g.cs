@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        App,
+        /// <summary>
+        ///
+        /// </summary>
         Project,
         /// <summary>
         ///
@@ -34,6 +38,7 @@ namespace Vercel
         {
             return value switch
             {
+                ArchiveAiGatewayBudgetScopeType.App => "app",
                 ArchiveAiGatewayBudgetScopeType.Project => "project",
                 ArchiveAiGatewayBudgetScopeType.Team => "team",
                 ArchiveAiGatewayBudgetScopeType.User => "user",
@@ -47,6 +52,7 @@ namespace Vercel
         {
             return value switch
             {
+                "app" => ArchiveAiGatewayBudgetScopeType.App,
                 "project" => ArchiveAiGatewayBudgetScopeType.Project,
                 "team" => ArchiveAiGatewayBudgetScopeType.Team,
                 "user" => ArchiveAiGatewayBudgetScopeType.User,

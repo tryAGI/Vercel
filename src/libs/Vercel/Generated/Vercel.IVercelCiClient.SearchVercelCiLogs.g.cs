@@ -5,8 +5,8 @@ namespace Vercel
     public partial interface IVercelCiClient
     {
         /// <summary>
-        /// Search the task logs of several invocation attempts<br/>
-        /// Searches the task logs of up to 50 invocation attempts at once, for example the most recent runs of a branch from `GET /v2/vercel-ci/invocations`. Only invocations and tasks with matching lines are returned. When more than 1000 lines match, the newest are kept.
+        /// Search the setup and task logs of several invocation attempts<br/>
+        /// Searches the setup and task logs of up to 50 invocation attempts at once, for example the most recent runs of a branch from `GET /v2/vercel-ci/invocations`. Only invocations and tasks with matching lines are returned, and `setup` is present only when a setup line matches. When more than 1000 lines match across setup and task logs, the newest are kept.
         /// </summary>
         /// <param name="invocation">
         /// Invocation attempts to search, as \"&lt;invocationId&gt;:&lt;attempt&gt;\" (at most 50).
@@ -35,8 +35,8 @@ namespace Vercel
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// Search the task logs of several invocation attempts<br/>
-        /// Searches the task logs of up to 50 invocation attempts at once, for example the most recent runs of a branch from `GET /v2/vercel-ci/invocations`. Only invocations and tasks with matching lines are returned. When more than 1000 lines match, the newest are kept.
+        /// Search the setup and task logs of several invocation attempts<br/>
+        /// Searches the setup and task logs of up to 50 invocation attempts at once, for example the most recent runs of a branch from `GET /v2/vercel-ci/invocations`. Only invocations and tasks with matching lines are returned, and `setup` is present only when a setup line matches. When more than 1000 lines match across setup and task logs, the newest are kept.
         /// </summary>
         /// <param name="invocation">
         /// Invocation attempts to search, as \"&lt;invocationId&gt;:&lt;attempt&gt;\" (at most 50).

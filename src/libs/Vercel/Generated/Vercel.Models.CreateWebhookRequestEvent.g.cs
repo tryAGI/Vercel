@@ -379,6 +379,26 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        PageIntegrityConnectSrcDetected,
+        /// <summary>
+        ///
+        /// </summary>
+        PageIntegrityHeaderChanged,
+        /// <summary>
+        ///
+        /// </summary>
+        PageIntegrityRuntimeWarningDetected,
+        /// <summary>
+        ///
+        /// </summary>
+        PageIntegrityScriptChanged,
+        /// <summary>
+        ///
+        /// </summary>
+        PageIntegrityScriptDetected,
+        /// <summary>
+        ///
+        /// </summary>
         ProjectCreatedHyphen,
         /// <summary>
         ///
@@ -448,6 +468,18 @@ namespace Vercel
         ///
         /// </summary>
         ProjectRollingReleaseStarted,
+        /// <summary>
+        ///
+        /// </summary>
+        SandboxSessionExpiring,
+        /// <summary>
+        ///
+        /// </summary>
+        SandboxSessionStarted,
+        /// <summary>
+        ///
+        /// </summary>
+        SandboxSessionStopped,
         /// <summary>
         ///
         /// </summary>
@@ -566,6 +598,11 @@ namespace Vercel
                 CreateWebhookRequestEvent.ObservabilityAnomalyError => "observability.anomaly-error",
                 CreateWebhookRequestEvent.ObservabilityErrorAnomaly => "observability.error-anomaly",
                 CreateWebhookRequestEvent.ObservabilityUsageAnomaly => "observability.usage-anomaly",
+                CreateWebhookRequestEvent.PageIntegrityConnectSrcDetected => "page-integrity.connect-src.detected",
+                CreateWebhookRequestEvent.PageIntegrityHeaderChanged => "page-integrity.header.changed",
+                CreateWebhookRequestEvent.PageIntegrityRuntimeWarningDetected => "page-integrity.runtime-warning.detected",
+                CreateWebhookRequestEvent.PageIntegrityScriptChanged => "page-integrity.script.changed",
+                CreateWebhookRequestEvent.PageIntegrityScriptDetected => "page-integrity.script.detected",
                 CreateWebhookRequestEvent.ProjectCreatedHyphen => "project-created",
                 CreateWebhookRequestEvent.ProjectRemovedHyphen => "project-removed",
                 CreateWebhookRequestEvent.ProjectCreated => "project.created",
@@ -584,6 +621,9 @@ namespace Vercel
                 CreateWebhookRequestEvent.ProjectRollingReleaseApproved => "project.rolling-release.approved",
                 CreateWebhookRequestEvent.ProjectRollingReleaseCompleted => "project.rolling-release.completed",
                 CreateWebhookRequestEvent.ProjectRollingReleaseStarted => "project.rolling-release.started",
+                CreateWebhookRequestEvent.SandboxSessionExpiring => "sandbox.session.expiring",
+                CreateWebhookRequestEvent.SandboxSessionStarted => "sandbox.session.started",
+                CreateWebhookRequestEvent.SandboxSessionStopped => "sandbox.session.stopped",
                 CreateWebhookRequestEvent.TestWebhook => "test-webhook",
                 CreateWebhookRequestEvent.ThreadResolved => "thread.resolved",
                 CreateWebhookRequestEvent.ThreadUnresolved => "thread.unresolved",
@@ -689,6 +729,11 @@ namespace Vercel
                 "observability.anomaly-error" => CreateWebhookRequestEvent.ObservabilityAnomalyError,
                 "observability.error-anomaly" => CreateWebhookRequestEvent.ObservabilityErrorAnomaly,
                 "observability.usage-anomaly" => CreateWebhookRequestEvent.ObservabilityUsageAnomaly,
+                "page-integrity.connect-src.detected" => CreateWebhookRequestEvent.PageIntegrityConnectSrcDetected,
+                "page-integrity.header.changed" => CreateWebhookRequestEvent.PageIntegrityHeaderChanged,
+                "page-integrity.runtime-warning.detected" => CreateWebhookRequestEvent.PageIntegrityRuntimeWarningDetected,
+                "page-integrity.script.changed" => CreateWebhookRequestEvent.PageIntegrityScriptChanged,
+                "page-integrity.script.detected" => CreateWebhookRequestEvent.PageIntegrityScriptDetected,
                 "project-created" => CreateWebhookRequestEvent.ProjectCreatedHyphen,
                 "project-removed" => CreateWebhookRequestEvent.ProjectRemovedHyphen,
                 "project.created" => CreateWebhookRequestEvent.ProjectCreated,
@@ -707,6 +752,9 @@ namespace Vercel
                 "project.rolling-release.approved" => CreateWebhookRequestEvent.ProjectRollingReleaseApproved,
                 "project.rolling-release.completed" => CreateWebhookRequestEvent.ProjectRollingReleaseCompleted,
                 "project.rolling-release.started" => CreateWebhookRequestEvent.ProjectRollingReleaseStarted,
+                "sandbox.session.expiring" => CreateWebhookRequestEvent.SandboxSessionExpiring,
+                "sandbox.session.started" => CreateWebhookRequestEvent.SandboxSessionStarted,
+                "sandbox.session.stopped" => CreateWebhookRequestEvent.SandboxSessionStopped,
                 "test-webhook" => CreateWebhookRequestEvent.TestWebhook,
                 "thread.resolved" => CreateWebhookRequestEvent.ThreadResolved,
                 "thread.unresolved" => CreateWebhookRequestEvent.ThreadUnresolved,
