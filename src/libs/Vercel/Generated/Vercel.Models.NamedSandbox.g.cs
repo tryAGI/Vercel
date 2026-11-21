@@ -54,6 +54,15 @@ namespace Vercel
         public double? ExpiresAt { get; set; }
 
         /// <summary>
+        /// How long before a session expires, in milliseconds, the `sandbox.session.expiring` webhook is sent. It affects only that webhook. When a deadline is closer than the lead time, the webhook is sent right away: at the start of a session whose timeout is shorter, and after each extension that leaves the deadline within the lead time.<br/>
+        /// Example: 120000
+        /// </summary>
+        /// <example>120000</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiryNotificationLeadTime")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required double ExpiryNotificationLeadTime { get; set; }
+
+        /// <summary>
         /// The regions the sandbox fails over to. Empty when it does not fail over.<br/>
         /// Example: [sfo1, cle1]
         /// </summary>
@@ -250,6 +259,10 @@ namespace Vercel
         /// <param name="currentSessionId">
         /// Current session ID the sandbox is pointing to.
         /// </param>
+        /// <param name="expiryNotificationLeadTime">
+        /// How long before a session expires, in milliseconds, the `sandbox.session.expiring` webhook is sent. It affects only that webhook. When a deadline is closer than the lead time, the webhook is sent right away: at the start of a session whose timeout is shorter, and after each extension that leaves the deadline within the lead time.<br/>
+        /// Example: 120000
+        /// </param>
         /// <param name="name">
         /// The unique identifier of the sandbox.<br/>
         /// Example: my-sandbox
@@ -357,6 +370,7 @@ namespace Vercel
         public NamedSandbox(
             double createdAt,
             string currentSessionId,
+            double expiryNotificationLeadTime,
             string name,
             bool persistent,
             global::Vercel.NamedSandboxStatus status,
@@ -391,6 +405,7 @@ namespace Vercel
             this.CurrentSnapshotId = currentSnapshotId;
             this.Cwd = cwd;
             this.ExpiresAt = expiresAt;
+            this.ExpiryNotificationLeadTime = expiryNotificationLeadTime;
             this.FailoverRegions = failoverRegions;
             this.Image = image;
             this.KeepLastSnapshots = keepLastSnapshots;

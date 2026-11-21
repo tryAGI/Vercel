@@ -72,6 +72,12 @@ namespace Vercel
         public double? SsoConnectedAt { get; set; }
 
         /// <summary>
+        /// How `ssoUserId` and `idpUserId` were made; absent when unknown.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("ssoIdFingerprint")]
+        public string? SsoIdFingerprint { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ssoUserId")]
@@ -96,6 +102,9 @@ namespace Vercel
         /// <param name="repoId"></param>
         /// <param name="repoPath"></param>
         /// <param name="ssoConnectedAt"></param>
+        /// <param name="ssoIdFingerprint">
+        /// How `ssoUserId` and `idpUserId` were made; absent when unknown.
+        /// </param>
         /// <param name="ssoUserId"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -111,6 +120,7 @@ namespace Vercel
             string? repoId,
             string? repoPath,
             double? ssoConnectedAt,
+            string? ssoIdFingerprint,
             string? ssoUserId)
         {
             this.CommitId = commitId;
@@ -123,6 +133,7 @@ namespace Vercel
             this.RepoId = repoId;
             this.RepoPath = repoPath;
             this.SsoConnectedAt = ssoConnectedAt;
+            this.SsoIdFingerprint = ssoIdFingerprint;
             this.SsoUserId = ssoUserId;
         }
 

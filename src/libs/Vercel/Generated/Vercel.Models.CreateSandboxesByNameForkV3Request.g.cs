@@ -106,6 +106,14 @@ namespace Vercel
         public global::Vercel.OneOf<object, int?>? SnapshotExpiration { get; set; }
 
         /// <summary>
+        /// How long before a session expires, in milliseconds, the `sandbox.session.expiring` webhook is sent. Defaults to the source sandbox setting.<br/>
+        /// Example: 300000
+        /// </summary>
+        /// <example>300000</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiryNotificationLeadTime")]
+        public int? ExpiryNotificationLeadTime { get; set; }
+
+        /// <summary>
         /// Protect the N most recent snapshots with different expiration/deletion behavior. Persistent sandboxes default to keeping only the last snapshot (evicted snapshots are deleted). Set to null to disable the limit.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keepLastSnapshots")]
@@ -175,6 +183,10 @@ namespace Vercel
         /// Default snapshot expiration time in milliseconds. Defaults to 7 days. Set to 0 to disable expiration. When set, this value is used as the default expiration for all snapshots created for this sandbox.<br/>
         /// Example: 604800000
         /// </param>
+        /// <param name="expiryNotificationLeadTime">
+        /// How long before a session expires, in milliseconds, the `sandbox.session.expiring` webhook is sent. Defaults to the source sandbox setting.<br/>
+        /// Example: 300000
+        /// </param>
         /// <param name="keepLastSnapshots">
         /// Protect the N most recent snapshots with different expiration/deletion behavior. Persistent sandboxes default to keeping only the last snapshot (evicted snapshots are deleted). Set to null to disable the limit.
         /// </param>
@@ -199,6 +211,7 @@ namespace Vercel
             string? name,
             bool? persistent,
             global::Vercel.OneOf<object, int?>? snapshotExpiration,
+            int? expiryNotificationLeadTime,
             global::Vercel.OneOf<string, global::Vercel.CreateSandboxesByNameForkV3RequestKeepLastSnapshots>? keepLastSnapshots,
             global::System.Collections.Generic.Dictionary<string, string>? tags)
         {
@@ -215,6 +228,7 @@ namespace Vercel
             this.Name = name;
             this.Persistent = persistent;
             this.SnapshotExpiration = snapshotExpiration;
+            this.ExpiryNotificationLeadTime = expiryNotificationLeadTime;
             this.KeepLastSnapshots = keepLastSnapshots;
             this.Tags = tags;
         }

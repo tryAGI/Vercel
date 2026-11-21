@@ -29,14 +29,25 @@ namespace Vercel
         public string? UserId { get; set; }
 
         /// <summary>
-        /// Budget limit in dollars.
+        /// Required when scopeType is \"app\". The id of a Vercel App (`cl_…`).
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("limitAmount")]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required double LimitAmount { get; set; }
+        [global::System.Text.Json.Serialization.JsonPropertyName("appId")]
+        public string? AppId { get; set; }
 
         /// <summary>
-        /// Default Value: monthly
+        /// Budget limit in dollars. Provide this or `increaseBy`, not both.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("limitAmount")]
+        public double? LimitAmount { get; set; }
+
+        /// <summary>
+        /// Dollars to add to the current budget, or to the scope's default when it has no budget of its own. Provide this or `limitAmount`, not both. Keeps the current refresh period and BYOK setting unless they are given.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("increaseBy")]
+        public double? IncreaseBy { get; set; }
+
+        /// <summary>
+        /// Defaults to monthly with `limitAmount`; `increaseBy` keeps the current period.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("refreshPeriod")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.UpsertAiGatewayBudgetRequestRefreshPeriodJsonConverter))]
@@ -70,17 +81,23 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="UpsertAiGatewayBudgetRequest" /> class.
         /// </summary>
         /// <param name="scopeType"></param>
-        /// <param name="limitAmount">
-        /// Budget limit in dollars.
-        /// </param>
         /// <param name="projectId">
         /// Required when scopeType is \"project\".
         /// </param>
         /// <param name="userId">
         /// Required when scopeType is \"user\".
         /// </param>
+        /// <param name="appId">
+        /// Required when scopeType is \"app\". The id of a Vercel App (`cl_…`).
+        /// </param>
+        /// <param name="limitAmount">
+        /// Budget limit in dollars. Provide this or `increaseBy`, not both.
+        /// </param>
+        /// <param name="increaseBy">
+        /// Dollars to add to the current budget, or to the scope's default when it has no budget of its own. Provide this or `limitAmount`, not both. Keeps the current refresh period and BYOK setting unless they are given.
+        /// </param>
         /// <param name="refreshPeriod">
-        /// Default Value: monthly
+        /// Defaults to monthly with `limitAmount`; `increaseBy` keeps the current period.
         /// </param>
         /// <param name="includeByokInQuota">
         /// Whether BYOK usage counts toward this budget.
@@ -94,9 +111,11 @@ namespace Vercel
 #endif
         public UpsertAiGatewayBudgetRequest(
             global::Vercel.UpsertAiGatewayBudgetRequestScopeType scopeType,
-            double limitAmount,
             string? projectId,
             string? userId,
+            string? appId,
+            double? limitAmount,
+            double? increaseBy,
             global::Vercel.UpsertAiGatewayBudgetRequestRefreshPeriod? refreshPeriod,
             bool? includeByokInQuota,
             global::System.Collections.Generic.IList<double>? alertThresholds,
@@ -105,7 +124,9 @@ namespace Vercel
             this.ScopeType = scopeType;
             this.ProjectId = projectId;
             this.UserId = userId;
+            this.AppId = appId;
             this.LimitAmount = limitAmount;
+            this.IncreaseBy = increaseBy;
             this.RefreshPeriod = refreshPeriod;
             this.IncludeByokInQuota = includeByokInQuota;
             this.AlertThresholds = alertThresholds;

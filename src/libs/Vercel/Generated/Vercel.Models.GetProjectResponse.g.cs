@@ -404,7 +404,7 @@ namespace Vercel
         /// Requested and authorized operations when `checkPermissions` is used. Legacy `includePermissions` responses contain a broader, non-authoritative permission summary.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("permissions")]
-        public global::Vercel.AutoSDKShared9e6492646a60c627? Permissions { get; set; }
+        public global::Vercel.AutoSDKShared8cb75454f348bbe8? Permissions { get; set; }
 
         /// <summary>
         ///
@@ -447,7 +447,7 @@ namespace Vercel
         /// Project-level rolling release configuration that defines how deployments should be gradually rolled out
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rollingRelease")]
-        public global::Vercel.AutoSDKSharedce0c7f50e384322c? RollingRelease { get; set; }
+        public global::Vercel.GetProjectResponseRollingRelease? RollingRelease { get; set; }
 
         /// <summary>
         ///
@@ -811,13 +811,13 @@ namespace Vercel
             global::Vercel.GetProjectResponsePassport? passport,
             global::Vercel.GetProjectResponsePasswordProtection? passwordProtection,
             bool? paused,
-            global::Vercel.AutoSDKShared9e6492646a60c627? permissions,
+            global::Vercel.AutoSDKShared8cb75454f348bbe8? permissions,
             bool? productionDeploymentsFastLane,
             bool? protectedSourcemaps,
             object? protectionBypass,
             global::Vercel.GetProjectResponseProtectionConfig? protectionConfig,
             global::Vercel.AutoSDKShared15ac57d28c37cbda? rollbackDescription,
-            global::Vercel.AutoSDKSharedce0c7f50e384322c? rollingRelease,
+            global::Vercel.GetProjectResponseRollingRelease? rollingRelease,
             string? rootDirectory,
             global::Vercel.GetProjectResponseSandbox? sandbox,
             global::Vercel.AutoSDKShared25e1e81cf9eecd30? security,

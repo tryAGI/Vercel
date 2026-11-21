@@ -36,6 +36,12 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("disabledReason")]
+        public string? DisabledReason { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("effectiveDate")]
         public string? EffectiveDate { get; set; }
 
@@ -136,6 +142,7 @@ namespace Vercel
         /// <param name="cost"></param>
         /// <param name="details"></param>
         /// <param name="disabled"></param>
+        /// <param name="disabledReason"></param>
         /// <param name="effectiveDate"></param>
         /// <param name="highlightedDetails"></param>
         /// <param name="initialCharge"></param>
@@ -157,6 +164,7 @@ namespace Vercel
             string? cost,
             global::System.Collections.Generic.IList<global::Vercel.GetBillingPlansResponsePlanDetail>? details,
             bool? disabled,
+            string? disabledReason,
             string? effectiveDate,
             global::System.Collections.Generic.IList<global::Vercel.GetBillingPlansResponsePlanHighlightedDetail>? highlightedDetails,
             string? initialCharge,
@@ -170,6 +178,7 @@ namespace Vercel
             this.Description = description ?? throw new global::System.ArgumentNullException(nameof(description));
             this.Details = details;
             this.Disabled = disabled;
+            this.DisabledReason = disabledReason;
             this.EffectiveDate = effectiveDate;
             this.HighlightedDetails = highlightedDetails;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));

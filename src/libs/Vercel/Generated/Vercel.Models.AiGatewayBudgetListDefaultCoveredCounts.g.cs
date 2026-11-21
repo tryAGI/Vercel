@@ -16,6 +16,12 @@ namespace Vercel
         public required double ApiKey { get; set; }
 
         /// <summary>
+        /// Omitted when no app row is default-covered.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("app")]
+        public double? App { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("project")]
@@ -49,6 +55,9 @@ namespace Vercel
         /// <param name="project"></param>
         /// <param name="team"></param>
         /// <param name="user"></param>
+        /// <param name="app">
+        /// Omitted when no app row is default-covered.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -56,9 +65,11 @@ namespace Vercel
             double apiKey,
             double project,
             double team,
-            double user)
+            double user,
+            double? app)
         {
             this.ApiKey = apiKey;
+            this.App = app;
             this.Project = project;
             this.Team = team;
             this.User = user;

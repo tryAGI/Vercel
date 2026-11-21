@@ -85,7 +85,7 @@ namespace Vercel
         public required global::Vercel.AiGatewayBudgetRefreshPeriod RefreshPeriod { get; set; }
 
         /// <summary>
-        /// The native Vercel id of the scoped entity. Team/project ids already carry their prefix, so this equals `quotaEntityId` (`team_…` / `prj_…`); for the api-key scope it is the api key id (the `api_key_id_` prefix stripped).
+        /// The native Vercel id of the scoped entity. Team/project ids already carry their prefix, so this equals `quotaEntityId` (`team_…` / `prj_…`); user and app scopes also use the quota entity id (`usr_&lt;userId&gt;` / `app_&lt;appId&gt;`); for the api-key scope it is the api key id (the `api_key_id_` prefix stripped).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scopeId")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -132,7 +132,7 @@ namespace Vercel
         /// <param name="quotaEntityId"></param>
         /// <param name="refreshPeriod"></param>
         /// <param name="scopeId">
-        /// The native Vercel id of the scoped entity. Team/project ids already carry their prefix, so this equals `quotaEntityId` (`team_…` / `prj_…`); for the api-key scope it is the api key id (the `api_key_id_` prefix stripped).
+        /// The native Vercel id of the scoped entity. Team/project ids already carry their prefix, so this equals `quotaEntityId` (`team_…` / `prj_…`); user and app scopes also use the quota entity id (`usr_&lt;userId&gt;` / `app_&lt;appId&gt;`); for the api-key scope it is the api key id (the `api_key_id_` prefix stripped).
         /// </param>
         /// <param name="scopeType"></param>
         /// <param name="updatedAt"></param>

@@ -101,6 +101,12 @@ namespace Vercel
         /// <summary>
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("enableMessageboardPrivateBoards")]
+        public bool? EnableMessageboardPrivateBoards { get; set; }
+
+        /// <summary>
+        /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("flagsExplorerOverridesThreshold")]
         public double? FlagsExplorerOverridesThreshold { get; set; }
 
@@ -127,6 +133,12 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kvDatabases")]
         public double? KvDatabases { get; set; }
+
+        /// <summary>
+        /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("messageboardBoards")]
+        public double? MessageboardBoards { get; set; }
 
         /// <summary>
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
@@ -224,6 +236,9 @@ namespace Vercel
         /// <param name="elasticConcurrencyEnabled">
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </param>
+        /// <param name="enableMessageboardPrivateBoards">
+        /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
+        /// </param>
         /// <param name="flagsExplorerOverridesThreshold">
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </param>
@@ -237,6 +252,9 @@ namespace Vercel
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </param>
         /// <param name="kvDatabases">
+        /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
+        /// </param>
+        /// <param name="messageboardBoards">
         /// An object containing infomation related to the amount of platform resources may be allocated to the User account.
         /// </param>
         /// <param name="microfrontendGroupsPerTeam">
@@ -279,11 +297,13 @@ namespace Vercel
             double? edgeFunctionExecutionTimeoutMs,
             double? edgeFunctionMaxSizeBytes,
             bool? elasticConcurrencyEnabled,
+            bool? enableMessageboardPrivateBoards,
             double? flagsExplorerOverridesThreshold,
             bool? flagsExplorerUnlimitedOverrides,
             string? imageOptimizationType,
             double? integrationStores,
             double? kvDatabases,
+            double? messageboardBoards,
             double? microfrontendGroupsPerTeam,
             double? microfrontendProjectsPerGroup,
             string? nodeType,
@@ -307,11 +327,13 @@ namespace Vercel
             this.EdgeFunctionExecutionTimeoutMs = edgeFunctionExecutionTimeoutMs;
             this.EdgeFunctionMaxSizeBytes = edgeFunctionMaxSizeBytes;
             this.ElasticConcurrencyEnabled = elasticConcurrencyEnabled;
+            this.EnableMessageboardPrivateBoards = enableMessageboardPrivateBoards;
             this.FlagsExplorerOverridesThreshold = flagsExplorerOverridesThreshold;
             this.FlagsExplorerUnlimitedOverrides = flagsExplorerUnlimitedOverrides;
             this.ImageOptimizationType = imageOptimizationType;
             this.IntegrationStores = integrationStores;
             this.KvDatabases = kvDatabases;
+            this.MessageboardBoards = messageboardBoards;
             this.MicrofrontendGroupsPerTeam = microfrontendGroupsPerTeam;
             this.MicrofrontendProjectsPerGroup = microfrontendProjectsPerGroup;
             this.NodeType = nodeType;
