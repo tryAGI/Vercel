@@ -13,8 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sdkKeyType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.CreateSdkKeyRequestSdkKeyTypeJsonConverter))]
-        [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.CreateSdkKeyRequestSdkKeyType SdkKeyType { get; set; }
+        public global::Vercel.CreateSdkKeyRequestSdkKeyType SdkKeyType { get; set; }
 
         /// <summary>
         ///
@@ -38,15 +37,15 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateSdkKeyRequest" /> class.
         /// </summary>
-        /// <param name="sdkKeyType"></param>
         /// <param name="environment"></param>
+        /// <param name="sdkKeyType"></param>
         /// <param name="label"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateSdkKeyRequest(
-            global::Vercel.CreateSdkKeyRequestSdkKeyType sdkKeyType,
             string environment,
+            global::Vercel.CreateSdkKeyRequestSdkKeyType sdkKeyType,
             string? label)
         {
             this.SdkKeyType = sdkKeyType;

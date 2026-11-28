@@ -15,6 +15,12 @@ namespace Vercel
         public bool? AllowFallbackFromFast { get; set; }
 
         /// <summary>
+        /// For the team's `auto` router: the Vercel default version the team last saved against.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("autoRouterDefaultVersion")]
+        public double? AutoRouterDefaultVersion { get; set; }
+
+        /// <summary>
         /// For kind=relay: URL the gateway forwards requests to as a transparent proxy.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("baseUrl")]
@@ -257,6 +263,9 @@ namespace Vercel
         /// <param name="allowFallbackFromFast">
         /// Allow fallback from fast to standard providers on failure.
         /// </param>
+        /// <param name="autoRouterDefaultVersion">
+        /// For the team's `auto` router: the Vercel default version the team last saved against.
+        /// </param>
         /// <param name="baseUrl">
         /// For kind=relay: URL the gateway forwards requests to as a transparent proxy.
         /// </param>
@@ -347,6 +356,7 @@ namespace Vercel
             double updatedAt,
             string virtualModelSlug,
             bool? allowFallbackFromFast,
+            double? autoRouterDefaultVersion,
             string? baseUrl,
             global::System.Collections.Generic.IList<string>? byokCredentialIds,
             global::Vercel.AiGatewayVirtualModelConfigCaching? caching,
@@ -375,6 +385,7 @@ namespace Vercel
             bool? zeroDataRetention)
         {
             this.AllowFallbackFromFast = allowFallbackFromFast;
+            this.AutoRouterDefaultVersion = autoRouterDefaultVersion;
             this.BaseUrl = baseUrl;
             this.ByokCredentialIds = byokCredentialIds;
             this.Caching = caching;

@@ -15,6 +15,13 @@ namespace Vercel
         public global::Vercel.GetAccountInfoResponseContact? Contact { get; set; }
 
         /// <summary>
+        /// Up to 3 contacts for the integration. `contact` comes first, followed by the confirmed owners of the team, longest-standing first. For a personal account, the account owner.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("contacts")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::System.Collections.Generic.IList<global::Vercel.GetAccountInfoResponseContact2> Contacts { get; set; }
+
+        /// <summary>
         /// The name of the team the installation is tied to.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
@@ -36,6 +43,9 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="GetAccountInfoResponse" /> class.
         /// </summary>
+        /// <param name="contacts">
+        /// Up to 3 contacts for the integration. `contact` comes first, followed by the confirmed owners of the team, longest-standing first. For a personal account, the account owner.
+        /// </param>
         /// <param name="url">
         /// A URL linking to the installation in the Vercel Dashboard.
         /// </param>
@@ -49,11 +59,13 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public GetAccountInfoResponse(
+            global::System.Collections.Generic.IList<global::Vercel.GetAccountInfoResponseContact2> contacts,
             string url,
             global::Vercel.GetAccountInfoResponseContact? contact,
             string? name)
         {
             this.Contact = contact;
+            this.Contacts = contacts ?? throw new global::System.ArgumentNullException(nameof(contacts));
             this.Name = name;
             this.Url = url ?? throw new global::System.ArgumentNullException(nameof(url));
         }

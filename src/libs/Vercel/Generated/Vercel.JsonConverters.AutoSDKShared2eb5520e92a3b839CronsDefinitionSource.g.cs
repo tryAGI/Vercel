@@ -1,0 +1,53 @@
+#nullable enable
+
+namespace Vercel.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class AutoSDKShared2eb5520e92a3b839CronsDefinitionSourceJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::Vercel.AutoSDKShared2eb5520e92a3b839CronsDefinitionSource>
+    {
+        /// <inheritdoc />
+        public override global::Vercel.AutoSDKShared2eb5520e92a3b839CronsDefinitionSource Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::Vercel.AutoSDKShared2eb5520e92a3b839CronsDefinitionSourceExtensions.ToEnum(stringValue) ?? default;
+                    }
+
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::Vercel.AutoSDKShared2eb5520e92a3b839CronsDefinitionSource)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::Vercel.AutoSDKShared2eb5520e92a3b839CronsDefinitionSource);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::Vercel.AutoSDKShared2eb5520e92a3b839CronsDefinitionSource value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            writer.WriteStringValue(global::Vercel.AutoSDKShared2eb5520e92a3b839CronsDefinitionSourceExtensions.ToValueString(value));
+        }
+    }
+}

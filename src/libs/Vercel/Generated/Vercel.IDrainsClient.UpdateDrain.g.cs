@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Update an existing Drain<br/>
-        /// Update the configuration of an existing drain.
+        /// Update the configuration of an existing drain. A `delivery` with masked values is rejected, and only a drain connected to a Marketplace store can take its delivery from it. Endpoint and header values of a drain connected to a Marketplace store are masked for every caller.
         /// </summary>
         /// <param name="id"></param>
         /// <param name="teamId">
@@ -19,7 +19,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShareda7f579f4cee9d4f4> UpdateDrainAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared501a59b9a4a852f0> UpdateDrainAsync(
             string id,
 
             global::Vercel.UpdateDrainRequest request,
@@ -29,7 +29,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update an existing Drain<br/>
-        /// Update the configuration of an existing drain.
+        /// Update the configuration of an existing drain. A `delivery` with masked values is rejected, and only a drain connected to a Marketplace store can take its delivery from it. Endpoint and header values of a drain connected to a Marketplace store are masked for every caller.
         /// </summary>
         /// <param name="id"></param>
         /// <param name="teamId">
@@ -42,7 +42,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShareda7f579f4cee9d4f4>> UpdateDrainAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared501a59b9a4a852f0>> UpdateDrainAsResponseAsync(
             string id,
 
             global::Vercel.UpdateDrainRequest request,
@@ -52,7 +52,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Update an existing Drain<br/>
-        /// Update the configuration of an existing drain.
+        /// Update the configuration of an existing drain. A `delivery` with masked values is rejected, and only a drain connected to a Marketplace store can take its delivery from it. Endpoint and header values of a drain connected to a Marketplace store are masked for every caller.
         /// </summary>
         /// <param name="id"></param>
         /// <param name="teamId">
@@ -74,7 +74,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShareda7f579f4cee9d4f4> UpdateDrainAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared501a59b9a4a852f0> UpdateDrainAsync(
             string id,
             string? teamId = default,
             string? slug = default,

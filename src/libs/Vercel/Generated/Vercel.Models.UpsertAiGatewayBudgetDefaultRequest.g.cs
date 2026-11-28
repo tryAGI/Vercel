@@ -37,6 +37,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<double>? AlertThresholds { get; set; }
 
         /// <summary>
+        /// Key spend attributions the api-key default covers. Only valid when scopeType is api-key. Omit to keep the stored value; unset means both.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("appliesTo")]
+        public global::System.Collections.Generic.IList<global::Vercel.UpsertAiGatewayBudgetDefaultRequestAppliesToItem>? AppliesTo { get; set; }
+
+        /// <summary>
         /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains, and sent in the ai-gateway.budget.updated webhook.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("justification")]
@@ -57,6 +63,9 @@ namespace Vercel
         /// </param>
         /// <param name="refreshPeriod"></param>
         /// <param name="alertThresholds"></param>
+        /// <param name="appliesTo">
+        /// Key spend attributions the api-key default covers. Only valid when scopeType is api-key. Omit to keep the stored value; unset means both.
+        /// </param>
         /// <param name="justification">
         /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains, and sent in the ai-gateway.budget.updated webhook.
         /// </param>
@@ -68,12 +77,14 @@ namespace Vercel
             double limitAmount,
             global::Vercel.UpsertAiGatewayBudgetDefaultRequestRefreshPeriod? refreshPeriod,
             global::System.Collections.Generic.IList<double>? alertThresholds,
+            global::System.Collections.Generic.IList<global::Vercel.UpsertAiGatewayBudgetDefaultRequestAppliesToItem>? appliesTo,
             string? justification)
         {
             this.ScopeType = scopeType;
             this.LimitAmount = limitAmount;
             this.RefreshPeriod = refreshPeriod;
             this.AlertThresholds = alertThresholds;
+            this.AppliesTo = appliesTo;
             this.Justification = justification;
         }
 

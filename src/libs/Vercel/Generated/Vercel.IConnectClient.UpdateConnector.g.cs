@@ -9,7 +9,7 @@ namespace Vercel
         /// Update a connector and return the connector with any service-side update signals that the caller must handle.
         /// </summary>
         /// <param name="connector">
-        /// Stable connector ID or URL-encoded team-scoped UID. Examples: `scl_abc123` or `slack%2Fmy-bot`.
+        /// Stable connector ID or URL-encoded team- or organization-scoped UID. Examples: `scl_abc123` or `slack%2Fmy-bot`.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -34,7 +34,7 @@ namespace Vercel
         /// Update a connector and return the connector with any service-side update signals that the caller must handle.
         /// </summary>
         /// <param name="connector">
-        /// Stable connector ID or URL-encoded team-scoped UID. Examples: `scl_abc123` or `slack%2Fmy-bot`.
+        /// Stable connector ID or URL-encoded team- or organization-scoped UID. Examples: `scl_abc123` or `slack%2Fmy-bot`.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -59,7 +59,7 @@ namespace Vercel
         /// Update a connector and return the connector with any service-side update signals that the caller must handle.
         /// </summary>
         /// <param name="connector">
-        /// Stable connector ID or URL-encoded team-scoped UID. Examples: `scl_abc123` or `slack%2Fmy-bot`.
+        /// Stable connector ID or URL-encoded team- or organization-scoped UID. Examples: `scl_abc123` or `slack%2Fmy-bot`.
         /// </param>
         /// <param name="teamId">
         /// Example: team_1a2b3c4d5e6f7g8h9i0j1k2l
@@ -118,7 +118,7 @@ namespace Vercel
         /// <param name="backgroundColor"></param>
         /// <param name="accentColor"></param>
         /// <param name="uid">
-        /// Full team-scoped UID, such as `slack/my-bot`. It cannot contain whitespace, `%`, `#`, control characters, or Vercel-owned namespaces. Changing it breaks callers that use the old UID. The stable connector ID does not change.
+        /// Full team- or organization-scoped UID, such as `slack/my-bot`. It cannot contain whitespace, `%`, `#`, control characters, or Vercel-owned namespaces. Changing it breaks callers that use the old UID. The stable connector ID does not change.
         /// </param>
         /// <param name="name">
         /// Display name for the connector. It is trimmed and cannot be empty or contain control characters.

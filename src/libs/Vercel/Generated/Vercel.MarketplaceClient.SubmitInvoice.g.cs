@@ -45,7 +45,7 @@ namespace Vercel
 
         /// <summary>
         /// Submit Invoice<br/>
-        /// This endpoint allows the partner to submit an invoice to Vercel. The invoice is created in Vercel's billing system and sent to the customer. Depending on the type of billing plan, the invoice can be sent at a time of signup, at the start of the billing period, or at the end of the billing period.&lt;br/&gt; &lt;br/&gt; Use the `credentials.access_token` we provided in the [Upsert Installation](#upsert-installation) body to authorize this request. &lt;br/&gt; There are several limitations to the invoice submission:&lt;br/&gt; &lt;br/&gt; 1. A resource can only be billed once per the billing period and the billing plan.&lt;br/&gt; 2. The billing plan used to bill the resource must have been active for this resource during the billing period.&lt;br/&gt; 3. The billing plan used must be a subscription plan.&lt;br/&gt; 4. The interim usage data must be sent hourly for all types of subscriptions. See [Send subscription billing and usage data](#send-subscription-billing-and-usage-data) API on how to send interim billing and usage data.&lt;br/&gt; 5. If provided, `externalId` must be unique for the installation.&lt;br/&gt;
+        /// This endpoint allows the partner to submit an invoice to Vercel. The invoice is created in Vercel's billing system and sent to the customer. Depending on the type of billing plan, the invoice can be sent at a time of signup, at the start of the billing period, or at the end of the billing period.&lt;br/&gt; &lt;br/&gt; There are several limitations to the invoice submission:&lt;br/&gt; &lt;br/&gt; 1. A resource can only be billed once per the billing period and the billing plan.&lt;br/&gt; 2. The billing plan used to bill the resource must have been active for this resource during the billing period.&lt;br/&gt; 3. The billing plan used must be a subscription plan.&lt;br/&gt; 4. The interim usage data must be sent hourly for all types of subscriptions. See [Send subscription billing and usage data](#send-subscription-billing-and-usage-data) API on how to send interim billing and usage data.&lt;br/&gt; 5. If provided, `externalId` must be unique for the installation.&lt;br/&gt;
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="request"></param>
@@ -71,7 +71,7 @@ namespace Vercel
         }
         /// <summary>
         /// Submit Invoice<br/>
-        /// This endpoint allows the partner to submit an invoice to Vercel. The invoice is created in Vercel's billing system and sent to the customer. Depending on the type of billing plan, the invoice can be sent at a time of signup, at the start of the billing period, or at the end of the billing period.&lt;br/&gt; &lt;br/&gt; Use the `credentials.access_token` we provided in the [Upsert Installation](#upsert-installation) body to authorize this request. &lt;br/&gt; There are several limitations to the invoice submission:&lt;br/&gt; &lt;br/&gt; 1. A resource can only be billed once per the billing period and the billing plan.&lt;br/&gt; 2. The billing plan used to bill the resource must have been active for this resource during the billing period.&lt;br/&gt; 3. The billing plan used must be a subscription plan.&lt;br/&gt; 4. The interim usage data must be sent hourly for all types of subscriptions. See [Send subscription billing and usage data](#send-subscription-billing-and-usage-data) API on how to send interim billing and usage data.&lt;br/&gt; 5. If provided, `externalId` must be unique for the installation.&lt;br/&gt;
+        /// This endpoint allows the partner to submit an invoice to Vercel. The invoice is created in Vercel's billing system and sent to the customer. Depending on the type of billing plan, the invoice can be sent at a time of signup, at the start of the billing period, or at the end of the billing period.&lt;br/&gt; &lt;br/&gt; There are several limitations to the invoice submission:&lt;br/&gt; &lt;br/&gt; 1. A resource can only be billed once per the billing period and the billing plan.&lt;br/&gt; 2. The billing plan used to bill the resource must have been active for this resource during the billing period.&lt;br/&gt; 3. The billing plan used must be a subscription plan.&lt;br/&gt; 4. The interim usage data must be sent hourly for all types of subscriptions. See [Send subscription billing and usage data](#send-subscription-billing-and-usage-data) API on how to send interim billing and usage data.&lt;br/&gt; 5. If provided, `externalId` must be unique for the installation.&lt;br/&gt;
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="request"></param>
@@ -370,7 +370,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_400 is { Length: > 0 } ? __content_400 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_400,
                                     responseBody: __content_400,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -402,7 +402,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_401 is { Length: > 0 } ? __content_401 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -434,7 +434,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_403 is { Length: > 0 } ? __content_403 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_403,
                                     responseBody: __content_403,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -466,7 +466,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_404 is { Length: > 0 } ? __content_404 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_404,
                                     responseBody: __content_404,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -498,7 +498,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_409 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_409 is { Length: > 0 } ? __content_409 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_409,
                                     responseBody: __content_409,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -530,7 +530,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_410 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_410 is { Length: > 0 } ? __content_410 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_410,
                                     responseBody: __content_410,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -572,7 +572,7 @@ namespace Vercel
                                 {
                                     throw global::Vercel.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -617,7 +617,7 @@ namespace Vercel
 
                                     throw global::Vercel.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -636,7 +636,7 @@ namespace Vercel
         }
         /// <summary>
         /// Submit Invoice<br/>
-        /// This endpoint allows the partner to submit an invoice to Vercel. The invoice is created in Vercel's billing system and sent to the customer. Depending on the type of billing plan, the invoice can be sent at a time of signup, at the start of the billing period, or at the end of the billing period.&lt;br/&gt; &lt;br/&gt; Use the `credentials.access_token` we provided in the [Upsert Installation](#upsert-installation) body to authorize this request. &lt;br/&gt; There are several limitations to the invoice submission:&lt;br/&gt; &lt;br/&gt; 1. A resource can only be billed once per the billing period and the billing plan.&lt;br/&gt; 2. The billing plan used to bill the resource must have been active for this resource during the billing period.&lt;br/&gt; 3. The billing plan used must be a subscription plan.&lt;br/&gt; 4. The interim usage data must be sent hourly for all types of subscriptions. See [Send subscription billing and usage data](#send-subscription-billing-and-usage-data) API on how to send interim billing and usage data.&lt;br/&gt; 5. If provided, `externalId` must be unique for the installation.&lt;br/&gt;
+        /// This endpoint allows the partner to submit an invoice to Vercel. The invoice is created in Vercel's billing system and sent to the customer. Depending on the type of billing plan, the invoice can be sent at a time of signup, at the start of the billing period, or at the end of the billing period.&lt;br/&gt; &lt;br/&gt; There are several limitations to the invoice submission:&lt;br/&gt; &lt;br/&gt; 1. A resource can only be billed once per the billing period and the billing plan.&lt;br/&gt; 2. The billing plan used to bill the resource must have been active for this resource during the billing period.&lt;br/&gt; 3. The billing plan used must be a subscription plan.&lt;br/&gt; 4. The interim usage data must be sent hourly for all types of subscriptions. See [Send subscription billing and usage data](#send-subscription-billing-and-usage-data) API on how to send interim billing and usage data.&lt;br/&gt; 5. If provided, `externalId` must be unique for the installation.&lt;br/&gt;
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="externalId">

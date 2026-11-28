@@ -44,6 +44,16 @@ namespace Vercel
         public required string Id { get; set; }
 
         /// <summary>
+        /// The user-facing kind of the token.<br/>
+        /// Example: access-token
+        /// </summary>
+        /// <example>access-token</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AuthTokenKindJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required global::Vercel.AuthTokenKind Kind { get; set; }
+
+        /// <summary>
         /// Timestamp (in milliseconds) of when the token was marked as leaked.<br/>
         /// Example: 1632816536002L
         /// </summary>
@@ -132,6 +142,10 @@ namespace Vercel
         /// The unique identifier of the token.<br/>
         /// Example: 5d9f2ebd38ddca62e5d51e9c1704c72530bdc8bfdd41e782a6687c48399e8391
         /// </param>
+        /// <param name="kind">
+        /// The user-facing kind of the token.<br/>
+        /// Example: access-token
+        /// </param>
         /// <param name="name">
         /// The human-readable name of the token.
         /// </param>
@@ -176,6 +190,7 @@ namespace Vercel
             double activeAt,
             double createdAt,
             string id,
+            global::Vercel.AuthTokenKind kind,
             string name,
             string type,
             double? expiresAt,
@@ -191,6 +206,7 @@ namespace Vercel
             this.CreatedAt = createdAt;
             this.ExpiresAt = expiresAt;
             this.Id = id ?? throw new global::System.ArgumentNullException(nameof(id));
+            this.Kind = kind;
             this.LeakedAt = leakedAt;
             this.LeakedUrl = leakedUrl;
             this.Name = name ?? throw new global::System.ArgumentNullException(nameof(name));

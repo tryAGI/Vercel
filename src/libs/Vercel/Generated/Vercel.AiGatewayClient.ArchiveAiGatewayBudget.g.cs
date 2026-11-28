@@ -30,6 +30,7 @@ namespace Vercel
             ref global::Vercel.ArchiveAiGatewayBudgetScopeType scopeType,
             ref string? projectId,
             ref string? userId,
+            ref string? appId,
             ref string? justification,
             ref string? teamId,
             ref string? slug);
@@ -39,6 +40,7 @@ namespace Vercel
             global::Vercel.ArchiveAiGatewayBudgetScopeType scopeType,
             string? projectId,
             string? userId,
+            string? appId,
             string? justification,
             string? teamId,
             string? slug);
@@ -53,7 +55,7 @@ namespace Vercel
 
         /// <summary>
         /// Archive AI Gateway budget<br/>
-        /// Archive a team-, project-, or user-scope AI Gateway budget.
+        /// Archive a team-, project-, user-, or app-scope AI Gateway budget.
         /// </summary>
         /// <param name="scopeType">
         /// The budget scope to archive.
@@ -63,6 +65,9 @@ namespace Vercel
         /// </param>
         /// <param name="userId">
         /// Required when scopeType is \"user\".
+        /// </param>
+        /// <param name="appId">
+        /// Required when scopeType is \"app\". The id of a Vercel App (`cl_…`).
         /// </param>
         /// <param name="justification">
         /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains, and sent in the ai-gateway.budget.updated webhook.
@@ -80,6 +85,7 @@ namespace Vercel
             global::Vercel.ArchiveAiGatewayBudgetScopeType scopeType,
             string? projectId = default,
             string? userId = default,
+            string? appId = default,
             string? justification = default,
             string? teamId = default,
             string? slug = default,
@@ -90,6 +96,7 @@ namespace Vercel
                 scopeType: scopeType,
                 projectId: projectId,
                 userId: userId,
+                appId: appId,
                 justification: justification,
                 teamId: teamId,
                 slug: slug,
@@ -101,7 +108,7 @@ namespace Vercel
         }
         /// <summary>
         /// Archive AI Gateway budget<br/>
-        /// Archive a team-, project-, or user-scope AI Gateway budget.
+        /// Archive a team-, project-, user-, or app-scope AI Gateway budget.
         /// </summary>
         /// <param name="scopeType">
         /// The budget scope to archive.
@@ -111,6 +118,9 @@ namespace Vercel
         /// </param>
         /// <param name="userId">
         /// Required when scopeType is \"user\".
+        /// </param>
+        /// <param name="appId">
+        /// Required when scopeType is \"app\". The id of a Vercel App (`cl_…`).
         /// </param>
         /// <param name="justification">
         /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains, and sent in the ai-gateway.budget.updated webhook.
@@ -128,6 +138,7 @@ namespace Vercel
             global::Vercel.ArchiveAiGatewayBudgetScopeType scopeType,
             string? projectId = default,
             string? userId = default,
+            string? appId = default,
             string? justification = default,
             string? teamId = default,
             string? slug = default,
@@ -141,6 +152,7 @@ namespace Vercel
                 scopeType: ref scopeType,
                 projectId: ref projectId,
                 userId: ref userId,
+                appId: ref appId,
                 justification: ref justification,
                 teamId: ref teamId,
                 slug: ref slug);
@@ -175,6 +187,7 @@ namespace Vercel
                                 .AddRequiredParameter("scopeType", scopeType.ToValueString())
                                 .AddOptionalParameter("projectId", projectId)
                                 .AddOptionalParameter("userId", userId)
+                                .AddOptionalParameter("appId", appId)
                                 .AddOptionalParameter("justification", justification)
                                 .AddOptionalParameter("teamId", teamId)
                                 .AddOptionalParameter("slug", slug)
@@ -222,6 +235,7 @@ namespace Vercel
                     scopeType: scopeType,
                     projectId: projectId,
                     userId: userId,
+                    appId: appId,
                     justification: justification,
                     teamId: teamId,
                     slug: slug);
@@ -427,7 +441,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_400 is { Length: > 0 } ? __content_400 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_400,
                                     responseBody: __content_400,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -459,7 +473,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_401 is { Length: > 0 } ? __content_401 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -491,7 +505,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_403 is { Length: > 0 } ? __content_403 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_403,
                                     responseBody: __content_403,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -523,7 +537,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_404 is { Length: > 0 } ? __content_404 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_404,
                                     responseBody: __content_404,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -555,7 +569,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_410 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_410 is { Length: > 0 } ? __content_410 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_410,
                                     responseBody: __content_410,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -587,7 +601,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_500 is { Length: > 0 } ? __content_500 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_500,
                                     responseBody: __content_500,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -629,7 +643,7 @@ namespace Vercel
                                 {
                                     throw global::Vercel.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -674,7 +688,7 @@ namespace Vercel
 
                                     throw global::Vercel.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(

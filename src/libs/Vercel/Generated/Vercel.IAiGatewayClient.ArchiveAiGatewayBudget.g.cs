@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Archive AI Gateway budget<br/>
-        /// Archive a team-, project-, or user-scope AI Gateway budget.
+        /// Archive a team-, project-, user-, or app-scope AI Gateway budget.
         /// </summary>
         /// <param name="scopeType">
         /// The budget scope to archive.
@@ -16,6 +16,9 @@ namespace Vercel
         /// </param>
         /// <param name="userId">
         /// Required when scopeType is \"user\".
+        /// </param>
+        /// <param name="appId">
+        /// Required when scopeType is \"app\". The id of a Vercel App (`cl_…`).
         /// </param>
         /// <param name="justification">
         /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains, and sent in the ai-gateway.budget.updated webhook.
@@ -33,6 +36,7 @@ namespace Vercel
             global::Vercel.ArchiveAiGatewayBudgetScopeType scopeType,
             string? projectId = default,
             string? userId = default,
+            string? appId = default,
             string? justification = default,
             string? teamId = default,
             string? slug = default,
@@ -40,7 +44,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Archive AI Gateway budget<br/>
-        /// Archive a team-, project-, or user-scope AI Gateway budget.
+        /// Archive a team-, project-, user-, or app-scope AI Gateway budget.
         /// </summary>
         /// <param name="scopeType">
         /// The budget scope to archive.
@@ -50,6 +54,9 @@ namespace Vercel
         /// </param>
         /// <param name="userId">
         /// Required when scopeType is \"user\".
+        /// </param>
+        /// <param name="appId">
+        /// Required when scopeType is \"app\". The id of a Vercel App (`cl_…`).
         /// </param>
         /// <param name="justification">
         /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains, and sent in the ai-gateway.budget.updated webhook.
@@ -67,6 +74,7 @@ namespace Vercel
             global::Vercel.ArchiveAiGatewayBudgetScopeType scopeType,
             string? projectId = default,
             string? userId = default,
+            string? appId = default,
             string? justification = default,
             string? teamId = default,
             string? slug = default,

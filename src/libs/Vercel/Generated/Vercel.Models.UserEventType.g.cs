@@ -128,6 +128,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiAgentUsageBillingConsent,
+        /// <summary>
+        ///
+        /// </summary>
         AiAlertInvestigation,
         /// <summary>
         ///
@@ -205,6 +209,42 @@ namespace Vercel
         ///
         /// </summary>
         AiGatewayHipaaComplianceToggled,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayInferenceHooksEndpointUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayInferenceHooksHeadersCleared,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayInferenceHooksHeadersUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayInferenceHooksPreviousSigningSecretRetired,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayInferenceHooksRemoved,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayInferenceHooksSettingsUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayInferenceHooksSigningSecretCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayInferenceHooksSigningSecretRotated,
+        /// <summary>
+        ///
+        /// </summary>
+        AiGatewayInferenceHooksToggled,
         /// <summary>
         ///
         /// </summary>
@@ -336,7 +376,27 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AiVerification,
+        /// <summary>
+        ///
+        /// </summary>
+        AlertGroupDetected,
+        /// <summary>
+        ///
+        /// </summary>
+        AlertGroupInvestigationCompleted,
+        /// <summary>
+        ///
+        /// </summary>
+        AlertGroupPublished,
+        /// <summary>
+        ///
+        /// </summary>
         AlertInvestigationProjectAllowlistUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        AlertResolved,
         /// <summary>
         ///
         /// </summary>
@@ -432,6 +492,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        AuthorizationSessionCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        AuthorizationSessionRevoked,
+        /// <summary>
+        ///
+        /// </summary>
         AuthorizeGitDeployment,
         /// <summary>
         ///
@@ -492,6 +560,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        CodeOwnersAssumeOwners,
+        /// <summary>
+        ///
+        /// </summary>
         CodeOwnersConfigUpdated,
         /// <summary>
         ///
@@ -509,6 +581,10 @@ namespace Vercel
         ///
         /// </summary>
         ConcurrentBuildsUpdate,
+        /// <summary>
+        ///
+        /// </summary>
+        ConnectApproveConnectorRequest,
         /// <summary>
         ///
         /// </summary>
@@ -568,6 +644,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        ConnectDeleteConnectorRequest,
+        /// <summary>
+        ///
+        /// </summary>
         ConnectDeleteInstallation,
         /// <summary>
         ///
@@ -600,11 +680,27 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        ConnectProvisionConnectorRequest,
+        /// <summary>
+        ///
+        /// </summary>
+        ConnectRejectConnectorRequest,
+        /// <summary>
+        ///
+        /// </summary>
         ConnectRevokeAllTokens,
         /// <summary>
         ///
         /// </summary>
+        ConnectSubmitConnectorRequest,
+        /// <summary>
+        ///
+        /// </summary>
         ConnectUpdateConnector,
+        /// <summary>
+        ///
+        /// </summary>
+        ConnectUpdateConnectorRequest,
         /// <summary>
         ///
         /// </summary>
@@ -613,6 +709,10 @@ namespace Vercel
         ///
         /// </summary>
         ConnectUpsertInstallation,
+        /// <summary>
+        ///
+        /// </summary>
+        ConnectWithdrawConnectorRequest,
         /// <summary>
         ///
         /// </summary>
@@ -1120,6 +1220,18 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        FlagsLayerCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        FlagsLayerDeleted,
+        /// <summary>
+        ///
+        /// </summary>
+        FlagsLayerUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         FlagsOverridesSigned,
         /// <summary>
         ///
@@ -1153,6 +1265,10 @@ namespace Vercel
         ///
         /// </summary>
         FlatRateCdnAutoUpgradeConsent,
+        /// <summary>
+        ///
+        /// </summary>
+        FlatRateCdnMigrationOptOut,
         /// <summary>
         ///
         /// </summary>
@@ -1564,6 +1680,14 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        OrganizationAdminInviteRevoked,
+        /// <summary>
+        ///
+        /// </summary>
+        OrganizationAdminRemoved,
+        /// <summary>
+        ///
+        /// </summary>
         OrganizationAvatarUpdate,
         /// <summary>
         ///
@@ -1621,6 +1745,10 @@ namespace Vercel
         ///
         /// </summary>
         OrganizationSlugUpdate,
+        /// <summary>
+        ///
+        /// </summary>
+        OrganizationSsoAdopted,
         /// <summary>
         ///
         /// </summary>
@@ -1749,6 +1877,26 @@ namespace Vercel
         ///
         /// </summary>
         PaymentMethodRemoved,
+        /// <summary>
+        ///
+        /// </summary>
+        PerimeterCreated,
+        /// <summary>
+        ///
+        /// </summary>
+        PerimeterDeleted,
+        /// <summary>
+        ///
+        /// </summary>
+        PerimeterRenamed,
+        /// <summary>
+        ///
+        /// </summary>
+        PerimeterRolledBack,
+        /// <summary>
+        ///
+        /// </summary>
+        PerimeterUpdated,
         /// <summary>
         ///
         /// </summary>
@@ -2168,6 +2316,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        ProjectRemoveVercelRequestHeadersUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         ProjectRollbackDescriptionUpdated,
         /// <summary>
         ///
@@ -2205,10 +2357,6 @@ namespace Vercel
         ///
         /// </summary>
         ProjectRollingReleaseStarted,
-        /// <summary>
-        ///
-        /// </summary>
-        ProjectRollingReleaseSuggestedActionsGenerated,
         /// <summary>
         ///
         /// </summary>
@@ -2324,6 +2472,30 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        SamlIdpMaterialDeleted,
+        /// <summary>
+        ///
+        /// </summary>
+        SamlIdpMaterialSet,
+        /// <summary>
+        ///
+        /// </summary>
+        SamlIdpMaterialSystemDeleted,
+        /// <summary>
+        ///
+        /// </summary>
+        SamlIdpMaterialSystemSet,
+        /// <summary>
+        ///
+        /// </summary>
+        SamlLoginProviderChanged,
+        /// <summary>
+        ///
+        /// </summary>
+        SandboxAiGatewayCredentialsConfigured,
+        /// <summary>
+        ///
+        /// </summary>
         SandboxAliasAssigned,
         /// <summary>
         ///
@@ -2348,7 +2520,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        SandboxExpiryNotificationLeadTimeUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         SandboxNpmCredentialsConfigured,
+        /// <summary>
+        ///
+        /// </summary>
+        SandboxProcessesUpdated,
         /// <summary>
         ///
         /// </summary>
@@ -3064,6 +3244,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        VercelAgentSecurityFindingClosed,
+        /// <summary>
+        ///
+        /// </summary>
         VercelAgentSecurityFindingCreated,
         /// <summary>
         ///
@@ -3077,6 +3261,14 @@ namespace Vercel
         ///
         /// </summary>
         VercelAgentSecurityFindingResolved,
+        /// <summary>
+        ///
+        /// </summary>
+        VercelAgentSecurityReviewPolicyDeleted,
+        /// <summary>
+        ///
+        /// </summary>
+        VercelAgentSecurityReviewPolicyUpdated,
         /// <summary>
         ///
         /// </summary>
@@ -3112,7 +3304,15 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        VercelCiRepositoryGithubRunnersUpdated,
+        /// <summary>
+        ///
+        /// </summary>
         VercelCiRepositorySettingsUpdated,
+        /// <summary>
+        ///
+        /// </summary>
+        VercelCiRunApproved,
         /// <summary>
         ///
         /// </summary>
@@ -3208,6 +3408,7 @@ namespace Vercel
                 UserEventType.AgenticProvisioningPlanChanged => "agentic-provisioning-plan-changed",
                 UserEventType.AgenticProvisioningTeamCreated => "agentic-provisioning-team-created",
                 UserEventType.AiAgentUsageBilling => "ai-agent-usage-billing",
+                UserEventType.AiAgentUsageBillingConsent => "ai-agent-usage-billing-consent",
                 UserEventType.AiAlertInvestigation => "ai-alert-investigation",
                 UserEventType.AiCodeReview => "ai-code-review",
                 UserEventType.AiGatewayAccessPolicyCreated => "ai-gateway-access-policy-created",
@@ -3228,6 +3429,15 @@ namespace Vercel
                 UserEventType.AiGatewayGuardrailsUpdated => "ai-gateway-guardrails-updated",
                 UserEventType.AiGatewayHeadquartersUpdated => "ai-gateway-headquarters-updated",
                 UserEventType.AiGatewayHipaaComplianceToggled => "ai-gateway-hipaa-compliance-toggled",
+                UserEventType.AiGatewayInferenceHooksEndpointUpdated => "ai-gateway-inference-hooks-endpoint-updated",
+                UserEventType.AiGatewayInferenceHooksHeadersCleared => "ai-gateway-inference-hooks-headers-cleared",
+                UserEventType.AiGatewayInferenceHooksHeadersUpdated => "ai-gateway-inference-hooks-headers-updated",
+                UserEventType.AiGatewayInferenceHooksPreviousSigningSecretRetired => "ai-gateway-inference-hooks-previous-signing-secret-retired",
+                UserEventType.AiGatewayInferenceHooksRemoved => "ai-gateway-inference-hooks-removed",
+                UserEventType.AiGatewayInferenceHooksSettingsUpdated => "ai-gateway-inference-hooks-settings-updated",
+                UserEventType.AiGatewayInferenceHooksSigningSecretCreated => "ai-gateway-inference-hooks-signing-secret-created",
+                UserEventType.AiGatewayInferenceHooksSigningSecretRotated => "ai-gateway-inference-hooks-signing-secret-rotated",
+                UserEventType.AiGatewayInferenceHooksToggled => "ai-gateway-inference-hooks-toggled",
                 UserEventType.AiGatewayInferenceRegionsUpdated => "ai-gateway-inference-regions-updated",
                 UserEventType.AiGatewayMemberBudgetChanges => "ai-gateway-member-budget-changes",
                 UserEventType.AiGatewayModelAllowlistModelsUpdated => "ai-gateway-model-allowlist-models-updated",
@@ -3260,7 +3470,12 @@ namespace Vercel
                 UserEventType.AiGatewayZeroDataRetentionToggled => "ai-gateway-zero-data-retention-toggled",
                 UserEventType.AiOmniagent => "ai-omniagent",
                 UserEventType.AiSecurityReview => "ai-security-review",
+                UserEventType.AiVerification => "ai-verification",
+                UserEventType.AlertGroupDetected => "alert-group-detected",
+                UserEventType.AlertGroupInvestigationCompleted => "alert-group-investigation-completed",
+                UserEventType.AlertGroupPublished => "alert-group-published",
                 UserEventType.AlertInvestigationProjectAllowlistUpdated => "alert-investigation-project-allowlist-updated",
+                UserEventType.AlertResolved => "alert-resolved",
                 UserEventType.AlertRuleCreated => "alert-rule-created",
                 UserEventType.AlertRuleDeleted => "alert-rule-deleted",
                 UserEventType.AlertRuleUpdated => "alert-rule-updated",
@@ -3284,6 +3499,8 @@ namespace Vercel
                 UserEventType.AttackModeEnabled => "attack-mode-enabled",
                 UserEventType.AuditLogExportDownloaded => "audit-log-export-downloaded",
                 UserEventType.AuditLogExportRequested => "audit-log-export-requested",
+                UserEventType.AuthorizationSessionCreated => "authorization-session-created",
+                UserEventType.AuthorizationSessionRevoked => "authorization-session-revoked",
                 UserEventType.AuthorizeGitDeployment => "authorize-git-deployment",
                 UserEventType.AutoExposeSystemEnvs => "auto-expose-system-envs",
                 UserEventType.Avatar => "avatar",
@@ -3299,11 +3516,13 @@ namespace Vercel
                 UserEventType.CertRenew => "cert-renew",
                 UserEventType.CertReplace => "cert-replace",
                 UserEventType.CertSystemCreate => "cert-system-create",
+                UserEventType.CodeOwnersAssumeOwners => "code-owners-assume-owners",
                 UserEventType.CodeOwnersConfigUpdated => "code-owners-config-updated",
                 UserEventType.ComplianceDocumentDownloaded => "compliance-document-downloaded",
                 UserEventType.ComplianceDocumentPreviewed => "compliance-document-previewed",
                 UserEventType.ComplianceDocumentsBulkDownloaded => "compliance-documents-bulk-downloaded",
                 UserEventType.ConcurrentBuildsUpdate => "concurrent-builds-update",
+                UserEventType.ConnectApproveConnectorRequest => "connect-approve-connector-request",
                 UserEventType.ConnectAttachProject => "connect-attach-project",
                 UserEventType.ConnectBitbucket => "connect-bitbucket",
                 UserEventType.ConnectBitbucketApp => "connect-bitbucket-app",
@@ -3318,6 +3537,7 @@ namespace Vercel
                 UserEventType.ConnectCreateConnector => "connect-create-connector",
                 UserEventType.ConnectCreateMcpEventSubscription => "connect-create-mcp-event-subscription",
                 UserEventType.ConnectDeleteConnector => "connect-delete-connector",
+                UserEventType.ConnectDeleteConnectorRequest => "connect-delete-connector-request",
                 UserEventType.ConnectDeleteInstallation => "connect-delete-installation",
                 UserEventType.ConnectDetachProject => "connect-detach-project",
                 UserEventType.ConnectGithub => "connect-github",
@@ -3326,10 +3546,15 @@ namespace Vercel
                 UserEventType.ConnectGitlab => "connect-gitlab",
                 UserEventType.ConnectGitlabApp => "connect-gitlab-app",
                 UserEventType.ConnectImportTokens => "connect-import-tokens",
+                UserEventType.ConnectProvisionConnectorRequest => "connect-provision-connector-request",
+                UserEventType.ConnectRejectConnectorRequest => "connect-reject-connector-request",
                 UserEventType.ConnectRevokeAllTokens => "connect-revoke-all-tokens",
+                UserEventType.ConnectSubmitConnectorRequest => "connect-submit-connector-request",
                 UserEventType.ConnectUpdateConnector => "connect-update-connector",
+                UserEventType.ConnectUpdateConnectorRequest => "connect-update-connector-request",
                 UserEventType.ConnectUpdateTriggerDestinations => "connect-update-trigger-destinations",
                 UserEventType.ConnectUpsertInstallation => "connect-upsert-installation",
+                UserEventType.ConnectWithdrawConnectorRequest => "connect-withdraw-connector-request",
                 UserEventType.CustomAlertCreated => "custom-alert-created",
                 UserEventType.CustomAlertDeleted => "custom-alert-deleted",
                 UserEventType.CustomAlertUpdated => "custom-alert-updated",
@@ -3456,6 +3681,9 @@ namespace Vercel
                 UserEventType.FlagsConnectionCreated => "flags-connection-created",
                 UserEventType.FlagsConnectionDeleted => "flags-connection-deleted",
                 UserEventType.FlagsExplorerSubscription => "flags-explorer-subscription",
+                UserEventType.FlagsLayerCreated => "flags-layer-created",
+                UserEventType.FlagsLayerDeleted => "flags-layer-deleted",
+                UserEventType.FlagsLayerUpdated => "flags-layer-updated",
                 UserEventType.FlagsOverridesSigned => "flags-overrides-signed",
                 UserEventType.FlagsSdkKey => "flags-sdk-key",
                 UserEventType.FlagsSdkKeyAdded => "flags-sdk-key-added",
@@ -3465,6 +3693,7 @@ namespace Vercel
                 UserEventType.FlagsSettings => "flags-settings",
                 UserEventType.FlagsTransferred => "flags-transferred",
                 UserEventType.FlatRateCdnAutoUpgradeConsent => "flat-rate-cdn-auto-upgrade-consent",
+                UserEventType.FlatRateCdnMigrationOptOut => "flat-rate-cdn-migration-opt-out",
                 UserEventType.GitIntegrationRepoPush => "git-integration-repo-push",
                 UserEventType.GitAccountIntegrationLinkAdded => "git_account_integration_link_added",
                 UserEventType.GlobalConfigBackupRestored => "global-config-backup-restored",
@@ -3567,6 +3796,8 @@ namespace Vercel
                 UserEventType.OidcPolicyDeleted => "oidc-policy-deleted",
                 UserEventType.OidcPolicyUpdated => "oidc-policy-updated",
                 UserEventType.OidcPolicyUsedToObtainAppToken => "oidc-policy-used-to-obtain-app-token",
+                UserEventType.OrganizationAdminInviteRevoked => "organization-admin-invite-revoked",
+                UserEventType.OrganizationAdminRemoved => "organization-admin-removed",
                 UserEventType.OrganizationAvatarUpdate => "organization-avatar-update",
                 UserEventType.OrganizationCreate => "organization-create",
                 UserEventType.OrganizationDelete => "organization-delete",
@@ -3582,6 +3813,7 @@ namespace Vercel
                 UserEventType.OrganizationEmuUpdated => "organization-emu-updated",
                 UserEventType.OrganizationNameUpdate => "organization-name-update",
                 UserEventType.OrganizationSlugUpdate => "organization-slug-update",
+                UserEventType.OrganizationSsoAdopted => "organization-sso-adopted",
                 UserEventType.OrganizationSsoDeleted => "organization-sso-deleted",
                 UserEventType.OrganizationSsoEnforced => "organization-sso-enforced",
                 UserEventType.OrganizationSsoNewTeamsUpdate => "organization-sso-new-teams-update",
@@ -3614,6 +3846,11 @@ namespace Vercel
                 UserEventType.PaymentMethodAdded => "payment-method-added",
                 UserEventType.PaymentMethodDefaultUpdated => "payment-method-default-updated",
                 UserEventType.PaymentMethodRemoved => "payment-method-removed",
+                UserEventType.PerimeterCreated => "perimeter-created",
+                UserEventType.PerimeterDeleted => "perimeter-deleted",
+                UserEventType.PerimeterRenamed => "perimeter-renamed",
+                UserEventType.PerimeterRolledBack => "perimeter-rolled-back",
+                UserEventType.PerimeterUpdated => "perimeter-updated",
                 UserEventType.Plan => "plan",
                 UserEventType.PreviewDeploymentSuffixDisabled => "preview-deployment-suffix-disabled",
                 UserEventType.PreviewDeploymentSuffixEnabled => "preview-deployment-suffix-enabled",
@@ -3718,6 +3955,7 @@ namespace Vercel
                 UserEventType.ProjectPrioritizeProductionBuildsUpdated => "project-prioritize-production-builds-updated",
                 UserEventType.ProjectProgramEnrollmentChanged => "project-program-enrollment-changed",
                 UserEventType.ProjectProtectedSourcemapsUpdated => "project-protected-sourcemaps-updated",
+                UserEventType.ProjectRemoveVercelRequestHeadersUpdated => "project-remove-vercel-request-headers-updated",
                 UserEventType.ProjectRollbackDescriptionUpdated => "project-rollback-description-updated",
                 UserEventType.ProjectRollingReleaseAborted => "project-rolling-release-aborted",
                 UserEventType.ProjectRollingReleaseApproved => "project-rolling-release-approved",
@@ -3728,7 +3966,6 @@ namespace Vercel
                 UserEventType.ProjectRollingReleaseEnabled => "project-rolling-release-enabled",
                 UserEventType.ProjectRollingReleasePaused => "project-rolling-release-paused",
                 UserEventType.ProjectRollingReleaseStarted => "project-rolling-release-started",
-                UserEventType.ProjectRollingReleaseSuggestedActionsGenerated => "project-rolling-release-suggested-actions-generated",
                 UserEventType.ProjectRollingReleaseTimer => "project-rolling-release-timer",
                 UserEventType.ProjectRootDirectoryUpdated => "project-root-directory-updated",
                 UserEventType.ProjectRoutesVersionPromoted => "project-routes-version-promoted",
@@ -3757,13 +3994,21 @@ namespace Vercel
                 UserEventType.RuntimeCachePurgeAll => "runtime-cache-purge-all",
                 UserEventType.SamlConnectionCreated => "saml-connection-created",
                 UserEventType.SamlConnectionDeleted => "saml-connection-deleted",
+                UserEventType.SamlIdpMaterialDeleted => "saml-idp-material-deleted",
+                UserEventType.SamlIdpMaterialSet => "saml-idp-material-set",
+                UserEventType.SamlIdpMaterialSystemDeleted => "saml-idp-material-system-deleted",
+                UserEventType.SamlIdpMaterialSystemSet => "saml-idp-material-system-set",
+                UserEventType.SamlLoginProviderChanged => "saml-login-provider-changed",
+                UserEventType.SandboxAiGatewayCredentialsConfigured => "sandbox-ai-gateway-credentials-configured",
                 UserEventType.SandboxAliasAssigned => "sandbox-alias-assigned",
                 UserEventType.SandboxAliasDelete => "sandbox-alias-delete",
                 UserEventType.SandboxDriveCreated => "sandbox-drive-created",
                 UserEventType.SandboxDriveDeleted => "sandbox-drive-deleted",
                 UserEventType.SandboxDriveSnapshotCreated => "sandbox-drive-snapshot-created",
                 UserEventType.SandboxDriveSnapshotDeleted => "sandbox-drive-snapshot-deleted",
+                UserEventType.SandboxExpiryNotificationLeadTimeUpdated => "sandbox-expiry-notification-lead-time-updated",
                 UserEventType.SandboxNpmCredentialsConfigured => "sandbox-npm-credentials-configured",
+                UserEventType.SandboxProcessesUpdated => "sandbox-processes-updated",
                 UserEventType.SandboxSignedCommitIdentityConfigured => "sandbox-signed-commit-identity-configured",
                 UserEventType.SandboxSnapshotRegionsUpdated => "sandbox-snapshot-regions-updated",
                 UserEventType.Scale => "scale",
@@ -3942,10 +4187,13 @@ namespace Vercel
                 UserEventType.VcrRepositoryVisibilityChanged => "vcr-repository-visibility-changed",
                 UserEventType.VercelAgentElevatedPermissionsApproved => "vercel-agent-elevated-permissions-approved",
                 UserEventType.VercelAgentElevatedPermissionsRequested => "vercel-agent-elevated-permissions-requested",
+                UserEventType.VercelAgentSecurityFindingClosed => "vercel-agent-security-finding-closed",
                 UserEventType.VercelAgentSecurityFindingCreated => "vercel-agent-security-finding-created",
                 UserEventType.VercelAgentSecurityFindingDismissed => "vercel-agent-security-finding-dismissed",
                 UserEventType.VercelAgentSecurityFindingReopened => "vercel-agent-security-finding-reopened",
                 UserEventType.VercelAgentSecurityFindingResolved => "vercel-agent-security-finding-resolved",
+                UserEventType.VercelAgentSecurityReviewPolicyDeleted => "vercel-agent-security-review-policy-deleted",
+                UserEventType.VercelAgentSecurityReviewPolicyUpdated => "vercel-agent-security-review-policy-updated",
                 UserEventType.VercelAgentSessionCreated => "vercel-agent-session-created",
                 UserEventType.VercelAgentTeamTrialCreditsApplied => "vercel-agent-team-trial-credits-applied",
                 UserEventType.VercelAppInstallationRequestDismissed => "vercel-app-installation-request-dismissed",
@@ -3954,7 +4202,9 @@ namespace Vercel
                 UserEventType.VercelAppInstalled => "vercel-app-installed",
                 UserEventType.VercelAppTokensRevoked => "vercel-app-tokens-revoked",
                 UserEventType.VercelAppUninstalled => "vercel-app-uninstalled",
+                UserEventType.VercelCiRepositoryGithubRunnersUpdated => "vercel-ci-repository-github-runners-updated",
                 UserEventType.VercelCiRepositorySettingsUpdated => "vercel-ci-repository-settings-updated",
+                UserEventType.VercelCiRunApproved => "vercel-ci-run-approved",
                 UserEventType.VercelToolbar => "vercel-toolbar",
                 UserEventType.VpcPeeringConnectionAccepted => "vpc-peering-connection-accepted",
                 UserEventType.VpcPeeringConnectionDeleted => "vpc-peering-connection-deleted",
@@ -4007,6 +4257,7 @@ namespace Vercel
                 "agentic-provisioning-plan-changed" => UserEventType.AgenticProvisioningPlanChanged,
                 "agentic-provisioning-team-created" => UserEventType.AgenticProvisioningTeamCreated,
                 "ai-agent-usage-billing" => UserEventType.AiAgentUsageBilling,
+                "ai-agent-usage-billing-consent" => UserEventType.AiAgentUsageBillingConsent,
                 "ai-alert-investigation" => UserEventType.AiAlertInvestigation,
                 "ai-code-review" => UserEventType.AiCodeReview,
                 "ai-gateway-access-policy-created" => UserEventType.AiGatewayAccessPolicyCreated,
@@ -4027,6 +4278,15 @@ namespace Vercel
                 "ai-gateway-guardrails-updated" => UserEventType.AiGatewayGuardrailsUpdated,
                 "ai-gateway-headquarters-updated" => UserEventType.AiGatewayHeadquartersUpdated,
                 "ai-gateway-hipaa-compliance-toggled" => UserEventType.AiGatewayHipaaComplianceToggled,
+                "ai-gateway-inference-hooks-endpoint-updated" => UserEventType.AiGatewayInferenceHooksEndpointUpdated,
+                "ai-gateway-inference-hooks-headers-cleared" => UserEventType.AiGatewayInferenceHooksHeadersCleared,
+                "ai-gateway-inference-hooks-headers-updated" => UserEventType.AiGatewayInferenceHooksHeadersUpdated,
+                "ai-gateway-inference-hooks-previous-signing-secret-retired" => UserEventType.AiGatewayInferenceHooksPreviousSigningSecretRetired,
+                "ai-gateway-inference-hooks-removed" => UserEventType.AiGatewayInferenceHooksRemoved,
+                "ai-gateway-inference-hooks-settings-updated" => UserEventType.AiGatewayInferenceHooksSettingsUpdated,
+                "ai-gateway-inference-hooks-signing-secret-created" => UserEventType.AiGatewayInferenceHooksSigningSecretCreated,
+                "ai-gateway-inference-hooks-signing-secret-rotated" => UserEventType.AiGatewayInferenceHooksSigningSecretRotated,
+                "ai-gateway-inference-hooks-toggled" => UserEventType.AiGatewayInferenceHooksToggled,
                 "ai-gateway-inference-regions-updated" => UserEventType.AiGatewayInferenceRegionsUpdated,
                 "ai-gateway-member-budget-changes" => UserEventType.AiGatewayMemberBudgetChanges,
                 "ai-gateway-model-allowlist-models-updated" => UserEventType.AiGatewayModelAllowlistModelsUpdated,
@@ -4059,7 +4319,12 @@ namespace Vercel
                 "ai-gateway-zero-data-retention-toggled" => UserEventType.AiGatewayZeroDataRetentionToggled,
                 "ai-omniagent" => UserEventType.AiOmniagent,
                 "ai-security-review" => UserEventType.AiSecurityReview,
+                "ai-verification" => UserEventType.AiVerification,
+                "alert-group-detected" => UserEventType.AlertGroupDetected,
+                "alert-group-investigation-completed" => UserEventType.AlertGroupInvestigationCompleted,
+                "alert-group-published" => UserEventType.AlertGroupPublished,
                 "alert-investigation-project-allowlist-updated" => UserEventType.AlertInvestigationProjectAllowlistUpdated,
+                "alert-resolved" => UserEventType.AlertResolved,
                 "alert-rule-created" => UserEventType.AlertRuleCreated,
                 "alert-rule-deleted" => UserEventType.AlertRuleDeleted,
                 "alert-rule-updated" => UserEventType.AlertRuleUpdated,
@@ -4083,6 +4348,8 @@ namespace Vercel
                 "attack-mode-enabled" => UserEventType.AttackModeEnabled,
                 "audit-log-export-downloaded" => UserEventType.AuditLogExportDownloaded,
                 "audit-log-export-requested" => UserEventType.AuditLogExportRequested,
+                "authorization-session-created" => UserEventType.AuthorizationSessionCreated,
+                "authorization-session-revoked" => UserEventType.AuthorizationSessionRevoked,
                 "authorize-git-deployment" => UserEventType.AuthorizeGitDeployment,
                 "auto-expose-system-envs" => UserEventType.AutoExposeSystemEnvs,
                 "avatar" => UserEventType.Avatar,
@@ -4098,11 +4365,13 @@ namespace Vercel
                 "cert-renew" => UserEventType.CertRenew,
                 "cert-replace" => UserEventType.CertReplace,
                 "cert-system-create" => UserEventType.CertSystemCreate,
+                "code-owners-assume-owners" => UserEventType.CodeOwnersAssumeOwners,
                 "code-owners-config-updated" => UserEventType.CodeOwnersConfigUpdated,
                 "compliance-document-downloaded" => UserEventType.ComplianceDocumentDownloaded,
                 "compliance-document-previewed" => UserEventType.ComplianceDocumentPreviewed,
                 "compliance-documents-bulk-downloaded" => UserEventType.ComplianceDocumentsBulkDownloaded,
                 "concurrent-builds-update" => UserEventType.ConcurrentBuildsUpdate,
+                "connect-approve-connector-request" => UserEventType.ConnectApproveConnectorRequest,
                 "connect-attach-project" => UserEventType.ConnectAttachProject,
                 "connect-bitbucket" => UserEventType.ConnectBitbucket,
                 "connect-bitbucket-app" => UserEventType.ConnectBitbucketApp,
@@ -4117,6 +4386,7 @@ namespace Vercel
                 "connect-create-connector" => UserEventType.ConnectCreateConnector,
                 "connect-create-mcp-event-subscription" => UserEventType.ConnectCreateMcpEventSubscription,
                 "connect-delete-connector" => UserEventType.ConnectDeleteConnector,
+                "connect-delete-connector-request" => UserEventType.ConnectDeleteConnectorRequest,
                 "connect-delete-installation" => UserEventType.ConnectDeleteInstallation,
                 "connect-detach-project" => UserEventType.ConnectDetachProject,
                 "connect-github" => UserEventType.ConnectGithub,
@@ -4125,10 +4395,15 @@ namespace Vercel
                 "connect-gitlab" => UserEventType.ConnectGitlab,
                 "connect-gitlab-app" => UserEventType.ConnectGitlabApp,
                 "connect-import-tokens" => UserEventType.ConnectImportTokens,
+                "connect-provision-connector-request" => UserEventType.ConnectProvisionConnectorRequest,
+                "connect-reject-connector-request" => UserEventType.ConnectRejectConnectorRequest,
                 "connect-revoke-all-tokens" => UserEventType.ConnectRevokeAllTokens,
+                "connect-submit-connector-request" => UserEventType.ConnectSubmitConnectorRequest,
                 "connect-update-connector" => UserEventType.ConnectUpdateConnector,
+                "connect-update-connector-request" => UserEventType.ConnectUpdateConnectorRequest,
                 "connect-update-trigger-destinations" => UserEventType.ConnectUpdateTriggerDestinations,
                 "connect-upsert-installation" => UserEventType.ConnectUpsertInstallation,
+                "connect-withdraw-connector-request" => UserEventType.ConnectWithdrawConnectorRequest,
                 "custom-alert-created" => UserEventType.CustomAlertCreated,
                 "custom-alert-deleted" => UserEventType.CustomAlertDeleted,
                 "custom-alert-updated" => UserEventType.CustomAlertUpdated,
@@ -4255,6 +4530,9 @@ namespace Vercel
                 "flags-connection-created" => UserEventType.FlagsConnectionCreated,
                 "flags-connection-deleted" => UserEventType.FlagsConnectionDeleted,
                 "flags-explorer-subscription" => UserEventType.FlagsExplorerSubscription,
+                "flags-layer-created" => UserEventType.FlagsLayerCreated,
+                "flags-layer-deleted" => UserEventType.FlagsLayerDeleted,
+                "flags-layer-updated" => UserEventType.FlagsLayerUpdated,
                 "flags-overrides-signed" => UserEventType.FlagsOverridesSigned,
                 "flags-sdk-key" => UserEventType.FlagsSdkKey,
                 "flags-sdk-key-added" => UserEventType.FlagsSdkKeyAdded,
@@ -4264,6 +4542,7 @@ namespace Vercel
                 "flags-settings" => UserEventType.FlagsSettings,
                 "flags-transferred" => UserEventType.FlagsTransferred,
                 "flat-rate-cdn-auto-upgrade-consent" => UserEventType.FlatRateCdnAutoUpgradeConsent,
+                "flat-rate-cdn-migration-opt-out" => UserEventType.FlatRateCdnMigrationOptOut,
                 "git-integration-repo-push" => UserEventType.GitIntegrationRepoPush,
                 "git_account_integration_link_added" => UserEventType.GitAccountIntegrationLinkAdded,
                 "global-config-backup-restored" => UserEventType.GlobalConfigBackupRestored,
@@ -4366,6 +4645,8 @@ namespace Vercel
                 "oidc-policy-deleted" => UserEventType.OidcPolicyDeleted,
                 "oidc-policy-updated" => UserEventType.OidcPolicyUpdated,
                 "oidc-policy-used-to-obtain-app-token" => UserEventType.OidcPolicyUsedToObtainAppToken,
+                "organization-admin-invite-revoked" => UserEventType.OrganizationAdminInviteRevoked,
+                "organization-admin-removed" => UserEventType.OrganizationAdminRemoved,
                 "organization-avatar-update" => UserEventType.OrganizationAvatarUpdate,
                 "organization-create" => UserEventType.OrganizationCreate,
                 "organization-delete" => UserEventType.OrganizationDelete,
@@ -4381,6 +4662,7 @@ namespace Vercel
                 "organization-emu-updated" => UserEventType.OrganizationEmuUpdated,
                 "organization-name-update" => UserEventType.OrganizationNameUpdate,
                 "organization-slug-update" => UserEventType.OrganizationSlugUpdate,
+                "organization-sso-adopted" => UserEventType.OrganizationSsoAdopted,
                 "organization-sso-deleted" => UserEventType.OrganizationSsoDeleted,
                 "organization-sso-enforced" => UserEventType.OrganizationSsoEnforced,
                 "organization-sso-new-teams-update" => UserEventType.OrganizationSsoNewTeamsUpdate,
@@ -4413,6 +4695,11 @@ namespace Vercel
                 "payment-method-added" => UserEventType.PaymentMethodAdded,
                 "payment-method-default-updated" => UserEventType.PaymentMethodDefaultUpdated,
                 "payment-method-removed" => UserEventType.PaymentMethodRemoved,
+                "perimeter-created" => UserEventType.PerimeterCreated,
+                "perimeter-deleted" => UserEventType.PerimeterDeleted,
+                "perimeter-renamed" => UserEventType.PerimeterRenamed,
+                "perimeter-rolled-back" => UserEventType.PerimeterRolledBack,
+                "perimeter-updated" => UserEventType.PerimeterUpdated,
                 "plan" => UserEventType.Plan,
                 "preview-deployment-suffix-disabled" => UserEventType.PreviewDeploymentSuffixDisabled,
                 "preview-deployment-suffix-enabled" => UserEventType.PreviewDeploymentSuffixEnabled,
@@ -4517,6 +4804,7 @@ namespace Vercel
                 "project-prioritize-production-builds-updated" => UserEventType.ProjectPrioritizeProductionBuildsUpdated,
                 "project-program-enrollment-changed" => UserEventType.ProjectProgramEnrollmentChanged,
                 "project-protected-sourcemaps-updated" => UserEventType.ProjectProtectedSourcemapsUpdated,
+                "project-remove-vercel-request-headers-updated" => UserEventType.ProjectRemoveVercelRequestHeadersUpdated,
                 "project-rollback-description-updated" => UserEventType.ProjectRollbackDescriptionUpdated,
                 "project-rolling-release-aborted" => UserEventType.ProjectRollingReleaseAborted,
                 "project-rolling-release-approved" => UserEventType.ProjectRollingReleaseApproved,
@@ -4527,7 +4815,6 @@ namespace Vercel
                 "project-rolling-release-enabled" => UserEventType.ProjectRollingReleaseEnabled,
                 "project-rolling-release-paused" => UserEventType.ProjectRollingReleasePaused,
                 "project-rolling-release-started" => UserEventType.ProjectRollingReleaseStarted,
-                "project-rolling-release-suggested-actions-generated" => UserEventType.ProjectRollingReleaseSuggestedActionsGenerated,
                 "project-rolling-release-timer" => UserEventType.ProjectRollingReleaseTimer,
                 "project-root-directory-updated" => UserEventType.ProjectRootDirectoryUpdated,
                 "project-routes-version-promoted" => UserEventType.ProjectRoutesVersionPromoted,
@@ -4556,13 +4843,21 @@ namespace Vercel
                 "runtime-cache-purge-all" => UserEventType.RuntimeCachePurgeAll,
                 "saml-connection-created" => UserEventType.SamlConnectionCreated,
                 "saml-connection-deleted" => UserEventType.SamlConnectionDeleted,
+                "saml-idp-material-deleted" => UserEventType.SamlIdpMaterialDeleted,
+                "saml-idp-material-set" => UserEventType.SamlIdpMaterialSet,
+                "saml-idp-material-system-deleted" => UserEventType.SamlIdpMaterialSystemDeleted,
+                "saml-idp-material-system-set" => UserEventType.SamlIdpMaterialSystemSet,
+                "saml-login-provider-changed" => UserEventType.SamlLoginProviderChanged,
+                "sandbox-ai-gateway-credentials-configured" => UserEventType.SandboxAiGatewayCredentialsConfigured,
                 "sandbox-alias-assigned" => UserEventType.SandboxAliasAssigned,
                 "sandbox-alias-delete" => UserEventType.SandboxAliasDelete,
                 "sandbox-drive-created" => UserEventType.SandboxDriveCreated,
                 "sandbox-drive-deleted" => UserEventType.SandboxDriveDeleted,
                 "sandbox-drive-snapshot-created" => UserEventType.SandboxDriveSnapshotCreated,
                 "sandbox-drive-snapshot-deleted" => UserEventType.SandboxDriveSnapshotDeleted,
+                "sandbox-expiry-notification-lead-time-updated" => UserEventType.SandboxExpiryNotificationLeadTimeUpdated,
                 "sandbox-npm-credentials-configured" => UserEventType.SandboxNpmCredentialsConfigured,
+                "sandbox-processes-updated" => UserEventType.SandboxProcessesUpdated,
                 "sandbox-signed-commit-identity-configured" => UserEventType.SandboxSignedCommitIdentityConfigured,
                 "sandbox-snapshot-regions-updated" => UserEventType.SandboxSnapshotRegionsUpdated,
                 "scale" => UserEventType.Scale,
@@ -4741,10 +5036,13 @@ namespace Vercel
                 "vcr-repository-visibility-changed" => UserEventType.VcrRepositoryVisibilityChanged,
                 "vercel-agent-elevated-permissions-approved" => UserEventType.VercelAgentElevatedPermissionsApproved,
                 "vercel-agent-elevated-permissions-requested" => UserEventType.VercelAgentElevatedPermissionsRequested,
+                "vercel-agent-security-finding-closed" => UserEventType.VercelAgentSecurityFindingClosed,
                 "vercel-agent-security-finding-created" => UserEventType.VercelAgentSecurityFindingCreated,
                 "vercel-agent-security-finding-dismissed" => UserEventType.VercelAgentSecurityFindingDismissed,
                 "vercel-agent-security-finding-reopened" => UserEventType.VercelAgentSecurityFindingReopened,
                 "vercel-agent-security-finding-resolved" => UserEventType.VercelAgentSecurityFindingResolved,
+                "vercel-agent-security-review-policy-deleted" => UserEventType.VercelAgentSecurityReviewPolicyDeleted,
+                "vercel-agent-security-review-policy-updated" => UserEventType.VercelAgentSecurityReviewPolicyUpdated,
                 "vercel-agent-session-created" => UserEventType.VercelAgentSessionCreated,
                 "vercel-agent-team-trial-credits-applied" => UserEventType.VercelAgentTeamTrialCreditsApplied,
                 "vercel-app-installation-request-dismissed" => UserEventType.VercelAppInstallationRequestDismissed,
@@ -4753,7 +5051,9 @@ namespace Vercel
                 "vercel-app-installed" => UserEventType.VercelAppInstalled,
                 "vercel-app-tokens-revoked" => UserEventType.VercelAppTokensRevoked,
                 "vercel-app-uninstalled" => UserEventType.VercelAppUninstalled,
+                "vercel-ci-repository-github-runners-updated" => UserEventType.VercelCiRepositoryGithubRunnersUpdated,
                 "vercel-ci-repository-settings-updated" => UserEventType.VercelCiRepositorySettingsUpdated,
+                "vercel-ci-run-approved" => UserEventType.VercelCiRunApproved,
                 "vercel-toolbar" => UserEventType.VercelToolbar,
                 "vpc-peering-connection-accepted" => UserEventType.VpcPeeringConnectionAccepted,
                 "vpc-peering-connection-deleted" => UserEventType.VpcPeeringConnectionDeleted,

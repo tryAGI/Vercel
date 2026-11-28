@@ -4,7 +4,7 @@
 namespace Vercel
 {
     /// <summary>
-    /// Default Value: monthly
+    /// Defaults to monthly with `limitAmount`; `increaseBy` keeps the current period. Ignored for a member's own change that lapses (`expiresAt`): it takes the user default's period.
     /// </summary>
     public enum UpsertAiGatewayBudgetRequestRefreshPeriod
     {
@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         Daily,
         /// <summary>
-        ///
+        /// it takes the user default's period.
         /// </summary>
         Monthly,
         /// <summary>

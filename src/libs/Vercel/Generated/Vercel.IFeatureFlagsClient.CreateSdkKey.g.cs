@@ -75,10 +75,10 @@ namespace Vercel
         /// <exception cref="global::System.InvalidOperationException"></exception>
         global::System.Threading.Tasks.Task<global::Vercel.FlagsSdkKeyWithSecrets> CreateSdkKeyAsync(
             string projectIdOrName,
-            global::Vercel.CreateSdkKeyRequestSdkKeyType sdkKeyType,
             string environment,
             string? teamId = default,
             string? slug = default,
+            global::Vercel.CreateSdkKeyRequestSdkKeyType sdkKeyType = default,
             string? label = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

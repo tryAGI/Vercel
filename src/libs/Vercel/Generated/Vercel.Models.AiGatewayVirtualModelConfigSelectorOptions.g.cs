@@ -17,6 +17,12 @@ namespace Vercel
         /// <summary>
         /// For kind=router: option slices keyed by selector name; each selector owns its slice's shape.
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("intelligence")]
+        public global::Vercel.AiGatewayRouterSelectorOptionBag? Intelligence { get; set; }
+
+        /// <summary>
+        /// For kind=router: option slices keyed by selector name; each selector owns its slice's shape.
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tps")]
         public global::Vercel.AiGatewayRouterSelectorOptionBag? Tps { get; set; }
 
@@ -38,6 +44,9 @@ namespace Vercel
         /// <param name="cost">
         /// For kind=router: option slices keyed by selector name; each selector owns its slice's shape.
         /// </param>
+        /// <param name="intelligence">
+        /// For kind=router: option slices keyed by selector name; each selector owns its slice's shape.
+        /// </param>
         /// <param name="tps">
         /// For kind=router: option slices keyed by selector name; each selector owns its slice's shape.
         /// </param>
@@ -49,10 +58,12 @@ namespace Vercel
 #endif
         public AiGatewayVirtualModelConfigSelectorOptions(
             global::Vercel.AiGatewayRouterSelectorOptionBag? cost,
+            global::Vercel.AiGatewayRouterSelectorOptionBag? intelligence,
             global::Vercel.AiGatewayRouterSelectorOptionBag? tps,
             global::Vercel.AiGatewayRouterSelectorOptionBag? ttft)
         {
             this.Cost = cost;
+            this.Intelligence = intelligence;
             this.Tps = tps;
             this.Ttft = ttft;
         }

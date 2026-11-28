@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Find a Drain by id<br/>
-        /// Get the information for a specific Drain by passing the drain id in the URL.
+        /// Get the information for a specific Drain by passing the drain id in the URL. Endpoint and header values of a drain connected to a Marketplace store are masked for every caller.
         /// </summary>
         /// <param name="id"></param>
         /// <param name="includeDeliveryStats">
@@ -22,7 +22,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedab96da75e8212e8f> GetDrainAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShareda3e211e8bee7aaa5> GetDrainAsync(
             string id,
             bool? includeDeliveryStats = default,
             string? teamId = default,
@@ -31,7 +31,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Find a Drain by id<br/>
-        /// Get the information for a specific Drain by passing the drain id in the URL.
+        /// Get the information for a specific Drain by passing the drain id in the URL. Endpoint and header values of a drain connected to a Marketplace store are masked for every caller.
         /// </summary>
         /// <param name="id"></param>
         /// <param name="includeDeliveryStats">
@@ -47,7 +47,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedab96da75e8212e8f>> GetDrainAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShareda3e211e8bee7aaa5>> GetDrainAsResponseAsync(
             string id,
             bool? includeDeliveryStats = default,
             string? teamId = default,

@@ -27,6 +27,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        Claude,
+        /// <summary>
+        ///
+        /// </summary>
         Email,
         /// <summary>
         ///
@@ -94,6 +98,7 @@ namespace Vercel
                 AuthTokenScopeVariant2Origin.Apple => "apple",
                 AuthTokenScopeVariant2Origin.Bitbucket => "bitbucket",
                 AuthTokenScopeVariant2Origin.Chatgpt => "chatgpt",
+                AuthTokenScopeVariant2Origin.Claude => "claude",
                 AuthTokenScopeVariant2Origin.Email => "email",
                 AuthTokenScopeVariant2Origin.Emu => "emu",
                 AuthTokenScopeVariant2Origin.Github => "github",
@@ -121,6 +126,7 @@ namespace Vercel
                 "apple" => AuthTokenScopeVariant2Origin.Apple,
                 "bitbucket" => AuthTokenScopeVariant2Origin.Bitbucket,
                 "chatgpt" => AuthTokenScopeVariant2Origin.Chatgpt,
+                "claude" => AuthTokenScopeVariant2Origin.Claude,
                 "email" => AuthTokenScopeVariant2Origin.Email,
                 "emu" => AuthTokenScopeVariant2Origin.Emu,
                 "github" => AuthTokenScopeVariant2Origin.Github,

@@ -21,7 +21,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared2f24cdccbdde3d24> CreateFlagAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared477368a6d087a9cd> CreateFlagAsync(
             string projectIdOrName,
 
             global::Vercel.CreateFlagRequest request,
@@ -46,7 +46,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared2f24cdccbdde3d24>> CreateFlagAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared477368a6d087a9cd>> CreateFlagAsResponseAsync(
             string projectIdOrName,
 
             global::Vercel.CreateFlagRequest request,
@@ -67,6 +67,7 @@ namespace Vercel
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
+        /// <param name="environments"></param>
         /// <param name="requestSlug">
         /// A unique (per project) key for the flag, composed of letters, numbers, dashes, and underscores
         /// </param>
@@ -75,9 +76,6 @@ namespace Vercel
         /// </param>
         /// <param name="variants">
         /// The variants of the flag
-        /// </param>
-        /// <param name="environments">
-        /// The configuration for the flag in different environments
         /// </param>
         /// <param name="seed">
         /// A random seed to prevent split points in different flags from having the same targets
@@ -98,11 +96,11 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared2f24cdccbdde3d24> CreateFlagAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared477368a6d087a9cd> CreateFlagAsync(
             string projectIdOrName,
+            global::Vercel.CreateFlagRequestEnvironments environments,
             string requestSlug,
             global::Vercel.CreateFlagRequestKind kind,
-            global::System.Collections.Generic.Dictionary<string, global::Vercel.AutoSDKSharedba25b79c660ac1ce> environments,
             string? teamId = default,
             string? slug = default,
             global::System.Collections.Generic.IList<global::Vercel.CreateFlagRequestVariant>? variants = default,
