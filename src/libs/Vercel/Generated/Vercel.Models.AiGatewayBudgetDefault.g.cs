@@ -22,6 +22,12 @@ namespace Vercel
         public global::System.Collections.Generic.IList<double>? AlertThresholds { get; set; }
 
         /// <summary>
+        /// `api-key` scope only: key spend attributions covered. Absent means both.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("appliesTo")]
+        public global::System.Collections.Generic.IList<global::Vercel.AiGatewayBudgetDefaultAppliesToItem>? AppliesTo { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdAt")]
@@ -74,6 +80,9 @@ namespace Vercel
         /// <param name="scopeType"></param>
         /// <param name="updatedAt"></param>
         /// <param name="alertThresholds"></param>
+        /// <param name="appliesTo">
+        /// `api-key` scope only: key spend attributions covered. Absent means both.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -84,10 +93,12 @@ namespace Vercel
             global::Vercel.AiGatewayBudgetDefaultRefreshPeriod refreshPeriod,
             global::Vercel.AiGatewayBudgetDefaultScopeType scopeType,
             double updatedAt,
-            global::System.Collections.Generic.IList<double>? alertThresholds)
+            global::System.Collections.Generic.IList<double>? alertThresholds,
+            global::System.Collections.Generic.IList<global::Vercel.AiGatewayBudgetDefaultAppliesToItem>? appliesTo)
         {
             this.Active = active;
             this.AlertThresholds = alertThresholds;
+            this.AppliesTo = appliesTo;
             this.CreatedAt = createdAt;
             this.LimitAmount = limitAmount;
             this.RefreshPeriod = refreshPeriod;

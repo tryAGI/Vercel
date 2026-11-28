@@ -144,11 +144,11 @@ namespace Vercel
         public global::Vercel.GetProjectResponseDataCache? DataCache { get; set; }
 
         /// <summary>
-        ///
+        /// Project resource config returned by the API. `buildMachineType` is a fixed machine type or `elastic`; the active Elastic machine is reported through `elasticBuildMachine`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultResourceConfig")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AutoSDKSharedbbf450e6ecd4e724 DefaultResourceConfig { get; set; }
+        public required global::Vercel.AutoSDKSharedd67d8d405d3f0000 DefaultResourceConfig { get; set; }
 
         /// <summary>
         /// Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects.
@@ -340,8 +340,8 @@ namespace Vercel
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("microfrontends")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKShared7ff9e6410c724535JsonConverter))]
-        public global::Vercel.AutoSDKShared7ff9e6410c724535? Microfrontends { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AutoSDKSharedea673b94227226faJsonConverter))]
+        public global::Vercel.AutoSDKSharedea673b94227226fa? Microfrontends { get; set; }
 
         /// <summary>
         ///
@@ -404,7 +404,7 @@ namespace Vercel
         /// Requested and authorized operations when `checkPermissions` is used. Legacy `includePermissions` responses contain a broader, non-authoritative permission summary.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("permissions")]
-        public global::Vercel.AutoSDKShared9e6492646a60c627? Permissions { get; set; }
+        public global::Vercel.AutoSDKShared8cb75454f348bbe8? Permissions { get; set; }
 
         /// <summary>
         ///
@@ -431,11 +431,11 @@ namespace Vercel
         public global::Vercel.GetProjectResponseProtectionConfig? ProtectionConfig { get; set; }
 
         /// <summary>
-        ///
+        /// Project resource config returned by the API. `buildMachineType` is a fixed machine type or `elastic`; the active Elastic machine is reported through `elasticBuildMachine`.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("resourceConfig")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.AutoSDKSharedbbf450e6ecd4e724 ResourceConfig { get; set; }
+        public required global::Vercel.AutoSDKSharedd67d8d405d3f0000 ResourceConfig { get; set; }
 
         /// <summary>
         /// Description of why a project was rolled back, and by whom. Note that lastAliasRequest contains the from/to details of the rollback.
@@ -447,7 +447,7 @@ namespace Vercel
         /// Project-level rolling release configuration that defines how deployments should be gradually rolled out
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rollingRelease")]
-        public global::Vercel.AutoSDKSharedce0c7f50e384322c? RollingRelease { get; set; }
+        public global::Vercel.GetProjectResponseRollingRelease? RollingRelease { get; set; }
 
         /// <summary>
         ///
@@ -630,7 +630,9 @@ namespace Vercel
         /// </summary>
         /// <param name="accountId"></param>
         /// <param name="alias"></param>
-        /// <param name="defaultResourceConfig"></param>
+        /// <param name="defaultResourceConfig">
+        /// Project resource config returned by the API. `buildMachineType` is a fixed machine type or `elastic`; the active Elastic machine is reported through `elasticBuildMachine`.
+        /// </param>
         /// <param name="deploymentExpiration">
         /// Retention policies for deployments. These are enforced at the project level, but we also maintain an instance of this at the team level as a default policy that gets applied to new projects.
         /// </param>
@@ -638,7 +640,9 @@ namespace Vercel
         /// <param name="id"></param>
         /// <param name="name"></param>
         /// <param name="nodeVersion"></param>
-        /// <param name="resourceConfig"></param>
+        /// <param name="resourceConfig">
+        /// Project resource config returned by the API. `buildMachineType` is a fixed machine type or `elastic`; the active Elastic machine is reported through `elasticBuildMachine`.
+        /// </param>
         /// <param name="analytics"></param>
         /// <param name="appliedCve55182Migration"></param>
         /// <param name="autoAssignCustomDomains"></param>
@@ -749,13 +753,13 @@ namespace Vercel
         public GetProjectResponse(
             string accountId,
             global::System.Collections.Generic.IList<global::Vercel.AutoSDKShared29b35dda7b3e47c4> alias,
-            global::Vercel.AutoSDKSharedbbf450e6ecd4e724 defaultResourceConfig,
+            global::Vercel.AutoSDKSharedd67d8d405d3f0000 defaultResourceConfig,
             global::Vercel.GetProjectResponseDeploymentExpiration deploymentExpiration,
             bool directoryListing,
             string id,
             string name,
             global::Vercel.GetProjectResponseNodeVersion nodeVersion,
-            global::Vercel.AutoSDKSharedbbf450e6ecd4e724 resourceConfig,
+            global::Vercel.AutoSDKSharedd67d8d405d3f0000 resourceConfig,
             global::Vercel.GetProjectResponseAnalytics? analytics,
             bool? appliedCve55182Migration,
             bool? autoAssignCustomDomains,
@@ -803,7 +807,7 @@ namespace Vercel
             global::System.Collections.Generic.IList<global::Vercel.AutoSDKSharedbca3e7a986162538>? latestDeployments,
             global::Vercel.AutoSDKSharede0f9d68fc63cf31d? link,
             bool? live,
-            global::Vercel.AutoSDKShared7ff9e6410c724535? microfrontends,
+            global::Vercel.AutoSDKSharedea673b94227226fa? microfrontends,
             global::Vercel.GetProjectResponseOidcTokenConfig? oidcTokenConfig,
             global::Vercel.GetProjectResponseOptionsAllowlist? optionsAllowlist,
             string? outputDirectory,
@@ -811,13 +815,13 @@ namespace Vercel
             global::Vercel.GetProjectResponsePassport? passport,
             global::Vercel.GetProjectResponsePasswordProtection? passwordProtection,
             bool? paused,
-            global::Vercel.AutoSDKShared9e6492646a60c627? permissions,
+            global::Vercel.AutoSDKShared8cb75454f348bbe8? permissions,
             bool? productionDeploymentsFastLane,
             bool? protectedSourcemaps,
             object? protectionBypass,
             global::Vercel.GetProjectResponseProtectionConfig? protectionConfig,
             global::Vercel.AutoSDKShared15ac57d28c37cbda? rollbackDescription,
-            global::Vercel.AutoSDKSharedce0c7f50e384322c? rollingRelease,
+            global::Vercel.GetProjectResponseRollingRelease? rollingRelease,
             string? rootDirectory,
             global::Vercel.GetProjectResponseSandbox? sandbox,
             global::Vercel.AutoSDKShared25e1e81cf9eecd30? security,

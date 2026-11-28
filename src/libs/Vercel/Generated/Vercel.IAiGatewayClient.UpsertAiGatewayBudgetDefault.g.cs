@@ -62,6 +62,9 @@ namespace Vercel
         /// </param>
         /// <param name="refreshPeriod"></param>
         /// <param name="alertThresholds"></param>
+        /// <param name="appliesTo">
+        /// Key spend attributions the api-key default covers. Only valid when scopeType is api-key. Omit to keep the stored value; unset means both.
+        /// </param>
         /// <param name="justification">
         /// Why the budget is being changed, up to 500 characters. Recorded in the activity log and audit log drains, and sent in the ai-gateway.budget.updated webhook.
         /// </param>
@@ -75,6 +78,7 @@ namespace Vercel
             string? slug = default,
             global::Vercel.UpsertAiGatewayBudgetDefaultRequestRefreshPeriod? refreshPeriod = default,
             global::System.Collections.Generic.IList<double>? alertThresholds = default,
+            global::System.Collections.Generic.IList<global::Vercel.UpsertAiGatewayBudgetDefaultRequestAppliesToItem>? appliesTo = default,
             string? justification = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);

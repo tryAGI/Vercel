@@ -16,7 +16,7 @@ namespace Vercel
         public required double CreatedAt { get; set; }
 
         /// <summary>
-        /// The ID of the user who created the Global Config, optional because it is not always set.
+        /// The ID of the principal who created the Global Config, optional because it is not always set.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdBy")]
         public string? CreatedBy { get; set; }
@@ -90,7 +90,7 @@ namespace Vercel
         /// </param>
         /// <param name="updatedAt"></param>
         /// <param name="createdBy">
-        /// The ID of the user who created the Global Config, optional because it is not always set.
+        /// The ID of the principal who created the Global Config, optional because it is not always set.
         /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]

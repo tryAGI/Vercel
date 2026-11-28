@@ -15,6 +15,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        Intelligence,
+        /// <summary>
+        ///
+        /// </summary>
         Tps,
         /// <summary>
         ///
@@ -35,6 +39,7 @@ namespace Vercel
             return value switch
             {
                 AiGatewayVirtualModelConfigSelector.Cost => "cost",
+                AiGatewayVirtualModelConfigSelector.Intelligence => "intelligence",
                 AiGatewayVirtualModelConfigSelector.Tps => "tps",
                 AiGatewayVirtualModelConfigSelector.Ttft => "ttft",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -48,6 +53,7 @@ namespace Vercel
             return value switch
             {
                 "cost" => AiGatewayVirtualModelConfigSelector.Cost,
+                "intelligence" => AiGatewayVirtualModelConfigSelector.Intelligence,
                 "tps" => AiGatewayVirtualModelConfigSelector.Tps,
                 "ttft" => AiGatewayVirtualModelConfigSelector.Ttft,
                 _ => null,

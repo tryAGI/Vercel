@@ -11,12 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("enabled")]
-        public bool? Enabled { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("entities")]
         public global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSettingsRequestEntitie>? Entities { get; set; }
 
@@ -35,7 +29,6 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateFlagSettingsRequest" /> class.
         /// </summary>
-        /// <param name="enabled"></param>
         /// <param name="entities"></param>
         /// <param name="environments">
         /// The environments to sync
@@ -44,11 +37,9 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public UpdateFlagSettingsRequest(
-            bool? enabled,
             global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSettingsRequestEntitie>? entities,
             global::System.Collections.Generic.IList<string>? environments)
         {
-            this.Enabled = enabled;
             this.Entities = entities;
             this.Environments = environments;
         }

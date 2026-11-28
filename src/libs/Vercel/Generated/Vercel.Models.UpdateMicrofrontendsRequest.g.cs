@@ -53,6 +53,12 @@ namespace Vercel
         public bool? DoNotRouteWithMicrofrontendsRouting { get; set; }
 
         /// <summary>
+        /// Whether requests routed to this project skip the default application's managed rulesets, so only this project's own managed rulesets apply. Can only be set for child applications.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("doNotInheritDefaultAppManagedRules")]
+        public bool? DoNotInheritDefaultAppManagedRules { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -83,6 +89,9 @@ namespace Vercel
         /// <param name="doNotRouteWithMicrofrontendsRouting">
         /// Whether domains in this project should route as a microfrontend. Can only be set for child applications.
         /// </param>
+        /// <param name="doNotInheritDefaultAppManagedRules">
+        /// Whether requests routed to this project skip the default application's managed rulesets, so only this project's own managed rulesets apply. Can only be set for child applications.
+        /// </param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -92,7 +101,8 @@ namespace Vercel
             bool? isDefaultApp,
             string? defaultRoute,
             bool? routeObservabilityToThisProject,
-            bool? doNotRouteWithMicrofrontendsRouting)
+            bool? doNotRouteWithMicrofrontendsRouting,
+            bool? doNotInheritDefaultAppManagedRules)
         {
             this.MicrofrontendsGroupId = microfrontendsGroupId;
             this.Enabled = enabled;
@@ -100,6 +110,7 @@ namespace Vercel
             this.DefaultRoute = defaultRoute;
             this.RouteObservabilityToThisProject = routeObservabilityToThisProject;
             this.DoNotRouteWithMicrofrontendsRouting = doNotRouteWithMicrofrontendsRouting;
+            this.DoNotInheritDefaultAppManagedRules = doNotInheritDefaultAppManagedRules;
         }
 
         /// <summary>

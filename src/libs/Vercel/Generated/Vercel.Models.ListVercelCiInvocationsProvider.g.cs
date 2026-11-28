@@ -15,6 +15,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        CursorOrigin,
+        /// <summary>
+        ///
+        /// </summary>
         Github,
         /// <summary>
         ///
@@ -39,6 +43,7 @@ namespace Vercel
             return value switch
             {
                 ListVercelCiInvocationsProvider.Bitbucket => "bitbucket",
+                ListVercelCiInvocationsProvider.CursorOrigin => "cursor-origin",
                 ListVercelCiInvocationsProvider.Github => "github",
                 ListVercelCiInvocationsProvider.Gitlab => "gitlab",
                 ListVercelCiInvocationsProvider.Vercel => "vercel",
@@ -53,6 +58,7 @@ namespace Vercel
             return value switch
             {
                 "bitbucket" => ListVercelCiInvocationsProvider.Bitbucket,
+                "cursor-origin" => ListVercelCiInvocationsProvider.CursorOrigin,
                 "github" => ListVercelCiInvocationsProvider.Github,
                 "gitlab" => ListVercelCiInvocationsProvider.Gitlab,
                 "vercel" => ListVercelCiInvocationsProvider.Vercel,

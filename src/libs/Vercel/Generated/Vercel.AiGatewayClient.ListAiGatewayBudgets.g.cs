@@ -53,7 +53,7 @@ namespace Vercel
 
         /// <summary>
         /// List AI Gateway budgets<br/>
-        /// List the team's AI Gateway budgets (team/project/user scopes, plus default-covered api-key spend) as a flat list, optionally filtered by scope. Without `limit` or `cursor`, returns every budget. With either, returns one page ordered by `quotaEntityId` plus `nextCursor` (null on the last page) and `defaultCoveredCounts`. Paging still reads the full merge server-side: the gateway meter list it joins has no cursor.
+        /// List the team's AI Gateway budgets (team/project/user/app scopes, plus default-covered api-key spend) as a flat list, optionally filtered by scope. Without `limit` or `cursor`, returns every budget. With either, returns one page ordered by `quotaEntityId` plus `nextCursor` (null on the last page) and `defaultCoveredCounts`. Paging still reads the full merge server-side: the gateway meter list it joins has no cursor.
         /// </summary>
         /// <param name="scopeType">
         /// Restrict the list to a single budget scope.
@@ -101,7 +101,7 @@ namespace Vercel
         }
         /// <summary>
         /// List AI Gateway budgets<br/>
-        /// List the team's AI Gateway budgets (team/project/user scopes, plus default-covered api-key spend) as a flat list, optionally filtered by scope. Without `limit` or `cursor`, returns every budget. With either, returns one page ordered by `quotaEntityId` plus `nextCursor` (null on the last page) and `defaultCoveredCounts`. Paging still reads the full merge server-side: the gateway meter list it joins has no cursor.
+        /// List the team's AI Gateway budgets (team/project/user/app scopes, plus default-covered api-key spend) as a flat list, optionally filtered by scope. Without `limit` or `cursor`, returns every budget. With either, returns one page ordered by `quotaEntityId` plus `nextCursor` (null on the last page) and `defaultCoveredCounts`. Paging still reads the full merge server-side: the gateway meter list it joins has no cursor.
         /// </summary>
         /// <param name="scopeType">
         /// Restrict the list to a single budget scope.
@@ -427,7 +427,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_400 is { Length: > 0 } ? __content_400 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_400,
                                     responseBody: __content_400,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -459,7 +459,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_401 is { Length: > 0 } ? __content_401 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -491,7 +491,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_403 is { Length: > 0 } ? __content_403 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_403,
                                     responseBody: __content_403,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -523,7 +523,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_404 is { Length: > 0 } ? __content_404 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_404,
                                     responseBody: __content_404,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -555,7 +555,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_410 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_410 is { Length: > 0 } ? __content_410 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_410,
                                     responseBody: __content_410,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -587,7 +587,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_500 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_500 is { Length: > 0 } ? __content_500 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_500,
                                     responseBody: __content_500,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -629,7 +629,7 @@ namespace Vercel
                                 {
                                     throw global::Vercel.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -674,7 +674,7 @@ namespace Vercel
 
                                     throw global::Vercel.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(

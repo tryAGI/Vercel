@@ -38,7 +38,7 @@ namespace Vercel
 
         /// <summary>
         /// Finalize Installation<br/>
-        /// This endpoint allows the partner to mark an installation as finalized. This means you will not send any more invoices for the installation. Use this after a customer has requested uninstall and you have sent any remaining invoices. This will allow the uninstall process to proceed immediately after all invoices have been paid. &lt;br/&gt; Use the `credentials.access_token` we provided in the [Upsert Installation](#upsert-installation) body to authorize this request.
+        /// This endpoint allows the partner to mark an installation as finalized. This means you will not send any more invoices for the installation. Use this after a customer has requested uninstall and you have sent any remaining invoices. This will allow the uninstall process to proceed immediately after all invoices have been paid.
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -57,7 +57,7 @@ namespace Vercel
         }
         /// <summary>
         /// Finalize Installation<br/>
-        /// This endpoint allows the partner to mark an installation as finalized. This means you will not send any more invoices for the installation. Use this after a customer has requested uninstall and you have sent any remaining invoices. This will allow the uninstall process to proceed immediately after all invoices have been paid. &lt;br/&gt; Use the `credentials.access_token` we provided in the [Upsert Installation](#upsert-installation) body to authorize this request.
+        /// This endpoint allows the partner to mark an installation as finalized. This means you will not send any more invoices for the installation. Use this after a customer has requested uninstall and you have sent any remaining invoices. This will allow the uninstall process to proceed immediately after all invoices have been paid.
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -343,7 +343,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_400 is { Length: > 0 } ? __content_400 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_400,
                                     responseBody: __content_400,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -375,7 +375,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_401 is { Length: > 0 } ? __content_401 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -407,7 +407,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_403 is { Length: > 0 } ? __content_403 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_403,
                                     responseBody: __content_403,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -439,7 +439,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_404 is { Length: > 0 } ? __content_404 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_404,
                                     responseBody: __content_404,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -471,7 +471,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_410 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_410 is { Length: > 0 } ? __content_410 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_410,
                                     responseBody: __content_410,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -506,7 +506,7 @@ namespace Vercel
                                 {
                                     throw global::Vercel.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -542,7 +542,7 @@ namespace Vercel
 
                                     throw global::Vercel.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(

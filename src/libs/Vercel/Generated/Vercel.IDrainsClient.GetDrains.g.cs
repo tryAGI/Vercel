@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Retrieve a list of all Drains<br/>
-        /// Allows to retrieve the list of Drains of the authenticated team.
+        /// Allows to retrieve the list of Drains of the authenticated team. Endpoint and header values of a drain connected to a Marketplace store are masked for every caller.
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="includeMetadata">
@@ -25,7 +25,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedfc4bd5d7b0e51454> GetDrainsAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedb66d946355d32ba5> GetDrainsAsync(
             string? projectId = default,
             bool? includeMetadata = default,
             bool? includeDeliveryStats = default,
@@ -35,7 +35,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Retrieve a list of all Drains<br/>
-        /// Allows to retrieve the list of Drains of the authenticated team.
+        /// Allows to retrieve the list of Drains of the authenticated team. Endpoint and header values of a drain connected to a Marketplace store are masked for every caller.
         /// </summary>
         /// <param name="projectId"></param>
         /// <param name="includeMetadata">
@@ -54,7 +54,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedfc4bd5d7b0e51454>> GetDrainsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedb66d946355d32ba5>> GetDrainsAsResponseAsync(
             string? projectId = default,
             bool? includeMetadata = default,
             bool? includeDeliveryStats = default,

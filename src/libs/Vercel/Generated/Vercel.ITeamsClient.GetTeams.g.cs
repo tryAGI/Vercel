@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// List all teams<br/>
-        /// Get a paginated list of all the Teams the authenticated User is a member of.
+        /// Get a paginated list of all the Teams the authenticated User is a member of. An app-principal token needs `read:team` and lists only the team it is bound to.
         /// </summary>
         /// <param name="limit">
         /// Maximum number of Teams which may be returned.<br/>
@@ -23,7 +23,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.GetTeamsResponse> GetTeamsAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.GetTeamsResponseVariant1, global::Vercel.GetTeamsResponseVariant2>> GetTeamsAsync(
             double? limit = default,
             double? since = default,
             double? until = default,
@@ -31,7 +31,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// List all teams<br/>
-        /// Get a paginated list of all the Teams the authenticated User is a member of.
+        /// Get a paginated list of all the Teams the authenticated User is a member of. An app-principal token needs `read:team` and lists only the team it is bound to.
         /// </summary>
         /// <param name="limit">
         /// Maximum number of Teams which may be returned.<br/>
@@ -48,7 +48,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.GetTeamsResponse>> GetTeamsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.GetTeamsResponseVariant1, global::Vercel.GetTeamsResponseVariant2>>> GetTeamsAsResponseAsync(
             double? limit = default,
             double? since = default,
             double? until = default,

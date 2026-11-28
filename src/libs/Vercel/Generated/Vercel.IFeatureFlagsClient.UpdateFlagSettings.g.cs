@@ -67,7 +67,6 @@ namespace Vercel
         /// <param name="slug">
         /// Example: my-team-url-slug
         /// </param>
-        /// <param name="enabled"></param>
         /// <param name="entities"></param>
         /// <param name="environments">
         /// The environments to sync
@@ -79,7 +78,6 @@ namespace Vercel
             string projectIdOrName,
             string? teamId = default,
             string? slug = default,
-            bool? enabled = default,
             global::System.Collections.Generic.IList<global::Vercel.UpdateFlagSettingsRequestEntitie>? entities = default,
             global::System.Collections.Generic.IList<string>? environments = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,

@@ -16,7 +16,6 @@ namespace Vercel
         public global::Vercel.AutoSDKShared9296e9c5692fbba2? NetworkPolicy { get; set; }
 
         /// <summary>
-        /// CPU architecture. Inherits a snapshot or single image manifest when omitted. Image indexes default to amd64. Must match the source. ARM64 creation requires API v3 or v4 without runtime and team access.<br/>
         /// Example: arm64
         /// </summary>
         /// <example>arm64</example>
@@ -131,6 +130,14 @@ namespace Vercel
         public global::Vercel.OneOf<object, int?>? SnapshotExpiration { get; set; }
 
         /// <summary>
+        /// How long before a session expires, in milliseconds, the `sandbox.session.expiring` webhook is sent. It affects only that webhook. When a deadline is closer than the lead time, the webhook is sent right away: at the start of a session whose timeout is shorter, and after each extension that leaves the deadline within the lead time. Defaults to 1 minute. Takes effect from the next session.<br/>
+        /// Example: 300000
+        /// </summary>
+        /// <example>300000</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiryNotificationLeadTime")]
+        public int? ExpiryNotificationLeadTime { get; set; }
+
+        /// <summary>
         /// Protect the N most recent snapshots with different expiration/deletion behavior.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("keepLastSnapshots")]
@@ -155,7 +162,6 @@ namespace Vercel
         /// </summary>
         /// <param name="networkPolicy"></param>
         /// <param name="architecture">
-        /// CPU architecture. Inherits a snapshot or single image manifest when omitted. Image indexes default to amd64. Must match the source. ARM64 creation requires API v3 or v4 without runtime and team access.<br/>
         /// Example: arm64
         /// </param>
         /// <param name="resources">
@@ -211,6 +217,10 @@ namespace Vercel
         /// Default snapshot expiration time in milliseconds. Set to 0 to disable expiration. When set, this value is used as the default expiration for all snapshots created for this sandbox.<br/>
         /// Example: 604800000
         /// </param>
+        /// <param name="expiryNotificationLeadTime">
+        /// How long before a session expires, in milliseconds, the `sandbox.session.expiring` webhook is sent. It affects only that webhook. When a deadline is closer than the lead time, the webhook is sent right away: at the start of a session whose timeout is shorter, and after each extension that leaves the deadline within the lead time. Defaults to 1 minute. Takes effect from the next session.<br/>
+        /// Example: 300000
+        /// </param>
         /// <param name="keepLastSnapshots">
         /// Protect the N most recent snapshots with different expiration/deletion behavior.
         /// </param>
@@ -238,6 +248,7 @@ namespace Vercel
             string? name,
             bool? persistent,
             global::Vercel.OneOf<object, int?>? snapshotExpiration,
+            int? expiryNotificationLeadTime,
             global::Vercel.CreateSandboxesV3RequestKeepLastSnapshots? keepLastSnapshots,
             global::System.Collections.Generic.Dictionary<string, string>? tags)
         {
@@ -257,6 +268,7 @@ namespace Vercel
             this.Name = name;
             this.Persistent = persistent;
             this.SnapshotExpiration = snapshotExpiration;
+            this.ExpiryNotificationLeadTime = expiryNotificationLeadTime;
             this.KeepLastSnapshots = keepLastSnapshots;
             this.Tags = tags;
         }

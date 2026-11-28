@@ -11,6 +11,13 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("changed")]
+        [global::System.Text.Json.Serialization.JsonRequired]
+        public required bool Changed { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("value")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Value { get; set; }
@@ -24,13 +31,16 @@ namespace Vercel
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateSpeedInsightsToggleResponse" /> class.
         /// </summary>
+        /// <param name="changed"></param>
         /// <param name="value"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public CreateSpeedInsightsToggleResponse(
+            bool changed,
             bool value)
         {
+            this.Changed = changed;
             this.Value = value;
         }
 

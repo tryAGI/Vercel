@@ -26,10 +26,14 @@ namespace Vercel
             {                s_ListAuthTokensSecurityRequirement0,
             };
         partial void PrepareListAuthTokensArguments(
-            global::System.Net.Http.HttpClient httpClient);
+            global::System.Net.Http.HttpClient httpClient,
+            ref global::Vercel.ListAuthTokensKind? kind,
+            ref global::Vercel.ListAuthTokensStatus? status);
         partial void PrepareListAuthTokensRequest(
             global::System.Net.Http.HttpClient httpClient,
-            global::System.Net.Http.HttpRequestMessage httpRequestMessage);
+            global::System.Net.Http.HttpRequestMessage httpRequestMessage,
+            global::Vercel.ListAuthTokensKind? kind,
+            global::Vercel.ListAuthTokensStatus? status);
         partial void ProcessListAuthTokensResponse(
             global::System.Net.Http.HttpClient httpClient,
             global::System.Net.Http.HttpResponseMessage httpResponseMessage);
@@ -43,14 +47,24 @@ namespace Vercel
         /// List Auth Tokens<br/>
         /// Retrieve a list of the current User's authentication tokens.
         /// </summary>
+        /// <param name="kind">
+        /// Filter by token kind. Omit or use `all` to include every kind.
+        /// </param>
+        /// <param name="status">
+        /// Filter by token status. Omit or use `all` to include every status.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.OneOf<global::Vercel.ListAuthTokensResponseVariant1, global::Vercel.ListAuthTokensResponseVariant2>> ListAuthTokensAsync(
+            global::Vercel.ListAuthTokensKind? kind = default,
+            global::Vercel.ListAuthTokensStatus? status = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await ListAuthTokensAsResponseAsync(
+                kind: kind,
+                status: status,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -61,17 +75,27 @@ namespace Vercel
         /// List Auth Tokens<br/>
         /// Retrieve a list of the current User's authentication tokens.
         /// </summary>
+        /// <param name="kind">
+        /// Filter by token kind. Omit or use `all` to include every kind.
+        /// </param>
+        /// <param name="status">
+        /// Filter by token status. Omit or use `all` to include every status.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.OneOf<global::Vercel.ListAuthTokensResponseVariant1, global::Vercel.ListAuthTokensResponseVariant2>>> ListAuthTokensAsResponseAsync(
+            global::Vercel.ListAuthTokensKind? kind = default,
+            global::Vercel.ListAuthTokensStatus? status = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             PrepareArguments(
                 client: HttpClient);
             PrepareListAuthTokensArguments(
-                httpClient: HttpClient);
+                httpClient: HttpClient,
+                kind: ref kind,
+                status: ref status);
 
 
             var __authorizations = global::Vercel.EndPointSecurityResolver.ResolveAuthorizations(
@@ -99,6 +123,10 @@ namespace Vercel
                             var __pathBuilder = new global::Vercel.PathBuilder(
                                 path: "/v6/user/tokens",
                                 baseUri: HttpClient.BaseAddress);
+                            __pathBuilder
+                                .AddOptionalParameter("kind", kind?.ToValueString())
+                                .AddOptionalParameter("status", status?.ToValueString())
+                                ;
                             var __path = __pathBuilder.ToString();
                 __path = global::Vercel.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
@@ -138,7 +166,9 @@ namespace Vercel
                     request: __httpRequest);
                 PrepareListAuthTokensRequest(
                     httpClient: HttpClient,
-                    httpRequestMessage: __httpRequest);
+                    httpRequestMessage: __httpRequest,
+                    kind: kind,
+                    status: status);
 
                 return __httpRequest;
             }
@@ -341,7 +371,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_400 is { Length: > 0 } ? __content_400 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_400,
                                     responseBody: __content_400,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -373,7 +403,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_401 is { Length: > 0 } ? __content_401 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -405,7 +435,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_403 is { Length: > 0 } ? __content_403 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_403,
                                     responseBody: __content_403,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -437,7 +467,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_410 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_410 is { Length: > 0 } ? __content_410 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_410,
                                     responseBody: __content_410,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -479,7 +509,7 @@ namespace Vercel
                                 {
                                     throw global::Vercel.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -524,7 +554,7 @@ namespace Vercel
 
                                     throw global::Vercel.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(

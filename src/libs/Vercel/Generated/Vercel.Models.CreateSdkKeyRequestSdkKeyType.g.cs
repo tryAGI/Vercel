@@ -11,14 +11,6 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
-        Client,
-        /// <summary>
-        ///
-        /// </summary>
-        Mobile,
-        /// <summary>
-        ///
-        /// </summary>
         Server,
     }
 
@@ -34,8 +26,6 @@ namespace Vercel
         {
             return value switch
             {
-                CreateSdkKeyRequestSdkKeyType.Client => "client",
-                CreateSdkKeyRequestSdkKeyType.Mobile => "mobile",
                 CreateSdkKeyRequestSdkKeyType.Server => "server",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -47,8 +37,6 @@ namespace Vercel
         {
             return value switch
             {
-                "client" => CreateSdkKeyRequestSdkKeyType.Client,
-                "mobile" => CreateSdkKeyRequestSdkKeyType.Mobile,
                 "server" => CreateSdkKeyRequestSdkKeyType.Server,
                 _ => null,
             };

@@ -92,7 +92,7 @@ namespace Vercel
         public string? AccentColor { get; set; }
 
         /// <summary>
-        /// Full team-scoped UID, such as `slack/my-bot`. It cannot contain whitespace, `%`, `#`, control characters, or Vercel-owned namespaces. Changing it breaks callers that use the old UID. The stable connector ID does not change.
+        /// Full team- or organization-scoped UID, such as `slack/my-bot`. It cannot contain whitespace, `%`, `#`, control characters, or Vercel-owned namespaces. Changing it breaks callers that use the old UID. The stable connector ID does not change.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("uid")]
         public string? Uid { get; set; }
@@ -163,7 +163,7 @@ namespace Vercel
         /// <param name="backgroundColor"></param>
         /// <param name="accentColor"></param>
         /// <param name="uid">
-        /// Full team-scoped UID, such as `slack/my-bot`. It cannot contain whitespace, `%`, `#`, control characters, or Vercel-owned namespaces. Changing it breaks callers that use the old UID. The stable connector ID does not change.
+        /// Full team- or organization-scoped UID, such as `slack/my-bot`. It cannot contain whitespace, `%`, `#`, control characters, or Vercel-owned namespaces. Changing it breaks callers that use the old UID. The stable connector ID does not change.
         /// </param>
         /// <param name="name">
         /// Display name for the connector. It is trimmed and cannot be empty or contain control characters.

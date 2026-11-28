@@ -9,6 +9,13 @@ namespace Vercel
     public sealed partial class AiGatewayVirtualModelConfigModelVariant2
     {
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("effort")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.AiGatewayVirtualModelConfigModelVariant2EffortJsonConverter))]
+        public global::Vercel.AiGatewayVirtualModelConfigModelVariant2Effort? Effort { get; set; }
+
+        /// <summary>
         /// Highest task level the member handles, in [0, 1]. Read by the intelligence selector.
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("intelligence")]
@@ -31,6 +38,7 @@ namespace Vercel
         /// Initializes a new instance of the <see cref="AiGatewayVirtualModelConfigModelVariant2" /> class.
         /// </summary>
         /// <param name="slug"></param>
+        /// <param name="effort"></param>
         /// <param name="intelligence">
         /// Highest task level the member handles, in [0, 1]. Read by the intelligence selector.
         /// </param>
@@ -39,8 +47,10 @@ namespace Vercel
 #endif
         public AiGatewayVirtualModelConfigModelVariant2(
             string slug,
+            global::Vercel.AiGatewayVirtualModelConfigModelVariant2Effort? effort,
             double? intelligence)
         {
+            this.Effort = effort;
             this.Intelligence = intelligence;
             this.Slug = slug ?? throw new global::System.ArgumentNullException(nameof(slug));
         }

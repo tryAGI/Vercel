@@ -185,6 +185,15 @@ namespace Vercel
         public double? StoppedAt { get; set; }
 
         /// <summary>
+        /// Why the sandbox stopped: `requested` for a stop requested through the API, `snapshot` for a stop to take a snapshot, `timeout` when the sandbox reached its timeout, `exited` when its main process exited on its own, and `error` when it failed or was stopped by the platform.<br/>
+        /// Example: requested
+        /// </summary>
+        /// <example>requested</example>
+        [global::System.Text.Json.Serialization.JsonPropertyName("stopReason")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::Vercel.JsonConverters.SessionStopReasonJsonConverter))]
+        public global::Vercel.SessionStopReason? StopReason { get; set; }
+
+        /// <summary>
         /// The maximum amount of time the sandbox will run for in milliseconds.<br/>
         /// Example: 3600000
         /// </summary>
@@ -321,6 +330,10 @@ namespace Vercel
         /// The time when the sandbox was stopped, in milliseconds since the epoch.<br/>
         /// Example: 1750344501629L
         /// </param>
+        /// <param name="stopReason">
+        /// Why the sandbox stopped: `requested` for a stop requested through the API, `snapshot` for a stop to take a snapshot, `timeout` when the sandbox reached its timeout, `exited` when its main process exited on its own, and `error` when it failed or was stopped by the platform.<br/>
+        /// Example: requested
+        /// </param>
         /// <param name="workloadType">
         /// The workload type of this sandbox.
         /// </param>
@@ -352,6 +365,7 @@ namespace Vercel
             string? sourceSnapshotId,
             double? startedAt,
             double? stoppedAt,
+            global::Vercel.SessionStopReason? stopReason,
             global::Vercel.SessionWorkloadType? workloadType)
         {
             this.AbortedAt = abortedAt;
@@ -375,6 +389,7 @@ namespace Vercel
             this.StartedAt = startedAt;
             this.Status = status;
             this.StoppedAt = stoppedAt;
+            this.StopReason = stopReason;
             this.Timeout = timeout;
             this.UpdatedAt = updatedAt;
             this.Vcpus = vcpus;

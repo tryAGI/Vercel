@@ -49,7 +49,7 @@ namespace Vercel
 
         /// <summary>
         /// Find a Drain by id<br/>
-        /// Get the information for a specific Drain by passing the drain id in the URL.
+        /// Get the information for a specific Drain by passing the drain id in the URL. Endpoint and header values of a drain connected to a Marketplace store are masked for every caller.
         /// </summary>
         /// <param name="id"></param>
         /// <param name="includeDeliveryStats">
@@ -65,7 +65,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedab96da75e8212e8f> GetDrainAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShareda3e211e8bee7aaa5> GetDrainAsync(
             string id,
             bool? includeDeliveryStats = default,
             string? teamId = default,
@@ -86,7 +86,7 @@ namespace Vercel
         }
         /// <summary>
         /// Find a Drain by id<br/>
-        /// Get the information for a specific Drain by passing the drain id in the URL.
+        /// Get the information for a specific Drain by passing the drain id in the URL. Endpoint and header values of a drain connected to a Marketplace store are masked for every caller.
         /// </summary>
         /// <param name="id"></param>
         /// <param name="includeDeliveryStats">
@@ -102,7 +102,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedab96da75e8212e8f>> GetDrainAsResponseAsync(
+        public async global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShareda3e211e8bee7aaa5>> GetDrainAsResponseAsync(
             string id,
             bool? includeDeliveryStats = default,
             string? teamId = default,
@@ -396,7 +396,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_400 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_400 is { Length: > 0 } ? __content_400 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_400,
                                     responseBody: __content_400,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -428,7 +428,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_401 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_401 is { Length: > 0 } ? __content_401 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_401,
                                     responseBody: __content_401,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -460,7 +460,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_403 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_403 is { Length: > 0 } ? __content_403 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_403,
                                     responseBody: __content_403,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -492,7 +492,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_404 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_404 is { Length: > 0 } ? __content_404 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_404,
                                     responseBody: __content_404,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -524,7 +524,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_410 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_410 is { Length: > 0 } ? __content_410 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_410,
                                     responseBody: __content_410,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -556,7 +556,7 @@ namespace Vercel
 
                                 throw global::Vercel.ApiException.Create(
                                     statusCode: __response.StatusCode,
-                                    message: __content_503 ?? __response.ReasonPhrase ?? string.Empty,
+                                    message: __content_503 is { Length: > 0 } ? __content_503 : __response.ReasonPhrase ?? string.Empty,
                                     innerException: __exception_503,
                                     responseBody: __content_503,
                                     responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -586,9 +586,9 @@ namespace Vercel
                                 {
                                     __response.EnsureSuccessStatusCode();
 
-                                    var __value = global::Vercel.AutoSDKSharedab96da75e8212e8f.FromJson(__content, JsonSerializerContext) ??
+                                    var __value = global::Vercel.AutoSDKShareda3e211e8bee7aaa5.FromJson(__content, JsonSerializerContext) ??
                                         throw new global::System.InvalidOperationException($"Response deserialization failed for \"{__content}\" ");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedab96da75e8212e8f>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShareda3e211e8bee7aaa5>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -598,7 +598,7 @@ namespace Vercel
                                 {
                                     throw global::Vercel.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(
@@ -618,9 +618,9 @@ namespace Vercel
                 #endif
                                     ).ConfigureAwait(false);
 
-                                    var __value = await global::Vercel.AutoSDKSharedab96da75e8212e8f.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
+                                    var __value = await global::Vercel.AutoSDKShareda3e211e8bee7aaa5.FromJsonStreamAsync(__content, JsonSerializerContext).ConfigureAwait(false) ??
                                         throw new global::System.InvalidOperationException("Response deserialization failed.");
-                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedab96da75e8212e8f>(
+                                    return new global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShareda3e211e8bee7aaa5>(
                                         statusCode: __response.StatusCode,
                                         headers: global::Vercel.AutoSDKHttpResponse.CreateHeaders(__response),
                                         requestUri: __response.RequestMessage?.RequestUri,
@@ -643,7 +643,7 @@ namespace Vercel
 
                                     throw global::Vercel.ApiException.Create(
                                         statusCode: __response.StatusCode,
-                                        message: __content ?? __response.ReasonPhrase ?? string.Empty,
+                                        message: __content is { Length: > 0 } ? __content : __response.ReasonPhrase ?? string.Empty,
                                         innerException: __ex,
                                         responseBody: __content,
                                         responseHeaders: global::System.Linq.Enumerable.ToDictionary(

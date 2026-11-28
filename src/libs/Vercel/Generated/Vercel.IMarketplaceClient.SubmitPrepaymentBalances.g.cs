@@ -6,7 +6,7 @@ namespace Vercel
     {
         /// <summary>
         /// Submit Prepayment Balances<br/>
-        /// Sends the prepayment balances. The partner should do this at least once a day and ideally once per hour. &lt;br/&gt; Use the `credentials.access_token` we provided in the [Upsert Installation](#upsert-installation) body to authorize this request.
+        /// Sends the prepayment balances. The partner should do this at least once a day and ideally once per hour.
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="request"></param>
@@ -21,7 +21,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Submit Prepayment Balances<br/>
-        /// Sends the prepayment balances. The partner should do this at least once a day and ideally once per hour. &lt;br/&gt; Use the `credentials.access_token` we provided in the [Upsert Installation](#upsert-installation) body to authorize this request.
+        /// Sends the prepayment balances. The partner should do this at least once a day and ideally once per hour.
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="request"></param>
@@ -36,7 +36,7 @@ namespace Vercel
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
         /// Submit Prepayment Balances<br/>
-        /// Sends the prepayment balances. The partner should do this at least once a day and ideally once per hour. &lt;br/&gt; Use the `credentials.access_token` we provided in the [Upsert Installation](#upsert-installation) body to authorize this request.
+        /// Sends the prepayment balances. The partner should do this at least once a day and ideally once per hour.
         /// </summary>
         /// <param name="integrationConfigurationId"></param>
         /// <param name="timestamp">

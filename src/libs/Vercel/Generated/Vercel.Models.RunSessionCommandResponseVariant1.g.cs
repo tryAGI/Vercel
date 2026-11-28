@@ -13,7 +13,7 @@ namespace Vercel
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::Vercel.RunSessionCommandResponseVariant1Data Data { get; set; }
+        public required string Data { get; set; }
 
         /// <summary>
         ///
@@ -37,7 +37,7 @@ namespace Vercel
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public RunSessionCommandResponseVariant1(
-            global::Vercel.RunSessionCommandResponseVariant1Data data,
+            string data,
             string stream)
         {
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));

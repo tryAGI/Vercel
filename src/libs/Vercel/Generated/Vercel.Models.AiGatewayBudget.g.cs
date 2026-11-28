@@ -50,6 +50,12 @@ namespace Vercel
         public required double CurrentSpend { get; set; }
 
         /// <summary>
+        /// When a member's own budget change lapses and the user default applies again, in ms since the epoch. Absent means the budget is permanent.
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("expiresAt")]
+        public double? ExpiresAt { get; set; }
+
+        /// <summary>
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("includeByokInQuota")]
@@ -85,7 +91,7 @@ namespace Vercel
         public required global::Vercel.AiGatewayBudgetRefreshPeriod RefreshPeriod { get; set; }
 
         /// <summary>
-        /// The native Vercel id of the scoped entity. Team/project ids already carry their prefix, so this equals `quotaEntityId` (`team_…` / `prj_…`); for the api-key scope it is the api key id (the `api_key_id_` prefix stripped).
+        /// The native Vercel id of the scoped entity. Team/project ids already carry their prefix, so this equals `quotaEntityId` (`team_…` / `prj_…`); user and app scopes also use the quota entity id (`usr_&lt;userId&gt;` / `app_&lt;appId&gt;`); for the api-key scope it is the api key id (the `api_key_id_` prefix stripped).
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scopeId")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -132,11 +138,14 @@ namespace Vercel
         /// <param name="quotaEntityId"></param>
         /// <param name="refreshPeriod"></param>
         /// <param name="scopeId">
-        /// The native Vercel id of the scoped entity. Team/project ids already carry their prefix, so this equals `quotaEntityId` (`team_…` / `prj_…`); for the api-key scope it is the api key id (the `api_key_id_` prefix stripped).
+        /// The native Vercel id of the scoped entity. Team/project ids already carry their prefix, so this equals `quotaEntityId` (`team_…` / `prj_…`); user and app scopes also use the quota entity id (`usr_&lt;userId&gt;` / `app_&lt;appId&gt;`); for the api-key scope it is the api key id (the `api_key_id_` prefix stripped).
         /// </param>
         /// <param name="scopeType"></param>
         /// <param name="updatedAt"></param>
         /// <param name="alertThresholds"></param>
+        /// <param name="expiresAt">
+        /// When a member's own budget change lapses and the user default applies again, in ms since the epoch. Absent means the budget is permanent.
+        /// </param>
         /// <param name="name"></param>
         /// <param name="source">
         /// Set when the row is inherited from the team's budget default.
@@ -158,6 +167,7 @@ namespace Vercel
             global::Vercel.AiGatewayBudgetScopeType scopeType,
             double updatedAt,
             global::System.Collections.Generic.IList<double>? alertThresholds,
+            double? expiresAt,
             string? name,
             global::Vercel.AiGatewayBudgetSource? source)
         {
@@ -167,6 +177,7 @@ namespace Vercel
             this.CreatedAt = createdAt;
             this.CurrentByokSpend = currentByokSpend;
             this.CurrentSpend = currentSpend;
+            this.ExpiresAt = expiresAt;
             this.IncludeByokInQuota = includeByokInQuota;
             this.LimitAmount = limitAmount;
             this.Name = name;

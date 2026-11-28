@@ -22,7 +22,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedc734cd9afdf7614a> UpdateMicrofrontendsAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared2eb5520e92a3b839> UpdateMicrofrontendsAsync(
             string projectId,
 
             global::Vercel.UpdateMicrofrontendsRequest request,
@@ -48,7 +48,7 @@ namespace Vercel
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::Vercel.ApiException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKSharedc734cd9afdf7614a>> UpdateMicrofrontendsAsResponseAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKHttpResponse<global::Vercel.AutoSDKShared2eb5520e92a3b839>> UpdateMicrofrontendsAsResponseAsync(
             string projectId,
 
             global::Vercel.UpdateMicrofrontendsRequest request,
@@ -92,10 +92,13 @@ namespace Vercel
         /// <param name="doNotRouteWithMicrofrontendsRouting">
         /// Whether domains in this project should route as a microfrontend. Can only be set for child applications.
         /// </param>
+        /// <param name="doNotInheritDefaultAppManagedRules">
+        /// Whether requests routed to this project skip the default application's managed rulesets, so only this project's own managed rulesets apply. Can only be set for child applications.
+        /// </param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::System.InvalidOperationException"></exception>
-        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKSharedc734cd9afdf7614a> UpdateMicrofrontendsAsync(
+        global::System.Threading.Tasks.Task<global::Vercel.AutoSDKShared2eb5520e92a3b839> UpdateMicrofrontendsAsync(
             string projectId,
             string? teamId = default,
             string? slug = default,
@@ -105,6 +108,7 @@ namespace Vercel
             string? defaultRoute = default,
             bool? routeObservabilityToThisProject = default,
             bool? doNotRouteWithMicrofrontendsRouting = default,
+            bool? doNotInheritDefaultAppManagedRules = default,
             global::Vercel.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

@@ -11,6 +11,10 @@ namespace Vercel
         /// <summary>
         ///
         /// </summary>
+        Artifact,
+        /// <summary>
+        ///
+        /// </summary>
         Attestation,
         /// <summary>
         ///
@@ -34,6 +38,7 @@ namespace Vercel
         {
             return value switch
             {
+                VcrTagKind.Artifact => "artifact",
                 VcrTagKind.Attestation => "attestation",
                 VcrTagKind.Index => "index",
                 VcrTagKind.Manifest => "manifest",
@@ -47,6 +52,7 @@ namespace Vercel
         {
             return value switch
             {
+                "artifact" => VcrTagKind.Artifact,
                 "attestation" => VcrTagKind.Attestation,
                 "index" => VcrTagKind.Index,
                 "manifest" => VcrTagKind.Manifest,
